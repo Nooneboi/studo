@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Ledger — Builder (private)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Study Ledger</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Practice</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Builder <span style="font-family:var(--font-mono); font-size:.9rem; color:var(--color-ink-faint)">(private — don't share this link)</span></h1>
+    <div class="banner info">This page builds a quiz file. Nothing here is shared automatically — you'll download a <code>.json</code> file and add it to the site yourself. See the README for the exact steps.</div>
+
+    <div class="field">
+      <label>Load an existing quiz to edit (optional)</label>
+      <input type="file" id="load-input" accept="application/json">
+    </div>
+
+    <form id="builder-form" onsubmit="return false">
+      <div class="row-inline">
+        <div class="field" style="flex:1">
+          <label>Quiz ID (used as the filename, no spaces)</label>
+          <input type="text" id="quiz-id" placeholder="e.g. unit-1-vocab">
+        </div>
+        <div class="field" style="flex:2">
+          <label>Quiz title</label>
+          <input type="text" id="quiz-title" placeholder="e.g. Unit 1 — Core Vocabulary">
+        </div>
+      </div>
+      <div class="field">
+        <label>Description</label>
+        <input type="text" id="quiz-description" placeholder="One line describing this set">
+      </div>
+      <div class="field">
+        <label>Passage (optional — shown above the questions)</label>
+        <textarea id="quiz-passage" placeholder="Paste a reading passage here if this quiz is based on one"></textarea>
+      </div>
+
+      <h2 style="margin-top:var(--space-5)">Questions</h2>
+      <div id="questions-wrap"></div>
+
+      <button type="button" id="add-question-btn" class="btn secondary">+ Add a question</button>
+    </form>
+
+    <div class="builder-actions">
+      <span id="download-hint" class="hidden" style="align-self:center; font-size:.85rem; color:var(--color-ink-soft)">Downloaded — now add it to your <code>/data</code> folder and list it in <code>data/index.json</code>.</span>
+      <button id="download-btn" class="btn">Download quiz JSON</button>
+    </div>
+  </div>
+</main>
+
+<script src="js/builder.js"></script>
+</body>
+</html>
