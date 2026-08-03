@@ -1,0 +1,40 @@
+{
+  "id": "evidence-practice",
+  "title": "Evidence-Based Reading — The Night Shift",
+  "description": "Practice choosing the sentence that best supports an answer.",
+  "difficulty": "medium",
+  "skill": "evidence_based",
+  "source": "Original content by Study Ledger",
+  "passage": "Maria had worked the night shift at the packing plant for six years. She liked the quiet of it — the hum of the conveyor belts, the empty parking lot, the way the sky turned from black to gray just as her shift ended. Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed. She told her sister it was because night shift paid a premium, but the truth was simpler: she had never learned to sleep well in daylight, not since she was a child.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the best description of Maria's feelings about the night shift?",
+      "options": [
+        { "id": "a", "text": "She resents it but has no other choice." },
+        { "id": "b", "text": "She has grown to prefer it." },
+        { "id": "c", "text": "She is indifferent to it." },
+        { "id": "d", "text": "She is actively trying to leave it." }
+      ],
+      "correct": ["b"],
+      "points": 1,
+      "explanation": "The passage describes her enjoying the quiet and choosing to stay while others leave."
+    },
+    {
+      "id": "q2",
+      "type": "evidence_based",
+      "prompt": "Which sentence from the passage best supports the idea that Maria's real reason for staying isn't about money?",
+      "options": [
+        { "id": "a", "text": "She liked the quiet of it — the hum of the conveyor belts, the empty parking lot..." },
+        { "id": "b", "text": "Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed." },
+        { "id": "c", "text": "She told her sister it was because night shift paid a premium, but the truth was simpler." },
+        { "id": "d", "text": "Maria had worked the night shift at the packing plant for six years." }
+      ],
+      "correct": ["c"],
+      "points": 2,
+      "time": 40,
+      "explanation": "This sentence directly contrasts what she tells others with 'the truth,' signaling the stated reason isn't the real one."
+    }
+  ]
+}

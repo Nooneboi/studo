@@ -3,5 +3,15 @@
     "file": "sample-quiz.json",
     "title": "Sample Quiz — How This Works",
     "description": "A short demo set showing all three question types."
+  },
+  {
+    "file": "evidence-practice.json",
+    "title": "Evidence-Based Reading — The Night Shift",
+    "description": "Practice choosing the sentence that best supports an answer."
+  },
+  {
+    "file": "grammar-practice.json",
+    "title": "Grammar Edit — Sentence Repair",
+    "description": "Practice choosing the correct edit for each underlined section."
   }
 ]

@@ -6,15 +6,16 @@ website only (no commands, no terminal).
 ## What's in this folder
 
 ```
-index.html        Home page
-quiz.html          Practice page (loads quizzes from /data)
-resources.html     Resources page — edit the list directly in this file
-builder.html        Your private quiz-builder tool (don't share this link)
+index.html          Home page
+practice.html         Practice page — sidebar filters + module grid
+module.html            The actual passage -> questions -> explanations flow
+resources.html        Resources page — sidebar filters + list
+builder.html            Your private module-builder tool (don't share this link)
 manifest.json, sw.js  Make the site installable + work offline
-css/style.css       All the styling
-js/                 The code that runs each page
-data/               Quiz JSON files live here + index.json lists them
-icons/              App icons
+css/style.css           All the styling
+js/                          The code that runs each page
+data/                       Module JSON files + index.json (modules) + resources.json (resources)
+icons/                       App icons
 ```
 
 ## Step 1 — Create a free GitHub account
@@ -51,31 +52,41 @@ Don't put this link in anything you share publicly — it has no
 password, it's just "not listed" anywhere. (If you want it fully
 hidden later, we can talk about a simple password gate.)
 
-## How to add a new quiz (do this whenever you want to publish one)
+## How to add a new module (do this whenever you want to publish one)
 1. Open your **Builder** page.
-2. Fill in the quiz title, description, and questions.
+2. Fill in the title, description, difficulty, skill, source credit, and questions.
+   - Question types: multiple choice, evidence-based (options are quoted
+     excerpts), grammar edit (write the sentence with `{{blank}}` where the
+     editable word goes), fill in the blank, open ended, extended response.
 3. Click **Download quiz JSON** — this saves a `.json` file to your
    computer.
 4. Go to your GitHub repo → open the `data` folder → **Add file** →
    **Upload files** → upload that `.json` file.
 5. Open `data/index.json` in the repo (click it, then the pencil/edit
-   icon) and add an entry for your new quiz, e.g.:
+   icon) and add an entry for your new module, e.g.:
    ```json
    {
-     "file": "your-new-quiz.json",
-     "title": "Your Quiz Title",
+     "file": "your-new-module.json",
+     "title": "Your Module Title",
      "description": "One line about it"
    }
    ```
    (Don't forget the comma between entries if there's more than one.)
-6. Commit changes. Give it a minute — the new quiz now shows up on
-   the Practice page for everyone with the link.
+6. Commit changes. Give it a minute — the new module now shows up on
+   the Practice page, filterable by its difficulty and skill.
 
-## How to edit the Home or Resources page text
-Those are plain text inside `index.html` and `resources.html`. Open
-the file in GitHub (pencil icon to edit), change the words between
-the `<p>` and `<h1>` tags, and commit. No code knowledge required
-beyond "don't delete the `<...>` tags."
+## How to add a Resources entry
+Open `data/resources.json` in the repo (pencil icon) and add an entry:
+```json
+{ "kind": "guide", "title": "Your resource title", "url": "https://..." }
+```
+`kind` must be one of: `phrase_bank`, `reading`, `guide`, `book`.
+
+## How to edit the Home page text
+It's plain text inside `index.html`. Open the file in GitHub (pencil
+icon to edit), change the words between the `<p>` and `<h1>` tags,
+and commit. No code knowledge required beyond "don't delete the
+`<...>` tags."
 
 ## What learners can and can't do
 - They **can**: answer questions, change their answers, delete

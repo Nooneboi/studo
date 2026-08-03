@@ -7,18 +7,25 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "study-ledger-v1";
+const CACHE_NAME = "study-ledger-v2";
 const CORE_ASSETS = [
   "index.html",
-  "quiz.html",
+  "practice.html",
+  "module.html",
   "resources.html",
   "manifest.json",
   "css/style.css",
   "js/app.js",
   "js/storage.js",
-  "js/quiz.js",
+  "js/data.js",
+  "js/practice.js",
+  "js/module.js",
+  "js/resources.js",
   "data/index.json",
   "data/sample-quiz.json",
+  "data/evidence-practice.json",
+  "data/grammar-practice.json",
+  "data/resources.json",
 ];
 
 self.addEventListener("install", (event) => {

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Study Ledger — Resources</title>
+<title>Study Ledger — Module</title>
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -24,23 +24,18 @@
 
 <main>
   <div class="wrap">
-    <div class="eyebrow" style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--color-primary-dark); margin-bottom:8px;">Systems</div>
-    <h1>Resources</h1>
-    <p class="lede">The recurring material that backs up the practice sets — phrase banks, reading, and guides. To add one, edit <code>data/resources.json</code> directly on GitHub.</p>
-
-    <div class="layout-with-sidebar" style="margin-top:var(--space-5)">
-      <aside class="sidebar" id="sidebar"></aside>
-      <div class="resource-list" id="resource-list"></div>
-    </div>
+    <div id="module-view"></div>
   </div>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">Study Ledger — built for practice, not for tracking you.</div>
+  <div class="wrap">Tip: select any part of a question's text, then it highlights automatically once you release the mouse.</div>
 </footer>
 
 <script src="js/app.js"></script>
-<script src="js/resources.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/data.js"></script>
+<script src="js/module.js"></script>
 <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));

@@ -15,7 +15,7 @@
     <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Study Ledger</a>
     <nav class="site-nav">
       <a href="index.html">Home</a>
-      <a href="quiz.html">Practice</a>
+      <a href="practice.html">Practice</a>
       <a href="resources.html">Resources</a>
     </nav>
   </div>
@@ -45,6 +45,30 @@
       <div class="field">
         <label>Description</label>
         <input type="text" id="quiz-description" placeholder="One line describing this set">
+      </div>
+      <div class="row-inline">
+        <div class="field">
+          <label>Difficulty</label>
+          <select id="quiz-difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Skill</label>
+          <select id="quiz-skill">
+            <option value="mixed">Mixed</option>
+            <option value="evidence_based">Evidence-based</option>
+            <option value="grammar_edit">Grammar edit</option>
+            <option value="extended_response">Extended response</option>
+            <option value="vocabulary">Vocabulary</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label>Source credit (e.g. "Adapted from ReadWorks" or "Original content by me")</label>
+        <input type="text" id="quiz-source" placeholder="Original content by me">
       </div>
       <div class="field">
         <label>Passage (optional — shown above the questions)</label>

@@ -1,0 +1,41 @@
+{
+  "id": "grammar-practice",
+  "title": "Grammar Edit — Sentence Repair",
+  "description": "Practice choosing the correct edit for each underlined section.",
+  "difficulty": "hard",
+  "skill": "grammar_edit",
+  "source": "Original content by Study Ledger",
+  "passage": "",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "The manager, along with the two new hires, {{blank}} attending the safety training on Monday.",
+      "options": [
+        { "id": "a", "text": "are" },
+        { "id": "b", "text": "is" },
+        { "id": "c", "text": "were" },
+        { "id": "d", "text": "have been" }
+      ],
+      "correct": ["b"],
+      "points": 1,
+      "time": 30,
+      "explanation": "The subject is 'the manager' (singular) — the phrase 'along with the two new hires' doesn't change subject-verb agreement, so the verb stays singular: 'is'."
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Each of the applicants must submit {{blank}} resume by Friday.",
+      "options": [
+        { "id": "a", "text": "their" },
+        { "id": "b", "text": "there" },
+        { "id": "c", "text": "his or her" },
+        { "id": "d", "text": "they're" }
+      ],
+      "correct": ["c"],
+      "points": 1,
+      "time": 30,
+      "explanation": "'Each' is singular, so a singular possessive pronoun is required in formal usage: 'his or her'."
+    }
+  ]
+}

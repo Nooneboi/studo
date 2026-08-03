@@ -45,10 +45,17 @@ function addQuestion(data) {
         <label>Type</label>
         <select class="f-type">
           <option value="multiple_choice">Multiple choice</option>
+          <option value="evidence_based">Evidence-based (quote options)</option>
+          <option value="grammar_edit">Grammar edit (sentence + blank)</option>
           <option value="fill_blank">Fill in the blank</option>
           <option value="open_ended">Open ended</option>
+          <option value="extended_response">Extended response</option>
         </select>
       </div>
+    </div>
+
+    <div class="field grammar-hint hidden">
+      <span style="font-size:.8rem;color:var(--color-ink-faint)">Type <code>{{blank}}</code> where the editable word/phrase belongs in the sentence.</span>
     </div>
 
     <div class="options-editor"></div>
@@ -82,10 +89,13 @@ function addQuestion(data) {
   const typeSelect = wrapper.querySelector(".f-type");
   const optionsEditor = wrapper.querySelector(".options-editor");
   const fillAnswerField = wrapper.querySelector(".fill-answer-field");
+  const grammarHint = wrapper.querySelector(".grammar-hint");
+  const MC_LIKE = ["multiple_choice", "evidence_based", "grammar_edit"];
 
   function renderOptionsEditor() {
     const type = typeSelect.value;
-    if (type === "multiple_choice") {
+    grammarHint.classList.toggle("hidden", type !== "grammar_edit");
+    if (MC_LIKE.includes(type)) {
       fillAnswerField.classList.add("hidden");
       const opts = data?.options || [
         { id: "a", text: "" },
@@ -94,7 +104,7 @@ function addQuestion(data) {
         { id: "d", text: "" },
       ];
       optionsEditor.innerHTML =
-        `<label>Answer options — check the correct one(s)</label>` +
+        `<label>Answer options — check the correct one</label>` +
         opts
           .map(
             (o) => `
@@ -131,6 +141,9 @@ function collectQuiz() {
     id: document.getElementById("quiz-id").value.trim() || `quiz-${Date.now()}`,
     title: document.getElementById("quiz-title").value.trim() || "Untitled quiz",
     description: document.getElementById("quiz-description").value.trim(),
+    difficulty: document.getElementById("quiz-difficulty").value,
+    skill: document.getElementById("quiz-skill").value,
+    source: document.getElementById("quiz-source").value.trim() || "Original content by me",
     passage: document.getElementById("quiz-passage").value.trim(),
     questions: [],
   };
@@ -147,7 +160,7 @@ function collectQuiz() {
     const timeVal = wrapper.querySelector(".f-time").value;
     if (timeVal) q.time = Number(timeVal);
 
-    if (type === "multiple_choice") {
+    if (["multiple_choice", "evidence_based", "grammar_edit"].includes(type)) {
       const opts = [];
       const correct = [];
       wrapper.querySelectorAll(".f-opt-text").forEach((input) => {
@@ -190,6 +203,9 @@ function handleLoadFile(e) {
       document.getElementById("quiz-id").value = quiz.id || "";
       document.getElementById("quiz-title").value = quiz.title || "";
       document.getElementById("quiz-description").value = quiz.description || "";
+      document.getElementById("quiz-difficulty").value = quiz.difficulty || "easy";
+      document.getElementById("quiz-skill").value = quiz.skill || "mixed";
+      document.getElementById("quiz-source").value = quiz.source || "";
       document.getElementById("quiz-passage").value = quiz.passage || "";
       questionsWrap.innerHTML = "";
       (quiz.questions || []).forEach((q) => addQuestion(q));

@@ -586,3 +586,76 @@ mark.hl {
   color: var(--color-ink-faint);
 }
 .hidden { display: none !important; }
+
+/* ==========================================================================
+   SIDEBAR LAYOUT (Practice + Resources)
+   ========================================================================== */
+.layout-with-sidebar {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .layout-with-sidebar { grid-template-columns: 1fr; }
+}
+.sidebar {
+  position: sticky;
+  top: 88px;
+}
+@media (max-width: 800px) {
+  .sidebar { position: static; display: flex; gap: var(--space-4); flex-wrap: wrap; }
+}
+.sidebar-group { margin-bottom: var(--space-4); }
+.sidebar-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-faint);
+  margin-bottom: var(--space-2);
+}
+.sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--color-ink-soft);
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-body);
+}
+.sidebar-link:hover { background: var(--color-primary-soft); color: var(--color-ink); }
+.sidebar-link.active { background: var(--color-primary); color: #fff; }
+.sidebar-link .count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+/* ==========================================================================
+   MODULE PLAYER extras: grammar-edit blanks, evidence quotes, source credit
+   ========================================================================== */
+.grammar-blank {
+  display: inline-block;
+  background: var(--color-accent-soft);
+  border-bottom: 2px dashed var(--color-accent);
+  border-radius: 4px;
+  padding: 0 8px;
+  color: #6B5116;
+  font-weight: 600;
+}
+.option-btn.evidence-option { font-style: italic; }
+.source-credit {
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+}
+.difficulty-pill { text-transform: capitalize; }
