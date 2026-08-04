@@ -16,6 +16,7 @@
     <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="practice.html">Practice</a>
+      <a href="quiz.html">Quiz</a>
       <a href="resources.html">Resources</a>
     </nav>
   </div>
@@ -48,6 +49,15 @@
       </div>
       <div class="row-inline">
         <div class="field">
+          <label>Subject</label>
+          <select id="quiz-subject">
+            <option value="rla">Reasoning Through Language Arts</option>
+            <option value="math" disabled>Mathematical Reasoning (coming soon)</option>
+            <option value="science" disabled>Science (coming soon)</option>
+            <option value="social_studies" disabled>Social Studies (coming soon)</option>
+          </select>
+        </div>
+        <div class="field">
           <label>Difficulty</label>
           <select id="quiz-difficulty">
             <option value="easy">Easy</option>
@@ -55,15 +65,19 @@
             <option value="hard">Hard</option>
           </select>
         </div>
+      </div>
+      <div class="row-inline">
         <div class="field">
-          <label>Skill</label>
-          <select id="quiz-skill">
-            <option value="mixed">Mixed</option>
-            <option value="evidence_based">Evidence-based</option>
-            <option value="grammar_edit">Grammar edit</option>
-            <option value="extended_response">Extended response</option>
-            <option value="vocabulary">Vocabulary</option>
+          <label>Skill area (category)</label>
+          <select id="quiz-category">
+            <option value="reading">Reading</option>
+            <option value="writing">Writing and Analysis</option>
+            <option value="language_conventions">Language Conventions</option>
           </select>
+        </div>
+        <div class="field">
+          <label>Topic (sub-title within the skill area)</label>
+          <input type="text" id="quiz-topic" placeholder="e.g. Main Idea & Details">
         </div>
       </div>
       <div class="field">

@@ -7,8 +7,10 @@ website only (no commands, no terminal).
 
 ```
 index.html          Home page
-practice.html         Practice page — sidebar filters + module grid
-module.html            The actual passage -> questions -> explanations flow
+practice.html         Practice page — untimed drills, sidebar filters + module grid
+module.html            The passage -> questions -> explanations flow (untimed)
+quiz.html              Quiz page — pick a skill area or full test
+test.html               The timed test runner (one countdown, submit for results)
 resources.html        Resources page — sidebar filters + list
 builder.html            Your private module-builder tool (don't share this link)
 manifest.json, sw.js  Make the site installable + work offline
@@ -17,6 +19,14 @@ js/                          The code that runs each page
 data/                       Module JSON files + index.json (modules) + resources.json (resources)
 icons/                       App icons
 ```
+
+## Subjects
+The subject bar under the header (Mathematical Reasoning / Science /
+Social Studies / Reasoning Through Language Arts) is site-wide. Only
+RLA is live — the other three show a "Soon" pill and aren't
+clickable. To turn one on later, open `js/subjectbar.js` and flip its
+`enabled` flag to `true`, then start adding modules with that
+`subject` value.
 
 ## Step 1 — Create a free GitHub account
 Go to github.com → Sign up → confirm your email. That's it, no payment info needed.
@@ -54,10 +64,16 @@ hidden later, we can talk about a simple password gate.)
 
 ## How to add a new module (do this whenever you want to publish one)
 1. Open your **Builder** page.
-2. Fill in the title, description, difficulty, skill, source credit, and questions.
-   - Question types: multiple choice, evidence-based (options are quoted
-     excerpts), grammar edit (write the sentence with `{{blank}}` where the
-     editable word goes), fill in the blank, open ended, extended response.
+2. Fill in the title, description, subject, skill area (category),
+   topic, difficulty, source credit, and questions.
+   - Skill area maps to the Practice sidebar: Reading, Writing and
+     Analysis, or Language Conventions. Topic is the sub-heading
+     within it (e.g. "Main Idea & Details") — modules sharing a topic
+     get grouped together, sorted by difficulty.
+   - Question types: multiple choice, evidence-based (options are
+     quoted excerpts), grammar edit (write the sentence with
+     `{{blank}}` where the editable word goes), fill in the blank,
+     open ended, extended response.
 3. Click **Download quiz JSON** — this saves a `.json` file to your
    computer.
 4. Go to your GitHub repo → open the `data` folder → **Add file** →
@@ -73,7 +89,8 @@ hidden later, we can talk about a simple password gate.)
    ```
    (Don't forget the comma between entries if there's more than one.)
 6. Commit changes. Give it a minute — the new module now shows up on
-   the Practice page, filterable by its difficulty and skill.
+   both the Practice page (under its skill area/topic) and the Quiz
+   page (folded into that skill area's timed test).
 
 ## How to add a Resources entry
 Open `data/resources.json` in the repo (pencil icon) and add an entry:

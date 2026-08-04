@@ -141,8 +141,10 @@ function collectQuiz() {
     id: document.getElementById("quiz-id").value.trim() || `quiz-${Date.now()}`,
     title: document.getElementById("quiz-title").value.trim() || "Untitled quiz",
     description: document.getElementById("quiz-description").value.trim(),
+    subject: document.getElementById("quiz-subject").value,
+    category: document.getElementById("quiz-category").value,
+    topic: document.getElementById("quiz-topic").value.trim() || "General",
     difficulty: document.getElementById("quiz-difficulty").value,
-    skill: document.getElementById("quiz-skill").value,
     source: document.getElementById("quiz-source").value.trim() || "Original content by me",
     passage: document.getElementById("quiz-passage").value.trim(),
     questions: [],
@@ -203,8 +205,10 @@ function handleLoadFile(e) {
       document.getElementById("quiz-id").value = quiz.id || "";
       document.getElementById("quiz-title").value = quiz.title || "";
       document.getElementById("quiz-description").value = quiz.description || "";
+      document.getElementById("quiz-subject").value = quiz.subject || "rla";
+      document.getElementById("quiz-category").value = quiz.category || "reading";
+      document.getElementById("quiz-topic").value = quiz.topic || "";
       document.getElementById("quiz-difficulty").value = quiz.difficulty || "easy";
-      document.getElementById("quiz-skill").value = quiz.skill || "mixed";
       document.getElementById("quiz-source").value = quiz.source || "";
       document.getElementById("quiz-passage").value = quiz.passage || "";
       questionsWrap.innerHTML = "";

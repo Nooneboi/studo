@@ -1,0 +1,34 @@
+{
+  "id": "writing-practice",
+  "title": "Organizing an Argument",
+  "description": "Practice identifying strong evidence and structuring a short response.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Organizing Ideas",
+  "difficulty": "easy",
+  "source": "Original content by Study Ledger",
+  "passage": "Some city council members argue that the downtown library should extend its hours to include Sunday openings, citing rising weekend foot traffic downtown and requests from working families who can't visit on weekdays. Others argue that Sunday hours would strain an already tight budget and that usage data doesn't yet justify the cost.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which piece of evidence would most strengthen the case FOR Sunday hours?",
+      "options": [
+        { "id": "a", "text": "A survey showing 40% of working families can only visit on weekends." },
+        { "id": "b", "text": "A description of the library's current Tuesday hours." },
+        { "id": "c", "text": "The library director's opinion on staffing preferences." },
+        { "id": "d", "text": "The number of books currently in the library's catalog." }
+      ],
+      "correct": ["a"],
+      "points": 1,
+      "explanation": "Direct evidence of unmet need from the target group (working families) most directly supports the argument for Sunday hours."
+    },
+    {
+      "id": "q2",
+      "type": "extended_response",
+      "prompt": "In 3-5 sentences, write a short paragraph arguing for ONE side of this debate, using at least one piece of evidence from the passage.",
+      "points": 3,
+      "explanation": "Not auto-graded — check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review."
+    }
+  ]
+}

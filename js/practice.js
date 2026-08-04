@@ -1,38 +1,52 @@
 /*
   practice.js
   -----------
-  Runs the Practice page (practice.html):
-   1. Loads every quiz/module's metadata (difficulty, skill, source).
-   2. Builds a sidebar with difficulty and skill filters, each showing
-      a count.
-   3. Renders the filtered module grid as colored cards (reused from
-      the original design), each linking to module.html.
+  Runs the Practice page (practice.html): untimed skill drills.
+
+   1. Reads ?subject= from the URL (falls back to the last chosen
+      subject, then "rla"). Only RLA has content right now — other
+      subjects show a "coming soon" state.
+   2. Loads every RLA module's metadata and groups it into a sidebar
+      tree: category (Reading / Writing and Analysis / Language
+      Conventions) -> topic, plus a difficulty quick-filter.
+   3. Renders the filtered module grid as colored cards linking to
+      module.html.
 */
 
+const CATEGORIES = [
+  { id: "reading", label: "Reading" },
+  { id: "writing", label: "Writing and Analysis" },
+  { id: "language_conventions", label: "Language Conventions" },
+];
 const DIFFICULTIES = [
   { id: "easy", label: "Easy" },
   { id: "medium", label: "Medium" },
   { id: "hard", label: "Hard" },
 ];
-const SKILLS = [
-  { id: "evidence_based", label: "Evidence-based" },
-  { id: "grammar_edit", label: "Grammar edit" },
-  { id: "extended_response", label: "Extended response" },
-  { id: "vocabulary", label: "Vocabulary" },
-  { id: "mixed", label: "Mixed" },
-];
 const HUES = ["teal", "amber", "coral", "plum"];
 
 let allModules = [];
 let activeDifficulty = "all";
-let activeSkill = "all";
+let activeCategory = "all";
+let activeTopic = null;
 
 init();
 
 async function init() {
+  const params = new URLSearchParams(window.location.search);
+  const subject = params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
+
+  const sidebar = document.getElementById("sidebar");
   const listEl = document.getElementById("quiz-list");
+
+  if (subject !== "rla") {
+    sidebar.innerHTML = `<div class="sidebar-group"><div class="sidebar-group-title">Subject</div><p style="font-size:.85rem;color:var(--color-ink-faint)">This subject is coming soon.</p></div>`;
+    listEl.innerHTML = `<div class="empty-state">This subject isn't built out yet — check back soon, or switch to Reasoning Through Language Arts above.</div>`;
+    return;
+  }
+
   try {
-    allModules = await Data.loadAllQuizzes();
+    allModules = (await Data.loadAllQuizzes()).filter((m) => (m.subject || "rla") === "rla");
   } catch (e) {
     listEl.innerHTML = `<p>Couldn't load modules. Make sure data/index.json exists.</p>`;
     return;
@@ -43,53 +57,75 @@ async function init() {
 
 function renderSidebar() {
   const sidebar = document.getElementById("sidebar");
-
   const difficultyCounts = countBy(allModules, "difficulty");
-  const skillCounts = countBy(allModules, "skill");
+
+  const categoryTree = CATEGORIES.map((cat) => {
+    const inCategory = allModules.filter((m) => (m.category || "reading") === cat.id);
+    const topics = [...new Set(inCategory.map((m) => m.topic || "General"))];
+    const isCatActive = activeCategory === cat.id && !activeTopic;
+
+    return `
+      <div class="sidebar-tree-group">
+        ${link({ label: cat.label, count: inCategory.length, isActive: isCatActive, onCategory: cat.id })}
+        <div class="sidebar-tree-children">
+          ${topics
+            .map((topic) => {
+              const count = inCategory.filter((m) => (m.topic || "General") === topic).length;
+              const isActive = activeCategory === cat.id && activeTopic === topic;
+              return link({ label: topic, count, isActive, onCategory: cat.id, onTopic: topic, sub: true });
+            })
+            .join("")}
+        </div>
+      </div>`;
+  }).join("");
 
   sidebar.innerHTML = `
     <div class="sidebar-group">
       <div class="sidebar-group-title">Difficulty</div>
-      ${sidebarLink("diff", "all", "All", allModules.length, activeDifficulty === "all")}
-      ${DIFFICULTIES.map((d) =>
-        sidebarLink("diff", d.id, d.label, difficultyCounts[d.id] || 0, activeDifficulty === d.id)
-      ).join("")}
+      ${diffLink("all", "All", allModules.length)}
+      ${DIFFICULTIES.map((d) => diffLink(d.id, d.label, difficultyCounts[d.id] || 0)).join("")}
     </div>
     <div class="sidebar-group">
-      <div class="sidebar-group-title">Skill</div>
-      ${sidebarLink("skill", "all", "All", allModules.length, activeSkill === "all")}
-      ${SKILLS.map((s) =>
-        sidebarLink("skill", s.id, s.label, skillCounts[s.id] || 0, activeSkill === s.id)
-      ).join("")}
+      <div class="sidebar-group-title">Skill area</div>
+      ${link({ label: "All", count: allModules.length, isActive: activeCategory === "all" })}
+      ${categoryTree}
     </div>
   `;
 
-  sidebar.querySelectorAll(".sidebar-link[data-diff]").forEach((btn) => {
+  sidebar.querySelectorAll("[data-cat]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeCategory = btn.dataset.cat;
+      activeTopic = btn.dataset.topic || null;
+      renderSidebar();
+      renderGrid();
+    });
+  });
+  sidebar.querySelectorAll("[data-diff]").forEach((btn) => {
     btn.addEventListener("click", () => {
       activeDifficulty = btn.dataset.diff;
       renderSidebar();
       renderGrid();
     });
   });
-  sidebar.querySelectorAll(".sidebar-link[data-skill]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      activeSkill = btn.dataset.skill;
-      renderSidebar();
-      renderGrid();
-    });
-  });
-}
 
-function sidebarLink(type, value, label, count, isActive) {
-  return `<button class="sidebar-link ${isActive ? "active" : ""}" data-${type}="${value}">
-    <span>${label}</span><span class="count">${count}</span>
-  </button>`;
+  function diffLink(id, label, count) {
+    return `<button class="sidebar-link ${activeDifficulty === id ? "active" : ""}" data-diff="${id}">
+      <span>${label}</span><span class="count">${count}</span>
+    </button>`;
+  }
+  function link({ label, count, isActive, onCategory, onTopic, sub }) {
+    const catAttr = onCategory !== undefined ? `data-cat="${onCategory}"` : `data-cat="all"`;
+    const topicAttr = onTopic ? `data-topic="${escapeAttr(onTopic)}"` : "";
+    return `<button class="sidebar-link ${sub ? "sidebar-subitem" : ""} ${isActive ? "active" : ""}" ${catAttr} ${topicAttr}>
+      <span>${escapeHtml(label)}</span><span class="count">${count}</span>
+    </button>`;
+  }
 }
 
 function countBy(modules, field) {
   const counts = {};
   modules.forEach((m) => {
-    const key = m[field] || "mixed";
+    const key = m[field] || "easy";
     counts[key] = (counts[key] || 0) + 1;
   });
   return counts;
@@ -100,8 +136,9 @@ function renderGrid() {
 
   const filtered = allModules.filter((m) => {
     const diffOk = activeDifficulty === "all" || m.difficulty === activeDifficulty;
-    const skillOk = activeSkill === "all" || m.skill === activeSkill;
-    return diffOk && skillOk;
+    const catOk = activeCategory === "all" || (m.category || "reading") === activeCategory;
+    const topicOk = !activeTopic || (m.topic || "General") === activeTopic;
+    return diffOk && catOk && topicOk;
   });
 
   if (!filtered.length) {
@@ -117,7 +154,7 @@ function renderGrid() {
       const quizId = m.file.replace(/\.json$/, "");
       const hasProgress = Object.keys(Store.getAnswers(quizId)).length > 0;
       const hue = HUES[i % HUES.length];
-      const skillLabel = SKILLS.find((s) => s.id === m.skill)?.label;
+      const catLabel = CATEGORIES.find((c) => c.id === m.category)?.label;
 
       return `
         <div class="quiz-card hue-${hue}">
@@ -126,7 +163,7 @@ function renderGrid() {
           <p class="desc">${escapeHtml(m.description || "")}</p>
           <div class="meta-row">
             ${m.difficulty ? `<span class="tag difficulty-pill">${escapeHtml(m.difficulty)}</span>` : ""}
-            ${skillLabel ? `<span class="tag">${escapeHtml(skillLabel)}</span>` : ""}
+            ${catLabel ? `<span class="tag">${escapeHtml(catLabel)}</span>` : ""}
             <span class="tag">${questionCount} q &middot; ~${minutes} min</span>
             ${hasProgress ? `<span class="tag">In progress</span>` : ""}
           </div>
@@ -142,4 +179,7 @@ function escapeHtml(str) {
   const div = document.createElement("div");
   div.textContent = str ?? "";
   return div.innerHTML;
+}
+function escapeAttr(str) {
+  return escapeHtml(str).replace(/"/g, "&quot;");
 }
