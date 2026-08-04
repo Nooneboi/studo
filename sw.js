@@ -7,10 +7,11 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "study-ledger-v3";
+const CACHE_NAME = "study-ledger-v4";
 const CORE_ASSETS = [
   "index.html",
   "practice.html",
+  "category.html",
   "module.html",
   "quiz.html",
   "test.html",
@@ -22,6 +23,7 @@ const CORE_ASSETS = [
   "js/storage.js",
   "js/data.js",
   "js/practice.js",
+  "js/category.js",
   "js/module.js",
   "js/quiz.js",
   "js/test.js",
