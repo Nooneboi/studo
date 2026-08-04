@@ -23,11 +23,11 @@ async function init() {
   const params = new URLSearchParams(window.location.search);
   const subject = params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
 
-  const sidebar = document.getElementById("sidebar");
+  const filterBar = document.getElementById("filter-bar");
   const listEl = document.getElementById("test-list");
 
   if (subject !== "rla") {
-    sidebar.innerHTML = `<div class="sidebar-group"><div class="sidebar-group-title">Subject</div><p style="font-size:.85rem;color:var(--color-ink-faint)">This subject is coming soon.</p></div>`;
+    filterBar.innerHTML = "";
     listEl.innerHTML = `<div class="empty-state">This subject isn't built out yet — check back soon, or switch to Reasoning Through Language Arts above.</div>`;
     return;
   }
@@ -38,33 +38,33 @@ async function init() {
     listEl.innerHTML = `<p>Couldn't load modules.</p>`;
     return;
   }
-  renderSidebar();
+  renderFilterBar();
   renderList();
 }
 
-function renderSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  sidebar.innerHTML = `
-    <div class="sidebar-group">
-      <div class="sidebar-group-title">Test type</div>
-      ${link("all", "Full RLA Test")}
-      ${CATEGORIES.map((c) => link(c.id, c.label)).join("")}
+function renderFilterBar() {
+  const filterBar = document.getElementById("filter-bar");
+  filterBar.innerHTML = `
+    <div class="filter-bar">
+      <div class="filter-group">
+        <div class="filter-group-title">Test type</div>
+        <div class="filter-chips">
+          ${chip("all", "Full RLA Test")}
+          ${CATEGORIES.map((c) => chip(c.id, c.label)).join("")}
+        </div>
+      </div>
     </div>
   `;
-  sidebar.querySelectorAll("[data-cat]").forEach((btn) => {
+  filterBar.querySelectorAll("[data-cat]").forEach((btn) => {
     btn.addEventListener("click", () => {
       activeCategory = btn.dataset.cat;
-      renderSidebar();
+      renderFilterBar();
       renderList();
     });
   });
 
-  function link(id, label) {
-    const count =
-      id === "all" ? allModules.length : allModules.filter((m) => (m.category || "reading") === id).length;
-    return `<button class="sidebar-link ${activeCategory === id ? "active" : ""}" data-cat="${id}">
-      <span>${label}</span><span class="count">${count}</span>
-    </button>`;
+  function chip(id, label) {
+    return `<button class="filter-chip ${activeCategory === id ? "active" : ""}" data-cat="${id}">${escapeHtml(label)}</button>`;
   }
 }
 

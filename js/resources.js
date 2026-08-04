@@ -27,35 +27,33 @@ async function init() {
     listEl.innerHTML = `<p>Couldn't load resources. Make sure data/resources.json exists.</p>`;
     return;
   }
-  renderSidebar();
+  renderFilterBar();
   renderList();
 }
 
-function renderSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  const counts = {};
-  allResources.forEach((r) => (counts[r.kind] = (counts[r.kind] || 0) + 1));
-
-  sidebar.innerHTML = `
-    <div class="sidebar-group">
-      <div class="sidebar-group-title">Category</div>
-      ${link("all", "All", allResources.length, activeKind === "all")}
-      ${KINDS.map((k) => link(k.id, k.label, counts[k.id] || 0, activeKind === k.id)).join("")}
+function renderFilterBar() {
+  const filterBar = document.getElementById("filter-bar");
+  filterBar.innerHTML = `
+    <div class="filter-bar">
+      <div class="filter-group">
+        <div class="filter-group-title">Category</div>
+        <div class="filter-chips">
+          ${chip("all", "All")}
+          ${KINDS.map((k) => chip(k.id, k.label)).join("")}
+        </div>
+      </div>
     </div>
   `;
-
-  sidebar.querySelectorAll(".sidebar-link").forEach((btn) => {
+  filterBar.querySelectorAll("[data-kind]").forEach((btn) => {
     btn.addEventListener("click", () => {
       activeKind = btn.dataset.kind;
-      renderSidebar();
+      renderFilterBar();
       renderList();
     });
   });
 
-  function link(id, label, count, isActive) {
-    return `<button class="sidebar-link ${isActive ? "active" : ""}" data-kind="${id}">
-      <span>${label}</span><span class="count">${count}</span>
-    </button>`;
+  function chip(id, label) {
+    return `<button class="filter-chip ${activeKind === id ? "active" : ""}" data-kind="${id}">${label}</button>`;
   }
 }
 

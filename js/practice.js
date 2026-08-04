@@ -3,14 +3,11 @@
   -----------
   Runs the Practice page (practice.html): untimed skill drills.
 
-   1. Reads ?subject= from the URL (falls back to the last chosen
-      subject, then "rla"). Only RLA has content right now — other
-      subjects show a "coming soon" state.
-   2. Loads every RLA module's metadata and groups it into a sidebar
-      tree: category (Reading / Writing and Analysis / Language
-      Conventions) -> topic, plus a difficulty quick-filter.
-   3. Renders the filtered module grid as colored cards linking to
-      module.html.
+   1. Reads ?subject= from the URL. Only RLA has content right now.
+   2. Loads every RLA module's metadata.
+   3. Renders a horizontal filter bar (Difficulty on the left, Skill
+      area on the right — with topics as a second row once a skill
+      area is picked), then the filtered module grid below it.
 */
 
 const CATEGORIES = [
@@ -36,11 +33,11 @@ async function init() {
   const params = new URLSearchParams(window.location.search);
   const subject = params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
 
-  const sidebar = document.getElementById("sidebar");
+  const filterBar = document.getElementById("filter-bar");
   const listEl = document.getElementById("quiz-list");
 
   if (subject !== "rla") {
-    sidebar.innerHTML = `<div class="sidebar-group"><div class="sidebar-group-title">Subject</div><p style="font-size:.85rem;color:var(--color-ink-faint)">This subject is coming soon.</p></div>`;
+    filterBar.innerHTML = "";
     listEl.innerHTML = `<div class="empty-state">This subject isn't built out yet — check back soon, or switch to Reasoning Through Language Arts above.</div>`;
     return;
   }
@@ -51,84 +48,71 @@ async function init() {
     listEl.innerHTML = `<p>Couldn't load modules. Make sure data/index.json exists.</p>`;
     return;
   }
-  renderSidebar();
+  renderFilterBar();
   renderGrid();
 }
 
-function renderSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  const difficultyCounts = countBy(allModules, "difficulty");
+function renderFilterBar() {
+  const filterBar = document.getElementById("filter-bar");
+  const topicsForActiveCategory =
+    activeCategory !== "all"
+      ? [...new Set(allModules.filter((m) => (m.category || "reading") === activeCategory).map((m) => m.topic || "General"))]
+      : [];
 
-  const categoryTree = CATEGORIES.map((cat) => {
-    const inCategory = allModules.filter((m) => (m.category || "reading") === cat.id);
-    const topics = [...new Set(inCategory.map((m) => m.topic || "General"))];
-    const isCatActive = activeCategory === cat.id && !activeTopic;
-
-    return `
-      <div class="sidebar-tree-group">
-        ${link({ label: cat.label, count: inCategory.length, isActive: isCatActive, onCategory: cat.id })}
-        <div class="sidebar-tree-children">
-          ${topics
-            .map((topic) => {
-              const count = inCategory.filter((m) => (m.topic || "General") === topic).length;
-              const isActive = activeCategory === cat.id && activeTopic === topic;
-              return link({ label: topic, count, isActive, onCategory: cat.id, onTopic: topic, sub: true });
-            })
-            .join("")}
+  filterBar.innerHTML = `
+    <div class="filter-bar">
+      <div class="filter-group">
+        <div class="filter-group-title">Difficulty</div>
+        <div class="filter-chips">
+          ${chip("diff", "all", "All", activeDifficulty === "all")}
+          ${DIFFICULTIES.map((d) => chip("diff", d.id, d.label, activeDifficulty === d.id)).join("")}
         </div>
-      </div>`;
-  }).join("");
-
-  sidebar.innerHTML = `
-    <div class="sidebar-group">
-      <div class="sidebar-group-title">Difficulty</div>
-      ${diffLink("all", "All", allModules.length)}
-      ${DIFFICULTIES.map((d) => diffLink(d.id, d.label, difficultyCounts[d.id] || 0)).join("")}
-    </div>
-    <div class="sidebar-group">
-      <div class="sidebar-group-title">Skill area</div>
-      ${link({ label: "All", count: allModules.length, isActive: activeCategory === "all" })}
-      ${categoryTree}
+      </div>
+      <div class="filter-group">
+        <div class="filter-group-title">Skill area</div>
+        <div class="filter-chips">
+          ${chip("cat", "all", "All", activeCategory === "all")}
+          ${CATEGORIES.map((c) => chip("cat", c.id, c.label, activeCategory === c.id)).join("")}
+        </div>
+        ${
+          topicsForActiveCategory.length
+            ? `<div class="filter-chips sub-row">
+                ${topicsForActiveCategory
+                  .map((t) => `<button class="filter-chip sub ${activeTopic === t ? "active" : ""}" data-topic="${escapeAttr(t)}">${escapeHtml(t)}</button>`)
+                  .join("")}
+              </div>`
+            : ""
+        }
+      </div>
     </div>
   `;
 
-  sidebar.querySelectorAll("[data-cat]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      activeCategory = btn.dataset.cat;
-      activeTopic = btn.dataset.topic || null;
-      renderSidebar();
-      renderGrid();
-    });
-  });
-  sidebar.querySelectorAll("[data-diff]").forEach((btn) => {
+  filterBar.querySelectorAll("[data-diff]").forEach((btn) => {
     btn.addEventListener("click", () => {
       activeDifficulty = btn.dataset.diff;
-      renderSidebar();
+      renderFilterBar();
+      renderGrid();
+    });
+  });
+  filterBar.querySelectorAll("[data-cat]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeCategory = btn.dataset.cat;
+      activeTopic = null;
+      renderFilterBar();
+      renderGrid();
+    });
+  });
+  filterBar.querySelectorAll("[data-topic]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeTopic = activeTopic === btn.dataset.topic ? null : btn.dataset.topic;
+      renderFilterBar();
       renderGrid();
     });
   });
 
-  function diffLink(id, label, count) {
-    return `<button class="sidebar-link ${activeDifficulty === id ? "active" : ""}" data-diff="${id}">
-      <span>${label}</span><span class="count">${count}</span>
-    </button>`;
+  function chip(type, value, label, isActive) {
+    return `<button class="filter-chip ${isActive ? "active" : ""}" data-${type}="${value}">${escapeHtml(label)}</button>`;
   }
-  function link({ label, count, isActive, onCategory, onTopic, sub }) {
-    const catAttr = onCategory !== undefined ? `data-cat="${onCategory}"` : `data-cat="all"`;
-    const topicAttr = onTopic ? `data-topic="${escapeAttr(onTopic)}"` : "";
-    return `<button class="sidebar-link ${sub ? "sidebar-subitem" : ""} ${isActive ? "active" : ""}" ${catAttr} ${topicAttr}>
-      <span>${escapeHtml(label)}</span><span class="count">${count}</span>
-    </button>`;
-  }
-}
-
-function countBy(modules, field) {
-  const counts = {};
-  modules.forEach((m) => {
-    const key = m[field] || "easy";
-    counts[key] = (counts[key] || 0) + 1;
-  });
-  return counts;
 }
 
 function renderGrid() {
