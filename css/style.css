@@ -13,7 +13,7 @@
   --color-primary-soft:#E4EEEA;
   --color-accent:      #D9A441;
   --color-accent-soft: #FBF0D9;
-  --color-alert:       #C4574B;
+  --color-alert:       #A8443A;
   --color-alert-soft:  #F8E7E4;
   --color-plum:        #6B5CA5;
   --color-plum-soft:   #EDEAF6;
@@ -189,7 +189,7 @@ main { padding: var(--space-6) 0; }
 }
 .btn.ghost:hover { border-color: var(--color-ink-soft); color: var(--color-ink); }
 .btn.danger { background: var(--color-alert); border-color: var(--color-alert); }
-.btn.danger:hover { background: #a8443a; border-color: #a8443a; }
+.btn.danger:hover { background: #863530; border-color: #863530; }
 .btn.small { padding: var(--space-1) var(--space-3); font-size: 0.82rem; }
 .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
 
@@ -366,6 +366,26 @@ main { padding: var(--space-6) 0; }
 .quiz-card.hue-plum { background: var(--color-plum-soft); }
 .quiz-card.hue-plum .emblem { background: var(--color-plum); }
 .quiz-card.hue-plum .meta-row .tag { color: var(--color-plum); }
+
+/* Plain test cards (Quiz page) — deliberately monochromatic. Adult
+   learners respond better to minimal, consistent color than to
+   decorative variety; the only color here is functional (the accent
+   line), not used to differentiate one card from another. */
+.test-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s ease;
+}
+.test-card:hover { box-shadow: 0 6px 16px rgba(27, 37, 64, 0.06); }
+.test-card h3 { margin-bottom: 4px; font-size: 1.1rem; }
+.test-card .desc { font-size: 0.88rem; color: var(--color-ink-soft); margin-bottom: var(--space-3); flex-grow: 1; }
+.test-card .meta-row { margin-bottom: var(--space-3); }
+.test-card .cta-row { display: flex; justify-content: flex-end; }
 
 .toolbar {
   display: flex;
@@ -642,12 +662,22 @@ mark.hl {
   color: #6B5116;
   font-weight: 600;
 }
-.option-btn.evidence-option { font-style: italic; }
+.option-btn.evidence-option {
+  border-left: 3px solid var(--color-primary);
+  padding-left: calc(var(--space-3) - 3px);
+}
 .source-credit {
   margin-top: var(--space-3);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--color-ink-faint);
+}
+/* Long-form passages get extra line-height and slightly larger text —
+   research consistently ties generous line-height to reading ease,
+   regardless of which typeface is used. */
+.passage-text {
+  line-height: 1.75;
+  font-size: 1.02rem;
 }
 .difficulty-pill { text-transform: capitalize; }
 

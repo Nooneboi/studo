@@ -12,7 +12,6 @@ const CATEGORIES = [
   { id: "writing", label: "Writing and Analysis" },
   { id: "language_conventions", label: "Language Conventions" },
 ];
-const HUES = { reading: "teal", writing: "amber", language_conventions: "coral", full: "plum" };
 
 let allModules = [];
 let activeCategory = "all";
@@ -88,11 +87,9 @@ function renderList() {
         0
       );
       const minutes = Math.max(1, Math.round(totalSeconds / 60));
-      const hue = HUES[g.id] || "teal";
 
       return `
-        <div class="quiz-card hue-${hue}">
-          <div class="emblem">&#9670;</div>
+        <div class="test-card">
           <h3>${escapeHtml(g.label)} Test</h3>
           <p class="desc">A timed simulation pulling every question from this ${
             g.id === "all" ? "subject" : "skill area"

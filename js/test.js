@@ -98,7 +98,7 @@ function renderSections() {
     wrap.style.marginBottom = "var(--space-4)";
 
     const passageHtml = section.module.passage
-      ? `<div style="margin-bottom:var(--space-3)"><h3>Passage</h3><p>${escapeHtml(section.module.passage)}</p></div>`
+      ? `<div style="margin-bottom:var(--space-3)"><h3>Passage</h3><p class="passage-text">${escapeHtml(section.module.passage)}</p></div>`
       : "";
 
     wrap.innerHTML = `<h3 style="margin-bottom:4px">${escapeHtml(section.module.title)}</h3>${passageHtml}`;

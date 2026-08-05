@@ -51,7 +51,7 @@ function render() {
   const highlights = Store.getHighlights(currentQuiz.id);
 
   const passageHtml = currentQuiz.passage
-    ? `<div class="card" style="margin-bottom:var(--space-4)"><h3>Passage</h3><p>${escapeHtml(currentQuiz.passage)}</p></div>`
+    ? `<div class="card" style="margin-bottom:var(--space-4)"><h3>Passage</h3><p class="passage-text">${escapeHtml(currentQuiz.passage)}</p></div>`
     : "";
 
   const sourceHtml = currentQuiz.source
