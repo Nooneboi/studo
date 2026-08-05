@@ -216,49 +216,30 @@ main { padding: var(--space-6) 0; }
   margin: var(--space-5) 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: var(--space-3);
 }
 .zoom-band {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-left: 4px solid var(--color-primary);
   border-radius: var(--radius-md);
   padding: var(--space-4) var(--space-5);
-  position: relative;
 }
 .zoom-band .zoom-label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.75;
+  color: var(--color-ink-faint);
   display: block;
   margin-bottom: var(--space-1);
 }
 .zoom-band h3 { margin-bottom: var(--space-1); }
 .zoom-band p { margin-bottom: 0; }
 
-.zoom-band--plans {
-  background: var(--color-primary-soft);
-  color: var(--color-primary-dark);
-  width: 100%;
-  margin: 0 auto;
-}
-.zoom-band--plans p { color: var(--color-primary-dark); opacity: 0.85; }
-
-.zoom-band--systems {
-  background: #EEE6CF;
-  color: #6B5116;
-  width: 92%;
-  margin: 0 auto;
-}
-.zoom-band--systems p { color: #6B5116; opacity: 0.85; }
-
-.zoom-band--details {
-  background: var(--color-ink);
-  color: #fff;
-  width: 84%;
-  margin: 0 auto;
-}
-.zoom-band--details h3 { color: #fff; }
-.zoom-band--details p { color: #C7CCDA; }
+.zoom-band--plans { border-left-color: var(--color-primary); }
+.zoom-band--systems { border-left-color: var(--color-accent); }
+.zoom-band--details { border-left-color: var(--color-ink); }
 
 /* ==========================================================================
    CARDS / SECTIONS
