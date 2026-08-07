@@ -11,12 +11,10 @@
   --color-primary:     #3F7568;
   --color-primary-dark:#2C5148;
   --color-primary-soft:#E4EEEA;
-  --color-accent:      #D9A441;
-  --color-accent-soft: #FBF0D9;
+  --color-accent:      #C7A76B;
+  --color-accent-soft: #F3EDDF;
   --color-alert:       #A8443A;
   --color-alert-soft:  #F8E7E4;
-  --color-plum:        #6B5CA5;
-  --color-plum-soft:   #EDEAF6;
   --color-line:        #DEDACF;
 
   /* Type */
@@ -277,10 +275,10 @@ main { padding: var(--space-6) 0; }
   letter-spacing: 0.03em;
   padding: 3px 8px;
   border-radius: 4px;
-  background: var(--color-accent-soft);
-  color: #7A5A0F;
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
 }
-.tag.time { background: var(--color-primary-soft); color: var(--color-primary-dark); }
 
 /* ==========================================================================
    QUIZ PAGE
@@ -291,62 +289,6 @@ main { padding: var(--space-6) 0; }
   gap: var(--space-4);
   margin-bottom: var(--space-5);
 }
-.quiz-card {
-  border-radius: var(--radius-md);
-  padding: var(--space-4);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.quiz-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(27, 37, 64, 0.1);
-}
-.quiz-card .emblem {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1rem;
-  margin-bottom: var(--space-3);
-}
-.quiz-card h3 { margin-bottom: 4px; font-size: 1.1rem; }
-.quiz-card .desc {
-  font-size: 0.88rem;
-  margin-bottom: var(--space-3);
-  flex-grow: 1;
-}
-.quiz-card .meta-row {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-bottom: var(--space-3);
-}
-.quiz-card .meta-row .tag { background: rgba(255, 255, 255, 0.55); }
-.quiz-card .cta-row {
-  display: flex;
-  justify-content: flex-end;
-}
-.quiz-card .cta-row .btn { padding: var(--space-1) var(--space-3); font-size: 0.85rem; }
-
-.quiz-card.hue-teal { background: var(--color-primary-soft); }
-.quiz-card.hue-teal .emblem { background: var(--color-primary); }
-.quiz-card.hue-teal .meta-row .tag { color: var(--color-primary-dark); }
-
-.quiz-card.hue-amber { background: var(--color-accent-soft); }
-.quiz-card.hue-amber .emblem { background: var(--color-accent); }
-.quiz-card.hue-amber .meta-row .tag { color: #6B5116; }
-
-.quiz-card.hue-coral { background: var(--color-alert-soft); }
-.quiz-card.hue-coral .emblem { background: var(--color-alert); }
-.quiz-card.hue-coral .meta-row .tag { color: var(--color-alert); }
-
-.quiz-card.hue-plum { background: var(--color-plum-soft); }
-.quiz-card.hue-plum .emblem { background: var(--color-plum); }
-.quiz-card.hue-plum .meta-row .tag { color: var(--color-plum); }
 
 /* Plain test cards (Quiz page) — deliberately monochromatic. Adult
    learners respond better to minimal, consistent color than to
@@ -442,11 +384,11 @@ main { padding: var(--space-6) 0; }
 .explanation-box {
   margin-top: var(--space-3);
   padding: var(--space-3);
-  background: var(--color-accent-soft);
-  border-left: 3px solid var(--color-accent);
+  background: var(--color-primary-soft);
+  border-left: 3px solid var(--color-primary);
   border-radius: var(--radius-sm);
   font-size: 0.92rem;
-  color: #6B5116;
+  color: var(--color-primary-dark);
   display: none;
 }
 .explanation-box.visible { display: block; }
@@ -764,7 +706,7 @@ mark.hl {
   gap: 6px;
 }
 a.subject-tab:hover { text-decoration: none; border-color: var(--color-primary); color: var(--color-ink); }
-.subject-tab.active { background: var(--color-ink); color: #fff; border-color: var(--color-ink); }
+.subject-tab.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
 .subject-tab.disabled { opacity: 0.55; cursor: not-allowed; }
 .subject-tab .soon-pill {
   font-size: 0.6rem;
