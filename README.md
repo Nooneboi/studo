@@ -1,4 +1,4 @@
-# Study Ledger — how to publish it
+# Studo — how to publish it
 
 Everything here is free — no card, no paid plan. You'll use GitHub's
 website only (no commands, no terminal).
