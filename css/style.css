@@ -3,19 +3,19 @@
    ========================================================================== */
 :root {
   /* Color */
-  --color-bg:          #F7F6F2;
+  --color-bg:          #F4F6F7;
   --color-surface:     #FFFFFF;
-  --color-ink:         #1B2540;
-  --color-ink-soft:    #545F76;
-  --color-ink-faint:   #8890A0;
-  --color-primary:     #3F7568;
-  --color-primary-dark:#2C5148;
-  --color-primary-soft:#E4EEEA;
-  --color-accent:      #C7A76B;
-  --color-accent-soft: #F3EDDF;
-  --color-alert:       #A8443A;
-  --color-alert-soft:  #F8E7E4;
-  --color-line:        #DEDACF;
+  --color-ink:         #1E293B;
+  --color-ink-soft:    #51606F;
+  --color-ink-faint:   #8695A3;
+  --color-primary:     #3E7C99;
+  --color-primary-dark:#2A5A70;
+  --color-primary-soft:#E1EDF1;
+  --color-accent:      #7B93B5;
+  --color-accent-soft: #E4E9F1;
+  --color-alert:       #A8455E;
+  --color-alert-soft:  #F6E4E8;
+  --color-line:        #DCE3E7;
 
   /* Type */
   --font-display: 'Source Serif 4', Georgia, 'Times New Roman', serif;
@@ -187,7 +187,7 @@ main { padding: var(--space-6) 0; }
 }
 .btn.ghost:hover { border-color: var(--color-ink-soft); color: var(--color-ink); }
 .btn.danger { background: var(--color-alert); border-color: var(--color-alert); }
-.btn.danger:hover { background: #863530; border-color: #863530; }
+.btn.danger:hover { background: #7D3346; border-color: #7D3346; }
 .btn.small { padding: var(--space-1) var(--space-3); font-size: 0.82rem; }
 .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
 
@@ -404,7 +404,7 @@ main { padding: var(--space-6) 0; }
   padding: var(--space-2);
   border: 1px dashed var(--color-line);
   border-radius: var(--radius-sm);
-  background: #FCFBF8;
+  background: #FAFBFC;
   font-size: 0.88rem;
 }
 
@@ -520,7 +520,7 @@ mark.hl {
   font-size: 0.9rem;
 }
 .banner.info { background: var(--color-primary-soft); color: var(--color-primary-dark); }
-.banner.warn { background: var(--color-accent-soft); color: #6B5116; }
+.banner.warn { background: var(--color-accent-soft); color: #3A4A66; }
 
 /* Utility */
 .empty-state {
@@ -582,7 +582,7 @@ mark.hl {
   border-bottom: 2px dashed var(--color-accent);
   border-radius: 4px;
   padding: 0 8px;
-  color: #6B5116;
+  color: #3A4A66;
   font-weight: 600;
 }
 .option-btn.evidence-option {
@@ -711,7 +711,7 @@ a.subject-tab:hover { text-decoration: none; border-color: var(--color-primary);
 .subject-tab .soon-pill {
   font-size: 0.6rem;
   background: var(--color-accent-soft);
-  color: #6B5116;
+  color: #3A4A66;
   padding: 1px 6px;
   border-radius: 999px;
 }
