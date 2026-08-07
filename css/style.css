@@ -217,6 +217,50 @@ main { padding: var(--space-6) 0; }
 .hero {
   padding-bottom: var(--space-5);
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  align-items: start;
+  margin-top: var(--space-4);
+}
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; }
+}
+.hero-cta { display: flex; gap: 12px; margin-top: var(--space-4); flex-wrap: wrap; }
+
+.hero-roadmap { position: relative; padding-left: 34px; }
+.rail { position: absolute; left: 0; top: 0; bottom: 0; width: 24px; }
+.rail::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--color-line);
+}
+.rail .dot {
+  position: absolute;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  transform: translateY(-50%);
+}
+.rail .dot-1 { top: 0%; border-color: var(--color-primary); }
+.rail .dot-2 { top: 50%; border-color: var(--color-accent); }
+.rail .dot-3 { top: 100%; border-color: var(--color-ink); background: var(--color-ink); }
+.rail .arrow {
+  position: absolute;
+  left: 5px;
+  font-size: 9px;
+  color: var(--color-ink-faint);
+}
+.rail .arrow-1 { top: 22%; }
+.rail .arrow-2 { top: 72%; }
 .hero .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -255,13 +299,9 @@ main { padding: var(--space-6) 0; }
 .zoom-band h3 { margin-bottom: var(--space-1); }
 .zoom-band p { margin-bottom: 0; }
 
-.zoom-band--plans { border-left-color: var(--color-primary); width: 82%; margin-right: auto; }
-.zoom-band--systems { border-left-color: var(--color-accent); width: 82%; margin-left: auto; }
-.zoom-band--details { border-left-color: var(--color-ink); width: 92%; margin-right: auto; }
-
-@media (max-width: 700px) {
-  .zoom-band--plans, .zoom-band--systems, .zoom-band--details { width: 100%; margin: 0; }
-}
+.zoom-band--plans { border-left-color: var(--color-primary); }
+.zoom-band--systems { border-left-color: var(--color-accent); }
+.zoom-band--details { border-left-color: var(--color-ink); }
 
 /* ==========================================================================
    CARDS / SECTIONS
