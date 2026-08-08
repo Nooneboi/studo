@@ -75,7 +75,11 @@ function renderList() {
             <div class="kind">${escapeHtml(kindLabel)}</div>
             <div><strong>${escapeHtml(r.title)}</strong></div>
           </div>
-          <a class="btn small secondary" href="${escapeAttr(r.url)}" target="_blank" rel="noopener">Open</a>
+          <a class="icon-btn" href="${escapeAttr(r.url)}" target="_blank" rel="noopener" aria-label="Open ${escapeAttr(r.title)}" title="Open">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 7a2 2 0 0 1 2-2h4.17a2 2 0 0 1 1.41.59L12 7h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" fill="currentColor"/>
+            </svg>
+          </a>
         </div>`;
     })
     .join("");
