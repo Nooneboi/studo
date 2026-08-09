@@ -7,9 +7,11 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "study-ledger-v4";
+const CACHE_NAME = "study-ledger-v5";
 const CORE_ASSETS = [
   "index.html",
+  "404.html",
+  "favicon.svg",
   "practice.html",
   "category.html",
   "module.html",
