@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
@@ -17,19 +18,25 @@
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Studo</a>
+    <div class="header-right">
     <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="practice.html">Practice</a>
       <a href="quiz.html">Quiz</a>
       <a href="resources.html">Resources</a>
     </nav>
+      <div id="theme-switch-mount"></div>
+    </div>
   </div>
 </header>
 <div id="subject-bar-mount"></div>
 
 <main>
   <div class="wrap">
-    <div id="category-view"></div>
+    <div class="category-layout">
+      <aside class="tree-nav" id="tree-nav"></aside>
+      <div id="category-view"></div>
+    </div>
   </div>
 </main>
 
@@ -38,6 +45,7 @@
 </footer>
 
 <script src="js/app.js"></script>
+<script src="js/theme.js"></script>
 <script src="js/subjectbar.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>

@@ -71,7 +71,7 @@ function renderShell(category) {
   viewEl.innerHTML = `
     <a href="quiz.html" class="btn ghost small" style="margin-bottom:var(--space-4)">&larr; Back to Quiz</a>
     <h1>${label} Test</h1>
-    <p class="lede">Answer every question, then submit. Your explanations and score show up right after.</p>
+    <p class="lede">Answer everything, then hit submit — your score and every explanation unlock right after.</p>
 
     <div id="results-mount"></div>
 

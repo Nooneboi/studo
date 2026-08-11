@@ -2,7 +2,7 @@
    DESIGN TOKENS
    ========================================================================== */
 :root {
-  /* Color */
+  /* Color — Light (default) */
   --color-bg:          #F4F6F7;
   --color-surface:     #FFFFFF;
   --color-ink:         #1E293B;
@@ -16,6 +16,11 @@
   --color-alert:       #A8455E;
   --color-alert-soft:  #F6E4E8;
   --color-line:        #DCE3E7;
+  --color-on-primary:  #FFFFFF;
+  /* Chrome stays a constant dark badge color across every theme —
+     used for small fixed UI elements (timer pill, banners) that are
+     meant to read as "ink" regardless of what body text is doing. */
+  --color-chrome:       #1E293B;
 
   /* Type */
   --font-display: 'Source Serif 4', Georgia, 'Times New Roman', serif;
@@ -32,6 +37,44 @@
   --space-4: 24px;
   --space-5: 40px;
   --space-6: 64px;
+}
+
+/* ==========================================================================
+   THEME VARIANTS
+   Applied via data-theme on <html>, set by js/theme.js. --color-chrome
+   intentionally does NOT change between themes — see note above.
+   ========================================================================== */
+html[data-theme="dark"] {
+  --color-bg:          #14181D;
+  --color-surface:     #1C222A;
+  --color-ink:         #E7ECF1;
+  --color-ink-soft:    #A9B4C0;
+  --color-ink-faint:   #6E7986;
+  --color-primary:     #6FA8C4;
+  --color-primary-dark:#9CC7DC;
+  --color-primary-soft:#1E2E36;
+  --color-accent:      #8CA3C4;
+  --color-accent-soft: #232A38;
+  --color-alert:       #D97690;
+  --color-alert-soft:  #33222A;
+  --color-line:        #2B333D;
+  --color-on-primary:  #10171F;
+}
+html[data-theme="sepia"] {
+  --color-bg:          #F5EDE0;
+  --color-surface:     #FBF6EC;
+  --color-ink:         #3B2F22;
+  --color-ink-soft:    #6B5A45;
+  --color-ink-faint:   #9C8B72;
+  --color-primary:     #8A6A2F;
+  --color-primary-dark:#6B5320;
+  --color-primary-soft:#EDE0C4;
+  --color-accent:      #A9754A;
+  --color-accent-soft: #F0E2D0;
+  --color-alert:       #9C4A3E;
+  --color-alert-soft:  #F3DCD5;
+  --color-line:        #E3D5BE;
+  --color-on-primary:  #FFFFFF;
 }
 
 /* ==========================================================================
@@ -128,7 +171,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
 .brand:hover { text-decoration: none; }
 .brand .brand-mark {
   color: #fff;
-  background: var(--color-ink);
+  background: var(--color-chrome);
   width: 22px;
   height: 22px;
   display: inline-flex;
@@ -157,8 +200,42 @@ nav.site-nav a {
 nav.site-nav a:hover { text-decoration: none; color: var(--color-ink); }
 nav.site-nav a.active {
   color: #fff;
-  background: var(--color-ink);
+  background: var(--color-chrome);
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* ==========================================================================
+   THEME SWITCHER
+   ========================================================================== */
+.theme-switch {
+  display: flex;
+  gap: 2px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  padding: 4px;
+}
+.theme-switch button {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  color: var(--color-ink-faint);
+}
+.theme-switch button:hover { color: var(--color-ink); }
+.theme-switch button.active {
+  background: var(--color-chrome);
+  color: #fff;
+}
+.theme-switch button svg { width: 15px; height: 15px; }
 
 main { padding: var(--space-6) 0; }
 
@@ -203,7 +280,7 @@ main { padding: var(--space-6) 0; }
   gap: var(--space-2);
   border: 1px solid var(--color-primary);
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-sm);
   font-weight: 600;
@@ -411,7 +488,7 @@ main { padding: var(--space-6) 0; }
 .toolbar .spacer { flex: 1; }
 .toolbar .toggle-btn.active {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
   border-color: var(--color-primary);
 }
 
@@ -502,7 +579,7 @@ main { padding: var(--space-6) 0; }
   font-size: 0.8rem;
   padding: 2px 8px;
   border-radius: 999px;
-  background: var(--color-ink);
+  background: var(--color-chrome);
   color: #fff;
 }
 .timer-pill.low { background: var(--color-alert); }
@@ -517,7 +594,7 @@ mark.hl {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--color-ink);
+  background: var(--color-chrome);
   color: #fff;
   border-radius: var(--radius-md);
   padding: var(--space-4);
@@ -669,7 +746,7 @@ mark.hl {
   cursor: pointer;
 }
 .filter-chip:hover { border-color: var(--color-primary); color: var(--color-ink); }
-.filter-chip.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+.filter-chip.active { background: var(--color-primary); color: var(--color-on-primary); border-color: var(--color-primary); }
 .filter-chips.sub-row {
   margin-top: 8px;
   padding-left: 4px;
@@ -786,6 +863,99 @@ mark.hl {
 .practice-link-item .progress-note { color: var(--color-primary-dark); font-weight: 600; }
 
 /* ==========================================================================
+   TREE NAV (category page sidebar) — folders you can expand as content grows
+   ========================================================================== */
+.category-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+@media (max-width: 820px) {
+  .category-layout { grid-template-columns: 1fr; }
+}
+.tree-nav {
+  position: sticky;
+  top: 88px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  padding: var(--space-3);
+}
+.tree-nav-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-faint);
+  padding: 4px 8px;
+  margin-bottom: 4px;
+}
+.tree-folder {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 7px 8px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+.tree-folder:hover { background: var(--color-bg); }
+.tree-folder.active-path { color: var(--color-primary-dark); }
+.tree-folder .chev {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  transition: transform 0.12s ease;
+  color: var(--color-ink-faint);
+}
+.tree-folder.open .chev { transform: rotate(90deg); }
+.tree-folder .folder-icon { width: 15px; height: 15px; flex-shrink: 0; color: var(--color-ink-faint); }
+.tree-children {
+  padding-left: 20px;
+  border-left: 1px solid var(--color-line);
+  margin-left: 13px;
+  overflow: hidden;
+}
+.tree-children.collapsed { display: none; }
+.tree-topic {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  cursor: pointer;
+}
+.tree-topic:hover { background: var(--color-bg); color: var(--color-ink); }
+.tree-topic.active { background: var(--color-primary-soft); color: var(--color-primary-dark); font-weight: 600; }
+.tree-topic .chev { width: 12px; height: 12px; flex-shrink: 0; transition: transform 0.12s ease; }
+.tree-topic.open .chev { transform: rotate(90deg); }
+.tree-leaf {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 8px 5px 30px;
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+}
+.tree-leaf:hover { color: var(--color-primary-dark); text-decoration: none; }
+.tree-leaf .file-icon { width: 12px; height: 12px; flex-shrink: 0; color: var(--color-ink-faint); }
+
+/* ==========================================================================
    SUBJECT BAR (global, under the header)
    ========================================================================== */
 .subject-bar {
@@ -813,7 +983,7 @@ mark.hl {
   gap: 6px;
 }
 a.subject-tab:hover { text-decoration: none; border-color: var(--color-primary); color: var(--color-ink); }
-.subject-tab.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+.subject-tab.active { background: var(--color-primary); color: var(--color-on-primary); border-color: var(--color-primary); }
 .subject-tab.disabled { opacity: 0.55; cursor: not-allowed; }
 .subject-tab .soon-pill {
   font-size: 0.6rem;
@@ -830,7 +1000,7 @@ a.subject-tab:hover { text-decoration: none; border-color: var(--color-primary);
   position: sticky;
   top: 12px;
   z-index: 5;
-  background: var(--color-ink);
+  background: var(--color-chrome);
   color: #fff;
   padding: 10px 16px;
   border-radius: var(--radius-md);
@@ -847,7 +1017,7 @@ a.subject-tab:hover { text-decoration: none; border-color: var(--color-primary);
 .test-question.locked input,
 .test-question.locked textarea { pointer-events: none; }
 .results-banner {
-  background: var(--color-ink);
+  background: var(--color-chrome);
   color: #fff;
   border-radius: var(--radius-md);
   padding: var(--space-4);

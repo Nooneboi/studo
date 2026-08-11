@@ -91,9 +91,9 @@ function renderList() {
       return `
         <div class="test-card">
           <h3>${escapeHtml(g.label)} Test</h3>
-          <p class="desc">A timed simulation pulling every question from this ${
+          <p class="desc">Every question from this ${
             g.id === "all" ? "subject" : "skill area"
-          }.</p>
+          }, one sitting, clock running.</p>
           <div class="meta-row">
             <span class="tag">${questionCount} questions</span>
             <span class="tag">~${minutes} min</span>

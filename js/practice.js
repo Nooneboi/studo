@@ -8,9 +8,9 @@
 */
 
 const CATEGORIES = [
-  { id: "reading", label: "Reading", desc: "Main idea, inference, evidence, and comparing texts across passages." },
-  { id: "writing", label: "Writing and Analysis", desc: "Organizing ideas, using evidence, and building a short argument." },
-  { id: "language_conventions", label: "Language Conventions", desc: "Grammar, punctuation, and sentence structure edits." },
+  { id: "reading", label: "Reading", desc: "Finding the main idea, following an inference, telling real evidence apart from a plausible-sounding trap." },
+  { id: "writing", label: "Writing and Analysis", desc: "Building an argument that actually holds up — not just picking whichever answer sounds nicest." },
+  { id: "language_conventions", label: "Language Conventions", desc: "The mechanical stuff — agreement, punctuation, sentence structure. Dull to study, worth more points than you'd expect." },
 ];
 
 init();
