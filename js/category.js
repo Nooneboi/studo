@@ -3,14 +3,14 @@
   -----------
   Runs category.html?cat=reading|writing|language_conventions[&topic=...]
 
-  Left sidebar: a real folder tree — Reading / Writing and Analysis /
-  Language Conventions, each expandable to its topics, each topic
-  expandable to the actual modules inside it. This is meant to keep
-  scaling as more topics and modules get added later; nothing here
-  assumes a fixed number of either.
+  Left sidebar: scoped to just the current skill area — on the
+  Reading page you only see Reading's topics, nothing from Writing
+  or Language Conventions cluttering it up. Each topic expands to
+  the actual modules inside it, and keeps scaling as more get added
+  later; nothing here assumes a fixed number of topics or modules.
+  Use "All skill areas" (top of the main content) to switch pages.
 
   - Clicking a chevron only expands/collapses — it doesn't navigate.
-  - Clicking a folder's name navigates to that skill area's page.
   - Clicking a topic's name filters the main list below to just that
     topic (and expands its modules in the tree).
   - Clicking a module jumps straight to it.
@@ -39,13 +39,11 @@ const LEVELS = [
   { id: "hard", label: "Hard" },
 ];
 const CHEVRON = '<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l6 5-6 5"/></svg>';
-const FOLDER_ICON = '<svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>';
 const FILE_ICON = '<svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/><path d="M15 2v5h5"/></svg>';
 
 let allModules = [];
 let currentCat = null;
 let activeTopic = null;
-const openCats = new Set();
 const openTopics = new Set(); // keys like "reading::Main Idea"
 
 init();
@@ -76,7 +74,6 @@ async function init() {
 
   currentCat = cat;
   activeTopic = topicParam || null;
-  openCats.add(cat);
   if (activeTopic) openTopics.add(`${cat}::${activeTopic}`);
 
   renderTree();
@@ -89,45 +86,15 @@ function modulesFor(catId) {
 
 function renderTree() {
   const tree = document.getElementById("tree-nav");
+  const meta = CATEGORY_META[currentCat];
+  const mods = modulesFor(currentCat);
+  const topics = [...new Set(mods.map((m) => m.topic || "General"))];
+
   tree.innerHTML =
-    `<div class="tree-nav-title">Skill areas</div>` +
-    Object.keys(CATEGORY_META)
-      .map((id) => {
-        const meta = CATEGORY_META[id];
-        const isOpen = openCats.has(id);
-        const isCurrent = id === currentCat;
-        const mods = modulesFor(id);
-        const topics = [...new Set(mods.map((m) => m.topic || "General"))];
-
-        return `
-          <div class="tree-folder-row" style="display:flex;align-items:center;">
-            <button class="tree-folder ${isOpen ? "open" : ""} ${isCurrent ? "active-path" : ""}" data-toggle-cat="${id}" style="flex:1">
-              ${CHEVRON}${FOLDER_ICON}<span>${meta.label}</span>
-            </button>
-          </div>
-          <div class="tree-children ${isOpen ? "" : "collapsed"}">
-            ${
-              topics.length
-                ? topics.map((topic) => renderTopicRow(id, topic, mods)).join("")
-                : `<div style="padding:6px 8px; font-size:.78rem; color:var(--color-ink-faint)">Nothing here yet</div>`
-            }
-          </div>`;
-      })
-      .join("");
-
-  // Folder name navigates; chevron/name button toggles when it's already the current page's category
-  tree.querySelectorAll("[data-toggle-cat]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const id = btn.dataset.toggleCat;
-      if (id === currentCat) {
-        // Already here — just toggle the folder open/closed
-        openCats.has(id) ? openCats.delete(id) : openCats.add(id);
-        renderTree();
-      } else {
-        window.location.href = `category.html?subject=rla&cat=${id}`;
-      }
-    });
-  });
+    `<div class="tree-nav-title">${escapeHtml(meta.label)}</div>` +
+    (topics.length
+      ? topics.map((topic) => renderTopicRow(currentCat, topic, mods)).join("")
+      : `<div style="padding:6px 8px; font-size:.78rem; color:var(--color-ink-faint)">Nothing here yet</div>`);
 
   tree.querySelectorAll("[data-toggle-topic]").forEach((btn) => {
     btn.addEventListener("click", (e) => {
@@ -141,10 +108,6 @@ function renderTree() {
   tree.querySelectorAll("[data-select-topic]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const [catId, topic] = btn.dataset.selectTopic.split("::");
-      if (catId !== currentCat) {
-        window.location.href = `category.html?subject=rla&cat=${catId}&topic=${encodeURIComponent(topic)}`;
-        return;
-      }
       activeTopic = activeTopic === topic ? null : topic;
       const key = `${catId}::${topic}`;
       if (activeTopic) openTopics.add(key);
