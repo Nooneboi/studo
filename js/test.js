@@ -23,6 +23,8 @@ const viewEl = document.getElementById("test-view");
 let sections = []; // [{ module, questions }]
 let answers = {};
 let remainingSeconds = 0;
+let autoSeconds = 0; // the auto-computed duration, kept so "Auto" can be re-selected later
+let timerMode = "auto"; // "auto" | seconds-as-string | "none"
 let timerHandle = null;
 let submitted = false;
 
@@ -56,14 +58,23 @@ async function init() {
   }
 
   sections = modules.map((m) => ({ module: m, questions: m.questions }));
-  remainingSeconds = sections.reduce(
+  autoSeconds = sections.reduce(
     (sum, s) => sum + s.questions.reduce((qs, q) => qs + (q.time || 30), 0),
     0
   );
+  timerMode = localStorage.getItem("sq:timerMode") || "auto";
+  remainingSeconds = secondsForMode(timerMode);
 
   renderShell(category);
   renderSections();
-  startTimer();
+  if (timerMode !== "none") startTimer();
+}
+
+function secondsForMode(mode) {
+  if (mode === "none") return 0;
+  if (mode === "auto") return autoSeconds;
+  const n = parseInt(mode, 10);
+  return isNaN(n) ? autoSeconds : n;
 }
 
 function renderShell(category) {
@@ -99,26 +110,59 @@ function renderShell(category) {
     </div>
   `;
   document.getElementById("submit-btn").addEventListener("click", () => submitTest());
+
+  const timerSelect = document.getElementById("timer-select");
+  timerSelect.value = timerMode;
+  timerSelect.addEventListener("change", () => {
+    timerMode = timerSelect.value;
+    localStorage.setItem("sq:timerMode", timerMode);
+    remainingSeconds = secondsForMode(timerMode);
+    clearInterval(timerHandle);
+    const bar = document.getElementById("timer-bar");
+    if (timerMode === "none") {
+      bar.classList.add("hidden");
+    } else {
+      bar.classList.remove("hidden");
+      bar.classList.remove("low");
+      updateClock();
+      if (!submitted) startTimer();
+    }
+  });
+  if (timerMode === "none") document.getElementById("timer-bar").classList.add("hidden");
 }
 
 function renderSections() {
   const mount = document.getElementById("sections-mount");
   mount.innerHTML = "";
+
+  const wrapEl = document.querySelector(".focus-wrap");
+  if (wrapEl) wrapEl.classList.toggle("has-passage", sections.some((s) => s.module.passage));
+
   sections.forEach((section) => {
-    const wrap = document.createElement("div");
-    wrap.className = "card";
-    wrap.style.marginBottom = "var(--space-4)";
+    const hasPassage = !!section.module.passage;
+    const container = document.createElement("div");
+    container.style.marginBottom = "var(--space-4)";
 
-    const passageHtml = section.module.passage
-      ? `<div style="margin-bottom:var(--space-3)"><h3>Passage</h3><p class="passage-text">${escapeHtml(section.module.passage)}</p></div>`
-      : "";
-
-    wrap.innerHTML = `<h3 style="margin-bottom:4px">${escapeHtml(section.module.title)}</h3>${passageHtml}`;
-
-    section.questions.forEach((q, i) => {
-      wrap.appendChild(buildQuestionBlock(q, i));
-    });
-    mount.appendChild(wrap);
+    if (hasPassage) {
+      container.className = "passage-split";
+      container.innerHTML = `
+        <div class="passage-pane">
+          <div class="card">
+            <h3>${escapeHtml(section.module.title)}</h3>
+            <p class="passage-text">${escapeHtml(section.module.passage)}</p>
+          </div>
+        </div>
+        <div class="questions-pane"><div class="card" id="q-holder-${section.module.id}"></div></div>
+      `;
+      mount.appendChild(container);
+      const holder = container.querySelector(`#q-holder-${CSS.escape(section.module.id)}`);
+      section.questions.forEach((q, i) => holder.appendChild(buildQuestionBlock(q, i)));
+    } else {
+      container.className = "card";
+      container.innerHTML = `<h3 style="margin-bottom:4px">${escapeHtml(section.module.title)}</h3>`;
+      section.questions.forEach((q, i) => container.appendChild(buildQuestionBlock(q, i)));
+      mount.appendChild(container);
+    }
   });
 }
 

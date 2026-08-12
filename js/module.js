@@ -54,13 +54,29 @@ function render() {
   const notes = Store.getNotes(currentQuiz.id);
   const highlights = Store.getHighlights(currentQuiz.id);
 
-  const passageHtml = currentQuiz.passage
-    ? `<div class="card" style="margin-bottom:var(--space-4)"><h3>Passage</h3><p class="passage-text">${escapeHtml(currentQuiz.passage)}</p></div>`
+  const hasPassage = !!currentQuiz.passage;
+  const wrapEl = document.querySelector(".focus-wrap");
+  if (wrapEl) wrapEl.classList.toggle("has-passage", hasPassage);
+
+  const passageHtml = hasPassage
+    ? `<div class="card"><h3>Passage</h3><p class="passage-text">${escapeHtml(currentQuiz.passage)}</p></div>`
     : "";
 
   const sourceHtml = currentQuiz.source
     ? `<div class="source-credit">${escapeHtml(currentQuiz.source)}</div>`
     : "";
+
+  const questionListHtml = `<div id="question-list"${hasPassage ? "" : ' style="margin-top:var(--space-4)"'}></div>`;
+
+  // With a passage: passage pinned on the left, questions scroll on
+  // the right — no scrolling back up to reread it. Without one
+  // (grammar edit, open-ended sets), just a single column.
+  const bodyHtml = hasPassage
+    ? `<div class="passage-split">
+         <div class="passage-pane">${passageHtml}${sourceHtml}</div>
+         <div class="questions-pane">${questionListHtml}</div>
+       </div>`
+    : `${passageHtml}${sourceHtml}${questionListHtml}`;
 
   viewEl.innerHTML = `
     <h1>${escapeHtml(currentQuiz.title)}</h1>
@@ -76,9 +92,7 @@ function render() {
       <span id="score-pill" class="tag"></span>
     </div>
 
-    ${passageHtml}
-    ${sourceHtml}
-    <div id="question-list" style="margin-top:var(--space-4)"></div>
+    ${bodyHtml}
   `;
 
   document.getElementById("notes-toggle").addEventListener("click", () => {
@@ -254,17 +268,21 @@ function updateScorePill() {
   const answers = Store.getAnswers(currentQuiz.id);
   const deleted = new Set(Store.getDeleted(currentQuiz.id));
   let earned = 0,
-    total = 0;
+    total = 0,
+    answeredCount = 0,
+    remainingCount = 0;
   const autoGradedTypes = ["multiple_choice", "evidence_based", "grammar_edit"];
   currentQuiz.questions.forEach((q) => {
     if (deleted.has(q.id)) return;
     total += q.points || 1;
+    remainingCount += 1;
+    if (answers[q.id]) answeredCount += 1;
     if (autoGradedTypes.includes(q.type) && answers[q.id] && (q.correct || []).includes(answers[q.id])) {
       earned += q.points || 1;
     }
   });
   const pill = document.getElementById("score-pill");
-  if (pill) pill.textContent = `${earned} / ${total} pts (auto-graded questions)`;
+  if (pill) pill.textContent = `${answeredCount} / ${remainingCount} answered \u00b7 ${earned} / ${total} pts`;
 }
 
 function escapeHtml(str) {
