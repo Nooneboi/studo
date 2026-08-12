@@ -201,7 +201,7 @@ function renderAnswerArea(q, container, savedAnswer) {
   if (q.type === "multiple_choice" || q.type === "evidence_based" || q.type === "grammar_edit") {
     const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
     container.innerHTML = `<div class="options-list">${q.options
-      .map((opt) => `<button class="option-btn${optionClass}" data-opt="${opt.id}">${escapeHtml(opt.text)}</button>`)
+      .map((opt) => `<button class="option-btn${optionClass}" data-opt="${opt.id}"><span class="opt-radio"></span><span class="opt-letter">${opt.id.toUpperCase()}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></button>`)
       .join("")}</div>`;
 
     container.querySelectorAll(".option-btn").forEach((btn) => {

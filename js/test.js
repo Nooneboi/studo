@@ -73,6 +73,10 @@ async function init() {
 function secondsForMode(mode) {
   if (mode === "none") return 0;
   if (mode === "auto") return autoSeconds;
+  if (mode === "custom") {
+    const saved = parseInt(localStorage.getItem("sq:customMinutes"), 10);
+    return (isNaN(saved) || saved <= 0 ? 20 : saved) * 60;
+  }
   const n = parseInt(mode, 10);
   return isNaN(n) ? autoSeconds : n;
 }
@@ -112,10 +116,33 @@ function renderShell(category) {
   document.getElementById("submit-btn").addEventListener("click", () => submitTest());
 
   const timerSelect = document.getElementById("timer-select");
+  const customInput = document.getElementById("custom-minutes-input");
   timerSelect.value = timerMode;
+  customInput.classList.toggle("hidden", timerMode !== "custom");
+  if (timerMode === "custom") {
+    customInput.value = Math.round(secondsForMode("custom") / 60);
+  }
+
   timerSelect.addEventListener("change", () => {
     timerMode = timerSelect.value;
     localStorage.setItem("sq:timerMode", timerMode);
+    customInput.classList.toggle("hidden", timerMode !== "custom");
+    if (timerMode === "custom") {
+      customInput.value = Math.round(secondsForMode("custom") / 60);
+      customInput.focus();
+    }
+    applyTimerMode();
+  });
+
+  customInput.addEventListener("input", () => {
+    const minutes = parseInt(customInput.value, 10);
+    if (minutes > 0) {
+      localStorage.setItem("sq:customMinutes", minutes);
+      if (timerMode === "custom") applyTimerMode();
+    }
+  });
+
+  function applyTimerMode() {
     remainingSeconds = secondsForMode(timerMode);
     clearInterval(timerHandle);
     const bar = document.getElementById("timer-bar");
@@ -127,7 +154,7 @@ function renderShell(category) {
       updateClock();
       if (!submitted) startTimer();
     }
-  });
+  }
   if (timerMode === "none") document.getElementById("timer-bar").classList.add("hidden");
 }
 
@@ -192,7 +219,7 @@ function renderAnswerArea(q, container) {
   if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
     const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
     container.innerHTML = `<div class="options-list">${q.options
-      .map((opt) => `<button class="option-btn${optionClass}" data-opt="${opt.id}">${escapeHtml(opt.text)}</button>`)
+      .map((opt) => `<button class="option-btn${optionClass}" data-opt="${opt.id}"><span class="opt-radio"></span><span class="opt-letter">${opt.id.toUpperCase()}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></button>`)
       .join("")}</div>`;
     container.querySelectorAll(".option-btn").forEach((btn) => {
       btn.addEventListener("click", () => {

@@ -514,6 +514,32 @@ main { padding: var(--space-6) 0; }
 .focus-icon-btn.active { background: var(--color-primary); color: var(--color-on-primary); border-color: var(--color-primary); }
 .focus-icon-btn svg { width: 15px; height: 15px; }
 
+/* The toolbar itself is always black now (paper-on-black applies in
+   every theme), so its controls need a fixed look instead of
+   following the site theme — otherwise dark-theme buttons would be
+   near-invisible dark-on-black. */
+.focus-bar .focus-icon-btn,
+.focus-bar select.focus-icon-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #C7CDD3;
+}
+.focus-bar .focus-icon-btn:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.3); color: #fff; }
+.focus-bar .focus-icon-btn.active { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-on-primary); }
+.focus-divider { width: 1px; height: 20px; background: rgba(255, 255, 255, 0.14); margin: 0 4px; flex-shrink: 0; }
+.custom-minutes-input {
+  width: 56px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: #C7CDD3;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 4px;
+}
+
 .focus-wrap {
   max-width: 760px;
   margin: 0 auto;
@@ -605,20 +631,52 @@ body.tree-collapsed .sidebar-collapse-btn { left: 0; transform: translateX(-50%)
 .q-actions button:hover { color: var(--color-ink); }
 .q-actions button.remove-btn:hover { color: var(--color-alert); }
 
-.options-list { display: grid; gap: var(--space-2); }
+.options-list { display: flex; flex-direction: column; gap: 2px; }
 .option-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   text-align: left;
-  border: 1px solid var(--color-line);
-  background: var(--color-bg);
+  border: none;
+  background: none;
   border-radius: var(--radius-sm);
-  padding: var(--space-3);
+  padding: 8px 10px;
   font-size: 0.98rem;
   color: var(--color-ink);
 }
-.option-btn:hover { border-color: var(--color-primary); }
-.option-btn.selected { border-color: var(--color-primary); background: var(--color-primary-soft); }
-.option-btn.correct { border-color: var(--color-primary); background: var(--color-primary-soft); color: var(--color-primary-dark); }
-.option-btn.incorrect { border-color: var(--color-alert); background: var(--color-alert-soft); color: var(--color-alert); }
+.option-btn:hover { background: rgba(0, 0, 0, 0.035); }
+.option-btn .opt-radio {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  border-radius: 50%;
+  border: 2px solid var(--color-ink-faint);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.option-btn .opt-radio::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+.option-btn .opt-letter { font-weight: 600; flex-shrink: 0; }
+.option-btn .opt-text { flex: 1; }
+.option-btn.selected { background: var(--color-primary-soft); font-weight: 600; }
+.option-btn.selected .opt-radio { border-color: var(--color-primary); }
+.option-btn.selected .opt-radio::after { opacity: 1; transform: scale(1); }
+.option-btn.correct { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+.option-btn.correct .opt-radio { border-color: var(--color-primary); }
+.option-btn.correct .opt-radio::after { opacity: 1; transform: scale(1); }
+.option-btn.incorrect { background: var(--color-alert-soft); color: var(--color-alert); }
+.option-btn.incorrect .opt-radio { border-color: var(--color-alert); }
+.option-btn.incorrect .opt-radio::after { opacity: 1; transform: scale(1); background: var(--color-alert); }
 
 .fill-blank-input, .open-ended-input {
   width: 100%;
@@ -874,35 +932,36 @@ mark.hl {
    FOCUS MODE — paper look + reading font + side-by-side passage/questions
    ========================================================================== */
 
-/* The passage and question cards are always a bright "paper" white with
-   dark ink, regardless of which site theme is active — same idea as a
-   real page of paper. Works by re-scoping the same color variables
-   used everywhere else, so every nested rule (tags, buttons, text)
-   picks up the paper colors automatically without duplicating rules. */
+/* The passage and question cards are always a "paper" white with
+   dark ink, regardless of which site theme is active — same idea as
+   an actual page of paper, not a pure clinical #FFFFFF. Works by
+   re-scoping the same color variables used everywhere else, so every
+   nested rule (tags, buttons, text) picks up the paper colors
+   automatically without duplicating rules. */
 .focus-main .card,
 .focus-main .question-card {
-  --color-surface: #FFFFFF;
-  --color-bg: #F6F7F8;
+  --color-surface: #FAF8F3;
+  --color-bg: #F1EEE7;
   --color-ink: #1C2430;
   --color-ink-soft: #4B5768;
   --color-ink-faint: #8A94A0;
-  --color-line: #E3E6E9;
+  --color-line: #E3DED2;
   background: var(--color-surface);
   color: var(--color-ink);
   border-color: var(--color-line);
 }
 
-/* In dark mode specifically, the space AROUND the paper goes true
-   black (not just dark) so the page reads like paper on a dark desk,
-   the way a PDF viewer looks. Light/sepia themes are already light,
-   so this only kicks in for dark. */
-html[data-theme="dark"] body.focus-body,
-html[data-theme="dark"] body.focus-body .focus-bar {
+/* The space AROUND the paper always goes true black, in every theme
+   (light, dark, sepia) — same idea as a PDF viewer: the page reads
+   as paper regardless of the app's own light/dark setting. */
+body.focus-body,
+body.focus-body .focus-bar {
   background: #0A0A0A;
 }
-html[data-theme="dark"] body.focus-body .focus-bar { border-bottom-color: #1E1E1E; }
-html[data-theme="dark"] body.focus-body .focus-exit,
-html[data-theme="dark"] body.focus-body .focus-title { color: #9AA3AC; }
+body.focus-body .focus-bar { border-bottom-color: #1E1E1E; }
+body.focus-body .focus-exit,
+body.focus-body .focus-title { color: #9AA3AC; }
+body.focus-body .site-footer { background: #0A0A0A; color: #6B7480; border-top-color: #1E1E1E; }
 
 /* Reading font — a serif built for long-form text, sized like an
    actual test booklet rather than a website. Only the passage and
