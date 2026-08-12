@@ -452,6 +452,113 @@ main { padding: var(--space-6) 0; }
 .test-card .meta-row { margin-bottom: var(--space-3); }
 .test-card .cta-row { display: flex; justify-content: flex-end; }
 
+/* ==========================================================================
+   FOCUS MODE (module.html, test.html) — no logo, no nav, just the
+   work. A slim toolbar up top instead of the site header, and a
+   narrower centered reading column with real margins on both sides,
+   like an actual document rather than a website.
+   ========================================================================== */
+:root { --text-scale: 1; }
+.focus-bar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-line);
+}
+.focus-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 10px 0;
+}
+.focus-exit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-ink-soft);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+.focus-exit:hover { background: var(--color-bg); color: var(--color-ink); text-decoration: none; }
+.focus-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-ink-faint);
+  text-align: center;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 var(--space-3);
+}
+.focus-tools { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.focus-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+.focus-icon-btn:hover { border-color: var(--color-primary); color: var(--color-primary-dark); }
+.focus-icon-btn.active { background: var(--color-primary); color: var(--color-on-primary); border-color: var(--color-primary); }
+.focus-icon-btn svg { width: 15px; height: 15px; }
+
+.focus-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+.focus-main { padding: var(--space-5) 0 var(--space-6); }
+
+/* Text-size control scales just the reading content, not the whole UI */
+.question-card .q-prompt,
+.question-card .options-list,
+.question-card .fill-blank-input,
+.question-card .open-ended-input {
+  font-size: calc(1em * var(--text-scale));
+}
+
+@media print {
+  .focus-bar, .toolbar, .q-actions, .notes-panel, footer { display: none !important; }
+}
+
+.sidebar-collapse-btn {
+  position: fixed;
+  left: 260px;
+  top: 129px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-ink-faint);
+  z-index: 16;
+  margin-top: 10px;
+}
+.sidebar-collapse-btn:hover { border-color: var(--color-primary); color: var(--color-primary-dark); }
+.sidebar-collapse-btn svg { width: 12px; height: 12px; transition: transform 0.15s ease; }
+body.tree-collapsed .tree-nav { transform: translateX(-260px); }
+body.has-tree-rail.tree-collapsed main { padding-left: 0; }
+body.tree-collapsed .sidebar-collapse-btn { left: 0; transform: translateX(-50%) rotate(180deg); }
+@media (max-width: 900px) {
+  .sidebar-collapse-btn { display: none; }
+}
+
 .toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -760,7 +867,7 @@ mark.hl {
    regardless of which typeface is used. */
 .passage-text {
   line-height: 1.75;
-  font-size: 1.02rem;
+  font-size: calc(1.02rem * var(--text-scale));
 }
 .difficulty-pill { text-transform: capitalize; }
 
@@ -854,9 +961,9 @@ mark.hl {
   background: var(--color-surface);
   padding: var(--space-3);
   z-index: 15;
+  transition: transform 0.18s ease;
 }
-body.has-tree-rail main { padding-left: 260px; }
-body.has-tree-rail::before { display: none; } /* the decorative margin rule is redundant next to a real sidebar */
+body.has-tree-rail main { padding-left: 260px; transition: padding-left 0.18s ease; }
 @media (max-width: 900px) {
   .tree-nav {
     position: static;
@@ -984,7 +1091,7 @@ a.subject-tab:hover { text-decoration: none; border-color: var(--color-primary);
    ========================================================================== */
 .test-timer-bar {
   position: sticky;
-  top: 12px;
+  top: 66px;
   z-index: 5;
   background: var(--color-chrome);
   color: #fff;

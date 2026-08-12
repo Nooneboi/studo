@@ -78,6 +78,20 @@ async function init() {
 
   renderTree();
   renderMain();
+  initSidebarCollapse();
+}
+
+function initSidebarCollapse() {
+  const btn = document.getElementById("sidebar-collapse-btn");
+  if (!btn) return;
+  const collapsed = localStorage.getItem("sq:sidebarCollapsed") === "1";
+  document.body.classList.toggle("tree-collapsed", collapsed);
+  btn.title = collapsed ? "Show sidebar" : "Collapse sidebar";
+  btn.addEventListener("click", () => {
+    const isNowCollapsed = document.body.classList.toggle("tree-collapsed");
+    localStorage.setItem("sq:sidebarCollapsed", isNowCollapsed ? "1" : "0");
+    btn.title = isNowCollapsed ? "Show sidebar" : "Collapse sidebar";
+  });
 }
 
 function modulesFor(catId) {

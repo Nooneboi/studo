@@ -43,7 +43,11 @@ function render() {
   const params = new URLSearchParams(window.location.search);
   const cat = params.get("cat");
   const backHref = cat ? `category.html?subject=rla&cat=${encodeURIComponent(cat)}` : "practice.html";
-  const backLabel = cat ? "&larr; Back to skill area" : "&larr; All modules";
+
+  const exitLink = document.getElementById("focus-exit");
+  if (exitLink) exitLink.href = backHref;
+  const titleEl = document.getElementById("focus-title");
+  if (titleEl) titleEl.textContent = currentQuiz.title;
 
   const deleted = new Set(Store.getDeleted(currentQuiz.id));
   const answers = Store.getAnswers(currentQuiz.id);
@@ -59,7 +63,6 @@ function render() {
     : "";
 
   viewEl.innerHTML = `
-    <a href="${backHref}" class="btn ghost small" style="margin-bottom:var(--space-4)">${backLabel}</a>
     <h1>${escapeHtml(currentQuiz.title)}</h1>
     <p class="lede">${escapeHtml(currentQuiz.description || "")}</p>
     <div class="meta-row" style="margin-bottom:var(--space-4)">

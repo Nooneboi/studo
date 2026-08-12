@@ -68,8 +68,20 @@ async function init() {
 
 function renderShell(category) {
   const label = CATEGORY_LABELS[category] || "RLA";
+
+  const titleEl = document.getElementById("focus-title");
+  if (titleEl) titleEl.textContent = `${label} Test`;
+  const exitLink = document.getElementById("focus-exit");
+  if (exitLink) {
+    exitLink.addEventListener("click", (e) => {
+      if (!submitted) {
+        const ok = confirm("Leave now and your answers on this attempt won't be saved. Leave anyway?");
+        if (!ok) e.preventDefault();
+      }
+    });
+  }
+
   viewEl.innerHTML = `
-    <a href="quiz.html" class="btn ghost small" style="margin-bottom:var(--space-4)">&larr; Back to Quiz</a>
     <h1>${label} Test</h1>
     <p class="lede">Answer everything, then hit submit — your score and every explanation unlock right after.</p>
 
