@@ -11,12 +11,15 @@ const viewEl = document.getElementById("module-view");
 let currentQuiz = null;
 let currentIndex = 0;
 let notesOpen = false;
+let currentModuleFile = null;
+let questionOpenedAt = Date.now();
 
 init();
 
 async function init() {
   const params = new URLSearchParams(window.location.search);
-  const file = params.get("file");
+  const file = params.get("file") || params.get("quiz");
+  currentModuleFile = file;
   if (!file) {
     viewEl.innerHTML = `<div class="empty-state">No module selected. <a href="practice.html">Back to Practice</a></div>`;
     return;
@@ -40,7 +43,12 @@ async function init() {
   const titleEl = document.getElementById("focus-title");
   if (titleEl) titleEl.textContent = currentQuiz.title;
 
-  currentIndex = firstAvailableIndex();
+  const requestedQuestion = params.get("question");
+  const available = activeQuestions();
+  const requestedIndex = requestedQuestion
+    ? available.findIndex(({ question }) => question.id === requestedQuestion)
+    : -1;
+  currentIndex = requestedIndex >= 0 ? requestedIndex : firstAvailableIndex();
   renderShell();
   renderCurrentQuestion();
 }
@@ -155,6 +163,7 @@ function renderCurrentQuestion(options = {}) {
 
   currentIndex = Math.max(0, Math.min(currentIndex, items.length - 1));
   const { question: q } = items[currentIndex];
+  questionOpenedAt = Date.now();
   const answers = Store.getAnswers(currentQuiz.id);
   const notes = Store.getNotes(currentQuiz.id);
   const highlights = Store.getHighlights(currentQuiz.id);
@@ -171,6 +180,17 @@ function renderCurrentQuestion(options = {}) {
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     <div data-role="answer-area"></div>
     <div class="explanation-box" data-role="explanation">${escapeHtml(q.explanation || "")}</div>
+    <div class="learning-feedback" data-role="learning-feedback" aria-live="polite"></div>
+    <div class="mistake-reason" data-role="mistake-reason">
+      <span>What tripped you up? <em style="font-weight:400">Optional</em></span>
+      <div class="mistake-reason-options">
+        <button type="button" class="mistake-reason-btn" data-reason="misread">Misread the question</button>
+        <button type="button" class="mistake-reason-btn" data-reason="evidence">Couldn't find the evidence</button>
+        <button type="button" class="mistake-reason-btn" data-reason="two_choices">Between two answers</button>
+        <button type="button" class="mistake-reason-btn" data-reason="guess">Guessed</button>
+        <button type="button" class="mistake-reason-btn" data-reason="careless">Careless mistake</button>
+      </div>
+    </div>
     <div class="notes-panel ${notesOpen ? "visible" : ""}" data-role="notes">
       <label class="question-detail" for="question-note">Private note for this question</label>
       <textarea id="question-note" placeholder="Write a note to yourself…">${escapeHtml(notes[q.id] || "")}</textarea>
@@ -273,8 +293,23 @@ function renderAnswerArea(q, container, savedAnswer) {
       radio.addEventListener("change", () => {
         if (!radio.checked) return;
         Store.setAnswer(currentQuiz.id, q.id, radio.value);
+        const correct = isCorrectAnswer(q, radio.value);
+        const learningResult = typeof Learning !== "undefined"
+          ? Learning.recordAttempt({
+              module: { ...currentQuiz, file: currentModuleFile },
+              question: q,
+              answer: radio.value,
+              correct,
+              mode: "practice",
+              elapsedMs: Date.now() - questionOpenedAt,
+              file: currentModuleFile,
+            })
+          : null;
         revealChoiceFeedback(container, q, radio.value);
         showExplanation();
+        showLearningFeedback(learningResult, correct);
+        setupMistakeReason(q, correct, learningResult);
+        questionOpenedAt = Date.now();
         updateAnswerStatus();
       });
     });
@@ -288,6 +323,20 @@ function renderAnswerArea(q, container, savedAnswer) {
     input.addEventListener("input", () => Store.setAnswer(currentQuiz.id, q.id, input.value));
     input.addEventListener("blur", () => {
       if (input.value.trim()) {
+        if (typeof q.correct === "string" && typeof Learning !== "undefined") {
+          const correct = isCorrectAnswer(q, input.value);
+          const learningResult = Learning.recordAttempt({
+            module: { ...currentQuiz, file: currentModuleFile },
+            question: q,
+            answer: input.value,
+            correct,
+            mode: "practice",
+            elapsedMs: Date.now() - questionOpenedAt,
+            file: currentModuleFile,
+          });
+          showLearningFeedback(learningResult, correct);
+          questionOpenedAt = Date.now();
+        }
         showExplanation();
         updateAnswerStatus();
       }
@@ -326,6 +375,35 @@ function revealChoiceFeedback(container, q, selectedId) {
 
   if (correctIds.has(selectedId)) setStatus("Correct — review the explanation, then continue.");
   else setStatus("Not quite — the correct answer is shown. Review why before continuing.");
+}
+
+function showLearningFeedback(result, correct) {
+  const el = document.querySelector('[data-role="learning-feedback"]');
+  if (!el || !result?.skill) return;
+  const skill = result.skill;
+  const prefix = correct
+    ? "Skill signal updated"
+    : "Saved to your review list";
+  el.innerHTML = `<span>${escapeHtml(prefix)}</span><strong>${escapeHtml(skill.label)}</strong><span>${skill.score}% · ${escapeHtml(skill.signal)}</span>`;
+  el.classList.add("visible", correct ? "is-correct" : "is-review");
+}
+
+function setupMistakeReason(question, correct, learningResult) {
+  const panel = document.querySelector('[data-role="mistake-reason"]');
+  if (!panel) return;
+  panel.classList.toggle("visible", !correct);
+  if (correct || typeof Learning === "undefined") return;
+
+  const key = learningResult?.mistake?.questionKey || Learning.questionKey(currentQuiz, question);
+  const current = learningResult?.mistake?.reason || null;
+  panel.querySelectorAll("[data-reason]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.reason === current);
+    btn.addEventListener("click", () => {
+      Learning.setMistakeReason(key, btn.dataset.reason);
+      panel.querySelectorAll("[data-reason]").forEach((b) => b.classList.toggle("active", b === btn));
+      setStatus("Reason saved to your mistake book.");
+    }, { once: true });
+  });
 }
 
 function updateProgress(items, index) {

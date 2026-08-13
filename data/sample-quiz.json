@@ -14,15 +14,33 @@
       "type": "multiple_choice",
       "prompt": "Which layer of the study philosophy covers the individual question you're practicing right now?",
       "options": [
-        { "id": "a", "text": "Plans" },
-        { "id": "b", "text": "Systems" },
-        { "id": "c", "text": "Details" },
-        { "id": "d", "text": "None of these" }
+        {
+          "id": "a",
+          "text": "Plans"
+        },
+        {
+          "id": "b",
+          "text": "Systems"
+        },
+        {
+          "id": "c",
+          "text": "Details"
+        },
+        {
+          "id": "d",
+          "text": "None of these"
+        }
       ],
-      "correct": ["c"],
+      "correct": [
+        "c"
+      ],
       "points": 1,
       "time": 20,
-      "explanation": "Details are the sharp end of the plan — the specific thing in front of you right now."
+      "explanation": "Details are the sharp end of the plan — the specific thing in front of you right now.",
+      "skill": {
+        "id": "study.orientation.details",
+        "label": "Study orientation"
+      }
     },
     {
       "id": "q2",
@@ -30,14 +48,22 @@
       "prompt": "A repeated habit that carries you toward your goal without relying on motivation is called a ______.",
       "correct": "system",
       "points": 1,
-      "explanation": "That's the 'Systems' layer — routines you can run on autopilot."
+      "explanation": "That's the 'Systems' layer — routines you can run on autopilot.",
+      "skill": {
+        "id": "study.orientation.systems",
+        "label": "Study orientation"
+      }
     },
     {
       "id": "q3",
       "type": "open_ended",
       "prompt": "In a sentence or two, describe one system (habit or routine) you could build for your own studying.",
       "points": 2,
-      "explanation": "Open-ended answers aren't auto-graded — this is for your own reflection, or for a teacher to review manually."
+      "explanation": "Open-ended answers aren't auto-graded — this is for your own reflection, or for a teacher to review manually.",
+      "skill": {
+        "id": "study.orientation.reflection",
+        "label": "Study reflection"
+      }
     }
   ]
 }

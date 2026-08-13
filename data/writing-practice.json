@@ -14,21 +14,43 @@
       "type": "multiple_choice",
       "prompt": "Which piece of evidence would most strengthen the case FOR Sunday hours?",
       "options": [
-        { "id": "a", "text": "A survey showing 40% of working families can only visit on weekends." },
-        { "id": "b", "text": "A description of the library's current Tuesday hours." },
-        { "id": "c", "text": "The library director's opinion on staffing preferences." },
-        { "id": "d", "text": "The number of books currently in the library's catalog." }
+        {
+          "id": "a",
+          "text": "A survey showing 40% of working families can only visit on weekends."
+        },
+        {
+          "id": "b",
+          "text": "A description of the library's current Tuesday hours."
+        },
+        {
+          "id": "c",
+          "text": "The library director's opinion on staffing preferences."
+        },
+        {
+          "id": "d",
+          "text": "The number of books currently in the library's catalog."
+        }
       ],
-      "correct": ["a"],
+      "correct": [
+        "a"
+      ],
       "points": 1,
-      "explanation": "Direct evidence of unmet need from the target group (working families) most directly supports the argument for Sunday hours."
+      "explanation": "Direct evidence of unmet need from the target group (working families) most directly supports the argument for Sunday hours.",
+      "skill": {
+        "id": "writing.evidence.relevance",
+        "label": "Relevant evidence"
+      }
     },
     {
       "id": "q2",
       "type": "extended_response",
       "prompt": "In 3-5 sentences, write a short paragraph arguing for ONE side of this debate, using at least one piece of evidence from the passage.",
       "points": 3,
-      "explanation": "Not auto-graded — check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review."
+      "explanation": "Not auto-graded — check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review.",
+      "skill": {
+        "id": "writing.argument.short_response",
+        "label": "Short argument construction"
+      }
     }
   ]
 }

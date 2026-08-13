@@ -7,7 +7,7 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "studo-v16-radio-clean";
+const CACHE_NAME = "studo-v18-learning-engine";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
@@ -18,6 +18,7 @@ const CORE_ASSETS = [
   "quiz.html",
   "test.html",
   "resources.html",
+  "progress.html",
   "manifest.json",
   "css/style.css",
   "css/studo-v2.css",
@@ -26,6 +27,8 @@ const CORE_ASSETS = [
   "js/theme.js",
   "js/storage.js",
   "js/data.js",
+  "js/learning.js",
+  "js/progress.js",
   "js/focus-tools.js",
   "js/annotate.js",
   "js/practice.js",

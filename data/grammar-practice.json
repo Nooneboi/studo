@@ -14,30 +14,70 @@
       "type": "grammar_edit",
       "prompt": "The manager, along with the two new hires, {{blank}} attending the safety training on Monday.",
       "options": [
-        { "id": "a", "text": "are" },
-        { "id": "b", "text": "is" },
-        { "id": "c", "text": "were" },
-        { "id": "d", "text": "have been" }
+        {
+          "id": "a",
+          "text": "are"
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "c",
+          "text": "were"
+        },
+        {
+          "id": "d",
+          "text": "have been"
+        }
       ],
-      "correct": ["b"],
+      "correct": [
+        "b"
+      ],
       "points": 1,
       "time": 30,
-      "explanation": "The subject is 'the manager' (singular) — the phrase 'along with the two new hires' doesn't change subject-verb agreement, so the verb stays singular: 'is'."
+      "explanation": "The subject is 'the manager' (singular) — the phrase 'along with the two new hires' doesn't change subject-verb agreement, so the verb stays singular: 'is'.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Subject–verb agreement"
+      }
     },
     {
       "id": "q2",
       "type": "grammar_edit",
-      "prompt": "Each of the applicants must submit {{blank}} resume by Friday.",
+      "prompt": "The two engineers reviewed {{blank}} notes before the meeting.",
       "options": [
-        { "id": "a", "text": "their" },
-        { "id": "b", "text": "there" },
-        { "id": "c", "text": "his or her" },
-        { "id": "d", "text": "they're" }
+        {
+          "id": "a",
+          "text": "their",
+          "distractorType": "correct_possessive"
+        },
+        {
+          "id": "b",
+          "text": "there",
+          "distractorType": "location_homophone"
+        },
+        {
+          "id": "c",
+          "text": "they're",
+          "distractorType": "contraction_homophone"
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "possessive_pronoun_form"
+        }
       ],
-      "correct": ["c"],
+      "correct": [
+        "a"
+      ],
       "points": 1,
       "time": 30,
-      "explanation": "'Each' is singular, so a singular possessive pronoun is required in formal usage: 'his or her'."
+      "explanation": "'Their' is the possessive determiner that correctly shows the notes belong to the two engineers. 'There' refers to a place, and 'they’re' means 'they are'.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Commonly confused words"
+      }
     }
   ]
 }

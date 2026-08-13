@@ -101,7 +101,10 @@ function setupShell() {
   }
 
   const submitBtn = document.getElementById("submit-btn");
-  if (submitBtn) submitBtn.addEventListener("click", () => submitTest(false));
+  if (submitBtn) submitBtn.addEventListener("click", () => {
+    if (submitted) return;
+    renderReviewScreen();
+  });
 }
 
 function renderWorkspaceShell(hasPassage) {
@@ -118,6 +121,8 @@ function renderWorkspaceShell(hasPassage) {
 
 function renderCurrentQuestion() {
   reviewing = false;
+  const topSubmit = document.getElementById("submit-btn");
+  if (topSubmit && !submitted) topSubmit.hidden = false;
   currentIndex = Math.max(0, Math.min(currentIndex, items.length - 1));
   const item = items[currentIndex];
   const q = item.question;
@@ -179,6 +184,8 @@ function renderCurrentQuestion() {
 
 function renderReviewScreen() {
   reviewing = true;
+  const topSubmit = document.getElementById("submit-btn");
+  if (topSubmit) topSubmit.hidden = true;
   const answeredCount = getAnsweredCount();
   const firstUnanswered = items.findIndex((item) => !hasAnswer(answers[answerKey(item)]));
 
@@ -331,7 +338,10 @@ function updateProgress() {
   if (progressLabel) progressLabel.textContent = reviewing ? "Review" : `Question ${currentIndex + 1} of ${items.length}`;
   if (answeredLabel) answeredLabel.textContent = `${answered} answered`;
   if (fill) fill.style.width = `${reviewing ? 100 : ((currentIndex + 1) / items.length) * 100}%`;
-  if (submitBtn && !submitted) submitBtn.classList.toggle("ready", answered === items.length);
+  if (submitBtn && !submitted) {
+    submitBtn.hidden = reviewing;
+    submitBtn.classList.toggle("ready", answered === items.length);
+  }
 }
 
 function hasAnswer(value) {
@@ -447,6 +457,25 @@ function submitTest(timedOut = false) {
   if (!timedOut && unanswered) {
     const ok = confirm(`${unanswered} question${unanswered === 1 ? " is" : "s are"} unanswered. Submit anyway?`);
     if (!ok) return;
+  }
+
+  // Record the finished test as learning evidence once, before the UI moves
+  // into review mode. Written/self-reviewed responses are intentionally skipped.
+  if (typeof Learning !== "undefined") {
+    items.forEach((item) => {
+      const q = item.question;
+      if (!isAutoGraded(q)) return;
+      const answer = answers[answerKey(item)] ?? "";
+      Learning.recordAttempt({
+        module: item.module,
+        question: q,
+        answer,
+        correct: isCorrectAnswer(q, answer),
+        mode: "test",
+        elapsedMs: null,
+        file: item.module.file || null,
+      });
+    });
   }
 
   submitted = true;

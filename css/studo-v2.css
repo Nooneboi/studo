@@ -2073,3 +2073,330 @@ body.test-body {
     padding: 14px 6px;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Phase 3A — learning profile + quiet learning feedback
+   ------------------------------------------------------------------------- */
+.learning-feedback {
+  display: none;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-line);
+  align-items: baseline;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+  color: var(--color-ink-faint);
+  font-size: .8rem;
+}
+.learning-feedback.visible { display: flex; }
+.learning-feedback strong {
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+}
+.learning-feedback.is-review strong { color: var(--color-warning); }
+.learning-feedback.is-correct strong { color: var(--color-success); }
+
+.progress-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 48px;
+  align-items: end;
+  padding: 58px 0 42px;
+  border-bottom: 1px solid var(--color-line);
+}
+.progress-heading h1,
+.progress-empty h1 {
+  margin: 6px 0 10px;
+  font-size: clamp(2.35rem, 5vw, 3.6rem);
+  letter-spacing: -.045em;
+}
+.progress-heading .lede,
+.progress-empty .lede { max-width: 64ch; }
+
+.progress-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(104px, 1fr));
+  gap: 22px;
+}
+.progress-stat {
+  min-width: 112px;
+  display: grid;
+  gap: 2px;
+}
+.progress-stat strong {
+  color: var(--color-ink);
+  font-size: 1.45rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.progress-stat span {
+  color: var(--color-ink-faint);
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .055em;
+}
+
+.progress-empty {
+  max-width: 760px;
+  padding: 82px 0 100px;
+}
+.progress-empty-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.next-move {
+  margin: 34px 0 60px;
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 28px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-line);
+}
+.next-move h2 {
+  margin: 3px 0 5px;
+  font-size: 1.45rem;
+}
+.next-move p {
+  margin: 0;
+  max-width: 58ch;
+  font-size: .94rem;
+}
+.next-move-score {
+  min-width: 92px;
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+}
+.next-move-score strong {
+  font-size: 1.65rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.next-move-score span {
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+}
+
+.progress-section {
+  margin: 0 0 64px;
+}
+.progress-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+.progress-section-head h2 {
+  margin: 4px 0 0;
+  font-size: 1.65rem;
+}
+.progress-section-head > p {
+  margin: 0;
+  color: var(--color-ink-faint);
+  font-size: .86rem;
+}
+
+.skill-signal-list,
+.mistake-list {
+  border-top: 1px solid var(--color-line);
+}
+.skill-signal-row {
+  min-height: 88px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 440px);
+  gap: 30px;
+  align-items: center;
+  padding: 17px 4px;
+  border-bottom: 1px solid var(--color-line);
+  color: inherit;
+}
+.skill-signal-row:hover {
+  text-decoration: none;
+  background: color-mix(in srgb, var(--color-surface-soft) 38%, transparent);
+}
+.skill-signal-copy {
+  display: grid;
+  gap: 2px;
+}
+.skill-signal-copy strong { color: var(--color-ink); }
+.skill-signal-copy > span:last-child {
+  color: var(--color-ink-faint);
+  font-size: .82rem;
+}
+.skill-category {
+  color: var(--color-primary-dark) !important;
+  font-size: .72rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.skill-meter {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 48px 86px;
+  gap: 12px;
+  align-items: center;
+}
+.skill-meter-track {
+  height: 5px;
+  border-radius: 99px;
+  background: var(--color-surface-strong);
+  overflow: hidden;
+}
+.skill-meter-track span {
+  display: block;
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: inherit;
+}
+.skill-meter > strong {
+  text-align: right;
+  font-size: .92rem;
+  font-variant-numeric: tabular-nums;
+}
+.skill-status {
+  justify-self: end;
+  color: var(--color-ink-soft);
+  font-size: .76rem;
+  font-weight: 650;
+}
+.skill-status.needs-work { color: var(--color-warning); }
+.skill-status.strong { color: var(--color-success); }
+
+.mistake-row {
+  min-height: 74px;
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) minmax(170px, auto) 24px;
+  gap: 15px;
+  align-items: center;
+  padding: 13px 4px;
+  border-bottom: 1px solid var(--color-line);
+  color: inherit;
+}
+.mistake-row:hover {
+  text-decoration: none;
+  background: color-mix(in srgb, var(--color-surface-soft) 38%, transparent);
+}
+.mistake-status-mark {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-alert);
+}
+.mistake-status-mark.improving { background: var(--color-warning); }
+.mistake-copy {
+  display: grid;
+  gap: 2px;
+}
+.mistake-copy strong { color: var(--color-ink); }
+.mistake-copy span,
+.mistake-meta span {
+  color: var(--color-ink-faint);
+  font-size: .79rem;
+}
+.mistake-meta {
+  display: grid;
+  justify-items: end;
+  gap: 1px;
+}
+.mistake-arrow { color: var(--color-ink-faint); }
+
+.progress-quiet-state {
+  padding: 24px 0;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
+}
+
+.progress-note-card {
+  margin: 8px 0 70px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: center;
+  border-top: 1px solid var(--color-line);
+}
+.progress-note-card p {
+  margin: 4px 0 0;
+  max-width: 78ch;
+  font-size: .84rem;
+}
+
+@media (max-width: 900px) {
+  .progress-heading,
+  .progress-section-head {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .progress-summary { max-width: 520px; }
+  .next-move {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .next-move .btn { grid-column: 1 / -1; width: fit-content; }
+  .skill-signal-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .skill-meter { max-width: 520px; }
+}
+
+@media (max-width: 620px) {
+  .progress-heading { padding-top: 40px; }
+  .progress-summary { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .next-move { grid-template-columns: 1fr; gap: 16px; }
+  .next-move-score { justify-items: start; }
+  .skill-meter { grid-template-columns: minmax(80px, 1fr) 42px; }
+  .skill-status { grid-column: 1 / -1; justify-self: start; }
+  .mistake-row { grid-template-columns: 8px minmax(0, 1fr) 20px; }
+  .mistake-meta { grid-column: 2 / 3; justify-items: start; }
+  .progress-note-card { grid-template-columns: 1fr; }
+}
+
+/* Phase 3A patch ---------------------------------------------------------- */
+#submit-btn[hidden] { display: none !important; }
+
+.mistake-reason {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-line);
+  display: none;
+}
+.mistake-reason.visible { display: block; }
+.mistake-reason > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-ink-soft);
+  font-size: .8rem;
+  font-weight: 600;
+}
+.mistake-reason-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.mistake-reason-btn {
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-line);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--color-ink-soft);
+  font-size: .78rem;
+  font-weight: 600;
+}
+.mistake-reason-btn:hover {
+  border-color: var(--color-line-strong);
+  background: var(--color-surface-soft);
+  color: var(--color-ink);
+}
+.mistake-reason-btn.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
