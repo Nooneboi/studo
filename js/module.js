@@ -179,12 +179,12 @@ function renderCurrentQuestion(options = {}) {
       <span class="question-detail">${questionDetail(q)}</span>
     </div>
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
-    ${isAutoGraded(q) ? confidencePanelHtml(q, confidenceSelections[q.id] || null) : ""}
     <div data-role="answer-area"></div>
+    ${isAutoGraded(q) ? confidencePanelHtml(q, confidenceSelections[q.id] || null) : ""}
     <div class="explanation-box" data-role="explanation"></div>
     <div class="learning-feedback" data-role="learning-feedback" aria-live="polite"></div>
-    <div class="mistake-reason" data-role="mistake-reason">
-      <span>What tripped you up? <em style="font-weight:400">Optional</em></span>
+    <details class="mistake-reason" data-role="mistake-reason">
+      <summary>Why did I miss this? <span>Optional</span></summary>
       <div class="mistake-reason-options">
         <button type="button" class="mistake-reason-btn" data-reason="misread">Misread the question</button>
         <button type="button" class="mistake-reason-btn" data-reason="evidence">Couldn't find the evidence</button>
@@ -192,7 +192,7 @@ function renderCurrentQuestion(options = {}) {
         <button type="button" class="mistake-reason-btn" data-reason="guess">Guessed</button>
         <button type="button" class="mistake-reason-btn" data-reason="careless">Careless mistake</button>
       </div>
-    </div>
+    </details>
     <div class="notes-panel ${notesOpen ? "visible" : ""}" data-role="notes">
       <label class="question-detail" for="question-note">Private note for this question</label>
       <textarea id="question-note" placeholder="Write a note to yourself…">${escapeHtml(notes[q.id] || "")}</textarea>
@@ -277,8 +277,8 @@ function renderGrammarPrompt(q, savedHighlightHtml) {
 
 function confidencePanelHtml(q, selectedConfidence) {
   return `
-    <div class="confidence-panel" data-role="confidence-panel" aria-label="Confidence before answering">
-      <span class="confidence-label">How sure are you?</span>
+    <div class="confidence-inline" data-role="confidence-panel" aria-label="Optional confidence before answering">
+      <span class="confidence-label">Confidence <em>optional</em></span>
       <div class="confidence-options">
         ${['sure', 'unsure', 'guessing'].map((id) => `
           <button
@@ -295,39 +295,56 @@ function confidenceLabel(id) {
   return { sure: 'Sure', unsure: 'Unsure', guessing: 'Guessing' }[id] || id;
 }
 
+function finalizeConfidenceUi(questionId) {
+  const panel = document.querySelector('[data-role="confidence-panel"]');
+  if (!panel) return;
+  const selected = confidenceSelections[questionId] || null;
+  if (!selected) {
+    panel.classList.add('answered-without-confidence');
+    return;
+  }
+  panel.innerHTML = `<span class="confidence-recorded">Confidence: <strong>${escapeHtml(confidenceLabel(selected))}</strong></span>`;
+  panel.classList.add('answered');
+}
+
 function buildExplanationHtml(q, selectedAnswer) {
   const hasSelected = selectedAnswer != null && selectedAnswer !== '';
   const auto = isAutoGraded(q);
   const correct = auto && hasSelected ? isCorrectAnswer(q, selectedAnswer) : null;
-  const selectedOption = getOptionById(q, selectedAnswer);
   const correctOption = getCorrectOption(q);
   const summary = q.explanation || '';
   const rule = q.rule || defaultRuleForQuestion(q);
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
+  const skillLabel = q.skill?.label || currentQuiz?.topic || 'Current skill';
 
   if (!summary && !rule && !evidence && !hasSelected) return '';
 
   return `
-    <div class="feedback-header ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
-      <div>
-        <span class="feedback-kicker">Feedback</span>
+    <div class="feedback-brief ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
+      <div class="feedback-result-row">
         <strong>${correct === true ? 'Correct' : correct === false ? 'Not quite' : 'Review'}</strong>
+        ${auto && hasSelected && correct === false ? `<span>Correct answer: ${escapeHtml(answerDisplay(q, correctOption))}</span>` : ''}
       </div>
-      ${auto && hasSelected ? `<span class="feedback-answer-brief">${correct === true ? 'You chose the best answer.' : `Correct answer: ${escapeHtml(answerDisplay(q, correctOption))}`}</span>` : ''}
+      ${summary ? `<p>${escapeHtml(summary)}</p>` : ''}
+      <div class="feedback-key-idea"><span>Key idea</span><strong>${escapeHtml(skillLabel)}</strong></div>
     </div>
-    <div class="feedback-sections">
-      ${summary ? `<section class="feedback-section"><h4>Why this works</h4><p>${escapeHtml(summary)}</p></section>` : ''}
-      ${!correct && wrongReason ? `<section class="feedback-section"><h4>Why your answer falls short</h4><p>${escapeHtml(wrongReason)}</p></section>` : ''}
-      ${rule ? `<section class="feedback-section"><h4>Key rule</h4><p>${escapeHtml(rule)}</p></section>` : ''}
+    <div class="feedback-disclosure">
+      ${!correct && wrongReason ? `
+        <details class="feedback-detail">
+          <summary>Why my answer was wrong</summary>
+          <p>${escapeHtml(wrongReason)}</p>
+        </details>` : ''}
       ${evidence ? `
-        <section class="feedback-section evidence-section">
-          <div class="feedback-inline-head">
-            <h4>Show me where</h4>
-            <button type="button" class="btn ghost small" data-action="toggle-evidence">Show evidence</button>
-          </div>
-          <div class="evidence-body" data-role="evidence-body"><p>${escapeHtml(evidence)}</p></div>
-        </section>` : ''}
+        <details class="feedback-detail evidence-detail">
+          <summary>Show evidence in the passage</summary>
+          <p>${escapeHtml(evidence)}</p>
+        </details>` : ''}
+      ${rule ? `
+        <details class="feedback-detail">
+          <summary>More explanation</summary>
+          <p>${escapeHtml(rule)}</p>
+        </details>` : ''}
     </div>`;
 }
 
@@ -424,6 +441,8 @@ function renderAnswerArea(q, container, savedAnswer) {
         showExplanation(radio.value);
         showLearningFeedback(learningResult, correct);
         setupMistakeReason(q, correct, learningResult);
+        finalizeConfidenceUi(q.id);
+        lockChoiceInputs(container);
         questionOpenedAt = Date.now();
         updateAnswerStatus();
       });
@@ -431,6 +450,8 @@ function renderAnswerArea(q, container, savedAnswer) {
     if (savedAnswer) {
       revealChoiceFeedback(container, q, savedAnswer);
       showExplanation(savedAnswer);
+      finalizeConfidenceUi(q.id);
+      lockChoiceInputs(container);
     }
   } else if (q.type === "fill_blank") {
     container.innerHTML = `<label class="question-detail" for="short-answer">Your answer</label><input id="short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}">`;
@@ -452,13 +473,17 @@ function renderAnswerArea(q, container, savedAnswer) {
           });
           showLearningFeedback(learningResult, correct);
           setupMistakeReason(q, correct, learningResult);
+          finalizeConfidenceUi(q.id);
           questionOpenedAt = Date.now();
         }
         showExplanation(input.value);
         updateAnswerStatus();
       }
     });
-    if (savedAnswer) showExplanation(savedAnswer);
+    if (savedAnswer) {
+      showExplanation(savedAnswer);
+      finalizeConfidenceUi(q.id);
+    }
   } else {
     container.innerHTML = `<label class="question-detail" for="written-answer">Your response</label><textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>`;
     const ta = container.querySelector("textarea");
@@ -477,15 +502,14 @@ function renderAnswerArea(q, container, savedAnswer) {
     if (!box) return;
     box.innerHTML = buildExplanationHtml(q, selectedAnswer);
     if (box.textContent.trim()) box.classList.add('visible');
-    const evidenceBtn = box.querySelector('[data-action="toggle-evidence"]');
-    const evidenceBody = box.querySelector('[data-role="evidence-body"]');
-    if (evidenceBtn && evidenceBody) {
-      evidenceBtn.addEventListener('click', () => {
-        const open = evidenceBody.classList.toggle('visible');
-        evidenceBtn.textContent = open ? 'Hide evidence' : 'Show evidence';
-      });
-    }
   }
+}
+
+function lockChoiceInputs(container) {
+  container.querySelectorAll('.answer-radio').forEach((radio) => {
+    radio.disabled = true;
+  });
+  container.classList.add('answer-locked');
 }
 
 function revealChoiceFeedback(container, q, selectedId) {
@@ -507,11 +531,9 @@ function revealChoiceFeedback(container, q, selectedId) {
 function showLearningFeedback(result, correct) {
   const el = document.querySelector('[data-role="learning-feedback"]');
   if (!el || !result?.skill) return;
-  const skill = result.skill;
-  const prefix = correct
-    ? "Skill signal updated"
-    : "Saved to your review list";
-  el.innerHTML = `<span>${escapeHtml(prefix)}</span><strong>${escapeHtml(skill.label)}</strong><span>${skill.score}% · ${escapeHtml(skill.signal)}</span>`;
+  el.innerHTML = correct
+    ? `<span class="learning-feedback-mark" aria-hidden="true">✓</span><span>Practice recorded</span>`
+    : `<span class="learning-feedback-mark" aria-hidden="true">↺</span><span>Added to review</span>`;
   el.classList.add("visible", correct ? "is-correct" : "is-review");
 }
 
@@ -519,6 +541,7 @@ function setupMistakeReason(question, correct, learningResult) {
   const panel = document.querySelector('[data-role="mistake-reason"]');
   if (!panel) return;
   panel.classList.toggle("visible", !correct);
+  panel.open = false;
   if (correct || typeof Learning === "undefined") return;
 
   const key = learningResult?.mistake?.questionKey || Learning.questionKey(currentQuiz, question);
@@ -529,7 +552,7 @@ function setupMistakeReason(question, correct, learningResult) {
       Learning.setMistakeReason(key, btn.dataset.reason);
       panel.querySelectorAll("[data-reason]").forEach((b) => b.classList.toggle("active", b === btn));
       setStatus("Reason saved to your mistake book.");
-    }, { once: true });
+    });
   });
 }
 

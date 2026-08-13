@@ -93,6 +93,12 @@ const Learning = (() => {
     return mode === "test" ? 1.1 : 1;
   }
 
+  function observedPatternFor(question, answer, correct) {
+    if (correct || !question || !Array.isArray(question.options)) return null;
+    const selected = question.options.find((opt) => opt.id === answer);
+    return selected?.distractorType || null;
+  }
+
   function recordAttempt({ module, question, answer, correct, mode = "practice", elapsedMs = null, file = null, confidence = null }) {
     if (!module || !question || typeof correct !== "boolean") return null;
 
@@ -100,6 +106,7 @@ const Learning = (() => {
     const skill = skillFor(module, question);
     const now = new Date().toISOString();
     const key = questionKey(module, question);
+    const observedPattern = observedPatternFor(question, answer, correct);
     const attempt = {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
       questionKey: key,
@@ -118,6 +125,7 @@ const Learning = (() => {
       difficulty: module.difficulty || "medium",
       elapsedMs: Number.isFinite(elapsedMs) ? Math.max(0, Math.round(elapsedMs)) : null,
       confidence: confidence || null,
+      observedPattern,
       attemptedAt: now,
     };
 
@@ -141,6 +149,8 @@ const Learning = (() => {
         wrongCount: (existing?.wrongCount || 0) + 1,
         correctAfter: 0,
         status: "needs_review",
+        reason: existing?.reason || null,
+        observedPattern: observedPattern || existing?.observedPattern || null,
         lastWrongAt: now,
         lastAttemptAt: now,
       };
@@ -254,6 +264,17 @@ const Learning = (() => {
     return state.mistakes[questionKeyValue];
   }
 
+  function getObservedPatterns() {
+    const attempts = readState().attempts.filter((a) => !a.correct && a.observedPattern);
+    const counts = attempts.reduce((acc, item) => {
+      acc[item.observedPattern] = (acc[item.observedPattern] || 0) + 1;
+      return acc;
+    }, {});
+    return Object.entries(counts)
+      .map(([id, count]) => ({ id, count }))
+      .sort((a, b) => b.count - a.count);
+  }
+
   function clearLearningHistory() {
     localStorage.removeItem(STATE_KEY);
   }
@@ -273,6 +294,7 @@ const Learning = (() => {
     questionKey,
     categoryLabel,
     setMistakeReason,
+    getObservedPatterns,
     clearLearningHistory,
   };
 })();

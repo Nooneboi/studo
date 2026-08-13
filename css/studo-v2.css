@@ -2695,3 +2695,268 @@ body.test-body {
     align-items: start;
   }
 }
+
+/* Phase 3B.1 — focus-first progressive disclosure ------------------------
+   The learner gets one main job at a time: solve first, then understand.
+   Analytics and self-diagnosis stay available without competing for attention.
+   ------------------------------------------------------------------------- */
+
+/* Confidence is optional context, not a second task card. */
+.confidence-panel { display: none !important; }
+.confidence-inline {
+  margin: 10px 0 0;
+  padding: 8px 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--color-ink-faint);
+  font-size: .78rem;
+}
+.confidence-inline .confidence-label {
+  color: var(--color-ink-faint);
+  font-size: .78rem;
+  font-weight: 600;
+}
+.confidence-inline .confidence-label em {
+  margin-left: 4px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: .8;
+}
+.confidence-inline .confidence-options {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.confidence-inline .confidence-btn {
+  min-height: 28px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+  font-weight: 600;
+}
+.confidence-inline .confidence-btn:hover {
+  background: var(--color-surface-soft);
+  color: var(--color-ink);
+}
+.confidence-inline .confidence-btn.active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+.confidence-inline.answered-without-confidence {
+  display: none;
+}
+.confidence-inline.answered {
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.confidence-recorded {
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+}
+.confidence-recorded strong {
+  color: var(--color-ink-soft);
+}
+
+/* Once feedback has been shown, the first attempt is preserved. */
+.answer-locked .answer-choice {
+  cursor: default;
+}
+.answer-locked .answer-choice:hover {
+  background: transparent;
+}
+.answer-locked .answer-choice.correct:hover {
+  background: color-mix(in srgb, var(--color-success-soft) 72%, transparent);
+}
+.answer-locked .answer-choice.incorrect:hover {
+  background: color-mix(in srgb, var(--color-alert-soft) 70%, transparent);
+}
+
+/* Immediate feedback is brief; deeper teaching layers are collapsed. */
+.explanation-box {
+  display: none;
+  margin-top: 18px;
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 1px solid var(--color-line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-ink);
+}
+.explanation-box::before { display: none !important; }
+.explanation-box.visible { display: block; }
+
+.feedback-brief {
+  display: grid;
+  gap: 9px;
+}
+.feedback-result-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.feedback-result-row strong {
+  font-size: 1rem;
+  color: var(--color-success);
+}
+.feedback-brief.is-wrong .feedback-result-row strong {
+  color: var(--color-alert);
+}
+.feedback-result-row span {
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+}
+.feedback-brief > p {
+  margin: 0;
+  max-width: 66ch;
+  color: var(--color-ink-soft);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.feedback-key-idea {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+}
+.feedback-key-idea span {
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 700;
+}
+.feedback-key-idea strong {
+  color: var(--color-ink-soft);
+  font-size: .8rem;
+}
+.feedback-disclosure {
+  display: grid;
+  margin-top: 10px;
+  border-top: 1px solid var(--color-line);
+}
+.feedback-detail {
+  border-bottom: 1px solid var(--color-line);
+}
+.feedback-detail summary {
+  list-style: none;
+  position: relative;
+  padding: 10px 24px 10px 0;
+  color: var(--color-ink-soft);
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+.feedback-detail summary::-webkit-details-marker { display: none; }
+.feedback-detail summary::after {
+  content: "+";
+  position: absolute;
+  right: 2px;
+  top: 9px;
+  color: var(--color-ink-faint);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.feedback-detail[open] summary::after { content: "−"; }
+.feedback-detail p {
+  margin: -1px 0 12px;
+  padding-right: 24px;
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+  line-height: 1.55;
+}
+
+/* Keep analytics quiet on the practice screen. */
+.learning-feedback {
+  display: none;
+  margin-top: 10px;
+  padding: 0;
+  border: 0;
+  gap: 6px;
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+}
+.learning-feedback.visible { display: flex; }
+.learning-feedback-mark {
+  color: var(--color-primary-dark);
+  font-weight: 800;
+}
+.learning-feedback.is-review .learning-feedback-mark { color: var(--color-warning); }
+.learning-feedback.is-correct .learning-feedback-mark { color: var(--color-success); }
+
+/* Self-diagnosis is optional and closed by default. */
+.mistake-reason {
+  display: none;
+  margin-top: 10px;
+  padding-top: 0;
+  border-top: 0;
+}
+.mistake-reason.visible { display: block; }
+.mistake-reason summary {
+  list-style: none;
+  width: fit-content;
+  padding: 6px 0;
+  color: var(--color-ink-faint);
+  font-size: .78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mistake-reason summary::-webkit-details-marker { display: none; }
+.mistake-reason summary::after {
+  content: " +";
+  color: var(--color-ink-faint);
+}
+.mistake-reason[open] summary::after { content: " −"; }
+.mistake-reason summary span {
+  margin-left: 4px;
+  font-weight: 500;
+  opacity: .75;
+}
+.mistake-reason-options {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.mistake-reason-btn {
+  min-height: 30px;
+  padding: 5px 9px;
+  font-size: .75rem;
+}
+
+/* Repeated distractor patterns belong in Progress, not in the question flow. */
+.pattern-notice {
+  margin: 26px 0 0;
+  padding: 20px 22px;
+  border: 1px solid var(--color-line);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+.pattern-notice h2 {
+  margin: 4px 0 6px;
+  font-size: 1.2rem;
+}
+.pattern-notice p {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--color-ink-soft);
+  font-size: .9rem;
+}
+
+@media (max-width: 720px) {
+  .confidence-inline {
+    justify-content: flex-start;
+  }
+  .feedback-result-row {
+    align-items: flex-start;
+  }
+}

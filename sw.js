@@ -7,7 +7,7 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "studo-v20-phase3b";
+const CACHE_NAME = "studo-v21-focus-refinement";
 const CORE_ASSETS = [
   "index.html",
   "404.html",

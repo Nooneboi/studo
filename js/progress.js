@@ -28,6 +28,8 @@ function renderProgress() {
 
   const recommendation = summary.weakestSkills[0] || summary.skills[0] || null;
   const mistakes = Learning.getMistakes().slice(0, 6);
+  const patterns = typeof Learning.getObservedPatterns === "function" ? Learning.getObservedPatterns() : [];
+  const topPattern = patterns.find((item) => item.count >= 2) || null;
 
   progressView.innerHTML = `
     <section class="progress-heading">
@@ -45,6 +47,7 @@ function renderProgress() {
     </section>
 
     ${recommendation ? recommendationHtml(recommendation) : ""}
+    ${topPattern ? patternHtml(topPattern) : ""}
 
     <section class="progress-section" aria-labelledby="skill-signals-heading">
       <div class="progress-section-head">
@@ -110,6 +113,29 @@ function recommendationHtml(skill) {
       </div>
       <a class="btn" href="${escapeAttr(href)}">Practice this area</a>
     </section>`;
+}
+
+function patternHtml(pattern) {
+  return `
+    <section class="pattern-notice" aria-label="Observed mistake pattern">
+      <div>
+        <div class="eyebrow">Pattern noticed</div>
+        <h2>${escapeHtml(patternLabel(pattern.id))}</h2>
+        <p>This showed up in ${pattern.count} recent wrong answers. Studo records this from the distractors you chose, so you do not have to diagnose every mistake yourself.</p>
+      </div>
+    </section>`;
+}
+
+function patternLabel(id) {
+  return {
+    mentioned_not_supported: "Choosing details that are mentioned but not actually supported",
+    too_broad: "Choosing answers that are broader than the text supports",
+    too_narrow: "Getting pulled toward one detail instead of the larger point",
+    opposite_claim: "Choosing an answer that conflicts with a passage detail",
+    location_homophone: "Mixing up a place word with the grammatical form needed",
+    contraction_homophone: "Mixing up a contraction with the grammatical form needed",
+    possessive_pronoun_form: "Using a possessive form that does not fit before a noun",
+  }[id] || "A repeated distractor pattern";
 }
 
 function skillRow(skill) {
