@@ -2507,3 +2507,191 @@ body.test-body {
     font-size: 1.7rem;
   }
 }
+
+/* Phase 3B – stronger home reminder -------------------------------------- */
+#home-learning-mount {
+  margin-bottom: 26px;
+}
+
+.home-learning-strip {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  margin: 22px 0 18px;
+  padding: 26px 28px 24px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 28%, var(--color-line));
+  border-radius: 18px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary-soft) 80%, var(--color-surface)) 0%, var(--color-surface) 68%);
+  box-shadow: 0 14px 30px rgba(12, 18, 32, 0.10);
+}
+.home-learning-strip::before {
+  width: 5px;
+}
+.home-learning-glow {
+  position: absolute;
+  right: -60px;
+  top: -70px;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-primary-soft) 78%, transparent) 0%, transparent 72%);
+  pointer-events: none;
+}
+.home-learning-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.home-learning-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-primary-soft) 80%, var(--color-surface));
+  color: var(--color-primary-dark);
+  font-size: 0.95rem;
+  font-weight: 800;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 26%, var(--color-line));
+}
+.home-learning-strip h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.85rem, 3.4vw, 2.45rem);
+}
+.home-learning-detail {
+  font-size: 1.03rem;
+}
+.home-learning-note {
+  margin-top: 10px;
+}
+.home-learning-actions {
+  align-self: center;
+}
+.home-learning-actions .btn {
+  min-width: 136px;
+  justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .home-learning-glow { display: none; }
+}
+
+/* Phase 3B – confidence + layered feedback ------------------------------- */
+.confidence-panel {
+  margin: 18px 0 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-surface-soft);
+}
+.confidence-label {
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.confidence-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.confidence-btn {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-ink-soft);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.confidence-btn:hover {
+  background: var(--color-surface-soft);
+  color: var(--color-ink);
+}
+.confidence-btn.active {
+  border-color: color-mix(in srgb, var(--color-primary) 34%, var(--color-line));
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+
+.explanation-box.visible {
+  display: block;
+}
+.feedback-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.feedback-kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-primary-dark);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.feedback-header strong {
+  font-size: 1.08rem;
+}
+.feedback-answer-brief {
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+}
+.feedback-sections {
+  display: grid;
+  gap: 12px;
+}
+.feedback-section {
+  padding: 14px 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-surface-soft);
+}
+.feedback-section h4,
+.feedback-inline-head h4 {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+}
+.feedback-section p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  line-height: 1.58;
+}
+.feedback-inline-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.evidence-body {
+  display: none;
+  padding-top: 4px;
+}
+.evidence-body.visible {
+  display: block;
+}
+.learning-feedback.visible {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+@media (max-width: 780px) {
+  .confidence-panel {
+    flex-direction: column;
+    align-items: start;
+  }
+  .feedback-header,
+  .feedback-inline-head {
+    flex-direction: column;
+    align-items: start;
+  }
+}

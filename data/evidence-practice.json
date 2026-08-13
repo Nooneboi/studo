@@ -1,13 +1,13 @@
 {
   "id": "evidence-practice",
-  "title": "Evidence-Based Reading — The Night Shift",
+  "title": "Evidence-Based Reading \u2014 The Night Shift",
   "description": "Practice choosing the sentence that best supports an answer.",
   "subject": "rla",
   "category": "reading",
   "topic": "Evidence & Inference",
   "difficulty": "medium",
   "source": "Original content by Studo",
-  "passage": "Maria had worked the night shift at the packing plant for six years. She liked the quiet of it — the hum of the conveyor belts, the empty parking lot, the way the sky turned from black to gray just as her shift ended. Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed. She told her sister it was because night shift paid a premium, but the truth was simpler: she had never learned to sleep well in daylight, not since she was a child.",
+  "passage": "Maria had worked the night shift at the packing plant for six years. She liked the quiet of it \u2014 the hum of the conveyor belts, the empty parking lot, the way the sky turned from black to gray just as her shift ended. Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed. She told her sister it was because night shift paid a premium, but the truth was simpler: she had never learned to sleep well in daylight, not since she was a child.",
   "questions": [
     {
       "id": "q1",
@@ -16,7 +16,9 @@
       "options": [
         {
           "id": "a",
-          "text": "She resents it but has no other choice."
+          "text": "She resents it but has no other choice.",
+          "distractorType": "opposite_claim",
+          "whyWrong": "The passage does not show resentment; instead, it shows she likes several parts of the night shift and chooses to stay."
         },
         {
           "id": "b",
@@ -24,11 +26,15 @@
         },
         {
           "id": "c",
-          "text": "She is indifferent to it."
+          "text": "She is indifferent to it.",
+          "distractorType": "too_narrow",
+          "whyWrong": "She is not neutral. The details suggest a preference, not simple indifference."
         },
         {
           "id": "d",
-          "text": "She is actively trying to leave it."
+          "text": "She is actively trying to leave it.",
+          "distractorType": "opposite_claim",
+          "whyWrong": "Nothing in the passage shows she is trying to leave. In fact, others leave while she remains."
         }
       ],
       "correct": [
@@ -39,7 +45,8 @@
       "skill": {
         "id": "reading.inference.from_details",
         "label": "Inference from details"
-      }
+      },
+      "rule": "When the question asks about a character\u2019s feelings, combine the descriptive details and the character\u2019s actions rather than focusing on one isolated sentence."
     },
     {
       "id": "q2",
@@ -48,11 +55,15 @@
       "options": [
         {
           "id": "a",
-          "text": "She liked the quiet of it — the hum of the conveyor belts, the empty parking lot..."
+          "text": "She liked the quiet of it \u2014 the hum of the conveyor belts, the empty parking lot...",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This helps show she likes the night shift, but it does not directly prove that money is not the real reason."
         },
         {
           "id": "b",
-          "text": "Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed."
+          "text": "Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This compares Maria with her coworkers, but it does not directly reveal the truth behind her stated reason."
         },
         {
           "id": "c",
@@ -60,7 +71,9 @@
         },
         {
           "id": "d",
-          "text": "Maria had worked the night shift at the packing plant for six years."
+          "text": "Maria had worked the night shift at the packing plant for six years.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This is simply background information and does not address why she really stays."
         }
       ],
       "correct": [
@@ -72,7 +85,9 @@
       "skill": {
         "id": "reading.evidence.matching",
         "label": "Evidence matching"
-      }
+      },
+      "rule": "For evidence questions, choose the sentence that directly proves the claim rather than one that merely relates to the topic.",
+      "evidenceExcerpt": "\u201cShe told her sister it was because night shift paid a premium, but the truth was simpler...\u201d This is the exact line that signals money is not the real reason."
     }
   ]
 }

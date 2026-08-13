@@ -1,6 +1,6 @@
 {
   "id": "grammar-practice",
-  "title": "Grammar Edit — Sentence Repair",
+  "title": "Grammar Edit \u2014 Sentence Repair",
   "description": "Practice choosing the correct edit for each underlined section.",
   "subject": "rla",
   "category": "language_conventions",
@@ -16,7 +16,8 @@
       "options": [
         {
           "id": "a",
-          "text": "are"
+          "text": "are",
+          "whyWrong": "\u201cAre\u201d matches a plural subject, but the true subject here is the singular noun \u201cmanager.\u201d"
         },
         {
           "id": "b",
@@ -24,11 +25,13 @@
         },
         {
           "id": "c",
-          "text": "were"
+          "text": "were",
+          "whyWrong": "The tense shifts unnecessarily. The sentence calls for a present-tense verb, not past tense."
         },
         {
           "id": "d",
-          "text": "have been"
+          "text": "have been",
+          "whyWrong": "This verb phrase changes both number and tense, making the sentence grammatically off target."
         }
       ],
       "correct": [
@@ -36,11 +39,12 @@
       ],
       "points": 1,
       "time": 30,
-      "explanation": "The subject is 'the manager' (singular) — the phrase 'along with the two new hires' doesn't change subject-verb agreement, so the verb stays singular: 'is'.",
+      "explanation": "The subject is 'the manager' (singular) \u2014 the phrase 'along with the two new hires' doesn't change subject-verb agreement, so the verb stays singular: 'is'.",
       "skill": {
         "id": "language.grammar.subject_verb_agreement",
-        "label": "Subject–verb agreement"
-      }
+        "label": "Subject\u2013verb agreement"
+      },
+      "rule": "Ignore interrupting phrases like \u201calong with ...\u201d when deciding whether the verb should be singular or plural."
     },
     {
       "id": "q2",
@@ -73,11 +77,12 @@
       ],
       "points": 1,
       "time": 30,
-      "explanation": "'Their' is the possessive determiner that correctly shows the notes belong to the two engineers. 'There' refers to a place, and 'they’re' means 'they are'.",
+      "explanation": "'Their' is the possessive determiner that correctly shows the notes belong to the two engineers. 'There' refers to a place, and 'they\u2019re' means 'they are'.",
       "skill": {
         "id": "language.usage.word_choice",
         "label": "Commonly confused words"
-      }
+      },
+      "rule": "Check what job the word must do in the sentence. Before a noun like \u201cnotes,\u201d you need a possessive determiner."
     }
   ]
 }

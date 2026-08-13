@@ -1,6 +1,6 @@
 {
   "id": "sample-quiz",
-  "title": "Sample Quiz — How This Works",
+  "title": "Sample Quiz \u2014 How This Works",
   "description": "A short demo set showing all three question types.",
   "subject": "rla",
   "category": "reading",
@@ -16,11 +16,13 @@
       "options": [
         {
           "id": "a",
-          "text": "Plans"
+          "text": "Plans",
+          "whyWrong": "Plans are broader goals and direction, not the single question directly in front of you."
         },
         {
           "id": "b",
-          "text": "Systems"
+          "text": "Systems",
+          "whyWrong": "Systems are repeated routines or habits, not the individual item you are answering right now."
         },
         {
           "id": "c",
@@ -28,7 +30,8 @@
         },
         {
           "id": "d",
-          "text": "None of these"
+          "text": "None of these",
+          "whyWrong": "One of these does fit: the question itself belongs to the details layer."
         }
       ],
       "correct": [
@@ -36,11 +39,12 @@
       ],
       "points": 1,
       "time": 20,
-      "explanation": "Details are the sharp end of the plan — the specific thing in front of you right now.",
+      "explanation": "Details are the sharp end of the plan \u2014 the specific thing in front of you right now.",
       "skill": {
         "id": "study.orientation.details",
         "label": "Study orientation"
-      }
+      },
+      "rule": "The \u201cdetails\u201d layer is the immediate task in front of you\u2014the exact question or passage you are working on right now."
     },
     {
       "id": "q2",
@@ -48,7 +52,7 @@
       "prompt": "A repeated habit that carries you toward your goal without relying on motivation is called a ______.",
       "correct": "system",
       "points": 1,
-      "explanation": "That's the 'Systems' layer — routines you can run on autopilot.",
+      "explanation": "That's the 'Systems' layer \u2014 routines you can run on autopilot.",
       "skill": {
         "id": "study.orientation.systems",
         "label": "Study orientation"
@@ -59,7 +63,7 @@
       "type": "open_ended",
       "prompt": "In a sentence or two, describe one system (habit or routine) you could build for your own studying.",
       "points": 2,
-      "explanation": "Open-ended answers aren't auto-graded — this is for your own reflection, or for a teacher to review manually.",
+      "explanation": "Open-ended answers aren't auto-graded \u2014 this is for your own reflection, or for a teacher to review manually.",
       "skill": {
         "id": "study.orientation.reflection",
         "label": "Study reflection"

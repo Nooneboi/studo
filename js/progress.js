@@ -40,6 +40,7 @@ function renderProgress() {
         ${summaryStat(summary.attempts, "graded attempts")}
         ${summaryStat(`${summary.accuracy}%`, "raw accuracy")}
         ${summaryStat(summary.activeMistakes, "need review")}
+        ${summaryStat(summary.sureWrong, "sure but wrong")}
       </div>
     </section>
 

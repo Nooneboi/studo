@@ -29,9 +29,13 @@
 
   mount.innerHTML = `
     <section class="home-learning-strip" aria-label="Continue learning">
+      <div class="home-learning-glow" aria-hidden="true"></div>
       <div class="home-learning-main">
         <div class="home-learning-topline">
-          <div class="eyebrow">Continue learning</div>
+          <div class="home-learning-kicker">
+            <span class="home-learning-icon" aria-hidden="true">↺</span>
+            <div class="eyebrow">Continue learning</div>
+          </div>
           <span class="home-learning-chip">Review due</span>
         </div>
         <h2>${escapeHtml(mainTitle)}</h2>
@@ -39,7 +43,7 @@
         <p class="home-learning-note">${escapeHtml(supportingNote)}</p>
       </div>
       <div class="home-learning-actions">
-        <a class="btn" href="${escapeAttr(primaryHref)}">Continue</a>
+        <a class="btn" href="${escapeAttr(primaryHref)}">Resume now</a>
         <a class="btn secondary" href="progress.html">View progress</a>
       </div>
     </section>`;

@@ -93,7 +93,7 @@ const Learning = (() => {
     return mode === "test" ? 1.1 : 1;
   }
 
-  function recordAttempt({ module, question, answer, correct, mode = "practice", elapsedMs = null, file = null }) {
+  function recordAttempt({ module, question, answer, correct, mode = "practice", elapsedMs = null, file = null, confidence = null }) {
     if (!module || !question || typeof correct !== "boolean") return null;
 
     const state = readState();
@@ -117,6 +117,7 @@ const Learning = (() => {
       mode,
       difficulty: module.difficulty || "medium",
       elapsedMs: Number.isFinite(elapsedMs) ? Math.max(0, Math.round(elapsedMs)) : null,
+      confidence: confidence || null,
       attemptedAt: now,
     };
 
@@ -221,6 +222,11 @@ const Learning = (() => {
     const activeMistakes = Object.values(state.mistakes).filter((m) => m.status !== "mastered");
     const skills = getSkillSummaries();
 
+    const confidenceCounts = graded.reduce((acc, item) => {
+      if (item.confidence) acc[item.confidence] = (acc[item.confidence] || 0) + 1;
+      return acc;
+    }, { sure: 0, unsure: 0, guessing: 0 });
+
     return {
       attempts: graded.length,
       correct,
@@ -229,6 +235,8 @@ const Learning = (() => {
       skills,
       weakestSkills: skills.filter((s) => s.attempts >= 2).slice(0, 3),
       recentAttempts: graded.slice(-8).reverse(),
+      confidenceCounts,
+      sureWrong: graded.filter((a) => a.confidence === "sure" && !a.correct).length,
     };
   }
 

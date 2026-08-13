@@ -13,6 +13,7 @@ let currentIndex = 0;
 let notesOpen = false;
 let currentModuleFile = null;
 let questionOpenedAt = Date.now();
+const confidenceSelections = {};
 
 init();
 
@@ -178,8 +179,9 @@ function renderCurrentQuestion(options = {}) {
       <span class="question-detail">${questionDetail(q)}</span>
     </div>
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
+    ${isAutoGraded(q) ? confidencePanelHtml(q, confidenceSelections[q.id] || null) : ""}
     <div data-role="answer-area"></div>
-    <div class="explanation-box" data-role="explanation">${escapeHtml(q.explanation || "")}</div>
+    <div class="explanation-box" data-role="explanation"></div>
     <div class="learning-feedback" data-role="learning-feedback" aria-live="polite"></div>
     <div class="mistake-reason" data-role="mistake-reason">
       <span>What tripped you up? <em style="font-weight:400">Optional</em></span>
@@ -202,6 +204,14 @@ function renderCurrentQuestion(options = {}) {
 
   stage.querySelector('[data-role="notes"] textarea').addEventListener("input", (e) => {
     Store.setNote(currentQuiz.id, q.id, e.target.value);
+  });
+
+  stage.querySelectorAll('[data-confidence]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      confidenceSelections[q.id] = btn.dataset.confidence;
+      stage.querySelectorAll('[data-confidence]').forEach((b) => b.classList.toggle('active', b === btn));
+      setStatus(`Confidence noted: ${btn.textContent}.`, false);
+    });
   });
 
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer);
@@ -265,6 +275,110 @@ function renderGrammarPrompt(q, savedHighlightHtml) {
   return escapeHtml(q.prompt || "").replace(/\{\{blank\}\}/g, '<span class="grammar-blank">_____</span>');
 }
 
+function confidencePanelHtml(q, selectedConfidence) {
+  return `
+    <div class="confidence-panel" data-role="confidence-panel" aria-label="Confidence before answering">
+      <span class="confidence-label">How sure are you?</span>
+      <div class="confidence-options">
+        ${['sure', 'unsure', 'guessing'].map((id) => `
+          <button
+            type="button"
+            class="confidence-btn${selectedConfidence === id ? ' active' : ''}"
+            data-confidence="${id}"
+          >${confidenceLabel(id)}</button>
+        `).join('')}
+      </div>
+    </div>`;
+}
+
+function confidenceLabel(id) {
+  return { sure: 'Sure', unsure: 'Unsure', guessing: 'Guessing' }[id] || id;
+}
+
+function buildExplanationHtml(q, selectedAnswer) {
+  const hasSelected = selectedAnswer != null && selectedAnswer !== '';
+  const auto = isAutoGraded(q);
+  const correct = auto && hasSelected ? isCorrectAnswer(q, selectedAnswer) : null;
+  const selectedOption = getOptionById(q, selectedAnswer);
+  const correctOption = getCorrectOption(q);
+  const summary = q.explanation || '';
+  const rule = q.rule || defaultRuleForQuestion(q);
+  const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
+  const evidence = q.evidenceExcerpt || q.evidence || '';
+
+  if (!summary && !rule && !evidence && !hasSelected) return '';
+
+  return `
+    <div class="feedback-header ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
+      <div>
+        <span class="feedback-kicker">Feedback</span>
+        <strong>${correct === true ? 'Correct' : correct === false ? 'Not quite' : 'Review'}</strong>
+      </div>
+      ${auto && hasSelected ? `<span class="feedback-answer-brief">${correct === true ? 'You chose the best answer.' : `Correct answer: ${escapeHtml(answerDisplay(q, correctOption))}`}</span>` : ''}
+    </div>
+    <div class="feedback-sections">
+      ${summary ? `<section class="feedback-section"><h4>Why this works</h4><p>${escapeHtml(summary)}</p></section>` : ''}
+      ${!correct && wrongReason ? `<section class="feedback-section"><h4>Why your answer falls short</h4><p>${escapeHtml(wrongReason)}</p></section>` : ''}
+      ${rule ? `<section class="feedback-section"><h4>Key rule</h4><p>${escapeHtml(rule)}</p></section>` : ''}
+      ${evidence ? `
+        <section class="feedback-section evidence-section">
+          <div class="feedback-inline-head">
+            <h4>Show me where</h4>
+            <button type="button" class="btn ghost small" data-action="toggle-evidence">Show evidence</button>
+          </div>
+          <div class="evidence-body" data-role="evidence-body"><p>${escapeHtml(evidence)}</p></div>
+        </section>` : ''}
+    </div>`;
+}
+
+function getCorrectOption(q) {
+  if (!Array.isArray(q.options)) return null;
+  const correctIds = new Set(q.correct || []);
+  return q.options.find((opt) => correctIds.has(opt.id)) || null;
+}
+
+function getOptionById(q, optionId) {
+  if (!Array.isArray(q.options)) return null;
+  return q.options.find((opt) => opt.id === optionId) || null;
+}
+
+function answerDisplay(q, opt) {
+  if (!opt) {
+    if (typeof q.correct === 'string') return q.correct;
+    return 'See explanation';
+  }
+  return `${String(opt.id || '').toUpperCase()}. ${opt.text}`;
+}
+
+function distractorReasonForAnswer(q, selectedAnswer) {
+  const opt = getOptionById(q, selectedAnswer);
+  if (!opt) {
+    if (q.type === 'fill_blank') return 'This answer does not match the expected term or form.';
+    return '';
+  }
+  return opt.whyWrong || distractorReasonFromType(opt.distractorType, q) || 'It sounds plausible, but it does not best meet what the question is asking.';
+}
+
+function distractorReasonFromType(type, q) {
+  return {
+    mentioned_not_supported: 'This idea appears in the text, but it is not directly supported in the way the question requires.',
+    too_broad: 'This answer is broader than the passage supports.',
+    too_narrow: 'This answer focuses on only one detail and misses the larger point.',
+    opposite_claim: 'This answer goes against what the passage or sentence is actually saying.',
+    location_homophone: 'This word refers to a place, so it does not fit the sentence grammatically.',
+    contraction_homophone: 'This means a shortened form such as “they are,” so it does not work as a possessive.',
+    possessive_pronoun_form: 'This form stands alone, but the sentence needs a word placed directly before the noun.',
+  }[type] || '';
+}
+
+function defaultRuleForQuestion(q) {
+  if (q.type === 'evidence_based') return 'For evidence questions, choose the line that most directly proves the answer—not just a sentence that mentions the topic.';
+  if (q.type === 'multiple_choice' && currentQuiz?.category === 'reading') return 'For reading questions, match the answer to what the text supports, not simply what sounds reasonable.';
+  if (q.type === 'grammar_edit') return 'Check the job the word or verb must do in the sentence before choosing the answer that sounds familiar.';
+  if (q.type === 'fill_blank') return 'Make sure the answer fits both the meaning and the exact form the sentence needs.';
+  return '';
+}
+
 function handleHighlight(promptEl, questionId) {
   const selection = window.getSelection();
   if (!selection || selection.isCollapsed || !promptEl.contains(selection.anchorNode)) return;
@@ -303,10 +417,11 @@ function renderAnswerArea(q, container, savedAnswer) {
               mode: "practice",
               elapsedMs: Date.now() - questionOpenedAt,
               file: currentModuleFile,
+              confidence: confidenceSelections[q.id] || null,
             })
           : null;
         revealChoiceFeedback(container, q, radio.value);
-        showExplanation();
+        showExplanation(radio.value);
         showLearningFeedback(learningResult, correct);
         setupMistakeReason(q, correct, learningResult);
         questionOpenedAt = Date.now();
@@ -315,7 +430,7 @@ function renderAnswerArea(q, container, savedAnswer) {
     });
     if (savedAnswer) {
       revealChoiceFeedback(container, q, savedAnswer);
-      showExplanation();
+      showExplanation(savedAnswer);
     }
   } else if (q.type === "fill_blank") {
     container.innerHTML = `<label class="question-detail" for="short-answer">Your answer</label><input id="short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}">`;
@@ -333,15 +448,17 @@ function renderAnswerArea(q, container, savedAnswer) {
             mode: "practice",
             elapsedMs: Date.now() - questionOpenedAt,
             file: currentModuleFile,
+            confidence: confidenceSelections[q.id] || null,
           });
           showLearningFeedback(learningResult, correct);
+          setupMistakeReason(q, correct, learningResult);
           questionOpenedAt = Date.now();
         }
-        showExplanation();
+        showExplanation(input.value);
         updateAnswerStatus();
       }
     });
-    if (savedAnswer) showExplanation();
+    if (savedAnswer) showExplanation(savedAnswer);
   } else {
     container.innerHTML = `<label class="question-detail" for="written-answer">Your response</label><textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>`;
     const ta = container.querySelector("textarea");
@@ -350,14 +467,24 @@ function renderAnswerArea(q, container, savedAnswer) {
       updateAnswerStatus();
     });
     ta.addEventListener("blur", () => {
-      if (ta.value.trim()) showExplanation();
+      if (ta.value.trim()) showExplanation(ta.value);
     });
-    if (savedAnswer) showExplanation();
+    if (savedAnswer) showExplanation(savedAnswer);
   }
 
-  function showExplanation() {
+  function showExplanation(selectedAnswer = savedAnswer) {
     const box = document.querySelector('[data-role="explanation"]');
-    if (box && box.textContent.trim()) box.classList.add("visible");
+    if (!box) return;
+    box.innerHTML = buildExplanationHtml(q, selectedAnswer);
+    if (box.textContent.trim()) box.classList.add('visible');
+    const evidenceBtn = box.querySelector('[data-action="toggle-evidence"]');
+    const evidenceBody = box.querySelector('[data-role="evidence-body"]');
+    if (evidenceBtn && evidenceBody) {
+      evidenceBtn.addEventListener('click', () => {
+        const open = evidenceBody.classList.toggle('visible');
+        evidenceBtn.textContent = open ? 'Hide evidence' : 'Show evidence';
+      });
+    }
   }
 }
 

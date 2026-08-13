@@ -20,15 +20,18 @@
         },
         {
           "id": "b",
-          "text": "A description of the library's current Tuesday hours."
+          "text": "A description of the library's current Tuesday hours.",
+          "whyWrong": "Current Tuesday hours do not show any need for Sunday access, so this evidence is not directly relevant."
         },
         {
           "id": "c",
-          "text": "The library director's opinion on staffing preferences."
+          "text": "The library director's opinion on staffing preferences.",
+          "whyWrong": "An opinion about staffing preferences does not strongly prove that Sunday hours would benefit the public."
         },
         {
           "id": "d",
-          "text": "The number of books currently in the library's catalog."
+          "text": "The number of books currently in the library's catalog.",
+          "whyWrong": "Catalog size is unrelated to whether the library should open on Sundays."
         }
       ],
       "correct": [
@@ -39,14 +42,15 @@
       "skill": {
         "id": "writing.evidence.relevance",
         "label": "Relevant evidence"
-      }
+      },
+      "rule": "The strongest evidence directly supports the exact claim being argued, especially with measurable need or demand."
     },
     {
       "id": "q2",
       "type": "extended_response",
       "prompt": "In 3-5 sentences, write a short paragraph arguing for ONE side of this debate, using at least one piece of evidence from the passage.",
       "points": 3,
-      "explanation": "Not auto-graded — check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review.",
+      "explanation": "Not auto-graded \u2014 check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review.",
       "skill": {
         "id": "writing.argument.short_response",
         "label": "Short argument construction"
