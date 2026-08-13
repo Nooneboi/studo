@@ -23,12 +23,20 @@
     ? `${nextSkill.label}: ${nextSkill.score}% practice signal · ${nextSkill.signal.toLowerCase()}`
     : `${summary.attempts} graded attempts saved on this device`;
 
+  const supportingNote = mistakes.length
+    ? "A short review now can keep weaker skills from fading."
+    : "Pick up where you left off with a short focused session.";
+
   mount.innerHTML = `
     <section class="home-learning-strip" aria-label="Continue learning">
       <div class="home-learning-main">
-        <div class="eyebrow">Continue learning</div>
+        <div class="home-learning-topline">
+          <div class="eyebrow">Continue learning</div>
+          <span class="home-learning-chip">Review due</span>
+        </div>
         <h2>${escapeHtml(mainTitle)}</h2>
-        <p>${escapeHtml(detail)}</p>
+        <p class="home-learning-detail">${escapeHtml(detail)}</p>
+        <p class="home-learning-note">${escapeHtml(supportingNote)}</p>
       </div>
       <div class="home-learning-actions">
         <a class="btn" href="${escapeAttr(primaryHref)}">Continue</a>

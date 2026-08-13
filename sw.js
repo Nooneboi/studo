@@ -7,7 +7,7 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "studo-v18-learning-engine";
+const CACHE_NAME = "studo-v19-home-reminder";
 const CORE_ASSETS = [
   "index.html",
   "404.html",

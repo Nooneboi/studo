@@ -2400,3 +2400,110 @@ body.test-body {
   background: var(--color-primary-soft);
   color: var(--color-primary-dark);
 }
+
+/* Continue learning ------------------------------------------------------- */
+#home-learning-mount {
+  margin-bottom: 18px;
+}
+
+.home-learning-strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  margin: 18px 0 8px;
+  padding: 22px 24px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 24%, var(--color-line));
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--color-primary-soft) 70%, var(--color-surface)) 0%, var(--color-surface) 60%),
+    var(--color-surface);
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.06);
+  overflow: hidden;
+}
+
+.home-learning-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 45%, var(--color-surface)));
+}
+
+.home-learning-main {
+  min-width: 0;
+}
+
+.home-learning-topline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.home-learning-strip .eyebrow {
+  margin: 0;
+}
+
+.home-learning-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 26%, var(--color-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-primary-soft) 72%, var(--color-surface));
+  color: var(--color-primary-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.home-learning-strip h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  line-height: 1.08;
+}
+
+.home-learning-detail {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.home-learning-note {
+  margin: 8px 0 0;
+  color: var(--color-ink-soft);
+  font-size: 0.96rem;
+  max-width: 56ch;
+}
+
+.home-learning-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 860px) {
+  .home-learning-strip {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .home-learning-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-learning-strip {
+    padding: 18px 18px 18px 20px;
+  }
+  .home-learning-strip h2 {
+    font-size: 1.7rem;
+  }
+}
