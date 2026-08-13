@@ -10,44 +10,34 @@
 <meta name="description" content="One passage, its questions, and the explanations — start to finish.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/studo-v2.css">
 </head>
 <body class="focus-body">
 
 <header class="focus-bar">
   <div class="wrap focus-bar-inner">
-    <a href="practice.html" class="focus-exit" id="focus-exit">&larr; Exit</a>
-    <span class="focus-title" id="focus-title"></span>
-    <div class="focus-tools">
+    <a href="practice.html" class="focus-exit" id="focus-exit" aria-label="Exit practice">&larr; Exit</a>
+    <span class="focus-title" id="focus-title" aria-live="polite"></span>
+    <div class="focus-tools" aria-label="Reading tools">
       <button class="focus-icon-btn" id="text-smaller" title="Smaller text" aria-label="Smaller text">A&#8722;</button>
       <button class="focus-icon-btn" id="text-larger" title="Larger text" aria-label="Larger text">A+</button>
-      <button class="focus-icon-btn" id="print-btn" title="Print this module" aria-label="Print">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
-      </button>
-      <span class="focus-divider"></span>
-      <button class="focus-icon-btn" data-annotate-mode="draw" title="Draw — mark up the page" aria-label="Draw">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-      </button>
-      <button class="focus-icon-btn" data-annotate-mode="shape" title="Shape — box off an answer" aria-label="Shape">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-      </button>
-      <button class="focus-icon-btn" data-annotate-mode="erase" title="Erase your marks" aria-label="Erase">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
-      </button>
-      <button class="focus-icon-btn" id="annotate-clear-btn" title="Clear all marks" aria-label="Clear marks">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg>
-      </button>
-      <button class="focus-icon-btn" title="Highlight — select any text to highlight it" aria-label="Highlight hint">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11-6 6v3h9l3-3"/><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"/></svg>
-      </button>
-      <span class="focus-divider"></span>
-      <button class="focus-icon-btn" id="copy-btn" title="Copy passage and questions" aria-label="Copy">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-      </button>
-      <button class="focus-icon-btn" id="share-btn" title="Share this module" aria-label="Share">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5 15.4 17.5"/><path d="M15.4 6.5 8.6 10.5"/></svg>
-      </button>
+      <details class="focus-tools-menu">
+        <summary class="focus-icon-btn" aria-label="More study tools" title="More study tools">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+          <span>Tools</span>
+        </summary>
+        <div class="focus-tools-popover">
+          <div class="focus-tool-row"><button class="focus-icon-btn" id="print-btn" title="Print" aria-label="Print"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg></button><span>Print module</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" data-annotate-mode="draw" title="Draw" aria-label="Draw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><span>Draw on page</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" data-annotate-mode="shape" title="Box" aria-label="Draw rectangle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></button><span>Draw a box</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" data-annotate-mode="erase" title="Erase" aria-label="Erase marks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/></svg></button><span>Erase marks</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" id="annotate-clear-btn" title="Clear marks" aria-label="Clear all marks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></button><span>Clear marks</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" id="copy-btn" title="Copy" aria-label="Copy passage and question"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button><span>Copy text</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" id="share-btn" title="Share" aria-label="Share module"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5 15.4 17.5"/><path d="M15.4 6.5 8.6 10.5"/></svg></button><span>Share link</span></div>
+        </div>
+      </details>
     </div>
   </div>
 </header>

@@ -7,7 +7,7 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "study-ledger-v12";
+const CACHE_NAME = "studo-v13-ui";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
@@ -20,6 +20,7 @@ const CORE_ASSETS = [
   "resources.html",
   "manifest.json",
   "css/style.css",
+  "css/studo-v2.css",
   "js/app.js",
   "js/subjectbar.js",
   "js/theme.js",

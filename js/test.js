@@ -1,15 +1,10 @@
 /*
-  test.js
-  -------
-  Runs a timed test (test.html?subject=rla&category=reading|writing|
-  language_conventions|all). Pulls every question from the matching
-  modules, keeps their passages grouped together, and runs a single
-  overall countdown instead of per-question timers. Explanations stay
-  hidden until the test is submitted (or time runs out).
-
-  Answers here are kept in memory only for this sitting — a timed
-  test is meant to be a one-shot simulation, not something you'd
-  expect to resume days later.
+  test.js — Studo timed test workspace (v2)
+  ------------------------------------------
+  A single-question test interface that keeps the relevant passage beside the
+  question. Test answers stay in memory for the current sitting. Question keys
+  combine module + question IDs, preventing collisions when multiple modules
+  contain q1/q2/etc.
 */
 
 const CATEGORY_LABELS = {
@@ -20,13 +15,15 @@ const CATEGORY_LABELS = {
 };
 
 const viewEl = document.getElementById("test-view");
-let sections = []; // [{ module, questions }]
+let items = []; // [{ module, question, moduleQuestionIndex }]
 let answers = {};
+let currentIndex = 0;
 let remainingSeconds = 0;
-let autoSeconds = 0; // the auto-computed duration, kept so "Auto" can be re-selected later
-let timerMode = "auto"; // "auto" | seconds-as-string | "none"
+let autoSeconds = 0;
+let timerMode = "auto";
 let timerHandle = null;
 let submitted = false;
+let testLabel = "RLA";
 
 init();
 
@@ -47,27 +44,32 @@ async function init() {
     viewEl.innerHTML = `<div class="empty-state">Couldn't load the test. <a href="quiz.html">Back to Quiz</a></div>`;
     return;
   }
-  if (category !== "all") {
-    modules = modules.filter((m) => (m.category || "reading") === category);
-  }
+
+  if (category !== "all") modules = modules.filter((m) => (m.category || "reading") === category);
   modules = modules.filter((m) => (m.questions || []).length);
 
-  if (!modules.length) {
+  items = modules.flatMap((module) =>
+    module.questions.map((question, moduleQuestionIndex) => ({ module, question, moduleQuestionIndex }))
+  );
+
+  if (!items.length) {
     viewEl.innerHTML = `<div class="empty-state">No questions available for this test. <a href="quiz.html">Back to Quiz</a></div>`;
     return;
   }
 
-  sections = modules.map((m) => ({ module: m, questions: m.questions }));
-  autoSeconds = sections.reduce(
-    (sum, s) => sum + s.questions.reduce((qs, q) => qs + (q.time || 30), 0),
-    0
-  );
+  testLabel = CATEGORY_LABELS[category] || "RLA";
+  autoSeconds = items.reduce((sum, item) => sum + (item.question.time || 30), 0);
   timerMode = localStorage.getItem("sq:timerMode") || "auto";
   remainingSeconds = secondsForMode(timerMode);
 
-  renderShell(category);
-  renderSections();
+  renderShell();
+  renderCurrentQuestion();
+  setupTimerPicker();
   if (timerMode !== "none") startTimer();
+}
+
+function answerKey(item) {
+  return `${item.module.id}:${item.question.id}`;
 }
 
 function secondsForMode(mode) {
@@ -81,44 +83,214 @@ function secondsForMode(mode) {
   return isNaN(n) ? autoSeconds : n;
 }
 
-function renderShell(category) {
-  const label = CATEGORY_LABELS[category] || "RLA";
-
+function renderShell() {
   const titleEl = document.getElementById("focus-title");
-  if (titleEl) titleEl.textContent = `${label} Test`;
+  if (titleEl) titleEl.textContent = `${testLabel} Test`;
+
   const exitLink = document.getElementById("focus-exit");
   if (exitLink) {
     exitLink.addEventListener("click", (e) => {
-      if (!submitted) {
-        const ok = confirm("Leave now and your answers on this attempt won't be saved. Leave anyway?");
+      if (!submitted && Object.keys(answers).length) {
+        const ok = confirm("Leave this test? Your answers from this attempt won't be saved.");
         if (!ok) e.preventDefault();
       }
     });
   }
 
   viewEl.innerHTML = `
-    <h1>${label} Test</h1>
-    <p class="lede">Answer everything, then hit submit — your score and every explanation unlock right after.</p>
+    <div class="study-shell">
+      <section class="study-heading" aria-labelledby="test-heading">
+        <div>
+          <h1 id="test-heading">${escapeHtml(testLabel)} Test</h1>
+          <p class="lede">Work through one question at a time. Answers and explanations stay hidden until you submit.</p>
+        </div>
+        <div class="study-meta">
+          <div class="study-progress" aria-label="Test progress">
+            <div class="study-progress-row"><span id="progress-label">Question 1 of ${items.length}</span><span id="answered-label">0 answered</span></div>
+            <div class="study-progress-track" aria-hidden="true"><div class="study-progress-fill" id="progress-fill"></div></div>
+          </div>
+        </div>
+      </section>
 
-    <div id="results-mount"></div>
+      <div id="results-mount"></div>
 
-    <div class="test-timer-bar" id="timer-bar">
-      <span>Time remaining</span>
-      <span class="clock" id="clock"></span>
-    </div>
+      <div class="study-actions">
+        <div class="test-timer-bar" id="timer-bar" aria-live="polite">
+          <span>Time remaining</span><span class="clock" id="clock"></span>
+        </div>
+        <div class="spacer"></div>
+        <span class="study-status" id="test-status" aria-live="polite"></span>
+        <button id="submit-btn" class="btn">Submit test</button>
+      </div>
 
-    <div id="sections-mount"></div>
-
-    <div style="text-align:right; margin-top:var(--space-4)">
-      <button id="submit-btn" class="btn">Submit test</button>
+      <section class="study-workspace" id="study-workspace">
+        <div id="passage-mount"></div>
+        <article class="question-panel" aria-label="Test question">
+          <div id="question-stage" class="question-stage"></div>
+          <div class="question-footer" id="question-footer"></div>
+        </article>
+      </section>
     </div>
   `;
-  document.getElementById("submit-btn").addEventListener("click", () => submitTest());
-  setupTimerPicker();
+
+  document.getElementById("submit-btn").addEventListener("click", () => submitTest(false));
+}
+
+function renderCurrentQuestion() {
+  currentIndex = Math.max(0, Math.min(currentIndex, items.length - 1));
+  const item = items[currentIndex];
+  const q = item.question;
+  const key = answerKey(item);
+  const savedAnswer = answers[key];
+  const hasPassage = Boolean(item.module.passage);
+  const workspace = document.getElementById("study-workspace");
+  workspace.classList.toggle("no-passage", !hasPassage);
+  renderPassage(item.module);
+
+  const promptHtml = q.type === "grammar_edit"
+    ? escapeHtml(q.prompt || "").replace(/\{\{blank\}\}/g, '<span class="grammar-blank">_____</span>')
+    : escapeHtml(q.prompt || "");
+
+  const stage = document.getElementById("question-stage");
+  stage.innerHTML = `
+    <div class="question-topline">
+      <span class="question-number">Question ${currentIndex + 1} of ${items.length}</span>
+      <span class="question-detail">${escapeHtml(questionDetail(item))}</span>
+    </div>
+    <div class="q-prompt">${promptHtml}</div>
+    <div data-role="answer-area"></div>
+    <div class="explanation-box" data-role="explanation">${escapeHtml(q.explanation || "")}</div>
+    ${submitted && !isAutoGraded(q) ? `<div class="review-note">This response is not auto-graded. Use the explanation as a self-review checklist.</div>` : ""}
+  `;
+
+  renderAnswerArea(item, stage.querySelector('[data-role="answer-area"]'), savedAnswer);
+  if (submitted) revealReview(item);
+
+  const footer = document.getElementById("question-footer");
+  footer.innerHTML = `
+    <button class="btn ghost" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>&larr; Previous</button>
+    <div class="spacer"></div>
+    <button class="btn" id="next-question">${currentIndex === items.length - 1 ? (submitted ? "Back to first" : "Review before submit") : "Next"} &rarr;</button>
+  `;
+  document.getElementById("prev-question").addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex -= 1;
+      renderCurrentQuestion();
+    }
+  });
+  document.getElementById("next-question").addEventListener("click", () => {
+    if (currentIndex < items.length - 1) currentIndex += 1;
+    else if (submitted) currentIndex = 0;
+    else {
+      setTestStatus("You're at the end. Review answers or submit when ready.");
+      currentIndex = 0;
+    }
+    renderCurrentQuestion();
+  });
+
+  updateProgress();
+  stage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function renderPassage(module) {
+  const mount = document.getElementById("passage-mount");
+  if (!module.passage) {
+    mount.innerHTML = "";
+    return;
+  }
+  mount.innerHTML = `
+    <aside class="reading-panel" aria-label="Reading passage">
+      <div class="panel-kicker"><span>Passage</span><span>${escapeHtml(module.title)}</span></div>
+      <div class="reading-scroll"><div class="passage-text">${escapeHtml(module.passage)}</div></div>
+      ${module.source ? `<div class="source-credit">${escapeHtml(module.source)}</div>` : ""}
+    </aside>`;
+}
+
+function questionDetail(item) {
+  const q = item.question;
+  const parts = [];
+  if (item.module.topic) parts.push(item.module.topic);
+  if (q.points) parts.push(`${q.points} ${q.points === 1 ? "point" : "points"}`);
+  return parts.join(" · ");
+}
+
+function renderAnswerArea(item, container, savedAnswer) {
+  const q = item.question;
+  const key = answerKey(item);
+
+  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
+    const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
+    container.innerHTML = `<div class="options-list" role="radiogroup" aria-label="Answer choices">${q.options
+      .map((opt) => `<button type="button" class="option-btn${optionClass}" data-opt="${escapeAttr(opt.id)}" role="radio" aria-checked="${savedAnswer === opt.id ? "true" : "false"}" ${submitted ? "disabled" : ""}><span class="opt-letter">${escapeHtml(opt.id.toUpperCase())}</span><span class="opt-text">${escapeHtml(opt.text)}</span></button>`)
+      .join("")}</div>`;
+
+    container.querySelectorAll(".option-btn").forEach((btn) => {
+      if (!submitted && savedAnswer === btn.dataset.opt) btn.classList.add("selected");
+      btn.addEventListener("click", () => {
+        if (submitted) return;
+        answers[key] = btn.dataset.opt;
+        container.querySelectorAll(".option-btn").forEach((b) => {
+          b.classList.toggle("selected", b === btn);
+          b.setAttribute("aria-checked", String(b === btn));
+        });
+        updateProgress();
+        setTestStatus("Answer saved for this attempt.");
+      });
+    });
+  } else if (q.type === "fill_blank") {
+    container.innerHTML = `<label class="question-detail" for="test-short-answer">Your answer</label><input id="test-short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}" ${submitted ? "disabled" : ""}>`;
+    const input = container.querySelector("input");
+    input.addEventListener("input", () => {
+      answers[key] = input.value;
+      updateProgress();
+    });
+  } else {
+    container.innerHTML = `<label class="question-detail" for="test-written-answer">Your response</label><textarea id="test-written-answer" class="open-ended-input" placeholder="Write your response…" ${submitted ? "disabled" : ""}>${escapeHtml(savedAnswer || "")}</textarea>`;
+    const ta = container.querySelector("textarea");
+    ta.addEventListener("input", () => {
+      answers[key] = ta.value;
+      updateProgress();
+    });
+  }
+}
+
+function revealReview(item) {
+  const q = item.question;
+  const key = answerKey(item);
+  const answer = answers[key];
+  const stage = document.getElementById("question-stage");
+  const explanation = stage.querySelector('[data-role="explanation"]');
+  if (explanation && explanation.textContent.trim()) explanation.classList.add("visible");
+
+  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
+    const correct = new Set(q.correct || []);
+    stage.querySelectorAll(".option-btn").forEach((btn) => {
+      const isSelected = btn.dataset.opt === answer;
+      const isCorrect = correct.has(btn.dataset.opt);
+      btn.classList.toggle("selected", isSelected);
+      btn.classList.toggle("correct", isCorrect);
+      btn.classList.toggle("incorrect", isSelected && !isCorrect);
+      btn.setAttribute("aria-checked", String(isSelected));
+    });
+  }
+}
+
+function updateProgress() {
+  const answered = items.filter((item) => hasAnswer(answers[answerKey(item)])).length;
+  const progressLabel = document.getElementById("progress-label");
+  const answeredLabel = document.getElementById("answered-label");
+  const fill = document.getElementById("progress-fill");
+  if (progressLabel) progressLabel.textContent = `Question ${currentIndex + 1} of ${items.length}`;
+  if (answeredLabel) answeredLabel.textContent = `${answered} answered`;
+  if (fill) fill.style.width = `${((currentIndex + 1) / items.length) * 100}%`;
+}
+
+function hasAnswer(value) {
+  return typeof value === "string" ? Boolean(value.trim()) : Boolean(value);
 }
 
 const TIMER_LABELS = {
-  auto: "Timed (auto)",
+  auto: "Timed",
   "600": "10 min",
   "900": "15 min",
   "1200": "20 min",
@@ -132,21 +304,28 @@ function setupTimerPicker() {
   const label = document.getElementById("timer-picker-label");
   const customInput = document.getElementById("custom-minutes-input");
   const applyCustomBtn = document.getElementById("apply-custom-timer");
+  if (!btn || !panel || !label) return;
 
   function updateLabel() {
-    label.textContent =
-      timerMode === "custom" ? `${Math.round(secondsForMode("custom") / 60)} min` : TIMER_LABELS[timerMode] || "Timed (auto)";
-    panel.querySelectorAll("[data-timer-value]").forEach((b) => {
-      b.classList.toggle("active", b.dataset.timerValue === timerMode);
-    });
+    label.textContent = timerMode === "custom"
+      ? `${Math.round(secondsForMode("custom") / 60)} min`
+      : TIMER_LABELS[timerMode] || "Timed";
+    panel.querySelectorAll("[data-timer-value]").forEach((b) => b.classList.toggle("active", b.dataset.timerValue === timerMode));
   }
-  updateLabel();
 
-  btn.addEventListener("click", () => panel.classList.toggle("hidden"));
+  function closePanel() {
+    panel.classList.add("hidden");
+    btn.setAttribute("aria-expanded", "false");
+  }
+
+  updateLabel();
+  btn.addEventListener("click", () => {
+    const willOpen = panel.classList.contains("hidden");
+    panel.classList.toggle("hidden");
+    btn.setAttribute("aria-expanded", String(willOpen));
+  });
   document.addEventListener("click", (e) => {
-    if (!panel.contains(e.target) && e.target !== btn && !btn.contains(e.target)) {
-      panel.classList.add("hidden");
-    }
+    if (!panel.contains(e.target) && !btn.contains(e.target)) closePanel();
   });
 
   panel.querySelectorAll("[data-timer-value]").forEach((optBtn) => {
@@ -155,14 +334,13 @@ function setupTimerPicker() {
       localStorage.setItem("sq:timerMode", timerMode);
       updateLabel();
       applyTimerMode();
-      panel.classList.add("hidden");
+      closePanel();
     });
   });
 
   applyCustomBtn.addEventListener("click", applyCustom);
-  customInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") applyCustom();
-  });
+  customInput.addEventListener("keydown", (e) => { if (e.key === "Enter") applyCustom(); });
+
   function applyCustom() {
     const minutes = parseInt(customInput.value, 10);
     if (minutes > 0) {
@@ -171,7 +349,7 @@ function setupTimerPicker() {
       localStorage.setItem("sq:timerMode", timerMode);
       updateLabel();
       applyTimerMode();
-      panel.classList.add("hidden");
+      closePanel();
     }
   }
 
@@ -179,182 +357,107 @@ function setupTimerPicker() {
     remainingSeconds = secondsForMode(timerMode);
     clearInterval(timerHandle);
     const bar = document.getElementById("timer-bar");
-    if (timerMode === "none") {
-      bar.classList.add("hidden");
-    } else {
-      bar.classList.remove("hidden");
-      bar.classList.remove("low");
+    if (timerMode === "none") bar.classList.add("hidden");
+    else {
+      bar.classList.remove("hidden", "low");
       updateClock();
       if (!submitted) startTimer();
     }
   }
+
   if (timerMode === "none") document.getElementById("timer-bar").classList.add("hidden");
 }
 
-function renderSections() {
-  const mount = document.getElementById("sections-mount");
-  mount.innerHTML = "";
-
-  const wrapEl = document.querySelector(".focus-wrap");
-  if (wrapEl) wrapEl.classList.toggle("has-passage", sections.some((s) => s.module.passage));
-
-  sections.forEach((section) => {
-    const hasPassage = !!section.module.passage;
-    const container = document.createElement("div");
-    container.style.marginBottom = "var(--space-4)";
-
-    if (hasPassage) {
-      container.className = "passage-split";
-      container.innerHTML = `
-        <div class="passage-pane">
-          <div class="card">
-            <h3>${escapeHtml(section.module.title)}</h3>
-            <p class="passage-text">${escapeHtml(section.module.passage)}</p>
-          </div>
-        </div>
-        <div class="questions-pane"><div class="card" id="q-holder-${section.module.id}"></div></div>
-      `;
-      mount.appendChild(container);
-      const holder = container.querySelector(`#q-holder-${CSS.escape(section.module.id)}`);
-      section.questions.forEach((q, i) => holder.appendChild(buildQuestionBlock(q, i)));
-    } else {
-      container.className = "card";
-      container.innerHTML = `<h3 style="margin-bottom:4px">${escapeHtml(section.module.title)}</h3>`;
-      section.questions.forEach((q, i) => container.appendChild(buildQuestionBlock(q, i)));
-      mount.appendChild(container);
-    }
-  });
-}
-
-function buildQuestionBlock(q, index) {
-  const block = document.createElement("div");
-  block.className = "question-card test-question";
-  block.style.borderTop = "1px solid var(--color-line)";
-  block.style.paddingTop = "var(--space-3)";
-  block.dataset.qid = q.id;
-
-  const promptHtml =
-    q.type === "grammar_edit"
-      ? escapeHtml(q.prompt || "").replace(/\{\{blank\}\}/g, '<span class="grammar-blank">_____</span>')
-      : escapeHtml(q.prompt);
-
-  block.innerHTML = `
-    <p class="q-prompt">${index + 1}. ${promptHtml}</p>
-    <div data-role="answer-area"></div>
-    <div class="explanation-box" data-role="explanation">${escapeHtml(q.explanation || "")}</div>
-  `;
-
-  renderAnswerArea(q, block.querySelector('[data-role="answer-area"]'));
-  return block;
-}
-
-function renderAnswerArea(q, container) {
-  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
-    const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
-    container.innerHTML = `<div class="options-list">${q.options
-      .map((opt) => `<button class="option-btn${optionClass}" data-opt="${opt.id}"><span class="opt-radio"></span><span class="opt-letter">${opt.id.toUpperCase()}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></button>`)
-      .join("")}</div>`;
-    container.querySelectorAll(".option-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        if (submitted) return;
-        answers[q.id] = btn.dataset.opt;
-        container.querySelectorAll(".option-btn").forEach((b) => b.classList.remove("selected"));
-        btn.classList.add("selected");
-      });
-    });
-  } else if (q.type === "fill_blank") {
-    container.innerHTML = `<input type="text" class="fill-blank-input" placeholder="Type your answer">`;
-    container.querySelector("input").addEventListener("input", (e) => {
-      answers[q.id] = e.target.value;
-    });
-  } else {
-    container.innerHTML = `<textarea class="open-ended-input" placeholder="Write your response"></textarea>`;
-    container.querySelector("textarea").addEventListener("input", (e) => {
-      answers[q.id] = e.target.value;
-    });
-  }
-}
-
 function startTimer() {
+  clearInterval(timerHandle);
   updateClock();
   timerHandle = setInterval(() => {
     remainingSeconds -= 1;
     updateClock();
-    if (remainingSeconds <= 0) {
-      submitTest(true);
-    }
+    if (remainingSeconds <= 0) submitTest(true);
   }, 1000);
 }
 
 function updateClock() {
   const clock = document.getElementById("clock");
   const bar = document.getElementById("timer-bar");
-  if (!clock) return;
+  if (!clock || !bar) return;
   const m = Math.max(0, Math.floor(remainingSeconds / 60));
   const s = Math.max(0, remainingSeconds % 60);
   clock.textContent = `${m}:${String(s).padStart(2, "0")}`;
-  if (remainingSeconds <= 30) bar.classList.add("low");
+  bar.classList.toggle("low", remainingSeconds <= 60 && remainingSeconds > 0);
 }
 
-function submitTest(timedOut) {
+function submitTest(timedOut = false) {
   if (submitted) return;
+  const unanswered = items.filter((item) => !hasAnswer(answers[answerKey(item)])).length;
+  if (!timedOut && unanswered) {
+    const ok = confirm(`${unanswered} question${unanswered === 1 ? " is" : "s are"} unanswered. Submit anyway?`);
+    if (!ok) return;
+  }
+
   submitted = true;
   clearInterval(timerHandle);
+  const submitBtn = document.getElementById("submit-btn");
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Submitted";
 
-  document.querySelectorAll(".test-question").forEach((el) => el.classList.add("locked"));
-  document.querySelectorAll(".explanation-box").forEach((el) => {
-    if (el.textContent.trim()) el.classList.add("visible");
-  });
-  document.querySelectorAll(".option-btn").forEach((btn) => {
-    const qid = btn.closest(".test-question").dataset.qid;
-    const q = findQuestion(qid);
-    const isCorrect = (q.correct || []).includes(btn.dataset.opt);
-    if (btn.dataset.opt === answers[qid]) btn.classList.add(isCorrect ? "correct" : "incorrect");
-    else if (isCorrect) btn.classList.add("correct");
-  });
-  document.getElementById("submit-btn").setAttribute("disabled", "true");
-
-  const { earned, total } = scoreTest();
+  const result = scoreTest();
+  const writtenCount = items.filter((item) => !isAutoGraded(item.question)).length;
   const resultsMount = document.getElementById("results-mount");
   resultsMount.innerHTML = `
-    <div class="results-banner">
+    <div class="score-banner" role="status">
       <div>
-        <div style="font-family:var(--font-mono); font-size:.75rem; text-transform:uppercase; opacity:.7">
-          ${timedOut ? "Time's up — auto-submitted" : "Submitted"}
-        </div>
-        <div style="font-size:1.1rem; font-weight:600">Your results</div>
+        <div class="question-number">${timedOut ? "Time ended · auto-submitted" : "Test submitted"}</div>
+        <div style="font-size:1.05rem; font-weight:700; margin-top:3px">Auto-graded score</div>
+        ${writtenCount ? `<div style="font-size:.85rem; color:var(--color-ink-soft); margin-top:4px">${writtenCount} written response${writtenCount === 1 ? "" : "s"} excluded from this score and ready for self-review.</div>` : ""}
       </div>
-      <div class="score-num">${earned} / ${total}</div>
-    </div>
-  `;
-  resultsMount.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+      <div class="score-num" style="font-size:1.4rem; font-weight:700">${result.earned} / ${result.total}</div>
+    </div>`;
 
-function findQuestion(qid) {
-  for (const section of sections) {
-    const q = section.questions.find((q) => q.id === qid);
-    if (q) return q;
-  }
-  return null;
+  setTestStatus("Review mode: correct answers and explanations are now visible.");
+  renderCurrentQuestion();
+  resultsMount.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 function scoreTest() {
-  const autoGraded = ["multiple_choice", "evidence_based", "grammar_edit"];
-  let earned = 0,
-    total = 0;
-  sections.forEach((section) => {
-    section.questions.forEach((q) => {
-      total += q.points || 1;
-      if (autoGraded.includes(q.type) && answers[q.id] && (q.correct || []).includes(answers[q.id])) {
-        earned += q.points || 1;
-      }
-    });
+  let earned = 0;
+  let total = 0;
+  items.forEach((item) => {
+    const q = item.question;
+    if (!isAutoGraded(q)) return;
+    const points = q.points || 1;
+    total += points;
+    if (isCorrectAnswer(q, answers[answerKey(item)])) earned += points;
   });
   return { earned, total };
+}
+
+function isAutoGraded(q) {
+  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) return true;
+  return q.type === "fill_blank" && typeof q.correct === "string";
+}
+
+function isCorrectAnswer(q, answer) {
+  if (!hasAnswer(answer)) return false;
+  if (Array.isArray(q.correct)) return q.correct.includes(answer);
+  if (typeof q.correct === "string") return String(answer).trim().toLowerCase() === q.correct.trim().toLowerCase();
+  return false;
+}
+
+function setTestStatus(message) {
+  const el = document.getElementById("test-status");
+  if (!el) return;
+  el.textContent = message;
+  clearTimeout(setTestStatus._timer);
+  if (!submitted) setTestStatus._timer = setTimeout(() => { el.textContent = ""; }, 2200);
 }
 
 function escapeHtml(str) {
   const div = document.createElement("div");
   div.textContent = str ?? "";
   return div.innerHTML;
+}
+function escapeAttr(str) {
+  return escapeHtml(str).replace(/"/g, "&quot;");
 }
