@@ -1980,9 +1980,9 @@ body.test-body {
 .answer-choice:hover {
   background: color-mix(in srgb, var(--color-surface-soft) 62%, transparent);
 }
+/* Keep keyboard focus visible without turning the whole answer into a box. */
 .answer-choice:focus-within {
-  outline: 2px solid var(--color-primary);
-  outline-offset: -2px;
+  outline: none;
 }
 
 .answer-radio {
@@ -2014,6 +2014,10 @@ body.test-body {
 .answer-radio:checked::before {
   transform: scale(1);
 }
+.answer-radio:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
 .answer-radio:disabled {
   cursor: default;
 }
@@ -2029,7 +2033,7 @@ body.test-body {
 }
 
 .answer-choice.selected {
-  background: color-mix(in srgb, var(--color-primary-soft) 48%, transparent);
+  background: transparent;
 }
 .answer-choice.correct {
   border-left: 3px solid var(--color-success);
