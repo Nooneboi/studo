@@ -99,27 +99,29 @@ function renderShell() {
 
   viewEl.innerHTML = `
     <div class="study-shell">
-      <section class="study-heading test-heading-shell" aria-labelledby="test-heading">
-        <div class="study-heading-copy">
+      <section class="study-heading" aria-labelledby="test-heading">
+        <div>
           <h1 id="test-heading">${escapeHtml(testLabel)} Test</h1>
           <p class="lede">Work through one question at a time. Answers and explanations stay hidden until you submit.</p>
         </div>
-        <aside class="study-control-panel" aria-label="Test progress and controls">
+        <div class="study-meta">
           <div class="study-progress" aria-label="Test progress">
             <div class="study-progress-row"><span id="progress-label">Question 1 of ${items.length}</span><span id="answered-label">0 answered</span></div>
             <div class="study-progress-track" aria-hidden="true"><div class="study-progress-fill" id="progress-fill"></div></div>
           </div>
-          <div class="test-control-row">
-            <div class="test-timer-bar" id="timer-bar" aria-live="polite">
-              <span class="timer-label">Time left</span><span class="clock" id="clock"></span>
-            </div>
-            <button id="submit-btn" class="btn test-submit-btn">Submit test</button>
-          </div>
-          <span class="study-status" id="test-status" aria-live="polite"></span>
-        </aside>
+        </div>
       </section>
 
       <div id="results-mount"></div>
+
+      <div class="study-actions">
+        <div class="test-timer-bar" id="timer-bar" aria-live="polite">
+          <span>Time remaining</span><span class="clock" id="clock"></span>
+        </div>
+        <div class="spacer"></div>
+        <span class="study-status" id="test-status" aria-live="polite"></span>
+        <button id="submit-btn" class="btn">Submit test</button>
+      </div>
 
       <section class="study-workspace" id="study-workspace">
         <div id="passage-mount"></div>

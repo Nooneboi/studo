@@ -1,16 +1,27 @@
 /*
   practice.js
   -----------
-  Runs the Practice page (practice.html). Deliberately plain: three
-  skill-area rows, no color coding, no filters, no counts — the goal
-  is zero extra decisions before a learner picks a direction. Each
-  row links to category.html, which has the actual classified list.
+  Practice landing page.
+  The copy is intentionally short and plain so learners can choose a
+  direction quickly without reading a paragraph for each category.
 */
 
 const CATEGORIES = [
-  { id: "reading", label: "Reading", desc: "Finding the main idea, following an inference, telling real evidence apart from a plausible-sounding trap." },
-  { id: "writing", label: "Writing and Analysis", desc: "Building an argument that actually holds up — not just picking whichever answer sounds nicest." },
-  { id: "language_conventions", label: "Language Conventions", desc: "The mechanical stuff — agreement, punctuation, sentence structure. Dull to study, worth more points than you'd expect." },
+  {
+    id: "reading",
+    label: "Reading",
+    desc: "Main idea, inference, evidence, and what the author is really saying.",
+  },
+  {
+    id: "writing",
+    label: "Writing and Analysis",
+    desc: "Claims, structure, tone, and whether an argument actually makes sense.",
+  },
+  {
+    id: "language_conventions",
+    label: "Language Conventions",
+    desc: "Grammar, punctuation, sentence structure, clarity, and word choice.",
+  },
 ];
 
 init();
@@ -28,7 +39,7 @@ function init() {
   listEl.innerHTML = CATEGORIES.map(
     (c) => `
       <div class="category-row">
-        <div>
+        <div class="category-copy">
           <h2>${c.label}</h2>
           <p>${c.desc}</p>
         </div>

@@ -1,14 +1,10 @@
 /*
   theme.js
   --------
-  Renders the small theme switcher (Light / Dark / Sepia) into
-  #theme-switch-mount, present in the header on every page. The
-  actual theme is applied by setting data-theme on <html>; a tiny
-  inline script in <head> (see any page's <head>) applies the saved
-  choice immediately on load so there's no flash of the wrong theme.
-
-  Themes are just alternate sets of CSS custom properties — see the
-  "THEME VARIANTS" section in css/style.css.
+  Compact theme picker used in the site header.
+  The previous 3-icon segmented control looked too utility-heavy and
+  visually noisy. This version uses one clear "Theme" trigger with a
+  small popover menu so the header stays calm.
 */
 
 const THEMES = [
@@ -36,19 +32,46 @@ const THEMES = [
   function getTheme() {
     return localStorage.getItem("sq:theme") || "light";
   }
+
   function setTheme(id) {
     document.documentElement.setAttribute("data-theme", id);
     localStorage.setItem("sq:theme", id);
     render();
   }
+
   function render() {
-    const active = getTheme();
-    mount.innerHTML = `<div class="theme-switch">${THEMES.map(
-      (t) =>
-        `<button type="button" class="${t.id === active ? "active" : ""}" data-theme-id="${t.id}" aria-label="${t.label} theme" title="${t.label}">${t.icon}</button>`
-    ).join("")}</div>`;
-    mount.querySelectorAll("button").forEach((btn) => {
-      btn.addEventListener("click", () => setTheme(btn.dataset.themeId));
+    const activeId = getTheme();
+    const activeTheme = THEMES.find((t) => t.id === activeId) || THEMES[0];
+
+    mount.innerHTML = `
+      <details class="theme-picker">
+        <summary class="theme-picker-btn" aria-label="Choose theme" title="Theme">
+          <span class="theme-picker-icon" aria-hidden="true">${activeTheme.icon}</span>
+          <span class="theme-picker-text">${activeTheme.label}</span>
+        </summary>
+        <div class="theme-picker-menu" role="menu" aria-label="Theme options">
+          ${THEMES.map((theme) => `
+            <button
+              type="button"
+              class="theme-option${theme.id === activeId ? " active" : ""}"
+              data-theme-id="${theme.id}"
+              role="menuitemradio"
+              aria-checked="${theme.id === activeId ? "true" : "false"}"
+            >
+              <span class="theme-picker-icon" aria-hidden="true">${theme.icon}</span>
+              <span>${theme.label}</span>
+            </button>
+          `).join("")}
+        </div>
+      </details>
+    `;
+
+    const details = mount.querySelector(".theme-picker");
+    mount.querySelectorAll(".theme-option").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setTheme(btn.dataset.themeId);
+        if (details) details.open = false;
+      });
     });
   }
 
