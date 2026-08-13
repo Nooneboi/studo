@@ -264,19 +264,15 @@ function renderAnswerArea(item, container, savedAnswer) {
 
   if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
     const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
-    container.innerHTML = `<div class="options-list" role="radiogroup" aria-label="Answer choices">${q.options
-      .map((opt) => `<button type="button" class="option-btn${optionClass}" data-opt="${escapeAttr(opt.id)}" role="radio" aria-checked="${savedAnswer === opt.id ? "true" : "false"}" ${submitted ? "disabled" : ""}><span class="opt-letter">${escapeHtml(opt.id.toUpperCase())}</span><span class="opt-text">${escapeHtml(opt.text)}</span></button>`)
-      .join("")}</div>`;
+    const groupName = `test-answer-${currentIndex}`;
+    container.innerHTML = `<fieldset class="options-list" aria-label="Answer choices">${q.options
+      .map((opt) => `<label class="answer-choice${optionClass}" data-opt="${escapeAttr(opt.id)}"><input class="answer-radio" type="radio" name="${groupName}" value="${escapeAttr(opt.id)}" ${savedAnswer === opt.id ? "checked" : ""} ${submitted ? "disabled" : ""}><span class="choice-letter">${escapeHtml(opt.id.toUpperCase())}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></label>`)
+      .join("")}</fieldset>`;
 
-    container.querySelectorAll(".option-btn").forEach((btn) => {
-      if (!submitted && savedAnswer === btn.dataset.opt) btn.classList.add("selected");
-      btn.addEventListener("click", () => {
-        if (submitted) return;
-        answers[key] = btn.dataset.opt;
-        container.querySelectorAll(".option-btn").forEach((b) => {
-          b.classList.toggle("selected", b === btn);
-          b.setAttribute("aria-checked", String(b === btn));
-        });
+    container.querySelectorAll(".answer-radio").forEach((radio) => {
+      radio.addEventListener("change", () => {
+        if (submitted || !radio.checked) return;
+        answers[key] = radio.value;
         updateProgress();
       });
     });
@@ -309,13 +305,14 @@ function revealReview(item) {
 
   if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
     const correct = new Set(q.correct || []);
-    stage.querySelectorAll(".option-btn").forEach((btn) => {
-      const isSelected = btn.dataset.opt === answer;
-      const isCorrect = correct.has(btn.dataset.opt);
-      btn.classList.toggle("selected", isSelected);
-      btn.classList.toggle("correct", isCorrect);
-      btn.classList.toggle("incorrect", isSelected && !isCorrect);
-      btn.setAttribute("aria-checked", String(isSelected));
+    stage.querySelectorAll(".answer-choice").forEach((choice) => {
+      const isSelected = choice.dataset.opt === answer;
+      const isCorrect = correct.has(choice.dataset.opt);
+      choice.classList.toggle("selected", isSelected);
+      choice.classList.toggle("correct", isCorrect);
+      choice.classList.toggle("incorrect", isSelected && !isCorrect);
+      const radio = choice.querySelector(".answer-radio");
+      if (radio) radio.checked = isSelected;
     });
   }
 }

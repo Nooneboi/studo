@@ -1927,3 +1927,145 @@ body.test-body {
     display: none;
   }
 }
+
+/* -------------------------------------------------------------------------
+   v4.1 — paper-like answer choices + subject-strip cleanup
+   ------------------------------------------------------------------------- */
+
+/* The subject strip may scroll horizontally on small screens, but its native
+   scrollbar is visually noisy and was appearing as an odd browser control. */
+.subject-bar .wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.subject-bar .wrap::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Answer choices should read like an exam sheet, not four CTA buttons. */
+.options-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-inline-size: 0;
+  display: grid;
+  gap: 0;
+}
+
+.answer-choice {
+  position: relative;
+  width: 100%;
+  min-height: 58px;
+  display: grid;
+  grid-template-columns: 22px 30px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--color-line);
+  background: transparent;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: calc(1rem * var(--text-scale));
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background .12s ease, border-color .12s ease;
+}
+.answer-choice:first-child {
+  border-top: 1px solid var(--color-line);
+}
+.answer-choice:hover {
+  background: color-mix(in srgb, var(--color-surface-soft) 62%, transparent);
+}
+.answer-choice:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.answer-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  margin: 3px 0 0;
+  border: 1.5px solid var(--color-line-strong);
+  border-radius: 50%;
+  background: var(--color-surface);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.answer-radio::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  transform: scale(0);
+  transition: transform .1s ease;
+}
+.answer-radio:checked {
+  border-color: var(--color-primary);
+}
+.answer-radio:checked::before {
+  transform: scale(1);
+}
+.answer-radio:disabled {
+  cursor: default;
+}
+
+.choice-letter {
+  padding-top: 1px;
+  color: var(--color-ink-soft);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.answer-choice .opt-text {
+  padding: 0;
+}
+
+.answer-choice.selected {
+  background: color-mix(in srgb, var(--color-primary-soft) 48%, transparent);
+}
+.answer-choice.correct {
+  border-left: 3px solid var(--color-success);
+  padding-left: 7px;
+  background: color-mix(in srgb, var(--color-success-soft) 72%, transparent);
+}
+.answer-choice.correct .answer-radio {
+  border-color: var(--color-success);
+}
+.answer-choice.correct .answer-radio::before {
+  background: var(--color-success);
+}
+.answer-choice.incorrect {
+  border-left: 3px solid var(--color-alert);
+  padding-left: 7px;
+  background: color-mix(in srgb, var(--color-alert-soft) 70%, transparent);
+}
+.answer-choice.incorrect .answer-radio {
+  border-color: var(--color-alert);
+}
+.answer-choice.incorrect .answer-radio::before {
+  background: var(--color-alert);
+}
+.answer-choice.evidence-option {
+  padding-left: 10px;
+}
+.answer-choice.evidence-option.correct,
+.answer-choice.evidence-option.incorrect {
+  padding-left: 7px;
+}
+
+@media (max-width: 720px) {
+  .answer-choice {
+    min-height: 56px;
+    grid-template-columns: 22px 26px minmax(0, 1fr);
+    gap: 8px;
+    padding: 14px 6px;
+  }
+}

@@ -264,14 +264,16 @@ function handleHighlight(promptEl, questionId) {
 function renderAnswerArea(q, container, savedAnswer) {
   if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
     const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
-    container.innerHTML = `<div class="options-list" role="radiogroup" aria-label="Answer choices">${q.options
-      .map((opt) => `<button type="button" class="option-btn${optionClass}" data-opt="${escapeAttr(opt.id)}" role="radio" aria-checked="false"><span class="opt-letter">${escapeHtml(opt.id.toUpperCase())}</span><span class="opt-text">${escapeHtml(opt.text)}</span></button>`)
-      .join("")}</div>`;
+    const groupName = `practice-answer-${q.id}`;
+    container.innerHTML = `<fieldset class="options-list" aria-label="Answer choices">${q.options
+      .map((opt) => `<label class="answer-choice${optionClass}" data-opt="${escapeAttr(opt.id)}"><input class="answer-radio" type="radio" name="${escapeAttr(groupName)}" value="${escapeAttr(opt.id)}" ${savedAnswer === opt.id ? "checked" : ""}><span class="choice-letter">${escapeHtml(opt.id.toUpperCase())}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></label>`)
+      .join("")}</fieldset>`;
 
-    container.querySelectorAll(".option-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        Store.setAnswer(currentQuiz.id, q.id, btn.dataset.opt);
-        revealChoiceFeedback(container, q, btn.dataset.opt);
+    container.querySelectorAll(".answer-radio").forEach((radio) => {
+      radio.addEventListener("change", () => {
+        if (!radio.checked) return;
+        Store.setAnswer(currentQuiz.id, q.id, radio.value);
+        revealChoiceFeedback(container, q, radio.value);
         showExplanation();
         updateAnswerStatus();
       });
@@ -312,13 +314,14 @@ function renderAnswerArea(q, container, savedAnswer) {
 
 function revealChoiceFeedback(container, q, selectedId) {
   const correctIds = new Set(q.correct || []);
-  container.querySelectorAll(".option-btn").forEach((btn) => {
-    const selected = btn.dataset.opt === selectedId;
-    const correct = correctIds.has(btn.dataset.opt);
-    btn.classList.toggle("selected", selected);
-    btn.classList.toggle("correct", correct);
-    btn.classList.toggle("incorrect", selected && !correct);
-    btn.setAttribute("aria-checked", String(selected));
+  container.querySelectorAll(".answer-choice").forEach((choice) => {
+    const selected = choice.dataset.opt === selectedId;
+    const correct = correctIds.has(choice.dataset.opt);
+    choice.classList.toggle("selected", selected);
+    choice.classList.toggle("correct", correct);
+    choice.classList.toggle("incorrect", selected && !correct);
+    const radio = choice.querySelector(".answer-radio");
+    if (radio) radio.checked = selected;
   });
 
   if (correctIds.has(selectedId)) setStatus("Correct — review the explanation, then continue.");
