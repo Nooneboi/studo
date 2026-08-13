@@ -19,8 +19,8 @@ function renderProgress() {
         <h1>Nothing to measure yet.</h1>
         <p class="lede">Answer a few auto-graded questions in Practice or a Test. Studo will start building skill signals and a private mistake list from your actual work.</p>
         <div class="progress-empty-actions">
-          <a class="btn" href="practice.html">Start practicing</a>
-          <a class="btn secondary" href="quiz.html">Take a test</a>
+          <a class="btn" href="train.html">Start a baseline session</a>
+          <a class="btn secondary" href="practice.html">Choose practice manually</a>
         </div>
       </section>`;
     return;
@@ -42,10 +42,11 @@ function renderProgress() {
         ${summaryStat(summary.attempts, "graded attempts")}
         ${summaryStat(`${summary.accuracy}%`, "raw accuracy")}
         ${summaryStat(summary.activeMistakes, "need review")}
-        ${summaryStat(summary.sureWrong, "sure but wrong")}
+        ${summaryStat(summary.dueReviews, "skill reviews due")}
       </div>
     </section>
 
+    ${reviewRhythmHtml(summary)}
     ${recommendation ? recommendationHtml(recommendation) : ""}
     ${topPattern ? patternHtml(topPattern) : ""}
 
@@ -77,7 +78,7 @@ function renderProgress() {
     <section class="progress-note-card">
       <div>
         <strong>How Studo currently decides this</strong>
-        <p>Correct and incorrect graded attempts are grouped by skill. Harder questions and test-mode answers carry a little more evidence, while a neutral starting prior prevents one question from becoming a fake 0% or 100% mastery claim.</p>
+        <p>Correct and incorrect graded attempts are grouped by skill. Studo also spaces later review and prefers fresh parallel questions when possible, so improvement is based more on retrieval and transfer than on remembering one old answer.</p>
       </div>
       <button class="btn ghost small" type="button" id="clear-learning-history">Clear learning history</button>
     </section>
@@ -111,8 +112,46 @@ function recommendationHtml(skill) {
         <strong>${skill.score}%</strong>
         <span>${escapeHtml(skill.signal)}</span>
       </div>
-      <a class="btn" href="${escapeAttr(href)}">Practice this area</a>
+      <div class="next-move-actions">
+        <a class="btn" href="train.html">Train me</a>
+        <a class="btn secondary" href="${escapeAttr(href)}">Choose this area</a>
+      </div>
     </section>`;
+}
+
+function reviewRhythmHtml(summary) {
+  const schedule = typeof Learning.getReviewSchedule === "function" ? Learning.getReviewSchedule() : [];
+  const next = schedule[0] || null;
+  const due = summary.dueReviews || 0;
+  const headline = due
+    ? `${due} skill review${due === 1 ? " is" : "s are"} due`
+    : next
+      ? `Next review ${escapeHtml(relativeDue(next.dueAt))}`
+      : "Review timing will appear here";
+  const detail = due
+    ? "These skills are ready for another retrieval attempt. Train Me will prefer fresh questions when the catalog has them."
+    : next
+      ? `${next.skillLabel} is currently scheduled next. Studo spaces stronger work farther apart instead of repeating it immediately.`
+      : "Complete a few graded questions and Studo will begin spacing review by skill.";
+  return `
+    <section class="review-rhythm" aria-label="Review schedule">
+      <div>
+        <div class="eyebrow">Review rhythm</div>
+        <h2>${headline}</h2>
+        <p>${escapeHtml(detail)}</p>
+      </div>
+      <a class="btn" href="train.html">Build training session</a>
+    </section>`;
+}
+
+function relativeDue(iso) {
+  if (!iso) return "later";
+  const diff = new Date(iso).getTime() - Date.now();
+  if (diff <= 0) return "now";
+  const hours = Math.round(diff / 3600000);
+  if (hours < 24) return `in about ${Math.max(1, hours)} hour${hours === 1 ? "" : "s"}`;
+  const days = Math.round(diff / 86400000);
+  return `in about ${Math.max(1, days)} day${days === 1 ? "" : "s"}`;
 }
 
 function patternHtml(pattern) {
@@ -159,7 +198,7 @@ function mistakeRow(mistake) {
   const href = mistake.moduleFile
     ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}`
     : practiceHref(mistake.category, mistake.topic);
-  const statusText = mistake.status === "improving" ? "Improving — prove it once more" : "Needs review";
+  const statusText = mistake.status === "improving" ? "Improving — confirm on fresh material" : "Needs review";
   return `
     <a class="mistake-row" href="${escapeAttr(href)}">
       <div class="mistake-status-mark ${mistake.status === "improving" ? "improving" : ""}" aria-hidden="true"></div>

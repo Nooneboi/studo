@@ -117,3 +117,11 @@ and commit. No code knowledge required beyond "don't delete the
 Everything is plain HTML/CSS/JavaScript with comments explaining
 each part — bring this whole folder back to a fresh conversation
 and describe what you want changed.
+
+## Phase 3C additions
+
+- `train.html` + `js/train.js`: builds a short reasoned training session from local learning history.
+- Skill review timing is stored locally and spaced after successful retrieval.
+- Mistakes now prefer fresh parallel questions (same family/skill) before immediate exact repeats.
+- New transfer modules provide alternate Reading and Language Convention questions so transfer can be demonstrated with current sample content.
+- The Home and Progress surfaces can send returning learners directly into Train Me while manual Practice remains available.

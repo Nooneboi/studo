@@ -1,20 +1,22 @@
 /*
-  learning.js — Studo learning engine (Phase 3A)
-  ----------------------------------------------
-  Keeps the first version deliberately explainable:
-  - every graded attempt is stored locally
-  - attempts roll up into skill-level signals
-  - incorrect answers create a mistake/review record
-  - repeated correct work can move a mistake from needs-review -> improving -> mastered
+  learning.js — Studo learning engine (Phase 3C)
+  ------------------------------------------------
+  Explainable, local-first learning state:
+  - stores first graded attempts
+  - rolls attempts into skill signals
+  - tracks mistakes and observed distractor patterns
+  - schedules spaced skill reviews
+  - prefers transfer: new questions testing the same skill/family
+  - builds a reasoned "Train Me" session from the available catalog
 
-  This is NOT a score predictor. Skill percentages are practice signals only,
-  and the UI labels low-data estimates clearly so we do not pretend to know
-  more about the learner than the evidence supports.
+  The percentages shown by Studo are practice signals, not predicted exam scores.
 */
 
 const Learning = (() => {
-  const STATE_KEY = "sq:learning:v1";
-  const MAX_ATTEMPTS = 2000;
+  const STATE_KEY = "sq:learning:v1"; // keep the key so existing users migrate in place
+  const STATE_VERSION = 2;
+  const MAX_ATTEMPTS = 2500;
+  const REVIEW_INTERVALS = [1, 3, 7, 14, 30];
 
   const CATEGORY_LABELS = {
     reading: "Reading",
@@ -23,7 +25,7 @@ const Learning = (() => {
   };
 
   function emptyState() {
-    return { version: 1, attempts: [], mistakes: {} };
+    return { version: STATE_VERSION, attempts: [], mistakes: {}, reviews: {} };
   }
 
   function readState() {
@@ -32,9 +34,10 @@ const Learning = (() => {
       if (!raw) return emptyState();
       const state = JSON.parse(raw);
       return {
-        version: 1,
+        version: STATE_VERSION,
         attempts: Array.isArray(state.attempts) ? state.attempts : [],
         mistakes: state.mistakes && typeof state.mistakes === "object" ? state.mistakes : {},
+        reviews: state.reviews && typeof state.reviews === "object" ? state.reviews : {},
       };
     } catch (e) {
       console.warn("Learning state read failed", e);
@@ -44,6 +47,7 @@ const Learning = (() => {
 
   function writeState(state) {
     try {
+      state.version = STATE_VERSION;
       localStorage.setItem(STATE_KEY, JSON.stringify(state));
     } catch (e) {
       console.warn("Learning state write failed", e);
@@ -81,6 +85,11 @@ const Learning = (() => {
     };
   }
 
+  function familyFor(module, question) {
+    const skill = skillFor(module, question);
+    return question.familyId || question.family || skill.id;
+  }
+
   function questionKey(module, question) {
     return `${module.id}:${question.id}`;
   }
@@ -90,13 +99,130 @@ const Learning = (() => {
   }
 
   function modeWeight(mode) {
-    return mode === "test" ? 1.1 : 1;
+    return mode === "test" ? 1.1 : mode === "train" ? 1.05 : 1;
   }
 
   function observedPatternFor(question, answer, correct) {
     if (correct || !question || !Array.isArray(question.options)) return null;
     const selected = question.options.find((opt) => opt.id === answer);
     return selected?.distractorType || null;
+  }
+
+  function addDays(isoOrDate, days) {
+    const d = isoOrDate instanceof Date ? new Date(isoOrDate) : new Date(isoOrDate || Date.now());
+    d.setTime(d.getTime() + Math.max(0, days) * 86400000);
+    return d.toISOString();
+  }
+
+  function reviewIntervalFor(stage, confidence) {
+    if (confidence === "guessing") return 1;
+    if (confidence === "unsure") return stage <= 1 ? 1 : Math.max(2, REVIEW_INTERVALS[Math.min(stage - 1, REVIEW_INTERVALS.length - 1)]);
+    return REVIEW_INTERVALS[Math.min(Math.max(0, stage), REVIEW_INTERVALS.length - 1)];
+  }
+
+  function updateReview(state, attempt, skill) {
+    const current = state.reviews[skill.id] || {
+      skillId: skill.id,
+      skillLabel: skill.label,
+      category: attempt.category,
+      topic: attempt.topic,
+      stage: 0,
+      correctStreak: 0,
+      lapses: 0,
+      intervalDays: 0,
+      dueAt: attempt.attemptedAt,
+    };
+
+    if (!attempt.correct) {
+      state.reviews[skill.id] = {
+        ...current,
+        skillLabel: skill.label,
+        category: attempt.category,
+        topic: attempt.topic,
+        stage: 0,
+        correctStreak: 0,
+        lapses: (current.lapses || 0) + 1,
+        intervalDays: 0,
+        dueAt: attempt.attemptedAt,
+        lastResult: "wrong",
+        lastAttemptAt: attempt.attemptedAt,
+      };
+      return;
+    }
+
+    let stage = Math.min((current.stage || 0) + 1, REVIEW_INTERVALS.length - 1);
+    if (attempt.confidence === "guessing") stage = Math.min(current.stage || 0, 1);
+    if (attempt.confidence === "unsure") stage = Math.min(Math.max(current.stage || 0, 1), REVIEW_INTERVALS.length - 1);
+    const intervalDays = reviewIntervalFor(stage, attempt.confidence);
+
+    state.reviews[skill.id] = {
+      ...current,
+      skillLabel: skill.label,
+      category: attempt.category,
+      topic: attempt.topic,
+      stage,
+      correctStreak: (current.correctStreak || 0) + 1,
+      intervalDays,
+      dueAt: addDays(attempt.attemptedAt, intervalDays),
+      lastResult: "correct",
+      lastAttemptAt: attempt.attemptedAt,
+    };
+  }
+
+  function updateMistakes(state, attempt, module, question, skill, file) {
+    const key = attempt.questionKey;
+    const familyId = attempt.familyId;
+    const existing = state.mistakes[key];
+
+    if (!attempt.correct) {
+      state.mistakes[key] = {
+        questionKey: key,
+        questionId: question.id,
+        moduleId: module.id,
+        moduleFile: file || module.file || existing?.moduleFile || null,
+        moduleTitle: module.title || existing?.moduleTitle || "",
+        category: module.category || existing?.category || "reading",
+        topic: module.topic || existing?.topic || "General",
+        skillId: skill.id,
+        skillLabel: skill.label,
+        familyId,
+        wrongCount: (existing?.wrongCount || 0) + 1,
+        correctAfter: 0,
+        transferCorrect: 0,
+        status: "needs_review",
+        reason: existing?.reason || null,
+        observedPattern: attempt.observedPattern || existing?.observedPattern || null,
+        lastWrongAt: attempt.attemptedAt,
+        lastAttemptAt: attempt.attemptedAt,
+      };
+      return;
+    }
+
+    // Correcting the exact same question is useful, but does not prove transfer.
+    if (existing && existing.status !== "mastered") {
+      state.mistakes[key] = {
+        ...existing,
+        correctAfter: (existing.correctAfter || 0) + 1,
+        lastAttemptAt: attempt.attemptedAt,
+        status: "improving",
+      };
+    }
+
+    // A correct answer on a DIFFERENT question in the same family/skill is
+    // stronger evidence that the idea transferred rather than being memorized.
+    Object.entries(state.mistakes).forEach(([mistakeKey, mistake]) => {
+      if (mistakeKey === key || mistake.status === "mastered") return;
+      const sameFamily = mistake.familyId && familyId && mistake.familyId === familyId;
+      const sameSkill = mistake.skillId === skill.id;
+      if (!sameFamily && !sameSkill) return;
+      const transferCorrect = (mistake.transferCorrect || 0) + 1;
+      state.mistakes[mistakeKey] = {
+        ...mistake,
+        transferCorrect,
+        lastAttemptAt: attempt.attemptedAt,
+        status: transferCorrect >= 2 ? "mastered" : "improving",
+      };
+    });
   }
 
   function recordAttempt({ module, question, answer, correct, mode = "practice", elapsedMs = null, file = null, confidence = null }) {
@@ -111,6 +237,7 @@ const Learning = (() => {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
       questionKey: key,
       questionId: question.id,
+      familyId: familyFor(module, question),
       moduleId: module.id,
       moduleFile: file || module.file || null,
       moduleTitle: module.title || "",
@@ -130,45 +257,17 @@ const Learning = (() => {
     };
 
     state.attempts.push(attempt);
-    if (state.attempts.length > MAX_ATTEMPTS) {
-      state.attempts = state.attempts.slice(-MAX_ATTEMPTS);
-    }
+    if (state.attempts.length > MAX_ATTEMPTS) state.attempts = state.attempts.slice(-MAX_ATTEMPTS);
 
-    const existing = state.mistakes[key];
-    if (!correct) {
-      state.mistakes[key] = {
-        questionKey: key,
-        questionId: question.id,
-        moduleId: module.id,
-        moduleFile: file || module.file || existing?.moduleFile || null,
-        moduleTitle: module.title || existing?.moduleTitle || "",
-        category: module.category || existing?.category || "reading",
-        topic: module.topic || existing?.topic || "General",
-        skillId: skill.id,
-        skillLabel: skill.label,
-        wrongCount: (existing?.wrongCount || 0) + 1,
-        correctAfter: 0,
-        status: "needs_review",
-        reason: existing?.reason || null,
-        observedPattern: observedPattern || existing?.observedPattern || null,
-        lastWrongAt: now,
-        lastAttemptAt: now,
-      };
-    } else if (existing && existing.status !== "mastered") {
-      const correctAfter = (existing.correctAfter || 0) + 1;
-      state.mistakes[key] = {
-        ...existing,
-        correctAfter,
-        lastAttemptAt: now,
-        status: correctAfter >= 2 ? "mastered" : "improving",
-      };
-    }
-
+    updateMistakes(state, attempt, module, question, skill, file);
+    updateReview(state, attempt, skill);
     writeState(state);
+
     return {
       attempt,
       skill: getSkillSummary(skill.id, state),
       mistake: state.mistakes[key] || null,
+      review: state.reviews[skill.id] || null,
     };
   }
 
@@ -191,15 +290,17 @@ const Learning = (() => {
     let weightedTotal = 0;
     let weightedCorrect = 0;
     attempts.forEach((attempt) => {
-      const weight = difficultyWeight(attempt.difficulty) * modeWeight(attempt.mode);
+      const confidenceWeight = attempt.confidence === "guessing" ? 0.7 : attempt.confidence === "unsure" ? 0.9 : 1;
+      const weight = difficultyWeight(attempt.difficulty) * modeWeight(attempt.mode) * confidenceWeight;
       weightedTotal += weight;
       if (attempt.correct) weightedCorrect += weight;
     });
 
-    // A small neutral prior prevents 1 question from becoming a fake 0%/100% mastery claim.
     const score = Math.round(((weightedCorrect + 1.5) / (weightedTotal + 3)) * 100);
-    const accuracy = Math.round((attempts.filter((a) => a.correct).length / attempts.length) * 100);
+    const correctCount = attempts.filter((a) => a.correct).length;
+    const accuracy = Math.round((correctCount / attempts.length) * 100);
     const last = attempts[attempts.length - 1];
+    const review = state.reviews[skillId] || null;
 
     return {
       id: skillId,
@@ -207,12 +308,14 @@ const Learning = (() => {
       category: last.category || "reading",
       topic: last.topic || "General",
       attempts: attempts.length,
-      correct: attempts.filter((a) => a.correct).length,
+      correct: correctCount,
       accuracy,
       score,
       signal: attempts.length < 3 ? "Low data" : attempts.length < 8 ? "Early signal" : "Established",
       status: score >= 80 ? "Strong" : score >= 65 ? "Building" : "Needs work",
       lastAttemptAt: last.attemptedAt,
+      dueAt: review?.dueAt || null,
+      intervalDays: review?.intervalDays || 0,
     };
   }
 
@@ -225,12 +328,21 @@ const Learning = (() => {
       .sort((a, b) => a.score - b.score || b.attempts - a.attempts);
   }
 
+  function getReviewSchedule({ dueOnly = false } = {}) {
+    const state = readState();
+    const now = Date.now();
+    return Object.values(state.reviews || {})
+      .filter((item) => !dueOnly || new Date(item.dueAt || 0).getTime() <= now)
+      .sort((a, b) => new Date(a.dueAt || 0) - new Date(b.dueAt || 0));
+  }
+
   function getSummary() {
     const state = readState();
     const graded = state.attempts;
     const correct = graded.filter((a) => a.correct).length;
     const activeMistakes = Object.values(state.mistakes).filter((m) => m.status !== "mastered");
     const skills = getSkillSummaries();
+    const dueReviews = getReviewSchedule({ dueOnly: true });
 
     const confidenceCounts = graded.reduce((acc, item) => {
       if (item.confidence) acc[item.confidence] = (acc[item.confidence] || 0) + 1;
@@ -242,6 +354,8 @@ const Learning = (() => {
       correct,
       accuracy: graded.length ? Math.round((correct / graded.length) * 100) : null,
       activeMistakes: activeMistakes.length,
+      dueReviews: dueReviews.length,
+      nextReview: getReviewSchedule()[0] || null,
       skills,
       weakestSkills: skills.filter((s) => s.attempts >= 2).slice(0, 3),
       recentAttempts: graded.slice(-8).reverse(),
@@ -275,6 +389,118 @@ const Learning = (() => {
       .sort((a, b) => b.count - a.count);
   }
 
+  function isAutoGraded(question) {
+    if (!question) return false;
+    if (["multiple_choice", "evidence_based", "grammar_edit"].includes(question.type)) return true;
+    return question.type === "fill_blank" && typeof question.correct === "string";
+  }
+
+  function buildTrainingPlan(catalog, { limit = 8 } = {}) {
+    const state = readState();
+    const attempts = state.attempts;
+    const activeMistakes = Object.values(state.mistakes).filter((m) => m.status !== "mastered");
+    const skills = getSkillSummaries();
+    const skillMap = Object.fromEntries(skills.map((s) => [s.id, s]));
+    const now = Date.now();
+    const seenKeys = new Set(attempts.map((a) => a.questionKey));
+    const sureWrongBySkill = attempts.reduce((acc, a) => {
+      if (!a.correct && a.confidence === "sure") acc[a.skillId] = (acc[a.skillId] || 0) + 1;
+      return acc;
+    }, {});
+
+    const candidates = [];
+    (catalog || []).forEach((module) => {
+      (module.questions || []).forEach((question) => {
+        if (!isAutoGraded(question)) return;
+        const key = questionKey(module, question);
+        const skill = skillFor(module, question);
+        const familyId = familyFor(module, question);
+        const skillSummary = skillMap[skill.id] || null;
+        const review = state.reviews[skill.id] || null;
+        const reviewDue = review && new Date(review.dueAt || 0).getTime() <= now;
+        const exactMistake = state.mistakes[key] && state.mistakes[key].status !== "mastered" ? state.mistakes[key] : null;
+        const relatedMistake = activeMistakes.find((m) => m.questionKey !== key && (m.familyId === familyId || m.skillId === skill.id));
+        const lastAttempt = [...attempts].reverse().find((a) => a.questionKey === key) || null;
+        const lastAgeHours = lastAttempt ? (now - new Date(lastAttempt.attemptedAt).getTime()) / 3600000 : Infinity;
+        const unseen = !seenKeys.has(key);
+
+        let score = 10;
+        let reason = unseen ? "Build a clearer skill signal" : "Maintain the skill";
+        let reasonType = unseen ? "baseline" : "maintenance";
+
+        if (relatedMistake && unseen) {
+          score += 150;
+          reason = `New question testing ${relatedMistake.skillLabel || skill.label} after a previous miss`;
+          reasonType = "transfer";
+        } else if (reviewDue) {
+          score += 115;
+          reason = `${skill.label} is due for review`;
+          reasonType = "due";
+        } else if (exactMistake) {
+          score += 95;
+          reason = `Revisit a recent mistake in ${skill.label}`;
+          reasonType = "mistake";
+        } else if (skillSummary && skillSummary.status === "Needs work") {
+          score += 75 + Math.max(0, 65 - skillSummary.score);
+          reason = `Strengthen ${skill.label}`;
+          reasonType = "weak";
+        } else if (sureWrongBySkill[skill.id]) {
+          score += 70;
+          reason = `Check a possible misconception in ${skill.label}`;
+          reasonType = "misconception";
+        } else if (skillSummary && skillSummary.status === "Building") {
+          score += 45;
+          reason = `Keep building ${skill.label}`;
+          reasonType = "building";
+        }
+
+        if (unseen) score += 25;
+        // Do not immediately drill the exact same question after feedback. Fresh
+        // transfer questions should win first; exact repeats become useful later.
+        if (lastAgeHours < 1) score -= 130;
+        else if (lastAgeHours < 24) score -= 70;
+
+        candidates.push({
+          score,
+          reason,
+          reasonType,
+          module: { ...module },
+          moduleFile: module.file || null,
+          question,
+          questionKey: key,
+          skillId: skill.id,
+          skillLabel: skill.label,
+          familyId,
+          unseen,
+        });
+      });
+    });
+
+    candidates.sort((a, b) => b.score - a.score || Number(b.unseen) - Number(a.unseen));
+
+    const selected = [];
+    const skillCounts = {};
+    for (const item of candidates) {
+      if (selected.length >= limit) break;
+      const count = skillCounts[item.skillId] || 0;
+      if (count >= 3 && candidates.some((c) => (skillCounts[c.skillId] || 0) < 2 && !selected.includes(c))) continue;
+      selected.push(item);
+      skillCounts[item.skillId] = count + 1;
+    }
+
+    // With very little learning history, label the SESSION as baseline rather
+    // than pretending the whole plan is personalized. Individual questions
+    // still keep their true reason (for example, a direct transfer follow-up).
+    const adaptive = attempts.length >= 3;
+
+    return {
+      adaptive,
+      items: selected,
+      estimatedMinutes: Math.max(5, Math.round(selected.reduce((sum, item) => sum + (item.question.time || 55), 0) / 60)),
+      dueCount: getReviewSchedule({ dueOnly: true }).length,
+    };
+  }
+
   function clearLearningHistory() {
     localStorage.removeItem(STATE_KEY);
   }
@@ -290,7 +516,10 @@ const Learning = (() => {
     getSkillSummary,
     getSkillSummaries,
     getSummary,
+    getReviewSchedule,
+    buildTrainingPlan,
     skillFor,
+    familyFor,
     questionKey,
     categoryLabel,
     setMistakeReason,

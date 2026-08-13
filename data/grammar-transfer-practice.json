@@ -1,0 +1,89 @@
+{
+  "id": "grammar-transfer-practice",
+  "title": "Grammar Transfer — Precision Check",
+  "description": "Fresh sentences that retest agreement and commonly confused words.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Grammar & Usage",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "The list of required materials {{blank}} posted beside the laboratory door.",
+      "options": [
+        {
+          "id": "a",
+          "text": "are",
+          "whyWrong": "The nearby plural noun “materials” is inside a prepositional phrase. The true subject is the singular noun “list.”"
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "c",
+          "text": "were",
+          "whyWrong": "This changes the sentence to past tense and also distracts from the singular subject."
+        },
+        {
+          "id": "d",
+          "text": "have been",
+          "whyWrong": "This plural verb phrase does not agree with the singular subject “list.”"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "points": 1,
+      "time": 30,
+      "explanation": "The subject is “list,” which is singular. “Of required materials” does not change the subject, so “is” is correct.",
+      "rule": "Find the true subject before matching the verb; ignore nouns inside interrupting prepositional phrases.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Subject–verb agreement"
+      },
+      "familyId": "language.grammar.subject_verb_agreement"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "The technicians placed {{blank}} tools on the inspection table before beginning the test.",
+      "options": [
+        {
+          "id": "a",
+          "text": "there",
+          "distractorType": "location_homophone"
+        },
+        {
+          "id": "b",
+          "text": "they're",
+          "distractorType": "contraction_homophone"
+        },
+        {
+          "id": "c",
+          "text": "their"
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "possessive_pronoun_form"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "points": 1,
+      "time": 25,
+      "explanation": "“Their” is the possessive determiner needed directly before the noun “tools.”",
+      "rule": "Before a noun, use the possessive determiner “their”; “there” indicates place and “they’re” means “they are.”",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Commonly confused words"
+      },
+      "familyId": "language.usage.confused_words"
+    }
+  ]
+}

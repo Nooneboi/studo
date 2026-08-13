@@ -9,9 +9,7 @@
 
   const nextSkill = summary.weakestSkills[0] || summary.skills[0] || null;
   const mistakes = Learning.getMistakes();
-  const primaryHref = nextSkill
-    ? `category.html?subject=rla&cat=${encodeURIComponent(nextSkill.category)}${nextSkill.topic && nextSkill.topic !== "General" ? `&topic=${encodeURIComponent(nextSkill.topic)}` : ""}`
-    : "practice.html";
+  const primaryHref = "train.html";
 
   const mainTitle = mistakes.length
     ? `${mistakes.length} item${mistakes.length === 1 ? "" : "s"} worth reviewing`
@@ -23,9 +21,11 @@
     ? `${nextSkill.label}: ${nextSkill.score}% practice signal · ${nextSkill.signal.toLowerCase()}`
     : `${summary.attempts} graded attempts saved on this device`;
 
-  const supportingNote = mistakes.length
-    ? "A short review now can keep weaker skills from fading."
-    : "Pick up where you left off with a short focused session.";
+  const supportingNote = summary.dueReviews
+    ? `${summary.dueReviews} skill review${summary.dueReviews === 1 ? " is" : "s are"} due. Train Me will mix those with fresh questions that test weaker skills.`
+    : mistakes.length
+      ? "Train Me will use fresh questions where possible so review tests the skill, not your memory of an old answer."
+      : "Train Me can build a short focused session from your current skill signals.";
 
   mount.innerHTML = `
     <section class="home-learning-strip" aria-label="Continue learning">
@@ -43,7 +43,7 @@
         <p class="home-learning-note">${escapeHtml(supportingNote)}</p>
       </div>
       <div class="home-learning-actions">
-        <a class="btn" href="${escapeAttr(primaryHref)}">Resume now</a>
+        <a class="btn" href="${escapeAttr(primaryHref)}">Train me</a>
         <a class="btn secondary" href="progress.html">View progress</a>
       </div>
     </section>`;

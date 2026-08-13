@@ -43,14 +43,15 @@
         "id": "writing.evidence.relevance",
         "label": "Relevant evidence"
       },
-      "rule": "The strongest evidence directly supports the exact claim being argued, especially with measurable need or demand."
+      "rule": "The strongest evidence directly supports the exact claim being argued, especially with measurable need or demand.",
+      "familyId": "writing.evidence.relevance"
     },
     {
       "id": "q2",
       "type": "extended_response",
       "prompt": "In 3-5 sentences, write a short paragraph arguing for ONE side of this debate, using at least one piece of evidence from the passage.",
       "points": 3,
-      "explanation": "Not auto-graded \u2014 check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review.",
+      "explanation": "Not auto-graded — check that the response takes a clear position, references passage evidence, and stays on topic. Useful for self-review or teacher review.",
       "skill": {
         "id": "writing.argument.short_response",
         "label": "Short argument construction"

@@ -2960,3 +2960,278 @@ body.test-body {
     align-items: flex-start;
   }
 }
+
+/* Phase 3C — Train Me ----------------------------------------------------- */
+.train-header-progress {
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+  font-weight: 700;
+  min-width: 42px;
+  text-align: right;
+}
+
+.train-plan,
+.train-complete {
+  max-width: 820px;
+  margin: 44px auto 20px;
+  padding: 36px 38px;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+.train-plan-eyebrow {
+  color: var(--color-primary-dark);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.train-plan h1,
+.train-complete h1 {
+  margin-bottom: 10px;
+}
+.train-plan .lede,
+.train-complete .lede {
+  max-width: 66ch;
+  margin-bottom: 26px;
+}
+.train-plan-meta,
+.train-complete-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 24px 0;
+}
+.train-plan-meta > div,
+.train-complete-grid > div {
+  padding: 16px 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-surface-soft);
+  display: grid;
+  gap: 2px;
+}
+.train-plan-meta strong,
+.train-complete-grid strong {
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+.train-plan-meta span,
+.train-complete-grid span {
+  color: var(--color-ink-soft);
+  font-size: .82rem;
+}
+.train-plan-reasons {
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  margin: 20px 0 24px;
+}
+.train-reason-row {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
+  font-size: .92rem;
+}
+.train-reason-row:last-child { border-bottom: 0; }
+.train-reason-row strong { color: var(--color-ink); }
+.train-plan-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.train-plan-note {
+  margin: 18px 0 0;
+  color: var(--color-ink-faint);
+  font-size: .84rem;
+}
+
+.train-session-shell {
+  display: grid;
+  gap: 14px;
+}
+.train-session-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 34px;
+}
+.train-why {
+  position: relative;
+  color: var(--color-ink-soft);
+  font-size: .82rem;
+}
+.train-why summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+.train-why summary::-webkit-details-marker { display: none; }
+.train-why summary::after { content: " +"; color: var(--color-primary); }
+.train-why[open] summary::after { content: " −"; }
+.train-why p {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  width: min(320px, 72vw);
+  z-index: 6;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-float);
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+}
+.train-question-panel .question-stage { min-height: 430px; }
+.train-question-footer { min-height: 68px; }
+.train-footer-status {
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+}
+
+.train-confidence {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-ink-faint);
+  font-size: .8rem;
+}
+.train-confidence > span { margin-right: 4px; }
+.train-confidence button {
+  min-height: 28px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-ink-soft);
+  font-size: .78rem;
+  font-weight: 600;
+}
+.train-confidence button:hover { background: var(--color-surface-soft); }
+.train-confidence button.active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+.train-confidence button:disabled { opacity: .7; cursor: default; }
+
+.train-feedback-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.train-feedback-head > div { display: grid; gap: 2px; }
+.train-feedback-head > div > span {
+  color: var(--color-primary-dark);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.train-feedback-head > div > strong { font-size: .96rem; }
+.train-feedback-head > span {
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+  text-align: right;
+}
+.train-feedback-summary {
+  margin: 0;
+  color: var(--color-ink);
+  line-height: 1.58;
+}
+.train-feedback-details {
+  display: grid;
+  margin-top: 12px;
+  border-top: 1px solid var(--color-line);
+}
+.train-feedback-details details {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.train-feedback-details summary {
+  cursor: pointer;
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+  font-weight: 700;
+}
+.train-feedback-details p {
+  margin: 8px 0 0;
+  color: var(--color-ink-soft);
+  font-size: .88rem;
+}
+.train-recorded {
+  margin-top: 12px;
+  color: var(--color-ink-faint);
+  font-size: .8rem;
+}
+.train-short-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+.train-complete-skills {
+  margin: 18px 0 24px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-surface-soft);
+}
+.train-complete-skills span {
+  color: var(--color-ink-faint);
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.train-complete-skills p { margin: 6px 0 0; color: var(--color-ink); }
+
+@media (max-width: 720px) {
+  .train-plan,
+  .train-complete {
+    margin-top: 18px;
+    padding: 24px 20px;
+  }
+  .train-plan-meta,
+  .train-complete-grid { grid-template-columns: 1fr; }
+  .train-session-topline { align-items: flex-start; }
+  .train-why p { right: -4px; }
+  .train-feedback-head { align-items: flex-start; flex-direction: column; }
+  .train-feedback-head > span { text-align: left; }
+  .train-short-row { grid-template-columns: 1fr; }
+}
+
+/* Phase 3C — progress review rhythm -------------------------------------- */
+.review-rhythm {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  margin: 22px 0;
+  padding: 22px 24px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 22%, var(--color-line));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-primary-soft) 46%, var(--color-surface));
+}
+.review-rhythm h2 { margin-bottom: 6px; }
+.review-rhythm p { margin: 0; max-width: 68ch; }
+.next-move-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media (max-width: 760px) {
+  .review-rhythm { grid-template-columns: 1fr; align-items: start; }
+}

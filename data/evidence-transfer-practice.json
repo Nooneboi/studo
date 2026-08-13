@@ -1,0 +1,98 @@
+{
+  "id": "evidence-transfer-practice",
+  "title": "Evidence & Inference — The Last Bus",
+  "description": "New passage, same core reading skills: infer carefully and prove the answer with evidence.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Evidence & Inference",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Andre usually left the community center before nine, but on Thursday he stayed to help stack chairs after the debate club meeting. By the time he stepped outside, the street was almost empty. He checked the bus app twice, then began walking toward the next stop instead of waiting where he was. When the number 18 finally appeared at the far intersection, Andre stopped walking and smiled.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What can the reader reasonably infer about Andre near the end of the passage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He is relieved that the bus is coming.",
+          "distractorType": "correct_inference"
+        },
+        {
+          "id": "b",
+          "text": "He regrets helping after the meeting.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "The passage never says Andre regrets helping. That motive is added by the reader rather than supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "He plans to walk all the way home.",
+          "distractorType": "opposite_claim",
+          "whyWrong": "He stops walking and smiles when he sees the bus, which points away from the idea that he intends to walk home."
+        },
+        {
+          "id": "d",
+          "text": "He is angry that the street is empty.",
+          "distractorType": "unsupported_emotion",
+          "whyWrong": "The empty street is described, but no detail shows anger."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "points": 1,
+      "time": 35,
+      "explanation": "Andre checks the bus app, keeps moving toward another stop, then stops and smiles when the bus appears. Those details support relief.",
+      "rule": "An inference should connect several details without adding a new motive or emotion that the passage never shows.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "familyId": "reading.inference.character_state"
+    },
+    {
+      "id": "q2",
+      "type": "evidence_based",
+      "prompt": "Which sentence best supports the inference that Andre was hoping to catch the bus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andre usually left the community center before nine.",
+          "distractorType": "background_only",
+          "whyWrong": "This gives routine background, but it does not show what he is hoping for now."
+        },
+        {
+          "id": "b",
+          "text": "He checked the bus app twice, then began walking toward the next stop instead of waiting where he was.",
+          "distractorType": "correct_evidence"
+        },
+        {
+          "id": "c",
+          "text": "The street was almost empty.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This is a setting detail. It does not directly show Andre’s goal."
+        },
+        {
+          "id": "d",
+          "text": "He stayed to help stack chairs after the debate club meeting.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why he left late, not what transportation he was trying to catch."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "points": 2,
+      "time": 40,
+      "explanation": "Checking the bus app and walking toward another stop are direct actions showing that Andre is trying to catch the bus.",
+      "rule": "Evidence should directly prove the inference through the character’s words or actions.",
+      "evidenceExcerpt": "“He checked the bus app twice, then began walking toward the next stop instead of waiting where he was.”",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence matching"
+      },
+      "familyId": "reading.evidence.explicit_reason"
+    }
+  ]
+}

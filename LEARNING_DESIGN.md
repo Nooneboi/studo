@@ -32,3 +32,27 @@ This file is the product reference for how Studo should support attention and le
 - Mengelkamp & Bannert (2010), confidence judgments and learning outcomes. DOI: 10.3758/MC.38.4.441
 - Pashler et al. (2008), evidence review of learning-styles matching. DOI: 10.1111/j.1539-6053.2009.01038.x
 - Zhou et al. (2022), task switching and working memory. PMID: 36457903
+
+## Phase 3C — Review rhythm and transfer
+
+### Review is scheduled by skill, not by page visit
+Studo now keeps a lightweight review schedule for each graded skill. A wrong answer makes the skill immediately eligible for review; successful retrieval spaces the next check farther out. Confidence can shorten that interval when a correct answer was guessed or uncertain.
+
+This schedule is intentionally simple and explainable. It is not presented as a scientifically exact memory model.
+
+### Transfer matters more than memorizing the old answer
+A mistake is not considered fully stable merely because the learner later selects the correct option on the exact same question. When possible, Studo looks for a different question in the same skill/question family. Correct work on fresh material is stronger evidence that the skill transferred.
+
+### Train Me must explain its choices
+An adaptive session may choose a question because:
+- a review is due,
+- the underlying skill is weak,
+- the learner was confidently wrong,
+- a new parallel question can test transfer after a mistake,
+- the skill is still building,
+- or the skill needs maintenance.
+
+With too little history, the session is explicitly labelled **Baseline** rather than pretending to be personalized.
+
+### Personalization boundaries
+Studo adapts from observed performance, timing, confidence, and mistake patterns. It does not assign fixed learner-style identities. Manual Practice remains available at all times; adaptive recommendations are suggestions, not commands.
