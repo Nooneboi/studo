@@ -114,33 +114,66 @@ function renderShell(category) {
     </div>
   `;
   document.getElementById("submit-btn").addEventListener("click", () => submitTest());
+  setupTimerPicker();
+}
 
-  const timerSelect = document.getElementById("timer-select");
+const TIMER_LABELS = {
+  auto: "Timed (auto)",
+  "600": "10 min",
+  "900": "15 min",
+  "1200": "20 min",
+  "1800": "30 min",
+  none: "No timer",
+};
+
+function setupTimerPicker() {
+  const btn = document.getElementById("timer-picker-btn");
+  const panel = document.getElementById("timer-picker-panel");
+  const label = document.getElementById("timer-picker-label");
   const customInput = document.getElementById("custom-minutes-input");
-  timerSelect.value = timerMode;
-  customInput.classList.toggle("hidden", timerMode !== "custom");
-  if (timerMode === "custom") {
-    customInput.value = Math.round(secondsForMode("custom") / 60);
-  }
+  const applyCustomBtn = document.getElementById("apply-custom-timer");
 
-  timerSelect.addEventListener("change", () => {
-    timerMode = timerSelect.value;
-    localStorage.setItem("sq:timerMode", timerMode);
-    customInput.classList.toggle("hidden", timerMode !== "custom");
-    if (timerMode === "custom") {
-      customInput.value = Math.round(secondsForMode("custom") / 60);
-      customInput.focus();
+  function updateLabel() {
+    label.textContent =
+      timerMode === "custom" ? `${Math.round(secondsForMode("custom") / 60)} min` : TIMER_LABELS[timerMode] || "Timed (auto)";
+    panel.querySelectorAll("[data-timer-value]").forEach((b) => {
+      b.classList.toggle("active", b.dataset.timerValue === timerMode);
+    });
+  }
+  updateLabel();
+
+  btn.addEventListener("click", () => panel.classList.toggle("hidden"));
+  document.addEventListener("click", (e) => {
+    if (!panel.contains(e.target) && e.target !== btn && !btn.contains(e.target)) {
+      panel.classList.add("hidden");
     }
-    applyTimerMode();
   });
 
-  customInput.addEventListener("input", () => {
+  panel.querySelectorAll("[data-timer-value]").forEach((optBtn) => {
+    optBtn.addEventListener("click", () => {
+      timerMode = optBtn.dataset.timerValue;
+      localStorage.setItem("sq:timerMode", timerMode);
+      updateLabel();
+      applyTimerMode();
+      panel.classList.add("hidden");
+    });
+  });
+
+  applyCustomBtn.addEventListener("click", applyCustom);
+  customInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") applyCustom();
+  });
+  function applyCustom() {
     const minutes = parseInt(customInput.value, 10);
     if (minutes > 0) {
       localStorage.setItem("sq:customMinutes", minutes);
-      if (timerMode === "custom") applyTimerMode();
+      timerMode = "custom";
+      localStorage.setItem("sq:timerMode", timerMode);
+      updateLabel();
+      applyTimerMode();
+      panel.classList.add("hidden");
     }
-  });
+  }
 
   function applyTimerMode() {
     remainingSeconds = secondsForMode(timerMode);

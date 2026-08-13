@@ -20,16 +20,24 @@
     <a href="quiz.html" class="focus-exit" id="focus-exit">&larr; Exit</a>
     <span class="focus-title" id="focus-title"></span>
     <div class="focus-tools">
-      <select id="timer-select" class="focus-icon-btn" style="width:auto; padding:0 8px;" title="Time limit">
-        <option value="auto">Timed (auto)</option>
-        <option value="600">10 min</option>
-        <option value="900">15 min</option>
-        <option value="1200">20 min</option>
-        <option value="1800">30 min</option>
-        <option value="custom">Custom&hellip;</option>
-        <option value="none">No timer</option>
-      </select>
-      <input type="number" id="custom-minutes-input" class="custom-minutes-input hidden" min="1" max="999" placeholder="min">
+      <div class="timer-picker">
+        <button id="timer-picker-btn" class="focus-icon-btn" style="width:auto; padding:0 10px; gap:6px;" title="Time limit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
+          <span id="timer-picker-label">Timed (auto)</span>
+        </button>
+        <div id="timer-picker-panel" class="timer-picker-panel hidden">
+          <button type="button" data-timer-value="auto">Timed (auto)</button>
+          <button type="button" data-timer-value="600">10 min</button>
+          <button type="button" data-timer-value="900">15 min</button>
+          <button type="button" data-timer-value="1200">20 min</button>
+          <button type="button" data-timer-value="1800">30 min</button>
+          <div class="timer-picker-custom">
+            <input type="number" id="custom-minutes-input" min="1" max="999" placeholder="Custom min">
+            <button type="button" id="apply-custom-timer">Set</button>
+          </div>
+          <button type="button" data-timer-value="none">No timer</button>
+        </div>
+      </div>
       <span class="focus-divider"></span>
       <button class="focus-icon-btn" id="text-smaller" title="Smaller text" aria-label="Smaller text">A&#8722;</button>
       <button class="focus-icon-btn" id="text-larger" title="Larger text" aria-label="Larger text">A+</button>
@@ -59,8 +67,6 @@
       <button class="focus-icon-btn" id="share-btn" title="Share this test" aria-label="Share">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5 15.4 17.5"/><path d="M15.4 6.5 8.6 10.5"/></svg>
       </button>
-      <span class="focus-divider"></span>
-      <div id="theme-switch-mount"></div>
     </div>
   </div>
 </header>
@@ -76,7 +82,6 @@
 </footer>
 
 <script src="js/app.js"></script>
-<script src="js/theme.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
 <script src="js/test.js"></script>
