@@ -1,10 +1,12 @@
 /*
-  test.js — Studo timed test workspace (v2)
+  test.js — Studo timed test workspace (v3)
   ------------------------------------------
-  A single-question test interface that keeps the relevant passage beside the
-  question. Test answers stay in memory for the current sitting. Question keys
-  combine module + question IDs, preventing collisions when multiple modules
-  contain q1/q2/etc.
+  Focused single-question exam flow with:
+  - one compact app bar for title, progress, timer, tools, and submit
+  - passage/question split when needed
+  - review screen before submission
+  - unique question keys across modules
+  - written responses excluded from auto-graded totals
 */
 
 const CATEGORY_LABELS = {
@@ -15,7 +17,7 @@ const CATEGORY_LABELS = {
 };
 
 const viewEl = document.getElementById("test-view");
-let items = []; // [{ module, question, moduleQuestionIndex }]
+let items = [];
 let answers = {};
 let currentIndex = 0;
 let remainingSeconds = 0;
@@ -23,6 +25,7 @@ let autoSeconds = 0;
 let timerMode = "auto";
 let timerHandle = null;
 let submitted = false;
+let reviewing = false;
 let testLabel = "RLA";
 
 init();
@@ -62,7 +65,7 @@ async function init() {
   timerMode = localStorage.getItem("sq:timerMode") || "auto";
   remainingSeconds = secondsForMode(timerMode);
 
-  renderShell();
+  setupShell();
   renderCurrentQuestion();
   setupTimerPicker();
   if (timerMode !== "none") startTimer();
@@ -83,7 +86,7 @@ function secondsForMode(mode) {
   return isNaN(n) ? autoSeconds : n;
 }
 
-function renderShell() {
+function setupShell() {
   const titleEl = document.getElementById("focus-title");
   if (titleEl) titleEl.textContent = `${testLabel} Test`;
 
@@ -97,52 +100,32 @@ function renderShell() {
     });
   }
 
+  const submitBtn = document.getElementById("submit-btn");
+  if (submitBtn) submitBtn.addEventListener("click", () => submitTest(false));
+}
+
+function renderWorkspaceShell(hasPassage) {
   viewEl.innerHTML = `
-    <div class="study-shell">
-      <section class="study-heading test-heading-shell" aria-labelledby="test-heading">
-        <div class="study-heading-copy">
-          <h1 id="test-heading">${escapeHtml(testLabel)} Test</h1>
-          <p class="lede">Work through one question at a time. Answers and explanations stay hidden until you submit.</p>
-        </div>
-        <aside class="study-control-panel" aria-label="Test progress and controls">
-          <div class="study-progress" aria-label="Test progress">
-            <div class="study-progress-row"><span id="progress-label">Question 1 of ${items.length}</span><span id="answered-label">0 answered</span></div>
-            <div class="study-progress-track" aria-hidden="true"><div class="study-progress-fill" id="progress-fill"></div></div>
-          </div>
-          <div class="test-control-row">
-            <div class="test-timer-bar" id="timer-bar" aria-live="polite">
-              <span class="timer-label">Time left</span><span class="clock" id="clock"></span>
-            </div>
-            <button id="submit-btn" class="btn test-submit-btn">Submit test</button>
-          </div>
-          <span class="study-status" id="test-status" aria-live="polite"></span>
-        </aside>
-      </section>
-
-      <div id="results-mount"></div>
-
-      <section class="study-workspace" id="study-workspace">
-        <div id="passage-mount"></div>
-        <article class="question-panel" aria-label="Test question">
-          <div id="question-stage" class="question-stage"></div>
-          <div class="question-footer" id="question-footer"></div>
-        </article>
-      </section>
-    </div>
+    <section class="study-workspace${hasPassage ? "" : " no-passage"}" id="study-workspace">
+      <div id="passage-mount"></div>
+      <article class="question-panel" aria-label="Test question">
+        <div id="question-stage" class="question-stage"></div>
+        <div class="question-footer" id="question-footer"></div>
+      </article>
+    </section>
   `;
-
-  document.getElementById("submit-btn").addEventListener("click", () => submitTest(false));
 }
 
 function renderCurrentQuestion() {
+  reviewing = false;
   currentIndex = Math.max(0, Math.min(currentIndex, items.length - 1));
   const item = items[currentIndex];
   const q = item.question;
   const key = answerKey(item);
   const savedAnswer = answers[key];
   const hasPassage = Boolean(item.module.passage);
-  const workspace = document.getElementById("study-workspace");
-  workspace.classList.toggle("no-passage", !hasPassage);
+
+  renderWorkspaceShell(hasPassage);
   renderPassage(item.module);
 
   const promptHtml = q.type === "grammar_edit"
@@ -152,7 +135,7 @@ function renderCurrentQuestion() {
   const stage = document.getElementById("question-stage");
   stage.innerHTML = `
     <div class="question-topline">
-      <span class="question-number">Question ${currentIndex + 1} of ${items.length}</span>
+      <span class="question-number">Question ${currentIndex + 1}</span>
       <span class="question-detail">${escapeHtml(questionDetail(item))}</span>
     </div>
     <div class="q-prompt">${promptHtml}</div>
@@ -166,36 +149,99 @@ function renderCurrentQuestion() {
 
   const footer = document.getElementById("question-footer");
   footer.innerHTML = `
-    <button class="btn ghost" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>&larr; Previous</button>
-    <div class="spacer"></div>
-    <button class="btn" id="next-question">${currentIndex === items.length - 1 ? (submitted ? "Back to first" : "Review before submit") : "Next"} &rarr;</button>
+    <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>&larr; Previous</button>
+    <span class="question-footer-position">${currentIndex + 1} / ${items.length}</span>
+    <button class="question-nav-btn primary" id="next-question">${currentIndex === items.length - 1 ? (submitted ? "Back to first" : "Review answers") : "Next"} &rarr;</button>
   `;
+
   document.getElementById("prev-question").addEventListener("click", () => {
     if (currentIndex > 0) {
       currentIndex -= 1;
       renderCurrentQuestion();
     }
   });
+
   document.getElementById("next-question").addEventListener("click", () => {
-    if (currentIndex < items.length - 1) currentIndex += 1;
-    else if (submitted) currentIndex = 0;
-    else {
-      setTestStatus("You're at the end. Review answers or submit when ready.");
+    if (currentIndex < items.length - 1) {
+      currentIndex += 1;
+      renderCurrentQuestion();
+    } else if (submitted) {
       currentIndex = 0;
+      renderCurrentQuestion();
+    } else {
+      renderReviewScreen();
     }
-    renderCurrentQuestion();
   });
 
   updateProgress();
-  stage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function renderReviewScreen() {
+  reviewing = true;
+  const answeredCount = getAnsweredCount();
+  const firstUnanswered = items.findIndex((item) => !hasAnswer(answers[answerKey(item)]));
+
+  viewEl.innerHTML = `
+    <section class="test-review" aria-labelledby="review-heading">
+      <div class="test-review-head">
+        <span class="question-number">Review</span>
+        <h1 id="review-heading">Check your answers</h1>
+        <p>${answeredCount} of ${items.length} answered${firstUnanswered >= 0 ? ". Unanswered questions are marked below." : ". Everything has an answer."}</p>
+      </div>
+
+      <div class="test-review-list">
+        ${items.map((item, index) => {
+          const answered = hasAnswer(answers[answerKey(item)]);
+          return `
+            <button type="button" class="review-question-row${answered ? " answered" : " unanswered"}" data-review-index="${index}">
+              <span class="review-question-number">${index + 1}</span>
+              <span class="review-question-copy">
+                <strong>${escapeHtml(item.module.topic || item.module.title || `Question ${index + 1}`)}</strong>
+                <span>${answered ? "Answered" : "Not answered"}</span>
+              </span>
+              <span class="review-question-arrow" aria-hidden="true">&rarr;</span>
+            </button>`;
+        }).join("")}
+      </div>
+
+      <div class="test-review-actions">
+        <button type="button" class="question-nav-btn secondary" id="review-back-btn">Back to questions</button>
+        ${firstUnanswered >= 0 ? `<button type="button" class="question-nav-btn secondary" id="first-unanswered-btn">Go to first unanswered</button>` : ""}
+        <button type="button" class="question-nav-btn primary" id="review-submit-btn">Submit test</button>
+      </div>
+    </section>
+  `;
+
+  viewEl.querySelectorAll("[data-review-index]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentIndex = Number(btn.dataset.reviewIndex);
+      renderCurrentQuestion();
+    });
+  });
+
+  document.getElementById("review-back-btn").addEventListener("click", () => renderCurrentQuestion());
+  const firstBtn = document.getElementById("first-unanswered-btn");
+  if (firstBtn) {
+    firstBtn.addEventListener("click", () => {
+      currentIndex = firstUnanswered;
+      renderCurrentQuestion();
+    });
+  }
+  document.getElementById("review-submit-btn").addEventListener("click", () => submitTest(false));
+
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderPassage(module) {
   const mount = document.getElementById("passage-mount");
+  if (!mount) return;
   if (!module.passage) {
     mount.innerHTML = "";
     return;
   }
+
   mount.innerHTML = `
     <aside class="reading-panel" aria-label="Reading passage">
       <div class="panel-kicker"><span>Passage</span><span>${escapeHtml(module.title)}</span></div>
@@ -232,18 +278,17 @@ function renderAnswerArea(item, container, savedAnswer) {
           b.setAttribute("aria-checked", String(b === btn));
         });
         updateProgress();
-        setTestStatus("Answer saved for this attempt.");
       });
     });
   } else if (q.type === "fill_blank") {
-    container.innerHTML = `<label class="question-detail" for="test-short-answer">Your answer</label><input id="test-short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}" ${submitted ? "disabled" : ""}>`;
+    container.innerHTML = `<label class="question-detail answer-label" for="test-short-answer">Your answer</label><input id="test-short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}" ${submitted ? "disabled" : ""}>`;
     const input = container.querySelector("input");
     input.addEventListener("input", () => {
       answers[key] = input.value;
       updateProgress();
     });
   } else {
-    container.innerHTML = `<label class="question-detail" for="test-written-answer">Your response</label><textarea id="test-written-answer" class="open-ended-input" placeholder="Write your response…" ${submitted ? "disabled" : ""}>${escapeHtml(savedAnswer || "")}</textarea>`;
+    container.innerHTML = `<label class="question-detail answer-label" for="test-written-answer">Your response</label><textarea id="test-written-answer" class="open-ended-input" placeholder="Write your response…" ${submitted ? "disabled" : ""}>${escapeHtml(savedAnswer || "")}</textarea>`;
     const ta = container.querySelector("textarea");
     ta.addEventListener("input", () => {
       answers[key] = ta.value;
@@ -257,6 +302,8 @@ function revealReview(item) {
   const key = answerKey(item);
   const answer = answers[key];
   const stage = document.getElementById("question-stage");
+  if (!stage) return;
+
   const explanation = stage.querySelector('[data-role="explanation"]');
   if (explanation && explanation.textContent.trim()) explanation.classList.add("visible");
 
@@ -273,14 +320,21 @@ function revealReview(item) {
   }
 }
 
+function getAnsweredCount() {
+  return items.filter((item) => hasAnswer(answers[answerKey(item)])).length;
+}
+
 function updateProgress() {
-  const answered = items.filter((item) => hasAnswer(answers[answerKey(item)])).length;
+  const answered = getAnsweredCount();
   const progressLabel = document.getElementById("progress-label");
   const answeredLabel = document.getElementById("answered-label");
   const fill = document.getElementById("progress-fill");
-  if (progressLabel) progressLabel.textContent = `Question ${currentIndex + 1} of ${items.length}`;
+  const submitBtn = document.getElementById("submit-btn");
+
+  if (progressLabel) progressLabel.textContent = reviewing ? "Review" : `Question ${currentIndex + 1} of ${items.length}`;
   if (answeredLabel) answeredLabel.textContent = `${answered} answered`;
-  if (fill) fill.style.width = `${((currentIndex + 1) / items.length) * 100}%`;
+  if (fill) fill.style.width = `${reviewing ? 100 : ((currentIndex + 1) / items.length) * 100}%`;
+  if (submitBtn && !submitted) submitBtn.classList.toggle("ready", answered === items.length);
 }
 
 function hasAnswer(value) {
@@ -288,12 +342,12 @@ function hasAnswer(value) {
 }
 
 const TIMER_LABELS = {
-  auto: "Timed",
+  auto: "Auto",
   "600": "10 min",
   "900": "15 min",
   "1200": "20 min",
   "1800": "30 min",
-  none: "No timer",
+  none: "Untimed",
 };
 
 function setupTimerPicker() {
@@ -307,8 +361,9 @@ function setupTimerPicker() {
   function updateLabel() {
     label.textContent = timerMode === "custom"
       ? `${Math.round(secondsForMode("custom") / 60)} min`
-      : TIMER_LABELS[timerMode] || "Timed";
+      : TIMER_LABELS[timerMode] || "Auto";
     panel.querySelectorAll("[data-timer-value]").forEach((b) => b.classList.toggle("active", b.dataset.timerValue === timerMode));
+    btn.classList.toggle("untimed", timerMode === "none");
   }
 
   function closePanel() {
@@ -354,16 +409,12 @@ function setupTimerPicker() {
   function applyTimerMode() {
     remainingSeconds = secondsForMode(timerMode);
     clearInterval(timerHandle);
-    const bar = document.getElementById("timer-bar");
-    if (timerMode === "none") bar.classList.add("hidden");
-    else {
-      bar.classList.remove("hidden", "low");
-      updateClock();
-      if (!submitted) startTimer();
-    }
+    btn.classList.remove("low");
+    updateClock();
+    if (!submitted && timerMode !== "none") startTimer();
   }
 
-  if (timerMode === "none") document.getElementById("timer-bar").classList.add("hidden");
+  updateClock();
 }
 
 function startTimer() {
@@ -378,12 +429,19 @@ function startTimer() {
 
 function updateClock() {
   const clock = document.getElementById("clock");
-  const bar = document.getElementById("timer-bar");
-  if (!clock || !bar) return;
+  const control = document.getElementById("timer-picker-btn");
+  if (!clock || !control) return;
+
+  if (timerMode === "none") {
+    clock.textContent = "";
+    control.classList.remove("low");
+    return;
+  }
+
   const m = Math.max(0, Math.floor(remainingSeconds / 60));
   const s = Math.max(0, remainingSeconds % 60);
   clock.textContent = `${m}:${String(s).padStart(2, "0")}`;
-  bar.classList.toggle("low", remainingSeconds <= 60 && remainingSeconds > 0);
+  control.classList.toggle("low", remainingSeconds <= 60 && remainingSeconds > 0);
 }
 
 function submitTest(timedOut = false) {
@@ -395,10 +453,14 @@ function submitTest(timedOut = false) {
   }
 
   submitted = true;
+  reviewing = false;
   clearInterval(timerHandle);
+
   const submitBtn = document.getElementById("submit-btn");
-  submitBtn.disabled = true;
-  submitBtn.textContent = "Submitted";
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitted";
+  }
 
   const result = scoreTest();
   const writtenCount = items.filter((item) => !isAutoGraded(item.question)).length;
@@ -407,15 +469,14 @@ function submitTest(timedOut = false) {
     <div class="score-banner" role="status">
       <div>
         <div class="question-number">${timedOut ? "Time ended · auto-submitted" : "Test submitted"}</div>
-        <div style="font-size:1.05rem; font-weight:700; margin-top:3px">Auto-graded score</div>
-        ${writtenCount ? `<div style="font-size:.85rem; color:var(--color-ink-soft); margin-top:4px">${writtenCount} written response${writtenCount === 1 ? "" : "s"} excluded from this score and ready for self-review.</div>` : ""}
+        <div class="score-title">Auto-graded score</div>
+        ${writtenCount ? `<div class="score-note">${writtenCount} written response${writtenCount === 1 ? "" : "s"} excluded from this score and ready for self-review.</div>` : ""}
       </div>
-      <div class="score-num" style="font-size:1.4rem; font-weight:700">${result.earned} / ${result.total}</div>
+      <div class="score-num">${result.earned} / ${result.total}</div>
     </div>`;
 
-  setTestStatus("Review mode: correct answers and explanations are now visible.");
   renderCurrentQuestion();
-  resultsMount.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  setTestStatus("Review mode: correct answers and explanations are visible.");
 }
 
 function scoreTest() {
@@ -456,6 +517,7 @@ function escapeHtml(str) {
   div.textContent = str ?? "";
   return div.innerHTML;
 }
+
 function escapeAttr(str) {
   return escapeHtml(str).replace(/"/g, "&quot;");
 }

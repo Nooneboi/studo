@@ -7,64 +7,79 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>Studo — Timed Test</title>
-<meta name="description" content="A timed test simulation with one countdown and a results screen at the end.">
+<meta name="description" content="A focused timed test workspace with review before submission.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/studo-v2.css">
 </head>
-<body class="focus-body">
+<body class="focus-body test-body">
 
-<header class="focus-bar">
-  <div class="wrap focus-bar-inner">
-    <a href="quiz.html" class="focus-exit" id="focus-exit" aria-label="Exit test">&larr; Exit</a>
-    <span class="focus-title" id="focus-title" aria-live="polite"></span>
-    <div class="focus-tools" aria-label="Test tools">
+<header class="focus-bar test-appbar">
+  <div class="focus-wrap test-appbar-inner">
+    <div class="test-appbar-left">
+      <a href="quiz.html" class="focus-exit" id="focus-exit" aria-label="Exit test">&larr; Exit</a>
+      <div class="test-appbar-heading">
+        <strong class="focus-title" id="focus-title" aria-live="polite">Test</strong>
+        <span class="test-header-progress" id="progress-label">Question 1</span>
+        <span class="test-header-dot" aria-hidden="true">•</span>
+        <span class="test-header-progress" id="answered-label">0 answered</span>
+      </div>
+    </div>
+
+    <div class="test-appbar-actions" aria-label="Test controls">
       <div class="timer-picker">
-        <button id="timer-picker-btn" class="focus-icon-btn" style="width:auto; padding:0 10px; gap:6px;" title="Time limit" aria-haspopup="true" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
-          <span id="timer-picker-label">Timed</span>
+        <button id="timer-picker-btn" class="test-timer-control" title="Time limit" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
+          <span id="timer-picker-label">Auto</span>
+          <strong class="clock" id="clock">--:--</strong>
         </button>
         <div id="timer-picker-panel" class="timer-picker-panel hidden" role="menu">
-          <button type="button" data-timer-value="auto">Timed (auto)</button>
-          <button type="button" data-timer-value="600">10 min</button>
-          <button type="button" data-timer-value="900">15 min</button>
-          <button type="button" data-timer-value="1200">20 min</button>
-          <button type="button" data-timer-value="1800">30 min</button>
+          <button type="button" data-timer-value="auto">Auto time</button>
+          <button type="button" data-timer-value="600">10 minutes</button>
+          <button type="button" data-timer-value="900">15 minutes</button>
+          <button type="button" data-timer-value="1200">20 minutes</button>
+          <button type="button" data-timer-value="1800">30 minutes</button>
           <div class="timer-picker-custom"><input type="number" id="custom-minutes-input" min="1" max="999" placeholder="Minutes" aria-label="Custom minutes"><button type="button" id="apply-custom-timer">Set</button></div>
-          <button type="button" data-timer-value="none">No timer</button>
+          <button type="button" data-timer-value="none">Untimed</button>
         </div>
       </div>
-      <button class="focus-icon-btn" id="text-smaller" title="Smaller text" aria-label="Smaller text">A&#8722;</button>
-      <button class="focus-icon-btn" id="text-larger" title="Larger text" aria-label="Larger text">A+</button>
+
       <details class="focus-tools-menu">
-        <summary class="focus-icon-btn" aria-label="More test tools" title="More test tools">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Tools</span>
+        <summary class="test-tools-trigger" aria-label="Test tools" title="Test tools">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+          <span>Tools</span>
         </summary>
         <div class="focus-tools-popover">
+          <div class="focus-tool-row"><button class="focus-icon-btn" id="text-smaller" title="Smaller text" aria-label="Smaller text">A−</button><span>Smaller text</span></div>
+          <div class="focus-tool-row"><button class="focus-icon-btn" id="text-larger" title="Larger text" aria-label="Larger text">A+</button><span>Larger text</span></div>
+          <div class="focus-tool-separator"></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" id="print-btn" title="Print" aria-label="Print"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg></button><span>Print test</span></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" data-annotate-mode="draw" title="Draw" aria-label="Draw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><span>Draw on page</span></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" data-annotate-mode="shape" title="Box" aria-label="Draw rectangle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></button><span>Draw a box</span></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" data-annotate-mode="erase" title="Erase" aria-label="Erase marks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/></svg></button><span>Erase marks</span></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" id="annotate-clear-btn" title="Clear marks" aria-label="Clear all marks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></button><span>Clear marks</span></div>
+          <div class="focus-tool-separator"></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" id="copy-btn" title="Copy" aria-label="Copy current passage and question"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button><span>Copy text</span></div>
           <div class="focus-tool-row"><button class="focus-icon-btn" id="share-btn" title="Share" aria-label="Share test"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5 15.4 17.5"/><path d="M15.4 6.5 8.6 10.5"/></svg></button><span>Share link</span></div>
         </div>
       </details>
+
+      <button id="submit-btn" class="test-header-submit" type="button">Submit</button>
     </div>
   </div>
+  <div class="test-top-progress" aria-hidden="true"><div class="test-top-progress-fill" id="progress-fill"></div></div>
 </header>
 
-<main class="focus-main">
+<main class="focus-main test-main">
   <div class="focus-wrap">
+    <div class="test-session-note">Answers and explanations stay hidden until you submit.</div>
+    <div id="results-mount"></div>
     <div id="test-view"></div>
+    <div class="study-status test-status" id="test-status" aria-live="polite"></div>
   </div>
 </main>
-
-<footer class="site-footer">
-  <div class="focus-wrap">Answers lock once the test is submitted — explanations unlock right after.</div>
-</footer>
 
 <script src="js/app.js"></script>
 <script src="js/storage.js"></script>

@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>Studo — Practice</title>
-<meta name="description" content="Untimed reading, writing, and language conventions practice, organized easy to hard, no distractions.">
+<meta name="description" content="Focused GED practice organized by skill area, from foundations to harder sets.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,25 +20,33 @@
   <div class="wrap">
     <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Studo</a>
     <div class="header-right">
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="practice.html">Practice</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="resources.html">Resources</a>
-    </nav>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="resources.html">Resources</a>
+      </nav>
       <div id="theme-switch-mount"></div>
     </div>
   </div>
 </header>
 <div id="subject-bar-mount"></div>
 
-<main>
-  <div class="wrap">
-    <div class="eyebrow" style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--color-primary-dark); margin-bottom:8px;">Skill Areas</div>
-    <h1>Practice</h1>
-    <p class="lede">Choose a skill area to work on. Keep the path simple: start broad, then move into easier sets before harder ones.</p>
+<main class="practice-main">
+  <div class="wrap practice-wrap">
+    <section class="page-intro">
+      <div class="page-kicker">Reasoning Through Language Arts</div>
+      <h1>Practice</h1>
+      <p>Choose one skill area and work through it at your own pace. Each section moves from foundations to harder sets.</p>
+    </section>
 
-    <div class="category-list" id="category-list"></div>
+    <section class="practice-directory" aria-labelledby="practice-directory-title">
+      <div class="directory-heading">
+        <h2 id="practice-directory-title">Skill areas</h2>
+        <span>3 areas</span>
+      </div>
+      <div class="category-list" id="category-list"></div>
+    </section>
   </div>
 </main>
 
