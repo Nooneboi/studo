@@ -1,0 +1,105 @@
+{
+  "id": "writing-practice",
+  "title": "Organizing an Argument",
+  "description": "Choose relevant evidence, then use source evidence in a short argument.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Organizing Ideas",
+  "difficulty": "easy",
+  "source": "Original content by Studo",
+  "passage": "Some city council members argue that the downtown library should extend its hours to include Sunday openings, citing rising weekend foot traffic downtown and requests from working families who can't visit on weekdays. Others argue that Sunday hours would strain an already tight budget and that usage data doesn't yet justify the cost.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which piece of evidence would most strengthen the case for opening the library on Sundays?",
+      "points": 1,
+      "explanation": "The survey directly shows that many working families need weekend access, so it supports the argument for Sunday hours.",
+      "skill": {
+        "id": "writing.evidence.relevance",
+        "label": "Evidence relevance"
+      },
+      "rule": "Strong evidence must directly support the exact claim being argued.",
+      "familyId": "writing.evidence.relevance",
+      "metadata": {
+        "skillId": "R5.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 35,
+      "options": [
+        {
+          "id": "a",
+          "text": "A survey showing that 40% of working families can only visit on weekends."
+        },
+        {
+          "id": "b",
+          "text": "A description of the library's current Tuesday hours.",
+          "distractorType": "true_but_irrelevant",
+          "whyWrong": "Tuesday hours do not show a need for Sunday access."
+        },
+        {
+          "id": "c",
+          "text": "The library director's opinion on staffing preferences.",
+          "distractorType": "weak_source_for_claim",
+          "whyWrong": "Staff preferences do not directly show whether Sunday hours would help the public."
+        },
+        {
+          "id": "d",
+          "text": "The number of books in the library's catalog.",
+          "distractorType": "true_but_irrelevant",
+          "whyWrong": "Catalog size does not tell us whether people need Sunday access."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "extended_response",
+      "prompt": "In 3–5 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
+      "points": 3,
+      "explanation": "A strong response takes one clear position, uses a specific detail from the passage, and explains how that detail supports the position.",
+      "skill": {
+        "id": "writing.argument.short_response",
+        "label": "Select specific source evidence"
+      },
+      "rule": "Do not stop after quoting evidence. Explain why the evidence helps your argument.",
+      "familyId": "writing.argument.short_response",
+      "metadata": {
+        "skillId": "W1.5",
+        "secondarySkillIds": [
+          "W1.9"
+        ],
+        "dok": 2,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 1,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 240
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-writing-library-hours",
+    "sourceVersion": 1,
+    "compiledAt": "2026-08-14T09:10:15.271Z"
+  }
+}

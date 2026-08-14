@@ -103,7 +103,7 @@ function renderQuestion() {
             <div id="train-mistake-reason"></div>
           </div>
           <div class="question-footer train-question-footer">
-            <span class="train-footer-status" id="train-footer-status">Answer when ready.</span>
+            <span class="train-footer-status" id="train-footer-status"></span>
             <div class="spacer"></div>
             <button class="btn" id="train-next" disabled>${currentIndex === plan.items.length - 1 ? "Finish session" : "Next"} &rarr;</button>
           </div>
@@ -137,8 +137,7 @@ function questionPromptHtml(q) {
 
 function confidenceHtml() {
   return `
-    <div class="train-confidence" aria-label="Optional confidence">
-      <span>Confidence</span>
+    <div class="train-confidence" aria-label="Optional certainty before answering">
       <button type="button" data-confidence="sure">Sure</button>
       <button type="button" data-confidence="unsure">Unsure</button>
       <button type="button" data-confidence="guessing">Guessing</button>
@@ -211,11 +210,12 @@ function gradeAnswer(item, answer, area) {
   if (Array.isArray(q.options)) revealChoices(area, q, answer);
   area.querySelectorAll("input, button").forEach((el) => { if (!el.matches('[data-confidence]')) el.disabled = true; });
   area.classList.add("answer-locked");
-  document.querySelectorAll("[data-confidence]").forEach((btn) => btn.disabled = true);
+  const confidenceRow = document.querySelector(".train-confidence");
+  if (confidenceRow) confidenceRow.hidden = true;
 
   renderFeedback(item, answer, correct, result);
   document.getElementById("train-next").disabled = false;
-  document.getElementById("train-footer-status").textContent = correct ? "Correct. Continue when ready." : "Added to review. Understand the correction, then continue.";
+  document.getElementById("train-footer-status").textContent = correct ? "" : "Saved for review.";
 }
 
 function revealChoices(area, q, selectedId) {
@@ -236,20 +236,40 @@ function renderFeedback(item, answer, correct, learningResult) {
   const selectedOption = Array.isArray(q.options) ? q.options.find((opt) => opt.id === answer) : null;
   const whyWrong = !correct ? selectedOption?.whyWrong || genericDistractorReason(selectedOption?.distractorType) : "";
   const correctDisplay = correctOption ? `${correctOption.id.toUpperCase()}. ${correctOption.text}` : typeof q.correct === "string" ? q.correct : "";
+  const selectedDisplay = selectedOption ? `${selectedOption.id.toUpperCase()}. ${selectedOption.text}` : "";
   const evidence = q.evidenceExcerpt || q.evidence || "";
 
+  const breakdown = [
+    !correct && whyWrong ? `
+      <div class="answer-breakdown-row">
+        <span>Your answer</span>
+        <p>${selectedDisplay ? `<strong>${escapeHtml(selectedDisplay)}</strong> — ` : ""}${escapeHtml(whyWrong)}</p>
+      </div>` : "",
+    evidence ? `
+      <div class="answer-breakdown-row">
+        <span>Evidence</span>
+        <p>${escapeHtml(evidence)}</p>
+      </div>` : "",
+    q.rule ? `
+      <div class="answer-breakdown-row">
+        <span>Tip</span>
+        <p>${escapeHtml(q.rule)}</p>
+      </div>` : "",
+  ].filter(Boolean).join("");
+
   feedback.innerHTML = `
-    <div class="train-feedback-head ${correct ? "is-correct" : "is-wrong"}">
-      <div><span>${correct ? "Correct" : "Not quite"}</span><strong>${escapeHtml(item.skillLabel)}</strong></div>
-      ${!correct && correctDisplay ? `<span>Correct: ${escapeHtml(correctDisplay)}</span>` : ""}
-    </div>
-    ${q.explanation ? `<p class="train-feedback-summary">${escapeHtml(q.explanation)}</p>` : ""}
-    <div class="train-feedback-details">
-      ${whyWrong ? `<details><summary>Why my answer was wrong</summary><p>${escapeHtml(whyWrong)}</p></details>` : ""}
-      ${evidence ? `<details><summary>Show evidence</summary><p>${escapeHtml(evidence)}</p></details>` : ""}
-      ${q.rule ? `<details><summary>Key rule</summary><p>${escapeHtml(q.rule)}</p></details>` : ""}
-    </div>
-    <div class="train-recorded">${correct ? "✓ Practice recorded" : "↺ Added to review"}</div>`;
+    <div class="answer-review ${correct ? "is-right" : "is-wrong"}">
+      <div class="answer-review-head">
+        <strong>${correct ? "Correct" : "Not quite"}</strong>
+        ${!correct && correctDisplay ? `<span>Correct answer: ${escapeHtml(correctDisplay)}</span>` : ""}
+      </div>
+      ${q.explanation ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(q.explanation)}</p>` : ""}
+      ${breakdown ? `
+        <details class="answer-breakdown">
+          <summary>See answer breakdown</summary>
+          <div class="answer-breakdown-body">${breakdown}</div>
+        </details>` : ""}
+    </div>`;
   feedback.classList.add("visible");
 
   const reasonMount = document.getElementById("train-mistake-reason");
@@ -275,7 +295,6 @@ function renderFeedback(item, answer, correct, learningResult) {
     });
   }
 }
-
 function renderComplete() {
   setHeaderProgress("Complete");
   const correct = results.filter((r) => r.correct).length;

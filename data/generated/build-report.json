@@ -1,26 +1,34 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-14T07:56:35.285Z",
+  "builtAt": "2026-08-14T09:10:15.272Z",
   "publishedSourceSets": [
-    "set-rla-evidence-night-shift"
+    "set-rla-evidence-last-bus",
+    "set-rla-evidence-night-shift",
+    "set-rla-grammar-precision-check",
+    "set-rla-grammar-sentence-repair",
+    "set-rla-writing-library-hours"
   ],
   "generatedModules": [
-    "generated/modules/evidence-practice.json"
+    "generated/modules/evidence-transfer-practice.json",
+    "generated/modules/evidence-practice.json",
+    "generated/modules/grammar-transfer-practice.json",
+    "generated/modules/grammar-practice.json",
+    "generated/modules/writing-practice.json"
   ],
   "warnings": [
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family reading.inference.character_state has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-evidence-night-shift.json",
-      "location": "set-rla-evidence-night-shift:q1"
+      "message": "Family writing.evidence.relevance has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-writing-library-hours.json",
+      "location": "set-rla-writing-library-hours:q1"
     },
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family reading.evidence.explicit_reason has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-evidence-night-shift.json",
-      "location": "set-rla-evidence-night-shift:q2"
+      "message": "Family writing.argument.short_response has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-writing-library-hours.json",
+      "location": "set-rla-writing-library-hours:q2"
     }
   ]
 }

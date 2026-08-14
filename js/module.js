@@ -277,8 +277,7 @@ function renderGrammarPrompt(q, savedHighlightHtml) {
 
 function confidencePanelHtml(q, selectedConfidence) {
   return `
-    <div class="confidence-inline" data-role="confidence-panel" aria-label="Optional confidence before answering">
-      <span class="confidence-label">Confidence <em>optional</em></span>
+    <div class="confidence-inline" data-role="confidence-panel" aria-label="Optional certainty before answering">
       <div class="confidence-options">
         ${['sure', 'unsure', 'guessing'].map((id) => `
           <button
@@ -298,13 +297,7 @@ function confidenceLabel(id) {
 function finalizeConfidenceUi(questionId) {
   const panel = document.querySelector('[data-role="confidence-panel"]');
   if (!panel) return;
-  const selected = confidenceSelections[questionId] || null;
-  if (!selected) {
-    panel.classList.add('answered-without-confidence');
-    return;
-  }
-  panel.innerHTML = `<span class="confidence-recorded">Confidence: <strong>${escapeHtml(confidenceLabel(selected))}</strong></span>`;
-  panel.classList.add('answered');
+  panel.hidden = true;
 }
 
 function buildExplanationHtml(q, selectedAnswer) {
@@ -312,42 +305,48 @@ function buildExplanationHtml(q, selectedAnswer) {
   const auto = isAutoGraded(q);
   const correct = auto && hasSelected ? isCorrectAnswer(q, selectedAnswer) : null;
   const correctOption = getCorrectOption(q);
+  const selectedOption = getOptionById(q, selectedAnswer);
   const summary = q.explanation || '';
   const rule = q.rule || defaultRuleForQuestion(q);
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
-  const skillLabel = q.skill?.label || currentQuiz?.topic || 'Current skill';
+  const selectedDisplay = selectedOption ? answerDisplay(q, selectedOption) : '';
+  const correctDisplay = correctOption ? answerDisplay(q, correctOption) : '';
 
   if (!summary && !rule && !evidence && !hasSelected) return '';
 
+  const breakdown = [
+    !correct && wrongReason ? `
+      <div class="answer-breakdown-row">
+        <span>Your answer</span>
+        <p>${selectedDisplay ? `<strong>${escapeHtml(selectedDisplay)}</strong> — ` : ''}${escapeHtml(wrongReason)}</p>
+      </div>` : '',
+    evidence ? `
+      <div class="answer-breakdown-row">
+        <span>Evidence</span>
+        <p>${escapeHtml(evidence)}</p>
+      </div>` : '',
+    rule ? `
+      <div class="answer-breakdown-row">
+        <span>Tip</span>
+        <p>${escapeHtml(rule)}</p>
+      </div>` : ''
+  ].filter(Boolean).join('');
+
   return `
-    <div class="feedback-brief ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
-      <div class="feedback-result-row">
+    <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
+      <div class="answer-review-head">
         <strong>${correct === true ? 'Correct' : correct === false ? 'Not quite' : 'Review'}</strong>
-        ${auto && hasSelected && correct === false ? `<span>Correct answer: ${escapeHtml(answerDisplay(q, correctOption))}</span>` : ''}
+        ${auto && hasSelected && correct === false && correctDisplay ? `<span>Correct answer: ${escapeHtml(correctDisplay)}</span>` : ''}
       </div>
-      ${summary ? `<p>${escapeHtml(summary)}</p>` : ''}
-      <div class="feedback-key-idea"><span>Key idea</span><strong>${escapeHtml(skillLabel)}</strong></div>
-    </div>
-    <div class="feedback-disclosure">
-      ${!correct && wrongReason ? `
-        <details class="feedback-detail">
-          <summary>Why my answer was wrong</summary>
-          <p>${escapeHtml(wrongReason)}</p>
-        </details>` : ''}
-      ${evidence ? `
-        <details class="feedback-detail evidence-detail">
-          <summary>Show evidence in the passage</summary>
-          <p>${escapeHtml(evidence)}</p>
-        </details>` : ''}
-      ${rule ? `
-        <details class="feedback-detail">
-          <summary>More explanation</summary>
-          <p>${escapeHtml(rule)}</p>
+      ${summary ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(summary)}</p>` : ''}
+      ${breakdown ? `
+        <details class="answer-breakdown">
+          <summary>See answer breakdown</summary>
+          <div class="answer-breakdown-body">${breakdown}</div>
         </details>` : ''}
     </div>`;
 }
-
 function getCorrectOption(q) {
   if (!Array.isArray(q.options)) return null;
   const correctIds = new Set(q.correct || []);

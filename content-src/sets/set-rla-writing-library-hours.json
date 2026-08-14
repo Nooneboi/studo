@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-writing-library-hours",
+  "runtime": {
+    "id": "writing-practice",
+    "file": "writing-practice.json"
+  },
+  "title": "Organizing an Argument",
+  "description": "Choose relevant evidence, then use source evidence in a short argument.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Organizing Ideas",
+  "difficulty": "easy",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-library-sunday-hours"
+  ],
+  "author": "Studo",
+  "reviewer": "Phase 4B migration review",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which piece of evidence would most strengthen the case for opening the library on Sundays?",
+      "primarySkillId": "R5.4",
+      "familyId": "writing.evidence.relevance",
+      "difficulty": "easy",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 1,
+        "reasoningDepth": 2,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 35,
+      "options": [
+        {
+          "id": "a",
+          "text": "A survey showing that 40% of working families can only visit on weekends."
+        },
+        {
+          "id": "b",
+          "text": "A description of the library's current Tuesday hours.",
+          "distractorType": "true_but_irrelevant",
+          "whyWrong": "Tuesday hours do not show a need for Sunday access."
+        },
+        {
+          "id": "c",
+          "text": "The library director's opinion on staffing preferences.",
+          "distractorType": "weak_source_for_claim",
+          "whyWrong": "Staff preferences do not directly show whether Sunday hours would help the public."
+        },
+        {
+          "id": "d",
+          "text": "The number of books in the library's catalog.",
+          "distractorType": "true_but_irrelevant",
+          "whyWrong": "Catalog size does not tell us whether people need Sunday access."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The survey directly shows that many working families need weekend access, so it supports the argument for Sunday hours.",
+        "quickTip": "Strong evidence must directly support the exact claim being argued."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "extended_response",
+      "prompt": "In 3–5 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
+      "primarySkillId": "W1.5",
+      "secondarySkillIds": [
+        "W1.9"
+      ],
+      "familyId": "writing.argument.short_response",
+      "difficulty": "easy",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 1,
+        "reasoningDepth": 2,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 1,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 3,
+      "estimatedSeconds": 240,
+      "explanation": {
+        "answer": "Self-review",
+        "whyCorrect": "A strong response takes one clear position, uses a specific detail from the passage, and explains how that detail supports the position.",
+        "quickTip": "Do not stop after quoting evidence. Explain why the evidence helps your argument."
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-grammar-precision-check",
+  "runtime": {
+    "id": "grammar-transfer-practice",
+    "file": "grammar-transfer-practice.json"
+  },
+  "title": "Grammar Transfer — Precision Check",
+  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Grammar & Usage",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Phase 4B migration review",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "The list of required materials {{blank}} posted beside the laboratory door.",
+      "primarySkillId": "L1.2",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "difficulty": "medium",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 1,
+        "reasoningDepth": 1,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 30,
+      "options": [
+        {
+          "id": "a",
+          "text": "are",
+          "distractorType": "agreement_attractor",
+          "whyWrong": "The nearby plural noun 'materials' is inside a prepositional phrase. The true subject is the singular noun 'list.'"
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "c",
+          "text": "were",
+          "distractorType": "tense_shift",
+          "whyWrong": "This changes the sentence to past tense and still distracts from the singular subject."
+        },
+        {
+          "id": "d",
+          "text": "have been",
+          "distractorType": "agreement_and_tense_shift",
+          "whyWrong": "This plural verb phrase does not agree with the singular subject 'list.'"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The subject is 'list,' which is singular. 'Of required materials' does not change the subject, so 'is' is correct.",
+        "quickTip": "Ignore nouns inside prepositional phrases when you match the subject with the verb."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "The technicians placed {{blank}} tools on the inspection table before beginning the test.",
+      "primarySkillId": "L1.1",
+      "familyId": "language.usage.confused_words",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 1,
+        "reasoningDepth": 1,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 25,
+      "options": [
+        {
+          "id": "a",
+          "text": "there",
+          "distractorType": "location_homophone",
+          "whyWrong": "'There' refers to a place. It does not show ownership of the tools."
+        },
+        {
+          "id": "b",
+          "text": "they're",
+          "distractorType": "contraction_homophone",
+          "whyWrong": "'They're' means 'they are,' which cannot come before the noun 'tools' here."
+        },
+        {
+          "id": "c",
+          "text": "their"
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "possessive_pronoun_form",
+          "whyWrong": "'Theirs' stands alone. The sentence needs a possessive word directly before 'tools.'"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "'Their' is the possessive word needed directly before the noun 'tools.'",
+        "quickTip": "Use 'their' before a noun to show ownership; 'there' is a place and 'they're' means 'they are.'"
+      }
+    }
+  ]
+}

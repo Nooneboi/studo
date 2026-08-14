@@ -1,0 +1,129 @@
+{
+  "id": "grammar-practice",
+  "title": "Grammar Edit — Sentence Repair",
+  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Grammar & Usage",
+  "difficulty": "medium",
+  "source": "Studo content",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "The manager, along with the two new hires, {{blank}} attending the safety training on Monday.",
+      "points": 1,
+      "explanation": "The subject is 'manager,' which is singular. The phrase 'along with the two new hires' does not change the subject, so 'is' is correct.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Find the true subject first. Ignore extra phrases between the subject and the verb.",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 30,
+      "options": [
+        {
+          "id": "a",
+          "text": "are",
+          "distractorType": "agreement_attractor",
+          "whyWrong": "The nearby phrase mentions two hires, but the true subject is the singular noun 'manager.'"
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "c",
+          "text": "were",
+          "distractorType": "tense_shift",
+          "whyWrong": "This changes the sentence to past tense when the sentence is written in the present."
+        },
+        {
+          "id": "d",
+          "text": "have been",
+          "distractorType": "agreement_and_tense_shift",
+          "whyWrong": "This plural verb phrase does not match the singular subject 'manager.'"
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "The two engineers reviewed {{blank}} notes before the meeting.",
+      "points": 1,
+      "explanation": "'Their' shows that the notes belong to the two engineers and fits directly before the noun 'notes.'",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Before a noun, check which word has the exact grammatical job the sentence needs.",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 25,
+      "options": [
+        {
+          "id": "a",
+          "text": "their"
+        },
+        {
+          "id": "b",
+          "text": "there",
+          "distractorType": "location_homophone",
+          "whyWrong": "'There' refers to a place. The sentence needs a word that shows the notes belong to the engineers."
+        },
+        {
+          "id": "c",
+          "text": "they're",
+          "distractorType": "contraction_homophone",
+          "whyWrong": "'They're' means 'they are,' which does not fit before the noun 'notes.'"
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "possessive_pronoun_form",
+          "whyWrong": "'Theirs' can stand alone, but the sentence needs a possessive word directly before 'notes.'"
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-grammar-sentence-repair",
+    "sourceVersion": 1,
+    "compiledAt": "2026-08-14T09:10:15.270Z"
+  }
+}

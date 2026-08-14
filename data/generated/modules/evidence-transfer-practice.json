@@ -1,0 +1,134 @@
+{
+  "id": "evidence-transfer-practice",
+  "title": "Evidence & Inference — The Last Bus",
+  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Evidence & Inference",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Andre usually left the community center before nine, but on Thursday he stayed to help stack chairs after the debate club meeting. By the time he stepped outside, the street was almost empty. He checked the bus app twice, then began walking toward the next stop instead of waiting where he was. When the number 18 finally appeared at the far intersection, Andre stopped walking and smiled.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What can the reader reasonably infer about Andre near the end of the passage?",
+      "points": 1,
+      "explanation": "Andre checks the bus app, moves toward another stop, then smiles when the bus appears. Those actions show relief.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "An inference should connect details from the passage without adding a feeling or motive the text never shows.",
+      "familyId": "reading.inference.character_state",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 35,
+      "options": [
+        {
+          "id": "a",
+          "text": "He is relieved that the bus is coming."
+        },
+        {
+          "id": "b",
+          "text": "He regrets helping after the meeting.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "The passage never says Andre regrets helping. That motive is not supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "He plans to walk all the way home.",
+          "distractorType": "opposite_claim",
+          "whyWrong": "Andre stops walking and smiles when the bus appears, so the passage points away from this idea."
+        },
+        {
+          "id": "d",
+          "text": "He is angry that the street is empty.",
+          "distractorType": "unsupported_emotion",
+          "whyWrong": "The street is described as empty, but nothing shows that Andre is angry about it."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "He checked the bus app twice, then began walking toward the next stop instead of waiting where he was. When the number 18 finally appeared at the far intersection, Andre stopped walking and smiled."
+    },
+    {
+      "id": "q2",
+      "type": "evidence_based",
+      "prompt": "Which sentence best supports the inference that Andre was hoping to catch the bus?",
+      "points": 2,
+      "explanation": "Checking the bus app and walking toward another stop are direct actions showing that Andre is trying to catch the bus.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "For an evidence question, choose the detail that directly proves the inference.",
+      "familyId": "reading.evidence.explicit_reason",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [
+          "R2.4"
+        ],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 40,
+      "options": [
+        {
+          "id": "a",
+          "text": "Andre usually left the community center before nine.",
+          "distractorType": "background_only",
+          "whyWrong": "This gives background about his usual routine, but it does not show what he wants now."
+        },
+        {
+          "id": "b",
+          "text": "He checked the bus app twice, then began walking toward the next stop instead of waiting where he was."
+        },
+        {
+          "id": "c",
+          "text": "The street was almost empty.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This is a setting detail. It does not directly show Andre's goal."
+        },
+        {
+          "id": "d",
+          "text": "He stayed to help stack chairs after the debate club meeting.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why Andre left late, not what transportation he was trying to catch."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "He checked the bus app twice, then began walking toward the next stop instead of waiting where he was."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-evidence-last-bus",
+    "sourceVersion": 1,
+    "compiledAt": "2026-08-14T09:10:15.268Z"
+  }
+}

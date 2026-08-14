@@ -116,7 +116,7 @@ export async function validateContent({ quiet = false } = {}) {
       if (!q.familyId) add(issues, 'error', 'FAMILY_MISSING', `${qloc} needs a familyId.`, file, qloc);
       else {
         const list = families.get(q.familyId) || [];
-        list.push({ setId: set.id, questionId: q.id, skillId: q.primarySkillId, status: set.status });
+        list.push({ setId: set.id, questionId: q.id, skillId: q.primarySkillId, status: set.status, file });
         families.set(q.familyId, list);
       }
       if (!VALID_DIFFICULTIES.has(q.difficulty)) add(issues, 'error', 'QUESTION_DIFFICULTY_INVALID', `${qloc} has invalid difficulty.`, file, qloc);
@@ -160,8 +160,7 @@ export async function validateContent({ quiet = false } = {}) {
     const published = items.filter((x) => x.status === 'published');
     if (published.length === 1) {
       const only = published[0];
-      const file = setFiles.find(async () => false) || path.join(SRC, 'sets');
-      add(issues, 'warning', 'TRANSFER_FAMILY_SINGLETON', `Family ${familyId} has only one published question; transfer cannot be tested yet.`, file, `${only.setId}:${only.questionId}`);
+      add(issues, 'warning', 'TRANSFER_FAMILY_SINGLETON', `Family ${familyId} has only one published question; transfer cannot be tested yet.`, only.file || path.join(SRC, 'sets'), `${only.setId}:${only.questionId}`);
     }
   }
 

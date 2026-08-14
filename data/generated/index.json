@@ -10,23 +10,23 @@
     "description": "Practice making an inference, then choosing the evidence that proves it."
   },
   {
-    "file": "grammar-practice.json",
+    "file": "generated/modules/grammar-practice.json",
     "title": "Grammar Edit — Sentence Repair",
-    "description": "Practice choosing the correct edit for each underlined section."
+    "description": "Choose the edit that makes each sentence clear and grammatically correct."
   },
   {
-    "file": "writing-practice.json",
+    "file": "generated/modules/writing-practice.json",
     "title": "Organizing an Argument",
-    "description": "Practice identifying strong evidence and structuring a short response."
+    "description": "Choose relevant evidence, then use source evidence in a short argument."
   },
   {
-    "file": "evidence-transfer-practice.json",
+    "file": "generated/modules/evidence-transfer-practice.json",
     "title": "Evidence & Inference — The Last Bus",
-    "description": "New passage, same core reading skills: infer carefully and prove the answer with evidence."
+    "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence."
   },
   {
-    "file": "grammar-transfer-practice.json",
+    "file": "generated/modules/grammar-transfer-practice.json",
     "title": "Grammar Transfer — Precision Check",
-    "description": "Fresh sentences that retest agreement and commonly confused words."
+    "description": "Use fresh sentences to retest agreement and commonly confused words."
   }
 ]
