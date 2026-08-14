@@ -6,7 +6,7 @@
 */
 const Data = {
   async loadIndex() {
-    const res = await fetch("data/index.json");
+    const res = await fetch("data/generated/index.json");
     return res.json();
   },
   async loadQuiz(file) {

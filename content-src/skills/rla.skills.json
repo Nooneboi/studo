@@ -1,0 +1,1032 @@
+{
+  "schemaVersion": 1,
+  "subject": "rla",
+  "version": 1,
+  "skills": [
+    {
+      "id": "R1.1",
+      "label": "Explicit meaning",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Directly stated facts and ideas; separates text evidence from assumptions."
+    },
+    {
+      "id": "R1.2",
+      "label": "Main idea / central idea",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.1",
+        "R.2.4"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Include explicit and implied main ideas."
+    },
+    {
+      "id": "R1.3",
+      "label": "Supporting details",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.5"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Distinguish real support from merely related details."
+    },
+    {
+      "id": "R1.4",
+      "label": "Summary",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.2"
+      ],
+      "dokRange": [
+        2,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Use too-broad, too-narrow, and detail-heavy distractors."
+    },
+    {
+      "id": "R1.5",
+      "label": "Theme",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.6"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Literary",
+      "authoringNote": "Keep literary practice meaningful but proportional."
+    },
+    {
+      "id": "R2.1",
+      "label": "Sequence",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Sequence events, steps, or ideas."
+    },
+    {
+      "id": "R2.2",
+      "label": "Cause and effect",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Include implicit causal relations; avoid confusing sequence with cause."
+    },
+    {
+      "id": "R2.3",
+      "label": "Compare and contrast",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.3",
+        "R.3.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Compare people, ideas, events, or positions inside a text."
+    },
+    {
+      "id": "R2.4",
+      "label": "Inference from details",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.2.3",
+        "R.3.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Current Night Shift / Last Bus family gives two transfer items.",
+      "runtimeId": "reading.inference.from_details"
+    },
+    {
+      "id": "R2.5",
+      "label": "Conclusions & generalizations",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.2.7",
+        "R.2.8"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Require synthesis; include overgeneralization traps."
+    },
+    {
+      "id": "R2.6",
+      "label": "Relationships among people, events & ideas",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.3",
+        "R.3.5"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Analyze how details, context, people, and events shape meaning."
+    },
+    {
+      "id": "R3.1",
+      "label": "Meaning in context",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.1 / L.4.1"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Context meaning, including multiple-meaning words."
+    },
+    {
+      "id": "R3.2",
+      "label": "Connotation",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.1 / L.4.1"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Emotional/associative meaning versus literal meaning."
+    },
+    {
+      "id": "R3.3",
+      "label": "Figurative language",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.1",
+        "R.4.3 / L.4.3"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Literary",
+      "authoringNote": "Interpret effect rather than just name the device."
+    },
+    {
+      "id": "R3.4",
+      "label": "Tone",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.2",
+        "R.4.3 / L.4.2–4.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Tie tone to exact word choice."
+    },
+    {
+      "id": "R3.5",
+      "label": "Impact of word choice",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.2",
+        "R.4.3 / L.4.2–4.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Ask how replacing wording changes meaning, emphasis, or tone."
+    },
+    {
+      "id": "R4.1",
+      "label": "Paragraph / section function",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.5.1",
+        "R.5.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "What job does this paragraph or sentence perform?"
+    },
+    {
+      "id": "R4.2",
+      "label": "Text structure",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.5.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Structure as meaning: cause/effect, problem/solution, claim/evidence, etc."
+    },
+    {
+      "id": "R4.3",
+      "label": "Transitions & signal words",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.5.3"
+      ],
+      "dokRange": [
+        2,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Explain relationship signaled, not just identify the word."
+    },
+    {
+      "id": "R4.4",
+      "label": "Author purpose",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.6.1",
+        "R.6.3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Include explicit and implicit purpose."
+    },
+    {
+      "id": "R4.5",
+      "label": "Point of view / perspective",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.6.1",
+        "R.6.2"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Reading",
+      "authoringNote": "Separate author's view from views represented in the text."
+    },
+    {
+      "id": "R4.6",
+      "label": "Rhetorical technique",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.6.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Focus on what the technique achieves."
+    },
+    {
+      "id": "R5.1",
+      "label": "Claim identification",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Main claims and supporting/subclaims."
+    },
+    {
+      "id": "R5.2",
+      "label": "Argument chain / structure",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "How claims build on one another."
+    },
+    {
+      "id": "R5.3",
+      "label": "Evidence identification",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.2"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Current evidence-matching family gives two transfer items.",
+      "runtimeId": "reading.evidence.matching"
+    },
+    {
+      "id": "R5.4",
+      "label": "Evidence relevance",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Current writing evidence item gives one relevant prototype.",
+      "runtimeId": "writing.evidence.relevance"
+    },
+    {
+      "id": "R5.5",
+      "label": "Evidence sufficiency",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Not just whether evidence relates—whether it is enough."
+    },
+    {
+      "id": "R5.6",
+      "label": "Supported vs unsupported claims",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Separate evidence-backed claims from assertions."
+    },
+    {
+      "id": "R5.7",
+      "label": "Reasoning validity / fallacies",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.5"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Use real reasoning failures in context; avoid trivia-style fallacy naming."
+    },
+    {
+      "id": "R5.8",
+      "label": "Assumptions & premises",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.6"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Identify what must be true for the argument to work."
+    },
+    {
+      "id": "R5.9",
+      "label": "Source credibility",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "Supports R.8.3–R.8.6"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P2",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "Studo extension: useful for evaluating evidence, but not a named standalone GED target."
+    },
+    {
+      "id": "R5.10",
+      "label": "Counterargument & response",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.6.2",
+        "supports R.8"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Argument",
+      "authoringNote": "How writers acknowledge, concede, rebut, or ignore opposing views."
+    },
+    {
+      "id": "R6.1",
+      "label": "Compare texts on same topic",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.9.1/R.7.1",
+        "R.9.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Multi-source",
+      "authoringNote": "Compare perspective, tone, style, structure, purpose, or impact."
+    },
+    {
+      "id": "R6.2",
+      "label": "Opposing arguments",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.9.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Multi-source",
+      "authoringNote": "Direct bridge into Extended Response argument evaluation."
+    },
+    {
+      "id": "R6.3",
+      "label": "Text + data / visuals",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.7.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Multi-source",
+      "authoringNote": "Determine whether data supports, extends, clarifies, or contradicts text."
+    },
+    {
+      "id": "R6.4",
+      "label": "Different genres / formats",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.7.1",
+        "R.7.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Multi-source",
+      "authoringNote": "Article vs fact sheet, letter vs timeline, etc."
+    },
+    {
+      "id": "R6.5",
+      "label": "Synthesis across sources",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.7.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Multi-source",
+      "authoringNote": "Combine information to draw a new supported conclusion."
+    },
+    {
+      "id": "L1.1",
+      "label": "Frequently confused words",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Two current transfer items.",
+      "runtimeId": "language.usage.word_choice"
+    },
+    {
+      "id": "L1.2",
+      "label": "Basic subject–verb agreement",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.2"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Two current transfer items.",
+      "runtimeId": "language.grammar.subject_verb_agreement"
+    },
+    {
+      "id": "L1.3",
+      "label": "Pronoun agreement, reference & case",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Need contextual editing, not isolated grammar trivia."
+    },
+    {
+      "id": "L1.4",
+      "label": "Standard vs informal usage",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.4"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Edit non-standard or informal usage."
+    },
+    {
+      "id": "L1.5",
+      "label": "Modifiers & logical word order",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.5"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Dangling/misplaced modifiers and illogical order."
+    },
+    {
+      "id": "L1.6",
+      "label": "Parallelism, coordination & subordination",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.6"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Important for sentence clarity and ER writing."
+    },
+    {
+      "id": "L1.7",
+      "label": "Complex agreement",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.7"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Compound subjects, intervening phrases, collective nouns."
+    },
+    {
+      "id": "L1.8",
+      "label": "Wordiness & awkward construction",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.8"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Prefer clear, concise revisions."
+    },
+    {
+      "id": "L1.9",
+      "label": "Transitions for logic & clarity",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.9"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Transition choice in real passage context."
+    },
+    {
+      "id": "L2.1",
+      "label": "Capitalization",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Proper nouns, titles, sentence beginnings."
+    },
+    {
+      "id": "L2.2",
+      "label": "Fragments, run-ons & fused sentences",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.2"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Sentence boundaries in context."
+    },
+    {
+      "id": "L2.3",
+      "label": "Apostrophes & possessives",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Possessives; distinguish possessive pronouns."
+    },
+    {
+      "id": "L2.4",
+      "label": "Punctuation & clause separation",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.4"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Language",
+      "authoringNote": "Commas, end marks, appositives, and clause punctuation."
+    },
+    {
+      "id": "W1.1",
+      "label": "Understand the task",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Identify what the prompt asks the writer to evaluate."
+    },
+    {
+      "id": "W1.2",
+      "label": "Map both arguments",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1",
+        "R.8",
+        "R.9.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Claims, evidence, assumptions, and reasoning."
+    },
+    {
+      "id": "W1.3",
+      "label": "Select better-supported position",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Choose based on support, not personal agreement."
+    },
+    {
+      "id": "W1.4",
+      "label": "Build evaluative thesis",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2",
+        "ER Traits 1–2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "State which argument is better supported and why."
+    },
+    {
+      "id": "W1.5",
+      "label": "Select specific source evidence",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.2",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Use relevant, specific evidence from source texts."
+    },
+    {
+      "id": "W1.6",
+      "label": "Analyze evidence",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.2",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Explain why evidence strengthens or weakens an argument."
+    },
+    {
+      "id": "W1.7",
+      "label": "Analyze reasoning",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.2",
+        "R.8",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Move beyond evidence listing to reasoning quality."
+    },
+    {
+      "id": "W1.8",
+      "label": "Organize the response",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2",
+        "ER Trait 2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Logical progression, paragraph purpose, transitions."
+    },
+    {
+      "id": "W1.9",
+      "label": "Develop ideas",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2",
+        "ER Trait 2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Connect evidence to the thesis with explanation."
+    },
+    {
+      "id": "W1.10",
+      "label": "Revise for focus & clarity",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2–W.3",
+        "ER Traits 2–3"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Remove repetition; improve order, clarity, and transitions."
+    },
+    {
+      "id": "W1.11",
+      "label": "Edit conventions",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.3",
+        "ER Trait 3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "priority": "P1",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Aim for mostly correct standard English; not perfection."
+    },
+    {
+      "id": "W1.12",
+      "label": "Full paired-source ER",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.3",
+        "ER Traits 1–3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "priority": "P0",
+      "status": "approved",
+      "practiceMode": "Writing",
+      "authoringNote": "Eight distinct paired-source prompts for an initial serious bank."
+    }
+  ]
+}

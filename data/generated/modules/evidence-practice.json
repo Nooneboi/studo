@@ -1,0 +1,134 @@
+{
+  "id": "evidence-practice",
+  "title": "Evidence-Based Reading — The Night Shift",
+  "description": "Practice making an inference, then choosing the evidence that proves it.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Evidence & Inference",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Maria had worked the night shift at the packing plant for six years. She liked the quiet of it — the hum of the conveyor belts, the empty parking lot, the way the sky turned from black to gray just as her shift ended. Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed. She told her sister it was because night shift paid a premium, but the truth was simpler: she had never learned to sleep well in daylight, not since she was a child.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the best description of Maria's feelings about the night shift?",
+      "points": 1,
+      "explanation": "Maria likes the quiet and stays even when other workers leave. Those details show that she has grown to prefer the night shift.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "For a feelings question, use what the character does and what the passage says they like.",
+      "familyId": "reading.inference.character_state",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 35,
+      "options": [
+        {
+          "id": "a",
+          "text": "She resents it but has no other choice.",
+          "distractorType": "opposite_claim",
+          "whyWrong": "The passage never shows resentment. It says she likes the quiet and chooses to stay."
+        },
+        {
+          "id": "b",
+          "text": "She has grown to prefer it."
+        },
+        {
+          "id": "c",
+          "text": "She is indifferent to it.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Maria is not neutral. The passage gives several details showing that she likes the night shift."
+        },
+        {
+          "id": "d",
+          "text": "She is actively trying to leave it.",
+          "distractorType": "opposite_claim",
+          "whyWrong": "Nothing says Maria is trying to leave. Other workers leave for daytime jobs, but Maria stays."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "She liked the quiet of it — the hum of the conveyor belts, the empty parking lot, the way the sky turned from black to gray just as her shift ended."
+    },
+    {
+      "id": "q2",
+      "type": "evidence_based",
+      "prompt": "Which sentence from the passage best supports the idea that Maria's real reason for staying isn't about money?",
+      "points": 2,
+      "explanation": "The sentence contrasts what Maria says with 'the truth.' That directly shows that money is not her real reason.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "For evidence questions, pick the line that proves the claim—not just a line about the same topic.",
+      "familyId": "reading.evidence.explicit_reason",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [
+          "R2.4"
+        ],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 40,
+      "options": [
+        {
+          "id": "a",
+          "text": "She liked the quiet of it — the hum of the conveyor belts, the empty parking lot...",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This shows that Maria likes the shift, but it does not directly prove that money is not her real reason."
+        },
+        {
+          "id": "b",
+          "text": "Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This compares Maria with her coworkers, but it does not directly reveal why her stated reason is not the real one."
+        },
+        {
+          "id": "c",
+          "text": "She told her sister it was because night shift paid a premium, but the truth was simpler."
+        },
+        {
+          "id": "d",
+          "text": "Maria had worked the night shift at the packing plant for six years.",
+          "distractorType": "true_but_irrelevant",
+          "whyWrong": "This is true, but it only gives background information. It does not answer why Maria really stays."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "She told her sister it was because night shift paid a premium, but the truth was simpler."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-evidence-night-shift",
+    "sourceVersion": 1,
+    "compiledAt": "2026-08-14T07:56:35.284Z"
+  }
+}

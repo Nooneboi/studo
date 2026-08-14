@@ -7,7 +7,7 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "studo-v21-phase3c";
+const CACHE_NAME = "studo-v22-phase4a";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
@@ -39,9 +39,9 @@ const CORE_ASSETS = [
   "js/test.js",
   "js/train.js",
   "js/resources.js",
-  "data/index.json",
+  "data/generated/index.json",
+  "data/generated/modules/evidence-practice.json",
   "data/sample-quiz.json",
-  "data/evidence-practice.json",
   "data/evidence-transfer-practice.json",
   "data/grammar-practice.json",
   "data/grammar-transfer-practice.json",

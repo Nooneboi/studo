@@ -1,0 +1,32 @@
+[
+  {
+    "file": "sample-quiz.json",
+    "title": "Sample Quiz — How This Works",
+    "description": "A short demo set showing all three question types."
+  },
+  {
+    "file": "generated/modules/evidence-practice.json",
+    "title": "Evidence-Based Reading — The Night Shift",
+    "description": "Practice making an inference, then choosing the evidence that proves it."
+  },
+  {
+    "file": "grammar-practice.json",
+    "title": "Grammar Edit — Sentence Repair",
+    "description": "Practice choosing the correct edit for each underlined section."
+  },
+  {
+    "file": "writing-practice.json",
+    "title": "Organizing an Argument",
+    "description": "Practice identifying strong evidence and structuring a short response."
+  },
+  {
+    "file": "evidence-transfer-practice.json",
+    "title": "Evidence & Inference — The Last Bus",
+    "description": "New passage, same core reading skills: infer carefully and prove the answer with evidence."
+  },
+  {
+    "file": "grammar-transfer-practice.json",
+    "title": "Grammar Transfer — Precision Check",
+    "description": "Fresh sentences that retest agreement and commonly confused words."
+  }
+]

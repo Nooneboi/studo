@@ -125,3 +125,29 @@ and describe what you want changed.
 - Mistakes now prefer fresh parallel questions (same family/skill) before immediate exact repeats.
 - New transfer modules provide alternate Reading and Language Convention questions so transfer can be demonstrated with current sample content.
 - The Home and Progress surfaces can send returning learners directly into Train Me while manual Practice remains available.
+
+## Phase 4A content pipeline
+
+The learner-facing app no longer needs the source-of-truth content to live directly in `data/*.json`.
+
+Authoring source:
+
+```text
+content-src/
+  skills/
+  passages/
+  sets/
+```
+
+Validation and build:
+
+```bash
+npm run content:validate
+npm run content:build
+# or both
+npm run content:check
+```
+
+Generated files are written to `data/generated/` and should not be hand-edited.
+
+During migration, `content-src/config/legacy-index.json` keeps legacy modules available while migrated sets replace their matching runtime file in the generated index. This lets Studo move to the new content model one module at a time without breaking the learner app.

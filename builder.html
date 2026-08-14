@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<title>Studo — Builder (private)</title>
+<title>Studo — Legacy Builder</title>
 <meta name="description" content="Private tool for building and editing practice modules.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -32,8 +32,8 @@
 
 <main>
   <div class="wrap">
-    <h1>Builder <span style="font-family:var(--font-mono); font-size:.9rem; color:var(--color-ink-faint)">(private — don't share this link)</span></h1>
-    <div class="banner info">This page builds a quiz file. Nothing here is shared automatically — you'll download a <code>.json</code> file and add it to the site yourself. See the README for the exact steps.</div>
+    <h1>Legacy Builder</h1>
+    <div class="banner info"><strong>Phase 4 note:</strong> this tool still exports the old runtime JSON format for quick experiments. It is no longer the source of truth for published content. New production content belongs in <code>content-src/</code> and is published through the validator + build pipeline.</div>
 
     <div class="field">
       <label>Load an existing quiz to edit (optional)</label>
@@ -104,7 +104,7 @@
     </form>
 
     <div class="builder-actions">
-      <span id="download-hint" class="hidden" style="align-self:center; font-size:.85rem; color:var(--color-ink-soft)">Downloaded — now add it to your <code>/data</code> folder and list it in <code>data/index.json</code>.</span>
+      <span id="download-hint" class="hidden" style="align-self:center; font-size:.85rem; color:var(--color-ink-soft)">Downloaded legacy runtime JSON. For production content, migrate it into <code>content-src/</code> before publishing.</span>
       <button id="download-btn" class="btn">Download quiz JSON</button>
     </div>
   </div>

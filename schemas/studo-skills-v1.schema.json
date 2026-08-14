@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studo.local/schema/skills-v1.json",
+  "title": "Studo Skill Registry v1",
+  "type": "object",
+  "required": ["schemaVersion", "subject", "version", "skills"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "subject": {"type": "string"},
+    "version": {"type": "integer", "minimum": 1},
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "domain", "officialTargets", "dokRange", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "label": {"type": "string"},
+          "domain": {"type": "string"},
+          "officialTargets": {"type": "array", "items": {"type": "string"}},
+          "dokRange": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer", "minimum": 1, "maximum": 3}},
+          "priority": {"type": "string", "enum": ["P0", "P1", "P2"]},
+          "status": {"type": "string"},
+          "practiceMode": {"type": "string"},
+          "authoringNote": {"type": "string"},
+          "runtimeId": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

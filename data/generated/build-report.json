@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-08-14T07:56:35.285Z",
+  "publishedSourceSets": [
+    "set-rla-evidence-night-shift"
+  ],
+  "generatedModules": [
+    "generated/modules/evidence-practice.json"
+  ],
+  "warnings": [
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family reading.inference.character_state has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-evidence-night-shift.json",
+      "location": "set-rla-evidence-night-shift:q1"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family reading.evidence.explicit_reason has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-evidence-night-shift.json",
+      "location": "set-rla-evidence-night-shift:q2"
+    }
+  ]
+}

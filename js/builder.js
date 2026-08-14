@@ -7,13 +7,11 @@
   builder.html from the published site if you're worried about it
   being found (see README).
 
-  Flow:
-   1. Fill in quiz details + questions using the form.
-   2. Click "Download quiz JSON" — a .json file downloads.
-   3. Drop that file into the site's /data folder (via GitHub's
-      website) and add an entry to data/index.json.
-   4. You can also "Load a quiz file" to keep editing one you
-      already made.
+  Phase 4 status:
+   This is now a LEGACY runtime-format editor for quick experiments.
+   Production content should be authored under content-src/, validated,
+   and compiled into data/generated/. The future Content Studio can reuse
+   parts of this UI while writing the richer source format.
 */
 
 let questionCount = 0;

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studo.local/schema/passage-v1.json",
+  "title": "Studo Passage v1",
+  "type": "object",
+  "required": ["schemaVersion", "id", "title", "text", "textType", "context", "source", "rights", "status", "version"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "id": {"type": "string", "pattern": "^p-[a-z0-9-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "text": {"type": "string", "minLength": 1},
+    "textType": {"type": "string", "enum": ["informational", "literary"]},
+    "context": {"type": "string", "enum": ["science", "social_studies", "civics", "workplace", "community", "literary", "mixed"]},
+    "source": {
+      "type": "object",
+      "required": ["type", "attribution"],
+      "properties": {
+        "type": {"type": "string"},
+        "attribution": {"type": "string"},
+        "url": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "rights": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"type": "string", "enum": ["original", "public_domain", "licensed", "permission"]},
+        "holder": {"type": "string"},
+        "note": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "evidenceAnchors": {"type": "object", "additionalProperties": {"type": "string"}},
+    "status": {"type": "string", "enum": ["draft", "review", "approved", "published", "retired"]},
+    "version": {"type": "integer", "minimum": 1},
+    "author": {"type": "string"},
+    "reviewer": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}
