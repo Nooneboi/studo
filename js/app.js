@@ -7,6 +7,13 @@
 */
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("nav.site-nav").forEach((nav) => {
+    if (!nav.querySelector('a[href="train.html"]')) {
+      const trainLink = document.createElement("a");
+      trainLink.href = "train.html";
+      trainLink.textContent = "Train";
+      const quiz = nav.querySelector('a[href="quiz.html"]');
+      nav.insertBefore(trainLink, quiz || null);
+    }
     if (!nav.querySelector('a[href="progress.html"]')) {
       const progressLink = document.createElement("a");
       progressLink.href = "progress.html";

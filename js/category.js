@@ -22,15 +22,15 @@
 const CATEGORY_META = {
   reading: {
     label: "Reading",
-    desc: "Where most of the actual test hinges: can you find the main idea, follow an inference, and tell strong evidence from a plausible-sounding distractor.",
+    desc: "Practice what a passage says, what it implies, and which details support the best answer.",
   },
   writing: {
     label: "Writing and Analysis",
-    desc: "Less about grammar rules and more about whether your argument holds up — does the evidence you picked actually support the point you're making.",
+    desc: "Practice claims, evidence, reasoning, tone, and revision.",
   },
   language_conventions: {
     label: "Language Conventions",
-    desc: "The mechanical stuff: agreement, punctuation, sentence structure. Dry to study, but it's worth more points than people expect.",
+    desc: "Practice grammar, punctuation, sentence boundaries, and clear word choice in context.",
   },
 };
 const LEVELS = [
@@ -187,8 +187,8 @@ function renderMain() {
 
     <div class="diagnostic-box">
       <div>
-        <h3>Not sure where to start? Take the general test.</h3>
-        <p>It's a quick mix pulled from across this whole skill area — a fast way to see what you already know before you commit to grinding through the easy stuff.</p>
+        <h3>Want a quick check first?</h3>
+        <p>Take a mixed test from this area before choosing a practice set.</p>
         <div class="meta" style="margin-top:6px">${questionCount} questions &middot; ~${minutes} min &middot; timed</div>
       </div>
       <a class="btn" href="test.html?subject=rla&category=${currentCat}">Start test</a>

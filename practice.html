@@ -34,18 +34,28 @@
 
 <main class="practice-main">
   <div class="wrap practice-wrap">
-    <section class="page-intro">
-      <div class="page-kicker">Reasoning Through Language Arts</div>
-      <h1>Practice</h1>
-      <p>Choose one skill area and work through it at your own pace. Each section moves from foundations to harder sets.</p>
+    <section class="practice-hero" aria-labelledby="practice-title">
+      <div class="practice-hero-copy">
+        <div class="page-kicker">Reasoning Through Language Arts</div>
+        <h1 id="practice-title">Practice</h1>
+        <p>Build one skill at a time. Choose an area yourself, or let Studo build a short session from what you need most.</p>
+        <div class="practice-hero-actions">
+          <a class="btn" href="train.html">Train me</a>
+          <a class="btn secondary" href="progress.html">View progress</a>
+        </div>
+      </div>
+      <div id="practice-next-mount" class="practice-next-mount" aria-live="polite"></div>
     </section>
 
     <section class="practice-directory" aria-labelledby="practice-directory-title">
       <div class="directory-heading">
-        <h2 id="practice-directory-title">Skill areas</h2>
-        <span>3 areas</span>
+        <div>
+          <div class="directory-kicker">Choose an area</div>
+          <h2 id="practice-directory-title">Skill areas</h2>
+        </div>
+        <span id="practice-area-count">3 areas</span>
       </div>
-      <div class="category-list" id="category-list"></div>
+      <div class="category-grid" id="category-list"></div>
     </section>
   </div>
 </main>
@@ -59,6 +69,7 @@
 <script src="js/subjectbar.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
+<script src="js/learning.js"></script>
 <script src="js/practice.js"></script>
 <script>
 if ("serviceWorker" in navigator) {
