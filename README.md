@@ -151,3 +151,22 @@ npm run content:check
 Generated files are written to `data/generated/` and should not be hand-edited.
 
 During migration, `content-src/config/legacy-index.json` keeps legacy modules available while migrated sets replace their matching runtime file in the generated index. This lets Studo move to the new content model one module at a time without breaking the learner app.
+
+
+## Phase 4C — authoring
+
+For production RLA content, run:
+
+```bash
+npm run studio
+```
+
+Then open `http://localhost:4173/content-studio.html`. Content Studio can save Phase 4 passage + question-set source files directly into `content-src/` in supported browsers. The bulk planning/review workbook lives in `authoring/STUDO_RLA_AUTHORING_WORKBOOK_V1.xlsx`.
+
+After authoring, always run:
+
+```bash
+npm run content:check
+```
+
+Do not manually edit `data/generated/`.

@@ -5,6 +5,7 @@
   "scripts": {
     "content:validate": "node scripts/validate-content.mjs",
     "content:build": "node scripts/build-content.mjs",
-    "content:check": "npm run content:validate && npm run content:build"
+    "content:check": "npm run content:validate && npm run content:build",
+    "studio": "node scripts/serve.mjs"
   }
 }

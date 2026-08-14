@@ -4,7 +4,7 @@
   "description": "Practice making an inference, then choosing the evidence that proves it.",
   "subject": "rla",
   "category": "reading",
-  "topic": "Evidence & Inference",
+  "topic": "Inference & Evidence",
   "difficulty": "medium",
   "source": "Original content by Studo",
   "passage": "Maria had worked the night shift at the packing plant for six years. She liked the quiet of it — the hum of the conveyor belts, the empty parking lot, the way the sky turned from black to gray just as her shift ended. Her coworkers came and went, chasing daytime hours and better pay, but Maria stayed. She told her sister it was because night shift paid a premium, but the truth was simpler: she had never learned to sleep well in daylight, not since she was a child.",
@@ -129,6 +129,16 @@
   "contentMeta": {
     "sourceSetId": "set-rla-evidence-night-shift",
     "sourceVersion": 1,
-    "compiledAt": "2026-08-14T09:10:15.269Z"
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [
+        "R5.3"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
+      "topicLabel": "Inference & Evidence"
+    },
+    "compiledAt": "2026-08-14T11:27:59.750Z"
   }
 }

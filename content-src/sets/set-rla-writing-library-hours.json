@@ -9,7 +9,7 @@
   "description": "Choose relevant evidence, then use source evidence in a short argument.",
   "subject": "rla",
   "category": "writing",
-  "topic": "Organizing Ideas",
+  "topic": "Evidence Relevance",
   "difficulty": "easy",
   "status": "published",
   "version": 1,
@@ -73,7 +73,7 @@
     {
       "id": "q2",
       "type": "extended_response",
-      "prompt": "In 3–5 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
+      "prompt": "In 3\u20135 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
       "primarySkillId": "W1.5",
       "secondarySkillIds": [
         "W1.9"
@@ -97,5 +97,15 @@
         "quickTip": "Do not stop after quoting evidence. Explain why the evidence helps your argument."
       }
     }
-  ]
+  ],
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.4",
+    "secondarySkillIds": [
+      "W1.5"
+    ],
+    "contentKind": "passage_practice",
+    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+    "topicLabel": "Evidence Relevance"
+  }
 }

@@ -85,12 +85,18 @@ async function main() {
       contentMeta: {
         sourceSetId: set.id,
         sourceVersion: set.version,
+        curriculum: set.curriculum || null,
         compiledAt: new Date().toISOString(),
       },
     };
 
     await fs.writeFile(path.join(MODULE_OUT, outputName), JSON.stringify(runtime, null, 2) + '\n', 'utf8');
-    const entry = { file: `generated/modules/${outputName}`, title: runtime.title, description: runtime.description };
+    const entry = {
+      file: `generated/modules/${outputName}`,
+      title: runtime.title,
+      description: runtime.description,
+      ...(set.curriculum ? { curriculum: set.curriculum } : {}),
+    };
     generatedByLegacyFile.set(runtimeFile, entry);
     buildEntries.push(entry);
   }

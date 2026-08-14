@@ -4,7 +4,7 @@
   "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
   "subject": "rla",
   "category": "reading",
-  "topic": "Evidence & Inference",
+  "topic": "Inference & Evidence",
   "difficulty": "medium",
   "source": "Original content by Studo",
   "passage": "Andre usually left the community center before nine, but on Thursday he stayed to help stack chairs after the debate club meeting. By the time he stepped outside, the street was almost empty. He checked the bus app twice, then began walking toward the next stop instead of waiting where he was. When the number 18 finally appeared at the far intersection, Andre stopped walking and smiled.",
@@ -129,6 +129,16 @@
   "contentMeta": {
     "sourceSetId": "set-rla-evidence-last-bus",
     "sourceVersion": 1,
-    "compiledAt": "2026-08-14T09:10:15.268Z"
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [
+        "R5.3"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
+      "topicLabel": "Inference & Evidence"
+    },
+    "compiledAt": "2026-08-14T11:27:59.748Z"
   }
 }

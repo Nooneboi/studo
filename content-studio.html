@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Studo — Content Studio</title>
+<meta name="description" content="Private authoring workspace for Studo Phase 4 content.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/studo-v2.css">
+<link rel="stylesheet" href="css/content-studio.css">
+</head>
+<body class="studio-body">
+<header class="studio-header">
+  <div class="studio-header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">◆</span> Studo</a>
+    <div class="studio-header-title">
+      <strong>Content Studio</strong>
+      <span>Authoring workspace</span>
+    </div>
+    <div class="studio-header-actions">
+      <button type="button" class="btn secondary small" id="connect-folder-btn">Connect project folder</button>
+      <span class="studio-folder-status" id="folder-status">Not connected</span>
+      <button type="button" class="btn secondary small" id="import-source-btn">Import source JSON</button>
+      <input id="import-source-input" type="file" accept="application/json" hidden>
+      <div id="theme-switch-mount"></div>
+    </div>
+  </div>
+</header>
+
+<main class="studio-shell">
+  <aside class="studio-sidebar" aria-label="Content Studio navigation">
+    <div class="studio-side-note">
+      <span class="eyebrow">Phase 4C.1</span>
+      <p>Write here. Validate before publishing. Learners only receive compiled content.</p>
+    </div>
+    <nav class="studio-tabs" aria-label="Authoring sections">
+      <button type="button" class="studio-tab active" data-studio-tab="passage"><span>01</span> Passage</button>
+      <button type="button" class="studio-tab" data-studio-tab="curriculum"><span>02</span> Curriculum</button>
+      <button type="button" class="studio-tab" data-studio-tab="set"><span>03</span> Question set</button>
+      <button type="button" class="studio-tab" data-studio-tab="questions"><span>04</span> Questions</button>
+      <button type="button" class="studio-tab" data-studio-tab="quality"><span>05</span> Quality check</button>
+      <button type="button" class="studio-tab" data-studio-tab="preview"><span>06</span> Preview</button>
+    </nav>
+    <div class="studio-sidebar-footer">
+      <a href="builder.html">Legacy Builder</a>
+      <a href="authoring/STUDO_RLA_AUTHORING_WORKBOOK_V1.xlsx">Bulk authoring workbook</a>
+    </div>
+  </aside>
+
+  <section class="studio-workspace">
+    <div class="studio-panel active" data-studio-panel="passage">
+      <div class="studio-panel-head">
+        <div>
+          <span class="eyebrow">Source asset</span>
+          <h1>Passage</h1>
+          <p>Keep the reading material separate from questions so it can be reused, reviewed, and sourced cleanly.</p>
+        </div>
+        <span class="studio-step-state" id="passage-state">Draft</span>
+      </div>
+
+      <div class="studio-form-grid two">
+        <label class="studio-field"><span>Passage ID</span><input id="passage-id" placeholder="p-rla-community-garden"></label>
+        <label class="studio-field"><span>Title</span><input id="passage-title" placeholder="The Community Garden"></label>
+        <label class="studio-field"><span>Text type</span><select id="passage-text-type"><option value="informational">Informational</option><option value="literary">Literary</option></select></label>
+        <label class="studio-field"><span>Context</span><select id="passage-context"><option value="science">Science</option><option value="social_studies">Social studies</option><option value="civics">Civics</option><option value="workplace">Workplace</option><option value="community">Community</option><option value="literary">Literary</option><option value="mixed">Mixed</option></select></label>
+      </div>
+
+      <label class="studio-field"><span>Passage text</span><textarea id="passage-text" class="studio-passage-text" placeholder="Write or paste the passage here..."></textarea><small id="passage-word-count">0 words</small></label>
+
+      <div class="studio-section-title"><h2>Source & rights</h2><p>Published material must be traceable.</p></div>
+      <div class="studio-form-grid two">
+        <label class="studio-field"><span>Source type</span><input id="passage-source-type" value="original" placeholder="original"></label>
+        <label class="studio-field"><span>Attribution</span><input id="passage-attribution" value="Original content by Studo"></label>
+        <label class="studio-field"><span>Source URL <em>optional</em></span><input id="passage-source-url" type="url" placeholder="https://..."></label>
+        <label class="studio-field"><span>Rights status</span><select id="passage-rights"><option value="original">Original</option><option value="public_domain">Public domain</option><option value="licensed">Licensed</option><option value="permission">Permission</option></select></label>
+        <label class="studio-field"><span>Rights holder</span><input id="passage-rights-holder" value="Studo"></label>
+        <label class="studio-field"><span>Rights note</span><input id="passage-rights-note" placeholder="Original practice passage created for Studo."></label>
+      </div>
+
+      <div class="studio-section-title"><h2>Editorial state</h2></div>
+      <div class="studio-form-grid three">
+        <label class="studio-field"><span>Status</span><select id="passage-status"><option value="draft">Draft</option><option value="review">Review</option><option value="approved">Approved</option><option value="published">Published</option><option value="retired">Retired</option></select></label>
+        <label class="studio-field"><span>Author</span><input id="passage-author" value="Studo"></label>
+        <label class="studio-field"><span>Reviewer</span><input id="passage-reviewer" placeholder="Required before publish"></label>
+      </div>
+    </div>
+
+
+    <div class="studio-panel" data-studio-panel="curriculum">
+      <div class="studio-panel-head">
+        <div>
+          <span class="eyebrow">Curriculum placement</span>
+          <h1>Where does this belong?</h1>
+          <p>Attach this set to the exact RLA skill it trains. Studo can then place it in Practice, track coverage, and select it correctly in Train Me.</p>
+        </div>
+        <span class="studio-step-state" id="curriculum-state">Unassigned</span>
+      </div>
+
+      <div class="studio-path-card" aria-live="polite">
+        <span class="eyebrow">Learning path</span>
+        <div class="studio-learning-path" id="curriculum-path">RLA → Choose a domain → Choose a skill</div>
+      </div>
+
+      <div class="studio-section-title"><h2>Primary placement</h2><p>One clear home for the set.</p></div>
+      <div class="studio-form-grid two">
+        <label class="studio-field"><span>RLA domain</span><select id="curriculum-domain"></select></label>
+        <label class="studio-field"><span>Primary skill</span><select id="curriculum-primary-skill"></select></label>
+        <label class="studio-field"><span>Content format</span>
+          <select id="curriculum-content-kind">
+            <option value="passage_practice">Passage practice</option>
+            <option value="skill_drill">Skill drill</option>
+            <option value="quiz">Quiz</option>
+            <option value="mixed_review">Mixed review</option>
+            <option value="editing_practice">Editing practice</option>
+            <option value="extended_response">Extended response</option>
+          </select>
+        </label>
+        <label class="studio-field"><span>Learner-facing topic</span><input id="curriculum-topic-label" placeholder="Main Idea"></label>
+      </div>
+
+      <label class="studio-field"><span>Learning objective</span><textarea id="curriculum-objective" placeholder="Example: Identify the main idea of a passage and choose the detail that best supports it."></textarea><small>Write what the learner should be able to do after this set.</small></label>
+
+      <div class="studio-section-title"><h2>Secondary skills</h2><p>Optional. Add only skills that are genuinely required.</p></div>
+      <div class="studio-secondary-skill-add">
+        <label class="studio-field"><span>Add secondary skill</span><select id="curriculum-secondary-picker"></select></label>
+        <button type="button" class="btn secondary small" id="curriculum-add-secondary">Add</button>
+      </div>
+      <div class="studio-skill-chips" id="curriculum-secondary-chips"></div>
+
+      <div class="studio-curriculum-note">
+        <strong>How this works</strong>
+        <p>The set gets one primary curriculum home. Individual questions still keep their exact primary skill, so a set may include support questions without losing its main purpose.</p>
+      </div>
+    </div>
+
+    <div class="studio-panel" data-studio-panel="set">
+      <div class="studio-panel-head">
+        <div>
+          <span class="eyebrow">Learning asset</span>
+          <h1>Question set</h1>
+          <p>Describe how the learner will encounter this set. Runtime filenames are generated from stable IDs.</p>
+        </div>
+        <span class="studio-step-state" id="set-state">Draft</span>
+      </div>
+      <div class="studio-form-grid two">
+        <label class="studio-field"><span>Set ID</span><input id="set-id" placeholder="set-rla-reading-community-garden"></label>
+        <label class="studio-field"><span>Runtime ID</span><input id="set-runtime-id" placeholder="community-garden-practice"></label>
+        <label class="studio-field"><span>Title</span><input id="set-title" placeholder="Main Idea — Community Garden"></label>
+        <label class="studio-field"><span>Category</span><select id="set-category"><option value="reading">Reading</option><option value="writing">Writing and Analysis</option><option value="language_conventions">Language Conventions</option></select></label>
+        <label class="studio-field"><span>Set difficulty</span><select id="set-difficulty"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></label>
+      </div>
+      <label class="studio-field"><span>Description</span><input id="set-description" placeholder="One clear sentence describing what this set practices."></label>
+      <div class="studio-form-grid two">
+        <label class="studio-field"><span>Passage reference</span><input id="set-passage-ref" placeholder="p-rla-community-garden"></label>
+        <label class="studio-field"><span>Runtime file</span><input id="set-runtime-file" placeholder="community-garden-practice.json"></label>
+      </div>
+      <div class="studio-form-grid three">
+        <label class="studio-field"><span>Status</span><select id="set-status"><option value="draft">Draft</option><option value="review">Review</option><option value="approved">Approved</option><option value="published">Published</option><option value="retired">Retired</option></select></label>
+        <label class="studio-field"><span>Author</span><input id="set-author" value="Studo"></label>
+        <label class="studio-field"><span>Reviewer</span><input id="set-reviewer" placeholder="Required before publish"></label>
+      </div>
+    </div>
+
+    <div class="studio-panel" data-studio-panel="questions">
+      <div class="studio-panel-head questions-head">
+        <div>
+          <span class="eyebrow">Learning task</span>
+          <h1>Questions</h1>
+          <p>Keep one primary skill per question. Wrong answers should represent believable mistakes.</p>
+        </div>
+        <button type="button" class="btn small" id="add-studio-question">+ Add question</button>
+      </div>
+      <div class="studio-question-layout">
+        <div class="studio-question-list" id="studio-question-list"></div>
+        <div class="studio-question-editor" id="studio-question-editor"></div>
+      </div>
+    </div>
+
+    <div class="studio-panel" data-studio-panel="quality">
+      <div class="studio-panel-head">
+        <div>
+          <span class="eyebrow">Before publishing</span>
+          <h1>Quality check</h1>
+          <p>These checks mirror the Phase 4 validator where possible. The command-line validator remains the final gate.</p>
+        </div>
+        <button type="button" class="btn secondary small" id="run-studio-check">Run check</button>
+      </div>
+      <div class="studio-quality-summary" id="studio-quality-summary"></div>
+      <div class="studio-quality-list" id="studio-quality-list"></div>
+    </div>
+
+    <div class="studio-panel" data-studio-panel="preview">
+      <div class="studio-panel-head">
+        <div>
+          <span class="eyebrow">Learner view</span>
+          <h1>Preview</h1>
+          <p>This is a content preview, not an exact copy of every Practice layout.</p>
+        </div>
+        <label class="studio-field preview-selector"><span>Question</span><select id="preview-question-select"></select></label>
+      </div>
+      <div id="studio-preview-mount"></div>
+    </div>
+  </section>
+
+  <aside class="studio-inspector">
+    <div class="studio-inspector-card">
+      <span class="eyebrow">Draft health</span>
+      <strong id="inspector-health">Not checked</strong>
+      <p id="inspector-health-detail">Run a quality check before saving.</p>
+    </div>
+    <div class="studio-inspector-card">
+      <span class="eyebrow">Curriculum</span>
+      <strong id="inspector-curriculum">Not assigned</strong>
+      <p id="inspector-objective">Choose a domain and primary skill.</p>
+    </div>
+    <div class="studio-inspector-card">
+      <span class="eyebrow">Current question</span>
+      <strong id="inspector-skill">No question yet</strong>
+      <p id="inspector-family">Add a question to start authoring.</p>
+    </div>
+    <div class="studio-inspector-card studio-save-card">
+      <span class="eyebrow">Save</span>
+      <p>If a project folder is connected, Studio writes directly to <code>content-src/</code>. Otherwise it downloads the source JSON files.</p>
+      <button type="button" class="btn" id="save-source-btn">Save source files</button>
+      <button type="button" class="btn secondary" id="download-source-btn">Download source JSON</button>
+      <button type="button" class="btn ghost" id="copy-build-command">Copy build command</button>
+      <span class="studio-save-message" id="studio-save-message"></span>
+    </div>
+  </aside>
+</main>
+
+<script src="js/theme.js"></script>
+<script type="module" src="js/content-studio.js"></script>
+</body>
+</html>

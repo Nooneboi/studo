@@ -3,85 +3,330 @@
   "$id": "https://studo.local/schema/question-set-v2.json",
   "title": "Studo Question Set v2",
   "type": "object",
-  "required": ["schemaVersion", "id", "title", "subject", "category", "topic", "difficulty", "status", "version", "questions"],
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "subject",
+    "category",
+    "topic",
+    "difficulty",
+    "curriculum",
+    "status",
+    "version",
+    "questions"
+  ],
   "properties": {
-    "schemaVersion": {"const": 2},
-    "id": {"type": "string", "pattern": "^set-[a-z0-9-]+$"},
+    "schemaVersion": {
+      "const": 2
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^set-[a-z0-9-]+$"
+    },
     "runtime": {
       "type": "object",
       "properties": {
-        "id": {"type": "string"},
-        "file": {"type": "string", "pattern": "^[a-z0-9-]+\\.json$"}
+        "id": {
+          "type": "string"
+        },
+        "file": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+\\.json$"
+        }
       },
       "additionalProperties": false
     },
-    "title": {"type": "string", "minLength": 1},
-    "description": {"type": "string"},
-    "subject": {"type": "string", "enum": ["rla", "math", "science", "social_studies"]},
-    "category": {"type": "string", "minLength": 1},
-    "topic": {"type": "string", "minLength": 1},
-    "difficulty": {"type": "string", "enum": ["easy", "medium", "hard"]},
-    "status": {"type": "string", "enum": ["draft", "review", "approved", "published", "retired"]},
-    "version": {"type": "integer", "minimum": 1},
-    "passageRefs": {"type": "array", "items": {"type": "string", "pattern": "^p-[a-z0-9-]+$"}, "uniqueItems": true},
-    "questions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/question"}},
-    "author": {"type": "string"},
-    "reviewer": {"type": ["string", "null"]},
-    "reviewNotes": {"type": "string"}
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string",
+      "enum": [
+        "rla",
+        "math",
+        "science",
+        "social_studies"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "published",
+        "retired"
+      ]
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "passageRefs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^p-[a-z0-9-]+$"
+      },
+      "uniqueItems": true
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/question"
+      }
+    },
+    "author": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewNotes": {
+      "type": "string"
+    },
+    "curriculum": {
+      "type": "object",
+      "required": [
+        "domain",
+        "primarySkillId",
+        "contentKind"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primarySkillId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secondarySkillIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "contentKind": {
+          "type": "string",
+          "enum": [
+            "passage_practice",
+            "skill_drill",
+            "quiz",
+            "mixed_review",
+            "editing_practice",
+            "extended_response"
+          ]
+        },
+        "learningObjective": {
+          "type": "string"
+        },
+        "topicLabel": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
   },
   "$defs": {
     "difficultyProfile": {
       "type": "object",
       "properties": {
-        "textComplexity": {"type": "integer", "minimum": 1, "maximum": 3},
-        "reasoningDepth": {"type": "integer", "minimum": 1, "maximum": 3},
-        "evidenceDistance": {"type": "integer", "minimum": 1, "maximum": 3},
-        "distractorSimilarity": {"type": "integer", "minimum": 1, "maximum": 3},
-        "sourceCount": {"type": "integer", "minimum": 1, "maximum": 3},
-        "responseDemand": {"type": "integer", "minimum": 1, "maximum": 3}
+        "textComplexity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "reasoningDepth": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "evidenceDistance": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "distractorSimilarity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "sourceCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "responseDemand": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        }
       },
       "additionalProperties": false
     },
     "option": {
       "type": "object",
-      "required": ["id", "text"],
+      "required": [
+        "id",
+        "text"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z0-9_-]+$"},
-        "text": {"type": "string", "minLength": 1},
-        "distractorType": {"type": ["string", "null"]},
-        "whyWrong": {"type": ["string", "null"]}
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_-]+$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distractorType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "whyWrong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     },
     "explanation": {
       "type": "object",
-      "required": ["answer", "whyCorrect"],
+      "required": [
+        "answer",
+        "whyCorrect"
+      ],
       "properties": {
-        "answer": {"type": "string"},
-        "whyCorrect": {"type": "string", "minLength": 1},
-        "quickTip": {"type": "string"},
-        "evidenceRef": {"type": ["string", "null"]}
+        "answer": {
+          "type": "string"
+        },
+        "whyCorrect": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quickTip": {
+          "type": "string"
+        },
+        "evidenceRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     },
     "question": {
       "type": "object",
-      "required": ["id", "type", "prompt", "primarySkillId", "familyId", "difficulty", "dok", "explanation"],
+      "required": [
+        "id",
+        "type",
+        "prompt",
+        "primarySkillId",
+        "familyId",
+        "difficulty",
+        "dok",
+        "explanation"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^q[0-9]+$"},
-        "type": {"type": "string", "enum": ["multiple_choice", "evidence_based", "grammar_edit", "fill_blank", "open_ended", "extended_response"]},
-        "prompt": {"type": "string", "minLength": 1},
-        "primarySkillId": {"type": "string"},
-        "secondarySkillIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-        "familyId": {"type": "string", "minLength": 1},
-        "difficulty": {"type": "string", "enum": ["easy", "medium", "hard"]},
-        "dok": {"type": "integer", "minimum": 1, "maximum": 3},
-        "difficultyProfile": {"$ref": "#/$defs/difficultyProfile"},
-        "points": {"type": "integer", "minimum": 1},
-        "estimatedSeconds": {"type": "integer", "minimum": 0},
-        "options": {"type": "array", "items": {"$ref": "#/$defs/option"}},
+        "id": {
+          "type": "string",
+          "pattern": "^q[0-9]+$"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "multiple_choice",
+            "evidence_based",
+            "grammar_edit",
+            "fill_blank",
+            "open_ended",
+            "extended_response"
+          ]
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primarySkillId": {
+          "type": "string"
+        },
+        "secondarySkillIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "familyId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "dok": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "difficultyProfile": {
+          "$ref": "#/$defs/difficultyProfile"
+        },
+        "points": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "estimatedSeconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/option"
+          }
+        },
         "correct": {},
-        "explanation": {"$ref": "#/$defs/explanation"}
+        "explanation": {
+          "$ref": "#/$defs/explanation"
+        }
       },
       "additionalProperties": false
     }

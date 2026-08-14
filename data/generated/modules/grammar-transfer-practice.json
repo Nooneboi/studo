@@ -124,6 +124,16 @@
   "contentMeta": {
     "sourceSetId": "set-rla-grammar-precision-check",
     "sourceVersion": 1,
-    "compiledAt": "2026-08-14T09:10:15.269Z"
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.2",
+      "secondarySkillIds": [
+        "L1.1"
+      ],
+      "contentKind": "editing_practice",
+      "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+      "topicLabel": "Grammar & Usage"
+    },
+    "compiledAt": "2026-08-14T11:27:59.750Z"
   }
 }

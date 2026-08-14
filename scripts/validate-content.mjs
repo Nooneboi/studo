@@ -9,6 +9,7 @@ const SRC = path.join(ROOT, 'content-src');
 const VALID_DIFFICULTIES = new Set(['easy', 'medium', 'hard']);
 const VALID_STATUS = new Set(['draft', 'review', 'approved', 'published', 'retired']);
 const VALID_RIGHTS = new Set(['original', 'public_domain', 'licensed', 'permission']);
+const VALID_CONTENT_KINDS = new Set(['passage_practice','skill_drill','quiz','mixed_review','editing_practice','extended_response']);
 const GENERIC_STARTS = [
   'the passage illustrates',
   'this answer is correct because',
@@ -92,6 +93,18 @@ export async function validateContent({ quiet = false } = {}) {
     if (set.status === 'published' && !set.reviewer) add(issues, 'error', 'PUBLISHED_WITHOUT_REVIEWER', `Published set ${set.id} needs a reviewer.`, file);
     if (!Array.isArray(set.questions) || !set.questions.length) add(issues, 'error', 'SET_QUESTIONS_MISSING', `Set ${set.id} has no questions.`, file);
 
+    const curriculum = set.curriculum || {};
+    const curriculumSkill = curriculum.primarySkillId ? skills.get(curriculum.primarySkillId) : null;
+    if (!curriculum.domain) add(issues, 'error', 'CURRICULUM_DOMAIN_MISSING', `Set ${set.id} needs a curriculum domain.`, file, set.id);
+    if (!curriculum.primarySkillId || !curriculumSkill) add(issues, 'error', 'CURRICULUM_SKILL_INVALID', `Set ${set.id} needs a valid curriculum primarySkillId.`, file, set.id);
+    if (curriculumSkill && curriculum.domain && curriculumSkill.domain !== curriculum.domain) add(issues, 'error', 'CURRICULUM_DOMAIN_MISMATCH', `Set ${set.id} says ${curriculum.domain}, but ${curriculum.primarySkillId} belongs to ${curriculumSkill.domain}.`, file, set.id);
+    if (!VALID_CONTENT_KINDS.has(curriculum.contentKind)) add(issues, 'error', 'CURRICULUM_KIND_INVALID', `Set ${set.id} needs a valid curriculum contentKind.`, file, set.id);
+    if (!curriculum.learningObjective) add(issues, 'warning', 'LEARNING_OBJECTIVE_MISSING', `Set ${set.id} has no learner-facing learning objective.`, file, set.id);
+    for (const sid of curriculum.secondarySkillIds || []) {
+      if (!skills.has(sid)) add(issues, 'error', 'CURRICULUM_SECONDARY_SKILL_INVALID', `Set ${set.id} uses unknown curriculum secondary skill ${sid}.`, file, set.id);
+      if (sid === curriculum.primarySkillId) add(issues, 'warning', 'CURRICULUM_SECONDARY_DUPLICATES_PRIMARY', `Set ${set.id} repeats its primary skill as a secondary skill.`, file, set.id);
+    }
+
     for (const ref of set.passageRefs || []) {
       if (!passages.has(ref)) add(issues, 'error', 'PASSAGE_REF_UNKNOWN', `Set ${set.id} references unknown passage ${ref}.`, file, ref);
     }
@@ -146,6 +159,11 @@ export async function validateContent({ quiet = false } = {}) {
       const expLower = exp.trim().toLowerCase();
       if (GENERIC_STARTS.some((x) => expLower.startsWith(x))) add(issues, 'warning', 'EXPLANATION_GENERIC', `${qloc} explanation starts with generic/AI-like wording.`, file, qloc);
       if (q.difficulty === 'hard' && (q.difficultyProfile?.reasoningDepth || 1) < 2) add(issues, 'warning', 'HARD_LOW_REASONING', `${qloc} is hard but reasoningDepth is below 2.`, file, qloc);
+    }
+
+    if (curriculum.primarySkillId && curriculum.contentKind !== 'mixed_review') {
+      const hasPrimaryQuestion = (set.questions || []).some((q) => q.primarySkillId === curriculum.primarySkillId);
+      if (!hasPrimaryQuestion) add(issues, 'warning', 'CURRICULUM_PRIMARY_NOT_TESTED', `Set ${set.id} is attached to ${curriculum.primarySkillId}, but none of its questions directly test that skill.`, file, set.id);
     }
 
     if (correctPositions.length >= 4) {

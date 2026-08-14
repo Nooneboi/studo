@@ -5,11 +5,11 @@
     "id": "evidence-transfer-practice",
     "file": "evidence-transfer-practice.json"
   },
-  "title": "Evidence & Inference — The Last Bus",
+  "title": "Evidence & Inference \u2014 The Last Bus",
   "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
   "subject": "rla",
   "category": "reading",
-  "topic": "Evidence & Inference",
+  "topic": "Inference & Evidence",
   "difficulty": "medium",
   "status": "published",
   "version": 1,
@@ -127,5 +127,15 @@
         "evidenceRef": "catch-bus-evidence"
       }
     }
-  ]
+  ],
+  "curriculum": {
+    "domain": "Relationships & Inference",
+    "primarySkillId": "R2.4",
+    "secondarySkillIds": [
+      "R5.3"
+    ],
+    "contentKind": "passage_practice",
+    "learningObjective": "Use a character\u2019s actions to make an inference, then match that inference to direct evidence.",
+    "topicLabel": "Inference & Evidence"
+  }
 }

@@ -4,7 +4,7 @@
   "description": "Choose relevant evidence, then use source evidence in a short argument.",
   "subject": "rla",
   "category": "writing",
-  "topic": "Organizing Ideas",
+  "topic": "Evidence Relevance",
   "difficulty": "easy",
   "source": "Original content by Studo",
   "passage": "Some city council members argue that the downtown library should extend its hours to include Sunday openings, citing rising weekend foot traffic downtown and requests from working families who can't visit on weekdays. Others argue that Sunday hours would strain an already tight budget and that usage data doesn't yet justify the cost.",
@@ -100,6 +100,16 @@
   "contentMeta": {
     "sourceSetId": "set-rla-writing-library-hours",
     "sourceVersion": 1,
-    "compiledAt": "2026-08-14T09:10:15.271Z"
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.4",
+      "secondarySkillIds": [
+        "W1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+      "topicLabel": "Evidence Relevance"
+    },
+    "compiledAt": "2026-08-14T11:27:59.753Z"
   }
 }
