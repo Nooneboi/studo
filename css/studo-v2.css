@@ -3678,3 +3678,295 @@ body.test-body {
     gap: 4px;
   }
 }
+
+/* Phase 4D — curriculum-driven learner navigation ------------------------
+   The full RLA map exists, but it is revealed progressively:
+   Practice track -> domain -> skill -> available set.
+   ------------------------------------------------------------------------- */
+.curriculum-main {
+  min-height: calc(100vh - 170px);
+}
+.curriculum-wrap {
+  max-width: 1180px;
+  padding-top: 44px;
+  padding-bottom: 64px;
+}
+.curriculum-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 42px;
+  align-items: end;
+  padding: 8px 0 34px;
+  border-bottom: 1px solid var(--color-line);
+}
+.curriculum-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 72px;
+  height: 2px;
+  background: var(--color-primary);
+}
+.curriculum-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--color-ink-soft);
+  font-size: .82rem;
+  font-weight: 650;
+}
+.curriculum-hero h1 {
+  margin: 7px 0 12px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+.curriculum-hero p {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--color-ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+.curriculum-hero-meta {
+  min-width: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: end;
+}
+.curriculum-hero-meta > div {
+  padding-top: 10px;
+  border-top: 1px solid var(--color-line);
+}
+.curriculum-hero-meta strong {
+  display: block;
+  font-size: 1.35rem;
+  letter-spacing: -.03em;
+}
+.curriculum-hero-meta span {
+  display: block;
+  margin-top: 3px;
+  color: var(--color-ink-faint);
+  font-size: .75rem;
+}
+.curriculum-hero-meta .btn {
+  grid-column: 1 / -1;
+  justify-content: center;
+}
+.curriculum-track-tabs {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 20px 0 0;
+  border-bottom: 1px solid var(--color-line);
+  scrollbar-width: none;
+}
+.curriculum-track-tabs::-webkit-scrollbar { display: none; }
+.curriculum-track-tabs a {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 0 0 14px;
+  color: var(--color-ink-faint);
+  font-size: .83rem;
+  font-weight: 650;
+}
+.curriculum-track-tabs a.active {
+  color: var(--color-ink);
+}
+.curriculum-track-tabs a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--color-primary);
+}
+.curriculum-domains {
+  display: grid;
+  gap: 0;
+  margin-top: 30px;
+  border-top: 1px solid var(--color-line);
+}
+.curriculum-domain {
+  border-bottom: 1px solid var(--color-line);
+}
+.curriculum-domain > summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 26px;
+  align-items: center;
+  padding: 26px 2px;
+  cursor: pointer;
+}
+.curriculum-domain > summary::-webkit-details-marker,
+.curriculum-skill > summary::-webkit-details-marker { display: none; }
+.curriculum-domain-copy h2 {
+  margin: 0 0 6px;
+  font-size: 1.28rem;
+  letter-spacing: -.02em;
+}
+.curriculum-domain-copy p {
+  margin: 0;
+  max-width: 66ch;
+  color: var(--color-ink-soft);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.curriculum-domain-status {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+  white-space: nowrap;
+}
+.curriculum-chevron {
+  display: inline-flex;
+  transition: transform .16s ease;
+  font-size: 1rem;
+}
+.curriculum-domain[open] .curriculum-chevron { transform: rotate(180deg); }
+.curriculum-skill-list {
+  border-top: 1px solid var(--color-line);
+}
+.curriculum-skill {
+  border-bottom: 1px solid var(--color-line);
+}
+.curriculum-skill:last-child { border-bottom: 0; }
+.curriculum-skill > summary,
+.curriculum-skill.is-unavailable {
+  min-height: 62px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 0 18px;
+}
+.curriculum-skill.is-available > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.curriculum-skill.is-available > summary:hover {
+  background: var(--color-surface-soft);
+}
+.curriculum-skill-main {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.curriculum-skill-name {
+  color: var(--color-ink);
+  font-size: .94rem;
+  font-weight: 650;
+}
+.curriculum-skill-note,
+.curriculum-skill-state {
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+}
+.curriculum-skill.is-unavailable {
+  opacity: .58;
+}
+.curriculum-signal {
+  min-height: 22px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--color-surface-soft);
+  color: var(--color-ink-soft);
+  font-size: .7rem;
+  font-weight: 700;
+}
+.curriculum-signal.is-review,
+.curriculum-signal.is-needs {
+  background: var(--color-warning-soft, var(--color-surface-soft));
+  color: var(--color-warning, var(--color-ink-soft));
+}
+.curriculum-signal.is-strong {
+  background: var(--color-success-soft, var(--color-surface-soft));
+  color: var(--color-success);
+}
+.curriculum-set-list {
+  display: grid;
+  border-top: 1px solid var(--color-line);
+  background: var(--color-surface-soft);
+}
+.curriculum-set {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 17px 18px 17px 42px;
+  border-bottom: 1px solid var(--color-line);
+}
+.curriculum-set:last-child { border-bottom: 0; }
+.curriculum-set:hover {
+  background: var(--color-surface);
+}
+.curriculum-set strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-ink);
+  font-size: .88rem;
+}
+.curriculum-set > div:first-child span {
+  display: block;
+  max-width: 65ch;
+  color: var(--color-ink-soft);
+  font-size: .78rem;
+  line-height: 1.45;
+}
+.curriculum-set-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-ink-faint);
+  font-size: .7rem;
+  white-space: nowrap;
+}
+.curriculum-set-meta span + span::before {
+  content: "·";
+  margin-right: 10px;
+}
+.curriculum-set-meta b {
+  margin-left: 4px;
+  color: var(--color-primary-dark);
+  font-size: .86rem;
+}
+
+@media (max-width: 860px) {
+  .curriculum-hero {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    align-items: start;
+  }
+  .curriculum-hero-meta {
+    max-width: 420px;
+  }
+  .curriculum-domain > summary,
+  .curriculum-skill > summary,
+  .curriculum-skill.is-unavailable,
+  .curriculum-set {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .curriculum-domain-status,
+  .curriculum-skill-note {
+    justify-self: start;
+  }
+  .curriculum-set {
+    gap: 10px;
+    padding-left: 18px;
+  }
+  .curriculum-set-meta {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}

@@ -1,33 +1,9 @@
 /*
-  practice.js — Practice hub
-  --------------------------
-  The hub should feel useful on repeat visits, not like a static directory.
-  It shows one next-step cue, then three calm study-area panels.
+  practice.js — curriculum-driven Practice hub
+  --------------------------------------------
+  The learner sees four calm tracks. The richer 8-domain RLA taxonomy stays
+  underneath and powers each track rather than being dumped onto the homepage.
 */
-
-const CATEGORIES = [
-  {
-    id: "reading",
-    label: "Reading",
-    summary: "Understand what a passage says, what it implies, and which details actually support an answer.",
-    topics: ["Main idea", "Inference", "Evidence", "Author's purpose"],
-    accent: "blue",
-  },
-  {
-    id: "writing",
-    label: "Writing and Analysis",
-    summary: "Work with claims, evidence, reasoning, tone, and revision.",
-    topics: ["Claims", "Evidence", "Reasoning", "Revision"],
-    accent: "violet",
-  },
-  {
-    id: "language_conventions",
-    label: "Language Conventions",
-    summary: "Edit grammar, punctuation, sentence boundaries, and word choice in context.",
-    topics: ["Grammar", "Punctuation", "Sentence structure", "Word choice"],
-    accent: "teal",
-  },
-];
 
 init();
 
@@ -41,36 +17,47 @@ async function init() {
     return;
   }
 
-  let modules = [];
+  let curriculum = null;
   try {
-    modules = (await Data.loadAllQuizzes()).filter((m) => (m.subject || "rla") === "rla");
-  } catch (_) {}
+    curriculum = await Data.loadCurriculum();
+  } catch (_) {
+    listEl.innerHTML = `<div class="empty-state">The curriculum map could not be loaded. Run the content build and try again.</div>`;
+    return;
+  }
 
-  renderNextStep(modules);
+  renderNextStep();
+  renderTracks(curriculum.tracks || []);
+}
 
-  listEl.innerHTML = CATEGORIES.map((category, index) => {
-    const inCategory = modules.filter((m) => (m.category || "reading") === category.id);
-    const questionCount = inCategory.reduce((sum, m) => sum + (m.questions?.length || 0), 0);
-    const moduleCount = inCategory.length;
-    const topicMarkup = category.topics.map((topic) => `<span>${escapeHtml(topic)}</span>`).join("");
+function renderTracks(tracks) {
+  const listEl = document.getElementById("category-list");
+  const countEl = document.getElementById("practice-area-count");
+  if (countEl) countEl.textContent = `${tracks.length} tracks`;
+
+  listEl.innerHTML = tracks.map((track, index) => {
+    const availableDomains = track.domains.filter((d) => d.availableSkillCount > 0);
+    const domainLabels = track.domains.slice(0, 4).map((d) => `<span>${escapeHtml(d.label)}</span>`).join("");
+    const availability = track.availableSetCount
+      ? `${track.availableSetCount} set${track.availableSetCount === 1 ? "" : "s"} · ${track.questionCount} skill q`
+      : "Curriculum mapped · practice coming next";
 
     return `
-      <a class="practice-area-card practice-area-${category.accent}" href="category.html?subject=rla&cat=${category.id}">
+      <a class="practice-area-card practice-area-${escapeHtml(track.accent || "blue")}" href="curriculum.html?track=${encodeURIComponent(track.id)}">
         <div class="practice-area-topline">
           <span class="practice-area-index">${String(index + 1).padStart(2, "0")}</span>
-          <span class="practice-area-count">${moduleCount} set${moduleCount === 1 ? "" : "s"} · ${questionCount} q</span>
+          <span class="practice-area-count">${escapeHtml(availability)}</span>
         </div>
         <div>
-          <h3>${escapeHtml(category.label)}</h3>
-          <p>${escapeHtml(category.summary)}</p>
+          <h3>${escapeHtml(track.label)}</h3>
+          <p>${escapeHtml(track.summary)}</p>
         </div>
-        <div class="practice-area-topics" aria-label="Example skills">${topicMarkup}</div>
-        <div class="practice-area-open">Explore area <span aria-hidden="true">→</span></div>
+        <div class="practice-area-topics" aria-label="Curriculum areas">${domainLabels}</div>
+        <div class="practice-area-open">${track.availableSetCount ? "Explore track" : "View curriculum"} <span aria-hidden="true">→</span></div>
       </a>`;
   }).join("");
 }
 
-function renderNextStep(modules) {
+function renderNextStep() {
   const mount = document.getElementById("practice-next-mount");
   if (!mount) return;
 
@@ -84,8 +71,8 @@ function renderNextStep(modules) {
     const due = summary.dueReviews || summary.activeMistakes || 0;
     const headline = nextSkill ? nextSkill.label : "Keep your skills moving";
     const note = due
-      ? `${due} review${due === 1 ? " is" : "s are"} waiting. Studo can mix those with fresh practice.`
-      : "Your recent work is saved. A short mixed session is ready when you are.";
+      ? `${due} review${due === 1 ? " is" : "s are"} ready. Studo can mix them with fresh questions.`
+      : "Your recent work is saved. A short focused session is ready when you are.";
 
     mount.innerHTML = `
       <aside class="practice-next-card">
@@ -93,8 +80,8 @@ function renderNextStep(modules) {
         <h2>${escapeHtml(headline)}</h2>
         <p>${escapeHtml(note)}</p>
         <div class="practice-next-actions">
-          <a class="btn" href="train.html">Start focused session</a>
-          <a class="text-link" href="progress.html">Why this? →</a>
+          <a class="btn" href="train.html">Train me</a>
+          <a class="text-link" href="progress.html">View progress →</a>
         </div>
       </aside>`;
     return;
@@ -102,12 +89,12 @@ function renderNextStep(modules) {
 
   mount.innerHTML = `
     <aside class="practice-next-card is-new">
-      <div class="practice-next-label">New here?</div>
-      <h2>Start with a short baseline.</h2>
-      <p>Studo will use your first few answers to decide what deserves more practice later.</p>
+      <div class="practice-next-label">Start simple</div>
+      <h2>Try a short baseline.</h2>
+      <p>Your first few answers help Studo decide what deserves more practice later.</p>
       <div class="practice-next-actions">
         <a class="btn" href="train.html">Build baseline</a>
-        <a class="text-link" href="category.html?subject=rla&cat=reading">Browse Reading →</a>
+        <a class="text-link" href="curriculum.html?track=reading">Browse Reading →</a>
       </div>
     </aside>`;
 }

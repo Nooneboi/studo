@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<title>Studo — Practice</title>
-<meta name="description" content="Focused GED practice organized by skill area, from foundations to harder sets.">
+<title>Studo — Curriculum</title>
+<meta name="description" content="Browse RLA practice by track, domain, and skill.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="css/studo-v2.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Studo</a>
@@ -34,32 +33,8 @@
 </header>
 <div id="subject-bar-mount"></div>
 
-<main class="practice-main">
-  <div class="wrap practice-wrap">
-    <section class="practice-hero" aria-labelledby="practice-title">
-      <div class="practice-hero-copy">
-        <div class="page-kicker">Reasoning Through Language Arts</div>
-        <h1 id="practice-title">Practice</h1>
-        <p>Build one skill at a time. Choose a track yourself, or let Studo build a short session from what you need most.</p>
-        <div class="practice-hero-actions">
-          <a class="btn" href="train.html">Train me</a>
-          <a class="btn secondary" href="progress.html">View progress</a>
-        </div>
-      </div>
-      <div id="practice-next-mount" class="practice-next-mount" aria-live="polite"></div>
-    </section>
-
-    <section class="practice-directory" aria-labelledby="practice-directory-title">
-      <div class="directory-heading">
-        <div>
-          <div class="directory-kicker">Choose a track</div>
-          <h2 id="practice-directory-title">Practice tracks</h2>
-        </div>
-        <span id="practice-area-count">4 tracks</span>
-      </div>
-      <div class="category-grid" id="category-list"></div>
-    </section>
-  </div>
+<main class="curriculum-main">
+  <div class="wrap curriculum-wrap" id="curriculum-view"></div>
 </main>
 
 <footer class="site-footer">
@@ -72,11 +47,6 @@
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
 <script src="js/learning.js"></script>
-<script src="js/practice.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
+<script src="js/curriculum.js"></script>
 </body>
 </html>

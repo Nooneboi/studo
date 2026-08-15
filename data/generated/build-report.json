@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-14T11:27:59.753Z",
+  "builtAt": "2026-08-14T12:50:15.366Z",
   "publishedSourceSets": [
     "set-rla-evidence-last-bus",
     "set-rla-evidence-night-shift",
@@ -15,6 +15,7 @@
     "generated/modules/grammar-practice.json",
     "generated/modules/writing-practice.json"
   ],
+  "curriculumFile": "data/generated/curriculum.json",
   "warnings": [
     {
       "type": "warning",

@@ -1,0 +1,1029 @@
+{
+  "schemaVersion": 1,
+  "subject": "rla",
+  "builtAt": "2026-08-14T12:50:15.365Z",
+  "tracks": [
+    {
+      "id": "reading",
+      "label": "Reading & Comprehension",
+      "shortLabel": "Reading",
+      "summary": "Understand what a passage says, what it implies, and how the writer builds meaning.",
+      "accent": "blue",
+      "domains": [
+        {
+          "id": "core-meaning",
+          "label": "Core Meaning",
+          "summary": "Find the central idea, key details, summary, and theme.",
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
+          "skills": [
+            {
+              "id": "R1.1",
+              "runtimeId": "R1.1",
+              "label": "Explicit meaning",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R1.2",
+              "runtimeId": "R1.2",
+              "label": "Main idea / central idea",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R1.3",
+              "runtimeId": "R1.3",
+              "label": "Supporting details",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R1.4",
+              "runtimeId": "R1.4",
+              "label": "Summary",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R1.5",
+              "runtimeId": "R1.5",
+              "label": "Theme",
+              "priority": "P1",
+              "practiceMode": "Literary",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        },
+        {
+          "id": "relationships-inference",
+          "label": "Relationships & Inference",
+          "summary": "Connect details, follow relationships, and read between the lines.",
+          "availableSkillCount": 1,
+          "availableSetCount": 2,
+          "skills": [
+            {
+              "id": "R2.1",
+              "runtimeId": "R2.1",
+              "label": "Sequence",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R2.2",
+              "runtimeId": "R2.2",
+              "label": "Cause and effect",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R2.3",
+              "runtimeId": "R2.3",
+              "label": "Compare and contrast",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R2.4",
+              "runtimeId": "reading.inference.from_details",
+              "label": "Inference from details",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": true,
+              "setCount": 2,
+              "questionCount": 4,
+              "sets": [
+                {
+                  "id": "set-rla-evidence-last-bus",
+                  "title": "Evidence & Inference — The Last Bus",
+                  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+                  "file": "generated/modules/evidence-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R5.3"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
+                    "topicLabel": "Inference & Evidence"
+                  }
+                },
+                {
+                  "id": "set-rla-evidence-night-shift",
+                  "title": "Evidence-Based Reading — The Night Shift",
+                  "description": "Practice making an inference, then choosing the evidence that proves it.",
+                  "file": "generated/modules/evidence-practice.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R5.3"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
+                    "topicLabel": "Inference & Evidence"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "R2.5",
+              "runtimeId": "R2.5",
+              "label": "Conclusions & generalizations",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R2.6",
+              "runtimeId": "R2.6",
+              "label": "Relationships among people, events & ideas",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        },
+        {
+          "id": "words-tone-style",
+          "label": "Words, Tone & Style",
+          "summary": "Use context and word choice to understand meaning, tone, and style.",
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
+          "skills": [
+            {
+              "id": "R3.1",
+              "runtimeId": "R3.1",
+              "label": "Meaning in context",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R3.2",
+              "runtimeId": "R3.2",
+              "label": "Connotation",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R3.3",
+              "runtimeId": "R3.3",
+              "label": "Figurative language",
+              "priority": "P1",
+              "practiceMode": "Literary",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R3.4",
+              "runtimeId": "R3.4",
+              "label": "Tone",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R3.5",
+              "runtimeId": "R3.5",
+              "label": "Impact of word choice",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        },
+        {
+          "id": "structure-purpose-pov",
+          "label": "Structure, Purpose & POV",
+          "summary": "See how parts of a text work together and what the writer is trying to do.",
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
+          "skills": [
+            {
+              "id": "R4.1",
+              "runtimeId": "R4.1",
+              "label": "Paragraph / section function",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R4.2",
+              "runtimeId": "R4.2",
+              "label": "Text structure",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R4.3",
+              "runtimeId": "R4.3",
+              "label": "Transitions & signal words",
+              "priority": "P1",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R4.4",
+              "runtimeId": "R4.4",
+              "label": "Author purpose",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R4.5",
+              "runtimeId": "R4.5",
+              "label": "Point of view / perspective",
+              "priority": "P0",
+              "practiceMode": "Reading",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R4.6",
+              "runtimeId": "R4.6",
+              "label": "Rhetorical technique",
+              "priority": "P1",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        }
+      ],
+      "availableSkillCount": 1,
+      "totalSkillCount": 22,
+      "availableSetCount": 2,
+      "questionCount": 4
+    },
+    {
+      "id": "arguments",
+      "label": "Arguments & Sources",
+      "shortLabel": "Arguments",
+      "summary": "Judge claims, evidence, reasoning, and how multiple sources support or challenge each other.",
+      "accent": "violet",
+      "domains": [
+        {
+          "id": "argument-analysis",
+          "label": "Argument Analysis",
+          "summary": "Test claims, evidence, assumptions, reasoning, and counterarguments.",
+          "availableSkillCount": 2,
+          "availableSetCount": 3,
+          "skills": [
+            {
+              "id": "R5.1",
+              "runtimeId": "R5.1",
+              "label": "Claim identification",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.2",
+              "runtimeId": "R5.2",
+              "label": "Argument chain / structure",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.3",
+              "runtimeId": "reading.evidence.matching",
+              "label": "Evidence identification",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-evidence-last-bus",
+                  "title": "Evidence & Inference — The Last Bus",
+                  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+                  "file": "generated/modules/evidence-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R5.3"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
+                    "topicLabel": "Inference & Evidence"
+                  }
+                },
+                {
+                  "id": "set-rla-evidence-night-shift",
+                  "title": "Evidence-Based Reading — The Night Shift",
+                  "description": "Practice making an inference, then choosing the evidence that proves it.",
+                  "file": "generated/modules/evidence-practice.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R5.3"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
+                    "topicLabel": "Inference & Evidence"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "R5.4",
+              "runtimeId": "writing.evidence.relevance",
+              "label": "Evidence relevance",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-writing-library-hours",
+                  "title": "Organizing an Argument",
+                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
+                  "file": "generated/modules/writing-practice.json",
+                  "difficulty": "easy",
+                  "category": "writing",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+                    "topicLabel": "Evidence Relevance"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "R5.5",
+              "runtimeId": "R5.5",
+              "label": "Evidence sufficiency",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.6",
+              "runtimeId": "R5.6",
+              "label": "Supported vs unsupported claims",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.7",
+              "runtimeId": "R5.7",
+              "label": "Reasoning validity / fallacies",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.8",
+              "runtimeId": "R5.8",
+              "label": "Assumptions & premises",
+              "priority": "P0",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.9",
+              "runtimeId": "R5.9",
+              "label": "Source credibility",
+              "priority": "P2",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R5.10",
+              "runtimeId": "R5.10",
+              "label": "Counterargument & response",
+              "priority": "P1",
+              "practiceMode": "Argument",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        },
+        {
+          "id": "multiple-texts-formats",
+          "label": "Multiple Texts & Formats",
+          "summary": "Compare sources, arguments, data, and information across formats.",
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
+          "skills": [
+            {
+              "id": "R6.1",
+              "runtimeId": "R6.1",
+              "label": "Compare texts on same topic",
+              "priority": "P1",
+              "practiceMode": "Multi-source",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R6.2",
+              "runtimeId": "R6.2",
+              "label": "Opposing arguments",
+              "priority": "P0",
+              "practiceMode": "Multi-source",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R6.3",
+              "runtimeId": "R6.3",
+              "label": "Text + data / visuals",
+              "priority": "P1",
+              "practiceMode": "Multi-source",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R6.4",
+              "runtimeId": "R6.4",
+              "label": "Different genres / formats",
+              "priority": "P1",
+              "practiceMode": "Multi-source",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "R6.5",
+              "runtimeId": "R6.5",
+              "label": "Synthesis across sources",
+              "priority": "P0",
+              "practiceMode": "Multi-source",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        }
+      ],
+      "availableSkillCount": 2,
+      "totalSkillCount": 15,
+      "availableSetCount": 3,
+      "questionCount": 3
+    },
+    {
+      "id": "language",
+      "label": "Language & Editing",
+      "shortLabel": "Language",
+      "summary": "Edit sentences and passages for grammar, punctuation, clarity, and precise word choice.",
+      "accent": "teal",
+      "domains": [
+        {
+          "id": "language-editing",
+          "label": "Language & Editing",
+          "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context.",
+          "availableSkillCount": 2,
+          "availableSetCount": 2,
+          "skills": [
+            {
+              "id": "L1.1",
+              "runtimeId": "language.usage.word_choice",
+              "label": "Frequently confused words",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-grammar-precision-check",
+                  "title": "Grammar Transfer — Precision Check",
+                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+                  "file": "generated/modules/grammar-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+                    "topicLabel": "Grammar & Usage"
+                  }
+                },
+                {
+                  "id": "set-rla-grammar-sentence-repair",
+                  "title": "Grammar Edit — Sentence Repair",
+                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+                  "file": "generated/modules/grammar-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+                    "topicLabel": "Grammar & Usage"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "L1.2",
+              "runtimeId": "language.grammar.subject_verb_agreement",
+              "label": "Basic subject–verb agreement",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-grammar-precision-check",
+                  "title": "Grammar Transfer — Precision Check",
+                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+                  "file": "generated/modules/grammar-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+                    "topicLabel": "Grammar & Usage"
+                  }
+                },
+                {
+                  "id": "set-rla-grammar-sentence-repair",
+                  "title": "Grammar Edit — Sentence Repair",
+                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+                  "file": "generated/modules/grammar-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+                    "topicLabel": "Grammar & Usage"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "L1.3",
+              "runtimeId": "L1.3",
+              "label": "Pronoun agreement, reference & case",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L1.4",
+              "runtimeId": "L1.4",
+              "label": "Standard vs informal usage",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L1.5",
+              "runtimeId": "L1.5",
+              "label": "Modifiers & logical word order",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L1.6",
+              "runtimeId": "L1.6",
+              "label": "Parallelism, coordination & subordination",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L1.7",
+              "runtimeId": "L1.7",
+              "label": "Complex agreement",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L1.8",
+              "runtimeId": "L1.8",
+              "label": "Wordiness & awkward construction",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L1.9",
+              "runtimeId": "L1.9",
+              "label": "Transitions for logic & clarity",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L2.1",
+              "runtimeId": "L2.1",
+              "label": "Capitalization",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L2.2",
+              "runtimeId": "L2.2",
+              "label": "Fragments, run-ons & fused sentences",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L2.3",
+              "runtimeId": "L2.3",
+              "label": "Apostrophes & possessives",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "L2.4",
+              "runtimeId": "L2.4",
+              "label": "Punctuation & clause separation",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        }
+      ],
+      "availableSkillCount": 2,
+      "totalSkillCount": 13,
+      "availableSetCount": 2,
+      "questionCount": 4
+    },
+    {
+      "id": "extended-response",
+      "label": "Extended Response",
+      "shortLabel": "Extended Response",
+      "summary": "Analyze two arguments, choose the better-supported position, and build a clear source-based response.",
+      "accent": "amber",
+      "domains": [
+        {
+          "id": "extended-response",
+          "label": "Extended Response",
+          "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing.",
+          "availableSkillCount": 2,
+          "availableSetCount": 1,
+          "skills": [
+            {
+              "id": "W1.1",
+              "runtimeId": "W1.1",
+              "label": "Understand the task",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.2",
+              "runtimeId": "W1.2",
+              "label": "Map both arguments",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.3",
+              "runtimeId": "W1.3",
+              "label": "Select better-supported position",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.4",
+              "runtimeId": "W1.4",
+              "label": "Build evaluative thesis",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.5",
+              "runtimeId": "writing.argument.short_response",
+              "label": "Select specific source evidence",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-writing-library-hours",
+                  "title": "Organizing an Argument",
+                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
+                  "file": "generated/modules/writing-practice.json",
+                  "difficulty": "easy",
+                  "category": "writing",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+                    "topicLabel": "Evidence Relevance"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "W1.6",
+              "runtimeId": "W1.6",
+              "label": "Analyze evidence",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.7",
+              "runtimeId": "W1.7",
+              "label": "Analyze reasoning",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.8",
+              "runtimeId": "W1.8",
+              "label": "Organize the response",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.9",
+              "runtimeId": "W1.9",
+              "label": "Develop ideas",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-writing-library-hours",
+                  "title": "Organizing an Argument",
+                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
+                  "file": "generated/modules/writing-practice.json",
+                  "difficulty": "easy",
+                  "category": "writing",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "contentKind": "passage_practice",
+                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+                    "topicLabel": "Evidence Relevance"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "W1.10",
+              "runtimeId": "W1.10",
+              "label": "Revise for focus & clarity",
+              "priority": "P1",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.11",
+              "runtimeId": "W1.11",
+              "label": "Edit conventions",
+              "priority": "P1",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            },
+            {
+              "id": "W1.12",
+              "runtimeId": "W1.12",
+              "label": "Full paired-source ER",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
+              "sets": []
+            }
+          ]
+        }
+      ],
+      "availableSkillCount": 2,
+      "totalSkillCount": 12,
+      "availableSetCount": 1,
+      "questionCount": 2
+    }
+  ]
+}

@@ -61,6 +61,7 @@ async function main() {
   await fs.mkdir(MODULE_OUT, { recursive: true });
 
   const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
+  const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
   const generatedByLegacyFile = new Map();
   const buildEntries = [];
 
@@ -115,11 +116,83 @@ async function main() {
   for (const entry of buildEntries) if (!inserted.has(entry.file)) mergedIndex.push(entry);
 
   await fs.writeFile(path.join(OUT, 'index.json'), JSON.stringify(mergedIndex, null, 2) + '\n', 'utf8');
+  // Build the learner-facing curriculum map from the stable skill registry plus
+  // published content. Authoring taxonomy stays rich; learner navigation stays calm.
+  const publishedSetRecords = validation.publishedSets.map(({ set }) => {
+    const runtimeFile = set.runtime?.file || `${set.id}.json`;
+    const outputName = runtimeFile.replace(/^.*\//, '');
+    return {
+      id: set.id,
+      title: set.title || set.topic,
+      description: set.description || '',
+      file: `generated/modules/${outputName}`,
+      difficulty: set.difficulty || 'medium',
+      category: set.category || 'reading',
+      questionCount: (set.questions || []).length,
+      curriculum: set.curriculum || null,
+      questions: set.questions || [],
+    };
+  });
+
+  const curriculum = {
+    schemaVersion: 1,
+    subject: curriculumConfig.subject || 'rla',
+    builtAt: new Date().toISOString(),
+    tracks: (curriculumConfig.tracks || []).map((track) => ({
+      id: track.id,
+      label: track.label,
+      shortLabel: track.shortLabel || track.label,
+      summary: track.summary || '',
+      accent: track.accent || 'blue',
+      domains: (track.domains || []).map((domainConfig) => {
+        const domainSkills = [...validation.skills.values()].filter((s) => s.domain === domainConfig.name);
+        const skills = domainSkills.map((skill) => {
+          const related = publishedSetRecords.filter((record) => {
+            const c = record.curriculum || {};
+            const setMatch = c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id);
+            const questionMatch = (record.questions || []).some((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id));
+            return setMatch || questionMatch;
+          });
+          const questionCount = related.reduce((sum, record) => sum + (record.questions || []).filter((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id)).length, 0);
+          return {
+            id: skill.id,
+            runtimeId: skill.runtimeId || skill.id,
+            label: skill.label,
+            priority: skill.priority || null,
+            practiceMode: skill.practiceMode || null,
+            available: related.length > 0,
+            setCount: related.length,
+            questionCount,
+            sets: related.map(({ questions, ...record }) => record),
+          };
+        });
+        return {
+          id: domainConfig.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+          label: domainConfig.name,
+          summary: domainConfig.summary || '',
+          availableSkillCount: skills.filter((s) => s.available).length,
+          availableSetCount: new Set(skills.flatMap((s) => s.sets.map((set) => set.file))).size,
+          skills,
+        };
+      }),
+    })),
+  };
+
+  curriculum.tracks.forEach((track) => {
+    track.availableSkillCount = track.domains.reduce((sum, d) => sum + d.availableSkillCount, 0);
+    track.totalSkillCount = track.domains.reduce((sum, d) => sum + d.skills.length, 0);
+    track.availableSetCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => s.sets.map((set) => set.file)))).size;
+    track.questionCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + s.questionCount, 0), 0);
+  });
+
+  await fs.writeFile(path.join(OUT, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n', 'utf8');
+
   await fs.writeFile(path.join(OUT, 'build-report.json'), JSON.stringify({
     schemaVersion: 1,
     builtAt: new Date().toISOString(),
     publishedSourceSets: validation.publishedSets.map(({ set }) => set.id),
     generatedModules: buildEntries.map((e) => e.file),
+    curriculumFile: 'data/generated/curriculum.json',
     warnings: validation.warnings,
   }, null, 2) + '\n', 'utf8');
 

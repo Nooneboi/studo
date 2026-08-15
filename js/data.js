@@ -9,6 +9,10 @@ const Data = {
     const res = await fetch("data/generated/index.json");
     return res.json();
   },
+  async loadCurriculum() {
+    const res = await fetch("data/generated/curriculum.json");
+    return res.json();
+  },
   async loadQuiz(file) {
     const res = await fetch(`data/${file}`);
     return res.json();

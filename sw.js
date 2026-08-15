@@ -7,12 +7,13 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "studo-v24-phase4b";
+const CACHE_NAME = "studo-v25-phase4d";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
   "favicon.svg",
   "practice.html",
+  "curriculum.html",
   "category.html",
   "module.html",
   "quiz.html",
@@ -33,6 +34,7 @@ const CORE_ASSETS = [
   "js/focus-tools.js",
   "js/annotate.js",
   "js/practice.js",
+  "js/curriculum.js",
   "js/category.js",
   "js/module.js",
   "js/quiz.js",
@@ -40,6 +42,7 @@ const CORE_ASSETS = [
   "js/train.js",
   "js/resources.js",
   "data/generated/index.json",
+  "data/generated/curriculum.json",
   "data/generated/modules/evidence-practice.json",
   "data/generated/modules/evidence-transfer-practice.json",
   "data/generated/modules/grammar-practice.json",
