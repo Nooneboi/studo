@@ -11,19 +11,97 @@
       "domains": [
         {
           "name": "Core Meaning",
-          "summary": "Find the central idea, key details, summary, and theme."
+          "summary": "Find the central idea, key details, summary, and theme.",
+          "groups": [
+            {
+              "id": "foundations",
+              "label": "Foundations",
+              "skills": [
+                "R1.1",
+                "R1.2",
+                "R1.3"
+              ]
+            },
+            {
+              "id": "build-understanding",
+              "label": "Build understanding",
+              "skills": [
+                "R1.4",
+                "R1.5"
+              ]
+            }
+          ]
         },
         {
           "name": "Relationships & Inference",
-          "summary": "Connect details, follow relationships, and read between the lines."
+          "summary": "Connect details, follow relationships, and read between the lines.",
+          "groups": [
+            {
+              "id": "connections",
+              "label": "Order & relationships",
+              "skills": [
+                "R2.1",
+                "R2.2",
+                "R2.3"
+              ]
+            },
+            {
+              "id": "read-between-lines",
+              "label": "Read between the lines",
+              "skills": [
+                "R2.4",
+                "R2.5",
+                "R2.6"
+              ]
+            }
+          ]
         },
         {
           "name": "Words, Tone & Style",
-          "summary": "Use context and word choice to understand meaning, tone, and style."
+          "summary": "Use context and word choice to understand meaning, tone, and style.",
+          "groups": [
+            {
+              "id": "word-meaning",
+              "label": "Word meaning",
+              "skills": [
+                "R3.1",
+                "R3.2"
+              ]
+            },
+            {
+              "id": "style-effect",
+              "label": "Style & effect",
+              "skills": [
+                "R3.3",
+                "R3.4",
+                "R3.5"
+              ]
+            }
+          ]
         },
         {
           "name": "Structure, Purpose & POV",
-          "summary": "See how parts of a text work together and what the writer is trying to do."
+          "summary": "See how parts of a text work together and what the writer is trying to do.",
+          "groups": [
+            {
+              "id": "how-text-works",
+              "label": "How the text works",
+              "skills": [
+                "R4.1",
+                "R4.2",
+                "R4.3"
+              ]
+            },
+            {
+              "id": "writer-decisions",
+              "label": "Writer decisions",
+              "skills": [
+                "R4.4",
+                "R4.5",
+                "R4.6"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -36,11 +114,60 @@
       "domains": [
         {
           "name": "Argument Analysis",
-          "summary": "Test claims, evidence, assumptions, reasoning, and counterarguments."
+          "summary": "Test claims, evidence, assumptions, reasoning, and counterarguments.",
+          "groups": [
+            {
+              "id": "argument-parts",
+              "label": "Build the argument map",
+              "skills": [
+                "R5.1",
+                "R5.2",
+                "R5.3"
+              ]
+            },
+            {
+              "id": "test-support",
+              "label": "Test the support",
+              "skills": [
+                "R5.4",
+                "R5.5",
+                "R5.6"
+              ]
+            },
+            {
+              "id": "test-reasoning",
+              "label": "Test the reasoning",
+              "skills": [
+                "R5.7",
+                "R5.8",
+                "R5.9",
+                "R5.10"
+              ]
+            }
+          ]
         },
         {
           "name": "Multiple Texts & Formats",
-          "summary": "Compare sources, arguments, data, and information across formats."
+          "summary": "Compare sources, arguments, data, and information across formats.",
+          "groups": [
+            {
+              "id": "compare-sources",
+              "label": "Compare sources",
+              "skills": [
+                "R6.1",
+                "R6.2"
+              ]
+            },
+            {
+              "id": "combine-information",
+              "label": "Combine information",
+              "skills": [
+                "R6.3",
+                "R6.4",
+                "R6.5"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -53,7 +180,40 @@
       "domains": [
         {
           "name": "Language & Editing",
-          "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context."
+          "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context.",
+          "groups": [
+            {
+              "id": "usage-agreement",
+              "label": "Usage & agreement",
+              "skills": [
+                "L1.1",
+                "L1.2",
+                "L1.3",
+                "L1.4"
+              ]
+            },
+            {
+              "id": "sentence-clarity",
+              "label": "Sentence clarity",
+              "skills": [
+                "L1.5",
+                "L1.6",
+                "L1.7",
+                "L1.8",
+                "L1.9"
+              ]
+            },
+            {
+              "id": "mechanics",
+              "label": "Mechanics & sentence boundaries",
+              "skills": [
+                "L2.1",
+                "L2.2",
+                "L2.3",
+                "L2.4"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -66,7 +226,39 @@
       "domains": [
         {
           "name": "Extended Response",
-          "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing."
+          "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing.",
+          "groups": [
+            {
+              "id": "analyze",
+              "label": "Analyze the sources",
+              "skills": [
+                "W1.1",
+                "W1.2",
+                "W1.3"
+              ]
+            },
+            {
+              "id": "build",
+              "label": "Build the response",
+              "skills": [
+                "W1.4",
+                "W1.5",
+                "W1.6",
+                "W1.7",
+                "W1.8",
+                "W1.9"
+              ]
+            },
+            {
+              "id": "revise",
+              "label": "Revise & finish",
+              "skills": [
+                "W1.10",
+                "W1.11",
+                "W1.12"
+              ]
+            }
+          ]
         }
       ]
     }

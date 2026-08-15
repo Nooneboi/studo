@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "subject": "rla",
+  "tracks": [
+    {
+      "id": "reading",
+      "label": "Reading & Comprehension",
+      "shortLabel": "Reading",
+      "summary": "Understand what a passage says, what it implies, and how the writer builds meaning.",
+      "accent": "blue",
+      "domains": [
+        {
+          "name": "Core Meaning",
+          "summary": "Find the central idea, key details, summary, and theme."
+        },
+        {
+          "name": "Relationships & Inference",
+          "summary": "Connect details, follow relationships, and read between the lines."
+        },
+        {
+          "name": "Words, Tone & Style",
+          "summary": "Use context and word choice to understand meaning, tone, and style."
+        },
+        {
+          "name": "Structure, Purpose & POV",
+          "summary": "See how parts of a text work together and what the writer is trying to do."
+        }
+      ]
+    },
+    {
+      "id": "arguments",
+      "label": "Arguments & Sources",
+      "shortLabel": "Arguments",
+      "summary": "Judge claims, evidence, reasoning, and how multiple sources support or challenge each other.",
+      "accent": "violet",
+      "domains": [
+        {
+          "name": "Argument Analysis",
+          "summary": "Test claims, evidence, assumptions, reasoning, and counterarguments."
+        },
+        {
+          "name": "Multiple Texts & Formats",
+          "summary": "Compare sources, arguments, data, and information across formats."
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "label": "Language & Editing",
+      "shortLabel": "Language",
+      "summary": "Edit sentences and passages for grammar, punctuation, clarity, and precise word choice.",
+      "accent": "teal",
+      "domains": [
+        {
+          "name": "Language & Editing",
+          "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context."
+        }
+      ]
+    },
+    {
+      "id": "extended-response",
+      "label": "Extended Response",
+      "shortLabel": "Extended Response",
+      "summary": "Analyze two arguments, choose the better-supported position, and build a clear source-based response.",
+      "accent": "amber",
+      "domains": [
+        {
+          "name": "Extended Response",
+          "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing."
+        }
+      ]
+    }
+  ]
+}

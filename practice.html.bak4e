@@ -40,7 +40,7 @@
       <div class="practice-hero-copy">
         <div class="page-kicker">Reasoning Through Language Arts</div>
         <h1 id="practice-title">Practice</h1>
-        <p>Choose a track, then move through the curriculum in order or jump to the skill you need.</p>
+        <p>Build one skill at a time. Choose a track yourself, or let Studo build a short session from what you need most.</p>
         <div class="practice-hero-actions">
           <a class="btn" href="train.html">Train me</a>
           <a class="btn secondary" href="progress.html">View progress</a>
@@ -52,8 +52,8 @@
     <section class="practice-directory" aria-labelledby="practice-directory-title">
       <div class="directory-heading">
         <div>
-          <div class="directory-kicker">Curriculum</div>
-          <h2 id="practice-directory-title">Choose a track</h2>
+          <div class="directory-kicker">Choose a track</div>
+          <h2 id="practice-directory-title">Practice tracks</h2>
         </div>
         <span id="practice-area-count">4 tracks</span>
       </div>

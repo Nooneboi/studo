@@ -1,8 +1,7 @@
 /*
-  practice.js — curriculum-driven Practice hub
-  --------------------------------------------
-  The learner sees four calm tracks. The richer 8-domain RLA taxonomy stays
-  underneath and powers each track rather than being dumped onto the homepage.
+  practice.js — simple curriculum index
+  ------------------------------------
+  Practice should feel like a library index, not a dashboard full of cards.
 */
 
 init();
@@ -17,7 +16,7 @@ async function init() {
     return;
   }
 
-  let curriculum = null;
+  let curriculum;
   try {
     curriculum = await Data.loadCurriculum();
   } catch (_) {
@@ -35,24 +34,21 @@ function renderTracks(tracks) {
   if (countEl) countEl.textContent = `${tracks.length} tracks`;
 
   listEl.innerHTML = tracks.map((track, index) => {
-    const availableDomains = track.domains.filter((d) => d.availableSkillCount > 0);
-    const domainLabels = track.domains.slice(0, 4).map((d) => `<span>${escapeHtml(d.label)}</span>`).join("");
     const availability = track.availableSetCount
-      ? `${track.availableSetCount} set${track.availableSetCount === 1 ? "" : "s"} · ${track.questionCount} skill q`
-      : "Curriculum mapped · practice coming next";
+      ? `${track.availableSetCount} set${track.availableSetCount === 1 ? "" : "s"} · ${track.questionCount} questions`
+      : `${track.totalSkillCount || track.domains.reduce((n,d)=>n+d.skills.length,0)} skills mapped`;
 
     return `
-      <a class="practice-area-card practice-area-${escapeHtml(track.accent || "blue")}" href="curriculum.html?track=${encodeURIComponent(track.id)}">
-        <div class="practice-area-topline">
-          <span class="practice-area-index">${String(index + 1).padStart(2, "0")}</span>
-          <span class="practice-area-count">${escapeHtml(availability)}</span>
-        </div>
-        <div>
+      <a class="practice-track-row" href="curriculum.html?track=${encodeURIComponent(track.id)}">
+        <span class="practice-track-index">${String(index + 1).padStart(2, "0")}</span>
+        <div class="practice-track-copy">
           <h3>${escapeHtml(track.label)}</h3>
           <p>${escapeHtml(track.summary)}</p>
         </div>
-        <div class="practice-area-topics" aria-label="Curriculum areas">${domainLabels}</div>
-        <div class="practice-area-open">${track.availableSetCount ? "Explore track" : "View curriculum"} <span aria-hidden="true">→</span></div>
+        <div class="practice-track-meta">
+          <span>${escapeHtml(availability)}</span>
+          <b aria-hidden="true">→</b>
+        </div>
       </a>`;
   }).join("");
 }
@@ -62,40 +58,31 @@ function renderNextStep() {
   if (!mount) return;
 
   let summary = null;
-  try {
-    summary = typeof Learning !== "undefined" ? Learning.getSummary() : null;
-  } catch (_) {}
+  try { summary = typeof Learning !== "undefined" ? Learning.getSummary() : null; } catch (_) {}
 
   if (summary?.attempts) {
     const nextSkill = summary.weakestSkills?.[0] || summary.skills?.[0];
     const due = summary.dueReviews || summary.activeMistakes || 0;
-    const headline = nextSkill ? nextSkill.label : "Keep your skills moving";
-    const note = due
-      ? `${due} review${due === 1 ? " is" : "s are"} ready. Studo can mix them with fresh questions.`
-      : "Your recent work is saved. A short focused session is ready when you are.";
-
     mount.innerHTML = `
-      <aside class="practice-next-card">
-        <div class="practice-next-label">Suggested next</div>
-        <h2>${escapeHtml(headline)}</h2>
-        <p>${escapeHtml(note)}</p>
-        <div class="practice-next-actions">
-          <a class="btn" href="train.html">Train me</a>
-          <a class="text-link" href="progress.html">View progress →</a>
+      <aside class="practice-next-line">
+        <div>
+          <span class="practice-next-label">Suggested next</span>
+          <strong>${escapeHtml(nextSkill?.label || "Continue your recent work")}</strong>
+          <span>${due ? `${due} review${due === 1 ? "" : "s"} ready` : "A short focused session is ready"}</span>
         </div>
+        <a class="btn" href="train.html">Train me</a>
       </aside>`;
     return;
   }
 
   mount.innerHTML = `
-    <aside class="practice-next-card is-new">
-      <div class="practice-next-label">Start simple</div>
-      <h2>Try a short baseline.</h2>
-      <p>Your first few answers help Studo decide what deserves more practice later.</p>
-      <div class="practice-next-actions">
-        <a class="btn" href="train.html">Build baseline</a>
-        <a class="text-link" href="curriculum.html?track=reading">Browse Reading →</a>
+    <aside class="practice-next-line">
+      <div>
+        <span class="practice-next-label">New here?</span>
+        <strong>Start with a short baseline.</strong>
+        <span>Studo will use your first answers to suggest what to practice next.</span>
       </div>
+      <a class="btn" href="train.html">Build baseline</a>
     </aside>`;
 }
 

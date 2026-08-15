@@ -62,11 +62,6 @@ async function main() {
 
   const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
   const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
-  let resourceRegistry = { resources: [] };
-  try {
-    resourceRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'resources', 'rla.resources.json'), 'utf8'));
-  } catch (_) {}
-  const publishedResources = (resourceRegistry.resources || []).filter((r) => r.status === 'published');
   const generatedByLegacyFile = new Map();
   const buildEntries = [];
 
@@ -159,28 +154,22 @@ async function main() {
             return setMatch || questionMatch;
           });
           const questionCount = related.reduce((sum, record) => sum + (record.questions || []).filter((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id)).length, 0);
-          const resources = publishedResources.filter((resource) =>
-            (resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id
-          );
           return {
             id: skill.id,
             runtimeId: skill.runtimeId || skill.id,
             label: skill.label,
             priority: skill.priority || null,
             practiceMode: skill.practiceMode || null,
-            available: related.length > 0 || resources.length > 0,
+            available: related.length > 0,
             setCount: related.length,
             questionCount,
-            resourceCount: resources.length,
             sets: related.map(({ questions, ...record }) => record),
-            resources,
           };
         });
         return {
           id: domainConfig.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
           label: domainConfig.name,
           summary: domainConfig.summary || '',
-          groups: domainConfig.groups || [],
           availableSkillCount: skills.filter((s) => s.available).length,
           availableSetCount: new Set(skills.flatMap((s) => s.sets.map((set) => set.file))).size,
           skills,
@@ -194,7 +183,6 @@ async function main() {
     track.totalSkillCount = track.domains.reduce((sum, d) => sum + d.skills.length, 0);
     track.availableSetCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => s.sets.map((set) => set.file)))).size;
     track.questionCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + s.questionCount, 0), 0);
-    track.resourceCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + (s.resourceCount || 0), 0), 0);
   });
 
   await fs.writeFile(path.join(OUT, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n', 'utf8');

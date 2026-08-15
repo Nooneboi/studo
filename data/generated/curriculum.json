@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-14T12:50:15.365Z",
+  "builtAt": "2026-08-15T11:04:07.684Z",
   "tracks": [
     {
       "id": "reading",
@@ -14,6 +14,25 @@
           "id": "core-meaning",
           "label": "Core Meaning",
           "summary": "Find the central idea, key details, summary, and theme.",
+          "groups": [
+            {
+              "id": "foundations",
+              "label": "Foundations",
+              "skills": [
+                "R1.1",
+                "R1.2",
+                "R1.3"
+              ]
+            },
+            {
+              "id": "build-understanding",
+              "label": "Build understanding",
+              "skills": [
+                "R1.4",
+                "R1.5"
+              ]
+            }
+          ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
           "skills": [
@@ -26,7 +45,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R1.2",
@@ -37,7 +58,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R1.3",
@@ -48,7 +71,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R1.4",
@@ -59,7 +84,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R1.5",
@@ -70,7 +97,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         },
@@ -78,6 +107,26 @@
           "id": "relationships-inference",
           "label": "Relationships & Inference",
           "summary": "Connect details, follow relationships, and read between the lines.",
+          "groups": [
+            {
+              "id": "connections",
+              "label": "Order & relationships",
+              "skills": [
+                "R2.1",
+                "R2.2",
+                "R2.3"
+              ]
+            },
+            {
+              "id": "read-between-lines",
+              "label": "Read between the lines",
+              "skills": [
+                "R2.4",
+                "R2.5",
+                "R2.6"
+              ]
+            }
+          ],
           "availableSkillCount": 1,
           "availableSetCount": 2,
           "skills": [
@@ -90,7 +139,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R2.2",
@@ -101,7 +152,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R2.3",
@@ -112,7 +165,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R2.4",
@@ -123,6 +178,7 @@
               "available": true,
               "setCount": 2,
               "questionCount": 4,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-evidence-last-bus",
@@ -162,7 +218,8 @@
                     "topicLabel": "Inference & Evidence"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "R2.5",
@@ -173,7 +230,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R2.6",
@@ -184,7 +243,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         },
@@ -192,6 +253,25 @@
           "id": "words-tone-style",
           "label": "Words, Tone & Style",
           "summary": "Use context and word choice to understand meaning, tone, and style.",
+          "groups": [
+            {
+              "id": "word-meaning",
+              "label": "Word meaning",
+              "skills": [
+                "R3.1",
+                "R3.2"
+              ]
+            },
+            {
+              "id": "style-effect",
+              "label": "Style & effect",
+              "skills": [
+                "R3.3",
+                "R3.4",
+                "R3.5"
+              ]
+            }
+          ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
           "skills": [
@@ -204,7 +284,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R3.2",
@@ -215,7 +297,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R3.3",
@@ -226,7 +310,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R3.4",
@@ -237,7 +323,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R3.5",
@@ -248,7 +336,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         },
@@ -256,6 +346,26 @@
           "id": "structure-purpose-pov",
           "label": "Structure, Purpose & POV",
           "summary": "See how parts of a text work together and what the writer is trying to do.",
+          "groups": [
+            {
+              "id": "how-text-works",
+              "label": "How the text works",
+              "skills": [
+                "R4.1",
+                "R4.2",
+                "R4.3"
+              ]
+            },
+            {
+              "id": "writer-decisions",
+              "label": "Writer decisions",
+              "skills": [
+                "R4.4",
+                "R4.5",
+                "R4.6"
+              ]
+            }
+          ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
           "skills": [
@@ -268,7 +378,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R4.2",
@@ -279,7 +391,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R4.3",
@@ -290,7 +404,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R4.4",
@@ -301,7 +417,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R4.5",
@@ -312,7 +430,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R4.6",
@@ -323,7 +443,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         }
@@ -331,7 +453,8 @@
       "availableSkillCount": 1,
       "totalSkillCount": 22,
       "availableSetCount": 2,
-      "questionCount": 4
+      "questionCount": 4,
+      "resourceCount": 0
     },
     {
       "id": "arguments",
@@ -344,6 +467,36 @@
           "id": "argument-analysis",
           "label": "Argument Analysis",
           "summary": "Test claims, evidence, assumptions, reasoning, and counterarguments.",
+          "groups": [
+            {
+              "id": "argument-parts",
+              "label": "Build the argument map",
+              "skills": [
+                "R5.1",
+                "R5.2",
+                "R5.3"
+              ]
+            },
+            {
+              "id": "test-support",
+              "label": "Test the support",
+              "skills": [
+                "R5.4",
+                "R5.5",
+                "R5.6"
+              ]
+            },
+            {
+              "id": "test-reasoning",
+              "label": "Test the reasoning",
+              "skills": [
+                "R5.7",
+                "R5.8",
+                "R5.9",
+                "R5.10"
+              ]
+            }
+          ],
           "availableSkillCount": 2,
           "availableSetCount": 3,
           "skills": [
@@ -356,7 +509,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.2",
@@ -367,7 +522,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.3",
@@ -378,6 +535,7 @@
               "available": true,
               "setCount": 2,
               "questionCount": 2,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-evidence-last-bus",
@@ -417,7 +575,8 @@
                     "topicLabel": "Inference & Evidence"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "R5.4",
@@ -428,6 +587,7 @@
               "available": true,
               "setCount": 1,
               "questionCount": 1,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-writing-library-hours",
@@ -448,7 +608,8 @@
                     "topicLabel": "Evidence Relevance"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "R5.5",
@@ -459,7 +620,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.6",
@@ -470,7 +633,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.7",
@@ -481,7 +646,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.8",
@@ -492,7 +659,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.9",
@@ -503,7 +672,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R5.10",
@@ -514,7 +685,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         },
@@ -522,6 +695,25 @@
           "id": "multiple-texts-formats",
           "label": "Multiple Texts & Formats",
           "summary": "Compare sources, arguments, data, and information across formats.",
+          "groups": [
+            {
+              "id": "compare-sources",
+              "label": "Compare sources",
+              "skills": [
+                "R6.1",
+                "R6.2"
+              ]
+            },
+            {
+              "id": "combine-information",
+              "label": "Combine information",
+              "skills": [
+                "R6.3",
+                "R6.4",
+                "R6.5"
+              ]
+            }
+          ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
           "skills": [
@@ -534,7 +726,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R6.2",
@@ -545,7 +739,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R6.3",
@@ -556,7 +752,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R6.4",
@@ -567,7 +765,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "R6.5",
@@ -578,7 +778,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         }
@@ -586,7 +788,8 @@
       "availableSkillCount": 2,
       "totalSkillCount": 15,
       "availableSetCount": 3,
-      "questionCount": 3
+      "questionCount": 3,
+      "resourceCount": 0
     },
     {
       "id": "language",
@@ -599,6 +802,39 @@
           "id": "language-editing",
           "label": "Language & Editing",
           "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context.",
+          "groups": [
+            {
+              "id": "usage-agreement",
+              "label": "Usage & agreement",
+              "skills": [
+                "L1.1",
+                "L1.2",
+                "L1.3",
+                "L1.4"
+              ]
+            },
+            {
+              "id": "sentence-clarity",
+              "label": "Sentence clarity",
+              "skills": [
+                "L1.5",
+                "L1.6",
+                "L1.7",
+                "L1.8",
+                "L1.9"
+              ]
+            },
+            {
+              "id": "mechanics",
+              "label": "Mechanics & sentence boundaries",
+              "skills": [
+                "L2.1",
+                "L2.2",
+                "L2.3",
+                "L2.4"
+              ]
+            }
+          ],
           "availableSkillCount": 2,
           "availableSetCount": 2,
           "skills": [
@@ -611,6 +847,7 @@
               "available": true,
               "setCount": 2,
               "questionCount": 2,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-grammar-precision-check",
@@ -650,7 +887,8 @@
                     "topicLabel": "Grammar & Usage"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "L1.2",
@@ -661,6 +899,7 @@
               "available": true,
               "setCount": 2,
               "questionCount": 2,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-grammar-precision-check",
@@ -700,7 +939,8 @@
                     "topicLabel": "Grammar & Usage"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "L1.3",
@@ -711,7 +951,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L1.4",
@@ -722,7 +964,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L1.5",
@@ -733,7 +977,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L1.6",
@@ -744,7 +990,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L1.7",
@@ -755,7 +1003,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L1.8",
@@ -766,7 +1016,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L1.9",
@@ -777,7 +1029,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L2.1",
@@ -788,7 +1042,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L2.2",
@@ -799,7 +1055,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L2.3",
@@ -810,7 +1068,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "L2.4",
@@ -821,7 +1081,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         }
@@ -829,7 +1091,8 @@
       "availableSkillCount": 2,
       "totalSkillCount": 13,
       "availableSetCount": 2,
-      "questionCount": 4
+      "questionCount": 4,
+      "resourceCount": 0
     },
     {
       "id": "extended-response",
@@ -842,6 +1105,38 @@
           "id": "extended-response",
           "label": "Extended Response",
           "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing.",
+          "groups": [
+            {
+              "id": "analyze",
+              "label": "Analyze the sources",
+              "skills": [
+                "W1.1",
+                "W1.2",
+                "W1.3"
+              ]
+            },
+            {
+              "id": "build",
+              "label": "Build the response",
+              "skills": [
+                "W1.4",
+                "W1.5",
+                "W1.6",
+                "W1.7",
+                "W1.8",
+                "W1.9"
+              ]
+            },
+            {
+              "id": "revise",
+              "label": "Revise & finish",
+              "skills": [
+                "W1.10",
+                "W1.11",
+                "W1.12"
+              ]
+            }
+          ],
           "availableSkillCount": 2,
           "availableSetCount": 1,
           "skills": [
@@ -854,7 +1149,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.2",
@@ -865,7 +1162,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.3",
@@ -876,7 +1175,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.4",
@@ -887,7 +1188,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.5",
@@ -898,6 +1201,7 @@
               "available": true,
               "setCount": 1,
               "questionCount": 1,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-writing-library-hours",
@@ -918,7 +1222,8 @@
                     "topicLabel": "Evidence Relevance"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "W1.6",
@@ -929,7 +1234,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.7",
@@ -940,7 +1247,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.8",
@@ -951,7 +1260,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.9",
@@ -962,6 +1273,7 @@
               "available": true,
               "setCount": 1,
               "questionCount": 1,
+              "resourceCount": 0,
               "sets": [
                 {
                   "id": "set-rla-writing-library-hours",
@@ -982,7 +1294,8 @@
                     "topicLabel": "Evidence Relevance"
                   }
                 }
-              ]
+              ],
+              "resources": []
             },
             {
               "id": "W1.10",
@@ -993,7 +1306,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.11",
@@ -1004,7 +1319,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             },
             {
               "id": "W1.12",
@@ -1015,7 +1332,9 @@
               "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "sets": []
+              "resourceCount": 0,
+              "sets": [],
+              "resources": []
             }
           ]
         }
@@ -1023,7 +1342,8 @@
       "availableSkillCount": 2,
       "totalSkillCount": 12,
       "availableSetCount": 1,
-      "questionCount": 2
+      "questionCount": 2,
+      "resourceCount": 0
     }
   ]
 }
