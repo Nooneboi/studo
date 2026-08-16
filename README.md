@@ -170,3 +170,7 @@ npm run content:check
 ```
 
 Do not manually edit `data/generated/`.
+
+## Resource Studio
+
+Phase 5A adds `resource-studio.html` for attaching PDFs, worksheets, study guides, notes, DOCX files, references, and external links to exact RLA skills. Connected-folder saves update `content-src/resources/rla.resources.json` and copy local files into `assets/resources/`.

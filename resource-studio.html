@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Studo — Resource Studio</title>
+<meta name="description" content="Attach PDFs, worksheets, guides, notes, and links to the Studo RLA curriculum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/studo-v2.css">
+<link rel="stylesheet" href="css/resource-studio.css">
+</head>
+<body class="resource-studio-body">
+<header class="studio-header resource-studio-header">
+  <div class="studio-header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">◆</span> Studo</a>
+    <div class="studio-header-title">
+      <strong>Resource Studio</strong>
+      <span>Study files & links</span>
+    </div>
+    <div class="studio-header-actions">
+      <button type="button" class="btn secondary small" id="resource-connect-btn">Connect project folder</button>
+      <span class="studio-folder-status" id="resource-folder-status">Not connected</span>
+      <a class="btn ghost small" href="content-studio.html">Question authoring</a>
+      <div id="theme-switch-mount"></div>
+    </div>
+  </div>
+</header>
+
+<main class="resource-studio-shell">
+  <section class="resource-studio-main">
+    <header class="resource-studio-hero">
+      <div class="page-kicker">Phase 5A · Resource authoring</div>
+      <h1>Add study material</h1>
+      <p>Attach a file or link to the exact skill it supports.</p>
+    </header>
+
+    <form id="resource-form" class="resource-author-form">
+      <section class="resource-form-section">
+        <div class="resource-section-head"><span>01</span><h2>Curriculum</h2></div>
+        <div class="resource-form-grid two">
+          <label><span>Domain</span><select id="resource-domain"></select></label>
+          <label><span>Primary skill</span><select id="resource-skill"></select></label>
+        </div>
+        <div class="resource-path" id="resource-path">RLA → Choose a domain → Choose a skill</div>
+      </section>
+
+      <section class="resource-form-section">
+        <div class="resource-section-head"><span>02</span><h2>Resource</h2></div>
+        <div class="resource-form-grid two">
+          <label><span>Title</span><input id="resource-title" placeholder="Main Idea — Quick Study Guide"></label>
+          <label><span>Type</span>
+            <select id="resource-type">
+              <option value="pdf">PDF</option>
+              <option value="worksheet">Worksheet</option>
+              <option value="study_guide">Study guide</option>
+              <option value="notes">Notes</option>
+              <option value="docx">DOCX</option>
+              <option value="reference">Reference</option>
+              <option value="link">External link</option>
+            </select>
+          </label>
+        </div>
+        <label class="resource-full"><span>Short description <em>optional</em></span><input id="resource-description" placeholder="A short printable guide with examples and a checklist."></label>
+
+        <div class="resource-source-choice">
+          <label class="resource-file-picker" id="resource-file-picker-label">
+            <span>Choose a file</span>
+            <input id="resource-file" type="file" accept=".pdf,.doc,.docx,.txt,.md" hidden>
+            <strong id="resource-file-name">No file selected</strong>
+          </label>
+          <div class="resource-or">or</div>
+          <label class="resource-link-field"><span>External URL</span><input id="resource-url" type="url" placeholder="https://..."></label>
+        </div>
+      </section>
+
+      <section class="resource-form-section">
+        <div class="resource-section-head"><span>03</span><h2>Publishing</h2></div>
+        <div class="resource-form-grid three">
+          <label><span>Status</span><select id="resource-status"><option value="draft">Draft</option><option value="review">Review</option><option value="approved">Approved</option><option value="published">Published</option><option value="retired">Retired</option></select></label>
+          <label><span>Rights</span><select id="resource-rights"><option value="original">Original</option><option value="public_domain">Public domain</option><option value="licensed">Licensed</option><option value="permission">Permission</option></select></label>
+          <label><span>Reviewer <em>recommended</em></span><input id="resource-reviewer" placeholder="Reviewer name"></label>
+        </div>
+      </section>
+
+      <div class="resource-form-actions">
+        <button type="button" class="btn secondary" id="resource-reset-btn">New resource</button>
+        <button type="submit" class="btn">Save resource</button>
+      </div>
+    </form>
+  </section>
+
+  <aside class="resource-studio-side">
+    <section class="resource-side-block">
+      <div class="page-kicker">Current library</div>
+      <div class="resource-side-count"><strong id="resource-count">0</strong><span>resources</span></div>
+    </section>
+    <section class="resource-side-block">
+      <div class="page-kicker">Status</div>
+      <strong id="resource-save-status">Ready</strong>
+      <p id="resource-save-detail">Connect the project folder to save directly.</p>
+    </section>
+    <section class="resource-side-block existing-resources-block">
+      <div class="page-kicker">Recent resources</div>
+      <div id="resource-existing-list" class="resource-existing-list"></div>
+    </section>
+    <button type="button" class="btn secondary small" id="resource-download-registry">Download registry JSON</button>
+  </aside>
+</main>
+
+<script src="js/theme.js"></script>
+<script src="js/resource-studio.js" type="module"></script>
+</body>
+</html>

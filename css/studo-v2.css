@@ -5270,3 +5270,284 @@ body.test-body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Phase 4I — compact progress workspace
+   Shortcut rail + dense, plain dashboard. Minimal explanatory copy.
+   ------------------------------------------------------------------------- */
+.progress-main-refined .wrap,
+.progress-page-wrap { max-width: 1400px; }
+.progress-page-wrap { padding-top: 54px; padding-bottom: 72px; }
+.progress-workspace {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+.progress-rail-inner {
+  position: sticky;
+  top: 122px;
+  padding: 4px 18px 18px 0;
+  border-right: 1px solid var(--color-line);
+}
+.progress-rail-title {
+  margin-bottom: 14px;
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.progress-rail nav { display: grid; gap: 3px; }
+.progress-rail nav a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 38px;
+  padding: 0 8px;
+  border-radius: 8px;
+  color: var(--color-ink-soft);
+  font-size: .9rem;
+  font-weight: 600;
+}
+.progress-rail nav a:hover {
+  color: var(--color-ink);
+  background: var(--color-surface-soft);
+  text-decoration: none;
+}
+.rail-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-line-strong);
+  flex: 0 0 auto;
+}
+.progress-rail nav a:hover .rail-dot { background: var(--color-primary); }
+.progress-rail-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 14px 8px 0;
+  border-top: 1px solid var(--color-line);
+}
+.progress-rail-links a {
+  color: var(--color-primary-dark);
+  font-size: .82rem;
+  font-weight: 700;
+}
+.progress-dashboard { min-width: 0; }
+.progress-dashboard-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 0 24px;
+}
+.progress-dashboard-head h1 {
+  margin: 5px 0 0;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  letter-spacing: -.045em;
+}
+.progress-head-action {
+  margin-bottom: 5px;
+  color: var(--color-primary-dark);
+  font-size: .9rem;
+  font-weight: 700;
+}
+.progress-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+.progress-metric {
+  display: grid;
+  gap: 5px;
+  min-height: 92px;
+  padding: 19px 18px;
+  border-right: 1px solid var(--color-line);
+}
+.progress-metric:last-child { border-right: 0; }
+.progress-metric strong {
+  font-size: 1.55rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.progress-metric span {
+  color: var(--color-ink-faint);
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.progress-focus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 30px 0 42px;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+.progress-focus-block {
+  min-height: 148px;
+  padding: 22px 24px 20px 0;
+}
+.progress-focus-block + .progress-focus-block {
+  padding-left: 24px;
+  border-left: 1px solid var(--color-line);
+}
+.progress-mini-label {
+  color: var(--color-ink-faint);
+  font-size: .74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+.progress-focus-block h2 {
+  margin: 9px 0 9px;
+  font-size: 1.35rem;
+  letter-spacing: -.025em;
+}
+.progress-focus-block > a {
+  color: var(--color-primary-dark);
+  font-size: .88rem;
+  font-weight: 700;
+}
+.progress-focus-meta {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  margin: -1px 0 8px;
+}
+.progress-focus-meta strong { font-size: 1rem; }
+.progress-focus-meta span { color: var(--color-ink-faint); font-size: .82rem; }
+.progress-table-section { margin: 0 0 42px; scroll-margin-top: 120px; }
+.progress-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.progress-table-heading h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: -.025em;
+}
+.progress-table-heading > span { color: var(--color-ink-faint); font-size: .8rem; }
+.progress-skill-table,
+.progress-review-list { border-top: 1px solid var(--color-line); }
+.progress-skill-head,
+.progress-skill-row {
+  display: grid;
+  grid-template-columns: minmax(250px,1fr) 80px minmax(190px,270px) 110px;
+  gap: 18px;
+  align-items: center;
+}
+.progress-skill-head {
+  min-height: 38px;
+  color: var(--color-ink-faint);
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .055em;
+  border-bottom: 1px solid var(--color-line);
+}
+.progress-skill-row {
+  min-height: 72px;
+  padding: 10px 0;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-line);
+}
+.progress-skill-row:hover { text-decoration: none; }
+.progress-skill-row:hover .progress-skill-name strong { color: var(--color-primary-dark); }
+.progress-skill-name { display: grid; gap: 2px; }
+.progress-skill-name small {
+  color: var(--color-primary-dark);
+  font-size: .67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.progress-skill-name strong { font-size: .94rem; }
+.progress-signal-cell {
+  display: grid;
+  grid-template-columns: minmax(90px,1fr) 44px;
+  gap: 10px;
+  align-items: center;
+}
+.progress-signal-cell i {
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--color-surface-strong);
+}
+.progress-signal-cell i b {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-primary);
+}
+.progress-signal-cell > strong { text-align: right; font-size: .84rem; }
+.progress-status { color: var(--color-ink-faint); font-size: .78rem; font-weight: 650; }
+.progress-status.needs-work { color: var(--color-warning); }
+.progress-status.strong { color: var(--color-success); }
+.progress-review-row {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 90px 20px;
+  gap: 18px;
+  align-items: center;
+  min-height: 68px;
+  padding: 10px 0;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-line);
+}
+.progress-review-row:hover { text-decoration: none; }
+.progress-review-row > span:first-child { display: grid; gap: 3px; }
+.progress-review-row small { color: var(--color-ink-faint); font-size: .76rem; }
+.progress-review-row > span:nth-child(2) { color: var(--color-ink-faint); font-size: .8rem; text-align: right; }
+.progress-review-row > b { color: var(--color-primary-dark); }
+.progress-bottom-actions { display: flex; justify-content: flex-end; padding-top: 8px; }
+.progress-empty-compact { padding-top: 20px; }
+
+@media (max-width: 1050px) {
+  .progress-workspace { grid-template-columns: 1fr; }
+  .progress-rail-inner {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 0 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-line);
+    overflow-x: auto;
+  }
+  .progress-rail-title { margin: 0; }
+  .progress-rail nav { display: flex; gap: 4px; }
+  .progress-rail nav a { white-space: nowrap; }
+  .progress-rail-links { margin: 0 0 0 auto; padding: 0; border: 0; }
+}
+
+@media (max-width: 760px) {
+  .progress-page-wrap { padding-top: 38px; }
+  .progress-metrics { grid-template-columns: 1fr 1fr; }
+  .progress-metric:nth-child(2) { border-right: 0; }
+  .progress-metric:nth-child(-n+2) { border-bottom: 1px solid var(--color-line); }
+  .progress-focus { grid-template-columns: 1fr; }
+  .progress-focus-block + .progress-focus-block {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--color-line);
+  }
+  .progress-skill-head { display: none; }
+  .progress-skill-row {
+    grid-template-columns: 1fr auto;
+    gap: 8px 14px;
+  }
+  .progress-signal-cell { grid-column: 1; max-width: 260px; }
+  .progress-status { grid-column: 2; grid-row: 1; }
+  .progress-review-row { grid-template-columns: 1fr 20px; }
+  .progress-review-row > span:nth-child(2) { grid-column: 1; text-align: left; }
+  .progress-review-row > b { grid-column: 2; grid-row: 1 / span 2; }
+}
