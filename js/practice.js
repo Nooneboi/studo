@@ -28,11 +28,7 @@ function renderTracks(tracks) {
       <span>${escapeHtml(track.label)}</span>
       <b aria-hidden="true">→</b>
     </a>`).join("");
-  listEl.innerHTML = `${trackRows}
-    <a class="library-track-row" href="passages.html">
-      <span>Passage practice</span>
-      <b aria-hidden="true">→</b>
-    </a>`;
+  listEl.innerHTML = trackRows;
 }
 
 function setupSearch(tracks) {

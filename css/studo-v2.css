@@ -5696,3 +5696,35 @@ body.test-body {
   .passage-page-wrap { padding-top: 40px; padding-bottom: 58px; }
   .passage-practice-row { min-height: 82px; gap: 12px; }
 }
+
+
+/* Phase 5E.1 — separate skill practice from mixed passage practice */
+.practice-passage-section {
+  margin-top: 46px;
+}
+.practice-passage-entry {
+  min-height: 74px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 22px;
+  gap: 20px;
+  align-items: center;
+  padding: 0 3px;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink);
+  font-size: 1.12rem;
+  font-weight: 650;
+  letter-spacing: -.012em;
+}
+.practice-passage-entry:hover {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+.practice-passage-entry b {
+  color: var(--color-primary-dark);
+  text-align: right;
+}
+@media (max-width: 760px) {
+  .practice-passage-section { margin-top: 34px; }
+  .practice-passage-entry { min-height: 66px; }
+}
