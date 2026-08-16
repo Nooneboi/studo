@@ -21,11 +21,11 @@ async function init() {
       <div class="page-kicker">${escapeHtml(track.shortLabel || track.label)}</div>
       <h1>${escapeHtml(domain.label)}</h1>
     </header>
-    <div class="simple-skill-groups">
-      ${groups.map((group) => `
-        <section class="simple-skill-group">
-          <h2>${escapeHtml(group.label)}</h2>
-          <div class="simple-skill-list">
+    <div class="simple-skill-groups compact-skill-groups">
+      ${groups.map((group, index) => `
+        <section class="simple-skill-group tone-${toneFor(index)}">
+          <h2 class="simple-skill-group-title">${escapeHtml(group.label)}</h2>
+          <div class="simple-skill-stack">
             ${group.items.map((skill) => renderSkill(track, domain, skill)).join("")}
           </div>
         </section>`).join("")}
@@ -38,14 +38,18 @@ function normalizeGroups(domain) {
   return configured.map((g)=>({ ...g, items:(g.skills||[]).map((id)=>map.get(id)).filter(Boolean) }));
 }
 
+function toneFor(index){
+  return ["blue","purple","teal","amber"][index % 4];
+}
+
 function renderSkill(track, domain, skill) {
   const files = skill.resourceCount || 0;
   const checks = skill.setCount || 0;
-  const availability = files ? `${files} file${files===1?"":"s"}` : checks ? "Check available" : "";
+  const status = files ? `Study files ready` : checks ? `Quiz ready` : `Coming next`;
   return `
-    <a class="simple-skill-row" href="skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}">
-      <span>${escapeHtml(skill.label)}</span>
-      <span class="simple-skill-meta">${escapeHtml(availability)}</span>
+    <a class="simple-skill-pill" href="skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}">
+      <span class="simple-skill-pill-title">${escapeHtml(skill.label)}</span>
+      <span class="simple-skill-pill-meta">${escapeHtml(status)}</span>
       <b aria-hidden="true">→</b>
     </a>`;
 }
