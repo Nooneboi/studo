@@ -1,13 +1,15 @@
 /*
-  sw.js — service worker
-  -----------------------
-  Caches the app shell + sample quiz data on first visit so the
-  site keeps working without internet afterward. When you add new
-  quiz files, bump CACHE_NAME (e.g. "study-ledger-v2") so learners'
-  browsers pick up the update instead of serving a stale cache.
+  sw.js — Studo service worker
+  ----------------------------
+  Production strategy:
+  - When online, request the newest same-origin file from the network first.
+  - Save successful responses for offline use.
+  - Fall back to the cache only when the network is unavailable.
+
+  This keeps deployments fresh WITHOUT clearing localStorage / learner data.
 */
 
-const CACHE_NAME = "studo-v27-resource-first-library";
+const CACHE_NAME = "studo-v28-network-first";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
@@ -53,7 +55,7 @@ const CORE_ASSETS = [
   "data/generated/modules/grammar-transfer-practice.json",
   "data/generated/modules/writing-practice.json",
   "data/sample-quiz.json",
-  "data/resources.json",
+  "data/resources.json"
 ];
 
 self.addEventListener("install", (event) => {
@@ -66,29 +68,47 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
     )
   );
   self.clients.claim();
 });
 
-// Cache-first for same-origin requests, falling back to network,
-// and caching new same-origin files (like quizzes you add later)
-// the first time a learner loads them.
-self.addEventListener("fetch", (event) => {
-  const url = new URL(event.request.url);
-  if (url.origin !== self.location.origin) return; // let Google Fonts etc. pass through normally
-
-  event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
-      return fetch(event.request)
-        .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-          return response;
-        })
-        .catch(() => cached);
-    })
-  );
+self.addEventListener("message", (event) => {
+  if (event.data === "SKIP_WAITING") self.skipWaiting();
 });
+
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
+  if (request.method !== "GET") return;
+
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+
+  event.respondWith(networkFirst(request));
+});
+
+async function networkFirst(request) {
+  const cache = await caches.open(CACHE_NAME);
+
+  try {
+    // Bypass the browser HTTP cache as well. GitHub Pages remains the source of truth.
+    const freshRequest = new Request(request, { cache: "no-store" });
+    const response = await fetch(freshRequest);
+
+    if (response && response.ok) {
+      await cache.put(request, response.clone());
+    }
+    return response;
+  } catch (error) {
+    const cached = await cache.match(request);
+    if (cached) return cached;
+
+    if (request.mode === "navigate") {
+      const fallback = await cache.match("index.html");
+      if (fallback) return fallback;
+    }
+
+    throw error;
+  }
+}

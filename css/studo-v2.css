@@ -4814,3 +4814,36 @@ body.test-body {
     white-space: normal;
   }
 }
+
+
+/* ========================================================================== 
+   Phase 4G.4 — final minimalist grouping
+   Group headings are plain. Color belongs to each sub-skill marker only.
+   ========================================================================== */
+.simple-skill-group {
+  padding-left: 0;
+  border-left: 0;
+}
+.simple-skill-group-title {
+  color: var(--color-ink);
+}
+.simple-skill-pill {
+  grid-template-columns: 5px minmax(0,1fr) auto 18px;
+  gap: 10px 12px;
+}
+.simple-skill-marker {
+  width: 4px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--tone-line, var(--color-primary));
+  opacity: .78;
+}
+@media (max-width: 720px) {
+  .simple-skill-group { padding-left: 0; }
+  .simple-skill-pill {
+    grid-template-columns: 5px minmax(0,1fr) 18px;
+  }
+  .simple-skill-pill-meta {
+    grid-column: 2;
+  }
+}
