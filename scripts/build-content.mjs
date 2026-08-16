@@ -172,8 +172,12 @@ async function main() {
             setCount: related.length,
             questionCount,
             resourceCount: resources.length,
+            studyFileCount: resources.length,
+            checkCount: related.length,
             sets: related.map(({ questions, ...record }) => record),
+            checks: related.map(({ questions, ...record }) => record),
             resources,
+            studyResources: resources,
           };
         });
         return {
@@ -183,6 +187,8 @@ async function main() {
           groups: domainConfig.groups || [],
           availableSkillCount: skills.filter((s) => s.available).length,
           availableSetCount: new Set(skills.flatMap((s) => s.sets.map((set) => set.file))).size,
+          studyFileCount: skills.reduce((sum, s) => sum + (s.studyFileCount || 0), 0),
+          checkCount: new Set(skills.flatMap((s) => (s.checks || []).map((set) => set.file))).size,
           skills,
         };
       }),
@@ -195,6 +201,8 @@ async function main() {
     track.availableSetCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => s.sets.map((set) => set.file)))).size;
     track.questionCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + s.questionCount, 0), 0);
     track.resourceCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + (s.resourceCount || 0), 0), 0);
+    track.studyFileCount = track.domains.reduce((sum, d) => sum + (d.studyFileCount || 0), 0);
+    track.checkCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => (s.checks || []).map((set) => set.file)))).size;
   });
 
   await fs.writeFile(path.join(OUT, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n', 'utf8');

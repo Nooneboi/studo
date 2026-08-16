@@ -10,6 +10,7 @@ const VALID_DIFFICULTIES = new Set(['easy', 'medium', 'hard']);
 const VALID_STATUS = new Set(['draft', 'review', 'approved', 'published', 'retired']);
 const VALID_RIGHTS = new Set(['original', 'public_domain', 'licensed', 'permission']);
 const VALID_CONTENT_KINDS = new Set(['passage_practice','skill_drill','quiz','mixed_review','editing_practice','extended_response']);
+const VALID_RESOURCE_TYPES = new Set(['pdf','worksheet','study_guide','notes','reference','link','docx']);
 const GENERIC_STARTS = [
   'the passage illustrates',
   'this answer is correct because',
@@ -44,6 +45,7 @@ export async function validateContent({ quiet = false } = {}) {
   const skillFiles = await jsonFiles(path.join(SRC, 'skills'));
   const passageFiles = await jsonFiles(path.join(SRC, 'passages'));
   const setFiles = await jsonFiles(path.join(SRC, 'sets'));
+  const resourceFiles = await jsonFiles(path.join(SRC, 'resources'));
 
   const skills = new Map();
   const runtimeSkillIds = new Map();
@@ -75,6 +77,34 @@ export async function validateContent({ quiet = false } = {}) {
     if (!p.source?.type || !p.source?.attribution) add(issues, 'error', 'PASSAGE_SOURCE_MISSING', `Passage ${p.id || '(unknown)'} needs source type and attribution.`, file);
     if (!p.rights?.status || !VALID_RIGHTS.has(p.rights.status)) add(issues, 'error', 'PASSAGE_RIGHTS_INVALID', `Passage ${p.id || '(unknown)'} needs an allowed rights status.`, file);
     if (p.status === 'published' && !p.reviewer) add(issues, 'error', 'PUBLISHED_WITHOUT_REVIEWER', `Published passage ${p.id} needs a reviewer.`, file);
+  }
+
+  // Resource files are first-class study material. They use the same skill registry
+  // as interactive checks, so Practice can stay a single curriculum library.
+  for (const file of resourceFiles) {
+    const registry = await readJson(file);
+    const ids = new Set();
+    for (const resource of registry.resources || []) {
+      const loc = resource.id || '(no-id)';
+      if (!resource.id) add(issues, 'error', 'RESOURCE_ID_MISSING', 'Resource is missing an id.', file);
+      else if (ids.has(resource.id)) add(issues, 'error', 'RESOURCE_ID_DUPLICATE', `Duplicate resource id: ${resource.id}`, file, loc);
+      else ids.add(resource.id);
+      if (!resource.title) add(issues, 'error', 'RESOURCE_TITLE_MISSING', `Resource ${loc} needs a title.`, file, loc);
+      if (!VALID_RESOURCE_TYPES.has(resource.type)) add(issues, 'error', 'RESOURCE_TYPE_INVALID', `Resource ${loc} has invalid type ${resource.type || '(missing)'}.`, file, loc);
+      if (!VALID_STATUS.has(resource.status)) add(issues, 'error', 'RESOURCE_STATUS_INVALID', `Resource ${loc} has invalid status.`, file, loc);
+      const skillIds = [...(resource.skillIds || []), ...(resource.primarySkillId ? [resource.primarySkillId] : [])];
+      if (!skillIds.length) add(issues, 'error', 'RESOURCE_SKILL_MISSING', `Resource ${loc} must attach to at least one skill.`, file, loc);
+      for (const sid of skillIds) if (!skills.has(sid)) add(issues, 'error', 'RESOURCE_SKILL_UNKNOWN', `Resource ${loc} uses unknown skill ${sid}.`, file, loc);
+      const href = resource.href || resource.path;
+      if (!href) add(issues, 'error', 'RESOURCE_HREF_MISSING', `Resource ${loc} needs href or path.`, file, loc);
+      if (resource.status === 'published' && resource.rightsStatus && !VALID_RIGHTS.has(resource.rightsStatus)) add(issues, 'error', 'RESOURCE_RIGHTS_INVALID', `Resource ${loc} has an invalid rights status.`, file, loc);
+      if (resource.status === 'published' && !resource.reviewer) add(issues, 'warning', 'RESOURCE_REVIEWER_MISSING', `Published resource ${loc} has no reviewer.`, file, loc);
+      if (href && !/^https?:\/\//i.test(href)) {
+        const local = path.join(ROOT, href.replace(/^\/+/, ''));
+        try { await fs.access(local); }
+        catch { if (resource.status === 'published') add(issues, 'error', 'RESOURCE_FILE_MISSING', `Published resource ${loc} points to missing file ${href}.`, file, loc); }
+      }
+    }
   }
 
   const setIds = new Set();

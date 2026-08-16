@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>Studo — Practice</title>
-<meta name="description" content="Focused GED practice organized by skill area, from foundations to harder sets.">
+<meta name="description" content="Find an RLA topic, open study material, and test yourself when you are ready.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="css/studo-v2.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Studo</a>
@@ -34,49 +33,35 @@
 </header>
 <div id="subject-bar-mount"></div>
 
-<main class="practice-main">
-  <div class="wrap practice-wrap">
-    <section class="practice-hero" aria-labelledby="practice-title">
-      <div class="practice-hero-copy">
-        <div class="page-kicker">Reasoning Through Language Arts</div>
-        <h1 id="practice-title">Practice</h1>
-        <p>Choose a track, then move through the curriculum in order or jump to the skill you need.</p>
-        <div class="practice-hero-actions">
-          <a class="btn" href="train.html">Train me</a>
-          <a class="btn secondary" href="progress.html">View progress</a>
-        </div>
-      </div>
-      <div id="practice-next-mount" class="practice-next-mount" aria-live="polite"></div>
-    </section>
+<main class="library-main">
+  <div class="wrap library-wrap">
+    <header class="library-hero">
+      <div class="page-kicker">Reasoning Through Language Arts</div>
+      <h1>Practice</h1>
+      <p>Choose a topic. Open a guide or worksheet. Use a quiz when you want to check yourself.</p>
+      <label class="library-search" for="skill-search">
+        <span class="sr-only">Find a topic or skill</span>
+        <input id="skill-search" type="search" placeholder="Find a topic or skill" autocomplete="off">
+      </label>
+      <div id="skill-search-results" class="skill-search-results" hidden></div>
+    </header>
 
-    <section class="practice-directory" aria-labelledby="practice-directory-title">
-      <div class="directory-heading">
-        <div>
-          <div class="directory-kicker">Curriculum</div>
-          <h2 id="practice-directory-title">Choose a track</h2>
-        </div>
-        <span id="practice-area-count">4 tracks</span>
-      </div>
-      <div class="category-grid" id="category-list"></div>
+    <section class="library-index" aria-labelledby="browse-title">
+      <div class="library-section-heading"><h2 id="browse-title">Browse by area</h2></div>
+      <div id="category-list" class="library-track-list"></div>
     </section>
   </div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">Studo — built for practice, not for tracking you.</div>
-</footer>
-
+<footer class="site-footer"><div class="wrap">Studo — built for practice, not for tracking you.</div></footer>
 <script src="js/app.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/subjectbar.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
-<script src="js/learning.js"></script>
 <script src="js/practice.js"></script>
 <script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
+if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
 </script>
 </body>
 </html>

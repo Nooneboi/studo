@@ -7,7 +7,7 @@
   browsers pick up the update instead of serving a stale cache.
 */
 
-const CACHE_NAME = "studo-v26-home-first-visit";
+const CACHE_NAME = "studo-v27-resource-first-library";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
@@ -15,6 +15,7 @@ const CORE_ASSETS = [
   "practice.html",
   "curriculum.html",
   "domain.html",
+  "skill.html",
   "category.html",
   "module.html",
   "quiz.html",
@@ -37,6 +38,7 @@ const CORE_ASSETS = [
   "js/practice.js",
   "js/curriculum.js",
   "js/domain.js",
+  "js/skill.js",
   "js/category.js",
   "js/module.js",
   "js/quiz.js",
