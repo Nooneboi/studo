@@ -1,0 +1,3627 @@
+{
+  "schemaVersion": 1,
+  "subject": "RLA",
+  "version": "1.0.0",
+  "purpose": "Internal Studo item-development reference. Family patterns are original specifications aligned to published GED RLA assessment targets; they are not copied operational GED items.",
+  "officialSourceNotes": {
+    "assessmentGuide": "GED Testing Service, Assessment Guide for Educators: RLA",
+    "studyGuide": "GED Testing Service, GED Study Guide: Language Arts",
+    "essentialSkills": "GED Testing Service, Reasoning Through Language Arts Essential Skills and Strategies",
+    "extendedResponseGuide": "GED Testing Service, RLA Extended Response Resource Guide"
+  },
+  "skills": [
+    {
+      "skillId": "R1.1",
+      "label": "Explicit meaning",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Directly stated facts and ideas; separates text evidence from assumptions.",
+      "families": [
+        {
+          "familyId": "explicit.fact.locate",
+          "construct": "Locate an explicitly stated fact or idea",
+          "authenticStemPattern": "Which statement is directly supported by the passage?",
+          "distractorLogic": [
+            "inference_not_stated",
+            "mentioned_wrong_detail",
+            "contradicts_text"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "explicit.detail.match",
+          "construct": "Match a question to the exact detail that answers it",
+          "authenticStemPattern": "According to the passage, which statement explains ___?",
+          "distractorLogic": [
+            "related_not_answering",
+            "true_elsewhere",
+            "unsupported_extension"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R1.2",
+      "label": "Main idea / central idea",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.1",
+        "R.2.4"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Include explicit and implied main ideas.",
+      "families": [
+        {
+          "familyId": "mainidea.whole.explicit",
+          "construct": "Identify the central idea when the text states it fairly directly",
+          "authenticStemPattern": "Which statement best expresses the central idea of the passage?",
+          "distractorLogic": [
+            "supporting_detail",
+            "too_broad",
+            "too_narrow"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "mainidea.whole.implied",
+          "construct": "Infer the central idea from several details",
+          "authenticStemPattern": "Which statement best expresses an idea developed throughout the passage?",
+          "distractorLogic": [
+            "single_detail",
+            "reasonable_but_incomplete",
+            "unsupported_generalization"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R1.3",
+      "label": "Supporting details",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.5"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Distinguish real support from merely related details.",
+      "families": [
+        {
+          "familyId": "support.best_detail",
+          "construct": "Choose the detail that most directly supports a stated idea",
+          "authenticStemPattern": "Which detail best supports the idea that ___?",
+          "distractorLogic": [
+            "related_detail",
+            "background_only",
+            "evidence_for_other_idea"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "support.relevant_vs_mentioned",
+          "construct": "Distinguish real support from information that is merely present",
+          "authenticStemPattern": "Which sentence provides the strongest support for ___?",
+          "distractorLogic": [
+            "mentioned_not_supported",
+            "weak_indirect_support",
+            "contradictory_detail"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R1.4",
+      "label": "Summary",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.2"
+      ],
+      "dokRange": [
+        2,
+        2
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Use too-broad, too-narrow, and detail-heavy distractors.",
+      "families": [
+        {
+          "familyId": "summary.whole",
+          "construct": "Select a concise summary of the full passage",
+          "authenticStemPattern": "Which statement best summarizes the passage?",
+          "distractorLogic": [
+            "too_broad",
+            "too_narrow",
+            "detail_heavy"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "summary.section",
+          "construct": "Summarize a paragraph or section without losing its function",
+          "authenticStemPattern": "Which choice best summarizes paragraphs __–__?",
+          "distractorLogic": [
+            "copies_one_detail",
+            "adds_new_claim",
+            "misses_key_relationship"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R1.5",
+      "label": "Theme",
+      "domain": "Core Meaning",
+      "officialTargets": [
+        "R.2.6"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Keep literary practice meaningful but proportional.",
+      "families": [
+        {
+          "familyId": "theme.identify",
+          "construct": "Identify a theme developed through literary events and choices",
+          "authenticStemPattern": "Which statement best expresses a theme of the passage?",
+          "distractorLogic": [
+            "plot_summary",
+            "topic_not_theme",
+            "overgeneralization"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "theme.evidence",
+          "construct": "Identify the element that most strongly develops a theme",
+          "authenticStemPattern": "Which detail most strongly supports the theme that ___?",
+          "distractorLogic": [
+            "interesting_but_unrelated",
+            "literal_event_only",
+            "evidence_for_other_theme"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R2.1",
+      "label": "Sequence",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Sequence events, steps, or ideas.",
+      "families": [
+        {
+          "familyId": "sequence.order",
+          "construct": "Order events, ideas, or procedural steps from the text",
+          "authenticStemPattern": "Which event occurs immediately after ___?",
+          "distractorLogic": [
+            "earlier_event",
+            "later_event",
+            "not_in_sequence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "sequence.logic",
+          "construct": "Identify the step or event required before another can happen",
+          "authenticStemPattern": "Which event must occur before ___?",
+          "distractorLogic": [
+            "chronologically_near_but_not_required",
+            "effect_not_cause",
+            "unrelated_step"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R2.2",
+      "label": "Cause and effect",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Include implicit causal relations; avoid confusing sequence with cause.",
+      "families": [
+        {
+          "familyId": "cause.direct",
+          "construct": "Identify an explicitly supported cause-and-effect relationship",
+          "authenticStemPattern": "According to the passage, what causes ___?",
+          "distractorLogic": [
+            "sequence_only",
+            "correlation_only",
+            "effect_as_cause"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "cause.implied",
+          "construct": "Infer a causal relationship from several details",
+          "authenticStemPattern": "Which conclusion about why ___ is best supported?",
+          "distractorLogic": [
+            "single_coincidence",
+            "unsupported_motive",
+            "reversed_cause_effect"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R2.3",
+      "label": "Compare and contrast",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.3",
+        "R.3.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Compare people, ideas, events, or positions inside a text.",
+      "families": [
+        {
+          "familyId": "compare.similarity",
+          "construct": "Identify an important similarity between two people, events, or ideas",
+          "authenticStemPattern": "How are ___ and ___ similar?",
+          "distractorLogic": [
+            "difference_not_similarity",
+            "surface_similarity",
+            "unsupported_similarity"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "compare.difference",
+          "construct": "Identify a meaningful contrast and its significance",
+          "authenticStemPattern": "What is one important difference between ___ and ___?",
+          "distractorLogic": [
+            "shared_trait",
+            "minor_irrelevant_difference",
+            "reversed_positions"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R2.4",
+      "label": "Inference from details",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.2.3",
+        "R.3.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Current Night Shift / Last Bus family gives two transfer items.",
+      "families": [
+        {
+          "familyId": "inference.character_or_event",
+          "construct": "Infer an unstated idea about a person, event, setting, or situation",
+          "authenticStemPattern": "What can the reader most reasonably infer about ___?",
+          "distractorLogic": [
+            "directly_stated_but_irrelevant",
+            "plausible_without_evidence",
+            "contradicts_detail"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "inference.evidence_pair",
+          "construct": "Pair an inference with the strongest textual evidence",
+          "authenticStemPattern": "Which sentence best supports the inference that ___?",
+          "distractorLogic": [
+            "related_detail",
+            "background_detail",
+            "evidence_for_other_inference"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R2.5",
+      "label": "Conclusions & generalizations",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.2.7",
+        "R.2.8"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Require synthesis; include overgeneralization traps.",
+      "families": [
+        {
+          "familyId": "conclusion.synthesize",
+          "construct": "Draw a conclusion that requires combining several details",
+          "authenticStemPattern": "Which conclusion is best supported by the passage as a whole?",
+          "distractorLogic": [
+            "too_broad",
+            "single_detail_inference",
+            "unsupported_prediction"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "generalization.apply",
+          "construct": "Generalize a text-supported idea to a new but closely related situation",
+          "authenticStemPattern": "Which situation best illustrates the same idea described in the passage?",
+          "distractorLogic": [
+            "superficial_match",
+            "overextension",
+            "opposite_principle"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R2.6",
+      "label": "Relationships among people, events & ideas",
+      "domain": "Relationships & Inference",
+      "officialTargets": [
+        "R.3.3",
+        "R.3.5"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Analyze how details, context, people, and events shape meaning.",
+      "families": [
+        {
+          "familyId": "relationship.significance",
+          "construct": "Analyze how one event/person/idea affects another",
+          "authenticStemPattern": "How does ___ affect ___ in the passage?",
+          "distractorLogic": [
+            "sequence_without_effect",
+            "unrelated_connection",
+            "reversed_relationship"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "context.shapes_meaning",
+          "construct": "Analyze how setting or context shapes meaning or development",
+          "authenticStemPattern": "How does the setting/context contribute to ___?",
+          "distractorLogic": [
+            "descriptive_detail_only",
+            "unsupported_symbolism",
+            "context_with_no_effect"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R3.1",
+      "label": "Meaning in context",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.1 / L.4.1"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Context meaning, including multiple-meaning words.",
+      "families": [
+        {
+          "familyId": "context.word_meaning",
+          "construct": "Determine the meaning of a word from its sentence and surrounding context",
+          "authenticStemPattern": "What does ___ most nearly mean as used in paragraph __?",
+          "distractorLogic": [
+            "common_definition_wrong_context",
+            "same_part_of_speech_wrong_sense",
+            "opposite_meaning"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "context.phrase_meaning",
+          "construct": "Interpret a phrase or expression in context",
+          "authenticStemPattern": "What does the phrase ___ suggest in this passage?",
+          "distractorLogic": [
+            "literal_only",
+            "overinterpretation",
+            "unrelated_connotation"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R3.2",
+      "label": "Connotation",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.1 / L.4.1"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Emotional/associative meaning versus literal meaning.",
+      "families": [
+        {
+          "familyId": "connotation.choice",
+          "construct": "Identify the connotation carried by a word choice",
+          "authenticStemPattern": "What does the word ___ suggest about ___?",
+          "distractorLogic": [
+            "dictionary_meaning_only",
+            "opposite_connotation",
+            "unsupported_emotion"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "connotation.replacement",
+          "construct": "Analyze how a more neutral/loaded replacement would change effect",
+          "authenticStemPattern": "How would replacing ___ with ___ change the sentence?",
+          "distractorLogic": [
+            "no_change",
+            "changes_fact_not_tone",
+            "reverses_meaning"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R3.3",
+      "label": "Figurative language",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.1",
+        "R.4.3 / L.4.3"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Interpret effect rather than just name the device.",
+      "families": [
+        {
+          "familyId": "figurative.interpret",
+          "construct": "Interpret figurative language in context",
+          "authenticStemPattern": "What does the comparison/phrase ___ mean in the passage?",
+          "distractorLogic": [
+            "literal_reading",
+            "device_name_only",
+            "unrelated_symbolism"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "figurative.effect",
+          "construct": "Explain what figurative language contributes to meaning or mood",
+          "authenticStemPattern": "What is the effect of the phrase ___?",
+          "distractorLogic": [
+            "identifies_device_not_effect",
+            "generic_emphasis",
+            "unsupported_theme"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R3.4",
+      "label": "Tone",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.2",
+        "R.4.3 / L.4.2–4.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Tie tone to exact word choice.",
+      "families": [
+        {
+          "familyId": "tone.identify",
+          "construct": "Identify tone from several textual cues",
+          "authenticStemPattern": "Which word best describes the author’s tone toward ___?",
+          "distractorLogic": [
+            "topic_not_tone",
+            "extreme_tone",
+            "tone_from_one_word_only"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "tone.evidence",
+          "construct": "Select the word/phrase that best supports a tone judgment",
+          "authenticStemPattern": "Which phrase most clearly contributes to the ___ tone?",
+          "distractorLogic": [
+            "neutral_detail",
+            "evidence_for_different_tone",
+            "content_not_wording"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R3.5",
+      "label": "Impact of word choice",
+      "domain": "Words, Tone & Style",
+      "officialTargets": [
+        "R.4.2",
+        "R.4.3 / L.4.2–4.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Ask how replacing wording changes meaning, emphasis, or tone.",
+      "families": [
+        {
+          "familyId": "wordchoice.impact",
+          "construct": "Explain how a specific word choice shapes meaning or emphasis",
+          "authenticStemPattern": "Why does the author use the word ___ in paragraph __?",
+          "distractorLogic": [
+            "dictionary_definition_only",
+            "purpose_too_broad",
+            "effect_not_supported"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "wordchoice.compare",
+          "construct": "Compare the effect of alternate wording",
+          "authenticStemPattern": "How would the meaning or tone change if ___ were replaced with ___?",
+          "distractorLogic": [
+            "no_meaningful_change",
+            "changes_fact",
+            "opposite_effect"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R4.1",
+      "label": "Paragraph / section function",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.5.1",
+        "R.5.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "What job does this paragraph or sentence perform?",
+      "families": [
+        {
+          "familyId": "function.paragraph",
+          "construct": "Determine the role a paragraph plays in the whole text",
+          "authenticStemPattern": "What is the main function of paragraph __?",
+          "distractorLogic": [
+            "summary_of_content_only",
+            "function_of_other_paragraph",
+            "too_general"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "function.sentence",
+          "construct": "Determine why a sentence/detail is included",
+          "authenticStemPattern": "Why does the author include the sentence ___?",
+          "distractorLogic": [
+            "repeats_sentence",
+            "unrelated_purpose",
+            "overstates_effect"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R4.2",
+      "label": "Text structure",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.5.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Structure as meaning: cause/effect, problem/solution, claim/evidence, etc.",
+      "families": [
+        {
+          "familyId": "structure.identify",
+          "construct": "Identify the organization used across a text or section",
+          "authenticStemPattern": "How is the information in the passage mainly organized?",
+          "distractorLogic": [
+            "local_structure_only",
+            "topic_sequence_not_structure",
+            "mixed_but_minor_pattern"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "structure.effect",
+          "construct": "Analyze why a chosen structure helps develop meaning",
+          "authenticStemPattern": "How does the organization of paragraphs __–__ help the author develop the idea that ___?",
+          "distractorLogic": [
+            "summarizes_not_analyzes",
+            "wrong_relationship",
+            "unsupported_effect"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R4.3",
+      "label": "Transitions & signal words",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.5.3"
+      ],
+      "dokRange": [
+        2,
+        2
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Explain relationship signaled, not just identify the word.",
+      "families": [
+        {
+          "familyId": "transition.relationship",
+          "construct": "Identify the logical relationship signaled by a transition",
+          "authenticStemPattern": "What relationship does the word/phrase ___ signal?",
+          "distractorLogic": [
+            "sequence_for_contrast",
+            "cause_for_example",
+            "addition_for_result"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "transition.best_fit",
+          "construct": "Choose a transition that preserves logic and clarity",
+          "authenticStemPattern": "Which transition best connects these ideas?",
+          "distractorLogic": [
+            "grammatical_but_wrong_logic",
+            "redundant_transition",
+            "opposite_relationship"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R4.4",
+      "label": "Author purpose",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.6.1",
+        "R.6.3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Include explicit and implicit purpose.",
+      "families": [
+        {
+          "familyId": "purpose.primary",
+          "construct": "Identify the author’s primary purpose",
+          "authenticStemPattern": "What is the author’s primary purpose in the passage?",
+          "distractorLogic": [
+            "topic_summary",
+            "secondary_purpose",
+            "reader_effect_not_purpose"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "purpose.detail",
+          "construct": "Explain the purpose of including a particular example/detail",
+          "authenticStemPattern": "Why does the author include ___?",
+          "distractorLogic": [
+            "restate_detail",
+            "purpose_of_other_section",
+            "unsupported_persuasion"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R4.5",
+      "label": "Point of view / perspective",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.6.1",
+        "R.6.2"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Separate author's view from views represented in the text.",
+      "families": [
+        {
+          "familyId": "pov.author",
+          "construct": "Determine the author/narrator perspective toward an issue",
+          "authenticStemPattern": "Which statement best describes the author’s point of view about ___?",
+          "distractorLogic": [
+            "view_of_quoted_person",
+            "neutral_fact",
+            "extreme_position"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "pov.multiple",
+          "construct": "Distinguish viewpoints represented within a single text",
+          "authenticStemPattern": "How does ___’s perspective differ from ___’s?",
+          "distractorLogic": [
+            "shared_fact",
+            "reversed_positions",
+            "difference_not_supported"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R4.6",
+      "label": "Rhetorical technique",
+      "domain": "Structure, Purpose & POV",
+      "officialTargets": [
+        "R.6.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice"
+      ],
+      "recommendedContexts": [
+        "science",
+        "social_studies",
+        "workplace",
+        "literary"
+      ],
+      "authoringNote": "Focus on what the technique achieves.",
+      "families": [
+        {
+          "familyId": "rhetorical.technique.function",
+          "construct": "Analyze what a rhetorical move accomplishes",
+          "authenticStemPattern": "Why does the author use ___ (example/question/repetition/comparison)?",
+          "distractorLogic": [
+            "names_technique_only",
+            "generic_emphasis",
+            "effect_not_in_text"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "rhetorical.technique.argument",
+          "construct": "Analyze how a rhetorical choice advances an argument",
+          "authenticStemPattern": "How does the use of ___ strengthen the author’s argument?",
+          "distractorLogic": [
+            "adds_style_not_reasoning",
+            "unsupported_emotional_effect",
+            "repeats_claim"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.1",
+      "label": "Claim identification",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Main claims and supporting/subclaims.",
+      "families": [
+        {
+          "familyId": "claim.main",
+          "construct": "Identify the central claim in an argument",
+          "authenticStemPattern": "Which statement best expresses the author’s main claim?",
+          "distractorLogic": [
+            "supporting_reason",
+            "background_fact",
+            "opposing_claim"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "claim.subclaim",
+          "construct": "Identify a supporting or intermediate claim",
+          "authenticStemPattern": "Which statement is a claim the author uses to support the larger argument?",
+          "distractorLogic": [
+            "evidence_not_claim",
+            "counterclaim",
+            "context_only"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.2",
+      "label": "Argument chain / structure",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "How claims build on one another.",
+      "families": [
+        {
+          "familyId": "argument.chain",
+          "construct": "Trace how claim, reasons, and evidence build on one another",
+          "authenticStemPattern": "How does paragraph __ contribute to the author’s argument?",
+          "distractorLogic": [
+            "content_summary",
+            "evidence_for_other_claim",
+            "counterargument_misread"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "argument.order",
+          "construct": "Identify the relationship among parts of an argument",
+          "authenticStemPattern": "Which choice best describes the progression of the argument?",
+          "distractorLogic": [
+            "chronology_only",
+            "missing_major_step",
+            "reversed_chain"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.3",
+      "label": "Evidence identification",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.2"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Current evidence-matching family gives two transfer items.",
+      "families": [
+        {
+          "familyId": "evidence.strongest",
+          "construct": "Choose the strongest evidence for a specific claim",
+          "authenticStemPattern": "Which detail best supports the claim that ___?",
+          "distractorLogic": [
+            "related_not_direct",
+            "background_fact",
+            "evidence_for_other_claim"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "evidence.identify_role",
+          "construct": "Identify which statement functions as evidence rather than claim or reasoning",
+          "authenticStemPattern": "Which sentence provides evidence for the author’s claim?",
+          "distractorLogic": [
+            "claim_itself",
+            "reason_without_evidence",
+            "counterclaim"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.4",
+      "label": "Evidence relevance",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Current writing evidence item gives one relevant prototype.",
+      "families": [
+        {
+          "familyId": "relevance.directness",
+          "construct": "Judge whether evidence directly bears on a claim",
+          "authenticStemPattern": "Which piece of evidence is most relevant to the claim that ___?",
+          "distractorLogic": [
+            "interesting_but_irrelevant",
+            "weakly_related",
+            "supports_different_claim"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "relevance.remove",
+          "construct": "Identify evidence that does not belong in an argument",
+          "authenticStemPattern": "Which detail could be removed without weakening the support for the claim?",
+          "distractorLogic": [
+            "central_evidence",
+            "supporting_reason",
+            "irrelevant_detail"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.5",
+      "label": "Evidence sufficiency",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Not just whether evidence relates—whether it is enough.",
+      "families": [
+        {
+          "familyId": "sufficiency.evaluate",
+          "construct": "Judge whether the amount/quality of evidence is enough",
+          "authenticStemPattern": "Why is the evidence in paragraph __ insufficient to support the claim?",
+          "distractorLogic": [
+            "relevance_confused_with_amount",
+            "claim_restated_as_evidence",
+            "evidence_is_sufficient"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "sufficiency.add",
+          "construct": "Choose additional evidence that would most strengthen an under-supported claim",
+          "authenticStemPattern": "Which additional evidence would most strengthen the argument?",
+          "distractorLogic": [
+            "more_of_same_weak_evidence",
+            "irrelevant_authority",
+            "strong_targeted_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.6",
+      "label": "Supported vs unsupported claims",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Separate evidence-backed claims from assertions.",
+      "families": [
+        {
+          "familyId": "support.status",
+          "construct": "Identify which claim is unsupported by the text’s evidence",
+          "authenticStemPattern": "Which claim is least supported by the evidence provided?",
+          "distractorLogic": [
+            "well_supported_claim",
+            "fact_not_claim",
+            "claim_with_indirect_support"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "support.match",
+          "construct": "Match claims to supporting evidence and spot the gap",
+          "authenticStemPattern": "Which claim lacks a supporting detail?",
+          "distractorLogic": [
+            "claim_with_evidence",
+            "background_statement",
+            "counterclaim_with_response"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.7",
+      "label": "Reasoning validity / fallacies",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.5"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Use real reasoning failures in context; avoid trivia-style fallacy naming.",
+      "families": [
+        {
+          "familyId": "reasoning.flaw",
+          "construct": "Identify a flaw in reasoning without requiring fallacy-name memorization",
+          "authenticStemPattern": "What is the main weakness in the author’s reasoning?",
+          "distractorLogic": [
+            "disagrees_with_conclusion",
+            "evidence_quantity_only",
+            "accurate_specific_flaw"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "reasoning.challenge",
+          "construct": "Choose the observation that most directly challenges the reasoning",
+          "authenticStemPattern": "Which statement, if true, would most weaken the argument?",
+          "distractorLogic": [
+            "irrelevant_fact",
+            "minor_exception",
+            "attacks_key_link"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.8",
+      "label": "Assumptions & premises",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.8.6"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Identify what must be true for the argument to work.",
+      "families": [
+        {
+          "familyId": "assumption.required",
+          "construct": "Identify an unstated assumption necessary for the argument",
+          "authenticStemPattern": "Which assumption does the argument depend on?",
+          "distractorLogic": [
+            "stated_fact",
+            "helpful_but_not_required",
+            "opposite_assumption"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "premise.bridge",
+          "construct": "Identify the missing premise connecting evidence to conclusion",
+          "authenticStemPattern": "Which statement would best complete the reasoning between ___ and ___?",
+          "distractorLogic": [
+            "new_unrelated_claim",
+            "restates_evidence",
+            "valid_bridge"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.9",
+      "label": "Source credibility",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "Supports R.8.3–R.8.6"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Studo extension: useful for evaluating evidence, but not a named standalone GED target.",
+      "families": [
+        {
+          "familyId": "credibility.source_fit",
+          "construct": "Choose the source best positioned to provide evidence for a claim",
+          "authenticStemPattern": "Which source would provide the most credible evidence about ___?",
+          "distractorLogic": [
+            "relevant_but_unqualified",
+            "biased_personal_account",
+            "expert_or_primary_source"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "credibility.limit",
+          "construct": "Identify a limitation that affects how much weight to give a source",
+          "authenticStemPattern": "Which fact would most reduce the credibility of this source for the claim?",
+          "distractorLogic": [
+            "irrelevant_biography",
+            "material_conflict_or_method_issue",
+            "minor_style_issue"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R5.10",
+      "label": "Counterargument & response",
+      "domain": "Argument Analysis",
+      "officialTargets": [
+        "R.6.2",
+        "supports R.8"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "drag_drop_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "How writers acknowledge, concede, rebut, or ignore opposing views.",
+      "families": [
+        {
+          "familyId": "counterargument.identify",
+          "construct": "Identify the opposing position represented in a text",
+          "authenticStemPattern": "Which statement best expresses the counterargument the author addresses?",
+          "distractorLogic": [
+            "author_claim",
+            "supporting_evidence",
+            "unrelated_objection"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "counterargument.response",
+          "construct": "Evaluate how effectively the author responds to an opposing view",
+          "authenticStemPattern": "How does the author respond to the counterargument that ___?",
+          "distractorLogic": [
+            "ignores_it_when_answered",
+            "restates_counterclaim",
+            "describes_actual_response"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R6.1",
+      "label": "Compare texts on same topic",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.9.1/R.7.1",
+        "R.9.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "technology_enhanced_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Compare perspective, tone, style, structure, purpose, or impact.",
+      "families": [
+        {
+          "familyId": "twotext.compare",
+          "construct": "Compare how two texts treat the same topic",
+          "authenticStemPattern": "How do the two authors differ in their treatment of ___?",
+          "distractorLogic": [
+            "difference_in_topic_not_treatment",
+            "reversed_authors",
+            "shared_point"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "twotext.agreement",
+          "construct": "Identify a point of agreement across texts",
+          "authenticStemPattern": "Which idea is supported by both texts?",
+          "distractorLogic": [
+            "only_text_a",
+            "only_text_b",
+            "unsupported_synthesis"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R6.2",
+      "label": "Opposing arguments",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.9.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "technology_enhanced_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Direct bridge into Extended Response argument evaluation.",
+      "families": [
+        {
+          "familyId": "opposing.arguments.support",
+          "construct": "Compare which argument is better supported and why",
+          "authenticStemPattern": "Which argument is better supported by evidence?",
+          "distractorLogic": [
+            "personal_agreement",
+            "more_confident_tone",
+            "quality_of_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "opposing.arguments.evidence",
+          "construct": "Compare the types/strengths of evidence used by opposing writers",
+          "authenticStemPattern": "How does the evidence in Text A differ from the evidence in Text B?",
+          "distractorLogic": [
+            "reversed_texts",
+            "topic_difference",
+            "unsupported_quality_judgment"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R6.3",
+      "label": "Text + data / visuals",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.7.2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "technology_enhanced_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Determine whether data supports, extends, clarifies, or contradicts text.",
+      "families": [
+        {
+          "familyId": "textdata.support",
+          "construct": "Determine whether a chart/table/graphic supports or challenges a claim in text",
+          "authenticStemPattern": "How does the information in the chart relate to the claim in paragraph __?",
+          "distractorLogic": [
+            "repeats_without_relation",
+            "misreads_axis",
+            "correct_support_or_challenge"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "textdata.integrate",
+          "construct": "Use both prose and data to answer a question",
+          "authenticStemPattern": "Which conclusion is best supported by both the passage and the graph?",
+          "distractorLogic": [
+            "text_only",
+            "graph_only",
+            "unsupported_combination"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R6.4",
+      "label": "Different genres / formats",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.7.1",
+        "R.7.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "technology_enhanced_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Article vs fact sheet, letter vs timeline, etc.",
+      "families": [
+        {
+          "familyId": "format.contribution",
+          "construct": "Compare what different formats contribute to understanding",
+          "authenticStemPattern": "What information does the timeline/table provide that the article does not?",
+          "distractorLogic": [
+            "article_only",
+            "duplicated_information",
+            "unique_format_contribution"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "genre.approach",
+          "construct": "Compare how two genres/formats present the same idea",
+          "authenticStemPattern": "How does the presentation of ___ differ between the memo and the article?",
+          "distractorLogic": [
+            "content_difference_only",
+            "reversed_formats",
+            "format_specific_difference"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "R6.5",
+      "label": "Synthesis across sources",
+      "domain": "Multiple Texts & Formats",
+      "officialTargets": [
+        "R.7.4"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "multiple_choice",
+        "technology_enhanced_optional"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Combine information to draw a new supported conclusion.",
+      "families": [
+        {
+          "familyId": "synthesis.conclusion",
+          "construct": "Draw a conclusion requiring evidence from more than one source",
+          "authenticStemPattern": "Which conclusion is best supported by both sources?",
+          "distractorLogic": [
+            "source_a_only",
+            "source_b_only",
+            "unsupported_merge"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "synthesis.resolve",
+          "construct": "Reconcile complementary or conflicting information across sources",
+          "authenticStemPattern": "Taken together, what do the sources suggest about ___?",
+          "distractorLogic": [
+            "chooses_one_source_only",
+            "false_compromise",
+            "supported_synthesis"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.1",
+      "label": "Frequently confused words",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Two current transfer items.",
+      "families": [
+        {
+          "familyId": "edit.confused_words",
+          "construct": "Choose the correct commonly confused word in an editing passage",
+          "authenticStemPattern": "Which option correctly completes the sentence?",
+          "distractorLogic": [
+            "homophone_wrong_function",
+            "wrong_possessive_or_contraction",
+            "semantically_wrong_word"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.precision_homophone",
+          "construct": "Edit a workplace/community sentence for precise standard usage",
+          "authenticStemPattern": "Select the word that makes the sentence correct in context.",
+          "distractorLogic": [
+            "sound_alike",
+            "near_synonym_wrong_usage",
+            "grammar_mismatch"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.2",
+      "label": "Basic subject–verb agreement",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.2"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Two current transfer items.",
+      "families": [
+        {
+          "familyId": "edit.sva.basic",
+          "construct": "Edit simple subject–verb agreement in context",
+          "authenticStemPattern": "Choose the verb that correctly completes the sentence.",
+          "distractorLogic": [
+            "plural_for_singular",
+            "singular_for_plural",
+            "tense_distractor"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.sva.intervening",
+          "construct": "Keep agreement with the true subject despite a nearby noun",
+          "authenticStemPattern": "Which verb correctly completes the sentence?",
+          "distractorLogic": [
+            "agrees_with_nearby_noun",
+            "tense_shift",
+            "number_mismatch"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.3",
+      "label": "Pronoun agreement, reference & case",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Need contextual editing, not isolated grammar trivia.",
+      "families": [
+        {
+          "familyId": "edit.pronoun.agreement",
+          "construct": "Edit pronoun agreement/reference in context",
+          "authenticStemPattern": "Which pronoun correctly completes the sentence?",
+          "distractorLogic": [
+            "number_mismatch",
+            "unclear_reference",
+            "wrong_case"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.pronoun.case",
+          "construct": "Edit pronoun case after subject/object position",
+          "authenticStemPattern": "Which option makes the sentence grammatically correct?",
+          "distractorLogic": [
+            "subject_object_confusion",
+            "possessive_confusion",
+            "agreement_mismatch"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.4",
+      "label": "Standard vs informal usage",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.4"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Edit non-standard or informal usage.",
+      "families": [
+        {
+          "familyId": "edit.standard_usage",
+          "construct": "Replace nonstandard/informal usage with standard English suited to the document",
+          "authenticStemPattern": "Which revision is most appropriate for this sentence?",
+          "distractorLogic": [
+            "too_informal",
+            "changes_meaning",
+            "awkward_overformal"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.register",
+          "construct": "Choose wording appropriate to workplace/community context",
+          "authenticStemPattern": "Which phrase best fits the tone and purpose of the document?",
+          "distractorLogic": [
+            "slang",
+            "needlessly_formal",
+            "imprecise_usage"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.5",
+      "label": "Modifiers & logical word order",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.5"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Dangling/misplaced modifiers and illogical order.",
+      "families": [
+        {
+          "familyId": "edit.modifier.placement",
+          "construct": "Move or revise a modifier so it clearly describes the intended word",
+          "authenticStemPattern": "Which revision makes the sentence clear and logical?",
+          "distractorLogic": [
+            "dangling_modifier",
+            "misplaced_modifier",
+            "changes_meaning"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.wordorder",
+          "construct": "Correct illogical word order",
+          "authenticStemPattern": "Which sentence is the clearest revision?",
+          "distractorLogic": [
+            "ambiguous_order",
+            "awkward_but_grammatical",
+            "meaning_shift"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.6",
+      "label": "Parallelism, coordination & subordination",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.6"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Important for sentence clarity and ER writing.",
+      "families": [
+        {
+          "familyId": "edit.parallelism",
+          "construct": "Make items in a series or comparison parallel",
+          "authenticStemPattern": "Which revision uses parallel structure correctly?",
+          "distractorLogic": [
+            "mixed_forms",
+            "meaning_shift",
+            "agreement_only"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.clause_relation",
+          "construct": "Use coordination/subordination to express the intended relationship",
+          "authenticStemPattern": "Which revision best shows the relationship between the ideas?",
+          "distractorLogic": [
+            "comma_splice",
+            "wrong_subordination",
+            "equal_weight_when_not_equal"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.7",
+      "label": "Complex agreement",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.7"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Compound subjects, intervening phrases, collective nouns.",
+      "families": [
+        {
+          "familyId": "edit.agreement.complex",
+          "construct": "Maintain agreement with compound/intervening/collective structures",
+          "authenticStemPattern": "Which verb/pronoun correctly completes the sentence?",
+          "distractorLogic": [
+            "nearest_noun_trap",
+            "compound_subject_trap",
+            "collective_noun_trap"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.antecedent.complex",
+          "construct": "Resolve pronoun agreement/reference in a complex sentence",
+          "authenticStemPattern": "Which revision is grammatically correct and clear?",
+          "distractorLogic": [
+            "ambiguous_antecedent",
+            "number_mismatch",
+            "case_error"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.8",
+      "label": "Wordiness & awkward construction",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.8"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Prefer clear, concise revisions.",
+      "families": [
+        {
+          "familyId": "edit.conciseness",
+          "construct": "Remove unnecessary words while preserving meaning",
+          "authenticStemPattern": "Which revision is the most concise without changing the meaning?",
+          "distractorLogic": [
+            "still_wordy",
+            "too_short_changes_meaning",
+            "awkward_construction"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.awkwardness",
+          "construct": "Revise an awkward sentence for clarity",
+          "authenticStemPattern": "Which revision is clearest and most effective?",
+          "distractorLogic": [
+            "grammatical_but_clunky",
+            "changes_claim",
+            "introduces_error"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L1.9",
+      "label": "Transitions for logic & clarity",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.1.9"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Transition choice in real passage context.",
+      "families": [
+        {
+          "familyId": "edit.transition.logic",
+          "construct": "Select a transition that accurately expresses the relationship between ideas",
+          "authenticStemPattern": "Which transition best completes the paragraph?",
+          "distractorLogic": [
+            "wrong_logic",
+            "redundant",
+            "too_strong"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.transition.flow",
+          "construct": "Revise transitions to improve paragraph coherence",
+          "authenticStemPattern": "Which revision best connects the two sentences?",
+          "distractorLogic": [
+            "repetition_only",
+            "logical_mismatch",
+            "correct_relationship"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L2.1",
+      "label": "Capitalization",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.1"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Proper nouns, titles, sentence beginnings.",
+      "families": [
+        {
+          "familyId": "edit.capitalization",
+          "construct": "Correct capitalization in a workplace/community passage",
+          "authenticStemPattern": "Which revision uses capitalization correctly?",
+          "distractorLogic": [
+            "overcapitalization",
+            "missed_proper_noun",
+            "title_rule_error"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.title_names",
+          "construct": "Apply capitalization rules to names, titles, and sentence starts",
+          "authenticStemPattern": "Which option is correctly capitalized?",
+          "distractorLogic": [
+            "common_noun_capitalized",
+            "proper_noun_lowercase",
+            "title_word_error"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L2.2",
+      "label": "Fragments, run-ons & fused sentences",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.2"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Sentence boundaries in context.",
+      "families": [
+        {
+          "familyId": "edit.sentence_boundary",
+          "construct": "Repair a fragment, run-on, or fused sentence",
+          "authenticStemPattern": "Which revision correctly joins or separates the ideas?",
+          "distractorLogic": [
+            "comma_splice",
+            "fragment",
+            "fused_sentence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.fragment.integration",
+          "construct": "Integrate a dependent fragment into a complete sentence",
+          "authenticStemPattern": "Which revision makes the sentence complete and clear?",
+          "distractorLogic": [
+            "still_fragment",
+            "run_on",
+            "meaning_shift"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L2.3",
+      "label": "Apostrophes & possessives",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Possessives; distinguish possessive pronouns.",
+      "families": [
+        {
+          "familyId": "edit.possessive",
+          "construct": "Use apostrophes correctly with possessive nouns",
+          "authenticStemPattern": "Which option correctly shows possession?",
+          "distractorLogic": [
+            "plural_not_possessive",
+            "wrong_apostrophe_position",
+            "pronoun_apostrophe"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.possessive_context",
+          "construct": "Edit possessive forms in a sentence with singular/plural nouns",
+          "authenticStemPattern": "Which revision uses apostrophes correctly?",
+          "distractorLogic": [
+            "singular_plural_confusion",
+            "contraction_confusion",
+            "extra_apostrophe"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "L2.4",
+      "label": "Punctuation & clause separation",
+      "domain": "Language & Editing",
+      "officialTargets": [
+        "L.2.4"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "embedded_dropdown",
+        "multiple_choice_training_only"
+      ],
+      "recommendedContexts": [
+        "workplace",
+        "community"
+      ],
+      "authoringNote": "Commas, end marks, appositives, and clause punctuation.",
+      "families": [
+        {
+          "familyId": "edit.punctuation.clauses",
+          "construct": "Punctuate independent/dependent clauses correctly",
+          "authenticStemPattern": "Which punctuation makes the sentence correct?",
+          "distractorLogic": [
+            "comma_splice",
+            "missing_comma",
+            "semicolon_misuse"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "edit.punctuation.nonessential",
+          "construct": "Punctuate appositives/nonessential elements or series correctly",
+          "authenticStemPattern": "Which revision uses punctuation correctly?",
+          "distractorLogic": [
+            "missing_pair_comma",
+            "unnecessary_comma",
+            "wrong_end_mark"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.1",
+      "label": "Understand the task",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Identify what the prompt asks the writer to evaluate.",
+      "families": [
+        {
+          "familyId": "er.task.read",
+          "construct": "Identify what an ER prompt asks the writer to evaluate",
+          "authenticStemPattern": "What must the response do to fully answer this prompt?",
+          "distractorLogic": [
+            "argue_personal_opinion",
+            "summarize_only",
+            "evaluate_support_with_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.task.constraints",
+          "construct": "Identify source-use and comparison requirements",
+          "authenticStemPattern": "Which plan best matches the task?",
+          "distractorLogic": [
+            "uses_one_source_only",
+            "chooses_side_without_analysis",
+            "evaluates_both_arguments"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.2",
+      "label": "Map both arguments",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1",
+        "R.8",
+        "R.9.3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Claims, evidence, assumptions, and reasoning.",
+      "families": [
+        {
+          "familyId": "er.map.claims",
+          "construct": "Map each source’s main claim, reasons, and evidence",
+          "authenticStemPattern": "Which outline correctly maps the two arguments?",
+          "distractorLogic": [
+            "swaps_claim_evidence",
+            "misses_counterpoint",
+            "accurate_map"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.map.strengths",
+          "construct": "Identify the strongest and weakest parts of both arguments",
+          "authenticStemPattern": "Which note set best captures the support in both texts?",
+          "distractorLogic": [
+            "personal_reaction",
+            "summary_only",
+            "evidence_reasoning_map"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.3",
+      "label": "Select better-supported position",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Choose based on support, not personal agreement.",
+      "families": [
+        {
+          "familyId": "er.position.support",
+          "construct": "Choose the better-supported position based on source quality",
+          "authenticStemPattern": "Which position is better supported, and for what reason?",
+          "distractorLogic": [
+            "personal_agreement",
+            "more_emotional_language",
+            "stronger_relevant_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.position.compare",
+          "construct": "Compare source support before choosing a position",
+          "authenticStemPattern": "Which evaluation best explains why one argument is stronger?",
+          "distractorLogic": [
+            "counts_evidence_only",
+            "tone_based",
+            "quality_and_reasoning"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.4",
+      "label": "Build evaluative thesis",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2",
+        "ER Traits 1–2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "State which argument is better supported and why.",
+      "families": [
+        {
+          "familyId": "er.thesis.evaluative",
+          "construct": "Write/select a thesis that evaluates support rather than states opinion",
+          "authenticStemPattern": "Which thesis best answers the prompt?",
+          "distractorLogic": [
+            "topic_statement",
+            "personal_preference",
+            "evaluative_claim_with_reason"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.thesis.precision",
+          "construct": "Revise a vague thesis into a precise comparative judgment",
+          "authenticStemPattern": "Which revision creates the strongest thesis?",
+          "distractorLogic": [
+            "too_broad",
+            "summary_only",
+            "specific_evaluation"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.5",
+      "label": "Select specific source evidence",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.2",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Use relevant, specific evidence from source texts.",
+      "families": [
+        {
+          "familyId": "er.evidence.select",
+          "construct": "Select specific source evidence that directly supports the thesis",
+          "authenticStemPattern": "Which evidence would best support this paragraph’s claim?",
+          "distractorLogic": [
+            "interesting_fact",
+            "weakly_related",
+            "direct_specific_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.evidence.balance",
+          "construct": "Choose evidence from both sources when comparison requires it",
+          "authenticStemPattern": "Which evidence plan best supports the evaluation?",
+          "distractorLogic": [
+            "one_source_only",
+            "quotes_without_purpose",
+            "balanced_targeted_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.6",
+      "label": "Analyze evidence",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.2",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Explain why evidence strengthens or weakens an argument.",
+      "families": [
+        {
+          "familyId": "er.evidence.explain",
+          "construct": "Explain why selected evidence strengthens/weakens an argument",
+          "authenticStemPattern": "Which explanation best connects the evidence to the thesis?",
+          "distractorLogic": [
+            "repeats_evidence",
+            "personal_comment",
+            "analysis_of_why_it_matters"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.evidence.compare",
+          "construct": "Compare the significance of evidence from two sources",
+          "authenticStemPattern": "Which analysis best explains why Text A’s evidence is stronger?",
+          "distractorLogic": [
+            "quantity_only",
+            "topic_restated",
+            "relevance_quality_reasoning"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.7",
+      "label": "Analyze reasoning",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.2",
+        "R.8",
+        "ER Trait 1"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Move beyond evidence listing to reasoning quality.",
+      "families": [
+        {
+          "familyId": "er.reasoning.analyze",
+          "construct": "Analyze the reasoning that links evidence to a claim",
+          "authenticStemPattern": "Which sentence best evaluates the author’s reasoning?",
+          "distractorLogic": [
+            "summary",
+            "agreement",
+            "specific_logic_analysis"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.reasoning.flaw",
+          "construct": "Explain how a reasoning flaw affects an argument’s strength",
+          "authenticStemPattern": "Which analysis most clearly explains the weakness?",
+          "distractorLogic": [
+            "labels_fallacy_only",
+            "personal_attack",
+            "effect_on_claim_support"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.8",
+      "label": "Organize the response",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2",
+        "ER Trait 2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Logical progression, paragraph purpose, transitions.",
+      "families": [
+        {
+          "familyId": "er.organize.plan",
+          "construct": "Choose an organization that logically develops an evaluation",
+          "authenticStemPattern": "Which outline provides the clearest progression?",
+          "distractorLogic": [
+            "source_by_source_summary_only",
+            "random_evidence",
+            "thesis_then_comparative_analysis"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.organize.transitions",
+          "construct": "Use transitions to connect comparison and evaluation",
+          "authenticStemPattern": "Which transition best moves between these ideas?",
+          "distractorLogic": [
+            "sequence_only",
+            "wrong_contrast",
+            "logical_comparative_transition"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.9",
+      "label": "Develop ideas",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2",
+        "ER Trait 2"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Connect evidence to the thesis with explanation.",
+      "families": [
+        {
+          "familyId": "er.develop.analysis",
+          "construct": "Develop a body paragraph with evidence plus explanation",
+          "authenticStemPattern": "Which paragraph most fully develops the claim?",
+          "distractorLogic": [
+            "evidence_only",
+            "opinion_only",
+            "evidence_plus_analysis"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.develop.depth",
+          "construct": "Add analysis that makes a paragraph more complete",
+          "authenticStemPattern": "Which sentence would best deepen the analysis?",
+          "distractorLogic": [
+            "repetition",
+            "new_unrelated_fact",
+            "explains_significance"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.10",
+      "label": "Revise for focus & clarity",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.2–W.3",
+        "ER Traits 2–3"
+      ],
+      "dokRange": [
+        1,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Remove repetition; improve order, clarity, and transitions.",
+      "families": [
+        {
+          "familyId": "er.revise.focus",
+          "construct": "Remove repetition/off-topic material to maintain focus",
+          "authenticStemPattern": "Which revision makes the paragraph more focused?",
+          "distractorLogic": [
+            "keeps_repetition",
+            "cuts_needed_evidence",
+            "removes_offtopic"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.revise.clarity",
+          "construct": "Reorder or revise sentences for clearer progression",
+          "authenticStemPattern": "Which revision improves clarity and organization most?",
+          "distractorLogic": [
+            "surface_edit_only",
+            "logical_reorder",
+            "changes_argument"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.11",
+      "label": "Edit conventions",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.3",
+        "ER Trait 3"
+      ],
+      "dokRange": [
+        1,
+        2
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Aim for mostly correct standard English; not perfection.",
+      "families": [
+        {
+          "familyId": "er.edit.conventions",
+          "construct": "Edit an ER-style paragraph for sentence-level correctness",
+          "authenticStemPattern": "Which revision best corrects the error without changing meaning?",
+          "distractorLogic": [
+            "introduces_new_error",
+            "meaning_shift",
+            "correct_edit"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.edit.readability",
+          "construct": "Correct conventions that interfere with clarity",
+          "authenticStemPattern": "Which sentence should be revised for standard English?",
+          "distractorLogic": [
+            "minor_style_only",
+            "actual_convention_issue",
+            "correct_sentence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "W1.12",
+      "label": "Full paired-source ER",
+      "domain": "Extended Response",
+      "officialTargets": [
+        "W.1–W.3",
+        "ER Traits 1–3"
+      ],
+      "dokRange": [
+        2,
+        3
+      ],
+      "preferredItemTypes": [
+        "microtask_training",
+        "extended_response"
+      ],
+      "recommendedContexts": [
+        "social_studies",
+        "science",
+        "workplace"
+      ],
+      "authoringNote": "Eight distinct paired-source prompts for an initial serious bank.",
+      "families": [
+        {
+          "familyId": "er.full.paired_sources",
+          "construct": "Write a full evaluation of two source arguments using evidence",
+          "authenticStemPattern": "Analyze both arguments and explain which is better supported. Use evidence from the texts.",
+          "distractorLogic": [
+            "not_applicable_constructed_response"
+          ],
+          "minimumTransferVariants": 2,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
+          "familyId": "er.full.transfer",
+          "construct": "Write a second full ER on a different topic/source type to test transfer",
+          "authenticStemPattern": "Evaluate which argument is better supported and explain your reasoning with source evidence.",
+          "distractorLogic": [
+            "not_applicable_constructed_response"
+          ],
+          "minimumTransferVariants": 2,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        }
+      ]
+    }
+  ]
+}
