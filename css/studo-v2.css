@@ -4847,3 +4847,248 @@ body.test-body {
     grid-column: 2;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Phase 4G.5 — learner clarity refinements
+   Practice search spotlight, visual resource shelf, plainer progress page.
+   ------------------------------------------------------------------------- */
+
+.practice-library-hero { margin-bottom: 26px; }
+.practice-search-spotlight {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin: 0 0 52px;
+  padding: 22px 24px;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--color-primary-soft) 42%, var(--color-surface));
+}
+.practice-search-kicker,
+.practice-search-label {
+  display: block;
+  font-size: .79rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--color-ink-muted);
+}
+.practice-search-copy h2 {
+  margin: 10px 0 10px;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  letter-spacing: -.03em;
+}
+.practice-search-copy p { margin: 0; color: var(--color-ink-soft); max-width: 36ch; }
+.practice-search-panel { max-width: none; }
+.practice-search-input {
+  margin-top: 0;
+  max-width: none;
+}
+.practice-search-input input {
+  margin-top: 10px;
+  min-height: 56px;
+  font-size: 1rem;
+  background: var(--color-surface);
+}
+.practice-search-panel .skill-search-results {
+  max-width: none;
+  margin-top: 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+.practice-search-panel .skill-search-row {
+  padding: 14px 16px;
+}
+.practice-search-panel .skill-search-row:last-child {
+  border-bottom: 0;
+}
+
+.resource-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+.resource-tile {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-height: 220px;
+  padding: 20px;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+.resource-tile:hover {
+  text-decoration: none;
+  border-color: color-mix(in srgb, currentColor 40%, var(--color-line));
+  transform: translateY(-1px);
+}
+.resource-tile-icon {
+  width: 84px;
+  height: 84px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--resource-accent, var(--color-primary));
+}
+.resource-tile-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.resource-tile-label {
+  font-size: .76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--color-ink-muted);
+}
+.resource-tile strong {
+  font-size: 1.02rem;
+  line-height: 1.45;
+  letter-spacing: -.01em;
+}
+.resource-tile.blue { --resource-accent: #4f7cff; }
+.resource-tile.green { --resource-accent: #1f9d73; }
+.resource-tile.purple { --resource-accent: #7b63d7; }
+.resource-tile.gold { --resource-accent: #cc8b18; }
+
+.progress-heading-plain {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-bottom: 28px;
+}
+.progress-overview {
+  margin: 28px 0 38px;
+}
+.progress-section-head-tight { margin-bottom: 14px; }
+.progress-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.progress-stat-card {
+  display: grid;
+  gap: 4px;
+  min-height: 118px;
+  padding: 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: var(--color-surface);
+}
+.progress-stat-card strong {
+  font-size: 1.7rem;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+.progress-stat-card span {
+  font-size: .84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--color-ink-muted);
+}
+.progress-stat-card small {
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+  line-height: 1.45;
+}
+.review-rhythm-plain {
+  margin-top: 0;
+  background: var(--color-surface-soft);
+  border-color: var(--color-line);
+}
+.next-move-plain {
+  margin: 0 0 44px;
+  padding: 22px 0 28px;
+  border-top: 1px solid var(--color-line);
+}
+.pattern-notice-plain {
+  margin: 0 0 44px;
+  padding: 20px 0 26px;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+.pattern-notice-plain h2 {
+  margin: 4px 0 8px;
+  font-size: 1.2rem;
+}
+.pattern-notice-plain p { margin: 0; max-width: 70ch; color: var(--color-ink-soft); }
+.skill-signal-list-plain,
+.mistake-list-plain {
+  border-top: 1px solid var(--color-line);
+}
+.skill-signal-row-plain {
+  min-height: 92px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: 24px;
+}
+.skill-signal-row-plain:hover {
+  background: var(--color-surface-soft);
+}
+.skill-signal-row-plain .skill-signal-copy {
+  gap: 5px;
+}
+.skill-signal-row-plain .skill-signal-copy > span:last-child {
+  font-size: .84rem;
+}
+.skill-signal-row-plain .skill-meter {
+  grid-template-columns: minmax(120px, 1fr) 56px 100px;
+}
+.mistake-row-plain {
+  grid-template-columns: minmax(0, 1fr) minmax(200px, auto) 24px;
+}
+.mistake-row-plain .mistake-copy {
+  display: grid;
+  gap: 3px;
+}
+.mistake-row-plain .mistake-copy span,
+.mistake-row-plain .mistake-meta span:last-child {
+  color: var(--color-ink-faint);
+  font-size: .84rem;
+}
+.mistake-row-plain .mistake-meta {
+  display: grid;
+  gap: 3px;
+  justify-items: end;
+}
+.progress-note-card-plain {
+  margin: 0 0 52px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--color-line);
+}
+.progress-note-card-plain p { max-width: 70ch; }
+
+@media (max-width: 980px) {
+  .practice-search-spotlight,
+  .progress-overview-grid,
+  .skill-signal-row-plain,
+  .mistake-row-plain {
+    grid-template-columns: 1fr;
+  }
+  .practice-search-copy p,
+  .practice-search-panel,
+  .library-search,
+  .practice-search-panel .skill-search-results { max-width: none; }
+  .progress-stat-card { min-height: 0; }
+  .skill-signal-row-plain .skill-meter,
+  .mistake-row-plain .mistake-meta {
+    justify-items: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .practice-search-spotlight {
+    padding: 18px;
+    margin-bottom: 40px;
+  }
+  .resource-shelf {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  .resource-tile {
+    min-height: 0;
+  }
+}

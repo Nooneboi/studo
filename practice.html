@@ -35,16 +35,26 @@
 
 <main class="library-main">
   <div class="wrap library-wrap">
-    <header class="library-hero">
+    <header class="library-hero practice-library-hero">
       <div class="page-kicker">Reasoning Through Language Arts</div>
       <h1>Practice</h1>
-      <p>Choose a topic. Open a guide or worksheet. Use a quiz when you want to check yourself.</p>
-      <label class="library-search" for="skill-search">
-        <span class="sr-only">Find a topic or skill</span>
-        <input id="skill-search" type="search" placeholder="Find a topic or skill" autocomplete="off">
-      </label>
-      <div id="skill-search-results" class="skill-search-results" hidden></div>
+      <p>Choose a topic below, or use the quick search when you already know the skill you want.</p>
     </header>
+
+    <section class="practice-search-spotlight" aria-labelledby="quick-find-title">
+      <div class="practice-search-copy">
+        <div class="practice-search-kicker">Quick find</div>
+        <h2 id="quick-find-title">Go straight to a skill.</h2>
+        <p>Search by topic, sub-skill, or area. This is the fastest way to jump into exactly what you need.</p>
+      </div>
+      <div class="practice-search-panel">
+        <label class="library-search practice-search-input" for="skill-search">
+          <span class="practice-search-label">Find a topic or skill</span>
+          <input id="skill-search" type="search" placeholder="Example: main idea, tone, evidence, punctuation" autocomplete="off">
+        </label>
+        <div id="skill-search-results" class="skill-search-results" hidden></div>
+      </div>
+    </section>
 
     <section class="library-index" aria-labelledby="browse-title">
       <div class="library-section-heading"><h2 id="browse-title">Browse by area</h2></div>
@@ -60,7 +70,5 @@
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
 <script src="js/practice.js"></script>
-<script>
-</script>
 </body>
 </html>

@@ -1,16 +1,15 @@
 /*
   resources.js
   ------------
-  Loads data/resources.json and renders it as a filterable list with
-  a sidebar of categories. To add a resource, edit data/resources.json
-  directly (pencil-icon edit on GitHub) — no code changes needed.
+  A simpler resource shelf: clear category chips, larger visual file/folder
+  markers, and labels underneath so learners can quickly spot what to open.
 */
 
 const KINDS = [
-  { id: "phrase_bank", label: "Phrase banks" },
-  { id: "reading", label: "Reading" },
-  { id: "guide", label: "Guides" },
-  { id: "book", label: "Books" },
+  { id: "phrase_bank", label: "Phrase banks", single: "Phrase bank", icon: "folder", accent: "blue" },
+  { id: "reading", label: "Reading", single: "Reading", icon: "file", accent: "green" },
+  { id: "guide", label: "Guides", single: "Guide", icon: "file", accent: "purple" },
+  { id: "book", label: "Books", single: "Book", icon: "book", accent: "gold" },
 ];
 
 let allResources = [];
@@ -66,23 +65,27 @@ function renderList() {
     return;
   }
 
-  listEl.innerHTML = filtered
-    .map((r) => {
-      const kindLabel = KINDS.find((k) => k.id === r.kind)?.label.replace(/s$/, "") || r.kind;
-      return `
-        <div class="resource-item">
-          <div>
-            <div class="kind">${escapeHtml(kindLabel)}</div>
-            <div><strong>${escapeHtml(r.title)}</strong></div>
-          </div>
-          <a class="icon-btn" href="${escapeAttr(r.url)}" target="_blank" rel="noopener" aria-label="Open ${escapeAttr(r.title)}" title="Open">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M3 7a2 2 0 0 1 2-2h4.17a2 2 0 0 1 1.41.59L12 7h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" fill="currentColor"/>
-            </svg>
-          </a>
-        </div>`;
-    })
-    .join("");
+  listEl.innerHTML = `<div class="resource-shelf">${filtered.map(resourceTile).join("")}</div>`;
+}
+
+function resourceTile(resource) {
+  const kind = KINDS.find((k) => k.id === resource.kind) || { single: resource.kind, icon: "file", accent: "blue" };
+  return `
+    <a class="resource-tile ${kind.accent}" href="${escapeAttr(resource.url)}" target="_blank" rel="noopener">
+      <div class="resource-tile-icon" aria-hidden="true">${iconSvg(kind.icon)}</div>
+      <div class="resource-tile-label">${escapeHtml(kind.single)}</div>
+      <strong>${escapeHtml(resource.title)}</strong>
+    </a>`;
+}
+
+function iconSvg(type) {
+  if (type === "folder") {
+    return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 20c0-3.314 2.686-6 6-6h12l5 5h19c3.314 0 6 2.686 6 6v19c0 3.314-2.686 6-6 6H14c-3.314 0-6-2.686-6-6V20Z" fill="currentColor" opacity=".18"/><path d="M8 22c0-3.314 2.686-6 6-6h12.5l4.5 4H50c3.314 0 6 2.686 6 6v18c0 3.314-2.686 6-6 6H14c-3.314 0-6-2.686-6-6V22Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M8 28h48" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`;
+  }
+  if (type === "book") {
+    return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 13h24c4.418 0 8 3.582 8 8v28H26c-4.418 0-8-3.582-8-8V13Z" fill="currentColor" opacity=".16"/><path d="M18 13h24c4.418 0 8 3.582 8 8v28H26c-4.418 0-8-3.582-8-8V13Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 45c0-4.418 3.582-8 8-8h24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M26 23h14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`;
+  }
+  return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 10h20l10 10v34H18c-3.314 0-6-2.686-6-6V16c0-3.314 2.686-6 6-6Z" fill="currentColor" opacity=".14"/><path d="M38 10v10h10" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 10h20l10 10v28c0 3.314-2.686 6-6 6H18c-3.314 0-6-2.686-6-6V16c0-3.314 2.686-6 6-6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M22 31h16M22 39h20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`;
 }
 
 function escapeHtml(str) {
