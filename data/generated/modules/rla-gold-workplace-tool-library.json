@@ -1,7 +1,7 @@
 {
   "id": "rla-gold-workplace-tool-library",
-  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+  "title": "New Pickup Process for the Community Tool Library",
+  "description": "Workplace · Informational · 7 questions",
   "subject": "rla",
   "category": "reading",
   "topic": "Workplace passage set",
@@ -427,6 +427,19 @@
       "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
       "topicLabel": "Workplace passage set"
     },
-    "compiledAt": "2026-08-16T15:20:38.752Z"
+    "passage": {
+      "id": "p-rla-gold-workplace-tool-library",
+      "title": "New Pickup Process for the Community Tool Library",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-16T16:20:15.628Z"
   }
 }

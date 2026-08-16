@@ -6,7 +6,7 @@
   },
   {
     "file": "generated/modules/evidence-practice.json",
-    "title": "Evidence-Based Reading — The Night Shift",
+    "title": "The Night Shift",
     "description": "Practice making an inference, then choosing the evidence that proves it.",
     "curriculum": {
       "domain": "Relationships & Inference",
@@ -36,7 +36,7 @@
   },
   {
     "file": "generated/modules/writing-practice.json",
-    "title": "Organizing an Argument",
+    "title": "Sunday Hours at the Downtown Library",
     "description": "Choose relevant evidence, then use source evidence in a short argument.",
     "curriculum": {
       "domain": "Argument Analysis",
@@ -51,7 +51,7 @@
   },
   {
     "file": "generated/modules/evidence-transfer-practice.json",
-    "title": "Evidence & Inference — The Last Bus",
+    "title": "The Last Bus",
     "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
     "curriculum": {
       "domain": "Relationships & Inference",
@@ -81,8 +81,8 @@
   },
   {
     "file": "generated/modules/rla-gold-literary-brass-key.json",
-    "title": "GED-Style Literary Passage — The Brass Key",
-    "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+    "title": "The Brass Key",
+    "description": "Literary · 7 questions",
     "curriculum": {
       "domain": "Relationships & Inference",
       "primarySkillId": "R2.4",
@@ -100,8 +100,8 @@
   },
   {
     "file": "generated/modules/rla-gold-science-cool-roofs.json",
-    "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-    "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+    "title": "Cool Roofs and City Heat",
+    "description": "Science · Informational · 7 questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.2",
@@ -120,8 +120,8 @@
   },
   {
     "file": "generated/modules/rla-gold-workplace-tool-library.json",
-    "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-    "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+    "title": "New Pickup Process for the Community Tool Library",
+    "description": "Workplace · Informational · 7 questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.1",

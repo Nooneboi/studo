@@ -133,7 +133,7 @@ function passagePanelHtml() {
       <div class="reading-scroll">
         <div class="passage-text">${escapeHtml(currentQuiz.passage)}</div>
       </div>
-      ${currentQuiz.source ? `<div class="source-credit">${escapeHtml(currentQuiz.source)}</div>` : ""}
+      ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(currentQuiz.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)} ↗</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
     </aside>
   `;
 }

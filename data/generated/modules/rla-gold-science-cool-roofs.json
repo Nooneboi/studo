@@ -1,7 +1,7 @@
 {
   "id": "rla-gold-science-cool-roofs",
-  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+  "title": "Cool Roofs and City Heat",
+  "description": "Science · Informational · 7 questions",
   "subject": "rla",
   "category": "reading",
   "topic": "Science passage set",
@@ -427,6 +427,19 @@
       "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
       "topicLabel": "Science passage set"
     },
-    "compiledAt": "2026-08-16T15:20:38.751Z"
+    "passage": {
+      "id": "p-rla-gold-science-cool-roofs",
+      "title": "Cool Roofs and City Heat",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-16T16:20:15.627Z"
   }
 }

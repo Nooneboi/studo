@@ -5656,3 +5656,43 @@ body.test-body {
     grid-template-columns: 78px minmax(0,1fr) 16px;
   }
 }
+
+
+/* -------------------------------------------------------------------------
+   Phase 5E — resource/practice placement
+   Skill pages contain only skill-specific material. Mixed passage sets have
+   one dedicated library so the same set is never duplicated across skills.
+   ------------------------------------------------------------------------- */
+.passage-page-wrap { max-width: 1040px; padding-top: 64px; padding-bottom: 84px; }
+.passage-library-hero { margin-bottom: 34px; }
+.passage-library-hero h1 {
+  margin: 6px 0 0;
+  font-size: clamp(2.55rem, 5vw, 4.2rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+.passage-practice-list { border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); }
+.passage-practice-row {
+  min-height: 92px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 22px;
+  gap: 24px;
+  align-items: center;
+  padding: 17px 3px;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink);
+}
+.passage-practice-row:last-child { border-bottom: 0; }
+.passage-practice-row:hover { text-decoration: none; }
+.passage-practice-row:hover strong { color: var(--color-primary-dark); }
+.passage-practice-row > b { color: var(--color-primary-dark); text-align: right; }
+.passage-practice-copy { min-width: 0; display: grid; gap: 5px; }
+.passage-practice-copy strong { font-size: 1.04rem; font-weight: 650; letter-spacing: -.012em; }
+.passage-practice-meta,
+.passage-practice-source { color: var(--color-ink-muted); font-size: .82rem; }
+.passage-practice-source { color: var(--color-ink-soft); }
+.passage-practice-empty { margin: 0; padding: 18px 2px; border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); color: var(--color-ink-muted); }
+@media (max-width: 760px) {
+  .passage-page-wrap { padding-top: 40px; padding-bottom: 58px; }
+  .passage-practice-row { min-height: 82px; gap: 12px; }
+}

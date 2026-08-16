@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-16T15:20:38.754Z",
+  "builtAt": "2026-08-16T16:20:15.630Z",
   "tracks": [
     {
       "id": "reading",
@@ -33,8 +33,8 @@
               ]
             }
           ],
-          "availableSkillCount": 5,
-          "availableSetCount": 3,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -93,7 +93,7 @@
             }
           ],
           "studyFileCount": 2,
-          "checkCount": 3,
+          "checkCount": 0,
           "skills": [
             {
               "id": "R1.1",
@@ -101,64 +101,14 @@
               "label": "Explicit meaning",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -168,64 +118,14 @@
               "label": "Main idea / central idea",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -235,112 +135,14 @@
               "label": "Supporting details",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -350,158 +152,14 @@
               "label": "Summary",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 3,
-              "questionCount": 3,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 3,
-              "sets": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -511,62 +169,14 @@
               "label": "Theme",
               "priority": "P1",
               "practiceMode": "Literary",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 2,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             }
@@ -596,13 +206,13 @@
               ]
             }
           ],
-          "availableSkillCount": 4,
-          "availableSetCount": 5,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 5,
+          "checkCount": 0,
           "skills": [
             {
               "id": "R2.1",
@@ -610,64 +220,14 @@
               "label": "Sequence",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -677,64 +237,14 @@
               "label": "Cause and effect",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -761,138 +271,14 @@
               "label": "Inference from details",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 3,
-              "questionCount": 5,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 3,
-              "sets": [
-                {
-                  "id": "set-rla-evidence-last-bus",
-                  "title": "Evidence & Inference — The Last Bus",
-                  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
-                  "file": "generated/modules/evidence-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                },
-                {
-                  "id": "set-rla-evidence-night-shift",
-                  "title": "Evidence-Based Reading — The Night Shift",
-                  "description": "Practice making an inference, then choosing the evidence that proves it.",
-                  "file": "generated/modules/evidence-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-evidence-last-bus",
-                  "title": "Evidence & Inference — The Last Bus",
-                  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
-                  "file": "generated/modules/evidence-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                },
-                {
-                  "id": "set-rla-evidence-night-shift",
-                  "title": "Evidence-Based Reading — The Night Shift",
-                  "description": "Practice making an inference, then choosing the evidence that proves it.",
-                  "file": "generated/modules/evidence-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -902,64 +288,14 @@
               "label": "Conclusions & generalizations",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1005,13 +341,13 @@
               ]
             }
           ],
-          "availableSkillCount": 3,
-          "availableSetCount": 3,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 3,
+          "checkCount": 0,
           "skills": [
             {
               "id": "R3.1",
@@ -1019,112 +355,14 @@
               "label": "Meaning in context",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                },
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1168,62 +406,14 @@
               "label": "Tone",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1233,62 +423,14 @@
               "label": "Impact of word choice",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             }
@@ -1318,13 +460,13 @@
               ]
             }
           ],
-          "availableSkillCount": 4,
-          "availableSetCount": 3,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 3,
+          "checkCount": 0,
           "skills": [
             {
               "id": "R4.1",
@@ -1332,64 +474,14 @@
               "label": "Paragraph / section function",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-science-cool-roofs",
-                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
-                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.2",
-                    "secondarySkillIds": [
-                      "R2.2",
-                      "R3.1",
-                      "R4.1",
-                      "R1.3",
-                      "R2.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Science passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1399,64 +491,14 @@
               "label": "Text structure",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1483,64 +525,14 @@
               "label": "Author purpose",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-workplace-tool-library",
-                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
-                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Core Meaning",
-                    "primarySkillId": "R1.1",
-                    "secondarySkillIds": [
-                      "R4.4",
-                      "R2.1",
-                      "R1.3",
-                      "R4.2",
-                      "R3.1",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Workplace passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1550,62 +542,14 @@
               "label": "Point of view / perspective",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-gold-literary-brass-key",
-                  "title": "GED-Style Literary Passage — The Brass Key",
-                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
-                  "file": "generated/modules/rla-gold-literary-brass-key.json",
-                  "difficulty": "hard",
-                  "category": "reading",
-                  "questionCount": 7,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R1.5",
-                      "R3.4",
-                      "R3.5",
-                      "R4.5",
-                      "R1.4"
-                    ],
-                    "contentKind": "quiz",
-                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
-                    "topicLabel": "Literary passage set"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1629,13 +573,13 @@
           ]
         }
       ],
-      "availableSkillCount": 16,
+      "availableSkillCount": 0,
       "totalSkillCount": 22,
-      "availableSetCount": 5,
-      "questionCount": 25,
+      "availableSetCount": 0,
+      "questionCount": 0,
       "resourceCount": 2,
       "studyFileCount": 2,
-      "checkCount": 5
+      "checkCount": 0
     },
     {
       "id": "arguments",
@@ -1678,13 +622,13 @@
               ]
             }
           ],
-          "availableSkillCount": 2,
-          "availableSetCount": 3,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 3,
+          "checkCount": 0,
           "skills": [
             {
               "id": "R5.1",
@@ -1726,92 +670,14 @@
               "label": "Evidence identification",
               "priority": "P0",
               "practiceMode": "Argument",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-evidence-last-bus",
-                  "title": "Evidence & Inference — The Last Bus",
-                  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
-                  "file": "generated/modules/evidence-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                },
-                {
-                  "id": "set-rla-evidence-night-shift",
-                  "title": "Evidence-Based Reading — The Night Shift",
-                  "description": "Practice making an inference, then choosing the evidence that proves it.",
-                  "file": "generated/modules/evidence-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-evidence-last-bus",
-                  "title": "Evidence & Inference — The Last Bus",
-                  "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
-                  "file": "generated/modules/evidence-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                },
-                {
-                  "id": "set-rla-evidence-night-shift",
-                  "title": "Evidence-Based Reading — The Night Shift",
-                  "description": "Practice making an inference, then choosing the evidence that proves it.",
-                  "file": "generated/modules/evidence-practice.json",
-                  "difficulty": "medium",
-                  "category": "reading",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Relationships & Inference",
-                    "primarySkillId": "R2.4",
-                    "secondarySkillIds": [
-                      "R5.3"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-                    "topicLabel": "Inference & Evidence"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -1821,54 +687,14 @@
               "label": "Evidence relevance",
               "priority": "P0",
               "practiceMode": "Argument",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-writing-library-hours",
-                  "title": "Organizing an Argument",
-                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
-                  "file": "generated/modules/writing-practice.json",
-                  "difficulty": "easy",
-                  "category": "writing",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Argument Analysis",
-                    "primarySkillId": "R5.4",
-                    "secondarySkillIds": [
-                      "W1.5"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-                    "topicLabel": "Evidence Relevance"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-writing-library-hours",
-                  "title": "Organizing an Argument",
-                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
-                  "file": "generated/modules/writing-practice.json",
-                  "difficulty": "easy",
-                  "category": "writing",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Argument Analysis",
-                    "primarySkillId": "R5.4",
-                    "secondarySkillIds": [
-                      "W1.5"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-                    "topicLabel": "Evidence Relevance"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -2095,13 +921,13 @@
           ]
         }
       ],
-      "availableSkillCount": 2,
+      "availableSkillCount": 0,
       "totalSkillCount": 15,
-      "availableSetCount": 3,
-      "questionCount": 3,
+      "availableSetCount": 0,
+      "questionCount": 0,
       "resourceCount": 0,
       "studyFileCount": 0,
-      "checkCount": 3
+      "checkCount": 0
     },
     {
       "id": "language",
@@ -2147,13 +973,13 @@
               ]
             }
           ],
-          "availableSkillCount": 2,
-          "availableSetCount": 2,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 2,
+          "checkCount": 0,
           "skills": [
             {
               "id": "L1.1",
@@ -2161,92 +987,14 @@
               "label": "Frequently confused words",
               "priority": "P0",
               "practiceMode": "Language",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -2256,92 +1004,14 @@
               "label": "Basic subject–verb agreement",
               "priority": "P0",
               "practiceMode": "Language",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -2535,13 +1205,13 @@
           ]
         }
       ],
-      "availableSkillCount": 2,
+      "availableSkillCount": 0,
       "totalSkillCount": 13,
-      "availableSetCount": 2,
-      "questionCount": 4,
+      "availableSetCount": 0,
+      "questionCount": 0,
       "resourceCount": 0,
       "studyFileCount": 0,
-      "checkCount": 2
+      "checkCount": 0
     },
     {
       "id": "extended-response",
@@ -2586,13 +1256,13 @@
               ]
             }
           ],
-          "availableSkillCount": 2,
-          "availableSetCount": 1,
+          "availableSkillCount": 0,
+          "availableSetCount": 0,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 1,
+          "checkCount": 0,
           "skills": [
             {
               "id": "W1.1",
@@ -2668,54 +1338,14 @@
               "label": "Select specific source evidence",
               "priority": "P0",
               "practiceMode": "Writing",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-writing-library-hours",
-                  "title": "Organizing an Argument",
-                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
-                  "file": "generated/modules/writing-practice.json",
-                  "difficulty": "easy",
-                  "category": "writing",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Argument Analysis",
-                    "primarySkillId": "R5.4",
-                    "secondarySkillIds": [
-                      "W1.5"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-                    "topicLabel": "Evidence Relevance"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-writing-library-hours",
-                  "title": "Organizing an Argument",
-                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
-                  "file": "generated/modules/writing-practice.json",
-                  "difficulty": "easy",
-                  "category": "writing",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Argument Analysis",
-                    "primarySkillId": "R5.4",
-                    "secondarySkillIds": [
-                      "W1.5"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-                    "topicLabel": "Evidence Relevance"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -2776,54 +1406,14 @@
               "label": "Develop ideas",
               "priority": "P0",
               "practiceMode": "Writing",
-              "available": true,
-              "setCount": 1,
-              "questionCount": 1,
+              "available": false,
+              "setCount": 0,
+              "questionCount": 0,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 1,
-              "sets": [
-                {
-                  "id": "set-rla-writing-library-hours",
-                  "title": "Organizing an Argument",
-                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
-                  "file": "generated/modules/writing-practice.json",
-                  "difficulty": "easy",
-                  "category": "writing",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Argument Analysis",
-                    "primarySkillId": "R5.4",
-                    "secondarySkillIds": [
-                      "W1.5"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-                    "topicLabel": "Evidence Relevance"
-                  }
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-writing-library-hours",
-                  "title": "Organizing an Argument",
-                  "description": "Choose relevant evidence, then use source evidence in a short argument.",
-                  "file": "generated/modules/writing-practice.json",
-                  "difficulty": "easy",
-                  "category": "writing",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Argument Analysis",
-                    "primarySkillId": "R5.4",
-                    "secondarySkillIds": [
-                      "W1.5"
-                    ],
-                    "contentKind": "passage_practice",
-                    "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-                    "topicLabel": "Evidence Relevance"
-                  }
-                }
-              ],
+              "checkCount": 0,
+              "sets": [],
+              "checks": [],
               "resources": [],
               "studyResources": []
             },
@@ -2881,13 +1471,553 @@
           ]
         }
       ],
-      "availableSkillCount": 2,
+      "availableSkillCount": 0,
       "totalSkillCount": 12,
-      "availableSetCount": 1,
-      "questionCount": 2,
+      "availableSetCount": 0,
+      "questionCount": 0,
       "resourceCount": 0,
       "studyFileCount": 0,
-      "checkCount": 1
+      "checkCount": 0
+    }
+  ],
+  "passagePractice": [
+    {
+      "id": "set-rla-evidence-last-bus",
+      "title": "The Last Bus",
+      "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+      "file": "generated/modules/evidence-transfer-practice.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R5.3"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
+        "topicLabel": "Inference & Evidence"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R5.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-last-bus",
+        "title": "The Last Bus",
+        "textType": "literary",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-evidence-night-shift",
+      "title": "The Night Shift",
+      "description": "Practice making an inference, then choosing the evidence that proves it.",
+      "file": "generated/modules/evidence-practice.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R5.3"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
+        "topicLabel": "Inference & Evidence"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R5.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-night-shift",
+        "title": "The Night Shift",
+        "textType": "literary",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-gold-literary-brass-key",
+      "title": "The Brass Key",
+      "description": "Literary · 7 questions",
+      "file": "generated/modules/rla-gold-literary-brass-key.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R1.5",
+          "R3.4",
+          "R3.5",
+          "R4.5",
+          "R1.4"
+        ],
+        "contentKind": "quiz",
+        "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+        "topicLabel": "Literary passage set"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R1.5",
+        "R3.4",
+        "R3.5",
+        "R4.5",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-gold-literary-brass-key",
+        "title": "The Brass Key",
+        "textType": "literary",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-gold-science-cool-roofs",
+      "title": "Cool Roofs and City Heat",
+      "description": "Science · Informational · 7 questions",
+      "file": "generated/modules/rla-gold-science-cool-roofs.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R2.2",
+          "R3.1",
+          "R4.1",
+          "R1.3",
+          "R2.5",
+          "R1.4"
+        ],
+        "contentKind": "quiz",
+        "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+        "topicLabel": "Science passage set"
+      },
+      "measuredSkillIds": [
+        "R1.2",
+        "R2.2",
+        "R3.1",
+        "R4.1",
+        "R1.3",
+        "R2.5",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-gold-science-cool-roofs",
+        "title": "Cool Roofs and City Heat",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-gold-workplace-tool-library",
+      "title": "New Pickup Process for the Community Tool Library",
+      "description": "Workplace · Informational · 7 questions",
+      "file": "generated/modules/rla-gold-workplace-tool-library.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.1",
+        "secondarySkillIds": [
+          "R4.4",
+          "R2.1",
+          "R1.3",
+          "R4.2",
+          "R3.1",
+          "R1.4"
+        ],
+        "contentKind": "quiz",
+        "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+        "topicLabel": "Workplace passage set"
+      },
+      "measuredSkillIds": [
+        "R1.1",
+        "R4.4",
+        "R2.1",
+        "R1.3",
+        "R4.2",
+        "R3.1",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-gold-workplace-tool-library",
+        "title": "New Pickup Process for the Community Tool Library",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-writing-library-hours",
+      "title": "Sunday Hours at the Downtown Library",
+      "description": "Choose relevant evidence, then use source evidence in a short argument.",
+      "file": "generated/modules/writing-practice.json",
+      "difficulty": "easy",
+      "category": "writing",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Argument Analysis",
+        "primarySkillId": "R5.4",
+        "secondarySkillIds": [
+          "W1.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+        "topicLabel": "Evidence Relevance"
+      },
+      "measuredSkillIds": [
+        "R5.4",
+        "W1.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-library-sunday-hours",
+        "title": "Sunday Hours at the Downtown Library",
+        "textType": "informational",
+        "context": "civics",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    }
+  ],
+  "mixedPractice": [
+    {
+      "id": "set-rla-evidence-last-bus",
+      "title": "The Last Bus",
+      "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+      "file": "generated/modules/evidence-transfer-practice.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R5.3"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
+        "topicLabel": "Inference & Evidence"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R5.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-last-bus",
+        "title": "The Last Bus",
+        "textType": "literary",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-evidence-night-shift",
+      "title": "The Night Shift",
+      "description": "Practice making an inference, then choosing the evidence that proves it.",
+      "file": "generated/modules/evidence-practice.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R5.3"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
+        "topicLabel": "Inference & Evidence"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R5.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-night-shift",
+        "title": "The Night Shift",
+        "textType": "literary",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-gold-literary-brass-key",
+      "title": "The Brass Key",
+      "description": "Literary · 7 questions",
+      "file": "generated/modules/rla-gold-literary-brass-key.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R1.5",
+          "R3.4",
+          "R3.5",
+          "R4.5",
+          "R1.4"
+        ],
+        "contentKind": "quiz",
+        "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+        "topicLabel": "Literary passage set"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R1.5",
+        "R3.4",
+        "R3.5",
+        "R4.5",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-gold-literary-brass-key",
+        "title": "The Brass Key",
+        "textType": "literary",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-gold-science-cool-roofs",
+      "title": "Cool Roofs and City Heat",
+      "description": "Science · Informational · 7 questions",
+      "file": "generated/modules/rla-gold-science-cool-roofs.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R2.2",
+          "R3.1",
+          "R4.1",
+          "R1.3",
+          "R2.5",
+          "R1.4"
+        ],
+        "contentKind": "quiz",
+        "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+        "topicLabel": "Science passage set"
+      },
+      "measuredSkillIds": [
+        "R1.2",
+        "R2.2",
+        "R3.1",
+        "R4.1",
+        "R1.3",
+        "R2.5",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-gold-science-cool-roofs",
+        "title": "Cool Roofs and City Heat",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-gold-workplace-tool-library",
+      "title": "New Pickup Process for the Community Tool Library",
+      "description": "Workplace · Informational · 7 questions",
+      "file": "generated/modules/rla-gold-workplace-tool-library.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.1",
+        "secondarySkillIds": [
+          "R4.4",
+          "R2.1",
+          "R1.3",
+          "R4.2",
+          "R3.1",
+          "R1.4"
+        ],
+        "contentKind": "quiz",
+        "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+        "topicLabel": "Workplace passage set"
+      },
+      "measuredSkillIds": [
+        "R1.1",
+        "R4.4",
+        "R2.1",
+        "R1.3",
+        "R4.2",
+        "R3.1",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-gold-workplace-tool-library",
+        "title": "New Pickup Process for the Community Tool Library",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-grammar-precision-check",
+      "title": "Grammar Transfer — Precision Check",
+      "description": "Use fresh sentences to retest agreement and commonly confused words.",
+      "file": "generated/modules/grammar-transfer-practice.json",
+      "difficulty": "medium",
+      "category": "language_conventions",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.2",
+        "secondarySkillIds": [
+          "L1.1"
+        ],
+        "contentKind": "editing_practice",
+        "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+        "topicLabel": "Grammar & Usage"
+      },
+      "measuredSkillIds": [
+        "L1.2",
+        "L1.1"
+      ],
+      "passageMeta": null
+    },
+    {
+      "id": "set-rla-grammar-sentence-repair",
+      "title": "Grammar Edit — Sentence Repair",
+      "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+      "file": "generated/modules/grammar-practice.json",
+      "difficulty": "medium",
+      "category": "language_conventions",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.2",
+        "secondarySkillIds": [
+          "L1.1"
+        ],
+        "contentKind": "editing_practice",
+        "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+        "topicLabel": "Grammar & Usage"
+      },
+      "measuredSkillIds": [
+        "L1.2",
+        "L1.1"
+      ],
+      "passageMeta": null
+    },
+    {
+      "id": "set-rla-writing-library-hours",
+      "title": "Sunday Hours at the Downtown Library",
+      "description": "Choose relevant evidence, then use source evidence in a short argument.",
+      "file": "generated/modules/writing-practice.json",
+      "difficulty": "easy",
+      "category": "writing",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Argument Analysis",
+        "primarySkillId": "R5.4",
+        "secondarySkillIds": [
+          "W1.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
+        "topicLabel": "Evidence Relevance"
+      },
+      "measuredSkillIds": [
+        "R5.4",
+        "W1.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-library-sunday-hours",
+        "title": "Sunday Hours at the Downtown Library",
+        "textType": "informational",
+        "context": "civics",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
     }
   ]
 }

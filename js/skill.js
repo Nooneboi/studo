@@ -1,4 +1,4 @@
-/* skill.js — files first, web assessment second */
+/* skill.js — skill-specific files and interactive practice */
 init();
 async function init() {
   const mount = document.getElementById("skill-view");
@@ -23,25 +23,25 @@ async function init() {
     </header>
 
     <section class="skill-library-section">
-      <div class="skill-library-heading"><h2>Study material</h2></div>
-      ${resources.length ? `<div class="skill-library-list">${resources.map(renderResource).join("")}</div>` : `<p class="skill-library-empty">No study files published yet.</p>`}
+      <div class="skill-library-heading"><h2>Files</h2></div>
+      ${resources.length ? `<div class="skill-library-list">${resources.map(renderResource).join("")}</div>` : `<p class="skill-library-empty">No files published yet.</p>`}
     </section>
 
     <section class="skill-library-section skill-check-section">
-      <div class="skill-library-heading"><h2>Check yourself</h2><span>Optional</span></div>
-      ${checks.length ? `<div class="skill-library-list">${checks.map(renderCheck).join("")}</div>` : `<p class="skill-library-empty">No quiz is available yet.</p>`}
+      <div class="skill-library-heading"><h2>Interactive practice</h2></div>
+      ${checks.length ? `<div class="skill-library-list">${checks.map(renderCheck).join("")}</div>` : `<p class="skill-library-empty">No skill practice published yet.</p>`}
     </section>`;
 }
 
 function renderResource(r){
-  const type=({pdf:"PDF",worksheet:"Worksheet",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link"})[r.type]||"File";
+  const type=({pdf:"PDF",worksheet:"Worksheet",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[r.type]||"File";
   const external=/^https?:\/\//i.test(r.href||r.path||"");
   return `<a class="skill-library-row" href="${escapeAttr(r.href||r.path||"#")}" ${r.download!==false&&!external?"download":""} ${external?'target="_blank" rel="noopener"':''}>
     <span class="skill-library-type">${escapeHtml(type)}</span><strong>${escapeHtml(r.title)}</strong><b aria-hidden="true">${external?"↗":"↓"}</b>
   </a>`;
 }
 function renderCheck(set){
-  const kind=({quiz:"Quiz",mixed_review:"Review",extended_response:"Extended response",editing_practice:"Quiz",passage_practice:"Quiz",skill_drill:"Quiz"})[set.curriculum?.contentKind]||"Quiz";
+  const kind=({quiz:"Quiz",mixed_review:"Review",extended_response:"Extended response",editing_practice:"Editing",passage_practice:"Practice",skill_drill:"Practice"})[set.curriculum?.contentKind]||"Practice";
   return `<a class="skill-library-row" href="module.html?file=${encodeURIComponent(set.file)}"><span class="skill-library-type">${escapeHtml(kind)}</span><strong>${escapeHtml(set.title)}</strong><b aria-hidden="true">→</b></a>`;
 }
 function escapeHtml(v){const d=document.createElement("div");d.textContent=v??"";return d.innerHTML;}

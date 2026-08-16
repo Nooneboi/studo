@@ -24,6 +24,11 @@ async function init() {
           <span>${escapeHtml(domain.label)}</span>
           <b aria-hidden="true">→</b>
         </a>`).join("")}
+      ${track.id === "reading" ? `
+        <a class="simple-domain-row" href="passages.html">
+          <span>Passage practice</span>
+          <b aria-hidden="true">→</b>
+        </a>` : ""}
     </section>`;
 }
 function escapeHtml(value) { const div=document.createElement("div"); div.textContent=value??""; return div.innerHTML; }

@@ -23,11 +23,16 @@ async function init() {
 
 function renderTracks(tracks) {
   const listEl = document.getElementById("category-list");
-  listEl.innerHTML = tracks.map((track) => `
+  const trackRows = tracks.map((track) => `
     <a class="library-track-row" href="curriculum.html?track=${encodeURIComponent(track.id)}">
       <span>${escapeHtml(track.label)}</span>
       <b aria-hidden="true">→</b>
     </a>`).join("");
+  listEl.innerHTML = `${trackRows}
+    <a class="library-track-row" href="passages.html">
+      <span>Passage practice</span>
+      <b aria-hidden="true">→</b>
+    </a>`;
 }
 
 function setupSearch(tracks) {

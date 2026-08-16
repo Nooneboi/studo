@@ -53,7 +53,7 @@ function toneFor(index){
 function renderSkill(track, domain, skill) {
   const files = skill.resourceCount || 0;
   const checks = skill.setCount || 0;
-  const status = files ? `Study files ready` : checks ? `Quiz ready` : `Coming next`;
+  const status = files && checks ? `Files + practice` : files ? `Files ready` : checks ? `Practice ready` : `Coming next`;
   return `
     <a class="simple-skill-pill" href="skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}">
       <span class="simple-skill-marker" aria-hidden="true"></span>

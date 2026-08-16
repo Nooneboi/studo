@@ -1,6 +1,6 @@
 {
   "id": "evidence-transfer-practice",
-  "title": "Evidence & Inference — The Last Bus",
+  "title": "The Last Bus",
   "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
   "subject": "rla",
   "category": "reading",
@@ -139,6 +139,19 @@
       "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
       "topicLabel": "Inference & Evidence"
     },
-    "compiledAt": "2026-08-16T15:20:38.749Z"
+    "passage": {
+      "id": "p-rla-last-bus",
+      "title": "The Last Bus",
+      "textType": "literary",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-16T16:20:15.626Z"
   }
 }
