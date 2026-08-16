@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-16T11:11:05.294Z",
+  "builtAt": "2026-08-16T11:58:18.500Z",
   "tracks": [
     {
       "id": "reading",
@@ -33,9 +33,66 @@
               ]
             }
           ],
-          "availableSkillCount": 5,
+          "availableSkillCount": 0,
           "availableSetCount": 0,
-          "studyFileCount": 10,
+          "topicResourceCount": 2,
+          "topicResources": [
+            {
+              "id": "res-rla-core-meaning-guide-v1",
+              "title": "Core Meaning - Quick Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "core-meaning",
+              "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
+              "href": "assets/resources/core-meaning-quick-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Studo editorial review"
+            },
+            {
+              "id": "res-rla-core-meaning-practice-v1",
+              "title": "Core Meaning - Practice Pack",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "core-meaning",
+              "description": "Four original passages with 12 questions and a short answer key.",
+              "href": "assets/resources/core-meaning-practice-pack.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Studo editorial review"
+            }
+          ],
+          "resources": [
+            {
+              "id": "res-rla-core-meaning-guide-v1",
+              "title": "Core Meaning - Quick Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "core-meaning",
+              "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
+              "href": "assets/resources/core-meaning-quick-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Studo editorial review"
+            },
+            {
+              "id": "res-rla-core-meaning-practice-v1",
+              "title": "Core Meaning - Practice Pack",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "core-meaning",
+              "description": "Four original passages with 12 questions and a short answer key.",
+              "href": "assets/resources/core-meaning-practice-pack.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Studo editorial review"
+            }
+          ],
+          "studyFileCount": 2,
           "checkCount": 0,
           "skills": [
             {
@@ -44,90 +101,16 @@
               "label": "Explicit meaning",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
+              "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "resourceCount": 2,
-              "studyFileCount": 2,
+              "resourceCount": 0,
+              "studyFileCount": 0,
               "checkCount": 0,
               "sets": [],
               "checks": [],
-              "resources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ],
-              "studyResources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ]
+              "resources": [],
+              "studyResources": []
             },
             {
               "id": "R1.2",
@@ -135,90 +118,16 @@
               "label": "Main idea / central idea",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
+              "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "resourceCount": 2,
-              "studyFileCount": 2,
+              "resourceCount": 0,
+              "studyFileCount": 0,
               "checkCount": 0,
               "sets": [],
               "checks": [],
-              "resources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ],
-              "studyResources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ]
+              "resources": [],
+              "studyResources": []
             },
             {
               "id": "R1.3",
@@ -226,90 +135,16 @@
               "label": "Supporting details",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
+              "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "resourceCount": 2,
-              "studyFileCount": 2,
+              "resourceCount": 0,
+              "studyFileCount": 0,
               "checkCount": 0,
               "sets": [],
               "checks": [],
-              "resources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ],
-              "studyResources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ]
+              "resources": [],
+              "studyResources": []
             },
             {
               "id": "R1.4",
@@ -317,90 +152,16 @@
               "label": "Summary",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": true,
+              "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "resourceCount": 2,
-              "studyFileCount": 2,
+              "resourceCount": 0,
+              "studyFileCount": 0,
               "checkCount": 0,
               "sets": [],
               "checks": [],
-              "resources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ],
-              "studyResources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ]
+              "resources": [],
+              "studyResources": []
             },
             {
               "id": "R1.5",
@@ -408,90 +169,16 @@
               "label": "Theme",
               "priority": "P1",
               "practiceMode": "Literary",
-              "available": true,
+              "available": false,
               "setCount": 0,
               "questionCount": 0,
-              "resourceCount": 2,
-              "studyFileCount": 2,
+              "resourceCount": 0,
+              "studyFileCount": 0,
               "checkCount": 0,
               "sets": [],
               "checks": [],
-              "resources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ],
-              "studyResources": [
-                {
-                  "id": "res-rla-core-meaning-guide-v1",
-                  "title": "Core Meaning - Quick Study Guide",
-                  "type": "study_guide",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
-                  "href": "assets/resources/core-meaning-quick-guide.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                },
-                {
-                  "id": "res-rla-core-meaning-practice-v1",
-                  "title": "Core Meaning - Practice Pack",
-                  "type": "worksheet",
-                  "skillIds": [
-                    "R1.1",
-                    "R1.2",
-                    "R1.3",
-                    "R1.4",
-                    "R1.5"
-                  ],
-                  "description": "Four original passages with 12 questions and a short answer key.",
-                  "href": "assets/resources/core-meaning-practice-pack.pdf",
-                  "download": true,
-                  "status": "published",
-                  "rightsStatus": "original",
-                  "reviewer": "Studo editorial review"
-                }
-              ]
+              "resources": [],
+              "studyResources": []
             }
           ]
         },
@@ -521,6 +208,9 @@
           ],
           "availableSkillCount": 1,
           "availableSetCount": 2,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 2,
           "skills": [
@@ -731,6 +421,9 @@
           ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 0,
           "skills": [
@@ -847,6 +540,9 @@
           ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 0,
           "skills": [
@@ -955,12 +651,12 @@
           ]
         }
       ],
-      "availableSkillCount": 6,
+      "availableSkillCount": 1,
       "totalSkillCount": 22,
       "availableSetCount": 2,
       "questionCount": 4,
-      "resourceCount": 10,
-      "studyFileCount": 10,
+      "resourceCount": 2,
+      "studyFileCount": 2,
       "checkCount": 2
     },
     {
@@ -1006,6 +702,9 @@
           ],
           "availableSkillCount": 2,
           "availableSetCount": 3,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 3,
           "skills": [
@@ -1324,6 +1023,9 @@
           ],
           "availableSkillCount": 0,
           "availableSetCount": 0,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 0,
           "skills": [
@@ -1469,6 +1171,9 @@
           ],
           "availableSkillCount": 2,
           "availableSetCount": 2,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 2,
           "skills": [
@@ -1905,6 +1610,9 @@
           ],
           "availableSkillCount": 2,
           "availableSetCount": 1,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
           "studyFileCount": 0,
           "checkCount": 1,
           "skills": [

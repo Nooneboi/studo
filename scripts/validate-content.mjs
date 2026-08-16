@@ -36,6 +36,10 @@ function words(text) {
   return String(text || '').trim().split(/\s+/).filter(Boolean);
 }
 
+function slug(text) {
+  return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 function add(list, type, code, message, file, location = '') {
   list.push({ type, code, message, file: path.relative(ROOT, file), location });
 }
@@ -66,6 +70,8 @@ export async function validateContent({ quiet = false } = {}) {
     }
   }
 
+  const validDomainIds = new Set([...skills.values()].map((skill) => slug(skill.domain)).filter(Boolean));
+
   const passages = new Map();
   for (const file of passageFiles) {
     const p = await readJson(file);
@@ -92,9 +98,19 @@ export async function validateContent({ quiet = false } = {}) {
       if (!resource.title) add(issues, 'error', 'RESOURCE_TITLE_MISSING', `Resource ${loc} needs a title.`, file, loc);
       if (!VALID_RESOURCE_TYPES.has(resource.type)) add(issues, 'error', 'RESOURCE_TYPE_INVALID', `Resource ${loc} has invalid type ${resource.type || '(missing)'}.`, file, loc);
       if (!VALID_STATUS.has(resource.status)) add(issues, 'error', 'RESOURCE_STATUS_INVALID', `Resource ${loc} has invalid status.`, file, loc);
-      const skillIds = [...(resource.skillIds || []), ...(resource.primarySkillId ? [resource.primarySkillId] : [])];
-      if (!skillIds.length) add(issues, 'error', 'RESOURCE_SKILL_MISSING', `Resource ${loc} must attach to at least one skill.`, file, loc);
-      for (const sid of skillIds) if (!skills.has(sid)) add(issues, 'error', 'RESOURCE_SKILL_UNKNOWN', `Resource ${loc} uses unknown skill ${sid}.`, file, loc);
+      const scope = resource.scope || 'skill';
+      if (!['domain','skill'].includes(scope)) add(issues, 'error', 'RESOURCE_SCOPE_INVALID', `Resource ${loc} has invalid scope ${scope}.`, file, loc);
+      if (scope === 'domain') {
+        if (!resource.domainId) add(issues, 'error', 'RESOURCE_DOMAIN_MISSING', `Topic resource ${loc} must attach to a domain.`, file, loc);
+        else if (!validDomainIds.has(resource.domainId)) add(issues, 'error', 'RESOURCE_DOMAIN_UNKNOWN', `Resource ${loc} uses unknown domain ${resource.domainId}.`, file, loc);
+      } else {
+        const skillIds = [...(resource.skillIds || []), ...(resource.primarySkillId ? [resource.primarySkillId] : [])];
+        if (!skillIds.length) add(issues, 'error', 'RESOURCE_SKILL_MISSING', `Skill resource ${loc} must attach to at least one skill.`, file, loc);
+        for (const sid of skillIds) {
+          if (!skills.has(sid)) add(issues, 'error', 'RESOURCE_SKILL_UNKNOWN', `Resource ${loc} uses unknown skill ${sid}.`, file, loc);
+          else if (resource.domainId && slug(skills.get(sid).domain) !== resource.domainId) add(issues, 'error', 'RESOURCE_DOMAIN_SKILL_MISMATCH', `Resource ${loc} attaches ${sid} to the wrong domain ${resource.domainId}.`, file, loc);
+        }
+      }
       const href = resource.href || resource.path;
       if (!href) add(issues, 'error', 'RESOURCE_HREF_MISSING', `Resource ${loc} needs href or path.`, file, loc);
       if (resource.status === 'published' && resource.rightsStatus && !VALID_RIGHTS.has(resource.rightsStatus)) add(issues, 'error', 'RESOURCE_RIGHTS_INVALID', `Resource ${loc} has an invalid rights status.`, file, loc);

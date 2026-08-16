@@ -75,3 +75,18 @@
   .resource-studio-side { grid-template-columns: 1fr; }
   .existing-resources-block { grid-column: auto; }
 }
+
+/* Phase 5B.1 — resource placement scope */
+.resource-placement-grid { align-items: end; }
+.resource-placement-help {
+  margin-top: 12px;
+  color: var(--color-ink-faint);
+  font-size: .82rem;
+  line-height: 1.45;
+}
+.resource-field-muted {
+  opacity: .48;
+}
+.resource-field-muted select {
+  cursor: not-allowed;
+}

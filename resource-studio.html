@@ -33,19 +33,26 @@
 <main class="resource-studio-shell">
   <section class="resource-studio-main">
     <header class="resource-studio-hero">
-      <div class="page-kicker">Phase 5A · Resource authoring</div>
+      <div class="page-kicker">Phase 5B.1 · Resource placement</div>
       <h1>Add study material</h1>
-      <p>Attach a file or link to the exact skill it supports.</p>
+      <p>Attach shared files to a whole topic, or targeted files to one specific skill.</p>
     </header>
 
     <form id="resource-form" class="resource-author-form">
       <section class="resource-form-section">
         <div class="resource-section-head"><span>01</span><h2>Curriculum</h2></div>
-        <div class="resource-form-grid two">
-          <label><span>Domain</span><select id="resource-domain"></select></label>
-          <label><span>Primary skill</span><select id="resource-skill"></select></label>
+        <div class="resource-form-grid three resource-placement-grid">
+          <label><span>Attach to</span>
+            <select id="resource-scope">
+              <option value="domain">Whole topic</option>
+              <option value="skill">Specific skill</option>
+            </select>
+          </label>
+          <label><span>Topic / domain</span><select id="resource-domain"></select></label>
+          <label id="resource-skill-label"><span>Specific skill</span><select id="resource-skill"></select></label>
         </div>
-        <div class="resource-path" id="resource-path">RLA → Choose a domain → Choose a skill</div>
+        <div class="resource-placement-help" id="resource-placement-help">Use Whole topic for a guide or practice pack that covers the full topic.</div>
+        <div class="resource-path" id="resource-path">RLA → Choose a topic</div>
       </section>
 
       <section class="resource-form-section">

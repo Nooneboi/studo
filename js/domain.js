@@ -1,4 +1,4 @@
-/* domain.js — grouped skill index; resources live on the skill page */
+/* domain.js — grouped skill index with topic-level resources beside the title */
 init();
 
 async function init() {
@@ -15,11 +15,19 @@ async function init() {
   if (!track || !domain) { mount.innerHTML = `<div class="empty-state">This curriculum area could not be found.</div>`; return; }
 
   const groups = normalizeGroups(domain);
+  const topicResources = domain.topicResources || domain.resources || [];
   mount.innerHTML = `
-    <header class="simple-domain-hero">
-      <a class="curriculum-back" href="curriculum.html?track=${encodeURIComponent(track.id)}">← ${escapeHtml(track.label)}</a>
-      <div class="page-kicker">${escapeHtml(track.shortLabel || track.label)}</div>
-      <h1>${escapeHtml(domain.label)}</h1>
+    <header class="simple-domain-hero domain-hero-with-resources">
+      <div class="domain-hero-copy">
+        <a class="curriculum-back" href="curriculum.html?track=${encodeURIComponent(track.id)}">← ${escapeHtml(track.label)}</a>
+        <div class="page-kicker">${escapeHtml(track.shortLabel || track.label)}</div>
+        <h1>${escapeHtml(domain.label)}</h1>
+      </div>
+      ${topicResources.length ? `
+        <div class="topic-resource-links" aria-label="${escapeHtml(domain.label)} topic files">
+          <div class="topic-resource-label">Topic files</div>
+          ${topicResources.map(renderTopicResource).join("")}
+        </div>` : ""}
     </header>
     <div class="simple-skill-groups compact-skill-groups">
       ${groups.map((group, index) => `
@@ -54,4 +62,17 @@ function renderSkill(track, domain, skill) {
       <b aria-hidden="true">→</b>
     </a>`;
 }
+
+function renderTopicResource(resource) {
+  const href = resource.href || resource.path || "#";
+  const external = /^https?:\/\//i.test(href);
+  const type = ({pdf:"PDF",worksheet:"Practice pack",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[resource.type] || "File";
+  return `<a class="topic-resource-link" href="${escapeAttr(href)}" ${resource.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
+    <span>${escapeHtml(type)}</span>
+    <strong>${escapeHtml(resource.title)}</strong>
+    <b aria-hidden="true">${external ? "↗" : "↓"}</b>
+  </a>`;
+}
+
 function escapeHtml(value) { const div=document.createElement("div"); div.textContent=value??""; return div.innerHTML; }
+function escapeAttr(value) { return escapeHtml(value).replace(/"/g,"&quot;"); }

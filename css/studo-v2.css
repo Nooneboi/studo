@@ -5584,3 +5584,75 @@ body.test-body {
 .resource-filter-bar {
   margin-bottom: 24px;
 }
+
+/* -------------------------------------------------------------------------
+   Phase 5B.1 — topic resources vs skill resources
+   Shared files live beside the domain/topic title; sub-skills keep only
+   resources written specifically for that skill.
+   ------------------------------------------------------------------------- */
+.domain-hero-with-resources {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  gap: 42px;
+  align-items: end;
+}
+.domain-hero-copy { min-width: 0; }
+.topic-resource-links {
+  display: grid;
+  gap: 8px;
+  align-content: end;
+  padding-bottom: 4px;
+}
+.topic-resource-label {
+  color: var(--color-ink-faint);
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: 2px;
+}
+.topic-resource-link {
+  display: grid;
+  grid-template-columns: 92px minmax(0,1fr) 18px;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  color: var(--color-ink);
+}
+.topic-resource-link:hover { text-decoration: none; }
+.topic-resource-link:hover strong { color: var(--color-primary-dark); }
+.topic-resource-link > span {
+  color: var(--color-primary-dark);
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.topic-resource-link strong {
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.topic-resource-link b {
+  color: var(--color-ink-faint);
+  font-size: .9rem;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .domain-hero-with-resources {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .topic-resource-links {
+    max-width: 620px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .topic-resource-link {
+    grid-template-columns: 78px minmax(0,1fr) 16px;
+  }
+}

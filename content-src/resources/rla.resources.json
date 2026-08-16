@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "subject": "rla",
   "resources": [
     {
       "id": "res-rla-core-meaning-guide-v1",
       "title": "Core Meaning - Quick Study Guide",
       "type": "study_guide",
-      "skillIds": ["R1.1", "R1.2", "R1.3", "R1.4", "R1.5"],
+      "scope": "domain",
+      "domainId": "core-meaning",
       "description": "A concise guide to explicit meaning, main idea, supporting details, summary, and theme.",
       "href": "assets/resources/core-meaning-quick-guide.pdf",
       "download": true,
@@ -18,7 +19,8 @@
       "id": "res-rla-core-meaning-practice-v1",
       "title": "Core Meaning - Practice Pack",
       "type": "worksheet",
-      "skillIds": ["R1.1", "R1.2", "R1.3", "R1.4", "R1.5"],
+      "scope": "domain",
+      "domainId": "core-meaning",
       "description": "Four original passages with 12 questions and a short answer key.",
       "href": "assets/resources/core-meaning-practice-pack.pdf",
       "download": true,

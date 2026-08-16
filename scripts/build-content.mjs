@@ -150,7 +150,11 @@ async function main() {
       summary: track.summary || '',
       accent: track.accent || 'blue',
       domains: (track.domains || []).map((domainConfig) => {
+        const domainId = domainConfig.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
         const domainSkills = [...validation.skills.values()].filter((s) => s.domain === domainConfig.name);
+        const domainResources = publishedResources.filter((resource) =>
+          resource.scope === 'domain' && resource.domainId === domainId
+        );
         const skills = domainSkills.map((skill) => {
           const related = publishedSetRecords.filter((record) => {
             const c = record.curriculum || {};
@@ -159,9 +163,10 @@ async function main() {
             return setMatch || questionMatch;
           });
           const questionCount = related.reduce((sum, record) => sum + (record.questions || []).filter((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id)).length, 0);
-          const resources = publishedResources.filter((resource) =>
-            (resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id
-          );
+          const resources = publishedResources.filter((resource) => {
+            if (resource.scope === 'domain') return false;
+            return (resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id;
+          });
           return {
             id: skill.id,
             runtimeId: skill.runtimeId || skill.id,
@@ -181,13 +186,16 @@ async function main() {
           };
         });
         return {
-          id: domainConfig.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+          id: domainId,
           label: domainConfig.name,
           summary: domainConfig.summary || '',
           groups: domainConfig.groups || [],
           availableSkillCount: skills.filter((s) => s.available).length,
           availableSetCount: new Set(skills.flatMap((s) => s.sets.map((set) => set.file))).size,
-          studyFileCount: skills.reduce((sum, s) => sum + (s.studyFileCount || 0), 0),
+          topicResourceCount: domainResources.length,
+          topicResources: domainResources,
+          resources: domainResources,
+          studyFileCount: domainResources.length + skills.reduce((sum, s) => sum + (s.studyFileCount || 0), 0),
           checkCount: new Set(skills.flatMap((s) => (s.checks || []).map((set) => set.file))).size,
           skills,
         };
@@ -200,7 +208,7 @@ async function main() {
     track.totalSkillCount = track.domains.reduce((sum, d) => sum + d.skills.length, 0);
     track.availableSetCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => s.sets.map((set) => set.file)))).size;
     track.questionCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + s.questionCount, 0), 0);
-    track.resourceCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + (s.resourceCount || 0), 0), 0);
+    track.resourceCount = track.domains.reduce((sum, d) => sum + (d.topicResourceCount || 0) + d.skills.reduce((inner, s) => inner + (s.resourceCount || 0), 0), 0);
     track.studyFileCount = track.domains.reduce((sum, d) => sum + (d.studyFileCount || 0), 0);
     track.checkCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => (s.checks || []).map((set) => set.file)))).size;
   });

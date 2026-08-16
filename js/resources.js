@@ -33,6 +33,15 @@ async function loadCurriculumResources() {
   const seen = new Map();
   for (const track of curriculum.tracks || []) {
     for (const domain of track.domains || []) {
+      for (const resource of domain.topicResources || domain.resources || []) {
+        if (!resource?.id) continue;
+        if (!seen.has(resource.id)) seen.set(resource.id, {
+          ...resource,
+          domainLabel: domain.label,
+          trackLabel: track.label,
+          placement: 'topic',
+        });
+      }
       for (const skill of domain.skills || []) {
         for (const resource of skill.studyResources || skill.resources || []) {
           if (!resource?.id) continue;
@@ -41,6 +50,7 @@ async function loadCurriculumResources() {
             skillLabel: skill.label,
             domainLabel: domain.label,
             trackLabel: track.label,
+            placement: 'skill',
           });
         }
       }
