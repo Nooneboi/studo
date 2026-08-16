@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<title>Studo — Home</title>
-<meta name="description" content="Studo — a GED RLA study site built around one idea: zoom out to plan, zoom in to master.">
+<title>Studo — GED RLA Study</title>
+<meta name="description" content="Study GED RLA with a clear path: choose a skill, practice it, and review what needs work.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,63 +20,50 @@
   <div class="wrap">
     <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Studo</a>
     <div class="header-right">
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="practice.html">Practice</a>
-      <a href="train.html">Train</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="progress.html">Progress</a>
-      <a href="resources.html">Resources</a>
-    </nav>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="train.html">Train</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="progress.html">Progress</a>
+        <a href="resources.html">Resources</a>
+      </nav>
       <div id="theme-switch-mount"></div>
     </div>
   </div>
 </header>
 <div id="subject-bar-mount"></div>
 
-<main>
+<main class="home-simple-main">
   <div class="wrap">
     <div id="home-learning-mount"></div>
-    <section class="home-intro" aria-labelledby="home-title">
-      <div class="page-kicker">Study philosophy</div>
-      <h1 id="home-title">Zoom out to plan.<br>Zoom in to master.</h1>
-      <p class="home-intro-lede">Use Studo to choose what matters, practice it clearly, and come back to weak skills before they fade.</p>
-      <div class="hero-cta">
-        <a href="practice.html" class="btn">Start practicing <span aria-hidden="true">→</span></a>
-        <a href="resources.html" class="btn secondary">Browse resources</a>
+
+    <section class="home-simple-hero" aria-labelledby="home-title">
+      <div class="page-kicker">GED Reasoning Through Language Arts</div>
+      <h1 id="home-title">Know what to study next.</h1>
+      <p>Choose a skill, practice it, and return to what needs work.</p>
+      <div class="home-simple-actions">
+        <a href="practice.html" class="btn">Start learning <span aria-hidden="true">→</span></a>
+        <a href="train.html" class="btn secondary">Train me</a>
       </div>
     </section>
 
-    <section class="home-layers" aria-labelledby="layers-title">
-      <div class="home-section-heading">
-        <span class="page-kicker">How it fits together</span>
-        <h2 id="layers-title">Three levels, one study loop.</h2>
-      </div>
-      <div class="home-layer-list">
-        <article class="home-layer-item home-layer-plans">
-          <span class="home-layer-number">01</span>
-          <div><span class="home-layer-label">Plans</span><h3>Choose the direction.</h3><p>Decide what you want to become able to do and what deserves attention first.</p></div>
-        </article>
-        <article class="home-layer-item home-layer-systems">
-          <span class="home-layer-number">02</span>
-          <div><span class="home-layer-label">Systems</span><h3>Repeat what works.</h3><p>Use short practice, review, and spaced return instead of relying on motivation alone.</p></div>
-        </article>
-        <article class="home-layer-item home-layer-details">
-          <span class="home-layer-number">03</span>
-          <div><span class="home-layer-label">Details</span><h3>Work on the next skill.</h3><p>Focus on the question, passage, edit, or response in front of you right now.</p></div>
-        </article>
-      </div>
+    <section class="home-paths" aria-labelledby="home-paths-title">
+      <h2 id="home-paths-title">Explore RLA</h2>
+      <nav class="home-path-list" aria-label="RLA study areas">
+        <a href="curriculum.html?track=reading"><span>Reading &amp; Comprehension</span><span aria-hidden="true">→</span></a>
+        <a href="curriculum.html?track=arguments"><span>Arguments &amp; Sources</span><span aria-hidden="true">→</span></a>
+        <a href="curriculum.html?track=language"><span>Language &amp; Editing</span><span aria-hidden="true">→</span></a>
+        <a href="curriculum.html?track=extended_response"><span>Extended Response</span><span aria-hidden="true">→</span></a>
+      </nav>
     </section>
 
-    <section class="home-usage" aria-labelledby="home-usage-title">
-      <div class="home-section-heading">
-        <span class="page-kicker">Use Studo</span>
-        <h2 id="home-usage-title">Study here, or take the material with you.</h2>
-      </div>
-      <div class="home-usage-grid">
-        <div><h3>Practice</h3><p>Work through focused web questions and passage sets.</p><a href="practice.html">Browse curriculum →</a></div>
-        <div><h3>Train</h3><p>Let Studo choose a short session from weak and due skills.</p><a href="train.html">Build a session →</a></div>
-        <div><h3>Resources</h3><p>Use notes, guides, worksheets, and downloadable study files.</p><a href="resources.html">Open resources →</a></div>
+    <section class="home-simple-method" aria-labelledby="home-method-title">
+      <h2 id="home-method-title">How Studo works</h2>
+      <div class="home-method-line">
+        <div><strong>Plans</strong><span>Choose the direction.</span></div>
+        <div><strong>Systems</strong><span>Practice and review.</span></div>
+        <div><strong>Details</strong><span>Focus on one skill.</span></div>
       </div>
     </section>
   </div>
