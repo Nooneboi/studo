@@ -5551,3 +5551,36 @@ body.test-body {
   .progress-review-row > span:nth-child(2) { grid-column: 1; text-align: left; }
   .progress-review-row > b { grid-column: 2; grid-row: 1 / span 2; }
 }
+
+/* -------------------------------------------------------------------------
+   Phase 5B — tighter first-screen home rhythm
+   Continue → hero → Explore should read as one compact entry sequence.
+   ------------------------------------------------------------------------- */
+.home-simple-main > .wrap {
+  padding-top: 1px;
+}
+.home-resume-line {
+  margin-top: 20px;
+}
+.home-simple-hero {
+  padding: 58px 0 54px;
+}
+.home-paths {
+  padding: 26px 0 42px;
+}
+.home-simple-method {
+  padding-top: 28px;
+}
+@media (max-width: 760px) {
+  .home-resume-line { margin-top: 14px; }
+  .home-simple-hero { padding: 42px 0 44px; }
+  .home-paths { padding: 22px 0 34px; }
+}
+.resource-tile-context {
+  color: var(--color-ink-faint);
+  font-size: .82rem;
+  line-height: 1.35;
+}
+.resource-filter-bar {
+  margin-bottom: 24px;
+}

@@ -9,7 +9,7 @@
   This keeps deployments fresh WITHOUT clearing localStorage / learner data.
 */
 
-const CACHE_NAME = "studo-v29-phase4i";
+const CACHE_NAME = "studo-v30-phase5b";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
