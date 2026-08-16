@@ -1,0 +1,432 @@
+{
+  "id": "rla-gold-workplace-tool-library",
+  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Workplace passage set",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "MEMO\nTo: All staff and volunteers\nFrom: Maya Chen, Operations Coordinator\nSubject: New pickup process for the Community Tool Library\n\nBeginning Monday, September 14, the Community Tool Library will use scheduled pickup windows for reserved equipment. Members will choose a 30-minute pickup period when they make a reservation online or by phone. Walk-in borrowing will still be available for items that have not been reserved, but staff will serve scheduled pickups first during each window.\n\nWe are making this change because evening lines have become difficult to manage. During the last two months, most members arrived between 5:00 and 6:00 p.m., even when their reservations had been ready earlier in the day. The crowded counter made it harder for staff to confirm tool condition, explain safety requirements, and answer questions before equipment left the building. A scheduled window should spread arrivals more evenly and give staff enough time to complete those checks.\n\nThe reservation itself will not change. Members may reserve equipment for up to seven days, and there is still no fee for standard tools. When a reservation is confirmed, the member will receive a message with available pickup windows. If none of those times work, the member should call the library before the reservation date. Staff can move the reservation to another available window. Members should not create a second reservation for the same item.\n\nWhen a member arrives, the front desk will check the reservation number and identification. A staff member will then bring the equipment to the inspection table. The member and staff member will examine the tool together and record any existing damage. For equipment that requires safety instructions, the staff member will review the instructions before the member signs the checkout form. This process is the same one we use now; the difference is that scheduled arrivals should give us enough time to do it without rushing.\n\nMembers who are more than 20 minutes late may have to wait until staff finish the next scheduled pickup. We will not automatically cancel a reservation because someone is late. However, if the library closes before the equipment can be checked out, the reservation will move to the next business day. Staff should explain this rule when helping members who reserve by phone.\n\nFor the first three weeks, please note any problems in the shared pickup log. Record long waits, missed windows, repeated questions, or situations in which the schedule caused confusion. We will review the log at the end of the trial period and decide whether the system should continue, be adjusted, or be replaced. The goal is not to make borrowing more complicated. The goal is to make each pickup calmer, safer, and easier to complete correctly.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "According to the memo, why is the tool library changing its pickup process?",
+      "points": 1,
+      "explanation": "Paragraph 2 says most members arrive during the same hour and that crowding makes inspection, safety explanations, and questions harder to handle.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "For an explicit-detail question, use the reason the memo states directly.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Too many members are keeping tools longer than seven days.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "The seven-day rule is mentioned, but it is not the reason for the change."
+        },
+        {
+          "id": "b",
+          "text": "Crowded evening arrivals are making safety checks and member assistance harder to complete."
+        },
+        {
+          "id": "c",
+          "text": "The library plans to begin charging for standard tools.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The memo says there is still no fee for standard tools."
+        },
+        {
+          "id": "d",
+          "text": "Staff want to eliminate walk-in borrowing.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "Walk-in borrowing will still be available for unreserved items."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "The crowded counter made it harder for staff to confirm tool condition, explain safety requirements, and answer questions before equipment left the building."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the primary purpose of the memo?",
+      "points": 1,
+      "explanation": "The memo announces the pickup-window trial, explains the problem it is meant to solve, describes the steps, and asks staff to record problems.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Purpose asks why the document was written, not just what topic it mentions.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "To persuade members to donate more equipment",
+          "distractorType": "secondary_purpose",
+          "whyWrong": "Donations are not discussed."
+        },
+        {
+          "id": "b",
+          "text": "To summarize the history of the Community Tool Library",
+          "distractorType": "topic_summary",
+          "whyWrong": "The memo focuses on a current process change, not the organization’s history."
+        },
+        {
+          "id": "c",
+          "text": "To explain a new pickup procedure, why it is being tested, and what staff should do during the trial."
+        },
+        {
+          "id": "d",
+          "text": "To warn staff that late members will lose their reservations",
+          "distractorType": "reader_effect_not_purpose",
+          "whyWrong": "The memo says late reservations are not automatically canceled."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "The goal is not to make borrowing more complicated. The goal is to make each pickup calmer, safer, and easier to complete correctly."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which step must occur before a member and staff member inspect a reserved tool together?",
+      "points": 1,
+      "explanation": "Paragraph 4 gives the order: front desk check, equipment brought to the inspection table, then member and staff inspect the tool together.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "For sequence questions, follow the actual procedure rather than choosing a step that happens only in some cases.",
+      "familyId": "sequence.logic",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The front desk checks the reservation number and identification."
+        },
+        {
+          "id": "b",
+          "text": "The member signs the checkout form.",
+          "distractorType": "later_event",
+          "whyWrong": "The form is signed after any required safety instructions."
+        },
+        {
+          "id": "c",
+          "text": "Staff review the three-week pickup log.",
+          "distractorType": "not_in_sequence",
+          "whyWrong": "That happens after the trial period, not during a single pickup."
+        },
+        {
+          "id": "d",
+          "text": "The reservation moves to the next business day.",
+          "distractorType": "chronologically_near_but_not_required",
+          "whyWrong": "That happens only if a late pickup cannot be completed before closing."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "When a member arrives, the front desk will check the reservation number and identification. A staff member will then bring the equipment to the inspection table."
+    },
+    {
+      "id": "q4",
+      "type": "evidence_based",
+      "prompt": "Which sentence provides the strongest support for the idea that the new system is intended to improve safety as well as reduce waiting?",
+      "points": 1,
+      "explanation": "This sentence directly links crowding with problems completing condition checks and safety explanations.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "The strongest evidence should directly support every important part of the idea in the question.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Members may reserve equipment for up to seven days.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This is a reservation rule, not evidence about safety."
+        },
+        {
+          "id": "b",
+          "text": "Members should not create a second reservation for the same item.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "This may reduce confusion but does not directly show the safety purpose."
+        },
+        {
+          "id": "c",
+          "text": "Walk-in borrowing will still be available for items that have not been reserved.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This shows what service remains available, not why the new system may improve safety."
+        },
+        {
+          "id": "d",
+          "text": "The crowded counter made it harder for staff to confirm tool condition, explain safety requirements, and answer questions before equipment left the building."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "The crowded counter made it harder for staff to confirm tool condition, explain safety requirements, and answer questions before equipment left the building."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How is the memo mainly organized?",
+      "points": 1,
+      "explanation": "The memo moves from announcement, to reason, to procedure and rules, and finally to how staff should record results during the trial.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Text structure asks how the whole document develops, not what one paragraph contains.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It compares two competing libraries and recommends one.",
+          "distractorType": "topic_sequence_not_structure",
+          "whyWrong": "The memo does not compare separate libraries."
+        },
+        {
+          "id": "b",
+          "text": "It announces a change, explains the problem behind it, describes the procedure, and gives instructions for evaluating the trial."
+        },
+        {
+          "id": "c",
+          "text": "It lists tools in order from safest to most dangerous.",
+          "distractorType": "local_structure_only",
+          "whyWrong": "No such list appears."
+        },
+        {
+          "id": "d",
+          "text": "It presents a series of customer complaints followed by staff responses.",
+          "distractorType": "mixed_but_minor_pattern",
+          "whyWrong": "The memo mentions problems but is not organized as complaints and responses."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "For the first three weeks, please note any problems in the shared pickup log."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What does the phrase “spread arrivals more evenly” suggest in paragraph 2?",
+      "points": 1,
+      "explanation": "The preceding sentence says most members arrive between 5:00 and 6:00. Spreading arrivals means distributing them across more pickup times.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use nearby sentences to determine what a phrase means in context.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Members should arrive throughout a wider range of times rather than crowding into one hour."
+        },
+        {
+          "id": "b",
+          "text": "Members should use different entrances to the building.",
+          "distractorType": "literal_only",
+          "whyWrong": "The phrase is about timing, not physical distance."
+        },
+        {
+          "id": "c",
+          "text": "Staff should give each member the same number of tools.",
+          "distractorType": "unrelated_connotation",
+          "whyWrong": "The phrase refers to arrival times, not equipment quantities."
+        },
+        {
+          "id": "d",
+          "text": "The library should extend every reservation by the same amount.",
+          "distractorType": "overinterpretation",
+          "whyWrong": "Reservation length is not what the phrase describes."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The crowded counter made it harder for staff to confirm tool condition, explain safety requirements, and answer questions before equipment left the building."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the memo?",
+      "points": 1,
+      "explanation": "Choice A captures the new system, its purpose, what stays the same, and the fact that it is being tested.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A summary should include the document’s main change, reason, and outcome without getting buried in procedures.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Late members will have their reservations canceled and must make new ones.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This is incorrect and focuses on one rule rather than the whole memo."
+        },
+        {
+          "id": "b",
+          "text": "The tool library has decided permanently to replace walk-in borrowing with scheduled pickups.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Walk-in borrowing remains available, and the system is only a trial."
+        },
+        {
+          "id": "c",
+          "text": "The tool library is testing scheduled pickup windows to reduce crowded arrivals while keeping its reservation and safety-check process, and staff will record problems during the trial."
+        },
+        {
+          "id": "d",
+          "text": "Staff must inspect every tool, review safety instructions, check identification, answer questions, and write in a shared log.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This lists procedures but misses the reason for the change and the trial nature of the system."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "The library is testing scheduled pickup windows to reduce crowded evening lines while keeping the existing reservation and safety-check process."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-gold-workplace-tool-library",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [
+        "R4.4",
+        "R2.1",
+        "R1.3",
+        "R4.2",
+        "R3.1",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Workplace passage set"
+    },
+    "compiledAt": "2026-08-16T15:20:38.752Z"
+  }
+}

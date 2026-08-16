@@ -1,0 +1,432 @@
+{
+  "id": "rla-gold-science-cool-roofs",
+  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Science passage set",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "On summer afternoons, a dark roof can become much hotter than the air above it. The reason is simple: dark surfaces absorb much of the sunlight that reaches them and convert that energy into heat. Some of the heat moves into the building below, while some warms the surrounding air. Across a neighborhood, thousands of sun-heated roofs and paved surfaces can contribute to what researchers call the urban heat island effect, in which developed areas become warmer than nearby places with more vegetation and less pavement.\n\nOne response is the “cool roof,” a roof designed to reflect more sunlight and release absorbed heat more efficiently. The idea does not require a roof to feel cold. Instead, the surface stays cooler than a conventional dark roof under the same sunny conditions. A reflective coating, a light-colored membrane, or certain roofing materials can all increase a roof’s ability to reflect solar energy. On a hot day, that difference can reduce the amount of heat passing into the rooms below.\n\nThe effect inside a building depends on several factors. Insulation, roof design, local weather, and the amount of direct sunlight all matter. In a well-insulated building, changing the roof may have a smaller effect on indoor temperature because insulation already slows heat transfer. In a poorly insulated building, the difference can be more noticeable. A cooler roof can also reduce how often an air conditioner must run, although the exact savings vary from building to building.\n\nCool roofs are not a perfect answer for every place. In colder climates, a dark roof can provide a small amount of useful heat during sunny winter days. Snow cover, long cloudy seasons, and local energy prices can also change the calculation. For that reason, building planners usually consider the entire year rather than only the hottest week of summer. They may compare expected cooling savings with any possible increase in winter heating.\n\nResearchers also look beyond a single building. If many roofs in the same area reflect more sunlight, less heat may be stored across the neighborhood during the day. That can help limit local heat buildup, especially when cool roofs are combined with shade trees, parks, and other measures. Still, a roof coating cannot replace those strategies. Trees provide shade and release water vapor, while parks reduce the amount of heat-storing pavement. Each approach works differently.\n\nFor homeowners and city planners, the main lesson is not that every roof should be painted white. It is that roof color and material are part of a larger energy and heat-management system. A successful plan considers the building, the climate, and the surrounding neighborhood. Cool roofs are most useful when they are treated as one practical tool among several rather than as a universal fix.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses an idea developed throughout the passage?",
+      "points": 1,
+      "explanation": "The passage repeatedly explains that cool roofs can reduce heat, but their effect varies with insulation, climate, and neighborhood conditions.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "A central idea should account for the whole passage, including its limits and qualifications.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool roofs are the best way to eliminate the urban heat island effect.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The passage says cool roofs are only one tool and cannot replace other strategies."
+        },
+        {
+          "id": "b",
+          "text": "The usefulness of a cool roof depends on the building, climate, and how it fits with other heat-management strategies."
+        },
+        {
+          "id": "c",
+          "text": "Dark roofs are useful only in cold climates.",
+          "distractorType": "single_detail",
+          "whyWrong": "The passage discusses a small possible winter benefit, not a rule that dark roofs are useful only in cold places."
+        },
+        {
+          "id": "d",
+          "text": "Most buildings need less insulation after a cool roof is installed.",
+          "distractorType": "reasonable_but_incomplete",
+          "whyWrong": "The passage does not say a cool roof reduces the need for insulation."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "For homeowners and city planners, the main lesson is not that every roof should be painted white. It is that roof color and material are part of a larger energy and heat-management system."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "According to the passage, why can a dark roof contribute to higher temperatures?",
+      "points": 1,
+      "explanation": "Paragraph 1 directly explains that dark surfaces absorb sunlight and convert that energy into heat.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "For a cause-and-effect question, find the stated mechanism rather than a nearby fact.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "It reflects most sunlight back into the air.",
+          "distractorType": "reversed_cause_effect",
+          "whyWrong": "The passage says dark roofs absorb sunlight rather than reflect most of it."
+        },
+        {
+          "id": "b",
+          "text": "It prevents heat from moving into the building.",
+          "distractorType": "effect_as_cause",
+          "whyWrong": "The passage says heat can move into the building below."
+        },
+        {
+          "id": "c",
+          "text": "It releases water vapor during the afternoon.",
+          "distractorType": "correlation_only",
+          "whyWrong": "The passage connects water vapor with trees, not dark roofs."
+        },
+        {
+          "id": "d",
+          "text": "It absorbs sunlight and converts that energy into heat."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "dark surfaces absorb much of the sunlight that reaches them and convert that energy into heat."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What does the word “calculation” most nearly mean as used in paragraph 4?",
+      "points": 1,
+      "explanation": "The paragraph lists climate, snow, cloudy seasons, and energy prices, then says those factors can change the calculation. Here, the word means a judgment or decision based on those factors.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the surrounding sentence and paragraph to choose the meaning that fits the situation.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "a decision based on several factors"
+        },
+        {
+          "id": "b",
+          "text": "a written math problem",
+          "distractorType": "common_definition_wrong_context",
+          "whyWrong": "The paragraph is not describing a literal arithmetic exercise."
+        },
+        {
+          "id": "c",
+          "text": "a prediction of the exact winter temperature",
+          "distractorType": "same_part_of_speech_wrong_sense",
+          "whyWrong": "The passage does not describe an exact temperature forecast."
+        },
+        {
+          "id": "d",
+          "text": "a measurement of roof color",
+          "distractorType": "opposite_meaning",
+          "whyWrong": "The word refers to weighing costs and benefits, not measuring color."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "For homeowners and city planners, the main lesson is not that every roof should be painted white. It is that roof color and material are part of a larger energy and heat-management system."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of paragraph 5?",
+      "points": 1,
+      "explanation": "Paragraph 5 shifts from a single building to the neighborhood scale and explains how many reflective roofs may reduce local heat buildup.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "A paragraph-function question asks what job the paragraph does in the whole passage.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To explain why cool roofs should replace trees and parks",
+          "distractorType": "function_of_other_paragraph",
+          "whyWrong": "The paragraph says cool roofs cannot replace those strategies."
+        },
+        {
+          "id": "b",
+          "text": "To describe how reflective roof coatings are manufactured",
+          "distractorType": "summary_of_content_only",
+          "whyWrong": "Manufacturing is not discussed in paragraph 5."
+        },
+        {
+          "id": "c",
+          "text": "To show how cool roofs may affect heat beyond a single building"
+        },
+        {
+          "id": "d",
+          "text": "To prove that every neighborhood should use the same cooling plan",
+          "distractorType": "too_general",
+          "whyWrong": "The passage repeatedly avoids a one-size-fits-all recommendation."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "If many roofs in the same area reflect more sunlight, less heat may be stored across the neighborhood during the day."
+    },
+    {
+      "id": "q5",
+      "type": "evidence_based",
+      "prompt": "Which detail best supports the idea that a cool roof may have different effects in different buildings?",
+      "points": 1,
+      "explanation": "The insulation example directly compares how the same roof change can matter more or less depending on the building.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Choose evidence that directly proves the exact idea in the question.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "A reflective coating can increase a roof’s ability to reflect solar energy.",
+          "distractorType": "related_detail",
+          "whyWrong": "This explains how a cool roof works, not why results vary by building."
+        },
+        {
+          "id": "b",
+          "text": "In a well-insulated building, changing the roof may have a smaller effect on indoor temperature because insulation already slows heat transfer."
+        },
+        {
+          "id": "c",
+          "text": "Trees provide shade and release water vapor.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports the value of trees as another strategy."
+        },
+        {
+          "id": "d",
+          "text": "Developed areas can become warmer than places with more vegetation.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains urban heat islands but not different building-level effects."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "In a well-insulated building, changing the roof may have a smaller effect on indoor temperature because insulation already slows heat transfer."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the passage as a whole?",
+      "points": 1,
+      "explanation": "Across the passage, the author emphasizes benefits, limits, local climate, building design, and combination with other strategies.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "A strong conclusion must fit all major parts of the passage, not just one paragraph.",
+      "familyId": "conclusion.synthesize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "A city should choose one cooling strategy and use it everywhere.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage argues for considering multiple conditions and combining strategies."
+        },
+        {
+          "id": "b",
+          "text": "Winter heating costs always cancel out summer cooling savings.",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "The passage says the balance varies by climate and building."
+        },
+        {
+          "id": "c",
+          "text": "Roof color matters more than insulation in every building.",
+          "distractorType": "single_detail_inference",
+          "whyWrong": "The passage specifically says insulation can change the effect of a cool roof."
+        },
+        {
+          "id": "d",
+          "text": "Cool roofs are most effective when planners consider local conditions and use them as part of a broader heat strategy."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "For homeowners and city planners, the main lesson is not that every roof should be painted white. It is that roof color and material are part of a larger energy and heat-management system."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "Choice A includes the main benefit, the limits, and the idea that cool roofs are one part of a larger strategy.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A good summary keeps the central idea and major supporting points without adding new claims.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool roofs reflect sunlight, can reduce heat gain, and may help neighborhoods, but their value depends on local conditions and they work best alongside other strategies."
+        },
+        {
+          "id": "b",
+          "text": "Cities are warmer than rural areas because they have too few white roofs.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This reduces the whole passage to one oversimplified cause."
+        },
+        {
+          "id": "c",
+          "text": "Reflective coatings are cheaper than air conditioning and should be required in warm climates.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The passage does not compare purchase costs or recommend a requirement."
+        },
+        {
+          "id": "d",
+          "text": "Trees, parks, insulation, winter weather, air conditioners, and roof membranes all affect buildings in different ways.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This lists details without stating the passage’s main relationship among them."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Cool roofs can reduce heat gain, but their value depends on the building and climate, and they work best as one part of a broader heat-management strategy."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-gold-science-cool-roofs",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R2.2",
+        "R3.1",
+        "R4.1",
+        "R1.3",
+        "R2.5",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Science passage set"
+    },
+    "compiledAt": "2026-08-16T15:20:38.751Z"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-16T11:58:18.500Z",
+  "builtAt": "2026-08-16T15:20:38.754Z",
   "tracks": [
     {
       "id": "reading",
@@ -33,8 +33,8 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
+          "availableSkillCount": 5,
+          "availableSetCount": 3,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -93,7 +93,7 @@
             }
           ],
           "studyFileCount": 2,
-          "checkCount": 0,
+          "checkCount": 3,
           "skills": [
             {
               "id": "R1.1",
@@ -101,14 +101,64 @@
               "label": "Explicit meaning",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -118,14 +168,64 @@
               "label": "Main idea / central idea",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -135,14 +235,112 @@
               "label": "Supporting details",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -152,14 +350,158 @@
               "label": "Summary",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 3,
+              "questionCount": 3,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 3,
+              "sets": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -169,14 +511,62 @@
               "label": "Theme",
               "priority": "P1",
               "practiceMode": "Literary",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 2,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             }
@@ -206,13 +596,13 @@
               ]
             }
           ],
-          "availableSkillCount": 1,
-          "availableSetCount": 2,
+          "availableSkillCount": 4,
+          "availableSetCount": 5,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 2,
+          "checkCount": 5,
           "skills": [
             {
               "id": "R2.1",
@@ -220,14 +610,64 @@
               "label": "Sequence",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -237,14 +677,64 @@
               "label": "Cause and effect",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -272,11 +762,11 @@
               "priority": "P0",
               "practiceMode": "Reading",
               "available": true,
-              "setCount": 2,
-              "questionCount": 4,
+              "setCount": 3,
+              "questionCount": 5,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 2,
+              "checkCount": 3,
               "sets": [
                 {
                   "id": "set-rla-evidence-last-bus",
@@ -314,6 +804,29 @@
                     "contentKind": "passage_practice",
                     "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
                     "topicLabel": "Inference & Evidence"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
                   }
                 }
               ],
@@ -355,6 +868,29 @@
                     "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
                     "topicLabel": "Inference & Evidence"
                   }
+                },
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
                 }
               ],
               "resources": [],
@@ -366,14 +902,64 @@
               "label": "Conclusions & generalizations",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -419,13 +1005,13 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
+          "availableSkillCount": 3,
+          "availableSetCount": 3,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 0,
+          "checkCount": 3,
           "skills": [
             {
               "id": "R3.1",
@@ -433,14 +1019,112 @@
               "label": "Meaning in context",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                },
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -484,14 +1168,62 @@
               "label": "Tone",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -501,14 +1233,62 @@
               "label": "Impact of word choice",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             }
@@ -538,13 +1318,13 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
+          "availableSkillCount": 4,
+          "availableSetCount": 3,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 0,
+          "checkCount": 3,
           "skills": [
             {
               "id": "R4.1",
@@ -552,14 +1332,64 @@
               "label": "Paragraph / section function",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-science-cool-roofs",
+                  "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+                  "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-science-cool-roofs.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [
+                      "R2.2",
+                      "R3.1",
+                      "R4.1",
+                      "R1.3",
+                      "R2.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Science passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -569,14 +1399,64 @@
               "label": "Text structure",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -603,14 +1483,64 @@
               "label": "Author purpose",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-workplace-tool-library",
+                  "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+                  "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-workplace-tool-library.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [
+                      "R4.4",
+                      "R2.1",
+                      "R1.3",
+                      "R4.2",
+                      "R3.1",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Workplace passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -620,14 +1550,62 @@
               "label": "Point of view / perspective",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 1,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-gold-literary-brass-key",
+                  "title": "GED-Style Literary Passage — The Brass Key",
+                  "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+                  "file": "generated/modules/rla-gold-literary-brass-key.json",
+                  "difficulty": "hard",
+                  "category": "reading",
+                  "questionCount": 7,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [
+                      "R1.5",
+                      "R3.4",
+                      "R3.5",
+                      "R4.5",
+                      "R1.4"
+                    ],
+                    "contentKind": "quiz",
+                    "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+                    "topicLabel": "Literary passage set"
+                  }
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -651,13 +1629,13 @@
           ]
         }
       ],
-      "availableSkillCount": 1,
+      "availableSkillCount": 16,
       "totalSkillCount": 22,
-      "availableSetCount": 2,
-      "questionCount": 4,
+      "availableSetCount": 5,
+      "questionCount": 25,
       "resourceCount": 2,
       "studyFileCount": 2,
-      "checkCount": 2
+      "checkCount": 5
     },
     {
       "id": "arguments",

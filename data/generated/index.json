@@ -78,5 +78,64 @@
       "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
       "topicLabel": "Grammar & Usage"
     }
+  },
+  {
+    "file": "generated/modules/rla-gold-literary-brass-key.json",
+    "title": "GED-Style Literary Passage — The Brass Key",
+    "description": "Read a literary passage and answer a mixed set of GED-style reading questions.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [
+        "R1.5",
+        "R3.4",
+        "R3.5",
+        "R4.5",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Literary passage set"
+    }
+  },
+  {
+    "file": "generated/modules/rla-gold-science-cool-roofs.json",
+    "title": "GED-Style Science Passage — Cool Roofs and City Heat",
+    "description": "Read an informational science passage and answer a mixed set of GED-style reading questions.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R2.2",
+        "R3.1",
+        "R4.1",
+        "R1.3",
+        "R2.5",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Science passage set"
+    }
+  },
+  {
+    "file": "generated/modules/rla-gold-workplace-tool-library.json",
+    "title": "GED-Style Workplace Passage — Tool Library Pickup Process",
+    "description": "Read a workplace memo and answer a mixed set of GED-style reading questions.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [
+        "R4.4",
+        "R2.1",
+        "R1.3",
+        "R4.2",
+        "R3.1",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Workplace passage set"
+    }
   }
 ]
