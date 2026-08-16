@@ -1,8 +1,7 @@
 /*
   progress.js — simplified learner-facing progress page
   ------------------------------------------------------
-  Keeps the data logic the same, but explains the page more clearly so a
-  learner can quickly understand what each section means and what to do next.
+  Adds a shortcut sidebar so learners can move through the page faster.
 */
 
 const progressView = document.getElementById("progress-view");
@@ -31,66 +30,83 @@ function renderProgress() {
   const topPattern = patterns.find((item) => item.count >= 2) || null;
 
   progressView.innerHTML = `
-    <section class="progress-heading progress-heading-plain">
-      <div>
-        <div class="eyebrow">Learning profile</div>
-        <h1>Your progress</h1>
-        <p class="lede">This page is built from your answers on this device. It shows what you have practiced, what still needs work, and what to review next.</p>
-      </div>
-    </section>
-
-    <section class="progress-overview" aria-labelledby="overview-title">
-      <div class="progress-section-head progress-section-head-tight">
-        <div>
-          <div class="eyebrow">Overview</div>
-          <h2 id="overview-title">What these numbers mean</h2>
+    <div class="progress-shell">
+      <aside class="progress-sidebar" aria-label="Progress shortcuts">
+        <div class="progress-sidebar-box">
+          <div class="eyebrow">Shortcuts</div>
+          <nav class="progress-shortcuts">
+            <a href="#overview-section">Overview</a>
+            <a href="#review-section">Review schedule</a>
+            <a href="#next-section">What to do next</a>
+            <a href="#skills-section">Skill signals</a>
+            <a href="#mistakes-section">Review list</a>
+          </nav>
         </div>
-        <p>Keep this simple: more practice gives better signals.</p>
-      </div>
-      <div class="progress-overview-grid">
-        ${summaryStat(summary.attempts, "Answered", "How many graded questions you have completed.")}
-        ${summaryStat(`${summary.accuracy}%`, "Accuracy", "How many of those graded questions were correct.")}
-        ${summaryStat(summary.activeMistakes, "Need review", "Questions or ideas that still need another look.")}
-        ${summaryStat(summary.dueReviews, "Reviews ready", "Skills that are ready to be practiced again now.")}
-      </div>
-    </section>
+      </aside>
 
-    ${reviewRhythmHtml(summary)}
-    ${recommendation ? recommendationHtml(recommendation) : ""}
-    ${topPattern ? patternHtml(topPattern) : ""}
+      <div class="progress-content">
+        <section class="progress-heading progress-heading-plain">
+          <div>
+            <div class="eyebrow">Learning profile</div>
+            <h1>Your progress</h1>
+            <p class="lede">This page is built from your answers on this device. It shows what you have practiced, what still needs work, and what to review next.</p>
+          </div>
+        </section>
 
-    <section class="progress-section" aria-labelledby="skill-signals-heading">
-      <div class="progress-section-head">
-        <div>
-          <div class="eyebrow">Skills</div>
-          <h2 id="skill-signals-heading">How each skill is going</h2>
-        </div>
-        <p>Each row shows the skill, your current score signal, and whether it still needs work.</p>
-      </div>
-      <div class="skill-signal-list skill-signal-list-plain">
-        ${summary.skills.map(skillRow).join("")}
-      </div>
-    </section>
+        <section id="overview-section" class="progress-overview" aria-labelledby="overview-title">
+          <div class="progress-section-head progress-section-head-tight">
+            <div>
+              <div class="eyebrow">Overview</div>
+              <h2 id="overview-title">What these numbers mean</h2>
+            </div>
+            <p>Keep this simple: more practice gives better signals.</p>
+          </div>
+          <div class="progress-overview-grid">
+            ${summaryStat(summary.attempts, "Answered", "How many graded questions you have completed.")}
+            ${summaryStat(`${summary.accuracy}%`, "Accuracy", "How many of those graded questions were correct.")}
+            ${summaryStat(summary.activeMistakes, "Need review", "Questions or ideas that still need another look.")}
+            ${summaryStat(summary.dueReviews, "Reviews ready", "Skills that are ready to be practiced again now.")}
+          </div>
+        </section>
 
-    <section class="progress-section" aria-labelledby="mistake-book-heading">
-      <div class="progress-section-head">
-        <div>
-          <div class="eyebrow">Review list</div>
-          <h2 id="mistake-book-heading">Questions to revisit</h2>
-        </div>
-        <p>These are the things Studo still wants you to come back to.</p>
-      </div>
-      ${mistakes.length ? `<div class="mistake-list mistake-list-plain">${mistakes.map(mistakeRow).join("")}</div>` : `
-        <div class="progress-quiet-state">No active review items right now. Keep going and this list will stay focused on what truly needs another look.</div>`}
-    </section>
+        <div id="review-section">${reviewRhythmHtml(summary)}</div>
+        ${recommendation ? `<div id="next-section">${recommendationHtml(recommendation)}</div>` : ""}
+        ${topPattern ? patternHtml(topPattern) : ""}
 
-    <section class="progress-note-card progress-note-card-plain">
-      <div>
-        <strong>How Studo decides this</strong>
-        <p>Studo groups correct and incorrect graded attempts by skill. It also spaces later review, so improvement comes from seeing whether you can do the idea again on fresh material.</p>
+        <section id="skills-section" class="progress-section" aria-labelledby="skill-signals-heading">
+          <div class="progress-section-head">
+            <div>
+              <div class="eyebrow">Skills</div>
+              <h2 id="skill-signals-heading">How each skill is going</h2>
+            </div>
+            <p>Each row shows the skill, your current score signal, and whether it still needs work.</p>
+          </div>
+          <div class="skill-signal-list skill-signal-list-plain">
+            ${summary.skills.map(skillRow).join("")}
+          </div>
+        </section>
+
+        <section id="mistakes-section" class="progress-section" aria-labelledby="mistake-book-heading">
+          <div class="progress-section-head">
+            <div>
+              <div class="eyebrow">Review list</div>
+              <h2 id="mistake-book-heading">Questions to revisit</h2>
+            </div>
+            <p>These are the things Studo still wants you to come back to.</p>
+          </div>
+          ${mistakes.length ? `<div class="mistake-list mistake-list-plain">${mistakes.map(mistakeRow).join("")}</div>` : `
+            <div class="progress-quiet-state">No active review items right now. Keep going and this list will stay focused on what truly needs another look.</div>`}
+        </section>
+
+        <section class="progress-note-card progress-note-card-plain">
+          <div>
+            <strong>How Studo decides this</strong>
+            <p>Studo groups correct and incorrect graded attempts by skill. It also spaces later review, so improvement comes from seeing whether you can do the idea again on fresh material.</p>
+          </div>
+          <button class="btn ghost small" type="button" id="clear-learning-history">Clear learning history</button>
+        </section>
       </div>
-      <button class="btn ghost small" type="button" id="clear-learning-history">Clear learning history</button>
-    </section>
+    </div>
   `;
 
   const clearBtn = document.getElementById("clear-learning-history");

@@ -33,30 +33,29 @@
 </header>
 <div id="subject-bar-mount"></div>
 
-<main class="library-main">
-  <div class="wrap library-wrap">
-    <header class="library-hero practice-library-hero">
-      <div class="page-kicker">Reasoning Through Language Arts</div>
-      <h1>Practice</h1>
-      <p>Choose a topic below, or use the quick search when you already know the skill you want.</p>
-    </header>
+<main class="library-main practice-main-wide">
+  <div class="wrap practice-page-wrap">
+    <section class="practice-top-layout" aria-label="Practice overview and search">
+      <header class="library-hero practice-library-hero practice-hero-left">
+        <div class="page-kicker">Reasoning Through Language Arts</div>
+        <h1>Practice</h1>
+        <p>Choose a topic below, or search when you already know the skill you want.</p>
+      </header>
 
-    <section class="practice-search-spotlight" aria-labelledby="quick-find-title">
-      <div class="practice-search-copy">
-        <div class="practice-search-kicker">Quick find</div>
-        <h2 id="quick-find-title">Go straight to a skill.</h2>
-        <p>Search by topic, sub-skill, or area. This is the fastest way to jump into exactly what you need.</p>
-      </div>
-      <div class="practice-search-panel">
-        <label class="library-search practice-search-input" for="skill-search">
-          <span class="practice-search-label">Find a topic or skill</span>
-          <input id="skill-search" type="search" placeholder="Example: main idea, tone, evidence, punctuation" autocomplete="off">
+      <section class="practice-search-simple" aria-labelledby="quick-find-title">
+        <div class="practice-search-header">
+          <div class="practice-search-kicker">Quick find</div>
+          <h2 id="quick-find-title">Search for a topic or skill</h2>
+        </div>
+        <label class="practice-search-compact" for="skill-search">
+          <span class="sr-only">Find a topic or skill</span>
+          <input id="skill-search" type="search" placeholder="main idea, tone, evidence, punctuation" autocomplete="off">
         </label>
         <div id="skill-search-results" class="skill-search-results" hidden></div>
-      </div>
+      </section>
     </section>
 
-    <section class="library-index" aria-labelledby="browse-title">
+    <section class="library-index practice-browse-section" aria-labelledby="browse-title">
       <div class="library-section-heading"><h2 id="browse-title">Browse by area</h2></div>
       <div id="category-list" class="library-track-list"></div>
     </section>

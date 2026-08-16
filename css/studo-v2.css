@@ -5092,3 +5092,181 @@ body.test-body {
     min-height: 0;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Phase 4H — layout refinement
+   Less centered practice page, clearer search placement, and progress sidebar.
+   ------------------------------------------------------------------------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.practice-main-wide .wrap,
+.practice-page-wrap {
+  max-width: 1280px;
+}
+.practice-page-wrap {
+  padding-top: 70px;
+  padding-bottom: 86px;
+}
+.practice-top-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 460px);
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 42px;
+}
+.practice-hero-left {
+  max-width: 760px;
+  margin: 0;
+}
+.practice-hero-left h1 {
+  margin-bottom: 14px;
+}
+.practice-hero-left p {
+  max-width: 30ch;
+}
+.practice-search-simple {
+  margin-top: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.practice-search-header {
+  margin-bottom: 12px;
+}
+.practice-search-header h2 {
+  margin: 8px 0 0;
+  font-size: 1.18rem;
+  letter-spacing: -.02em;
+}
+.practice-search-compact {
+  display: block;
+  max-width: none;
+}
+.practice-search-compact input {
+  width: 100%;
+  min-height: 54px;
+  padding: 0 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--color-surface) 84%, var(--color-primary-soft));
+  color: var(--color-ink);
+  font-size: 1rem;
+}
+.practice-search-compact input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 16%, transparent);
+}
+.practice-search-simple .skill-search-results {
+  max-width: none;
+  margin-top: 10px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+.practice-search-simple .skill-search-row {
+  padding: 14px 16px;
+}
+.practice-browse-section {
+  margin-top: 0;
+}
+
+.progress-main-refined .wrap,
+.progress-page-wrap {
+  max-width: 1360px;
+}
+.progress-page-wrap {
+  padding-top: 72px;
+  padding-bottom: 84px;
+}
+.progress-shell {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 44px;
+  align-items: start;
+}
+.progress-sidebar {
+  position: relative;
+}
+.progress-sidebar-box {
+  position: sticky;
+  top: 128px;
+  padding: 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+.progress-shortcuts {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+.progress-shortcuts a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--color-ink-soft);
+  font-weight: 600;
+}
+.progress-shortcuts a:hover {
+  background: var(--color-surface-soft);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.progress-content {
+  min-width: 0;
+}
+.progress-content > section,
+.progress-content > div {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 1100px) {
+  .practice-top-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .practice-hero-left p {
+    max-width: 42ch;
+  }
+  .progress-shell {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .progress-sidebar-box {
+    position: static;
+  }
+  .progress-shortcuts {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .practice-page-wrap,
+  .progress-page-wrap {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+  .practice-top-layout {
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+  .practice-search-header h2 {
+    font-size: 1.05rem;
+  }
+  .progress-shortcuts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
