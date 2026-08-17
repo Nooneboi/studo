@@ -1,0 +1,495 @@
+{
+  "id": "rla-main-idea-practice-01",
+  "title": "Main Idea Practice 01",
+  "description": "4 short texts · 8 main-idea questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Quiet Hours at the Repair Desk\n\nA university's technology repair desk used to accept walk-in questions all day. Students liked the flexibility, but technicians were often interrupted while diagnosing laptops or replacing parts. The desk began testing two quiet work periods each afternoon. During those periods, technicians finish repairs already in progress while one staff member handles urgent pickups at the counter. Walk-in questions are still accepted before and after the quiet periods, and students can submit a request online at any time. After six weeks, the number of repairs completed each day increased, while the average wait for a completed repair decreased slightly. The desk plans to keep the quiet periods for another term and continue tracking whether the change helps without making support harder to reach.\n\nTEXT B - Mangroves at the Water's Edge\n\nMangrove forests grow where land and seawater meet in many tropical and subtropical regions. Their tangled roots slow moving water and trap sediment, which can reduce erosion along some shorelines. The same roots create sheltered areas where young fish and other animals can feed or hide. Mangroves also store carbon in their wood and in the wet soils beneath them. These benefits do not make every mangrove forest identical, and planting mangroves is not a simple replacement for all other coastal protection. Their value depends on local water conditions, species, and whether the surrounding habitat can support them. Protecting existing mangrove systems can therefore serve several purposes at once when local conditions are suitable.\n\nTEXT C - The Returned Sketchbook\n\nEli found the sketchbook on a bench outside the train station. The first pages were filled with quick drawings of commuters, bicycles, storefronts, and birds on power lines. On the inside cover was a phone number. Eli considered leaving the book with station staff, but the office had already closed. He carried it home and called the number. The owner, a college student named Noor, sounded relieved and asked if they could meet the next morning. Before returning the book, Eli looked once more at a drawing of the station clock. Noor thanked him and explained that the sketchbook contained ideas for a final art project. A week later, Eli passed the same bench and noticed himself checking beneath it before walking on.\n\nTEXT D - Weekend Bus Pilot\n\nThe Riverbend transit agency recently added Sunday service to two bus routes as a three-month pilot. The routes were chosen because they connect apartment areas with a hospital, a shopping district, and the central rail station. Before the pilot, both routes stopped running late Saturday night and resumed Monday morning. During the first month of Sunday service, ridership was lower than on weekdays but higher than planners had predicted. Surveys showed that riders used the buses for work, medical visits, shopping, and connections to longer trips. The agency has not decided whether the service will become permanent. It will compare ridership, operating costs, missed trips, and rider feedback at the end of the pilot before making a recommendation.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of Text A?",
+      "points": 1,
+      "explanation": "Choice A includes the change, its purpose, and the fact that the desk is still trying to keep support accessible.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "A main idea should cover the change and why it matters, not just one detail about the schedule.",
+      "familyId": "mainidea.whole.explicit",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The repair desk is testing quiet work periods to complete repairs with fewer interruptions while keeping support available."
+        },
+        {
+          "id": "b",
+          "text": "Students are no longer allowed to ask repair questions in person.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Walk-in questions are still accepted before and after the quiet periods."
+        },
+        {
+          "id": "c",
+          "text": "Online requests are the main reason repair times improved.",
+          "distractorType": "unsupported_cause",
+          "whyWrong": "The passage does not identify online requests as the cause of the improvement."
+        },
+        {
+          "id": "d",
+          "text": "The repair desk should close its counter every afternoon.",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "The passage describes a limited test, not a recommendation to close the counter every afternoon."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The repair desk introduced quiet work periods to reduce interruptions, then tracked whether repairs improved without making support harder to reach."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best states the main point of Text A?",
+      "points": 1,
+      "explanation": "The passage presents the quiet periods as a trial that improved workflow and still needs to be evaluated for accessibility.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "When the author includes both a benefit and a condition, the best main idea usually keeps both.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Technicians prefer repairing laptops to speaking with students.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The passage discusses interruptions and workflow, not technician preferences."
+        },
+        {
+          "id": "b",
+          "text": "Every repair desk should use exactly two quiet periods each day.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage describes one desk's trial and does not make a universal recommendation."
+        },
+        {
+          "id": "c",
+          "text": "The online request system has replaced most walk-in support.",
+          "distractorType": "single_detail",
+          "whyWrong": "Online requests are only one access option, and walk-in support remains available."
+        },
+        {
+          "id": "d",
+          "text": "A limited change in scheduling may improve repair workflow if the desk continues to monitor its effect on student access."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "The repair desk introduced quiet work periods to reduce interruptions, then tracked whether repairs improved without making support harder to reach."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses an idea developed throughout Text B?",
+      "points": 1,
+      "explanation": "The passage connects erosion control, habitat, carbon storage, and the limits created by local conditions.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "For an implied main idea, combine the major benefits and the author's qualification instead of choosing one example.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mangroves are valuable mainly because they store more carbon than every other coastal habitat.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The passage lists carbon storage as one benefit and makes no comparison with every other habitat."
+        },
+        {
+          "id": "b",
+          "text": "Mangrove systems can provide several benefits at once, although their usefulness depends on local conditions."
+        },
+        {
+          "id": "c",
+          "text": "Young fish are the only animals that depend on mangrove roots.",
+          "distractorType": "too_narrow",
+          "whyWrong": "The passage mentions young fish as one example and discusses several broader benefits."
+        },
+        {
+          "id": "d",
+          "text": "Planting mangroves can replace every other form of coastal protection.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage directly says mangroves are not a simple replacement for all other coastal protection."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Mangroves can provide several environmental benefits, but their usefulness depends on local conditions and they are not a universal replacement for other coastal protection."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which statement best states the central idea of Text B?",
+      "points": 1,
+      "explanation": "Choice C captures all three major benefits and the passage's warning against treating mangroves as a one-size-fits-all solution.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "Hard main-idea questions often make the correct answer preserve both the benefit and the limitation.",
+      "familyId": "mainidea.whole.explicit",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mangrove roots reduce erosion because they trap every piece of sediment moving through coastal water.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "The passage says roots can trap sediment; it does not say they trap every piece."
+        },
+        {
+          "id": "b",
+          "text": "Protecting mangroves is useful only in places where young fish are commercially important.",
+          "distractorType": "too_narrow",
+          "whyWrong": "The passage discusses several ecological functions, not only commercially important fish."
+        },
+        {
+          "id": "c",
+          "text": "Protecting suitable mangrove habitats can support shoreline stability, wildlife, and carbon storage without being a universal coastal solution."
+        },
+        {
+          "id": "d",
+          "text": "Coastal communities should plant mangroves anywhere erosion occurs.",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "The author emphasizes that local conditions determine whether mangroves are suitable."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Mangroves can provide several environmental benefits, but their usefulness depends on local conditions and they are not a universal replacement for other coastal protection."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses an idea developed throughout Text C?",
+      "points": 1,
+      "explanation": "The lost sketchbook, Noor's relief, and Eli checking the bench later all develop the idea that the experience changed how he notices responsibility.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "In literary text, the main idea may be implied through the character's actions and change rather than stated directly.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Eli wants to learn how to draw commuters at the station.",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "Eli looks at the drawings, but the story never says he wants to become an artist."
+        },
+        {
+          "id": "b",
+          "text": "Station staff should keep the office open later so lost items can be returned.",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "The closed office is a detail, not the story's larger point."
+        },
+        {
+          "id": "c",
+          "text": "Noor's final art project is mainly about public transportation.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The sketchbook includes station drawings, but the exact subject of the final project is not given."
+        },
+        {
+          "id": "d",
+          "text": "Returning something important to its owner can make a person more aware of the value of small responsible actions."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Returning the lost sketchbook helps Eli understand how meaningful a small act of responsibility can be to another person."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best states the central idea of Text C?",
+      "points": 1,
+      "explanation": "The story's beginning, Noor's response, and Eli's final behavior all support the idea that the small act matters to him as well as to Noor.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "Choose the answer that explains the whole character experience, not just the event that starts the story.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A sketchbook can reveal more about a stranger than a conversation can.",
+          "distractorType": "reasonable_but_incomplete",
+          "whyWrong": "Eli learns something from the drawings, but the story focuses more on returning the book and how the experience affects him."
+        },
+        {
+          "id": "b",
+          "text": "Eli's effort to return the sketchbook shows how a simple helpful choice can become personally meaningful."
+        },
+        {
+          "id": "c",
+          "text": "College art projects require artists to draw many different public places.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The story gives no general rule about college art projects."
+        },
+        {
+          "id": "d",
+          "text": "The train station is an unsafe place to leave valuable belongings.",
+          "distractorType": "single_detail",
+          "whyWrong": "The lost item begins the plot, but the story is not mainly a warning about station safety."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Returning the lost sketchbook helps Eli understand how meaningful a small act of responsibility can be to another person."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of Text D?",
+      "points": 1,
+      "explanation": "The pilot, early ridership, rider uses, and final evaluation criteria all support this central idea.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "When a passage describes a pilot or trial, the main idea often includes both what is being tested and how the decision will be made.",
+      "familyId": "mainidea.whole.explicit",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Sunday buses are already more popular than weekday service.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage says Sunday ridership was lower than weekday ridership."
+        },
+        {
+          "id": "b",
+          "text": "The transit agency added Sunday service because the hospital requested it.",
+          "distractorType": "unsupported_cause",
+          "whyWrong": "The hospital is one destination on the route, but no request from the hospital is mentioned."
+        },
+        {
+          "id": "c",
+          "text": "The agency is testing Sunday service and will evaluate several kinds of evidence before deciding whether to continue it."
+        },
+        {
+          "id": "d",
+          "text": "The main purpose of public transit is to connect passengers to rail stations.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage describes several trip purposes and focuses on a specific pilot."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "The transit agency is testing Sunday bus service and will use ridership, costs, reliability, and rider feedback to decide whether it should continue."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which statement best states the main point of Text D?",
+      "points": 1,
+      "explanation": "The passage presents promising early use but emphasizes that the final decision depends on several measures collected over the full pilot.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "The best main idea should reflect the author's level of certainty. Do not turn a trial result into a final conclusion.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Early use of the new Sunday buses is encouraging, but the agency is waiting for a fuller set of results before making the service permanent."
+        },
+        {
+          "id": "b",
+          "text": "The agency should make Sunday service permanent because ridership exceeded its prediction.",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "The agency has not decided and plans to consider costs, reliability, and feedback as well as ridership."
+        },
+        {
+          "id": "c",
+          "text": "Most Sunday riders use the bus only to go shopping.",
+          "distractorType": "single_detail",
+          "whyWrong": "The survey lists several reasons for riding."
+        },
+        {
+          "id": "d",
+          "text": "The two pilot routes are the most important routes in the transit system.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The passage explains why they were chosen but does not rank them as the most important routes."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The transit agency is testing Sunday bus service and will use ridership, costs, reliability, and rider feedback to decide whether it should continue."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-main-idea-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
+      "topicLabel": "Main idea / central idea"
+    },
+    "passage": {
+      "id": "p-rla-main-idea-practice-01",
+      "title": "Main Idea Practice 01",
+      "textType": "informational_and_literary",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-17T08:21:50.679Z"
+  }
+}

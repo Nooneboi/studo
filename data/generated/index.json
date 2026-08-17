@@ -137,5 +137,18 @@
       "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
       "topicLabel": "Workplace passage set"
     }
+  },
+  {
+    "file": "generated/modules/rla-main-idea-practice-01.json",
+    "title": "Main Idea Practice 01",
+    "description": "4 short texts · 8 main-idea questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
+      "topicLabel": "Main idea / central idea"
+    }
   }
 ]

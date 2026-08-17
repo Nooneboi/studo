@@ -66,11 +66,10 @@ function renderSkill(track, domain, skill) {
 function renderTopicResource(resource) {
   const href = resource.href || resource.path || "#";
   const external = /^https?:\/\//i.test(href);
-  const type = ({pdf:"PDF",worksheet:"Practice pack",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[resource.type] || "File";
+  const type = ({pdf:"PDF",worksheet:"Practice workbook",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[resource.type] || "File";
   return `<a class="topic-resource-link" href="${escapeAttr(href)}" ${resource.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
     <span>${escapeHtml(type)}</span>
     <strong>${escapeHtml(resource.title)}</strong>
-    <b aria-hidden="true">${external ? "↗" : "↓"}</b>
   </a>`;
 }
 

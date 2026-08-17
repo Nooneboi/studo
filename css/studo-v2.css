@@ -5593,8 +5593,8 @@ body.test-body {
 .domain-hero-with-resources {
   max-width: none;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 460px);
+  gap: 58px;
   align-items: end;
 }
 .domain-hero-copy { min-width: 0; }
@@ -5614,8 +5614,8 @@ body.test-body {
 }
 .topic-resource-link {
   display: grid;
-  grid-template-columns: 92px minmax(0,1fr) 18px;
-  gap: 10px;
+  grid-template-columns: 108px minmax(0,1fr);
+  gap: 20px;
   align-items: center;
   min-height: 42px;
   color: var(--color-ink);
@@ -5623,7 +5623,7 @@ body.test-body {
 .topic-resource-link:hover { text-decoration: none; }
 .topic-resource-link:hover strong { color: var(--color-primary-dark); }
 .topic-resource-link > span {
-  color: var(--color-primary-dark);
+  color: #806bc3;
   font-size: .75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -5634,11 +5634,8 @@ body.test-body {
   font-weight: 600;
   line-height: 1.35;
 }
-.topic-resource-link b {
-  color: var(--color-ink-faint);
-  font-size: .9rem;
-  text-align: right;
-}
+
+[data-theme="dark"] .topic-resource-link > span { color: #b8a8ee; }
 
 @media (max-width: 900px) {
   .domain-hero-with-resources {
@@ -5653,7 +5650,7 @@ body.test-body {
 
 @media (max-width: 560px) {
   .topic-resource-link {
-    grid-template-columns: 78px minmax(0,1fr) 16px;
+    grid-template-columns: 96px minmax(0,1fr);
   }
 }
 

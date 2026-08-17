@@ -34,7 +34,7 @@ async function init() {
 }
 
 function renderResource(r){
-  const type=({pdf:"PDF",worksheet:"Worksheet",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[r.type]||"File";
+  const type=({pdf:"PDF",worksheet:"Practice workbook",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[r.type]||"File";
   const external=/^https?:\/\//i.test(r.href||r.path||"");
   return `<a class="skill-library-row" href="${escapeAttr(r.href||r.path||"#")}" ${r.download!==false&&!external?"download":""} ${external?'target="_blank" rel="noopener"':''}>
     <span class="skill-library-type">${escapeHtml(type)}</span><strong>${escapeHtml(r.title)}</strong><b aria-hidden="true">${external?"↗":"↓"}</b>

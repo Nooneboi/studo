@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-16T16:20:15.630Z",
+  "builtAt": "2026-08-17T08:21:50.682Z",
   "tracks": [
     {
       "id": "reading",
@@ -33,8 +33,8 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
+          "availableSkillCount": 1,
+          "availableSetCount": 1,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -52,12 +52,12 @@
             },
             {
               "id": "res-rla-core-meaning-practice-v1",
-              "title": "Core Meaning - Practice Pack",
+              "title": "Core Meaning - Practice Workbook",
               "type": "worksheet",
               "scope": "domain",
               "domainId": "core-meaning",
               "description": "Four original passages with 12 questions and a short answer key.",
-              "href": "assets/resources/core-meaning-practice-pack.pdf",
+              "href": "assets/resources/core-meaning-practice-workbook.pdf",
               "download": true,
               "status": "published",
               "rightsStatus": "original",
@@ -80,20 +80,20 @@
             },
             {
               "id": "res-rla-core-meaning-practice-v1",
-              "title": "Core Meaning - Practice Pack",
+              "title": "Core Meaning - Practice Workbook",
               "type": "worksheet",
               "scope": "domain",
               "domainId": "core-meaning",
               "description": "Four original passages with 12 questions and a short answer key.",
-              "href": "assets/resources/core-meaning-practice-pack.pdf",
+              "href": "assets/resources/core-meaning-practice-workbook.pdf",
               "download": true,
               "status": "published",
               "rightsStatus": "original",
               "reviewer": "Studo editorial review"
             }
           ],
-          "studyFileCount": 2,
-          "checkCount": 0,
+          "studyFileCount": 4,
+          "checkCount": 1,
           "skills": [
             {
               "id": "R1.1",
@@ -118,16 +118,154 @@
               "label": "Main idea / central idea",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 2,
+              "studyFileCount": 2,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-main-idea-practice-01",
+                  "title": "Main Idea Practice 01",
+                  "description": "4 short texts · 8 main-idea questions",
+                  "file": "generated/modules/rla-main-idea-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
+                    "topicLabel": "Main idea / central idea"
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-main-idea-practice-01",
+                    "title": "Main Idea Practice 01",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-main-idea-practice-01",
+                  "title": "Main Idea Practice 01",
+                  "description": "4 short texts · 8 main-idea questions",
+                  "file": "generated/modules/rla-main-idea-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
+                    "topicLabel": "Main idea / central idea"
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-main-idea-practice-01",
+                    "title": "Main Idea Practice 01",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-main-idea-guide-v1",
+                  "title": "Main Idea - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.2"
+                  ],
+                  "description": "Focused notes on explicit and implied central ideas, common distractors, and a practical four-step method.",
+                  "href": "assets/resources/main-idea-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5F skill-content review"
+                },
+                {
+                  "id": "res-rla-main-idea-workbook-v1",
+                  "title": "Main Idea - Practice Workbook",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.2"
+                  ],
+                  "description": "Six original short passages with 12 focused main-idea questions and explanations.",
+                  "href": "assets/resources/main-idea-practice-workbook.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5F skill-content review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-main-idea-guide-v1",
+                  "title": "Main Idea - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.2"
+                  ],
+                  "description": "Focused notes on explicit and implied central ideas, common distractors, and a practical four-step method.",
+                  "href": "assets/resources/main-idea-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5F skill-content review"
+                },
+                {
+                  "id": "res-rla-main-idea-workbook-v1",
+                  "title": "Main Idea - Practice Workbook",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.2"
+                  ],
+                  "description": "Six original short passages with 12 focused main-idea questions and explanations.",
+                  "href": "assets/resources/main-idea-practice-workbook.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5F skill-content review"
+                }
+              ]
             },
             {
               "id": "R1.3",
@@ -573,13 +711,13 @@
           ]
         }
       ],
-      "availableSkillCount": 0,
+      "availableSkillCount": 1,
       "totalSkillCount": 22,
-      "availableSetCount": 0,
-      "questionCount": 0,
-      "resourceCount": 2,
-      "studyFileCount": 2,
-      "checkCount": 0
+      "availableSetCount": 1,
+      "questionCount": 8,
+      "resourceCount": 4,
+      "studyFileCount": 4,
+      "checkCount": 1
     },
     {
       "id": "arguments",
