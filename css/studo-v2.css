@@ -5725,3 +5725,69 @@ body.test-body {
   .practice-passage-section { margin-top: 34px; }
   .practice-passage-entry { min-height: 66px; }
 }
+
+/* -------------------------------------------------------------------------
+   Phase 5G — scalable skill resource columns
+   Study guides, workbook sheets, and interactive practice sit side-by-side.
+   Items are plain text links: no repeated type labels or decorative arrows.
+   ------------------------------------------------------------------------- */
+.skill-library-hero {
+  max-width: none;
+  margin-bottom: 40px;
+}
+.skill-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 44px;
+  align-items: start;
+}
+.skill-resource-column { min-width: 0; }
+.skill-resource-column h2 {
+  margin: 0 0 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: .82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .065em;
+  color: #806bc3;
+}
+[data-theme="dark"] .skill-resource-column h2 { color: #b8a8ee; }
+.skill-resource-column-list {
+  display: grid;
+  align-content: start;
+}
+.skill-resource-link {
+  display: grid;
+  gap: 5px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.skill-resource-link:first-child { padding-top: 2px; }
+.skill-resource-link strong {
+  font-size: .96rem;
+  font-weight: 620;
+  line-height: 1.4;
+  letter-spacing: -.008em;
+}
+.skill-resource-link span {
+  color: var(--color-ink-muted);
+  font-size: .78rem;
+  line-height: 1.45;
+}
+.skill-resource-link:hover { text-decoration: none; }
+.skill-resource-link:hover strong { color: var(--color-primary-dark); }
+.skill-resource-column-empty {
+  margin: 0;
+  padding: 2px 0 14px;
+  color: var(--color-ink-muted);
+  font-size: .86rem;
+}
+@media (max-width: 900px) {
+  .skill-resource-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}

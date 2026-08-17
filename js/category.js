@@ -148,7 +148,7 @@ function renderTopicRow(catId, topic, mods) {
       ${inTopic
         .map(
           (m) =>
-            `<a class="tree-leaf" href="module.html?quiz=${encodeURIComponent(m.file)}&cat=${catId}">${FILE_ICON}<span>${escapeHtml(m.title)}</span></a>`
+            `<a class="tree-leaf" href="module.html?quiz=${encodeURIComponent(m.file)}&return=${encodeURIComponent(`category.html?cat=${catId}&topic=${topic}`)}">${FILE_ICON}<span>${escapeHtml(m.title)}</span></a>`
         )
         .join("")}
     </div>`;
@@ -207,7 +207,7 @@ function renderItem(m, cat) {
 
   return `
     <li class="practice-link-item">
-      <a class="title-link" href="module.html?quiz=${encodeURIComponent(m.file)}&cat=${cat}">${escapeHtml(m.title)}</a>
+      <a class="title-link" href="module.html?quiz=${encodeURIComponent(m.file)}&return=${encodeURIComponent(`category.html?cat=${cat}${activeTopic ? `&topic=${activeTopic}` : ""}`)}">${escapeHtml(m.title)}</a>
       <span class="meta">${hasProgress ? '<span class="progress-note">Picking back up</span> &middot; ' : ""}${questionCount} q &middot; ~${minutes} min</span>
     </li>`;
 }

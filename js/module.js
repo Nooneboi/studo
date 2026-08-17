@@ -35,9 +35,13 @@ async function init() {
 
   const cat = currentQuiz.category || "reading";
   const topic = currentQuiz.topic || "";
-  const backHref = topic
-    ? `category.html?category=${encodeURIComponent(cat)}&topic=${encodeURIComponent(topic)}`
-    : `practice.html`;
+  const requestedReturn = params.get("return");
+  const safeReturn = requestedReturn && !/^(?:https?:)?\/\//i.test(requestedReturn) && !/^javascript:/i.test(requestedReturn)
+    ? requestedReturn
+    : null;
+  const backHref = safeReturn || (topic
+    ? `category.html?cat=${encodeURIComponent(cat)}&topic=${encodeURIComponent(topic)}`
+    : `practice.html`);
 
   const exitLink = document.getElementById("focus-exit");
   if (exitLink) exitLink.href = backHref;

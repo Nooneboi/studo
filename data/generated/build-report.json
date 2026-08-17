@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-17T08:21:50.688Z",
+  "builtAt": "2026-08-17T10:39:35.750Z",
   "publishedSourceSets": [
     "set-rla-evidence-last-bus",
     "set-rla-evidence-night-shift",
@@ -10,6 +10,7 @@
     "set-rla-grammar-precision-check",
     "set-rla-grammar-sentence-repair",
     "set-rla-main-idea-practice-01",
+    "set-rla-supporting-details-practice-01",
     "set-rla-writing-library-hours"
   ],
   "generatedModules": [
@@ -21,6 +22,7 @@
     "generated/modules/grammar-transfer-practice.json",
     "generated/modules/grammar-practice.json",
     "generated/modules/rla-main-idea-practice-01.json",
+    "generated/modules/rla-supporting-details-practice-01.json",
     "generated/modules/writing-practice.json"
   ],
   "curriculumFile": "data/generated/curriculum.json",
@@ -91,13 +93,6 @@
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family support.best_detail has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
-      "location": "set-rla-gold-science-cool-roofs:q5"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
       "message": "Family conclusion.synthesize has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
       "location": "set-rla-gold-science-cool-roofs:q6"
@@ -122,13 +117,6 @@
       "message": "Family sequence.logic has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
       "location": "set-rla-gold-workplace-tool-library:q3"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family support.relevant_vs_mentioned has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
-      "location": "set-rla-gold-workplace-tool-library:q4"
     },
     {
       "type": "warning",

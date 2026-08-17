@@ -141,7 +141,7 @@ function skillRow(skill) {
 
 function mistakeRow(mistake) {
   const href = mistake.moduleFile
-    ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}`
+    ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}&return=${encodeURIComponent("progress.html")}`
     : practiceHref(mistake.category, mistake.topic);
   return `
     <a class="progress-review-row" href="${escapeAttr(href)}">

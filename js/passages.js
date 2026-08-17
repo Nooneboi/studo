@@ -21,7 +21,7 @@ function renderSet(set){
   }
   if(set.questionCount) info.push(`${set.questionCount} questions`);
   const source=sourceLine(p);
-  return `<a class="passage-practice-row" href="module.html?file=${encodeURIComponent(set.file)}">
+  return `<a class="passage-practice-row" href="module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent('passages.html')}">
     <div class="passage-practice-copy">
       <strong>${escapeHtml(set.title)}</strong>
       <span class="passage-practice-meta">${escapeHtml(info.join(" · "))}</span>

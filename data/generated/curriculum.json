@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-17T08:21:50.682Z",
+  "builtAt": "2026-08-17T10:39:35.743Z",
   "tracks": [
     {
       "id": "reading",
@@ -33,8 +33,8 @@
               ]
             }
           ],
-          "availableSkillCount": 1,
-          "availableSetCount": 1,
+          "availableSkillCount": 2,
+          "availableSetCount": 2,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -92,8 +92,8 @@
               "reviewer": "Studo editorial review"
             }
           ],
-          "studyFileCount": 4,
-          "checkCount": 1,
+          "studyFileCount": 7,
+          "checkCount": 2,
           "skills": [
             {
               "id": "R1.1",
@@ -217,7 +217,7 @@
                 },
                 {
                   "id": "res-rla-main-idea-workbook-v1",
-                  "title": "Main Idea - Practice Workbook",
+                  "title": "Main Idea - Workbook 01",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -251,7 +251,7 @@
                 },
                 {
                   "id": "res-rla-main-idea-workbook-v1",
-                  "title": "Main Idea - Practice Workbook",
+                  "title": "Main Idea - Workbook 01",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -273,16 +273,186 @@
               "label": "Supporting details",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-supporting-details-practice-01",
+                  "title": "Supporting Details Practice 01",
+                  "description": "4 short texts · 8 supporting-detail questions",
+                  "file": "generated/modules/rla-supporting-details-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
+                    "topicLabel": "Supporting details"
+                  },
+                  "measuredSkillIds": [
+                    "R1.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-supporting-details-practice-01",
+                    "title": "Supporting Details Practice 01",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-supporting-details-practice-01",
+                  "title": "Supporting Details Practice 01",
+                  "description": "4 short texts · 8 supporting-detail questions",
+                  "file": "generated/modules/rla-supporting-details-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
+                    "topicLabel": "Supporting details"
+                  },
+                  "measuredSkillIds": [
+                    "R1.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-supporting-details-practice-01",
+                    "title": "Supporting Details Practice 01",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-supporting-details-guide-v1",
+                  "title": "Supporting Details - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.3"
+                  ],
+                  "description": "Focused notes on direct evidence, related details, strong support, and common distractor traps.",
+                  "href": "assets/resources/supporting-details-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5G skill-content review"
+                },
+                {
+                  "id": "res-rla-supporting-details-workbook-v1",
+                  "title": "Supporting Details - Workbook 01",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.3"
+                  ],
+                  "description": "Four original texts with eight focused supporting-detail questions and an answer key.",
+                  "href": "assets/resources/supporting-details-workbook-01.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5G skill-content review"
+                },
+                {
+                  "id": "res-rla-supporting-details-workbook-v2",
+                  "title": "Supporting Details - Workbook 02",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.3"
+                  ],
+                  "description": "A second set of four original texts with eight supporting-detail questions and an answer key.",
+                  "href": "assets/resources/supporting-details-workbook-02.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5G skill-content review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-supporting-details-guide-v1",
+                  "title": "Supporting Details - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.3"
+                  ],
+                  "description": "Focused notes on direct evidence, related details, strong support, and common distractor traps.",
+                  "href": "assets/resources/supporting-details-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5G skill-content review"
+                },
+                {
+                  "id": "res-rla-supporting-details-workbook-v1",
+                  "title": "Supporting Details - Workbook 01",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.3"
+                  ],
+                  "description": "Four original texts with eight focused supporting-detail questions and an answer key.",
+                  "href": "assets/resources/supporting-details-workbook-01.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5G skill-content review"
+                },
+                {
+                  "id": "res-rla-supporting-details-workbook-v2",
+                  "title": "Supporting Details - Workbook 02",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.3"
+                  ],
+                  "description": "A second set of four original texts with eight supporting-detail questions and an answer key.",
+                  "href": "assets/resources/supporting-details-workbook-02.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5G skill-content review"
+                }
+              ]
             },
             {
               "id": "R1.4",
@@ -711,13 +881,13 @@
           ]
         }
       ],
-      "availableSkillCount": 1,
+      "availableSkillCount": 2,
       "totalSkillCount": 22,
-      "availableSetCount": 1,
-      "questionCount": 8,
-      "resourceCount": 4,
-      "studyFileCount": 4,
-      "checkCount": 1
+      "availableSetCount": 2,
+      "questionCount": 16,
+      "resourceCount": 7,
+      "studyFileCount": 7,
+      "checkCount": 2
     },
     {
       "id": "arguments",
