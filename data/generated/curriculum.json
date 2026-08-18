@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-17T10:39:35.743Z",
+  "builtAt": "2026-08-18T02:02:39.897Z",
   "tracks": [
     {
       "id": "reading",
@@ -33,8 +33,8 @@
               ]
             }
           ],
-          "availableSkillCount": 2,
-          "availableSetCount": 2,
+          "availableSkillCount": 5,
+          "availableSetCount": 5,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -92,8 +92,8 @@
               "reviewer": "Studo editorial review"
             }
           ],
-          "studyFileCount": 7,
-          "checkCount": 2,
+          "studyFileCount": 17,
+          "checkCount": 5,
           "skills": [
             {
               "id": "R1.1",
@@ -101,16 +101,186 @@
               "label": "Explicit meaning",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-explicit-meaning-practice-01",
+                  "title": "Explicit Meaning Practice 1",
+                  "description": "4 short texts · 8 explicit-meaning questions",
+                  "file": "generated/modules/rla-explicit-meaning-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
+                    "topicLabel": "Explicit meaning"
+                  },
+                  "measuredSkillIds": [
+                    "R1.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-explicit-meaning-practice-01",
+                    "title": "Explicit Meaning Practice 1",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-explicit-meaning-practice-01",
+                  "title": "Explicit Meaning Practice 1",
+                  "description": "4 short texts · 8 explicit-meaning questions",
+                  "file": "generated/modules/rla-explicit-meaning-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
+                    "topicLabel": "Explicit meaning"
+                  },
+                  "measuredSkillIds": [
+                    "R1.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-explicit-meaning-practice-01",
+                    "title": "Explicit Meaning Practice 1",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-explicit-meaning-guide-v1",
+                  "title": "Explicit Meaning - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.1"
+                  ],
+                  "description": "Focused notes on locating directly stated information and separating text evidence from assumptions.",
+                  "href": "assets/resources/explicit-meaning-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5H skill-content review"
+                },
+                {
+                  "id": "res-rla-explicit-meaning-workbook-v1",
+                  "title": "Explicit Meaning - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.1"
+                  ],
+                  "description": "Four original texts with eight focused explicit-meaning questions and an answer key.",
+                  "href": "assets/resources/explicit-meaning-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5H skill-content review"
+                },
+                {
+                  "id": "res-rla-explicit-meaning-workbook-v2",
+                  "title": "Explicit Meaning - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.1"
+                  ],
+                  "description": "A second set of original texts focused on exact details, qualifiers, and stated-versus-inferred distinctions.",
+                  "href": "assets/resources/explicit-meaning-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5H skill-content review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-explicit-meaning-guide-v1",
+                  "title": "Explicit Meaning - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.1"
+                  ],
+                  "description": "Focused notes on locating directly stated information and separating text evidence from assumptions.",
+                  "href": "assets/resources/explicit-meaning-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5H skill-content review"
+                },
+                {
+                  "id": "res-rla-explicit-meaning-workbook-v1",
+                  "title": "Explicit Meaning - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.1"
+                  ],
+                  "description": "Four original texts with eight focused explicit-meaning questions and an answer key.",
+                  "href": "assets/resources/explicit-meaning-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5H skill-content review"
+                },
+                {
+                  "id": "res-rla-explicit-meaning-workbook-v2",
+                  "title": "Explicit Meaning - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.1"
+                  ],
+                  "description": "A second set of original texts focused on exact details, qualifiers, and stated-versus-inferred distinctions.",
+                  "href": "assets/resources/explicit-meaning-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 5H skill-content review"
+                }
+              ]
             },
             {
               "id": "R1.2",
@@ -121,13 +291,13 @@
               "available": true,
               "setCount": 1,
               "questionCount": 8,
-              "resourceCount": 2,
-              "studyFileCount": 2,
+              "resourceCount": 3,
+              "studyFileCount": 3,
               "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-main-idea-practice-01",
-                  "title": "Main Idea Practice 01",
+                  "title": "Main Idea Practice 1",
                   "description": "4 short texts · 8 main-idea questions",
                   "file": "generated/modules/rla-main-idea-practice-01.json",
                   "difficulty": "medium",
@@ -148,7 +318,7 @@
                   "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-main-idea-practice-01",
-                    "title": "Main Idea Practice 01",
+                    "title": "Main Idea Practice 1",
                     "textType": "informational_and_literary",
                     "context": "skill_practice",
                     "sourceType": "original",
@@ -164,7 +334,7 @@
               "checks": [
                 {
                   "id": "set-rla-main-idea-practice-01",
-                  "title": "Main Idea Practice 01",
+                  "title": "Main Idea Practice 1",
                   "description": "4 short texts · 8 main-idea questions",
                   "file": "generated/modules/rla-main-idea-practice-01.json",
                   "difficulty": "medium",
@@ -185,7 +355,7 @@
                   "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-main-idea-practice-01",
-                    "title": "Main Idea Practice 01",
+                    "title": "Main Idea Practice 1",
                     "textType": "informational_and_literary",
                     "context": "skill_practice",
                     "sourceType": "original",
@@ -217,7 +387,7 @@
                 },
                 {
                   "id": "res-rla-main-idea-workbook-v1",
-                  "title": "Main Idea - Workbook 01",
+                  "title": "Main Idea - Workbook 1",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -225,11 +395,27 @@
                     "R1.2"
                   ],
                   "description": "Six original short passages with 12 focused main-idea questions and explanations.",
-                  "href": "assets/resources/main-idea-practice-workbook.pdf",
+                  "href": "assets/resources/main-idea-workbook-1.pdf",
                   "download": true,
                   "status": "published",
                   "rightsStatus": "original",
                   "reviewer": "Phase 5F skill-content review"
+                },
+                {
+                  "id": "res-rla-main-idea-workbook-v2",
+                  "title": "Main Idea - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.2"
+                  ],
+                  "description": "Transfer-focused main idea practice across informational, science, workplace, and literary contexts.",
+                  "href": "assets/resources/main-idea-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
                 }
               ],
               "studyResources": [
@@ -251,7 +437,7 @@
                 },
                 {
                   "id": "res-rla-main-idea-workbook-v1",
-                  "title": "Main Idea - Workbook 01",
+                  "title": "Main Idea - Workbook 1",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -259,11 +445,27 @@
                     "R1.2"
                   ],
                   "description": "Six original short passages with 12 focused main-idea questions and explanations.",
-                  "href": "assets/resources/main-idea-practice-workbook.pdf",
+                  "href": "assets/resources/main-idea-workbook-1.pdf",
                   "download": true,
                   "status": "published",
                   "rightsStatus": "original",
                   "reviewer": "Phase 5F skill-content review"
+                },
+                {
+                  "id": "res-rla-main-idea-workbook-v2",
+                  "title": "Main Idea - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.2"
+                  ],
+                  "description": "Transfer-focused main idea practice across informational, science, workplace, and literary contexts.",
+                  "href": "assets/resources/main-idea-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
                 }
               ]
             },
@@ -282,7 +484,7 @@
               "sets": [
                 {
                   "id": "set-rla-supporting-details-practice-01",
-                  "title": "Supporting Details Practice 01",
+                  "title": "Supporting Details Practice 1",
                   "description": "4 short texts · 8 supporting-detail questions",
                   "file": "generated/modules/rla-supporting-details-practice-01.json",
                   "difficulty": "medium",
@@ -303,7 +505,7 @@
                   "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-supporting-details-practice-01",
-                    "title": "Supporting Details Practice 01",
+                    "title": "Supporting Details Practice 1",
                     "textType": "informational_and_literary",
                     "context": "skill_practice",
                     "sourceType": "original",
@@ -319,7 +521,7 @@
               "checks": [
                 {
                   "id": "set-rla-supporting-details-practice-01",
-                  "title": "Supporting Details Practice 01",
+                  "title": "Supporting Details Practice 1",
                   "description": "4 short texts · 8 supporting-detail questions",
                   "file": "generated/modules/rla-supporting-details-practice-01.json",
                   "difficulty": "medium",
@@ -340,7 +542,7 @@
                   "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-supporting-details-practice-01",
-                    "title": "Supporting Details Practice 01",
+                    "title": "Supporting Details Practice 1",
                     "textType": "informational_and_literary",
                     "context": "skill_practice",
                     "sourceType": "original",
@@ -372,7 +574,7 @@
                 },
                 {
                   "id": "res-rla-supporting-details-workbook-v1",
-                  "title": "Supporting Details - Workbook 01",
+                  "title": "Supporting Details - Workbook 1",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -380,7 +582,7 @@
                     "R1.3"
                   ],
                   "description": "Four original texts with eight focused supporting-detail questions and an answer key.",
-                  "href": "assets/resources/supporting-details-workbook-01.pdf",
+                  "href": "assets/resources/supporting-details-workbook-1.pdf",
                   "download": true,
                   "status": "published",
                   "rightsStatus": "original",
@@ -388,7 +590,7 @@
                 },
                 {
                   "id": "res-rla-supporting-details-workbook-v2",
-                  "title": "Supporting Details - Workbook 02",
+                  "title": "Supporting Details - Workbook 2",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -396,7 +598,7 @@
                     "R1.3"
                   ],
                   "description": "A second set of four original texts with eight supporting-detail questions and an answer key.",
-                  "href": "assets/resources/supporting-details-workbook-02.pdf",
+                  "href": "assets/resources/supporting-details-workbook-2.pdf",
                   "download": true,
                   "status": "published",
                   "rightsStatus": "original",
@@ -422,7 +624,7 @@
                 },
                 {
                   "id": "res-rla-supporting-details-workbook-v1",
-                  "title": "Supporting Details - Workbook 01",
+                  "title": "Supporting Details - Workbook 1",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -430,7 +632,7 @@
                     "R1.3"
                   ],
                   "description": "Four original texts with eight focused supporting-detail questions and an answer key.",
-                  "href": "assets/resources/supporting-details-workbook-01.pdf",
+                  "href": "assets/resources/supporting-details-workbook-1.pdf",
                   "download": true,
                   "status": "published",
                   "rightsStatus": "original",
@@ -438,7 +640,7 @@
                 },
                 {
                   "id": "res-rla-supporting-details-workbook-v2",
-                  "title": "Supporting Details - Workbook 02",
+                  "title": "Supporting Details - Workbook 2",
                   "type": "worksheet",
                   "scope": "skill",
                   "domainId": "core-meaning",
@@ -446,7 +648,7 @@
                     "R1.3"
                   ],
                   "description": "A second set of four original texts with eight supporting-detail questions and an answer key.",
-                  "href": "assets/resources/supporting-details-workbook-02.pdf",
+                  "href": "assets/resources/supporting-details-workbook-2.pdf",
                   "download": true,
                   "status": "published",
                   "rightsStatus": "original",
@@ -460,16 +662,186 @@
               "label": "Summary",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-summary-practice-01",
+                  "title": "Summary Practice 1",
+                  "description": "4 short texts · 8 summary questions",
+                  "file": "generated/modules/rla-summary-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
+                    "topicLabel": "Summary"
+                  },
+                  "measuredSkillIds": [
+                    "R1.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-summary-practice-01",
+                    "title": "Summary Practice 1",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-summary-practice-01",
+                  "title": "Summary Practice 1",
+                  "description": "4 short texts · 8 summary questions",
+                  "file": "generated/modules/rla-summary-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
+                    "topicLabel": "Summary"
+                  },
+                  "measuredSkillIds": [
+                    "R1.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-summary-practice-01",
+                    "title": "Summary Practice 1",
+                    "textType": "informational_and_literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-summary-guide-v1",
+                  "title": "Summary - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.4"
+                  ],
+                  "description": "Focused guide to whole-passage and section summaries, essential details, scope, and common summary traps.",
+                  "href": "assets/resources/summary-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-summary-workbook-v1",
+                  "title": "Summary - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.4"
+                  ],
+                  "description": "Whole-passage summary practice with original informational and literary texts.",
+                  "href": "assets/resources/summary-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-summary-workbook-v2",
+                  "title": "Summary - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.4"
+                  ],
+                  "description": "Section summary and transfer practice with original texts and diagnostic answer explanations.",
+                  "href": "assets/resources/summary-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-summary-guide-v1",
+                  "title": "Summary - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.4"
+                  ],
+                  "description": "Focused guide to whole-passage and section summaries, essential details, scope, and common summary traps.",
+                  "href": "assets/resources/summary-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-summary-workbook-v1",
+                  "title": "Summary - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.4"
+                  ],
+                  "description": "Whole-passage summary practice with original informational and literary texts.",
+                  "href": "assets/resources/summary-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-summary-workbook-v2",
+                  "title": "Summary - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.4"
+                  ],
+                  "description": "Section summary and transfer practice with original texts and diagnostic answer explanations.",
+                  "href": "assets/resources/summary-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                }
+              ]
             },
             {
               "id": "R1.5",
@@ -477,16 +849,186 @@
               "label": "Theme",
               "priority": "P1",
               "practiceMode": "Literary",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-theme-practice-01",
+                  "title": "Theme Practice 1",
+                  "description": "4 literary texts · 8 theme questions",
+                  "file": "generated/modules/rla-theme-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
+                    "topicLabel": "Theme"
+                  },
+                  "measuredSkillIds": [
+                    "R1.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-theme-practice-01",
+                    "title": "Theme Practice 1",
+                    "textType": "literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-theme-practice-01",
+                  "title": "Theme Practice 1",
+                  "description": "4 literary texts · 8 theme questions",
+                  "file": "generated/modules/rla-theme-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
+                    "topicLabel": "Theme"
+                  },
+                  "measuredSkillIds": [
+                    "R1.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-theme-practice-01",
+                    "title": "Theme Practice 1",
+                    "textType": "literary",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-theme-guide-v1",
+                  "title": "Theme - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.5"
+                  ],
+                  "description": "Focused guide to theme, topic, plot summary, character change, evidence, and common traps.",
+                  "href": "assets/resources/theme-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-theme-workbook-v1",
+                  "title": "Theme - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.5"
+                  ],
+                  "description": "Original literary passages focused on identifying themes and evidence.",
+                  "href": "assets/resources/theme-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-theme-workbook-v2",
+                  "title": "Theme - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.5"
+                  ],
+                  "description": "Higher-transfer literary theme practice with competing interpretations and evidence questions.",
+                  "href": "assets/resources/theme-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-theme-guide-v1",
+                  "title": "Theme - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.5"
+                  ],
+                  "description": "Focused guide to theme, topic, plot summary, character change, evidence, and common traps.",
+                  "href": "assets/resources/theme-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-theme-workbook-v1",
+                  "title": "Theme - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.5"
+                  ],
+                  "description": "Original literary passages focused on identifying themes and evidence.",
+                  "href": "assets/resources/theme-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                },
+                {
+                  "id": "res-rla-theme-workbook-v2",
+                  "title": "Theme - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "core-meaning",
+                  "skillIds": [
+                    "R1.5"
+                  ],
+                  "description": "Higher-transfer literary theme practice with competing interpretations and evidence questions.",
+                  "href": "assets/resources/theme-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6 Core Meaning batch review"
+                }
+              ]
             }
           ]
         },
@@ -881,13 +1423,13 @@
           ]
         }
       ],
-      "availableSkillCount": 2,
+      "availableSkillCount": 5,
       "totalSkillCount": 22,
-      "availableSetCount": 2,
-      "questionCount": 16,
-      "resourceCount": 7,
-      "studyFileCount": 7,
-      "checkCount": 2
+      "availableSetCount": 5,
+      "questionCount": 40,
+      "resourceCount": 17,
+      "studyFileCount": 17,
+      "checkCount": 5
     },
     {
       "id": "arguments",

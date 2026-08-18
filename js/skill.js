@@ -58,7 +58,6 @@ function renderResource(r) {
   const external = /^https?:\/\//i.test(href);
   return `<a class="skill-resource-link" href="${escapeAttr(href)}" ${r.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
     <strong>${escapeHtml(r.title)}</strong>
-    ${r.description ? `<span>${escapeHtml(r.description)}</span>` : ""}
   </a>`;
 }
 
@@ -67,7 +66,6 @@ function renderCheck(set, track, domain, skill) {
   const href = `module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent(returnHref)}`;
   return `<a class="skill-resource-link" href="${href}">
     <strong>${escapeHtml(set.title)}</strong>
-    ${set.description ? `<span>${escapeHtml(set.description)}</span>` : ""}
   </a>`;
 }
 

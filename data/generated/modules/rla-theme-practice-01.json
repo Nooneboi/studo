@@ -1,0 +1,439 @@
+{
+  "id": "rla-theme-practice-01",
+  "title": "Theme Practice 1",
+  "description": "4 literary texts · 8 theme questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Theme",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - The Spare Umbrella\n\nTariq carried an umbrella to school every day because the forecast had predicted storms all week. By Thursday, no rain had fallen, and his friends joked that he was carrying “extra luggage.” That afternoon, a sudden shower began just as students were leaving. Tariq opened the umbrella, then noticed a younger student waiting under the awning without one. He walked her to the bus stop and arrived home with one shoulder wet. The next morning, his friends still teased him, but one of them had an umbrella tucked into his backpack.\n\nTEXT B - The Half-Finished Model\n\nMei had spent two evenings building a model bridge for a class demonstration. When she tested it, one support bent and the bridge collapsed. She wanted to hide the broken pieces before class, but her partner suggested bringing them. During the demonstration, Mei showed where the support failed and explained what they would reinforce next time. Afterward, two classmates asked if they could test their own designs before presenting them.\n\nTEXT C - The Seat by the Window\n\nEvery morning, Mr. Alvarez chose the same seat by the cafe window and read the newspaper alone. One week, construction covered the window and the table was moved. He sat at the long center table instead. A delivery driver asked if the empty chair across from him was free, and they began talking about the road repairs outside. When the window reopened the following week, Mr. Alvarez sat there once, looked toward the center table, folded his newspaper, and moved.\n\nTEXT D - The Borrowed Jacket\n\nLena borrowed her sister’s jacket for an interview and promised to return it that evening. On the way home, a loose nail caught the sleeve and tore a small hole. Lena considered hanging the jacket back in the closet and saying nothing. Instead, she told her sister what happened and offered to pay for the repair. Her sister sighed, then showed Lena a patch already sewn inside the other sleeve from a tear she had made months earlier. They took the jacket to a repair shop together the next day.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of Text A?",
+      "points": 1,
+      "explanation": "A connects the teasing, the unexpected rain, Tariq’s helpful action, and the friend’s changed behavior.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "A theme explains what the events suggest, not just what happened.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Preparation can seem unnecessary until an unexpected moment shows its value."
+        },
+        {
+          "id": "b",
+          "text": "People should carry umbrellas every day of the year.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The story supports preparation in this situation, not an absolute rule."
+        },
+        {
+          "id": "c",
+          "text": "Friends usually give bad advice about weather.",
+          "distractorType": "unsupported_moral",
+          "whyWrong": "The story does not develop this claim."
+        },
+        {
+          "id": "d",
+          "text": "Tariq carries an umbrella and later walks a younger student to the bus stop.",
+          "distractorType": "plot_summary",
+          "whyWrong": "This tells what happened but does not state the larger idea."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Tariq’s preparation first looks unnecessary, then allows him to help someone else; one friend changes behavior afterward."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly supports the theme in Text A?",
+      "points": 1,
+      "explanation": "The friend’s later behavior shows that the experience changed how another person viewed Tariq’s preparation.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Strong theme evidence often appears in a change at the end of the story.",
+      "familyId": "theme.evidence",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "No rain falls for several days.",
+          "distractorType": "background_only",
+          "whyWrong": "This sets up the story but does not show the theme about preparation becoming useful."
+        },
+        {
+          "id": "b",
+          "text": "Tariq arrives home with one shoulder wet.",
+          "distractorType": "evidence_for_other_point",
+          "whyWrong": "This shows the rain’s effect on Tariq but does not most clearly show the value of being prepared."
+        },
+        {
+          "id": "c",
+          "text": "The next morning, one friend has an umbrella in his backpack."
+        },
+        {
+          "id": "d",
+          "text": "The younger student waits under an awning.",
+          "distractorType": "background_only",
+          "whyWrong": "This creates the situation in which help is needed but does not itself demonstrate the theme."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "One of Tariq’s friends has an umbrella in his backpack the next morning."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of Text B?",
+      "points": 1,
+      "explanation": "A is supported by Mei’s decision to explain the failure and the classmates who decide to test their own designs.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Look for what the character learns or demonstrates through the turning point.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Failure can become useful when people examine it openly and use it to improve."
+        },
+        {
+          "id": "b",
+          "text": "Class demonstrations should never include models that break.",
+          "distractorType": "unsupported_moral",
+          "whyWrong": "The story shows the opposite: the broken model becomes useful."
+        },
+        {
+          "id": "c",
+          "text": "Bridge models are difficult to build in two evenings.",
+          "distractorType": "topic_not_theme",
+          "whyWrong": "This is a possible observation, not the larger idea."
+        },
+        {
+          "id": "d",
+          "text": "Mei’s bridge collapses before a class demonstration.",
+          "distractorType": "plot_summary",
+          "whyWrong": "This is the event, not the idea developed through it."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Mei turns a failed design into an explanation that helps her and influences classmates to test their own work."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which action most strongly develops the theme of Text B?",
+      "points": 1,
+      "explanation": "C is the turning-point choice that transforms the failure from something to hide into something to learn from.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Theme evidence is strongest when it shows a meaningful choice or change.",
+      "familyId": "theme.evidence",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mei spends two evenings building the model.",
+          "distractorType": "background_only",
+          "whyWrong": "This shows effort before the test but not the lesson Mei learns from failure."
+        },
+        {
+          "id": "b",
+          "text": "A support bends during testing.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "This shows that something failed, but not how Mei responds to the failure."
+        },
+        {
+          "id": "c",
+          "text": "Mei brings the broken model and explains what failed and what she would change."
+        },
+        {
+          "id": "d",
+          "text": "Two classmates ask questions after the demonstration.",
+          "distractorType": "result_not_core_evidence",
+          "whyWrong": "The classmates’ questions happen afterward; they do not most directly show Mei learning from the failed model."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Mei brings the broken bridge and explains the failure instead of hiding it."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of Text C?",
+      "points": 1,
+      "explanation": "A fits the forced seat change, the new conversation, and Mr. Alvarez’s choice to keep the new routine afterward.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "A theme should explain both the disruption and the lasting change.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Unexpected changes can create connections that people later choose to keep."
+        },
+        {
+          "id": "b",
+          "text": "Window seats are less social than center tables in every cafe.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The story is about one character’s experience, not a rule about cafe seating."
+        },
+        {
+          "id": "c",
+          "text": "Road construction causes people to change where they sit.",
+          "distractorType": "plot_summary",
+          "whyWrong": "This describes the event but not the lasting idea."
+        },
+        {
+          "id": "d",
+          "text": "Reading newspapers prevents people from meeting new friends.",
+          "distractorType": "unsupported_moral",
+          "whyWrong": "The story does not make this claim."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "An unexpected disruption leads Mr. Alvarez to value a social routine he had not planned."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly supports the theme of Text C?",
+      "points": 1,
+      "explanation": "C shows that the connection created by the disruption has become something Mr. Alvarez values enough to choose voluntarily.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "The ending often confirms whether a change is temporary or meaningful.",
+      "familyId": "theme.evidence",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Construction covers the cafe window.",
+          "distractorType": "background_only",
+          "whyWrong": "The construction causes the seating change but does not show the lasting connection that develops."
+        },
+        {
+          "id": "b",
+          "text": "A delivery driver asks whether a chair is free.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "This begins the interaction but does not show that the unexpected change creates a connection they choose to keep."
+        },
+        {
+          "id": "c",
+          "text": "Mr. Alvarez returns to the window once, then chooses the center table."
+        },
+        {
+          "id": "d",
+          "text": "The two men discuss road repairs.",
+          "distractorType": "supporting_detail",
+          "whyWrong": "Their conversation shows connection, but the later choice to keep sitting together is stronger evidence of the theme."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "After the window reopens, Mr. Alvarez moves back to the center table."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of Text D?",
+      "points": 1,
+      "explanation": "A is developed through Lena’s choice to tell the truth, her sister’s response, and their joint repair plan.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Turn a topic such as honesty into a complete idea supported by the outcome.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Honesty about a mistake can make it easier to solve the problem together."
+        },
+        {
+          "id": "b",
+          "text": "Borrowed clothing should never be worn to important events.",
+          "distractorType": "unsupported_moral",
+          "whyWrong": "The story does not suggest this rule."
+        },
+        {
+          "id": "c",
+          "text": "Lena tears her sister’s jacket and offers to pay for a repair.",
+          "distractorType": "plot_summary",
+          "whyWrong": "This tells what happens but not the larger idea."
+        },
+        {
+          "id": "d",
+          "text": "Older siblings always forgive younger siblings immediately.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The story does not support an absolute claim."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Honesty about a mistake allows Lena and her sister to handle the problem together."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly develops the theme of Text D?",
+      "points": 1,
+      "explanation": "D shows the effect of Lena’s honesty: the problem becomes shared and manageable rather than hidden.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Choose evidence that develops the theme, not merely the event that creates the problem.",
+      "familyId": "theme.evidence",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The jacket is worn to an interview.",
+          "distractorType": "background_only",
+          "whyWrong": "The interview explains why the jacket matters but does not show the theme about honesty and solving a mistake together."
+        },
+        {
+          "id": "b",
+          "text": "A loose nail tears the sleeve.",
+          "distractorType": "problem_only",
+          "whyWrong": "The tear creates the problem but does not show how honesty helps resolve it."
+        },
+        {
+          "id": "c",
+          "text": "Lena considers putting the jacket away without saying anything.",
+          "distractorType": "contrasts_with_theme",
+          "whyWrong": "This shows Lena considering avoidance, which contrasts with the honest action that supports the theme."
+        },
+        {
+          "id": "d",
+          "text": "After Lena admits the damage, her sister shows an older repair and they take the jacket to a shop together."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "The sister shows Lena an older repaired tear in the jacket."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-theme-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
+      "topicLabel": "Theme"
+    },
+    "passage": {
+      "id": "p-rla-theme-practice-01",
+      "title": "Theme Practice 1",
+      "textType": "literary",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-18T02:02:39.895Z"
+  }
+}

@@ -9,7 +9,7 @@
   This keeps deployments fresh WITHOUT clearing localStorage / learner data.
 */
 
-const CACHE_NAME = "studo-v32-phase5g";
+const CACHE_NAME = "studo-v40-phase6a";
 const CORE_ASSETS = [
   "index.html",
   "404.html",
@@ -55,12 +55,15 @@ const CORE_ASSETS = [
   "data/generated/modules/evidence-transfer-practice.json",
   "data/generated/modules/grammar-practice.json",
   "data/generated/modules/grammar-transfer-practice.json",
-  "data/generated/modules/writing-practice.json",
+  "data/generated/modules/rla-explicit-meaning-practice-01.json",
+  "data/generated/modules/rla-gold-literary-brass-key.json",
   "data/generated/modules/rla-gold-science-cool-roofs.json",
   "data/generated/modules/rla-gold-workplace-tool-library.json",
-  "data/generated/modules/rla-gold-literary-brass-key.json",
   "data/generated/modules/rla-main-idea-practice-01.json",
+  "data/generated/modules/rla-summary-practice-01.json",
   "data/generated/modules/rla-supporting-details-practice-01.json",
+  "data/generated/modules/rla-theme-practice-01.json",
+  "data/generated/modules/writing-practice.json",
   "data/sample-quiz.json",
   "data/resources.json"
 ];

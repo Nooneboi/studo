@@ -80,6 +80,19 @@
     }
   },
   {
+    "file": "generated/modules/rla-explicit-meaning-practice-01.json",
+    "title": "Explicit Meaning Practice 1",
+    "description": "4 short texts · 8 explicit-meaning questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
+      "topicLabel": "Explicit meaning"
+    }
+  },
+  {
     "file": "generated/modules/rla-gold-literary-brass-key.json",
     "title": "The Brass Key",
     "description": "Literary · 7 questions",
@@ -140,7 +153,7 @@
   },
   {
     "file": "generated/modules/rla-main-idea-practice-01.json",
-    "title": "Main Idea Practice 01",
+    "title": "Main Idea Practice 1",
     "description": "4 short texts · 8 main-idea questions",
     "curriculum": {
       "domain": "Core Meaning",
@@ -152,8 +165,21 @@
     }
   },
   {
+    "file": "generated/modules/rla-summary-practice-01.json",
+    "title": "Summary Practice 1",
+    "description": "4 short texts · 8 summary questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
+      "topicLabel": "Summary"
+    }
+  },
+  {
     "file": "generated/modules/rla-supporting-details-practice-01.json",
-    "title": "Supporting Details Practice 01",
+    "title": "Supporting Details Practice 1",
     "description": "4 short texts · 8 supporting-detail questions",
     "curriculum": {
       "domain": "Core Meaning",
@@ -162,6 +188,19 @@
       "contentKind": "skill_drill",
       "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
       "topicLabel": "Supporting details"
+    }
+  },
+  {
+    "file": "generated/modules/rla-theme-practice-01.json",
+    "title": "Theme Practice 1",
+    "description": "4 literary texts · 8 theme questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
+      "topicLabel": "Theme"
     }
   }
 ]

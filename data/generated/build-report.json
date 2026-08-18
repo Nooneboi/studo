@@ -1,28 +1,34 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-17T10:39:35.750Z",
+  "builtAt": "2026-08-18T02:02:39.899Z",
   "publishedSourceSets": [
     "set-rla-evidence-last-bus",
     "set-rla-evidence-night-shift",
+    "set-rla-explicit-meaning-practice-01",
     "set-rla-gold-literary-brass-key",
     "set-rla-gold-science-cool-roofs",
     "set-rla-gold-workplace-tool-library",
     "set-rla-grammar-precision-check",
     "set-rla-grammar-sentence-repair",
     "set-rla-main-idea-practice-01",
+    "set-rla-summary-practice-01",
     "set-rla-supporting-details-practice-01",
+    "set-rla-theme-practice-01",
     "set-rla-writing-library-hours"
   ],
   "generatedModules": [
     "generated/modules/evidence-transfer-practice.json",
     "generated/modules/evidence-practice.json",
+    "generated/modules/rla-explicit-meaning-practice-01.json",
     "generated/modules/rla-gold-literary-brass-key.json",
     "generated/modules/rla-gold-science-cool-roofs.json",
     "generated/modules/rla-gold-workplace-tool-library.json",
     "generated/modules/grammar-transfer-practice.json",
     "generated/modules/grammar-practice.json",
     "generated/modules/rla-main-idea-practice-01.json",
+    "generated/modules/rla-summary-practice-01.json",
     "generated/modules/rla-supporting-details-practice-01.json",
+    "generated/modules/rla-theme-practice-01.json",
     "generated/modules/writing-practice.json"
   ],
   "curriculumFile": "data/generated/curriculum.json",
@@ -33,13 +39,6 @@
       "message": "Family inference.character_or_event has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
       "location": "set-rla-gold-literary-brass-key:q1"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family theme.identify has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
-      "location": "set-rla-gold-literary-brass-key:q2"
     },
     {
       "type": "warning",
@@ -61,13 +60,6 @@
       "message": "Family pov.multiple has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
       "location": "set-rla-gold-literary-brass-key:q5"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family theme.evidence has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
-      "location": "set-rla-gold-literary-brass-key:q6"
     },
     {
       "type": "warning",
@@ -96,13 +88,6 @@
       "message": "Family conclusion.synthesize has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
       "location": "set-rla-gold-science-cool-roofs:q6"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family explicit.detail.match has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
-      "location": "set-rla-gold-workplace-tool-library:q1"
     },
     {
       "type": "warning",

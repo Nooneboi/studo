@@ -1,0 +1,441 @@
+{
+  "id": "rla-summary-practice-01",
+  "title": "Summary Practice 1",
+  "description": "4 short texts · 8 summary questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Summary",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Bike Share Winter Trial\n\nA city bike-share program usually reduces service during winter because cold weather lowers ridership. This year, the program kept fifty bicycles available at major transit stations for a three-month trial. Riders used the bikes less often than in summer, but weekday use was steady, especially during morning and evening commuting hours. Maintenance crews reported that salt and slush required more frequent cleaning. The city will compare ridership, maintenance costs, and user surveys before deciding whether to repeat the winter service next year.\n\nTEXT B - Mapping Heat Indoors\n\nResearchers studying summer heat in apartment buildings placed temperature sensors in rooms on different floors and sides of several buildings. Top-floor rooms and rooms receiving strong afternoon sun were often warmer, but the pattern varied when buildings had better insulation or external shade. The researchers argue that outdoor temperature alone does not explain indoor heat exposure. Building design, room location, and protective features also influence how hot a home becomes.\n\nTEXT C - The Spare Key\n\nBefore leaving for work, Daniel gave his neighbor Imani a spare key and asked her to water one plant while he was away for two days. That evening, a storm knocked out power in the building, and Imani noticed water dripping from the ceiling near Daniel’s door. She used the key to enter, moved a lamp and several books away from the leak, and called the building manager. When Daniel returned, he stared at the dry stack of books on his table and then added Imani’s phone number to the emergency contact list taped inside his cabinet.\n\nTEXT D - New Quiet Cars on the Train\n\nA regional rail service designated one car on selected morning trains as a quiet car. Riders may talk briefly, but phone calls, speaker audio, and extended conversations are discouraged. The agency introduced the policy after surveys showed that some commuters wanted a calmer space for reading or resting. During the first month, conductors received fewer noise complaints in the designated cars, but they also reported confusion about where the quiet-car rules began and ended. The agency added clearer signs and will continue the pilot for another two months.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes Text A?",
+      "points": 1,
+      "explanation": "B includes the trial, the main result, the tradeoff, and the pending decision.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Keep the central idea and essential tradeoff; remove isolated details.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The winter bike trial had lower ridership than summer, so the city should end winter service.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The city has not decided to end the service."
+        },
+        {
+          "id": "b",
+          "text": "A winter bike-share trial showed steady commuter use but added maintenance demands, and the city is weighing several kinds of evidence before deciding whether to repeat it."
+        },
+        {
+          "id": "c",
+          "text": "Salt and slush caused bicycles to need more frequent cleaning.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This is one important detail, not the whole passage."
+        },
+        {
+          "id": "d",
+          "text": "Bike-share programs are most useful during morning and evening commuting hours.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage does not make this general claim about bike-share programs."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Winter bike service had steady commuter use but higher maintenance demands, and the city is comparing evidence before deciding whether to repeat it."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail from Text A is least necessary in a concise summary?",
+      "points": 1,
+      "explanation": "The exact number and location of bicycles are less essential than the usage pattern, maintenance tradeoff, and decision process.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Exact numbers often disappear from summaries unless the number itself is the point.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The program kept fifty bicycles available at major transit stations.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This states one setup detail but does not summarize the results and decision."
+        },
+        {
+          "id": "b",
+          "text": "Weekday use was steady during commuting hours.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This states one ridership result but leaves out maintenance demands and the pending decision."
+        },
+        {
+          "id": "c",
+          "text": "Winter conditions increased cleaning needs.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This states one maintenance detail but leaves out the trial’s broader results and decision."
+        },
+        {
+          "id": "d",
+          "text": "The city will compare results before deciding whether to repeat the service.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This states only the final decision step and leaves out the results that led to it."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Maintenance crews reported that salt and slush required more frequent cleaning."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes Text B?",
+      "points": 1,
+      "explanation": "C preserves the study’s main conclusion and the relationship among several factors.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A summary should keep the author’s conclusion, not just the research method.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Top-floor rooms are always the hottest rooms in apartment buildings.",
+          "distractorType": "too_broad",
+          "whyWrong": "The text says patterns varied with insulation and shade."
+        },
+        {
+          "id": "b",
+          "text": "Researchers used temperature sensors in several apartment buildings.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This describes method but not the conclusion."
+        },
+        {
+          "id": "c",
+          "text": "Indoor heat is shaped by several building and room characteristics, so outdoor temperature alone does not explain exposure."
+        },
+        {
+          "id": "d",
+          "text": "External shade completely prevents apartments from becoming hot.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The text does not claim shade completely prevents heat."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Indoor heat depends on building and room features as well as outdoor temperature."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which choice best summarizes the final two sentences of Text B?",
+      "points": 1,
+      "explanation": "B keeps the limitation of outdoor temperature alone and the additional factors the researchers identify.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Preserve the relationship: one factor matters, but it is not sufficient by itself.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Outdoor temperature is unrelated to indoor heat.",
+          "distractorType": "misses_key_relationship",
+          "whyWrong": "Outdoor temperature matters, but it is not the only factor."
+        },
+        {
+          "id": "b",
+          "text": "Apartment heat is affected by outdoor conditions plus features such as design, room location, insulation, and shade."
+        },
+        {
+          "id": "c",
+          "text": "Every apartment should add external shade.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The text does not make a recommendation for every apartment."
+        },
+        {
+          "id": "d",
+          "text": "Researchers disagree about whether rooms can become hot.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "No disagreement is described."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Building design, room location, and protective features also influence how hot a home becomes."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes Text C?",
+      "points": 1,
+      "explanation": "C keeps the emergency, Imani’s helpful action, and Daniel’s later change.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "For literary summaries, include the conflict, key response, and meaningful change.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel leaves town for two days and asks Imani to water one plant.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This is the setup, not the whole story."
+        },
+        {
+          "id": "b",
+          "text": "A storm causes a leak in Daniel’s apartment building.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This omits Imani’s response and Daniel’s change."
+        },
+        {
+          "id": "c",
+          "text": "A spare key lets Imani respond to an unexpected problem in Daniel’s apartment, and the experience leads Daniel to prepare more carefully for future emergencies."
+        },
+        {
+          "id": "d",
+          "text": "Neighbors should always keep copies of each other’s apartment keys.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The story does not give this general advice."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Imani’s access to Daniel’s apartment allowed her to prevent damage during an unexpected emergency, which changed how Daniel thought about emergency contacts."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which detail is most important to include in a summary of Text C?",
+      "points": 1,
+      "explanation": "Imani’s action is the central response to the problem and leads to the story’s outcome.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Keep the detail that drives the main change, not background facts.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel is away for two days.",
+          "distractorType": "background_only",
+          "whyWrong": "This is background information and does not summarize the emergency response."
+        },
+        {
+          "id": "b",
+          "text": "Imani moves books and a lamp away from a leak after using the spare key."
+        },
+        {
+          "id": "c",
+          "text": "Daniel has one plant.",
+          "distractorType": "irrelevant_detail",
+          "whyWrong": "The number of plants does not capture the important action or change in the passage."
+        },
+        {
+          "id": "d",
+          "text": "The emergency contact list is inside a cabinet.",
+          "distractorType": "irrelevant_detail",
+          "whyWrong": "The location of the contact list is a minor detail, not the main point of this section."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Daniel added Imani’s phone number to the emergency contact list."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes Text D?",
+      "points": 1,
+      "explanation": "A keeps the purpose, early result, problem, and adjustment without adding a final conclusion.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "For pilot-program summaries, include what is being tested and what the early evidence shows.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A rail service is testing a quiet-car policy, has seen fewer noise complaints, and is clarifying the rules while the pilot continues."
+        },
+        {
+          "id": "b",
+          "text": "Passengers are not allowed to speak in quiet cars.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Brief conversation is allowed; only certain noise is discouraged."
+        },
+        {
+          "id": "c",
+          "text": "The agency created quiet cars because conductors requested them.",
+          "distractorType": "unsupported_cause",
+          "whyWrong": "The policy followed rider surveys, not a conductor request."
+        },
+        {
+          "id": "d",
+          "text": "Clear signs are the most important part of running a rail system.",
+          "distractorType": "too_broad",
+          "whyWrong": "The text discusses one pilot, not rail systems generally."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The rail service is testing a quiet-car policy, saw some early benefit, and is adjusting the trial after confusion about the rules."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which choice best summarizes the final part of Text D?",
+      "points": 1,
+      "explanation": "C accurately compresses the problem, response, and continued trial.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A section summary should stay inside the section’s scope.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The policy failed because riders did not understand it.",
+          "distractorType": "too_broad",
+          "whyWrong": "The agency is continuing the pilot and adjusting signs."
+        },
+        {
+          "id": "b",
+          "text": "Conductors received no complaints after the first month.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The text says fewer complaints, not none."
+        },
+        {
+          "id": "c",
+          "text": "After confusion about the quiet-car boundaries, the agency added clearer signs and extended the trial."
+        },
+        {
+          "id": "d",
+          "text": "The rail service will make quiet cars permanent next month.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "No permanent decision has been made."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "The agency added clearer signs and will continue the pilot for another two months."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-summary-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
+      "topicLabel": "Summary"
+    },
+    "passage": {
+      "id": "p-rla-summary-practice-01",
+      "title": "Summary Practice 1",
+      "textType": "informational_and_literary",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-18T02:02:39.894Z"
+  }
+}

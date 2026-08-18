@@ -1,0 +1,495 @@
+{
+  "id": "rla-explicit-meaning-practice-01",
+  "title": "Explicit Meaning Practice 1",
+  "description": "4 short texts · 8 explicit-meaning questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Explicit meaning",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Community Pool Morning Hours\n\nThe Riverbend Community Pool will open one hour earlier on Tuesdays and Thursdays during July. On those two days, lap swimming will begin at 6:30 a.m. instead of 7:30 a.m. The earlier hour is reserved for swimmers age 16 and older. Family swim will still begin at 10:00 a.m., and the pool will close at its usual time of 8:00 p.m. The recreation department will review attendance at the end of July before deciding whether to keep the earlier schedule in August.\n\nTEXT B - Storing Seeds for the Future\n\nA regional seed bank stores seeds from hundreds of plant varieties so they can be used in future research and restoration projects. Before storage, staff dry the seeds to reduce moisture. Most collections are then sealed in labeled containers and kept in rooms maintained below freezing. Some seeds cannot survive that method, so the bank grows those plants periodically and collects fresh seeds from them. Staff also test samples at scheduled intervals to check whether stored seeds can still germinate.\n\nTEXT C - New Invoice Review Procedure\n\nBeginning September 1, invoices above $2,500 must be reviewed by both a department manager and the finance office before payment is issued. Invoices of $2,500 or less will continue to follow the current single-review process. Employees should upload invoices to the same accounting portal they already use; no new software is required. The finance office asks departments to submit large invoices at least five business days before the payment deadline because the second review may require additional time.\n\nTEXT D - The Blue Umbrella\n\nMara noticed a blue umbrella leaning against the wall beside the bakery door. Rain had stopped twenty minutes earlier, and most customers had already left. She carried the umbrella inside and asked the cashier whether anyone had reported one missing. The cashier shook his head but placed the umbrella behind the counter. The next afternoon, Mara returned for bread. A handwritten note near the register read, 'Blue umbrella returned to owner - thank you.' Mara smiled, bought a loaf, and left before the next shower began.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "According to Text A, on which days will lap swimming begin at 6:30 a.m. during July?",
+      "points": 1,
+      "explanation": "Text A directly states that the pool will open earlier on Tuesdays and Thursdays.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "For explicit meaning, locate the exact sentence that answers the question before considering the choices.",
+      "familyId": "explicit.fact.locate",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mondays and Wednesdays",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "Those days are not named as early-opening days."
+        },
+        {
+          "id": "b",
+          "text": "Tuesdays and Thursdays"
+        },
+        {
+          "id": "c",
+          "text": "Fridays and Saturdays",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "The passage does not identify these as early-opening days."
+        },
+        {
+          "id": "d",
+          "text": "Every day in July",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "The earlier schedule applies only to two named days."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "The Riverbend Community Pool will open one hour earlier on Tuesdays and Thursdays during July."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "According to Text A, what time will family swim begin?",
+      "points": 1,
+      "explanation": "The passage says family swim will still begin at 10:00 a.m.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "A number can be stated in the passage and still answer the wrong question. Match the detail to the exact subject being asked about.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "6:30 a.m.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "That is the new lap-swimming time on two days, not family swim."
+        },
+        {
+          "id": "b",
+          "text": "7:30 a.m.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "That is the previous lap-swimming time."
+        },
+        {
+          "id": "c",
+          "text": "8:00 p.m.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "That is the usual closing time."
+        },
+        {
+          "id": "d",
+          "text": "10:00 a.m."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Family swim will still begin at 10:00 a.m."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement is directly supported by Text B?",
+      "points": 1,
+      "explanation": "Text B directly gives research and restoration as purposes for storing the seeds.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Be cautious with words such as every, only, and always. They often turn a partly true idea into an unsupported statement.",
+      "familyId": "explicit.fact.locate",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The seed bank stores seeds for future research and restoration projects."
+        },
+        {
+          "id": "b",
+          "text": "Every seed in the bank is stored below freezing.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage says some seeds cannot survive that storage method."
+        },
+        {
+          "id": "c",
+          "text": "The bank sells older seed collections to farmers.",
+          "distractorType": "inference_not_stated",
+          "whyWrong": "No sales to farmers are mentioned."
+        },
+        {
+          "id": "d",
+          "text": "Seeds are tested only when researchers request them.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage says samples are tested at scheduled intervals."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The seed bank stores seeds so they can be used in future research and restoration projects."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "According to Text B, why does the staff test seed samples at scheduled intervals?",
+      "points": 1,
+      "explanation": "The final sentence directly states that testing checks whether stored seeds can still germinate.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "When the stem asks why something is done, find the sentence that explicitly gives its purpose.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "To decide which seeds should be sold",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "The passage does not mention selling seeds."
+        },
+        {
+          "id": "b",
+          "text": "To measure the amount of moisture in every storage room",
+          "distractorType": "related_not_answering",
+          "whyWrong": "Moisture reduction is discussed before storage, but this is not the stated purpose of the tests."
+        },
+        {
+          "id": "c",
+          "text": "To check whether the stored seeds can still germinate"
+        },
+        {
+          "id": "d",
+          "text": "To choose which plants should be grown outdoors",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "Some plants are regrown, but the scheduled tests are specifically described as germination checks."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Staff test samples at scheduled intervals to check whether stored seeds can still germinate."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which invoice requires both a department-manager review and a finance-office review under Text C?",
+      "points": 1,
+      "explanation": "The two-review rule applies to invoices above $2,500, so $2,501 qualifies.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Pay attention to boundary words such as above, below, at least, and no more than.",
+      "familyId": "explicit.fact.locate",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "An invoice for exactly $2,500",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "The passage says $2,500 or less follows the current single-review process."
+        },
+        {
+          "id": "b",
+          "text": "Any invoice submitted in September",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "The rule depends on amount, not simply the month submitted."
+        },
+        {
+          "id": "c",
+          "text": "An invoice submitted fewer than five days before its deadline",
+          "distractorType": "related_not_answering",
+          "whyWrong": "Five business days is a submission recommendation for large invoices, not the review threshold itself."
+        },
+        {
+          "id": "d",
+          "text": "An invoice for $2,501"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Invoices above $2,500 must be reviewed by both a department manager and the finance office."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "According to Text C, when should departments submit large invoices?",
+      "points": 1,
+      "explanation": "Text C directly asks departments to submit large invoices at least five business days before the payment deadline.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Exact timing words matter. Keep at least, before, and business days in the statement.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "On the payment deadline",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage asks departments to submit earlier than the deadline."
+        },
+        {
+          "id": "b",
+          "text": "At least five business days before the payment deadline"
+        },
+        {
+          "id": "c",
+          "text": "Exactly five calendar days after manager approval",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "The passage specifies business days before the deadline, not calendar days after approval."
+        },
+        {
+          "id": "d",
+          "text": "Only after the finance office requests them",
+          "distractorType": "inference_not_stated",
+          "whyWrong": "No such request is required in the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Departments should submit large invoices at least five business days before the payment deadline."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What did Mara do after noticing the umbrella in Text D?",
+      "points": 1,
+      "explanation": "Text D directly states that Mara took the umbrella inside and asked the cashier about a missing umbrella.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "In a story, explicit-meaning questions still depend on what the narrator directly says happened.",
+      "familyId": "explicit.fact.locate",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "She took it home until the rain returned.",
+          "distractorType": "inference_not_stated",
+          "whyWrong": "The passage does not say she took the umbrella home."
+        },
+        {
+          "id": "b",
+          "text": "She left it outside and told the cashier about it.",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "She carried the umbrella inside rather than leaving it outside."
+        },
+        {
+          "id": "c",
+          "text": "She carried it inside and asked whether anyone had reported one missing."
+        },
+        {
+          "id": "d",
+          "text": "She wrote a note and attached it to the bakery door.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "A note appears later, but Mara is not said to have written it."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Mara carried the umbrella inside and asked the cashier whether anyone had reported one missing."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "According to Text D, what did the note near the register say had happened to the umbrella?",
+      "points": 1,
+      "explanation": "The note explicitly says the blue umbrella was returned to its owner.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Do not add a plausible story detail when the passage gives the answer directly.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "It had been returned to its owner."
+        },
+        {
+          "id": "b",
+          "text": "It had been donated to the bakery.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No donation is mentioned."
+        },
+        {
+          "id": "c",
+          "text": "It was still waiting behind the counter.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The note says the umbrella had already been returned."
+        },
+        {
+          "id": "d",
+          "text": "It had been moved outside before the next shower.",
+          "distractorType": "inference_not_stated",
+          "whyWrong": "The passage does not say this."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "A handwritten note said, 'Blue umbrella returned to owner - thank you.'"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-explicit-meaning-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
+      "topicLabel": "Explicit meaning"
+    },
+    "passage": {
+      "id": "p-rla-explicit-meaning-practice-01",
+      "title": "Explicit Meaning Practice 1",
+      "textType": "informational_and_literary",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-18T02:02:39.892Z"
+  }
+}
