@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "phase": "6B",
+  "domain": "Relationships & Inference",
+  "status": "planned",
+  "placementRule": "Skill-focused content appears only on its primary skill page. Mixed-skill passage sets appear once in Passage Practice.",
+  "v1Targets": {
+    "studyGuidesPerSkill": 1,
+    "workbooksPerSkill": 2,
+    "interactivePracticesPerSkill": 1,
+    "questionsPerInteractivePractice": 8,
+    "mixedPassageSetsAfterSkillBuild": 3
+  },
+  "skills": [
+    {
+      "id": "R2.1",
+      "label": "Sequence",
+      "focus": "Explicit and implied order in narratives, procedures, and informational processes.",
+      "contexts": ["workplace procedure", "community process", "literary narrative"],
+      "mistakeFocus": ["wrong_sequence", "mentioned_not_answering"]
+    },
+    {
+      "id": "R2.2",
+      "label": "Cause and effect",
+      "focus": "Explicit/implied causal relationships, contributing conditions, and effects of changes.",
+      "contexts": ["science mechanism", "workplace policy", "community change"],
+      "mistakeFocus": ["reversed_relationship", "correlation_not_cause"]
+    },
+    {
+      "id": "R2.3",
+      "label": "Compare / contrast",
+      "focus": "Meaningful similarities, differences, and the criterion used to compare ideas, people, or methods.",
+      "contexts": ["two methods", "viewpoints within one text", "literary characters"],
+      "mistakeFocus": ["true_but_irrelevant", "partly_true"]
+    },
+    {
+      "id": "R2.4",
+      "label": "Inference",
+      "focus": "Evidence-supported ideas not directly stated in the text.",
+      "contexts": ["literary character", "workplace decision", "science implication"],
+      "mistakeFocus": ["unsupported_inference", "mentioned_not_supported", "personal_opinion"]
+    },
+    {
+      "id": "R2.5",
+      "label": "Conclusions",
+      "focus": "Synthesis of multiple details or ideas into a defensible overall conclusion.",
+      "contexts": ["science results", "community program", "literary outcome"],
+      "mistakeFocus": ["too_broad", "too_narrow", "unsupported_inference"]
+    },
+    {
+      "id": "R2.6",
+      "label": "Relationships among people/events/ideas",
+      "focus": "How people, events, ideas, setting, and context interact and develop across a text.",
+      "contexts": ["literary conflict", "community development", "workplace change"],
+      "mistakeFocus": ["reversed_relationship", "background_only", "partly_true"]
+    }
+  ],
+  "qualityGates": [
+    "source_and_rights_logged",
+    "no_cross_format_passage_duplication",
+    "skill_alignment_reviewed",
+    "one_best_answer_verified",
+    "distractors_mapped_to_misconceptions",
+    "pdfs_rendered_and_visually_reviewed",
+    "content_validator_zero_blocking_errors",
+    "learner_links_verified"
+  ]
+}
