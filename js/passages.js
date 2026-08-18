@@ -27,7 +27,6 @@ function renderSet(set){
       <span class="passage-practice-meta">${escapeHtml(info.join(" · "))}</span>
       ${source?`<span class="passage-practice-source">${escapeHtml(source)}</span>`:""}
     </div>
-    <b aria-hidden="true">→</b>
   </a>`;
 }
 

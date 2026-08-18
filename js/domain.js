@@ -59,7 +59,6 @@ function renderSkill(track, domain, skill) {
       <span class="simple-skill-marker" aria-hidden="true"></span>
       <span class="simple-skill-pill-title">${escapeHtml(skill.label)}</span>
       <span class="simple-skill-pill-meta">${escapeHtml(status)}</span>
-      <b aria-hidden="true">→</b>
     </a>`;
 }
 

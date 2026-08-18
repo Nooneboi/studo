@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-18T02:02:39.897Z",
+  "builtAt": "2026-08-18T05:30:41.865Z",
   "tracks": [
     {
       "id": "reading",
@@ -1056,13 +1056,67 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 0,
+          "availableSkillCount": 6,
+          "availableSetCount": 6,
+          "topicResourceCount": 2,
+          "topicResources": [
+            {
+              "id": "res-rla-relationships-inference-guide-v1",
+              "title": "Relationships & Inference - Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "relationships-inference",
+              "description": "A broad guide to sequence, cause and effect, comparison, inference, conclusions, and relationships.",
+              "href": "assets/resources/relationships-inference-study-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6B domain review"
+            },
+            {
+              "id": "res-rla-relationships-inference-workbook-v1",
+              "title": "Relationships & Inference - Practice Workbook",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "relationships-inference",
+              "description": "Mixed file-based practice across the six Relationships & Inference skills.",
+              "href": "assets/resources/relationships-inference-practice-workbook.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6B domain review"
+            }
+          ],
+          "resources": [
+            {
+              "id": "res-rla-relationships-inference-guide-v1",
+              "title": "Relationships & Inference - Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "relationships-inference",
+              "description": "A broad guide to sequence, cause and effect, comparison, inference, conclusions, and relationships.",
+              "href": "assets/resources/relationships-inference-study-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6B domain review"
+            },
+            {
+              "id": "res-rla-relationships-inference-workbook-v1",
+              "title": "Relationships & Inference - Practice Workbook",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "relationships-inference",
+              "description": "Mixed file-based practice across the six Relationships & Inference skills.",
+              "href": "assets/resources/relationships-inference-practice-workbook.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6B domain review"
+            }
+          ],
+          "studyFileCount": 20,
+          "checkCount": 6,
           "skills": [
             {
               "id": "R2.1",
@@ -1070,16 +1124,186 @@
               "label": "Sequence",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-sequence-practice-01",
+                  "title": "Sequence Practice 1",
+                  "description": "4 short texts - 8 sequence questions",
+                  "file": "generated/modules/rla-sequence-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
+                    "topicLabel": "Sequence"
+                  },
+                  "measuredSkillIds": [
+                    "R2.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-sequence-practice-01",
+                    "title": "Sequence Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-sequence-practice-01",
+                  "title": "Sequence Practice 1",
+                  "description": "4 short texts - 8 sequence questions",
+                  "file": "generated/modules/rla-sequence-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
+                    "topicLabel": "Sequence"
+                  },
+                  "measuredSkillIds": [
+                    "R2.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-sequence-practice-01",
+                    "title": "Sequence Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-sequence-guide-v1",
+                  "title": "Sequence - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.1"
+                  ],
+                  "description": "Focused sequence study guide.",
+                  "href": "assets/resources/sequence-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-sequence-workbook-v1",
+                  "title": "Sequence - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.1"
+                  ],
+                  "description": "Focused sequence workbook practice.",
+                  "href": "assets/resources/sequence-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-sequence-workbook-v2",
+                  "title": "Sequence - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.1"
+                  ],
+                  "description": "Second transfer-focused sequence workbook.",
+                  "href": "assets/resources/sequence-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-sequence-guide-v1",
+                  "title": "Sequence - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.1"
+                  ],
+                  "description": "Focused sequence study guide.",
+                  "href": "assets/resources/sequence-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-sequence-workbook-v1",
+                  "title": "Sequence - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.1"
+                  ],
+                  "description": "Focused sequence workbook practice.",
+                  "href": "assets/resources/sequence-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-sequence-workbook-v2",
+                  "title": "Sequence - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.1"
+                  ],
+                  "description": "Second transfer-focused sequence workbook.",
+                  "href": "assets/resources/sequence-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ]
             },
             {
               "id": "R2.2",
@@ -1087,16 +1311,186 @@
               "label": "Cause and effect",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-cause-effect-practice-01",
+                  "title": "Cause and Effect Practice 1",
+                  "description": "4 short texts - 8 cause-and-effect questions",
+                  "file": "generated/modules/rla-cause-effect-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
+                    "topicLabel": "Cause and effect"
+                  },
+                  "measuredSkillIds": [
+                    "R2.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-cause-effect-practice-01",
+                    "title": "Cause and Effect Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-cause-effect-practice-01",
+                  "title": "Cause and Effect Practice 1",
+                  "description": "4 short texts - 8 cause-and-effect questions",
+                  "file": "generated/modules/rla-cause-effect-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
+                    "topicLabel": "Cause and effect"
+                  },
+                  "measuredSkillIds": [
+                    "R2.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-cause-effect-practice-01",
+                    "title": "Cause and Effect Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-cause-and-effect-guide-v1",
+                  "title": "Cause and Effect - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.2"
+                  ],
+                  "description": "Focused cause and effect study guide.",
+                  "href": "assets/resources/cause-and-effect-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-cause-and-effect-workbook-v1",
+                  "title": "Cause and Effect - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.2"
+                  ],
+                  "description": "Focused cause and effect workbook practice.",
+                  "href": "assets/resources/cause-and-effect-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-cause-and-effect-workbook-v2",
+                  "title": "Cause and Effect - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.2"
+                  ],
+                  "description": "Second transfer-focused cause and effect workbook.",
+                  "href": "assets/resources/cause-and-effect-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-cause-and-effect-guide-v1",
+                  "title": "Cause and Effect - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.2"
+                  ],
+                  "description": "Focused cause and effect study guide.",
+                  "href": "assets/resources/cause-and-effect-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-cause-and-effect-workbook-v1",
+                  "title": "Cause and Effect - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.2"
+                  ],
+                  "description": "Focused cause and effect workbook practice.",
+                  "href": "assets/resources/cause-and-effect-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-cause-and-effect-workbook-v2",
+                  "title": "Cause and Effect - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.2"
+                  ],
+                  "description": "Second transfer-focused cause and effect workbook.",
+                  "href": "assets/resources/cause-and-effect-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ]
             },
             {
               "id": "R2.3",
@@ -1104,16 +1498,186 @@
               "label": "Compare and contrast",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-compare-practice-01",
+                  "title": "Compare and Contrast Practice 1",
+                  "description": "4 short texts - 8 comparison questions",
+                  "file": "generated/modules/rla-compare-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
+                    "topicLabel": "Compare and contrast"
+                  },
+                  "measuredSkillIds": [
+                    "R2.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-compare-practice-01",
+                    "title": "Compare and Contrast Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-compare-practice-01",
+                  "title": "Compare and Contrast Practice 1",
+                  "description": "4 short texts - 8 comparison questions",
+                  "file": "generated/modules/rla-compare-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
+                    "topicLabel": "Compare and contrast"
+                  },
+                  "measuredSkillIds": [
+                    "R2.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-compare-practice-01",
+                    "title": "Compare and Contrast Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-compare-and-contrast-guide-v1",
+                  "title": "Compare and Contrast - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.3"
+                  ],
+                  "description": "Focused compare and contrast study guide.",
+                  "href": "assets/resources/compare-and-contrast-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-compare-and-contrast-workbook-v1",
+                  "title": "Compare and Contrast - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.3"
+                  ],
+                  "description": "Focused compare and contrast workbook practice.",
+                  "href": "assets/resources/compare-and-contrast-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-compare-and-contrast-workbook-v2",
+                  "title": "Compare and Contrast - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.3"
+                  ],
+                  "description": "Second transfer-focused compare and contrast workbook.",
+                  "href": "assets/resources/compare-and-contrast-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-compare-and-contrast-guide-v1",
+                  "title": "Compare and Contrast - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.3"
+                  ],
+                  "description": "Focused compare and contrast study guide.",
+                  "href": "assets/resources/compare-and-contrast-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-compare-and-contrast-workbook-v1",
+                  "title": "Compare and Contrast - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.3"
+                  ],
+                  "description": "Focused compare and contrast workbook practice.",
+                  "href": "assets/resources/compare-and-contrast-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-compare-and-contrast-workbook-v2",
+                  "title": "Compare and Contrast - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.3"
+                  ],
+                  "description": "Second transfer-focused compare and contrast workbook.",
+                  "href": "assets/resources/compare-and-contrast-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ]
             },
             {
               "id": "R2.4",
@@ -1121,16 +1685,186 @@
               "label": "Inference from details",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-inference-practice-01",
+                  "title": "Inference Practice 1",
+                  "description": "4 short texts - 8 inference questions",
+                  "file": "generated/modules/rla-inference-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
+                    "topicLabel": "Inference from details"
+                  },
+                  "measuredSkillIds": [
+                    "R2.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-inference-practice-01",
+                    "title": "Inference Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-inference-practice-01",
+                  "title": "Inference Practice 1",
+                  "description": "4 short texts - 8 inference questions",
+                  "file": "generated/modules/rla-inference-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
+                    "topicLabel": "Inference from details"
+                  },
+                  "measuredSkillIds": [
+                    "R2.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-inference-practice-01",
+                    "title": "Inference Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-inference-guide-v1",
+                  "title": "Inference - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.4"
+                  ],
+                  "description": "Focused inference study guide.",
+                  "href": "assets/resources/inference-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-inference-workbook-v1",
+                  "title": "Inference - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.4"
+                  ],
+                  "description": "Focused inference workbook practice.",
+                  "href": "assets/resources/inference-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-inference-workbook-v2",
+                  "title": "Inference - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.4"
+                  ],
+                  "description": "Second transfer-focused inference workbook.",
+                  "href": "assets/resources/inference-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-inference-guide-v1",
+                  "title": "Inference - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.4"
+                  ],
+                  "description": "Focused inference study guide.",
+                  "href": "assets/resources/inference-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-inference-workbook-v1",
+                  "title": "Inference - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.4"
+                  ],
+                  "description": "Focused inference workbook practice.",
+                  "href": "assets/resources/inference-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-inference-workbook-v2",
+                  "title": "Inference - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.4"
+                  ],
+                  "description": "Second transfer-focused inference workbook.",
+                  "href": "assets/resources/inference-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ]
             },
             {
               "id": "R2.5",
@@ -1138,16 +1872,186 @@
               "label": "Conclusions & generalizations",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-conclusions-practice-01",
+                  "title": "Conclusions Practice 1",
+                  "description": "4 short texts - 8 conclusion and generalization questions",
+                  "file": "generated/modules/rla-conclusions-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Synthesize multiple details into supported conclusions and apply the same principle to closely related situations.",
+                    "topicLabel": "Conclusions & generalizations"
+                  },
+                  "measuredSkillIds": [
+                    "R2.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-conclusions-practice-01",
+                    "title": "Conclusions Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-conclusions-practice-01",
+                  "title": "Conclusions Practice 1",
+                  "description": "4 short texts - 8 conclusion and generalization questions",
+                  "file": "generated/modules/rla-conclusions-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Synthesize multiple details into supported conclusions and apply the same principle to closely related situations.",
+                    "topicLabel": "Conclusions & generalizations"
+                  },
+                  "measuredSkillIds": [
+                    "R2.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-conclusions-practice-01",
+                    "title": "Conclusions Practice 1",
+                    "textType": "informational",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-conclusions-guide-v1",
+                  "title": "Conclusions - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.5"
+                  ],
+                  "description": "Focused conclusions study guide.",
+                  "href": "assets/resources/conclusions-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-conclusions-workbook-v1",
+                  "title": "Conclusions - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.5"
+                  ],
+                  "description": "Focused conclusions workbook practice.",
+                  "href": "assets/resources/conclusions-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-conclusions-workbook-v2",
+                  "title": "Conclusions - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.5"
+                  ],
+                  "description": "Second transfer-focused conclusions workbook.",
+                  "href": "assets/resources/conclusions-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-conclusions-guide-v1",
+                  "title": "Conclusions - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.5"
+                  ],
+                  "description": "Focused conclusions study guide.",
+                  "href": "assets/resources/conclusions-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-conclusions-workbook-v1",
+                  "title": "Conclusions - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.5"
+                  ],
+                  "description": "Focused conclusions workbook practice.",
+                  "href": "assets/resources/conclusions-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-conclusions-workbook-v2",
+                  "title": "Conclusions - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.5"
+                  ],
+                  "description": "Second transfer-focused conclusions workbook.",
+                  "href": "assets/resources/conclusions-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ]
             },
             {
               "id": "R2.6",
@@ -1155,16 +2059,186 @@
               "label": "Relationships among people, events & ideas",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-relationships-practice-01",
+                  "title": "Relationships Practice 1",
+                  "description": "4 short texts - 8 relationship questions",
+                  "file": "generated/modules/rla-relationships-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.6",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
+                    "topicLabel": "Relationships among people, events & ideas"
+                  },
+                  "measuredSkillIds": [
+                    "R2.6"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-relationships-practice-01",
+                    "title": "Relationships Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-relationships-practice-01",
+                  "title": "Relationships Practice 1",
+                  "description": "4 short texts - 8 relationship questions",
+                  "file": "generated/modules/rla-relationships-practice-01.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.6",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
+                    "topicLabel": "Relationships among people, events & ideas"
+                  },
+                  "measuredSkillIds": [
+                    "R2.6"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-relationships-practice-01",
+                    "title": "Relationships Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-relationships-guide-v1",
+                  "title": "Relationships - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.6"
+                  ],
+                  "description": "Focused relationships study guide.",
+                  "href": "assets/resources/relationships-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-relationships-workbook-v1",
+                  "title": "Relationships - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.6"
+                  ],
+                  "description": "Focused relationships workbook practice.",
+                  "href": "assets/resources/relationships-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-relationships-workbook-v2",
+                  "title": "Relationships - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.6"
+                  ],
+                  "description": "Second transfer-focused relationships workbook.",
+                  "href": "assets/resources/relationships-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-relationships-guide-v1",
+                  "title": "Relationships - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.6"
+                  ],
+                  "description": "Focused relationships study guide.",
+                  "href": "assets/resources/relationships-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-relationships-workbook-v1",
+                  "title": "Relationships - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.6"
+                  ],
+                  "description": "Focused relationships workbook practice.",
+                  "href": "assets/resources/relationships-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                },
+                {
+                  "id": "res-rla-relationships-workbook-v2",
+                  "title": "Relationships - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "relationships-inference",
+                  "skillIds": [
+                    "R2.6"
+                  ],
+                  "description": "Second transfer-focused relationships workbook.",
+                  "href": "assets/resources/relationships-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6B domain review"
+                }
+              ]
             }
           ]
         },
@@ -1423,13 +2497,13 @@
           ]
         }
       ],
-      "availableSkillCount": 5,
+      "availableSkillCount": 11,
       "totalSkillCount": 22,
-      "availableSetCount": 5,
-      "questionCount": 40,
-      "resourceCount": 17,
-      "studyFileCount": 17,
-      "checkCount": 5
+      "availableSetCount": 11,
+      "questionCount": 88,
+      "resourceCount": 37,
+      "studyFileCount": 37,
+      "checkCount": 11
     },
     {
       "id": "arguments",
@@ -2540,6 +3614,144 @@
       }
     },
     {
+      "id": "set-rla-p6b-library-lockers",
+      "title": "A New Pickup System at the Community Library",
+      "description": "Workplace - Informational - 7 questions",
+      "file": "generated/modules/rla-p6b-library-lockers.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.1",
+        "secondarySkillIds": [
+          "R2.3",
+          "R2.2",
+          "R2.4",
+          "R2.5",
+          "R2.6",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+        "topicLabel": "Workplace passage set"
+      },
+      "measuredSkillIds": [
+        "R2.1",
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6b-library-lockers",
+        "title": "A New Pickup System at the Community Library",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6b-second-bell",
+      "title": "The Second Bell",
+      "description": "Literary - 7 questions",
+      "file": "generated/modules/rla-p6b-second-bell.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.1",
+        "secondarySkillIds": [
+          "R2.6",
+          "R2.3",
+          "R2.4",
+          "R2.5",
+          "R2.2",
+          "R1.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+        "topicLabel": "Literary passage set"
+      },
+      "measuredSkillIds": [
+        "R2.1",
+        "R2.6",
+        "R2.3",
+        "R2.4",
+        "R2.5",
+        "R2.2",
+        "R1.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6b-second-bell",
+        "title": "The Second Bell",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6b-stream-restoration",
+      "title": "When a City Stream Comes Back",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6b-stream-restoration.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.1",
+        "secondarySkillIds": [
+          "R2.3",
+          "R2.2",
+          "R2.4",
+          "R2.5",
+          "R2.6",
+          "R1.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+        "topicLabel": "Science passage set"
+      },
+      "measuredSkillIds": [
+        "R2.1",
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6b-stream-restoration",
+        "title": "When a City Stream Comes Back",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
       "id": "set-rla-writing-library-hours",
       "title": "Sunday Hours at the Downtown Library",
       "description": "Choose relevant evidence, then use source evidence in a short argument.",
@@ -2832,6 +4044,144 @@
         "L1.1"
       ],
       "passageMeta": null
+    },
+    {
+      "id": "set-rla-p6b-library-lockers",
+      "title": "A New Pickup System at the Community Library",
+      "description": "Workplace - Informational - 7 questions",
+      "file": "generated/modules/rla-p6b-library-lockers.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.1",
+        "secondarySkillIds": [
+          "R2.3",
+          "R2.2",
+          "R2.4",
+          "R2.5",
+          "R2.6",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+        "topicLabel": "Workplace passage set"
+      },
+      "measuredSkillIds": [
+        "R2.1",
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6b-library-lockers",
+        "title": "A New Pickup System at the Community Library",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6b-second-bell",
+      "title": "The Second Bell",
+      "description": "Literary - 7 questions",
+      "file": "generated/modules/rla-p6b-second-bell.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.1",
+        "secondarySkillIds": [
+          "R2.6",
+          "R2.3",
+          "R2.4",
+          "R2.5",
+          "R2.2",
+          "R1.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+        "topicLabel": "Literary passage set"
+      },
+      "measuredSkillIds": [
+        "R2.1",
+        "R2.6",
+        "R2.3",
+        "R2.4",
+        "R2.5",
+        "R2.2",
+        "R1.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6b-second-bell",
+        "title": "The Second Bell",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6b-stream-restoration",
+      "title": "When a City Stream Comes Back",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6b-stream-restoration.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.1",
+        "secondarySkillIds": [
+          "R2.3",
+          "R2.2",
+          "R2.4",
+          "R2.5",
+          "R2.6",
+          "R1.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+        "topicLabel": "Science passage set"
+      },
+      "measuredSkillIds": [
+        "R2.1",
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6b-stream-restoration",
+        "title": "When a City Stream Comes Back",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
     },
     {
       "id": "set-rla-writing-library-hours",

@@ -80,3 +80,135 @@ async function setupServiceWorker() {
     });
   });
 }
+/*
+  theme.js
+  --------
+  Compact theme picker used in the site header.
+  The previous 3-icon segmented control looked too utility-heavy and
+  visually noisy. This version uses one clear "Theme" trigger with a
+  small popover menu so the header stays calm.
+*/
+
+const THEMES = [
+  {
+    id: "light",
+    label: "Light",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  },
+  {
+    id: "dark",
+    label: "Dark",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>',
+  },
+  {
+    id: "sepia",
+    label: "Sepia",
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>',
+  },
+];
+
+(function () {
+  const mount = document.getElementById("theme-switch-mount");
+  if (!mount) return;
+
+  function getTheme() {
+    return localStorage.getItem("sq:theme") || "light";
+  }
+
+  function setTheme(id) {
+    document.documentElement.setAttribute("data-theme", id);
+    localStorage.setItem("sq:theme", id);
+    render();
+  }
+
+  function render() {
+    const activeId = getTheme();
+    const activeTheme = THEMES.find((t) => t.id === activeId) || THEMES[0];
+
+    mount.innerHTML = `
+      <details class="theme-picker">
+        <summary class="theme-picker-btn" aria-label="Choose theme" title="Theme">
+          <span class="theme-picker-icon" aria-hidden="true">${activeTheme.icon}</span>
+          <span class="theme-picker-text">${activeTheme.label}</span>
+        </summary>
+        <div class="theme-picker-menu" role="menu" aria-label="Theme options">
+          ${THEMES.map((theme) => `
+            <button
+              type="button"
+              class="theme-option${theme.id === activeId ? " active" : ""}"
+              data-theme-id="${theme.id}"
+              role="menuitemradio"
+              aria-checked="${theme.id === activeId ? "true" : "false"}"
+            >
+              <span class="theme-picker-icon" aria-hidden="true">${theme.icon}</span>
+              <span>${theme.label}</span>
+            </button>
+          `).join("")}
+        </div>
+      </details>
+    `;
+
+    const details = mount.querySelector(".theme-picker");
+    mount.querySelectorAll(".theme-option").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setTheme(btn.dataset.themeId);
+        if (details) details.open = false;
+      });
+    });
+  }
+
+  render();
+})();
+/*
+  subjectbar.js
+  -------------
+  Renders the global subject bar (Math / Science / Social Studies / RLA)
+  right under the header, on every page that includes a
+  <div id="subject-bar-mount"></div>.
+
+  Only RLA is live for now. The other three render as disabled "Soon"
+  pills — flip a subject's `enabled` flag to true once it has content,
+  and it becomes a normal clickable tab automatically.
+
+  Clicking a tab remembers the choice (localStorage) and navigates to
+  practice.html (or quiz.html, if that's the page you're already on)
+  with ?subject=<id> — each page reads that on load.
+*/
+
+const SUBJECTS = [
+  { id: "rla", label: "Reasoning Through Language Arts", enabled: true },
+  { id: "math", label: "Mathematical Reasoning", enabled: false },
+  { id: "science", label: "Science", enabled: false },
+  { id: "social_studies", label: "Social Studies", enabled: false },
+];
+
+function getActiveSubject() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
+}
+
+(function renderSubjectBar() {
+  const mount = document.getElementById("subject-bar-mount");
+  if (!mount) return;
+
+  const active = getActiveSubject();
+  // Where a click should navigate to: stay on quiz.html if that's
+  // the current page, otherwise land on practice.html.
+  const targetPage = window.location.pathname.endsWith("quiz.html") ? "quiz.html" : "practice.html";
+
+  mount.innerHTML = `
+    <div class="subject-bar">
+      <div class="wrap">
+        ${SUBJECTS.map((s) => {
+          const isActive = s.id === active;
+          if (!s.enabled) {
+            return `<span class="subject-tab disabled">${s.label} <span class="soon-pill">Soon</span></span>`;
+          }
+          return `<a class="subject-tab${isActive ? " active" : ""}" href="${targetPage}?subject=${s.id}">${s.label}</a>`;
+        }).join("")}
+      </div>
+    </div>
+  `;
+
+  localStorage.setItem("sq:activeSubject", active);
+})();

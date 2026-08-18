@@ -80,6 +80,45 @@
     }
   },
   {
+    "file": "generated/modules/rla-cause-effect-practice-01.json",
+    "title": "Cause and Effect Practice 1",
+    "description": "4 short texts - 8 cause-and-effect questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
+      "topicLabel": "Cause and effect"
+    }
+  },
+  {
+    "file": "generated/modules/rla-compare-practice-01.json",
+    "title": "Compare and Contrast Practice 1",
+    "description": "4 short texts - 8 comparison questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
+      "topicLabel": "Compare and contrast"
+    }
+  },
+  {
+    "file": "generated/modules/rla-conclusions-practice-01.json",
+    "title": "Conclusions Practice 1",
+    "description": "4 short texts - 8 conclusion and generalization questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Synthesize multiple details into supported conclusions and apply the same principle to closely related situations.",
+      "topicLabel": "Conclusions & generalizations"
+    }
+  },
+  {
     "file": "generated/modules/rla-explicit-meaning-practice-01.json",
     "title": "Explicit Meaning Practice 1",
     "description": "4 short texts · 8 explicit-meaning questions",
@@ -152,6 +191,19 @@
     }
   },
   {
+    "file": "generated/modules/rla-inference-practice-01.json",
+    "title": "Inference Practice 1",
+    "description": "4 short texts - 8 inference questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
+      "topicLabel": "Inference from details"
+    }
+  },
+  {
     "file": "generated/modules/rla-main-idea-practice-01.json",
     "title": "Main Idea Practice 1",
     "description": "4 short texts · 8 main-idea questions",
@@ -162,6 +214,92 @@
       "contentKind": "skill_drill",
       "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
       "topicLabel": "Main idea / central idea"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6b-library-lockers.json",
+    "title": "A New Pickup System at the Community Library",
+    "description": "Workplace - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Workplace passage set"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6b-second-bell.json",
+    "title": "The Second Bell",
+    "description": "Literary - 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.6",
+        "R2.3",
+        "R2.4",
+        "R2.5",
+        "R2.2",
+        "R1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Literary passage set"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6b-stream-restoration.json",
+    "title": "When a City Stream Comes Back",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Science passage set"
+    }
+  },
+  {
+    "file": "generated/modules/rla-relationships-practice-01.json",
+    "title": "Relationships Practice 1",
+    "description": "4 short texts - 8 relationship questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
+      "topicLabel": "Relationships among people, events & ideas"
+    }
+  },
+  {
+    "file": "generated/modules/rla-sequence-practice-01.json",
+    "title": "Sequence Practice 1",
+    "description": "4 short texts - 8 sequence questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
+      "topicLabel": "Sequence"
     }
   },
   {

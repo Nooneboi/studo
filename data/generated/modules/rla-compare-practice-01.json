@@ -1,0 +1,487 @@
+{
+  "id": "rla-compare-practice-01",
+  "title": "Compare and Contrast Practice 1",
+  "description": "4 short texts - 8 comparison questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Compare and contrast",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Two Study Rooms\n\nRoom North has large shared tables, movable chairs, and whiteboards on every wall. Room South has individual desks, fixed chairs, and sound-absorbing panels. Both rooms can be reserved by students for two-hour blocks.\n\nTEXT B - Trail Repairs\n\nOn the east trail, workers replaced damaged wooden steps with stone steps that should last longer but required heavier equipment to install. On the west trail, workers repaired the existing wooden steps, which was faster and caused less disruption but will likely need more maintenance.\n\nTEXT C - Two Project Methods\n\nLeah sketches several small prototypes before choosing one to build. Omar selects one idea early and spends most of his time testing and revising that single version. Both keep notes about what changes improve their designs.\n\nTEXT D - Transit Proposals\n\nPlan Green would increase bus frequency along the existing downtown route. Plan Blue would keep the current schedule but extend the route to two neighborhoods that currently lack direct service. Both plans use the same number of buses.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "How are the study rooms in Text A similar?",
+      "points": 1,
+      "explanation": "Reservation length is a feature shared by both rooms.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.similarity",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both can be reserved for two-hour blocks"
+        },
+        {
+          "id": "b",
+          "text": "Both have individual desks",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "c",
+          "text": "Both have sound-absorbing panels",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "d",
+          "text": "Both use fixed chairs",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is one important difference between the rooms?",
+      "points": 1,
+      "explanation": "The furniture arrangement creates a meaningful contrast in how the rooms support work.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only South can be reserved",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "b",
+          "text": "North supports shared-table work, while South is arranged for individual seating"
+        },
+        {
+          "id": "c",
+          "text": "Only North has chairs",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "d",
+          "text": "Both have the same furniture",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How are the two trail repairs in Text B similar?",
+      "points": 1,
+      "explanation": "Both projects solve the same type of problem.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.similarity",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both replace every step with stone",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "b",
+          "text": "Both require heavy equipment",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "c",
+          "text": "Both address damaged steps on a trail"
+        },
+        {
+          "id": "d",
+          "text": "Both are expected to need identical maintenance",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which difference best explains the tradeoff in Text B?",
+      "points": 1,
+      "explanation": "A accurately contrasts durability/installation effort across the two methods.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Wood lasts longer and requires heavier equipment",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "b",
+          "text": "Both projects happen outdoors",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "c",
+          "text": "Only one trail has steps",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "d",
+          "text": "Stone is more durable but harder to install; repairing wood is faster but may require more maintenance"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How are Leah and Omar similar in Text C?",
+      "points": 1,
+      "explanation": "Both keep notes and use feedback from testing.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.similarity",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both use testing information to improve designs"
+        },
+        {
+          "id": "b",
+          "text": "Both build many prototypes before choosing",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "c",
+          "text": "Both choose one idea immediately",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "d",
+          "text": "Neither records changes",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the main difference in their approaches?",
+      "points": 1,
+      "explanation": "The contrast is breadth before selection versus depth after early selection.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Leah tests and Omar never does",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "b",
+          "text": "Leah explores several versions before selecting; Omar commits earlier and revises one version"
+        },
+        {
+          "id": "c",
+          "text": "Omar takes notes and Leah does not",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "d",
+          "text": "Leah works alone and Omar works in a group",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "How are Plans Green and Blue similar in Text D?",
+      "points": 1,
+      "explanation": "Both alter service without increasing the fleet.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.similarity",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both extend the route to two neighborhoods",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "b",
+          "text": "Both increase downtown frequency",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "c",
+          "text": "Both change the transit service while using the same number of buses"
+        },
+        {
+          "id": "d",
+          "text": "Both require more buses",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What is the main difference between the plans?",
+      "points": 1,
+      "explanation": "The plans differ in frequency versus geographic coverage.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same feature on both sides.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Blue changes transit service",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "b",
+          "text": "Green uses buses and Blue uses trains",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "c",
+          "text": "Only Green serves passengers",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+        },
+        {
+          "id": "d",
+          "text": "Green changes frequency on the existing route; Blue changes where the route goes"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-compare-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
+      "topicLabel": "Compare and contrast"
+    },
+    "passage": {
+      "id": "p-rla-compare-practice-01",
+      "title": "Compare and Contrast Practice 1",
+      "textType": "informational",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-18T05:30:41.810Z"
+  }
+}

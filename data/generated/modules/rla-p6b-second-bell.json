@@ -1,0 +1,445 @@
+{
+  "id": "rla-p6b-second-bell",
+  "title": "The Second Bell",
+  "description": "Literary - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Literary passage set",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Elena arrived at the auditorium forty minutes before the student orchestra was due to perform. She placed spare clothespins on the music stands, taped the extension cords along the wall, and checked the order of the pieces against the printed program. Marcus, the trumpet player, watched her from the front row.\n\n\"You know we're indoors, right?\" he said, holding up one of the clothespins. \"The music isn't going to blow away.\"\n\nElena smiled and put the clothespin back. \"Probably not today.\"\n\nMarcus had teased her before about preparing for problems that had not happened. Elena kept a box labeled JUST IN CASE under her chair at rehearsals. It held pencils, tape, spare strings, a small flashlight, and a copy of every student's emergency contact number. Most rehearsals ended without anyone opening it.\n\nTen minutes before the concert, the lights flickered and went out. The stage went dark, and the projector that displayed translations of the songs disappeared with them. A maintenance worker hurried toward the electrical room and said he could not promise how quickly power would return.\n\nThe orchestra director looked at the rows of arriving families. \"We can delay,\" she said, \"but I don't know for how long.\"\n\nElena opened the JUST IN CASE box and handed out the small flashlights. Then she pointed to the first piece on the program, a short work that did not require piano or projected text. The director moved the orchestra to the front edge of the stage, where light from the lobby reached them, and asked the audience to wait while the musicians settled.\n\nThey began the acoustic piece without amplification. Halfway through it, the ceiling lights returned. The projector took another few minutes to restart, so the director changed the order and placed a second acoustic piece next. By the third selection, the program was back on its original plan.\n\nAfter the concert, Marcus found Elena gathering the flashlights. \"I still think the clothespins were unnecessary,\" he said.\n\n\"Today,\" Elena replied.\n\nA month later, the orchestra prepared for an outdoor afternoon concert. Elena arrived to find a bag of wooden clothespins on every row of stands. Marcus was at the back of the stage, checking the weather forecast on his phone.\n\nWhile the musicians packed up after the first concert, the director thanked Elena for having materials ready but also reminded the group that preparation was not the same as predicting every problem. \"We cannot carry a solution for everything,\" she said. \"But we can notice which small preparations give us more choices when plans change.\" Marcus glanced at the box without answering.\n\n\"Wind after three,\" he called. \"I brought extras.\" Elena clipped her music to the stand and said nothing, but Marcus noticed her smile.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which event happens immediately after the power goes out?",
+      "points": 1,
+      "explanation": "The maintenance worker responds immediately after the outage.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track the event directly around the target moment.",
+      "familyId": "sequence.order",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Marcus brings clothespins to the outdoor concert",
+          "distractorType": "later_event",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "A maintenance worker goes toward the electrical room and cannot promise a quick repair"
+        },
+        {
+          "id": "c",
+          "text": "The orchestra finishes the third selection",
+          "distractorType": "later_event",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Elena arrives at the auditorium",
+          "distractorType": "earlier_event",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Ten minutes before the concert, the lights flickered and went out."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How does the power outage affect the concert?",
+      "points": 1,
+      "explanation": "The outage removes lighting/projected text, so the group starts with acoustic pieces and changes the order.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "State how the event changes later actions.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It forces the orchestra to change how and in what order it performs the opening pieces"
+        },
+        {
+          "id": "b",
+          "text": "It causes the audience to leave permanently",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "It proves the orchestra did not rehearse",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "It has no effect on the program",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Elena opened the JUST IN CASE box ... pointed to the first piece ... did not require piano or projected text."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How is Marcus different at the outdoor concert from the beginning of the story?",
+      "points": 1,
+      "explanation": "His later actions show that he has adopted the kind of advance preparation he had teased Elena about.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare attitude and behavior at two points in the story.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "He still believes all preparation is pointless",
+          "distractorType": "reversed_positions",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "He now prepares for wind by checking the forecast and bringing clothespins"
+        },
+        {
+          "id": "c",
+          "text": "He stops playing music entirely",
+          "distractorType": "minor_irrelevant_difference",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "He becomes the orchestra director",
+          "distractorType": "unsupported_similarity",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "A month later ... a bag of wooden clothespins ... Marcus ... checking the weather forecast ... \"I brought extras.\""
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What can the reader most reasonably infer about Elena's idea of preparation?",
+      "points": 1,
+      "explanation": "Her JUST IN CASE box is rarely used, yet she continues preparing and the supplies help during the outage.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Infer the principle that explains repeated behavior, not an extreme motive.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "She believes preparation is useful only when a problem is guaranteed",
+          "distractorType": "contradicts_detail",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "She believes small preparations can be worthwhile even when most of them are not needed on a given day"
+        },
+        {
+          "id": "c",
+          "text": "She expects every concert to fail",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "She prepares mainly to impress Marcus",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Elena arrived ... spare clothespins ... extension cords ... checked the order ... JUST IN CASE box."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion about Marcus is best supported by the ending?",
+      "points": 1,
+      "explanation": "At the outdoor concert he checks the forecast and supplies clothespins himself, showing changed behavior.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "Use the ending together with his earlier attitude.",
+      "familyId": "conclusion.synthesize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "He has completely stopped joking with Elena",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "The outage experience has influenced him to take advance preparation more seriously"
+        },
+        {
+          "id": "c",
+          "text": "He now believes every possible item must be carried to every concert",
+          "distractorType": "too_broad",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "He dislikes outdoor performances",
+          "distractorType": "single_detail_inference",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "A month later ... a bag of wooden clothespins ... Marcus ... checking the weather forecast ... \"I brought extras.\""
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What causes the director to move the first performance toward the front edge of the stage?",
+      "points": 1,
+      "explanation": "The lack of power and available lobby light explain the location change.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Find the mechanism connecting the problem to the response.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The power outage leaves the stage dark, while lobby light is still available"
+        },
+        {
+          "id": "b",
+          "text": "Marcus asks for a different seat",
+          "distractorType": "sequence_only",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "The audience requests clothespins",
+          "distractorType": "correlation_only",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "The weather forecast predicts wind next month",
+          "distractorType": "effect_as_cause",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Elena opened the JUST IN CASE box ... pointed to the first piece ... did not require piano or projected text."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of the passage?",
+      "points": 1,
+      "explanation": "The story develops this idea through Elena's habits, the outage, and Marcus's changed behavior.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Theme explains what the events suggest, not just what happened.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Careful preparation can seem excessive until an unexpected problem reveals its value"
+        },
+        {
+          "id": "b",
+          "text": "Every musician should carry the same emergency box",
+          "distractorType": "unsupported_moral",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "Power outages always improve concerts",
+          "distractorType": "overgeneralization",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Elena brings flashlights to a concert and Marcus later brings clothespins",
+          "distractorType": "plot_summary",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Preparation for unlikely problems can become valuable, and experience can change how people judge that preparation."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6b-second-bell",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.6",
+        "R2.3",
+        "R2.4",
+        "R2.5",
+        "R2.2",
+        "R1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Literary passage set"
+    },
+    "passage": {
+      "id": "p-rla-p6b-second-bell",
+      "title": "The Second Bell",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-18T05:30:41.853Z"
+  }
+}

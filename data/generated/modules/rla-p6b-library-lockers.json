@@ -1,0 +1,445 @@
+{
+  "id": "rla-p6b-library-lockers",
+  "title": "A New Pickup System at the Community Library",
+  "description": "Workplace - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Workplace passage set",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "The Westbridge Community Library lends more than books. Residents can borrow sewing machines, portable projectors, tool kits, and other equipment. Until last year, every item had to be collected from the service desk while it was open. People who worked late often reserved equipment but failed to pick it up before the reservation expired.\n\nThe library tested a locker system for smaller items. A borrower first reserves an available item online. Staff inspect the item and complete the checkout in the library system. Only after that checkout is recorded does the borrower receive a message with a locker number and a temporary code. The code opens the assigned locker until midnight on the pickup day. Returning equipment still happens at the service desk because staff need to inspect it before the loan is closed.\n\nDuring the first two months, evening pickups increased and fewer reservations expired. The lockers did not solve every access problem, however. Larger tools could not fit, and some borrowers needed staff help learning how to operate unfamiliar equipment. For those loans, the service desk remained important.\n\nStaff also discovered a communication problem. Several borrowers correctly received a locker number and a code but entered the locker number on the keypad instead of the code. The library first printed larger locker numbers on the doors, assuming that clearer signs would help. The error rate changed only slightly. Staff then redesigned the pickup message so that the code appeared under a bold label reading USE THIS CODE ON THE KEYPAD, while the locker number appeared under FIND THIS LOCKER. Wrong-code reports dropped sharply during the following month.\n\nThe library decided to keep both pickup methods. Lockers provide flexibility for routine loans that fit and do not require instruction. The desk provides assistance, handles large equipment, and checks returns. Staff members are now reviewing which items are appropriate for each method rather than trying to move every loan into lockers. They also plan to test whether a simple diagram in the pickup message can reduce first-time user questions.\n\nBefore expanding the pilot, staff also checked whether the lockers were being used by the same group of borrowers who already visited the library frequently. The first survey suggested a broader mix: some users were regular visitors, while others said evening pickup was the main reason they could complete the loan. Staff plan to repeat the survey before making larger purchasing decisions.\n\nThe pilot changed the library's original question. At first, staff asked whether lockers could replace the service desk for equipment loans. The results suggested a more useful question: which parts of the lending process can be automated without removing the human help that some loans require?",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which step must occur before a borrower receives a locker code?",
+      "points": 1,
+      "explanation": "The passage says the message is sent only after the checkout is recorded.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Words such as \"only after\" mark required order.",
+      "familyId": "sequence.logic",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The item is returned",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "Staff record the checkout in the library system"
+        },
+        {
+          "id": "c",
+          "text": "The locker code expires",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "The borrower visits the service desk to close the loan",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Only after that checkout is recorded does the borrower receive a message with a locker number and a temporary code."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is an important difference between locker pickup and service-desk pickup?",
+      "points": 1,
+      "explanation": "The passage contrasts flexibility/automation with assistance and capacity.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same function - what each method can handle.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only locker pickup involves borrowed equipment",
+          "distractorType": "shared_trait",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "Lockers offer after-hours flexibility for suitable routine loans, while the desk can provide help and handle larger items"
+        },
+        {
+          "id": "c",
+          "text": "The service desk never checks returns",
+          "distractorType": "reversed_positions",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Both methods can handle every item in exactly the same way",
+          "distractorType": "minor_irrelevant_difference",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Lockers provide flexibility for routine loans ... The desk provides assistance, handles large equipment, and checks returns."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion about the pickup-message redesign is best supported?",
+      "points": 1,
+      "explanation": "Wrong-code reports dropped after the message clearly separated the two pieces of information.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Use the cause/effect relationship the text actually reports.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Making the locker numbers larger caused wrong-code reports to disappear",
+          "distractorType": "sequence_only",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "The clearer distinction between code and locker number was followed by a large drop in wrong-code reports"
+        },
+        {
+          "id": "c",
+          "text": "Borrowers stopped using lockers entirely",
+          "distractorType": "effect_as_cause",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "The keypad was replaced with a different device",
+          "distractorType": "correlation_only",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Staff then redesigned the pickup message ... Wrong-code reports dropped sharply during the following month."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about the library staff?",
+      "points": 1,
+      "explanation": "Staff test lockers, revise signage, redesign messages, keep both methods, and plan another test.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Look for a repeated pattern of decisions across the passage.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They are willing to revise a solution after observing how people actually use it"
+        },
+        {
+          "id": "b",
+          "text": "They want to eliminate all staff contact immediately",
+          "distractorType": "contradicts_detail",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "They believe every error is caused by borrowers",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "They refuse to test new ideas",
+          "distractorType": "contradicts_detail",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The library decided to keep both pickup methods ... reviewing which items are appropriate for each method rather than trying to move every loan into lockers."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the pilot?",
+      "points": 1,
+      "explanation": "The library keeps lockers for suitable loans and the desk for assistance, large items, and returns.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "Synthesize the tradeoffs instead of selecting one isolated result.",
+      "familyId": "conclusion.synthesize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Automation is useful only when it replaces every human task",
+          "distractorType": "too_broad",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "The most effective system may combine automated convenience with staff support for tasks that need judgment or assistance"
+        },
+        {
+          "id": "c",
+          "text": "Large equipment should never be loaned",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Pickup codes are the only important part of equipment lending",
+          "distractorType": "single_detail_inference",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "which parts of the lending process can be automated without removing the human help that some loans require?"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How do borrower errors affect the design of the locker system?",
+      "points": 1,
+      "explanation": "Observed errors become evidence that changes the communication design.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Describe the effect the problem has on the later design.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They lead staff to revise how the message distinguishes the locker number from the code"
+        },
+        {
+          "id": "b",
+          "text": "They cause staff to close the library",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "They have no effect on the pilot",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "They make large tools fit into lockers",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Staff then redesigned the pickup message ... Wrong-code reports dropped sharply during the following month."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "A includes the pilot, revision, results, and final combined approach.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A summary keeps the important problem-solution-development chain.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A library tested equipment lockers, improved the system after observing access and communication problems, and kept lockers alongside staff service because the two methods meet different needs"
+        },
+        {
+          "id": "b",
+          "text": "A library printed larger numbers on locker doors",
+          "distractorType": "too_narrow",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "All community libraries should replace service desks with lockers",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "The passage lists several kinds of equipment that residents can borrow",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "which parts of the lending process can be automated without removing the human help that some loans require?"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6b-library-lockers",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Workplace passage set"
+    },
+    "passage": {
+      "id": "p-rla-p6b-library-lockers",
+      "title": "A New Pickup System at the Community Library",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-18T05:30:41.852Z"
+  }
+}
