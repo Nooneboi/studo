@@ -1,0 +1,487 @@
+{
+  "id": "rla-figurative-language-practice-2",
+  "title": "Figurative Language Practice 2",
+  "description": "4 short texts - 8 focused figurative language questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Figurative Language",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Practice Hall\n\nThe drummer's mistake rippled through the group, and three players entered a measure too early.\n\nTEXT B - Winter Street\n\nThe wind bit through the thin gloves.\n\nTEXT C - Deadline\n\nThe final week collapsed into a blur of revisions, meetings, and late dinners.\n\nTEXT D - Quiet Library\n\nThe old radiator coughed twice and then settled into a steady hum.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does rippled mean?",
+      "points": 1,
+      "explanation": "Rippled transfers the spreading motion of water to an error moving through the group.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The mistake spread from one player to others."
+        },
+        {
+          "id": "b",
+          "text": "Water entered the room.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The drummer stopped playing forever.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "The music became quieter.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What effect does the image emphasize?",
+      "points": 1,
+      "explanation": "The ripple image highlights spreading consequences.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "the size of the room",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "how one small mistake affected several people"
+        },
+        {
+          "id": "c",
+          "text": "the speed of sound",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "the type of drum",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What does bit mean here?",
+      "points": 1,
+      "explanation": "Bit personifies the cold as something sharp and painful.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The wind had teeth.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "The gloves tore.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The cold felt sharply painful."
+        },
+        {
+          "id": "d",
+          "text": "The weather became warm.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why use bit instead of passed?",
+      "points": 1,
+      "explanation": "Bit adds sensory intensity.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show the wind direction.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "To prove the gloves were new.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "To make the sentence formal.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "To intensify the physical discomfort."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does collapsed into suggest?",
+      "points": 1,
+      "explanation": "The phrase compresses a hectic sequence into one indistinct period.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Many events seemed compressed together."
+        },
+        {
+          "id": "b",
+          "text": "The week physically fell down.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The meetings were cancelled.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "The writer forgot the project.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What effect does the phrase create?",
+      "points": 1,
+      "explanation": "The figurative compression helps convey stress and rapid activity.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It explains calendar design.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It conveys how rushed and crowded the week felt."
+        },
+        {
+          "id": "c",
+          "text": "It makes the schedule exact.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It shows the project was easy.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What does coughed describe?",
+      "points": 1,
+      "explanation": "The personification compares the rough sound to a cough.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "A person became sick.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "The radiator stopped heating.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "A brief rough mechanical sound."
+        },
+        {
+          "id": "d",
+          "text": "The library became crowded.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What does the image add?",
+      "points": 1,
+      "explanation": "The human sound makes the machine's rough start easy to imagine.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "a medical explanation",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "the radiator's age in years",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "the library's size",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "a vivid sense of the radiator's imperfect start"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-figurative-language-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Figurative Language"
+    },
+    "passage": {
+      "id": "p-rla-figurative-language-practice-2",
+      "title": "Figurative Language Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T12:59:56.456Z"
+  }
+}

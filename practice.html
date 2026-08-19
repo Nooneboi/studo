@@ -1,76 +1,75 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-HvSbCFFH+8P5KXfjzbmEfZAXyl/ZVmHjIHEO6wH+ILQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="studo-release" content="0.6.2-alpha-prep.1">
 <script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="icons/icon-192.png" rel="apple-touch-icon"/>
 <title>Studo — Practice</title>
-<meta name="description" content="Find an RLA topic, open study material, and test yourself when you are ready.">
-<link rel="manifest" href="manifest.json">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
-
+<meta content="Find an RLA topic, open study material, and test yourself when you are ready." name="description"/>
+<link href="manifest.json" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/site.css">
+
 </head>
 <body>
 <header class="site-header">
-  <div class="wrap">
-    <a href="index.html" class="brand"><span class="brand-mark">&#9670;</span> Studo</a>
-    <div class="header-right">
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="practice.html">Practice</a>
-        <a href="train.html">Train</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="progress.html">Progress</a>
-        <a href="resources.html">Resources</a>
-      </nav>
-      <div id="theme-switch-mount"></div>
-    </div>
-  </div>
+<div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">◆</span> Studo</a>
+<div class="header-right">
+<nav class="site-nav">
+<a href="index.html">Home</a>
+<a href="practice.html">Practice</a>
+<a href="train.html">Train</a>
+<a href="quiz.html">Quiz</a>
+<a href="progress.html">Progress</a>
+<a href="resources.html">Resources</a>
+</nav>
+<div id="theme-switch-mount"></div>
+</div>
+</div>
 </header>
 <div id="subject-bar-mount"></div>
-
 <main class="library-main practice-main-wide">
-  <div class="wrap practice-page-wrap">
-    <section class="practice-top-layout" aria-label="Practice overview and search">
-      <header class="library-hero practice-library-hero practice-hero-left">
-        <div class="page-kicker">Reasoning Through Language Arts</div>
-        <h1>Practice</h1>
-        <p>Choose a topic below, or search when you already know the skill you want.</p>
-      </header>
-
-      <section class="practice-search-simple" aria-labelledby="quick-find-title">
-        <div class="practice-search-header">
-          <div class="practice-search-kicker">Quick find</div>
-          <h2 id="quick-find-title">Search for a topic or skill</h2>
-        </div>
-        <label class="practice-search-compact" for="skill-search">
-          <span class="sr-only">Find a topic or skill</span>
-          <input id="skill-search" type="search" placeholder="main idea, tone, evidence, punctuation" autocomplete="off">
-        </label>
-        <div id="skill-search-results" class="skill-search-results" hidden></div>
-      </section>
-    </section>
-
-    <section class="library-index practice-browse-section" aria-labelledby="browse-title">
-      <div class="library-section-heading"><h2 id="browse-title">Practice by skill</h2></div>
-      <div id="category-list" class="library-track-list"></div>
-    </section>
-
-    <section class="practice-passage-section" aria-labelledby="passage-practice-title">
-      <div class="library-section-heading"><h2 id="passage-practice-title">Passage practice</h2></div>
-      <a class="practice-passage-entry" href="passages.html">
-        <span>Mixed-skill passages</span>
-        <b aria-hidden="true">→</b>
-      </a>
-    </section>
-  </div>
+<div class="wrap practice-page-wrap">
+<section aria-label="Practice overview and search" class="practice-top-layout">
+<header class="library-hero practice-library-hero practice-hero-left">
+<div class="page-kicker">Reasoning Through Language Arts</div>
+<h1>Practice</h1>
+<p>Choose a topic below, or search when you already know the skill you want.</p>
+</header>
+<section aria-labelledby="quick-find-title" class="practice-search-simple">
+<div class="practice-search-header">
+<div class="practice-search-kicker">Quick find</div>
+<h2 id="quick-find-title">Search for a topic or skill</h2>
+</div>
+<label class="practice-search-compact" for="skill-search">
+<span class="sr-only">Find a topic or skill</span>
+<input autocomplete="off" id="skill-search" placeholder="main idea, tone, evidence, punctuation" type="search"/>
+</label>
+<div class="skill-search-results" hidden="" id="skill-search-results"></div>
+</section>
+</section>
+<section aria-labelledby="browse-title" class="library-index practice-browse-section">
+<div class="library-section-heading"><h2 id="browse-title">Practice by skill</h2></div>
+<div class="library-track-list" id="category-list"></div>
+</section>
+<section aria-labelledby="passage-practice-title" class="practice-passage-section">
+<div class="library-section-heading"><h2 id="passage-practice-title">Passage practice</h2></div>
+<a class="practice-passage-entry" href="passages.html">
+<span>Mixed-skill passages</span>
+<b aria-hidden="true">→</b>
+</a>
+</section>
+</div>
 </main>
-
-<footer class="site-footer"><div class="wrap">Studo — built for practice, not for tracking you.</div></footer>
+<footer class="site-footer"><div class="wrap">Studo — built for practice, not for tracking you.<nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div></footer>
 <script src="js/app.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>

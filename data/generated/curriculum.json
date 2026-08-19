@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-18T05:30:41.865Z",
+  "builtAt": "2026-08-19T12:59:56.465Z",
   "tracks": [
     {
       "id": "reading",
@@ -2265,13 +2265,67 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 0,
+          "availableSkillCount": 5,
+          "availableSetCount": 10,
+          "topicResourceCount": 2,
+          "topicResources": [
+            {
+              "id": "res-rla-p6c-domain-guide-v1",
+              "title": "Words, Tone & Style - Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "words-tone-style",
+              "description": "Domain-level guide to context, connotation, figurative language, tone, and word choice.",
+              "href": "assets/resources/words-tone-style-study-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6C domain review"
+            },
+            {
+              "id": "res-rla-p6c-domain-workbook-v1",
+              "title": "Words, Tone & Style - Practice Workbook",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "words-tone-style",
+              "description": "Mixed word-and-style workbook.",
+              "href": "assets/resources/words-tone-style-practice-workbook.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6C domain review"
+            }
+          ],
+          "resources": [
+            {
+              "id": "res-rla-p6c-domain-guide-v1",
+              "title": "Words, Tone & Style - Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "words-tone-style",
+              "description": "Domain-level guide to context, connotation, figurative language, tone, and word choice.",
+              "href": "assets/resources/words-tone-style-study-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6C domain review"
+            },
+            {
+              "id": "res-rla-p6c-domain-workbook-v1",
+              "title": "Words, Tone & Style - Practice Workbook",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "words-tone-style",
+              "description": "Mixed word-and-style workbook.",
+              "href": "assets/resources/words-tone-style-practice-workbook.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6C domain review"
+            }
+          ],
+          "studyFileCount": 22,
+          "checkCount": 10,
           "skills": [
             {
               "id": "R3.1",
@@ -2279,16 +2333,288 @@
               "label": "Meaning in context",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-meaning-in-context-practice-1",
+                  "title": "Meaning in Context Practice 1",
+                  "description": "4 short texts - 8 focused meaning in context questions",
+                  "file": "generated/modules/rla-meaning-in-context-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Meaning in Context"
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-meaning-in-context-practice-1",
+                    "title": "Meaning in Context Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-meaning-in-context-practice-2",
+                  "title": "Meaning in Context Practice 2",
+                  "description": "4 short texts - 8 focused meaning in context questions",
+                  "file": "generated/modules/rla-meaning-in-context-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Meaning in Context"
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-meaning-in-context-practice-2",
+                    "title": "Meaning in Context Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-meaning-in-context-practice-1",
+                  "title": "Meaning in Context Practice 1",
+                  "description": "4 short texts - 8 focused meaning in context questions",
+                  "file": "generated/modules/rla-meaning-in-context-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Meaning in Context"
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-meaning-in-context-practice-1",
+                    "title": "Meaning in Context Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-meaning-in-context-practice-2",
+                  "title": "Meaning in Context Practice 2",
+                  "description": "4 short texts - 8 focused meaning in context questions",
+                  "file": "generated/modules/rla-meaning-in-context-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Meaning in Context"
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-meaning-in-context-practice-2",
+                    "title": "Meaning in Context Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6c-meaning-in-context-guide-v1",
+                  "title": "Meaning in Context - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Focused meaning in context study guide.",
+                  "href": "assets/resources/meaning-in-context-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-meaning-in-context-workbook-v1",
+                  "title": "Meaning in Context - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Meaning in Context workbook 1.",
+                  "href": "assets/resources/meaning-in-context-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-meaning-in-context-workbook-v2",
+                  "title": "Meaning in Context - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Meaning in Context workbook 2.",
+                  "href": "assets/resources/meaning-in-context-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-meaning-in-context-workbook-v3",
+                  "title": "Meaning in Context - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Meaning in Context workbook 3.",
+                  "href": "assets/resources/meaning-in-context-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6c-meaning-in-context-guide-v1",
+                  "title": "Meaning in Context - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Focused meaning in context study guide.",
+                  "href": "assets/resources/meaning-in-context-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-meaning-in-context-workbook-v1",
+                  "title": "Meaning in Context - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Meaning in Context workbook 1.",
+                  "href": "assets/resources/meaning-in-context-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-meaning-in-context-workbook-v2",
+                  "title": "Meaning in Context - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Meaning in Context workbook 2.",
+                  "href": "assets/resources/meaning-in-context-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-meaning-in-context-workbook-v3",
+                  "title": "Meaning in Context - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.1"
+                  ],
+                  "description": "Meaning in Context workbook 3.",
+                  "href": "assets/resources/meaning-in-context-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ]
             },
             {
               "id": "R3.2",
@@ -2296,16 +2622,288 @@
               "label": "Connotation",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-connotation-practice-1",
+                  "title": "Connotation Practice 1",
+                  "description": "4 short texts - 8 focused connotation questions",
+                  "file": "generated/modules/rla-connotation-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Connotation"
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-connotation-practice-1",
+                    "title": "Connotation Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-connotation-practice-2",
+                  "title": "Connotation Practice 2",
+                  "description": "4 short texts - 8 focused connotation questions",
+                  "file": "generated/modules/rla-connotation-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Connotation"
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-connotation-practice-2",
+                    "title": "Connotation Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-connotation-practice-1",
+                  "title": "Connotation Practice 1",
+                  "description": "4 short texts - 8 focused connotation questions",
+                  "file": "generated/modules/rla-connotation-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Connotation"
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-connotation-practice-1",
+                    "title": "Connotation Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-connotation-practice-2",
+                  "title": "Connotation Practice 2",
+                  "description": "4 short texts - 8 focused connotation questions",
+                  "file": "generated/modules/rla-connotation-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Connotation"
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-connotation-practice-2",
+                    "title": "Connotation Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6c-connotation-guide-v1",
+                  "title": "Connotation - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Focused connotation study guide.",
+                  "href": "assets/resources/connotation-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-connotation-workbook-v1",
+                  "title": "Connotation - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Connotation workbook 1.",
+                  "href": "assets/resources/connotation-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-connotation-workbook-v2",
+                  "title": "Connotation - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Connotation workbook 2.",
+                  "href": "assets/resources/connotation-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-connotation-workbook-v3",
+                  "title": "Connotation - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Connotation workbook 3.",
+                  "href": "assets/resources/connotation-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6c-connotation-guide-v1",
+                  "title": "Connotation - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Focused connotation study guide.",
+                  "href": "assets/resources/connotation-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-connotation-workbook-v1",
+                  "title": "Connotation - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Connotation workbook 1.",
+                  "href": "assets/resources/connotation-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-connotation-workbook-v2",
+                  "title": "Connotation - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Connotation workbook 2.",
+                  "href": "assets/resources/connotation-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-connotation-workbook-v3",
+                  "title": "Connotation - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.2"
+                  ],
+                  "description": "Connotation workbook 3.",
+                  "href": "assets/resources/connotation-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ]
             },
             {
               "id": "R3.3",
@@ -2313,16 +2911,288 @@
               "label": "Figurative language",
               "priority": "P1",
               "practiceMode": "Literary",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-figurative-language-practice-1",
+                  "title": "Figurative Language Practice 1",
+                  "description": "4 short texts - 8 focused figurative language questions",
+                  "file": "generated/modules/rla-figurative-language-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Figurative Language"
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-figurative-language-practice-1",
+                    "title": "Figurative Language Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-figurative-language-practice-2",
+                  "title": "Figurative Language Practice 2",
+                  "description": "4 short texts - 8 focused figurative language questions",
+                  "file": "generated/modules/rla-figurative-language-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Figurative Language"
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-figurative-language-practice-2",
+                    "title": "Figurative Language Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-figurative-language-practice-1",
+                  "title": "Figurative Language Practice 1",
+                  "description": "4 short texts - 8 focused figurative language questions",
+                  "file": "generated/modules/rla-figurative-language-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Figurative Language"
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-figurative-language-practice-1",
+                    "title": "Figurative Language Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-figurative-language-practice-2",
+                  "title": "Figurative Language Practice 2",
+                  "description": "4 short texts - 8 focused figurative language questions",
+                  "file": "generated/modules/rla-figurative-language-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Figurative Language"
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-figurative-language-practice-2",
+                    "title": "Figurative Language Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6c-figurative-language-guide-v1",
+                  "title": "Figurative Language - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Focused figurative language study guide.",
+                  "href": "assets/resources/figurative-language-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-figurative-language-workbook-v1",
+                  "title": "Figurative Language - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Figurative Language workbook 1.",
+                  "href": "assets/resources/figurative-language-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-figurative-language-workbook-v2",
+                  "title": "Figurative Language - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Figurative Language workbook 2.",
+                  "href": "assets/resources/figurative-language-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-figurative-language-workbook-v3",
+                  "title": "Figurative Language - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Figurative Language workbook 3.",
+                  "href": "assets/resources/figurative-language-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6c-figurative-language-guide-v1",
+                  "title": "Figurative Language - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Focused figurative language study guide.",
+                  "href": "assets/resources/figurative-language-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-figurative-language-workbook-v1",
+                  "title": "Figurative Language - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Figurative Language workbook 1.",
+                  "href": "assets/resources/figurative-language-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-figurative-language-workbook-v2",
+                  "title": "Figurative Language - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Figurative Language workbook 2.",
+                  "href": "assets/resources/figurative-language-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-figurative-language-workbook-v3",
+                  "title": "Figurative Language - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.3"
+                  ],
+                  "description": "Figurative Language workbook 3.",
+                  "href": "assets/resources/figurative-language-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ]
             },
             {
               "id": "R3.4",
@@ -2330,16 +3200,288 @@
               "label": "Tone",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-tone-practice-1",
+                  "title": "Tone Practice 1",
+                  "description": "4 short texts - 8 focused tone questions",
+                  "file": "generated/modules/rla-tone-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Tone"
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-tone-practice-1",
+                    "title": "Tone Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-tone-practice-2",
+                  "title": "Tone Practice 2",
+                  "description": "4 short texts - 8 focused tone questions",
+                  "file": "generated/modules/rla-tone-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Tone"
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-tone-practice-2",
+                    "title": "Tone Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-tone-practice-1",
+                  "title": "Tone Practice 1",
+                  "description": "4 short texts - 8 focused tone questions",
+                  "file": "generated/modules/rla-tone-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Tone"
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-tone-practice-1",
+                    "title": "Tone Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-tone-practice-2",
+                  "title": "Tone Practice 2",
+                  "description": "4 short texts - 8 focused tone questions",
+                  "file": "generated/modules/rla-tone-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Tone"
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-tone-practice-2",
+                    "title": "Tone Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6c-tone-guide-v1",
+                  "title": "Tone - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Focused tone study guide.",
+                  "href": "assets/resources/tone-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-tone-workbook-v1",
+                  "title": "Tone - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Tone workbook 1.",
+                  "href": "assets/resources/tone-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-tone-workbook-v2",
+                  "title": "Tone - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Tone workbook 2.",
+                  "href": "assets/resources/tone-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-tone-workbook-v3",
+                  "title": "Tone - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Tone workbook 3.",
+                  "href": "assets/resources/tone-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6c-tone-guide-v1",
+                  "title": "Tone - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Focused tone study guide.",
+                  "href": "assets/resources/tone-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-tone-workbook-v1",
+                  "title": "Tone - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Tone workbook 1.",
+                  "href": "assets/resources/tone-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-tone-workbook-v2",
+                  "title": "Tone - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Tone workbook 2.",
+                  "href": "assets/resources/tone-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-tone-workbook-v3",
+                  "title": "Tone - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.4"
+                  ],
+                  "description": "Tone workbook 3.",
+                  "href": "assets/resources/tone-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ]
             },
             {
               "id": "R3.5",
@@ -2347,16 +3489,288 @@
               "label": "Impact of word choice",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-impact-of-word-choice-practice-1",
+                  "title": "Impact of Word Choice Practice 1",
+                  "description": "4 short texts - 8 focused impact of word choice questions",
+                  "file": "generated/modules/rla-impact-of-word-choice-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Impact of Word Choice"
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-impact-of-word-choice-practice-1",
+                    "title": "Impact of Word Choice Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-impact-of-word-choice-practice-2",
+                  "title": "Impact of Word Choice Practice 2",
+                  "description": "4 short texts - 8 focused impact of word choice questions",
+                  "file": "generated/modules/rla-impact-of-word-choice-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Impact of Word Choice"
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-impact-of-word-choice-practice-2",
+                    "title": "Impact of Word Choice Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-impact-of-word-choice-practice-1",
+                  "title": "Impact of Word Choice Practice 1",
+                  "description": "4 short texts - 8 focused impact of word choice questions",
+                  "file": "generated/modules/rla-impact-of-word-choice-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Impact of Word Choice"
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-impact-of-word-choice-practice-1",
+                    "title": "Impact of Word Choice Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-impact-of-word-choice-practice-2",
+                  "title": "Impact of Word Choice Practice 2",
+                  "description": "4 short texts - 8 focused impact of word choice questions",
+                  "file": "generated/modules/rla-impact-of-word-choice-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Words, Tone & Style",
+                    "primarySkillId": "R3.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+                    "topicLabel": "Impact of Word Choice"
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-impact-of-word-choice-practice-2",
+                    "title": "Impact of Word Choice Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-guide-v1",
+                  "title": "Impact of Word Choice - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Focused impact of word choice study guide.",
+                  "href": "assets/resources/impact-of-word-choice-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-workbook-v1",
+                  "title": "Impact of Word Choice - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Impact of Word Choice workbook 1.",
+                  "href": "assets/resources/impact-of-word-choice-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-workbook-v2",
+                  "title": "Impact of Word Choice - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Impact of Word Choice workbook 2.",
+                  "href": "assets/resources/impact-of-word-choice-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-workbook-v3",
+                  "title": "Impact of Word Choice - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Impact of Word Choice workbook 3.",
+                  "href": "assets/resources/impact-of-word-choice-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-guide-v1",
+                  "title": "Impact of Word Choice - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Focused impact of word choice study guide.",
+                  "href": "assets/resources/impact-of-word-choice-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-workbook-v1",
+                  "title": "Impact of Word Choice - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Impact of Word Choice workbook 1.",
+                  "href": "assets/resources/impact-of-word-choice-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-workbook-v2",
+                  "title": "Impact of Word Choice - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Impact of Word Choice workbook 2.",
+                  "href": "assets/resources/impact-of-word-choice-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                },
+                {
+                  "id": "res-rla-p6c-impact-of-word-choice-workbook-v3",
+                  "title": "Impact of Word Choice - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "words-tone-style",
+                  "skillIds": [
+                    "R3.5"
+                  ],
+                  "description": "Impact of Word Choice workbook 3.",
+                  "href": "assets/resources/impact-of-word-choice-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6C domain review"
+                }
+              ]
             }
           ]
         },
@@ -2497,13 +3911,13 @@
           ]
         }
       ],
-      "availableSkillCount": 11,
+      "availableSkillCount": 16,
       "totalSkillCount": 22,
-      "availableSetCount": 11,
-      "questionCount": 88,
-      "resourceCount": 37,
-      "studyFileCount": 37,
-      "checkCount": 11
+      "availableSetCount": 21,
+      "questionCount": 168,
+      "resourceCount": 59,
+      "studyFileCount": 59,
+      "checkCount": 21
     },
     {
       "id": "arguments",
@@ -3752,6 +5166,236 @@
       }
     },
     {
+      "id": "set-rla-p6c-blue-mug",
+      "title": "The Blue Mug",
+      "description": "Literary - Literary - 7 questions",
+      "file": "generated/modules/rla-p6c-blue-mug.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.4",
+        "secondarySkillIds": [
+          "R3.5",
+          "R3.3",
+          "R3.2",
+          "R3.1",
+          "R2.4",
+          "R1.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.4",
+        "R3.5",
+        "R3.3",
+        "R3.2",
+        "R3.1",
+        "R2.4",
+        "R1.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-blue-mug",
+        "title": "The Blue Mug",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-feedback-window",
+      "title": "A New Feedback Window",
+      "description": "Workplace - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-feedback-window.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.3",
+        "secondarySkillIds": [
+          "R3.5",
+          "R3.4",
+          "R3.2",
+          "R3.1",
+          "R2.3",
+          "R1.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.3",
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R3.1",
+        "R2.3",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-feedback-window",
+        "title": "A New Feedback Window",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-market-roof",
+      "title": "The Roof Over Market Lane",
+      "description": "Community - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-market-roof.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.2",
+        "secondarySkillIds": [
+          "R3.4",
+          "R3.5",
+          "R3.1",
+          "R3.3",
+          "R2.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.2",
+        "R3.4",
+        "R3.5",
+        "R3.1",
+        "R3.3",
+        "R2.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-market-roof",
+        "title": "The Roof Over Market Lane",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-morning-fog",
+      "title": "Reading the Morning Fog",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-morning-fog.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.3",
+        "secondarySkillIds": [
+          "R3.1",
+          "R3.5",
+          "R3.4",
+          "R3.2",
+          "R2.2",
+          "R1.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.3",
+        "R3.1",
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R2.2",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-morning-fog",
+        "title": "Reading the Morning Fog",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-night-lighting",
+      "title": "When Streetlights Learn to Dim",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-night-lighting.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.1",
+        "secondarySkillIds": [
+          "R3.2",
+          "R3.4",
+          "R3.5",
+          "R3.3",
+          "R2.2",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.1",
+        "R3.2",
+        "R3.4",
+        "R3.5",
+        "R3.3",
+        "R2.2",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-night-lighting",
+        "title": "When Streetlights Learn to Dim",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
       "id": "set-rla-writing-library-hours",
       "title": "Sunday Hours at the Downtown Library",
       "description": "Choose relevant evidence, then use source evidence in a short argument.",
@@ -4172,6 +5816,236 @@
       "passageMeta": {
         "id": "p-rla-p6b-stream-restoration",
         "title": "When a City Stream Comes Back",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-blue-mug",
+      "title": "The Blue Mug",
+      "description": "Literary - Literary - 7 questions",
+      "file": "generated/modules/rla-p6c-blue-mug.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.4",
+        "secondarySkillIds": [
+          "R3.5",
+          "R3.3",
+          "R3.2",
+          "R3.1",
+          "R2.4",
+          "R1.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.4",
+        "R3.5",
+        "R3.3",
+        "R3.2",
+        "R3.1",
+        "R2.4",
+        "R1.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-blue-mug",
+        "title": "The Blue Mug",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-feedback-window",
+      "title": "A New Feedback Window",
+      "description": "Workplace - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-feedback-window.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.3",
+        "secondarySkillIds": [
+          "R3.5",
+          "R3.4",
+          "R3.2",
+          "R3.1",
+          "R2.3",
+          "R1.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.3",
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R3.1",
+        "R2.3",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-feedback-window",
+        "title": "A New Feedback Window",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-market-roof",
+      "title": "The Roof Over Market Lane",
+      "description": "Community - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-market-roof.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.2",
+        "secondarySkillIds": [
+          "R3.4",
+          "R3.5",
+          "R3.1",
+          "R3.3",
+          "R2.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.2",
+        "R3.4",
+        "R3.5",
+        "R3.1",
+        "R3.3",
+        "R2.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-market-roof",
+        "title": "The Roof Over Market Lane",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-morning-fog",
+      "title": "Reading the Morning Fog",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-morning-fog.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.3",
+        "secondarySkillIds": [
+          "R3.1",
+          "R3.5",
+          "R3.4",
+          "R3.2",
+          "R2.2",
+          "R1.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.3",
+        "R3.1",
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R2.2",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-morning-fog",
+        "title": "Reading the Morning Fog",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6c-night-lighting",
+      "title": "When Streetlights Learn to Dim",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6c-night-lighting.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Words, Tone & Style",
+        "primarySkillId": "R3.1",
+        "secondarySkillIds": [
+          "R3.2",
+          "R3.4",
+          "R3.5",
+          "R3.3",
+          "R2.2",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R3.1",
+        "R3.2",
+        "R3.4",
+        "R3.5",
+        "R3.3",
+        "R2.2",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6c-night-lighting",
+        "title": "When Streetlights Learn to Dim",
         "textType": "informational",
         "context": "science",
         "sourceType": "original",

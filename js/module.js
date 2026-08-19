@@ -143,7 +143,7 @@ function passagePanelHtml() {
         <div class="reading-scroll">
           <div class="passage-text passage-numbered">${renderPassageParagraphs(currentQuiz.passage)}</div>
         </div>
-        ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(currentQuiz.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)}</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
+        ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(safeHref(currentQuiz.sourceUrl))}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)}</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
       </section>
     </aside>
   `;
@@ -628,4 +628,19 @@ function escapeHtml(str) {
 }
 function escapeAttr(str) {
   return escapeHtml(str).replace(/"/g, "&quot;");
+}
+
+
+function safeHref(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "#";
+  if (raw.startsWith("#")) return raw;
+  try {
+    const parsed = new URL(raw, window.location.href);
+    if (!["http:", "https:"].includes(parsed.protocol)) return "#";
+    if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(raw)) return parsed.href;
+    return raw;
+  } catch (_) {
+    return "#";
+  }
 }

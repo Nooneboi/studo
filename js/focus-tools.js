@@ -12,12 +12,12 @@
   const STEP = 0.1;
 
   function getScale() {
-    const saved = parseFloat(localStorage.getItem("sq:textScale"));
+    const saved = parseFloat((window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:textScale") : localStorage.getItem("sq:textScale")));
     return isNaN(saved) ? 1 : saved;
   }
   function applyScale(scale) {
     document.documentElement.style.setProperty("--text-scale", scale);
-    localStorage.setItem("sq:textScale", scale);
+    window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:textScale", String(scale)) : localStorage.setItem("sq:textScale", scale);
   }
 
   applyScale(getScale());

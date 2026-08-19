@@ -60,13 +60,13 @@ const Store = {
 
   resetQuiz(quizId) {
     ["answers", "deleted", "notes", "highlights"].forEach((suffix) =>
-      localStorage.removeItem(this._key(quizId, suffix))
+      (window.StudoSafeStorage ? window.StudoSafeStorage.remove(this._key(quizId, suffix)) : localStorage.removeItem(this._key(quizId, suffix)))
     );
   },
 
   _read(key, fallback) {
     try {
-      const raw = localStorage.getItem(key);
+      const raw = window.StudoSafeStorage ? window.StudoSafeStorage.get(key) : localStorage.getItem(key);
       return raw ? JSON.parse(raw) : fallback;
     } catch (e) {
       console.warn("Store read failed for", key, e);
@@ -75,9 +75,13 @@ const Store = {
   },
   _write(key, value) {
     try {
+      if (window.StudoSafeStorage) return window.StudoSafeStorage.set(key, JSON.stringify(value));
       localStorage.setItem(key, JSON.stringify(value));
+      return true;
     } catch (e) {
       console.warn("Store write failed for", key, e);
+      window.dispatchEvent(new CustomEvent("studo:storage-error", { detail: { key, error: e } }));
+      return false;
     }
   },
 };

@@ -1,0 +1,487 @@
+{
+  "id": "rla-connotation-practice-1",
+  "title": "Connotation Practice 1",
+  "description": "4 short texts - 8 focused connotation questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Connotation",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Transit Debate\n\nSupporters called the bus lane a lifeline for workers without cars; critics called it an obstacle for drivers.\n\nTEXT B - Performance Review\n\nThe supervisor described Lena as methodical rather than slow.\n\nTEXT C - Park Article\n\nThe article calls the old trees veterans of decades of storms.\n\nTEXT D - Office Note\n\nThe note says the old filing system is clunky.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does lifeline suggest?",
+      "points": 1,
+      "explanation": "Lifeline has a strongly positive association with necessary support.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "the lane is essential and helpful"
+        },
+        {
+          "id": "b",
+          "text": "the lane is decorative",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "the lane is temporary",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "the lane is dangerous",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What does the contrast mainly reveal?",
+      "points": 1,
+      "explanation": "Loaded words frame the same lane positively and negatively.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "different bus routes",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "different attitudes toward the same policy"
+        },
+        {
+          "id": "c",
+          "text": "different road materials",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "different times of day",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why is methodical more positive?",
+      "points": 1,
+      "explanation": "Methodical emphasizes deliberate organization instead of delay.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It means she works faster.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It proves she makes no mistakes.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "It suggests careful, organized work."
+        },
+        {
+          "id": "d",
+          "text": "It means she avoids work.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "If slow replaced methodical, what would change most?",
+      "points": 1,
+      "explanation": "Slow can suggest an undesirable lack of speed.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.replacement",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Her job title would change.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "The facts would prove she was late.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The sentence would become humorous.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "The same pace would be framed more negatively."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What connotation does veterans create?",
+      "points": 1,
+      "explanation": "Veterans suggests experience, endurance, and respect.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "respect for endurance and age"
+        },
+        {
+          "id": "b",
+          "text": "disgust at decay",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "fear of violence",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "indifference",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which neutral replacement best preserves the fact?",
+      "points": 1,
+      "explanation": "Old trees states age without the same emotional association.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.replacement",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "survivors",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "old trees"
+        },
+        {
+          "id": "c",
+          "text": "heroes",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "guardians",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What does clunky suggest?",
+      "points": 1,
+      "explanation": "Clunky is a negative informal word suggesting awkward operation.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "beautifully designed",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "silent",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "awkward and inefficient"
+        },
+        {
+          "id": "d",
+          "text": "very expensive",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which replacement is most neutral?",
+      "points": 1,
+      "explanation": "Outdated is comparatively neutral and factual.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.replacement",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "terrible",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "ridiculous",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "hopeless",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "outdated"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-connotation-practice-1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Connotation"
+    },
+    "passage": {
+      "id": "p-rla-connotation-practice-1",
+      "title": "Connotation Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T12:59:56.454Z"
+  }
+}

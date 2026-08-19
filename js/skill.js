@@ -56,7 +56,7 @@ function renderColumn(title, items, renderer) {
 function renderResource(r) {
   const href = r.href || r.path || "#";
   const external = /^https?:\/\//i.test(href);
-  return `<a class="skill-resource-link" href="${escapeAttr(href)}" ${r.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
+  return `<a class="skill-resource-link" href="${escapeAttr(safeHref(href))}" ${r.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
     <strong>${escapeHtml(r.title)}</strong>
   </a>`;
 }
@@ -71,3 +71,18 @@ function renderCheck(set, track, domain, skill) {
 
 function escapeHtml(v) { const d = document.createElement("div"); d.textContent = v ?? ""; return d.innerHTML; }
 function escapeAttr(v) { return escapeHtml(v).replace(/"/g, "&quot;"); }
+
+
+function safeHref(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "#";
+  if (raw.startsWith("#")) return raw;
+  try {
+    const parsed = new URL(raw, window.location.href);
+    if (!["http:", "https:"].includes(parsed.protocol)) return "#";
+    if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(raw)) return parsed.href;
+    return raw;
+  } catch (_) {
+    return "#";
+  }
+}

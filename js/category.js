@@ -50,7 +50,7 @@ init();
 
 async function init() {
   const params = new URLSearchParams(window.location.search);
-  const subject = params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
+  const subject = params.get("subject") || (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:activeSubject") : localStorage.getItem("sq:activeSubject")) || "rla";
   const cat = params.get("cat");
   const topicParam = params.get("topic");
   const view = document.getElementById("category-view");
@@ -84,12 +84,12 @@ async function init() {
 function initSidebarCollapse() {
   const btn = document.getElementById("sidebar-collapse-btn");
   if (!btn) return;
-  const collapsed = localStorage.getItem("sq:sidebarCollapsed") === "1";
+  const collapsed = (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:sidebarCollapsed") : localStorage.getItem("sq:sidebarCollapsed")) === "1";
   document.body.classList.toggle("tree-collapsed", collapsed);
   btn.title = collapsed ? "Show sidebar" : "Collapse sidebar";
   btn.addEventListener("click", () => {
     const isNowCollapsed = document.body.classList.toggle("tree-collapsed");
-    localStorage.setItem("sq:sidebarCollapsed", isNowCollapsed ? "1" : "0");
+    window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:sidebarCollapsed", isNowCollapsed ? "1" : "0") : localStorage.setItem("sq:sidebarCollapsed", isNowCollapsed ? "1" : "0");
     btn.title = isNowCollapsed ? "Show sidebar" : "Collapse sidebar";
   });
 }

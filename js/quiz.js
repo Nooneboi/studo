@@ -20,7 +20,7 @@ init();
 
 async function init() {
   const params = new URLSearchParams(window.location.search);
-  const subject = params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
+  const subject = params.get("subject") || (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:activeSubject") : localStorage.getItem("sq:activeSubject")) || "rla";
 
   const filterBar = document.getElementById("filter-bar");
   const listEl = document.getElementById("test-list");

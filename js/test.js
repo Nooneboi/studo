@@ -62,7 +62,7 @@ async function init() {
 
   testLabel = CATEGORY_LABELS[category] || "RLA";
   autoSeconds = items.reduce((sum, item) => sum + (item.question.time || 30), 0);
-  timerMode = localStorage.getItem("sq:timerMode") || "auto";
+  timerMode = (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:timerMode") : localStorage.getItem("sq:timerMode")) || "auto";
   remainingSeconds = secondsForMode(timerMode);
 
   setupShell();
@@ -79,7 +79,7 @@ function secondsForMode(mode) {
   if (mode === "none") return 0;
   if (mode === "auto") return autoSeconds;
   if (mode === "custom") {
-    const saved = parseInt(localStorage.getItem("sq:customMinutes"), 10);
+    const saved = parseInt((window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:customMinutes") : localStorage.getItem("sq:customMinutes")), 10);
     return (isNaN(saved) || saved <= 0 ? 20 : saved) * 60;
   }
   const n = parseInt(mode, 10);
@@ -403,7 +403,7 @@ function setupTimerPicker() {
   panel.querySelectorAll("[data-timer-value]").forEach((optBtn) => {
     optBtn.addEventListener("click", () => {
       timerMode = optBtn.dataset.timerValue;
-      localStorage.setItem("sq:timerMode", timerMode);
+      window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:timerMode", timerMode) : localStorage.setItem("sq:timerMode", timerMode);
       updateLabel();
       applyTimerMode();
       closePanel();
@@ -416,9 +416,9 @@ function setupTimerPicker() {
   function applyCustom() {
     const minutes = parseInt(customInput.value, 10);
     if (minutes > 0) {
-      localStorage.setItem("sq:customMinutes", minutes);
+      window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:customMinutes", String(minutes)) : localStorage.setItem("sq:customMinutes", minutes);
       timerMode = "custom";
-      localStorage.setItem("sq:timerMode", timerMode);
+      window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:timerMode", timerMode) : localStorage.setItem("sq:timerMode", timerMode);
       updateLabel();
       applyTimerMode();
       closePanel();

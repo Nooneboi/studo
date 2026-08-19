@@ -3,6 +3,71 @@
   ------
   Shared site-shell behavior + service-worker lifecycle.
 */
+
+const STUDO_RELEASE = "alpha-prep-hardening-1";
+window.STUDO_RELEASE = STUDO_RELEASE;
+
+window.StudoSafeStorage = {
+  get(key, fallback = null) {
+    try {
+      const value = localStorage.getItem(key);
+      return value === null ? fallback : value;
+    } catch (_) {
+      return fallback;
+    }
+  },
+  set(key, value) {
+    try {
+      localStorage.setItem(key, value);
+      return true;
+    } catch (error) {
+      window.dispatchEvent(new CustomEvent("studo:storage-error", { detail: { key, error } }));
+      return false;
+    }
+  },
+  remove(key) {
+    try {
+      localStorage.removeItem(key);
+      return true;
+    } catch (error) {
+      window.dispatchEvent(new CustomEvent("studo:storage-error", { detail: { key, error } }));
+      return false;
+    }
+  }
+};
+
+function showSystemNotice(message, kind = "info") {
+  let notice = document.getElementById("studo-system-notice");
+  if (!notice) {
+    notice = document.createElement("div");
+    notice.id = "studo-system-notice";
+    notice.className = "studo-system-notice";
+    notice.setAttribute("role", "status");
+    notice.setAttribute("aria-live", "polite");
+    document.body.appendChild(notice);
+  }
+  notice.className = `studo-system-notice ${kind}`;
+  notice.textContent = message;
+  notice.hidden = false;
+}
+
+function hideSystemNotice() {
+  const notice = document.getElementById("studo-system-notice");
+  if (notice) notice.hidden = true;
+}
+
+window.addEventListener("offline", () => {
+  showSystemNotice("You are offline. Opened pages may still work, but new files need a connection.", "offline");
+});
+window.addEventListener("online", hideSystemNotice);
+window.addEventListener("studo:storage-error", () => {
+  showSystemNotice("Progress could not be saved on this device. Open Progress and download a backup before continuing.", "warning");
+});
+window.addEventListener("unhandledrejection", (event) => {
+  console.error("Unhandled Studo error", event.reason);
+  showSystemNotice("Something did not load correctly. Reload the page; your saved progress should remain on this device.", "warning");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("nav.site-nav").forEach((nav) => {
     if (!nav.querySelector('a[href="train.html"]')) {
@@ -80,6 +145,7 @@ async function setupServiceWorker() {
     });
   });
 }
+
 /*
   theme.js
   --------
@@ -112,12 +178,12 @@ const THEMES = [
   if (!mount) return;
 
   function getTheme() {
-    return localStorage.getItem("sq:theme") || "light";
+    return window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:theme", "light") : (localStorage.getItem("sq:theme") || "light");
   }
 
   function setTheme(id) {
     document.documentElement.setAttribute("data-theme", id);
-    localStorage.setItem("sq:theme", id);
+    if (window.StudoSafeStorage) window.StudoSafeStorage.set("sq:theme", id); else localStorage.setItem("sq:theme", id);
     render();
   }
 
@@ -159,6 +225,7 @@ const THEMES = [
 
   render();
 })();
+
 /*
   subjectbar.js
   -------------
@@ -184,7 +251,7 @@ const SUBJECTS = [
 
 function getActiveSubject() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("subject") || localStorage.getItem("sq:activeSubject") || "rla";
+  return params.get("subject") || (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:activeSubject") : localStorage.getItem("sq:activeSubject")) || "rla";
 }
 
 (function renderSubjectBar() {
@@ -210,5 +277,5 @@ function getActiveSubject() {
     </div>
   `;
 
-  localStorage.setItem("sq:activeSubject", active);
+  if (window.StudoSafeStorage) window.StudoSafeStorage.set("sq:activeSubject", active); else localStorage.setItem("sq:activeSubject", active);
 })();

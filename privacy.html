@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-HvSbCFFH+8P5KXfjzbmEfZAXyl/ZVmHjIHEO6wH+ILQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="studo-release" content="0.6.2-alpha-prep.1">
+<script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="icons/icon-192.png" rel="apple-touch-icon"/>
+<title>Studo — Privacy</title>
+<meta content="How learner progress and local data are handled during the Studo alpha." name="description"/>
+<link href="manifest.json" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/site.css">
+
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark">◆</span> Studo</a>
+<div class="header-right">
+<nav class="site-nav">
+<a href="index.html">Home</a>
+<a href="practice.html">Practice</a>
+<a href="train.html">Train</a>
+<a href="quiz.html">Quiz</a>
+<a href="progress.html">Progress</a>
+<a href="resources.html">Resources</a>
+</nav>
+<div id="theme-switch-mount"></div>
+</div>
+</div>
+</header>
+<div id="subject-bar-mount"></div>
+<main class="trust-page"><div class="wrap trust-page-wrap">
+<div class="page-kicker">Privacy</div><h1>Local-first during Alpha.</h1>
+<p>Studo Alpha does not require a learner account. Answers, notes, highlights, review history, theme preferences, and practice signals are stored in the browser on the learner's own device.</p>
+<h2>No Studo learner database</h2>
+<p>The Alpha does not send practice history to a Studo-operated learner database. Clearing browser site data can remove local progress, so the Progress page includes a download-and-restore backup tool.</p>
+<h2>Hosting requests</h2>
+<p>The website is delivered through GitHub Pages, so normal requests for pages and files are handled by GitHub's infrastructure. The current interface also loads web fonts from Google Fonts. Studo code does not use advertising trackers or sell learner data.</p>
+<h2>Future changes</h2>
+<p>If accounts, cloud sync, analytics, payments, or other server features are added later, this policy must be updated before those features are enabled for learners.</p>
+</div></main>
+<footer class="site-footer"><div class="wrap"><span>Independent learning project.</span><nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -119,6 +119,32 @@
     }
   },
   {
+    "file": "generated/modules/rla-connotation-practice-1.json",
+    "title": "Connotation Practice 1",
+    "description": "4 short texts - 8 focused connotation questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Connotation"
+    }
+  },
+  {
+    "file": "generated/modules/rla-connotation-practice-2.json",
+    "title": "Connotation Practice 2",
+    "description": "4 short texts - 8 focused connotation questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Connotation"
+    }
+  },
+  {
     "file": "generated/modules/rla-explicit-meaning-practice-01.json",
     "title": "Explicit Meaning Practice 1",
     "description": "4 short texts · 8 explicit-meaning questions",
@@ -129,6 +155,32 @@
       "contentKind": "skill_drill",
       "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
       "topicLabel": "Explicit meaning"
+    }
+  },
+  {
+    "file": "generated/modules/rla-figurative-language-practice-1.json",
+    "title": "Figurative Language Practice 1",
+    "description": "4 short texts - 8 focused figurative language questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Figurative Language"
+    }
+  },
+  {
+    "file": "generated/modules/rla-figurative-language-practice-2.json",
+    "title": "Figurative Language Practice 2",
+    "description": "4 short texts - 8 focused figurative language questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Figurative Language"
     }
   },
   {
@@ -191,6 +243,32 @@
     }
   },
   {
+    "file": "generated/modules/rla-impact-of-word-choice-practice-1.json",
+    "title": "Impact of Word Choice Practice 1",
+    "description": "4 short texts - 8 focused impact of word choice questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Impact of Word Choice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-impact-of-word-choice-practice-2.json",
+    "title": "Impact of Word Choice Practice 2",
+    "description": "4 short texts - 8 focused impact of word choice questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Impact of Word Choice"
+    }
+  },
+  {
     "file": "generated/modules/rla-inference-practice-01.json",
     "title": "Inference Practice 1",
     "description": "4 short texts - 8 inference questions",
@@ -214,6 +292,32 @@
       "contentKind": "skill_drill",
       "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
       "topicLabel": "Main idea / central idea"
+    }
+  },
+  {
+    "file": "generated/modules/rla-meaning-in-context-practice-1.json",
+    "title": "Meaning in Context Practice 1",
+    "description": "4 short texts - 8 focused meaning in context questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Meaning in Context"
+    }
+  },
+  {
+    "file": "generated/modules/rla-meaning-in-context-practice-2.json",
+    "title": "Meaning in Context Practice 2",
+    "description": "4 short texts - 8 focused meaning in context questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Meaning in Context"
     }
   },
   {
@@ -274,6 +378,106 @@
       "contentKind": "passage_practice",
       "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
       "topicLabel": "Science passage set"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6c-blue-mug.json",
+    "title": "The Blue Mug",
+    "description": "Literary - Literary - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [
+        "R3.5",
+        "R3.3",
+        "R3.2",
+        "R3.1",
+        "R2.4",
+        "R1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6c-feedback-window.json",
+    "title": "A New Feedback Window",
+    "description": "Workplace - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R3.1",
+        "R2.3",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6c-market-roof.json",
+    "title": "The Roof Over Market Lane",
+    "description": "Community - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [
+        "R3.4",
+        "R3.5",
+        "R3.1",
+        "R3.3",
+        "R2.3",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6c-morning-fog.json",
+    "title": "Reading the Morning Fog",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [
+        "R3.1",
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R2.2",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6c-night-lighting.json",
+    "title": "When Streetlights Learn to Dim",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [
+        "R3.2",
+        "R3.4",
+        "R3.5",
+        "R3.3",
+        "R2.2",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
     }
   },
   {
@@ -339,6 +543,32 @@
       "contentKind": "skill_drill",
       "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
       "topicLabel": "Theme"
+    }
+  },
+  {
+    "file": "generated/modules/rla-tone-practice-1.json",
+    "title": "Tone Practice 1",
+    "description": "4 short texts - 8 focused tone questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Tone"
+    }
+  },
+  {
+    "file": "generated/modules/rla-tone-practice-2.json",
+    "title": "Tone Practice 2",
+    "description": "4 short texts - 8 focused tone questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Tone"
     }
   }
 ]

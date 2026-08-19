@@ -1,34 +1,82 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-18T02:02:39.899Z",
+  "builtAt": "2026-08-19T12:59:56.469Z",
   "publishedSourceSets": [
+    "set-rla-cause-effect-practice-01",
+    "set-rla-compare-practice-01",
+    "set-rla-conclusions-practice-01",
+    "set-rla-connotation-practice-1",
+    "set-rla-connotation-practice-2",
     "set-rla-evidence-last-bus",
     "set-rla-evidence-night-shift",
     "set-rla-explicit-meaning-practice-01",
+    "set-rla-figurative-language-practice-1",
+    "set-rla-figurative-language-practice-2",
     "set-rla-gold-literary-brass-key",
     "set-rla-gold-science-cool-roofs",
     "set-rla-gold-workplace-tool-library",
     "set-rla-grammar-precision-check",
     "set-rla-grammar-sentence-repair",
+    "set-rla-impact-of-word-choice-practice-1",
+    "set-rla-impact-of-word-choice-practice-2",
+    "set-rla-inference-practice-01",
     "set-rla-main-idea-practice-01",
+    "set-rla-meaning-in-context-practice-1",
+    "set-rla-meaning-in-context-practice-2",
+    "set-rla-p6b-library-lockers",
+    "set-rla-p6b-second-bell",
+    "set-rla-p6b-stream-restoration",
+    "set-rla-p6c-blue-mug",
+    "set-rla-p6c-feedback-window",
+    "set-rla-p6c-market-roof",
+    "set-rla-p6c-morning-fog",
+    "set-rla-p6c-night-lighting",
+    "set-rla-relationships-practice-01",
+    "set-rla-sequence-practice-01",
     "set-rla-summary-practice-01",
     "set-rla-supporting-details-practice-01",
     "set-rla-theme-practice-01",
+    "set-rla-tone-practice-1",
+    "set-rla-tone-practice-2",
     "set-rla-writing-library-hours"
   ],
   "generatedModules": [
+    "generated/modules/rla-cause-effect-practice-01.json",
+    "generated/modules/rla-compare-practice-01.json",
+    "generated/modules/rla-conclusions-practice-01.json",
+    "generated/modules/rla-connotation-practice-1.json",
+    "generated/modules/rla-connotation-practice-2.json",
     "generated/modules/evidence-transfer-practice.json",
     "generated/modules/evidence-practice.json",
     "generated/modules/rla-explicit-meaning-practice-01.json",
+    "generated/modules/rla-figurative-language-practice-1.json",
+    "generated/modules/rla-figurative-language-practice-2.json",
     "generated/modules/rla-gold-literary-brass-key.json",
     "generated/modules/rla-gold-science-cool-roofs.json",
     "generated/modules/rla-gold-workplace-tool-library.json",
     "generated/modules/grammar-transfer-practice.json",
     "generated/modules/grammar-practice.json",
+    "generated/modules/rla-impact-of-word-choice-practice-1.json",
+    "generated/modules/rla-impact-of-word-choice-practice-2.json",
+    "generated/modules/rla-inference-practice-01.json",
     "generated/modules/rla-main-idea-practice-01.json",
+    "generated/modules/rla-meaning-in-context-practice-1.json",
+    "generated/modules/rla-meaning-in-context-practice-2.json",
+    "generated/modules/rla-p6b-library-lockers.json",
+    "generated/modules/rla-p6b-second-bell.json",
+    "generated/modules/rla-p6b-stream-restoration.json",
+    "generated/modules/rla-p6c-blue-mug.json",
+    "generated/modules/rla-p6c-feedback-window.json",
+    "generated/modules/rla-p6c-market-roof.json",
+    "generated/modules/rla-p6c-morning-fog.json",
+    "generated/modules/rla-p6c-night-lighting.json",
+    "generated/modules/rla-relationships-practice-01.json",
+    "generated/modules/rla-sequence-practice-01.json",
     "generated/modules/rla-summary-practice-01.json",
     "generated/modules/rla-supporting-details-practice-01.json",
     "generated/modules/rla-theme-practice-01.json",
+    "generated/modules/rla-tone-practice-1.json",
+    "generated/modules/rla-tone-practice-2.json",
     "generated/modules/writing-practice.json"
   ],
   "curriculumFile": "data/generated/curriculum.json",
@@ -36,44 +84,9 @@
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family inference.character_or_event has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
-      "location": "set-rla-gold-literary-brass-key:q1"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family tone.identify has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
-      "location": "set-rla-gold-literary-brass-key:q3"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family wordchoice.impact has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
-      "location": "set-rla-gold-literary-brass-key:q4"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
       "message": "Family pov.multiple has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
       "location": "set-rla-gold-literary-brass-key:q5"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family cause.direct has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
-      "location": "set-rla-gold-science-cool-roofs:q2"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family context.word_meaning has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
-      "location": "set-rla-gold-science-cool-roofs:q3"
     },
     {
       "type": "warning",
@@ -85,23 +98,9 @@
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family conclusion.synthesize has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
-      "location": "set-rla-gold-science-cool-roofs:q6"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
       "message": "Family purpose.primary has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
       "location": "set-rla-gold-workplace-tool-library:q2"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family sequence.logic has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
-      "location": "set-rla-gold-workplace-tool-library:q3"
     },
     {
       "type": "warning",
@@ -113,9 +112,23 @@
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family context.phrase_meaning has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
-      "location": "set-rla-gold-workplace-tool-library:q6"
+      "message": "Family theme.central has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-p6c-blue-mug.json",
+      "location": "set-rla-p6c-blue-mug:q7"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family causeeffect.cause has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-p6c-morning-fog.json",
+      "location": "set-rla-p6c-morning-fog:q6"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family causeeffect.effect has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-p6c-night-lighting.json",
+      "location": "set-rla-p6c-night-lighting:q6"
     },
     {
       "type": "warning",

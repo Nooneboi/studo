@@ -66,7 +66,7 @@ function renderTopicResource(resource) {
   const href = resource.href || resource.path || "#";
   const external = /^https?:\/\//i.test(href);
   const type = ({pdf:"PDF",worksheet:"Practice workbook",study_guide:"Study guide",notes:"Notes",reference:"Reference",link:"Link",docx:"DOCX"})[resource.type] || "File";
-  return `<a class="topic-resource-link" href="${escapeAttr(href)}" ${resource.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
+  return `<a class="topic-resource-link" href="${escapeAttr(safeHref(href))}" ${resource.download !== false && !external ? "download" : ""} ${external ? 'target="_blank" rel="noopener"' : ""}>
     <span>${escapeHtml(type)}</span>
     <strong>${escapeHtml(resource.title)}</strong>
   </a>`;
@@ -74,3 +74,18 @@ function renderTopicResource(resource) {
 
 function escapeHtml(value) { const div=document.createElement("div"); div.textContent=value??""; return div.innerHTML; }
 function escapeAttr(value) { return escapeHtml(value).replace(/"/g,"&quot;"); }
+
+
+function safeHref(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "#";
+  if (raw.startsWith("#")) return raw;
+  try {
+    const parsed = new URL(raw, window.location.href);
+    if (!["http:", "https:"].includes(parsed.protocol)) return "#";
+    if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(raw)) return parsed.href;
+    return raw;
+  } catch (_) {
+    return "#";
+  }
+}

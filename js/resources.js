@@ -113,7 +113,7 @@ function resourceTile(resource) {
   const external = /^https?:\/\//i.test(href);
   const context = resource.skillLabel || resource.domainLabel || "RLA";
   return `
-    <a class="resource-tile ${kind.accent}" href="${escapeAttr(href)}" ${external ? 'target="_blank" rel="noopener"' : (resource.download !== false ? 'download' : '')}>
+    <a class="resource-tile ${kind.accent}" href="${escapeAttr(safeHref(href))}" ${external ? 'target="_blank" rel="noopener"' : (resource.download !== false ? 'download' : '')}>
       <div class="resource-tile-icon" aria-hidden="true">${iconSvg(kind.icon)}</div>
       <div class="resource-tile-label">${escapeHtml(kind.single)}</div>
       <strong>${escapeHtml(resource.title)}</strong>
@@ -129,3 +129,18 @@ function iconSvg(type) {
 
 function escapeHtml(str) { const div = document.createElement("div"); div.textContent = str ?? ""; return div.innerHTML; }
 function escapeAttr(str) { return escapeHtml(str).replace(/"/g, "&quot;"); }
+
+
+function safeHref(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "#";
+  if (raw.startsWith("#")) return raw;
+  try {
+    const parsed = new URL(raw, window.location.href);
+    if (!["http:", "https:"].includes(parsed.protocol)) return "#";
+    if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(raw)) return parsed.href;
+    return raw;
+  } catch (_) {
+    return "#";
+  }
+}

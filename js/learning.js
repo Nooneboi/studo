@@ -30,7 +30,7 @@ const Learning = (() => {
 
   function readState() {
     try {
-      const raw = localStorage.getItem(STATE_KEY);
+      const raw = window.StudoSafeStorage ? window.StudoSafeStorage.get(STATE_KEY) : localStorage.getItem(STATE_KEY);
       if (!raw) return emptyState();
       const state = JSON.parse(raw);
       return {
@@ -48,6 +48,7 @@ const Learning = (() => {
   function writeState(state) {
     try {
       state.version = STATE_VERSION;
+      if (window.StudoSafeStorage) { window.StudoSafeStorage.set(STATE_KEY, JSON.stringify(state)); return; }
       localStorage.setItem(STATE_KEY, JSON.stringify(state));
     } catch (e) {
       console.warn("Learning state write failed", e);
@@ -502,7 +503,8 @@ const Learning = (() => {
   }
 
   function clearLearningHistory() {
-    localStorage.removeItem(STATE_KEY);
+    if (window.StudoSafeStorage) window.StudoSafeStorage.remove(STATE_KEY);
+    else localStorage.removeItem(STATE_KEY);
   }
 
   function categoryLabel(category) {
