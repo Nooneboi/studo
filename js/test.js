@@ -139,10 +139,6 @@ function renderCurrentQuestion() {
 
   const stage = document.getElementById("question-stage");
   stage.innerHTML = `
-    <div class="question-topline">
-      <span class="question-number">Question ${currentIndex + 1}</span>
-      <span class="question-detail">${escapeHtml(questionDetail(item))}</span>
-    </div>
     <div class="q-prompt">${promptHtml}</div>
     <div data-role="answer-area"></div>
     <div class="explanation-box" data-role="explanation">${escapeHtml(q.explanation || "")}</div>
@@ -154,9 +150,9 @@ function renderCurrentQuestion() {
 
   const footer = document.getElementById("question-footer");
   footer.innerHTML = `
-    <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>&larr; Previous</button>
+    <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
     <span class="question-footer-position">${currentIndex + 1} / ${items.length}</span>
-    <button class="question-nav-btn primary" id="next-question">${currentIndex === items.length - 1 ? (submitted ? "Back to first" : "Review answers") : "Next"} &rarr;</button>
+    <button class="question-nav-btn primary" id="next-question">${currentIndex === items.length - 1 ? (submitted ? "Back to first" : "Review answers") : "Next"}</button>
   `;
 
   document.getElementById("prev-question").addEventListener("click", () => {
@@ -249,12 +245,28 @@ function renderPassage(module) {
     return;
   }
 
+  const meta = module.description ? module.description.replace(/\s+-\s+/g, " · ") : "";
   mount.innerHTML = `
-    <aside class="reading-panel" aria-label="Reading passage">
-      <div class="panel-kicker"><span>Passage</span><span>${escapeHtml(module.title)}</span></div>
-      <div class="reading-scroll"><div class="passage-text">${escapeHtml(module.passage)}</div></div>
-      ${module.source ? `<div class="source-credit">${escapeHtml(module.source)}</div>` : ""}
+    <aside class="reading-column test-reading-column" aria-label="Reading passage">
+      <header class="passage-heading passage-heading-test">
+        <h1>${escapeHtml(module.title)}</h1>
+        ${meta ? `<p>${escapeHtml(meta)}</p>` : ""}
+      </header>
+      <section class="reading-panel reading-panel-clean">
+        <div class="reading-scroll"><div class="passage-text passage-numbered">${renderPassageParagraphs(module.passage)}</div></div>
+        ${module.source ? `<div class="source-credit">${escapeHtml(module.source)}</div>` : ""}
+      </section>
     </aside>`;
+}
+
+function renderPassageParagraphs(text) {
+  const paragraphs = String(text || "").trim().split(/\n\s*\n+/).filter(Boolean);
+  if (paragraphs.length <= 1) return `<p class="passage-paragraph"><span class="passage-paragraph-number">1</span><span>${escapeHtml(text || "")}</span></p>`;
+  return paragraphs.map((paragraph, index) => `
+    <p class="passage-paragraph">
+      <span class="passage-paragraph-number">${index + 1}</span>
+      <span>${escapeHtml(paragraph)}</span>
+    </p>`).join("");
 }
 
 function questionDetail(item) {

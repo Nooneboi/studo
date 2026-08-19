@@ -46,7 +46,7 @@ async function init() {
   const exitLink = document.getElementById("focus-exit");
   if (exitLink) exitLink.href = backHref;
   const titleEl = document.getElementById("focus-title");
-  if (titleEl) titleEl.textContent = currentQuiz.title;
+  if (titleEl) titleEl.textContent = "Practice";
 
   const requestedQuestion = params.get("question");
   const available = activeQuestions();
@@ -71,36 +71,9 @@ function firstAvailableIndex() {
 
 function renderShell() {
   const hasPassage = Boolean(currentQuiz.passage);
-  const difficulty = currentQuiz.difficulty
-    ? `<span class="tag difficulty-pill">${escapeHtml(currentQuiz.difficulty)}</span>`
-    : "";
-  const topic = currentQuiz.topic
-    ? `<span class="tag">${escapeHtml(currentQuiz.topic)}</span>`
-    : "";
 
   viewEl.innerHTML = `
-    <div class="study-shell">
-      <section class="study-heading" aria-labelledby="module-heading">
-        <div>
-          <h1 id="module-heading">${escapeHtml(currentQuiz.title)}</h1>
-          ${currentQuiz.description ? `<p class="lede">${escapeHtml(currentQuiz.description)}</p>` : ""}
-        </div>
-        <div class="study-meta">
-          ${topic}${difficulty}
-          <div class="study-progress" aria-label="Module progress">
-            <div class="study-progress-row"><span id="progress-label">Question</span><span id="answered-label"></span></div>
-            <div class="study-progress-track" aria-hidden="true"><div class="study-progress-fill" id="progress-fill"></div></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="study-actions" aria-label="Practice controls">
-        <button id="notes-toggle" class="btn ghost small" aria-pressed="false">Notes</button>
-        <button id="reset-btn" class="btn ghost small">Reset progress</button>
-        <div class="spacer"></div>
-        <span class="study-status" id="study-status" aria-live="polite"></span>
-      </div>
-
+    <div class="study-shell study-shell-clean">
       <section class="study-workspace ${hasPassage ? "" : "no-passage"}" id="study-workspace">
         ${hasPassage ? passagePanelHtml() : ""}
         <article class="question-panel" aria-label="Question workspace">
@@ -111,35 +84,79 @@ function renderShell() {
     </div>
   `;
 
-  document.getElementById("notes-toggle").addEventListener("click", () => {
-    notesOpen = !notesOpen;
-    const btn = document.getElementById("notes-toggle");
-    btn.setAttribute("aria-pressed", String(notesOpen));
-    btn.classList.toggle("active", notesOpen);
-    renderCurrentQuestion({ preserveFocus: true });
-  });
+  const notesBtn = document.getElementById("notes-toggle");
+  if (notesBtn) {
+    notesBtn.addEventListener("click", () => {
+      notesOpen = !notesOpen;
+      notesBtn.setAttribute("aria-pressed", String(notesOpen));
+      notesBtn.classList.toggle("active", notesOpen);
+      renderCurrentQuestion({ preserveFocus: true });
+      closeToolsMenu();
+    });
+  }
 
-  document.getElementById("reset-btn").addEventListener("click", () => {
-    if (confirm("Clear answers, notes, highlights, and mastered questions for this module?")) {
-      Store.resetQuiz(currentQuiz.id);
-      currentIndex = 0;
-      notesOpen = false;
-      document.getElementById("notes-toggle").setAttribute("aria-pressed", "false");
+  const resetBtn = document.getElementById("reset-btn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      if (confirm("Clear answers, notes, highlights, and mastered questions for this practice?")) {
+        Store.resetQuiz(currentQuiz.id);
+        currentIndex = 0;
+        notesOpen = false;
+        if (notesBtn) {
+          notesBtn.setAttribute("aria-pressed", "false");
+          notesBtn.classList.remove("active");
+        }
+        renderCurrentQuestion();
+      }
+      closeToolsMenu();
+    });
+  }
+
+  const masterBtn = document.getElementById("master-current");
+  if (masterBtn) {
+    masterBtn.addEventListener("click", () => {
+      const current = activeQuestions()[currentIndex];
+      if (!current) return;
+      Store.setDeleted(currentQuiz.id, current.question.id, true);
+      const nextItems = activeQuestions();
+      if (currentIndex >= nextItems.length) currentIndex = Math.max(0, nextItems.length - 1);
       renderCurrentQuestion();
-    }
-  });
+      closeToolsMenu();
+    });
+  }
+}
+
+function closeToolsMenu() {
+  const menu = document.querySelector(".focus-tools-menu");
+  if (menu) menu.open = false;
 }
 
 function passagePanelHtml() {
+  const meta = currentQuiz.description || [currentQuiz.topic, `${activeQuestions().length} questions`].filter(Boolean).join(" · ");
   return `
-    <aside class="reading-panel" aria-label="Reading passage">
-      <div class="panel-kicker"><span>Passage</span><span>Read at your pace</span></div>
-      <div class="reading-scroll">
-        <div class="passage-text">${escapeHtml(currentQuiz.passage)}</div>
-      </div>
-      ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(currentQuiz.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)} ↗</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
+    <aside class="reading-column" aria-label="Reading passage">
+      <header class="passage-heading">
+        <h1>${escapeHtml(currentQuiz.title)}</h1>
+        ${meta ? `<p>${escapeHtml(meta.replace(/\s+-\s+/g, " · "))}</p>` : ""}
+      </header>
+      <section class="reading-panel reading-panel-clean">
+        <div class="reading-scroll">
+          <div class="passage-text passage-numbered">${renderPassageParagraphs(currentQuiz.passage)}</div>
+        </div>
+        ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(currentQuiz.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)}</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
+      </section>
     </aside>
   `;
+}
+
+function renderPassageParagraphs(text) {
+  const paragraphs = String(text || "").trim().split(/\n\s*\n+/).filter(Boolean);
+  if (paragraphs.length <= 1) return `<p class="passage-paragraph"><span class="passage-paragraph-number">1</span><span>${escapeHtml(text || "")}</span></p>`;
+  return paragraphs.map((paragraph, index) => `
+    <p class="passage-paragraph">
+      <span class="passage-paragraph-number">${index + 1}</span>
+      <span>${escapeHtml(paragraph)}</span>
+    </p>`).join("");
 }
 
 function renderCurrentQuestion(options = {}) {
@@ -178,9 +195,8 @@ function renderCurrentQuestion(options = {}) {
     : (highlights[q.id] || escapeHtml(q.prompt));
 
   stage.innerHTML = `
-    <div class="question-topline">
+    <div class="question-topline question-topline-clean">
       <span class="question-number">Question ${currentIndex + 1} of ${items.length}</span>
-      <span class="question-detail">${questionDetail(q)}</span>
     </div>
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     <div data-role="answer-area"></div>
@@ -221,10 +237,9 @@ function renderCurrentQuestion(options = {}) {
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer);
 
   footer.innerHTML = `
-    <button class="btn ghost" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>&larr; Previous</button>
-    <button class="btn ghost master-btn" id="master-question" aria-pressed="false">Mark mastered</button>
-    <div class="spacer"></div>
-    <button class="btn" id="next-question">${currentIndex === items.length - 1 ? "Finish" : "Next"} &rarr;</button>
+    <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
+    <span class="question-footer-position">${currentIndex + 1} / ${items.length}</span>
+    <button class="question-nav-btn primary" id="next-question">${currentIndex === items.length - 1 ? "Finish" : "Next"}</button>
   `;
 
   document.getElementById("prev-question").addEventListener("click", () => {
@@ -240,13 +255,6 @@ function renderCurrentQuestion(options = {}) {
     } else {
       showCompletionSummary();
     }
-  });
-  document.getElementById("master-question").addEventListener("click", () => {
-    Store.setDeleted(currentQuiz.id, q.id, true);
-    const nextItems = activeQuestions();
-    if (currentIndex >= nextItems.length) currentIndex = Math.max(0, nextItems.length - 1);
-    setStatus("Marked as mastered.");
-    renderCurrentQuestion();
   });
 
   updateProgress(items, currentIndex);
@@ -560,40 +568,12 @@ function setupMistakeReason(question, correct, learningResult) {
 }
 
 function updateProgress(items, index) {
-  const progressLabel = document.getElementById("progress-label");
-  const answeredLabel = document.getElementById("answered-label");
   const fill = document.getElementById("progress-fill");
-  if (!progressLabel || !answeredLabel || !fill) return;
-
-  if (!items.length) {
-    progressLabel.textContent = "Complete";
-    answeredLabel.textContent = "100%";
-    fill.style.width = "100%";
-    return;
-  }
-
-  const answers = Store.getAnswers(currentQuiz.id);
-  const answered = items.filter(({ question }) => Boolean(answers[question.id])).length;
-  progressLabel.textContent = `Question ${index + 1} of ${items.length}`;
-  answeredLabel.textContent = `${answered} answered`;
-  fill.style.width = `${((index + 1) / items.length) * 100}%`;
+  if (fill && items.length) fill.style.width = `${((index + 1) / items.length) * 100}%`;
 }
 
 function updateAnswerStatus() {
-  const items = activeQuestions();
-  const answers = Store.getAnswers(currentQuiz.id);
-  const answered = items.filter(({ question }) => Boolean(answers[question.id])).length;
-  const auto = items.filter(({ question }) => isAutoGraded(question));
-  let earned = 0;
-  let total = 0;
-  auto.forEach(({ question }) => {
-    const pts = question.points || 1;
-    total += pts;
-    if (isCorrectAnswer(question, answers[question.id])) earned += pts;
-  });
-  const scoreText = total ? ` · ${earned}/${total} auto-graded pts` : "";
-  setStatus(`${answered}/${items.length} answered${scoreText}`, false);
-  updateProgress(items, currentIndex);
+  updateProgress(activeQuestions(), currentIndex);
 }
 
 function isAutoGraded(q) {
@@ -621,15 +601,14 @@ function showCompletionSummary() {
       <p>${answered} of ${items.length} questions have an answer saved on this device. You can review anything before leaving.</p>
     </div>`;
   footer.innerHTML = `
-    <button class="btn ghost" id="review-first">Review from start</button>
-    <div class="spacer"></div>
-    <a class="btn" href="${escapeAttr(document.getElementById("focus-exit").href)}">Back to practice</a>`;
+    <button class="question-nav-btn secondary" id="review-first">Review from start</button>
+    <span class="question-footer-position">Complete</span>
+    <a class="question-nav-btn primary" href="${escapeAttr(document.getElementById("focus-exit").href)}">Back to practice</a>`;
   document.getElementById("review-first").addEventListener("click", () => {
     currentIndex = 0;
     renderCurrentQuestion();
   });
-  document.getElementById("progress-fill").style.width = "100%";
-  document.getElementById("progress-label").textContent = "Review complete";
+
 }
 
 function setStatus(message, temporary = true) {

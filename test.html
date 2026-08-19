@@ -11,7 +11,6 @@
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body class="focus-body test-body">
@@ -20,15 +19,12 @@
   <div class="focus-wrap test-appbar-inner">
     <div class="test-appbar-left">
       <a href="quiz.html" class="focus-exit" id="focus-exit" aria-label="Exit test">&larr; Exit</a>
-      <div class="test-appbar-heading">
-        <strong class="focus-title" id="focus-title" aria-live="polite">Test</strong>
-        <span class="test-header-progress" id="progress-label">Question 1</span>
-        <span class="test-header-dot" aria-hidden="true">•</span>
-        <span class="test-header-progress" id="answered-label">0 answered</span>
-      </div>
     </div>
 
+    <strong class="focus-title test-appbar-title" id="focus-title" aria-live="polite">Test</strong>
+
     <div class="test-appbar-actions" aria-label="Test controls">
+      <span class="test-header-progress test-question-count" id="progress-label">Question 1</span>
       <div class="timer-picker">
         <button id="timer-picker-btn" class="test-timer-control" title="Time limit" aria-haspopup="true" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
@@ -74,7 +70,6 @@
 
 <main class="focus-main test-main">
   <div class="focus-wrap">
-    <div class="test-session-note">Answers and explanations stay hidden until you submit.</div>
     <div id="results-mount"></div>
     <div id="test-view"></div>
     <div class="study-status test-status" id="test-status" aria-live="polite"></div>
