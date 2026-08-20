@@ -1,7 +1,9 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-19T12:59:56.469Z",
+  "builtAt": "2026-08-19T15:57:16.857Z",
   "publishedSourceSets": [
+    "set-rla-author-purpose-practice-1",
+    "set-rla-author-purpose-practice-2",
     "set-rla-cause-effect-practice-01",
     "set-rla-compare-practice-01",
     "set-rla-conclusions-practice-01",
@@ -31,16 +33,33 @@
     "set-rla-p6c-market-roof",
     "set-rla-p6c-morning-fog",
     "set-rla-p6c-night-lighting",
+    "set-rla-p6d-last-map-on-wall",
+    "set-rla-p6d-library-without-late-fees",
+    "set-rla-p6d-mangroves-move-back",
+    "set-rla-p6d-quiet-car-experiment",
+    "set-rla-p6d-two-minutes-of-shade",
+    "set-rla-paragraph-section-function-practice-1",
+    "set-rla-paragraph-section-function-practice-2",
+    "set-rla-point-of-view-perspective-practice-1",
+    "set-rla-point-of-view-perspective-practice-2",
     "set-rla-relationships-practice-01",
+    "set-rla-rhetorical-technique-practice-1",
+    "set-rla-rhetorical-technique-practice-2",
     "set-rla-sequence-practice-01",
     "set-rla-summary-practice-01",
     "set-rla-supporting-details-practice-01",
+    "set-rla-text-structure-practice-1",
+    "set-rla-text-structure-practice-2",
     "set-rla-theme-practice-01",
     "set-rla-tone-practice-1",
     "set-rla-tone-practice-2",
+    "set-rla-transitions-signal-words-practice-1",
+    "set-rla-transitions-signal-words-practice-2",
     "set-rla-writing-library-hours"
   ],
   "generatedModules": [
+    "generated/modules/rla-author-purpose-practice-1.json",
+    "generated/modules/rla-author-purpose-practice-2.json",
     "generated/modules/rla-cause-effect-practice-01.json",
     "generated/modules/rla-compare-practice-01.json",
     "generated/modules/rla-conclusions-practice-01.json",
@@ -70,45 +89,32 @@
     "generated/modules/rla-p6c-market-roof.json",
     "generated/modules/rla-p6c-morning-fog.json",
     "generated/modules/rla-p6c-night-lighting.json",
+    "generated/modules/rla-p6d-last-map-on-wall.json",
+    "generated/modules/rla-p6d-library-without-late-fees.json",
+    "generated/modules/rla-p6d-mangroves-move-back.json",
+    "generated/modules/rla-p6d-quiet-car-experiment.json",
+    "generated/modules/rla-p6d-two-minutes-of-shade.json",
+    "generated/modules/rla-paragraph-section-function-practice-1.json",
+    "generated/modules/rla-paragraph-section-function-practice-2.json",
+    "generated/modules/rla-point-of-view-perspective-practice-1.json",
+    "generated/modules/rla-point-of-view-perspective-practice-2.json",
     "generated/modules/rla-relationships-practice-01.json",
+    "generated/modules/rla-rhetorical-technique-practice-1.json",
+    "generated/modules/rla-rhetorical-technique-practice-2.json",
     "generated/modules/rla-sequence-practice-01.json",
     "generated/modules/rla-summary-practice-01.json",
     "generated/modules/rla-supporting-details-practice-01.json",
+    "generated/modules/rla-text-structure-practice-1.json",
+    "generated/modules/rla-text-structure-practice-2.json",
     "generated/modules/rla-theme-practice-01.json",
     "generated/modules/rla-tone-practice-1.json",
     "generated/modules/rla-tone-practice-2.json",
+    "generated/modules/rla-transitions-signal-words-practice-1.json",
+    "generated/modules/rla-transitions-signal-words-practice-2.json",
     "generated/modules/writing-practice.json"
   ],
   "curriculumFile": "data/generated/curriculum.json",
   "warnings": [
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family pov.multiple has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-literary-brass-key.json",
-      "location": "set-rla-gold-literary-brass-key:q5"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family function.paragraph has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-science-cool-roofs.json",
-      "location": "set-rla-gold-science-cool-roofs:q4"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family purpose.primary has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
-      "location": "set-rla-gold-workplace-tool-library:q2"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family structure.identify has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-gold-workplace-tool-library.json",
-      "location": "set-rla-gold-workplace-tool-library:q5"
-    },
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
@@ -129,6 +135,27 @@
       "message": "Family causeeffect.effect has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-p6c-night-lighting.json",
       "location": "set-rla-p6c-night-lighting:q6"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family theme.infer has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-p6d-last-map-on-wall.json",
+      "location": "set-rla-p6d-last-map-on-wall:q6"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family context.word.meaning has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-p6d-mangroves-move-back.json",
+      "location": "set-rla-p6d-mangroves-move-back:q3"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family cause.effect has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-p6d-mangroves-move-back.json",
+      "location": "set-rla-p6d-mangroves-move-back:q7"
     },
     {
       "type": "warning",

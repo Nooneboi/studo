@@ -80,6 +80,32 @@
     }
   },
   {
+    "file": "generated/modules/rla-author-purpose-practice-1.json",
+    "title": "Author purpose Practice 1",
+    "description": "4 short texts - 8 focused author purpose questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Author purpose"
+    }
+  },
+  {
+    "file": "generated/modules/rla-author-purpose-practice-2.json",
+    "title": "Author purpose Practice 2",
+    "description": "4 short texts - 8 focused author purpose questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Author purpose"
+    }
+  },
+  {
     "file": "generated/modules/rla-cause-effect-practice-01.json",
     "title": "Cause and Effect Practice 1",
     "description": "4 short texts - 8 cause-and-effect questions",
@@ -481,6 +507,158 @@
     }
   },
   {
+    "file": "generated/modules/rla-p6d-last-map-on-wall.json",
+    "title": "The Last Map on the Wall",
+    "description": "Literary - Literary - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.6",
+        "R4.4",
+        "R4.3",
+        "R1.5",
+        "R2.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6d-library-without-late-fees.json",
+    "title": "A Library Without Late Fees",
+    "description": "Community - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R4.3",
+        "R2.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6d-mangroves-move-back.json",
+    "title": "When Mangroves Move Back",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [
+        "R4.1",
+        "R3.1",
+        "R4.4",
+        "R4.6",
+        "R4.5",
+        "R2.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6d-quiet-car-experiment.json",
+    "title": "The Quiet Car Experiment",
+    "description": "Workplace - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [
+        "R4.2",
+        "R4.3",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R2.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-p6d-two-minutes-of-shade.json",
+    "title": "Two Minutes of Shade",
+    "description": "Community - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.6",
+        "R4.5",
+        "R4.3",
+        "R4.2",
+        "R2.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    }
+  },
+  {
+    "file": "generated/modules/rla-paragraph-section-function-practice-1.json",
+    "title": "Paragraph / section function Practice 1",
+    "description": "4 short texts - 8 focused paragraph / section function questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Paragraph / section function"
+    }
+  },
+  {
+    "file": "generated/modules/rla-paragraph-section-function-practice-2.json",
+    "title": "Paragraph / section function Practice 2",
+    "description": "4 short texts - 8 focused paragraph / section function questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Paragraph / section function"
+    }
+  },
+  {
+    "file": "generated/modules/rla-point-of-view-perspective-practice-1.json",
+    "title": "Point of view / perspective Practice 1",
+    "description": "4 short texts - 8 focused point of view / perspective questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Point of view / perspective"
+    }
+  },
+  {
+    "file": "generated/modules/rla-point-of-view-perspective-practice-2.json",
+    "title": "Point of view / perspective Practice 2",
+    "description": "4 short texts - 8 focused point of view / perspective questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Point of view / perspective"
+    }
+  },
+  {
     "file": "generated/modules/rla-relationships-practice-01.json",
     "title": "Relationships Practice 1",
     "description": "4 short texts - 8 relationship questions",
@@ -491,6 +669,32 @@
       "contentKind": "skill_drill",
       "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
       "topicLabel": "Relationships among people, events & ideas"
+    }
+  },
+  {
+    "file": "generated/modules/rla-rhetorical-technique-practice-1.json",
+    "title": "Rhetorical technique Practice 1",
+    "description": "4 short texts - 8 focused rhetorical technique questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Rhetorical technique"
+    }
+  },
+  {
+    "file": "generated/modules/rla-rhetorical-technique-practice-2.json",
+    "title": "Rhetorical technique Practice 2",
+    "description": "4 short texts - 8 focused rhetorical technique questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Rhetorical technique"
     }
   },
   {
@@ -533,6 +737,32 @@
     }
   },
   {
+    "file": "generated/modules/rla-text-structure-practice-1.json",
+    "title": "Text structure Practice 1",
+    "description": "4 short texts - 8 focused text structure questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Text structure"
+    }
+  },
+  {
+    "file": "generated/modules/rla-text-structure-practice-2.json",
+    "title": "Text structure Practice 2",
+    "description": "4 short texts - 8 focused text structure questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Text structure"
+    }
+  },
+  {
     "file": "generated/modules/rla-theme-practice-01.json",
     "title": "Theme Practice 1",
     "description": "4 literary texts · 8 theme questions",
@@ -569,6 +799,32 @@
       "contentKind": "skill_drill",
       "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
       "topicLabel": "Tone"
+    }
+  },
+  {
+    "file": "generated/modules/rla-transitions-signal-words-practice-1.json",
+    "title": "Transitions & signal words Practice 1",
+    "description": "4 short texts - 8 focused transitions & signal words questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Transitions & signal words"
+    }
+  },
+  {
+    "file": "generated/modules/rla-transitions-signal-words-practice-2.json",
+    "title": "Transitions & signal words Practice 2",
+    "description": "4 short texts - 8 focused transitions & signal words questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Transitions & signal words"
     }
   }
 ]

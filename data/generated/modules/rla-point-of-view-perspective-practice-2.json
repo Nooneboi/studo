@@ -1,0 +1,487 @@
+{
+  "id": "rla-point-of-view-perspective-practice-2",
+  "title": "Point of view / perspective Practice 2",
+  "description": "4 short texts - 8 focused point of view / perspective questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Point of view / perspective",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Lost Key\n\nI watched Arun search every pocket twice. He laughed when I offered to help, but because he kept glancing toward the locked office, I suspected he was more worried than he sounded.\n\nTEXT B - River Project\n\nEngineers say a new floodwall would protect several low streets. Environmental groups argue that restoring wetland space could reduce water levels while providing habitat.\n\nTEXT C - Gallery Review\n\nThe critic praises the exhibition's dim lighting as intimate. A visitor quoted later says the same lighting makes labels difficult to read.\n\nTEXT D - Lunch Policy\n\nThe principal supports a shorter lunch line because it gives students more time to eat. A cafeteria worker agrees with the goal but says the proposed layout could block access to storage.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the perspective or perspectives in this text?",
+      "points": 1,
+      "explanation": "The narrator can observe Arun and make an inference but cannot know his private feeling with certainty.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The narrator can observe Arun and make an inference but cannot know his private feeling with certainty."
+        },
+        {
+          "id": "b",
+          "text": "Every person in the text emphasizes exactly the same concern.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The author or narrator has complete access to every person's private thoughts.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The text gives an opinion unrelated to the issue being discussed.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of presenting the text from this perspective or set of perspectives?",
+      "points": 1,
+      "explanation": "First-person observation creates a distinction between what is seen and what is inferred.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It removes all uncertainty and disagreement from the text.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "First-person observation creates a distinction between what is seen and what is inferred."
+        },
+        {
+          "id": "c",
+          "text": "It proves one viewpoint is correct without evidence.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It prevents readers from understanding any difference in priorities.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the perspective or perspectives in this text?",
+      "points": 1,
+      "explanation": "The groups emphasize different approaches to flood protection: engineered barrier versus ecological restoration.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every person in the text emphasizes exactly the same concern.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The author or narrator has complete access to every person's private thoughts.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The groups emphasize different approaches to flood protection: engineered barrier versus ecological restoration."
+        },
+        {
+          "id": "d",
+          "text": "The text gives an opinion unrelated to the issue being discussed.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of presenting the text from this perspective or set of perspectives?",
+      "points": 1,
+      "explanation": "The contrast helps readers see competing strategies rather than a single agreed solution.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It removes all uncertainty and disagreement from the text.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It proves one viewpoint is correct without evidence.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It prevents readers from understanding any difference in priorities.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The contrast helps readers see competing strategies rather than a single agreed solution."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the perspective or perspectives in this text?",
+      "points": 1,
+      "explanation": "The critic values atmosphere; the visitor emphasizes readability.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The critic values atmosphere; the visitor emphasizes readability."
+        },
+        {
+          "id": "b",
+          "text": "Every person in the text emphasizes exactly the same concern.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The author or narrator has complete access to every person's private thoughts.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The text gives an opinion unrelated to the issue being discussed.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of presenting the text from this perspective or set of perspectives?",
+      "points": 1,
+      "explanation": "The two responses show that one design choice can create both aesthetic appeal and practical difficulty.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It removes all uncertainty and disagreement from the text.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The two responses show that one design choice can create both aesthetic appeal and practical difficulty."
+        },
+        {
+          "id": "c",
+          "text": "It proves one viewpoint is correct without evidence.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It prevents readers from understanding any difference in priorities.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the perspective or perspectives in this text?",
+      "points": 1,
+      "explanation": "Both support reducing wait time, but the worker focuses on operational constraints.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every person in the text emphasizes exactly the same concern.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The author or narrator has complete access to every person's private thoughts.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "Both support reducing wait time, but the worker focuses on operational constraints."
+        },
+        {
+          "id": "d",
+          "text": "The text gives an opinion unrelated to the issue being discussed.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of presenting the text from this perspective or set of perspectives?",
+      "points": 1,
+      "explanation": "The shared goal plus practical disagreement makes the perspectives partly aligned rather than simply opposite.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It removes all uncertainty and disagreement from the text.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It proves one viewpoint is correct without evidence.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It prevents readers from understanding any difference in priorities.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The shared goal plus practical disagreement makes the perspectives partly aligned rather than simply opposite."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-point-of-view-perspective-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Point of view / perspective"
+    },
+    "passage": {
+      "id": "p-rla-point-of-view-perspective-practice-2",
+      "title": "Point of view / perspective Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.842Z"
+  }
+}

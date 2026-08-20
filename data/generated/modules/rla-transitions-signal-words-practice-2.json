@@ -1,0 +1,487 @@
+{
+  "id": "rla-transitions-signal-words-practice-2",
+  "title": "Transitions & signal words Practice 2",
+  "description": "4 short texts - 8 focused transitions & signal words questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Transitions & signal words",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Clinic Hours\n\nThe clinic opened one evening each week. appointments became available to more patients who work during the day.\n\nTEXT B - Trail Signs\n\nThe park replaced several faded trail signs. one new sign includes a map showing the distance to the lake.\n\nTEXT C - Workshop Seats\n\nThe repair workshop is free. registration is required because only twenty workbenches are available.\n\nTEXT D - Water Test\n\nResearchers measured water temperature at five sites. they recorded dissolved oxygen and stream depth at the same locations.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which transition best connects these ideas? \"The clinic opened one evening each week. _____, appointments became available to more patients who work during the day.\"",
+      "points": 1,
+      "explanation": "Greater availability is presented as a result of evening hours.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.best_fit",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Consequently"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "As a result",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "For example",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What relationship should the transition signal?",
+      "points": 1,
+      "explanation": "Greater availability is presented as a result of evening hours.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "simple addition with no contrast or cause",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "result"
+        },
+        {
+          "id": "c",
+          "text": "an example of the first idea",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "a chronological step with no logical relationship",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which transition best connects these ideas? \"The park replaced several faded trail signs. _____, one new sign includes a map showing the distance to the lake.\"",
+      "points": 1,
+      "explanation": "The second sentence gives a specific example of the new signage.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.best_fit",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "However",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "As a result",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "For example"
+        },
+        {
+          "id": "d",
+          "text": "In addition",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What relationship should the transition signal?",
+      "points": 1,
+      "explanation": "The second sentence gives a specific example of the new signage.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "simple addition with no contrast or cause",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "an example of the first idea",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "a chronological step with no logical relationship",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "example"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which transition best connects these ideas? \"The repair workshop is free. _____, registration is required because only twenty workbenches are available.\"",
+      "points": 1,
+      "explanation": "The registration requirement limits the otherwise open access.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.best_fit",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Nevertheless"
+        },
+        {
+          "id": "b",
+          "text": "However",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "As a result",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "For example",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What relationship should the transition signal?",
+      "points": 1,
+      "explanation": "The registration requirement limits the otherwise open access.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "simple addition with no contrast or cause",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "contrast / qualification"
+        },
+        {
+          "id": "c",
+          "text": "an example of the first idea",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "a chronological step with no logical relationship",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which transition best connects these ideas? \"Researchers measured water temperature at five sites. _____, they recorded dissolved oxygen and stream depth at the same locations.\"",
+      "points": 1,
+      "explanation": "The second sentence adds more measurements to the same study.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.best_fit",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "However",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "As a result",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "Additionally"
+        },
+        {
+          "id": "d",
+          "text": "For example",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What relationship should the transition signal?",
+      "points": 1,
+      "explanation": "The second sentence adds more measurements to the same study.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "simple addition with no contrast or cause",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "an example of the first idea",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "a chronological step with no logical relationship",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "addition"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-transitions-signal-words-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Transitions & signal words"
+    },
+    "passage": {
+      "id": "p-rla-transitions-signal-words-practice-2",
+      "title": "Transitions & signal words Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.845Z"
+  }
+}

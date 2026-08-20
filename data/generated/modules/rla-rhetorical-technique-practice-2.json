@@ -1,0 +1,487 @@
+{
+  "id": "rla-rhetorical-technique-practice-2",
+  "title": "Rhetorical technique Practice 2",
+  "description": "4 short texts - 8 focused rhetorical technique questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Rhetorical technique",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Before and After\n\nA photo essay shows the same vacant lot before cleanup and six months after it became a small community garden.\n\nTEXT B - Training Analogy\n\nThe instructor compares a safety checklist to a pilot's preflight routine: both are meant to catch small problems before they become serious.\n\nTEXT C - Bus Data\n\nA proposal notes that 41 percent of surveyed late-shift workers reported missing the final bus at least once in the previous month.\n\nTEXT D - Repair Urgency\n\n\"Fix the leak before the ceiling stains spread. Fix the wiring before another breaker fails. Fix the building while it is still repairable.\"",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which rhetorical technique is most important in this example?",
+      "points": 1,
+      "explanation": "The writer uses visual contrast.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "visual contrast"
+        },
+        {
+          "id": "b",
+          "text": "a definition used only to introduce vocabulary",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "a chronological list of unrelated events",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "a neutral transition with no rhetorical effect",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What does the technique accomplish in this text?",
+      "points": 1,
+      "explanation": "The before-and-after comparison makes the physical change immediately visible.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.argument",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves a broader claim that the example cannot establish.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The before-and-after comparison makes the physical change immediately visible."
+        },
+        {
+          "id": "c",
+          "text": "It changes the topic instead of developing the writer's point.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which rhetorical technique is most important in this example?",
+      "points": 1,
+      "explanation": "The writer uses analogy.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "a definition used only to introduce vocabulary",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "a chronological list of unrelated events",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "analogy"
+        },
+        {
+          "id": "d",
+          "text": "a neutral transition with no rhetorical effect",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What does the technique accomplish in this text?",
+      "points": 1,
+      "explanation": "The familiar comparison explains why repeating a checklist can be valuable even when the task feels routine.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.argument",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves a broader claim that the example cannot establish.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It changes the topic instead of developing the writer's point.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The familiar comparison explains why repeating a checklist can be valuable even when the task feels routine."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which rhetorical technique is most important in this example?",
+      "points": 1,
+      "explanation": "The writer uses statistic.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "statistic"
+        },
+        {
+          "id": "b",
+          "text": "a definition used only to introduce vocabulary",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "a chronological list of unrelated events",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "a neutral transition with no rhetorical effect",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What does the technique accomplish in this text?",
+      "points": 1,
+      "explanation": "The percentage gives numerical evidence that missed late service affects a sizable group in the survey.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.argument",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves a broader claim that the example cannot establish.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The percentage gives numerical evidence that missed late service affects a sizable group in the survey."
+        },
+        {
+          "id": "c",
+          "text": "It changes the topic instead of developing the writer's point.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which rhetorical technique is most important in this example?",
+      "points": 1,
+      "explanation": "The writer uses repetition and parallel structure.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "a definition used only to introduce vocabulary",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "a chronological list of unrelated events",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "repetition and parallel structure"
+        },
+        {
+          "id": "d",
+          "text": "a neutral transition with no rhetorical effect",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What does the technique accomplish in this text?",
+      "points": 1,
+      "explanation": "The repeated command builds urgency and links several maintenance problems into one call for action.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.argument",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves a broader claim that the example cannot establish.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It changes the topic instead of developing the writer's point.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The repeated command builds urgency and links several maintenance problems into one call for action."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-rhetorical-technique-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Rhetorical technique"
+    },
+    "passage": {
+      "id": "p-rla-rhetorical-technique-practice-2",
+      "title": "Rhetorical technique Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.843Z"
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "id": "rla-text-structure-practice-2",
+  "title": "Text structure Practice 2",
+  "description": "4 short texts - 8 focused text structure questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Text structure",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Flood Alerts\n\nResidents near a creek often received warnings after water had already covered one road. The town installed an upstream sensor linked to automatic text alerts. During later storms, messages arrived earlier.\n\nTEXT B - Study Pods\n\nThe library offers open tables for group work, enclosed pods for calls, and silent desks along the back wall. Each space is described by noise level and typical use.\n\nTEXT C - Pavement and Runoff\n\nPaved surfaces prevent much rain from soaking into soil. More water then flows across the surface into drains, which can raise peak runoff during intense storms.\n\nTEXT D - Market Options\n\nA market can extend hours every evening or only on Fridays and Saturdays. The report compares staffing cost, expected customer traffic, and vendor interest before recommending weekend evenings.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which text structure best describes this passage?",
+      "points": 1,
+      "explanation": "The ideas are organized as problem / solution.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "problem / solution"
+        },
+        {
+          "id": "b",
+          "text": "compare / contrast",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "sequence / process",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "classification / description",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How does that structure help develop the passage?",
+      "points": 1,
+      "explanation": "The structure links a timing problem with the new alert system and its result.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It hides the relationship among the main ideas.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The structure links a timing problem with the new alert system and its result."
+        },
+        {
+          "id": "c",
+          "text": "It arranges details without helping readers understand how they connect.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It mainly creates suspense rather than explaining the topic.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which text structure best describes this passage?",
+      "points": 1,
+      "explanation": "The ideas are organized as classification / description.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "cause / effect",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "compare / contrast",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "classification / description"
+        },
+        {
+          "id": "d",
+          "text": "problem / solution",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does that structure help develop the passage?",
+      "points": 1,
+      "explanation": "Grouping spaces by type helps readers choose a setting that fits their activity.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It hides the relationship among the main ideas.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It arranges details without helping readers understand how they connect.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It mainly creates suspense rather than explaining the topic.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "Grouping spaces by type helps readers choose a setting that fits their activity."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which text structure best describes this passage?",
+      "points": 1,
+      "explanation": "The ideas are organized as cause / effect.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "cause / effect"
+        },
+        {
+          "id": "b",
+          "text": "compare / contrast",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "sequence / process",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "classification / description",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does that structure help develop the passage?",
+      "points": 1,
+      "explanation": "The organization traces how pavement can lead to greater runoff.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It hides the relationship among the main ideas.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The organization traces how pavement can lead to greater runoff."
+        },
+        {
+          "id": "c",
+          "text": "It arranges details without helping readers understand how they connect.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It mainly creates suspense rather than explaining the topic.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which text structure best describes this passage?",
+      "points": 1,
+      "explanation": "The ideas are organized as compare / contrast leading to recommendation.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "cause / effect",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "sequence / process",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "compare / contrast leading to recommendation"
+        },
+        {
+          "id": "d",
+          "text": "classification only",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "How does that structure help develop the passage?",
+      "points": 1,
+      "explanation": "Using the same criteria for both choices supports a reasoned recommendation.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It hides the relationship among the main ideas.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It arranges details without helping readers understand how they connect.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It mainly creates suspense rather than explaining the topic.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "Using the same criteria for both choices supports a reasoned recommendation."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-text-structure-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Text structure"
+    },
+    "passage": {
+      "id": "p-rla-text-structure-practice-2",
+      "title": "Text structure Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.844Z"
+  }
+}

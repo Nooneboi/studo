@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6d-mangroves-move-back",
+  "title": "When Mangroves Move Back",
+  "description": "Science - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Along many tropical coasts, mangrove forests grow where land and sea meet. Their tangled roots can slow waves, trap sediment, and create sheltered habitat for young fish and crabs. Yet mangroves do not remain fixed in one narrow strip forever. As shorelines change, the forests may expand, retreat, or shift inland.\n\nOn a low-lying coast, rising sea level can gradually cover the seaward edge of a mangrove forest for longer periods each day. If open land exists behind the forest, new mangrove seedlings may establish farther inland. Over decades, the forest can appear to \"move\" landward even though individual trees remain rooted in place. This process is sometimes called inland migration.\n\nWhether migration is possible depends heavily on what lies behind the current forest. A field, an undeveloped wetland, or gently rising ground may leave room for new trees. A seawall, road, building, or steep embankment can block that movement. Researchers sometimes call this situation coastal squeeze: water advances from one side while development prevents the habitat from shifting in the other direction.\n\nScientists study this process with old aerial photographs, satellite images, elevation maps, and field measurements. Comparing images from different years can show where tree cover has appeared or disappeared. Elevation data help researchers estimate which inland areas may become wet enough for mangroves in the future. Field surveys then confirm whether seedlings are actually establishing in those places.\n\nThe findings do not mean that every inland field should immediately become mangrove forest. Communities use coastal land for homes, farms, roads, and recreation, and those needs cannot simply be ignored. Instead, some planners use migration maps when deciding where future development should occur or where conservation agreements might preserve open space.\n\nMigration maps can also help planners compare choices before construction begins. Leaving a low strip of land undeveloped, for example, may preserve a future pathway without changing how the existing forest is managed today. Researchers caution that maps are projections rather than promises: storms, sediment supply, water quality, and local elevation can all affect where new trees actually survive.\n\nThe key idea is that protecting a mangrove forest may require thinking beyond the trees that exist today. If coastlines keep changing, the space behind the forest can become part of the forest's future. Planning for that possibility does not guarantee that mangroves will survive every change, but it can remove one obstacle to their natural movement.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "How does the passage's organization help develop its central idea?",
+      "points": 1,
+      "explanation": "The sections build from process to obstacle to evidence to practical planning, supporting the idea that future space matters.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It defines inland migration, explains what can block it, describes how it is studied, and connects the findings to planning."
+        },
+        {
+          "id": "b",
+          "text": "It lists mangrove species alphabetically.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It presents events only in the order one scientist experienced them.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It compares mangroves with coral reefs throughout.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of paragraph 3?",
+      "points": 1,
+      "explanation": "Paragraph 3 explains how development or steep land can block the forest from shifting inland.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to describe how satellite cameras are built",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to explain a condition that can prevent inland migration"
+        },
+        {
+          "id": "c",
+          "text": "to argue that all roads should be removed",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to summarize the passage's conclusion",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What does \"coastal squeeze\" mean as used in paragraph 3?",
+      "points": 1,
+      "explanation": "The paragraph directly explains water advancing from one side while development blocks movement from the other.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "context.word.meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "a method for pressing water out of soil",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "a storm that destroys every coastal building",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "a situation in which habitat is trapped between advancing water and barriers to inland movement"
+        },
+        {
+          "id": "d",
+          "text": "a technique for measuring tree height",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the author mention homes, farms, roads, and recreation in paragraph 5?",
+      "points": 1,
+      "explanation": "The list acknowledges competing land uses and keeps the planning discussion balanced.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to prove mangroves cannot grow near people",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to explain how to build a seawall",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to show that field surveys are unnecessary",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to acknowledge that coastal planning must consider human uses as well as habitat movement"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of the phrase \"the space behind the forest can become part of the forest's future\" in the final paragraph?",
+      "points": 1,
+      "explanation": "The phrase makes the abstract planning idea memorable without claiming that migration is guaranteed.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It turns the planning idea into a concise image connecting present land with future habitat."
+        },
+        {
+          "id": "b",
+          "text": "It claims that every field will definitely become forest.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It defines satellite imagery.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It shows that mangroves can walk inland.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the author's perspective?",
+      "points": 1,
+      "explanation": "The author supports planning for migration but explicitly acknowledges other land uses and uncertainty.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "All coastal development should stop immediately.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Mangrove migration should be considered in planning, while human land uses and uncertainty also matter."
+        },
+        {
+          "id": "c",
+          "text": "Mangrove movement is impossible to study.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "Sea level is unrelated to coastal habitats.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "According to the passage, why can a seawall contribute to coastal squeeze?",
+      "points": 1,
+      "explanation": "The seawall is given as an example of a barrier that prevents inland movement.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "cause.effect",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes satellite images impossible to use.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It causes seedlings to grow faster.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It can block mangroves from establishing farther inland as water advances."
+        },
+        {
+          "id": "d",
+          "text": "It lowers sea level near the forest.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6d-mangroves-move-back",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [
+        "R4.1",
+        "R3.1",
+        "R4.4",
+        "R4.6",
+        "R4.5",
+        "R2.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6d-mangroves-move-back",
+      "title": "When Mangroves Move Back",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.841Z"
+  }
+}

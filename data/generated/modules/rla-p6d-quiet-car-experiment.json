@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6d-quiet-car-experiment",
+  "title": "The Quiet Car Experiment",
+  "description": "Workplace - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "A regional rail company had received the same complaint for years: passengers trying to read, work, or rest during long trips often found themselves surrounded by phone calls and loud conversations. Conductors could ask riders to lower their voices, but the company had no formal rule separating quieter travel from ordinary cars.\n\nLast autumn, the company began a three-month quiet-car trial on two evening routes. The first car of each train was marked as a quiet zone. Riders could speak briefly, but phone calls, speaker audio, and extended conversations were discouraged. Signs at each door explained the expectations, and conductors handed out small reminder cards rather than immediately issuing warnings.\n\nThe trial was designed as an experiment, not a permanent policy. Before it began, the company surveyed riders about noise and recorded how often conductors received noise complaints. During the trial, it repeated the survey and tracked complaints in both the quiet car and the other cars. The company also asked conductors to note whether enforcing the new rules created delays or conflicts.\n\nResults were mixed but generally favorable. In the quiet cars, reported satisfaction with noise levels rose from 46 percent to 78 percent. Noise complaints fell sharply in those cars but changed little elsewhere on the train. Conductors said most riders followed the signs after a single reminder. However, they also noted that the rule was harder to explain to groups who boarded together and to passengers who did not notice the signs before sitting down.\n\nThe final report did not recommend turning every car into a quiet zone. Instead, it proposed keeping one quiet car on longer routes while improving signs and adding a brief explanation in the ticketing app. The report argued that the trial worked best when riders could choose between a quieter space and ordinary conversation rather than when one standard was imposed on the entire train.\n\nThe report also notes that quiet zones work only when expectations are easy to understand before passengers settle into a car. Several conductors suggested marking the quiet car on platform screens as well as on the train itself. Others recommended using the same icon in the ticketing app, station signs, and onboard doors so riders would not have to learn a different symbol at each step of the trip.\n\nThe company plans to run a second trial during weekend daytime service. Weekend trains carry more families and tourist groups, so planners want to know whether the same arrangement works when passenger needs are different.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of paragraph 3?",
+      "points": 1,
+      "explanation": "Paragraph 3 explains the surveys, complaint tracking, and conductor notes used to evaluate the experiment.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to describe how the trial was evaluated"
+        },
+        {
+          "id": "b",
+          "text": "to argue that every train car should be silent",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to tell riders how to buy tickets",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to explain the history of regional rail",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How is the passage mainly organized?",
+      "points": 1,
+      "explanation": "The passage moves from the noise problem to the quiet-car trial, then to evidence and a recommendation.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "as a biography of several conductors",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "as a problem, a trial response, results, and a recommendation"
+        },
+        {
+          "id": "c",
+          "text": "as a comparison of two different rail companies",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "as a set of unrelated travel tips",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What relationship does \"However\" in paragraph 4 signal?",
+      "points": 1,
+      "explanation": "The sentence after However identifies situations in which the rules were harder to explain, qualifying the positive results.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It adds another benefit of the quiet-car rules.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It shows that the trial happened before the survey.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It introduces a limitation after generally positive results."
+        },
+        {
+          "id": "d",
+          "text": "It gives an example of a ticketing problem.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the author's primary purpose in this passage?",
+      "points": 1,
+      "explanation": "The passage explains the reason for the trial, how it was run, its results, and the next step.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to persuade all passengers never to speak on trains",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to entertain readers with a fictional train story",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to prove weekend trains are always noisier",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to explain how a rail company tested a quiet-car policy and what it learned"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why does the passage include both rider survey results and conductor observations?",
+      "points": 1,
+      "explanation": "The two sources provide different perspectives on how the trial felt and how it worked in practice.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to present evidence from passenger experience and from staff responsible for applying the policy"
+        },
+        {
+          "id": "b",
+          "text": "to show that conductors designed the ticketing app",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to prove passengers and conductors always agree",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to replace the need for any numerical results",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of giving the percentages 46 percent and 78 percent?",
+      "points": 1,
+      "explanation": "The percentages quantify how satisfaction with noise levels changed during the trial.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "They prove every passenger preferred the quiet car.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "They establish the size of the change in reported satisfaction."
+        },
+        {
+          "id": "c",
+          "text": "They explain how train tickets are priced.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "They show how many conductors worked each route.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the passage?",
+      "points": 1,
+      "explanation": "The final recommendation keeps one quiet car and emphasizes choice rather than a train-wide rule.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "conclusion.generalize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Quiet cars work only on empty trains.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Signs are unnecessary when conductors are present.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "Giving riders a choice may be more practical than requiring the same noise rule in every car."
+        },
+        {
+          "id": "d",
+          "text": "Weekend riders will definitely reject quiet cars.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6d-quiet-car-experiment",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [
+        "R4.2",
+        "R4.3",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R2.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6d-quiet-car-experiment",
+      "title": "The Quiet Car Experiment",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.841Z"
+  }
+}

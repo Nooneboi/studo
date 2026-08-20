@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6d-last-map-on-wall",
+  "title": "The Last Map on the Wall",
+  "description": "Literary - Literary - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "When the travel shop announced it would close, most of the shelves emptied quickly. Suitcases went first, then guidebooks, then the little brass compasses that tourists liked to buy even though their phones already knew north.\n\nI worked there only on Saturdays, but I had spent enough afternoons folding maps to know which drawer stuck in wet weather and which customers would ask for the oldest edition because they liked seeing roads that no longer existed.\n\nOn the final morning, Mr. Vale stood beneath the enormous paper map of the city that had hung behind the counter for as long as I could remember. Its corners had curled away from the wall. Colored pins marked hotels, train stations, museums, and a bakery that had closed before I was born.\n\n\"That can go in the recycling,\" I said, pointing up.\n\nMr. Vale did not answer. He climbed the small ladder and removed the first pin instead. Then another. He placed each one into his palm as if counting coins.\n\nI began packing receipt rolls into a box. \"You know the city has changed.\"\n\n\"That's what maps are good at showing,\" he said.\n\nI looked again. A blue line marked a tram route that had been replaced by buses. A red circle surrounded the old stadium, now an apartment complex. Someone had drawn a tiny star beside the river with a pencil.\n\n\"What's that?\" I asked.\n\nMr. Vale squinted. \"Your mother put that there.\"\n\nI laughed because the answer made no sense. My mother hated maps. She used landmarks: turn after the yellow house, stop when you smell bread.\n\n\"First week she worked here,\" he said. \"She kept getting lost on deliveries. That star was the only place she could recognize from across the river.\"\n\nThe shop suddenly seemed less empty. I could picture my mother at seventeen, irritated with a folded map, trying to match streets to buildings. I had known she worked for Mr. Vale years ago, but the fact had always sounded like a line from someone else's biography.\n\nMr. Vale removed the final pin and stepped down. \"Still recycling?\"\n\nI looked at the faded tram line and the penciled star.\n\n\"No,\" I said. \"But I'm not sure it belongs in a box either.\"\n\nWe rolled the map carefully around a cardboard tube. Before I left, Mr. Vale handed it to me with both hands. Outside, my phone buzzed with the quickest route home. I put it back in my pocket and carried the old city under my arm.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "How does the first-person point of view affect the story?",
+      "points": 1,
+      "explanation": "The narrator begins by seeing the map as outdated and then changes perspective as new information is revealed.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Readers discover the map's personal meaning at the same time the narrator does."
+        },
+        {
+          "id": "b",
+          "text": "Readers know Mr. Vale's private thoughts before he speaks.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "Readers receive an objective history of every city street.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "Readers know why the narrator's mother dislikes every map.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of the paragraph beginning \"I looked again\"?",
+      "points": 1,
+      "explanation": "The details prepare readers to see the map as a record of change rather than merely an outdated tool.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It explains how to operate a smartphone.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It lists features of the old map that show how the city and the map have accumulated history."
+        },
+        {
+          "id": "c",
+          "text": "It introduces a new travel shop employee.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It proves the map is geographically accurate today.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of contrasting the old paper map with the narrator's phone at the end?",
+      "points": 1,
+      "explanation": "The phone offers the quickest route, while the old map now carries memory and connection.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves phones cannot give directions.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It shows the narrator plans to reopen the store.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It highlights the difference between efficient navigation and the map's personal, historical value."
+        },
+        {
+          "id": "d",
+          "text": "It explains how maps are printed.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the author include the detail that the narrator's mother used landmarks rather than maps?",
+      "points": 1,
+      "explanation": "Because the narrator sees the mother as someone who dislikes maps, learning that she once relied on this one adds emotional significance.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves she never worked at the shop.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It explains why the city removed the tram.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It shows that landmarks are always more accurate than maps.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It makes the later discovery of her penciled star surprising and meaningful."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What relationship is created by the shift from \"The shop suddenly seemed less empty\" to the narrator imagining the mother at seventeen?",
+      "points": 1,
+      "explanation": "The shop remains physically empty, but the narrator now sees it as filled with personal history.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The new information changes the narrator's perception of the same physical space."
+        },
+        {
+          "id": "b",
+          "text": "The narrator forgets what Mr. Vale said.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The story changes from present tense to a scientific explanation.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The shop literally fills with customers.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which theme is best supported by the story?",
+      "points": 1,
+      "explanation": "The narrator's view of the map changes when it becomes connected to the mother's past.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "theme.infer",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Old technology is always more useful than new technology.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Objects can gain value by connecting people to memories and histories they did not fully know."
+        },
+        {
+          "id": "c",
+          "text": "People should never throw anything away.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "Working in a shop is the best way to learn a city.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Why does the narrator put the phone back in a pocket before walking home?",
+      "points": 1,
+      "explanation": "The ending suggests a changed attitude toward the map and what it represents, not a practical need for directions.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "inference.from.details",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The phone battery has definitely died.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Mr. Vale has asked for the phone.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The narrator has begun valuing the old map for more than efficient directions."
+        },
+        {
+          "id": "d",
+          "text": "The narrator no longer knows the way home.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6d-last-map-on-wall",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.6",
+        "R4.4",
+        "R4.3",
+        "R1.5",
+        "R2.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6d-last-map-on-wall",
+      "title": "The Last Map on the Wall",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.840Z"
+  }
+}

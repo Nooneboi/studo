@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-19T12:59:56.465Z",
+  "builtAt": "2026-08-19T15:57:16.852Z",
   "tracks": [
     {
       "id": "reading",
@@ -3798,13 +3798,67 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 0,
+          "availableSkillCount": 6,
+          "availableSetCount": 12,
+          "topicResourceCount": 2,
+          "topicResources": [
+            {
+              "id": "res-rla-p6d-domain-guide-v1",
+              "title": "Structure, Purpose & POV - Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "structure-purpose-pov",
+              "description": "Domain-level guide to text function, structure, transitions, purpose, perspective, and rhetoric.",
+              "href": "assets/resources/structure-purpose-pov-study-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6D domain review"
+            },
+            {
+              "id": "res-rla-p6d-domain-workbook-v1",
+              "title": "Structure, Purpose & POV - Practice Workbook",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "structure-purpose-pov",
+              "description": "Mixed structure-and-purpose workbook.",
+              "href": "assets/resources/structure-purpose-pov-practice-workbook.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6D domain review"
+            }
+          ],
+          "resources": [
+            {
+              "id": "res-rla-p6d-domain-guide-v1",
+              "title": "Structure, Purpose & POV - Study Guide",
+              "type": "study_guide",
+              "scope": "domain",
+              "domainId": "structure-purpose-pov",
+              "description": "Domain-level guide to text function, structure, transitions, purpose, perspective, and rhetoric.",
+              "href": "assets/resources/structure-purpose-pov-study-guide.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6D domain review"
+            },
+            {
+              "id": "res-rla-p6d-domain-workbook-v1",
+              "title": "Structure, Purpose & POV - Practice Workbook",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "structure-purpose-pov",
+              "description": "Mixed structure-and-purpose workbook.",
+              "href": "assets/resources/structure-purpose-pov-practice-workbook.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 6D domain review"
+            }
+          ],
+          "studyFileCount": 26,
+          "checkCount": 12,
           "skills": [
             {
               "id": "R4.1",
@@ -3812,16 +3866,288 @@
               "label": "Paragraph / section function",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-paragraph-section-function-practice-1",
+                  "title": "Paragraph / section function Practice 1",
+                  "description": "4 short texts - 8 focused paragraph / section function questions",
+                  "file": "generated/modules/rla-paragraph-section-function-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Paragraph / section function"
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-paragraph-section-function-practice-1",
+                    "title": "Paragraph / section function Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-paragraph-section-function-practice-2",
+                  "title": "Paragraph / section function Practice 2",
+                  "description": "4 short texts - 8 focused paragraph / section function questions",
+                  "file": "generated/modules/rla-paragraph-section-function-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Paragraph / section function"
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-paragraph-section-function-practice-2",
+                    "title": "Paragraph / section function Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-paragraph-section-function-practice-1",
+                  "title": "Paragraph / section function Practice 1",
+                  "description": "4 short texts - 8 focused paragraph / section function questions",
+                  "file": "generated/modules/rla-paragraph-section-function-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Paragraph / section function"
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-paragraph-section-function-practice-1",
+                    "title": "Paragraph / section function Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-paragraph-section-function-practice-2",
+                  "title": "Paragraph / section function Practice 2",
+                  "description": "4 short texts - 8 focused paragraph / section function questions",
+                  "file": "generated/modules/rla-paragraph-section-function-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Paragraph / section function"
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-paragraph-section-function-practice-2",
+                    "title": "Paragraph / section function Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-guide-v1",
+                  "title": "Paragraph / section function - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Focused paragraph / section function study guide.",
+                  "href": "assets/resources/paragraph-section-function-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-workbook-v1",
+                  "title": "Paragraph / section function - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Paragraph / section function workbook 1.",
+                  "href": "assets/resources/paragraph-section-function-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-workbook-v2",
+                  "title": "Paragraph / section function - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Paragraph / section function workbook 2.",
+                  "href": "assets/resources/paragraph-section-function-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-workbook-v3",
+                  "title": "Paragraph / section function - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Paragraph / section function workbook 3.",
+                  "href": "assets/resources/paragraph-section-function-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-guide-v1",
+                  "title": "Paragraph / section function - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Focused paragraph / section function study guide.",
+                  "href": "assets/resources/paragraph-section-function-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-workbook-v1",
+                  "title": "Paragraph / section function - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Paragraph / section function workbook 1.",
+                  "href": "assets/resources/paragraph-section-function-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-workbook-v2",
+                  "title": "Paragraph / section function - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Paragraph / section function workbook 2.",
+                  "href": "assets/resources/paragraph-section-function-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-paragraph-section-function-workbook-v3",
+                  "title": "Paragraph / section function - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.1"
+                  ],
+                  "description": "Paragraph / section function workbook 3.",
+                  "href": "assets/resources/paragraph-section-function-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ]
             },
             {
               "id": "R4.2",
@@ -3829,16 +4155,288 @@
               "label": "Text structure",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-text-structure-practice-1",
+                  "title": "Text structure Practice 1",
+                  "description": "4 short texts - 8 focused text structure questions",
+                  "file": "generated/modules/rla-text-structure-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Text structure"
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-text-structure-practice-1",
+                    "title": "Text structure Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-text-structure-practice-2",
+                  "title": "Text structure Practice 2",
+                  "description": "4 short texts - 8 focused text structure questions",
+                  "file": "generated/modules/rla-text-structure-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Text structure"
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-text-structure-practice-2",
+                    "title": "Text structure Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-text-structure-practice-1",
+                  "title": "Text structure Practice 1",
+                  "description": "4 short texts - 8 focused text structure questions",
+                  "file": "generated/modules/rla-text-structure-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Text structure"
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-text-structure-practice-1",
+                    "title": "Text structure Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-text-structure-practice-2",
+                  "title": "Text structure Practice 2",
+                  "description": "4 short texts - 8 focused text structure questions",
+                  "file": "generated/modules/rla-text-structure-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Text structure"
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-text-structure-practice-2",
+                    "title": "Text structure Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6d-text-structure-guide-v1",
+                  "title": "Text structure - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Focused text structure study guide.",
+                  "href": "assets/resources/text-structure-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-text-structure-workbook-v1",
+                  "title": "Text structure - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Text structure workbook 1.",
+                  "href": "assets/resources/text-structure-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-text-structure-workbook-v2",
+                  "title": "Text structure - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Text structure workbook 2.",
+                  "href": "assets/resources/text-structure-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-text-structure-workbook-v3",
+                  "title": "Text structure - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Text structure workbook 3.",
+                  "href": "assets/resources/text-structure-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6d-text-structure-guide-v1",
+                  "title": "Text structure - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Focused text structure study guide.",
+                  "href": "assets/resources/text-structure-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-text-structure-workbook-v1",
+                  "title": "Text structure - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Text structure workbook 1.",
+                  "href": "assets/resources/text-structure-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-text-structure-workbook-v2",
+                  "title": "Text structure - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Text structure workbook 2.",
+                  "href": "assets/resources/text-structure-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-text-structure-workbook-v3",
+                  "title": "Text structure - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.2"
+                  ],
+                  "description": "Text structure workbook 3.",
+                  "href": "assets/resources/text-structure-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ]
             },
             {
               "id": "R4.3",
@@ -3846,16 +4444,288 @@
               "label": "Transitions & signal words",
               "priority": "P1",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-transitions-signal-words-practice-1",
+                  "title": "Transitions & signal words Practice 1",
+                  "description": "4 short texts - 8 focused transitions & signal words questions",
+                  "file": "generated/modules/rla-transitions-signal-words-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Transitions & signal words"
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-transitions-signal-words-practice-1",
+                    "title": "Transitions & signal words Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-transitions-signal-words-practice-2",
+                  "title": "Transitions & signal words Practice 2",
+                  "description": "4 short texts - 8 focused transitions & signal words questions",
+                  "file": "generated/modules/rla-transitions-signal-words-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Transitions & signal words"
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-transitions-signal-words-practice-2",
+                    "title": "Transitions & signal words Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-transitions-signal-words-practice-1",
+                  "title": "Transitions & signal words Practice 1",
+                  "description": "4 short texts - 8 focused transitions & signal words questions",
+                  "file": "generated/modules/rla-transitions-signal-words-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Transitions & signal words"
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-transitions-signal-words-practice-1",
+                    "title": "Transitions & signal words Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-transitions-signal-words-practice-2",
+                  "title": "Transitions & signal words Practice 2",
+                  "description": "4 short texts - 8 focused transitions & signal words questions",
+                  "file": "generated/modules/rla-transitions-signal-words-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Transitions & signal words"
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-transitions-signal-words-practice-2",
+                    "title": "Transitions & signal words Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-guide-v1",
+                  "title": "Transitions & signal words - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Focused transitions & signal words study guide.",
+                  "href": "assets/resources/transitions-signal-words-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-workbook-v1",
+                  "title": "Transitions & signal words - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Transitions & signal words workbook 1.",
+                  "href": "assets/resources/transitions-signal-words-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-workbook-v2",
+                  "title": "Transitions & signal words - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Transitions & signal words workbook 2.",
+                  "href": "assets/resources/transitions-signal-words-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-workbook-v3",
+                  "title": "Transitions & signal words - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Transitions & signal words workbook 3.",
+                  "href": "assets/resources/transitions-signal-words-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-guide-v1",
+                  "title": "Transitions & signal words - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Focused transitions & signal words study guide.",
+                  "href": "assets/resources/transitions-signal-words-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-workbook-v1",
+                  "title": "Transitions & signal words - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Transitions & signal words workbook 1.",
+                  "href": "assets/resources/transitions-signal-words-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-workbook-v2",
+                  "title": "Transitions & signal words - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Transitions & signal words workbook 2.",
+                  "href": "assets/resources/transitions-signal-words-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-transitions-signal-words-workbook-v3",
+                  "title": "Transitions & signal words - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.3"
+                  ],
+                  "description": "Transitions & signal words workbook 3.",
+                  "href": "assets/resources/transitions-signal-words-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ]
             },
             {
               "id": "R4.4",
@@ -3863,16 +4733,288 @@
               "label": "Author purpose",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-author-purpose-practice-1",
+                  "title": "Author purpose Practice 1",
+                  "description": "4 short texts - 8 focused author purpose questions",
+                  "file": "generated/modules/rla-author-purpose-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Author purpose"
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-author-purpose-practice-1",
+                    "title": "Author purpose Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-author-purpose-practice-2",
+                  "title": "Author purpose Practice 2",
+                  "description": "4 short texts - 8 focused author purpose questions",
+                  "file": "generated/modules/rla-author-purpose-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Author purpose"
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-author-purpose-practice-2",
+                    "title": "Author purpose Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-author-purpose-practice-1",
+                  "title": "Author purpose Practice 1",
+                  "description": "4 short texts - 8 focused author purpose questions",
+                  "file": "generated/modules/rla-author-purpose-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Author purpose"
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-author-purpose-practice-1",
+                    "title": "Author purpose Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-author-purpose-practice-2",
+                  "title": "Author purpose Practice 2",
+                  "description": "4 short texts - 8 focused author purpose questions",
+                  "file": "generated/modules/rla-author-purpose-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Author purpose"
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-author-purpose-practice-2",
+                    "title": "Author purpose Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6d-author-purpose-guide-v1",
+                  "title": "Author purpose - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Focused author purpose study guide.",
+                  "href": "assets/resources/author-purpose-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-author-purpose-workbook-v1",
+                  "title": "Author purpose - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Author purpose workbook 1.",
+                  "href": "assets/resources/author-purpose-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-author-purpose-workbook-v2",
+                  "title": "Author purpose - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Author purpose workbook 2.",
+                  "href": "assets/resources/author-purpose-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-author-purpose-workbook-v3",
+                  "title": "Author purpose - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Author purpose workbook 3.",
+                  "href": "assets/resources/author-purpose-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6d-author-purpose-guide-v1",
+                  "title": "Author purpose - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Focused author purpose study guide.",
+                  "href": "assets/resources/author-purpose-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-author-purpose-workbook-v1",
+                  "title": "Author purpose - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Author purpose workbook 1.",
+                  "href": "assets/resources/author-purpose-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-author-purpose-workbook-v2",
+                  "title": "Author purpose - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Author purpose workbook 2.",
+                  "href": "assets/resources/author-purpose-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-author-purpose-workbook-v3",
+                  "title": "Author purpose - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.4"
+                  ],
+                  "description": "Author purpose workbook 3.",
+                  "href": "assets/resources/author-purpose-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ]
             },
             {
               "id": "R4.5",
@@ -3880,16 +5022,288 @@
               "label": "Point of view / perspective",
               "priority": "P0",
               "practiceMode": "Reading",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-point-of-view-perspective-practice-1",
+                  "title": "Point of view / perspective Practice 1",
+                  "description": "4 short texts - 8 focused point of view / perspective questions",
+                  "file": "generated/modules/rla-point-of-view-perspective-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Point of view / perspective"
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-point-of-view-perspective-practice-1",
+                    "title": "Point of view / perspective Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-point-of-view-perspective-practice-2",
+                  "title": "Point of view / perspective Practice 2",
+                  "description": "4 short texts - 8 focused point of view / perspective questions",
+                  "file": "generated/modules/rla-point-of-view-perspective-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Point of view / perspective"
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-point-of-view-perspective-practice-2",
+                    "title": "Point of view / perspective Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-point-of-view-perspective-practice-1",
+                  "title": "Point of view / perspective Practice 1",
+                  "description": "4 short texts - 8 focused point of view / perspective questions",
+                  "file": "generated/modules/rla-point-of-view-perspective-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Point of view / perspective"
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-point-of-view-perspective-practice-1",
+                    "title": "Point of view / perspective Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-point-of-view-perspective-practice-2",
+                  "title": "Point of view / perspective Practice 2",
+                  "description": "4 short texts - 8 focused point of view / perspective questions",
+                  "file": "generated/modules/rla-point-of-view-perspective-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Point of view / perspective"
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-point-of-view-perspective-practice-2",
+                    "title": "Point of view / perspective Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-guide-v1",
+                  "title": "Point of view / perspective - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Focused point of view / perspective study guide.",
+                  "href": "assets/resources/point-of-view-perspective-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-workbook-v1",
+                  "title": "Point of view / perspective - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Point of view / perspective workbook 1.",
+                  "href": "assets/resources/point-of-view-perspective-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-workbook-v2",
+                  "title": "Point of view / perspective - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Point of view / perspective workbook 2.",
+                  "href": "assets/resources/point-of-view-perspective-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-workbook-v3",
+                  "title": "Point of view / perspective - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Point of view / perspective workbook 3.",
+                  "href": "assets/resources/point-of-view-perspective-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-guide-v1",
+                  "title": "Point of view / perspective - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Focused point of view / perspective study guide.",
+                  "href": "assets/resources/point-of-view-perspective-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-workbook-v1",
+                  "title": "Point of view / perspective - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Point of view / perspective workbook 1.",
+                  "href": "assets/resources/point-of-view-perspective-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-workbook-v2",
+                  "title": "Point of view / perspective - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Point of view / perspective workbook 2.",
+                  "href": "assets/resources/point-of-view-perspective-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-point-of-view-perspective-workbook-v3",
+                  "title": "Point of view / perspective - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.5"
+                  ],
+                  "description": "Point of view / perspective workbook 3.",
+                  "href": "assets/resources/point-of-view-perspective-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ]
             },
             {
               "id": "R4.6",
@@ -3897,27 +5311,299 @@
               "label": "Rhetorical technique",
               "priority": "P1",
               "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
+              "available": true,
+              "setCount": 2,
+              "questionCount": 16,
+              "resourceCount": 4,
+              "studyFileCount": 4,
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-rhetorical-technique-practice-1",
+                  "title": "Rhetorical technique Practice 1",
+                  "description": "4 short texts - 8 focused rhetorical technique questions",
+                  "file": "generated/modules/rla-rhetorical-technique-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.6",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Rhetorical technique"
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-rhetorical-technique-practice-1",
+                    "title": "Rhetorical technique Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-rhetorical-technique-practice-2",
+                  "title": "Rhetorical technique Practice 2",
+                  "description": "4 short texts - 8 focused rhetorical technique questions",
+                  "file": "generated/modules/rla-rhetorical-technique-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.6",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Rhetorical technique"
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-rhetorical-technique-practice-2",
+                    "title": "Rhetorical technique Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-rhetorical-technique-practice-1",
+                  "title": "Rhetorical technique Practice 1",
+                  "description": "4 short texts - 8 focused rhetorical technique questions",
+                  "file": "generated/modules/rla-rhetorical-technique-practice-1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.6",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Rhetorical technique"
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-rhetorical-technique-practice-1",
+                    "title": "Rhetorical technique Practice 1",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                },
+                {
+                  "id": "set-rla-rhetorical-technique-practice-2",
+                  "title": "Rhetorical technique Practice 2",
+                  "description": "4 short texts - 8 focused rhetorical technique questions",
+                  "file": "generated/modules/rla-rhetorical-technique-practice-2.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Structure, Purpose & POV",
+                    "primarySkillId": "R4.6",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+                    "topicLabel": "Rhetorical technique"
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ],
+                  "isMixed": false,
+                  "isMixedPassage": false,
+                  "passageMeta": {
+                    "id": "p-rla-rhetorical-technique-practice-2",
+                    "title": "Rhetorical technique Practice 2",
+                    "textType": "mixed",
+                    "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  }
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-guide-v1",
+                  "title": "Rhetorical technique - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Focused rhetorical technique study guide.",
+                  "href": "assets/resources/rhetorical-technique-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-workbook-v1",
+                  "title": "Rhetorical technique - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Rhetorical technique workbook 1.",
+                  "href": "assets/resources/rhetorical-technique-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-workbook-v2",
+                  "title": "Rhetorical technique - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Rhetorical technique workbook 2.",
+                  "href": "assets/resources/rhetorical-technique-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-workbook-v3",
+                  "title": "Rhetorical technique - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Rhetorical technique workbook 3.",
+                  "href": "assets/resources/rhetorical-technique-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-guide-v1",
+                  "title": "Rhetorical technique - Study Guide",
+                  "type": "study_guide",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Focused rhetorical technique study guide.",
+                  "href": "assets/resources/rhetorical-technique-study-guide.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-workbook-v1",
+                  "title": "Rhetorical technique - Workbook 1",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Rhetorical technique workbook 1.",
+                  "href": "assets/resources/rhetorical-technique-workbook-1.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-workbook-v2",
+                  "title": "Rhetorical technique - Workbook 2",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Rhetorical technique workbook 2.",
+                  "href": "assets/resources/rhetorical-technique-workbook-2.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                },
+                {
+                  "id": "res-rla-p6d-rhetorical-technique-workbook-v3",
+                  "title": "Rhetorical technique - Workbook 3",
+                  "type": "worksheet",
+                  "scope": "skill",
+                  "domainId": "structure-purpose-pov",
+                  "skillIds": [
+                    "R4.6"
+                  ],
+                  "description": "Rhetorical technique workbook 3.",
+                  "href": "assets/resources/rhetorical-technique-workbook-3.pdf",
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Phase 6D domain review"
+                }
+              ]
             }
           ]
         }
       ],
-      "availableSkillCount": 16,
+      "availableSkillCount": 22,
       "totalSkillCount": 22,
-      "availableSetCount": 21,
-      "questionCount": 168,
-      "resourceCount": 59,
-      "studyFileCount": 59,
-      "checkCount": 21
+      "availableSetCount": 33,
+      "questionCount": 264,
+      "resourceCount": 85,
+      "studyFileCount": 85,
+      "checkCount": 33
     },
     {
       "id": "arguments",
@@ -5396,6 +7082,236 @@
       }
     },
     {
+      "id": "set-rla-p6d-last-map-on-wall",
+      "title": "The Last Map on the Wall",
+      "description": "Literary - Literary - 7 questions",
+      "file": "generated/modules/rla-p6d-last-map-on-wall.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.5",
+        "secondarySkillIds": [
+          "R4.1",
+          "R4.6",
+          "R4.4",
+          "R4.3",
+          "R1.5",
+          "R2.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.5",
+        "R4.1",
+        "R4.6",
+        "R4.4",
+        "R4.3",
+        "R1.5",
+        "R2.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-last-map-on-wall",
+        "title": "The Last Map on the Wall",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-library-without-late-fees",
+      "title": "A Library Without Late Fees",
+      "description": "Community - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-library-without-late-fees.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.2",
+        "secondarySkillIds": [
+          "R4.1",
+          "R4.4",
+          "R4.5",
+          "R4.6",
+          "R4.3",
+          "R2.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.2",
+        "R4.1",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R4.3",
+        "R2.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-library-without-late-fees",
+        "title": "A Library Without Late Fees",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-mangroves-move-back",
+      "title": "When Mangroves Move Back",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-mangroves-move-back.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.2",
+        "secondarySkillIds": [
+          "R4.1",
+          "R3.1",
+          "R4.4",
+          "R4.6",
+          "R4.5",
+          "R2.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.2",
+        "R4.1",
+        "R3.1",
+        "R4.4",
+        "R4.6",
+        "R4.5",
+        "R2.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-mangroves-move-back",
+        "title": "When Mangroves Move Back",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-quiet-car-experiment",
+      "title": "The Quiet Car Experiment",
+      "description": "Workplace - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-quiet-car-experiment.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.1",
+        "secondarySkillIds": [
+          "R4.2",
+          "R4.3",
+          "R4.4",
+          "R4.5",
+          "R4.6",
+          "R2.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.1",
+        "R4.2",
+        "R4.3",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R2.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-quiet-car-experiment",
+        "title": "The Quiet Car Experiment",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-two-minutes-of-shade",
+      "title": "Two Minutes of Shade",
+      "description": "Community - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-two-minutes-of-shade.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.4",
+        "secondarySkillIds": [
+          "R4.1",
+          "R4.6",
+          "R4.5",
+          "R4.3",
+          "R4.2",
+          "R2.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.4",
+        "R4.1",
+        "R4.6",
+        "R4.5",
+        "R4.3",
+        "R4.2",
+        "R2.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-two-minutes-of-shade",
+        "title": "Two Minutes of Shade",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
       "id": "set-rla-writing-library-hours",
       "title": "Sunday Hours at the Downtown Library",
       "description": "Choose relevant evidence, then use source evidence in a short argument.",
@@ -6048,6 +7964,236 @@
         "title": "When Streetlights Learn to Dim",
         "textType": "informational",
         "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-last-map-on-wall",
+      "title": "The Last Map on the Wall",
+      "description": "Literary - Literary - 7 questions",
+      "file": "generated/modules/rla-p6d-last-map-on-wall.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.5",
+        "secondarySkillIds": [
+          "R4.1",
+          "R4.6",
+          "R4.4",
+          "R4.3",
+          "R1.5",
+          "R2.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.5",
+        "R4.1",
+        "R4.6",
+        "R4.4",
+        "R4.3",
+        "R1.5",
+        "R2.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-last-map-on-wall",
+        "title": "The Last Map on the Wall",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-library-without-late-fees",
+      "title": "A Library Without Late Fees",
+      "description": "Community - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-library-without-late-fees.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.2",
+        "secondarySkillIds": [
+          "R4.1",
+          "R4.4",
+          "R4.5",
+          "R4.6",
+          "R4.3",
+          "R2.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.2",
+        "R4.1",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R4.3",
+        "R2.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-library-without-late-fees",
+        "title": "A Library Without Late Fees",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-mangroves-move-back",
+      "title": "When Mangroves Move Back",
+      "description": "Science - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-mangroves-move-back.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.2",
+        "secondarySkillIds": [
+          "R4.1",
+          "R3.1",
+          "R4.4",
+          "R4.6",
+          "R4.5",
+          "R2.2"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.2",
+        "R4.1",
+        "R3.1",
+        "R4.4",
+        "R4.6",
+        "R4.5",
+        "R2.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-mangroves-move-back",
+        "title": "When Mangroves Move Back",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-quiet-car-experiment",
+      "title": "The Quiet Car Experiment",
+      "description": "Workplace - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-quiet-car-experiment.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.1",
+        "secondarySkillIds": [
+          "R4.2",
+          "R4.3",
+          "R4.4",
+          "R4.5",
+          "R4.6",
+          "R2.5"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.1",
+        "R4.2",
+        "R4.3",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R2.5"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-quiet-car-experiment",
+        "title": "The Quiet Car Experiment",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-p6d-two-minutes-of-shade",
+      "title": "Two Minutes of Shade",
+      "description": "Community - Informational - 7 questions",
+      "file": "generated/modules/rla-p6d-two-minutes-of-shade.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Structure, Purpose & POV",
+        "primarySkillId": "R4.4",
+        "secondarySkillIds": [
+          "R4.1",
+          "R4.6",
+          "R4.5",
+          "R4.3",
+          "R4.2",
+          "R2.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+        "topicLabel": "Passage Practice"
+      },
+      "measuredSkillIds": [
+        "R4.4",
+        "R4.1",
+        "R4.6",
+        "R4.5",
+        "R4.3",
+        "R4.2",
+        "R2.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-p6d-two-minutes-of-shade",
+        "title": "Two Minutes of Shade",
+        "textType": "informational",
+        "context": "community",
         "sourceType": "original",
         "attribution": "Original content by Studo",
         "author": "Studo",

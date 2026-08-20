@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6d-library-without-late-fees",
+  "title": "A Library Without Late Fees",
+  "description": "Community - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "For decades, the North Harbor Library charged a small daily fine when books were returned after their due date. The rule seemed straightforward: a late item created a fine, and paying the fine cleared the account. Yet staff began to notice a different problem. Some patrons with small unpaid balances stopped borrowing altogether.\n\nThe library reviewed account data and found that blocked accounts were concentrated in neighborhoods farther from the main branch. Staff interviews suggested several reasons. Some families had fewer opportunities to return books during open hours. Others worried that a balance would keep growing, even when the total was only a few dollars. Children using family accounts could also lose borrowing access because of an adult's old fine.\n\nIn response, the library began a one-year fine-free trial. Due dates remained, and patrons were still expected to return items. If an item stayed overdue for more than twenty-one days, the account was temporarily blocked from borrowing additional materials. The block disappeared when the item came back. Lost or damaged items could still result in replacement charges.\n\nThe change did not mean that due dates no longer mattered. Library staff continued sending reminders, and popular books still needed to circulate so other readers could use them. The difference was that a late return by itself no longer created a growing financial penalty.\n\nAfter nine months, the number of overdue items had risen slightly, but the number of long-overdue items had not. More importantly to library staff, hundreds of accounts that had been inactive because of small fines were used again. Staff also reported spending less time explaining balances at the service desk.\n\nCritics of fine-free policies argue that removing fines may weaken the incentive to return items on time. The library's report acknowledges that concern and says the trial will be judged by several measures, not just renewed borrowing. Staff will continue tracking overdue rates, lost materials, waiting times for popular books, and service-desk workload.\n\nThe library is also watching how the policy affects staff conversations with patrons. Under the old system, a short discussion about finding a book could turn into a longer dispute about a small balance. Under the trial, staff say they can focus more often on returning the item itself or replacing a genuinely lost copy. That observation is useful, but the report treats it as one piece of evidence rather than as proof that the new policy is better in every way.\n\nThe trial therefore asks a broader question than whether fines produce revenue. The library is testing which system best balances two goals that can pull in different directions: keeping shared materials moving and keeping borrowing accessible to the community.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "How is the passage mainly organized?",
+      "points": 1,
+      "explanation": "The passage moves from the access problem to the policy trial, results, criticism, and broader evaluation.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.identify",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It presents a problem with fines, explains a trial response, reports early results, and considers a criticism."
+        },
+        {
+          "id": "b",
+          "text": "It gives a chronological biography of one librarian.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It compares two unrelated cities.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It lists book genres in categories.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of paragraph 4?",
+      "points": 1,
+      "explanation": "Paragraph 4 corrects a possible misunderstanding by distinguishing fines from due dates and circulation expectations.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to introduce the library for the first time",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to clarify that removing fines did not remove due dates or the need to return materials"
+        },
+        {
+          "id": "c",
+          "text": "to argue that all books should be free to keep",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to present the final results of the trial",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the author include the critics' concern in paragraph 6?",
+      "points": 1,
+      "explanation": "The criticism introduces a reasonable concern and explains why the library is tracking multiple outcomes.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to prove the fine-free trial has failed",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to show critics designed the trial",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to acknowledge a possible drawback that the library still needs to evaluate"
+        },
+        {
+          "id": "d",
+          "text": "to explain how to pay an old fine",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the passage treat the perspectives of library staff and critics?",
+      "points": 1,
+      "explanation": "Both perspectives concern how a lending system should balance access and return behavior.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It states that critics oppose all libraries.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It hides the library's reasons for the trial.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It treats the two groups as arguing about different subjects.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It presents the staff's access goals while also acknowledging the critics' concern about timely returns."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of listing several measures in paragraph 6?",
+      "points": 1,
+      "explanation": "The list supports a balanced evaluation by showing the trial will be judged on access, overdue behavior, losses, waits, and workload.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.argument",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows that the library plans to judge the policy using more than one outcome."
+        },
+        {
+          "id": "b",
+          "text": "It proves every measure will improve.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It distracts readers from the policy.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It explains how books are cataloged.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What relationship does \"More importantly to library staff\" signal in paragraph 5?",
+      "points": 1,
+      "explanation": "The phrase ranks the renewed use of inactive accounts as more important from the staff's perspective.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It introduces a cause of the slight overdue increase.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It shifts from one result to a result the staff considers more significant."
+        },
+        {
+          "id": "c",
+          "text": "It shows the next event happened years later.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It contradicts every previous sentence.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the passage?",
+      "points": 1,
+      "explanation": "The final paragraphs emphasize multiple measures and two competing goals, so the trial requires a broader evaluation.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "conclusion.generalize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Late returns no longer matter at North Harbor Library.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Fines always prevent books from being lost.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The trial is evaluating a tradeoff between access and responsible circulation, so no single result is enough to judge it."
+        },
+        {
+          "id": "d",
+          "text": "The library has permanently ended every replacement charge.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6d-library-without-late-fees",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R4.3",
+        "R2.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6d-library-without-late-fees",
+      "title": "A Library Without Late Fees",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.841Z"
+  }
+}
