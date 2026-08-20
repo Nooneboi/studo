@@ -5,13 +5,13 @@
   "category": "reading",
   "topic": "Core Meaning - GED Practice",
   "difficulty": "hard",
-  "status": "published",
+  "status": "review",
   "version": 1,
   "passageRefs": [
     "p-rla-core-transfer-blue-folder"
   ],
   "author": "Studo",
-  "reviewer": "Studo Core Meaning refinement v1 review",
+  "reviewer": null,
   "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
   "curriculum": {
     "domain": "Core Meaning",
@@ -377,7 +377,5 @@
         "evidenceRef": "The uncertain date was not a blank she had failed to fill. It was information that had been recorded honestly."
       }
     }
-  ],
-  "title": "The Last Blue Folder",
-  "description": "Literary · 7 questions"
+  ]
 }

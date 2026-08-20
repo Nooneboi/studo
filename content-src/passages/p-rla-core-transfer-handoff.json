@@ -6,16 +6,14 @@
   "textType": "informational",
   "context": "workplace",
   "source": {
-    "type": "original",
-    "attribution": "Original content by Studo"
+    "type": "original_studo",
+    "author": "Studo"
   },
   "rights": {
-    "status": "original",
-    "holder": "Studo",
-    "note": "Original practice passage created for Studo."
+    "status": "original_studo",
+    "attribution": "Original Studo content"
   },
-  "status": "published",
+  "status": "review",
   "version": 1,
-  "author": "Studo",
-  "reviewer": "Studo Core Meaning refinement v1 review"
+  "author": "Studo"
 }

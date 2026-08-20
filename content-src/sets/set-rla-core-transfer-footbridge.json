@@ -5,13 +5,13 @@
   "category": "reading",
   "topic": "Core Meaning - GED Practice",
   "difficulty": "hard",
-  "status": "published",
+  "status": "review",
   "version": 1,
   "passageRefs": [
     "p-rla-core-transfer-footbridge"
   ],
   "author": "Studo",
-  "reviewer": "Studo Core Meaning refinement v1 review",
+  "reviewer": null,
   "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
   "curriculum": {
     "domain": "Core Meaning",
@@ -376,7 +376,5 @@
         "evidenceRef": "The staged repair restored the crossing while giving planners time to study replacement costs, accessibility improvements, and possible changes..."
       }
     }
-  ],
-  "title": "Reopening the Riverside Footbridge",
-  "description": "Community / civics · Informational · 7 questions"
+  ]
 }
