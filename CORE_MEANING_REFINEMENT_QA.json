@@ -1,0 +1,27 @@
+{
+  "batch": "Core Meaning post-research refinement v1",
+  "status": "review",
+  "wordCounts": {
+    "p-rla-core-transfer-heat-route": 474,
+    "p-rla-core-transfer-handoff": 494,
+    "p-rla-core-transfer-footbridge": 455,
+    "p-rla-core-transfer-blue-folder": 561
+  },
+  "answerBalance": {
+    "a": 7,
+    "b": 7,
+    "c": 7,
+    "d": 7
+  },
+  "passageMix": {
+    "informational": 3,
+    "literary": 1
+  },
+  "questionCount": 28,
+  "notes": [
+    "Existing foundation workbooks intentionally left unchanged.",
+    "Five study guides refined.",
+    "Four GED-length transfer passage sets added.",
+    "Harder items use evidence distance, synthesis, and plausible distractors rather than trick wording."
+  ]
+}

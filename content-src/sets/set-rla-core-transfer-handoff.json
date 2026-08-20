@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-core-transfer-handoff",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Core Meaning - GED Practice",
+  "difficulty": "hard",
+  "status": "review",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-core-transfer-handoff"
+  ],
+  "author": "Studo",
+  "reviewer": null,
+  "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "secondarySkillIds": [
+      "R1.1",
+      "R1.3",
+      "R1.4"
+    ],
+    "contentKind": "passage_practice",
+    "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+    "topicLabel": "GED Practice"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which problem with the old paper-binder system is directly stated?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Employees refused to leave any notes at the end of a shift.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Employees did leave notes; the problem was inconsistency."
+        },
+        {
+          "id": "b",
+          "text": "The binder could not be used by overnight employees.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No shift was unable to use the binder."
+        },
+        {
+          "id": "c",
+          "text": "Important repair information was recorded inconsistently, sometimes forcing later workers to repeat checks or seek missing details."
+        },
+        {
+          "id": "d",
+          "text": "Managers required every technician to call an off-duty employee before beginning work.",
+          "distractorType": "changed_condition",
+          "whyWrong": "Calls happened when information was missing, not before every repair."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The passage describes notes that varied widely and gives repeated checks and phone calls as consequences.",
+        "quickTip": "Explicit questions can combine details the passage directly states, but they still must not add a new rule.",
+        "evidenceRef": "Some contained detailed measurements, while others simply said that a unit still needed work."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of the passage?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A structured digital handoff reduced avoidable information gaps, but Meridian kept direct conversation for unusual or risky repairs and adjusted the form based on worker feedback."
+        },
+        {
+          "id": "b",
+          "text": "Digital forms are always more reliable than spoken communication in technical workplaces.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage explicitly says direct conversation remains important."
+        },
+        {
+          "id": "c",
+          "text": "The main reason complex repairs took a long time was that technicians failed to complete handoff forms.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "Complex repair time often depended on parts or access, not handoff failure."
+        },
+        {
+          "id": "d",
+          "text": "Meridian's pilot succeeded mainly because technicians could attach photographs.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Photographs were one useful feature, not the central reason for the pilot."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Choice A covers the original problem, the form, its measurable benefits, the limits of written handoffs, and the revised training.",
+        "quickTip": "A main idea should explain both the benefit and the limitation that the passage develops.",
+        "evidenceRef": "A consistent record reduced avoidable information gaps, while direct discussion remained important when the repair itself was unusual or risky."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail provides the strongest evidence that the new handoff system reduced avoidable information gaps?",
+      "primarySkillId": "R1.3",
+      "familyId": "support.best_detail",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Technicians could attach photographs to the form.",
+          "distractorType": "related_detail",
+          "whyWrong": "Photos may help, but the option does not show that gaps actually decreased."
+        },
+        {
+          "id": "b",
+          "text": "The form required an equipment number and a next-step field.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "Required fields could reduce gaps, but this is a feature rather than outcome evidence."
+        },
+        {
+          "id": "c",
+          "text": "Managers shortened two sections after technicians complained about typing.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports the idea that managers responded to usability feedback."
+        },
+        {
+          "id": "d",
+          "text": "Repeat diagnostic checks decreased and dispatch staff made fewer calls to off-duty technicians for missing information."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "Choice D directly measures two problems caused by missing information and shows both decreased.",
+        "quickTip": "Prefer outcome evidence over a feature that merely seems helpful.",
+        "evidenceRef": "Repeat diagnostic checks had decreased, and dispatch staff made fewer calls to off-duty technicians for missing information."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which choice best summarizes the part of the passage describing changes made during the six-week pilot?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.section",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Managers removed direct conversation because the form already contained every necessary detail.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Direct conversation was deliberately retained."
+        },
+        {
+          "id": "b",
+          "text": "Meridian kept direct conversation for certain repairs and simplified the form after technicians said the first version required too much typing."
+        },
+        {
+          "id": "c",
+          "text": "Technicians refused to use the form until photographs were added.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The passage never says technicians refused the form."
+        },
+        {
+          "id": "d",
+          "text": "Supervisors replaced the digital form with a shorter paper checklist.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The company continued using the digital form."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The pilot section emphasizes keeping conversation for high-risk or unusual work and simplifying the form after feedback.",
+        "quickTip": "A section summary should preserve the main changes rather than one feature.",
+        "evidenceRef": "Managers shortened two sections and added check boxes for routine tests."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "hard",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Meridian replaced all spoken handoffs with a digital form that solved delays in complex repairs.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Spoken handoffs were not removed, and complex repair time did not meaningfully change."
+        },
+        {
+          "id": "b",
+          "text": "Technicians preferred photographs, so Meridian created a form mainly to store images of damaged equipment.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Photographs were only one feature."
+        },
+        {
+          "id": "c",
+          "text": "Meridian tested and refined a digital handoff form that improved consistency and reduced some repeated work, while keeping direct discussion for complicated or risky situations."
+        },
+        {
+          "id": "d",
+          "text": "The company ended the pilot because technicians believed the form required too much typing.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The form was retained and adjusted."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Choice C keeps the original problem, pilot, measured improvement, refinement, and continuing role of conversation.",
+        "quickTip": "The best summary includes both what changed and what the company learned about the limits of that change.",
+        "evidenceRef": "Meridian kept the digital form but changed its training."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "According to the passage, when were technicians still expected to speak directly with the incoming shift?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "When a repair involved a serious safety risk or an unusual problem."
+        },
+        {
+          "id": "b",
+          "text": "Whenever a photograph was attached to the form.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "Photos can be attached, but they do not trigger direct conversation."
+        },
+        {
+          "id": "c",
+          "text": "Only when the equipment number field was blank.",
+          "distractorType": "changed_condition",
+          "whyWrong": "The form could not be submitted with a blank equipment number."
+        },
+        {
+          "id": "d",
+          "text": "After every routine diagnostic test.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "Routine tests were often handled through the form."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The passage directly names serious safety risk or an unusual problem as situations requiring direct conversation.",
+        "quickTip": "Keep the condition exactly as written.",
+        "evidenceRef": "Technicians were still expected to speak with the incoming shift when a repair involved a serious safety risk or an unusual problem."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that the handoff form improved efficiency for ordinary work but did not remove every source of delay?",
+      "primarySkillId": "R1.3",
+      "familyId": "support.relevant_vs_mentioned",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The old binder sat near the dispatch desk.",
+          "distractorType": "background_only",
+          "whyWrong": "The binder's location does not show efficiency or limits."
+        },
+        {
+          "id": "b",
+          "text": "Photographs helped technicians understand some damaged components.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "Photos may help understanding but do not establish the broader result."
+        },
+        {
+          "id": "c",
+          "text": "Managers added check boxes for routine tests.",
+          "distractorType": "related_detail",
+          "whyWrong": "Check boxes show a usability change, not the measured result and limitation."
+        },
+        {
+          "id": "d",
+          "text": "Incoming technicians began the next repair step sooner on average, but total time for very complex repairs did not meaningfully change because other factors still mattered."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "Choice D directly supports both parts: improved handoff efficiency and continued delays in complex work.",
+        "quickTip": "For a two-part claim, prefer evidence that addresses both parts.",
+        "evidenceRef": "The average time ... beginning the next repair step also fell. However, the company found no meaningful change in the total time required for very complex repairs."
+      }
+    }
+  ]
+}

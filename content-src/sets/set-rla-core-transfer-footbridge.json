@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-core-transfer-footbridge",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Core Meaning - GED Practice",
+  "difficulty": "hard",
+  "status": "review",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-core-transfer-footbridge"
+  ],
+  "author": "Studo",
+  "reviewer": null,
+  "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "secondarySkillIds": [
+      "R1.1",
+      "R1.3",
+      "R1.4"
+    ],
+    "contentKind": "passage_practice",
+    "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+    "topicLabel": "GED Practice"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why did the city keep the bridge closed after the first repairs were completed?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Residents had requested a permanent closure.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "Residents were inconvenienced and wanted the shortcut back."
+        },
+        {
+          "id": "b",
+          "text": "The alternate walking route was shorter than the bridge.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The alternate route added time."
+        },
+        {
+          "id": "c",
+          "text": "The city had already decided to replace the bridge immediately.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "Replacement may be needed later; it was not already decided as the immediate action."
+        },
+        {
+          "id": "d",
+          "text": "Engineers still needed load testing, sensor measurements, and an independent review to confirm that the repaired structure met safety requirements."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The passage directly explains that visible repair was not enough; testing and independent review were required.",
+        "quickTip": "Keep the stated safety process separate from later replacement planning.",
+        "evidenceRef": "After repairs, crews used load tests and sensors ... The city also required an independent engineer ... to review the results."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of the passage?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city reopened the bridge mainly because residents were unhappy with the longer walking route.",
+          "distractorType": "reasonable_but_incomplete",
+          "whyWrong": "Resident inconvenience mattered, but safety evidence drove reopening."
+        },
+        {
+          "id": "b",
+          "text": "Reopening the bridge safely required a staged process of targeted repair, testing, independent review, temporary access measures, and continued monitoring rather than a quick cosmetic fix."
+        },
+        {
+          "id": "c",
+          "text": "The bridge should have been fully replaced as soon as corrosion was found.",
+          "distractorType": "personal_opinion",
+          "whyWrong": "The passage says replacement may be needed later, not that immediate replacement was required."
+        },
+        {
+          "id": "d",
+          "text": "Moisture sensors are more important than structural inspections for old bridges.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Moisture sensors are only one part of the monitoring plan."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Choice B explains the full process and matches the concluding idea that safe reopening required more than removing visible damage.",
+        "quickTip": "Use the final paragraph as a check, but make sure the answer also fits the earlier sections.",
+        "evidenceRef": "The process combined targeted repair, testing, independent review, temporary transportation measures, and continued monitoring."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that the city's decisions were based on evidence rather than the bridge's appearance?",
+      "primarySkillId": "R1.3",
+      "familyId": "support.best_detail",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Residents could see rust on several connections.",
+          "distractorType": "contradictory_detail",
+          "whyWrong": "Visible rust is exactly what the city said was not enough to judge strength."
+        },
+        {
+          "id": "b",
+          "text": "The concrete deck remained in acceptable condition.",
+          "distractorType": "related_detail",
+          "whyWrong": "This is inspection evidence, but not as direct as the post-repair decision process."
+        },
+        {
+          "id": "c",
+          "text": "Engineers used load tests and sensors after repairs, and an independent engineer reviewed the results before reopening."
+        },
+        {
+          "id": "d",
+          "text": "The bridge was more than seventy years old.",
+          "distractorType": "background_only",
+          "whyWrong": "Age is relevant context, not direct evidence of how reopening was judged."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Choice C directly shows objective testing and independent review determining readiness rather than visible appearance.",
+        "quickTip": "Strong support should connect directly to the exact contrast in the claim.",
+        "evidenceRef": "Appearance alone could not show whether a connection was strong enough. After repairs, crews used load tests and sensors..."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which choice best summarizes the section about what happened after the first round of repairs?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.section",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Testing showed the main repairs met limits but revealed two additional areas needing work, delaying reopening while the city also supported residents using the alternate route."
+        },
+        {
+          "id": "b",
+          "text": "The bridge reopened immediately after visible rust was removed.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Reopening was delayed for testing and extra repairs."
+        },
+        {
+          "id": "c",
+          "text": "The city cancelled all bus service until the bridge could reopen.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The city adjusted a local bus schedule; it did not cancel bus service."
+        },
+        {
+          "id": "d",
+          "text": "Independent review showed that every part of the bridge needed complete replacement.",
+          "distractorType": "too_broad",
+          "whyWrong": "The independent review did not conclude that complete replacement was immediately required."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The section includes successful testing, discovery of two smaller problems, a delay, and temporary transportation support.",
+        "quickTip": "A good section summary keeps the main result and its consequence.",
+        "evidenceRef": "The tests showed that the strengthened connections met the required limits, but they also identified two smaller areas that needed additional work."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "hard",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A historic bridge was closed because residents preferred walking to the library by bus.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The bridge closed for safety, not because residents preferred buses."
+        },
+        {
+          "id": "b",
+          "text": "The city replaced a bridge after an inspection showed that the entire structure had failed.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The entire structure had not failed, and it was not fully replaced."
+        },
+        {
+          "id": "c",
+          "text": "The city removed visible corrosion, reopened the bridge, and ended its monitoring program.",
+          "distractorType": "misses_key_relationship",
+          "whyWrong": "Monitoring continued after reopening."
+        },
+        {
+          "id": "d",
+          "text": "After corrosion was found, the city used staged repairs, testing, temporary transportation measures, and continued monitoring to restore the crossing while planning for longer-term needs."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "Choice D captures the closure, staged response, safe reopening, support during delay, and ongoing planning.",
+        "quickTip": "A whole-passage summary should include the major process and future limitation without listing every technical detail.",
+        "evidenceRef": "The staged repair restored the crossing while giving planners time to study replacement costs, accessibility improvements, and possible changes..."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement is directly supported about monitoring after the bridge reopened?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city returned immediately to its older, less frequent inspection schedule.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The city explicitly did not return immediately to the older schedule."
+        },
+        {
+          "id": "b",
+          "text": "The city scheduled inspections every six months for the first two years and left moisture sensors near repaired connections."
+        },
+        {
+          "id": "c",
+          "text": "Monitoring would stop as soon as replacement costs were estimated.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No such stopping condition is stated."
+        },
+        {
+          "id": "d",
+          "text": "Only residents were responsible for reporting water buildup.",
+          "distractorType": "changed_condition",
+          "whyWrong": "Maintenance crews and sensors were part of the monitoring process."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The passage directly states the six-month schedule and continued sensor placement.",
+        "quickTip": "Preserve the time period and monitoring method exactly.",
+        "evidenceRef": "Engineers scheduled inspections every six months for the first two years ... Small moisture sensors were left near several repaired connections."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that the repair gave the city time to plan for future needs instead of settling every long-term issue?",
+      "primarySkillId": "R1.3",
+      "familyId": "support.relevant_vs_mentioned",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The bridge provided a shortcut to the library and bus terminal.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why the crossing mattered, not why future planning remains open."
+        },
+        {
+          "id": "b",
+          "text": "Temporary lighting was added to the alternate route.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports temporary access measures during closure."
+        },
+        {
+          "id": "c",
+          "text": "A full replacement may still be needed, but the staged repair restored access while planners study replacement costs, accessibility, and river-path changes."
+        },
+        {
+          "id": "d",
+          "text": "The first inspection found corrosion at connection points.",
+          "distractorType": "related_detail",
+          "whyWrong": "This explains the original problem, not the future-planning benefit of staged repair."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Choice C directly links restored access with unresolved future planning.",
+        "quickTip": "Choose the detail that supports both the immediate result and unfinished long-term planning.",
+        "evidenceRef": "The staged repair restored the crossing while giving planners time to study replacement costs, accessibility improvements, and possible changes..."
+      }
+    }
+  ]
+}

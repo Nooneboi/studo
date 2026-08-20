@@ -1,0 +1,135 @@
+{
+  "note": "Merge reviewed entries into the existing RLA resource registry; do not replace the registry with this patch.",
+  "resources": [
+    {
+      "id": "res-rla-explicit-meaning-guide-refined-v1",
+      "title": "Explicit Meaning - Study Guide",
+      "type": "study_guide",
+      "skillIds": [
+        "R1.1"
+      ],
+      "href": "assets/resources/explicit-meaning-study-guide.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-main-idea-guide-refined-v1",
+      "title": "Main Idea - Study Guide",
+      "type": "study_guide",
+      "skillIds": [
+        "R1.2"
+      ],
+      "href": "assets/resources/main-idea-study-guide.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-supporting-details-guide-refined-v1",
+      "title": "Supporting Details - Study Guide",
+      "type": "study_guide",
+      "skillIds": [
+        "R1.3"
+      ],
+      "href": "assets/resources/supporting-details-study-guide.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-summary-guide-refined-v1",
+      "title": "Summary - Study Guide",
+      "type": "study_guide",
+      "skillIds": [
+        "R1.4"
+      ],
+      "href": "assets/resources/summary-study-guide.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-theme-guide-refined-v1",
+      "title": "Theme - Study Guide",
+      "type": "study_guide",
+      "skillIds": [
+        "R1.5"
+      ],
+      "href": "assets/resources/theme-study-guide.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-core-transfer-heat-route-pdf-v1",
+      "title": "Cooling the Walk to Transit - GED Practice",
+      "type": "worksheet",
+      "skillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
+      ],
+      "href": "assets/resources/core-transfer-heat-route-practice.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-core-transfer-handoff-pdf-v1",
+      "title": "A New Handoff System at Meridian Repair - GED Practice",
+      "type": "worksheet",
+      "skillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
+      ],
+      "href": "assets/resources/core-transfer-handoff-practice.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-core-transfer-footbridge-pdf-v1",
+      "title": "Reopening the Riverside Footbridge - GED Practice",
+      "type": "worksheet",
+      "skillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
+      ],
+      "href": "assets/resources/core-transfer-footbridge-practice.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    },
+    {
+      "id": "res-rla-core-transfer-blue-folder-pdf-v1",
+      "title": "The Last Blue Folder - GED Practice",
+      "type": "worksheet",
+      "skillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4",
+        "R1.5"
+      ],
+      "href": "assets/resources/core-transfer-blue-folder-practice.pdf",
+      "download": true,
+      "status": "review",
+      "reviewer": null,
+      "rightsStatus": "original"
+    }
+  ]
+}

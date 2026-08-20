@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-core-transfer-blue-folder",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Core Meaning - GED Practice",
+  "difficulty": "hard",
+  "status": "review",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-core-transfer-blue-folder"
+  ],
+  "author": "Studo",
+  "reviewer": null,
+  "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.5",
+    "secondarySkillIds": [
+      "R1.1",
+      "R1.2",
+      "R1.3",
+      "R1.4"
+    ],
+    "contentKind": "passage_practice",
+    "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+    "topicLabel": "GED Practice"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What did Lian find that made her doubt labeling the folder '1970s'?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "A catalog photograph from 1968 already showed the metal sign she had remembered."
+        },
+        {
+          "id": "b",
+          "text": "Ms. Alvarez told her that the bakery had closed in 1970.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "Ms. Alvarez never gives a bakery-closing date."
+        },
+        {
+          "id": "c",
+          "text": "The donor had written a complete date on the folder.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The folder had no date and the donor did not list individual dates."
+        },
+        {
+          "id": "d",
+          "text": "A building permit showed that the sign was installed in the 1980s.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No permit or 1980s installation date appears."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The digital catalog contained a dated 1968 image already showing the metal sign.",
+        "quickTip": "Separate what the character remembers from what the text later confirms.",
+        "evidenceRef": "One image from 1968 already showed the metal sign."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of the passage?",
+      "primarySkillId": "R1.5",
+      "familyId": "theme.identify",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Finishing every task quickly is the best sign of responsibility.",
+          "distractorType": "opposite_theme",
+          "whyWrong": "Lian resists rushing because speed would produce an unsupported label."
+        },
+        {
+          "id": "b",
+          "text": "Historical records are useful only when every detail can be dated exactly.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The archive can preserve useful material with an uncertain date."
+        },
+        {
+          "id": "c",
+          "text": "Responsible work sometimes means admitting uncertainty instead of forcing a confident answer."
+        },
+        {
+          "id": "d",
+          "text": "People learn more from digital catalogs than from experienced teachers.",
+          "distractorType": "secondary_idea",
+          "whyWrong": "The catalog helps, but the passage is not mainly about technology being better than people."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Lian's final choice is to record uncertainty honestly rather than invent a date, and the ending reframes that as responsible preservation.",
+        "quickTip": "A strong theme explains the character's choice and the meaning of the ending.",
+        "evidenceRef": "The uncertain date was not a blank she had failed to fill. It was information that had been recorded honestly."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly supports the theme that responsible work can require admitting uncertainty?",
+      "primarySkillId": "R1.3",
+      "familyId": "support.best_detail",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Lian knew where festival posters and school records belonged.",
+          "distractorType": "interesting_but_unrelated",
+          "whyWrong": "This shows experience but not the theme about uncertainty."
+        },
+        {
+          "id": "b",
+          "text": "Lian tells Ms. Alvarez that she can describe the signs but should not choose a decade without enough evidence."
+        },
+        {
+          "id": "c",
+          "text": "Ms. Alvarez keeps a pencil behind her ear.",
+          "distractorType": "literal_event_only",
+          "whyWrong": "The pencil is a minor descriptive detail."
+        },
+        {
+          "id": "d",
+          "text": "The bakery photographs show two different storefront signs.",
+          "distractorType": "background_detail",
+          "whyWrong": "The sign difference creates the problem but does not show Lian's responsible response."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Choice B directly shows Lian choosing honesty about what she does not know instead of inventing certainty.",
+        "quickTip": "Theme evidence should show the character's meaningful choice, consequence, or change.",
+        "evidenceRef": "\"I can describe the signs, but I don't think I should choose a decade.\""
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "hard",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A volunteer finishes labeling a bakery collection after finding exact dates for every photograph.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The folder remains undated."
+        },
+        {
+          "id": "b",
+          "text": "An archivist asks a volunteer to search building permits for a bakery renovation.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Ms. Alvarez mentions permits only as a possible future research source."
+        },
+        {
+          "id": "c",
+          "text": "A volunteer learns that old photographs should always be organized by the style of signs in them.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage does not create a general rule about sign style."
+        },
+        {
+          "id": "d",
+          "text": "While finishing an archive task, Lian nearly assigns an unsupported date, checks the evidence, and decides to record the uncertainty honestly instead."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "Choice D keeps the task, tempting mistake, evidence check, and final decision that gives the story its meaning.",
+        "quickTip": "A literary summary should keep the central conflict and resolution without turning the story into a theme statement.",
+        "evidenceRef": "She had almost written a confident date based on a memory that sounded convincing ... 'I don't think I should choose a decade.'"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses what the passage mainly shows about Lian's final morning?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Her last task changes her understanding of good archival work from simply completing labels to accurately recording both what is known and what remains uncertain."
+        },
+        {
+          "id": "b",
+          "text": "Lian decides that volunteering at the history center has become too difficult.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Lian does not reject the work; she gains a deeper understanding of it."
+        },
+        {
+          "id": "c",
+          "text": "Ms. Alvarez teaches Lian how to use the center's digital catalog for the first time.",
+          "distractorType": "too_narrow",
+          "whyWrong": "She uses the catalog, but the passage does not say this is her first time."
+        },
+        {
+          "id": "d",
+          "text": "The bakery folder proves that handwritten notes are unreliable historical sources.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The note is incomplete, but the passage does not claim handwritten notes are generally unreliable."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The story begins with Lian confident about where things belong and ends with a broader understanding that uncertainty itself must be recorded honestly.",
+        "quickTip": "For literary main idea, track the character's central change across the beginning and ending.",
+        "evidenceRef": "Preserving history also meant knowing when not to force something into a place it did not yet fit."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "According to the passage, what did Ms. Alvarez write on the temporary slip?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "1970s",
+          "distractorType": "changed_detail",
+          "whyWrong": "1970s is the unsupported date Lian considered."
+        },
+        {
+          "id": "b",
+          "text": "Before the renovation",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "'Before the renovation' is the handwritten note already inside the folder."
+        },
+        {
+          "id": "c",
+          "text": "date uncertain"
+        },
+        {
+          "id": "d",
+          "text": "check advertisements",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "Advertisements are mentioned only as a possible future research source."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Ms. Alvarez writes 'date uncertain' after Lian explains that the decade cannot be supported.",
+        "quickTip": "Do not confuse text found inside the folder with the archivist's later label.",
+        "evidenceRef": "She pulled a pencil from behind her ear and wrote \"date uncertain\" on a temporary slip."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which event at the end of the passage most strongly develops the idea that uncertainty can be useful information rather than simply a failure to finish?",
+      "primarySkillId": "R1.5",
+      "familyId": "theme.evidence",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Lian looks at the rows of shelves before leaving.",
+          "distractorType": "literal_event_only",
+          "whyWrong": "Looking at the shelves is reflective, but it does not express the theme as directly."
+        },
+        {
+          "id": "b",
+          "text": "Lian accepts that the folder can remain marked as uncertain while the catalog records what is known and what future research might clarify."
+        },
+        {
+          "id": "c",
+          "text": "Ms. Alvarez tells Lian where school records are stored.",
+          "distractorType": "interesting_but_unrelated",
+          "whyWrong": "Ms. Alvarez does not give this instruction at the end."
+        },
+        {
+          "id": "d",
+          "text": "The blue folder is placed in a different box from the bakery materials.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The blue folder remains with the bakery materials."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The ending explicitly reframes the uncertain date as honestly recorded information and preserves a path for future research.",
+        "quickTip": "Theme-evidence questions often hinge on the choice or realization that changes the meaning of the ending.",
+        "evidenceRef": "The uncertain date was not a blank she had failed to fill. It was information that had been recorded honestly."
+      }
+    }
+  ]
+}
