@@ -1,0 +1,428 @@
+{
+  "id": "set-rla-core-transfer-heat-route",
+  "title": "Cooling the Walk to Transit",
+  "description": "Science / community · Informational · 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Core Meaning - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "During the hottest months of the year, residents of East Harbor often complained that the ten-minute walk from the neighborhood's apartment blocks to the light-rail station felt much longer. The route crossed wide intersections, a parking lot, and two blocks with almost no mature trees. City staff already knew that air temperatures rose during summer heat waves, but they wanted to know which parts of the walking route exposed pedestrians to the most heat.\n\nThe transportation and parks departments created a small monitoring project rather than beginning with a large construction plan. Staff placed temperature sensors at six points along the route and asked volunteers to walk the same path at several times of day while carrying portable surface-temperature meters. The volunteers also recorded whether each location had shade from trees, buildings, or bus shelters. Measurements were collected on twelve clear days in June and July.\n\nThe results showed that the route did not heat evenly. The parking-lot crossing and an uncovered bus stop had the highest surface temperatures during the afternoon. A block with several mature rain trees was noticeably cooler, even when the air temperature measured by the nearest sensor was similar. The shaded bus stop was not dramatically cooler in the surrounding air, but the bench and pavement beneath the shelter stayed much cooler than the uncovered surfaces nearby. Staff concluded that shade changed the heat pedestrians felt even when it did not greatly change the neighborhood's overall air temperature.\n\nThe city then tested three small changes. A temporary fabric canopy was installed over the hottest bus stop. Young trees were planted along one block where underground utilities allowed enough soil space. On a section where tree planting was not practical, workers applied a lighter-colored surface coating to part of the sidewalk. Follow-up measurements suggested that all three changes reduced surface heating under some conditions, but the results were not identical. The canopy created immediate shade. The young trees provided little benefit during the first summer because their crowns were still small. The lighter coating reduced midday surface temperature, but pedestrians still reported discomfort because the section remained exposed to direct sun.\n\nThose differences changed the city's expansion plan. Instead of choosing one treatment for the entire route, staff proposed adding permanent shade first at waiting areas, protecting existing mature trees, and planting new trees where long-term maintenance was realistic. Reflective surfaces would be considered as a supporting measure rather than a replacement for shade. The city also planned to repeat measurements after the new trees had several years to grow.\n\nThe project did not eliminate summer heat along the route, and officials did not claim that the pilot proved one universal solution. Its main value was more practical: the measurements showed where pedestrians faced the greatest exposure and helped the city match different improvements to different parts of the walk.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "According to the passage, why did the city begin by collecting measurements instead of immediately choosing one large construction project?",
+      "points": 1,
+      "explanation": "The opening explains that staff wanted to know which parts of the route exposed pedestrians to the most heat before deciding what to change.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Preserve the passage's stated reason instead of choosing a related project goal.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Officials had already decided to plant trees along the entire route.",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "Tree planting became one later test; it was not the reason the city began with measurements."
+        },
+        {
+          "id": "b",
+          "text": "Staff wanted to identify where pedestrians faced the greatest heat exposure before matching improvements to locations."
+        },
+        {
+          "id": "c",
+          "text": "The city was required to wait several years before changing any bus stops.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No waiting requirement is stated."
+        },
+        {
+          "id": "d",
+          "text": "Residents asked the city to study air-conditioning use inside nearby apartments.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "The passage focuses on pedestrian heat along the route, not apartment air-conditioning."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "City staff ... wanted to know which parts of the walking route exposed pedestrians to the most heat."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of the passage?",
+      "points": 1,
+      "explanation": "The passage moves from measurement to several pilot treatments and ends with a targeted plan rather than one universal solution.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "The best main idea should explain the measurement, testing, differences, and targeted planning.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reflective sidewalk coatings are the most effective way to reduce summer heat in every location.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage treats reflective surfaces as a supporting measure, not the best solution everywhere."
+        },
+        {
+          "id": "b",
+          "text": "Young trees should not be used for heat reduction because they provide little shade during their first year.",
+          "distractorType": "reasonable_but_incomplete",
+          "whyWrong": "It focuses on one early limitation of young trees and ignores their long-term role."
+        },
+        {
+          "id": "c",
+          "text": "The city's main goal was to lower the neighborhood's overall air temperature with one treatment.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The project focused on pedestrian exposure and did not seek one treatment for overall air temperature."
+        },
+        {
+          "id": "d",
+          "text": "Measurements helped the city see that different parts of the walking route needed different heat-reduction strategies, with shade playing an important but location-specific role."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "Instead of choosing one treatment for the entire route, staff proposed adding permanent shade first at waiting areas ... and planting new trees where long-term maintenance was realistic."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail provides the strongest support for the idea that shade changed the heat pedestrians experienced even when it did not greatly change local air temperature?",
+      "points": 1,
+      "explanation": "Choice A directly compares similar air temperature with cooler shaded surfaces, supporting both parts of the idea.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "For strongest-evidence questions, choose the detail that supports every important part of the target idea.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The shaded bus stop had similar nearby air temperature, but its bench and pavement stayed much cooler than uncovered surfaces."
+        },
+        {
+          "id": "b",
+          "text": "Measurements were collected on twelve clear days in June and July.",
+          "distractorType": "background_only",
+          "whyWrong": "This describes data collection but not the effect of shade."
+        },
+        {
+          "id": "c",
+          "text": "The parking-lot crossing was one of the hottest parts of the route.",
+          "distractorType": "related_detail",
+          "whyWrong": "It identifies a hot location but does not compare shade with air temperature."
+        },
+        {
+          "id": "d",
+          "text": "Young trees provided little benefit during the first summer.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "It supports a point about tree maturity, not the immediate effect of shade."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "The shaded bus stop was not dramatically cooler in the surrounding air, but the bench and pavement beneath the shelter stayed much cooler."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which choice best summarizes the paragraphs describing the three pilot changes and their results?",
+      "points": 1,
+      "explanation": "The section compares three treatments and emphasizes that their effects differed.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A section summary should keep the relationship among the details, not just one result.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city tested three changes and found that all of them worked equally well, so officials planned to use all three everywhere.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The results were not identical and the city did not plan to use every treatment everywhere."
+        },
+        {
+          "id": "b",
+          "text": "The city planted trees because reflective surfaces and canopies failed to reduce heat.",
+          "distractorType": "misses_key_relationship",
+          "whyWrong": "The canopy and reflective surface did not fail."
+        },
+        {
+          "id": "c",
+          "text": "The city tested a canopy, young trees, and a lighter surface; each affected heat differently, showing that no single treatment worked the same way in every location."
+        },
+        {
+          "id": "d",
+          "text": "The city learned that young trees are useless during hot weather until they are fully mature.",
+          "distractorType": "copies_one_detail",
+          "whyWrong": "It reduces the whole section to the first-summer limitation of young trees."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "All three changes reduced surface heating under some conditions, but the results were not identical."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "Choice B keeps the problem, measurement, pilot actions, different results, and final planning decision without overclaiming.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A strong summary keeps the passage's main development and its limits.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city discovered that surface-temperature measurements are more useful than all other forms of heat research.",
+          "distractorType": "too_broad",
+          "whyWrong": "The passage never compares measurement methods this way."
+        },
+        {
+          "id": "b",
+          "text": "A city pilot measured heat along a transit walk, tested several small interventions, and used the different results to plan targeted improvements rather than a single universal solution."
+        },
+        {
+          "id": "c",
+          "text": "Residents asked the city to replace a hot parking lot with a tree-filled park, but underground utilities prevented the project.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This invents a park proposal and misstates the utility issue."
+        },
+        {
+          "id": "d",
+          "text": "The project proved that permanent bus shelters are enough to solve pedestrian heat during summer.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The project did not eliminate summer heat or prove one complete solution."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "The measurements showed where pedestrians faced the greatest exposure and helped the city match different improvements to different parts of the walk."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement is directly supported about the lighter-colored surface coating?",
+      "points": 1,
+      "explanation": "The passage directly states both the lower surface temperature and continued discomfort from direct sun.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Watch for answers that keep both the benefit and the limitation.",
+      "familyId": "explicit.fact.locate",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "It lowered the route's overall air temperature by the largest amount.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "The passage does not say it lowered overall air temperature or was best."
+        },
+        {
+          "id": "b",
+          "text": "It was installed only after the young trees had grown for several years.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "The city planned to remeasure trees later; the coating was part of the initial pilot."
+        },
+        {
+          "id": "c",
+          "text": "It made pedestrians report that the section was completely comfortable.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Pedestrians still reported discomfort."
+        },
+        {
+          "id": "d",
+          "text": "It reduced midday surface temperature, but the area still felt uncomfortable because it remained in direct sun."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "The lighter coating reduced midday surface temperature, but pedestrians still reported discomfort because the section remained exposed to direct sun."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the city's decision not to use one heat-reduction treatment for the entire route?",
+      "points": 1,
+      "explanation": "Different results across conditions directly support matching different treatments to different locations.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Choose evidence that explains the decision itself, not just project background.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The three tested changes produced different kinds and amounts of benefit under different conditions."
+        },
+        {
+          "id": "b",
+          "text": "The route crossed wide intersections and a parking lot.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why the route can feel hot but not why one treatment was rejected."
+        },
+        {
+          "id": "c",
+          "text": "Measurements were taken during June and July.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "The measurement dates do not support the one-size-fits-all decision."
+        },
+        {
+          "id": "d",
+          "text": "The city planned to repeat measurements after the trees grew.",
+          "distractorType": "related_detail",
+          "whyWrong": "Future monitoring matters, but it does not directly explain why the plan uses different treatments."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "All three changes reduced surface heating under some conditions, but the results were not identical."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-core-transfer-heat-route",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R1.1",
+        "R1.3",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-core-transfer-heat-route",
+      "title": "Cooling the Walk to Transit",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-20T14:33:30.327Z"
+  }
+}

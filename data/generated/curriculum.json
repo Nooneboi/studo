@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-19T15:57:16.852Z",
+  "builtAt": "2026-08-20T14:33:30.336Z",
   "tracks": [
     {
       "id": "reading",
@@ -52,12 +52,12 @@
             },
             {
               "id": "res-rla-core-meaning-practice-v1",
-              "title": "Core Meaning - Practice Workbook",
+              "title": "Core Meaning - Practice Pack",
               "type": "worksheet",
               "scope": "domain",
               "domainId": "core-meaning",
               "description": "Four original passages with 12 questions and a short answer key.",
-              "href": "assets/resources/core-meaning-practice-workbook.pdf",
+              "href": "assets/resources/core-meaning-practice-pack.pdf",
               "download": true,
               "status": "published",
               "rightsStatus": "original",
@@ -80,12 +80,12 @@
             },
             {
               "id": "res-rla-core-meaning-practice-v1",
-              "title": "Core Meaning - Practice Workbook",
+              "title": "Core Meaning - Practice Pack",
               "type": "worksheet",
               "scope": "domain",
               "domainId": "core-meaning",
               "description": "Four original passages with 12 questions and a short answer key.",
-              "href": "assets/resources/core-meaning-practice-workbook.pdf",
+              "href": "assets/resources/core-meaning-practice-pack.pdf",
               "download": true,
               "status": "published",
               "rightsStatus": "original",
@@ -103,7 +103,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 8,
+              "questionCount": 16,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -290,7 +290,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 8,
+              "questionCount": 12,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -477,7 +477,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 8,
+              "questionCount": 15,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -664,7 +664,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 8,
+              "questionCount": 15,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -851,7 +851,7 @@
               "practiceMode": "Literary",
               "available": true,
               "setCount": 1,
-              "questionCount": 8,
+              "questionCount": 10,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -1687,7 +1687,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 8,
+              "questionCount": 12,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -5600,7 +5600,7 @@
       "availableSkillCount": 22,
       "totalSkillCount": 22,
       "availableSetCount": 33,
-      "questionCount": 264,
+      "questionCount": 296,
       "resourceCount": 85,
       "studyFileCount": 85,
       "checkCount": 33
@@ -5696,7 +5696,7 @@
               "practiceMode": "Argument",
               "available": false,
               "setCount": 0,
-              "questionCount": 0,
+              "questionCount": 2,
               "resourceCount": 0,
               "studyFileCount": 0,
               "checkCount": 0,
@@ -5713,7 +5713,7 @@
               "practiceMode": "Argument",
               "available": false,
               "setCount": 0,
-              "questionCount": 0,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
               "checkCount": 0,
@@ -5948,7 +5948,7 @@
       "availableSkillCount": 0,
       "totalSkillCount": 15,
       "availableSetCount": 0,
-      "questionCount": 0,
+      "questionCount": 3,
       "resourceCount": 0,
       "studyFileCount": 0,
       "checkCount": 0
@@ -5997,13 +5997,13 @@
               ]
             }
           ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
+          "availableSkillCount": 2,
+          "availableSetCount": 2,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
           "studyFileCount": 0,
-          "checkCount": 0,
+          "checkCount": 2,
           "skills": [
             {
               "id": "L1.1",
@@ -6011,14 +6011,108 @@
               "label": "Frequently confused words",
               "priority": "P0",
               "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-grammar-precision-check",
+                  "title": "Grammar Transfer — Precision Check",
+                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+                  "file": "generated/modules/grammar-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                },
+                {
+                  "id": "set-rla-grammar-sentence-repair",
+                  "title": "Grammar Edit — Sentence Repair",
+                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+                  "file": "generated/modules/grammar-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-grammar-precision-check",
+                  "title": "Grammar Transfer — Precision Check",
+                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+                  "file": "generated/modules/grammar-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                },
+                {
+                  "id": "set-rla-grammar-sentence-repair",
+                  "title": "Grammar Edit — Sentence Repair",
+                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+                  "file": "generated/modules/grammar-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -6028,14 +6122,108 @@
               "label": "Basic subject–verb agreement",
               "priority": "P0",
               "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
+              "available": true,
+              "setCount": 2,
+              "questionCount": 2,
               "resourceCount": 0,
               "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
+              "checkCount": 2,
+              "sets": [
+                {
+                  "id": "set-rla-grammar-precision-check",
+                  "title": "Grammar Transfer — Precision Check",
+                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+                  "file": "generated/modules/grammar-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                },
+                {
+                  "id": "set-rla-grammar-sentence-repair",
+                  "title": "Grammar Edit — Sentence Repair",
+                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+                  "file": "generated/modules/grammar-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-grammar-precision-check",
+                  "title": "Grammar Transfer — Precision Check",
+                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
+                  "file": "generated/modules/grammar-transfer-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                },
+                {
+                  "id": "set-rla-grammar-sentence-repair",
+                  "title": "Grammar Edit — Sentence Repair",
+                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
+                  "file": "generated/modules/grammar-practice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 2,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.1"
+                    ],
+                    "contentKind": "editing_practice",
+                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
+                    "topicLabel": "Grammar & Usage"
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.1"
+                  ]
+                }
+              ],
               "resources": [],
               "studyResources": []
             },
@@ -6229,13 +6417,13 @@
           ]
         }
       ],
-      "availableSkillCount": 0,
+      "availableSkillCount": 2,
       "totalSkillCount": 13,
-      "availableSetCount": 0,
-      "questionCount": 0,
+      "availableSetCount": 2,
+      "questionCount": 4,
       "resourceCount": 0,
       "studyFileCount": 0,
-      "checkCount": 0
+      "checkCount": 2
     },
     {
       "id": "extended-response",
@@ -6364,7 +6552,7 @@
               "practiceMode": "Writing",
               "available": false,
               "setCount": 0,
-              "questionCount": 0,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
               "checkCount": 0,
@@ -6432,7 +6620,7 @@
               "practiceMode": "Writing",
               "available": false,
               "setCount": 0,
-              "questionCount": 0,
+              "questionCount": 1,
               "resourceCount": 0,
               "studyFileCount": 0,
               "checkCount": 0,
@@ -6498,7 +6686,7 @@
       "availableSkillCount": 0,
       "totalSkillCount": 12,
       "availableSetCount": 0,
-      "questionCount": 0,
+      "questionCount": 2,
       "resourceCount": 0,
       "studyFileCount": 0,
       "checkCount": 0
@@ -7331,13 +7519,176 @@
       },
       "measuredSkillIds": [
         "R5.4",
-        "W1.5"
+        "W1.5",
+        "W1.9"
       ],
       "passageMeta": {
         "id": "p-rla-library-sunday-hours",
         "title": "Sunday Hours at the Downtown Library",
         "textType": "informational",
         "context": "civics",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-blue-folder",
+      "title": "The Last Blue Folder",
+      "description": "Literary · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-blue-folder.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.5",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.2",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.1",
+        "R1.5",
+        "R1.3",
+        "R1.4",
+        "R1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-blue-folder",
+        "title": "The Last Blue Folder",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-footbridge",
+      "title": "Reopening the Riverside Footbridge",
+      "description": "Community / civics · Informational · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-footbridge.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-footbridge",
+        "title": "Reopening the Riverside Footbridge",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-handoff",
+      "title": "A New Handoff System at Meridian Repair",
+      "description": "Workplace · Informational · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-handoff.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-handoff",
+        "title": "A New Handoff System at Meridian Repair",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-heat-route",
+      "title": "Cooling the Walk to Transit",
+      "description": "Science / community · Informational · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-heat-route.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-heat-route",
+        "title": "Cooling the Walk to Transit",
+        "textType": "informational",
+        "context": "science",
         "sourceType": "original",
         "attribution": "Original content by Studo",
         "author": "Studo",
