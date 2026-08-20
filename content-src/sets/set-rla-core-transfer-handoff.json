@@ -5,13 +5,13 @@
   "category": "reading",
   "topic": "Core Meaning - GED Practice",
   "difficulty": "hard",
-  "status": "review",
+  "status": "published",
   "version": 1,
   "passageRefs": [
     "p-rla-core-transfer-handoff"
   ],
   "author": "Studo",
-  "reviewer": null,
+  "reviewer": "Studo Core Meaning refinement v1 review",
   "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
   "curriculum": {
     "domain": "Core Meaning",
@@ -376,5 +376,7 @@
         "evidenceRef": "The average time ... beginning the next repair step also fell. However, the company found no meaningful change in the total time required for very complex repairs."
       }
     }
-  ]
+  ],
+  "title": "A New Handoff System at Meridian Repair",
+  "description": "Workplace · Informational · 7 questions"
 }

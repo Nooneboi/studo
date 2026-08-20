@@ -5,13 +5,13 @@
   "category": "reading",
   "topic": "Core Meaning - GED Practice",
   "difficulty": "hard",
-  "status": "review",
+  "status": "published",
   "version": 1,
   "passageRefs": [
     "p-rla-core-transfer-heat-route"
   ],
   "author": "Studo",
-  "reviewer": null,
+  "reviewer": "Studo Core Meaning refinement v1 review",
   "reviewNotes": "Post-research Core Meaning transfer set. Review ambiguity, distractor quality, answer balance, and learner timing before publish.",
   "curriculum": {
     "domain": "Core Meaning",
@@ -376,5 +376,7 @@
         "evidenceRef": "All three changes reduced surface heating under some conditions, but the results were not identical."
       }
     }
-  ]
+  ],
+  "title": "Cooling the Walk to Transit",
+  "description": "Science / community · Informational · 7 questions"
 }
