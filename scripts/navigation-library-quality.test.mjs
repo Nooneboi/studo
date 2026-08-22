@@ -1,0 +1,146 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+
+const root = process.cwd();
+const readJson = (p) => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
+const curriculum = readJson('data/generated/curriculum.json');
+
+function loadModel() {
+  const modelPath = path.join(root, 'js/library-model.js');
+  assert.ok(fs.existsSync(modelPath), 'js/library-model.js must exist');
+  const code = fs.readFileSync(modelPath, 'utf8');
+  const context = { globalThis: {}, window: undefined };
+  vm.createContext(context);
+  vm.runInContext(code, context, { filename: modelPath });
+  return context.globalThis.StudoLibraryModel;
+}
+
+test('homepage Explore RLA links use published curriculum track ids', () => {
+  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const published = new Set((curriculum.tracks || []).map((t) => t.id));
+  const hrefs = [...html.matchAll(/href="curriculum\.html\?track=([^"]+)"/g)].map((m) => decodeURIComponent(m[1]));
+  assert.ok(hrefs.length >= published.size, 'homepage should expose all published RLA tracks');
+  for (const id of published) assert.ok(hrefs.includes(id), `homepage must link to published track ${id}`);
+  for (const id of hrefs) assert.ok(published.has(id), `homepage track link ${id} must resolve to a published track`);
+});
+
+test('Practice search uses learner units for unit-based tracks and skills for Reading', () => {
+  const model = loadModel();
+  assert.equal(typeof model?.buildPracticeSearchItems, 'function');
+  const items = model.buildPracticeSearchItems(curriculum.tracks || []);
+
+  const er = items.filter((item) => item.trackId === 'extended-response');
+  assert.ok(er.some((item) => item.label === 'Thesis & Evidence' && item.unitId === 'thesis-evidence'));
+  assert.ok(er.every((item) => item.unitId && !item.skillId), 'ER search results should be learner units');
+
+  const language = items.filter((item) => item.trackId === 'language');
+  assert.equal(language.length, 7, 'Language should expose seven learner units in search');
+  assert.ok(language.every((item) => item.unitId && !item.skillId));
+
+  const reading = items.filter((item) => item.trackId === 'reading');
+  assert.equal(reading.length, 22, 'Reading should expose its 22 learner-facing skills');
+  assert.ok(reading.every((item) => item.skillId && !item.unitId));
+});
+
+test('Passage Practice groups every published passage exactly once into four learner groups', () => {
+  const model = loadModel();
+  assert.equal(typeof model?.groupPassageSets, 'function');
+  const sets = curriculum.passagePractice || [];
+  const groups = model.groupPassageSets(sets);
+  assert.deepEqual(Array.from(groups.map((g) => g.id)), ['science', 'workplace', 'community-civics', 'literary']);
+  const ids = groups.flatMap((g) => g.items.map((item) => item.id || item.file));
+  assert.equal(ids.length, sets.length);
+  assert.equal(new Set(ids).size, sets.length, 'each passage should appear exactly once');
+  assert.ok(groups.every((g) => g.items.length > 0), 'all four learner groups should contain passages');
+});
+
+test('Resources group every unique curriculum resource exactly once by learner topic', () => {
+  const model = loadModel();
+  assert.equal(typeof model?.buildResourceLibrary, 'function');
+  const library = model.buildResourceLibrary(curriculum.tracks || []);
+  const rendered = [];
+  for (const track of library) {
+    for (const domain of track.domains) {
+      rendered.push(...(domain.generalResources || []).map((r) => r.id));
+      for (const topic of domain.topics || []) rendered.push(...topic.resources.map((r) => r.id));
+    }
+  }
+
+  const expected = new Set();
+  for (const track of curriculum.tracks || []) {
+    for (const domain of track.domains || []) {
+      for (const r of domain.topicResources || domain.resources || []) if (r?.id) expected.add(r.id);
+      if (domain.units?.length) {
+        for (const unit of domain.units) for (const r of unit.studyResources || unit.resources || []) if (r?.id) expected.add(r.id);
+      } else {
+        for (const skill of domain.skills || []) for (const r of skill.studyResources || skill.resources || []) if (r?.id) expected.add(r.id);
+      }
+    }
+  }
+
+  assert.equal(rendered.length, expected.size, 'library should render each unique resource once');
+  assert.equal(new Set(rendered).size, expected.size, 'library must not duplicate resources');
+
+  const erTrack = library.find((t) => t.id === 'extended-response');
+  const erTopics = erTrack.domains.flatMap((d) => d.topics || []);
+  assert.ok(erTopics.some((topic) => topic.label === 'Thesis & Evidence'));
+  assert.ok(!erTopics.some((topic) => topic.label === 'Build a thesis'), 'internal ER skill labels should not replace learner units');
+});
+
+test('Passage and Resource library pages expose learner search/filter controls', () => {
+  const passagesHtml = fs.readFileSync(path.join(root, 'passages.html'), 'utf8');
+  assert.match(passagesHtml, /id="passage-search"/);
+  assert.match(passagesHtml, /id="passage-results-summary"/);
+  assert.match(passagesHtml, /js\/library-model\.js/);
+
+  const resourcesHtml = fs.readFileSync(path.join(root, 'resources.html'), 'utf8');
+  assert.match(resourcesHtml, /id="resource-search"/);
+  assert.match(resourcesHtml, /id="resource-track-filter"/);
+  assert.match(resourcesHtml, /js\/library-model\.js/);
+});
+
+test('explicit invalid track ids do not silently fall back to Reading', () => {
+  const curriculumJs = fs.readFileSync(path.join(root, 'js/curriculum.js'), 'utf8');
+  const domainJs = fs.readFileSync(path.join(root, 'js/domain.js'), 'utf8');
+  assert.match(curriculumJs, /requestedTrackId/);
+  assert.match(curriculumJs, /This curriculum area could not be found/);
+  assert.doesNotMatch(curriculumJs, /find\(\(item\) => item\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
+  assert.match(domainJs, /requestedTrackId/);
+  assert.doesNotMatch(domainJs, /find\(\(t\) => t\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
+});
+
+test('resource rows preserve learner-facing file labels for stacked mobile layout', () => {
+  const resourcesJs = fs.readFileSync(path.join(root, 'js/resources.js'), 'utf8');
+  const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
+  assert.match(resourcesJs, /data-label=/);
+  assert.match(css, /content:\s*attr\(data-label\)/);
+});
+
+test('static internal HTML links resolve to existing project files', () => {
+  const htmlFiles = fs.readdirSync(root).filter((name) => name.endsWith('.html'));
+  const missing = [];
+  for (const file of htmlFiles) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    for (const match of html.matchAll(/href="([^"]+)"/g)) {
+      const href = match[1];
+      if (!href || href.startsWith('#') || /^https?:\/\//i.test(href) || href.startsWith('mailto:')) continue;
+      const target = href.split(/[?#]/)[0];
+      if (!target || target.includes('${')) continue;
+      if (!fs.existsSync(path.join(root, target))) missing.push(`${file} -> ${target}`);
+    }
+  }
+  assert.deepEqual(missing, []);
+});
+
+test('search normalization treats underscore and hyphen topic labels as normal words', () => {
+  const model = loadModel();
+  const civic = (curriculum.passagePractice || []).find((set) => set.passageMeta?.context === 'social_studies');
+  assert.ok(civic, 'expected a social_studies passage fixture');
+  assert.ok(model.passageSearchText(civic).includes('social studies'));
+  const practiceItems = model.buildPracticeSearchItems(curriculum.tracks || []);
+  const er = practiceItems.find((item) => item.trackId === 'extended-response');
+  assert.ok(er.searchText.includes('extended response'));
+});

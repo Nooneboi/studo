@@ -34,14 +34,8 @@ function renderTracks(tracks) {
 function setupSearch(tracks) {
   const input = document.getElementById("skill-search");
   const results = document.getElementById("skill-search-results");
-  const items = [];
-  for (const track of tracks) {
-    for (const domain of track.domains || []) {
-      for (const skill of domain.skills || []) {
-        items.push({ track, domain, skill });
-      }
-    }
-  }
+  const model = window.StudoLibraryModel;
+  const items = model ? model.buildPracticeSearchItems(tracks) : [];
 
   input.addEventListener("input", () => {
     const query = input.value.trim().toLowerCase();
@@ -50,16 +44,19 @@ function setupSearch(tracks) {
       results.innerHTML = "";
       return;
     }
-    const matches = items.filter(({ track, domain, skill }) =>
-      `${skill.label} ${domain.label} ${track.label}`.toLowerCase().includes(query)
-    ).slice(0, 8);
+    const matches = items.filter((item) => item.searchText.includes(query.replace(/_/g, "-"))).slice(0, 10);
     results.hidden = false;
-    results.innerHTML = matches.length ? matches.map(({ track, domain, skill }) => `
-      <a class="skill-search-row" href="skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}">
-        <strong>${escapeHtml(skill.label)}</strong>
-        <span>${escapeHtml(domain.label)} · ${escapeHtml(track.shortLabel || track.label)}</span>
-        <b aria-hidden="true">→</b>
-      </a>`).join("") : `<div class="skill-search-empty">No matching topic.</div>`;
+    results.innerHTML = matches.length ? matches.map((item) => {
+      const target = item.unitId
+        ? `skill.html?track=${encodeURIComponent(item.trackId)}&domain=${encodeURIComponent(item.domainId)}&unit=${encodeURIComponent(item.unitId)}`
+        : `skill.html?track=${encodeURIComponent(item.trackId)}&domain=${encodeURIComponent(item.domainId)}&skill=${encodeURIComponent(item.skillId)}`;
+      return `
+        <a class="skill-search-row" href="${target}">
+          <strong>${escapeHtml(item.label)}</strong>
+          <span>${escapeHtml(item.domainLabel)} · ${escapeHtml(item.trackLabel)}</span>
+          <b aria-hidden="true">→</b>
+        </a>`;
+    }).join("") : `<div class="skill-search-empty">No matching topic.</div>`;
   });
 }
 

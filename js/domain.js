@@ -4,14 +4,15 @@ init();
 async function init() {
   const mount = document.getElementById("domain-view");
   const params = new URLSearchParams(location.search);
-  const trackId = params.get("track") || "reading";
+  const requestedTrackId = params.get("track");
+  const trackId = requestedTrackId || "reading";
   const domainId = params.get("domain");
   let curriculum;
   try { curriculum = await Data.loadCurriculum(); }
   catch (_) { mount.innerHTML = `<div class="empty-state">The curriculum could not be loaded.</div>`; return; }
 
-  const track = curriculum.tracks.find((t) => t.id === trackId) || curriculum.tracks[0];
-  const domain = track?.domains.find((d) => d.id === domainId) || track?.domains[0];
+  const track = curriculum.tracks.find((t) => t.id === trackId);
+  const domain = track?.domains.find((d) => d.id === domainId) || (!domainId ? track?.domains[0] : null);
   if (!track || !domain) { mount.innerHTML = `<div class="empty-state">This curriculum area could not be found.</div>`; return; }
 
   const unitMode = Array.isArray(domain.units) && domain.units.length > 0;

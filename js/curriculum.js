@@ -4,13 +4,17 @@ init();
 async function init() {
   const mount = document.getElementById("curriculum-view");
   const params = new URLSearchParams(location.search);
-  const trackId = params.get("track") || "reading";
+  const requestedTrackId = params.get("track");
+  const trackId = requestedTrackId || "reading";
   let curriculum;
   try { curriculum = await Data.loadCurriculum(); }
   catch (_) { mount.innerHTML = `<div class="empty-state">The curriculum could not be loaded.</div>`; return; }
 
-  const track = curriculum.tracks.find((item) => item.id === trackId) || curriculum.tracks[0];
-  if (!track) { mount.innerHTML = `<div class="empty-state">No curriculum is available yet.</div>`; return; }
+  const track = curriculum.tracks.find((item) => item.id === trackId);
+  if (!track) {
+    mount.innerHTML = `<div class="empty-state">${requestedTrackId ? "This curriculum area could not be found." : "No curriculum is available yet."}</div>`;
+    return;
+  }
 
   mount.innerHTML = `
     <header class="simple-curriculum-hero">

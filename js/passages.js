@@ -1,4 +1,6 @@
-/* passages.js — one home for mixed-skill passage sets */
+/* passages.js — grouped mixed-skill passage library */
+let allSets = [];
+let query = "";
 init();
 
 async function init(){
@@ -6,37 +8,56 @@ async function init(){
   let curriculum;
   try { curriculum=await Data.loadCurriculum(); }
   catch (_) { mount.innerHTML=`<div class="empty-state">Passage practice could not be loaded.</div>`; return; }
-  const sets=[...(curriculum.passagePractice||[])].sort((a,b)=>(b.questionCount||0)-(a.questionCount||0) || String(a.title||"").localeCompare(String(b.title||"")));
-  if(!sets.length){ mount.innerHTML=`<p class="passage-practice-empty">No passage practice published yet.</p>`; return; }
-  mount.innerHTML=sets.map(renderSet).join("");
+  allSets=[...(curriculum.passagePractice||[])];
+  setupSearch();
+  render();
+}
+
+function setupSearch(){
+  const input=document.getElementById("passage-search");
+  input.addEventListener("input",()=>{
+    query=input.value.trim().toLowerCase().replace(/_/g,"-");
+    render();
+  });
+}
+
+function render(){
+  const mount=document.getElementById("passage-list");
+  const summary=document.getElementById("passage-results-summary");
+  const model=window.StudoLibraryModel;
+  const filtered=query ? allSets.filter((set)=>model.passageSearchText(set).includes(query)) : allSets;
+  const groups=model.groupPassageSets(filtered);
+  summary.textContent=query ? `${filtered.length} of ${allSets.length} passages` : `${allSets.length} passages · grouped by reading context`;
+  if(!filtered.length){
+    mount.innerHTML=`<div class="empty-state passage-library-empty">No passages match “${escapeHtml(query)}”.</div>`;
+    return;
+  }
+  mount.innerHTML=groups.map(renderGroup).join("");
+}
+
+function renderGroup(group){
+  const empty=!group.items.length;
+  return `<section class="passage-group ${empty?"is-empty":""}" aria-labelledby="passage-group-${group.id}">
+    <header class="passage-group-head">
+      <h2 id="passage-group-${group.id}">${escapeHtml(group.label)}</h2>
+      <span>${group.items.length}</span>
+    </header>
+    <div class="passage-group-list">
+      ${empty ? `<p class="passage-group-empty">No matches in this group.</p>` : group.items.map(renderSet).join("")}
+    </div>
+  </section>`;
 }
 
 function renderSet(set){
   const p=set.passageMeta||{};
-  const info=[];
-  if(p.textType==="literary") info.push("Literary");
-  else {
-    if(p.context) info.push(label(p.context));
-    if(p.textType) info.push(label(p.textType));
-  }
-  if(set.questionCount) info.push(`${set.questionCount} questions`);
-  const source=sourceLine(p);
-  return `<a class="passage-practice-row" href="module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent('passages.html')}">
-    <div class="passage-practice-copy">
-      <strong>${escapeHtml(set.title)}</strong>
-      <span class="passage-practice-meta">${escapeHtml(info.join(" · "))}</span>
-      ${source?`<span class="passage-practice-source">${escapeHtml(source)}</span>`:""}
-    </div>
+  const textType=p.textType==="literary" ? "Literary" : "Informational";
+  const difficulty=label(set.difficulty||"mixed");
+  const meta=[textType,difficulty,set.questionCount?`${set.questionCount} questions`:null].filter(Boolean).join(" · ");
+  return `<a class="passage-group-row" href="module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent('passages.html')}">
+    <strong>${escapeHtml(set.title)}</strong>
+    <span>${escapeHtml(meta)}</span>
   </a>`;
 }
 
-function sourceLine(p){
-  if(p.sourceType==="original") return p.author && p.author!=="Studo" ? p.author : "Studo original";
-  const parts=[];
-  if(p.author) parts.push(p.author);
-  if(p.workTitle) parts.push(p.workTitle);
-  if(parts.length) return parts.join(" · ");
-  return p.attribution || "";
-}
 function label(v){ return String(v||"").replace(/_/g," ").replace(/\b\w/g,(m)=>m.toUpperCase()); }
 function escapeHtml(v){const d=document.createElement("div");d.textContent=v??"";return d.innerHTML;}

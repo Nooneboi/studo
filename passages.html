@@ -42,9 +42,17 @@
 <a class="curriculum-back" href="practice.html">← Practice</a>
 <div class="page-kicker">Reasoning Through Language Arts</div>
 <h1>Passage practice</h1>
+<p>Choose a reading context, or search by title and topic.</p>
 </header>
+<section class="passage-library-tools" aria-label="Find a passage">
+<label class="library-search-field" for="passage-search">
+<span class="sr-only">Search passage practice</span>
+<input id="passage-search" type="search" autocomplete="off" placeholder="Search title, science, workplace, literary..."/>
+</label>
+<div class="library-results-summary" id="passage-results-summary" aria-live="polite"></div>
+</section>
 <section aria-label="Mixed passage practice">
-<div class="passage-practice-list" id="passage-list"></div>
+<div class="passage-practice-groups" id="passage-list"></div>
 </section>
 </div>
 </main>
@@ -52,6 +60,7 @@
 <script src="js/app.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
+<script src="js/library-model.js"></script>
 <script src="js/passages.js"></script>
 </body>
 </html>
