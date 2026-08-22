@@ -1,0 +1,487 @@
+{
+  "id": "rla-relationships-practice-01",
+  "title": "Relationships Practice 1",
+  "description": "4 short texts - 8 relationship questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Relationships among people, events & ideas",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Shared Calendar\n\nA volunteer team often arrived at different times because schedule changes were sent in separate messages. The coordinator created one shared calendar that updated automatically. After that, fewer volunteers missed changed start times.\n\nTEXT B - Night Market\n\nA popular market drew larger crowds than expected. The entrance became congested, so organizers moved several stalls and created a separate line for food pickup. Movement near the entrance improved.\n\nTEXT C - Festival Window\n\nDuring rehearsal, rain blew through an open window and damaged paper signs. Lena had argued that closing the window would make the room too warm. After helping replace the signs, she asked to keep the window closed whenever rain was forecast.\n\nTEXT D - Label System\n\nA storage room originally marked bins only by color. New volunteers frequently placed items in the wrong bins. Staff added large category names to each color label, and sorting errors decreased.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "How does the shared calendar affect the volunteer team in Text A?",
+      "points": 1,
+      "explanation": "The new tool changes how schedule information reaches the team and reduces missed changes.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It reduces missed schedule changes by giving the team one updated source"
+        },
+        {
+          "id": "b",
+          "text": "It removes all volunteers",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "c",
+          "text": "It causes separate messages to increase",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "d",
+          "text": "It makes schedule changes impossible",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What role do the earlier missed start times play in Text A?",
+      "points": 1,
+      "explanation": "The repeated problem motivates the procedural change.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "They prove calendars do not work",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "b",
+          "text": "They motivate the coordinator to create a shared calendar"
+        },
+        {
+          "id": "c",
+          "text": "They occur after the calendar solves the problem",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "d",
+          "text": "They are unrelated",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How does the larger crowd affect the market plan in Text B?",
+      "points": 1,
+      "explanation": "The crowd creates a problem that the redesign addresses.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It has no effect on the entrance",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "b",
+          "text": "It causes organizers to cancel the market",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "c",
+          "text": "It creates congestion that leads to a new stall layout and pickup line"
+        },
+        {
+          "id": "d",
+          "text": "It makes the entrance wider automatically",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the entrance setting contribute to the problem in Text B?",
+      "points": 1,
+      "explanation": "The spatial context explains why crowd growth produces congestion.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "context.shapes_meaning",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The setting has no effect",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "b",
+          "text": "The entrance is far from the market",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "c",
+          "text": "The entrance prevents any food sales",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "d",
+          "text": "Limited entry space makes the larger crowd harder to move through"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How does the rain event affect Lena in Text C?",
+      "points": 1,
+      "explanation": "The consequence changes her later choice.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes her later view about closing the window when rain is forecast"
+        },
+        {
+          "id": "b",
+          "text": "It makes her stop attending rehearsal",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "c",
+          "text": "It causes her to deny the signs were damaged",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "d",
+          "text": "It has no effect",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does the rehearsal setting contribute to Lena's change?",
+      "points": 1,
+      "explanation": "The physical setting connects the weather to the consequence that changes Lena's view.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "context.shapes_meaning",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The room has no signs",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "b",
+          "text": "The open window allows the weather to directly affect the paper signs"
+        },
+        {
+          "id": "c",
+          "text": "The setting prevents rain",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "d",
+          "text": "The setting is unrelated",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "How do the category names affect the storage system in Text D?",
+      "points": 1,
+      "explanation": "The text links the added category names to fewer sorting mistakes.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "They cause all colors to disappear",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "b",
+          "text": "They remove every bin",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "c",
+          "text": "They give volunteers another clear cue and sorting errors decrease"
+        },
+        {
+          "id": "d",
+          "text": "They increase errors",
+          "distractorType": "sequence_without_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Why is the original color-only system important in Text D?",
+      "points": 1,
+      "explanation": "The original system provides the problem context for the change.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a precise relationship verb and check the direction of the effect.",
+      "familyId": "context.shapes_meaning",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It appears after errors decrease",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "b",
+          "text": "It proves color labels are always useless",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "c",
+          "text": "It is unrelated to the revision",
+          "distractorType": "context_with_no_effect",
+          "whyWrong": "This option does not accurately explain how one element shapes another."
+        },
+        {
+          "id": "d",
+          "text": "It establishes the limitation that the later labels are designed to address"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-relationships-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
+      "topicLabel": "Relationships among people, events & ideas"
+    },
+    "passage": {
+      "id": "p-rla-relationships-practice-01",
+      "title": "Relationships Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.842Z"
+  }
+}

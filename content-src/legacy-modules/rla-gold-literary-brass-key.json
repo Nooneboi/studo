@@ -1,0 +1,444 @@
+{
+  "id": "rla-gold-literary-brass-key",
+  "title": "The Brass Key",
+  "description": "Literary · 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Literary passage set",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "The brass key had been hanging from the blue ribbon for as long as Mina could remember. Her grandfather kept it on a hook beside the cash register, above a hand-lettered sign that read REPAIRS FINISHED ON FRIDAYS. The key opened the narrow cabinet where he stored watch parts: tiny gears, springs thin as hair, and glass faces wrapped in tissue paper.\n\nWhen Mina was younger, she thought the cabinet contained treasure. She would stand on the wooden stool and watch her grandfather choose one small piece at a time. He never hurried. Even when three customers waited at the counter, he held each watch close to his ear before opening it, as if the watch had something private to say.\n\nHer older brother, Tomas, disliked the shop. “Everything in here is older than we are,” he once said, waving at the shelves. To him, the scratched counter, the faded clock advertisements, and the smell of metal polish were proof that the place had been left behind. He wanted their grandfather to sell the building before repairs became too expensive.\n\nMina usually defended the shop, but not because she wanted to work there. She had plans to leave for college in another city. When her grandfather asked whether she wanted to learn how to replace a watch spring, she laughed and told him she could barely keep track of her own bus card. He laughed too and returned the brass key to its hook.\n\nThen, in February, her grandfather broke his wrist. For six weeks, he could greet customers and write receipts, but he could not manage the delicate tools. Mina began stopping at the shop after school. At first she only swept the floor and sorted envelopes. Soon she was reading repair notes aloud, finding parts in the cabinet, and learning the names of tools she had never noticed before. Her grandfather gave instructions from his chair, sometimes closing his eyes while she worked.\n\nOne rainy afternoon, a woman arrived carrying a silver watch in a green cloth. It had belonged to her mother, she explained, and it had stopped the week before. Mina expected her grandfather to say that he could not take another repair. Instead, he looked at Mina.\n\n“Open the back,” he said.\n\nHer hands felt clumsy. She almost told the woman to return another day. But Mina placed the watch on the black pad, selected the smallest screwdriver, and listened while her grandfather guided her through the first steps. The repair took nearly an hour. When the second hand finally moved, the woman pressed both palms against the counter and smiled.\n\nAfter closing, Mina wiped the tools and returned them to their drawers. Her grandfather had already gone upstairs. The shop was quiet except for the uneven ticking of clocks waiting for repair. Mina reached for the brass key, then stopped. For years, the key had looked like a symbol of a room she would eventually leave behind. Now it felt heavier in her hand, not like an anchor, but like something that could be carried.\n\nShe locked the cabinet and slipped the blue ribbon around her wrist before turning off the lights.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What can the reader most reasonably infer about Mina at the end of the passage?",
+      "points": 1,
+      "explanation": "At the end, Mina no longer sees the key as an anchor. She sees it as something that can be carried and chooses to wear it around her wrist.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "An inference should grow from several details without claiming more than the passage supports.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "She has decided to give up college and run the shop full time.",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "The passage never says she has changed her college plans."
+        },
+        {
+          "id": "b",
+          "text": "She has begun to see the shop as part of her future rather than only something she will leave behind."
+        },
+        {
+          "id": "c",
+          "text": "She now agrees with Tomas that the building should be sold.",
+          "distractorType": "contradicts_detail",
+          "whyWrong": "Her final action and thoughts move in the opposite direction."
+        },
+        {
+          "id": "d",
+          "text": "She is mainly relieved that her grandfather no longer needs help.",
+          "distractorType": "directly_stated_but_irrelevant",
+          "whyWrong": "The ending focuses on her changed relationship to the shop, not relief about stopping work."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Now it felt heavier in her hand, not like an anchor, but like something that could be carried."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of the passage?",
+      "points": 1,
+      "explanation": "Mina begins with little interest in learning the work, but helping in the shop changes what the key and the responsibility mean to her.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "A theme is a broader idea the story develops, not simply what happens.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Old businesses should always remain unchanged.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The passage is not arguing that every old business must stay the same."
+        },
+        {
+          "id": "b",
+          "text": "Repairing a watch requires patience and expensive tools.",
+          "distractorType": "topic_not_theme",
+          "whyWrong": "This is a topic/detail, not a broader idea developed by the story."
+        },
+        {
+          "id": "c",
+          "text": "Mina learns to repair a watch while her grandfather recovers.",
+          "distractorType": "plot_summary",
+          "whyWrong": "This summarizes an event rather than stating a broader theme."
+        },
+        {
+          "id": "d",
+          "text": "A responsibility can gain meaning when a person experiences it for herself."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Mina began helping at the shop, learned repair work, completed a repair, and finally chose to wear the cabinet key around her wrist."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which word best describes the tone of the final two paragraphs?",
+      "points": 1,
+      "explanation": "The quiet shop, the ticking clocks, and Mina’s thoughts about what the key means create a reflective tone.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Tone comes from the overall language and mood, not just one event.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "reflective"
+        },
+        {
+          "id": "b",
+          "text": "furious",
+          "distractorType": "extreme_tone",
+          "whyWrong": "Nothing in the language suggests anger."
+        },
+        {
+          "id": "c",
+          "text": "comedic",
+          "distractorType": "topic_not_tone",
+          "whyWrong": "The ending is quiet and thoughtful rather than humorous."
+        },
+        {
+          "id": "d",
+          "text": "frantic",
+          "distractorType": "tone_from_one_word_only",
+          "whyWrong": "The pace slows at closing time; there is no rush or panic."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "The shop was quiet except for the uneven ticking of clocks waiting for repair."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the author compare the key first to “an anchor” and then to “something that could be carried”?",
+      "points": 1,
+      "explanation": "The two images contrast burden with continuity: the shop no longer feels like something that traps Mina, but like part of her history she can carry with her.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "When a word choice is figurative, ask what change in feeling or meaning the image creates.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that Mina is worried the key is physically too heavy",
+          "distractorType": "dictionary_definition_only",
+          "whyWrong": "The comparison is figurative, not about the key’s actual weight."
+        },
+        {
+          "id": "b",
+          "text": "To suggest that Mina wants to travel by boat after college",
+          "distractorType": "effect_not_supported",
+          "whyWrong": "The anchor image is symbolic; the passage gives no boating plan."
+        },
+        {
+          "id": "c",
+          "text": "To show a change from seeing the shop as something that could hold her back to seeing it as something she can take forward with her."
+        },
+        {
+          "id": "d",
+          "text": "To prove that the cabinet key is more valuable than the watches",
+          "distractorType": "purpose_too_broad",
+          "whyWrong": "The comparison is about Mina’s relationship to the shop, not monetary value."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "not like an anchor, but like something that could be carried."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How does Tomas’s perspective on the shop differ from Mina’s perspective by the end of the passage?",
+      "points": 1,
+      "explanation": "Tomas treats the shop’s age as proof it has been left behind. Mina’s experience helping there changes her view so that the shop becomes something meaningful she can carry forward.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "For perspective questions, compare what each person values or believes, not just what each person does.",
+      "familyId": "pov.multiple",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomas wants to learn repairs, while Mina refuses to enter the shop.",
+          "distractorType": "reversed_positions",
+          "whyWrong": "The passage shows almost the opposite."
+        },
+        {
+          "id": "b",
+          "text": "Tomas sees the shop as outdated, while Mina has come to see value in carrying its traditions forward."
+        },
+        {
+          "id": "c",
+          "text": "Both characters believe the shop should be sold immediately.",
+          "distractorType": "shared_fact",
+          "whyWrong": "Mina’s ending suggests she no longer sees the shop only as something to leave behind."
+        },
+        {
+          "id": "d",
+          "text": "Mina dislikes the old tools, while Tomas values the history of the building.",
+          "distractorType": "difference_not_supported",
+          "whyWrong": "The passage assigns those attitudes in the opposite direction."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Tomas saw the old shop as proof that the place had been left behind, while Mina came to see the key and the shop as something worth carrying forward."
+    },
+    {
+      "id": "q6",
+      "type": "evidence_based",
+      "prompt": "Which detail most strongly supports the theme that experience can change how a responsibility is understood?",
+      "points": 1,
+      "explanation": "This detail combines Mina’s experience in the shop with the change in what the key means to her, directly supporting the theme.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "For theme evidence, choose a detail that shows the broader idea developing, not merely one event from the plot.",
+      "familyId": "theme.evidence",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mina once thought the cabinet contained treasure.",
+          "distractorType": "literal_event_only",
+          "whyWrong": "This is a childhood impression, but it does not show the later change in responsibility."
+        },
+        {
+          "id": "b",
+          "text": "Mina laughed when her grandfather first offered to teach her how to replace a watch spring.",
+          "distractorType": "interesting_but_unrelated",
+          "whyWrong": "This shows her original attitude but not the completed change by itself."
+        },
+        {
+          "id": "c",
+          "text": "Tomas says that everything in the shop is older than they are.",
+          "distractorType": "evidence_for_other_theme",
+          "whyWrong": "This supports Tomas’s view of the shop, not Mina’s changing understanding of responsibility."
+        },
+        {
+          "id": "d",
+          "text": "After learning to help in the shop and completing a repair, Mina sees the key as something that can be carried rather than an anchor."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Mina began helping at the shop, learned repair work, completed a repair, and finally chose to wear the cabinet key around her wrist."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "Choice A includes the starting situation, the experience that changes Mina, and the shift in how she sees the shop.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A literary summary should capture the central conflict or change without inventing an ending.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mina plans to leave for college, but while helping after her grandfather is injured, she learns repair work and begins to value the shop and its traditions differently."
+        },
+        {
+          "id": "b",
+          "text": "A customer brings a silver watch to a repair shop, where Mina fixes it with help from her grandfather.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This covers one important scene but leaves out Mina’s larger change."
+        },
+        {
+          "id": "c",
+          "text": "Tomas wants the family to sell the repair shop because old buildings cost too much to maintain.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This focuses on Tomas and one concern rather than the full story."
+        },
+        {
+          "id": "d",
+          "text": "Mina decides to abandon college so she can inherit her grandfather’s shop.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The story never says Mina gives up her college plans."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Mina began helping at the shop, learned repair work, completed a repair, and finally chose to wear the cabinet key around her wrist."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-gold-literary-brass-key",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [
+        "R1.5",
+        "R3.4",
+        "R3.5",
+        "R4.5",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Literary passage set"
+    },
+    "passage": {
+      "id": "p-rla-gold-literary-brass-key",
+      "title": "The Brass Key",
+      "textType": "literary",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.836Z"
+  }
+}

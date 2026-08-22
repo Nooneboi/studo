@@ -1,0 +1,487 @@
+{
+  "id": "rla-cause-effect-practice-01",
+  "title": "Cause and Effect Practice 1",
+  "description": "4 short texts - 8 cause-and-effect questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Cause and effect",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Cooler Classroom\n\nA classroom on the top floor was unusually warm in the afternoon. The school added reflective film to the west-facing windows. During the next sunny week, afternoon room temperatures were lower even though the air-conditioning schedule stayed the same.\n\nTEXT B - Reminder Texts\n\nA clinic began sending appointment reminders by text. Missed appointments fell the next month. During the same month, a new bus stop opened outside the clinic, making the building easier to reach for some patients.\n\nTEXT C - Mulch Test\n\nTwo identical planters received the same amount of water. One planter had a mulch layer and lost less moisture over two days. The mulch shaded the soil surface and reduced direct exposure to dry air.\n\nTEXT D - Loading Order\n\nA bakery van had frequent late departures because its crates were packed after the other vans. The loading crew moved those crates to the front of the staging area. The van then left earlier on most mornings.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What change does Text A identify as the likely cause of the lower afternoon temperatures?",
+      "points": 1,
+      "explanation": "The film was added while the air-conditioning schedule remained the same.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reflective film on the west-facing windows"
+        },
+        {
+          "id": "b",
+          "text": "A different air-conditioning schedule",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "Cloudier weather every day",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "d",
+          "text": "Moving the classroom downstairs",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail strengthens the causal explanation in Text A?",
+      "points": 1,
+      "explanation": "Keeping the air-conditioning schedule the same removes one alternative explanation.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The classroom is on the top floor",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "b",
+          "text": "The air-conditioning schedule stayed the same"
+        },
+        {
+          "id": "c",
+          "text": "The school has several classrooms",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "d",
+          "text": "The week had five school days",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion about the decrease in missed appointments in Text B is best supported?",
+      "points": 1,
+      "explanation": "Two relevant changes happened in the same period.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.implied",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reminder texts were definitely the only cause",
+          "distractorType": "correlation_not_cause",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "b",
+          "text": "The new bus stop was definitely the only cause",
+          "distractorType": "correlation_not_cause",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "Both changes could have contributed, so the passage does not isolate one cause"
+        },
+        {
+          "id": "d",
+          "text": "Neither change could affect attendance",
+          "distractorType": "correlation_not_cause",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why is the new bus stop important to the reasoning in Text B?",
+      "points": 1,
+      "explanation": "Easier access could also reduce missed appointments.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.implied",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changed the appointment reminder wording",
+          "distractorType": "correlation_not_cause",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "b",
+          "text": "It proves text reminders failed",
+          "distractorType": "correlation_not_cause",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "It occurred after the clinic closed",
+          "distractorType": "correlation_not_cause",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "d",
+          "text": "It is another possible cause of improved attendance"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why did the mulched planter likely lose less moisture in Text C?",
+      "points": 1,
+      "explanation": "The passage gives a physical mechanism connecting mulch to moisture retention.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The mulch reduced direct exposure and evaporation"
+        },
+        {
+          "id": "b",
+          "text": "It received more water",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "It was measured on a different day",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "d",
+          "text": "The planter was larger",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which factor was controlled in Text C?",
+      "points": 1,
+      "explanation": "Both planters received the same amount of water.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Amount of mulch",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "b",
+          "text": "Amount of water"
+        },
+        {
+          "id": "c",
+          "text": "Moisture lost",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "d",
+          "text": "Air exposure",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What caused the bakery van to leave late in Text D?",
+      "points": 1,
+      "explanation": "The text directly connects the loading order to late departure.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The bakery closed early",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "b",
+          "text": "The van had no driver",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "Its crates were packed after the other vans"
+        },
+        {
+          "id": "d",
+          "text": "Customers changed delivery addresses",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which result followed the change in Text D?",
+      "points": 1,
+      "explanation": "Earlier departure is the reported effect of changing the staging position.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Separate timing from mechanism, and notice other possible causes.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The crates were moved farther away",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "b",
+          "text": "The bakery stopped deliveries",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "Other vans stopped loading",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option does not match the causal relationship supported by the text."
+        },
+        {
+          "id": "d",
+          "text": "The van left earlier on most mornings"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-cause-effect-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
+      "topicLabel": "Cause and effect"
+    },
+    "passage": {
+      "id": "p-rla-cause-effect-practice-01",
+      "title": "Cause and Effect Practice 1",
+      "textType": "informational",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.833Z"
+  }
+}

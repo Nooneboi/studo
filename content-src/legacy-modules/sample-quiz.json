@@ -1,0 +1,75 @@
+{
+  "id": "sample-quiz",
+  "title": "Sample Quiz — How This Works",
+  "description": "A short demo set showing all three question types.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Getting Started",
+  "difficulty": "easy",
+  "source": "Original content by Studo",
+  "passage": "",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which layer of the study philosophy covers the individual question you're practicing right now?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plans",
+          "whyWrong": "Plans are broader goals and direction, not the single question directly in front of you."
+        },
+        {
+          "id": "b",
+          "text": "Systems",
+          "whyWrong": "Systems are repeated routines or habits, not the individual item you are answering right now."
+        },
+        {
+          "id": "c",
+          "text": "Details"
+        },
+        {
+          "id": "d",
+          "text": "None of these",
+          "whyWrong": "One of these does fit: the question itself belongs to the details layer."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "points": 1,
+      "time": 20,
+      "explanation": "Details are the sharp end of the plan — the specific thing in front of you right now.",
+      "skill": {
+        "id": "study.orientation.details",
+        "label": "Study orientation"
+      },
+      "rule": "The “details” layer is the immediate task in front of you—the exact question or passage you are working on right now.",
+      "familyId": "study.orientation.details"
+    },
+    {
+      "id": "q2",
+      "type": "fill_blank",
+      "prompt": "A repeated habit that carries you toward your goal without relying on motivation is called a ______.",
+      "correct": "system",
+      "points": 1,
+      "explanation": "That's the 'Systems' layer — routines you can run on autopilot.",
+      "skill": {
+        "id": "study.orientation.systems",
+        "label": "Study orientation"
+      },
+      "familyId": "study.orientation.systems"
+    },
+    {
+      "id": "q3",
+      "type": "open_ended",
+      "prompt": "In a sentence or two, describe one system (habit or routine) you could build for your own studying.",
+      "points": 2,
+      "explanation": "Open-ended answers aren't auto-graded — this is for your own reflection, or for a teacher to review manually.",
+      "skill": {
+        "id": "study.orientation.reflection",
+        "label": "Study reflection"
+      }
+    }
+  ]
+}

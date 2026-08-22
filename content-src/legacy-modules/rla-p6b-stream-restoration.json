@@ -1,0 +1,445 @@
+{
+  "id": "rla-p6b-stream-restoration",
+  "title": "When a City Stream Comes Back",
+  "description": "Science - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Science passage set",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "For decades, a narrow city stream had been treated almost like a drainage ditch. Concrete walls kept the channel straight, and several small barriers interrupted the flow. After heavy rain, water moved through the channel quickly. During dry weeks, some sections became shallow and warm, and few plants grew along the banks.\n\nA restoration project began with work that was easy for visitors to miss. Utility lines near the stream had to be relocated before excavation could begin. Crews then widened two sections of the channel and added gentle bends. The goal was to slow the water in some places and create a wider range of depths. Native plants were added along the banks after the new channel shape was complete. Months later, workers removed two low barriers that had prevented fish from moving between sections of the stream.\n\nThe first year produced encouraging but uneven results. During several moderate storms, water spread into the widened sections instead of rising as sharply inside the old narrow channel. However, the largest storm of the year still flooded a nearby path. Biologists also recorded more insects and small fish in restored areas. They described the ecological results as promising rather than final because that year had unusually mild summer temperatures, which may also have helped aquatic life.\n\nThe project created a different problem once a walking path beside the stream became popular. People stepped off the path to reach the water, damaging some of the newly planted banks. Rather than close the path, the city installed short fencing near the most fragile areas and added signs directing visitors to two durable access points. Plant damage decreased during the following months while path use remained high.\n\nThe city also installed simple water-level markers near the path so staff could compare photographs after storms. Those observations are not treated as substitutes for sensor data, but they help the team notice where debris collects and where visitors are most likely to encounter high water. The information is added to the same annual review as the biological and engineering measurements.\n\nThe restoration team plans to monitor the stream for at least four more years. Engineers will compare how the channel responds to storms of different sizes. Biologists will track fish, insects, water temperature, and plant survival. The team says the project should be judged as a system rather than by one result. A wider channel may reduce some flood pressure without preventing every flood, and more fish in one mild year do not prove that every ecological change came from restoration. The design will continue to be adjusted as new evidence appears.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which event had to occur before crews could begin reshaping the channel?",
+      "points": 1,
+      "explanation": "The passage says utility lines had to be relocated before excavation could begin.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Look for a required earlier condition, not just any earlier event.",
+      "familyId": "sequence.logic",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Native plants were added",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "Utility lines were relocated"
+        },
+        {
+          "id": "c",
+          "text": "Fish barriers were removed",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "The walking path became popular",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Utility lines near the stream had to be relocated before excavation could begin. Crews then widened two sections... Native plants were added ... Months later, workers removed two low barriers."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How did the restored channel perform differently during moderate storms and the largest storm?",
+      "points": 1,
+      "explanation": "The moderate storms showed reduced pressure, while the largest storm still produced flooding.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Compare the same outcome - storm response - across both conditions.",
+      "familyId": "compare.difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It prevented all flooding during both kinds of storms",
+          "distractorType": "unsupported_similarity",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "It flooded the path during moderate storms but not during the largest storm",
+          "distractorType": "reversed_positions",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "It reduced sharp water rise during moderate storms, but the largest storm still flooded a nearby path"
+        },
+        {
+          "id": "d",
+          "text": "The stream became completely dry during both kinds of storms",
+          "distractorType": "unsupported_similarity",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "During several moderate storms, water spread into the widened sections ... However, the largest storm ... still flooded a nearby path."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why do the biologists describe the ecological results as promising rather than final?",
+      "points": 1,
+      "explanation": "The unusually mild summer is another factor that could affect aquatic life, so the restoration cannot yet be credited for every change.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Notice alternative causes before making a strong causal claim.",
+      "familyId": "cause.implied",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "They counted no fish at all",
+          "distractorType": "single_coincidence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "Mild summer temperatures could also have contributed to the observed changes"
+        },
+        {
+          "id": "c",
+          "text": "The project had already ended",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Native plants were never installed",
+          "distractorType": "reversed_cause_effect",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "They described the ecological results as promising rather than final because that year had unusually mild summer temperatures, which may also have helped aquatic life."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about the restoration team's approach to evidence?",
+      "points": 1,
+      "explanation": "The team monitors multiple outcomes over years, uses cautious language, and says the design will be adjusted as new evidence appears.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Combine clues across the passage and choose the smallest supported inference.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The team prefers to make permanent conclusions from one observation",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "The team treats unexpected problems as proof that restoration should stop",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "The team expects to revise its interpretation and design as more evidence is collected"
+        },
+        {
+          "id": "d",
+          "text": "The team measures only how the stream looks to visitors",
+          "distractorType": "contradicts_detail",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "The team says the project should be judged as a system rather than by one result."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the passage as a whole?",
+      "points": 1,
+      "explanation": "The passage presents benefits, limits, confounding factors, visitor impacts, and a plan for continued monitoring.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "A conclusion should fit the whole pattern, including qualifications.",
+      "familyId": "conclusion.synthesize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Stream restoration succeeds only when walking paths are closed",
+          "distractorType": "too_broad",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "The project has solved every flooding and ecological problem",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "The restoration shows several benefits, but its effects vary by condition and require continued monitoring and adjustment"
+        },
+        {
+          "id": "d",
+          "text": "The mild summer proves the restoration had no ecological effect",
+          "distractorType": "single_detail_inference",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "The team says the project should be judged as a system rather than by one result."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does increased public use of the walking path affect the restoration project?",
+      "points": 1,
+      "explanation": "Visitor behavior creates a new problem and prompts a management response designed to protect plants while preserving access.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Use a relationship verb: public use creates a problem that changes management.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It causes plant damage that leads the city to add fencing and designated access points"
+        },
+        {
+          "id": "b",
+          "text": "It causes the city to remove all native plants",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "It has no effect on management decisions",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "It directly causes moderate storms",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "People stepped off the path ... damaging ... banks. Rather than close the path, the city installed short fencing ... Plant damage decreased ... while path use remained high."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses an idea developed throughout the passage?",
+      "points": 1,
+      "explanation": "The passage follows a staged project, several kinds of evidence, new problems, and future monitoring.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "A central idea should account for the entire passage, not one result.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The best stream projects focus only on fish counts",
+          "distractorType": "single_detail",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "b",
+          "text": "Restoring an urban stream requires staged changes, multiple measures of success, and continued adjustment as new results appear"
+        },
+        {
+          "id": "c",
+          "text": "Concrete channels should always be removed from every city",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "This option is not best supported by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Walking paths are the main cause of urban flooding",
+          "distractorType": "reasonable_but_incomplete",
+          "whyWrong": "This option is not best supported by the passage."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "The team says the project should be judged as a system rather than by one result."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6b-stream-restoration",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Science passage set"
+    },
+    "passage": {
+      "id": "p-rla-p6b-stream-restoration",
+      "title": "When a City Stream Comes Back",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.839Z"
+  }
+}

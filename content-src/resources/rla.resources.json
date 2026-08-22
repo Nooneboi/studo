@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 1,
   "subject": "rla",
   "resources": [
     {
@@ -27,6 +27,1316 @@
       "status": "published",
       "rightsStatus": "original",
       "reviewer": "Studo editorial review"
+    },
+    {
+      "id": "res-rla-explicit-meaning-guide-v1",
+      "title": "Explicit Meaning - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.1"
+      ],
+      "description": "Focused notes on locating directly stated information and separating text evidence from assumptions.",
+      "href": "assets/resources/explicit-meaning-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5H skill-content review"
+    },
+    {
+      "id": "res-rla-explicit-meaning-workbook-v1",
+      "title": "Explicit Meaning - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.1"
+      ],
+      "description": "Four original texts with eight focused explicit-meaning questions and an answer key.",
+      "href": "assets/resources/explicit-meaning-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5H skill-content review"
+    },
+    {
+      "id": "res-rla-explicit-meaning-workbook-v2",
+      "title": "Explicit Meaning - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.1"
+      ],
+      "description": "A second set of original texts focused on exact details, qualifiers, and stated-versus-inferred distinctions.",
+      "href": "assets/resources/explicit-meaning-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5H skill-content review"
+    },
+    {
+      "id": "res-rla-main-idea-guide-v1",
+      "title": "Main Idea - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.2"
+      ],
+      "description": "Focused notes on explicit and implied central ideas, common distractors, and a practical four-step method.",
+      "href": "assets/resources/main-idea-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5F skill-content review"
+    },
+    {
+      "id": "res-rla-main-idea-workbook-v1",
+      "title": "Main Idea - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.2"
+      ],
+      "description": "Six original short passages with 12 focused main-idea questions and explanations.",
+      "href": "assets/resources/main-idea-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5F skill-content review"
+    },
+    {
+      "id": "res-rla-main-idea-workbook-v2",
+      "title": "Main Idea - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.2"
+      ],
+      "description": "Transfer-focused main idea practice across informational, science, workplace, and literary contexts.",
+      "href": "assets/resources/main-idea-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-supporting-details-guide-v1",
+      "title": "Supporting Details - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.3"
+      ],
+      "description": "Focused notes on direct evidence, related details, strong support, and common distractor traps.",
+      "href": "assets/resources/supporting-details-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5G skill-content review"
+    },
+    {
+      "id": "res-rla-supporting-details-workbook-v1",
+      "title": "Supporting Details - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.3"
+      ],
+      "description": "Four original texts with eight focused supporting-detail questions and an answer key.",
+      "href": "assets/resources/supporting-details-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5G skill-content review"
+    },
+    {
+      "id": "res-rla-supporting-details-workbook-v2",
+      "title": "Supporting Details - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.3"
+      ],
+      "description": "A second set of four original texts with eight supporting-detail questions and an answer key.",
+      "href": "assets/resources/supporting-details-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 5G skill-content review"
+    },
+    {
+      "id": "res-rla-summary-guide-v1",
+      "title": "Summary - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.4"
+      ],
+      "description": "Focused guide to whole-passage and section summaries, essential details, scope, and common summary traps.",
+      "href": "assets/resources/summary-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-summary-workbook-v1",
+      "title": "Summary - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.4"
+      ],
+      "description": "Whole-passage summary practice with original informational and literary texts.",
+      "href": "assets/resources/summary-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-summary-workbook-v2",
+      "title": "Summary - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.4"
+      ],
+      "description": "Section summary and transfer practice with original texts and diagnostic answer explanations.",
+      "href": "assets/resources/summary-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-theme-guide-v1",
+      "title": "Theme - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.5"
+      ],
+      "description": "Focused guide to theme, topic, plot summary, character change, evidence, and common traps.",
+      "href": "assets/resources/theme-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-theme-workbook-v1",
+      "title": "Theme - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.5"
+      ],
+      "description": "Original literary passages focused on identifying themes and evidence.",
+      "href": "assets/resources/theme-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-theme-workbook-v2",
+      "title": "Theme - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "core-meaning",
+      "skillIds": [
+        "R1.5"
+      ],
+      "description": "Higher-transfer literary theme practice with competing interpretations and evidence questions.",
+      "href": "assets/resources/theme-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6 Core Meaning batch review"
+    },
+    {
+      "id": "res-rla-relationships-inference-guide-v1",
+      "title": "Relationships & Inference - Study Guide",
+      "type": "study_guide",
+      "scope": "domain",
+      "domainId": "relationships-inference",
+      "description": "A broad guide to sequence, cause and effect, comparison, inference, conclusions, and relationships.",
+      "href": "assets/resources/relationships-inference-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-relationships-inference-workbook-v1",
+      "title": "Relationships & Inference - Practice Workbook",
+      "type": "worksheet",
+      "scope": "domain",
+      "domainId": "relationships-inference",
+      "description": "Mixed file-based practice across the six Relationships & Inference skills.",
+      "href": "assets/resources/relationships-inference-practice-workbook.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-sequence-guide-v1",
+      "title": "Sequence - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.1"
+      ],
+      "description": "Focused sequence study guide.",
+      "href": "assets/resources/sequence-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-sequence-workbook-v1",
+      "title": "Sequence - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.1"
+      ],
+      "description": "Focused sequence workbook practice.",
+      "href": "assets/resources/sequence-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-sequence-workbook-v2",
+      "title": "Sequence - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.1"
+      ],
+      "description": "Second transfer-focused sequence workbook.",
+      "href": "assets/resources/sequence-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-cause-and-effect-guide-v1",
+      "title": "Cause and Effect - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.2"
+      ],
+      "description": "Focused cause and effect study guide.",
+      "href": "assets/resources/cause-and-effect-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-cause-and-effect-workbook-v1",
+      "title": "Cause and Effect - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.2"
+      ],
+      "description": "Focused cause and effect workbook practice.",
+      "href": "assets/resources/cause-and-effect-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-cause-and-effect-workbook-v2",
+      "title": "Cause and Effect - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.2"
+      ],
+      "description": "Second transfer-focused cause and effect workbook.",
+      "href": "assets/resources/cause-and-effect-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-compare-and-contrast-guide-v1",
+      "title": "Compare and Contrast - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.3"
+      ],
+      "description": "Focused compare and contrast study guide.",
+      "href": "assets/resources/compare-and-contrast-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-compare-and-contrast-workbook-v1",
+      "title": "Compare and Contrast - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.3"
+      ],
+      "description": "Focused compare and contrast workbook practice.",
+      "href": "assets/resources/compare-and-contrast-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-compare-and-contrast-workbook-v2",
+      "title": "Compare and Contrast - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.3"
+      ],
+      "description": "Second transfer-focused compare and contrast workbook.",
+      "href": "assets/resources/compare-and-contrast-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-inference-guide-v1",
+      "title": "Inference - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.4"
+      ],
+      "description": "Focused inference study guide.",
+      "href": "assets/resources/inference-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-inference-workbook-v1",
+      "title": "Inference - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.4"
+      ],
+      "description": "Focused inference workbook practice.",
+      "href": "assets/resources/inference-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-inference-workbook-v2",
+      "title": "Inference - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.4"
+      ],
+      "description": "Second transfer-focused inference workbook.",
+      "href": "assets/resources/inference-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-conclusions-guide-v1",
+      "title": "Conclusions - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.5"
+      ],
+      "description": "Focused conclusions study guide.",
+      "href": "assets/resources/conclusions-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-conclusions-workbook-v1",
+      "title": "Conclusions - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.5"
+      ],
+      "description": "Focused conclusions workbook practice.",
+      "href": "assets/resources/conclusions-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-conclusions-workbook-v2",
+      "title": "Conclusions - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.5"
+      ],
+      "description": "Second transfer-focused conclusions workbook.",
+      "href": "assets/resources/conclusions-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-relationships-guide-v1",
+      "title": "Relationships - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.6"
+      ],
+      "description": "Focused relationships study guide.",
+      "href": "assets/resources/relationships-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-relationships-workbook-v1",
+      "title": "Relationships - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.6"
+      ],
+      "description": "Focused relationships workbook practice.",
+      "href": "assets/resources/relationships-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-relationships-workbook-v2",
+      "title": "Relationships - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "relationships-inference",
+      "skillIds": [
+        "R2.6"
+      ],
+      "description": "Second transfer-focused relationships workbook.",
+      "href": "assets/resources/relationships-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6B domain review"
+    },
+    {
+      "id": "res-rla-p6c-domain-guide-v1",
+      "title": "Words, Tone & Style - Study Guide",
+      "type": "study_guide",
+      "scope": "domain",
+      "domainId": "words-tone-style",
+      "description": "Domain-level guide to context, connotation, figurative language, tone, and word choice.",
+      "href": "assets/resources/words-tone-style-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-domain-workbook-v1",
+      "title": "Words, Tone & Style - Practice Workbook",
+      "type": "worksheet",
+      "scope": "domain",
+      "domainId": "words-tone-style",
+      "description": "Mixed word-and-style workbook.",
+      "href": "assets/resources/words-tone-style-practice-workbook.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-meaning-in-context-guide-v1",
+      "title": "Meaning in Context - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.1"
+      ],
+      "description": "Focused meaning in context study guide.",
+      "href": "assets/resources/meaning-in-context-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-meaning-in-context-workbook-v1",
+      "title": "Meaning in Context - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.1"
+      ],
+      "description": "Meaning in Context workbook 1.",
+      "href": "assets/resources/meaning-in-context-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-meaning-in-context-workbook-v2",
+      "title": "Meaning in Context - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.1"
+      ],
+      "description": "Meaning in Context workbook 2.",
+      "href": "assets/resources/meaning-in-context-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-meaning-in-context-workbook-v3",
+      "title": "Meaning in Context - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.1"
+      ],
+      "description": "Meaning in Context workbook 3.",
+      "href": "assets/resources/meaning-in-context-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-connotation-guide-v1",
+      "title": "Connotation - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.2"
+      ],
+      "description": "Focused connotation study guide.",
+      "href": "assets/resources/connotation-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-connotation-workbook-v1",
+      "title": "Connotation - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.2"
+      ],
+      "description": "Connotation workbook 1.",
+      "href": "assets/resources/connotation-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-connotation-workbook-v2",
+      "title": "Connotation - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.2"
+      ],
+      "description": "Connotation workbook 2.",
+      "href": "assets/resources/connotation-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-connotation-workbook-v3",
+      "title": "Connotation - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.2"
+      ],
+      "description": "Connotation workbook 3.",
+      "href": "assets/resources/connotation-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-figurative-language-guide-v1",
+      "title": "Figurative Language - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.3"
+      ],
+      "description": "Focused figurative language study guide.",
+      "href": "assets/resources/figurative-language-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-figurative-language-workbook-v1",
+      "title": "Figurative Language - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.3"
+      ],
+      "description": "Figurative Language workbook 1.",
+      "href": "assets/resources/figurative-language-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-figurative-language-workbook-v2",
+      "title": "Figurative Language - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.3"
+      ],
+      "description": "Figurative Language workbook 2.",
+      "href": "assets/resources/figurative-language-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-figurative-language-workbook-v3",
+      "title": "Figurative Language - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.3"
+      ],
+      "description": "Figurative Language workbook 3.",
+      "href": "assets/resources/figurative-language-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-tone-guide-v1",
+      "title": "Tone - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.4"
+      ],
+      "description": "Focused tone study guide.",
+      "href": "assets/resources/tone-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-tone-workbook-v1",
+      "title": "Tone - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.4"
+      ],
+      "description": "Tone workbook 1.",
+      "href": "assets/resources/tone-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-tone-workbook-v2",
+      "title": "Tone - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.4"
+      ],
+      "description": "Tone workbook 2.",
+      "href": "assets/resources/tone-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-tone-workbook-v3",
+      "title": "Tone - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.4"
+      ],
+      "description": "Tone workbook 3.",
+      "href": "assets/resources/tone-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-impact-of-word-choice-guide-v1",
+      "title": "Impact of Word Choice - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.5"
+      ],
+      "description": "Focused impact of word choice study guide.",
+      "href": "assets/resources/impact-of-word-choice-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-impact-of-word-choice-workbook-v1",
+      "title": "Impact of Word Choice - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.5"
+      ],
+      "description": "Impact of Word Choice workbook 1.",
+      "href": "assets/resources/impact-of-word-choice-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-impact-of-word-choice-workbook-v2",
+      "title": "Impact of Word Choice - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.5"
+      ],
+      "description": "Impact of Word Choice workbook 2.",
+      "href": "assets/resources/impact-of-word-choice-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6c-impact-of-word-choice-workbook-v3",
+      "title": "Impact of Word Choice - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "words-tone-style",
+      "skillIds": [
+        "R3.5"
+      ],
+      "description": "Impact of Word Choice workbook 3.",
+      "href": "assets/resources/impact-of-word-choice-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6C domain review"
+    },
+    {
+      "id": "res-rla-p6d-domain-guide-v1",
+      "title": "Structure, Purpose & POV - Study Guide",
+      "type": "study_guide",
+      "scope": "domain",
+      "domainId": "structure-purpose-pov",
+      "description": "Domain-level guide to text function, structure, transitions, purpose, perspective, and rhetoric.",
+      "href": "assets/resources/structure-purpose-pov-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-domain-workbook-v1",
+      "title": "Structure, Purpose & POV - Practice Workbook",
+      "type": "worksheet",
+      "scope": "domain",
+      "domainId": "structure-purpose-pov",
+      "description": "Mixed structure-and-purpose workbook.",
+      "href": "assets/resources/structure-purpose-pov-practice-workbook.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-paragraph-section-function-guide-v1",
+      "title": "Paragraph / section function - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.1"
+      ],
+      "description": "Focused paragraph / section function study guide.",
+      "href": "assets/resources/paragraph-section-function-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-paragraph-section-function-workbook-v1",
+      "title": "Paragraph / section function - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.1"
+      ],
+      "description": "Paragraph / section function workbook 1.",
+      "href": "assets/resources/paragraph-section-function-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-paragraph-section-function-workbook-v2",
+      "title": "Paragraph / section function - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.1"
+      ],
+      "description": "Paragraph / section function workbook 2.",
+      "href": "assets/resources/paragraph-section-function-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-paragraph-section-function-workbook-v3",
+      "title": "Paragraph / section function - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.1"
+      ],
+      "description": "Paragraph / section function workbook 3.",
+      "href": "assets/resources/paragraph-section-function-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-text-structure-guide-v1",
+      "title": "Text structure - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.2"
+      ],
+      "description": "Focused text structure study guide.",
+      "href": "assets/resources/text-structure-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-text-structure-workbook-v1",
+      "title": "Text structure - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.2"
+      ],
+      "description": "Text structure workbook 1.",
+      "href": "assets/resources/text-structure-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-text-structure-workbook-v2",
+      "title": "Text structure - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.2"
+      ],
+      "description": "Text structure workbook 2.",
+      "href": "assets/resources/text-structure-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-text-structure-workbook-v3",
+      "title": "Text structure - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.2"
+      ],
+      "description": "Text structure workbook 3.",
+      "href": "assets/resources/text-structure-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-transitions-signal-words-guide-v1",
+      "title": "Transitions & signal words - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.3"
+      ],
+      "description": "Focused transitions & signal words study guide.",
+      "href": "assets/resources/transitions-signal-words-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-transitions-signal-words-workbook-v1",
+      "title": "Transitions & signal words - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.3"
+      ],
+      "description": "Transitions & signal words workbook 1.",
+      "href": "assets/resources/transitions-signal-words-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-transitions-signal-words-workbook-v2",
+      "title": "Transitions & signal words - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.3"
+      ],
+      "description": "Transitions & signal words workbook 2.",
+      "href": "assets/resources/transitions-signal-words-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-transitions-signal-words-workbook-v3",
+      "title": "Transitions & signal words - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.3"
+      ],
+      "description": "Transitions & signal words workbook 3.",
+      "href": "assets/resources/transitions-signal-words-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-author-purpose-guide-v1",
+      "title": "Author purpose - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.4"
+      ],
+      "description": "Focused author purpose study guide.",
+      "href": "assets/resources/author-purpose-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-author-purpose-workbook-v1",
+      "title": "Author purpose - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.4"
+      ],
+      "description": "Author purpose workbook 1.",
+      "href": "assets/resources/author-purpose-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-author-purpose-workbook-v2",
+      "title": "Author purpose - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.4"
+      ],
+      "description": "Author purpose workbook 2.",
+      "href": "assets/resources/author-purpose-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-author-purpose-workbook-v3",
+      "title": "Author purpose - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.4"
+      ],
+      "description": "Author purpose workbook 3.",
+      "href": "assets/resources/author-purpose-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-point-of-view-perspective-guide-v1",
+      "title": "Point of view / perspective - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.5"
+      ],
+      "description": "Focused point of view / perspective study guide.",
+      "href": "assets/resources/point-of-view-perspective-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-point-of-view-perspective-workbook-v1",
+      "title": "Point of view / perspective - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.5"
+      ],
+      "description": "Point of view / perspective workbook 1.",
+      "href": "assets/resources/point-of-view-perspective-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-point-of-view-perspective-workbook-v2",
+      "title": "Point of view / perspective - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.5"
+      ],
+      "description": "Point of view / perspective workbook 2.",
+      "href": "assets/resources/point-of-view-perspective-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-point-of-view-perspective-workbook-v3",
+      "title": "Point of view / perspective - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.5"
+      ],
+      "description": "Point of view / perspective workbook 3.",
+      "href": "assets/resources/point-of-view-perspective-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-rhetorical-technique-guide-v1",
+      "title": "Rhetorical technique - Study Guide",
+      "type": "study_guide",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.6"
+      ],
+      "description": "Focused rhetorical technique study guide.",
+      "href": "assets/resources/rhetorical-technique-study-guide.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-rhetorical-technique-workbook-v1",
+      "title": "Rhetorical technique - Workbook 1",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.6"
+      ],
+      "description": "Rhetorical technique workbook 1.",
+      "href": "assets/resources/rhetorical-technique-workbook-1.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-rhetorical-technique-workbook-v2",
+      "title": "Rhetorical technique - Workbook 2",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.6"
+      ],
+      "description": "Rhetorical technique workbook 2.",
+      "href": "assets/resources/rhetorical-technique-workbook-2.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-p6d-rhetorical-technique-workbook-v3",
+      "title": "Rhetorical technique - Workbook 3",
+      "type": "worksheet",
+      "scope": "skill",
+      "domainId": "structure-purpose-pov",
+      "skillIds": [
+        "R4.6"
+      ],
+      "description": "Rhetorical technique workbook 3.",
+      "href": "assets/resources/rhetorical-technique-workbook-3.pdf",
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Phase 6D domain review"
     }
   ]
 }

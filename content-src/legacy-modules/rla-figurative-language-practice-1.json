@@ -1,0 +1,487 @@
+{
+  "id": "rla-figurative-language-practice-1",
+  "title": "Figurative Language Practice 1",
+  "description": "4 short texts - 8 focused figurative language questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Figurative Language",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Morning Inbox\n\nBy nine o'clock, the inbox was a river of new messages.\n\nTEXT B - Empty Theater\n\nAfter the audience left, the stage lights watched the empty seats.\n\nTEXT C - Long Form\n\nThe permit application was a maze of boxes and signatures.\n\nTEXT D - First Snow\n\nSnow erased the edges of the parking lot by morning.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does the metaphor mean?",
+      "points": 1,
+      "explanation": "River transfers the idea of continuous flow to incoming messages.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Messages were arriving in a continuous flow."
+        },
+        {
+          "id": "b",
+          "text": "The computer was wet.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The office was near a river.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "The messages were deleted.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What effect does the image create?",
+      "points": 1,
+      "explanation": "The image turns an abstract quantity into something visible.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It gives the exact message count.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It makes the volume and movement easy to picture."
+        },
+        {
+          "id": "c",
+          "text": "It explains internet hardware.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It makes the writer neutral.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What does watched suggest?",
+      "points": 1,
+      "explanation": "The personification creates a lingering sense of presence after people leave.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The lights had eyes.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "The audience returned.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The lights remained over the silent, empty room."
+        },
+        {
+          "id": "d",
+          "text": "The seats moved.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What effect is strongest?",
+      "points": 1,
+      "explanation": "Giving the lights an observing role emphasizes the empty seats.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It explains theater electricity.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It proves the show was bad.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "It makes the room brighter.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It makes the emptiness feel more noticeable."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does maze suggest?",
+      "points": 1,
+      "explanation": "Maze transfers difficulty of navigation to completing the form.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The form was confusing and difficult to navigate."
+        },
+        {
+          "id": "b",
+          "text": "The office contained a puzzle.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The form had no boxes.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "The form was illegal.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Why is this stronger than complicated?",
+      "points": 1,
+      "explanation": "The image helps the reader feel the confusion.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves the form is longer.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It gives a concrete image of getting lost in the process."
+        },
+        {
+          "id": "c",
+          "text": "It gives legal advice.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It removes emotion.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What does erased the edges mean?",
+      "points": 1,
+      "explanation": "The phrase describes boundaries disappearing from view under snow.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone removed painted lines with an eraser.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "The parking lot became smaller.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "Snow covered the boundaries so they were hard to see."
+        },
+        {
+          "id": "d",
+          "text": "The snow melted.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What effect does the phrase create?",
+      "points": 1,
+      "explanation": "Erased creates a vivid image of familiar lines disappearing.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It explains parking rules.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It gives a precise snowfall depth.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "It makes the scene noisy.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It emphasizes how completely snow changed the familiar scene."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-figurative-language-practice-1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Figurative Language"
+    },
+    "passage": {
+      "id": "p-rla-figurative-language-practice-1",
+      "title": "Figurative Language Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.836Z"
+  }
+}

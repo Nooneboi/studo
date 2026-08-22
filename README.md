@@ -137,6 +137,9 @@ content-src/
   skills/
   passages/
   sets/
+  resources/
+  config/
+  legacy-modules/   # transitional canonical source for older runtime modules
 ```
 
 Validation and build:
@@ -148,9 +151,20 @@ npm run content:build
 npm run content:check
 ```
 
-Generated files are written to `data/generated/` and should not be hand-edited.
+Generated files are written to `data/generated/` and should not be hand-edited. The folder is disposable: deleting it and running `npm run content:build` recreates learner output from `content-src/` alone.
 
-During migration, `content-src/config/legacy-index.json` keeps legacy modules available while migrated sets replace their matching runtime file in the generated index. This lets Studo move to the new content model one module at a time without breaking the learner app.
+During migration, older runtime-format modules live canonically in `content-src/legacy-modules/` and are registered by `content-src/config/legacy-index.json`. Schema-v2 sets replace matching legacy runtime files during the build. Do not use a previous `data/generated/` snapshot as authoring input.
+
+Track visibility is controlled by `publicationState` in `content-src/config/rla.curriculum.json`. Only `published` tracks appear in normal learner curriculum/search; `preview` tracks can still build developer modules without pretending the learning path is complete.
+
+Foundation QA can be run with:
+
+```bash
+npm test
+npm run content:check
+```
+
+The build also writes `data/generated/qa-report.json` so recurring assessment-quality warnings can be measured during later refinement.
 
 
 ## Phase 4C — authoring

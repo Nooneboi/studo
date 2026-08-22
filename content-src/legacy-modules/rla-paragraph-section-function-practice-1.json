@@ -1,0 +1,487 @@
+{
+  "id": "rla-paragraph-section-function-practice-1",
+  "title": "Paragraph / section function Practice 1",
+  "description": "4 short texts - 8 focused paragraph / section function questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Paragraph / section function",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Cooling Pavement\n\nA city article first explains that dark asphalt can become extremely hot in direct sun. The next paragraph describes a reflective coating tested on two blocks. A third paragraph reports surface-temperature measurements from coated and uncoated areas.\n\nTEXT B - Volunteer Training\n\nA volunteer handbook explains the responsibilities of event greeters. One paragraph gives a short dialogue showing how to respond when a visitor asks for an accessible entrance.\n\nTEXT C - Shared Bikes\n\nA report praises a bike-share expansion for increasing access near train stations. The final paragraph notes that several outer neighborhoods still have no stations within walking distance.\n\nTEXT D - River Sensors\n\nAn article explains how low-cost sensors collect water-level readings. The next section describes a flood in which those readings gave officials earlier warning than a manual gauge.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of this paragraph or section?",
+      "points": 1,
+      "explanation": "It evaluates the reflective-coating test with measured results.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "provides evidence about whether the tested response changed surface temperature"
+        },
+        {
+          "id": "b",
+          "text": "summarizes the entire passage without serving a specific local role",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "introduces a new topic unrelated to the surrounding discussion",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "gives background information that does not connect to the passage's main development",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How does this part contribute to the larger text?",
+      "points": 1,
+      "explanation": "It evaluates the reflective-coating test with measured results.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.sentence",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the topic rather than developing the writer's explanation.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It evaluates the reflective-coating test with measured results."
+        },
+        {
+          "id": "c",
+          "text": "It repeats the previous sentence with no additional purpose.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It gives information that conflicts with the surrounding paragraphs.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of this paragraph or section?",
+      "points": 1,
+      "explanation": "The dialogue shows how the general instructions can be applied in an actual interaction.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "summarizes the entire passage without serving a specific local role",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "introduces a new topic unrelated to the surrounding discussion",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "illustrates the guidance with a realistic example"
+        },
+        {
+          "id": "d",
+          "text": "gives background information that does not connect to the passage's main development",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does this part contribute to the larger text?",
+      "points": 1,
+      "explanation": "The dialogue shows how the general instructions can be applied in an actual interaction.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.sentence",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the topic rather than developing the writer's explanation.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It repeats the previous sentence with no additional purpose.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It gives information that conflicts with the surrounding paragraphs.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The dialogue shows how the general instructions can be applied in an actual interaction."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of this paragraph or section?",
+      "points": 1,
+      "explanation": "It prevents the report from implying that access improved equally everywhere.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "qualifies the positive evaluation by identifying a remaining access gap"
+        },
+        {
+          "id": "b",
+          "text": "summarizes the entire passage without serving a specific local role",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "introduces a new topic unrelated to the surrounding discussion",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "gives background information that does not connect to the passage's main development",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does this part contribute to the larger text?",
+      "points": 1,
+      "explanation": "It prevents the report from implying that access improved equally everywhere.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.sentence",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the topic rather than developing the writer's explanation.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It prevents the report from implying that access improved equally everywhere."
+        },
+        {
+          "id": "c",
+          "text": "It repeats the previous sentence with no additional purpose.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It gives information that conflicts with the surrounding paragraphs.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of this paragraph or section?",
+      "points": 1,
+      "explanation": "The flood example shows how the technology can matter in practice.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "summarizes the entire passage without serving a specific local role",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "introduces a new topic unrelated to the surrounding discussion",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "provides a real case that demonstrates the value of the sensors"
+        },
+        {
+          "id": "d",
+          "text": "gives background information that does not connect to the passage's main development",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "How does this part contribute to the larger text?",
+      "points": 1,
+      "explanation": "The flood example shows how the technology can matter in practice.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.sentence",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the topic rather than developing the writer's explanation.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It repeats the previous sentence with no additional purpose.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It gives information that conflicts with the surrounding paragraphs.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The flood example shows how the technology can matter in practice."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-paragraph-section-function-practice-1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Paragraph / section function"
+    },
+    "passage": {
+      "id": "p-rla-paragraph-section-function-practice-1",
+      "title": "Paragraph / section function Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.841Z"
+  }
+}

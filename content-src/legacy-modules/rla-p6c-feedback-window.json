@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6c-feedback-window",
+  "title": "A New Feedback Window",
+  "description": "Workplace - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Starting next month, the design office will change how staff comment on draft materials. At present, people can add comments at any point until a project is approved. That flexibility sounds convenient, but teams often receive major suggestions after they have already finished layout, accessibility checks, or printing estimates.\n\nThe new process creates a two-day feedback window after each first draft. During that period, reviewers can suggest major changes to content, structure, or direction. After the window closes, comments should focus on errors, safety issues, accessibility problems, or small corrections. A project lead may reopen the broader review if new information appears.\n\nThe office is calling the change a guardrail, not a wall. That distinction is deliberate. Managers do not want to silence useful criticism; they want to keep late comments from repeatedly sending projects back to the beginning. The rule is meant to guide timing, while leaving a route for important exceptions.\n\nSome staff members have welcomed the plan because it makes review responsibilities easier to schedule. Others worry that a short window could reward the fastest reviewers rather than the most thoughtful ones. In response, the office will test the policy for eight weeks and compare revision time, missed errors, and staff feedback with records from earlier projects.\n\nThe trial will succeed only if the window creates focus without creating fear. If people rush comments simply to beat the clock, the process may become faster but not better. The office therefore plans to review both speed and quality before deciding whether the policy should continue.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does the description \"a guardrail, not a wall\" mean in paragraph 3?",
+      "points": 1,
+      "explanation": "A guardrail guides and limits movement without completely blocking it, matching the exception process.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The rule is intended to guide behavior without completely blocking later input."
+        },
+        {
+          "id": "b",
+          "text": "The office will build a physical barrier around reviewers.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The rule will prevent all changes after two days.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "Managers prefer road safety language to office language.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why does the author say late comments can \"send projects back to the beginning\"?",
+      "points": 1,
+      "explanation": "The phrase makes the cost of major late revisions vivid without literally claiming the entire project restarts.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show projects are physically moved to another office.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "To emphasize how major late feedback can force substantial rework."
+        },
+        {
+          "id": "c",
+          "text": "To prove every late comment causes a complete restart.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "To make the policy sound humorous.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the tone of the passage toward the new policy?",
+      "points": 1,
+      "explanation": "The passage explains reasons for the policy and also gives concerns and conditions for success.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "angry and dismissive",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "fully enthusiastic",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "balanced and cautious"
+        },
+        {
+          "id": "d",
+          "text": "nostalgic",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What does the word fear in the final paragraph suggest about a possible negative effect of the policy?",
+      "points": 1,
+      "explanation": "The sentence contrasts focus with fear and then explains rushing to beat the clock.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Staff may become physically unsafe.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "Staff will refuse to read drafts.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "Staff will forget the policy exists.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "Staff may feel pressured to comment too quickly."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does \"beat the clock\" mean as used in the final paragraph?",
+      "points": 1,
+      "explanation": "The concern is that people may rush comments before the feedback window closes.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "finish before the time limit"
+        },
+        {
+          "id": "b",
+          "text": "repair a broken clock",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "work during an earlier shift",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "measure revision time",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How are supporters and critics of the policy different?",
+      "points": 1,
+      "explanation": "The passage explicitly gives these two different concerns.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "compare.similarity_difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Supporters want no feedback, while critics want no deadlines.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "Supporters value easier scheduling, while critics worry that the short window may reduce thoughtful review."
+        },
+        {
+          "id": "c",
+          "text": "Supporters work in design, while critics do not.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "Supporters care about quality, while critics care only about speed.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea?",
+      "points": 1,
+      "explanation": "The passage centers on a trial designed to balance efficiency with quality.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "All office feedback should be completed within two days permanently.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "Design offices should stop making accessibility checks.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The office is testing a limited review window to reduce costly late changes while checking whether the policy protects feedback quality."
+        },
+        {
+          "id": "d",
+          "text": "Fast reviewers are always more useful than thoughtful reviewers.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6c-feedback-window",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R3.1",
+        "R2.3",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6c-feedback-window",
+      "title": "A New Feedback Window",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.840Z"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-20T14:33:30.336Z",
+  "builtAt": "2026-08-22T06:42:03.909Z",
   "tracks": [
     {
       "id": "reading",
@@ -9,6 +9,7 @@
       "shortLabel": "Reading",
       "summary": "Understand what a passage says, what it implies, and how the writer builds meaning.",
       "accent": "blue",
+      "publicationState": "published",
       "domains": [
         {
           "id": "core-meaning",
@@ -103,7 +104,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 16,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -124,11 +125,6 @@
                     "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
                     "topicLabel": "Explicit meaning"
                   },
-                  "measuredSkillIds": [
-                    "R1.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-explicit-meaning-practice-01",
                     "title": "Explicit Meaning Practice 1",
@@ -141,7 +137,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.1"
+                  ]
                 }
               ],
               "checks": [
@@ -161,11 +160,6 @@
                     "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
                     "topicLabel": "Explicit meaning"
                   },
-                  "measuredSkillIds": [
-                    "R1.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-explicit-meaning-practice-01",
                     "title": "Explicit Meaning Practice 1",
@@ -178,7 +172,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.1"
+                  ]
                 }
               ],
               "resources": [
@@ -290,7 +287,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 12,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -311,11 +308,6 @@
                     "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
                     "topicLabel": "Main idea / central idea"
                   },
-                  "measuredSkillIds": [
-                    "R1.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-main-idea-practice-01",
                     "title": "Main Idea Practice 1",
@@ -328,7 +320,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ]
                 }
               ],
               "checks": [
@@ -348,11 +343,6 @@
                     "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
                     "topicLabel": "Main idea / central idea"
                   },
-                  "measuredSkillIds": [
-                    "R1.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-main-idea-practice-01",
                     "title": "Main Idea Practice 1",
@@ -365,7 +355,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ]
                 }
               ],
               "resources": [
@@ -477,7 +470,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 15,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -498,11 +491,6 @@
                     "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
                     "topicLabel": "Supporting details"
                   },
-                  "measuredSkillIds": [
-                    "R1.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-supporting-details-practice-01",
                     "title": "Supporting Details Practice 1",
@@ -515,7 +503,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.3"
+                  ]
                 }
               ],
               "checks": [
@@ -535,11 +526,6 @@
                     "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
                     "topicLabel": "Supporting details"
                   },
-                  "measuredSkillIds": [
-                    "R1.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-supporting-details-practice-01",
                     "title": "Supporting Details Practice 1",
@@ -552,7 +538,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.3"
+                  ]
                 }
               ],
               "resources": [
@@ -664,7 +653,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 15,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -685,11 +674,6 @@
                     "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
                     "topicLabel": "Summary"
                   },
-                  "measuredSkillIds": [
-                    "R1.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-summary-practice-01",
                     "title": "Summary Practice 1",
@@ -702,7 +686,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.4"
+                  ]
                 }
               ],
               "checks": [
@@ -722,11 +709,6 @@
                     "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
                     "topicLabel": "Summary"
                   },
-                  "measuredSkillIds": [
-                    "R1.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-summary-practice-01",
                     "title": "Summary Practice 1",
@@ -739,7 +721,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.4"
+                  ]
                 }
               ],
               "resources": [
@@ -851,7 +836,7 @@
               "practiceMode": "Literary",
               "available": true,
               "setCount": 1,
-              "questionCount": 10,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -872,11 +857,6 @@
                     "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
                     "topicLabel": "Theme"
                   },
-                  "measuredSkillIds": [
-                    "R1.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-theme-practice-01",
                     "title": "Theme Practice 1",
@@ -889,7 +869,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.5"
+                  ]
                 }
               ],
               "checks": [
@@ -909,11 +892,6 @@
                     "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
                     "topicLabel": "Theme"
                   },
-                  "measuredSkillIds": [
-                    "R1.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-theme-practice-01",
                     "title": "Theme Practice 1",
@@ -926,7 +904,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R1.5"
+                  ]
                 }
               ],
               "resources": [
@@ -1147,11 +1128,6 @@
                     "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
                     "topicLabel": "Sequence"
                   },
-                  "measuredSkillIds": [
-                    "R2.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-sequence-practice-01",
                     "title": "Sequence Practice 1",
@@ -1164,7 +1140,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.1"
+                  ]
                 }
               ],
               "checks": [
@@ -1184,11 +1163,6 @@
                     "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
                     "topicLabel": "Sequence"
                   },
-                  "measuredSkillIds": [
-                    "R2.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-sequence-practice-01",
                     "title": "Sequence Practice 1",
@@ -1201,7 +1175,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.1"
+                  ]
                 }
               ],
               "resources": [
@@ -1334,11 +1311,6 @@
                     "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
                     "topicLabel": "Cause and effect"
                   },
-                  "measuredSkillIds": [
-                    "R2.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-cause-effect-practice-01",
                     "title": "Cause and Effect Practice 1",
@@ -1351,7 +1323,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.2"
+                  ]
                 }
               ],
               "checks": [
@@ -1371,11 +1346,6 @@
                     "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
                     "topicLabel": "Cause and effect"
                   },
-                  "measuredSkillIds": [
-                    "R2.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-cause-effect-practice-01",
                     "title": "Cause and Effect Practice 1",
@@ -1388,7 +1358,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.2"
+                  ]
                 }
               ],
               "resources": [
@@ -1521,11 +1494,6 @@
                     "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
                     "topicLabel": "Compare and contrast"
                   },
-                  "measuredSkillIds": [
-                    "R2.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-compare-practice-01",
                     "title": "Compare and Contrast Practice 1",
@@ -1538,7 +1506,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.3"
+                  ]
                 }
               ],
               "checks": [
@@ -1558,11 +1529,6 @@
                     "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
                     "topicLabel": "Compare and contrast"
                   },
-                  "measuredSkillIds": [
-                    "R2.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-compare-practice-01",
                     "title": "Compare and Contrast Practice 1",
@@ -1575,7 +1541,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.3"
+                  ]
                 }
               ],
               "resources": [
@@ -1687,7 +1656,7 @@
               "practiceMode": "Reading",
               "available": true,
               "setCount": 1,
-              "questionCount": 12,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 1,
@@ -1708,11 +1677,6 @@
                     "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
                     "topicLabel": "Inference from details"
                   },
-                  "measuredSkillIds": [
-                    "R2.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-inference-practice-01",
                     "title": "Inference Practice 1",
@@ -1725,7 +1689,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.4"
+                  ]
                 }
               ],
               "checks": [
@@ -1745,11 +1712,6 @@
                     "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
                     "topicLabel": "Inference from details"
                   },
-                  "measuredSkillIds": [
-                    "R2.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-inference-practice-01",
                     "title": "Inference Practice 1",
@@ -1762,7 +1724,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.4"
+                  ]
                 }
               ],
               "resources": [
@@ -1895,11 +1860,6 @@
                     "learningObjective": "Synthesize multiple details into supported conclusions and apply the same principle to closely related situations.",
                     "topicLabel": "Conclusions & generalizations"
                   },
-                  "measuredSkillIds": [
-                    "R2.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-conclusions-practice-01",
                     "title": "Conclusions Practice 1",
@@ -1912,7 +1872,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.5"
+                  ]
                 }
               ],
               "checks": [
@@ -1932,11 +1895,6 @@
                     "learningObjective": "Synthesize multiple details into supported conclusions and apply the same principle to closely related situations.",
                     "topicLabel": "Conclusions & generalizations"
                   },
-                  "measuredSkillIds": [
-                    "R2.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-conclusions-practice-01",
                     "title": "Conclusions Practice 1",
@@ -1949,7 +1907,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.5"
+                  ]
                 }
               ],
               "resources": [
@@ -2082,11 +2043,6 @@
                     "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
                     "topicLabel": "Relationships among people, events & ideas"
                   },
-                  "measuredSkillIds": [
-                    "R2.6"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-relationships-practice-01",
                     "title": "Relationships Practice 1",
@@ -2099,7 +2055,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.6"
+                  ]
                 }
               ],
               "checks": [
@@ -2119,11 +2078,6 @@
                     "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
                     "topicLabel": "Relationships among people, events & ideas"
                   },
-                  "measuredSkillIds": [
-                    "R2.6"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-relationships-practice-01",
                     "title": "Relationships Practice 1",
@@ -2136,7 +2090,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R2.6"
+                  ]
                 }
               ],
               "resources": [
@@ -2356,11 +2313,6 @@
                     "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Meaning in Context"
                   },
-                  "measuredSkillIds": [
-                    "R3.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-meaning-in-context-practice-1",
                     "title": "Meaning in Context Practice 1",
@@ -2373,7 +2325,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ]
                 },
                 {
                   "id": "set-rla-meaning-in-context-practice-2",
@@ -2391,11 +2346,6 @@
                     "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Meaning in Context"
                   },
-                  "measuredSkillIds": [
-                    "R3.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-meaning-in-context-practice-2",
                     "title": "Meaning in Context Practice 2",
@@ -2408,7 +2358,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ]
                 }
               ],
               "checks": [
@@ -2428,11 +2381,6 @@
                     "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Meaning in Context"
                   },
-                  "measuredSkillIds": [
-                    "R3.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-meaning-in-context-practice-1",
                     "title": "Meaning in Context Practice 1",
@@ -2445,7 +2393,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ]
                 },
                 {
                   "id": "set-rla-meaning-in-context-practice-2",
@@ -2463,11 +2414,6 @@
                     "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Meaning in Context"
                   },
-                  "measuredSkillIds": [
-                    "R3.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-meaning-in-context-practice-2",
                     "title": "Meaning in Context Practice 2",
@@ -2480,7 +2426,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.1"
+                  ]
                 }
               ],
               "resources": [
@@ -2645,11 +2594,6 @@
                     "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Connotation"
                   },
-                  "measuredSkillIds": [
-                    "R3.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-connotation-practice-1",
                     "title": "Connotation Practice 1",
@@ -2662,7 +2606,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ]
                 },
                 {
                   "id": "set-rla-connotation-practice-2",
@@ -2680,11 +2627,6 @@
                     "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Connotation"
                   },
-                  "measuredSkillIds": [
-                    "R3.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-connotation-practice-2",
                     "title": "Connotation Practice 2",
@@ -2697,7 +2639,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ]
                 }
               ],
               "checks": [
@@ -2717,11 +2662,6 @@
                     "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Connotation"
                   },
-                  "measuredSkillIds": [
-                    "R3.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-connotation-practice-1",
                     "title": "Connotation Practice 1",
@@ -2734,7 +2674,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ]
                 },
                 {
                   "id": "set-rla-connotation-practice-2",
@@ -2752,11 +2695,6 @@
                     "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Connotation"
                   },
-                  "measuredSkillIds": [
-                    "R3.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-connotation-practice-2",
                     "title": "Connotation Practice 2",
@@ -2769,7 +2707,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.2"
+                  ]
                 }
               ],
               "resources": [
@@ -2934,11 +2875,6 @@
                     "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Figurative Language"
                   },
-                  "measuredSkillIds": [
-                    "R3.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-figurative-language-practice-1",
                     "title": "Figurative Language Practice 1",
@@ -2951,7 +2887,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ]
                 },
                 {
                   "id": "set-rla-figurative-language-practice-2",
@@ -2969,11 +2908,6 @@
                     "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Figurative Language"
                   },
-                  "measuredSkillIds": [
-                    "R3.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-figurative-language-practice-2",
                     "title": "Figurative Language Practice 2",
@@ -2986,7 +2920,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ]
                 }
               ],
               "checks": [
@@ -3006,11 +2943,6 @@
                     "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Figurative Language"
                   },
-                  "measuredSkillIds": [
-                    "R3.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-figurative-language-practice-1",
                     "title": "Figurative Language Practice 1",
@@ -3023,7 +2955,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ]
                 },
                 {
                   "id": "set-rla-figurative-language-practice-2",
@@ -3041,11 +2976,6 @@
                     "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Figurative Language"
                   },
-                  "measuredSkillIds": [
-                    "R3.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-figurative-language-practice-2",
                     "title": "Figurative Language Practice 2",
@@ -3058,7 +2988,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.3"
+                  ]
                 }
               ],
               "resources": [
@@ -3223,11 +3156,6 @@
                     "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Tone"
                   },
-                  "measuredSkillIds": [
-                    "R3.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-tone-practice-1",
                     "title": "Tone Practice 1",
@@ -3240,7 +3168,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ]
                 },
                 {
                   "id": "set-rla-tone-practice-2",
@@ -3258,11 +3189,6 @@
                     "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Tone"
                   },
-                  "measuredSkillIds": [
-                    "R3.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-tone-practice-2",
                     "title": "Tone Practice 2",
@@ -3275,7 +3201,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ]
                 }
               ],
               "checks": [
@@ -3295,11 +3224,6 @@
                     "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Tone"
                   },
-                  "measuredSkillIds": [
-                    "R3.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-tone-practice-1",
                     "title": "Tone Practice 1",
@@ -3312,7 +3236,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ]
                 },
                 {
                   "id": "set-rla-tone-practice-2",
@@ -3330,11 +3257,6 @@
                     "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Tone"
                   },
-                  "measuredSkillIds": [
-                    "R3.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-tone-practice-2",
                     "title": "Tone Practice 2",
@@ -3347,7 +3269,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.4"
+                  ]
                 }
               ],
               "resources": [
@@ -3512,11 +3437,6 @@
                     "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Impact of Word Choice"
                   },
-                  "measuredSkillIds": [
-                    "R3.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-impact-of-word-choice-practice-1",
                     "title": "Impact of Word Choice Practice 1",
@@ -3529,7 +3449,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ]
                 },
                 {
                   "id": "set-rla-impact-of-word-choice-practice-2",
@@ -3547,11 +3470,6 @@
                     "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Impact of Word Choice"
                   },
-                  "measuredSkillIds": [
-                    "R3.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-impact-of-word-choice-practice-2",
                     "title": "Impact of Word Choice Practice 2",
@@ -3564,7 +3482,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ]
                 }
               ],
               "checks": [
@@ -3584,11 +3505,6 @@
                     "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Impact of Word Choice"
                   },
-                  "measuredSkillIds": [
-                    "R3.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-impact-of-word-choice-practice-1",
                     "title": "Impact of Word Choice Practice 1",
@@ -3601,7 +3517,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ]
                 },
                 {
                   "id": "set-rla-impact-of-word-choice-practice-2",
@@ -3619,11 +3538,6 @@
                     "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
                     "topicLabel": "Impact of Word Choice"
                   },
-                  "measuredSkillIds": [
-                    "R3.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-impact-of-word-choice-practice-2",
                     "title": "Impact of Word Choice Practice 2",
@@ -3636,7 +3550,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R3.5"
+                  ]
                 }
               ],
               "resources": [
@@ -3889,11 +3806,6 @@
                     "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Paragraph / section function"
                   },
-                  "measuredSkillIds": [
-                    "R4.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-paragraph-section-function-practice-1",
                     "title": "Paragraph / section function Practice 1",
@@ -3906,7 +3818,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ]
                 },
                 {
                   "id": "set-rla-paragraph-section-function-practice-2",
@@ -3924,11 +3839,6 @@
                     "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Paragraph / section function"
                   },
-                  "measuredSkillIds": [
-                    "R4.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-paragraph-section-function-practice-2",
                     "title": "Paragraph / section function Practice 2",
@@ -3941,7 +3851,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ]
                 }
               ],
               "checks": [
@@ -3961,11 +3874,6 @@
                     "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Paragraph / section function"
                   },
-                  "measuredSkillIds": [
-                    "R4.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-paragraph-section-function-practice-1",
                     "title": "Paragraph / section function Practice 1",
@@ -3978,7 +3886,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ]
                 },
                 {
                   "id": "set-rla-paragraph-section-function-practice-2",
@@ -3996,11 +3907,6 @@
                     "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Paragraph / section function"
                   },
-                  "measuredSkillIds": [
-                    "R4.1"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-paragraph-section-function-practice-2",
                     "title": "Paragraph / section function Practice 2",
@@ -4013,7 +3919,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.1"
+                  ]
                 }
               ],
               "resources": [
@@ -4178,11 +4087,6 @@
                     "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Text structure"
                   },
-                  "measuredSkillIds": [
-                    "R4.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-text-structure-practice-1",
                     "title": "Text structure Practice 1",
@@ -4195,7 +4099,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ]
                 },
                 {
                   "id": "set-rla-text-structure-practice-2",
@@ -4213,11 +4120,6 @@
                     "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Text structure"
                   },
-                  "measuredSkillIds": [
-                    "R4.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-text-structure-practice-2",
                     "title": "Text structure Practice 2",
@@ -4230,7 +4132,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ]
                 }
               ],
               "checks": [
@@ -4250,11 +4155,6 @@
                     "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Text structure"
                   },
-                  "measuredSkillIds": [
-                    "R4.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-text-structure-practice-1",
                     "title": "Text structure Practice 1",
@@ -4267,7 +4167,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ]
                 },
                 {
                   "id": "set-rla-text-structure-practice-2",
@@ -4285,11 +4188,6 @@
                     "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Text structure"
                   },
-                  "measuredSkillIds": [
-                    "R4.2"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-text-structure-practice-2",
                     "title": "Text structure Practice 2",
@@ -4302,7 +4200,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.2"
+                  ]
                 }
               ],
               "resources": [
@@ -4467,11 +4368,6 @@
                     "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Transitions & signal words"
                   },
-                  "measuredSkillIds": [
-                    "R4.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-transitions-signal-words-practice-1",
                     "title": "Transitions & signal words Practice 1",
@@ -4484,7 +4380,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ]
                 },
                 {
                   "id": "set-rla-transitions-signal-words-practice-2",
@@ -4502,11 +4401,6 @@
                     "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Transitions & signal words"
                   },
-                  "measuredSkillIds": [
-                    "R4.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-transitions-signal-words-practice-2",
                     "title": "Transitions & signal words Practice 2",
@@ -4519,7 +4413,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ]
                 }
               ],
               "checks": [
@@ -4539,11 +4436,6 @@
                     "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Transitions & signal words"
                   },
-                  "measuredSkillIds": [
-                    "R4.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-transitions-signal-words-practice-1",
                     "title": "Transitions & signal words Practice 1",
@@ -4556,7 +4448,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ]
                 },
                 {
                   "id": "set-rla-transitions-signal-words-practice-2",
@@ -4574,11 +4469,6 @@
                     "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Transitions & signal words"
                   },
-                  "measuredSkillIds": [
-                    "R4.3"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-transitions-signal-words-practice-2",
                     "title": "Transitions & signal words Practice 2",
@@ -4591,7 +4481,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.3"
+                  ]
                 }
               ],
               "resources": [
@@ -4756,11 +4649,6 @@
                     "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Author purpose"
                   },
-                  "measuredSkillIds": [
-                    "R4.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-author-purpose-practice-1",
                     "title": "Author purpose Practice 1",
@@ -4773,7 +4661,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ]
                 },
                 {
                   "id": "set-rla-author-purpose-practice-2",
@@ -4791,11 +4682,6 @@
                     "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Author purpose"
                   },
-                  "measuredSkillIds": [
-                    "R4.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-author-purpose-practice-2",
                     "title": "Author purpose Practice 2",
@@ -4808,7 +4694,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ]
                 }
               ],
               "checks": [
@@ -4828,11 +4717,6 @@
                     "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Author purpose"
                   },
-                  "measuredSkillIds": [
-                    "R4.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-author-purpose-practice-1",
                     "title": "Author purpose Practice 1",
@@ -4845,7 +4729,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ]
                 },
                 {
                   "id": "set-rla-author-purpose-practice-2",
@@ -4863,11 +4750,6 @@
                     "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Author purpose"
                   },
-                  "measuredSkillIds": [
-                    "R4.4"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-author-purpose-practice-2",
                     "title": "Author purpose Practice 2",
@@ -4880,7 +4762,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.4"
+                  ]
                 }
               ],
               "resources": [
@@ -5045,11 +4930,6 @@
                     "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Point of view / perspective"
                   },
-                  "measuredSkillIds": [
-                    "R4.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-point-of-view-perspective-practice-1",
                     "title": "Point of view / perspective Practice 1",
@@ -5062,7 +4942,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ]
                 },
                 {
                   "id": "set-rla-point-of-view-perspective-practice-2",
@@ -5080,11 +4963,6 @@
                     "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Point of view / perspective"
                   },
-                  "measuredSkillIds": [
-                    "R4.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-point-of-view-perspective-practice-2",
                     "title": "Point of view / perspective Practice 2",
@@ -5097,7 +4975,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ]
                 }
               ],
               "checks": [
@@ -5117,11 +4998,6 @@
                     "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Point of view / perspective"
                   },
-                  "measuredSkillIds": [
-                    "R4.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-point-of-view-perspective-practice-1",
                     "title": "Point of view / perspective Practice 1",
@@ -5134,7 +5010,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ]
                 },
                 {
                   "id": "set-rla-point-of-view-perspective-practice-2",
@@ -5152,11 +5031,6 @@
                     "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Point of view / perspective"
                   },
-                  "measuredSkillIds": [
-                    "R4.5"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-point-of-view-perspective-practice-2",
                     "title": "Point of view / perspective Practice 2",
@@ -5169,7 +5043,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.5"
+                  ]
                 }
               ],
               "resources": [
@@ -5334,11 +5211,6 @@
                     "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Rhetorical technique"
                   },
-                  "measuredSkillIds": [
-                    "R4.6"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-rhetorical-technique-practice-1",
                     "title": "Rhetorical technique Practice 1",
@@ -5351,7 +5223,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ]
                 },
                 {
                   "id": "set-rla-rhetorical-technique-practice-2",
@@ -5369,11 +5244,6 @@
                     "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Rhetorical technique"
                   },
-                  "measuredSkillIds": [
-                    "R4.6"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-rhetorical-technique-practice-2",
                     "title": "Rhetorical technique Practice 2",
@@ -5386,7 +5256,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ]
                 }
               ],
               "checks": [
@@ -5406,11 +5279,6 @@
                     "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Rhetorical technique"
                   },
-                  "measuredSkillIds": [
-                    "R4.6"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-rhetorical-technique-practice-1",
                     "title": "Rhetorical technique Practice 1",
@@ -5423,7 +5291,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ]
                 },
                 {
                   "id": "set-rla-rhetorical-technique-practice-2",
@@ -5441,11 +5312,6 @@
                     "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
                     "topicLabel": "Rhetorical technique"
                   },
-                  "measuredSkillIds": [
-                    "R4.6"
-                  ],
-                  "isMixed": false,
-                  "isMixedPassage": false,
                   "passageMeta": {
                     "id": "p-rla-rhetorical-technique-practice-2",
                     "title": "Rhetorical technique Practice 2",
@@ -5458,7 +5324,10 @@
                     "publisher": null,
                     "year": null,
                     "url": null
-                  }
+                  },
+                  "measuredSkillIds": [
+                    "R4.6"
+                  ]
                 }
               ],
               "resources": [
@@ -5600,1171 +5469,13 @@
       "availableSkillCount": 22,
       "totalSkillCount": 22,
       "availableSetCount": 33,
-      "questionCount": 296,
+      "questionCount": 264,
       "resourceCount": 85,
       "studyFileCount": 85,
       "checkCount": 33
-    },
-    {
-      "id": "arguments",
-      "label": "Arguments & Sources",
-      "shortLabel": "Arguments",
-      "summary": "Judge claims, evidence, reasoning, and how multiple sources support or challenge each other.",
-      "accent": "violet",
-      "domains": [
-        {
-          "id": "argument-analysis",
-          "label": "Argument Analysis",
-          "summary": "Test claims, evidence, assumptions, reasoning, and counterarguments.",
-          "groups": [
-            {
-              "id": "argument-parts",
-              "label": "Build the argument map",
-              "skills": [
-                "R5.1",
-                "R5.2",
-                "R5.3"
-              ]
-            },
-            {
-              "id": "test-support",
-              "label": "Test the support",
-              "skills": [
-                "R5.4",
-                "R5.5",
-                "R5.6"
-              ]
-            },
-            {
-              "id": "test-reasoning",
-              "label": "Test the reasoning",
-              "skills": [
-                "R5.7",
-                "R5.8",
-                "R5.9",
-                "R5.10"
-              ]
-            }
-          ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 0,
-          "skills": [
-            {
-              "id": "R5.1",
-              "runtimeId": "R5.1",
-              "label": "Claim identification",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.2",
-              "runtimeId": "R5.2",
-              "label": "Argument chain / structure",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.3",
-              "runtimeId": "reading.evidence.matching",
-              "label": "Evidence identification",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 2,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.4",
-              "runtimeId": "writing.evidence.relevance",
-              "label": "Evidence relevance",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 1,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.5",
-              "runtimeId": "R5.5",
-              "label": "Evidence sufficiency",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.6",
-              "runtimeId": "R5.6",
-              "label": "Supported vs unsupported claims",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.7",
-              "runtimeId": "R5.7",
-              "label": "Reasoning validity / fallacies",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.8",
-              "runtimeId": "R5.8",
-              "label": "Assumptions & premises",
-              "priority": "P0",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.9",
-              "runtimeId": "R5.9",
-              "label": "Source credibility",
-              "priority": "P2",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R5.10",
-              "runtimeId": "R5.10",
-              "label": "Counterargument & response",
-              "priority": "P1",
-              "practiceMode": "Argument",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            }
-          ]
-        },
-        {
-          "id": "multiple-texts-formats",
-          "label": "Multiple Texts & Formats",
-          "summary": "Compare sources, arguments, data, and information across formats.",
-          "groups": [
-            {
-              "id": "compare-sources",
-              "label": "Compare sources",
-              "skills": [
-                "R6.1",
-                "R6.2"
-              ]
-            },
-            {
-              "id": "combine-information",
-              "label": "Combine information",
-              "skills": [
-                "R6.3",
-                "R6.4",
-                "R6.5"
-              ]
-            }
-          ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 0,
-          "skills": [
-            {
-              "id": "R6.1",
-              "runtimeId": "R6.1",
-              "label": "Compare texts on same topic",
-              "priority": "P1",
-              "practiceMode": "Multi-source",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R6.2",
-              "runtimeId": "R6.2",
-              "label": "Opposing arguments",
-              "priority": "P0",
-              "practiceMode": "Multi-source",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R6.3",
-              "runtimeId": "R6.3",
-              "label": "Text + data / visuals",
-              "priority": "P1",
-              "practiceMode": "Multi-source",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R6.4",
-              "runtimeId": "R6.4",
-              "label": "Different genres / formats",
-              "priority": "P1",
-              "practiceMode": "Multi-source",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "R6.5",
-              "runtimeId": "R6.5",
-              "label": "Synthesis across sources",
-              "priority": "P0",
-              "practiceMode": "Multi-source",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            }
-          ]
-        }
-      ],
-      "availableSkillCount": 0,
-      "totalSkillCount": 15,
-      "availableSetCount": 0,
-      "questionCount": 3,
-      "resourceCount": 0,
-      "studyFileCount": 0,
-      "checkCount": 0
-    },
-    {
-      "id": "language",
-      "label": "Language & Editing",
-      "shortLabel": "Language",
-      "summary": "Edit sentences and passages for grammar, punctuation, clarity, and precise word choice.",
-      "accent": "teal",
-      "domains": [
-        {
-          "id": "language-editing",
-          "label": "Language & Editing",
-          "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context.",
-          "groups": [
-            {
-              "id": "usage-agreement",
-              "label": "Usage & agreement",
-              "skills": [
-                "L1.1",
-                "L1.2",
-                "L1.3",
-                "L1.4"
-              ]
-            },
-            {
-              "id": "sentence-clarity",
-              "label": "Sentence clarity",
-              "skills": [
-                "L1.5",
-                "L1.6",
-                "L1.7",
-                "L1.8",
-                "L1.9"
-              ]
-            },
-            {
-              "id": "mechanics",
-              "label": "Mechanics & sentence boundaries",
-              "skills": [
-                "L2.1",
-                "L2.2",
-                "L2.3",
-                "L2.4"
-              ]
-            }
-          ],
-          "availableSkillCount": 2,
-          "availableSetCount": 2,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 2,
-          "skills": [
-            {
-              "id": "L1.1",
-              "runtimeId": "language.usage.word_choice",
-              "label": "Frequently confused words",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                }
-              ],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.2",
-              "runtimeId": "language.grammar.subject_verb_agreement",
-              "label": "Basic subject–verb agreement",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": true,
-              "setCount": 2,
-              "questionCount": 2,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 2,
-              "sets": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                }
-              ],
-              "checks": [
-                {
-                  "id": "set-rla-grammar-precision-check",
-                  "title": "Grammar Transfer — Precision Check",
-                  "description": "Use fresh sentences to retest agreement and commonly confused words.",
-                  "file": "generated/modules/grammar-transfer-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                },
-                {
-                  "id": "set-rla-grammar-sentence-repair",
-                  "title": "Grammar Edit — Sentence Repair",
-                  "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-                  "file": "generated/modules/grammar-practice.json",
-                  "difficulty": "medium",
-                  "category": "language_conventions",
-                  "questionCount": 2,
-                  "curriculum": {
-                    "domain": "Language & Editing",
-                    "primarySkillId": "L1.2",
-                    "secondarySkillIds": [
-                      "L1.1"
-                    ],
-                    "contentKind": "editing_practice",
-                    "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-                    "topicLabel": "Grammar & Usage"
-                  },
-                  "measuredSkillIds": [
-                    "L1.2",
-                    "L1.1"
-                  ]
-                }
-              ],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.3",
-              "runtimeId": "L1.3",
-              "label": "Pronoun agreement, reference & case",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.4",
-              "runtimeId": "L1.4",
-              "label": "Standard vs informal usage",
-              "priority": "P1",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.5",
-              "runtimeId": "L1.5",
-              "label": "Modifiers & logical word order",
-              "priority": "P1",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.6",
-              "runtimeId": "L1.6",
-              "label": "Parallelism, coordination & subordination",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.7",
-              "runtimeId": "L1.7",
-              "label": "Complex agreement",
-              "priority": "P1",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.8",
-              "runtimeId": "L1.8",
-              "label": "Wordiness & awkward construction",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L1.9",
-              "runtimeId": "L1.9",
-              "label": "Transitions for logic & clarity",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L2.1",
-              "runtimeId": "L2.1",
-              "label": "Capitalization",
-              "priority": "P1",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L2.2",
-              "runtimeId": "L2.2",
-              "label": "Fragments, run-ons & fused sentences",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L2.3",
-              "runtimeId": "L2.3",
-              "label": "Apostrophes & possessives",
-              "priority": "P1",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "L2.4",
-              "runtimeId": "L2.4",
-              "label": "Punctuation & clause separation",
-              "priority": "P0",
-              "practiceMode": "Language",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            }
-          ]
-        }
-      ],
-      "availableSkillCount": 2,
-      "totalSkillCount": 13,
-      "availableSetCount": 2,
-      "questionCount": 4,
-      "resourceCount": 0,
-      "studyFileCount": 0,
-      "checkCount": 2
-    },
-    {
-      "id": "extended-response",
-      "label": "Extended Response",
-      "shortLabel": "Extended Response",
-      "summary": "Analyze two arguments, choose the better-supported position, and build a clear source-based response.",
-      "accent": "amber",
-      "domains": [
-        {
-          "id": "extended-response",
-          "label": "Extended Response",
-          "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing.",
-          "groups": [
-            {
-              "id": "analyze",
-              "label": "Analyze the sources",
-              "skills": [
-                "W1.1",
-                "W1.2",
-                "W1.3"
-              ]
-            },
-            {
-              "id": "build",
-              "label": "Build the response",
-              "skills": [
-                "W1.4",
-                "W1.5",
-                "W1.6",
-                "W1.7",
-                "W1.8",
-                "W1.9"
-              ]
-            },
-            {
-              "id": "revise",
-              "label": "Revise & finish",
-              "skills": [
-                "W1.10",
-                "W1.11",
-                "W1.12"
-              ]
-            }
-          ],
-          "availableSkillCount": 0,
-          "availableSetCount": 0,
-          "topicResourceCount": 0,
-          "topicResources": [],
-          "resources": [],
-          "studyFileCount": 0,
-          "checkCount": 0,
-          "skills": [
-            {
-              "id": "W1.1",
-              "runtimeId": "W1.1",
-              "label": "Understand the task",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.2",
-              "runtimeId": "W1.2",
-              "label": "Map both arguments",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.3",
-              "runtimeId": "W1.3",
-              "label": "Select better-supported position",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.4",
-              "runtimeId": "W1.4",
-              "label": "Build evaluative thesis",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.5",
-              "runtimeId": "writing.argument.short_response",
-              "label": "Select specific source evidence",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 1,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.6",
-              "runtimeId": "W1.6",
-              "label": "Analyze evidence",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.7",
-              "runtimeId": "W1.7",
-              "label": "Analyze reasoning",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.8",
-              "runtimeId": "W1.8",
-              "label": "Organize the response",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.9",
-              "runtimeId": "W1.9",
-              "label": "Develop ideas",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 1,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.10",
-              "runtimeId": "W1.10",
-              "label": "Revise for focus & clarity",
-              "priority": "P1",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.11",
-              "runtimeId": "W1.11",
-              "label": "Edit conventions",
-              "priority": "P1",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            },
-            {
-              "id": "W1.12",
-              "runtimeId": "W1.12",
-              "label": "Full paired-source ER",
-              "priority": "P0",
-              "practiceMode": "Writing",
-              "available": false,
-              "setCount": 0,
-              "questionCount": 0,
-              "resourceCount": 0,
-              "studyFileCount": 0,
-              "checkCount": 0,
-              "sets": [],
-              "checks": [],
-              "resources": [],
-              "studyResources": []
-            }
-          ]
-        }
-      ],
-      "availableSkillCount": 0,
-      "totalSkillCount": 12,
-      "availableSetCount": 0,
-      "questionCount": 2,
-      "resourceCount": 0,
-      "studyFileCount": 0,
-      "checkCount": 0
     }
   ],
   "passagePractice": [
-    {
-      "id": "set-rla-evidence-last-bus",
-      "title": "The Last Bus",
-      "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
-      "file": "generated/modules/evidence-transfer-practice.json",
-      "difficulty": "medium",
-      "category": "reading",
-      "questionCount": 2,
-      "curriculum": {
-        "domain": "Relationships & Inference",
-        "primarySkillId": "R2.4",
-        "secondarySkillIds": [
-          "R5.3"
-        ],
-        "contentKind": "passage_practice",
-        "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
-        "topicLabel": "Inference & Evidence"
-      },
-      "measuredSkillIds": [
-        "R2.4",
-        "R5.3"
-      ],
-      "passageMeta": {
-        "id": "p-rla-last-bus",
-        "title": "The Last Bus",
-        "textType": "literary",
-        "context": "community",
-        "sourceType": "original",
-        "attribution": "Original content by Studo",
-        "author": "Studo",
-        "workTitle": null,
-        "publisher": null,
-        "year": null,
-        "url": null
-      }
-    },
-    {
-      "id": "set-rla-evidence-night-shift",
-      "title": "The Night Shift",
-      "description": "Practice making an inference, then choosing the evidence that proves it.",
-      "file": "generated/modules/evidence-practice.json",
-      "difficulty": "medium",
-      "category": "reading",
-      "questionCount": 2,
-      "curriculum": {
-        "domain": "Relationships & Inference",
-        "primarySkillId": "R2.4",
-        "secondarySkillIds": [
-          "R5.3"
-        ],
-        "contentKind": "passage_practice",
-        "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-        "topicLabel": "Inference & Evidence"
-      },
-      "measuredSkillIds": [
-        "R2.4",
-        "R5.3"
-      ],
-      "passageMeta": {
-        "id": "p-rla-night-shift",
-        "title": "The Night Shift",
-        "textType": "literary",
-        "context": "workplace",
-        "sourceType": "original",
-        "attribution": "Original content by Studo",
-        "author": "Studo",
-        "workTitle": null,
-        "publisher": null,
-        "year": null,
-        "url": null
-      }
-    },
     {
       "id": "set-rla-gold-literary-brass-key",
       "title": "The Brass Key",
@@ -7500,43 +6211,6 @@
       }
     },
     {
-      "id": "set-rla-writing-library-hours",
-      "title": "Sunday Hours at the Downtown Library",
-      "description": "Choose relevant evidence, then use source evidence in a short argument.",
-      "file": "generated/modules/writing-practice.json",
-      "difficulty": "easy",
-      "category": "writing",
-      "questionCount": 2,
-      "curriculum": {
-        "domain": "Argument Analysis",
-        "primarySkillId": "R5.4",
-        "secondarySkillIds": [
-          "W1.5"
-        ],
-        "contentKind": "passage_practice",
-        "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-        "topicLabel": "Evidence Relevance"
-      },
-      "measuredSkillIds": [
-        "R5.4",
-        "W1.5",
-        "W1.9"
-      ],
-      "passageMeta": {
-        "id": "p-rla-library-sunday-hours",
-        "title": "Sunday Hours at the Downtown Library",
-        "textType": "informational",
-        "context": "civics",
-        "sourceType": "original",
-        "attribution": "Original content by Studo",
-        "author": "Studo",
-        "workTitle": null,
-        "publisher": null,
-        "year": null,
-        "url": null
-      }
-    },
-    {
       "id": "set-rla-core-transfer-blue-folder",
       "title": "The Last Blue Folder",
       "description": "Literary · 7 questions",
@@ -7558,11 +6232,11 @@
         "topicLabel": "GED Practice"
       },
       "measuredSkillIds": [
-        "R1.1",
         "R1.5",
+        "R1.1",
+        "R1.2",
         "R1.3",
-        "R1.4",
-        "R1.2"
+        "R1.4"
       ],
       "passageMeta": {
         "id": "p-rla-core-transfer-blue-folder",
@@ -7599,8 +6273,8 @@
         "topicLabel": "GED Practice"
       },
       "measuredSkillIds": [
-        "R1.1",
         "R1.2",
+        "R1.1",
         "R1.3",
         "R1.4"
       ],
@@ -7639,8 +6313,8 @@
         "topicLabel": "GED Practice"
       },
       "measuredSkillIds": [
-        "R1.1",
         "R1.2",
+        "R1.1",
         "R1.3",
         "R1.4"
       ],
@@ -7679,8 +6353,8 @@
         "topicLabel": "GED Practice"
       },
       "measuredSkillIds": [
-        "R1.1",
         "R1.2",
+        "R1.1",
         "R1.3",
         "R1.4"
       ],
@@ -7697,9 +6371,7 @@
         "year": null,
         "url": null
       }
-    }
-  ],
-  "mixedPractice": [
+    },
     {
       "id": "set-rla-evidence-last-bus",
       "title": "The Last Bus",
@@ -7771,7 +6443,9 @@
         "year": null,
         "url": null
       }
-    },
+    }
+  ],
+  "mixedPractice": [
     {
       "id": "set-rla-gold-literary-brass-key",
       "title": "The Brass Key",
@@ -7907,54 +6581,6 @@
         "year": null,
         "url": null
       }
-    },
-    {
-      "id": "set-rla-grammar-precision-check",
-      "title": "Grammar Transfer — Precision Check",
-      "description": "Use fresh sentences to retest agreement and commonly confused words.",
-      "file": "generated/modules/grammar-transfer-practice.json",
-      "difficulty": "medium",
-      "category": "language_conventions",
-      "questionCount": 2,
-      "curriculum": {
-        "domain": "Language & Editing",
-        "primarySkillId": "L1.2",
-        "secondarySkillIds": [
-          "L1.1"
-        ],
-        "contentKind": "editing_practice",
-        "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
-        "topicLabel": "Grammar & Usage"
-      },
-      "measuredSkillIds": [
-        "L1.2",
-        "L1.1"
-      ],
-      "passageMeta": null
-    },
-    {
-      "id": "set-rla-grammar-sentence-repair",
-      "title": "Grammar Edit — Sentence Repair",
-      "description": "Choose the edit that makes each sentence clear and grammatically correct.",
-      "file": "generated/modules/grammar-practice.json",
-      "difficulty": "medium",
-      "category": "language_conventions",
-      "questionCount": 2,
-      "curriculum": {
-        "domain": "Language & Editing",
-        "primarySkillId": "L1.2",
-        "secondarySkillIds": [
-          "L1.1"
-        ],
-        "contentKind": "editing_practice",
-        "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-        "topicLabel": "Grammar & Usage"
-      },
-      "measuredSkillIds": [
-        "L1.2",
-        "L1.1"
-      ],
-      "passageMeta": null
     },
     {
       "id": "set-rla-p6b-library-lockers",
@@ -8555,32 +7181,230 @@
       }
     },
     {
-      "id": "set-rla-writing-library-hours",
-      "title": "Sunday Hours at the Downtown Library",
-      "description": "Choose relevant evidence, then use source evidence in a short argument.",
-      "file": "generated/modules/writing-practice.json",
-      "difficulty": "easy",
-      "category": "writing",
-      "questionCount": 2,
+      "id": "set-rla-core-transfer-blue-folder",
+      "title": "The Last Blue Folder",
+      "description": "Literary · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-blue-folder.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
       "curriculum": {
-        "domain": "Argument Analysis",
-        "primarySkillId": "R5.4",
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.5",
         "secondarySkillIds": [
-          "W1.5"
+          "R1.1",
+          "R1.2",
+          "R1.3",
+          "R1.4"
         ],
         "contentKind": "passage_practice",
-        "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-        "topicLabel": "Evidence Relevance"
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
       },
       "measuredSkillIds": [
-        "R5.4",
-        "W1.5"
+        "R1.5",
+        "R1.1",
+        "R1.2",
+        "R1.3",
+        "R1.4"
       ],
       "passageMeta": {
-        "id": "p-rla-library-sunday-hours",
-        "title": "Sunday Hours at the Downtown Library",
+        "id": "p-rla-core-transfer-blue-folder",
+        "title": "The Last Blue Folder",
+        "textType": "literary",
+        "context": "literary",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-footbridge",
+      "title": "Reopening the Riverside Footbridge",
+      "description": "Community / civics · Informational · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-footbridge.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.2",
+        "R1.1",
+        "R1.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-footbridge",
+        "title": "Reopening the Riverside Footbridge",
         "textType": "informational",
-        "context": "civics",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-handoff",
+      "title": "A New Handoff System at Meridian Repair",
+      "description": "Workplace · Informational · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-handoff.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.2",
+        "R1.1",
+        "R1.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-handoff",
+        "title": "A New Handoff System at Meridian Repair",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-core-transfer-heat-route",
+      "title": "Cooling the Walk to Transit",
+      "description": "Science / community · Informational · 7 questions",
+      "file": "generated/modules/set-rla-core-transfer-heat-route.json",
+      "difficulty": "hard",
+      "category": "reading",
+      "questionCount": 7,
+      "curriculum": {
+        "domain": "Core Meaning",
+        "primarySkillId": "R1.2",
+        "secondarySkillIds": [
+          "R1.1",
+          "R1.3",
+          "R1.4"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Apply Core Meaning skills to a GED-length passage with close distractors and dispersed evidence.",
+        "topicLabel": "GED Practice"
+      },
+      "measuredSkillIds": [
+        "R1.2",
+        "R1.1",
+        "R1.3",
+        "R1.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-core-transfer-heat-route",
+        "title": "Cooling the Walk to Transit",
+        "textType": "informational",
+        "context": "science",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-evidence-last-bus",
+      "title": "The Last Bus",
+      "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+      "file": "generated/modules/evidence-transfer-practice.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R5.3"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
+        "topicLabel": "Inference & Evidence"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R5.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-last-bus",
+        "title": "The Last Bus",
+        "textType": "literary",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-evidence-night-shift",
+      "title": "The Night Shift",
+      "description": "Practice making an inference, then choosing the evidence that proves it.",
+      "file": "generated/modules/evidence-practice.json",
+      "difficulty": "medium",
+      "category": "reading",
+      "questionCount": 2,
+      "curriculum": {
+        "domain": "Relationships & Inference",
+        "primarySkillId": "R2.4",
+        "secondarySkillIds": [
+          "R5.3"
+        ],
+        "contentKind": "passage_practice",
+        "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
+        "topicLabel": "Inference & Evidence"
+      },
+      "measuredSkillIds": [
+        "R2.4",
+        "R5.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-night-shift",
+        "title": "The Night Shift",
+        "textType": "literary",
+        "context": "workplace",
         "sourceType": "original",
         "attribution": "Original content by Studo",
         "author": "Studo",

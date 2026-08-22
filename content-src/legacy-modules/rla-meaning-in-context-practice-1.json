@@ -1,0 +1,487 @@
+{
+  "id": "rla-meaning-in-context-practice-1",
+  "title": "Meaning in Context Practice 1",
+  "description": "4 short texts - 8 focused meaning in context questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Meaning in Context",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Reservoir Level\n\nEngineers say the reservoir is stable this week: inflow from recent rain is roughly matching the amount released downstream.\n\nTEXT B - Workshop Trial\n\nThe organizer called the first event a dry run for the larger conference planned in October.\n\nTEXT C - Transit Card\n\nThe agency will phase in the new card system over three months, beginning with two stations before expanding citywide.\n\nTEXT D - Data Review\n\nThe analyst warned that one unusual week could skew the monthly average.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does stable most nearly mean?",
+      "points": 1,
+      "explanation": "The balance between inflow and release means the level is staying fairly steady.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "not changing much"
+        },
+        {
+          "id": "b",
+          "text": "built for horses",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "dangerously full",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "made of stone",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which clue best supports the answer?",
+      "points": 1,
+      "explanation": "The matching amounts explain why the reservoir level is stable.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "this week",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "inflow is roughly matching the amount released"
+        },
+        {
+          "id": "c",
+          "text": "engineers say",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "recent rain",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What does dry run mean?",
+      "points": 1,
+      "explanation": "The first event is being used to test arrangements before a larger one.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "an event without drinks",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "a race in hot weather",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "a practice attempt"
+        },
+        {
+          "id": "d",
+          "text": "a cancelled meeting",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which word in the sentence is the strongest clue?",
+      "points": 1,
+      "explanation": "The larger later conference shows the current event is preparation.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "organizer",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "first",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "planned",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "larger"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does phase in mean?",
+      "points": 1,
+      "explanation": "The system starts in two stations and expands over time.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "introduce gradually"
+        },
+        {
+          "id": "b",
+          "text": "cancel immediately",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "make invisible",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "charge extra",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which detail confirms that meaning?",
+      "points": 1,
+      "explanation": "The staged timeline directly shows gradual introduction.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "new card system",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "over three months, beginning with two stations"
+        },
+        {
+          "id": "c",
+          "text": "agency",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "citywide",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What does skew most nearly mean?",
+      "points": 1,
+      "explanation": "An unusual week can pull the average away from a typical pattern.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "calculate",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "publish",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "distort"
+        },
+        {
+          "id": "d",
+          "text": "repeat",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which replacement best preserves the meaning?",
+      "points": 1,
+      "explanation": "Distort is the closest contextual synonym.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "balance",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "confirm",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "list",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "distort"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-meaning-in-context-practice-1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Meaning in Context"
+    },
+    "passage": {
+      "id": "p-rla-meaning-in-context-practice-1",
+      "title": "Meaning in Context Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.838Z"
+  }
+}

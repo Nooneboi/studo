@@ -1,32 +1,805 @@
 [
   {
-    "file": "sample-quiz.json",
+    "file": "generated/modules/sample-quiz.json",
     "title": "Sample Quiz — How This Works",
-    "description": "A short demo set showing all three question types."
+    "description": "A short demo set showing all three question types.",
+    "sourceFile": "legacy-modules/sample-quiz.json"
   },
   {
-    "file": "evidence-practice.json",
-    "title": "Evidence-Based Reading — The Night Shift",
-    "description": "Practice choosing the sentence that best supports an answer."
+    "file": "generated/modules/rla-author-purpose-practice-1.json",
+    "title": "Author purpose Practice 1",
+    "description": "4 short texts - 8 focused author purpose questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Author purpose"
+    },
+    "sourceFile": "legacy-modules/rla-author-purpose-practice-1.json"
   },
   {
-    "file": "grammar-practice.json",
-    "title": "Grammar Edit — Sentence Repair",
-    "description": "Practice choosing the correct edit for each underlined section."
+    "file": "generated/modules/rla-author-purpose-practice-2.json",
+    "title": "Author purpose Practice 2",
+    "description": "4 short texts - 8 focused author purpose questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Author purpose"
+    },
+    "sourceFile": "legacy-modules/rla-author-purpose-practice-2.json"
   },
   {
-    "file": "writing-practice.json",
-    "title": "Organizing an Argument",
-    "description": "Practice identifying strong evidence and structuring a short response."
+    "file": "generated/modules/rla-cause-effect-practice-01.json",
+    "title": "Cause and Effect Practice 1",
+    "description": "4 short texts - 8 cause-and-effect questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify explicit and implied cause-effect relationships and distinguish causation from correlation.",
+      "topicLabel": "Cause and effect"
+    },
+    "sourceFile": "legacy-modules/rla-cause-effect-practice-01.json"
   },
   {
-    "file": "evidence-transfer-practice.json",
-    "title": "Evidence & Inference — The Last Bus",
-    "description": "New passage, same core reading skills: infer carefully and prove the answer with evidence."
+    "file": "generated/modules/rla-compare-practice-01.json",
+    "title": "Compare and Contrast Practice 1",
+    "description": "4 short texts - 8 comparison questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify meaningful similarities and differences between people, events, methods, and ideas in a text.",
+      "topicLabel": "Compare and contrast"
+    },
+    "sourceFile": "legacy-modules/rla-compare-practice-01.json"
   },
   {
-    "file": "grammar-transfer-practice.json",
-    "title": "Grammar Transfer — Precision Check",
-    "description": "Fresh sentences that retest agreement and commonly confused words."
+    "file": "generated/modules/rla-conclusions-practice-01.json",
+    "title": "Conclusions Practice 1",
+    "description": "4 short texts - 8 conclusion and generalization questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Synthesize multiple details into supported conclusions and apply the same principle to closely related situations.",
+      "topicLabel": "Conclusions & generalizations"
+    },
+    "sourceFile": "legacy-modules/rla-conclusions-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-connotation-practice-1.json",
+    "title": "Connotation Practice 1",
+    "description": "4 short texts - 8 focused connotation questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Connotation"
+    },
+    "sourceFile": "legacy-modules/rla-connotation-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-connotation-practice-2.json",
+    "title": "Connotation Practice 2",
+    "description": "4 short texts - 8 focused connotation questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply connotation reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Connotation"
+    },
+    "sourceFile": "legacy-modules/rla-connotation-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-explicit-meaning-practice-01.json",
+    "title": "Explicit Meaning Practice 1",
+    "description": "4 short texts · 8 explicit-meaning questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Locate and match directly stated information across short informational and literary texts.",
+      "topicLabel": "Explicit meaning"
+    },
+    "sourceFile": "legacy-modules/rla-explicit-meaning-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-figurative-language-practice-1.json",
+    "title": "Figurative Language Practice 1",
+    "description": "4 short texts - 8 focused figurative language questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Figurative Language"
+    },
+    "sourceFile": "legacy-modules/rla-figurative-language-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-figurative-language-practice-2.json",
+    "title": "Figurative Language Practice 2",
+    "description": "4 short texts - 8 focused figurative language questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply figurative language reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Figurative Language"
+    },
+    "sourceFile": "legacy-modules/rla-figurative-language-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-gold-literary-brass-key.json",
+    "title": "The Brass Key",
+    "description": "Literary · 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [
+        "R1.5",
+        "R3.4",
+        "R3.5",
+        "R4.5",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Literary passage set"
+    },
+    "sourceFile": "legacy-modules/rla-gold-literary-brass-key.json"
+  },
+  {
+    "file": "generated/modules/rla-gold-science-cool-roofs.json",
+    "title": "Cool Roofs and City Heat",
+    "description": "Science · Informational · 7 questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R2.2",
+        "R3.1",
+        "R4.1",
+        "R1.3",
+        "R2.5",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Science passage set"
+    },
+    "sourceFile": "legacy-modules/rla-gold-science-cool-roofs.json"
+  },
+  {
+    "file": "generated/modules/rla-gold-workplace-tool-library.json",
+    "title": "New Pickup Process for the Community Tool Library",
+    "description": "Workplace · Informational · 7 questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [
+        "R4.4",
+        "R2.1",
+        "R1.3",
+        "R4.2",
+        "R3.1",
+        "R1.4"
+      ],
+      "contentKind": "quiz",
+      "learningObjective": "Complete a coherent 7-question passage set using GED-style close-reading reasoning across several skills.",
+      "topicLabel": "Workplace passage set"
+    },
+    "sourceFile": "legacy-modules/rla-gold-workplace-tool-library.json"
+  },
+  {
+    "file": "generated/modules/rla-impact-of-word-choice-practice-1.json",
+    "title": "Impact of Word Choice Practice 1",
+    "description": "4 short texts - 8 focused impact of word choice questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Impact of Word Choice"
+    },
+    "sourceFile": "legacy-modules/rla-impact-of-word-choice-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-impact-of-word-choice-practice-2.json",
+    "title": "Impact of Word Choice Practice 2",
+    "description": "4 short texts - 8 focused impact of word choice questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply impact of word choice reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Impact of Word Choice"
+    },
+    "sourceFile": "legacy-modules/rla-impact-of-word-choice-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-inference-practice-01.json",
+    "title": "Inference Practice 1",
+    "description": "4 short texts - 8 inference questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
+      "topicLabel": "Inference from details"
+    },
+    "sourceFile": "legacy-modules/rla-inference-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-main-idea-practice-01.json",
+    "title": "Main Idea Practice 1",
+    "description": "4 short texts · 8 main-idea questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
+      "topicLabel": "Main idea / central idea"
+    },
+    "sourceFile": "legacy-modules/rla-main-idea-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-meaning-in-context-practice-1.json",
+    "title": "Meaning in Context Practice 1",
+    "description": "4 short texts - 8 focused meaning in context questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Meaning in Context"
+    },
+    "sourceFile": "legacy-modules/rla-meaning-in-context-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-meaning-in-context-practice-2.json",
+    "title": "Meaning in Context Practice 2",
+    "description": "4 short texts - 8 focused meaning in context questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Meaning in Context"
+    },
+    "sourceFile": "legacy-modules/rla-meaning-in-context-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-p6b-library-lockers.json",
+    "title": "A New Pickup System at the Community Library",
+    "description": "Workplace - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Workplace passage set"
+    },
+    "sourceFile": "legacy-modules/rla-p6b-library-lockers.json"
+  },
+  {
+    "file": "generated/modules/rla-p6b-second-bell.json",
+    "title": "The Second Bell",
+    "description": "Literary - 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.6",
+        "R2.3",
+        "R2.4",
+        "R2.5",
+        "R2.2",
+        "R1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Literary passage set"
+    },
+    "sourceFile": "legacy-modules/rla-p6b-second-bell.json"
+  },
+  {
+    "file": "generated/modules/rla-p6b-stream-restoration.json",
+    "title": "When a City Stream Comes Back",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [
+        "R2.3",
+        "R2.2",
+        "R2.4",
+        "R2.5",
+        "R2.6",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using close-reading reasoning across relationships, inference, and connected reading skills.",
+      "topicLabel": "Science passage set"
+    },
+    "sourceFile": "legacy-modules/rla-p6b-stream-restoration.json"
+  },
+  {
+    "file": "generated/modules/rla-p6c-blue-mug.json",
+    "title": "The Blue Mug",
+    "description": "Literary - Literary - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [
+        "R3.5",
+        "R3.3",
+        "R3.2",
+        "R3.1",
+        "R2.4",
+        "R1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6c-blue-mug.json"
+  },
+  {
+    "file": "generated/modules/rla-p6c-feedback-window.json",
+    "title": "A New Feedback Window",
+    "description": "Workplace - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R3.1",
+        "R2.3",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6c-feedback-window.json"
+  },
+  {
+    "file": "generated/modules/rla-p6c-market-roof.json",
+    "title": "The Roof Over Market Lane",
+    "description": "Community - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [
+        "R3.4",
+        "R3.5",
+        "R3.1",
+        "R3.3",
+        "R2.3",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6c-market-roof.json"
+  },
+  {
+    "file": "generated/modules/rla-p6c-morning-fog.json",
+    "title": "Reading the Morning Fog",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.3",
+      "secondarySkillIds": [
+        "R3.1",
+        "R3.5",
+        "R3.4",
+        "R3.2",
+        "R2.2",
+        "R1.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6c-morning-fog.json"
+  },
+  {
+    "file": "generated/modules/rla-p6c-night-lighting.json",
+    "title": "When Streetlights Learn to Dim",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [
+        "R3.2",
+        "R3.4",
+        "R3.5",
+        "R3.3",
+        "R2.2",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6c-night-lighting.json"
+  },
+  {
+    "file": "generated/modules/rla-p6d-last-map-on-wall.json",
+    "title": "The Last Map on the Wall",
+    "description": "Literary - Literary - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.6",
+        "R4.4",
+        "R4.3",
+        "R1.5",
+        "R2.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6d-last-map-on-wall.json"
+  },
+  {
+    "file": "generated/modules/rla-p6d-library-without-late-fees.json",
+    "title": "A Library Without Late Fees",
+    "description": "Community - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R4.3",
+        "R2.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6d-library-without-late-fees.json"
+  },
+  {
+    "file": "generated/modules/rla-p6d-mangroves-move-back.json",
+    "title": "When Mangroves Move Back",
+    "description": "Science - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [
+        "R4.1",
+        "R3.1",
+        "R4.4",
+        "R4.6",
+        "R4.5",
+        "R2.2"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6d-mangroves-move-back.json"
+  },
+  {
+    "file": "generated/modules/rla-p6d-quiet-car-experiment.json",
+    "title": "The Quiet Car Experiment",
+    "description": "Workplace - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [
+        "R4.2",
+        "R4.3",
+        "R4.4",
+        "R4.5",
+        "R4.6",
+        "R2.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6d-quiet-car-experiment.json"
+  },
+  {
+    "file": "generated/modules/rla-p6d-two-minutes-of-shade.json",
+    "title": "Two Minutes of Shade",
+    "description": "Community - Informational - 7 questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.6",
+        "R4.5",
+        "R4.3",
+        "R4.2",
+        "R2.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "sourceFile": "legacy-modules/rla-p6d-two-minutes-of-shade.json"
+  },
+  {
+    "file": "generated/modules/rla-paragraph-section-function-practice-1.json",
+    "title": "Paragraph / section function Practice 1",
+    "description": "4 short texts - 8 focused paragraph / section function questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Paragraph / section function"
+    },
+    "sourceFile": "legacy-modules/rla-paragraph-section-function-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-paragraph-section-function-practice-2.json",
+    "title": "Paragraph / section function Practice 2",
+    "description": "4 short texts - 8 focused paragraph / section function questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply paragraph / section function reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Paragraph / section function"
+    },
+    "sourceFile": "legacy-modules/rla-paragraph-section-function-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-point-of-view-perspective-practice-1.json",
+    "title": "Point of view / perspective Practice 1",
+    "description": "4 short texts - 8 focused point of view / perspective questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Point of view / perspective"
+    },
+    "sourceFile": "legacy-modules/rla-point-of-view-perspective-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-point-of-view-perspective-practice-2.json",
+    "title": "Point of view / perspective Practice 2",
+    "description": "4 short texts - 8 focused point of view / perspective questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply point of view / perspective reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Point of view / perspective"
+    },
+    "sourceFile": "legacy-modules/rla-point-of-view-perspective-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-relationships-practice-01.json",
+    "title": "Relationships Practice 1",
+    "description": "4 short texts - 8 relationship questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Analyze how people, events, ideas, details, and context affect one another in a text.",
+      "topicLabel": "Relationships among people, events & ideas"
+    },
+    "sourceFile": "legacy-modules/rla-relationships-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-rhetorical-technique-practice-1.json",
+    "title": "Rhetorical technique Practice 1",
+    "description": "4 short texts - 8 focused rhetorical technique questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Rhetorical technique"
+    },
+    "sourceFile": "legacy-modules/rla-rhetorical-technique-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-rhetorical-technique-practice-2.json",
+    "title": "Rhetorical technique Practice 2",
+    "description": "4 short texts - 8 focused rhetorical technique questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.6",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply rhetorical technique reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Rhetorical technique"
+    },
+    "sourceFile": "legacy-modules/rla-rhetorical-technique-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-sequence-practice-01.json",
+    "title": "Sequence Practice 1",
+    "description": "4 short texts - 8 sequence questions",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
+      "topicLabel": "Sequence"
+    },
+    "sourceFile": "legacy-modules/rla-sequence-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-summary-practice-01.json",
+    "title": "Summary Practice 1",
+    "description": "4 short texts · 8 summary questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Select accurate whole-passage and section summaries while avoiding too-broad, too-narrow, detail-heavy, and added-claim distractors.",
+      "topicLabel": "Summary"
+    },
+    "sourceFile": "legacy-modules/rla-summary-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-supporting-details-practice-01.json",
+    "title": "Supporting Details Practice 1",
+    "description": "4 short texts · 8 supporting-detail questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
+      "topicLabel": "Supporting details"
+    },
+    "sourceFile": "legacy-modules/rla-supporting-details-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-text-structure-practice-1.json",
+    "title": "Text structure Practice 1",
+    "description": "4 short texts - 8 focused text structure questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Text structure"
+    },
+    "sourceFile": "legacy-modules/rla-text-structure-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-text-structure-practice-2.json",
+    "title": "Text structure Practice 2",
+    "description": "4 short texts - 8 focused text structure questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply text structure reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Text structure"
+    },
+    "sourceFile": "legacy-modules/rla-text-structure-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-theme-practice-01.json",
+    "title": "Theme Practice 1",
+    "description": "4 literary texts · 8 theme questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify themes developed through literary events and choices and select evidence that most strongly supports a theme.",
+      "topicLabel": "Theme"
+    },
+    "sourceFile": "legacy-modules/rla-theme-practice-01.json"
+  },
+  {
+    "file": "generated/modules/rla-tone-practice-1.json",
+    "title": "Tone Practice 1",
+    "description": "4 short texts - 8 focused tone questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Tone"
+    },
+    "sourceFile": "legacy-modules/rla-tone-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-tone-practice-2.json",
+    "title": "Tone Practice 2",
+    "description": "4 short texts - 8 focused tone questions",
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Tone"
+    },
+    "sourceFile": "legacy-modules/rla-tone-practice-2.json"
+  },
+  {
+    "file": "generated/modules/rla-transitions-signal-words-practice-1.json",
+    "title": "Transitions & signal words Practice 1",
+    "description": "4 short texts - 8 focused transitions & signal words questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Transitions & signal words"
+    },
+    "sourceFile": "legacy-modules/rla-transitions-signal-words-practice-1.json"
+  },
+  {
+    "file": "generated/modules/rla-transitions-signal-words-practice-2.json",
+    "title": "Transitions & signal words Practice 2",
+    "description": "4 short texts - 8 focused transitions & signal words questions",
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply transitions & signal words reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Transitions & signal words"
+    },
+    "sourceFile": "legacy-modules/rla-transitions-signal-words-practice-2.json"
   }
 ]

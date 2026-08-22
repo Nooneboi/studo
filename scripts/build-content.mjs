@@ -37,8 +37,8 @@ function passageMeta(passage) {
   };
 }
 
-function clone(value) {
-  return JSON.parse(JSON.stringify(value));
+function slug(text) {
+  return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 function compileQuestion(q, skill, passage) {
@@ -73,6 +73,156 @@ function compileQuestion(q, skill, passage) {
   return out;
 }
 
+function measuredSkillIds(record) {
+  const ids = new Set();
+  const curriculum = record.curriculum || {};
+  if (curriculum.primarySkillId) ids.add(curriculum.primarySkillId);
+  for (const id of curriculum.secondarySkillIds || []) ids.add(id);
+  for (const q of record.questions || []) {
+    const metadata = q.metadata || {};
+    if (metadata.skillId) ids.add(metadata.skillId);
+    for (const id of metadata.secondarySkillIds || []) ids.add(id);
+  }
+  return [...ids];
+}
+
+function publicRecordFromModule(module, entry) {
+  const curriculum = entry.curriculum || module.contentMeta?.curriculum || null;
+  const sourceSetId = module.contentMeta?.sourceSetId || module.id;
+  return {
+    id: sourceSetId,
+    title: entry.title || module.title,
+    description: entry.description || module.description || '',
+    file: entry.file,
+    difficulty: module.difficulty || 'medium',
+    category: module.category || 'reading',
+    questionCount: (module.questions || []).length,
+    curriculum,
+    questions: module.questions || [],
+    passageMeta: module.contentMeta?.passage || null,
+  };
+}
+
+function trackMap(curriculumConfig, skills) {
+  const domainToTrack = new Map();
+  const skillToTrack = new Map();
+  for (const track of curriculumConfig.tracks || []) {
+    for (const domain of track.domains || []) {
+      domainToTrack.set(domain.name, track.id);
+      for (const group of domain.groups || []) {
+        for (const skillId of group.skills || []) skillToTrack.set(skillId, track.id);
+      }
+    }
+  }
+  for (const skill of skills.values()) {
+    if (!skillToTrack.has(skill.id) && domainToTrack.has(skill.domain)) {
+      skillToTrack.set(skill.id, domainToTrack.get(skill.domain));
+    }
+  }
+  return { domainToTrack, skillToTrack };
+}
+
+function buildCurriculum({ curriculumConfig, skills, publishedResources, records }) {
+  const passagePractice = [];
+  const tracks = (curriculumConfig.tracks || []).filter((track) => (track.publicationState || 'published') === 'published').map((track) => ({
+    id: track.id,
+    label: track.label,
+    shortLabel: track.shortLabel || track.label,
+    summary: track.summary || '',
+    accent: track.accent || 'blue',
+    ...(track.publicationState ? { publicationState: track.publicationState } : {}),
+    domains: (track.domains || []).map((domainConfig) => {
+      const domainId = slug(domainConfig.name);
+      const domainSkills = [...skills.values()].filter((skill) => skill.domain === domainConfig.name);
+      const domainResources = publishedResources.filter((resource) => resource.scope === 'domain' && resource.domainId === domainId);
+      const builtSkills = domainSkills.map((skill) => {
+        const related = records.filter((record) => {
+          const c = record.curriculum || {};
+          if (['passage_practice', 'quiz'].includes(c.contentKind)) return false;
+          const ids = measuredSkillIds(record);
+          return c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id) || ids.includes(skill.id);
+        });
+        const resources = publishedResources.filter((resource) => resource.scope !== 'domain' && ((resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id));
+        const questionCount = related.reduce((sum, record) => sum + (record.questions || []).filter((q) => {
+          const metadata = q.metadata || {};
+          return metadata.skillId === skill.id || (metadata.secondarySkillIds || []).includes(skill.id);
+        }).length, 0);
+        const cleanRecords = related.map((record) => {
+          const { questions, ...publicRecord } = record;
+          return { ...publicRecord, measuredSkillIds: measuredSkillIds(record) };
+        });
+        return {
+          id: skill.id,
+          runtimeId: skill.runtimeId || skill.id,
+          label: skill.label,
+          priority: skill.priority || null,
+          practiceMode: skill.practiceMode || null,
+          available: cleanRecords.length > 0 || resources.length > 0,
+          setCount: cleanRecords.length,
+          questionCount,
+          resourceCount: resources.length,
+          studyFileCount: resources.length,
+          checkCount: cleanRecords.length,
+          sets: cleanRecords,
+          checks: cleanRecords,
+          resources,
+          studyResources: resources,
+        };
+      });
+      return {
+        id: domainId,
+        label: domainConfig.name,
+        summary: domainConfig.summary || '',
+        groups: domainConfig.groups || [],
+        availableSkillCount: builtSkills.filter((skill) => skill.available).length,
+        availableSetCount: new Set(builtSkills.flatMap((skill) => skill.sets.map((set) => set.file))).size,
+        topicResourceCount: domainResources.length,
+        topicResources: domainResources,
+        resources: domainResources,
+        studyFileCount: domainResources.length + builtSkills.reduce((sum, skill) => sum + skill.studyFileCount, 0),
+        checkCount: new Set(builtSkills.flatMap((skill) => skill.checks.map((set) => set.file))).size,
+        skills: builtSkills,
+      };
+    }),
+  }));
+
+  for (const record of records) {
+    if (!['passage_practice', 'quiz'].includes(record.curriculum?.contentKind)) continue;
+    const item = {
+      id: record.id,
+      title: record.passageMeta?.title || record.title,
+      description: record.description || '',
+      file: record.file,
+      difficulty: record.difficulty,
+      category: record.category,
+      questionCount: record.questionCount,
+      curriculum: record.curriculum,
+      measuredSkillIds: measuredSkillIds(record),
+      passageMeta: record.passageMeta || null,
+    };
+    passagePractice.push(item);
+  }
+
+  for (const track of tracks) {
+    track.availableSkillCount = track.domains.reduce((sum, domain) => sum + domain.availableSkillCount, 0);
+    track.totalSkillCount = track.domains.reduce((sum, domain) => sum + domain.skills.length, 0);
+    track.availableSetCount = new Set(track.domains.flatMap((domain) => domain.skills.flatMap((skill) => skill.sets.map((set) => set.file)))).size;
+    track.questionCount = track.domains.reduce((sum, domain) => sum + domain.skills.reduce((inner, skill) => inner + skill.questionCount, 0), 0);
+    track.resourceCount = track.domains.reduce((sum, domain) => sum + domain.resources.length + domain.skills.reduce((inner, skill) => inner + skill.resources.length, 0), 0);
+    track.studyFileCount = track.domains.reduce((sum, domain) => sum + domain.studyFileCount, 0);
+    track.checkCount = new Set(track.domains.flatMap((domain) => domain.skills.flatMap((skill) => skill.checks.map((set) => set.file)))).size;
+  }
+
+  return {
+    schemaVersion: 1,
+    subject: curriculumConfig.subject || 'rla',
+    builtAt: new Date().toISOString(),
+    tracks,
+    passagePractice,
+    mixedPractice: passagePractice,
+  };
+}
+
 async function main() {
   const validation = await validateContent({ quiet: true });
   if (!validation.ok) {
@@ -80,33 +230,41 @@ async function main() {
     process.exit(1);
   }
 
-  let existingIndex = [];
-  let existingCurriculum = null;
-  try { existingIndex = JSON.parse(await fs.readFile(path.join(OUT, 'index.json'), 'utf8')); } catch (_) {}
-  try { existingCurriculum = JSON.parse(await fs.readFile(path.join(OUT, 'curriculum.json'), 'utf8')); } catch (_) {}
-
-  // The project is still migrating older generated modules into content-src.
-  // Preserve the checked-in learner build as a compatibility baseline instead
-  // of deleting content that has not been migrated yet.
-  await fs.mkdir(MODULE_OUT, { recursive: true });
-
   const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
   const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
-  let resourceRegistry = { resources: [] };
-  try {
-    resourceRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'resources', 'rla.resources.json'), 'utf8'));
-  } catch (_) {}
-  const publishedResources = (resourceRegistry.resources || []).filter((r) => r.status === 'published');
-  const generatedByLegacyFile = new Map();
-  const buildEntries = [];
+  const resourceRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'resources', 'rla.resources.json'), 'utf8'));
+  const publishedResources = (resourceRegistry.resources || []).filter((resource) => resource.status === 'published');
 
+  await fs.rm(OUT, { recursive: true, force: true });
+  await fs.mkdir(MODULE_OUT, { recursive: true });
+
+  const moduleRecords = new Map();
+  const indexEntries = new Map();
+
+  for (const entry of legacyIndex) {
+    const sourceFile = path.join(SRC, entry.sourceFile || '');
+    const module = JSON.parse(await fs.readFile(sourceFile, 'utf8'));
+    const outputName = path.basename(entry.file || entry.sourceFile);
+    const learnerFile = `generated/modules/${outputName}`;
+    const normalizedEntry = {
+      file: learnerFile,
+      title: entry.title || module.title,
+      description: entry.description || module.description || '',
+      ...(entry.curriculum || module.contentMeta?.curriculum ? { curriculum: entry.curriculum || module.contentMeta.curriculum } : {}),
+    };
+    await fs.writeFile(path.join(MODULE_OUT, outputName), JSON.stringify(module, null, 2) + '\n', 'utf8');
+    indexEntries.set(learnerFile, normalizedEntry);
+    moduleRecords.set(learnerFile, publicRecordFromModule(module, normalizedEntry));
+  }
+
+  const compiledSourceFiles = [];
   for (const { set } of validation.publishedSets) {
     const passageId = set.passageRefs?.[0] || null;
     const passage = passageId ? validation.passages.get(passageId) : null;
     const runtimeFile = set.runtime?.file || `${set.id}.json`;
     const runtimeId = set.runtime?.id || set.id;
-    const outputName = runtimeFile.replace(/^.*\//, '');
-
+    const outputName = path.basename(runtimeFile);
+    const learnerFile = `generated/modules/${outputName}`;
     const runtime = {
       id: runtimeId,
       title: set.title || set.topic,
@@ -126,228 +284,60 @@ async function main() {
         compiledAt: new Date().toISOString(),
       },
     };
-
-    await fs.writeFile(path.join(MODULE_OUT, outputName), JSON.stringify(runtime, null, 2) + '\n', 'utf8');
     const entry = {
-      file: `generated/modules/${outputName}`,
+      file: learnerFile,
       title: runtime.title,
       description: runtime.description,
       ...(set.curriculum ? { curriculum: set.curriculum } : {}),
     };
-    generatedByLegacyFile.set(runtimeFile, entry);
-    generatedByLegacyFile.set(`generated/modules/${outputName}`, entry);
-    buildEntries.push(entry);
+    await fs.writeFile(path.join(MODULE_OUT, outputName), JSON.stringify(runtime, null, 2) + '\n', 'utf8');
+    indexEntries.set(learnerFile, entry);
+    moduleRecords.set(learnerFile, publicRecordFromModule(runtime, entry));
+    compiledSourceFiles.push(learnerFile);
   }
 
-  const mergedIndex = [];
-  const inserted = new Set();
-  const indexBaseline = existingIndex.length ? existingIndex : legacyIndex;
-  for (const entry of indexBaseline) {
-    const replacement = generatedByLegacyFile.get(entry.file);
-    if (replacement) {
-      mergedIndex.push(replacement);
-      inserted.add(replacement.file);
-    } else {
-      mergedIndex.push(entry);
-    }
-  }
-  for (const entry of buildEntries) if (!inserted.has(entry.file)) mergedIndex.push(entry);
+  const { skillToTrack } = trackMap(curriculumConfig, validation.skills);
+  const trackStates = new Map((curriculumConfig.tracks || []).map((track) => [track.id, track.publicationState || 'published']));
+  const learnerPublished = (record) => {
+    const primarySkillId = record.curriculum?.primarySkillId;
+    if (!primarySkillId) return true;
+    const trackId = skillToTrack.get(primarySkillId);
+    return !trackId || trackStates.get(trackId) === 'published';
+  };
+  const records = [...moduleRecords.values()];
+  const learnerRecords = records.filter(learnerPublished);
+  const learnerFiles = new Set(learnerRecords.map((record) => record.file));
+  const mergedIndex = [...indexEntries.values()].filter((entry) => learnerFiles.has(entry.file));
+  const curriculum = buildCurriculum({
+    curriculumConfig,
+    skills: validation.skills,
+    publishedResources,
+    records: learnerRecords,
+  });
 
   await fs.writeFile(path.join(OUT, 'index.json'), JSON.stringify(mergedIndex, null, 2) + '\n', 'utf8');
-  // Build the learner-facing curriculum map from the stable skill registry plus
-  // published content. Authoring taxonomy stays rich; learner navigation stays calm.
-  const publishedSetRecords = validation.publishedSets.map(({ set }) => {
-    const runtimeFile = set.runtime?.file || `${set.id}.json`;
-    const outputName = runtimeFile.replace(/^.*\//, '');
-    return {
-      id: set.id,
-      title: set.title || set.topic,
-      description: set.description || '',
-      file: `generated/modules/${outputName}`,
-      difficulty: set.difficulty || 'medium',
-      category: set.category || 'reading',
-      questionCount: (set.questions || []).length,
-      curriculum: set.curriculum || null,
-      questions: set.questions || [],
-    };
-  });
-
-  let curriculum;
-  if (existingCurriculum?.tracks?.length) {
-    curriculum = clone(existingCurriculum);
-    curriculum.schemaVersion = curriculum.schemaVersion || 1;
-    curriculum.subject = curriculumConfig.subject || curriculum.subject || 'rla';
-    curriculum.builtAt = new Date().toISOString();
-
-    for (const track of curriculum.tracks || []) {
-      for (const domain of track.domains || []) {
-        const domainId = domain.id || domain.label?.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-        const registryDomainResources = publishedResources.filter((r) => r.scope === 'domain' && r.domainId === domainId);
-        const domainResourceMap = new Map((domain.resources || []).map((r) => [r.id, r]));
-        for (const resource of registryDomainResources) domainResourceMap.set(resource.id, resource);
-        domain.resources = [...domainResourceMap.values()];
-        domain.topicResources = domain.resources;
-        domain.topicResourceCount = domain.resources.length;
-
-        for (const skill of domain.skills || []) {
-          const relatedSourceRecords = publishedSetRecords.filter((record) => {
-            const c = record.curriculum || {};
-            if (['passage_practice', 'quiz'].includes(c.contentKind)) return false;
-            const setMatch = c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id);
-            const questionMatch = (record.questions || []).some((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id));
-            return setMatch || questionMatch;
-          });
-          const existingSets = new Map((skill.sets || [])
-            .filter((record) => !['passage_practice', 'quiz'].includes(record.curriculum?.contentKind))
-            .map((record) => [record.id || record.file, record]));
-          const existingChecks = new Map((skill.checks || [])
-            .filter((record) => !['passage_practice', 'quiz'].includes(record.curriculum?.contentKind))
-            .map((record) => [record.id || record.file, record]));
-          for (const record of relatedSourceRecords) {
-            const { questions, ...publicRecord } = record;
-            publicRecord.measuredSkillIds = [...new Set((questions || []).flatMap((q) => [q.primarySkillId, ...(q.secondarySkillIds || [])]).filter(Boolean))];
-            const key = publicRecord.id || publicRecord.file;
-            const isNew = !existingSets.has(key);
-            existingSets.set(key, publicRecord);
-            existingChecks.set(key, publicRecord);
-            if (isNew) {
-              skill.questionCount = (skill.questionCount || 0) + (questions || []).filter((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id)).length;
-            }
-          }
-          skill.sets = [...existingSets.values()];
-          skill.checks = [...existingChecks.values()];
-
-          const registrySkillResources = publishedResources.filter((resource) => {
-            if (resource.scope === 'domain') return false;
-            return (resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id;
-          });
-          const resourceMap = new Map((skill.resources || []).map((r) => [r.id, r]));
-          for (const resource of registrySkillResources) resourceMap.set(resource.id, resource);
-          skill.resources = [...resourceMap.values()];
-          skill.studyResources = skill.resources;
-          skill.resourceCount = skill.resources.length;
-          skill.studyFileCount = skill.resources.length;
-          skill.setCount = skill.sets.length;
-          skill.checkCount = skill.checks.length;
-          skill.available = skill.sets.length > 0 || skill.resources.length > 0;
-        }
-
-        domain.availableSkillCount = (domain.skills || []).filter((skill) => skill.available).length;
-        domain.availableSetCount = new Set((domain.skills || []).flatMap((skill) => (skill.sets || []).map((set) => set.file))).size;
-        domain.studyFileCount = (domain.resources || []).length + (domain.skills || []).reduce((sum, skill) => sum + (skill.studyFileCount || 0), 0);
-        domain.checkCount = new Set((domain.skills || []).flatMap((skill) => (skill.checks || []).map((set) => set.file))).size;
-      }
-    }
-
-    const passageMap = new Map((curriculum.passagePractice || []).map((record) => [record.id || record.file, record]));
-    for (const record of publishedSetRecords) {
-      const kind = record.curriculum?.contentKind;
-      if (!['passage_practice', 'quiz'].includes(kind)) continue;
-      const set = validation.publishedSets.find(({ set }) => set.id === record.id)?.set;
-      const passageId = set?.passageRefs?.[0] || null;
-      const passage = passageId ? validation.passages.get(passageId) : null;
-      if (!passage) continue;
-      const measuredSkillIds = [...new Set((record.questions || []).flatMap((q) => [q.primarySkillId, ...(q.secondarySkillIds || [])]).filter(Boolean))];
-      const item = {
-        id: record.id,
-        title: passage.title || record.title,
-        description: record.description || '',
-        file: record.file,
-        difficulty: record.difficulty,
-        category: record.category,
-        questionCount: record.questionCount,
-        curriculum: record.curriculum,
-        measuredSkillIds,
-        passageMeta: passageMeta(passage),
-      };
-      passageMap.set(item.id || item.file, item);
-    }
-    curriculum.passagePractice = [...passageMap.values()];
-  } else {
-    curriculum = {
-      schemaVersion: 1,
-      subject: curriculumConfig.subject || 'rla',
-      builtAt: new Date().toISOString(),
-      tracks: (curriculumConfig.tracks || []).map((track) => ({
-        id: track.id,
-        label: track.label,
-        shortLabel: track.shortLabel || track.label,
-        summary: track.summary || '',
-        accent: track.accent || 'blue',
-        domains: (track.domains || []).map((domainConfig) => {
-          const domainId = domainConfig.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-          const domainSkills = [...validation.skills.values()].filter((s) => s.domain === domainConfig.name);
-          const domainResources = publishedResources.filter((resource) => resource.scope === 'domain' && resource.domainId === domainId);
-          const skills = domainSkills.map((skill) => {
-            const related = publishedSetRecords.filter((record) => {
-              const c = record.curriculum || {};
-              if (['passage_practice', 'quiz'].includes(c.contentKind)) return false;
-              const setMatch = c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id);
-              const questionMatch = (record.questions || []).some((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id));
-              return setMatch || questionMatch;
-            });
-            const questionCount = related.reduce((sum, record) => sum + (record.questions || []).filter((q) => q.primarySkillId === skill.id || (q.secondarySkillIds || []).includes(skill.id)).length, 0);
-            const resources = publishedResources.filter((resource) => resource.scope !== 'domain' && ((resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id));
-            return {
-              id: skill.id,
-              runtimeId: skill.runtimeId || skill.id,
-              label: skill.label,
-              priority: skill.priority || null,
-              practiceMode: skill.practiceMode || null,
-              available: related.length > 0 || resources.length > 0,
-              setCount: related.length,
-              questionCount,
-              resourceCount: resources.length,
-              studyFileCount: resources.length,
-              checkCount: related.length,
-              sets: related.map(({ questions, ...record }) => record),
-              checks: related.map(({ questions, ...record }) => record),
-              resources,
-              studyResources: resources,
-            };
-          });
-          return {
-            id: domainId,
-            label: domainConfig.name,
-            summary: domainConfig.summary || '',
-            groups: domainConfig.groups || [],
-            availableSkillCount: skills.filter((s) => s.available).length,
-            availableSetCount: new Set(skills.flatMap((s) => s.sets.map((set) => set.file))).size,
-            topicResourceCount: domainResources.length,
-            topicResources: domainResources,
-            resources: domainResources,
-            studyFileCount: domainResources.length + skills.reduce((sum, s) => sum + (s.studyFileCount || 0), 0),
-            checkCount: new Set(skills.flatMap((s) => (s.checks || []).map((set) => set.file))).size,
-            skills,
-          };
-        }),
-      })),
-      passagePractice: [],
-    };
-  }
-
-  curriculum.tracks.forEach((track) => {
-    track.availableSkillCount = track.domains.reduce((sum, d) => sum + d.availableSkillCount, 0);
-    track.totalSkillCount = track.domains.reduce((sum, d) => sum + d.skills.length, 0);
-    track.availableSetCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => (s.sets || []).map((set) => set.file)))).size;
-    track.questionCount = track.domains.reduce((sum, d) => sum + d.skills.reduce((inner, s) => inner + (s.questionCount || 0), 0), 0);
-    track.resourceCount = track.domains.reduce((sum, d) => sum + (d.resources || []).length + d.skills.reduce((inner, s) => inner + (s.resources || []).length, 0), 0);
-    track.studyFileCount = track.domains.reduce((sum, d) => sum + (d.studyFileCount || 0), 0);
-    track.checkCount = new Set(track.domains.flatMap((d) => d.skills.flatMap((s) => (s.checks || []).map((set) => set.file)))).size;
-  });
-
   await fs.writeFile(path.join(OUT, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n', 'utf8');
-
-  await fs.writeFile(path.join(OUT, 'build-report.json'), JSON.stringify({
+  await fs.writeFile(path.join(OUT, 'qa-report.json'), JSON.stringify({
     schemaVersion: 1,
     builtAt: new Date().toISOString(),
-    publishedSourceSets: validation.publishedSets.map(({ set }) => set.id),
-    generatedModules: buildEntries.map((e) => e.file),
-    curriculumFile: 'data/generated/curriculum.json',
-    warnings: validation.warnings,
+    summary: validation.qaSummary || { errors: 0, warnings: 0, byCode: {} },
+    issues: validation.issues || [],
   }, null, 2) + '\n', 'utf8');
 
-  console.log(`Built ${buildEntries.length} generated module(s).`);
+  await fs.writeFile(path.join(OUT, 'build-report.json'), JSON.stringify({
+    schemaVersion: 2,
+    builtAt: new Date().toISOString(),
+    canonicalLegacyModules: legacyIndex.map((entry) => entry.sourceFile),
+    publishedSourceSets: validation.publishedSets.map(({ set }) => set.id),
+    generatedSourceModules: compiledSourceFiles,
+    generatedIndexCount: mergedIndex.length,
+    trackPublicationStates: Object.fromEntries(trackStates),
+    curriculumFile: 'data/generated/curriculum.json',
+    warnings: validation.warnings,
+    qaSummary: validation.qaSummary || null,
+  }, null, 2) + '\n', 'utf8');
+
+  console.log(`Built ${legacyIndex.length} canonical legacy module(s) and ${compiledSourceFiles.length} schema-v2 module(s).`);
   console.log(`Generated index contains ${mergedIndex.length} module entries.`);
   if (validation.warnings.length) console.log(`Build completed with ${validation.warnings.length} quality warning(s).`);
 }

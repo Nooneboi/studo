@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6c-blue-mug",
+  "title": "The Blue Mug",
+  "description": "Literary - Literary - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Every morning before opening the bakery, Mara placed a chipped blue mug beside the register. It never held coffee. Pens collected in it, along with a pair of scissors and the small metal key to the delivery door.\n\nWhen Theo started working there, he assumed the mug was simply another object no one had bothered to replace. On his third day, he lifted it while wiping the counter. \"We could use something cleaner,\" he said.\n\nMara looked up so quickly that Theo set it down. \"That one stays.\"\n\nShe did not explain. The mug remained, blue glaze worn pale along the handle, while everything around it changed. New menu boards replaced the handwritten ones. A brighter display case arrived. Theo learned which customers wanted their bread sliced thin and which wanted the darkest loaves.\n\nMonths later, a pipe burst in the apartment above the bakery. Water ran through the ceiling before dawn, soaking boxes and spreading across the floor. Theo arrived to find Mara standing in the doorway, counting what could be saved. Her voice was practical - unplug the mixer, move the flour, call the landlord - but her hands shook when she reached the register.\n\nTheo saw the blue mug on the floor. A crack had split it from the rim almost to the base. He picked it up carefully.\n\n\"My brother made that,\" Mara said. Her voice was smaller now. \"First pottery class. He said the handle looked like an ear.\"\n\nTheo looked at the awkward handle and, for the first time, saw that it really did.\n\nThe bakery reopened four days later. The damaged mug could no longer hold pens, so Mara placed it on the shelf above the register. Theo found a plain metal cup for the scissors and keys. He did not suggest throwing anything away.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which tone best describes the final two paragraphs?",
+      "points": 1,
+      "explanation": "Theo now understands the mug's meaning and responds without argument or drama.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "quietly understanding"
+        },
+        {
+          "id": "b",
+          "text": "mocking",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "frantic",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "angry",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of saying Mara's voice was \"smaller\"?",
+      "points": 1,
+      "explanation": "Smaller describes emotional vulnerability rather than literal volume alone.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves she physically moved farther away.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It suggests her practical control gives way to vulnerability."
+        },
+        {
+          "id": "c",
+          "text": "It means Theo could not hear her.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It shows she became younger.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of comparing the mug's handle to an ear?",
+      "points": 1,
+      "explanation": "The unusual comparison helps Theo see the mug as a specific handmade object tied to Mara's brother.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.effect",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves the mug can listen.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It shows Theo dislikes pottery.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "It makes the imperfect handmade object more personal and memorable."
+        },
+        {
+          "id": "d",
+          "text": "It makes the flood seem worse.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What does the phrase \"plain metal cup\" suggest in contrast with the blue mug?",
+      "points": 1,
+      "explanation": "Plain emphasizes function and lack of distinctive emotional history.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The replacement is more valuable.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "The replacement was also made by Mara's brother.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The replacement is damaged.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "The replacement is functional but lacks the same personal meaning."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does practical most nearly mean in paragraph 5?",
+      "points": 1,
+      "explanation": "Mara gives concrete instructions about saving equipment and contacting the landlord.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "focused on immediate useful actions"
+        },
+        {
+          "id": "b",
+          "text": "easy to practice repeatedly",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "concerned with decoration",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "quiet and secretive",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about Theo at the end?",
+      "points": 1,
+      "explanation": "His final choice not to suggest throwing anything away reflects new understanding.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "He wants to stop working at the bakery.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "He has learned to respect emotional value that is not obvious at first."
+        },
+        {
+          "id": "c",
+          "text": "He believes damaged objects are always useful.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "He plans to take a pottery class.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme of the passage?",
+      "points": 1,
+      "explanation": "The story develops Theo's shift from seeing an object as clutter to understanding its personal history.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "theme.central",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Businesses should never replace old equipment.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "Floods always reveal family secrets.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "Understanding another person sometimes requires learning the history behind ordinary-looking things."
+        },
+        {
+          "id": "d",
+          "text": "Handmade mugs are better than metal cups.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6c-blue-mug",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [
+        "R3.5",
+        "R3.3",
+        "R3.2",
+        "R3.1",
+        "R2.4",
+        "R1.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6c-blue-mug",
+      "title": "The Blue Mug",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.839Z"
+  }
+}

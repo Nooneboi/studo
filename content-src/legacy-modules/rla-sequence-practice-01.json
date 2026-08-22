@@ -1,0 +1,487 @@
+{
+  "id": "rla-sequence-practice-01",
+  "title": "Sequence Practice 1",
+  "description": "4 short texts - 8 sequence questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Sequence",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Volunteer Orientation\n\nNew volunteers first watch a ten-minute safety video. They then sign the equipment form. After a supervisor checks the form, each volunteer receives a storage key. At the end of the shift, the key is returned before the volunteer signs out.\n\nTEXT B - Soil Test\n\nA researcher collects soil from three garden beds and seals each sample. In the lab, the samples are dried overnight. The dry soil is weighed, mixed with distilled water, and allowed to settle. The researcher records the pH only after the mixture has settled for twenty minutes.\n\nTEXT C - Repair Ticket\n\nA tenant submits a repair ticket. The building office checks whether a technician is available and then offers an appointment time. The tenant confirms the time before the office sends building-entry instructions to the technician. The ticket is closed after the tenant confirms that the repair is complete.\n\nTEXT D - The Errand\n\nNoah picked up a library book, then walked to the pharmacy. Before leaving the pharmacy, he checked the bus app and saw a delay. He bought a bottle of water while he waited. When the app showed the bus approaching, he crossed to the stop.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "According to Text A, what happens immediately after a supervisor checks the equipment form?",
+      "points": 1,
+      "explanation": "The storage key is given after the supervisor checks the form.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.order",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The volunteer receives a storage key"
+        },
+        {
+          "id": "b",
+          "text": "The volunteer watches the safety video",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "c",
+          "text": "The key is returned",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "d",
+          "text": "The volunteer signs out",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which event must happen before a volunteer signs out in Text A?",
+      "points": 1,
+      "explanation": "The text says the key is returned before the volunteer signs out.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.logic",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The safety video is replayed",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "b",
+          "text": "The storage key is returned"
+        },
+        {
+          "id": "c",
+          "text": "A new form is created",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "d",
+          "text": "The supervisor leaves",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What happens immediately before the dry soil is mixed with distilled water in Text B?",
+      "points": 1,
+      "explanation": "The sequence is dry -> weigh -> mix -> settle -> record.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.order",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pH is recorded",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "b",
+          "text": "The samples are sealed",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "c",
+          "text": "The dry soil is weighed"
+        },
+        {
+          "id": "d",
+          "text": "The mixture settles",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which event must occur before the researcher records the pH in Text B?",
+      "points": 1,
+      "explanation": "Recording occurs only after the settling period.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.logic",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The garden beds are watered",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "b",
+          "text": "The samples are planted",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "c",
+          "text": "The pH is recorded twice",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "d",
+          "text": "The mixture settles for twenty minutes"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What happens after the tenant confirms the appointment time in Text C?",
+      "points": 1,
+      "explanation": "Entry instructions are sent after the appointment time is confirmed.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.order",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The office sends entry instructions to the technician"
+        },
+        {
+          "id": "b",
+          "text": "The ticket is submitted for the first time",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "c",
+          "text": "The ticket is closed immediately",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "d",
+          "text": "The technician becomes unavailable",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which event occurs last in Text C?",
+      "points": 1,
+      "explanation": "The tenant confirmation of completion happens immediately before the ticket is closed.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.order",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The repair ticket is submitted",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "b",
+          "text": "The tenant confirms the repair is complete"
+        },
+        {
+          "id": "c",
+          "text": "An appointment is offered",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "d",
+          "text": "The office checks technician availability",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What did Noah do immediately after checking the bus app in Text D?",
+      "points": 1,
+      "explanation": "The text says he bought water while waiting after seeing the delay.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.order",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "He crossed to the bus stop",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "b",
+          "text": "He picked up the library book",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "c",
+          "text": "He bought a bottle of water"
+        },
+        {
+          "id": "d",
+          "text": "He entered the pharmacy",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which event happened before Noah checked the bus app?",
+      "points": 1,
+      "explanation": "Noah had already walked to the pharmacy before checking the app.",
+      "skill": {
+        "id": "R2.1",
+        "label": "Sequence"
+      },
+      "rule": "Track only the target event and its immediate neighbors.",
+      "familyId": "sequence.logic",
+      "metadata": {
+        "skillId": "R2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "He crossed to the stop",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "b",
+          "text": "The bus approached",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "c",
+          "text": "He bought water",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "This event is not in the sequence position asked for."
+        },
+        {
+          "id": "d",
+          "text": "He walked to the pharmacy"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-sequence-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Order events and identify required earlier steps using explicit and implied sequence relationships.",
+      "topicLabel": "Sequence"
+    },
+    "passage": {
+      "id": "p-rla-sequence-practice-01",
+      "title": "Sequence Practice 1",
+      "textType": "informational",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.843Z"
+  }
+}

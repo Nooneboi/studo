@@ -1,0 +1,487 @@
+{
+  "id": "rla-inference-practice-01",
+  "title": "Inference Practice 1",
+  "description": "4 short texts - 8 inference questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Inference from details",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Extra Charger\n\nBefore a long meeting, Damon placed his laptop charger in his backpack and added a second charger. At the meeting room, he offered the extra one to a teammate whose battery warning had appeared.\n\nTEXT B - Marked Map\n\nA trail guide circled two bridges on a paper map and wrote \"check after rain\" beside both. After a storm, she visited those locations before inspecting the rest of the trail.\n\nTEXT C - Priority Note\n\nA desk note lists \"call supplier,\" \"finish poster,\" and \"check room booking.\" The room-booking item is underlined twice. Five minutes later, Maya opens the booking website before touching the other tasks.\n\nTEXT D - Window Seat\n\nWhen the bus became crowded, Eli moved his bag from the seat beside him to the floor before anyone asked. He then shifted closer to the window and looked toward the aisle.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about Damon in Text A?",
+      "points": 1,
+      "explanation": "Bringing a second charger and offering it when needed supports preparation for a possible need.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "He expected that someone might need charging help"
+        },
+        {
+          "id": "b",
+          "text": "He knew exactly whose battery would fail",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "c",
+          "text": "He planned to give away his own laptop",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "d",
+          "text": "He never uses chargers",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports that inference?",
+      "points": 1,
+      "explanation": "The extra charger is deliberate preparation beyond his own immediate need.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The meeting is long",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "b",
+          "text": "Damon packs a second charger before the meeting"
+        },
+        {
+          "id": "c",
+          "text": "The room has teammates",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "d",
+          "text": "The laptop has a battery",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What can be inferred about the two bridges in Text B?",
+      "points": 1,
+      "explanation": "The note \"check after rain\" and first-priority inspection imply weather-related concern.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "They were built after the storm",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "b",
+          "text": "They are the only bridges in the country",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "c",
+          "text": "They may be places where rain creates problems"
+        },
+        {
+          "id": "d",
+          "text": "They are always closed",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most strongly supports the inference?",
+      "points": 1,
+      "explanation": "The repeated emphasis and post-storm priority point directly to rain-related risk.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The guide uses a paper map",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "b",
+          "text": "The guide writes notes",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "c",
+          "text": "The trail has other locations",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "d",
+          "text": "Two bridges are circled with \"check after rain\" and inspected first after a storm"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What can be inferred about the room booking in Text C?",
+      "points": 1,
+      "explanation": "The double underline plus immediate action show priority.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Maya considers it the most urgent listed task"
+        },
+        {
+          "id": "b",
+          "text": "The room is definitely unavailable",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "c",
+          "text": "The poster has already been finished",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "d",
+          "text": "The supplier has called Maya",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports that inference?",
+      "points": 1,
+      "explanation": "Both emphasis and action support urgency.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "There are three tasks",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "b",
+          "text": "Maya opens the booking website first after underlining the item twice"
+        },
+        {
+          "id": "c",
+          "text": "A supplier exists",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "d",
+          "text": "The note is on a desk",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about Eli in Text D?",
+      "points": 1,
+      "explanation": "Moving the bag from a seat as the bus crowds creates an open place for someone else.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "He wants to block the aisle",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "b",
+          "text": "He plans to get off immediately",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "c",
+          "text": "He is making space for another passenger"
+        },
+        {
+          "id": "d",
+          "text": "He is hiding the bag",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly supports the inference?",
+      "points": 1,
+      "explanation": "The timing and action directly create an available seat.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Choose what the clues support, not merely what could be true.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The bus has a window",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "b",
+          "text": "The bus is moving",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "c",
+          "text": "He looks toward the aisle",
+          "distractorType": "related_detail",
+          "whyWrong": "This option is not the strongest text-based support for the inference."
+        },
+        {
+          "id": "d",
+          "text": "Eli moves his bag from the adjacent seat to the floor as the bus gets crowded"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-inference-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Infer unstated ideas from multiple details and identify the strongest supporting evidence.",
+      "topicLabel": "Inference from details"
+    },
+    "passage": {
+      "id": "p-rla-inference-practice-01",
+      "title": "Inference Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.838Z"
+  }
+}

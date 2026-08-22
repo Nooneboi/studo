@@ -1,0 +1,487 @@
+{
+  "id": "rla-author-purpose-practice-1",
+  "title": "Author purpose Practice 1",
+  "description": "4 short texts - 8 focused author purpose questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Author purpose",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Composting Flyer\n\nA flyer explains where apartment residents can drop off food scraps, what materials are accepted, and when collection bins are emptied.\n\nTEXT B - Shade Editorial\n\nAn editorial urges the city to plant more street trees near bus stops and cites summer temperature readings from unshaded sidewalks.\n\nTEXT C - Bee Tracking\n\nA science article describes tiny numbered tags placed on bees and cameras that record which tagged insects return to a hive entrance.\n\nTEXT D - Room Booking\n\nA workplace message announces that meeting rooms must now be booked through a shared calendar and gives three steps for reserving a room.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the author's primary purpose?",
+      "points": 1,
+      "explanation": "Explain how residents can use a local compost drop-off program.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "explain how residents can use a local compost drop-off program"
+        },
+        {
+          "id": "b",
+          "text": "to entertain readers with an unrelated story",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to describe the topic without giving readers a specific understanding or action",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to prove a stronger claim than the passage supports",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why is this kind of detail useful to the author's purpose?",
+      "points": 1,
+      "explanation": "Listing accepted materials helps readers avoid contaminating the collection bins.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the subject instead of supporting the purpose.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Listing accepted materials helps readers avoid contaminating the collection bins."
+        },
+        {
+          "id": "c",
+          "text": "It provides a fact unrelated to what readers need to understand.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It replaces the need for the rest of the passage.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the author's primary purpose?",
+      "points": 1,
+      "explanation": "Persuade readers that more shade should be added near bus stops.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to entertain readers with an unrelated story",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to describe the topic without giving readers a specific understanding or action",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "persuade readers that more shade should be added near bus stops"
+        },
+        {
+          "id": "d",
+          "text": "to prove a stronger claim than the passage supports",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why is this kind of detail useful to the author's purpose?",
+      "points": 1,
+      "explanation": "The temperature readings provide evidence that unshaded waiting areas become very hot.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the subject instead of supporting the purpose.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It provides a fact unrelated to what readers need to understand.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It replaces the need for the rest of the passage.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The temperature readings provide evidence that unshaded waiting areas become very hot."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What is the author's primary purpose?",
+      "points": 1,
+      "explanation": "Explain a method researchers use to study bee movement.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "explain a method researchers use to study bee movement"
+        },
+        {
+          "id": "b",
+          "text": "to entertain readers with an unrelated story",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to describe the topic without giving readers a specific understanding or action",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to prove a stronger claim than the passage supports",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Why is this kind of detail useful to the author's purpose?",
+      "points": 1,
+      "explanation": "The description of tags and cameras shows how individual bees can be recognized.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the subject instead of supporting the purpose.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The description of tags and cameras shows how individual bees can be recognized."
+        },
+        {
+          "id": "c",
+          "text": "It provides a fact unrelated to what readers need to understand.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It replaces the need for the rest of the passage.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What is the author's primary purpose?",
+      "points": 1,
+      "explanation": "Instruct employees how to use the new room-booking process.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to entertain readers with an unrelated story",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to describe the topic without giving readers a specific understanding or action",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "instruct employees how to use the new room-booking process"
+        },
+        {
+          "id": "d",
+          "text": "to prove a stronger claim than the passage supports",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Why is this kind of detail useful to the author's purpose?",
+      "points": 1,
+      "explanation": "The numbered steps turn the policy change into a procedure employees can follow.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the subject instead of supporting the purpose.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It provides a fact unrelated to what readers need to understand.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "It replaces the need for the rest of the passage.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The numbered steps turn the policy change into a procedure employees can follow."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-author-purpose-practice-1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply author purpose reasoning across varied original texts and explain answers from textual evidence.",
+      "topicLabel": "Author purpose"
+    },
+    "passage": {
+      "id": "p-rla-author-purpose-practice-1",
+      "title": "Author purpose Practice 1",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.832Z"
+  }
+}

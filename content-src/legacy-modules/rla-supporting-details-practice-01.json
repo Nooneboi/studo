@@ -1,0 +1,495 @@
+{
+  "id": "rla-supporting-details-practice-01",
+  "title": "Supporting Details Practice 1",
+  "description": "4 short texts · 8 supporting-detail questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Supporting details",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Saturday Bike Repair Pop-Up\n\nA neighborhood association began hosting a free bicycle repair table on the first Saturday of each month. Volunteers help residents adjust brakes, patch tubes, and check tire pressure. During the first event, 18 bicycles were serviced; by the fourth event, volunteers worked on 47 bicycles. Organizers also noticed that several residents returned with friends or younger family members who wanted to learn simple repairs. Because the table uses donated tools and volunteer labor, the association has been able to keep the service free. The group is now considering adding a second monthly session during the warmer months.\n\nTEXT B - Prairie Strips Between Crop Fields\n\nSome farms in the Midwest have tested narrow strips of native prairie plants within or beside crop fields. The deep roots and dense stems can slow water moving across the soil after heavy rain. In several monitored fields, researchers measured less soil leaving areas with prairie strips than comparable areas without them. The strips can also provide habitat for insects and birds, although the amount of habitat depends on the width and location of each planting. Researchers caution that prairie strips do not solve every erosion problem, but the measurements suggest they can be one useful part of a larger soil-management plan.\n\nTEXT C - A New Meeting Routine\n\nA design company noticed that its weekly project meeting often ran past an hour even when only a few decisions were needed. The team changed the routine: employees now post status updates in a shared document before the meeting, and the live meeting is reserved for unresolved questions and decisions. After six weeks, the average meeting lasted 32 minutes. Employees also reported that they spent less time repeating information that everyone had already read. Managers still schedule longer sessions when a project requires detailed discussion, so the shorter format is not used for every situation.\n\nTEXT D - The Repaired Radio\n\nNiko had avoided the old radio for months because the tuning dial slipped whenever he touched it. His aunt had given him the radio before moving away, and he worried that opening the case would damage it further. One rainy afternoon, he finally placed the radio on the kitchen table with a small screwdriver and a bowl for the screws. He photographed each step before removing a part. When he found a loose plastic wheel behind the dial, he tightened the screw beside it and carefully closed the case. The radio crackled when he turned it on, then settled on a clear station. Niko smiled, wrote the repair steps on a card, and tucked the card inside the battery compartment.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that interest in the bike repair table increased over time?",
+      "points": 1,
+      "explanation": "The increase from 18 to 47 serviced bicycles directly shows that more people were using the repair table over time.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "When the idea is about growth or change, look for a comparison across time.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "The table is held on the first Saturday of each month.",
+          "distractorType": "background_only",
+          "whyWrong": "The schedule explains when the service happens but does not show growing interest."
+        },
+        {
+          "id": "b",
+          "text": "The number of bicycles serviced rose from 18 at the first event to 47 by the fourth event."
+        },
+        {
+          "id": "c",
+          "text": "Volunteers help residents patch tubes and adjust brakes.",
+          "distractorType": "related_detail",
+          "whyWrong": "This describes the service but does not show that interest increased."
+        },
+        {
+          "id": "d",
+          "text": "The service uses donated tools and volunteer labor.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports why the service can remain free, not whether interest increased."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "During the first event, 18 bicycles were serviced; by the fourth event, volunteers worked on 47 bicycles."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which sentence provides the strongest support for the idea that the repair table also became a place for learning?",
+      "points": 1,
+      "explanation": "The sentence directly states that people came because they wanted to learn basic repair skills.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Choose the detail that directly matches the action or result named in the idea.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Volunteers check tire pressure and adjust brakes.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "Volunteers perform repairs, but this does not show residents learning."
+        },
+        {
+          "id": "b",
+          "text": "The association may add a second monthly session.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This suggests expansion, not learning."
+        },
+        {
+          "id": "c",
+          "text": "Residents returned with friends or younger family members who wanted to learn simple repairs."
+        },
+        {
+          "id": "d",
+          "text": "The association keeps the service free.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports affordability, not learning."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "Several residents returned with friends or younger family members who wanted to learn simple repairs."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that prairie strips can help reduce soil loss?",
+      "points": 1,
+      "explanation": "The field measurements directly compare soil loss with and without prairie strips.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Measured outcomes are often stronger evidence than a description of how something might work.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Researchers measured less soil leaving fields with prairie strips than comparable fields without them."
+        },
+        {
+          "id": "b",
+          "text": "Prairie plants have deep roots and dense stems.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "This explains a possible mechanism, but the measured soil-loss result is stronger direct evidence."
+        },
+        {
+          "id": "c",
+          "text": "The strips can provide habitat for insects and birds.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports a habitat benefit, not reduced soil loss."
+        },
+        {
+          "id": "d",
+          "text": "The amount of habitat depends on strip width and location.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This is about habitat conditions rather than erosion."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "Researchers measured less soil leaving areas with prairie strips than comparable areas without them."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that the author does not present prairie strips as a complete solution?",
+      "points": 1,
+      "explanation": "That sentence directly states the limitation and places prairie strips within a broader management approach.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "If the idea is about a limitation, look for qualifying language such as not every, depends on, or one part of.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Prairie strips contain native plants.",
+          "distractorType": "background_only",
+          "whyWrong": "This describes the strips but says nothing about whether they are a complete solution."
+        },
+        {
+          "id": "b",
+          "text": "The strips can provide habitat for insects and birds.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports another benefit, not the limitation."
+        },
+        {
+          "id": "c",
+          "text": "Researchers monitored several fields.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "The fact that fields were monitored does not show the limits of the method."
+        },
+        {
+          "id": "d",
+          "text": "Researchers caution that prairie strips do not solve every erosion problem and are only one part of a larger plan."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Researchers caution that prairie strips do not solve every erosion problem, but can be one useful part of a larger plan."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that the new meeting routine saved time?",
+      "points": 1,
+      "explanation": "The 32-minute average directly measures a shorter meeting than the previous hour-plus routine.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "For claims about time, cost, frequency, or amount, numerical comparisons often provide the strongest support.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Employees post status updates in a shared document.",
+          "distractorType": "related_detail",
+          "whyWrong": "This describes the new process, but it does not directly show that time was saved."
+        },
+        {
+          "id": "b",
+          "text": "The live meeting is used for unresolved questions and decisions.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "This may explain why the meeting is shorter, but it is not the strongest direct evidence."
+        },
+        {
+          "id": "c",
+          "text": "After six weeks, the average meeting lasted 32 minutes."
+        },
+        {
+          "id": "d",
+          "text": "Managers can schedule longer sessions when needed.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports flexibility, not time savings."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "evidenceExcerpt": "After six weeks, the average meeting lasted 32 minutes."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which sentence provides the strongest support for the idea that the company still adjusts the routine when necessary?",
+      "points": 1,
+      "explanation": "The company explicitly keeps the option of longer meetings for projects that need more discussion.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "The strongest evidence should directly demonstrate the exact condition described in the idea.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Employees post status updates before the meeting.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "This is part of the routine but does not show flexibility."
+        },
+        {
+          "id": "b",
+          "text": "Managers still schedule longer sessions when a project requires detailed discussion."
+        },
+        {
+          "id": "c",
+          "text": "The average meeting lasted 32 minutes after six weeks.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports shorter meetings, not adjustment when needed."
+        },
+        {
+          "id": "d",
+          "text": "Employees reported less repeated information.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports efficiency, not flexibility."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "evidenceExcerpt": "Managers still schedule longer sessions when a project requires detailed discussion."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that Niko approaches the repair carefully?",
+      "points": 1,
+      "explanation": "Photographing each step and organizing the screws are concrete precautions that directly show a careful repair process.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "In literary text, actions are often stronger evidence than general feelings or background facts.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "His aunt had given him the radio before moving away.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why the radio matters but not how carefully he repairs it."
+        },
+        {
+          "id": "b",
+          "text": "The radio crackles before settling on a clear station.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This shows the result of the repair, not his careful approach."
+        },
+        {
+          "id": "c",
+          "text": "He had avoided the radio for months.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "His hesitation suggests concern, but it is less direct than the specific precautions he takes."
+        },
+        {
+          "id": "d",
+          "text": "He photographs each step before removing a part and keeps the screws together in a bowl."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "evidenceExcerpt": "Niko photographed each step before removing a part and used a bowl for the screws."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which sentence provides the strongest support for the idea that the successful repair gives Niko more confidence?",
+      "points": 1,
+      "explanation": "Writing down the repair process after succeeding shows that Niko now treats the method as something useful he understands and may use again.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "For character change, choose the later action that most clearly contrasts with the character's earlier behavior.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "After the radio works, he records the repair steps on a card and keeps the instructions inside the radio."
+        },
+        {
+          "id": "b",
+          "text": "He worried that opening the case could damage the radio.",
+          "distractorType": "contradictory_detail",
+          "whyWrong": "This shows his earlier uncertainty rather than confidence after the repair."
+        },
+        {
+          "id": "c",
+          "text": "His aunt had given him the radio before moving away.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains the radio's importance, not Niko's confidence."
+        },
+        {
+          "id": "d",
+          "text": "The radio settles on a clear station after crackling.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "The radio working supports that the repair succeeded, but Niko recording the process more directly suggests confidence in what he learned."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "evidenceExcerpt": "After the radio worked, Niko wrote the repair steps on a card and stored the card inside the radio."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-supporting-details-practice-01",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Choose the detail that most directly supports a stated idea and distinguish strong evidence from merely related information.",
+      "topicLabel": "Supporting details"
+    },
+    "passage": {
+      "id": "p-rla-supporting-details-practice-01",
+      "title": "Supporting Details Practice 1",
+      "textType": "informational_and_literary",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.843Z"
+  }
+}

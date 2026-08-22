@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6d-two-minutes-of-shade",
+  "title": "Two Minutes of Shade",
+  "description": "Community - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "At first glance, a bus stop is a small piece of public space: a sign, perhaps a bench, and a patch of pavement where riders wait. During a hot afternoon, however, the design of that small space can affect whether a two-minute wait feels ordinary or exhausting.\n\nA neighborhood planning group recently surveyed thirty bus stops along three routes. Volunteers visited each stop between 1 p.m. and 4 p.m., recorded whether the waiting area had shade, measured pavement temperature with an infrared thermometer, and noted whether a bench was present. They also counted how many riders chose to stand several meters away under a tree or building overhang instead of beside the official stop sign.\n\nThe survey was not a controlled scientific experiment. Buildings, traffic, wind, and the exact time of each measurement varied from stop to stop. Even so, a clear pattern appeared. At stops without shade, pavement temperatures were usually higher, and riders were more likely to wait away from the sign when nearby shade was available.\n\nThe group used the findings to propose a shade program. Its first recommendation was not to build expensive shelters at every stop. Instead, planners suggested starting with stops used heavily by older adults, stops with long average waiting times, and locations where existing trees or building shade could be extended with relatively simple structures.\n\nTo make the proposal concrete, the report describes one stop outside a health clinic. The sign stands beside a wide sidewalk with no nearby tree. Across the driveway, a narrow awning shades part of the clinic wall. During the survey, five of seven waiting riders stood beneath that awning and walked toward the curb only when the bus approached.\n\n\"People are already telling us where the comfortable waiting space is,\" the report says. \"The question is whether the official stop can meet them there.\"\n\nThe group also recommends collecting rider feedback before and after any changes. A canopy that looks effective on a plan may cast little shade at the busiest time of day, while moving a bench only a few meters could improve comfort without altering the stop location. Tracking how riders actually use the space would help planners distinguish a design that merely looks better from one that changes the waiting experience.\n\nThe proposal has limits. Moving a stop or adding a canopy can affect visibility, drainage, utility lines, and wheelchair clearance. The group therefore recommends site-by-site review rather than one identical design. Its larger argument is modest: waiting comfort should be treated as a basic part of transit access, and small design choices can sometimes make a meaningful difference.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the author's primary purpose in this passage?",
+      "points": 1,
+      "explanation": "The passage explains the survey, pattern, proposal, example, and limitations.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to explain a bus-stop shade survey and how its findings shaped a practical proposal"
+        },
+        {
+          "id": "b",
+          "text": "to prove all bus stops need identical shelters",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to entertain readers with a fictional bus ride",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to teach readers how to repair buses",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of paragraph 3?",
+      "points": 1,
+      "explanation": "Paragraph 3 acknowledges that the survey was not controlled, then explains the pattern volunteers still observed.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to introduce the health clinic example",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to qualify the survey findings by acknowledging limitations while still describing a pattern"
+        },
+        {
+          "id": "c",
+          "text": "to give construction instructions",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "to argue the survey was useless",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the author include the health-clinic bus stop example?",
+      "points": 1,
+      "explanation": "The example illustrates the broader pattern in a specific, easy-to-visualize location.",
+      "skill": {
+        "id": "R4.6",
+        "label": "Rhetorical technique"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "rhetorical.technique.function",
+      "metadata": {
+        "skillId": "R4.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "to prove every clinic has an awning",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "to show why buses should stop running in summer",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "to make the broader survey finding concrete by showing riders already choosing nearby shade"
+        },
+        {
+          "id": "d",
+          "text": "to replace the need for any survey data",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the planning group's perspective?",
+      "points": 1,
+      "explanation": "The group argues for shade while prioritizing sites and acknowledging visibility, drainage, utilities, and accessibility.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every stop should receive the same expensive shelter immediately.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "Transit comfort is unrelated to access.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "Only pavement temperature matters when designing stops.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "Shade is an access issue worth addressing, but solutions should be targeted and reviewed for local constraints."
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What relationship does \"Even so\" in paragraph 3 signal?",
+      "points": 1,
+      "explanation": "Even so signals concession: limitations exist, but a pattern was still observed.",
+      "skill": {
+        "id": "R4.3",
+        "label": "Transitions & signal words"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "transition.relationship",
+      "metadata": {
+        "skillId": "R4.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Despite the survey limitations, the group still observed a consistent pattern."
+        },
+        {
+          "id": "b",
+          "text": "The next sentence gives a definition of infrared thermometer.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "The next sentence describes an event that happened before the survey.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "The next sentence completely rejects the data.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does the passage's structure support the final argument?",
+      "points": 1,
+      "explanation": "The sequence builds a reasoned case by connecting observations to recommendations while acknowledging constraints.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It lists bus routes alphabetically.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "It moves from the issue, to evidence, to a targeted proposal, to an example and limitations before stating the broader claim."
+        },
+        {
+          "id": "c",
+          "text": "It presents only emotional opinions and no observations.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "d",
+          "text": "It gives construction steps in exact chronological order.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What can reasonably be inferred from riders waiting under the clinic awning?",
+      "points": 1,
+      "explanation": "Five of seven riders chose the nearby awning and approached the curb only when the bus came, supporting the inference about shade preference.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Name the relationship first, then prove it with the surrounding text.",
+      "familyId": "inference.from.details",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The clinic requires bus riders to stand under its awning.",
+          "distractorType": "effect_missed",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "b",
+          "text": "The official stop has already been moved.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        },
+        {
+          "id": "c",
+          "text": "Some riders value shade enough to wait away from the official sign until the bus arrives."
+        },
+        {
+          "id": "d",
+          "text": "Every rider prefers to wait indoors.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6d-two-minutes-of-shade",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Structure, Purpose & POV",
+      "primarySkillId": "R4.4",
+      "secondarySkillIds": [
+        "R4.1",
+        "R4.6",
+        "R4.5",
+        "R4.3",
+        "R4.2",
+        "R2.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set with emphasis on structure, function, transitions, purpose, perspective, and rhetoric.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6d-two-minutes-of-shade",
+      "title": "Two Minutes of Shade",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.841Z"
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "id": "rla-meaning-in-context-practice-2",
+  "title": "Meaning in Context Practice 2",
+  "description": "4 short texts - 8 focused meaning in context questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Meaning in Context",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Volunteer List\n\nThe coordinator asked people to hold Tuesday evening for a possible training session.\n\nTEXT B - Community Grant\n\nThe grant gave the neighborhood project room to grow, allowing it to add two classes without raising fees.\n\nTEXT C - Repair Estimate\n\nThe technician called the cracked mount the root of the vibration problem.\n\nTEXT D - Museum Entry\n\nThe new ticket rule is meant to smooth out the morning rush by spreading school groups across several arrival times.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What does hold mean here?",
+      "points": 1,
+      "explanation": "The coordinator wants people to keep that time available.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "reserve the time"
+        },
+        {
+          "id": "b",
+          "text": "carry something",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "stop breathing",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "own permanently",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which phrase could replace hold Tuesday evening?",
+      "points": 1,
+      "explanation": "That phrase preserves the scheduling meaning.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "forget Tuesday evening",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "keep Tuesday evening available"
+        },
+        {
+          "id": "c",
+          "text": "shorten Tuesday evening",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "move Tuesday evening",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What does room to grow suggest?",
+      "points": 1,
+      "explanation": "The following example shows the project can expand its services.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "a larger classroom only",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "permission to build a house",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "space or capacity to expand"
+        },
+        {
+          "id": "d",
+          "text": "a gardening area",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which detail best explains the phrase?",
+      "points": 1,
+      "explanation": "Adding classes is the concrete form of growth.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "grant",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "neighborhood",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "project",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "add two classes without raising fees"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does root mean here?",
+      "points": 1,
+      "explanation": "The mount is identified as the underlying cause of the vibration.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "main cause"
+        },
+        {
+          "id": "b",
+          "text": "part of a plant",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "bottom edge",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "mathematical answer",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which phrase could replace root?",
+      "points": 1,
+      "explanation": "Source preserves the underlying-cause meaning.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "color",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "source"
+        },
+        {
+          "id": "c",
+          "text": "measurement",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "surface",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What does smooth out mean?",
+      "points": 1,
+      "explanation": "Spreading groups across times reduces the uneven peak.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "polish a surface",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "remove all visitors",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "make the rush more even and manageable"
+        },
+        {
+          "id": "d",
+          "text": "shorten the morning",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What context clue matters most?",
+      "points": 1,
+      "explanation": "That action explains how the rush becomes more even.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.phrase_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "ticket rule",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "morning",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "new",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "spreading school groups across several arrival times"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-meaning-in-context-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply meaning in context reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Meaning in Context"
+    },
+    "passage": {
+      "id": "p-rla-meaning-in-context-practice-2",
+      "title": "Meaning in Context Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.838Z"
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "id": "rla-tone-practice-2",
+  "title": "Tone Practice 2",
+  "description": "4 short texts - 8 focused tone questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Tone",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "TEXT A - Science Note\n\n\"The pattern is intriguing, although the dataset is too small to support a strong conclusion.\"\n\nTEXT B - Thank-You Note\n\n\"You noticed every problem before it became everyone else's problem.\"\n\nTEXT C - Opinion Column\n\n\"The city does not need another promise printed on a banner. It needs a repair schedule.\"\n\nTEXT D - Travel Essay\n\n\"The station is not beautiful in the usual sense, but at dawn its worn tiles seem to remember every departure.\"",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which tone best fits?",
+      "points": 1,
+      "explanation": "Intriguing shows interest; the warning about the dataset shows caution.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "interested but cautious"
+        },
+        {
+          "id": "b",
+          "text": "triumphant",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "bored",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "hostile",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which phrase most strongly signals caution?",
+      "points": 1,
+      "explanation": "It explicitly limits the strength of any claim.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.evidence",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "pattern",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "too small to support a strong conclusion"
+        },
+        {
+          "id": "c",
+          "text": "is intriguing",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "dataset",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which tone is most likely?",
+      "points": 1,
+      "explanation": "The speaker praises foresight and helpfulness.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "accusing",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "uncertain",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "grateful and admiring"
+        },
+        {
+          "id": "d",
+          "text": "coldly formal",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What creates the admiring tone?",
+      "points": 1,
+      "explanation": "The whole statement credits the person with preventing wider trouble.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.evidence",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "before",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "every problem",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "else",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "You noticed every problem before it became everyone else's problem"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which tone best fits?",
+      "points": 1,
+      "explanation": "The writer dismisses symbolic promises and demands concrete action.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "impatient and critical"
+        },
+        {
+          "id": "b",
+          "text": "delighted",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "confused",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "nostalgic",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which phrase best supports impatience?",
+      "points": 1,
+      "explanation": "Another and the contrast with a repair schedule imply frustration with repeated promises.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.evidence",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "the city",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "another promise printed on a banner"
+        },
+        {
+          "id": "c",
+          "text": "repair schedule",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It needs",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which tone is most likely?",
+      "points": 1,
+      "explanation": "The writer admits wear while describing the place with reflective affection.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "disgusted",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "clinical",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "reflective and affectionate"
+        },
+        {
+          "id": "d",
+          "text": "panicked",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which phrase contributes most to that tone?",
+      "points": 1,
+      "explanation": "The personification gives the station emotional history and reflection.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.evidence",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "not beautiful",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "worn tiles",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "at dawn",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "seem to remember every departure"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-tone-practice-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply tone reasoning across varied original short texts and explain answers from textual evidence.",
+      "topicLabel": "Tone"
+    },
+    "passage": {
+      "id": "p-rla-tone-practice-2",
+      "title": "Tone Practice 2",
+      "textType": "mixed",
+      "context": "skill_practice",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.844Z"
+  }
+}

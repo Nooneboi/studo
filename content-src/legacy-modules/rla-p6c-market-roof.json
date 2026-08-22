@@ -1,0 +1,438 @@
+{
+  "id": "rla-p6c-market-roof",
+  "title": "The Roof Over Market Lane",
+  "description": "Community - Informational - 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Passage Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "For years, vendors at Market Lane watched the weather as closely as they watched their customers. The market's narrow roofs protected individual stalls, but the walkways between them remained exposed. A sudden afternoon storm could empty the lane in minutes.\n\nLast year, the city installed a lightweight roof over the central walkway. Supporters had promised a transformation. The result has been less dramatic and, in some ways, more useful. Rain no longer scatters customers immediately, older shoppers have more shade, and vendors can leave signs and small displays outside their stalls without rushing to move them at the first dark cloud.\n\nThe roof has not solved every problem. Heat can still build under the structure on windless days, and several vendors say the new lighting is too harsh after sunset. The city is testing additional fans and warmer-colored bulbs. These adjustments may sound minor, but small details decide whether a public space feels merely covered or genuinely comfortable.\n\nLanguage around the project has shifted as well. During planning meetings, officials repeatedly called the roof a \"revitalization project.\" Vendors now tend to call it \"the cover.\" The simpler phrase is revealing. Most sellers do not talk about the structure as a grand reinvention of the market. They talk about what it lets them do: keep customers dry, protect displays, and work through uncertain weather.\n\nThat difference does not mean the project failed. It may mean success is quieter than the original campaign language suggested. The roof did not rescue Market Lane. It made an ordinary working day a little easier.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the main difference between \"revitalization project\" and \"the cover\"?",
+      "points": 1,
+      "explanation": "The passage contrasts campaign language with vendors' practical description.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "connotation.replacement",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The first sounds grand and transformative; the second is practical and modest."
+        },
+        {
+          "id": "b",
+          "text": "The first refers to a roof; the second refers to a road.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The first is negative; the second is angry.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "They have exactly the same effect.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which tone best describes the author's view of the project?",
+      "points": 1,
+      "explanation": "The author notes limits but ultimately values the practical improvements.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "furious",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "measured and mildly approving"
+        },
+        {
+          "id": "c",
+          "text": "mocking",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "unquestioningly enthusiastic",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the author say rain used to \"scatter\" customers?",
+      "points": 1,
+      "explanation": "Scatter is a vivid verb for rapid dispersal.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "To prove customers became confused.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "To show customers threw objects.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "To emphasize how quickly people moved away in different directions."
+        },
+        {
+          "id": "d",
+          "text": "To describe a planned evacuation.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What does revealing most nearly mean in paragraph 4?",
+      "points": 1,
+      "explanation": "The simpler phrase shows how vendors actually think about the project.",
+      "skill": {
+        "id": "R3.1",
+        "label": "Meaning in context"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "context.word_meaning",
+      "metadata": {
+        "skillId": "R3.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "removing a roof",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "publishing a secret document",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "making the market brighter",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "showing something meaningful about attitudes"
+        }
+      ],
+      "correct": [
+        "d"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What does the statement \"success is quieter\" mean?",
+      "points": 1,
+      "explanation": "Quiet success contrasts useful daily improvement with grand claims of transformation.",
+      "skill": {
+        "id": "R3.3",
+        "label": "Figurative language"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "figurative.interpret",
+      "metadata": {
+        "skillId": "R3.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The project's value may be modest and practical rather than dramatic."
+        },
+        {
+          "id": "b",
+          "text": "The market has become physically silent.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "The project reduced all noise.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "Officials stopped speaking about the project.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "a"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does the final result compare with the original promises?",
+      "points": 1,
+      "explanation": "The passage explicitly says the result is less dramatic but useful.",
+      "skill": {
+        "id": "R2.3",
+        "label": "Compare and contrast"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "compare.similarity_difference",
+      "metadata": {
+        "skillId": "R2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "It is more dramatic than promised.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "It is less transformative but provides several practical benefits."
+        },
+        {
+          "id": "c",
+          "text": "It provides no benefits.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "d",
+          "text": "It solved every market problem.",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "b"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "A captures both the practical results and the passage's focus on language and expectations.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Use the exact wording and surrounding context as evidence.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city built a roof that completely transformed Market Lane.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "b",
+          "text": "Vendors oppose all changes to the market.",
+          "distractorType": "wrong_context",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        },
+        {
+          "id": "c",
+          "text": "A market roof delivered modest practical improvements, and the language people use about it reflects a shift from grand promises to everyday usefulness."
+        },
+        {
+          "id": "d",
+          "text": "Lighting is the only issue that matters at Market Lane.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+        }
+      ],
+      "correct": [
+        "c"
+      ]
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-p6c-market-roof",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Words, Tone & Style",
+      "primarySkillId": "R3.2",
+      "secondarySkillIds": [
+        "R3.4",
+        "R3.5",
+        "R3.1",
+        "R3.3",
+        "R2.3",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Complete a coherent mixed-skill RLA passage set using context, connotation, figurative language, tone, word choice, and connected reading skills.",
+      "topicLabel": "Passage Practice"
+    },
+    "passage": {
+      "id": "p-rla-p6c-market-roof",
+      "title": "The Roof Over Market Lane",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-19T15:57:16.840Z"
+  }
+}
