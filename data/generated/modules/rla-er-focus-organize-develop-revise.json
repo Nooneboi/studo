@@ -1,0 +1,476 @@
+{
+  "id": "rla-er-focus-organize-develop-revise",
+  "title": "Organize, Develop and Revise",
+  "description": "Focused Extended Response component practice.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Source A - Keep Sunday Hours\nDuring a three-month Sunday-hours pilot, the downtown library averaged 310 visits each Sunday. Forty-two percent of surveyed Sunday visitors said weekday work or school schedules made other visits difficult. Staffing cost $18,400 for the pilot, and the library proposes keeping Sunday hours while reducing one lightly used weekday evening shift.\n\nSource B - Restore the Old Schedule\nA budget committee member argues that the library should close on Sundays because the city should avoid adding service costs. She notes that digital materials are available every day and says residents can plan visits during existing hours. She does not compare the proposed shift reduction with Sunday staffing costs or provide data on whether Sunday visitors use digital materials instead.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which order best organizes a body paragraph?",
+      "points": 1,
+      "explanation": "A clear paragraph states the reason, supports it, explains it, and compares the weaker source when useful.",
+      "skill": {
+        "id": "W1.8",
+        "label": "Organize the response"
+      },
+      "rule": "One paragraph should do one main reasoning job.",
+      "familyId": "writing.er.organization",
+      "metadata": {
+        "skillId": "W1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Evidence -> unrelated opinion -> conclusion -> new topic.",
+          "distractorType": "disorganized",
+          "whyWrong": "The sequence does not develop one clear reason."
+        },
+        {
+          "id": "b",
+          "text": "Point -> Evidence -> Analysis -> Comparison."
+        },
+        {
+          "id": "c",
+          "text": "Conclusion -> introduction -> evidence -> title.",
+          "distractorType": "wrong_structure",
+          "whyWrong": "This order does not match paragraph logic."
+        },
+        {
+          "id": "d",
+          "text": "Quotation -> quotation -> quotation -> final sentence.",
+          "distractorType": "evidence_dump",
+          "whyWrong": "Evidence without analysis is not developed argumentation."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best develops the Sunday-visit statistic?",
+      "points": 1,
+      "explanation": "Development connects the evidence to the claim it helps support.",
+      "skill": {
+        "id": "W1.9",
+        "label": "Develop ideas"
+      },
+      "rule": "After a statistic, explain what it demonstrates.",
+      "familyId": "writing.er.development",
+      "metadata": {
+        "skillId": "W1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because many Sunday visitors report weekday schedule conflicts, the usage data supports the claim that Sunday hours serve people who have limited access at other times."
+        },
+        {
+          "id": "b",
+          "text": "There were 310 visitors.",
+          "distractorType": "summary",
+          "whyWrong": "This repeats the number without explaining its significance."
+        },
+        {
+          "id": "c",
+          "text": "Libraries are important to communities.",
+          "distractorType": "generic",
+          "whyWrong": "This broad statement does not develop the source-specific argument."
+        },
+        {
+          "id": "d",
+          "text": "Sunday is the last day of the weekend.",
+          "distractorType": "irrelevant",
+          "whyWrong": "This does not connect the evidence to the recommendation."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which revision is more precise?",
+      "points": 1,
+      "explanation": "The revision names the exact missing comparison that weakens the argument.",
+      "skill": {
+        "id": "W1.10",
+        "label": "Revise for focus & clarity"
+      },
+      "rule": "Replace vague judgment words with the actual reasoning problem.",
+      "familyId": "writing.er.revision",
+      "metadata": {
+        "skillId": "W1.10",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source B is bad and does not make sense.",
+          "distractorType": "vague_judgment",
+          "whyWrong": "This gives no specific reasoning problem."
+        },
+        {
+          "id": "b",
+          "text": "Source B has some things that are not as good.",
+          "distractorType": "vague",
+          "whyWrong": "The reader cannot tell what is weak."
+        },
+        {
+          "id": "c",
+          "text": "Source B is wrong about everything.",
+          "distractorType": "overstatement",
+          "whyWrong": "The evaluation is absolute and unsupported."
+        },
+        {
+          "id": "d",
+          "text": "Source B raises a cost concern, but it does not compare Sunday staffing with the proposed weekday shift reduction."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which sentence has the clearest Standard English control?",
+      "points": 1,
+      "explanation": "The sentence uses correct agreement and a clear introductory-clause comma.",
+      "skill": {
+        "id": "W1.11",
+        "label": "Edit conventions"
+      },
+      "rule": "Edit for clarity, not decorative complexity.",
+      "familyId": "writing.er.edit",
+      "metadata": {
+        "skillId": "W1.11",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Although Source B raise a budget concern, it do not compare the proposed schedule changes.",
+          "distractorType": "agreement",
+          "whyWrong": "Raise/do do not agree with the singular subject Source B/it."
+        },
+        {
+          "id": "b",
+          "text": "Although Source B raises a budget concern it does not compare, the proposed schedule changes.",
+          "distractorType": "punctuation",
+          "whyWrong": "The comma is misplaced and the introductory clause needs a boundary."
+        },
+        {
+          "id": "c",
+          "text": "Although Source B raises a budget concern, it does not compare the proposed schedule changes."
+        },
+        {
+          "id": "d",
+          "text": "Source B raising a budget concern, not compare the proposed schedule changes.",
+          "distractorType": "fragment",
+          "whyWrong": "The sentence lacks a complete finite-verb structure."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which introduction is most efficient?",
+      "points": 1,
+      "explanation": "The introduction identifies the issue, makes a judgment, and previews the reasons without wasting time.",
+      "skill": {
+        "id": "W1.8",
+        "label": "Organize the response"
+      },
+      "rule": "In ER, clarity beats a dramatic hook.",
+      "familyId": "writing.er.organization",
+      "metadata": {
+        "skillId": "W1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both sources address Sunday library hours, but Source A is better supported because it uses pilot attendance data and addresses cost with a specific schedule tradeoff."
+        },
+        {
+          "id": "b",
+          "text": "Libraries have existed for many years and are important places for books.",
+          "distractorType": "broad_hook",
+          "whyWrong": "This delays the source-based judgment."
+        },
+        {
+          "id": "c",
+          "text": "In this essay I will talk about two sources and some facts.",
+          "distractorType": "meta",
+          "whyWrong": "This announces writing instead of making an argument."
+        },
+        {
+          "id": "d",
+          "text": "Sunday is one day of the week, and people have different opinions.",
+          "distractorType": "empty_background",
+          "whyWrong": "This adds no useful source analysis."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which paragraph plan is most developed?",
+      "points": 1,
+      "explanation": "The plan links a reason to evidence, explanation, and comparison.",
+      "skill": {
+        "id": "W1.9",
+        "label": "Develop ideas"
+      },
+      "rule": "Development is a chain, not a pile of details.",
+      "familyId": "writing.er.development",
+      "metadata": {
+        "skillId": "W1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reason: libraries are good -> personal story -> repeat thesis.",
+          "distractorType": "outside_support",
+          "whyWrong": "The plan relies on personal material instead of source evidence."
+        },
+        {
+          "id": "b",
+          "text": "Quote three Source A sentences -> move to conclusion.",
+          "distractorType": "evidence_dump",
+          "whyWrong": "The plan lacks explanation and comparison."
+        },
+        {
+          "id": "c",
+          "text": "Reason: access need -> Sunday visitor survey -> explain why it shows unmet weekday access -> compare Source B's unsupported assumption that residents can simply reschedule."
+        },
+        {
+          "id": "d",
+          "text": "Describe Source B -> describe Source A -> stop.",
+          "distractorType": "summary_only",
+          "whyWrong": "The plan summarizes instead of developing evaluation."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which revision removes repetition without losing meaning?",
+      "points": 1,
+      "explanation": "The revision states one precise reason once.",
+      "skill": {
+        "id": "W1.10",
+        "label": "Revise for focus & clarity"
+      },
+      "rule": "Cut repeated evaluation words; keep the evidence-based reason.",
+      "familyId": "writing.er.revision",
+      "metadata": {
+        "skillId": "W1.10",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A is stronger and better and more supported because the data is stronger and better.",
+          "distractorType": "repetitive",
+          "whyWrong": "The sentence repeats evaluative words without adding information."
+        },
+        {
+          "id": "b",
+          "text": "Source A is the source that is stronger because it is the stronger source.",
+          "distractorType": "circular",
+          "whyWrong": "This restates the conclusion instead of giving a reason."
+        },
+        {
+          "id": "c",
+          "text": "Source A, being stronger in strength, has support that supports it.",
+          "distractorType": "wordy",
+          "whyWrong": "The wording is inflated and unclear."
+        },
+        {
+          "id": "d",
+          "text": "Source A is stronger because its pilot data measures actual Sunday use."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which edit is best?",
+      "points": 1,
+      "explanation": "The semicolon and comma correctly frame however between two independent clauses.",
+      "skill": {
+        "id": "W1.11",
+        "label": "Edit conventions"
+      },
+      "rule": "Use punctuation to show the relationship clearly.",
+      "familyId": "writing.er.edit",
+      "metadata": {
+        "skillId": "W1.11",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A acknowledges the staffing cost however it proposes reducing a lightly used weekday shift.",
+          "distractorType": "run_on",
+          "whyWrong": "The conjunctive adverb needs proper punctuation between independent clauses."
+        },
+        {
+          "id": "b",
+          "text": "Source A acknowledges the staffing cost; however, it proposes reducing a lightly used weekday shift."
+        },
+        {
+          "id": "c",
+          "text": "Source A acknowledge the staffing cost; however, it propose reducing a lightly used weekday shift.",
+          "distractorType": "agreement",
+          "whyWrong": "The verbs do not agree with the singular subject."
+        },
+        {
+          "id": "d",
+          "text": "Source A acknowledges the staffing cost, however; it proposes reducing a lightly used weekday shift.",
+          "distractorType": "punctuation",
+          "whyWrong": "The comma and semicolon are reversed."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-er-focus-organize-develop-revise",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.8",
+      "secondarySkillIds": [
+        "W1.9",
+        "W1.10",
+        "W1.11"
+      ],
+      "unitId": "organize-develop-revise",
+      "contentKind": "skill_drill",
+      "learningObjective": "Organize, Develop and Revise",
+      "topicLabel": "Extended Response"
+    },
+    "passage": {
+      "id": "p-rla-er-focus-organize-develop-revise",
+      "title": "Should the Library Keep Sunday Hours?",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T11:04:16.842Z"
+  }
+}

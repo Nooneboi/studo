@@ -1088,6 +1088,100 @@
     }
   },
   {
+    "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+    "title": "Analyze, Don't Just Summarize",
+    "description": "Focused Extended Response component practice.",
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.6",
+      "secondarySkillIds": [
+        "W1.7"
+      ],
+      "unitId": "analyze-not-summarize",
+      "contentKind": "skill_drill",
+      "learningObjective": "Analyze, Don't Just Summarize",
+      "topicLabel": "Extended Response"
+    }
+  },
+  {
+    "file": "generated/modules/rla-er-focus-choose-stronger-argument.json",
+    "title": "Judge Support, Not Preference",
+    "description": "Focused Extended Response component practice.",
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.3",
+      "secondarySkillIds": [],
+      "unitId": "choose-stronger-argument",
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge Support, Not Preference",
+      "topicLabel": "Extended Response"
+    }
+  },
+  {
+    "file": "generated/modules/rla-er-focus-full-extended-response.json",
+    "title": "Plan the Full Response",
+    "description": "Focused Extended Response component practice.",
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.12",
+      "secondarySkillIds": [],
+      "unitId": "full-extended-response",
+      "contentKind": "skill_drill",
+      "learningObjective": "Plan the Full Response",
+      "topicLabel": "Extended Response"
+    }
+  },
+  {
+    "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+    "title": "Organize, Develop and Revise",
+    "description": "Focused Extended Response component practice.",
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.8",
+      "secondarySkillIds": [
+        "W1.9",
+        "W1.10",
+        "W1.11"
+      ],
+      "unitId": "organize-develop-revise",
+      "contentKind": "skill_drill",
+      "learningObjective": "Organize, Develop and Revise",
+      "topicLabel": "Extended Response"
+    }
+  },
+  {
+    "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+    "title": "Build a Thesis and Choose Evidence",
+    "description": "Focused Extended Response component practice.",
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.4",
+      "secondarySkillIds": [
+        "W1.5"
+      ],
+      "unitId": "thesis-evidence",
+      "contentKind": "skill_drill",
+      "learningObjective": "Build a Thesis and Choose Evidence",
+      "topicLabel": "Extended Response"
+    }
+  },
+  {
+    "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+    "title": "Start by Mapping the Task",
+    "description": "Focused Extended Response component practice.",
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.1",
+      "secondarySkillIds": [
+        "W1.2"
+      ],
+      "unitId": "understand-map-sources",
+      "contentKind": "skill_drill",
+      "learningObjective": "Start by Mapping the Task",
+      "topicLabel": "Extended Response"
+    }
+  },
+  {
     "file": "generated/modules/set-rla-lang-agreement.json",
     "title": "Inventory Agreement & Pronouns",
     "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",

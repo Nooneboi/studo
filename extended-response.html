@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-HvSbCFFH+8P5KXfjzbmEfZAXyl/ZVmHjIHEO6wH+ILQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Studo — Extended Response</title>
+<meta name="description" content="Practice a full GED-style Extended Response with paired sources, a planner, and rubric-based self-review.">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="er-body">
+<header class="er-appbar">
+  <div class="wrap er-appbar-inner">
+    <a class="er-exit" id="er-exit" href="practice.html">&larr; Exit</a>
+    <div class="er-appbar-title">
+      <strong>Extended Response</strong>
+      <span id="er-mode-label">Practice</span>
+    </div>
+    <div class="er-timer" id="er-timer" aria-live="polite">Untimed</div>
+  </div>
+</header>
+<main class="er-shell" id="er-app">
+  <section class="er-loading" aria-live="polite">Loading writing practice...</section>
+</main>
+<script src="js/app.js"></script>
+<script src="js/extended-response.js"></script>
+</body>
+</html>

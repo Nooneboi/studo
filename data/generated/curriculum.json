@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-22T09:41:40.044Z",
+  "builtAt": "2026-08-22T11:04:16.858Z",
   "tracks": [
     {
       "id": "reading",
@@ -14512,6 +14512,3784 @@
       "resourceCount": 39,
       "studyFileCount": 39,
       "checkCount": 7
+    },
+    {
+      "id": "extended-response",
+      "label": "Extended Response",
+      "shortLabel": "Extended Response",
+      "summary": "Analyze two arguments, choose the better-supported position, and build a clear source-based response.",
+      "accent": "amber",
+      "publicationState": "published",
+      "domains": [
+        {
+          "id": "extended-response",
+          "label": "Extended Response",
+          "summary": "Move from argument analysis to evidence, organization, drafting, revision, and editing.",
+          "groups": [
+            {
+              "id": "analyze",
+              "label": "Analyze the sources",
+              "skills": [
+                "W1.1",
+                "W1.2",
+                "W1.3"
+              ]
+            },
+            {
+              "id": "build",
+              "label": "Build the response",
+              "skills": [
+                "W1.4",
+                "W1.5",
+                "W1.6",
+                "W1.7",
+                "W1.8",
+                "W1.9"
+              ]
+            },
+            {
+              "id": "revise",
+              "label": "Revise & finish",
+              "skills": [
+                "W1.10",
+                "W1.11",
+                "W1.12"
+              ]
+            }
+          ],
+          "units": [
+            {
+              "id": "understand-map-sources",
+              "label": "Understand & Map the Sources",
+              "summary": "Understand the ER task and map both arguments before judging them.",
+              "skillIds": [
+                "W1.1",
+                "W1.2"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-understand-map-sources",
+                  "title": "Start by Mapping the Task",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.1",
+                    "secondarySkillIds": [
+                      "W1.2"
+                    ],
+                    "unitId": "understand-map-sources",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Start by Mapping the Task",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-understand-map-sources",
+                    "title": "Should School Start Later?",
+                    "textType": "informational",
+                    "context": "education",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-understand-map-sources",
+                  "title": "Start by Mapping the Task",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.1",
+                    "secondarySkillIds": [
+                      "W1.2"
+                    ],
+                    "unitId": "understand-map-sources",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Start by Mapping the Task",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-understand-map-sources",
+                    "title": "Should School Start Later?",
+                    "textType": "informational",
+                    "context": "education",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-study-guide",
+                  "title": "Understand & Map the Sources - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+                  "title": "Understand & Map the Sources - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+                  "title": "Understand & Map the Sources - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-study-guide",
+                  "title": "Understand & Map the Sources - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+                  "title": "Understand & Map the Sources - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+                  "title": "Understand & Map the Sources - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "choose-stronger-argument",
+              "label": "Choose the Stronger Argument",
+              "summary": "Judge which source is better supported by evidence and reasoning.",
+              "skillIds": [
+                "W1.3"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-choose-stronger-argument",
+                  "title": "Judge Support, Not Preference",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-choose-stronger-argument.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.3",
+                    "secondarySkillIds": [],
+                    "unitId": "choose-stronger-argument",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge Support, Not Preference",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-choose-stronger-argument",
+                    "title": "Should the City Add Refill Stations?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.3"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-choose-stronger-argument",
+                  "title": "Judge Support, Not Preference",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-choose-stronger-argument.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.3",
+                    "secondarySkillIds": [],
+                    "unitId": "choose-stronger-argument",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge Support, Not Preference",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-choose-stronger-argument",
+                    "title": "Should the City Add Refill Stations?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.3"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-study-guide",
+                  "title": "Choose the Stronger Argument - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-1",
+                  "title": "Choose the Stronger Argument - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-2",
+                  "title": "Choose the Stronger Argument - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-study-guide",
+                  "title": "Choose the Stronger Argument - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-1",
+                  "title": "Choose the Stronger Argument - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-2",
+                  "title": "Choose the Stronger Argument - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "thesis-evidence",
+              "label": "Thesis & Evidence",
+              "summary": "Build an evaluative thesis and select precise source evidence.",
+              "skillIds": [
+                "W1.4",
+                "W1.5"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-thesis-evidence",
+                  "title": "Build a Thesis and Choose Evidence",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "unitId": "thesis-evidence",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build a Thesis and Choose Evidence",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-thesis-evidence",
+                    "title": "Should Remote Work Expand?",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-thesis-evidence",
+                  "title": "Build a Thesis and Choose Evidence",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "unitId": "thesis-evidence",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build a Thesis and Choose Evidence",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-thesis-evidence",
+                    "title": "Should Remote Work Expand?",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-study-guide",
+                  "title": "Thesis & Evidence - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+                  "title": "Thesis & Evidence - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+                  "title": "Thesis & Evidence - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-study-guide",
+                  "title": "Thesis & Evidence - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+                  "title": "Thesis & Evidence - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+                  "title": "Thesis & Evidence - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "analyze-not-summarize",
+              "label": "Analyze, Don't Just Summarize",
+              "summary": "Explain why evidence matters and compare the reasoning in both sources.",
+              "skillIds": [
+                "W1.6",
+                "W1.7"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-analyze-not-summarize",
+                  "title": "Analyze, Don't Just Summarize",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.6",
+                    "secondarySkillIds": [
+                      "W1.7"
+                    ],
+                    "unitId": "analyze-not-summarize",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze, Don't Just Summarize",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-analyze-not-summarize",
+                    "title": "Can Street Trees Cool a Commercial Block?",
+                    "textType": "informational",
+                    "context": "environment",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-analyze-not-summarize",
+                  "title": "Analyze, Don't Just Summarize",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.6",
+                    "secondarySkillIds": [
+                      "W1.7"
+                    ],
+                    "unitId": "analyze-not-summarize",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze, Don't Just Summarize",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-analyze-not-summarize",
+                    "title": "Can Street Trees Cool a Commercial Block?",
+                    "textType": "informational",
+                    "context": "environment",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+                  "title": "Analyze, Don't Just Summarize - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+                  "title": "Analyze, Don't Just Summarize - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+                  "title": "Analyze, Don't Just Summarize - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+                  "title": "Analyze, Don't Just Summarize - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+                  "title": "Analyze, Don't Just Summarize - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+                  "title": "Analyze, Don't Just Summarize - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "organize-develop-revise",
+              "label": "Organize, Develop & Revise",
+              "summary": "Build a logical response, develop ideas, revise for clarity, and edit conventions.",
+              "skillIds": [
+                "W1.8",
+                "W1.9",
+                "W1.10",
+                "W1.11"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "full-extended-response",
+              "label": "Full Extended Response",
+              "summary": "Plan, draft, revise, and self-review a complete paired-source response.",
+              "skillIds": [
+                "W1.12"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-full-extended-response",
+                  "title": "Plan the Full Response",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-full-extended-response.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.12",
+                    "secondarySkillIds": [],
+                    "unitId": "full-extended-response",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Plan the Full Response",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-full-extended-response",
+                    "title": "Should Apartments Join Food-Waste Collection?",
+                    "textType": "informational",
+                    "context": "public_policy",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.12"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-full-extended-response",
+                  "title": "Plan the Full Response",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-full-extended-response.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.12",
+                    "secondarySkillIds": [],
+                    "unitId": "full-extended-response",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Plan the Full Response",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-full-extended-response",
+                    "title": "Should Apartments Join Food-Waste Collection?",
+                    "textType": "informational",
+                    "context": "public_policy",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.12"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-full-extended-response-study-guide",
+                  "title": "Full Extended Response - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-1",
+                  "title": "Full Extended Response - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-2",
+                  "title": "Full Extended Response - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-full-extended-response-study-guide",
+                  "title": "Full Extended Response - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-1",
+                  "title": "Full Extended Response - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-2",
+                  "title": "Full Extended Response - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            }
+          ],
+          "availableSkillCount": 12,
+          "availableUnitCount": 6,
+          "availableSetCount": 6,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
+          "studyFileCount": 36,
+          "checkCount": 6,
+          "skills": [
+            {
+              "id": "W1.1",
+              "runtimeId": "W1.1",
+              "label": "Understand the task",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-understand-map-sources",
+                  "title": "Start by Mapping the Task",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.1",
+                    "secondarySkillIds": [
+                      "W1.2"
+                    ],
+                    "unitId": "understand-map-sources",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Start by Mapping the Task",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-understand-map-sources",
+                    "title": "Should School Start Later?",
+                    "textType": "informational",
+                    "context": "education",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-understand-map-sources",
+                  "title": "Start by Mapping the Task",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.1",
+                    "secondarySkillIds": [
+                      "W1.2"
+                    ],
+                    "unitId": "understand-map-sources",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Start by Mapping the Task",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-understand-map-sources",
+                    "title": "Should School Start Later?",
+                    "textType": "informational",
+                    "context": "education",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-study-guide",
+                  "title": "Understand & Map the Sources - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+                  "title": "Understand & Map the Sources - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+                  "title": "Understand & Map the Sources - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-study-guide",
+                  "title": "Understand & Map the Sources - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+                  "title": "Understand & Map the Sources - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+                  "title": "Understand & Map the Sources - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.2",
+              "runtimeId": "W1.2",
+              "label": "Map both arguments",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-understand-map-sources",
+                  "title": "Start by Mapping the Task",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.1",
+                    "secondarySkillIds": [
+                      "W1.2"
+                    ],
+                    "unitId": "understand-map-sources",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Start by Mapping the Task",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-understand-map-sources",
+                    "title": "Should School Start Later?",
+                    "textType": "informational",
+                    "context": "education",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-understand-map-sources",
+                  "title": "Start by Mapping the Task",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-understand-map-sources.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.1",
+                    "secondarySkillIds": [
+                      "W1.2"
+                    ],
+                    "unitId": "understand-map-sources",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Start by Mapping the Task",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-understand-map-sources",
+                    "title": "Should School Start Later?",
+                    "textType": "informational",
+                    "context": "education",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-study-guide",
+                  "title": "Understand & Map the Sources - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+                  "title": "Understand & Map the Sources - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+                  "title": "Understand & Map the Sources - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-study-guide",
+                  "title": "Understand & Map the Sources - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+                  "title": "Understand & Map the Sources - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+                  "title": "Understand & Map the Sources - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+                  "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "understand-map-sources",
+                  "skillIds": [
+                    "W1.1",
+                    "W1.2"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.3",
+              "runtimeId": "W1.3",
+              "label": "Select better-supported position",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-choose-stronger-argument",
+                  "title": "Judge Support, Not Preference",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-choose-stronger-argument.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.3",
+                    "secondarySkillIds": [],
+                    "unitId": "choose-stronger-argument",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge Support, Not Preference",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-choose-stronger-argument",
+                    "title": "Should the City Add Refill Stations?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.3"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-choose-stronger-argument",
+                  "title": "Judge Support, Not Preference",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-choose-stronger-argument.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.3",
+                    "secondarySkillIds": [],
+                    "unitId": "choose-stronger-argument",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge Support, Not Preference",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-choose-stronger-argument",
+                    "title": "Should the City Add Refill Stations?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.3"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-study-guide",
+                  "title": "Choose the Stronger Argument - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-1",
+                  "title": "Choose the Stronger Argument - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-2",
+                  "title": "Choose the Stronger Argument - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-study-guide",
+                  "title": "Choose the Stronger Argument - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-1",
+                  "title": "Choose the Stronger Argument - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-choose-stronger-argument-workbook-2",
+                  "title": "Choose the Stronger Argument - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Choose the Stronger Argument.",
+                  "href": "assets/resources/er-choose-stronger-argument-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "choose-stronger-argument",
+                  "skillIds": [
+                    "W1.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.4",
+              "runtimeId": "W1.4",
+              "label": "Build evaluative thesis",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-thesis-evidence",
+                  "title": "Build a Thesis and Choose Evidence",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "unitId": "thesis-evidence",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build a Thesis and Choose Evidence",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-thesis-evidence",
+                    "title": "Should Remote Work Expand?",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-thesis-evidence",
+                  "title": "Build a Thesis and Choose Evidence",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "unitId": "thesis-evidence",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build a Thesis and Choose Evidence",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-thesis-evidence",
+                    "title": "Should Remote Work Expand?",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-study-guide",
+                  "title": "Thesis & Evidence - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+                  "title": "Thesis & Evidence - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+                  "title": "Thesis & Evidence - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-study-guide",
+                  "title": "Thesis & Evidence - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+                  "title": "Thesis & Evidence - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+                  "title": "Thesis & Evidence - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.5",
+              "runtimeId": "writing.argument.short_response",
+              "label": "Select specific source evidence",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-thesis-evidence",
+                  "title": "Build a Thesis and Choose Evidence",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "unitId": "thesis-evidence",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build a Thesis and Choose Evidence",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-thesis-evidence",
+                    "title": "Should Remote Work Expand?",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-thesis-evidence",
+                  "title": "Build a Thesis and Choose Evidence",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-thesis-evidence.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.4",
+                    "secondarySkillIds": [
+                      "W1.5"
+                    ],
+                    "unitId": "thesis-evidence",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build a Thesis and Choose Evidence",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-thesis-evidence",
+                    "title": "Should Remote Work Expand?",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-study-guide",
+                  "title": "Thesis & Evidence - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+                  "title": "Thesis & Evidence - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+                  "title": "Thesis & Evidence - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-study-guide",
+                  "title": "Thesis & Evidence - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+                  "title": "Thesis & Evidence - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+                  "title": "Thesis & Evidence - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Thesis & Evidence.",
+                  "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "thesis-evidence",
+                  "skillIds": [
+                    "W1.4",
+                    "W1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.6",
+              "runtimeId": "W1.6",
+              "label": "Analyze evidence",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-analyze-not-summarize",
+                  "title": "Analyze, Don't Just Summarize",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.6",
+                    "secondarySkillIds": [
+                      "W1.7"
+                    ],
+                    "unitId": "analyze-not-summarize",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze, Don't Just Summarize",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-analyze-not-summarize",
+                    "title": "Can Street Trees Cool a Commercial Block?",
+                    "textType": "informational",
+                    "context": "environment",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-analyze-not-summarize",
+                  "title": "Analyze, Don't Just Summarize",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.6",
+                    "secondarySkillIds": [
+                      "W1.7"
+                    ],
+                    "unitId": "analyze-not-summarize",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze, Don't Just Summarize",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-analyze-not-summarize",
+                    "title": "Can Street Trees Cool a Commercial Block?",
+                    "textType": "informational",
+                    "context": "environment",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+                  "title": "Analyze, Don't Just Summarize - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+                  "title": "Analyze, Don't Just Summarize - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+                  "title": "Analyze, Don't Just Summarize - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+                  "title": "Analyze, Don't Just Summarize - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+                  "title": "Analyze, Don't Just Summarize - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+                  "title": "Analyze, Don't Just Summarize - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.7",
+              "runtimeId": "W1.7",
+              "label": "Analyze reasoning",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-analyze-not-summarize",
+                  "title": "Analyze, Don't Just Summarize",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.6",
+                    "secondarySkillIds": [
+                      "W1.7"
+                    ],
+                    "unitId": "analyze-not-summarize",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze, Don't Just Summarize",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-analyze-not-summarize",
+                    "title": "Can Street Trees Cool a Commercial Block?",
+                    "textType": "informational",
+                    "context": "environment",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-analyze-not-summarize",
+                  "title": "Analyze, Don't Just Summarize",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-analyze-not-summarize.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.6",
+                    "secondarySkillIds": [
+                      "W1.7"
+                    ],
+                    "unitId": "analyze-not-summarize",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Analyze, Don't Just Summarize",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-analyze-not-summarize",
+                    "title": "Can Street Trees Cool a Commercial Block?",
+                    "textType": "informational",
+                    "context": "environment",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+                  "title": "Analyze, Don't Just Summarize - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+                  "title": "Analyze, Don't Just Summarize - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+                  "title": "Analyze, Don't Just Summarize - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+                  "title": "Analyze, Don't Just Summarize - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+                  "title": "Analyze, Don't Just Summarize - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+                  "title": "Analyze, Don't Just Summarize - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+                  "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "analyze-not-summarize",
+                  "skillIds": [
+                    "W1.6",
+                    "W1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.8",
+              "runtimeId": "W1.8",
+              "label": "Organize the response",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 2,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.9",
+              "runtimeId": "W1.9",
+              "label": "Develop ideas",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 2,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.10",
+              "runtimeId": "W1.10",
+              "label": "Revise for focus & clarity",
+              "priority": "P1",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 2,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.11",
+              "runtimeId": "W1.11",
+              "label": "Edit conventions",
+              "priority": "P1",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 2,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-organize-develop-revise",
+                  "title": "Organize, Develop and Revise",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-organize-develop-revise.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.8",
+                    "secondarySkillIds": [
+                      "W1.9",
+                      "W1.10",
+                      "W1.11"
+                    ],
+                    "unitId": "organize-develop-revise",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Organize, Develop and Revise",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-organize-develop-revise",
+                    "title": "Should the Library Keep Sunday Hours?",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+                  "title": "Organize, Develop & Revise - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+                  "title": "Organize, Develop & Revise - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+                  "title": "Organize, Develop & Revise - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+                  "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "organize-develop-revise",
+                  "skillIds": [
+                    "W1.8",
+                    "W1.9",
+                    "W1.10",
+                    "W1.11"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "W1.12",
+              "runtimeId": "W1.12",
+              "label": "Full paired-source ER",
+              "priority": "P0",
+              "practiceMode": "Writing",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-er-focus-full-extended-response",
+                  "title": "Plan the Full Response",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-full-extended-response.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.12",
+                    "secondarySkillIds": [],
+                    "unitId": "full-extended-response",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Plan the Full Response",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-full-extended-response",
+                    "title": "Should Apartments Join Food-Waste Collection?",
+                    "textType": "informational",
+                    "context": "public_policy",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.12"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-er-focus-full-extended-response",
+                  "title": "Plan the Full Response",
+                  "description": "Focused Extended Response component practice.",
+                  "file": "generated/modules/rla-er-focus-full-extended-response.json",
+                  "difficulty": "medium",
+                  "category": "writing",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Extended Response",
+                    "primarySkillId": "W1.12",
+                    "secondarySkillIds": [],
+                    "unitId": "full-extended-response",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Plan the Full Response",
+                    "topicLabel": "Extended Response"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-er-focus-full-extended-response",
+                    "title": "Should Apartments Join Food-Waste Collection?",
+                    "textType": "informational",
+                    "context": "public_policy",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "W1.12"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-er-v1-full-extended-response-study-guide",
+                  "title": "Full Extended Response - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-1",
+                  "title": "Full Extended Response - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-2",
+                  "title": "Full Extended Response - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-er-v1-full-extended-response-study-guide",
+                  "title": "Full Extended Response - Study Guide",
+                  "type": "study_guide",
+                  "description": "Extended Response study guide for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-1",
+                  "title": "Full Extended Response - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 1 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                },
+                {
+                  "id": "res-rla-er-v1-full-extended-response-workbook-2",
+                  "title": "Full Extended Response - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Extended Response workbook 2 for Full Extended Response.",
+                  "href": "assets/resources/er-full-extended-response-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "extended-response",
+                  "unitId": "full-extended-response",
+                  "skillIds": [
+                    "W1.12"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Extended Response V1 editorial review"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "availableSkillCount": 12,
+      "totalSkillCount": 12,
+      "availableSetCount": 6,
+      "questionCount": 48,
+      "resourceCount": 36,
+      "studyFileCount": 36,
+      "checkCount": 6
     }
   ],
   "passagePractice": [
@@ -16157,6 +19935,112 @@
         "year": null,
         "url": null
       }
+    }
+  ],
+  "extendedResponsePractice": [
+    {
+      "id": "er-bridge-plan",
+      "title": "Should the County Replace the Harbor Bridge Now?",
+      "topic": "infrastructure spending",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Replace the Bridge Immediately",
+      "sourceBTitle": "Rehabilitate Critical Components and Reassess",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-clinic-reminders",
+      "title": "Should the Clinic Expand Text Reminders?",
+      "topic": "public health policy",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Expand with Opt-Out and Language Choice",
+      "sourceBTitle": "Use Phone Calls Instead",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-inspection-automation",
+      "title": "Should the Factory Expand Automated Visual Inspection?",
+      "topic": "workplace automation",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Expand with Human Review",
+      "sourceBTitle": "Keep Inspection Fully Manual",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-market-redevelopment",
+      "title": "How Should the Old Market Block Be Redeveloped?",
+      "topic": "community development",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Build a Large Mixed-Use Complex",
+      "sourceBTitle": "Renovate in Phases and Add Housing Above Existing Shops",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-phone-policy",
+      "title": "Should the High School Adopt a Full-Day Phone Ban?",
+      "topic": "school policy",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Adopt a Full-Day Ban",
+      "sourceBTitle": "Use a Class-Time Restriction with Measured Exceptions",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-solar-roofs",
+      "title": "Should the City Fund Solar Panels on Public Buildings?",
+      "topic": "renewable energy",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Install Solar on All Major Buildings Now",
+      "sourceBTitle": "Start with Audited Buildings and Publish Results",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-stormwater-fee",
+      "title": "Should the City Charge a Stormwater Fee?",
+      "topic": "environmental regulation",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Create a Fee Based on Impervious Surface",
+      "sourceBTitle": "Pay for Drainage from Existing Taxes",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-weekend-bus",
+      "title": "Should the Weekend Bus Pilot Expand?",
+      "topic": "transportation",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Expand the Pilot Carefully",
+      "sourceBTitle": "Improve Reliability Before Adding Trips",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
     }
   ],
   "mixedPractice": [

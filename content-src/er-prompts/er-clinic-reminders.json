@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-clinic-reminders",
+  "title": "Should the Clinic Expand Text Reminders?",
+  "topic": "public health policy",
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Expand with Opt-Out and Language Choice",
+    "text": "A community clinic tested appointment text reminders with 2,400 adult patients for six months. Missed appointments fell from 18 percent in the previous six-month period to 12 percent during the pilot. The clinic also recorded 96 patients who asked not to receive texts and 143 who requested reminders in a language other than English. Staff estimate the messaging service would cost about $14,000 per year if expanded to all adult appointments.\n\nThe clinic recommends expansion with an easy opt-out, language preference settings, and a process for patients who share phones. It notes that the before-and-after comparison does not prove texts caused the entire decline because staffing and scheduling also changed slightly. For that reason, the clinic plans to compare missed-appointment rates by reminder preference during the next year and to keep phone calls available for patients who request them.\n\nThe clinic compared outcomes by age group and found declines in missed appointments among both younger and older adults, although the reduction was smaller for patients over 70. Delivery logs show that about 91 percent of messages were successfully sent to the number on file. Staff discovered that outdated phone numbers explained many failed messages, which is why the expansion plan includes contact verification at each visit. The clinic also proposes avoiding detailed medical information in reminder texts so a shared-phone message reveals only the appointment time and clinic contact number.",
+    "attribution": "Original content by Studo"
+  },
+  "sourceB": {
+    "title": "Use Phone Calls Instead",
+    "text": "A patient advisory group argues that phone calls should remain the main reminder method. Members say some older patients are uncomfortable with text messages and that shared phones may create privacy concerns. The group reports hearing from nine patients who missed or misunderstood automated messages during the pilot. It recommends hiring part-time staff to make reminder calls and says a person can answer questions that a text cannot.\n\nThe group does not estimate the staffing cost or report how many patients successfully received texts. It agrees that patients who prefer texts should be allowed to choose them but argues that expansion should wait until the clinic studies privacy and language access more carefully. The group also suggests that any reminder system should verify contact information at each visit.\n\nThe advisory group surveyed 84 patients at two community meetings. Twenty-nine said they preferred a phone call, 41 preferred text, and the rest wanted email or no reminder. The group says the mixed preferences show that one method should not replace all others. It also points out that people with limited literacy may need a spoken explanation. The survey was voluntary and small compared with the pilot population, but it supports the request for multiple reminder choices. The group recommends measuring satisfaction and privacy complaints if texts expand.\n\nThe group also asks the clinic to report how often patients change their preferred reminder method over time.",
+    "attribution": "Original content by Studo"
+  },
+  "strongerSource": "A",
+  "authoringKey": {
+    "reasons": [
+      "it reports a measurable decline in missed appointments across a large pilot while openly acknowledging other possible causes",
+      "it directly addresses opt-out, language, shared-phone, and follow-up measurement concerns"
+    ],
+    "evidence": [
+      "missed appointments fell from 18 percent to 12 percent among a 2,400-patient pilot period",
+      "the expansion plan includes opt-out and language settings while keeping alternative phone calls available"
+    ],
+    "weakerSourceLimitation": "Source B raises important accessibility and privacy concerns, but it relies on a small set of reported problems and gives no cost or overall delivery-rate comparison."
+  },
+  "modelResponse": "Both sources address the same policy question, but Source A presents the better-supported argument. Its position is stronger for two main reasons: it reports a measurable decline in missed appointments across a large pilot while openly acknowledging other possible causes; and it directly addresses opt-out, language, shared-phone, and follow-up measurement concerns. Source B raises a relevant concern, but the support behind that concern is less complete.\n\nFirst, Source A is stronger because it reports a measurable decline in missed appointments across a large pilot while openly acknowledging other possible causes. It reports that missed appointments fell from 18 percent to 12 percent among a 2,400-patient pilot period. This evidence matters because it directly addresses a central factual question behind the recommendation rather than asking the reader to accept a prediction. The evidence also fits the scope of the claim, which makes the reasoning easier to evaluate. Source B does not provide equally specific support on this point.\n\nSource A is also stronger because it directly addresses opt-out, language, shared-phone, and follow-up measurement concerns. It explains that the expansion plan includes opt-out and language settings while keeping alternative phone calls available. This matters because the source considers another important part of the decision instead of relying on a single favorable fact. Source B raises important accessibility and privacy concerns, but it relies on a small set of reported problems and gives no cost or overall delivery-rate comparison. That concern is relevant, but the weaker source does not show that it outweighs Source A's more direct evidence or that the proposed response would fail.\n\nOverall, Source A is better supported because its recommendation is tied to specific evidence and its reasoning stays within the limits of that evidence. Source B contributes a useful caution, but Source A gives the reader clearer grounds for judging likely results.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response clearly identifies Source A as better supported and previews two reasons."
+    },
+    {
+      "label": "Evidence",
+      "note": "Specific source evidence is used rather than personal experience or outside facts."
+    },
+    {
+      "label": "Analysis",
+      "note": "The response explains why the evidence matters instead of only repeating it."
+    },
+    {
+      "label": "Comparison",
+      "note": "The weaker source is treated fairly, but its evidentiary or reasoning limitation is identified."
+    },
+    {
+      "label": "Organization",
+      "note": "Each body paragraph develops one reason before the conclusion restates the judgment."
+    }
+  ],
+  "revisionPrompts": [
+    "Where did I clearly state which source is better supported?",
+    "Where did I explain why a piece of evidence matters instead of only summarizing it?",
+    "Did I evaluate both sources fairly and identify a specific weakness in the weaker argument?",
+    "Did I preserve qualifiers such as may, could, some, or limited when the source used them?"
+  ]
+}

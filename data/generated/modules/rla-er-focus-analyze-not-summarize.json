@@ -1,0 +1,474 @@
+{
+  "id": "rla-er-focus-analyze-not-summarize",
+  "title": "Analyze, Don't Just Summarize",
+  "description": "Focused Extended Response component practice.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Source A - Plant a Test Corridor\nA university team measured afternoon surface temperatures on eight commercial blocks. Blocks with mature tree cover averaged 5 degrees Celsius cooler on sunny days than blocks with little shade. The researchers caution that building height and pavement type also affect temperature. They recommend a one-block tree-planting pilot with temperature monitoring before a larger investment.\n\nSource B - Use Shade Sails Instead\nA business owner argues that trees grow too slowly and says shade sails would provide immediate cover. She points to one cafe patio where a sail lowered the temperature beneath the fabric. She does not report measurements from the rest of the block or compare installation and maintenance costs. She says the city should therefore choose sails for the entire commercial district.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which sentence is analysis rather than summary?",
+      "points": 1,
+      "explanation": "Analysis explains the connection between evidence and the argument being evaluated.",
+      "skill": {
+        "id": "W1.6",
+        "label": "Analyze evidence"
+      },
+      "rule": "After evidence, answer: Why does this make the argument stronger or weaker?",
+      "familyId": "writing.er.analysis",
+      "metadata": {
+        "skillId": "W1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the temperature comparison measures the exact outcome Source A discusses, it gives direct support for testing tree shade on another block."
+        },
+        {
+          "id": "b",
+          "text": "Source A says tree-covered blocks were cooler.",
+          "distractorType": "summary",
+          "whyWrong": "This restates the source without explaining why the evidence matters."
+        },
+        {
+          "id": "c",
+          "text": "The researchers studied eight commercial blocks.",
+          "distractorType": "detail_only",
+          "whyWrong": "This reports a detail but does not analyze its value."
+        },
+        {
+          "id": "d",
+          "text": "Source B says shade sails provide immediate cover.",
+          "distractorType": "summary",
+          "whyWrong": "This repeats Source B's claim without evaluating it."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What reasoning weakness is most important in Source B?",
+      "points": 1,
+      "explanation": "The conclusion covers a whole district, but the evidence comes from one patio and lacks cost comparison.",
+      "skill": {
+        "id": "W1.7",
+        "label": "Analyze reasoning"
+      },
+      "rule": "Check whether the conclusion is broader than the evidence.",
+      "familyId": "writing.er.reasoning",
+      "metadata": {
+        "skillId": "W1.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It mentions that trees grow slowly.",
+          "distractorType": "relevant_point",
+          "whyWrong": "That is a relevant consideration, not automatically a flaw."
+        },
+        {
+          "id": "b",
+          "text": "It prefers shade sails.",
+          "distractorType": "position_not_flaw",
+          "whyWrong": "Having a position is not a reasoning error."
+        },
+        {
+          "id": "c",
+          "text": "It generalizes from one cafe patio to the entire commercial district without broader comparison data."
+        },
+        {
+          "id": "d",
+          "text": "It uses the word immediate.",
+          "distractorType": "word_choice",
+          "whyWrong": "The central issue is the scope of its evidence, not that word."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best analyzes Source A's limitation?",
+      "points": 1,
+      "explanation": "The analysis explains how the limitation makes the reasoning more careful.",
+      "skill": {
+        "id": "W1.6",
+        "label": "Analyze evidence"
+      },
+      "rule": "A limitation can strengthen credibility when it matches the evidence.",
+      "familyId": "writing.er.analysis",
+      "metadata": {
+        "skillId": "W1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A mentions buildings and pavement.",
+          "distractorType": "summary",
+          "whyWrong": "This identifies the limitation but does not explain its reasoning value."
+        },
+        {
+          "id": "b",
+          "text": "By noting that pavement and building height also affect temperature, Source A avoids treating tree cover as the only possible cause."
+        },
+        {
+          "id": "c",
+          "text": "Trees are always the best way to cool streets.",
+          "distractorType": "overstatement",
+          "whyWrong": "The source does not establish that universal claim."
+        },
+        {
+          "id": "d",
+          "text": "The limitation proves tree planting will fail.",
+          "distractorType": "reversal",
+          "whyWrong": "Acknowledging other factors does not erase the observed temperature pattern."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which comparison sentence is strongest?",
+      "points": 1,
+      "explanation": "The sentence directly compares the scale of evidence with the scale of each recommendation.",
+      "skill": {
+        "id": "W1.7",
+        "label": "Analyze reasoning"
+      },
+      "rule": "Compare how the reasoning works, not just what each source prefers.",
+      "familyId": "writing.er.reasoning",
+      "metadata": {
+        "skillId": "W1.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A talks about trees, but Source B talks about sails.",
+          "distractorType": "topic_only",
+          "whyWrong": "This compares topics rather than reasoning quality."
+        },
+        {
+          "id": "b",
+          "text": "Source B is shorter and therefore less reliable.",
+          "distractorType": "irrelevant_measure",
+          "whyWrong": "Length is not evidence quality."
+        },
+        {
+          "id": "c",
+          "text": "Both sources want shade, so they are equally strong.",
+          "distractorType": "false_equivalence",
+          "whyWrong": "Agreement on a goal does not make their support equally strong."
+        },
+        {
+          "id": "d",
+          "text": "Source A recommends a monitored pilot after multi-block measurements, while Source B recommends district-wide adoption from one patio example."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which follow-up best develops the evidence \"tree-covered blocks averaged 5 degrees cooler\"?",
+      "points": 1,
+      "explanation": "The explanation identifies why the evidence is relevant and comparatively stronger.",
+      "skill": {
+        "id": "W1.6",
+        "label": "Analyze evidence"
+      },
+      "rule": "Explain the evidentiary value, not merely the content.",
+      "familyId": "writing.er.analysis",
+      "metadata": {
+        "skillId": "W1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Five degrees is a number from Source A.",
+          "distractorType": "empty_comment",
+          "whyWrong": "Naming that it is a number does not analyze its value."
+        },
+        {
+          "id": "b",
+          "text": "Trees have leaves that create shade.",
+          "distractorType": "outside_generalization",
+          "whyWrong": "That may be true, but it does not evaluate the source evidence."
+        },
+        {
+          "id": "c",
+          "text": "This matters because it provides a measured comparison across several blocks rather than relying on a single impression of comfort."
+        },
+        {
+          "id": "d",
+          "text": "Source B prefers sails instead.",
+          "distractorType": "topic_shift",
+          "whyWrong": "This does not explain why the temperature evidence matters."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which assumption does Source B make?",
+      "points": 1,
+      "explanation": "Source B moves from one location to a district-wide recommendation without showing the example is representative.",
+      "skill": {
+        "id": "W1.7",
+        "label": "Analyze reasoning"
+      },
+      "rule": "Ask what must be true for the conclusion to follow.",
+      "familyId": "writing.er.reasoning",
+      "metadata": {
+        "skillId": "W1.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Trees take time to mature.",
+          "distractorType": "stated_reason",
+          "whyWrong": "That is stated, not hidden."
+        },
+        {
+          "id": "b",
+          "text": "A result from one cafe patio is representative enough to justify sails across the district."
+        },
+        {
+          "id": "c",
+          "text": "The city wants cooler commercial areas.",
+          "distractorType": "shared_goal",
+          "whyWrong": "Both sources address that goal."
+        },
+        {
+          "id": "d",
+          "text": "Researchers measured eight blocks.",
+          "distractorType": "source_a_fact",
+          "whyWrong": "That is a Source A detail, not Source B's assumption."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which sentence would be too summary-heavy for a body paragraph?",
+      "points": 1,
+      "explanation": "The sentence reports facts but does not explain their significance.",
+      "skill": {
+        "id": "W1.6",
+        "label": "Analyze evidence"
+      },
+      "rule": "Summary tells what; analysis explains why it matters.",
+      "familyId": "writing.er.analysis",
+      "metadata": {
+        "skillId": "W1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A measured eight blocks and Source B discussed one cafe patio."
+        },
+        {
+          "id": "b",
+          "text": "The broader measurements make Source A more persuasive because they reduce reliance on a single location.",
+          "distractorType": "analysis",
+          "whyWrong": "This explains why the evidence scope matters."
+        },
+        {
+          "id": "c",
+          "text": "Source B's one-patio example is relevant but insufficient for its district-wide conclusion.",
+          "distractorType": "analysis",
+          "whyWrong": "This evaluates sufficiency."
+        },
+        {
+          "id": "d",
+          "text": "Source A's cautious pilot recommendation better matches the limits of its evidence.",
+          "distractorType": "analysis",
+          "whyWrong": "This evaluates the relationship between evidence and recommendation."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which evaluation is most balanced?",
+      "points": 1,
+      "explanation": "A strong evaluation can recognize a valid point while still explaining why the support is insufficient.",
+      "skill": {
+        "id": "W1.7",
+        "label": "Analyze reasoning"
+      },
+      "rule": "Fair evaluation is stronger than dismissal.",
+      "familyId": "writing.er.reasoning",
+      "metadata": {
+        "skillId": "W1.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source B has no useful point at all.",
+          "distractorType": "too_absolute",
+          "whyWrong": "Immediate shade is a relevant advantage even if support is incomplete."
+        },
+        {
+          "id": "b",
+          "text": "Source B is automatically stronger because its solution works faster.",
+          "distractorType": "single_factor",
+          "whyWrong": "Speed alone does not establish overall argument strength."
+        },
+        {
+          "id": "c",
+          "text": "Source A proves trees are always cheaper.",
+          "distractorType": "unsupported",
+          "whyWrong": "Source A does not provide a cost comparison."
+        },
+        {
+          "id": "d",
+          "text": "Source B identifies a real speed advantage, but its evidence is too narrow to support choosing sails for the entire district."
+        }
+      ],
+      "correct": "d"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-er-focus-analyze-not-summarize",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.6",
+      "secondarySkillIds": [
+        "W1.7"
+      ],
+      "unitId": "analyze-not-summarize",
+      "contentKind": "skill_drill",
+      "learningObjective": "Analyze, Don't Just Summarize",
+      "topicLabel": "Extended Response"
+    },
+    "passage": {
+      "id": "p-rla-er-focus-analyze-not-summarize",
+      "title": "Can Street Trees Cool a Commercial Block?",
+      "textType": "informational",
+      "context": "environment",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T11:04:16.842Z"
+  }
+}

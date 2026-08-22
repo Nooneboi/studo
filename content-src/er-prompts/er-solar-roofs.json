@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-solar-roofs",
+  "title": "Should the City Fund Solar Panels on Public Buildings?",
+  "topic": "renewable energy",
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Install Solar on All Major Buildings Now",
+    "text": "A city council member proposes installing solar panels on every major municipal building within two years. She argues that the city spends too much on electricity and that solar power would demonstrate environmental leadership. Her office cites one recreation center where a small rooftop array produced about 22 percent of the building's annual electricity use. She also notes that panel prices have fallen over the past decade and that state incentives may reduce installation costs.\n\nThe proposal estimates that a citywide program could save money over time, but it does not include roof-by-roof engineering assessments or a full financing plan. Several buildings are more than forty years old, and the proposal assumes that most roofs can support panels without major structural work. The council member says delaying action would miss available incentives and argues that the city should approve the full program while engineers complete detailed designs.\n\nThe council member also cites the city's climate plan, which calls for reducing municipal electricity purchases by 25 percent within ten years. Her office estimates that using every available roof could move the city toward that target faster than a small pilot. The estimate assumes average sunlight conditions and does not subtract periods when roofs may be unavailable for repair. She proposes one large procurement contract because bulk purchasing may lower equipment prices, although no vendor bids have yet been collected. The proposal would allow later design changes if engineers find unsuitable roofs.",
+    "attribution": "Original content by Studo"
+  },
+  "sourceB": {
+    "title": "Start with Audited Buildings and Publish Results",
+    "text": "The city facilities director supports solar power but recommends a staged program. Her department inspected twelve large public buildings and found that five have roofs expected to need replacement within six years. Installing panels on those roofs now could require removing and reinstalling the equipment during roof work. For the remaining seven buildings, engineers estimated annual solar output using roof area, shade, and electricity records. Three sites could offset more than 30 percent of current use, while two heavily shaded sites would offset less than 10 percent.\n\nThe director proposes beginning with the three strongest sites. A financing analysis estimates a combined installation cost of $1.8 million after incentives and an expected simple payback of about eleven years under current electricity prices. She cautions that future prices and maintenance costs could change that estimate. The plan would publish actual energy production and maintenance data for two years before the city decides whether to expand to the remaining buildings.\n\nThe facilities department compared electricity demand at the seven usable buildings with estimated midday solar production. At the three strongest sites, most projected production would be consumed on site rather than exported to the grid. Engineers also inspected electrical rooms and identified one building that would need a transformer upgrade before installation. Those costs are included in the $1.8 million estimate. The director says a staged contract may give up some bulk discount but reduces the risk of installing panels where roof or electrical work will soon be needed.",
+    "attribution": "Original content by Studo"
+  },
+  "strongerSource": "B",
+  "authoringKey": {
+    "reasons": [
+      "it uses building-specific engineering and energy estimates rather than assuming all roofs are equally suitable",
+      "it matches the scale of its recommendation to uncertainty by starting with the strongest sites and measuring results"
+    ],
+    "evidence": [
+      "five of twelve roofs are expected to need replacement soon, while projected solar offsets vary widely by site",
+      "the plan includes a cost estimate, an eleven-year payback estimate, and a two-year measurement period before expansion"
+    ],
+    "weakerSourceLimitation": "Source A provides a useful example and notes incentives, but it generalizes from one building and lacks roof-specific feasibility and financing evidence."
+  },
+  "modelResponse": "Both sources address the same policy question, but Source B presents the better-supported argument. Its position is stronger for two main reasons: it uses building-specific engineering and energy estimates rather than assuming all roofs are equally suitable; and it matches the scale of its recommendation to uncertainty by starting with the strongest sites and measuring results. Source A raises a relevant concern, but the support behind that concern is less complete.\n\nFirst, Source B is stronger because it uses building-specific engineering and energy estimates rather than assuming all roofs are equally suitable. It reports that five of twelve roofs are expected to need replacement soon, while projected solar offsets vary widely by site. This evidence matters because it directly addresses a central factual question behind the recommendation rather than asking the reader to accept a prediction. The evidence also fits the scope of the claim, which makes the reasoning easier to evaluate. Source A does not provide equally specific support on this point.\n\nSource B is also stronger because it matches the scale of its recommendation to uncertainty by starting with the strongest sites and measuring results. It explains that the plan includes a cost estimate, an eleven-year payback estimate, and a two-year measurement period before expansion. This matters because the source considers another important part of the decision instead of relying on a single favorable fact. Source A provides a useful example and notes incentives, but it generalizes from one building and lacks roof-specific feasibility and financing evidence. That concern is relevant, but the weaker source does not show that it outweighs Source B's more direct evidence or that the proposed response would fail.\n\nOverall, Source B is better supported because its recommendation is tied to specific evidence and its reasoning stays within the limits of that evidence. Source A contributes a useful caution, but Source B gives the reader clearer grounds for judging likely results.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response clearly identifies Source B as better supported and previews two reasons."
+    },
+    {
+      "label": "Evidence",
+      "note": "Specific source evidence is used rather than personal experience or outside facts."
+    },
+    {
+      "label": "Analysis",
+      "note": "The response explains why the evidence matters instead of only repeating it."
+    },
+    {
+      "label": "Comparison",
+      "note": "The weaker source is treated fairly, but its evidentiary or reasoning limitation is identified."
+    },
+    {
+      "label": "Organization",
+      "note": "Each body paragraph develops one reason before the conclusion restates the judgment."
+    }
+  ],
+  "revisionPrompts": [
+    "Where did I clearly state which source is better supported?",
+    "Where did I explain why a piece of evidence matters instead of only summarizing it?",
+    "Did I evaluate both sources fairly and identify a specific weakness in the weaker argument?",
+    "Did I preserve qualifiers such as may, could, some, or limited when the source used them?"
+  ]
+}

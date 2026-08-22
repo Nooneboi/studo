@@ -1,0 +1,472 @@
+{
+  "id": "rla-er-focus-choose-stronger-argument",
+  "title": "Judge Support, Not Preference",
+  "description": "Focused Extended Response component practice.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Source A - Expand the Refill Program\nThe city installed six public water-refill stations in parks for a twelve-week pilot. Maintenance records show that the stations were used about 18,000 times, and trash audits found 11 percent fewer single-use bottles in the same parks than during the previous summer. The parks department estimates annual maintenance at $9,600 and recommends adding four stations near transit hubs while tracking winter use.\n\nSource B - Spend the Money Elsewhere\nA neighborhood association opposes expansion. Its letter says some residents still buy bottled water and argues that refill stations will not eliminate plastic waste. The letter also states that vandals could damage the machines and that the city has many other needs. It gives no repair records, budget comparison, or evidence about whether the pilot reduced litter.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which source is better supported overall?",
+      "points": 1,
+      "explanation": "Source A combines measured pilot outcomes, a cost estimate, and a limited expansion recommendation.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Compare support, not confidence of tone.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source B, because it says the city has other needs.",
+          "distractorType": "unsupported_reason",
+          "whyWrong": "A general statement about other needs is not comparative evidence about the refill program."
+        },
+        {
+          "id": "b",
+          "text": "Source B, because it predicts vandalism.",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "The possibility is not supported with repair records or pilot incidents."
+        },
+        {
+          "id": "c",
+          "text": "Source A, because it provides pilot use, waste-reduction, and cost data while acknowledging the need to track winter use."
+        },
+        {
+          "id": "d",
+          "text": "Both are equally supported because both express a position.",
+          "distractorType": "false_equivalence",
+          "whyWrong": "Having a position is not the same as supporting it with relevant evidence."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What gives Source A its strongest advantage?",
+      "points": 1,
+      "explanation": "Evidence from the program being evaluated is directly relevant to whether expansion is reasonable.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Ask whether the evidence measures the outcome being claimed.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It connects its recommendation to measured results from the actual pilot."
+        },
+        {
+          "id": "b",
+          "text": "It uses more forceful language.",
+          "distractorType": "tone_not_evidence",
+          "whyWrong": "Forceful wording does not strengthen evidence."
+        },
+        {
+          "id": "c",
+          "text": "It promises that plastic waste will disappear.",
+          "distractorType": "overstatement",
+          "whyWrong": "Source A does not make that promise."
+        },
+        {
+          "id": "d",
+          "text": "It ignores maintenance costs.",
+          "distractorType": "reversal",
+          "whyWrong": "Source A provides an annual maintenance estimate."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which weakness most reduces Source B's support?",
+      "points": 1,
+      "explanation": "Source B raises possible concerns but does not show that those concerns occurred or outweigh measured benefits.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Name the missing support, not merely that you disagree.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It mentions that bottled water still exists.",
+          "distractorType": "true_but_weak",
+          "whyWrong": "That fact does not by itself show the program failed or should not expand."
+        },
+        {
+          "id": "b",
+          "text": "It is written by a neighborhood association.",
+          "distractorType": "source_label_only",
+          "whyWrong": "The author's identity alone does not make the argument weak."
+        },
+        {
+          "id": "c",
+          "text": "It disagrees with Source A.",
+          "distractorType": "disagreement_not_flaw",
+          "whyWrong": "Disagreement is not a reasoning flaw by itself."
+        },
+        {
+          "id": "d",
+          "text": "It predicts damage and poor value without pilot repair data or a budget comparison."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which comparison is most accurate?",
+      "points": 1,
+      "explanation": "The best comparison identifies the type and quality of support in each source.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Compare evidence quality directly.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A is factual while Source B contains no facts at all.",
+          "distractorType": "overstatement",
+          "whyWrong": "Source B contains some factual statements, but they are less useful to its recommendation."
+        },
+        {
+          "id": "b",
+          "text": "Source A uses observed outcomes and cost information; Source B relies more on possibilities and general concerns."
+        },
+        {
+          "id": "c",
+          "text": "Source B uses the stronger experiment because it discusses vandalism.",
+          "distractorType": "unsupported",
+          "whyWrong": "No vandalism experiment is described."
+        },
+        {
+          "id": "d",
+          "text": "Both sources use identical evidence but interpret it differently.",
+          "distractorType": "false_equivalence",
+          "whyWrong": "The sources rely on different kinds of support."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which new evidence would most strengthen Source B?",
+      "points": 1,
+      "explanation": "Repair records would directly test one of Source B's central concerns.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "The strongest added evidence targets the argument's actual claim.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Repair records showing frequent costly damage to the pilot stations."
+        },
+        {
+          "id": "b",
+          "text": "A resident saying bottled water tastes better.",
+          "distractorType": "anecdote",
+          "whyWrong": "A preference anecdote does not test the vandalism/cost concern."
+        },
+        {
+          "id": "c",
+          "text": "A list of other city programs.",
+          "distractorType": "irrelevant",
+          "whyWrong": "A list does not show the refill program is poor value."
+        },
+        {
+          "id": "d",
+          "text": "A photograph of one refill station.",
+          "distractorType": "weak_evidence",
+          "whyWrong": "A photograph does not establish repair frequency or cost."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Why does Source A's limitation improve rather than destroy the argument?",
+      "points": 1,
+      "explanation": "A qualified conclusion can be stronger because it matches the actual scope of the evidence.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Good arguments often state what the evidence cannot yet show.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Any limitation automatically proves the argument is wrong.",
+          "distractorType": "misconception",
+          "whyWrong": "Acknowledging a limitation can make reasoning more credible."
+        },
+        {
+          "id": "b",
+          "text": "The limitation guarantees winter use will be high.",
+          "distractorType": "unsupported",
+          "whyWrong": "Tracking winter use means that outcome is still uncertain."
+        },
+        {
+          "id": "c",
+          "text": "The limitation makes the cost estimate irrelevant.",
+          "distractorType": "unrelated",
+          "whyWrong": "The winter-use limitation does not erase maintenance cost information."
+        },
+        {
+          "id": "d",
+          "text": "It shows the author recognizes uncertainty and proposes measured expansion instead of claiming the pilot proves everything."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement is the fairest judgment of Source B?",
+      "points": 1,
+      "explanation": "A fair evaluation recognizes reasonable concerns while judging whether they are supported.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Do not turn evaluation into ridicule.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It is useless because it has no numbers.",
+          "distractorType": "too_absolute",
+          "whyWrong": "Arguments can use non-numerical evidence; the problem is insufficient support for its claims."
+        },
+        {
+          "id": "b",
+          "text": "It raises legitimate questions, but it does not provide enough evidence to show those concerns outweigh the pilot results."
+        },
+        {
+          "id": "c",
+          "text": "It proves expansion will fail.",
+          "distractorType": "overstatement",
+          "whyWrong": "Its concerns are predictions, not proof."
+        },
+        {
+          "id": "d",
+          "text": "It is stronger because cautious arguments are always better.",
+          "distractorType": "rule_error",
+          "whyWrong": "Caution alone does not determine support quality."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What should determine the learner's final choice?",
+      "points": 1,
+      "explanation": "The decision should come from the evidence and reasoning within the paired sources.",
+      "skill": {
+        "id": "W1.3",
+        "label": "Select better-supported position"
+      },
+      "rule": "Use a consistent support test on both sources.",
+      "familyId": "writing.er.stronger",
+      "metadata": {
+        "skillId": "W1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Which recommendation would cost less in the learner's hometown.",
+          "distractorType": "personal_context",
+          "whyWrong": "The ER uses the supplied sources, not outside assumptions."
+        },
+        {
+          "id": "b",
+          "text": "Which source is shorter.",
+          "distractorType": "irrelevant_measure",
+          "whyWrong": "Length does not determine support."
+        },
+        {
+          "id": "c",
+          "text": "Which source has the more relevant, sufficient, and well-reasoned support for its recommendation."
+        },
+        {
+          "id": "d",
+          "text": "Which source agrees with the learner's values.",
+          "distractorType": "personal_bias",
+          "whyWrong": "Personal agreement is not the scoring target."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-er-focus-choose-stronger-argument",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.3",
+      "secondarySkillIds": [],
+      "unitId": "choose-stronger-argument",
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge Support, Not Preference",
+      "topicLabel": "Extended Response"
+    },
+    "passage": {
+      "id": "p-rla-er-focus-choose-stronger-argument",
+      "title": "Should the City Add Refill Stations?",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T11:04:16.842Z"
+  }
+}

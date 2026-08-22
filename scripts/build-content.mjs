@@ -126,6 +126,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
   const passagePractice = [];
   const argumentPractice = [];
   const languagePractice = [];
+  const extendedResponsePractice = [];
   const tracks = (curriculumConfig.tracks || []).filter((track) => (track.publicationState || 'published') === 'published').map((track) => ({
     id: track.id,
     label: track.label,
@@ -140,7 +141,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
       const builtSkills = domainSkills.map((skill) => {
         const related = records.filter((record) => {
           const c = record.curriculum || {};
-          if (['passage_practice', 'quiz', 'argument_practice', 'editing_practice'].includes(c.contentKind)) return false;
+          if (['passage_practice', 'quiz', 'argument_practice', 'editing_practice', 'extended_response_practice'].includes(c.contentKind)) return false;
           const ids = measuredSkillIds(record);
           return c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id) || ids.includes(skill.id);
         });
@@ -175,7 +176,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
         const unitSkillIds = new Set(unitConfig.skillIds || []);
         const related = records.filter((record) => {
           const c = record.curriculum || {};
-          if (['passage_practice', 'quiz', 'argument_practice', 'editing_practice'].includes(c.contentKind)) return false;
+          if (['passage_practice', 'quiz', 'argument_practice', 'editing_practice', 'extended_response_practice'].includes(c.contentKind)) return false;
           if (c.unitId) return c.unitId === unitConfig.id;
           return measuredSkillIds(record).some((id) => unitSkillIds.has(id));
         });
@@ -226,7 +227,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
   }));
 
   for (const record of records) {
-    if (!['passage_practice', 'quiz', 'argument_practice', 'editing_practice'].includes(record.curriculum?.contentKind)) continue;
+    if (!['passage_practice', 'quiz', 'argument_practice', 'editing_practice', 'extended_response_practice'].includes(record.curriculum?.contentKind)) continue;
     const item = {
       id: record.id,
       title: record.passageMeta?.title || record.title,
@@ -241,6 +242,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
     };
     if (record.curriculum?.contentKind === 'argument_practice') argumentPractice.push(item);
     else if (record.curriculum?.contentKind === 'editing_practice') languagePractice.push(item);
+    else if (record.curriculum?.contentKind === 'extended_response_practice') extendedResponsePractice.push(item);
     else passagePractice.push(item);
   }
 
@@ -262,6 +264,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
     passagePractice,
     argumentPractice,
     languagePractice,
+    extendedResponsePractice,
     mixedPractice: passagePractice,
   };
 }
@@ -357,9 +360,26 @@ async function main() {
     publishedResources,
     records: learnerRecords,
   });
+  // Full Extended Response prompts use a dedicated workspace rather than normal quiz modules.
+  // Keep only learner-safe card metadata in curriculum; authoring keys stay canonical-only.
+  curriculum.extendedResponsePractice = (validation.erPrompts || []).map((prompt) => ({
+    id: prompt.id,
+    title: prompt.title,
+    topic: prompt.topic,
+    prompt: prompt.prompt,
+    sourceATitle: prompt.sourceA?.title || 'Source A',
+    sourceBTitle: prompt.sourceB?.title || 'Source B',
+    difficulty: 'GED practice',
+    modeOptions: ['untimed', 'timed'],
+  }));
 
   await fs.writeFile(path.join(OUT, 'index.json'), JSON.stringify(mergedIndex, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n', 'utf8');
+  const learnerErPrompts = (validation.erPrompts || []).map((prompt) => {
+    const { authoringKey, strongerSource, ...publicPrompt } = prompt;
+    return publicPrompt;
+  });
+  await fs.writeFile(path.join(OUT, 'er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerErPrompts }, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'qa-report.json'), JSON.stringify({
     schemaVersion: 1,
     builtAt: new Date().toISOString(),

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-22T09:41:40.050Z",
+  "builtAt": "2026-08-22T11:04:16.865Z",
   "canonicalLegacyModules": [
     "legacy-modules/sample-quiz.json",
     "legacy-modules/rla-author-purpose-practice-1.json",
@@ -73,6 +73,12 @@
     "set-rla-core-transfer-footbridge",
     "set-rla-core-transfer-handoff",
     "set-rla-core-transfer-heat-route",
+    "set-rla-er-focus-analyze-not-summarize",
+    "set-rla-er-focus-choose-stronger-argument",
+    "set-rla-er-focus-full-extended-response",
+    "set-rla-er-focus-organize-develop-revise",
+    "set-rla-er-focus-thesis-evidence",
+    "set-rla-er-focus-understand-map-sources",
     "set-rla-lang-agreement",
     "set-rla-lang-boundaries",
     "set-rla-lang-capitals",
@@ -89,8 +95,7 @@
     "set-rla-reading-transfer-civic-comment",
     "set-rla-reading-transfer-edna-river",
     "set-rla-reading-transfer-festival-plan",
-    "set-rla-reading-transfer-machine-listening",
-    "set-rla-writing-library-hours"
+    "set-rla-reading-transfer-machine-listening"
   ],
   "generatedSourceModules": [
     "generated/modules/set-rla-args-claims-structure.json",
@@ -112,6 +117,12 @@
     "generated/modules/set-rla-core-transfer-footbridge.json",
     "generated/modules/set-rla-core-transfer-handoff.json",
     "generated/modules/set-rla-core-transfer-heat-route.json",
+    "generated/modules/rla-er-focus-analyze-not-summarize.json",
+    "generated/modules/rla-er-focus-choose-stronger-argument.json",
+    "generated/modules/rla-er-focus-full-extended-response.json",
+    "generated/modules/rla-er-focus-organize-develop-revise.json",
+    "generated/modules/rla-er-focus-thesis-evidence.json",
+    "generated/modules/rla-er-focus-understand-map-sources.json",
     "generated/modules/set-rla-lang-agreement.json",
     "generated/modules/set-rla-lang-boundaries.json",
     "generated/modules/set-rla-lang-capitals.json",
@@ -128,15 +139,14 @@
     "generated/modules/set-rla-reading-transfer-civic-comment.json",
     "generated/modules/set-rla-reading-transfer-edna-river.json",
     "generated/modules/set-rla-reading-transfer-festival-plan.json",
-    "generated/modules/set-rla-reading-transfer-machine-listening.json",
-    "generated/modules/writing-practice.json"
+    "generated/modules/set-rla-reading-transfer-machine-listening.json"
   ],
-  "generatedIndexCount": 86,
+  "generatedIndexCount": 92,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "published",
     "language": "published",
-    "extended-response": "preview"
+    "extended-response": "published"
   },
   "curriculumFile": "data/generated/curriculum.json",
   "warnings": [
@@ -177,32 +187,60 @@
     },
     {
       "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family writing.evidence.relevance has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-writing-library-hours.json",
-      "location": "set-rla-writing-library-hours:q1"
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill R5.4 (Evidence relevance) has only 3 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "R5.4"
     },
     {
       "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family writing.argument.short_response has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-writing-library-hours.json",
-      "location": "set-rla-writing-library-hours:q2"
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.8 (Organize the response) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.8"
+    },
+    {
+      "type": "warning",
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.9 (Develop ideas) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.9"
+    },
+    {
+      "type": "warning",
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.10 (Revise for focus & clarity) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.10"
+    },
+    {
+      "type": "warning",
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.11 (Edit conventions) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.11"
     }
   ],
   "qaSummary": {
     "errors": 0,
-    "warnings": 7,
+    "warnings": 10,
     "byCode": {
       "TRANSFER_FAMILY_SINGLETON": {
         "errors": 0,
-        "warnings": 7,
-        "total": 7,
+        "warnings": 5,
+        "total": 5,
         "files": [
           "content-src/sets/set-rla-reading-transfer-edna-river.json",
           "content-src/sets/set-rla-reading-transfer-festival-plan.json",
-          "content-src/sets/set-rla-reading-transfer-machine-listening.json",
-          "content-src/sets/set-rla-writing-library-hours.json"
+          "content-src/sets/set-rla-reading-transfer-machine-listening.json"
+        ]
+      },
+      "PUBLISHED_SKILL_LOW_COVERAGE": {
+        "errors": 0,
+        "warnings": 5,
+        "total": 5,
+        "files": [
+          "content-src/config/rla.curriculum.json"
         ]
       }
     }

@@ -9,8 +9,9 @@ renderProgress();
 
 function renderProgress() {
   const summary = Learning.getSummary();
+  const erHistory = getErHistory();
 
-  if (!summary.attempts) {
+  if (!summary.attempts && !erHistory.length) {
     progressView.innerHTML = `
       <div class="progress-workspace empty">
         ${sidebarHtml()}
@@ -73,6 +74,8 @@ function renderProgress() {
             ${summary.skills.map(skillRow).join("")}
           </div>
         </section>
+
+        ${erHistory.length ? erHistoryHtml(erHistory) : ""}
 
         <section id="mistakes-section" class="progress-table-section" aria-labelledby="review-heading">
           <div class="progress-table-heading">
@@ -188,6 +191,7 @@ function sidebarHtml() {
           <a href="#next-section"><span class="rail-dot"></span>Next</a>
           <a href="#skills-section"><span class="rail-dot"></span>Skills</a>
           <a href="#mistakes-section"><span class="rail-dot"></span>Review</a>
+          <a href="#er-section"><span class="rail-dot"></span>Extended Response</a>
         </nav>
         <div class="progress-rail-links">
           <a href="train.html">Train</a>
@@ -195,6 +199,46 @@ function sidebarHtml() {
         </div>
       </div>
     </aside>`;
+}
+
+function getErHistory() {
+  try {
+    const raw = window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:er:history", "[]") : localStorage.getItem("sq:er:history");
+    const parsed = JSON.parse(raw || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function erHistoryHtml(history) {
+  return `
+    <section id="er-section" class="progress-table-section" aria-labelledby="er-progress-heading">
+      <div class="progress-table-heading">
+        <div><span class="progress-mini-label">Self-review</span><h2 id="er-progress-heading">Extended Response</h2></div>
+        <span>${history.length} ${history.length === 1 ? "attempt" : "attempts"}</span>
+      </div>
+      <p class="progress-er-note">Trait scores below are your own provisional self-review. They are kept separate from objective skill mastery.</p>
+      <div class="progress-er-list">
+        ${history.slice(0, 8).map(erAttemptRow).join("")}
+      </div>
+    </section>`;
+}
+
+function erAttemptRow(item) {
+  const scores = item.selfScores || {};
+  const scoreText = [scores.argument, scores.organization, scores.english].every((value) => Number.isInteger(value))
+    ? `${scores.argument}/${scores.organization}/${scores.english}`
+    : "Not scored";
+  const modeLabel = item.mode === "timed" ? "Timed 45 min" : "Untimed";
+  const status = item.revisionComplete ? "Reviewed + revised" : "Review pending";
+  const href = `extended-response.html?prompt=${encodeURIComponent(item.promptId || "")}&mode=${encodeURIComponent(item.mode || "untimed")}&return=${encodeURIComponent("progress.html")}`;
+  return `
+    <a class="progress-er-row" href="${escapeAttr(href)}">
+      <span><strong>${escapeHtml(item.promptTitle || "Extended Response")}</strong><small>${escapeHtml(modeLabel)} · ${escapeHtml(status)}</small></span>
+      <span class="progress-er-score"><small>Self-review T1/T2/T3</small><strong>${escapeHtml(scoreText)}</strong></span>
+      <b>→</b>
+    </a>`;
 }
 
 function metric(value, label) {

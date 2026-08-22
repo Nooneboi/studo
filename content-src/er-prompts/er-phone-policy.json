@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-phone-policy",
+  "title": "Should the High School Adopt a Full-Day Phone Ban?",
+  "topic": "school policy",
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Adopt a Full-Day Ban",
+    "text": "A parent committee proposes requiring students to store phones in locked pouches from first bell to dismissal. The committee says teachers report frequent distraction and that students need clearer boundaries. It cites a survey in which 64 percent of 42 responding teachers said phones interrupted instruction at least several times per week. The committee also points to one neighboring school that adopted locked pouches and reported fewer classroom phone violations after implementation.\n\nThe proposal does not include student survey data, emergency-access procedures, or information about how the neighboring school handled lunch and free periods. It assumes that a single rule will be easier to enforce than teacher-by-teacher policies. The committee acknowledges that purchasing pouches would cost about $28,000 but argues that reduced distraction justifies the expense.\n\nThe parent committee surveyed 176 families, and 58 percent of respondents said they would support a rule preventing phone use during the school day. Twenty-four percent preferred restrictions only during class, and the remainder were unsure or opposed. The committee argues that a full-day rule would be easier for staff because students would not need to remember different expectations in classrooms, hallways, and lunch areas. The survey did not ask how families wanted emergency communication handled, and response rates differed substantially by grade level.\n\nThe committee says the rule should be reviewed after one semester so the school can compare violation reports and family complaints.",
+    "attribution": "Original content by Studo"
+  },
+  "sourceB": {
+    "title": "Use a Class-Time Restriction with Measured Exceptions",
+    "text": "The principal proposes a narrower rule: phones must remain silent and stored during instructional periods, but students may use them during lunch and designated breaks. The school tested this approach for nine weeks in ten classrooms. Recorded phone-related interruptions fell 46 percent compared with the previous nine weeks. Teachers also logged 23 cases in which students needed temporary access for translation, medical monitoring, or a teacher-directed activity.\n\nThe principal argues that the pilot shows strong improvement without requiring a full-day ban. She recommends schoolwide implementation, a common consequence system, and another semester of data collection. She notes that the pilot covered only ten classrooms and that teachers varied in enforcement, so the results may not transfer perfectly. The plan includes an emergency-contact procedure through the main office and would review whether lunch-period phone use creates separate problems before changing that part of the policy.\n\nThe principal's pilot also collected teacher logs on enforcement. During the first two weeks, teachers recorded 37 reminders about storage; by the final two weeks, the number fell to 14. Student survey responses were mixed: many said the rule helped during class, while others wanted clearer access during lunch. The principal therefore proposes one schoolwide definition of instructional time and a separate review of lunch-period complaints. The plan requires staff training but no locked-pouch purchase, making it less expensive to reverse if results are poor.",
+    "attribution": "Original content by Studo"
+  },
+  "strongerSource": "B",
+  "authoringKey": {
+    "reasons": [
+      "it provides before-and-after interruption data from a school pilot rather than relying mainly on reported concern",
+      "it addresses exceptions and limitations while proposing continued measurement"
+    ],
+    "evidence": [
+      "phone-related interruptions fell 46 percent in the ten-classroom pilot",
+      "the plan documents legitimate exceptions and admits that enforcement differences limit generalization"
+    ],
+    "weakerSourceLimitation": "Source A identifies a real distraction problem, but its support for a full-day ban relies heavily on teacher opinion and a neighboring-school example without comparable context."
+  },
+  "modelResponse": "Both sources address the same policy question, but Source B presents the better-supported argument. Its position is stronger for two main reasons: it provides before-and-after interruption data from a school pilot rather than relying mainly on reported concern; and it addresses exceptions and limitations while proposing continued measurement. Source A raises a relevant concern, but the support behind that concern is less complete.\n\nFirst, Source B is stronger because it provides before-and-after interruption data from a school pilot rather than relying mainly on reported concern. It reports that phone-related interruptions fell 46 percent in the ten-classroom pilot. This evidence matters because it directly addresses a central factual question behind the recommendation rather than asking the reader to accept a prediction. The evidence also fits the scope of the claim, which makes the reasoning easier to evaluate. Source A does not provide equally specific support on this point.\n\nSource B is also stronger because it addresses exceptions and limitations while proposing continued measurement. It explains that the plan documents legitimate exceptions and admits that enforcement differences limit generalization. This matters because the source considers another important part of the decision instead of relying on a single favorable fact. Source A identifies a real distraction problem, but its support for a full-day ban relies heavily on teacher opinion and a neighboring-school example without comparable context. That concern is relevant, but the weaker source does not show that it outweighs Source B's more direct evidence or that the proposed response would fail.\n\nOverall, Source B is better supported because its recommendation is tied to specific evidence and its reasoning stays within the limits of that evidence. Source A contributes a useful caution, but Source B gives the reader clearer grounds for judging likely results.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response clearly identifies Source B as better supported and previews two reasons."
+    },
+    {
+      "label": "Evidence",
+      "note": "Specific source evidence is used rather than personal experience or outside facts."
+    },
+    {
+      "label": "Analysis",
+      "note": "The response explains why the evidence matters instead of only repeating it."
+    },
+    {
+      "label": "Comparison",
+      "note": "The weaker source is treated fairly, but its evidentiary or reasoning limitation is identified."
+    },
+    {
+      "label": "Organization",
+      "note": "Each body paragraph develops one reason before the conclusion restates the judgment."
+    }
+  ],
+  "revisionPrompts": [
+    "Where did I clearly state which source is better supported?",
+    "Where did I explain why a piece of evidence matters instead of only summarizing it?",
+    "Did I evaluate both sources fairly and identify a specific weakness in the weaker argument?",
+    "Did I preserve qualifiers such as may, could, some, or limited when the source used them?"
+  ]
+}

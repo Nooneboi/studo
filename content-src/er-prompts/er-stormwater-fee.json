@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-stormwater-fee",
+  "title": "Should the City Charge a Stormwater Fee?",
+  "topic": "environmental regulation",
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Create a Fee Based on Impervious Surface",
+    "text": "The public works department proposes a stormwater fee based on the amount of roof, parking lot, and other impervious surface on each property. The department reports that three severe storms caused $6.4 million in street and drainage repairs over five years. Engineering models identify 14 drainage projects expected to reduce repeated flooding at intersections and near two schools. The proposed fee would raise about $3.1 million per year and includes credits for properties that install rain gardens, storage tanks, or other systems that reduce runoff.\n\nThe department acknowledges that model estimates cannot predict every storm. It therefore proposes publishing project costs and flood reports annually. Low-income homeowners could receive partial assistance, and large properties could reduce fees through verified runoff controls. The department argues that linking charges to impervious area better reflects how much runoff a property sends into the drainage system than a flat household fee would.\n\nThe department analyzed three fee structures before recommending the impervious-surface method. A flat residential fee would be simpler to bill, but engineers found that a large commercial parking lot can produce far more runoff than a small home during the same storm. The proposal therefore groups properties into surface-area bands and offers an appeal process for measurement errors. The finance office estimates billing administration at about 4 percent of annual fee revenue. Project schedules would be published before construction so residents could see which drainage work the fee supports.",
+    "attribution": "Original content by Studo"
+  },
+  "sourceB": {
+    "title": "Pay for Drainage from Existing Taxes",
+    "text": "A taxpayer group opposes a separate stormwater fee. It argues that residents already pay property and sales taxes and that the city should rearrange existing spending instead of creating another bill. The group notes that flood damage varies from year to year and warns that some proposed drainage projects may cost more than expected. It recommends postponing the fee while the city searches for grants and cuts lower-priority projects.\n\nThe group cites a state grant that funded part of a drainage project eight years ago as evidence that outside funding is possible. It does not identify current grants large enough to cover the 14 planned projects or specify which existing programs should be reduced. The group supports runoff-reduction credits if a fee is eventually adopted but argues that the city has not proven a new charge is necessary now.\n\nThe taxpayer group proposes freezing several planned streetscape projects and using those funds for drainage while the city applies for state and federal assistance. Its letter identifies about $700,000 in streetscape spending that could be delayed next year. That amount would cover part of the proposed drainage program but not the full annual revenue target. The group argues that temporary reallocations could reduce the size of any future fee. It also asks the city to publish clearer evidence that each of the 14 projects will reduce flooding enough to justify its cost.",
+    "attribution": "Original content by Studo"
+  },
+  "strongerSource": "A",
+  "authoringKey": {
+    "reasons": [
+      "it connects a defined revenue mechanism to documented repair costs and identified projects",
+      "it explains how the fee reflects runoff contribution and includes credits and assistance to address fairness concerns"
+    ],
+    "evidence": [
+      "the city recorded $6.4 million in storm-related repair costs and has 14 modeled drainage projects",
+      "the proposed fee is tied to impervious surface and allows verified runoff controls to reduce charges"
+    ],
+    "weakerSourceLimitation": "Source B raises a legitimate tax-burden concern, but it does not identify a funded alternative large enough to meet the stated infrastructure need."
+  },
+  "modelResponse": "Both sources address the same policy question, but Source A presents the better-supported argument. Its position is stronger for two main reasons: it connects a defined revenue mechanism to documented repair costs and identified projects; and it explains how the fee reflects runoff contribution and includes credits and assistance to address fairness concerns. Source B raises a relevant concern, but the support behind that concern is less complete.\n\nFirst, Source A is stronger because it connects a defined revenue mechanism to documented repair costs and identified projects. It reports that the city recorded $6.4 million in storm-related repair costs and has 14 modeled drainage projects. This evidence matters because it directly addresses a central factual question behind the recommendation rather than asking the reader to accept a prediction. The evidence also fits the scope of the claim, which makes the reasoning easier to evaluate. Source B does not provide equally specific support on this point.\n\nSource A is also stronger because it explains how the fee reflects runoff contribution and includes credits and assistance to address fairness concerns. It explains that the proposed fee is tied to impervious surface and allows verified runoff controls to reduce charges. This matters because the source considers another important part of the decision instead of relying on a single favorable fact. Source B raises a legitimate tax-burden concern, but it does not identify a funded alternative large enough to meet the stated infrastructure need. That concern is relevant, but the weaker source does not show that it outweighs Source A's more direct evidence or that the proposed response would fail.\n\nOverall, Source A is better supported because its recommendation is tied to specific evidence and its reasoning stays within the limits of that evidence. Source B contributes a useful caution, but Source A gives the reader clearer grounds for judging likely results.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response clearly identifies Source A as better supported and previews two reasons."
+    },
+    {
+      "label": "Evidence",
+      "note": "Specific source evidence is used rather than personal experience or outside facts."
+    },
+    {
+      "label": "Analysis",
+      "note": "The response explains why the evidence matters instead of only repeating it."
+    },
+    {
+      "label": "Comparison",
+      "note": "The weaker source is treated fairly, but its evidentiary or reasoning limitation is identified."
+    },
+    {
+      "label": "Organization",
+      "note": "Each body paragraph develops one reason before the conclusion restates the judgment."
+    }
+  ],
+  "revisionPrompts": [
+    "Where did I clearly state which source is better supported?",
+    "Where did I explain why a piece of evidence matters instead of only summarizing it?",
+    "Did I evaluate both sources fairly and identify a specific weakness in the weaker argument?",
+    "Did I preserve qualifiers such as may, could, some, or limited when the source used them?"
+  ]
+}

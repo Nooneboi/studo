@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-er-focus-thesis-evidence",
+  "runtime": {
+    "id": "rla-er-focus-thesis-evidence",
+    "file": "rla-er-focus-thesis-evidence.json"
+  },
+  "title": "Build a Thesis and Choose Evidence",
+  "description": "Focused Extended Response component practice.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Focused Practice",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-er-focus-thesis-evidence"
+  ],
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "reviewNotes": "Reviewed for source fidelity, one-best-answer logic, close distractors, and rubric-aligned reasoning.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which thesis is strongest?",
+      "primarySkillId": "W1.4",
+      "familyId": "writing.er.thesis",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Remote work is obviously the future and everyone should support it.",
+          "distractorType": "personal_overstatement",
+          "whyWrong": "This is opinion-based and does not evaluate the source support."
+        },
+        {
+          "id": "b",
+          "text": "Both sources discuss remote work in different ways.",
+          "distractorType": "non_evaluative",
+          "whyWrong": "This does not judge which argument is better supported."
+        },
+        {
+          "id": "c",
+          "text": "Source B is wrong because working from home is convenient.",
+          "distractorType": "personal_reason",
+          "whyWrong": "Convenience is not the source-based reason the task requires."
+        },
+        {
+          "id": "d",
+          "text": "Source A presents the better-supported argument because it uses measured pilot results and addresses a communication weakness with a specific safeguard."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The thesis makes a clear evaluative judgment and previews the evidence/reasoning behind it.",
+        "quickTip": "Name the stronger source and the main reasons it is stronger."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which evidence best supports a claim that Source A measures productivity?",
+      "primarySkillId": "W1.5",
+      "familyId": "writing.er.evidence",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Seventy-eight percent preferred the schedule.",
+          "distractorType": "different_outcome",
+          "whyWrong": "Preference evidence measures employee response, not productivity."
+        },
+        {
+          "id": "b",
+          "text": "Completed projects increased by 12 percent during the six-month pilot."
+        },
+        {
+          "id": "c",
+          "text": "Managers reported communication delays.",
+          "distractorType": "limitation_not_support",
+          "whyWrong": "That is a limitation, not evidence of increased productivity."
+        },
+        {
+          "id": "d",
+          "text": "The company may expand the policy.",
+          "distractorType": "recommendation",
+          "whyWrong": "A recommendation is not measured productivity evidence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Project completion directly measures work output during the policy trial.",
+        "quickTip": "Match the evidence to the exact claim you are making."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which evidence best supports a claim about employee acceptance?",
+      "primarySkillId": "W1.5",
+      "familyId": "writing.er.evidence",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Seventy-eight percent of participants preferred the flexible schedule."
+        },
+        {
+          "id": "b",
+          "text": "Completed projects rose 12 percent.",
+          "distractorType": "different_outcome",
+          "whyWrong": "That measures productivity rather than employee preference."
+        },
+        {
+          "id": "c",
+          "text": "Some managers had communication delays.",
+          "distractorType": "different_outcome",
+          "whyWrong": "That measures a management challenge."
+        },
+        {
+          "id": "d",
+          "text": "Source B predicts distraction.",
+          "distractorType": "opposing_claim",
+          "whyWrong": "That is an unsupported prediction from the other source."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The survey directly measures how participants responded to the schedule.",
+        "quickTip": "Do not use one statistic to prove a different claim."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which thesis is too strong for the evidence?",
+      "primarySkillId": "W1.4",
+      "familyId": "writing.er.thesis",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A is better supported because it reports pilot outcomes and proposes a response to communication problems.",
+          "distractorType": "supported",
+          "whyWrong": "This stays within the evidence."
+        },
+        {
+          "id": "b",
+          "text": "Source B raises concerns, but its prediction of decline is not supported with pilot productivity data.",
+          "distractorType": "supported",
+          "whyWrong": "This accurately evaluates a weakness."
+        },
+        {
+          "id": "c",
+          "text": "Source A proves that remote work always improves every employee's performance."
+        },
+        {
+          "id": "d",
+          "text": "Source A provides stronger support, although the pilot does not show that every department will respond the same way.",
+          "distractorType": "qualified",
+          "whyWrong": "This preserves uncertainty."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The pilot supports a limited conclusion; it does not prove a universal result for every employee or setting.",
+        "quickTip": "Preserve qualifiers and scope."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which evidence would be weakest in a body paragraph about performance?",
+      "primarySkillId": "W1.5",
+      "familyId": "writing.er.evidence",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Completed projects rose 12 percent.",
+          "distractorType": "strong",
+          "whyWrong": "This is direct performance evidence."
+        },
+        {
+          "id": "b",
+          "text": "The majority of participants preferred the flexible schedule."
+        },
+        {
+          "id": "c",
+          "text": "Average sick days decreased during the pilot.",
+          "distractorType": "relevant",
+          "whyWrong": "This is a work-outcome measure, though less direct than project completion."
+        },
+        {
+          "id": "d",
+          "text": "Source B provides no pilot performance data for its predicted decline.",
+          "distractorType": "comparison",
+          "whyWrong": "This directly supports a comparison of evidentiary strength."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Preference can matter, but it does not directly establish improved performance.",
+        "quickTip": "Use the most claim-matched evidence first."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which thesis best preserves the source qualifier?",
+      "primarySkillId": "W1.4",
+      "familyId": "writing.er.thesis",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A proves remote work should permanently replace offices.",
+          "distractorType": "overstatement",
+          "whyWrong": "The source recommends expansion with shared office days, not total replacement."
+        },
+        {
+          "id": "b",
+          "text": "Remote work might be good, or it might be bad.",
+          "distractorType": "vague",
+          "whyWrong": "The thesis avoids making the required evaluative judgment."
+        },
+        {
+          "id": "c",
+          "text": "Source B is completely false because it has no statistics.",
+          "distractorType": "too_absolute",
+          "whyWrong": "Lack of data weakens support but does not make every concern false."
+        },
+        {
+          "id": "d",
+          "text": "Source A offers stronger support for expanding remote work with safeguards, not for assuming the policy will work identically in every department."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The thesis makes a judgment while keeping the recommendation limited and conditional.",
+        "quickTip": "Strong ER writing can be decisive without becoming absolute."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which quotation would be most useful if the paragraph argues that Source A responds to a weakness?",
+      "primarySkillId": "W1.5",
+      "familyId": "writing.er.evidence",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Completed projects increased 12 percent.",
+          "distractorType": "different_purpose",
+          "whyWrong": "That supports productivity, not the response to communication weakness."
+        },
+        {
+          "id": "b",
+          "text": "Remote work is a bad idea for the company.",
+          "distractorType": "opposing_claim",
+          "whyWrong": "That is Source B's claim, not Source A's response."
+        },
+        {
+          "id": "c",
+          "text": "The company recommends manager training and two shared office days before expansion."
+        },
+        {
+          "id": "d",
+          "text": "Employees may become distracted.",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "That is an unsupported concern from Source B."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The recommendation directly responds to the communication problem Source A acknowledges.",
+        "quickTip": "Choose evidence that performs the job your sentence claims it performs."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What should a high-quality ER thesis avoid?",
+      "primarySkillId": "W1.4",
+      "familyId": "writing.er.thesis",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reasons that come from personal experience instead of the supplied sources."
+        },
+        {
+          "id": "b",
+          "text": "Naming the stronger argument.",
+          "distractorType": "needed",
+          "whyWrong": "A clear judgment is useful."
+        },
+        {
+          "id": "c",
+          "text": "Previewing two reasons for the judgment.",
+          "distractorType": "needed",
+          "whyWrong": "This helps organize the response."
+        },
+        {
+          "id": "d",
+          "text": "Using precise words such as better supported.",
+          "distractorType": "useful",
+          "whyWrong": "Precise evaluative language fits the task."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "A source-based thesis should be grounded in the provided arguments, not outside preference.",
+        "quickTip": "If the thesis could be written without reading the sources, revise it."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Extended Response",
+    "primarySkillId": "W1.4",
+    "secondarySkillIds": [
+      "W1.5"
+    ],
+    "unitId": "thesis-evidence",
+    "contentKind": "skill_drill",
+    "learningObjective": "Build a Thesis and Choose Evidence",
+    "topicLabel": "Extended Response"
+  }
+}

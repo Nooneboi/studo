@@ -9,7 +9,7 @@ const SRC = path.join(ROOT, 'content-src');
 const VALID_DIFFICULTIES = new Set(['easy', 'medium', 'hard']);
 const VALID_STATUS = new Set(['draft', 'review', 'approved', 'published', 'retired']);
 const VALID_RIGHTS = new Set(['original', 'public_domain', 'licensed', 'permission']);
-const VALID_CONTENT_KINDS = new Set(['passage_practice','skill_drill','quiz','mixed_review','editing_practice','extended_response','argument_practice']);
+const VALID_CONTENT_KINDS = new Set(['passage_practice','skill_drill','quiz','mixed_review','editing_practice','extended_response','extended_response_practice','argument_practice']);
 const VALID_RESOURCE_TYPES = new Set(['pdf','worksheet','study_guide','notes','reference','link','docx']);
 const SELECTED_TYPES = new Set(['multiple_choice','evidence_based','grammar_edit']);
 const GENERIC_STARTS = [
@@ -178,6 +178,7 @@ export async function validateContent({ quiet = false } = {}) {
   const passageFiles = await jsonFiles(path.join(SRC, 'passages'));
   const setFiles = await jsonFiles(path.join(SRC, 'sets'));
   const resourceFiles = await jsonFiles(path.join(SRC, 'resources'));
+  const erPromptFiles = await jsonFiles(path.join(SRC, 'er-prompts'));
   const legacyIndexFile = path.join(SRC, 'config', 'legacy-index.json');
   const curriculumConfigFile = path.join(SRC, 'config', 'rla.curriculum.json');
   const curriculumConfig = await readJson(curriculumConfigFile);
@@ -213,6 +214,31 @@ export async function validateContent({ quiet = false } = {}) {
     if (!passage.source?.type || !passage.source?.attribution) add(issues, 'error', 'PASSAGE_SOURCE_MISSING', `Passage ${passage.id || '(unknown)'} needs source type and attribution.`, file);
     if (!passage.rights?.status || !VALID_RIGHTS.has(passage.rights.status)) add(issues, 'error', 'PASSAGE_RIGHTS_INVALID', `Passage ${passage.id || '(unknown)'} needs an allowed rights status.`, file);
     if (passage.status === 'published' && !passage.reviewer) add(issues, 'error', 'PUBLISHED_WITHOUT_REVIEWER', `Published passage ${passage.id} needs a reviewer.`, file);
+  }
+
+
+  const erPrompts = [];
+  const erPromptIds = new Set();
+  for (const file of erPromptFiles) {
+    const prompt = await readJson(file);
+    const loc = prompt.id || '(no-id)';
+    if (!prompt.id) add(issues, 'error', 'ER_PROMPT_ID_MISSING', 'ER prompt is missing an id.', file);
+    else if (erPromptIds.has(prompt.id)) add(issues, 'error', 'ER_PROMPT_ID_DUPLICATE', `Duplicate ER prompt id: ${prompt.id}`, file, loc);
+    else erPromptIds.add(prompt.id);
+    if (!VALID_STATUS.has(prompt.status)) add(issues, 'error', 'ER_PROMPT_STATUS_INVALID', `ER prompt ${loc} has invalid status.`, file, loc);
+    if (prompt.status === 'published' && !prompt.reviewer) add(issues, 'error', 'PUBLISHED_WITHOUT_REVIEWER', `Published ER prompt ${loc} needs a reviewer.`, file, loc);
+    for (const key of ['sourceA','sourceB']) {
+      const source = prompt[key] || {};
+      const count = words(source.text).length;
+      if (!source.title || count < 220) add(issues, 'error', 'ER_SOURCE_TOO_SHORT', `${loc} ${key} needs a title and at least 220 words.`, file, loc);
+    }
+    if (normalizeText(prompt.sourceA?.text) === normalizeText(prompt.sourceB?.text)) add(issues, 'error', 'ER_SOURCES_IDENTICAL', `${loc} source texts must differ.`, file, loc);
+    if (!['A','B'].includes(prompt.strongerSource)) add(issues, 'error', 'ER_STRONGER_SOURCE_INVALID', `${loc} needs strongerSource A or B.`, file, loc);
+    if (!Array.isArray(prompt.authoringKey?.reasons) || prompt.authoringKey.reasons.length < 2) add(issues, 'error', 'ER_AUTHORING_KEY_INCOMPLETE', `${loc} needs at least two authoring-key reasons.`, file, loc);
+    if (words(prompt.modelResponse).length < 250) add(issues, 'error', 'ER_MODEL_TOO_SHORT', `${loc} model response needs at least 250 words.`, file, loc);
+    if (!Array.isArray(prompt.annotations) || prompt.annotations.length < 4) add(issues, 'error', 'ER_ANNOTATIONS_INCOMPLETE', `${loc} needs at least four annotations.`, file, loc);
+    if (!Array.isArray(prompt.revisionPrompts) || prompt.revisionPrompts.length < 3) add(issues, 'error', 'ER_REVISION_PROMPTS_INCOMPLETE', `${loc} needs at least three revision prompts.`, file, loc);
+    if (prompt.status === 'published') erPrompts.push(prompt);
   }
 
   for (const file of resourceFiles) {
@@ -456,7 +482,7 @@ export async function validateContent({ quiet = false } = {}) {
     console.log(`Content validation: ${errors.length} error(s), ${warnings.length} warning(s)`);
     for (const issue of issues) console.log(`${issue.type.toUpperCase()} ${issue.code} ${issue.file}${issue.location ? ` [${issue.location}]` : ''}: ${issue.message}`);
   }
-  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules };
+  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

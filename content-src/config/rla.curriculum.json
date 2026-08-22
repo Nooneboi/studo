@@ -407,10 +407,66 @@
                 "W1.12"
               ]
             }
+          ],
+          "units": [
+            {
+              "id": "understand-map-sources",
+              "label": "Understand & Map the Sources",
+              "summary": "Understand the ER task and map both arguments before judging them.",
+              "skillIds": [
+                "W1.1",
+                "W1.2"
+              ]
+            },
+            {
+              "id": "choose-stronger-argument",
+              "label": "Choose the Stronger Argument",
+              "summary": "Judge which source is better supported by evidence and reasoning.",
+              "skillIds": [
+                "W1.3"
+              ]
+            },
+            {
+              "id": "thesis-evidence",
+              "label": "Thesis & Evidence",
+              "summary": "Build an evaluative thesis and select precise source evidence.",
+              "skillIds": [
+                "W1.4",
+                "W1.5"
+              ]
+            },
+            {
+              "id": "analyze-not-summarize",
+              "label": "Analyze, Don't Just Summarize",
+              "summary": "Explain why evidence matters and compare the reasoning in both sources.",
+              "skillIds": [
+                "W1.6",
+                "W1.7"
+              ]
+            },
+            {
+              "id": "organize-develop-revise",
+              "label": "Organize, Develop & Revise",
+              "summary": "Build a logical response, develop ideas, revise for clarity, and edit conventions.",
+              "skillIds": [
+                "W1.8",
+                "W1.9",
+                "W1.10",
+                "W1.11"
+              ]
+            },
+            {
+              "id": "full-extended-response",
+              "label": "Full Extended Response",
+              "summary": "Plan, draft, revise, and self-review a complete paired-source response.",
+              "skillIds": [
+                "W1.12"
+              ]
+            }
           ]
         }
       ],
-      "publicationState": "preview"
+      "publicationState": "published"
     }
   ]
 }

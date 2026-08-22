@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-er-focus-understand-map-sources",
+  "runtime": {
+    "id": "rla-er-focus-understand-map-sources",
+    "file": "rla-er-focus-understand-map-sources.json"
+  },
+  "title": "Start by Mapping the Task",
+  "description": "Focused Extended Response component practice.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Focused Practice",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-er-focus-understand-map-sources"
+  ],
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "reviewNotes": "Reviewed for source fidelity, one-best-answer logic, close distractors, and rubric-aligned reasoning.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the core job of the Extended Response task?",
+      "primarySkillId": "W1.1",
+      "familyId": "writing.er.task",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose the position you personally agree with most.",
+          "distractorType": "personal_opinion",
+          "whyWrong": "The task evaluates source support, not the learner's personal preference."
+        },
+        {
+          "id": "b",
+          "text": "Evaluate which source presents the better-supported argument."
+        },
+        {
+          "id": "c",
+          "text": "Summarize both sources without making a judgment.",
+          "distractorType": "summary_only",
+          "whyWrong": "A summary alone does not answer which argument is better supported."
+        },
+        {
+          "id": "d",
+          "text": "Prove that one source is completely correct.",
+          "distractorType": "overstatement",
+          "whyWrong": "The task asks for evaluation of support, not absolute proof."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The response must judge the quality of the supplied arguments using their evidence and reasoning.",
+        "quickTip": "Judge the sources, not your personal preference."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which note best maps Source A?",
+      "primarySkillId": "W1.2",
+      "familyId": "writing.er.map",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Claim: sports should end; evidence: bus costs; limitation: student surveys.",
+          "distractorType": "source_mix",
+          "whyWrong": "Those ideas do not accurately represent Source A."
+        },
+        {
+          "id": "b",
+          "text": "Claim: current schedule works; evidence: family preference; limitation: no attendance data.",
+          "distractorType": "wrong_source",
+          "whyWrong": "That map describes Source B more closely."
+        },
+        {
+          "id": "c",
+          "text": "Claim: all schools must change now; evidence: two-school pilot; limitation: none.",
+          "distractorType": "overstatement",
+          "whyWrong": "Source A recommends more testing and acknowledges the pilot's limited size."
+        },
+        {
+          "id": "d",
+          "text": "Claim: later start may help; evidence: attendance/tardiness/sleep; limitation: only two schools."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This map preserves Source A's claim, its main evidence, and its stated limitation.",
+        "quickTip": "Map claim, evidence, and limitation separately."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which note best maps Source B?",
+      "primarySkillId": "W1.2",
+      "familyId": "writing.er.map",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Claim: keep the current schedule for now; reasons: transport/family/activities; limitation: no cost or attendance data."
+        },
+        {
+          "id": "b",
+          "text": "Claim: later start improved attendance; evidence: 28 percent fewer tardies.",
+          "distractorType": "wrong_source",
+          "whyWrong": "Those details come from Source A."
+        },
+        {
+          "id": "c",
+          "text": "Claim: sports are more important than sleep; evidence: student surveys.",
+          "distractorType": "distortion",
+          "whyWrong": "Source B raises scheduling concerns but does not make this claim."
+        },
+        {
+          "id": "d",
+          "text": "Claim: later starts always fail; evidence: transportation records.",
+          "distractorType": "unsupported",
+          "whyWrong": "Source B does not provide transportation records or claim universal failure."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The map captures Source B's recommendation and the kinds of support it uses while noting missing evidence.",
+        "quickTip": "Do not invent evidence that the source never provides."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which response plan would best fit this task?",
+      "primarySkillId": "W1.1",
+      "familyId": "writing.er.task",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Describe your own school schedule and whether you like it.",
+          "distractorType": "personal_experience",
+          "whyWrong": "Personal experience does not evaluate the supplied arguments."
+        },
+        {
+          "id": "b",
+          "text": "List every statistic from Source A and stop.",
+          "distractorType": "evidence_dump",
+          "whyWrong": "Evidence needs analysis and comparison, not a list."
+        },
+        {
+          "id": "c",
+          "text": "Compare the quality of both arguments, choose one as better supported, and explain why with source evidence."
+        },
+        {
+          "id": "d",
+          "text": "Explain only why Source B has concerns.",
+          "distractorType": "one_source_only",
+          "whyWrong": "A strong ER response evaluates both sources and makes a judgment."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "A useful plan includes judgment, evidence, analysis, and comparison.",
+        "quickTip": "Plan the reasoning before drafting sentences."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which detail is a limitation acknowledged by Source A?",
+      "primarySkillId": "W1.2",
+      "familyId": "writing.er.map",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Attendance improved from 91 to 94 percent.",
+          "distractorType": "evidence_not_limit",
+          "whyWrong": "That is supporting evidence, not a limitation."
+        },
+        {
+          "id": "b",
+          "text": "Families value predictable schedules.",
+          "distractorType": "wrong_source",
+          "whyWrong": "That idea belongs to Source B."
+        },
+        {
+          "id": "c",
+          "text": "The pilot included only two schools."
+        },
+        {
+          "id": "d",
+          "text": "Later dismissal could affect sports.",
+          "distractorType": "wrong_source",
+          "whyWrong": "That concern is raised by Source B, not acknowledged by Source A."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Source A explicitly limits how broadly the pilot results can be generalized.",
+        "quickTip": "A limitation narrows how confidently evidence can be used."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement would be off-task in an ER response?",
+      "primarySkillId": "W1.1",
+      "familyId": "writing.er.task",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "I prefer later mornings because I personally dislike waking up early."
+        },
+        {
+          "id": "b",
+          "text": "Source A provides measured changes from a pilot.",
+          "distractorType": "on_task",
+          "whyWrong": "That evaluates source support."
+        },
+        {
+          "id": "c",
+          "text": "Source B raises scheduling concerns but supplies no cost estimates.",
+          "distractorType": "on_task",
+          "whyWrong": "That evaluates a weakness in Source B's support."
+        },
+        {
+          "id": "d",
+          "text": "Source A is better supported because it combines results with a stated limitation.",
+          "distractorType": "on_task",
+          "whyWrong": "That directly answers the evaluative task."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Personal preference does not show which source is better supported.",
+        "quickTip": "If a sentence could be written without reading the sources, question whether it belongs."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which relationship between the sources is most accurate?",
+      "primarySkillId": "W1.2",
+      "familyId": "writing.er.map",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both sources use the same attendance study to reach opposite conclusions.",
+          "distractorType": "false_equivalence",
+          "whyWrong": "Source B does not use the attendance study."
+        },
+        {
+          "id": "b",
+          "text": "Source B provides stronger numerical evidence than Source A.",
+          "distractorType": "reversal",
+          "whyWrong": "Source B provides no comparable numerical evidence."
+        },
+        {
+          "id": "c",
+          "text": "Both sources agree that the schedule should change immediately.",
+          "distractorType": "unsupported",
+          "whyWrong": "They recommend different actions."
+        },
+        {
+          "id": "d",
+          "text": "Source A supplies pilot results; Source B mainly raises possible consequences that should be studied."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The sources differ mainly in the kind and strength of support they provide.",
+        "quickTip": "Map not only what each source says, but how each supports it."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Before choosing a side, what should the learner do first?",
+      "primarySkillId": "W1.1",
+      "familyId": "writing.er.task",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Write the introduction immediately so time is not wasted.",
+          "distractorType": "rushed_drafting",
+          "whyWrong": "Drafting before mapping increases the chance of source drift."
+        },
+        {
+          "id": "b",
+          "text": "Identify each source's claim, evidence, reasoning, and limitations."
+        },
+        {
+          "id": "c",
+          "text": "Count which source has more paragraphs.",
+          "distractorType": "irrelevant_measure",
+          "whyWrong": "Length does not determine argument quality."
+        },
+        {
+          "id": "d",
+          "text": "Choose the opinion that sounds more familiar.",
+          "distractorType": "personal_bias",
+          "whyWrong": "Familiarity is not evidence quality."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "A quick source map gives the learner the information needed for an evidence-based judgment.",
+        "quickTip": "Map first; judge second; draft third."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Extended Response",
+    "primarySkillId": "W1.1",
+    "secondarySkillIds": [
+      "W1.2"
+    ],
+    "unitId": "understand-map-sources",
+    "contentKind": "skill_drill",
+    "learningObjective": "Start by Mapping the Task",
+    "topicLabel": "Extended Response"
+  }
+}

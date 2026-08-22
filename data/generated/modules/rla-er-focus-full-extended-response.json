@@ -1,0 +1,472 @@
+{
+  "id": "rla-er-focus-full-extended-response",
+  "title": "Plan the Full Response",
+  "description": "Focused Extended Response component practice.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Source A - Expand Collection to Apartments\nA city pilot collected food scraps from 1,100 apartment households for six months. Participating buildings sent 19 percent less trash to the landfill, and contamination in the food-waste bins fell from 14 percent to 6 percent after clearer signs were installed. The sanitation department recommends expanding gradually and providing building managers with training.\n\nSource B - Delay Expansion\nA property association argues that apartment collection should wait. It says some buildings have little space for extra bins and that managers may face complaints about odor. The association recommends another year of study but provides no contamination records, cost estimates, or data showing that odor complaints occurred during the pilot. It does suggest testing smaller bins in buildings with limited storage.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which sequence best fits a 45-minute ER workflow?",
+      "points": 1,
+      "explanation": "The workflow protects time for source analysis, planning, drafting, and revision.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "A short plan usually saves time during drafting.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Draft immediately -> choose a source later -> skip revision.",
+          "distractorType": "rushed",
+          "whyWrong": "This increases source drift and leaves no quality-control time."
+        },
+        {
+          "id": "b",
+          "text": "Write the conclusion first -> search for evidence -> decide the task.",
+          "distractorType": "backward",
+          "whyWrong": "The judgment should come from source analysis before drafting."
+        },
+        {
+          "id": "c",
+          "text": "Count words -> copy evidence -> add personal opinion -> submit.",
+          "distractorType": "off_task",
+          "whyWrong": "Word count and copied evidence do not replace analysis."
+        },
+        {
+          "id": "d",
+          "text": "Read/map -> choose stronger argument -> outline -> draft -> revise/edit."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which planner entry is strongest?",
+      "points": 1,
+      "explanation": "The planner connects the judgment to specific evidence and a comparative weakness.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Use shorthand that preserves the logic you will write later.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Winner: A; Reason 1: measured landfill reduction; Evidence: 19% less trash; B weakness: concerns lack pilot data."
+        },
+        {
+          "id": "b",
+          "text": "Winner: A; Reason: I like recycling.",
+          "distractorType": "personal",
+          "whyWrong": "Personal preference is not a source-based reason."
+        },
+        {
+          "id": "c",
+          "text": "Winner: B; Reason: B sounds cautious.",
+          "distractorType": "tone_only",
+          "whyWrong": "Caution in tone is not enough to establish stronger support."
+        },
+        {
+          "id": "d",
+          "text": "Winner: A; Evidence: the city has apartments.",
+          "distractorType": "weak_evidence",
+          "whyWrong": "That fact does not support the recommendation."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What should happen when the timer reaches zero in a true simulation?",
+      "points": 1,
+      "explanation": "A simulation needs predictable timing behavior and must preserve the learner's work for review.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Clear rules make timed practice useful.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The essay should be automatically scored 6/6 if it is long enough.",
+          "distractorType": "fake_scoring",
+          "whyWrong": "Length cannot establish rubric quality and V1 does not machine-grade essays."
+        },
+        {
+          "id": "b",
+          "text": "The timer should secretly add five minutes.",
+          "distractorType": "invalid_simulation",
+          "whyWrong": "A hidden extension makes timing meaningless."
+        },
+        {
+          "id": "c",
+          "text": "Editing should stop if the learner was clearly warned before starting, and the response should move to review."
+        },
+        {
+          "id": "d",
+          "text": "The page should erase the draft.",
+          "distractorType": "data_loss",
+          "whyWrong": "The learner needs the response for review and revision."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which post-submit label is appropriate for V1?",
+      "points": 1,
+      "explanation": "The learner may assign a provisional score using transparent criteria, clearly labeled as self-review.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Separate self-review from machine-verified quiz accuracy.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Official GED Score: 2/2.",
+          "distractorType": "misleading",
+          "whyWrong": "Studo cannot claim an official score."
+        },
+        {
+          "id": "b",
+          "text": "Self-review: Argument & Evidence - choose 0, 1, or 2 using the rubric checklist."
+        },
+        {
+          "id": "c",
+          "text": "AI-certified Trait Score: 2/2.",
+          "distractorType": "misleading",
+          "whyWrong": "V1 does not use reliable automatic essay grading."
+        },
+        {
+          "id": "d",
+          "text": "Guaranteed exam score: full marks.",
+          "distractorType": "misleading",
+          "whyWrong": "Practice cannot guarantee an official result."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "When should the model response appear?",
+      "points": 1,
+      "explanation": "Delayed reveal protects independent practice while still supporting learning afterward.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Attempt first; compare second.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Before the learner reads the sources.",
+          "distractorType": "spoiler",
+          "whyWrong": "Early exposure turns practice into copying."
+        },
+        {
+          "id": "b",
+          "text": "While the learner is drafting each sentence.",
+          "distractorType": "interruptive",
+          "whyWrong": "Real-time model comparison interferes with independent practice."
+        },
+        {
+          "id": "c",
+          "text": "After submission, or after the learner explicitly chooses to reveal it."
+        },
+        {
+          "id": "d",
+          "text": "Only after the learner deletes the draft.",
+          "distractorType": "unnecessary",
+          "whyWrong": "The learner should keep the draft for comparison and revision."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which saved information should remain separate from objective mastery?",
+      "points": 1,
+      "explanation": "Self-scores are reflective judgments, not verified correctness data.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Label subjective and objective progress separately.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Correct answers on focused W1 quizzes.",
+          "distractorType": "objective",
+          "whyWrong": "Those are objective practice results and can contribute to mastery."
+        },
+        {
+          "id": "b",
+          "text": "Wrong-answer history on objective questions.",
+          "distractorType": "objective",
+          "whyWrong": "That is part of the normal learning signal."
+        },
+        {
+          "id": "c",
+          "text": "Question-family accuracy from selected-response practice.",
+          "distractorType": "objective",
+          "whyWrong": "That comes from machine-verifiable responses."
+        },
+        {
+          "id": "d",
+          "text": "The learner's provisional 0-2 rubric self-scores."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which revision question is most useful after submission?",
+      "points": 1,
+      "explanation": "This question targets the common summary-versus-analysis weakness that affects argument/evidence scoring.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Revision questions should point to observable reasoning.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Did I use the longest words possible?",
+          "distractorType": "style_misconception",
+          "whyWrong": "Complex vocabulary is not the goal."
+        },
+        {
+          "id": "b",
+          "text": "Where did I explain why the evidence makes one argument stronger, instead of only repeating what the source said?"
+        },
+        {
+          "id": "c",
+          "text": "Did I make both sources sound equally strong?",
+          "distractorType": "wrong_goal",
+          "whyWrong": "The task requires an evaluative judgment when support differs."
+        },
+        {
+          "id": "d",
+          "text": "Did I avoid every short sentence?",
+          "distractorType": "style_misconception",
+          "whyWrong": "Sentence length variety matters less than clarity and control."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What makes an untimed ER attempt different from a timed simulation?",
+      "points": 1,
+      "explanation": "Untimed mode changes pacing support, not the intellectual task or review standard.",
+      "skill": {
+        "id": "W1.12",
+        "label": "Full paired-source ER"
+      },
+      "rule": "Learn the process untimed before adding time pressure.",
+      "familyId": "writing.er.full_process",
+      "metadata": {
+        "skillId": "W1.12",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 2,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Untimed practice keeps the same source-based task and rubric but removes the countdown so the learner can focus on process."
+        },
+        {
+          "id": "b",
+          "text": "Untimed practice allows personal opinion instead of evidence.",
+          "distractorType": "task_change",
+          "whyWrong": "The task remains source-based."
+        },
+        {
+          "id": "c",
+          "text": "Untimed practice can reveal the model before writing.",
+          "distractorType": "spoiler",
+          "whyWrong": "Independent attempt should still come first."
+        },
+        {
+          "id": "d",
+          "text": "Untimed practice receives an official score while timed practice does not.",
+          "distractorType": "misleading",
+          "whyWrong": "Neither mode receives an official automatic score."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-er-focus-full-extended-response",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Extended Response",
+      "primarySkillId": "W1.12",
+      "secondarySkillIds": [],
+      "unitId": "full-extended-response",
+      "contentKind": "skill_drill",
+      "learningObjective": "Plan the Full Response",
+      "topicLabel": "Extended Response"
+    },
+    "passage": {
+      "id": "p-rla-er-focus-full-extended-response",
+      "title": "Should Apartments Join Food-Waste Collection?",
+      "textType": "informational",
+      "context": "public_policy",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T11:04:16.842Z"
+  }
+}

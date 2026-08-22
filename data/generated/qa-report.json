@@ -1,19 +1,26 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-22T09:41:40.049Z",
+  "builtAt": "2026-08-22T11:04:16.865Z",
   "summary": {
     "errors": 0,
-    "warnings": 7,
+    "warnings": 10,
     "byCode": {
       "TRANSFER_FAMILY_SINGLETON": {
         "errors": 0,
-        "warnings": 7,
-        "total": 7,
+        "warnings": 5,
+        "total": 5,
         "files": [
           "content-src/sets/set-rla-reading-transfer-edna-river.json",
           "content-src/sets/set-rla-reading-transfer-festival-plan.json",
-          "content-src/sets/set-rla-reading-transfer-machine-listening.json",
-          "content-src/sets/set-rla-writing-library-hours.json"
+          "content-src/sets/set-rla-reading-transfer-machine-listening.json"
+        ]
+      },
+      "PUBLISHED_SKILL_LOW_COVERAGE": {
+        "errors": 0,
+        "warnings": 5,
+        "total": 5,
+        "files": [
+          "content-src/config/rla.curriculum.json"
         ]
       }
     }
@@ -56,17 +63,38 @@
     },
     {
       "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family writing.evidence.relevance has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-writing-library-hours.json",
-      "location": "set-rla-writing-library-hours:q1"
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill R5.4 (Evidence relevance) has only 3 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "R5.4"
     },
     {
       "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family writing.argument.short_response has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-writing-library-hours.json",
-      "location": "set-rla-writing-library-hours:q2"
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.8 (Organize the response) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.8"
+    },
+    {
+      "type": "warning",
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.9 (Develop ideas) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.9"
+    },
+    {
+      "type": "warning",
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.10 (Revise for focus & clarity) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.10"
+    },
+    {
+      "type": "warning",
+      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
+      "message": "Published skill W1.11 (Edit conventions) has only 2 canonical questions.",
+      "file": "content-src/config/rla.curriculum.json",
+      "location": "W1.11"
     }
   ]
 }

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-bridge-plan",
+  "title": "Should the County Replace the Harbor Bridge Now?",
+  "topic": "infrastructure spending",
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Extended Response V1 editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Replace the Bridge Immediately",
+    "text": "A county commissioner argues that the Harbor Bridge should be replaced within three years. The bridge is 63 years old, and recent inspections found corrosion in several steel members. The commissioner says an older bridge will only become more expensive to maintain and that a new structure could include wider bicycle lanes and better storm protection. A preliminary concept places the replacement cost at about $180 million.\n\nThe commissioner points to two emergency repairs during the past decade as evidence that waiting is risky. However, the proposal does not include a current life-cycle cost comparison between replacement and rehabilitation. Engineers have not classified the bridge as unsafe for normal traffic, and the $180 million estimate was prepared before detailed geotechnical work. The commissioner argues that the county should begin final design now so construction can start before conditions become more serious.\n\nThe commissioner also notes that neighboring counties have faced rapid cost increases after delaying large bridge projects. A consultant's regional construction index shows bridge-material and labor costs rising about 6 percent annually over the past three years. He argues that beginning design early could protect the county from further inflation and allow bicycle and storm-resilience improvements to be incorporated at once. The index, however, does not show whether the Harbor Bridge itself will deteriorate at the same rate or whether a future replacement project could receive state funding unavailable today.",
+    "attribution": "Original content by Studo"
+  },
+  "sourceB": {
+    "title": "Rehabilitate Critical Components and Reassess",
+    "text": "The county engineering office recommends a staged rehabilitation first. Its latest inspection rates the bridge as structurally adequate but identifies three corrosion zones that need repair within two years. Engineers estimate $24 million for steel replacement, coating, drainage improvements, and new monitoring sensors. A life-cycle analysis estimates that this work could extend reliable service by 12 to 15 years, although unusually rapid corrosion could shorten that period.\n\nThe office does not reject eventual replacement. Instead, it recommends completing the critical repairs, collecting five years of sensor data, and using that information while developing a long-term replacement design. The report also notes that replacing the bridge now would require temporary traffic capacity elsewhere, adding costs that are not included in the preliminary $180 million concept. The staged plan includes annual inspection triggers that would accelerate replacement if deterioration exceeds specified limits.\n\nThe engineering office modeled a more severe corrosion scenario as part of its life-cycle review. Even under that case, engineers estimate that the critical repairs would provide at least eight years before full replacement became necessary, assuming annual inspections continue. The office also recommends preliminary replacement planning during rehabilitation so the county does not start from zero later. Its estimate includes a 20 percent construction contingency but not future inflation. Officials say this approach preserves mobility now while producing condition data for a better-timed capital decision.",
+    "attribution": "Original content by Studo"
+  },
+  "strongerSource": "B",
+  "authoringKey": {
+    "reasons": [
+      "it uses the current engineering condition rating and a specific rehabilitation scope instead of treating age alone as proof of immediate replacement",
+      "it provides a life-cycle estimate, monitoring plan, and explicit triggers for changing course"
+    ],
+    "evidence": [
+      "engineers rate the bridge structurally adequate while identifying three repair zones and a $24 million rehabilitation package",
+      "the plan estimates 12 to 15 additional years of service and sets inspection thresholds that could accelerate replacement"
+    ],
+    "weakerSourceLimitation": "Source A reasonably emphasizes long-term risk and future design needs, but its immediate-replacement case lacks the same life-cycle and traffic-cost analysis."
+  },
+  "modelResponse": "Both sources address the same policy question, but Source B presents the better-supported argument. Its position is stronger for two main reasons: it uses the current engineering condition rating and a specific rehabilitation scope instead of treating age alone as proof of immediate replacement; and it provides a life-cycle estimate, monitoring plan, and explicit triggers for changing course. Source A raises a relevant concern, but the support behind that concern is less complete.\n\nFirst, Source B is stronger because it uses the current engineering condition rating and a specific rehabilitation scope instead of treating age alone as proof of immediate replacement. It reports that engineers rate the bridge structurally adequate while identifying three repair zones and a $24 million rehabilitation package. This evidence matters because it directly addresses a central factual question behind the recommendation rather than asking the reader to accept a prediction. The evidence also fits the scope of the claim, which makes the reasoning easier to evaluate. Source A does not provide equally specific support on this point.\n\nSource B is also stronger because it provides a life-cycle estimate, monitoring plan, and explicit triggers for changing course. It explains that the plan estimates 12 to 15 additional years of service and sets inspection thresholds that could accelerate replacement. This matters because the source considers another important part of the decision instead of relying on a single favorable fact. Source A reasonably emphasizes long-term risk and future design needs, but its immediate-replacement case lacks the same life-cycle and traffic-cost analysis. That concern is relevant, but the weaker source does not show that it outweighs Source B's more direct evidence or that the proposed response would fail.\n\nOverall, Source B is better supported because its recommendation is tied to specific evidence and its reasoning stays within the limits of that evidence. Source A contributes a useful caution, but Source B gives the reader clearer grounds for judging likely results.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response clearly identifies Source B as better supported and previews two reasons."
+    },
+    {
+      "label": "Evidence",
+      "note": "Specific source evidence is used rather than personal experience or outside facts."
+    },
+    {
+      "label": "Analysis",
+      "note": "The response explains why the evidence matters instead of only repeating it."
+    },
+    {
+      "label": "Comparison",
+      "note": "The weaker source is treated fairly, but its evidentiary or reasoning limitation is identified."
+    },
+    {
+      "label": "Organization",
+      "note": "Each body paragraph develops one reason before the conclusion restates the judgment."
+    }
+  ],
+  "revisionPrompts": [
+    "Where did I clearly state which source is better supported?",
+    "Where did I explain why a piece of evidence matters instead of only summarizing it?",
+    "Did I evaluate both sources fairly and identify a specific weakness in the weaker argument?",
+    "Did I preserve qualifiers such as may, could, some, or limited when the source used them?"
+  ]
+}

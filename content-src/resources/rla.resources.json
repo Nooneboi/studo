@@ -2189,6 +2189,330 @@
       "status": "published",
       "rightsStatus": "original",
       "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-understand-map-sources-study-guide",
+      "title": "Understand & Map the Sources - Study Guide",
+      "type": "study_guide",
+      "description": "Extended Response study guide for Understand & Map the Sources.",
+      "href": "assets/resources/er-understand-map-sources-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "understand-map-sources",
+      "skillIds": [
+        "W1.1",
+        "W1.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-understand-map-sources-workbook-1",
+      "title": "Understand & Map the Sources - Workbook 1",
+      "type": "worksheet",
+      "description": "Extended Response workbook 1 for Understand & Map the Sources.",
+      "href": "assets/resources/er-understand-map-sources-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "understand-map-sources",
+      "skillIds": [
+        "W1.1",
+        "W1.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-understand-map-sources-workbook-2",
+      "title": "Understand & Map the Sources - Workbook 2",
+      "type": "worksheet",
+      "description": "Extended Response workbook 2 for Understand & Map the Sources.",
+      "href": "assets/resources/er-understand-map-sources-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "understand-map-sources",
+      "skillIds": [
+        "W1.1",
+        "W1.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-choose-stronger-argument-study-guide",
+      "title": "Choose the Stronger Argument - Study Guide",
+      "type": "study_guide",
+      "description": "Extended Response study guide for Choose the Stronger Argument.",
+      "href": "assets/resources/er-choose-stronger-argument-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "choose-stronger-argument",
+      "skillIds": [
+        "W1.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-choose-stronger-argument-workbook-1",
+      "title": "Choose the Stronger Argument - Workbook 1",
+      "type": "worksheet",
+      "description": "Extended Response workbook 1 for Choose the Stronger Argument.",
+      "href": "assets/resources/er-choose-stronger-argument-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "choose-stronger-argument",
+      "skillIds": [
+        "W1.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-choose-stronger-argument-workbook-2",
+      "title": "Choose the Stronger Argument - Workbook 2",
+      "type": "worksheet",
+      "description": "Extended Response workbook 2 for Choose the Stronger Argument.",
+      "href": "assets/resources/er-choose-stronger-argument-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "choose-stronger-argument",
+      "skillIds": [
+        "W1.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-thesis-evidence-study-guide",
+      "title": "Thesis & Evidence - Study Guide",
+      "type": "study_guide",
+      "description": "Extended Response study guide for Thesis & Evidence.",
+      "href": "assets/resources/er-thesis-evidence-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "thesis-evidence",
+      "skillIds": [
+        "W1.4",
+        "W1.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-thesis-evidence-workbook-1",
+      "title": "Thesis & Evidence - Workbook 1",
+      "type": "worksheet",
+      "description": "Extended Response workbook 1 for Thesis & Evidence.",
+      "href": "assets/resources/er-thesis-evidence-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "thesis-evidence",
+      "skillIds": [
+        "W1.4",
+        "W1.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-thesis-evidence-workbook-2",
+      "title": "Thesis & Evidence - Workbook 2",
+      "type": "worksheet",
+      "description": "Extended Response workbook 2 for Thesis & Evidence.",
+      "href": "assets/resources/er-thesis-evidence-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "thesis-evidence",
+      "skillIds": [
+        "W1.4",
+        "W1.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-analyze-not-summarize-study-guide",
+      "title": "Analyze, Don't Just Summarize - Study Guide",
+      "type": "study_guide",
+      "description": "Extended Response study guide for Analyze, Don't Just Summarize.",
+      "href": "assets/resources/er-analyze-not-summarize-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "analyze-not-summarize",
+      "skillIds": [
+        "W1.6",
+        "W1.7"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-analyze-not-summarize-workbook-1",
+      "title": "Analyze, Don't Just Summarize - Workbook 1",
+      "type": "worksheet",
+      "description": "Extended Response workbook 1 for Analyze, Don't Just Summarize.",
+      "href": "assets/resources/er-analyze-not-summarize-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "analyze-not-summarize",
+      "skillIds": [
+        "W1.6",
+        "W1.7"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-analyze-not-summarize-workbook-2",
+      "title": "Analyze, Don't Just Summarize - Workbook 2",
+      "type": "worksheet",
+      "description": "Extended Response workbook 2 for Analyze, Don't Just Summarize.",
+      "href": "assets/resources/er-analyze-not-summarize-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "analyze-not-summarize",
+      "skillIds": [
+        "W1.6",
+        "W1.7"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-organize-develop-revise-study-guide",
+      "title": "Organize, Develop & Revise - Study Guide",
+      "type": "study_guide",
+      "description": "Extended Response study guide for Organize, Develop & Revise.",
+      "href": "assets/resources/er-organize-develop-revise-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "organize-develop-revise",
+      "skillIds": [
+        "W1.8",
+        "W1.9",
+        "W1.10",
+        "W1.11"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-organize-develop-revise-workbook-1",
+      "title": "Organize, Develop & Revise - Workbook 1",
+      "type": "worksheet",
+      "description": "Extended Response workbook 1 for Organize, Develop & Revise.",
+      "href": "assets/resources/er-organize-develop-revise-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "organize-develop-revise",
+      "skillIds": [
+        "W1.8",
+        "W1.9",
+        "W1.10",
+        "W1.11"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-organize-develop-revise-workbook-2",
+      "title": "Organize, Develop & Revise - Workbook 2",
+      "type": "worksheet",
+      "description": "Extended Response workbook 2 for Organize, Develop & Revise.",
+      "href": "assets/resources/er-organize-develop-revise-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "organize-develop-revise",
+      "skillIds": [
+        "W1.8",
+        "W1.9",
+        "W1.10",
+        "W1.11"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-full-extended-response-study-guide",
+      "title": "Full Extended Response - Study Guide",
+      "type": "study_guide",
+      "description": "Extended Response study guide for Full Extended Response.",
+      "href": "assets/resources/er-full-extended-response-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "full-extended-response",
+      "skillIds": [
+        "W1.12"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-full-extended-response-workbook-1",
+      "title": "Full Extended Response - Workbook 1",
+      "type": "worksheet",
+      "description": "Extended Response workbook 1 for Full Extended Response.",
+      "href": "assets/resources/er-full-extended-response-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "full-extended-response",
+      "skillIds": [
+        "W1.12"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
+    },
+    {
+      "id": "res-rla-er-v1-full-extended-response-workbook-2",
+      "title": "Full Extended Response - Workbook 2",
+      "type": "worksheet",
+      "description": "Extended Response workbook 2 for Full Extended Response.",
+      "href": "assets/resources/er-full-extended-response-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "extended-response",
+      "unitId": "full-extended-response",
+      "skillIds": [
+        "W1.12"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Extended Response V1 editorial review"
     }
   ]
 }

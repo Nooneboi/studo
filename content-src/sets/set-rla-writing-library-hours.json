@@ -11,13 +11,13 @@
   "category": "writing",
   "topic": "Evidence Relevance",
   "difficulty": "easy",
-  "status": "published",
-  "version": 1,
+  "status": "retired",
+  "version": 2,
   "passageRefs": [
     "p-rla-library-sunday-hours"
   ],
   "author": "Studo",
-  "reviewer": "Phase 4B migration review",
+  "reviewer": "Retired by Extended Response V1 migration",
   "questions": [
     {
       "id": "q1",
@@ -73,7 +73,7 @@
     {
       "id": "q2",
       "type": "extended_response",
-      "prompt": "In 3–5 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
+      "prompt": "In 3\u20135 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
       "primarySkillId": "W1.5",
       "secondarySkillIds": [
         "W1.9"

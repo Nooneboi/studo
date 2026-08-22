@@ -23,6 +23,9 @@ async function init() {
   const languagePractice = track.id === "language"
     ? (curriculum.languagePractice || []).filter((set) => !set.curriculum?.domain || set.curriculum.domain === domain.label)
     : [];
+  const extendedResponsePractice = track.id === "extended-response"
+    ? (curriculum.extendedResponsePractice || [])
+    : [];
   mount.innerHTML = `
     <header class="simple-domain-hero domain-hero-with-resources">
       <div class="domain-hero-copy">
@@ -56,6 +59,15 @@ async function init() {
           <h2 class="simple-skill-group-title">Mixed Editing Practice</h2>
           <div class="simple-skill-stack">
             ${languagePractice.map((set) => renderArgumentPractice(set, track, domain)).join("")}
+          </div>
+        </section>` : ""}
+      ${extendedResponsePractice.length ? `
+        <section class="simple-skill-group tone-amber er-prompt-group">
+          <div class="er-domain-practice-head">
+            <div><h2 class="simple-skill-group-title">Full Extended Response Practice</h2><p>Use paired sources to plan, write, and self-review a complete response.</p></div>
+          </div>
+          <div class="er-domain-prompt-stack">
+            ${extendedResponsePractice.map((prompt) => renderErPrompt(prompt, track, domain)).join("")}
           </div>
         </section>` : ""}
     </div>`;
@@ -105,6 +117,26 @@ function renderArgumentPractice(set, track, domain) {
       <span class="simple-skill-pill-title">${escapeHtml(set.title)}</span>
       <span class="simple-skill-pill-meta">${escapeHtml(meta)}</span>
     </a>`;
+}
+
+function renderErPrompt(prompt, track, domain) {
+  const returnHref = `domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}`;
+  const base = `extended-response.html?prompt=${encodeURIComponent(prompt.id)}&return=${encodeURIComponent(returnHref)}`;
+  return `
+    <article class="er-domain-prompt-card">
+      <div class="er-domain-prompt-copy">
+        <span>${escapeHtml(prompt.topic || "Paired-source argument")}</span>
+        <h3>${escapeHtml(prompt.title)}</h3>
+        <p>${escapeHtml(prompt.sourceATitle || "Source A")} + ${escapeHtml(prompt.sourceBTitle || "Source B")}</p>
+      </div>
+      <div class="er-domain-prompt-actions-wrap">
+        <div class="er-domain-prompt-actions">
+          <a class="btn secondary small" href="${base}&mode=untimed">Untimed</a>
+          <a class="btn small" href="${base}&mode=timed">Timed 45 min</a>
+        </div>
+        <small>Timed mode starts immediately and locks editing at 00:00.</small>
+      </div>
+    </article>`;
 }
 
 function renderTopicResource(resource) {
