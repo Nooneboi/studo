@@ -107,7 +107,7 @@ async function connectFolder() {
     setStatus('Connected', 'Files and the resource registry can now be saved directly.');
     await loadRegistryFromProject();
   } catch (err) {
-    if (err?.name !== 'AbortError') setStatus('Could not connect', err.message || 'Choose the Studo project folder.');
+    if (err?.name !== 'AbortError') setStatus('Could not connect', err.message || 'Choose the Chee Skool project folder.');
   }
 }
 

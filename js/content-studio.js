@@ -21,12 +21,12 @@ const state = {
     text: '',
     textType: 'informational',
     context: 'community',
-    source: { type: 'original', attribution: 'Original content by Studo' },
-    rights: { status: 'original', holder: 'Studo', note: '' },
+    source: { type: 'original', attribution: 'Original content by Chee Skool' },
+    rights: { status: 'original', holder: 'Chee Skool', note: '' },
     evidenceAnchors: {},
     status: 'draft',
     version: 1,
-    author: 'Studo',
+    author: 'Chee Skool',
     reviewer: null,
   },
   set: {
@@ -51,7 +51,7 @@ const state = {
     version: 1,
     passageRefs: [],
     questions: [],
-    author: 'Studo',
+    author: 'Chee Skool',
     reviewer: null,
   }
 };
@@ -618,7 +618,7 @@ async function connectProjectFolder() {
       await picked.getFileHandle('package.json');
       await picked.getDirectoryHandle('content-src');
     } catch {
-      setSaveMessage('Choose the Studo project folder — the one containing package.json and content-src/.');
+      setSaveMessage('Choose the Chee Skool project folder — the one containing package.json and content-src/.');
       return;
     }
     projectHandle = picked;

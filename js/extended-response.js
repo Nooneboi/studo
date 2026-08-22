@@ -163,7 +163,7 @@ function selectSource(source) {
 function renderSource() {
   const source = activeSource === "A" ? prompt.sourceA : prompt.sourceB;
   const paragraphs = String(source.text || "").split(/\n\s*\n/).filter(Boolean);
-  document.getElementById("er-source-copy").innerHTML = `<div class="er-source-label">Source ${activeSource}</div><h2>${escapeHtml(source.title)}</h2>${paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}<small>${escapeHtml(source.attribution || "Original content by Studo")}</small>`;
+  document.getElementById("er-source-copy").innerHTML = `<div class="er-source-label">Source ${activeSource}</div><h2>${escapeHtml(source.title)}</h2>${paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}<small>${escapeHtml(String(source.attribution || "Original content by Chee Skool").replace(/\bStudo\b/g, "Chee Skool"))}</small>`;
 }
 
 function togglePlanner() {

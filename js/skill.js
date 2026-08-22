@@ -27,7 +27,7 @@ async function init() {
   const workbookSheets = resources.filter((r) => r.type === "worksheet");
   const checks = item.checks || item.sets || [];
 
-  document.title = `Studo — ${item.label}`;
+  document.title = `Chee Skool — ${item.label}`;
   mount.innerHTML = `
     <header class="skill-library-hero">
       <a class="curriculum-back" href="domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}">← ${escapeHtml(domain.label)}</a>

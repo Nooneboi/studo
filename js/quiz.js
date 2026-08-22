@@ -41,7 +41,7 @@ async function startAttempt(mode) {
     location.href = `test.html?attempt=${encodeURIComponent(attempt.attemptId)}`;
   } catch (error) {
     console.error(error);
-    setStatus("Studo could not assemble a valid mock from the current question bank.");
+    setStatus("Chee Skool could not assemble a valid mock from the current question bank.");
   }
 }
 

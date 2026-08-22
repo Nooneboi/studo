@@ -231,3 +231,19 @@ test('Alpha Candidate release metadata and service-worker cache are bumped toget
   assert.match(sw, /0\.7\.0-alpha\.1/);
   assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.1"/);
 });
+
+
+test('Chee Skool branding is used across learner pages and shipped as a real logo asset', () => {
+  const learnerPages = ['index.html','practice.html','passages.html','resources.html','progress.html','curriculum.html','domain.html','category.html','skill.html','about.html','methodology.html','privacy.html','404.html','quiz.html'];
+  for (const file of learnerPages) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.match(html, /<title>Chee Skool — /, `${file} should use the Chee Skool page title`);
+    assert.match(html, /class="brand-logo"[^>]*src="assets\/chee-skool-logo\.png"[^>]*alt="Chee Skool"/, `${file} should render the Chee Skool logo in the header`);
+  }
+  assert.ok(fs.existsSync(path.join(root, 'assets/chee-skool-logo.png')), 'Chee Skool logo asset should ship with the site');
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
+  assert.equal(manifest.name, 'Chee Skool');
+  assert.equal(manifest.short_name, 'Chee Skool');
+  const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+  assert.match(sw, /assets\/chee-skool-logo\.png/, 'service-worker app shell should include the brand asset');
+});

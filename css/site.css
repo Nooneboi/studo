@@ -7795,3 +7795,29 @@ body.test-body {
 .mock-review-item dd{margin:0}
 .mock-review-feedback{margin:.6rem 0 0;padding:.75rem;border-left:3px solid #51439c;background:rgba(81,67,156,.06)}
 @media (max-width:760px){.mock-skill-grid{grid-template-columns:1fr}.mock-review-item dl div{grid-template-columns:1fr;gap:.2rem}.mock-review-heading{align-items:flex-start;flex-direction:column;gap:.25rem}}
+
+
+/* Chee Skool brand -------------------------------------------------------- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 1;
+}
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 42px;
+  max-width: 220px;
+  object-fit: contain;
+}
+@media (max-width: 980px) {
+  .brand-logo { height: 38px; max-width: 196px; }
+}
+@media (max-width: 720px) {
+  .site-header .wrap { min-height: 60px; }
+  .brand-logo { height: 36px; max-width: 186px; }
+}
+@media (max-width: 420px) {
+  .brand-logo { height: 32px; max-width: 164px; }
+}

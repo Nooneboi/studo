@@ -97,7 +97,7 @@ function renderProgress() {
   const clearBtn = document.getElementById("clear-learning-history");
   if (clearBtn) {
     clearBtn.addEventListener("click", () => {
-      if (!confirm("Clear Studo's skill signals and review history on this device?")) return;
+      if (!confirm("Clear Chee Skool's skill signals and review history on this device?")) return;
       Learning.clearLearningHistory();
       renderProgress();
     });
@@ -162,13 +162,13 @@ async function restoreLearningBackup(event) {
   try {
     const payload = JSON.parse(await file.text());
     if (payload?.format !== "studo-local-backup" || payload?.version !== 1 || !payload.data || typeof payload.data !== "object") {
-      throw new Error("Not a Studo backup file");
+      throw new Error("Not a Chee Skool backup file");
     }
     const entries = Object.entries(payload.data);
     if (entries.some(([key, value]) => !key.startsWith("sq:") || typeof value !== "string")) {
       throw new Error("Backup contains invalid data");
     }
-    if (!confirm("Restore this backup? Current Studo learning data on this device will be replaced.")) return;
+    if (!confirm("Restore this backup? Current Chee Skool learning data on this device will be replaced.")) return;
     const existing = [];
     for (let i = 0; i < localStorage.length; i += 1) {
       const key = localStorage.key(i);
@@ -222,7 +222,7 @@ function mockHistoryHtml(history) {
         <div><span class="progress-mini-label">Exam simulation</span><h2 id="mock-progress-heading">Mock Tests</h2></div>
         <span>${history.length} ${history.length === 1 ? "attempt" : "attempts"}</span>
       </div>
-      <p class="progress-er-note">Objective scores are auto-graded raw Studo results. Extended Response trait levels, when present, are separate Self-review.</p>
+      <p class="progress-er-note">Objective scores are auto-graded raw Chee Skool results. Extended Response trait levels, when present, are separate Self-review.</p>
       <div class="progress-er-list">${history.slice(0, 8).map(mockAttemptRow).join("")}</div>
     </section>`;
 }

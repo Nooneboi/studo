@@ -139,6 +139,10 @@ function closeToolsMenu() {
   if (menu) menu.open = false;
 }
 
+function displayBrandText(value) {
+  return String(value || "").replace(/\bStudo\b/g, "Chee Skool");
+}
+
 function passagePanelHtml() {
   const meta = currentQuiz.description || [currentQuiz.topic, `${activeQuestions().length} questions`].filter(Boolean).join(" · ");
   const basePassageMarkup = renderPassageParagraphs(currentQuiz.passage);
@@ -154,7 +158,7 @@ function passagePanelHtml() {
         <div class="reading-scroll">
           <div class="passage-text passage-numbered">${passageMarkup}</div>
         </div>
-        ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(safeHref(currentQuiz.sourceUrl))}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)}</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
+        ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(safeHref(currentQuiz.sourceUrl))}" target="_blank" rel="noopener">${escapeHtml(displayBrandText(currentQuiz.source))}</a>` : escapeHtml(displayBrandText(currentQuiz.source))}</div>` : ""}
       </section>
     </aside>
   `;

@@ -41,8 +41,8 @@ function renderPlan() {
       <div class="train-plan-eyebrow">${plan.adaptive ? "Adaptive session" : "Baseline session"}</div>
       <h1 id="train-plan-heading">Today’s training</h1>
       <p class="lede">${plan.adaptive
-        ? "Studo picked these questions from your review timing, weaker skills, and places where a fresh question can test whether learning transferred."
-        : "Studo needs a little more evidence before it can personalize strongly. This session stays broad, while still following up obvious signals such as a recent miss."}</p>
+        ? "Chee Skool picked these questions from your review timing, weaker skills, and places where a fresh question can test whether learning transferred."
+        : "Chee Skool needs a little more evidence before it can personalize strongly. This session stays broad, while still following up obvious signals such as a recent miss."}</p>
 
       <div class="train-plan-meta" aria-label="Training session summary">
         <div><strong>${plan.items.length}</strong><span>questions</span></div>
