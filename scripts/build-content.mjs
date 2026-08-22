@@ -124,6 +124,7 @@ function trackMap(curriculumConfig, skills) {
 
 function buildCurriculum({ curriculumConfig, skills, publishedResources, records }) {
   const passagePractice = [];
+  const argumentPractice = [];
   const tracks = (curriculumConfig.tracks || []).filter((track) => (track.publicationState || 'published') === 'published').map((track) => ({
     id: track.id,
     label: track.label,
@@ -138,7 +139,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
       const builtSkills = domainSkills.map((skill) => {
         const related = records.filter((record) => {
           const c = record.curriculum || {};
-          if (['passage_practice', 'quiz'].includes(c.contentKind)) return false;
+          if (['passage_practice', 'quiz', 'argument_practice'].includes(c.contentKind)) return false;
           const ids = measuredSkillIds(record);
           return c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id) || ids.includes(skill.id);
         });
@@ -169,12 +170,49 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
           studyResources: resources,
         };
       });
+      const builtUnits = (domainConfig.units || []).map((unitConfig) => {
+        const unitSkillIds = new Set(unitConfig.skillIds || []);
+        const related = records.filter((record) => {
+          const c = record.curriculum || {};
+          if (['passage_practice', 'quiz', 'argument_practice'].includes(c.contentKind)) return false;
+          if (c.unitId) return c.unitId === unitConfig.id;
+          return measuredSkillIds(record).some((id) => unitSkillIds.has(id));
+        });
+        const resources = publishedResources.filter((resource) => {
+          if (resource.scope === 'domain') return false;
+          if (resource.unitId) return resource.unitId === unitConfig.id;
+          const ids = new Set([...(resource.skillIds || []), ...(resource.primarySkillId ? [resource.primarySkillId] : [])]);
+          return [...unitSkillIds].some((id) => ids.has(id));
+        });
+        const cleanRecords = related.map((record) => {
+          const { questions, ...publicRecord } = record;
+          return { ...publicRecord, measuredSkillIds: measuredSkillIds(record) };
+        });
+        const questionCount = related.reduce((sum, record) => sum + (record.questions || []).length, 0);
+        return {
+          id: unitConfig.id,
+          label: unitConfig.label,
+          summary: unitConfig.summary || '',
+          skillIds: unitConfig.skillIds || [],
+          available: cleanRecords.length > 0 || resources.length > 0,
+          setCount: cleanRecords.length,
+          questionCount,
+          resourceCount: resources.length,
+          checkCount: cleanRecords.length,
+          sets: cleanRecords,
+          checks: cleanRecords,
+          resources,
+          studyResources: resources,
+        };
+      });
       return {
         id: domainId,
         label: domainConfig.name,
         summary: domainConfig.summary || '',
         groups: domainConfig.groups || [],
+        units: builtUnits,
         availableSkillCount: builtSkills.filter((skill) => skill.available).length,
+        availableUnitCount: builtUnits.filter((unit) => unit.available).length,
         availableSetCount: new Set(builtSkills.flatMap((skill) => skill.sets.map((set) => set.file))).size,
         topicResourceCount: domainResources.length,
         topicResources: domainResources,
@@ -187,7 +225,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
   }));
 
   for (const record of records) {
-    if (!['passage_practice', 'quiz'].includes(record.curriculum?.contentKind)) continue;
+    if (!['passage_practice', 'quiz', 'argument_practice'].includes(record.curriculum?.contentKind)) continue;
     const item = {
       id: record.id,
       title: record.passageMeta?.title || record.title,
@@ -200,7 +238,8 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
       measuredSkillIds: measuredSkillIds(record),
       passageMeta: record.passageMeta || null,
     };
-    passagePractice.push(item);
+    if (record.curriculum?.contentKind === 'argument_practice') argumentPractice.push(item);
+    else passagePractice.push(item);
   }
 
   for (const track of tracks) {
@@ -219,6 +258,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
     builtAt: new Date().toISOString(),
     tracks,
     passagePractice,
+    argumentPractice,
     mixedPractice: passagePractice,
   };
 }

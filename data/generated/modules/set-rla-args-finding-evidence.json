@@ -1,0 +1,473 @@
+{
+  "id": "set-rla-args-finding-evidence",
+  "title": "Keeping the Evening Tutoring Pilot",
+  "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "Northgate Community Center has offered free evening tutoring twice a week for one semester. The center director, Priya Raman, recommends continuing the program for another year rather than ending it when the pilot grant expires.\n\nAttendance records show that 146 students used the tutoring service at least once. Of the 58 students who attended six or more sessions, 41 improved by at least one letter grade in the class for which they sought help. Raman notes that the records do not prove tutoring caused every improvement: students may also have studied more, received classroom help, or changed courses. Still, she argues that the pattern is strong enough to justify a longer trial.\n\nRaman also cites access. Before the program began, the center surveyed 212 families; 37 percent said paid tutoring was too expensive and 29 percent said transportation to programs across town was a barrier. The community center is within walking distance of two apartment complexes and is served by an evening bus route. During the pilot, 63 percent of participating students came from households that had identified cost or transportation as a barrier.\n\nThe pilot had weaknesses. Attendance was uneven, and several students stopped coming after sports seasons began. Tutors also reported that one large room became noisy when more than twenty students arrived at once. Raman proposes using two smaller rooms next year and asking students to reserve a time slot when possible. She does not claim the pilot has already proven a permanent solution. Her recommendation is that the center keep the program long enough to measure attendance, course performance, and access across a full school year.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which detail provides the most direct evidence for Raman's claim that the tutoring program may help students academically?",
+      "points": 1,
+      "explanation": "The grade-change result directly measures an academic outcome among regular participants.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Match the evidence to the exact claim; relevant evidence must address the same question the claim raises.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The community center is served by an evening bus route.",
+          "distractorType": "relevant_other_claim",
+          "whyWrong": "The bus route supports the access argument, not the claim about academic improvement."
+        },
+        {
+          "id": "b",
+          "text": "Several students stopped attending after sports seasons began.",
+          "distractorType": "limitation",
+          "whyWrong": "This is a limitation of attendance, not evidence of academic benefit."
+        },
+        {
+          "id": "c",
+          "text": "Of 58 students who attended six or more sessions, 41 improved by at least one letter grade in the class for which they sought help."
+        },
+        {
+          "id": "d",
+          "text": "The pilot ran twice a week for one semester.",
+          "distractorType": "background",
+          "whyWrong": "This describes the program but does not show an academic outcome."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most directly supports the claim that the program addresses barriers to tutoring access?",
+      "points": 1,
+      "explanation": "This statistic connects actual participants to the exact barriers the program was intended to reduce.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Look for evidence that measures the population or outcome named in the claim.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Tutors said the large room became noisy when more than twenty students arrived.",
+          "distractorType": "different_issue",
+          "whyWrong": "Room noise concerns program operation, not whether the service reaches families facing access barriers."
+        },
+        {
+          "id": "b",
+          "text": "Sixty-three percent of participating students came from households that had identified cost or transportation as a barrier."
+        },
+        {
+          "id": "c",
+          "text": "The director recommends using two smaller rooms next year.",
+          "distractorType": "proposal_not_evidence",
+          "whyWrong": "A proposed change does not show who the program reached during the pilot."
+        },
+        {
+          "id": "d",
+          "text": "Students may also have received classroom help during the semester.",
+          "distractorType": "qualification",
+          "whyWrong": "This qualifies the grade evidence but does not address access."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "A student says, “The center is convenient for many families.” Which detail best supports that statement?",
+      "points": 1,
+      "explanation": "Walking access and an evening bus are concrete details that directly support a claim about convenience.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "When a claim uses a broad word such as convenient, find the concrete detail that gives that word evidence.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The center is within walking distance of two apartment complexes and is served by an evening bus route."
+        },
+        {
+          "id": "b",
+          "text": "The tutoring program met twice a week for one semester.",
+          "distractorType": "background",
+          "whyWrong": "Frequency does not show whether the location is convenient."
+        },
+        {
+          "id": "c",
+          "text": "Forty-one regular participants improved by at least one letter grade.",
+          "distractorType": "different_claim",
+          "whyWrong": "This concerns academic outcomes, not location convenience."
+        },
+        {
+          "id": "d",
+          "text": "Some students stopped attending after sports seasons began.",
+          "distractorType": "different_issue",
+          "whyWrong": "This describes scheduling pressure, not geographic or transportation convenience."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which detail would be LEAST useful as evidence for deciding whether the program should continue?",
+      "points": 1,
+      "explanation": "Lobby color has no meaningful connection to the program's academic value, usage, or access goals.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Relevant evidence must help answer the decision question; details can be true and still be useless evidence.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Attendance patterns across the semester.",
+          "distractorType": "relevant",
+          "whyWrong": "Attendance helps show whether students actually use the service."
+        },
+        {
+          "id": "b",
+          "text": "Changes in course performance among regular participants.",
+          "distractorType": "relevant",
+          "whyWrong": "Academic outcomes bear directly on whether tutoring may be useful."
+        },
+        {
+          "id": "c",
+          "text": "The color of the walls in the community center lobby."
+        },
+        {
+          "id": "d",
+          "text": "The percentage of participants who faced cost or transportation barriers.",
+          "distractorType": "relevant",
+          "whyWrong": "This helps evaluate whether the program reaches students with access needs."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Raman argues for a longer trial rather than claiming the program is already proven. Which detail best explains that caution?",
+      "points": 1,
+      "explanation": "This detail identifies alternative explanations for the improvement and therefore limits what the pilot evidence can prove.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Evidence can support continuing a test without proving a cause; look for details that limit certainty.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The center is near two apartment complexes.",
+          "distractorType": "not_cause",
+          "whyWrong": "Location does not explain why the academic results should be interpreted cautiously."
+        },
+        {
+          "id": "b",
+          "text": "The family survey included 212 households.",
+          "distractorType": "not_limitation",
+          "whyWrong": "The survey size is context for access evidence, not the main reason for caution about causation."
+        },
+        {
+          "id": "c",
+          "text": "The tutors want to use two rooms next year.",
+          "distractorType": "future_change",
+          "whyWrong": "The room proposal addresses noise rather than whether tutoring caused grade changes."
+        },
+        {
+          "id": "d",
+          "text": "Students who improved may also have studied more or received other help, so the records do not isolate tutoring as the cause."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which pair of details gives evidence for TWO different reasons to continue the pilot?",
+      "points": 1,
+      "explanation": "One detail supports possible academic benefit and the other supports improved access, giving two distinct evidence lines.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "When asked for multiple reasons, make sure each detail supports a different part of the argument.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Forty-one regular participants improved at least one letter grade; 63 percent of participants came from households reporting cost or transportation barriers."
+        },
+        {
+          "id": "b",
+          "text": "The room became noisy; sports seasons affected attendance.",
+          "distractorType": "limitations_only",
+          "whyWrong": "Both details describe problems rather than different benefits of continuation."
+        },
+        {
+          "id": "c",
+          "text": "The center has an evening bus route; the director wants reservations next year.",
+          "distractorType": "mixed_strength",
+          "whyWrong": "The bus route relates to access, but a proposed reservation system does not establish a second benefit."
+        },
+        {
+          "id": "d",
+          "text": "The pilot ran for a semester; the grant is expiring.",
+          "distractorType": "background_only",
+          "whyWrong": "These facts explain timing but do not provide evidence of academic value or access."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement is evidence rather than a claim or recommendation?",
+      "points": 1,
+      "explanation": "This is a specific observed result that can be used to support or challenge a claim.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Evidence is the information you can point to; a claim is what someone wants you to believe about that information.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The center should keep tutoring for another year.",
+          "distractorType": "recommendation",
+          "whyWrong": "This is the main recommendation to be supported."
+        },
+        {
+          "id": "b",
+          "text": "A longer trial would be the fairest way to judge the program.",
+          "distractorType": "claim",
+          "whyWrong": "This is an evaluative claim, not an observed result."
+        },
+        {
+          "id": "c",
+          "text": "Forty-one of 58 students who attended six or more sessions improved by at least one letter grade."
+        },
+        {
+          "id": "d",
+          "text": "The program may be a useful long-term solution for the neighborhood.",
+          "distractorType": "claim",
+          "whyWrong": "This is an interpretation of the pilot, not the underlying evidence."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which additional evidence would MOST strengthen the academic case for continuing the program?",
+      "points": 1,
+      "explanation": "A comparison group observed over the same period would make it easier to judge whether improvement is associated with tutoring rather than other changes.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "The strongest added evidence addresses the biggest uncertainty in the existing evidence.",
+      "familyId": "arguments.evidence.locate",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "A list of the snacks served during tutoring sessions.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Snacks do not measure academic outcomes or isolate the program's effect."
+        },
+        {
+          "id": "b",
+          "text": "A comparison of similar students who used tutoring regularly with students who did not, while tracking their course performance over the same period."
+        },
+        {
+          "id": "c",
+          "text": "A statement from the director saying she believes tutoring works.",
+          "distractorType": "opinion",
+          "whyWrong": "The director's belief adds little beyond the claim already being evaluated."
+        },
+        {
+          "id": "d",
+          "text": "A photograph showing that the tutoring room was often full.",
+          "distractorType": "indirect",
+          "whyWrong": "A full room can show use, but not whether tutoring improved course performance."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "The records do not prove tutoring caused every improvement."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-finding-evidence",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.3",
+      "secondarySkillIds": [],
+      "unitId": "finding-evidence",
+      "contentKind": "skill_drill",
+      "learningObjective": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-finding-evidence-tutoring",
+      "title": "Keeping the Evening Tutoring Pilot",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.502Z"
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-text-data-formats",
+  "runtime": {
+    "id": "set-rla-args-text-data-formats",
+    "file": "set-rla-args-text-data-formats.json"
+  },
+  "title": "Where the Shuttle Crowding Actually Happens",
+  "description": "Connect written claims with tables and other formats, and judge what each format can and cannot establish.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-text-data-shuttle"
+  ],
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review",
+  "reviewNotes": "Focused Arguments practice reviewed for one-best-answer logic, evidence fidelity, close distractors, and source-faithful explanations.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which claim is best supported by the ridership table?",
+      "primarySkillId": "R6.3",
+      "familyId": "arguments.formats.data",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The shuttle is overcrowded throughout the entire workday.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Midday averages are well below the 24-seat capacity, so crowding is not evenly distributed."
+        },
+        {
+          "id": "b",
+          "text": "The strongest demand occurs toward the offices in the morning and toward the parking lot near 5:00 p.m."
+        },
+        {
+          "id": "c",
+          "text": "Every trip after 3:30 p.m. carries more passengers than the shuttle has seats.",
+          "distractorType": "false",
+          "whyWrong": "The 3:30-4:30 average is 17, below 24."
+        },
+        {
+          "id": "d",
+          "text": "The company should eliminate all service between 10:00 a.m. and 3:30 p.m.",
+          "distractorType": "unsupported_policy",
+          "whyWrong": "Low average use does not by itself justify eliminating service."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The table shows 29 passengers toward the offices during 7:30-8:30 and 31 toward the lot during 4:30-5:30, the two highest averages.",
+        "quickTip": "Translate the table into a pattern before choosing a policy conclusion."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How does the table support Alvarez's proposal?",
+      "primarySkillId": "R6.3",
+      "familyId": "arguments.formats.data",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows that additional capacity is most needed during specific peak windows rather than all day."
+        },
+        {
+          "id": "b",
+          "text": "It proves that a second shuttle will pay for itself within six weeks.",
+          "distractorType": "unsupported",
+          "whyWrong": "The table contains passenger counts, not purchase costs or financial savings."
+        },
+        {
+          "id": "c",
+          "text": "It shows that employees never stand on the shuttle.",
+          "distractorType": "unsupported",
+          "whyWrong": "The table reports passenger totals, not seating behavior."
+        },
+        {
+          "id": "d",
+          "text": "It demonstrates that the passenger note is inaccurate.",
+          "distractorType": "misread",
+          "whyWrong": "The note is broadly consistent with lower demand around 8:45 and 4:20 and higher demand around 5:05."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The data locate the problem in the same morning and evening periods where Alvarez wants to add capacity.",
+        "quickTip": "When combining text and data, ask whether the numbers support the timing, size, or direction of the written claim."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the best use of the passenger note?",
+      "primarySkillId": "R6.4",
+      "familyId": "arguments.formats.integrate",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It should replace the automatic counts because personal experience is more detailed.",
+          "distractorType": "evidence_hierarchy",
+          "whyWrong": "One person's experience is narrower than four weeks of system-wide counts."
+        },
+        {
+          "id": "b",
+          "text": "It proves the 5:05 shuttle leaves exactly seven people behind.",
+          "distractorType": "invented",
+          "whyWrong": "The note says some riders may wait; it gives no exact number."
+        },
+        {
+          "id": "c",
+          "text": "It provides an individual example that is consistent with the broader pattern in the table, but it is not sufficient by itself to establish that pattern."
+        },
+        {
+          "id": "d",
+          "text": "It is irrelevant because anecdotes can never contribute to an argument.",
+          "distractorType": "absolute",
+          "whyWrong": "An anecdote can illustrate a measured pattern even when it should not replace broader data."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The note adds a concrete rider perspective while the table carries the stronger system-wide evidence.",
+        "quickTip": "Different formats can complement each other without having equal evidentiary weight."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does Alvarez want to count passengers who are actually left behind during the trial?",
+      "primarySkillId": "R6.3",
+      "familyId": "arguments.formats.data",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because average passenger totals above 24 do not directly measure whether riders are denied boarding."
+        },
+        {
+          "id": "b",
+          "text": "Because the automatic counts cannot distinguish morning from evening.",
+          "distractorType": "false",
+          "whyWrong": "The table is organized by time window and direction."
+        },
+        {
+          "id": "c",
+          "text": "Because seat capacity changes from trip to trip.",
+          "distractorType": "unsupported",
+          "whyWrong": "The shuttle is described as having 24 seats."
+        },
+        {
+          "id": "d",
+          "text": "Because employee comments are legally required before a vehicle purchase.",
+          "distractorType": "unsupported",
+          "whyWrong": "No such requirement is mentioned."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "A count above the number of seats indicates crowding, but it does not answer the more specific outcome of whether people cannot board.",
+        "quickTip": "Choose a measure that matches the decision question instead of assuming a proxy tells you everything."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement accurately combines the article and the table?",
+      "primarySkillId": "R6.4",
+      "familyId": "arguments.formats.integrate",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Employees describe crowding, but the data show the shuttle is below seating capacity in every time period.",
+          "distractorType": "false",
+          "whyWrong": "Two time windows have average passenger counts above 24."
+        },
+        {
+          "id": "b",
+          "text": "The article recommends all-day expansion, while the table supports peak-only expansion.",
+          "distractorType": "false",
+          "whyWrong": "Alvarez recommends peak-hour expansion, matching the table."
+        },
+        {
+          "id": "c",
+          "text": "The written proposal and the numerical data both point to concentrated morning and late-afternoon demand rather than uniform crowding."
+        },
+        {
+          "id": "d",
+          "text": "The table shows midday crowding, while the employee note shows evening crowding.",
+          "distractorType": "false",
+          "whyWrong": "Midday averages are low; the note mentions a crowded 5:05 trip."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Both formats support the same overall pattern, though the table provides the broader measurement.",
+        "quickTip": "Synthesis across formats should preserve what each format actually contributes."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion would be an overreach based on the table?",
+      "primarySkillId": "R6.3",
+      "familyId": "arguments.formats.data",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The 4:30-5:30 trips toward the north lot have the highest average passenger count in the table.",
+          "distractorType": "supported",
+          "whyWrong": "31 is the largest average shown."
+        },
+        {
+          "id": "b",
+          "text": "Average midday demand is substantially lower than the peak-period demand.",
+          "distractorType": "supported",
+          "whyWrong": "Midday averages are 9 and 8, far below 29 and 31."
+        },
+        {
+          "id": "c",
+          "text": "Peak demand is direction-specific: morning toward offices and late afternoon toward the lot.",
+          "distractorType": "supported",
+          "whyWrong": "The direction columns show this clearly."
+        },
+        {
+          "id": "d",
+          "text": "Buying a second shuttle for all-day service is guaranteed to be financially wasteful."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The table shows demand patterns, not the total costs, benefits, or financial value of an all-day second vehicle.",
+        "quickTip": "Data can strongly support one part of a decision while leaving another part unmeasured."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "If the passenger note were the ONLY evidence available, what would be the main limitation?",
+      "primarySkillId": "R6.4",
+      "familyId": "arguments.formats.integrate",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It contains no information about any specific trip.",
+          "distractorType": "false",
+          "whyWrong": "It mentions 8:45, 4:20, and a coworker's 5:05 experience."
+        },
+        {
+          "id": "b",
+          "text": "It describes a very small number of experiences and cannot establish how common the pattern is across all trips."
+        },
+        {
+          "id": "c",
+          "text": "It is written in complete sentences rather than a table.",
+          "distractorType": "format_bias",
+          "whyWrong": "Narrative form is not itself a credibility flaw."
+        },
+        {
+          "id": "d",
+          "text": "It contradicts the claim that some peak trips are crowded.",
+          "distractorType": "false",
+          "whyWrong": "The coworker's 5:05 experience supports that possibility."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Anecdotal evidence can illustrate a possibility but is usually insufficient to estimate system-wide frequency.",
+        "quickTip": "Ask what the format can show well and what it cannot measure reliably."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which evidence package would best support the final purchase decision after the trial?",
+      "primarySkillId": "R6.3",
+      "familyId": "arguments.formats.data",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only a new collection of employee comments about comfort.",
+          "distractorType": "insufficient",
+          "whyWrong": "Comments add perspective but do not measure demand, left-behind riders, or cost."
+        },
+        {
+          "id": "b",
+          "text": "Only the four-week table already collected.",
+          "distractorType": "incomplete",
+          "whyWrong": "The current table motivates the trial but does not show what changes after added peak capacity."
+        },
+        {
+          "id": "c",
+          "text": "Only the price of a second shuttle.",
+          "distractorType": "one_sided",
+          "whyWrong": "Cost alone does not show whether the added capacity solves a meaningful problem."
+        },
+        {
+          "id": "d",
+          "text": "Before-and-after peak passenger counts, left-behind rider counts, operating costs, and rider feedback from the six-week trial."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This combines direct demand and service outcomes with cost and user experience, giving the decision several complementary forms of evidence.",
+        "quickTip": "For a decision, combine formats when each answers a different necessary question."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Multiple Texts & Formats",
+    "primarySkillId": "R6.3",
+    "secondarySkillIds": [
+      "R6.4"
+    ],
+    "unitId": "text-data-formats",
+    "contentKind": "skill_drill",
+    "learningObjective": "Connect written claims with tables and other formats, and judge what each format can and cannot establish.",
+    "topicLabel": "Focused Practice"
+  }
+}

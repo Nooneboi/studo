@@ -1,0 +1,372 @@
+{
+  "id": "set-rla-args-mixed-automation",
+  "title": "Should Meridian Automate the First Inspection?",
+  "description": "Paired workplace arguments about whether a promising automation pilot justifies expansion and staffing changes.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "SOURCE A - Quality Engineering Proposal\n\nMeridian Repair manufactures replacement pump assemblies. Quality engineer Sofia Nordin proposes using a camera-based inspection system at the final assembly station. Today, each finished unit is checked visually by an inspector for label placement, missing fasteners, visible cracks, and several other defects. Nordin argues that a camera system should perform the first scan while human inspectors review flagged units and conduct checks the camera cannot perform.\n\nIn a six-week test on one line, the system scanned 4,200 assemblies. It correctly flagged 116 of the 121 visible defects later confirmed by inspectors. It also produced 83 false alerts, mostly when reflective packaging looked like a crack. Nordin does not describe the system as a replacement for inspectors. She notes that it cannot feel whether a fitting is loose, judge unusual damage it was not trained to recognize, or resolve every uncertain image. Her proposal is to use automation for repetitive visual checks and move inspectors toward verification and harder cases.\n\nThe pilot reduced the average time spent on the first visual scan from 48 seconds per unit to 19 seconds, including review of flagged images. Nordin estimates that the saved time could be used for more detailed mechanical checks. She recommends a second three-month test on two different product lines before any permanent staffing changes.\n\nSOURCE B - Senior Inspector Malik Grant\n\nGrant argues that Meridian should not expand the system yet. He agrees that the camera found most defects in the test set but focuses on the five visible defects it missed. “A customer does not care that a machine was correct most of the time if the missed defect reaches the field,” he writes. He also notes that the test occurred on one line with stable lighting and a narrow range of products. Performance could fall when parts are more varied or when lighting changes.\n\nGrant questions the time-savings estimate as well. The pilot did not include the time engineers spent adjusting camera settings or reviewing unusual false alerts. If those support costs are included, he says, the labor savings may be smaller than the headline number suggests. Rather than adding two lines immediately, Grant proposes first repeating the test under deliberately varied lighting and with a broader set of assemblies.\n\nNordin responds that Grant identifies real limitations but sets an unrealistic standard if he treats any missed defect as proof that the tool has no value. Human inspectors also miss some defects, she says, so the fair comparison is not machine perfection versus human perfection. The next test should compare complete inspection systems: human-only inspection versus camera-assisted human inspection, including false alerts, missed defects, support time, and mechanical checks.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which argument is better supported for the claim that the camera system is ready for permanent staffing reductions?",
+      "points": 1,
+      "explanation": "For permanent staffing changes, the one-line pilot leaves major questions about generalization, support time, and tasks the camera cannot perform.",
+      "skill": {
+        "id": "R6.2",
+        "label": "Opposing arguments"
+      },
+      "rule": "Match the strength of the evidence to the size and permanence of the decision.",
+      "familyId": "arguments.sources.opposing",
+      "metadata": {
+        "skillId": "R6.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A, because a lower scan time automatically means fewer inspectors are needed.",
+          "distractorType": "unsupported_jump",
+          "whyWrong": "The proposal itself calls for more testing before permanent staffing changes and does not measure the full work inspectors perform."
+        },
+        {
+          "id": "b",
+          "text": "Source B, because it identifies unmeasured conditions and support costs that matter before using the pilot to justify permanent staffing changes."
+        },
+        {
+          "id": "c",
+          "text": "Source A, because 116 correct flags prove the system never misses important defects.",
+          "distractorType": "false",
+          "whyWrong": "The pilot confirmed five visible defects were missed."
+        },
+        {
+          "id": "d",
+          "text": "Source B, because any automated tool that makes one error must be rejected.",
+          "distractorType": "overstatement",
+          "whyWrong": "Grant raises legitimate limits, but an absolute no-error standard would not by itself be a sound comparison."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is Nordin's strongest response to Grant's focus on the five missed defects?",
+      "points": 1,
+      "explanation": "Nordin reframes the standard from perfection to comparative system performance, which is the more useful decision question.",
+      "skill": {
+        "id": "R5.7",
+        "label": "Reasoning validity / fallacies"
+      },
+      "rule": "Watch for arguments that compare a real system with an impossible perfect alternative.",
+      "familyId": "arguments.reasoning.validity",
+      "metadata": {
+        "skillId": "R5.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Missed defects do not matter if scan time is lower.",
+          "distractorType": "dismissal",
+          "whyWrong": "Nordin does not dismiss misses; she proposes comparing complete systems and measuring them."
+        },
+        {
+          "id": "b",
+          "text": "The camera should replace all inspectors because humans also make errors.",
+          "distractorType": "overclaim",
+          "whyWrong": "Her proposal keeps humans in verification and harder cases."
+        },
+        {
+          "id": "c",
+          "text": "The relevant comparison is camera-assisted human inspection versus human-only inspection, because neither system should be assumed perfect."
+        },
+        {
+          "id": "d",
+          "text": "The five misses were caused entirely by reflective packaging.",
+          "distractorType": "false",
+          "whyWrong": "Reflective packaging is linked to false alerts, not all missed defects."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which evidence gap do BOTH writers ultimately support addressing?",
+      "points": 1,
+      "explanation": "Both proposals call for further testing beyond the narrow one-line conditions, though they differ on how that test should be designed.",
+      "skill": {
+        "id": "R6.1",
+        "label": "Compare texts on same topic"
+      },
+      "rule": "Shared evidence needs can exist even when writers disagree about readiness.",
+      "familyId": "arguments.sources.compare",
+      "metadata": {
+        "skillId": "R6.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Whether the system works across a broader range of products and operating conditions."
+        },
+        {
+          "id": "b",
+          "text": "Whether every inspector prefers camera technology.",
+          "distractorType": "unsupported",
+          "whyWrong": "Neither writer makes employee preference the central missing evidence."
+        },
+        {
+          "id": "c",
+          "text": "Whether the company can eliminate all mechanical checks.",
+          "distractorType": "false",
+          "whyWrong": "Both recognize tasks the camera cannot perform."
+        },
+        {
+          "id": "d",
+          "text": "Whether the camera can be operated without electricity.",
+          "distractorType": "irrelevant",
+          "whyWrong": "No such issue is raised."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why is the 19-second figure not sufficient by itself to establish total labor savings?",
+      "points": 1,
+      "explanation": "A partial process-time measure cannot automatically be treated as the net labor cost of the full inspection system.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Ask what work the number includes and what work it leaves outside the measurement.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The figure measures only first-scan and flagged-image review time and may exclude engineering support, unusual false-alert handling, and other inspection tasks."
+        },
+        {
+          "id": "b",
+          "text": "Any time measurement is unreliable if it is below one minute.",
+          "distractorType": "nonsense_rule",
+          "whyWrong": "Duration does not determine whether a measurement is valid."
+        },
+        {
+          "id": "c",
+          "text": "The pilot used 4,200 assemblies, which is too many to analyze.",
+          "distractorType": "unsupported",
+          "whyWrong": "A larger sample is not inherently a weakness."
+        },
+        {
+          "id": "d",
+          "text": "The system found visible defects rather than mechanical defects.",
+          "distractorType": "different_issue",
+          "whyWrong": "That limitation matters to system scope, but the specific labor-savings gap is omitted work and support time."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which next study would best resolve the central disagreement?",
+      "points": 1,
+      "explanation": "This design directly measures the quality, generalization, and total-work questions both writers raise.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "The best next evidence targets the decisive disagreement rather than collecting more of the same narrow data.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask customers whether they think cameras look modern.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Appearance preference does not compare inspection quality or cost."
+        },
+        {
+          "id": "b",
+          "text": "Repeat the exact same six-week conditions without changing any measurement.",
+          "distractorType": "limited_transfer",
+          "whyWrong": "This would add volume but not address new product/lighting conditions or full-system costs."
+        },
+        {
+          "id": "c",
+          "text": "Compare human-only and camera-assisted inspection across multiple product lines and varied conditions, tracking misses, false alerts, total labor/support time, and mechanical-check outcomes."
+        },
+        {
+          "id": "d",
+          "text": "Buy the system permanently and infer its value from whether managers like it.",
+          "distractorType": "circular",
+          "whyWrong": "Permanent adoption before resolving the disputed outcomes would not create a controlled comparison."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which summary most fairly represents both positions?",
+      "points": 1,
+      "explanation": "This summary preserves the evidence, caution, and different thresholds for expansion without exaggerating either side.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "A fair synthesis states the strongest version of each argument.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Nordin says the camera is perfect; Grant says cameras never work.",
+          "distractorType": "strawman",
+          "whyWrong": "Neither source takes such an absolute position."
+        },
+        {
+          "id": "b",
+          "text": "Nordin sees the pilot as promising evidence for camera-assisted inspection and broader testing; Grant argues that the current test is too narrow to justify expansion or staffing conclusions without tougher conditions and fuller cost measures."
+        },
+        {
+          "id": "c",
+          "text": "Both writers agree inspectors should be removed immediately.",
+          "distractorType": "false",
+          "whyWrong": "Neither supports immediate removal."
+        },
+        {
+          "id": "d",
+          "text": "The only disagreement is whether reflective packaging should be banned.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Reflective packaging is one false-alert issue, not the main policy disagreement."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-mixed-automation",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.2",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.7",
+        "R6.1",
+        "R6.5"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "paired_sources",
+        "argument_strength"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-mixed-automation-inspection",
+      "title": "Should Meridian Automate the First Inspection?",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.502Z"
+  }
+}

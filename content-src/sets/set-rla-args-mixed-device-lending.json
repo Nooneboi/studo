@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-mixed-device-lending",
+  "runtime": {
+    "id": "set-rla-args-mixed-device-lending",
+    "file": "set-rla-args-mixed-device-lending.json"
+  },
+  "title": "A Device-Lending Program: Article and Fact Sheet",
+  "description": "Use an article, fact sheet, and opposing comments to distinguish measured access outcomes from unsupported academic claims.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-mixed-device-lending"
+  ],
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review",
+  "reviewNotes": "Mixed-source Arguments practice reviewed for source comparison, evidence quality, one-best-answer logic, and ER transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by BOTH the article and the fact sheet?",
+      "primarySkillId": "R6.4",
+      "familyId": "arguments.formats.integrate",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot caused borrowers' grades to rise.",
+          "distractorType": "unsupported",
+          "whyWrong": "Both formats explicitly lack grade comparison data."
+        },
+        {
+          "id": "b",
+          "text": "The program reached many students who reported limited computer access, and most surveyed borrowers said home schoolwork became easier."
+        },
+        {
+          "id": "c",
+          "text": "Every student in the district needs a district-owned laptop.",
+          "distractorType": "scope",
+          "whyWrong": "Only borrowers and their prior access are described; need across all students is not measured."
+        },
+        {
+          "id": "d",
+          "text": "Repair problems were too severe for any expansion.",
+          "distractorType": "overclaim",
+          "whyWrong": "Repairs occurred, but the sources do not establish that the rate makes expansion unworkable."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This conclusion combines two directly reported findings without claiming an unmeasured academic outcome.",
+        "quickTip": "When formats overlap, synthesize only the outcomes both can support."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What error does Moore make with the 82 percent survey result?",
+      "primarySkillId": "R5.7",
+      "familyId": "arguments.reasoning.validity",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "She treats a self-reported improvement in ease of doing schoolwork as proof that grades increased."
+        },
+        {
+          "id": "b",
+          "text": "She understates the percentage of borrowers with limited access.",
+          "distractorType": "different_number",
+          "whyWrong": "Her argument centers on the 82 percent survey, not the 71 percent access figure."
+        },
+        {
+          "id": "c",
+          "text": "She claims no students borrowed laptops.",
+          "distractorType": "false",
+          "whyWrong": "She supports buying more laptops."
+        },
+        {
+          "id": "d",
+          "text": "She ignores the repair data and therefore proves repairs never occurred.",
+          "distractorType": "logic_error",
+          "whyWrong": "Ignoring repair data is incomplete, but it does not create the specific grade-causation error."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The survey measures perceived ease, while grades are a different outcome that the pilot did not compare.",
+        "quickTip": "Do not substitute a nearby outcome for the one named in the claim."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why is Bell's argument better calibrated to the evidence than Moore's?",
+      "primarySkillId": "R5.6",
+      "familyId": "arguments.claim.support",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Bell rejects all expansion until perfect evidence exists.",
+          "distractorType": "false",
+          "whyWrong": "He supports expanding the loan pool while adding measures."
+        },
+        {
+          "id": "b",
+          "text": "Bell distinguishes the access claim the pilot supports from the grade claim it has not measured."
+        },
+        {
+          "id": "c",
+          "text": "Bell assumes repair costs are zero.",
+          "distractorType": "unsupported",
+          "whyWrong": "He does not make that claim."
+        },
+        {
+          "id": "d",
+          "text": "Bell relies only on his personal opinion.",
+          "distractorType": "false",
+          "whyWrong": "He cites the access and borrower-survey evidence and proposes new measures."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "He matches each conclusion to what the pilot actually measured and identifies what new data would be needed for a stronger claim.",
+        "quickTip": "Strong arguments separate supported conclusions from questions that remain open."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What does the fact-sheet format contribute that is especially useful for evaluating the board comments?",
+      "primarySkillId": "R6.4",
+      "familyId": "arguments.formats.integrate",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It clearly separates measured results from outcomes the pilot did not measure."
+        },
+        {
+          "id": "b",
+          "text": "It proves every number in the news article is false.",
+          "distractorType": "contradiction",
+          "whyWrong": "The two formats are consistent on the main figures."
+        },
+        {
+          "id": "c",
+          "text": "It gives emotional stories about individual borrowers.",
+          "distractorType": "false",
+          "whyWrong": "The fact sheet is concise and numerical rather than anecdotal."
+        },
+        {
+          "id": "d",
+          "text": "It recommends buying laptops for every student.",
+          "distractorType": "false",
+          "whyWrong": "The fact sheet reports pilot scope and limits; it does not make that policy recommendation."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The explicit “did not measure” bullets make it easier to detect when a speaker crosses from evidence into an unsupported outcome claim.",
+        "quickTip": "Different formats can make limitations as important as findings easier to see."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which new evidence would most directly test Moore's claim about grades?",
+      "primarySkillId": "R5.5",
+      "familyId": "arguments.evidence.sufficiency",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger survey asking whether laptops look modern.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Appearance does not measure grades."
+        },
+        {
+          "id": "b",
+          "text": "Repair totals from another semester.",
+          "distractorType": "different_outcome",
+          "whyWrong": "Repair data matter to feasibility, not academic performance."
+        },
+        {
+          "id": "c",
+          "text": "Course-grade or assignment-completion comparisons over time between similar students with and without reliable computer access through the program."
+        },
+        {
+          "id": "d",
+          "text": "A list of websites students visit on school devices.",
+          "distractorType": "indirect",
+          "whyWrong": "Browsing data alone would not establish whether grades improve."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This measures the academic outcomes Moore claims and creates a comparison that can help separate program access from other influences.",
+        "quickTip": "Add evidence that directly measures the missing outcome."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best compares the two board comments?",
+      "primarySkillId": "R6.2",
+      "familyId": "arguments.sources.opposing",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both agree the pilot proves higher grades, but Bell wants fewer devices.",
+          "distractorType": "false",
+          "whyWrong": "Bell explicitly says the grade effect is not proven."
+        },
+        {
+          "id": "b",
+          "text": "Moore treats access/ease evidence as sufficient for an academic-performance claim, while Bell supports the access conclusion and calls for new evidence before making the stronger grade claim."
+        },
+        {
+          "id": "c",
+          "text": "Moore focuses on repairs, while Bell focuses only on late returns.",
+          "distractorType": "false",
+          "whyWrong": "Their main disagreement is about what the pilot proves academically."
+        },
+        {
+          "id": "d",
+          "text": "Both reject the device-lending program.",
+          "distractorType": "false",
+          "whyWrong": "Both support some form of expansion."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This comparison identifies the exact difference in evidentiary standards rather than exaggerating their policy disagreement.",
+        "quickTip": "Compare what each writer thinks the evidence is sufficient to establish."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Multiple Texts & Formats",
+    "primarySkillId": "R6.4",
+    "secondarySkillIds": [
+      "R5.5",
+      "R5.6",
+      "R5.7",
+      "R6.2"
+    ],
+    "contentKind": "argument_practice",
+    "practiceTags": [
+      "different_formats",
+      "paired_sources"
+    ],
+    "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+    "topicLabel": "Mixed Source Practice"
+  }
+}

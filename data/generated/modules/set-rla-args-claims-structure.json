@@ -1,0 +1,475 @@
+{
+  "id": "set-rla-args-claims-structure",
+  "title": "Where Shade Would Matter Most",
+  "description": "Identify the main claim, supporting claims, and the structure that connects them.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "The city of Bellwether plans to spend $240,000 on shade structures at bus stops next year. A transportation committee must decide where the first structures should go. Council member Mara Velasquez argues that the city should begin with transfer stops where riders wait the longest and where there is little existing shade.\n\nVelasquez points to a summer survey of 1,180 riders. At the twelve busiest transfer stops, 61 percent of respondents said heat made waiting difficult, compared with 34 percent at neighborhood stops. City temperature sensors also recorded afternoon surface temperatures above 45 degrees Celsius at seven of those transfer locations. She therefore proposes using most of the first-year budget at high-exposure transfer stops, then evaluating the results before expanding the program.\n\nSome residents have asked why the city should not simply install shelters at whichever stops have the most daily boardings. Velasquez responds that ridership alone does not measure heat exposure. Two of the busiest downtown stops already sit beside buildings that provide afternoon shade, while a moderately busy transfer point near the industrial district has no trees or nearby structures. In her view, the city should combine ridership, average waiting time, and heat exposure rather than rely on a single ranking.\n\nHer proposal does not claim that neighborhood stops are unimportant. Instead, it argues for a sequence: address locations where long waits and high temperatures overlap, measure whether riders use the shaded areas and report fewer heat-related problems, and then use those results to guide later spending. The committee will vote next month.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement is Velasquez's main claim?",
+      "points": 1,
+      "explanation": "This sentence captures the recommendation the rest of the argument is built to support.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Ask what action or judgment the author is trying to convince the reader to accept.",
+      "familyId": "arguments.claim.identify",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every bus stop with high ridership should receive a shelter before any other stop.",
+          "distractorType": "overstatement",
+          "whyWrong": "Velasquez rejects ridership as the only criterion and asks the city to combine several measures."
+        },
+        {
+          "id": "b",
+          "text": "The city should first install shade at transfer stops where long waits and high heat exposure overlap."
+        },
+        {
+          "id": "c",
+          "text": "Neighborhood stops create more heat risk than transfer stops because they have fewer riders.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage does not say neighborhood stops create more risk, and the survey reports greater heat difficulty at transfer stops."
+        },
+        {
+          "id": "d",
+          "text": "The city should delay all shade spending until it has collected another year of temperature data.",
+          "distractorType": "reversal",
+          "whyWrong": "Velasquez proposes beginning the program now and evaluating results before later expansion."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "begin with transfer stops where riders wait the longest and where there is little existing shade"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What role does the rider survey play in the argument?",
+      "points": 1,
+      "explanation": "The survey gives comparative evidence about riders' reported heat difficulty at the two kinds of stops.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Identify the claim immediately before or after the evidence and ask what the evidence helps establish.",
+      "familyId": "arguments.structure.analyze",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves that every rider at a transfer stop experiences dangerous heat.",
+          "distractorType": "overstatement",
+          "whyWrong": "A survey percentage describes respondents; it does not establish that every rider has the same experience."
+        },
+        {
+          "id": "b",
+          "text": "It explains why downtown buildings produce more shade than trees.",
+          "distractorType": "irrelevant",
+          "whyWrong": "The survey concerns rider difficulty with heat, not the source of shade."
+        },
+        {
+          "id": "c",
+          "text": "It shows that temperature sensors are unnecessary for deciding where to build.",
+          "distractorType": "reversal",
+          "whyWrong": "Velasquez combines survey results with temperature measurements rather than replacing one with the other."
+        },
+        {
+          "id": "d",
+          "text": "It supports the idea that heat is a larger waiting problem at busy transfer stops than at neighborhood stops."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement is a supporting claim rather than the main claim?",
+      "points": 1,
+      "explanation": "This idea supports the larger recommendation by explaining why the city should not rank stops by ridership alone.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "A supporting claim gives a reason for the main claim; it is not merely a fact about the situation.",
+      "familyId": "arguments.claim.identify",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Ridership alone does not measure how much heat exposure riders face at a stop."
+        },
+        {
+          "id": "b",
+          "text": "The committee will vote on the proposal next month.",
+          "distractorType": "background",
+          "whyWrong": "The voting date is context, not a reason supporting the recommendation."
+        },
+        {
+          "id": "c",
+          "text": "All neighborhood stops should be removed from the shade program.",
+          "distractorType": "distortion",
+          "whyWrong": "The proposal explicitly says neighborhood stops are not unimportant."
+        },
+        {
+          "id": "d",
+          "text": "Heat exposure is the only factor the city should consider.",
+          "distractorType": "overstatement",
+          "whyWrong": "Velasquez says the city should combine ridership, waiting time, and heat exposure."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How is the final paragraph organized in relation to Velasquez's main claim?",
+      "points": 1,
+      "explanation": "The paragraph limits the scope of the recommendation and explains the proposed sequence after the first installations.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Track whether the paragraph adds a reason, a limitation, a response, or a next step.",
+      "familyId": "arguments.structure.analyze",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It abandons the original claim and argues that neighborhood stops should receive the entire budget.",
+          "distractorType": "reversal",
+          "whyWrong": "The final paragraph keeps the same priority and describes how later expansion would work."
+        },
+        {
+          "id": "b",
+          "text": "It introduces an unrelated complaint about the committee's voting schedule.",
+          "distractorType": "irrelevant",
+          "whyWrong": "The voting schedule is only mentioned at the end and is not the paragraph's main function."
+        },
+        {
+          "id": "c",
+          "text": "It clarifies that the proposed priority is a first step, followed by evaluation and possible expansion."
+        },
+        {
+          "id": "d",
+          "text": "It claims that the survey already proves the program will reduce heat-related problems.",
+          "distractorType": "overstatement",
+          "whyWrong": "The paragraph calls for measuring outcomes after installation; it does not claim those outcomes are already proven."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the argument chain?",
+      "points": 1,
+      "explanation": "This choice connects the identified problem, the proposed priority, and the planned evaluation without adding a claim the passage does not make.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Reduce the argument to reason -> recommendation -> next step.",
+      "familyId": "arguments.structure.analyze",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Some transfer stops combine long waits with high heat exposure; therefore the city should prioritize those stops and evaluate results before expanding."
+        },
+        {
+          "id": "b",
+          "text": "Downtown buildings create shade; therefore the city should stop collecting rider surveys.",
+          "distractorType": "logic_gap",
+          "whyWrong": "The existence of shade at some stops does not support ending surveys."
+        },
+        {
+          "id": "c",
+          "text": "Neighborhood stops have fewer riders; therefore they do not need shade structures.",
+          "distractorType": "unsupported",
+          "whyWrong": "Velasquez explicitly rejects dismissing neighborhood stops and proposes later expansion."
+        },
+        {
+          "id": "d",
+          "text": "The committee will vote next month; therefore the proposal will certainly be approved.",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "A scheduled vote does not establish the outcome."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Why does the passage mention the two busy downtown stops that already have afternoon shade?",
+      "points": 1,
+      "explanation": "The example makes the supporting claim concrete: a busy stop can already have shade, while a less busy one may have greater exposure.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "When an example appears after a general statement, ask which part of that statement the example demonstrates.",
+      "familyId": "arguments.structure.analyze",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that the temperature sensors at those locations produced inaccurate readings.",
+          "distractorType": "unsupported",
+          "whyWrong": "No problem with the sensors is described."
+        },
+        {
+          "id": "b",
+          "text": "To show that all downtown stops should be excluded from the program.",
+          "distractorType": "overstatement",
+          "whyWrong": "The example concerns two stops, not every downtown stop."
+        },
+        {
+          "id": "c",
+          "text": "To prove that ridership should be ignored when the city chooses locations.",
+          "distractorType": "overstatement",
+          "whyWrong": "Velasquez includes ridership as one factor; she rejects using it alone."
+        },
+        {
+          "id": "d",
+          "text": "To illustrate why a high ridership count by itself may not identify the stop with the greatest need for shade."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which claim is NOT part of Velasquez's argument?",
+      "points": 1,
+      "explanation": "The proposal is deliberately limited to a first-year priority and later evaluation; it never promises immediate coverage of every stop.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Separate what the argument actually claims from a stronger version that sounds attractive but exceeds the text.",
+      "familyId": "arguments.claim.identify",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting time should be considered when deciding where shade would matter most.",
+          "distractorType": "supported",
+          "whyWrong": "This is directly included in the proposed combination of factors."
+        },
+        {
+          "id": "b",
+          "text": "The first-year program should guarantee that every bus stop receives a new shade structure."
+        },
+        {
+          "id": "c",
+          "text": "The city should evaluate the initial installations before deciding how to expand.",
+          "distractorType": "supported",
+          "whyWrong": "The final paragraph explicitly proposes evaluation before later spending."
+        },
+        {
+          "id": "d",
+          "text": "Heat exposure should be considered along with ridership rather than replaced by a single ranking.",
+          "distractorType": "supported",
+          "whyWrong": "This is central to the response to residents who favor ridership alone."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which sentence would best serve as a concise thesis for Velasquez's argument?",
+      "points": 1,
+      "explanation": "This statement combines the recommended action, the decision rule, and the limited first-step nature of the proposal.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "A good thesis states the position precisely enough that the supporting paragraphs can be traced back to it.",
+      "familyId": "arguments.claim.identify",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Bellwether has twelve busy transfer stops and will vote on a shade proposal next month.",
+          "distractorType": "background",
+          "whyWrong": "This gives context but does not state the recommendation and its reasoning."
+        },
+        {
+          "id": "b",
+          "text": "Heat is uncomfortable for many people who use public transportation in summer.",
+          "distractorType": "too_broad",
+          "whyWrong": "This is true in the context but does not capture the policy position."
+        },
+        {
+          "id": "c",
+          "text": "Bellwether should prioritize shade at transfer stops where long waits and high heat exposure overlap, using several measures of need and evaluating the first installations before expansion."
+        },
+        {
+          "id": "d",
+          "text": "The only fair way to distribute shade structures is to rank every stop by daily boardings.",
+          "distractorType": "opposing_claim",
+          "whyWrong": "This is the single-factor approach Velasquez argues against."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-claims-structure",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [
+        "R5.2"
+      ],
+      "unitId": "claims-argument-structure",
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify the main claim, supporting claims, and the structure that connects them.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-claims-shade",
+      "title": "Where Shade Would Matter Most",
+      "textType": "informational",
+      "context": "civics",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.500Z"
+  }
+}

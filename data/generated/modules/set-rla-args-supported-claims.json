@@ -1,0 +1,472 @@
+{
+  "id": "set-rla-args-supported-claims",
+  "title": "What an Eight-Week Schedule Pilot Shows",
+  "description": "Separate evidence-backed statements from causal, universal, or otherwise unsupported claims.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "Lumen Design tested a four-day work schedule with one project team for eight weeks. Employees worked the same total weekly hours across four longer days and kept Friday free unless a client emergency required coverage. Team manager Celia Ortiz argues that the company has enough evidence to continue testing the schedule, but not enough to declare it successful company-wide.\n\nDuring the pilot, the team completed 27 client tasks compared with 25 during the previous eight-week period. Average response time to routine client messages changed from 3.8 hours to 3.6 hours. Employees used six unscheduled absence days during the pilot, compared with eleven in the previous period. In an anonymous survey, 14 of the 16 team members said they would prefer to keep the schedule.\n\nThe pilot does not establish that the schedule caused each difference. The team had one fewer large project than in the earlier period, and a new project-management tool was introduced during week three. The sample was also small and came from a group whose work could often be scheduled in advance. Customer-support teams that handle live requests may face different constraints.\n\nOrtiz therefore supports a second pilot with two additional teams and clearer measures of client coverage. She opposes a memo circulated by one supervisor claiming, “The trial proves that a four-day week increases productivity and will reduce absences across every department.” Ortiz says the evidence is promising, but the memo turns a limited pilot into a much broader conclusion than the data can support.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which claim is directly supported by the pilot data?",
+      "points": 1,
+      "explanation": "Fourteen of sixteen team members reported that preference, so the claim restates observed survey evidence without extending beyond it.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "A supported claim stays inside the population, time period, and outcome actually measured.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Four-day schedules increase productivity in every department.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Only one small team was tested, and the passage identifies reasons other departments may differ."
+        },
+        {
+          "id": "b",
+          "text": "Most members of the pilot team said they preferred to keep the four-day schedule."
+        },
+        {
+          "id": "c",
+          "text": "The schedule caused the decline in unscheduled absence days.",
+          "distractorType": "causation",
+          "whyWrong": "Absences fell, but other changes and the limited design prevent a causal conclusion."
+        },
+        {
+          "id": "d",
+          "text": "Clients received substantially faster service because employees worked longer days.",
+          "distractorType": "overstatement",
+          "whyWrong": "Routine response time changed only slightly, and causation is not established."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which claim is unsupported because it goes beyond the scope of the evidence?",
+      "points": 1,
+      "explanation": "The pilot involved one small team for eight weeks and cannot support a prediction about every department.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "Watch for words such as every, always, proves, and will when the evidence is limited.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot team completed slightly more client tasks than in the previous eight-week period.",
+          "distractorType": "supported",
+          "whyWrong": "The passage gives the totals 27 and 25."
+        },
+        {
+          "id": "b",
+          "text": "The pilot provides enough reason to test the schedule with additional teams.",
+          "distractorType": "reasoned",
+          "whyWrong": "This is Ortiz's limited recommendation based on promising but uncertain results."
+        },
+        {
+          "id": "c",
+          "text": "The schedule will reduce absences across every department in the company."
+        },
+        {
+          "id": "d",
+          "text": "The pilot team generally preferred the schedule.",
+          "distractorType": "supported",
+          "whyWrong": "Fourteen of sixteen team members preferred to keep it."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why is the statement “the trial proves that a four-day week increases productivity” too strong?",
+      "points": 1,
+      "explanation": "A new project-management tool and a different project mix create alternative explanations, while the sample is narrow.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "A measured difference is not automatically proof that the tested policy caused it.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The team completed no work during the pilot.",
+          "distractorType": "false",
+          "whyWrong": "The team completed 27 client tasks."
+        },
+        {
+          "id": "b",
+          "text": "The results include only employee opinions and no performance measures.",
+          "distractorType": "false",
+          "whyWrong": "The passage reports tasks, response time, and absence data."
+        },
+        {
+          "id": "c",
+          "text": "The company has already ended the pilot.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Whether the pilot ended does not determine what the results prove."
+        },
+        {
+          "id": "d",
+          "text": "Other factors changed during the pilot, and the small one-team comparison does not isolate the schedule as the cause of the performance differences."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which statement is the most defensible conclusion from the absence data?",
+      "points": 1,
+      "explanation": "This statement reports exactly what was observed without claiming a cause or extending the finding to other groups.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "When evidence is limited, descriptive conclusions are often safer than causal or universal ones.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot team had fewer unscheduled absence days during the test period than during the previous eight weeks."
+        },
+        {
+          "id": "b",
+          "text": "The four-day schedule prevented five employees from becoming sick.",
+          "distractorType": "invented_cause",
+          "whyWrong": "The data count absence days; they do not identify why absences occurred or which employees were affected."
+        },
+        {
+          "id": "c",
+          "text": "A four-day schedule always reduces employee absences.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "One team over eight weeks cannot support an always claim."
+        },
+        {
+          "id": "d",
+          "text": "The absence data are useless because the pilot was small.",
+          "distractorType": "overcorrection",
+          "whyWrong": "The data accurately describe this team, even though broader causal conclusions are limited."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which new claim would require additional evidence before it could be supported?",
+      "points": 1,
+      "explanation": "No live customer-support team was tested, and the passage specifically warns that such teams may face different constraints.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "Ask whether the evidence includes the group and outcome named in the claim.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Fourteen pilot participants preferred the four-day schedule.",
+          "distractorType": "already_supported",
+          "whyWrong": "The survey directly reports this result."
+        },
+        {
+          "id": "b",
+          "text": "Routine response time averaged 3.6 hours during the pilot.",
+          "distractorType": "already_supported",
+          "whyWrong": "The passage states this measure."
+        },
+        {
+          "id": "c",
+          "text": "Customer-support teams can maintain live coverage just as effectively on a four-day schedule."
+        },
+        {
+          "id": "d",
+          "text": "The pilot lasted eight weeks.",
+          "distractorType": "already_supported",
+          "whyWrong": "The duration is directly stated."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which revision makes the supervisor's memo more consistent with the evidence?",
+      "points": 1,
+      "explanation": "This revision preserves the promising observed pattern while matching the limited sample and unresolved causal questions.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "Revise unsupported claims by narrowing scope and lowering certainty to what the evidence can actually carry.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The trial shows that four-day schedules are the best policy for all workers.",
+          "distractorType": "still_overbroad",
+          "whyWrong": "This remains a universal judgment unsupported by one small pilot."
+        },
+        {
+          "id": "b",
+          "text": "The pilot produced some encouraging results for one project team, but more testing is needed before judging effects across departments."
+        },
+        {
+          "id": "c",
+          "text": "The trial proves that the new project-management tool had no effect.",
+          "distractorType": "unsupported",
+          "whyWrong": "The tool changed during the pilot and may have affected results."
+        },
+        {
+          "id": "d",
+          "text": "The schedule had no meaningful effect because task completion rose by only two.",
+          "distractorType": "overclaim",
+          "whyWrong": "A small change does not prove no meaningful effect, and the pilot measured several outcomes."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which phrase signals that Ortiz is deliberately limiting her conclusion?",
+      "points": 1,
+      "explanation": "The contrast explicitly separates what the evidence can justify now from the stronger conclusion it cannot justify yet.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "Qualifiers such as may, suggests, limited, and not enough to show are clues to evidence-calibrated reasoning.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "“same total weekly hours”",
+          "distractorType": "description",
+          "whyWrong": "This describes the schedule rather than the certainty of a conclusion."
+        },
+        {
+          "id": "b",
+          "text": "“client emergency”",
+          "distractorType": "condition",
+          "whyWrong": "This is an operational exception, not a qualifier on the evidence."
+        },
+        {
+          "id": "c",
+          "text": "“enough evidence to continue testing ... but not enough to declare it successful company-wide”"
+        },
+        {
+          "id": "d",
+          "text": "“anonymous survey”",
+          "distractorType": "method",
+          "whyWrong": "This describes how preference data were collected."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "What is Ortiz's strongest criticism of the supervisor's memo?",
+      "points": 1,
+      "explanation": "The memo exceeds both the causal strength and the population scope of the evidence.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "To identify overreach, compare the exact limits of the evidence with the exact breadth of the claim.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The memo uses a different font from the pilot report.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Presentation style has no bearing on whether the conclusion is supported."
+        },
+        {
+          "id": "b",
+          "text": "The memo ignores employee preference data entirely.",
+          "distractorType": "not_main",
+          "whyWrong": "Even if it omitted the survey, Ortiz's central objection is the memo's sweeping causal and company-wide claim."
+        },
+        {
+          "id": "c",
+          "text": "The memo focuses too much on client response time and not enough on task completion.",
+          "distractorType": "not_stated",
+          "whyWrong": "The passage does not identify this balance as the problem."
+        },
+        {
+          "id": "d",
+          "text": "It converts a limited, confounded pilot into a causal prediction for every department."
+        }
+      ],
+      "correct": "d"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-supported-claims",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.6",
+      "secondarySkillIds": [],
+      "unitId": "supported-unsupported-claims",
+      "contentKind": "skill_drill",
+      "learningObjective": "Separate evidence-backed statements from causal, universal, or otherwise unsupported claims.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-supported-schedule",
+      "title": "What an Eight-Week Schedule Pilot Shows",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.504Z"
+  }
+}

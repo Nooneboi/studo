@@ -1,0 +1,372 @@
+{
+  "id": "set-rla-args-mixed-device-lending",
+  "title": "A Device-Lending Program: Article and Fact Sheet",
+  "description": "Use an article, fact sheet, and opposing comments to distinguish measured access outcomes from unsupported academic claims.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "NEWS ARTICLE - District Expands Laptop Lending After Pilot\n\nThe Riverton school district is considering expanding a laptop-lending program from two high schools to all six. During last semester's pilot, 320 students borrowed devices for at least one week. District records show that 71 percent of borrowers had previously reported sharing a home computer or relying mainly on a phone for school assignments. Technology director Amara Singh says the pilot suggests that device lending reaches many students with limited computer access.\n\nThe district also tracked repair and return problems. Twenty-eight devices required repair during the semester, and nine were returned more than two weeks late. Singh argues that these rates are manageable but says expansion would require a larger repair reserve and clearer replacement rules.\n\nFACT SHEET - What the Pilot Did and Did Not Measure\n\n- 320 students borrowed a laptop.\n- 227 borrowers had reported limited computer access before the pilot.\n- 28 loaned devices required repair.\n- 9 devices were returned more than two weeks late.\n- The district did NOT compare course grades of borrowers with non-borrowers.\n- The district did NOT measure whether students completed more assignments because of the laptops.\n- Student survey: 82 percent of borrowers said the device made it easier to complete schoolwork at home.\n\nBOARD COMMENT - Member Rachel Moore\n\n“The pilot proves that giving every student a laptop will raise grades. Eighty-two percent said schoolwork became easier, so academic performance must have improved. We should buy enough devices for every student immediately.”\n\nBOARD COMMENT - Member Isaac Bell\n\n“The pilot gives good evidence that the program improves access, because most borrowers previously had limited computer access and many reported easier home schoolwork. It does not yet prove an effect on grades. I support expanding the loan pool while adding assignment-completion and course-performance measures so we can test that stronger claim.”\n\nThe finance office adds another question: expansion would require not only purchasing devices but also budgeting for repairs, chargers, and replacement units. It estimates that the pilot repair rate, if repeated at a larger scale, would require a dedicated annual maintenance reserve. Singh says this does not weaken the access evidence, but it matters to the separate claim that district-wide expansion is affordable. Bell agrees and proposes reporting access outcomes and program costs separately so the board does not treat evidence for one claim as proof of the other.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by BOTH the article and the fact sheet?",
+      "points": 1,
+      "explanation": "This conclusion combines two directly reported findings without claiming an unmeasured academic outcome.",
+      "skill": {
+        "id": "R6.4",
+        "label": "Different genres / formats"
+      },
+      "rule": "When formats overlap, synthesize only the outcomes both can support.",
+      "familyId": "arguments.formats.integrate",
+      "metadata": {
+        "skillId": "R6.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot caused borrowers' grades to rise.",
+          "distractorType": "unsupported",
+          "whyWrong": "Both formats explicitly lack grade comparison data."
+        },
+        {
+          "id": "b",
+          "text": "The program reached many students who reported limited computer access, and most surveyed borrowers said home schoolwork became easier."
+        },
+        {
+          "id": "c",
+          "text": "Every student in the district needs a district-owned laptop.",
+          "distractorType": "scope",
+          "whyWrong": "Only borrowers and their prior access are described; need across all students is not measured."
+        },
+        {
+          "id": "d",
+          "text": "Repair problems were too severe for any expansion.",
+          "distractorType": "overclaim",
+          "whyWrong": "Repairs occurred, but the sources do not establish that the rate makes expansion unworkable."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What error does Moore make with the 82 percent survey result?",
+      "points": 1,
+      "explanation": "The survey measures perceived ease, while grades are a different outcome that the pilot did not compare.",
+      "skill": {
+        "id": "R5.7",
+        "label": "Reasoning validity / fallacies"
+      },
+      "rule": "Do not substitute a nearby outcome for the one named in the claim.",
+      "familyId": "arguments.reasoning.validity",
+      "metadata": {
+        "skillId": "R5.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "She treats a self-reported improvement in ease of doing schoolwork as proof that grades increased."
+        },
+        {
+          "id": "b",
+          "text": "She understates the percentage of borrowers with limited access.",
+          "distractorType": "different_number",
+          "whyWrong": "Her argument centers on the 82 percent survey, not the 71 percent access figure."
+        },
+        {
+          "id": "c",
+          "text": "She claims no students borrowed laptops.",
+          "distractorType": "false",
+          "whyWrong": "She supports buying more laptops."
+        },
+        {
+          "id": "d",
+          "text": "She ignores the repair data and therefore proves repairs never occurred.",
+          "distractorType": "logic_error",
+          "whyWrong": "Ignoring repair data is incomplete, but it does not create the specific grade-causation error."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why is Bell's argument better calibrated to the evidence than Moore's?",
+      "points": 1,
+      "explanation": "He matches each conclusion to what the pilot actually measured and identifies what new data would be needed for a stronger claim.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "Strong arguments separate supported conclusions from questions that remain open.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Bell rejects all expansion until perfect evidence exists.",
+          "distractorType": "false",
+          "whyWrong": "He supports expanding the loan pool while adding measures."
+        },
+        {
+          "id": "b",
+          "text": "Bell distinguishes the access claim the pilot supports from the grade claim it has not measured."
+        },
+        {
+          "id": "c",
+          "text": "Bell assumes repair costs are zero.",
+          "distractorType": "unsupported",
+          "whyWrong": "He does not make that claim."
+        },
+        {
+          "id": "d",
+          "text": "Bell relies only on his personal opinion.",
+          "distractorType": "false",
+          "whyWrong": "He cites the access and borrower-survey evidence and proposes new measures."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What does the fact-sheet format contribute that is especially useful for evaluating the board comments?",
+      "points": 1,
+      "explanation": "The explicit “did not measure” bullets make it easier to detect when a speaker crosses from evidence into an unsupported outcome claim.",
+      "skill": {
+        "id": "R6.4",
+        "label": "Different genres / formats"
+      },
+      "rule": "Different formats can make limitations as important as findings easier to see.",
+      "familyId": "arguments.formats.integrate",
+      "metadata": {
+        "skillId": "R6.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It clearly separates measured results from outcomes the pilot did not measure."
+        },
+        {
+          "id": "b",
+          "text": "It proves every number in the news article is false.",
+          "distractorType": "contradiction",
+          "whyWrong": "The two formats are consistent on the main figures."
+        },
+        {
+          "id": "c",
+          "text": "It gives emotional stories about individual borrowers.",
+          "distractorType": "false",
+          "whyWrong": "The fact sheet is concise and numerical rather than anecdotal."
+        },
+        {
+          "id": "d",
+          "text": "It recommends buying laptops for every student.",
+          "distractorType": "false",
+          "whyWrong": "The fact sheet reports pilot scope and limits; it does not make that policy recommendation."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which new evidence would most directly test Moore's claim about grades?",
+      "points": 1,
+      "explanation": "This measures the academic outcomes Moore claims and creates a comparison that can help separate program access from other influences.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Add evidence that directly measures the missing outcome.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger survey asking whether laptops look modern.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Appearance does not measure grades."
+        },
+        {
+          "id": "b",
+          "text": "Repair totals from another semester.",
+          "distractorType": "different_outcome",
+          "whyWrong": "Repair data matter to feasibility, not academic performance."
+        },
+        {
+          "id": "c",
+          "text": "Course-grade or assignment-completion comparisons over time between similar students with and without reliable computer access through the program."
+        },
+        {
+          "id": "d",
+          "text": "A list of websites students visit on school devices.",
+          "distractorType": "indirect",
+          "whyWrong": "Browsing data alone would not establish whether grades improve."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best compares the two board comments?",
+      "points": 1,
+      "explanation": "This comparison identifies the exact difference in evidentiary standards rather than exaggerating their policy disagreement.",
+      "skill": {
+        "id": "R6.2",
+        "label": "Opposing arguments"
+      },
+      "rule": "Compare what each writer thinks the evidence is sufficient to establish.",
+      "familyId": "arguments.sources.opposing",
+      "metadata": {
+        "skillId": "R6.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both agree the pilot proves higher grades, but Bell wants fewer devices.",
+          "distractorType": "false",
+          "whyWrong": "Bell explicitly says the grade effect is not proven."
+        },
+        {
+          "id": "b",
+          "text": "Moore treats access/ease evidence as sufficient for an academic-performance claim, while Bell supports the access conclusion and calls for new evidence before making the stronger grade claim."
+        },
+        {
+          "id": "c",
+          "text": "Moore focuses on repairs, while Bell focuses only on late returns.",
+          "distractorType": "false",
+          "whyWrong": "Their main disagreement is about what the pilot proves academically."
+        },
+        {
+          "id": "d",
+          "text": "Both reject the device-lending program.",
+          "distractorType": "false",
+          "whyWrong": "Both support some form of expansion."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-mixed-device-lending",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.4",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.6",
+        "R5.7",
+        "R6.2"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "different_formats",
+        "paired_sources"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-mixed-device-lending",
+      "title": "A Device-Lending Program: Article and Fact Sheet",
+      "textType": "informational",
+      "context": "education",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.502Z"
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-mixed-foodwaste-plans",
+  "runtime": {
+    "id": "set-rla-args-mixed-foodwaste-plans",
+    "file": "set-rla-args-mixed-foodwaste-plans.json"
+  },
+  "title": "Two Plans for Residential Food-Waste Collection",
+  "description": "Synthesize two implementation plans with health and budget evidence to judge participation, cost, and operational tradeoffs.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-mixed-foodwaste-plans"
+  ],
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review",
+  "reviewNotes": "Mixed-source Arguments practice reviewed for source comparison, evidence quality, one-best-answer logic, and ER transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the strongest evidence advantage of Plan A over Plan B regarding expected household participation?",
+      "primarySkillId": "R5.5",
+      "familyId": "arguments.evidence.sufficiency",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Plan A is more expensive.",
+          "distractorType": "different_issue",
+          "whyWrong": "Higher cost does not establish higher participation."
+        },
+        {
+          "id": "b",
+          "text": "The household survey directly asks about curbside versus travel-to-drop-off convenience, while Plan B's market registration does not show actual repeated use."
+        },
+        {
+          "id": "c",
+          "text": "Plan A uses sealed containers.",
+          "distractorType": "shared_feature",
+          "whyWrong": "The health memo says either system can control problems with proper containers and operations."
+        },
+        {
+          "id": "d",
+          "text": "Plan A has already operated citywide for a year.",
+          "distractorType": "false",
+          "whyWrong": "It is still proposed with a pilot."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Plan A has evidence tied directly to the convenience choice, while Plan B's registration figure is a weaker proxy for sustained participation.",
+        "quickTip": "Compare not just numbers, but what each number actually measures."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the strongest evidence advantage of Plan B over Plan A?",
+      "primarySkillId": "R5.4",
+      "familyId": "arguments.evidence.relevance",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Its estimated first-year cost is substantially lower, though that figure does not by itself establish better overall value."
+        },
+        {
+          "id": "b",
+          "text": "Its registration figure proves every household participated every week.",
+          "distractorType": "overclaim",
+          "whyWrong": "Registration does not measure frequency of use."
+        },
+        {
+          "id": "c",
+          "text": "Drop-off hubs cannot create odor problems.",
+          "distractorType": "false",
+          "whyWrong": "The health memo warns that overflowing shared containers can create problems."
+        },
+        {
+          "id": "d",
+          "text": "Car ownership is high in every neighborhood.",
+          "distractorType": "false",
+          "whyWrong": "The passage identifies high car ownership as a limitation of the earlier market locations."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The cost estimate is relevant to affordability, while the note correctly preserves the need to compare cost with participation and collected material.",
+        "quickTip": "A relevant advantage is not automatically sufficient to decide the whole policy."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which limitation most weakens using the farmers' market pilot to predict citywide hub participation?",
+      "primarySkillId": "R5.5",
+      "familyId": "arguments.evidence.sufficiency",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot used shared containers.",
+          "distractorType": "same_feature",
+          "whyWrong": "That is part of the proposed model and not the main transfer problem."
+        },
+        {
+          "id": "b",
+          "text": "The registered households came from locations with relatively high car ownership, and registration did not measure repeated actual use."
+        },
+        {
+          "id": "c",
+          "text": "The pilot lasted four months, which makes all of its data invalid.",
+          "distractorType": "absolute",
+          "whyWrong": "Duration alone does not invalidate the evidence."
+        },
+        {
+          "id": "d",
+          "text": "The city has libraries.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Library locations do not resolve the representativeness and usage-measurement limits."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Both sample context and outcome measurement make it risky to treat registration as a citywide participation rate.",
+        "quickTip": "Check whether the pilot population resembles the target population and whether the measure matches the claimed behavior."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the public health memo affect the debate?",
+      "primarySkillId": "R6.5",
+      "familyId": "arguments.sources.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves Plan A is the only sanitary option.",
+          "distractorType": "false",
+          "whyWrong": "The memo says either system can control odor and pests with proper management."
+        },
+        {
+          "id": "b",
+          "text": "It proves Plan B is the only sanitary option.",
+          "distractorType": "false",
+          "whyWrong": "The memo also identifies overflow risks for shared containers."
+        },
+        {
+          "id": "c",
+          "text": "It shifts the question from whether one container type is automatically safe to how well either system manages sealing, frequency, cleaning, and operational failures."
+        },
+        {
+          "id": "d",
+          "text": "It makes participation evidence irrelevant.",
+          "distractorType": "false",
+          "whyWrong": "Sanitation and participation are separate criteria that both matter."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The memo reframes sanitation as an implementation-quality issue and gives measurable outcomes for either pilot.",
+        "quickTip": "A third source can clarify which disagreement is real and which is based on a false either/or."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which metric proposed by the budget office is most useful for comparing value when participation rates differ?",
+      "primarySkillId": "R6.3",
+      "familyId": "arguments.formats.data",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Total first-year cost alone.",
+          "distractorType": "incomplete",
+          "whyWrong": "A cheaper program could collect far less useful material; total cost lacks an outcome denominator."
+        },
+        {
+          "id": "b",
+          "text": "Number of containers purchased.",
+          "distractorType": "proxy",
+          "whyWrong": "Container count is an input, not a direct value measure."
+        },
+        {
+          "id": "c",
+          "text": "Cost per ton of correctly separated food waste."
+        },
+        {
+          "id": "d",
+          "text": "Number of libraries in the city.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Library count does not combine program cost and successful waste diversion."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This metric relates spending to a meaningful program output and allows systems with different participation levels to be compared.",
+        "quickTip": "For value comparisons, pair cost with the outcome the program is trying to produce."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which pilot design would best allow the city to choose between the plans?",
+      "primarySkillId": "R6.5",
+      "familyId": "arguments.sources.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Test curbside in one type of neighborhood and hubs in a very different type, then compare raw totals only.",
+          "distractorType": "confounded",
+          "whyWrong": "Different populations could explain the outcome differences."
+        },
+        {
+          "id": "b",
+          "text": "Run comparable pilots in matched neighborhoods, track actual participating households, correctly separated tons, full operating costs, access patterns, contamination, and complaints for the same period."
+        },
+        {
+          "id": "c",
+          "text": "Choose the lower first-year estimate without testing participation.",
+          "distractorType": "one_metric",
+          "whyWrong": "This ignores the budget office's warning that cost and participation must be evaluated together."
+        },
+        {
+          "id": "d",
+          "text": "Ask only residents who already compost which plan they prefer.",
+          "distractorType": "selection_bias",
+          "whyWrong": "That sample would not represent residents whose behavior the program needs to change."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Comparable populations, periods, and shared outcomes would let the city distinguish program effects from neighborhood differences and compare both value and usability.",
+        "quickTip": "A fair comparison controls obvious differences and measures the same decision criteria for each option."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Multiple Texts & Formats",
+    "primarySkillId": "R6.5",
+    "secondarySkillIds": [
+      "R5.4",
+      "R5.5",
+      "R6.3"
+    ],
+    "contentKind": "argument_practice",
+    "practiceTags": [
+      "paired_sources"
+    ],
+    "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+    "topicLabel": "Mixed Source Practice"
+  }
+}

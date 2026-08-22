@@ -101,14 +101,14 @@
     "sourceSetId": "set-rla-writing-library-hours",
     "sourceVersion": 1,
     "curriculum": {
-      "domain": "Argument Analysis",
-      "primarySkillId": "R5.4",
+      "domain": "Extended Response",
+      "primarySkillId": "W1.5",
       "secondarySkillIds": [
-        "W1.5"
+        "R5.4"
       ],
-      "contentKind": "passage_practice",
+      "contentKind": "skill_drill",
       "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-      "topicLabel": "Evidence Relevance"
+      "topicLabel": "ER Evidence Drill"
     },
     "passage": {
       "id": "p-rla-library-sunday-hours",
@@ -123,6 +123,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-22T07:49:37.342Z"
+    "compiledAt": "2026-08-22T08:52:14.507Z"
   }
 }

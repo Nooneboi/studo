@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "id": "p-rla-args-mixed-automation-inspection",
+  "title": "Should Meridian Automate the First Inspection?",
+  "text": "SOURCE A - Quality Engineering Proposal\n\nMeridian Repair manufactures replacement pump assemblies. Quality engineer Sofia Nordin proposes using a camera-based inspection system at the final assembly station. Today, each finished unit is checked visually by an inspector for label placement, missing fasteners, visible cracks, and several other defects. Nordin argues that a camera system should perform the first scan while human inspectors review flagged units and conduct checks the camera cannot perform.\n\nIn a six-week test on one line, the system scanned 4,200 assemblies. It correctly flagged 116 of the 121 visible defects later confirmed by inspectors. It also produced 83 false alerts, mostly when reflective packaging looked like a crack. Nordin does not describe the system as a replacement for inspectors. She notes that it cannot feel whether a fitting is loose, judge unusual damage it was not trained to recognize, or resolve every uncertain image. Her proposal is to use automation for repetitive visual checks and move inspectors toward verification and harder cases.\n\nThe pilot reduced the average time spent on the first visual scan from 48 seconds per unit to 19 seconds, including review of flagged images. Nordin estimates that the saved time could be used for more detailed mechanical checks. She recommends a second three-month test on two different product lines before any permanent staffing changes.\n\nSOURCE B - Senior Inspector Malik Grant\n\nGrant argues that Meridian should not expand the system yet. He agrees that the camera found most defects in the test set but focuses on the five visible defects it missed. “A customer does not care that a machine was correct most of the time if the missed defect reaches the field,” he writes. He also notes that the test occurred on one line with stable lighting and a narrow range of products. Performance could fall when parts are more varied or when lighting changes.\n\nGrant questions the time-savings estimate as well. The pilot did not include the time engineers spent adjusting camera settings or reviewing unusual false alerts. If those support costs are included, he says, the labor savings may be smaller than the headline number suggests. Rather than adding two lines immediately, Grant proposes first repeating the test under deliberately varied lighting and with a broader set of assemblies.\n\nNordin responds that Grant identifies real limitations but sets an unrealistic standard if he treats any missed defect as proof that the tool has no value. Human inspectors also miss some defects, she says, so the fair comparison is not machine perfection versus human perfection. The next test should compare complete inspection systems: human-only inspection versus camera-assisted human inspection, including false alerts, missed defects, support time, and mechanical checks.",
+  "textType": "informational",
+  "context": "workplace",
+  "source": {
+    "type": "original",
+    "attribution": "Original content by Studo"
+  },
+  "rights": {
+    "status": "original",
+    "holder": "Studo",
+    "note": "Original practice material created for Studo Arguments & Sources V1."
+  },
+  "status": "published",
+  "version": 1,
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review"
+}

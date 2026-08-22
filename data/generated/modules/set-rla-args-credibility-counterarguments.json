@@ -1,0 +1,474 @@
+{
+  "id": "set-rla-args-credibility-counterarguments",
+  "title": "Testing a Food-Waste Collection Proposal",
+  "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "The Cedar Point council is considering a household food-waste collection program. Under the proposal, residents would place food scraps in sealed bins that the city would collect weekly and send to a regional composting facility. Council member Nia Brooks supports a six-month pilot in two neighborhoods.\n\nBrooks cites a waste audit conducted by the city sanitation department. Workers sorted samples from 420 household trash carts over four weeks and estimated that food scraps made up 23 percent of the sampled residential waste by weight. The regional composting facility has confirmed in writing that it can accept up to 18 tons of Cedar Point food waste per week during the pilot. Brooks argues that these sources are useful because the sanitation department measured the city's own waste and the facility can speak directly about its available capacity.\n\nA local restaurant owner, Tomas Reed, opposes the proposal. He tells the council, “I have run a kitchen for twenty years, and food waste smells. If the city puts scraps in bins all week, every neighborhood will have odor and pest problems.” Brooks responds that Reed has relevant experience with food handling, so his concern should not simply be dismissed. However, she argues that a commercial kitchen is not identical to a household collection program using sealed bins and weekly pickup.\n\nBrooks then cites a two-year report from a nearby city using similar sealed bins. That city recorded odor complaints from 1.7 percent of participating households in the first summer; after distributing bin-cleaning instructions and replacing damaged lids, the rate fell below 0.6 percent the following summer. Brooks says this does not prove Cedar Point will have the same result, but it shows that odor problems can be measured and may be reduced through program design.\n\nReed raises another objection: the pilot will cost money that could be used for road repairs. Brooks acknowledges the tradeoff. She proposes setting a fixed pilot budget, publishing collection and complaint data, and requiring a new council vote before permanent expansion. Her position is not that opponents have no valid concerns, but that a limited pilot can test those concerns with local evidence.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why is the city sanitation department a relatively strong source for the claim about how much residential waste is food scraps?",
+      "points": 1,
+      "explanation": "The department has direct access to the relevant local material and used a measurement process tied to the claim.",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Judge credibility by expertise, access, method, and fit with the specific claim - not by whether you like the conclusion.",
+      "familyId": "arguments.credibility.evaluate",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a government department, so everything it reports must be correct.",
+          "distractorType": "authority_overclaim",
+          "whyWrong": "Institutional status alone does not guarantee accuracy; the stronger reason is its direct measurement of local waste."
+        },
+        {
+          "id": "b",
+          "text": "It sampled Cedar Point household trash directly using a waste audit connected to the claim being evaluated."
+        },
+        {
+          "id": "c",
+          "text": "It supports Brooks's preferred policy.",
+          "distractorType": "agreement_bias",
+          "whyWrong": "A source is not credible simply because it agrees with a position."
+        },
+        {
+          "id": "d",
+          "text": "It has more employees than the regional composting facility.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Staff size does not determine whether the source is well positioned to measure household waste composition."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What makes the regional composting facility a useful source for the capacity claim?",
+      "points": 1,
+      "explanation": "The facility has direct operational knowledge of its own available capacity, making it well placed to address that specific question.",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "A source can be highly credible for one claim and irrelevant to another.",
+      "familyId": "arguments.credibility.evaluate",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The facility is directly responsible for deciding how much material it can accept."
+        },
+        {
+          "id": "b",
+          "text": "The facility is located outside Cedar Point.",
+          "distractorType": "location_only",
+          "whyWrong": "Being regional does not by itself make the capacity statement more reliable."
+        },
+        {
+          "id": "c",
+          "text": "The facility has probably handled every type of waste before.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage does not make this broad claim."
+        },
+        {
+          "id": "d",
+          "text": "Its statement proves the pilot will reduce city costs.",
+          "distractorType": "different_claim",
+          "whyWrong": "Capacity evidence does not establish the financial effect of the program."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How does Brooks treat Reed's odor objection?",
+      "points": 1,
+      "explanation": "A strong response can concede a legitimate concern without accepting the opponent's entire conclusion.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "Look for three parts: acknowledgment, limitation of the opposing evidence, and a direct response.",
+      "familyId": "arguments.counterargument.response",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "She dismisses it because restaurant owners have no relevant experience.",
+          "distractorType": "misread",
+          "whyWrong": "Brooks explicitly says his food-handling experience is relevant."
+        },
+        {
+          "id": "b",
+          "text": "She accepts that odor makes any collection program impossible.",
+          "distractorType": "concession_too_far",
+          "whyWrong": "She acknowledges risk but offers evidence that design can reduce it."
+        },
+        {
+          "id": "c",
+          "text": "She acknowledges the concern, limits how far Reed's restaurant experience can be generalized, and answers it with evidence from a similar household program."
+        },
+        {
+          "id": "d",
+          "text": "She changes the subject from odor to road repairs.",
+          "distractorType": "structure_error",
+          "whyWrong": "The road-repair objection comes later; Brooks first responds directly to odor."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which source is MOST directly relevant to whether sealed household bins can keep odor complaints manageable over time?",
+      "points": 1,
+      "explanation": "The nearby-city report studies a closely comparable program and directly measures the outcome in question over time.",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Choose the source whose experience, method, and measured outcome best match the claim.",
+      "familyId": "arguments.credibility.evaluate",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reed's twenty years running a restaurant kitchen.",
+          "distractorType": "partly_relevant",
+          "whyWrong": "His experience makes odor concerns plausible, but restaurant waste handling differs from the proposed household system."
+        },
+        {
+          "id": "b",
+          "text": "The sanitation department's four-week waste audit.",
+          "distractorType": "different_claim",
+          "whyWrong": "The audit measures waste composition, not odor performance."
+        },
+        {
+          "id": "c",
+          "text": "The composting facility's capacity letter.",
+          "distractorType": "different_claim",
+          "whyWrong": "Capacity does not address household odor complaints."
+        },
+        {
+          "id": "d",
+          "text": "The two-year report from a nearby city using similar sealed bins and tracking complaints."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why does Brooks say the nearby-city report does NOT prove Cedar Point will get the same result?",
+      "points": 1,
+      "explanation": "Similarity strengthens transfer, but evidence from another location still cannot guarantee identical local outcomes.",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Credible comparison evidence can support a prediction without turning it into certainty.",
+      "familyId": "arguments.credibility.evaluate",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A comparable source can inform the decision, but local conditions and implementation may differ."
+        },
+        {
+          "id": "b",
+          "text": "Reports from other cities are never useful evidence.",
+          "distractorType": "absolute",
+          "whyWrong": "Brooks uses the report precisely because it is relevant, while limiting the certainty of the comparison."
+        },
+        {
+          "id": "c",
+          "text": "Odor complaints cannot be measured objectively.",
+          "distractorType": "false",
+          "whyWrong": "The cited city tracked complaint rates over two summers."
+        },
+        {
+          "id": "d",
+          "text": "Cedar Point has no sealed bins available.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage gives no such limitation."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the function of Brooks's response to the road-repair objection?",
+      "points": 1,
+      "explanation": "Her response addresses the concern by limiting financial exposure and requiring evidence before a permanent commitment.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "A counterargument response is stronger when it answers the actual objection rather than attacking a weaker version.",
+      "familyId": "arguments.counterargument.response",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "She argues that road repairs are unnecessary.",
+          "distractorType": "distortion",
+          "whyWrong": "She does not deny the competing need."
+        },
+        {
+          "id": "b",
+          "text": "She acknowledges the opportunity-cost concern and limits the pilot with a fixed budget and a new vote before permanent expansion."
+        },
+        {
+          "id": "c",
+          "text": "She proves the pilot will cost less than road repairs.",
+          "distractorType": "unsupported",
+          "whyWrong": "No cost comparison is given."
+        },
+        {
+          "id": "d",
+          "text": "She claims residents care more about compost than roads.",
+          "distractorType": "unsupported",
+          "whyWrong": "No preference data are provided."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best evaluates Reed as a source?",
+      "points": 1,
+      "explanation": "Credibility is claim-specific: Reed has relevant experience, but the nearby municipal program is a closer source for the exact policy design.",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Avoid all-or-nothing credibility judgments; ask how well the source is positioned for this particular claim.",
+      "familyId": "arguments.credibility.evaluate",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "He is completely unreliable because he opposes the proposal.",
+          "distractorType": "bias_fallacy",
+          "whyWrong": "Disagreement does not erase relevant experience."
+        },
+        {
+          "id": "b",
+          "text": "He is the strongest source on citywide household complaint rates because he has run one restaurant for twenty years.",
+          "distractorType": "scope_error",
+          "whyWrong": "His experience is relevant to food handling but does not directly measure household collection outcomes citywide."
+        },
+        {
+          "id": "c",
+          "text": "His experience makes the odor concern worth considering, but it is less directly matched to the proposed household system than data from a similar municipal program."
+        },
+        {
+          "id": "d",
+          "text": "His opinion is stronger than measured evidence because practical experience always outweighs data.",
+          "distractorType": "absolute",
+          "whyWrong": "Practical experience can matter, but “always” ignores fit, method, and scope."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which feature most strengthens Brooks's overall argument?",
+      "points": 1,
+      "explanation": "The argument combines evidence with a proportionate response to uncertainty instead of pretending the policy has no risks.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "Strong argumentation often improves when a writer addresses the best opposing point and shows how it can be tested.",
+      "familyId": "arguments.counterargument.response",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "She never mentions any weakness in her proposal.",
+          "distractorType": "false",
+          "whyWrong": "She discusses odor, cost, and uncertainty."
+        },
+        {
+          "id": "b",
+          "text": "She treats every opposing claim as equally strong.",
+          "distractorType": "false",
+          "whyWrong": "She distinguishes relevant concerns from conclusions that exceed the evidence."
+        },
+        {
+          "id": "c",
+          "text": "She promises the pilot will succeed before it begins.",
+          "distractorType": "false",
+          "whyWrong": "She frames the pilot as a way to test concerns."
+        },
+        {
+          "id": "d",
+          "text": "She uses local and comparable evidence, acknowledges reasonable objections, and proposes a limited test that can generate new evidence."
+        }
+      ],
+      "correct": "d"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-credibility-counterarguments",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.9",
+      "secondarySkillIds": [
+        "R5.10"
+      ],
+      "unitId": "credibility-counterarguments",
+      "contentKind": "skill_drill",
+      "learningObjective": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-credibility-foodwaste",
+      "title": "Testing a Food-Waste Collection Proposal",
+      "textType": "informational",
+      "context": "civics",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.501Z"
+  }
+}

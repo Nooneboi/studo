@@ -62,7 +62,9 @@ test('preview tracks stay out of learner curriculum and index while modules rema
   const result = runNode('scripts/build-content.mjs');
   assert.equal(result.status, 0, `build failed:\n${result.stdout}\n${result.stderr}`);
   const curriculum = await json(path.join(GENERATED, 'curriculum.json'));
-  assert.deepEqual(curriculum.tracks.map((track) => track.id), ['reading']);
+  assert.deepEqual(curriculum.tracks.map((track) => track.id), ['reading', 'arguments']);
+  assert.equal(curriculum.tracks.some((track) => track.id === 'language'), false);
+  assert.equal(curriculum.tracks.some((track) => track.id === 'writing'), false);
   const index = await json(path.join(GENERATED, 'index.json'));
   const files = new Set(index.map((entry) => entry.file));
   assert.equal(files.has('generated/modules/grammar-practice.json'), false);

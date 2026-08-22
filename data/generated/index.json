@@ -753,6 +753,272 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-args-claims-structure.json",
+    "title": "Where Shade Would Matter Most",
+    "description": "Identify the main claim, supporting claims, and the structure that connects them.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [
+        "R5.2"
+      ],
+      "unitId": "claims-argument-structure",
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify the main claim, supporting claims, and the structure that connects them.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-compare-sources.json",
+    "title": "How Late Should the Library Stay Open?",
+    "description": "Compare two sources on the same issue, identifying agreements, disagreements, evidence emphasis, and opposing arguments.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.1",
+      "secondarySkillIds": [
+        "R6.2"
+      ],
+      "unitId": "compare-sources-arguments",
+      "contentKind": "skill_drill",
+      "learningObjective": "Compare two sources on the same issue, identifying agreements, disagreements, evidence emphasis, and opposing arguments.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-credibility-counterarguments.json",
+    "title": "Testing a Food-Waste Collection Proposal",
+    "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.9",
+      "secondarySkillIds": [
+        "R5.10"
+      ],
+      "unitId": "credibility-counterarguments",
+      "contentKind": "skill_drill",
+      "learningObjective": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-evidence-quality.json",
+    "title": "What the Refill-Station Data Can Show",
+    "description": "Judge whether evidence is relevant to a claim and whether it is sufficient for the conclusion being made.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.4",
+      "secondarySkillIds": [
+        "R5.5"
+      ],
+      "unitId": "evidence-quality",
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge whether evidence is relevant to a claim and whether it is sufficient for the conclusion being made.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-finding-evidence.json",
+    "title": "Keeping the Evening Tutoring Pilot",
+    "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.3",
+      "secondarySkillIds": [],
+      "unitId": "finding-evidence",
+      "contentKind": "skill_drill",
+      "learningObjective": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-mixed-automation.json",
+    "title": "Should Meridian Automate the First Inspection?",
+    "description": "Paired workplace arguments about whether a promising automation pilot justifies expansion and staffing changes.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.2",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.7",
+        "R6.1",
+        "R6.5"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "paired_sources",
+        "argument_strength"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-mixed-device-lending.json",
+    "title": "A Device-Lending Program: Article and Fact Sheet",
+    "description": "Use an article, fact sheet, and opposing comments to distinguish measured access outcomes from unsupported academic claims.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.4",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.6",
+        "R5.7",
+        "R6.2"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "different_formats",
+        "paired_sources"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-mixed-flood-strategy.json",
+    "title": "Choosing a Riverfront Flood Strategy",
+    "description": "Compare competing infrastructure arguments that manage the same risk through different mechanisms and tradeoffs.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.1",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.6",
+        "R5.10",
+        "R6.5"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "paired_sources"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-mixed-foodwaste-plans.json",
+    "title": "Two Plans for Residential Food-Waste Collection",
+    "description": "Synthesize two implementation plans with health and budget evidence to judge participation, cost, and operational tradeoffs.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.5",
+      "secondarySkillIds": [
+        "R5.4",
+        "R5.5",
+        "R6.3"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "paired_sources"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-mixed-schoolyards.json",
+    "title": "How Strong Is the Case for Cooler Schoolyards?",
+    "description": "Evaluate an argument that combines a briefing, a data table, and a stakeholder qualification.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.6",
+        "R5.7",
+        "R6.5"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "text_data"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-mixed-weekend-bus.json",
+    "title": "Should the Weekend Bus Pilot Expand?",
+    "description": "Paired arguments about whether pilot evidence is strong enough for a larger transit commitment.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.2",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.7",
+        "R6.1",
+        "R6.5"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "paired_sources",
+        "argument_strength"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-reasoning-assumptions.json",
+    "title": "A Booking App Cannot Fix Every Delay",
+    "description": "Test whether conclusions follow from the evidence and identify assumptions that must be true for the reasoning to work.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.7",
+      "secondarySkillIds": [
+        "R5.8"
+      ],
+      "unitId": "reasoning-assumptions",
+      "contentKind": "skill_drill",
+      "learningObjective": "Test whether conclusions follow from the evidence and identify assumptions that must be true for the reasoning to work.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-supported-claims.json",
+    "title": "What an Eight-Week Schedule Pilot Shows",
+    "description": "Separate evidence-backed statements from causal, universal, or otherwise unsupported claims.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.6",
+      "secondarySkillIds": [],
+      "unitId": "supported-unsupported-claims",
+      "contentKind": "skill_drill",
+      "learningObjective": "Separate evidence-backed statements from causal, universal, or otherwise unsupported claims.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-synthesize-sources.json",
+    "title": "Cooling the Central Courtyard",
+    "description": "Combine evidence across multiple sources to reach conclusions and recommendations that no single source can fully support alone.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.5",
+      "secondarySkillIds": [],
+      "unitId": "synthesize-sources",
+      "contentKind": "skill_drill",
+      "learningObjective": "Combine evidence across multiple sources to reach conclusions and recommendations that no single source can fully support alone.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-text-data-formats.json",
+    "title": "Where the Shuttle Crowding Actually Happens",
+    "description": "Connect written claims with tables and other formats, and judge what each format can and cannot establish.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [
+        "R6.4"
+      ],
+      "unitId": "text-data-formats",
+      "contentKind": "skill_drill",
+      "learningObjective": "Connect written claims with tables and other formats, and judge what each format can and cannot establish.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
     "file": "generated/modules/set-rla-core-transfer-blue-folder.json",
     "title": "The Last Blue Folder",
     "description": "Literary · 7 questions",

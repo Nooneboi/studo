@@ -1,0 +1,472 @@
+{
+  "id": "set-rla-args-synthesize-sources",
+  "title": "Cooling the Central Courtyard",
+  "description": "Combine evidence across multiple sources to reach conclusions and recommendations that no single source can fully support alone.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "SOURCE 1 - Heat Survey\n\nDuring September, student volunteers measured surface temperatures at six locations in Central College's main courtyard on ten clear afternoons. The unshaded stone seating area averaged 47 degrees Celsius at 2:00 p.m. The shaded walkway beside the administration building averaged 33 degrees. The survey did not measure air temperature or student comfort, but it showed a consistent difference between surfaces exposed to direct sun and surfaces in shade.\n\nSOURCE 2 - Facilities Memo\n\nFacilities staff are considering three courtyard changes. Option A would install two permanent shade canopies over the stone seating area for an estimated $42,000. Option B would plant twelve young trees for $18,000; staff estimate that substantial canopy shade would take several years to develop. Option C would replace part of the stone with a lighter paving material for $31,000. The supplier reports that the material absorbs less solar heat, but the college has not tested it on campus. The memo notes that trees could provide long-term shade and environmental benefits but would require irrigation and maintenance during establishment.\n\nSOURCE 3 - Student Survey\n\nA survey of 510 students found that 62 percent avoid the central stone seats between noon and 3:00 p.m. on hot days. When asked what change would make them more likely to use the area, 54 percent selected “more shade,” 21 percent selected “cooler seating surfaces,” 15 percent selected “more tables,” and 10 percent selected “other.” The survey measured preferences, not whether a particular project would actually change courtyard use.\n\nPLANNING NOTE\n\nThe student government wants the college to make a decision before the next hot season. Facilities staff say a phased plan is possible: install one improvement now while gathering evidence for longer-term changes.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported when Sources 1 and 3 are considered together?",
+      "points": 1,
+      "explanation": "Source 1 provides the surface-temperature pattern and Source 3 provides student-use and preference evidence; together they support a cautious connection.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "A synthesis combines what different sources can support without turning association into proof.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Direct sun is associated with hotter courtyard surfaces, and many students report avoiding the unshaded stone area during hot midday hours."
+        },
+        {
+          "id": "b",
+          "text": "The hot stone surface is the only reason any student avoids the courtyard.",
+          "distractorType": "overclaim",
+          "whyWrong": "The sources show an association and preferences, not a single proven cause for every student."
+        },
+        {
+          "id": "c",
+          "text": "Students prefer lighter paving to shade canopies.",
+          "distractorType": "false",
+          "whyWrong": "More shade received 54 percent, while cooler surfaces received 21 percent."
+        },
+        {
+          "id": "d",
+          "text": "The courtyard air is exactly 14 degrees cooler in the shaded walkway.",
+          "distractorType": "measurement_error",
+          "whyWrong": "Source 1 measured surface temperature, not air temperature."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which option has the strongest combined support for addressing the most immediate problem before the next hot season?",
+      "points": 1,
+      "explanation": "This recommendation connects the measured shade difference, the dominant student preference, and the implementation timeline.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "A strong synthesis recommendation should be supported by more than one source and should respect practical constraints.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Option B, because young trees are guaranteed to create full shade by next season.",
+          "distractorType": "false_timing",
+          "whyWrong": "The memo says substantial tree shade would take several years."
+        },
+        {
+          "id": "b",
+          "text": "Option C, because the supplier's claim proves the new paving will cool the campus.",
+          "distractorType": "overclaim",
+          "whyWrong": "The product has not been tested on campus, and supplier evidence alone does not establish local effect."
+        },
+        {
+          "id": "c",
+          "text": "Option A, because measured shade is associated with much cooler surfaces and students most often request more shade, while the canopies can provide shade without waiting years for tree growth."
+        },
+        {
+          "id": "d",
+          "text": "No option, because the sources do not prove exactly how many students will use the courtyard afterward.",
+          "distractorType": "too_strict",
+          "whyWrong": "Uncertainty about exact future use does not prevent making a reasoned, testable decision from the available evidence."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What important limitation applies to using the student survey as evidence for choosing a project?",
+      "points": 1,
+      "explanation": "Preferences can guide priorities, but they are not outcome data from an implemented project.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "When synthesizing, keep each source in its proper role: preference evidence is not the same as performance evidence.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It includes no students at all.",
+          "distractorType": "false",
+          "whyWrong": "The survey includes 510 students."
+        },
+        {
+          "id": "b",
+          "text": "It reports preferences but does not show whether any specific project will actually increase courtyard use."
+        },
+        {
+          "id": "c",
+          "text": "It measures surface temperature rather than opinions.",
+          "distractorType": "false",
+          "whyWrong": "Surface temperatures come from Source 1; Source 3 is the opinion survey."
+        },
+        {
+          "id": "d",
+          "text": "It asks only about tree planting.",
+          "distractorType": "false",
+          "whyWrong": "It gives several possible changes, including shade and cooler surfaces."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which statement correctly synthesizes the cost and timing information in Source 2 with the other sources?",
+      "points": 1,
+      "explanation": "This statement combines the financial/timing tradeoff with the immediate problem identified in the other sources without erasing the long-term benefit.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "Synthesis often requires balancing evidence of need with constraints such as cost and timing.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Trees are the cheapest listed option and may provide long-term benefits, but their slow shade development makes them less suited to the immediate shade need identified by the heat and student data."
+        },
+        {
+          "id": "b",
+          "text": "Canopies are the cheapest option and therefore clearly the best long-term investment.",
+          "distractorType": "false",
+          "whyWrong": "Canopies are the most expensive listed option, not the cheapest."
+        },
+        {
+          "id": "c",
+          "text": "Lighter paving is already proven on campus to reduce surface temperature more than shade.",
+          "distractorType": "false",
+          "whyWrong": "The college has not tested it on campus."
+        },
+        {
+          "id": "d",
+          "text": "Because trees require irrigation, they cannot provide any environmental benefit.",
+          "distractorType": "overclaim",
+          "whyWrong": "The memo explicitly says trees could provide long-term environmental benefits despite maintenance needs."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which additional evidence would most improve a phased decision?",
+      "points": 1,
+      "explanation": "A before-and-after pilot would directly measure both physical conditions and actual student behavior, addressing limitations in the current sources.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "The best next evidence targets what the current sources cannot yet tell you.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A campus vote on which option has the nicest name.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Naming preference does not test heat reduction or courtyard use."
+        },
+        {
+          "id": "b",
+          "text": "A supplier advertisement repeating that light paving stays cooler.",
+          "distractorType": "source_repeat",
+          "whyWrong": "Repeating the same untested claim adds little independent evidence."
+        },
+        {
+          "id": "c",
+          "text": "Measurements of surface temperature and student use before and after installing one pilot improvement, taken at comparable times and weather conditions."
+        },
+        {
+          "id": "d",
+          "text": "A list of tree species used in a distant city without any information about local climate or growth.",
+          "distractorType": "weak_transfer",
+          "whyWrong": "A species list alone would not test the effect of the chosen campus improvement."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which claim is NOT supported by the combined sources?",
+      "points": 1,
+      "explanation": "The 54 percent figure is a preference response, not a predicted percentage increase in actual use, and no canopy has been tested yet.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "Do not combine numbers from one source with an outcome from another unless the sources justify that connection.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Shade is associated with lower measured surface temperatures in the courtyard.",
+          "distractorType": "supported",
+          "whyWrong": "Source 1 reports a consistent shaded-versus-unshaded difference."
+        },
+        {
+          "id": "b",
+          "text": "A majority of surveyed students selected more shade as the change most likely to increase their use.",
+          "distractorType": "supported",
+          "whyWrong": "Source 3 reports 54 percent choosing more shade."
+        },
+        {
+          "id": "c",
+          "text": "Trees may offer benefits but would not provide substantial canopy shade immediately.",
+          "distractorType": "supported",
+          "whyWrong": "Source 2 states both points."
+        },
+        {
+          "id": "d",
+          "text": "Permanent canopies will definitely increase courtyard use by 54 percent."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "What is the strongest reason for a phased plan based on all three sources?",
+      "points": 1,
+      "explanation": "The evidence supports addressing the problem while also supporting continued measurement before larger or longer-term commitments.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "A phased recommendation is strongest when the need is credible but the best final solution is still uncertain.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The sources establish an immediate heat/use concern but leave uncertainty about the real effect and long-term value of each specific intervention."
+        },
+        {
+          "id": "b",
+          "text": "The sources contain so little information that no action can be justified.",
+          "distractorType": "too_strict",
+          "whyWrong": "There is meaningful evidence of heat differences, student preferences, costs, and timing."
+        },
+        {
+          "id": "c",
+          "text": "A phased plan guarantees that every option will eventually be built.",
+          "distractorType": "unsupported",
+          "whyWrong": "Phasing allows testing; it does not require all options."
+        },
+        {
+          "id": "d",
+          "text": "The facilities memo says student preferences should be ignored.",
+          "distractorType": "false",
+          "whyWrong": "The memo does not make that claim."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which summary best represents the combined evidence without overstating it?",
+      "points": 1,
+      "explanation": "This summary combines the strongest findings, identifies a plausible immediate response, and preserves uncertainty around alternatives.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "A synthesis summary should include the shared direction of the evidence and the major limits or tradeoffs.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "options": [
+        {
+          "id": "a",
+          "text": "The courtyard is unusable in summer, and only permanent canopies can solve the problem.",
+          "distractorType": "overstatement",
+          "whyWrong": "The sources do not say the courtyard is unusable or that only one solution can work."
+        },
+        {
+          "id": "b",
+          "text": "The data prove trees are a poor investment because they require maintenance.",
+          "distractorType": "unsupported",
+          "whyWrong": "Source 2 identifies long-term benefits as well as maintenance needs."
+        },
+        {
+          "id": "c",
+          "text": "Measured shade is associated with cooler surfaces and students report wanting more shade; canopies could address that need quickly, while trees and cooler paving present different cost, timing, and evidence tradeoffs that may justify further testing."
+        },
+        {
+          "id": "d",
+          "text": "Student preferences should determine the project because surveys are more reliable than temperature measurements.",
+          "distractorType": "false_hierarchy",
+          "whyWrong": "The sources answer different questions and should be combined rather than ranked this way."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-synthesize-sources",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.5",
+      "secondarySkillIds": [],
+      "unitId": "synthesize-sources",
+      "contentKind": "skill_drill",
+      "learningObjective": "Combine evidence across multiple sources to reach conclusions and recommendations that no single source can fully support alone.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-synthesize-courtyard",
+      "title": "Cooling the Central Courtyard",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.504Z"
+  }
+}

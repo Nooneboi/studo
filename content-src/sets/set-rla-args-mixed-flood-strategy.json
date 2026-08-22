@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-mixed-flood-strategy",
+  "runtime": {
+    "id": "set-rla-args-mixed-flood-strategy",
+    "file": "set-rla-args-mixed-flood-strategy.json"
+  },
+  "title": "Choosing a Riverfront Flood Strategy",
+  "description": "Compare competing infrastructure arguments that manage the same risk through different mechanisms and tradeoffs.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-mixed-riverfront-flood"
+  ],
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review",
+  "reviewNotes": "Mixed-source Arguments practice reviewed for source comparison, evidence quality, one-best-answer logic, and ER transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best compares the main strength of each proposal?",
+      "primarySkillId": "R6.1",
+      "familyId": "arguments.sources.compare",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The park offers storage and everyday co-benefits, while the wall offers a defined barrier level for the commercial district."
+        },
+        {
+          "id": "b",
+          "text": "The park guarantees no future flooding, while the wall only improves recreation.",
+          "distractorType": "reversal",
+          "whyWrong": "Neither project guarantees no flooding, and recreation is a park benefit."
+        },
+        {
+          "id": "c",
+          "text": "Both projects work in exactly the same way and differ only in cost.",
+          "distractorType": "false",
+          "whyWrong": "They manage water through different mechanisms and distribute benefits/risks differently."
+        },
+        {
+          "id": "d",
+          "text": "The wall stores more water than the park because it costs less.",
+          "distractorType": "unsupported",
+          "whyWrong": "The wall blocks water rather than storing a stated volume."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This comparison identifies the distinct function each source emphasizes without pretending they solve risk in the same way.",
+        "quickTip": "Compare arguments on the same decision criteria, but preserve differences in mechanism."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which limitation of the flood wall is supported by Source B itself?",
+      "primarySkillId": "R5.10",
+      "familyId": "arguments.counterargument.response",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It costs more than the park.",
+          "distractorType": "false",
+          "whyWrong": "The stated construction estimate is lower, though full maintenance costs still matter."
+        },
+        {
+          "id": "b",
+          "text": "It cannot protect the commercial district under any flood size.",
+          "distractorType": "false",
+          "whyWrong": "Its consultant gives a design elevation it is intended to block."
+        },
+        {
+          "id": "c",
+          "text": "It can shift some water to other locations and depends on gates and pumps."
+        },
+        {
+          "id": "d",
+          "text": "It provides no physical barrier against river water.",
+          "distractorType": "false",
+          "whyWrong": "A barrier is its central function."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The coalition's own source acknowledges transferred-water risk and operational dependencies, making this a strong concession rather than an opponent's invention.",
+        "quickTip": "A source that acknowledges a limitation can still argue that the benefit outweighs it."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the resilience note say the proposals do not answer exactly the same question?",
+      "primarySkillId": "R6.5",
+      "familyId": "arguments.sources.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the wall has any limitations.",
+          "distractorType": "false",
+          "whyWrong": "The park also has capacity limits and model uncertainty."
+        },
+        {
+          "id": "b",
+          "text": "One proposal is legal and the other is illegal.",
+          "distractorType": "unsupported",
+          "whyWrong": "No legal distinction is stated."
+        },
+        {
+          "id": "c",
+          "text": "Only the park has an engineering estimate.",
+          "distractorType": "false",
+          "whyWrong": "Both proposals include consultant/engineering estimates."
+        },
+        {
+          "id": "d",
+          "text": "One proposal manages water partly through storage and broader public-space benefits, while the other prioritizes direct barrier protection for a specific district."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The sources optimize different benefits, so a fair comparison requires shared criteria such as flood performance, cost, and effects elsewhere.",
+        "quickTip": "Before deciding which argument is stronger, ask whether the sources are valuing the same outcome."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which claim would be least justified by the evidence?",
+      "primarySkillId": "R5.6",
+      "familyId": "arguments.claim.support",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The park could reduce peak levels in the modeled design storm.",
+          "distractorType": "supported",
+          "whyWrong": "The hydraulic model estimates a 12-18 cm reduction along a defined stretch."
+        },
+        {
+          "id": "b",
+          "text": "The wall is designed to block water up to a specified elevation in the protected district.",
+          "distractorType": "supported",
+          "whyWrong": "That is the consultant's stated design goal."
+        },
+        {
+          "id": "c",
+          "text": "Either project would eliminate all flood risk for Riverbend."
+        },
+        {
+          "id": "d",
+          "text": "The wall may require measures to handle rainwater behind the barrier.",
+          "distractorType": "supported",
+          "whyWrong": "Pumps are specifically mentioned."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Every source preserves residual risk, and each proposal has capacity or failure limits.",
+        "quickTip": "Be suspicious of eliminate/all/guarantee when the source explicitly describes residual risk."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which additional analysis would most improve a fair decision between the two proposals?",
+      "primarySkillId": "R5.5",
+      "familyId": "arguments.evidence.sufficiency",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A popularity contest for the project names.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Naming preference does not compare flood performance or costs."
+        },
+        {
+          "id": "b",
+          "text": "A comparison under several flood sizes that includes lifecycle cost, neighborhood effects, failure scenarios, and the value of non-flood benefits."
+        },
+        {
+          "id": "c",
+          "text": "Only the initial construction cost, with no maintenance or transferred-risk analysis.",
+          "distractorType": "incomplete",
+          "whyWrong": "Initial cost alone ignores major differences highlighted by the sources."
+        },
+        {
+          "id": "d",
+          "text": "A guarantee from either consultant that no model can be wrong.",
+          "distractorType": "impossible_standard",
+          "whyWrong": "Models carry uncertainty; demanding impossible certainty would not improve the comparison."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This uses shared criteria and directly addresses the tradeoffs identified across the three sources.",
+        "quickTip": "A fair source comparison needs common decision criteria, not just each side's favorite metric."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which synthesis is best supported?",
+      "primarySkillId": "R6.5",
+      "familyId": "arguments.sources.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The floodable park is clearly superior because recreation is more important than business protection.",
+          "distractorType": "value_assertion",
+          "whyWrong": "The sources do not establish that one value should automatically dominate."
+        },
+        {
+          "id": "b",
+          "text": "The flood wall is clearly superior because a lower construction estimate proves lower total cost and risk.",
+          "distractorType": "overclaim",
+          "whyWrong": "Maintenance, pumps, transferred risk, and failure conditions remain relevant."
+        },
+        {
+          "id": "c",
+          "text": "The park and wall offer different kinds of risk reduction and tradeoffs; choosing between them requires comparing performance, total cost, impacts beyond the protected area, and residual risk under common scenarios."
+        },
+        {
+          "id": "d",
+          "text": "Because neither option eliminates all risk, the city should do nothing.",
+          "distractorType": "all_or_nothing",
+          "whyWrong": "Residual risk does not mean risk-reduction measures have no value."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This synthesis uses the resilience note to place both arguments under common criteria while preserving their distinct strengths and limits.",
+        "quickTip": "When sources advocate different mechanisms, synthesis often means building a shared comparison framework."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Multiple Texts & Formats",
+    "primarySkillId": "R6.1",
+    "secondarySkillIds": [
+      "R5.5",
+      "R5.6",
+      "R5.10",
+      "R6.5"
+    ],
+    "contentKind": "argument_practice",
+    "practiceTags": [
+      "paired_sources"
+    ],
+    "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+    "topicLabel": "Mixed Source Practice"
+  }
+}

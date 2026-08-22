@@ -1337,6 +1337,483 @@
       "status": "published",
       "rightsStatus": "original",
       "reviewer": "Phase 6D domain review"
+    },
+    {
+      "id": "res-rla-args-v1-claims-argument-structure-guide",
+      "title": "Claims & Argument Structure - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for claims & argument structure.",
+      "href": "assets/resources/arguments-claims-argument-structure-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "claims-argument-structure",
+      "skillIds": [
+        "R5.1",
+        "R5.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-claims-argument-structure-workbook-1",
+      "title": "Claims & Argument Structure - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for claims & argument structure.",
+      "href": "assets/resources/arguments-claims-argument-structure-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "claims-argument-structure",
+      "skillIds": [
+        "R5.1",
+        "R5.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-claims-argument-structure-workbook-2",
+      "title": "Claims & Argument Structure - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for claims & argument structure.",
+      "href": "assets/resources/arguments-claims-argument-structure-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "claims-argument-structure",
+      "skillIds": [
+        "R5.1",
+        "R5.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-finding-evidence-guide",
+      "title": "Finding Evidence - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for finding evidence.",
+      "href": "assets/resources/arguments-finding-evidence-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "finding-evidence",
+      "skillIds": [
+        "R5.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-finding-evidence-workbook-1",
+      "title": "Finding Evidence - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for finding evidence.",
+      "href": "assets/resources/arguments-finding-evidence-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "finding-evidence",
+      "skillIds": [
+        "R5.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-finding-evidence-workbook-2",
+      "title": "Finding Evidence - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for finding evidence.",
+      "href": "assets/resources/arguments-finding-evidence-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "finding-evidence",
+      "skillIds": [
+        "R5.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-evidence-quality-guide",
+      "title": "Evidence Quality - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for evidence quality.",
+      "href": "assets/resources/arguments-evidence-quality-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "evidence-quality",
+      "skillIds": [
+        "R5.4",
+        "R5.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-evidence-quality-workbook-1",
+      "title": "Evidence Quality - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for evidence quality.",
+      "href": "assets/resources/arguments-evidence-quality-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "evidence-quality",
+      "skillIds": [
+        "R5.4",
+        "R5.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-evidence-quality-workbook-2",
+      "title": "Evidence Quality - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for evidence quality.",
+      "href": "assets/resources/arguments-evidence-quality-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "evidence-quality",
+      "skillIds": [
+        "R5.4",
+        "R5.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-supported-unsupported-claims-guide",
+      "title": "Supported vs. Unsupported Claims - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for supported vs. unsupported claims.",
+      "href": "assets/resources/arguments-supported-unsupported-claims-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "supported-unsupported-claims",
+      "skillIds": [
+        "R5.6"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-supported-unsupported-claims-workbook-1",
+      "title": "Supported vs. Unsupported Claims - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for supported vs. unsupported claims.",
+      "href": "assets/resources/arguments-supported-unsupported-claims-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "supported-unsupported-claims",
+      "skillIds": [
+        "R5.6"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-supported-unsupported-claims-workbook-2",
+      "title": "Supported vs. Unsupported Claims - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for supported vs. unsupported claims.",
+      "href": "assets/resources/arguments-supported-unsupported-claims-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "supported-unsupported-claims",
+      "skillIds": [
+        "R5.6"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-reasoning-assumptions-guide",
+      "title": "Reasoning & Assumptions - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for reasoning & assumptions.",
+      "href": "assets/resources/arguments-reasoning-assumptions-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "reasoning-assumptions",
+      "skillIds": [
+        "R5.7",
+        "R5.8"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-reasoning-assumptions-workbook-1",
+      "title": "Reasoning & Assumptions - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for reasoning & assumptions.",
+      "href": "assets/resources/arguments-reasoning-assumptions-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "reasoning-assumptions",
+      "skillIds": [
+        "R5.7",
+        "R5.8"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-reasoning-assumptions-workbook-2",
+      "title": "Reasoning & Assumptions - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for reasoning & assumptions.",
+      "href": "assets/resources/arguments-reasoning-assumptions-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "reasoning-assumptions",
+      "skillIds": [
+        "R5.7",
+        "R5.8"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-credibility-counterarguments-guide",
+      "title": "Credibility & Counterarguments - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for credibility & counterarguments.",
+      "href": "assets/resources/arguments-credibility-counterarguments-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "credibility-counterarguments",
+      "skillIds": [
+        "R5.9",
+        "R5.10"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-credibility-counterarguments-workbook-1",
+      "title": "Credibility & Counterarguments - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for credibility & counterarguments.",
+      "href": "assets/resources/arguments-credibility-counterarguments-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "credibility-counterarguments",
+      "skillIds": [
+        "R5.9",
+        "R5.10"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-credibility-counterarguments-workbook-2",
+      "title": "Credibility & Counterarguments - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for credibility & counterarguments.",
+      "href": "assets/resources/arguments-credibility-counterarguments-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "argument-analysis",
+      "unitId": "credibility-counterarguments",
+      "skillIds": [
+        "R5.9",
+        "R5.10"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-compare-sources-arguments-guide",
+      "title": "Compare Sources & Arguments - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for compare sources & arguments.",
+      "href": "assets/resources/arguments-compare-sources-arguments-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "compare-sources-arguments",
+      "skillIds": [
+        "R6.1",
+        "R6.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-compare-sources-arguments-workbook-1",
+      "title": "Compare Sources & Arguments - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for compare sources & arguments.",
+      "href": "assets/resources/arguments-compare-sources-arguments-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "compare-sources-arguments",
+      "skillIds": [
+        "R6.1",
+        "R6.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-compare-sources-arguments-workbook-2",
+      "title": "Compare Sources & Arguments - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for compare sources & arguments.",
+      "href": "assets/resources/arguments-compare-sources-arguments-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "compare-sources-arguments",
+      "skillIds": [
+        "R6.1",
+        "R6.2"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-text-data-formats-guide",
+      "title": "Text, Data & Different Formats - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for text, data & different formats.",
+      "href": "assets/resources/arguments-text-data-formats-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "text-data-formats",
+      "skillIds": [
+        "R6.3",
+        "R6.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-text-data-formats-workbook-1",
+      "title": "Text, Data & Different Formats - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for text, data & different formats.",
+      "href": "assets/resources/arguments-text-data-formats-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "text-data-formats",
+      "skillIds": [
+        "R6.3",
+        "R6.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-text-data-formats-workbook-2",
+      "title": "Text, Data & Different Formats - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for text, data & different formats.",
+      "href": "assets/resources/arguments-text-data-formats-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "text-data-formats",
+      "skillIds": [
+        "R6.3",
+        "R6.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-synthesize-sources-guide",
+      "title": "Synthesize Across Sources - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for synthesize across sources.",
+      "href": "assets/resources/arguments-synthesize-sources-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "synthesize-sources",
+      "skillIds": [
+        "R6.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-synthesize-sources-workbook-1",
+      "title": "Synthesize Across Sources - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for synthesize across sources.",
+      "href": "assets/resources/arguments-synthesize-sources-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "synthesize-sources",
+      "skillIds": [
+        "R6.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-args-v1-synthesize-sources-workbook-2",
+      "title": "Synthesize Across Sources - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for synthesize across sources.",
+      "href": "assets/resources/arguments-synthesize-sources-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "multiple-texts-formats",
+      "unitId": "synthesize-sources",
+      "skillIds": [
+        "R6.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Arguments & Sources V1 editorial review"
     }
   ]
 }

@@ -145,6 +145,60 @@
                 "R5.10"
               ]
             }
+          ],
+          "units": [
+            {
+              "id": "claims-argument-structure",
+              "label": "Claims & Argument Structure",
+              "summary": "Identify the main claim, supporting claims, and how an argument is built.",
+              "skillIds": [
+                "R5.1",
+                "R5.2"
+              ]
+            },
+            {
+              "id": "finding-evidence",
+              "label": "Finding Evidence",
+              "summary": "Locate the specific evidence that supports a claim or conclusion.",
+              "skillIds": [
+                "R5.3"
+              ]
+            },
+            {
+              "id": "evidence-quality",
+              "label": "Evidence Quality",
+              "summary": "Judge whether evidence is relevant to a claim and sufficient to support it.",
+              "skillIds": [
+                "R5.4",
+                "R5.5"
+              ]
+            },
+            {
+              "id": "supported-unsupported-claims",
+              "label": "Supported vs. Unsupported Claims",
+              "summary": "Separate evidence-backed claims from assertions, predictions, and unsupported conclusions.",
+              "skillIds": [
+                "R5.6"
+              ]
+            },
+            {
+              "id": "reasoning-assumptions",
+              "label": "Reasoning & Assumptions",
+              "summary": "Find reasoning gaps and hidden assumptions that weaken an argument.",
+              "skillIds": [
+                "R5.7",
+                "R5.8"
+              ]
+            },
+            {
+              "id": "credibility-counterarguments",
+              "label": "Credibility & Counterarguments",
+              "summary": "Judge source fit and analyze how a writer handles opposing views.",
+              "skillIds": [
+                "R5.9",
+                "R5.10"
+              ]
+            }
           ]
         },
         {
@@ -168,10 +222,38 @@
                 "R6.5"
               ]
             }
+          ],
+          "units": [
+            {
+              "id": "compare-sources-arguments",
+              "label": "Compare Sources & Arguments",
+              "summary": "Compare perspectives, evidence, and argument strength across sources.",
+              "skillIds": [
+                "R6.1",
+                "R6.2"
+              ]
+            },
+            {
+              "id": "text-data-formats",
+              "label": "Text, Data & Different Formats",
+              "summary": "Connect claims with tables, data, fact sheets, and other formats.",
+              "skillIds": [
+                "R6.3",
+                "R6.4"
+              ]
+            },
+            {
+              "id": "synthesize-sources",
+              "label": "Synthesize Across Sources",
+              "summary": "Combine information from multiple sources to draw a new supported conclusion.",
+              "skillIds": [
+                "R6.5"
+              ]
+            }
           ]
         }
       ],
-      "publicationState": "preview"
+      "publicationState": "published"
     },
     {
       "id": "language",

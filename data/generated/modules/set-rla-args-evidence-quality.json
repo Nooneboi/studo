@@ -1,0 +1,474 @@
+{
+  "id": "set-rla-args-evidence-quality",
+  "title": "What the Refill-Station Data Can Show",
+  "description": "Judge whether evidence is relevant to a claim and whether it is sufficient for the conclusion being made.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "Aster Manufacturing installed filtered-water refill stations in two of its six buildings as a three-month pilot. Operations manager Kenji Wu wants to expand the stations company-wide, arguing that they can reduce purchases of single-use bottled water. Before the pilot, the two test buildings ordered an average of 4,800 disposable water bottles per month. During the final month of the pilot, orders fell to 2,900 bottles.\n\nWu also points to the refill counters built into the stations. Together they recorded about 18,000 fills during the three months. However, the counters cannot show whether each fill replaced a disposable bottle; some employees previously used reusable bottles filled at sinks or fountains. The purchasing records are therefore more directly connected to the claim about single-use bottles than the refill count is.\n\nThe pilot also had a change that complicates the comparison. One week before the stations opened, the company stopped automatically stocking bottled water in conference rooms. Meeting organizers could still request bottles, but most began using pitchers instead. Purchasing staff estimate that conference-room orders had previously accounted for about 700 bottles per month across the two buildings.\n\nWu says the decline in orders is still encouraging, but he does not claim the stations caused the entire reduction. He proposes expanding to two more buildings while separately recording conference-room orders, total bottled-water purchases, maintenance costs, and station use. Finance director Alina Shah agrees the pilot is promising but says the company should not claim savings until it also compares installation and filter-replacement costs with the reduction in bottle purchases.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which evidence is MOST relevant to Wu's claim that refill stations may reduce purchases of single-use bottled water?",
+      "points": 1,
+      "explanation": "The purchasing records measure the exact outcome named in the claim: how many disposable bottles the company bought.",
+      "skill": {
+        "id": "writing.evidence.relevance",
+        "label": "Evidence relevance"
+      },
+      "rule": "Prefer evidence that measures the claim directly over evidence that is merely associated with it.",
+      "familyId": "arguments.evidence.relevance",
+      "metadata": {
+        "skillId": "R5.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The two buildings ordered 4,800 bottles per month before the pilot and 2,900 in the final pilot month."
+        },
+        {
+          "id": "b",
+          "text": "The stations recorded about 18,000 fills over three months.",
+          "distractorType": "indirect",
+          "whyWrong": "Station use is related, but a fill does not necessarily replace a disposable bottle; purchasing data measures the claimed outcome more directly."
+        },
+        {
+          "id": "c",
+          "text": "The company has six buildings in total.",
+          "distractorType": "background",
+          "whyWrong": "The number of buildings does not show whether bottled-water purchasing changed."
+        },
+        {
+          "id": "d",
+          "text": "Filters must be replaced as part of station maintenance.",
+          "distractorType": "different_claim",
+          "whyWrong": "Maintenance matters to the cost question, not directly to whether bottle purchases fell."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why is the refill-counter total insufficient by itself to prove that 18,000 disposable bottles were avoided?",
+      "points": 1,
+      "explanation": "The counter measures use of the station, not the alternative each employee would otherwise have chosen.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Ask whether the evidence measures the claimed outcome or a proxy that could have another explanation.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The counters may have stopped working during the pilot.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage gives no reason to doubt the counters recorded fills accurately."
+        },
+        {
+          "id": "b",
+          "text": "Some fills may have replaced water employees would have taken from sinks or fountains rather than from disposable bottles."
+        },
+        {
+          "id": "c",
+          "text": "The company did not install stations in every building.",
+          "distractorType": "scope_other",
+          "whyWrong": "Limited locations affect generalization, but do not explain why a fill cannot be equated with one avoided bottle."
+        },
+        {
+          "id": "d",
+          "text": "The stations were used for only three months.",
+          "distractorType": "duration_other",
+          "whyWrong": "Duration affects long-term conclusions, but the specific problem is what each recorded fill represents."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which fact most weakens the claim that the refill stations caused the entire decline in bottled-water orders?",
+      "points": 1,
+      "explanation": "A separate policy changed bottled-water use at almost the same time, so the total decline cannot safely be attributed to the stations alone.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Look for another change that could produce the same outcome as the proposed cause.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot occurred in only two buildings.",
+          "distractorType": "scope",
+          "whyWrong": "This limits generalization but does not directly explain the decline inside the pilot buildings."
+        },
+        {
+          "id": "b",
+          "text": "The stations require replacement filters.",
+          "distractorType": "cost_issue",
+          "whyWrong": "Filter costs matter to savings, not to what caused the bottle-order reduction."
+        },
+        {
+          "id": "c",
+          "text": "The company also stopped automatically stocking bottled water in conference rooms just before the pilot."
+        },
+        {
+          "id": "d",
+          "text": "The stations had built-in refill counters.",
+          "distractorType": "measurement",
+          "whyWrong": "The counters add information but do not create an alternative cause of lower orders."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the available evidence?",
+      "points": 1,
+      "explanation": "This conclusion preserves the observed decline while respecting the competing explanation introduced by the conference-room policy.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Strong conclusions match the strength of the evidence: report what happened, then limit what causation can be claimed.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The refill stations definitely caused a reduction of exactly 1,900 bottles per month.",
+          "distractorType": "overclaim",
+          "whyWrong": "The conference-room policy also affected orders, so the entire difference cannot be assigned to the stations."
+        },
+        {
+          "id": "b",
+          "text": "The stations had no effect because another policy changed at the same time.",
+          "distractorType": "overcorrection",
+          "whyWrong": "The confounding change creates uncertainty, but it does not prove the stations had zero effect."
+        },
+        {
+          "id": "c",
+          "text": "Every building would experience the same reduction if stations were installed.",
+          "distractorType": "generalization",
+          "whyWrong": "Only two buildings were tested, and conditions may differ elsewhere."
+        },
+        {
+          "id": "d",
+          "text": "Bottle purchases fell during the pilot, but the evidence does not isolate how much of that decline was caused by the refill stations."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which additional evidence would MOST help determine whether the stations save the company money?",
+      "points": 1,
+      "explanation": "Savings is a net comparison, so the company needs both the avoided purchasing cost and the new program costs.",
+      "skill": {
+        "id": "writing.evidence.relevance",
+        "label": "Evidence relevance"
+      },
+      "rule": "Match evidence to the exact outcome word in the claim: “save money” requires cost data on both sides.",
+      "familyId": "arguments.evidence.relevance",
+      "metadata": {
+        "skillId": "R5.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Installation and filter costs compared with the money saved from purchasing fewer bottles."
+        },
+        {
+          "id": "b",
+          "text": "The total number of employees who say cold water tastes better.",
+          "distractorType": "preference",
+          "whyWrong": "Taste preference does not establish net financial savings."
+        },
+        {
+          "id": "c",
+          "text": "The number of company buildings that have conference rooms.",
+          "distractorType": "indirect",
+          "whyWrong": "This might affect bottle use but does not directly compare program costs and savings."
+        },
+        {
+          "id": "d",
+          "text": "A photograph of employees using the refill stations.",
+          "distractorType": "anecdotal",
+          "whyWrong": "A photograph can show use, not whether financial savings exceed costs."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which piece of evidence is relevant but NOT sufficient to show the pilot should be expanded to all six buildings?",
+      "points": 1,
+      "explanation": "The decline is relevant and encouraging, but two buildings over three months do not by themselves establish that all six buildings would see similar results or net savings.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Relevant evidence can still be insufficient when the decision is broader than the evidence base.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The company has six buildings.",
+          "distractorType": "background",
+          "whyWrong": "This identifies scope but gives no evidence about whether expansion would work."
+        },
+        {
+          "id": "b",
+          "text": "Orders in the two pilot buildings fell during the three-month test."
+        },
+        {
+          "id": "c",
+          "text": "The finance director wants more cost information.",
+          "distractorType": "opinion",
+          "whyWrong": "Her request identifies a gap rather than providing outcome evidence."
+        },
+        {
+          "id": "d",
+          "text": "Meeting organizers can request bottled water.",
+          "distractorType": "background",
+          "whyWrong": "This policy detail alone does not justify broad expansion."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Why does Shah's response improve the quality of the discussion?",
+      "points": 1,
+      "explanation": "A claim about saving money cannot be judged from reduced purchasing alone; Shah adds the cost side of the comparison.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "When evaluating sufficiency, ask what important variable is missing from the evidence already provided.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "She shows that bottle purchases did not actually decline.",
+          "distractorType": "contradiction",
+          "whyWrong": "The purchasing decline is stated as a fact; Shah questions the savings claim, not the decline."
+        },
+        {
+          "id": "b",
+          "text": "She argues that employees should stop drinking bottled water entirely.",
+          "distractorType": "unsupported",
+          "whyWrong": "She makes no such recommendation."
+        },
+        {
+          "id": "c",
+          "text": "She identifies a missing category of evidence needed for a financial claim: the costs of installing and maintaining the stations."
+        },
+        {
+          "id": "d",
+          "text": "She proves the conference-room policy caused all of the decline.",
+          "distractorType": "overclaim",
+          "whyWrong": "The passage estimates conference-room orders but does not attribute the entire reduction to that policy."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which evidence plan would produce the strongest next test of Wu's proposal?",
+      "points": 1,
+      "explanation": "This plan measures the key outcomes, separates a known confound, includes costs, and creates a useful comparison group.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "The strongest evidence plan targets the uncertainty that prevented a firm conclusion in the first pilot.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Expand to all buildings immediately and count total station fills.",
+          "distractorType": "weak_design",
+          "whyWrong": "Immediate full expansion removes the chance to compare outcomes carefully, and fill counts still do not equal avoided bottles."
+        },
+        {
+          "id": "b",
+          "text": "Ask employees whether they like the appearance of the new stations.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Appearance preferences do not test bottle reduction or financial value."
+        },
+        {
+          "id": "c",
+          "text": "Add two buildings, track bottle purchases and conference-room orders separately, record station and maintenance costs, and compare results with similar buildings not yet converted."
+        },
+        {
+          "id": "d",
+          "text": "Compare only the final month of the new buildings with the first month of the old buildings.",
+          "distractorType": "poor_comparison",
+          "whyWrong": "Different buildings and different time periods could create misleading differences."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-evidence-quality",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.4",
+      "secondarySkillIds": [
+        "R5.5"
+      ],
+      "unitId": "evidence-quality",
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge whether evidence is relevant to a claim and whether it is sufficient for the conclusion being made.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-evidence-quality-refill",
+      "title": "What the Refill-Station Data Can Show",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.502Z"
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "id": "set-rla-args-compare-sources",
+  "title": "How Late Should the Library Stay Open?",
+  "description": "Compare two sources on the same issue, identifying agreements, disagreements, evidence emphasis, and opposing arguments.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "SOURCE A - Library Director Elena Park\n\nThe Westbridge Library should extend Saturday closing time from 5:00 p.m. to 8:00 p.m. for a six-month trial. Door-counter data show that Saturday visits are highest between 2:00 and 5:00 p.m., when the building currently closes just as afternoon use remains strong. In a spring survey of 640 cardholders, 38 percent of respondents who work or attend classes on Saturdays said the current schedule makes weekend visits difficult. The library already pays for security until 8:30 p.m. because staff process returns and prepare the building after closing, so the main added expense would be keeping two service desks staffed for three extra hours. Park estimates that cost at $18,600 for the six-month trial.\n\nPark does not argue that the library should stay open later every day. Friday-evening visits are low, and Sunday staffing would require a separate security contract. She proposes testing only Saturday, recording hourly visits and service use, and ending the trial if average attendance after 5:00 p.m. remains below a target set by the board.\n\nSOURCE B - Finance Committee Member Daniel Cho\n\nWestbridge should keep the current Saturday hours until the library can show that later service is worth the cost. A survey showing that some people find the schedule inconvenient does not establish that they would actually visit between 5:00 and 8:00 p.m. The 38 percent figure comes only from respondents who already answered the library survey, and people with strong opinions may have been more likely to respond.\n\nCho also notes that Park's $18,600 estimate covers desk staffing but not every possible expense. More public hours can increase cleaning, utilities, and equipment use. He supports a smaller test: keep the building open until 6:30 p.m. on four selected Saturdays, count visitors and service requests, and use those results to estimate demand before committing to six months. Cho says the issue is not whether later hours would help anyone; it is how much additional use the library can reasonably expect for the money spent.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What do both sources agree on?",
+      "points": 1,
+      "explanation": "Both writers propose collecting real usage data before a permanent change, even though they disagree about the size of the test.",
+      "skill": {
+        "id": "R6.1",
+        "label": "Compare texts on same topic"
+      },
+      "rule": "When comparing sources, separate shared goals or evidence needs from disagreement about the recommended action.",
+      "familyId": "arguments.sources.compare",
+      "metadata": {
+        "skillId": "R6.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Saturday hours should immediately be extended to 8:00 p.m. for six months.",
+          "distractorType": "source_a_only",
+          "whyWrong": "Park recommends this; Cho prefers a smaller preliminary test."
+        },
+        {
+          "id": "b",
+          "text": "The survey proves how many people would visit during later hours.",
+          "distractorType": "neither",
+          "whyWrong": "Cho explicitly challenges that interpretation, and Park does not claim the survey measures actual future visits."
+        },
+        {
+          "id": "c",
+          "text": "Some form of testing and measurement could help the library judge demand for later Saturday service."
+        },
+        {
+          "id": "d",
+          "text": "Security is the largest additional cost of later hours.",
+          "distractorType": "unsupported",
+          "whyWrong": "Park says security is already paid until 8:30, and Cho focuses on other possible costs."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main difference between Park's and Cho's recommendations?",
+      "points": 1,
+      "explanation": "The disagreement is mainly about how much evidence the library should gather before committing to a six-month, three-hour extension.",
+      "skill": {
+        "id": "R6.1",
+        "label": "Compare texts on same topic"
+      },
+      "rule": "Compare the actual policy each writer recommends, not just their tone.",
+      "familyId": "arguments.sources.compare",
+      "metadata": {
+        "skillId": "R6.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Park wants a six-month extension to 8:00 p.m.; Cho wants a shorter, smaller test before making that commitment."
+        },
+        {
+          "id": "b",
+          "text": "Park supports Saturday service; Cho wants the library closed on Saturdays.",
+          "distractorType": "overstatement",
+          "whyWrong": "Cho supports current hours plus a smaller late-hours test, not Saturday closure."
+        },
+        {
+          "id": "c",
+          "text": "Park relies only on opinions; Cho relies only on financial records.",
+          "distractorType": "false_binary",
+          "whyWrong": "Both discuss survey evidence, costs, and the need for measured use."
+        },
+        {
+          "id": "d",
+          "text": "Park wants more security; Cho wants fewer library services.",
+          "distractorType": "misread",
+          "whyWrong": "Neither recommendation is framed this way."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How does Cho challenge Park's use of the 38 percent survey result?",
+      "points": 1,
+      "explanation": "Cho attacks the inference from expressed inconvenience to actual later-hour use and notes possible response bias.",
+      "skill": {
+        "id": "R6.2",
+        "label": "Opposing arguments"
+      },
+      "rule": "Opposing arguments often disagree less about a fact than about what that fact is sufficient to show.",
+      "familyId": "arguments.sources.opposing",
+      "metadata": {
+        "skillId": "R6.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "He claims the survey never asked about weekend access.",
+          "distractorType": "false",
+          "whyWrong": "The passage says respondents reported difficulty with the current Saturday schedule."
+        },
+        {
+          "id": "b",
+          "text": "He says the percentage may not predict actual evening attendance because respondents are self-selected and stated difficulty is not the same as future behavior."
+        },
+        {
+          "id": "c",
+          "text": "He proves that none of the respondents would visit after 5:00 p.m.",
+          "distractorType": "overclaim",
+          "whyWrong": "He raises uncertainty; he does not have evidence showing zero demand."
+        },
+        {
+          "id": "d",
+          "text": "He argues that surveys should never be used for library decisions.",
+          "distractorType": "absolute",
+          "whyWrong": "He questions what this survey can establish, not the entire method."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which source gives the stronger response to the question, “How should the library avoid committing to a permanent schedule without evidence?”",
+      "points": 1,
+      "explanation": "Both arguments build in a way to collect evidence before permanence, though they differ in how much initial commitment is justified.",
+      "skill": {
+        "id": "R6.2",
+        "label": "Opposing arguments"
+      },
+      "rule": "When sources use different methods to address the same concern, compare the function before deciding which is stronger.",
+      "familyId": "arguments.sources.opposing",
+      "metadata": {
+        "skillId": "R6.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Source A, because Park does not mention uncertainty.",
+          "distractorType": "false",
+          "whyWrong": "Park includes a trial and an attendance threshold."
+        },
+        {
+          "id": "b",
+          "text": "Only Source B, because a four-Saturday test is automatically more reliable than a six-month trial.",
+          "distractorType": "unsupported",
+          "whyWrong": "Smaller is not automatically more reliable; each design has tradeoffs."
+        },
+        {
+          "id": "c",
+          "text": "Neither source, because both demand a permanent change immediately.",
+          "distractorType": "false",
+          "whyWrong": "Both propose tests rather than immediate permanence."
+        },
+        {
+          "id": "d",
+          "text": "Both sources address the concern: Park proposes a six-month trial with an exit threshold, while Cho proposes an even smaller preliminary test."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement accurately compares the evidence each writer emphasizes?",
+      "points": 1,
+      "explanation": "This comparison captures both the overlap and the distinct evidence priorities in the two arguments.",
+      "skill": {
+        "id": "R6.1",
+        "label": "Compare texts on same topic"
+      },
+      "rule": "A strong compare answer names what each source does, not just what one source contains.",
+      "familyId": "arguments.sources.compare",
+      "metadata": {
+        "skillId": "R6.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Park emphasizes current use, access concerns, and known staffing costs; Cho emphasizes uncertainty about predicted demand and costs not included in Park's estimate."
+        },
+        {
+          "id": "b",
+          "text": "Park discusses only visitor counts; Cho discusses only survey percentages.",
+          "distractorType": "incomplete",
+          "whyWrong": "Both use more than one evidence type."
+        },
+        {
+          "id": "c",
+          "text": "Park uses evidence from another city; Cho uses evidence from Westbridge.",
+          "distractorType": "false",
+          "whyWrong": "Both arguments are based on Westbridge information."
+        },
+        {
+          "id": "d",
+          "text": "The two writers rely on exactly the same evidence and interpret it identically.",
+          "distractorType": "false",
+          "whyWrong": "They overlap on the survey but interpret its strength differently and emphasize different cost concerns."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the disagreement about cost?",
+      "points": 1,
+      "explanation": "The writers differ in how complete they think the cost estimate is, not on whether staffing has a cost.",
+      "skill": {
+        "id": "R6.2",
+        "label": "Opposing arguments"
+      },
+      "rule": "Compare what each source says a number includes before treating the number itself as disputed.",
+      "familyId": "arguments.sources.opposing",
+      "metadata": {
+        "skillId": "R6.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Cho claims Park's staffing estimate is mathematically impossible.",
+          "distractorType": "unsupported",
+          "whyWrong": "He does not dispute the arithmetic; he says the estimate may omit other expenses."
+        },
+        {
+          "id": "b",
+          "text": "Park says later hours are free because security is already present.",
+          "distractorType": "overstatement",
+          "whyWrong": "She identifies an added staffing cost of $18,600."
+        },
+        {
+          "id": "c",
+          "text": "Park estimates the main added staffing cost, while Cho argues that a decision should also account for cleaning, utilities, and equipment use."
+        },
+        {
+          "id": "d",
+          "text": "Both writers agree the full cost is exactly $18,600.",
+          "distractorType": "false",
+          "whyWrong": "Cho explicitly says that figure may not include every expense."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion about the two sources is best supported?",
+      "points": 1,
+      "explanation": "The central disagreement is evidentiary and procedural rather than a simple pro-library versus anti-library split.",
+      "skill": {
+        "id": "R6.2",
+        "label": "Opposing arguments"
+      },
+      "rule": "The best comparison often identifies the exact point of disagreement beneath broader policy positions.",
+      "familyId": "arguments.sources.opposing",
+      "metadata": {
+        "skillId": "R6.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Park ignores demand uncertainty while Cho ignores access problems.",
+          "distractorType": "too_absolute",
+          "whyWrong": "Park proposes a trial and threshold, and Cho accepts that later hours could help some people."
+        },
+        {
+          "id": "b",
+          "text": "Both accept that later hours may have value, but they set different thresholds for how much evidence is needed before a larger trial."
+        },
+        {
+          "id": "c",
+          "text": "Cho opposes any spending on library service.",
+          "distractorType": "unsupported",
+          "whyWrong": "He proposes a smaller test that would still require some resources."
+        },
+        {
+          "id": "d",
+          "text": "Park believes survey responses are a perfect substitute for attendance data.",
+          "distractorType": "unsupported",
+          "whyWrong": "Her proposal specifically includes collecting hourly attendance during the trial."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "If the board wanted evidence that directly addresses BOTH writers' concerns, which information would be most useful?",
+      "points": 1,
+      "explanation": "This evidence tests actual demand, which both writers care about, and gives the fuller cost information Cho says is missing.",
+      "skill": {
+        "id": "R6.1",
+        "label": "Compare texts on same topic"
+      },
+      "rule": "When two sources disagree, look for evidence that resolves the specific uncertainties on both sides.",
+      "familyId": "arguments.sources.compare",
+      "metadata": {
+        "skillId": "R6.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "A list of books checked out during the previous year.",
+          "distractorType": "partial",
+          "whyWrong": "Past circulation does not directly measure after-5 demand or the full added cost of later hours."
+        },
+        {
+          "id": "b",
+          "text": "A new survey asking whether people generally like libraries.",
+          "distractorType": "too_broad",
+          "whyWrong": "General attitudes do not measure actual later-hour use or operating cost."
+        },
+        {
+          "id": "c",
+          "text": "A comparison of library architecture in nearby towns.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Building design does not address the disputed demand and cost questions."
+        },
+        {
+          "id": "d",
+          "text": "Observed after-5 visitor and service counts from a limited trial together with the total added staffing, cleaning, utility, and equipment costs."
+        }
+      ],
+      "correct": "d"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-compare-sources",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.1",
+      "secondarySkillIds": [
+        "R6.2"
+      ],
+      "unitId": "compare-sources-arguments",
+      "contentKind": "skill_drill",
+      "learningObjective": "Compare two sources on the same issue, identifying agreements, disagreements, evidence emphasis, and opposing arguments.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-compare-library-hours",
+      "title": "How Late Should the Library Stay Open?",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.501Z"
+  }
+}

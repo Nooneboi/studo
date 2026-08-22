@@ -1,0 +1,371 @@
+{
+  "id": "set-rla-args-mixed-schoolyards",
+  "title": "How Strong Is the Case for Cooler Schoolyards?",
+  "description": "Evaluate an argument that combines a briefing, a data table, and a stakeholder qualification.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "BRIEFING - Cooler Schoolyards Proposal\n\nA district facilities team proposes adding shade and reflective surface treatments at three elementary-school play areas before next summer. The team argues that the hottest unshaded zones should be prioritized because children use those areas during lunch and afternoon recreation. It cites temperature measurements taken on eight clear days in May and June.\n\nTEMPERATURE TABLE - Average surface temperature at 1:30 p.m.\n\nLocation | Existing condition | Average surface temperature\nSchool A court | dark asphalt, no shade | 48 C\nSchool A garden path | tree shade | 34 C\nSchool B play court | dark asphalt, partial shade | 43 C\nSchool B covered walkway | full shade | 32 C\nSchool C court | light concrete, no shade | 40 C\nSchool C pavilion | full shade | 31 C\n\nThe facilities team notes that the table measures surface temperature, not children's body temperature or air temperature. It proposes installing fabric shade structures over parts of the courts at Schools A and B and testing a reflective coating on one section at School C. Staff would repeat surface measurements, record air temperature, and ask teachers whether heat-related schedule changes become less frequent.\n\nPARENT ADVISORY NOTE\n\nA parent advisory group supports reducing heat exposure but argues that the district should not treat surface temperature as the only measure of safety. The group notes that humidity, access to drinking water, the length of outdoor activity, and individual health conditions can also affect heat risk. It asks the district to pair any physical changes with clear heat-response rules and reliable water access.\n\nThe facilities team agrees with that limitation. It says the table is evidence that some surfaces become much hotter than nearby shaded areas, not proof that a particular temperature automatically causes illness. The team keeps its proposal but revises the goal: reduce exposure to extremely hot surfaces while monitoring broader heat conditions rather than claiming the construction project alone will eliminate heat risk.\n\nA school nurse adds that the district should also record how often students visit the health office with heat-related symptoms, while protecting student privacy. She cautions that such visits are uncommon enough that one short test may not provide a stable rate. The facilities team therefore proposes looking at several indicators together: physical temperature measurements, schedule changes, health-office patterns, and teacher observations. None of those measures alone would prove that a construction change prevents illness, but together they could show whether the school environment becomes easier to manage during hot periods.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which claim is most directly supported by the table?",
+      "points": 1,
+      "explanation": "At each school, shaded locations have lower surface-temperature averages than the unshaded or partly shaded courts.",
+      "skill": {
+        "id": "R6.3",
+        "label": "Text + data / visuals"
+      },
+      "rule": "State exactly what the data measure before drawing a conclusion.",
+      "familyId": "arguments.formats.data",
+      "metadata": {
+        "skillId": "R6.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Shade is associated with substantially lower measured surface temperatures at the listed schools."
+        },
+        {
+          "id": "b",
+          "text": "Shade lowers every child's body temperature by at least 10 degrees.",
+          "distractorType": "measurement_mismatch",
+          "whyWrong": "The table measures surfaces, not body temperature."
+        },
+        {
+          "id": "c",
+          "text": "Dark asphalt is the only cause of heat risk at schools.",
+          "distractorType": "overclaim",
+          "whyWrong": "The note identifies several factors, and the table does not measure overall heat risk."
+        },
+        {
+          "id": "d",
+          "text": "Reflective coatings are more effective than shade structures.",
+          "distractorType": "unsupported",
+          "whyWrong": "No reflective coating has been tested in the table."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "How does the parent advisory note improve the reasoning around the table?",
+      "points": 1,
+      "explanation": "The note distinguishes a meaningful physical measurement from the broader health outcome the district ultimately cares about.",
+      "skill": {
+        "id": "R5.7",
+        "label": "Reasoning validity / fallacies"
+      },
+      "rule": "A strong argument recognizes when a proxy is useful but incomplete.",
+      "familyId": "arguments.reasoning.validity",
+      "metadata": {
+        "skillId": "R5.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves the table was fabricated.",
+          "distractorType": "unsupported",
+          "whyWrong": "The group does not challenge the measurements themselves."
+        },
+        {
+          "id": "b",
+          "text": "It explains that surface temperature is one relevant measure but not a complete measure of heat safety."
+        },
+        {
+          "id": "c",
+          "text": "It shows construction is unnecessary because drinking water solves all heat problems.",
+          "distractorType": "overstatement",
+          "whyWrong": "The group supports reducing heat exposure and asks for additional protections."
+        },
+        {
+          "id": "d",
+          "text": "It argues that shaded areas are actually hotter than unshaded areas.",
+          "distractorType": "contradiction",
+          "whyWrong": "The table shows the opposite pattern."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which proposal is best supported by BOTH the numerical and written evidence?",
+      "points": 1,
+      "explanation": "This approach uses the strongest measured pattern without confusing it with a complete health-risk model.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "Synthesis is strongest when it incorporates both the evidence and the limitation.",
+      "familyId": "arguments.sources.synthesize",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Install targeted shade where surfaces are hottest while also monitoring air conditions, water access, and heat-response practices."
+        },
+        {
+          "id": "b",
+          "text": "Close all outdoor play areas permanently because surface temperatures exceed 30 C.",
+          "distractorType": "overreaction",
+          "whyWrong": "The sources support mitigation and monitoring, not permanent closure."
+        },
+        {
+          "id": "c",
+          "text": "Use only reflective coatings because the data prove they work better than shade.",
+          "distractorType": "unsupported",
+          "whyWrong": "The table contains no reflective-coating trial."
+        },
+        {
+          "id": "d",
+          "text": "Make no changes until the district can predict every individual heat response.",
+          "distractorType": "too_strict",
+          "whyWrong": "Uncertainty about individual outcomes does not erase the observed surface-temperature pattern or justify no action."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the main weakness in the claim “the construction project will eliminate heat risk”?",
+      "points": 1,
+      "explanation": "The claim moves from reducing one exposure factor to guaranteeing a complex health outcome.",
+      "skill": {
+        "id": "R5.6",
+        "label": "Supported vs unsupported claims"
+      },
+      "rule": "Look for a conclusion that promises more than the intervention can control.",
+      "familyId": "arguments.claim.support",
+      "metadata": {
+        "skillId": "R5.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The project costs money.",
+          "distractorType": "different_issue",
+          "whyWrong": "Cost may matter to policy, but it is not the logical weakness in the elimination claim."
+        },
+        {
+          "id": "b",
+          "text": "The table includes three schools rather than the entire district.",
+          "distractorType": "scope_partial",
+          "whyWrong": "Scope matters, but the larger flaw is that heat risk has important factors not controlled by surface construction."
+        },
+        {
+          "id": "c",
+          "text": "Heat risk depends on factors beyond surface temperature, so changing surfaces or shade cannot by itself guarantee elimination of risk."
+        },
+        {
+          "id": "d",
+          "text": "Teachers do not use the play areas.",
+          "distractorType": "false",
+          "whyWrong": "The passage says children use the areas during school activities and teachers can report schedule changes."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why is the School C court useful in the table?",
+      "points": 1,
+      "explanation": "Its 40 C reading is lower than the dark unshaded court at School A but higher than the shaded locations, suggesting more than one physical factor may matter.",
+      "skill": {
+        "id": "R6.3",
+        "label": "Text + data / visuals"
+      },
+      "rule": "Use comparison rows to ask which variable changes and what cautious inference that allows.",
+      "familyId": "arguments.formats.data",
+      "metadata": {
+        "skillId": "R6.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves light concrete stays safe at every temperature.",
+          "distractorType": "overclaim",
+          "whyWrong": "40 C is still hot, and the table does not define a universal safety threshold."
+        },
+        {
+          "id": "b",
+          "text": "It provides an unshaded surface with a different material, helping show that material may matter in addition to shade."
+        },
+        {
+          "id": "c",
+          "text": "It shows School C has no shaded areas.",
+          "distractorType": "false",
+          "whyWrong": "The pavilion is fully shaded."
+        },
+        {
+          "id": "d",
+          "text": "It establishes that reflective coating will lower temperature to 31 C.",
+          "distractorType": "unsupported",
+          "whyWrong": "No coating data are shown."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which additional evidence would best test whether the improvements affect school operations, not just surfaces?",
+      "points": 1,
+      "explanation": "This directly measures whether the project is associated with fewer operational changes caused by heat, while allowing comparison with weather conditions.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Choose an outcome measure that matches the claim you want to test.",
+      "familyId": "arguments.evidence.sufficiency",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Before-and-after counts of heat-related recess schedule changes under comparable weather conditions."
+        },
+        {
+          "id": "b",
+          "text": "The number of paint colors available for the coating.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Color selection does not measure operational impact."
+        },
+        {
+          "id": "c",
+          "text": "A second copy of the same pre-project surface table.",
+          "distractorType": "no_new_outcome",
+          "whyWrong": "Repeating existing information without post-project measurement would not test operational change."
+        },
+        {
+          "id": "d",
+          "text": "A statement that students enjoy recess.",
+          "distractorType": "too_broad",
+          "whyWrong": "General enjoyment does not measure heat-related disruptions."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-mixed-schoolyards",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.6",
+        "R5.7",
+        "R6.5"
+      ],
+      "contentKind": "argument_practice",
+      "practiceTags": [
+        "text_data"
+      ],
+      "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+      "topicLabel": "Mixed Source Practice"
+    },
+    "passage": {
+      "id": "p-rla-args-mixed-schoolyards",
+      "title": "How Strong Is the Case for Cooler Schoolyards?",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T08:52:14.503Z"
+  }
+}

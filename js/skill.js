@@ -7,35 +7,39 @@ async function init() {
   const trackId = p.get("track") || "reading";
   const domainId = p.get("domain");
   const skillId = p.get("skill");
+  const unitId = p.get("unit");
   let curriculum;
   try { curriculum = await Data.loadCurriculum(); }
   catch (_) { mount.innerHTML = `<div class="empty-state">The curriculum could not be loaded.</div>`; return; }
 
   const track = curriculum.tracks.find((x) => x.id === trackId) || curriculum.tracks[0];
   const domain = track?.domains.find((x) => x.id === domainId) || track?.domains[0];
-  const skill = domain?.skills.find((x) => x.id === skillId);
-  if (!track || !domain || !skill) {
-    mount.innerHTML = `<div class="empty-state">This skill could not be found. <a href="practice.html">Back to Practice</a></div>`;
+  const item = unitId
+    ? domain?.units?.find((x) => x.id === unitId)
+    : domain?.skills.find((x) => x.id === skillId);
+  if (!track || !domain || !item) {
+    mount.innerHTML = `<div class="empty-state">This learning area could not be found. <a href="practice.html">Back to Practice</a></div>`;
     return;
   }
 
-  const resources = skill.studyResources || skill.resources || [];
+  const resources = item.studyResources || item.resources || [];
   const studyGuides = resources.filter((r) => r.type !== "worksheet");
   const workbookSheets = resources.filter((r) => r.type === "worksheet");
-  const checks = skill.checks || skill.sets || [];
+  const checks = item.checks || item.sets || [];
 
-  document.title = `Studo — ${skill.label}`;
+  document.title = `Studo — ${item.label}`;
   mount.innerHTML = `
     <header class="skill-library-hero">
       <a class="curriculum-back" href="domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}">← ${escapeHtml(domain.label)}</a>
       <div class="page-kicker">${escapeHtml(track.label)}</div>
-      <h1>${escapeHtml(skill.label)}</h1>
+      <h1>${escapeHtml(item.label)}</h1>
+      ${item.summary ? `<p class="skill-library-summary">${escapeHtml(item.summary)}</p>` : ""}
     </header>
 
-    <section class="skill-resource-grid" aria-label="${escapeHtml(skill.label)} learning resources">
+    <section class="skill-resource-grid" aria-label="${escapeHtml(item.label)} learning resources">
       ${renderColumn("Study Guide", studyGuides, (r) => renderResource(r))}
       ${renderColumn("Workbook Sheets", workbookSheets, (r) => renderResource(r))}
-      ${renderColumn("Interactive Practice", checks, (set) => renderCheck(set, track, domain, skill))}
+      ${renderColumn("Interactive Practice", checks, (set) => renderCheck(set, track, domain, item, Boolean(unitId)))}
     </section>`;
 }
 
@@ -61,8 +65,9 @@ function renderResource(r) {
   </a>`;
 }
 
-function renderCheck(set, track, domain, skill) {
-  const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}`;
+function renderCheck(set, track, domain, item, isUnit) {
+  const key = isUnit ? "unit" : "skill";
+  const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&${key}=${encodeURIComponent(item.id)}`;
   const href = `module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent(returnHref)}`;
   return `<a class="skill-resource-link" href="${href}">
     <strong>${escapeHtml(set.title)}</strong>

@@ -1,18 +1,10 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-22T07:49:37.347Z",
+  "builtAt": "2026-08-22T08:52:14.515Z",
   "summary": {
     "errors": 0,
-    "warnings": 8,
+    "warnings": 7,
     "byCode": {
-      "PASSAGE_PRACTICE_SHORT": {
-        "errors": 0,
-        "warnings": 1,
-        "total": 1,
-        "files": [
-          "content-src/sets/set-rla-writing-library-hours.json"
-        ]
-      },
       "TRANSFER_FAMILY_SINGLETON": {
         "errors": 0,
         "warnings": 7,
@@ -27,13 +19,6 @@
     }
   },
   "issues": [
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "set-rla-writing-library-hours is classified as Passage Practice but is only 53 words.",
-      "file": "content-src/sets/set-rla-writing-library-hours.json",
-      "location": "set-rla-writing-library-hours"
-    },
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",

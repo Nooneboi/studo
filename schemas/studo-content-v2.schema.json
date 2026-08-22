@@ -141,7 +141,8 @@
             "quiz",
             "mixed_review",
             "editing_practice",
-            "extended_response"
+            "extended_response",
+            "argument_practice"
           ]
         },
         "learningObjective": {
@@ -149,6 +150,17 @@
         },
         "topicLabel": {
           "type": "string"
+        },
+        "unitId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "practiceTags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
         }
       },
       "additionalProperties": false

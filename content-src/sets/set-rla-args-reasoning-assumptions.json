@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-reasoning-assumptions",
+  "runtime": {
+    "id": "set-rla-args-reasoning-assumptions",
+    "file": "set-rla-args-reasoning-assumptions.json"
+  },
+  "title": "A Booking App Cannot Fix Every Delay",
+  "description": "Test whether conclusions follow from the evidence and identify assumptions that must be true for the reasoning to work.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Focused Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-reasoning-booking"
+  ],
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review",
+  "reviewNotes": "Focused Arguments practice reviewed for one-best-answer logic, evidence fidelity, close distractors, and source-faithful explanations.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What assumption is necessary for Lane's claim that reservations will make waiting disappear?",
+      "primarySkillId": "R5.8",
+      "familyId": "arguments.assumption.identify",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Customers prefer restaurants to repair shops.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Lane uses restaurants as an analogy, but his conclusion does not require this preference."
+        },
+        {
+          "id": "b",
+          "text": "The app will be inexpensive to build.",
+          "distractorType": "different_issue",
+          "whyWrong": "Cost does not determine whether reservations eliminate waiting."
+        },
+        {
+          "id": "c",
+          "text": "Scheduling is the main cause of waiting, or other major causes will somehow be removed as well."
+        },
+        {
+          "id": "d",
+          "text": "Every customer owns a smartphone.",
+          "distractorType": "too_specific",
+          "whyWrong": "Access could affect use, but Lane's causal claim about eliminating waiting rests more directly on what causes delays."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "If major delays come from long repairs or missing parts, scheduling alone cannot logically eliminate waiting.",
+        "quickTip": "For an assumption, ask: what must be true for the conclusion to follow from the reason given?"
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most directly challenges Lane's reasoning?",
+      "primarySkillId": "R5.7",
+      "familyId": "arguments.reasoning.validity",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Most recorded delays were associated with long repairs or late parts rather than unscheduled arrivals."
+        },
+        {
+          "id": "b",
+          "text": "Customers often complain about waiting.",
+          "distractorType": "shared_problem",
+          "whyWrong": "Both managers accept that waiting is a problem; this does not challenge Lane's proposed cause."
+        },
+        {
+          "id": "c",
+          "text": "The company operates repair shops rather than restaurants.",
+          "distractorType": "surface_difference",
+          "whyWrong": "The important issue is whether the processes have comparable timing, not merely the industry label."
+        },
+        {
+          "id": "d",
+          "text": "The app can send updates.",
+          "distractorType": "benefit",
+          "whyWrong": "This supports one limited benefit and does not challenge the guarantee claim as directly as the delay data do."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The records show that the majority of delays arise from causes an appointment system cannot remove.",
+        "quickTip": "Test reasoning by looking for evidence that breaks the link between the proposed cause and the promised result."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the main flaw in Lane's restaurant comparison?",
+      "primarySkillId": "R5.7",
+      "familyId": "arguments.reasoning.validity",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Restaurants never use reservations.",
+          "distractorType": "false",
+          "whyWrong": "The analogy starts from a real practice; the problem is not that reservations do not exist."
+        },
+        {
+          "id": "b",
+          "text": "Repair duration varies with the problem being fixed, so a reservation does not control service time in the same way that a seating schedule can often control restaurant arrivals."
+        },
+        {
+          "id": "c",
+          "text": "Repair customers are less patient than restaurant customers.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage gives no evidence comparing patience."
+        },
+        {
+          "id": "d",
+          "text": "Restaurants do not need replacement parts.",
+          "distractorType": "too_absolute",
+          "whyWrong": "Restaurants have their own supply issues; the deeper flaw is that the timing processes are not sufficiently comparable for the guarantee Lane draws."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The analogy treats two scheduling situations as equivalent even though repair jobs have much more variable service duration.",
+        "quickTip": "A good analogy requires the compared situations to be alike in the feature that matters to the conclusion."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion follows most reasonably from the service records?",
+      "primarySkillId": "R5.7",
+      "familyId": "arguments.reasoning.validity",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "An appointment app would have no value because it cannot fix late parts.",
+          "distractorType": "all_or_nothing",
+          "whyWrong": "A tool can help with some causes without solving every cause."
+        },
+        {
+          "id": "b",
+          "text": "The company should stop scheduling appointments entirely.",
+          "distractorType": "unsupported",
+          "whyWrong": "The data do not support abandoning scheduling."
+        },
+        {
+          "id": "c",
+          "text": "Every long repair could be predicted if technicians worked faster.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage gives no evidence for this claim."
+        },
+        {
+          "id": "d",
+          "text": "Scheduling improvements may address part of the waiting problem, but other operational causes must also be managed."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This conclusion matches the distribution of delay causes and avoids treating one solution as either perfect or useless.",
+        "quickTip": "Valid reasoning can support a limited benefit even when a proposed solution is incomplete."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which hidden assumption is most clearly exposed by Benton's response to the five-minute guarantee?",
+      "primarySkillId": "R5.8",
+      "familyId": "arguments.assumption.identify",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Repair shops can predict the length of each job closely enough to keep every appointment within the promised window."
+        },
+        {
+          "id": "b",
+          "text": "Customers dislike receiving delay notifications.",
+          "distractorType": "unsupported",
+          "whyWrong": "Benton actually recommends faster notifications as a benefit."
+        },
+        {
+          "id": "c",
+          "text": "All late parts are caused by customers.",
+          "distractorType": "unsupported",
+          "whyWrong": "The passage does not assign that cause."
+        },
+        {
+          "id": "d",
+          "text": "The company has too few technicians.",
+          "distractorType": "unsupported",
+          "whyWrong": "Staffing levels are not given as a cause in the records."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "A five-minute guarantee only works if earlier jobs can be scheduled with enough precision to prevent them from spilling into later appointments.",
+        "quickTip": "Guarantees often hide assumptions about control: ask what variable must behave predictably for the promise to hold."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes Benton's reasoning?",
+      "primarySkillId": "R5.7",
+      "familyId": "arguments.reasoning.validity",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the app cannot solve every delay, the company should reject it.",
+          "distractorType": "all_or_nothing",
+          "whyWrong": "Benton supports testing the app for narrower benefits."
+        },
+        {
+          "id": "b",
+          "text": "Because customers complain, any scheduling technology will improve service.",
+          "distractorType": "unsupported_jump",
+          "whyWrong": "Complaints establish a problem but do not prove a particular solution works."
+        },
+        {
+          "id": "c",
+          "text": "The app may help with scheduling-related delays and communication, but its claims should be limited because major delay causes lie outside its control."
+        },
+        {
+          "id": "d",
+          "text": "The company should copy restaurants because all service businesses operate the same way.",
+          "distractorType": "faulty_analogy",
+          "whyWrong": "This is closer to Lane's reasoning, which Benton challenges."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Benton connects the app's likely benefits to the subset of delay causes it can actually affect.",
+        "quickTip": "Strong reasoning matches a solution to the problem mechanisms the evidence identifies."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which new evidence would MOST strengthen Lane's claim that exact reservations can nearly eliminate waiting?",
+      "primarySkillId": "R5.8",
+      "familyId": "arguments.assumption.identify",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A customer survey showing people like choosing appointment times.",
+          "distractorType": "preference",
+          "whyWrong": "Preference for scheduling does not show whether waits disappear."
+        },
+        {
+          "id": "b",
+          "text": "A pilot showing that after the app launched, long-repair and parts delays were also controlled well enough that almost all scheduled jobs began within five minutes, across several months."
+        },
+        {
+          "id": "c",
+          "text": "A restaurant manager explaining how table reservations work.",
+          "distractorType": "weak_analogy",
+          "whyWrong": "More information about restaurants does not show repair operations can achieve the same timing."
+        },
+        {
+          "id": "d",
+          "text": "A screenshot of the app's appointment calendar.",
+          "distractorType": "feature_not_outcome",
+          "whyWrong": "The interface can show functionality but not whether real waits nearly disappear."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This evidence would directly test the guarantee while addressing the operational causes that currently break Lane's assumption.",
+        "quickTip": "To strengthen a claim, test the assumption that currently makes the reasoning fail."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which assumption is Lane making when he says that waiting will disappear?",
+      "primarySkillId": "R5.8",
+      "familyId": "arguments.assumption.identify",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "A scheduling solution will somehow remove or neutralize the other major causes of delay documented in the records."
+        },
+        {
+          "id": "b",
+          "text": "Customers dislike waiting more than technicians do.",
+          "distractorType": "related_but_not_required",
+          "whyWrong": "Customer dislike of waiting does not have to be true for Lane's prediction to depend on scheduling controlling the other delay causes."
+        },
+        {
+          "id": "c",
+          "text": "Restaurants use reservations.",
+          "distractorType": "stated_detail_not_assumption",
+          "whyWrong": "The restaurant comparison is stated in the passage; the hidden assumption is that the repair shop's other delay causes will not prevent the predicted result."
+        },
+        {
+          "id": "d",
+          "text": "The appointment app will be inexpensive to build.",
+          "distractorType": "irrelevant_assumption",
+          "whyWrong": "Development cost could affect whether the app is worth buying, but it is not required for Lane's claim that waiting will disappear."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Lane moves from a tool that mainly changes scheduling to an absolute result. That prediction requires the other documented delay causes to disappear, be controlled, or stop affecting start times.",
+        "quickTip": "For an assumption question, ask what must be true for the evidence-to-conclusion jump to work.",
+        "evidenceRef": "The service records show major delays from long repairs and late parts, while Lane still predicts that waiting will disappear."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.7",
+    "secondarySkillIds": [
+      "R5.8"
+    ],
+    "unitId": "reasoning-assumptions",
+    "contentKind": "skill_drill",
+    "learningObjective": "Test whether conclusions follow from the evidence and identify assumptions that must be true for the reasoning to work.",
+    "topicLabel": "Focused Practice"
+  }
+}

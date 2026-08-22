@@ -14,8 +14,12 @@ async function init() {
   const domain = track?.domains.find((d) => d.id === domainId) || track?.domains[0];
   if (!track || !domain) { mount.innerHTML = `<div class="empty-state">This curriculum area could not be found.</div>`; return; }
 
-  const groups = normalizeGroups(domain);
+  const unitMode = Array.isArray(domain.units) && domain.units.length > 0;
+  const groups = unitMode ? [{ id: "units", label: "Learning units", items: domain.units }] : normalizeGroups(domain);
   const topicResources = domain.topicResources || domain.resources || [];
+  const argumentPractice = track.id === "arguments"
+    ? (curriculum.argumentPractice || []).filter((set) => !set.curriculum?.domain || set.curriculum.domain === domain.label)
+    : [];
   mount.innerHTML = `
     <header class="simple-domain-hero domain-hero-with-resources">
       <div class="domain-hero-copy">
@@ -34,9 +38,16 @@ async function init() {
         <section class="simple-skill-group tone-${toneFor(index)}">
           <h2 class="simple-skill-group-title">${escapeHtml(group.label)}</h2>
           <div class="simple-skill-stack">
-            ${group.items.map((skill) => renderSkill(track, domain, skill)).join("")}
+            ${group.items.map((item) => unitMode ? renderUnit(track, domain, item) : renderSkill(track, domain, item)).join("")}
           </div>
         </section>`).join("")}
+      ${argumentPractice.length ? `
+        <section class="simple-skill-group tone-purple">
+          <h2 class="simple-skill-group-title">Mixed Source Practice</h2>
+          <div class="simple-skill-stack">
+            ${argumentPractice.map((set) => renderArgumentPractice(set, track, domain)).join("")}
+          </div>
+        </section>` : ""}
     </div>`;
 }
 
@@ -50,6 +61,18 @@ function toneFor(index){
   return ["blue","purple","teal","amber"][index % 4];
 }
 
+function renderUnit(track, domain, unit) {
+  const files = unit.resourceCount || 0;
+  const checks = unit.setCount || unit.checkCount || 0;
+  const status = files && checks ? `Files + practice` : files ? `Files ready` : checks ? `Practice ready` : `Coming next`;
+  return `
+    <a class="simple-skill-pill" href="skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&unit=${encodeURIComponent(unit.id)}">
+      <span class="simple-skill-marker" aria-hidden="true"></span>
+      <span class="simple-skill-pill-title">${escapeHtml(unit.label)}</span>
+      <span class="simple-skill-pill-meta">${escapeHtml(status)}</span>
+    </a>`;
+}
+
 function renderSkill(track, domain, skill) {
   const files = skill.resourceCount || 0;
   const checks = skill.setCount || 0;
@@ -59,6 +82,18 @@ function renderSkill(track, domain, skill) {
       <span class="simple-skill-marker" aria-hidden="true"></span>
       <span class="simple-skill-pill-title">${escapeHtml(skill.label)}</span>
       <span class="simple-skill-pill-meta">${escapeHtml(status)}</span>
+    </a>`;
+}
+
+function renderArgumentPractice(set, track, domain) {
+  const returnHref = `domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}`;
+  const href = `module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent(returnHref)}`;
+  const meta = `${set.questionCount || 0} questions · ${set.difficulty || "mixed"}`;
+  return `
+    <a class="simple-skill-pill" href="${href}">
+      <span class="simple-skill-marker" aria-hidden="true"></span>
+      <span class="simple-skill-pill-title">${escapeHtml(set.title)}</span>
+      <span class="simple-skill-pill-meta">${escapeHtml(meta)}</span>
     </a>`;
 }
 

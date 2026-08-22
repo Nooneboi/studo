@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-mixed-weekend-bus",
+  "runtime": {
+    "id": "set-rla-args-mixed-weekend-bus",
+    "file": "set-rla-args-mixed-weekend-bus.json"
+  },
+  "title": "Should the Weekend Bus Pilot Expand?",
+  "description": "Paired arguments about whether pilot evidence is strong enough for a larger transit commitment.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-mixed-weekend-bus"
+  ],
+  "author": "Studo",
+  "reviewer": "Arguments & Sources V1 editorial review",
+  "reviewNotes": "Mixed-source Arguments practice reviewed for source comparison, evidence quality, one-best-answer logic, and ER transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which source presents the stronger argument for the specific question of whether Sunday demand is already known well enough to justify a one-year commitment?",
+      "primarySkillId": "R6.2",
+      "secondarySkillIds": [
+        "R5.5",
+        "R5.7"
+      ],
+      "familyId": "arguments.sources.opposing",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A, because increased Saturday ridership automatically establishes Sunday demand.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Saturday use is relevant but the passage identifies different Sunday employers and clinic hours."
+        },
+        {
+          "id": "b",
+          "text": "Source B, because it identifies limits in transferring Saturday results to Sunday and proposes a direct Sunday test before a longer commitment."
+        },
+        {
+          "id": "c",
+          "text": "Source A, because any proposal with a quarterly review is stronger than a shorter pilot.",
+          "distractorType": "method_absolute",
+          "whyWrong": "A review is useful, but it does not erase uncertainty about the size of the initial commitment."
+        },
+        {
+          "id": "d",
+          "text": "Source B, because transit programs should never be expanded without perfect evidence.",
+          "distractorType": "overstatement",
+          "whyWrong": "Source B supports testing and possible expansion; it does not demand perfect certainty."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Source B addresses the central evidence gap directly: actual Sunday use under the normal fare has not yet been measured.",
+        "quickTip": "For argument strength, judge which source handles the most important uncertainty with relevant evidence and reasoning."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is Source B's strongest challenge to using the Saturday ridership increase as causal evidence for more frequent buses?",
+      "primarySkillId": "R5.7",
+      "familyId": "arguments.reasoning.validity",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot lasted twelve weeks.",
+          "distractorType": "duration",
+          "whyWrong": "Duration alone does not identify the main causal problem."
+        },
+        {
+          "id": "b",
+          "text": "Many riders traveled to work.",
+          "distractorType": "different_issue",
+          "whyWrong": "Trip purpose does not isolate why total ridership increased."
+        },
+        {
+          "id": "c",
+          "text": "The fare was reduced at the same time frequency increased, creating another plausible cause of higher ridership."
+        },
+        {
+          "id": "d",
+          "text": "Sunday service would cost money.",
+          "distractorType": "different_claim",
+          "whyWrong": "Cost affects the decision but does not explain the Saturday increase."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Because two meaningful changes occurred together, the data cannot isolate the effect of frequency alone.",
+        "quickTip": "When a policy changes several variables at once, causal conclusions need evidence that separates them."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which point do both sources accept?",
+      "primarySkillId": "R6.1",
+      "familyId": "arguments.sources.compare",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Sunday ridership will exceed 180 boardings immediately.",
+          "distractorType": "unsupported",
+          "whyWrong": "Neither source knows actual Sunday demand yet."
+        },
+        {
+          "id": "b",
+          "text": "The reduced fare should become permanent.",
+          "distractorType": "unsupported",
+          "whyWrong": "The fare issue is discussed only as a confound."
+        },
+        {
+          "id": "c",
+          "text": "A full year of Sunday service is the only reasonable next step.",
+          "distractorType": "source_a_only",
+          "whyWrong": "Source B recommends a smaller test."
+        },
+        {
+          "id": "d",
+          "text": "The Saturday pilot improved some aspects of weekend transit, but additional evidence can help judge Sunday service."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The final paragraph explicitly identifies shared acceptance of access/reliability benefits while locating the disagreement in the next evidentiary step.",
+        "quickTip": "Find the shared premise beneath the policy disagreement."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which evidence would most strengthen Source A's case for moving directly to the one-year Sunday trial?",
+      "primarySkillId": "R5.5",
+      "familyId": "arguments.evidence.sufficiency",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Recent counts showing substantial Sunday travel demand at major Route 18 destinations, collected at the normal fare and during normal employer/clinic schedules."
+        },
+        {
+          "id": "b",
+          "text": "A statement from the planning director that Sunday service feels necessary.",
+          "distractorType": "opinion",
+          "whyWrong": "The director already supports expansion; another assertion does not close the Sunday-demand gap."
+        },
+        {
+          "id": "c",
+          "text": "A list of every bus stop on Route 18.",
+          "distractorType": "background",
+          "whyWrong": "Stop locations do not establish Sunday demand."
+        },
+        {
+          "id": "d",
+          "text": "The original Saturday rider survey repeated on another Saturday.",
+          "distractorType": "same_gap",
+          "whyWrong": "More Saturday evidence would not directly measure the disputed Sunday demand."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This evidence directly addresses the transfer problem identified by Source B while matching current fare and destination conditions.",
+        "quickTip": "The strongest added evidence targets the opponent's best objection, not a side issue."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How do the two proposed tests differ in evidentiary risk?",
+      "primarySkillId": "R6.2",
+      "familyId": "arguments.sources.opposing",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A gathers no data, while Source B gathers data.",
+          "distractorType": "false",
+          "whyWrong": "Source A includes quarterly review and ridership thresholds."
+        },
+        {
+          "id": "b",
+          "text": "Source A gathers more real-world data but requires a larger initial commitment; Source B reduces the commitment but may provide a shorter and potentially less representative sample."
+        },
+        {
+          "id": "c",
+          "text": "Source B guarantees an accurate annual ridership estimate because six Sundays are always enough.",
+          "distractorType": "overclaim",
+          "whyWrong": "A six-Sunday sample can still be affected by weather, events, and seasonal patterns."
+        },
+        {
+          "id": "d",
+          "text": "The two proposals have identical costs and durations.",
+          "distractorType": "false",
+          "whyWrong": "One is a one-year service proposal; the other is six Sundays."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This comparison recognizes the tradeoff rather than treating either design as automatically superior in every respect.",
+        "quickTip": "Good source comparison can identify tradeoffs even when one argument is stronger for a particular decision."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which summary best captures the disagreement?",
+      "primarySkillId": "R6.5",
+      "familyId": "arguments.sources.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Both sources oppose Sunday service but disagree about bus fares.",
+          "distractorType": "false",
+          "whyWrong": "Both are open to Sunday service; they disagree about the evidentiary threshold for expansion."
+        },
+        {
+          "id": "b",
+          "text": "Source A argues that promising Saturday results justify a monitored one-year Sunday trial; Source B argues that confounding changes and different Sunday conditions justify a smaller direct test first."
+        },
+        {
+          "id": "c",
+          "text": "Source A relies only on surveys, while Source B relies only on costs.",
+          "distractorType": "false",
+          "whyWrong": "Both sources use operational and ridership evidence."
+        },
+        {
+          "id": "d",
+          "text": "The sources disagree over whether Route 18 exists on Saturdays.",
+          "distractorType": "irrelevant",
+          "whyWrong": "Saturday service is an accepted fact."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The summary preserves each source's recommendation and the evidence logic behind it.",
+        "quickTip": "A synthesis should state the real point of disagreement and the reasons on both sides."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Multiple Texts & Formats",
+    "primarySkillId": "R6.2",
+    "secondarySkillIds": [
+      "R5.5",
+      "R5.7",
+      "R6.1",
+      "R6.5"
+    ],
+    "contentKind": "argument_practice",
+    "practiceTags": [
+      "paired_sources",
+      "argument_strength"
+    ],
+    "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
+    "topicLabel": "Mixed Source Practice"
+  }
+}

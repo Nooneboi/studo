@@ -7,6 +7,6 @@
     "content:build": "node scripts/build-content.mjs",
     "content:check": "npm run content:validate && npm run content:build",
     "studio": "node scripts/serve.mjs",
-    "test": "node --test scripts/build-content-regression.test.mjs && node --test scripts/foundation-qa.test.mjs && node --test scripts/reading-quality.test.mjs"
+    "test": "node --test scripts/build-content-regression.test.mjs && node --test scripts/foundation-qa.test.mjs && node --test scripts/reading-quality.test.mjs && node --test scripts/arguments-quality.test.mjs"
   }
 }
