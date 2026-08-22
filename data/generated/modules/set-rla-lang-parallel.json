@@ -1,0 +1,472 @@
+{
+  "id": "set-rla-lang-parallel",
+  "title": "Training Sentence Connections",
+  "description": "Build parallel structures and connect clauses according to their logical relationship.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "A department is preparing a short orientation for new employees. The draft agenda includes three goals: introducing the safety process, explaining how to request equipment, and showing employees where to report problems. Because the agenda will be read aloud and posted online, the editor wants its sentence patterns to be easy to follow.\n\nParallel structure helps readers recognize items that have the same role. If a sentence begins “The session will explain how to sign in, how to request a key, and how to report a hazard,” each item follows the same pattern. Mixing “to sign in,” “requesting a key,” and “how hazards are reported” makes the list harder to process even if the general meaning remains understandable.\n\nThe editor also checks how complete ideas are connected. Two independent clauses may be joined with a coordinating conjunction or separated with appropriate punctuation. A dependent idea should be attached to a complete clause rather than left as a fragment. The goal is not to make every sentence the same length. It is to show the relationship among ideas through balanced structure and deliberate connections.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the parallel revision: “The session covers signing in, how to request keys, and reporting hazards.”",
+      "points": 1,
+      "explanation": "All three items use matching -ing forms: signing, requesting, reporting.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "Items with the same role should use the same grammatical form.",
+      "familyId": "language.parallelism.structure",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The session covers signing in, requesting keys, and reporting hazards."
+        },
+        {
+          "id": "b",
+          "text": "The session covers to sign in, requesting keys, and hazards are reported.",
+          "distractorType": "editing_error",
+          "whyWrong": "The three items use different grammatical patterns."
+        },
+        {
+          "id": "c",
+          "text": "The session covers signing in, how to request keys, and hazards.",
+          "distractorType": "editing_error",
+          "whyWrong": "The final item is a noun while the others describe actions."
+        },
+        {
+          "id": "d",
+          "text": "The session covers sign in, requests for keys, and reporting hazards.",
+          "distractorType": "editing_error",
+          "whyWrong": "The list mixes a bare verb, noun phrase, and gerund."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Complete the correlative structure: “The trainer will not only review the rules but also {{blank}}.”",
+      "points": 1,
+      "explanation": "'Review' and 'demonstrate' are parallel base verbs after 'will'.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "With not only/but also, compare the grammatical form immediately after each half.",
+      "familyId": "language.parallelism.structure",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "demonstrating the equipment",
+          "distractorType": "editing_error",
+          "whyWrong": "'Review' is a base verb; the paired item should match that form."
+        },
+        {
+          "id": "c",
+          "text": "a demonstration of the equipment",
+          "distractorType": "editing_error",
+          "whyWrong": "This noun phrase is not parallel with the verb 'review'."
+        },
+        {
+          "id": "b",
+          "text": "demonstrate the equipment"
+        },
+        {
+          "id": "d",
+          "text": "the equipment will be demonstrated",
+          "distractorType": "editing_error",
+          "whyWrong": "This passive clause breaks the parallel structure."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the best connection: “The room was full, {{blank}} the trainer opened the second training area.”",
+      "points": 1,
+      "explanation": "'So' correctly shows that opening the second area was a result of the first room being full.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "Choose a connector that names the actual relationship: addition, contrast, cause, or result.",
+      "familyId": "language.connections.coordination_subordination",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "because",
+          "distractorType": "editing_error",
+          "whyWrong": "'Because' would make the first clause depend on a reason that has not been stated in the intended order."
+        },
+        {
+          "id": "c",
+          "text": "although",
+          "distractorType": "editing_error",
+          "whyWrong": "'Although' signals contrast, but the second action is a result of the first condition."
+        },
+        {
+          "id": "d",
+          "text": "for example",
+          "distractorType": "editing_error",
+          "whyWrong": "The second clause is a result, not an example of the room being full."
+        },
+        {
+          "id": "b",
+          "text": "so"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Which sentence correctly subordinates the reason?",
+      "points": 1,
+      "explanation": "The dependent reason clause is correctly attached to the independent clause with a comma.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "A clause beginning with because usually needs a complete main clause attached to it.",
+      "familyId": "language.connections.coordination_subordination",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the projector failed. The trainer used printed diagrams.",
+          "distractorType": "editing_error",
+          "whyWrong": "The dependent clause is incorrectly left as a fragment."
+        },
+        {
+          "id": "b",
+          "text": "Because the projector failed, the trainer used printed diagrams."
+        },
+        {
+          "id": "c",
+          "text": "The projector failed, because. The trainer used printed diagrams.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Because' is stranded and the punctuation is incorrect."
+        },
+        {
+          "id": "d",
+          "text": "Because the projector failed; the trainer used printed diagrams.",
+          "distractorType": "editing_error",
+          "whyWrong": "A semicolon cannot directly separate a dependent clause from the main clause it depends on."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the parallel sentence.",
+      "points": 1,
+      "explanation": "All three actions use base verbs after the shared modal 'should'.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "When a helping verb applies to a list, keep each listed verb in the same form.",
+      "familyId": "language.parallelism.structure",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Employees should arrive on time, bring identification, and to wear closed shoes.",
+          "distractorType": "editing_error",
+          "whyWrong": "The final item uses 'to wear' while the first two use base verbs."
+        },
+        {
+          "id": "c",
+          "text": "Employees should arriving on time, bring identification, and closed shoes.",
+          "distractorType": "editing_error",
+          "whyWrong": "The list mixes a participle, verb, and noun phrase."
+        },
+        {
+          "id": "b",
+          "text": "Employees should arrive on time, bring identification, and wear closed shoes."
+        },
+        {
+          "id": "d",
+          "text": "Employees should arrive on time, identification is brought, and wear closed shoes.",
+          "distractorType": "editing_error",
+          "whyWrong": "The middle item changes to a passive clause."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Which revision best connects a contrast? “The training is brief. It covers the highest-risk tasks.”",
+      "points": 1,
+      "explanation": "'Although' correctly marks the contrast between short duration and broad importance.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "Match the connector to the logic, not merely to what sounds smooth.",
+      "familyId": "language.connections.coordination_subordination",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Although the training is brief, it covers the highest-risk tasks."
+        },
+        {
+          "id": "b",
+          "text": "Because the training is brief, it covers the highest-risk tasks.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Because' incorrectly presents brevity as the cause of the coverage."
+        },
+        {
+          "id": "c",
+          "text": "The training is brief, so it covers the highest-risk tasks.",
+          "distractorType": "editing_error",
+          "whyWrong": "'So' creates a cause-result relationship that the ideas do not support."
+        },
+        {
+          "id": "d",
+          "text": "The training is brief, for example it covers the highest-risk tasks.",
+          "distractorType": "editing_error",
+          "whyWrong": "The second clause is not an example of brevity."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “The checklist is useful because it is short, clear, and employees can use it quickly.”",
+      "points": 1,
+      "explanation": "'Short,' 'clear,' and 'quick to use' function as parallel descriptions of the checklist.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "Parallel ideas do not need identical word counts, but they should have matching grammatical roles.",
+      "familyId": "language.parallelism.structure",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The checklist is useful because it is short, clarity, and employees use it quickly.",
+          "distractorType": "editing_error",
+          "whyWrong": "The list mixes adjectives, a noun, and a clause."
+        },
+        {
+          "id": "c",
+          "text": "The checklist is useful because short, clear, and employees can use it quickly.",
+          "distractorType": "editing_error",
+          "whyWrong": "The first two items are incomplete after 'because'."
+        },
+        {
+          "id": "d",
+          "text": "The checklist is useful because it is short, clearly, and quick use.",
+          "distractorType": "editing_error",
+          "whyWrong": "The list mixes adjective, adverb, and noun forms."
+        },
+        {
+          "id": "a",
+          "text": "The checklist is useful because it is short, clear, and quick to use."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Which sentence correctly joins two independent clauses?",
+      "points": 1,
+      "explanation": "A comma plus the coordinating conjunction 'but' correctly joins the two complete clauses and shows contrast.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "For two complete clauses, use a period, semicolon, or comma plus a coordinating conjunction.",
+      "familyId": "language.connections.coordination_subordination",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The session ended early, the trainer stayed to answer questions.",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma alone cannot join two independent clauses; this is a comma splice."
+        },
+        {
+          "id": "b",
+          "text": "The session ended early, but the trainer stayed to answer questions."
+        },
+        {
+          "id": "c",
+          "text": "The session ended early because, the trainer stayed to answer questions.",
+          "distractorType": "editing_error",
+          "whyWrong": "The connector and comma are incorrectly placed."
+        },
+        {
+          "id": "d",
+          "text": "The session ended early although. The trainer stayed to answer questions.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Although' is left incomplete and creates a fragment."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-parallel",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.6",
+      "secondarySkillIds": [],
+      "unitId": "parallelism-sentence-connections",
+      "contentKind": "skill_drill",
+      "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-parallel",
+      "title": "Planning the Training Session",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.032Z"
+  }
+}

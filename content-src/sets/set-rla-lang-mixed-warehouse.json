@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-mixed-warehouse",
+  "runtime": {
+    "id": "set-rla-lang-mixed-warehouse",
+    "file": "set-rla-lang-mixed-warehouse.json"
+  },
+  "title": "Improving the Warehouse Handoff",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-mixed-warehouse"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the parallel revision: “The supervisor records unfinished tasks, equipment problems, and which deliveries are late.”",
+      "primarySkillId": "L1.6",
+      "familyId": "language.parallelism.structure",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The supervisor records unfinished tasks, equipment problems, and late deliveries."
+        },
+        {
+          "id": "b",
+          "text": "The supervisor records unfinished tasks, problems with equipment, and which deliveries are late.",
+          "distractorType": "editing_error",
+          "whyWrong": "The third item is a clause while the first two are noun phrases."
+        },
+        {
+          "id": "c",
+          "text": "The supervisor records unfinished tasks, equipment problems, and identifying late deliveries.",
+          "distractorType": "editing_error",
+          "whyWrong": "The final item changes to a gerund phrase."
+        },
+        {
+          "id": "d",
+          "text": "The supervisor records unfinished tasks, equipment problems, and deliveries are late.",
+          "distractorType": "editing_error",
+          "whyWrong": "The final item becomes an independent clause."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "All three items are parallel noun phrases naming what the supervisor records.",
+        "quickTip": "Keep items in a list in matching grammatical forms."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the best modifier placement: “Supervisors should only use the phone for urgent safety problems.”",
+      "primarySkillId": "L1.5",
+      "familyId": "language.modifiers.limiting_words",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only supervisors should use the phone for urgent safety problems.",
+          "distractorType": "editing_error",
+          "whyWrong": "This says no one except supervisors may use the phone, which changes the intended limitation."
+        },
+        {
+          "id": "c",
+          "text": "Supervisors only should use the phone for urgent safety problems.",
+          "distractorType": "editing_error",
+          "whyWrong": "This awkward placement can imply a contrast with other actions rather than limiting the reason for phone use."
+        },
+        {
+          "id": "b",
+          "text": "Supervisors should use the phone only for urgent safety problems."
+        },
+        {
+          "id": "d",
+          "text": "Supervisors should use only the phone for urgent safety problems.",
+          "distractorType": "editing_error",
+          "whyWrong": "This says the phone is the only tool they may use, not that phone use is limited to urgent problems."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "'Only' sits directly before the purpose it limits: urgent safety problems.",
+        "quickTip": "Place only beside the word or phrase you intend to restrict."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct sentence boundary: “The form is useful {{blank}} it does not replace urgent phone calls.”",
+      "primarySkillId": "L2.4",
+      "familyId": "language.punctuation.clauses",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma alone creates a splice between two complete clauses."
+        },
+        {
+          "id": "a",
+          "text": ", but"
+        },
+        {
+          "id": "c",
+          "text": "because",
+          "distractorType": "editing_error",
+          "whyWrong": "'Because' would say the form is useful for the reason that it does not replace calls, which is not the intended contrast."
+        },
+        {
+          "id": "d",
+          "text": ":",
+          "distractorType": "editing_error",
+          "whyWrong": "The second clause is a contrast, not an explanation introduced by a colon."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "A comma plus 'but' correctly joins the two independent clauses and shows contrast.",
+        "quickTip": "Use punctuation and conjunctions together to show the relationship between complete clauses."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “The form contains fields that are labeled with labels for routine updates.”",
+      "primarySkillId": "L1.8",
+      "familyId": "language.style.concision",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The form contains fields that are labeled with labels for routine updates.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Labeled with labels' repeats the same idea."
+        },
+        {
+          "id": "c",
+          "text": "The form has fields which have labels that label routine updates.",
+          "distractorType": "editing_error",
+          "whyWrong": "The revision repeats 'label' and remains wordy."
+        },
+        {
+          "id": "d",
+          "text": "Routine updates are in fields having labeling labels on the form.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is awkward and less clear."
+        },
+        {
+          "id": "a",
+          "text": "The form contains labeled fields for routine updates."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "'Labeled fields' expresses the same information directly.",
+        "quickTip": "Turn repeated noun/verb phrases into one precise modifier when meaning is preserved."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest standard sentence.",
+      "primarySkillId": "L1.4",
+      "familyId": "language.usage.standard_usage",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Supervisors must complete the form before leaving."
+        },
+        {
+          "id": "a",
+          "text": "Supervisors gotta fill out the form before they leave.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Gotta' is informal speech and not appropriate for a formal procedure."
+        },
+        {
+          "id": "c",
+          "text": "Supervisors should of completed the form before leaving.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Should of' is nonstandard for 'should have'."
+        },
+        {
+          "id": "d",
+          "text": "Supervisors be completing the form before leaving.",
+          "distractorType": "editing_error",
+          "whyWrong": "This construction is not standard for the intended instruction."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The sentence uses clear standard English and states the requirement directly.",
+        "quickTip": "Formal procedures should use standard forms without slang or speech spellings."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct verb: “The list of delayed trucks {{blank}} updated before each shift change.”",
+      "primarySkillId": "L1.2",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "are",
+          "distractorType": "editing_error",
+          "whyWrong": "'Trucks' is inside an of-phrase; the subject is singular 'list'."
+        },
+        {
+          "id": "c",
+          "text": "have been",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb phrase does not agree with 'list'."
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "d",
+          "text": "were",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural past-tense verb does not match the singular subject."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The singular subject 'list' takes the singular verb 'is'.",
+        "quickTip": "Ignore nouns inside an of-phrase when locating the subject."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L1.6",
+    "secondarySkillIds": [
+      "L1.5",
+      "L2.4",
+      "L1.8",
+      "L1.4",
+      "L1.2"
+    ],
+    "contentKind": "editing_practice",
+    "practiceTags": [
+      "editing_passage",
+      "workplace"
+    ],
+    "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+    "topicLabel": "Mixed Editing Practice"
+  }
+}

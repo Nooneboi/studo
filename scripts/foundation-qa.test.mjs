@@ -58,20 +58,21 @@ test('clean build recreates learner inventory without previous generated output'
   }
 });
 
-test('preview tracks stay out of learner curriculum and index while modules remain buildable', async () => {
+test('published tracks appear while Writing preview and retired prototypes stay out of learner navigation', async () => {
   const result = runNode('scripts/build-content.mjs');
   assert.equal(result.status, 0, `build failed:\n${result.stdout}\n${result.stderr}`);
   const curriculum = await json(path.join(GENERATED, 'curriculum.json'));
-  assert.deepEqual(curriculum.tracks.map((track) => track.id), ['reading', 'arguments']);
-  assert.equal(curriculum.tracks.some((track) => track.id === 'language'), false);
+  assert.deepEqual(curriculum.tracks.map((track) => track.id), ['reading', 'arguments', 'language']);
+  assert.equal(curriculum.tracks.some((track) => track.id === 'language'), true);
   assert.equal(curriculum.tracks.some((track) => track.id === 'writing'), false);
   const index = await json(path.join(GENERATED, 'index.json'));
   const files = new Set(index.map((entry) => entry.file));
+  assert.equal([...files].some((file) => file === 'generated/modules/set-rla-lang-word-choice.json'), true, 'published Language module missing from learner index');
   assert.equal(files.has('generated/modules/grammar-practice.json'), false);
   assert.equal(files.has('generated/modules/grammar-transfer-practice.json'), false);
   assert.equal(files.has('generated/modules/writing-practice.json'), false);
-  await fs.access(path.join(GENERATED, 'modules', 'grammar-practice.json'));
-  await fs.access(path.join(GENERATED, 'modules', 'grammar-transfer-practice.json'));
+  await assert.rejects(fs.access(path.join(GENERATED, 'modules', 'grammar-practice.json')), /ENOENT/);
+  await assert.rejects(fs.access(path.join(GENERATED, 'modules', 'grammar-transfer-practice.json')), /ENOENT/);
   await fs.access(path.join(GENERATED, 'modules', 'writing-practice.json'));
 });
 

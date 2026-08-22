@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-22T08:52:14.512Z",
+  "builtAt": "2026-08-22T09:41:40.044Z",
   "tracks": [
     {
       "id": "reading",
@@ -10387,6 +10387,4131 @@
       "resourceCount": 45,
       "studyFileCount": 45,
       "checkCount": 9
+    },
+    {
+      "id": "language",
+      "label": "Language & Editing",
+      "shortLabel": "Language",
+      "summary": "Edit sentences and passages for grammar, punctuation, clarity, and precise word choice.",
+      "accent": "teal",
+      "publicationState": "published",
+      "domains": [
+        {
+          "id": "language-editing",
+          "label": "Language & Editing",
+          "summary": "Fix grammar, sentence boundaries, punctuation, usage, and clarity in context.",
+          "groups": [
+            {
+              "id": "usage-agreement",
+              "label": "Usage & agreement",
+              "skills": [
+                "L1.1",
+                "L1.2",
+                "L1.3",
+                "L1.4"
+              ]
+            },
+            {
+              "id": "sentence-clarity",
+              "label": "Sentence clarity",
+              "skills": [
+                "L1.5",
+                "L1.6",
+                "L1.7",
+                "L1.8",
+                "L1.9"
+              ]
+            },
+            {
+              "id": "mechanics",
+              "label": "Mechanics & sentence boundaries",
+              "skills": [
+                "L2.1",
+                "L2.2",
+                "L2.3",
+                "L2.4"
+              ]
+            }
+          ],
+          "units": [
+            {
+              "id": "word-choice-standard-usage",
+              "label": "Word Choice & Standard Usage",
+              "summary": "Choose the precise standard-English word or expression that fits the sentence and context.",
+              "skillIds": [
+                "L1.1",
+                "L1.4"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-word-choice",
+                  "title": "Handbook Word Choice",
+                  "description": "Choose standard, precise words in a formal workplace context.",
+                  "file": "generated/modules/set-rla-lang-word-choice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.1",
+                    "secondarySkillIds": [
+                      "L1.4"
+                    ],
+                    "unitId": "word-choice-standard-usage",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose standard, precise words in a formal workplace context.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-word-choice",
+                    "title": "Updating the Volunteer Handbook",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-word-choice",
+                  "title": "Handbook Word Choice",
+                  "description": "Choose standard, precise words in a formal workplace context.",
+                  "file": "generated/modules/set-rla-lang-word-choice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.1",
+                    "secondarySkillIds": [
+                      "L1.4"
+                    ],
+                    "unitId": "word-choice-standard-usage",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose standard, precise words in a formal workplace context.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-word-choice",
+                    "title": "Updating the Volunteer Handbook",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+                  "title": "Word Choice & Standard Usage - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+                  "title": "Word Choice & Standard Usage - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+                  "title": "Word Choice & Standard Usage - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+                  "title": "Word Choice & Standard Usage - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+                  "title": "Word Choice & Standard Usage - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+                  "title": "Word Choice & Standard Usage - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "agreement-pronouns",
+              "label": "Agreement & Pronouns",
+              "summary": "Match subjects and verbs, control complex agreement, and keep pronouns clear and correct.",
+              "skillIds": [
+                "L1.2",
+                "L1.3",
+                "L1.7"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "modifiers-sentence-logic",
+              "label": "Modifiers & Sentence Logic",
+              "summary": "Place modifiers where they clearly describe the intended word or action.",
+              "skillIds": [
+                "L1.5"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-modifiers",
+                  "title": "Walkway Modifier Check",
+                  "description": "Place modifiers so every description attaches to the intended word or action.",
+                  "file": "generated/modules/set-rla-lang-modifiers.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.5",
+                    "secondarySkillIds": [],
+                    "unitId": "modifiers-sentence-logic",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-modifiers",
+                    "title": "A Walkway Inspection Note",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.5"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-modifiers",
+                  "title": "Walkway Modifier Check",
+                  "description": "Place modifiers so every description attaches to the intended word or action.",
+                  "file": "generated/modules/set-rla-lang-modifiers.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.5",
+                    "secondarySkillIds": [],
+                    "unitId": "modifiers-sentence-logic",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-modifiers",
+                    "title": "A Walkway Inspection Note",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.5"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-study-guide",
+                  "title": "Modifiers & Sentence Logic - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-1",
+                  "title": "Modifiers & Sentence Logic - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-2",
+                  "title": "Modifiers & Sentence Logic - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-study-guide",
+                  "title": "Modifiers & Sentence Logic - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-1",
+                  "title": "Modifiers & Sentence Logic - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-2",
+                  "title": "Modifiers & Sentence Logic - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "parallelism-sentence-connections",
+              "label": "Parallelism & Sentence Connections",
+              "summary": "Build balanced sentence parts and connect ideas with clear coordination or subordination.",
+              "skillIds": [
+                "L1.6"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-parallel",
+                  "title": "Training Sentence Connections",
+                  "description": "Build parallel structures and connect clauses according to their logical relationship.",
+                  "file": "generated/modules/set-rla-lang-parallel.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.6",
+                    "secondarySkillIds": [],
+                    "unitId": "parallelism-sentence-connections",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-parallel",
+                    "title": "Planning the Training Session",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.6"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-parallel",
+                  "title": "Training Sentence Connections",
+                  "description": "Build parallel structures and connect clauses according to their logical relationship.",
+                  "file": "generated/modules/set-rla-lang-parallel.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.6",
+                    "secondarySkillIds": [],
+                    "unitId": "parallelism-sentence-connections",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-parallel",
+                    "title": "Planning the Training Session",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.6"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-study-guide",
+                  "title": "Parallelism & Sentence Connections - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-1",
+                  "title": "Parallelism & Sentence Connections - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-2",
+                  "title": "Parallelism & Sentence Connections - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-study-guide",
+                  "title": "Parallelism & Sentence Connections - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-1",
+                  "title": "Parallelism & Sentence Connections - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-2",
+                  "title": "Parallelism & Sentence Connections - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "concision-transitions",
+              "label": "Concision & Transitions",
+              "summary": "Remove unnecessary wording and choose transitions that express the exact logical relationship.",
+              "skillIds": [
+                "L1.8",
+                "L1.9"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-concision",
+                  "title": "Shuttle Notice Editing",
+                  "description": "Make sentences concise and choose transitions that match the exact logic.",
+                  "file": "generated/modules/set-rla-lang-concision.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.8",
+                    "secondarySkillIds": [
+                      "L1.9"
+                    ],
+                    "unitId": "concision-transitions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-concision",
+                    "title": "Revising the Shuttle Notice",
+                    "textType": "informational",
+                    "context": "school",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-concision",
+                  "title": "Shuttle Notice Editing",
+                  "description": "Make sentences concise and choose transitions that match the exact logic.",
+                  "file": "generated/modules/set-rla-lang-concision.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.8",
+                    "secondarySkillIds": [
+                      "L1.9"
+                    ],
+                    "unitId": "concision-transitions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-concision",
+                    "title": "Revising the Shuttle Notice",
+                    "textType": "informational",
+                    "context": "school",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-study-guide",
+                  "title": "Concision & Transitions - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+                  "title": "Concision & Transitions - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+                  "title": "Concision & Transitions - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-study-guide",
+                  "title": "Concision & Transitions - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+                  "title": "Concision & Transitions - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+                  "title": "Concision & Transitions - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "sentence-boundaries-punctuation",
+              "label": "Sentence Boundaries & Punctuation",
+              "summary": "Repair fragments and run-ons and punctuate clauses so sentence relationships are clear.",
+              "skillIds": [
+                "L2.2",
+                "L2.4"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-boundaries",
+                  "title": "Renovation Sentence Repair",
+                  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                  "file": "generated/modules/set-rla-lang-boundaries.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.2",
+                    "secondarySkillIds": [
+                      "L2.4"
+                    ],
+                    "unitId": "sentence-boundaries-punctuation",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-boundaries",
+                    "title": "Community Center Renovation Memo",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-boundaries",
+                  "title": "Renovation Sentence Repair",
+                  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                  "file": "generated/modules/set-rla-lang-boundaries.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.2",
+                    "secondarySkillIds": [
+                      "L2.4"
+                    ],
+                    "unitId": "sentence-boundaries-punctuation",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-boundaries",
+                    "title": "Community Center Renovation Memo",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+                  "title": "Sentence Boundaries & Punctuation - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+                  "title": "Sentence Boundaries & Punctuation - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "capitalization-possessives",
+              "label": "Capitalization & Possessives",
+              "summary": "Use capitalization and apostrophes accurately in practical editing contexts.",
+              "skillIds": [
+                "L2.1",
+                "L2.3"
+              ],
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-capitals",
+                  "title": "Museum Mechanics Check",
+                  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+                  "file": "generated/modules/set-rla-lang-capitals.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.1",
+                    "secondarySkillIds": [
+                      "L2.3"
+                    ],
+                    "unitId": "capitalization-possessives",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-capitals",
+                    "title": "Museum Event Announcement",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-capitals",
+                  "title": "Museum Mechanics Check",
+                  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+                  "file": "generated/modules/set-rla-lang-capitals.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.1",
+                    "secondarySkillIds": [
+                      "L2.3"
+                    ],
+                    "unitId": "capitalization-possessives",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-capitals",
+                    "title": "Museum Event Announcement",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+                  "title": "Capitalization & Possessives - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+                  "title": "Capitalization & Possessives - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+                  "title": "Capitalization & Possessives - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+                  "title": "Capitalization & Possessives - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+                  "title": "Capitalization & Possessives - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+                  "title": "Capitalization & Possessives - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            }
+          ],
+          "availableSkillCount": 13,
+          "availableUnitCount": 7,
+          "availableSetCount": 7,
+          "topicResourceCount": 0,
+          "topicResources": [],
+          "resources": [],
+          "studyFileCount": 39,
+          "checkCount": 7,
+          "skills": [
+            {
+              "id": "L1.1",
+              "runtimeId": "language.usage.word_choice",
+              "label": "Frequently confused words",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 5,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-word-choice",
+                  "title": "Handbook Word Choice",
+                  "description": "Choose standard, precise words in a formal workplace context.",
+                  "file": "generated/modules/set-rla-lang-word-choice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.1",
+                    "secondarySkillIds": [
+                      "L1.4"
+                    ],
+                    "unitId": "word-choice-standard-usage",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose standard, precise words in a formal workplace context.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-word-choice",
+                    "title": "Updating the Volunteer Handbook",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-word-choice",
+                  "title": "Handbook Word Choice",
+                  "description": "Choose standard, precise words in a formal workplace context.",
+                  "file": "generated/modules/set-rla-lang-word-choice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.1",
+                    "secondarySkillIds": [
+                      "L1.4"
+                    ],
+                    "unitId": "word-choice-standard-usage",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose standard, precise words in a formal workplace context.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-word-choice",
+                    "title": "Updating the Volunteer Handbook",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+                  "title": "Word Choice & Standard Usage - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+                  "title": "Word Choice & Standard Usage - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+                  "title": "Word Choice & Standard Usage - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+                  "title": "Word Choice & Standard Usage - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+                  "title": "Word Choice & Standard Usage - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+                  "title": "Word Choice & Standard Usage - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.2",
+              "runtimeId": "language.grammar.subject_verb_agreement",
+              "label": "Basic subject–verb agreement",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 2,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.3",
+              "runtimeId": "L1.3",
+              "label": "Pronoun agreement, reference & case",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 3,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.4",
+              "runtimeId": "L1.4",
+              "label": "Standard vs informal usage",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 3,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-word-choice",
+                  "title": "Handbook Word Choice",
+                  "description": "Choose standard, precise words in a formal workplace context.",
+                  "file": "generated/modules/set-rla-lang-word-choice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.1",
+                    "secondarySkillIds": [
+                      "L1.4"
+                    ],
+                    "unitId": "word-choice-standard-usage",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose standard, precise words in a formal workplace context.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-word-choice",
+                    "title": "Updating the Volunteer Handbook",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-word-choice",
+                  "title": "Handbook Word Choice",
+                  "description": "Choose standard, precise words in a formal workplace context.",
+                  "file": "generated/modules/set-rla-lang-word-choice.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.1",
+                    "secondarySkillIds": [
+                      "L1.4"
+                    ],
+                    "unitId": "word-choice-standard-usage",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Choose standard, precise words in a formal workplace context.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-word-choice",
+                    "title": "Updating the Volunteer Handbook",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+                  "title": "Word Choice & Standard Usage - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+                  "title": "Word Choice & Standard Usage - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+                  "title": "Word Choice & Standard Usage - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+                  "title": "Word Choice & Standard Usage - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+                  "title": "Word Choice & Standard Usage - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+                  "title": "Word Choice & Standard Usage - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for word choice & standard usage.",
+                  "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "word-choice-standard-usage",
+                  "skillIds": [
+                    "L1.1",
+                    "L1.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.5",
+              "runtimeId": "L1.5",
+              "label": "Modifiers & logical word order",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-modifiers",
+                  "title": "Walkway Modifier Check",
+                  "description": "Place modifiers so every description attaches to the intended word or action.",
+                  "file": "generated/modules/set-rla-lang-modifiers.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.5",
+                    "secondarySkillIds": [],
+                    "unitId": "modifiers-sentence-logic",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-modifiers",
+                    "title": "A Walkway Inspection Note",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.5"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-modifiers",
+                  "title": "Walkway Modifier Check",
+                  "description": "Place modifiers so every description attaches to the intended word or action.",
+                  "file": "generated/modules/set-rla-lang-modifiers.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.5",
+                    "secondarySkillIds": [],
+                    "unitId": "modifiers-sentence-logic",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-modifiers",
+                    "title": "A Walkway Inspection Note",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.5"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-study-guide",
+                  "title": "Modifiers & Sentence Logic - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-1",
+                  "title": "Modifiers & Sentence Logic - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-2",
+                  "title": "Modifiers & Sentence Logic - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-study-guide",
+                  "title": "Modifiers & Sentence Logic - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-1",
+                  "title": "Modifiers & Sentence Logic - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-2",
+                  "title": "Modifiers & Sentence Logic - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for modifiers & sentence logic.",
+                  "href": "assets/resources/language-modifiers-sentence-logic-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "modifiers-sentence-logic",
+                  "skillIds": [
+                    "L1.5"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.6",
+              "runtimeId": "L1.6",
+              "label": "Parallelism, coordination & subordination",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 8,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-parallel",
+                  "title": "Training Sentence Connections",
+                  "description": "Build parallel structures and connect clauses according to their logical relationship.",
+                  "file": "generated/modules/set-rla-lang-parallel.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.6",
+                    "secondarySkillIds": [],
+                    "unitId": "parallelism-sentence-connections",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-parallel",
+                    "title": "Planning the Training Session",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.6"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-parallel",
+                  "title": "Training Sentence Connections",
+                  "description": "Build parallel structures and connect clauses according to their logical relationship.",
+                  "file": "generated/modules/set-rla-lang-parallel.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.6",
+                    "secondarySkillIds": [],
+                    "unitId": "parallelism-sentence-connections",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-parallel",
+                    "title": "Planning the Training Session",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.6"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-study-guide",
+                  "title": "Parallelism & Sentence Connections - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-1",
+                  "title": "Parallelism & Sentence Connections - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-2",
+                  "title": "Parallelism & Sentence Connections - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-study-guide",
+                  "title": "Parallelism & Sentence Connections - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-1",
+                  "title": "Parallelism & Sentence Connections - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-2",
+                  "title": "Parallelism & Sentence Connections - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for parallelism & sentence connections.",
+                  "href": "assets/resources/language-parallelism-sentence-connections-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "parallelism-sentence-connections",
+                  "skillIds": [
+                    "L1.6"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.7",
+              "runtimeId": "L1.7",
+              "label": "Complex agreement",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 3,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-agreement",
+                  "title": "Inventory Agreement & Pronouns",
+                  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                  "file": "generated/modules/set-rla-lang-agreement.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-agreement",
+                    "title": "Preparing the Inventory Report",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+                  "title": "Agreement & Pronouns - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+                  "title": "Agreement & Pronouns - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+                  "title": "Agreement & Pronouns - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for agreement & pronouns.",
+                  "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "agreement-pronouns",
+                  "skillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.8",
+              "runtimeId": "L1.8",
+              "label": "Wordiness & awkward construction",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-concision",
+                  "title": "Shuttle Notice Editing",
+                  "description": "Make sentences concise and choose transitions that match the exact logic.",
+                  "file": "generated/modules/set-rla-lang-concision.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.8",
+                    "secondarySkillIds": [
+                      "L1.9"
+                    ],
+                    "unitId": "concision-transitions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-concision",
+                    "title": "Revising the Shuttle Notice",
+                    "textType": "informational",
+                    "context": "school",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-concision",
+                  "title": "Shuttle Notice Editing",
+                  "description": "Make sentences concise and choose transitions that match the exact logic.",
+                  "file": "generated/modules/set-rla-lang-concision.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.8",
+                    "secondarySkillIds": [
+                      "L1.9"
+                    ],
+                    "unitId": "concision-transitions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-concision",
+                    "title": "Revising the Shuttle Notice",
+                    "textType": "informational",
+                    "context": "school",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-study-guide",
+                  "title": "Concision & Transitions - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+                  "title": "Concision & Transitions - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+                  "title": "Concision & Transitions - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-study-guide",
+                  "title": "Concision & Transitions - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+                  "title": "Concision & Transitions - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+                  "title": "Concision & Transitions - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L1.9",
+              "runtimeId": "L1.9",
+              "label": "Transitions for logic & clarity",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-concision",
+                  "title": "Shuttle Notice Editing",
+                  "description": "Make sentences concise and choose transitions that match the exact logic.",
+                  "file": "generated/modules/set-rla-lang-concision.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.8",
+                    "secondarySkillIds": [
+                      "L1.9"
+                    ],
+                    "unitId": "concision-transitions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-concision",
+                    "title": "Revising the Shuttle Notice",
+                    "textType": "informational",
+                    "context": "school",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-concision",
+                  "title": "Shuttle Notice Editing",
+                  "description": "Make sentences concise and choose transitions that match the exact logic.",
+                  "file": "generated/modules/set-rla-lang-concision.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.8",
+                    "secondarySkillIds": [
+                      "L1.9"
+                    ],
+                    "unitId": "concision-transitions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-concision",
+                    "title": "Revising the Shuttle Notice",
+                    "textType": "informational",
+                    "context": "school",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-study-guide",
+                  "title": "Concision & Transitions - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+                  "title": "Concision & Transitions - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+                  "title": "Concision & Transitions - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-study-guide",
+                  "title": "Concision & Transitions - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+                  "title": "Concision & Transitions - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+                  "title": "Concision & Transitions - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for concision & transitions.",
+                  "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "concision-transitions",
+                  "skillIds": [
+                    "L1.8",
+                    "L1.9"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L2.1",
+              "runtimeId": "L2.1",
+              "label": "Capitalization",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-capitals",
+                  "title": "Museum Mechanics Check",
+                  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+                  "file": "generated/modules/set-rla-lang-capitals.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.1",
+                    "secondarySkillIds": [
+                      "L2.3"
+                    ],
+                    "unitId": "capitalization-possessives",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-capitals",
+                    "title": "Museum Event Announcement",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-capitals",
+                  "title": "Museum Mechanics Check",
+                  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+                  "file": "generated/modules/set-rla-lang-capitals.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.1",
+                    "secondarySkillIds": [
+                      "L2.3"
+                    ],
+                    "unitId": "capitalization-possessives",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-capitals",
+                    "title": "Museum Event Announcement",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+                  "title": "Capitalization & Possessives - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+                  "title": "Capitalization & Possessives - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+                  "title": "Capitalization & Possessives - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+                  "title": "Capitalization & Possessives - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+                  "title": "Capitalization & Possessives - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+                  "title": "Capitalization & Possessives - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L2.2",
+              "runtimeId": "L2.2",
+              "label": "Fragments, run-ons & fused sentences",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-boundaries",
+                  "title": "Renovation Sentence Repair",
+                  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                  "file": "generated/modules/set-rla-lang-boundaries.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.2",
+                    "secondarySkillIds": [
+                      "L2.4"
+                    ],
+                    "unitId": "sentence-boundaries-punctuation",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-boundaries",
+                    "title": "Community Center Renovation Memo",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-boundaries",
+                  "title": "Renovation Sentence Repair",
+                  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                  "file": "generated/modules/set-rla-lang-boundaries.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.2",
+                    "secondarySkillIds": [
+                      "L2.4"
+                    ],
+                    "unitId": "sentence-boundaries-punctuation",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-boundaries",
+                    "title": "Community Center Renovation Memo",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+                  "title": "Sentence Boundaries & Punctuation - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+                  "title": "Sentence Boundaries & Punctuation - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L2.3",
+              "runtimeId": "L2.3",
+              "label": "Apostrophes & possessives",
+              "priority": "P1",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-capitals",
+                  "title": "Museum Mechanics Check",
+                  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+                  "file": "generated/modules/set-rla-lang-capitals.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.1",
+                    "secondarySkillIds": [
+                      "L2.3"
+                    ],
+                    "unitId": "capitalization-possessives",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-capitals",
+                    "title": "Museum Event Announcement",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-capitals",
+                  "title": "Museum Mechanics Check",
+                  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+                  "file": "generated/modules/set-rla-lang-capitals.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.1",
+                    "secondarySkillIds": [
+                      "L2.3"
+                    ],
+                    "unitId": "capitalization-possessives",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-capitals",
+                    "title": "Museum Event Announcement",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+                  "title": "Capitalization & Possessives - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+                  "title": "Capitalization & Possessives - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+                  "title": "Capitalization & Possessives - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+                  "title": "Capitalization & Possessives - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+                  "title": "Capitalization & Possessives - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+                  "title": "Capitalization & Possessives - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for capitalization & possessives.",
+                  "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "capitalization-possessives",
+                  "skillIds": [
+                    "L2.1",
+                    "L2.3"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            },
+            {
+              "id": "L2.4",
+              "runtimeId": "L2.4",
+              "label": "Punctuation & clause separation",
+              "priority": "P0",
+              "practiceMode": "Language",
+              "available": true,
+              "setCount": 1,
+              "questionCount": 4,
+              "resourceCount": 3,
+              "studyFileCount": 3,
+              "checkCount": 1,
+              "sets": [
+                {
+                  "id": "set-rla-lang-boundaries",
+                  "title": "Renovation Sentence Repair",
+                  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                  "file": "generated/modules/set-rla-lang-boundaries.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.2",
+                    "secondarySkillIds": [
+                      "L2.4"
+                    ],
+                    "unitId": "sentence-boundaries-punctuation",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-boundaries",
+                    "title": "Community Center Renovation Memo",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ]
+                }
+              ],
+              "checks": [
+                {
+                  "id": "set-rla-lang-boundaries",
+                  "title": "Renovation Sentence Repair",
+                  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                  "file": "generated/modules/set-rla-lang-boundaries.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L2.2",
+                    "secondarySkillIds": [
+                      "L2.4"
+                    ],
+                    "unitId": "sentence-boundaries-punctuation",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+                    "topicLabel": "Focused Practice"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-boundaries",
+                    "title": "Community Center Renovation Memo",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Studo",
+                    "author": "Studo",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ]
+                }
+              ],
+              "resources": [
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+                  "title": "Sentence Boundaries & Punctuation - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ],
+              "studyResources": [
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+                  "title": "Sentence Boundaries & Punctuation - Study Guide",
+                  "type": "study_guide",
+                  "description": "Focused study guide for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 1",
+                  "type": "worksheet",
+                  "description": "Learn workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                },
+                {
+                  "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+                  "title": "Sentence Boundaries & Punctuation - Workbook 2",
+                  "type": "worksheet",
+                  "description": "Apply workbook for sentence boundaries & punctuation.",
+                  "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+                  "scope": "skill",
+                  "domainId": "language-editing",
+                  "unitId": "sentence-boundaries-punctuation",
+                  "skillIds": [
+                    "L2.2",
+                    "L2.4"
+                  ],
+                  "download": true,
+                  "status": "published",
+                  "rightsStatus": "original",
+                  "reviewer": "Language & Editing V1 editorial review"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "availableSkillCount": 13,
+      "totalSkillCount": 13,
+      "availableSetCount": 7,
+      "questionCount": 56,
+      "resourceCount": 39,
+      "studyFileCount": 39,
+      "checkCount": 7
     }
   ],
   "passagePractice": [
@@ -11730,6 +15855,300 @@
         "title": "Should the Weekend Bus Pilot Expand?",
         "textType": "informational",
         "context": "civics",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    }
+  ],
+  "languagePractice": [
+    {
+      "id": "set-rla-lang-mixed-clinic",
+      "title": "Updating the Clinic Reminder System",
+      "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+      "file": "generated/modules/set-rla-lang-mixed-clinic.json",
+      "difficulty": "hard",
+      "category": "language_conventions",
+      "questionCount": 6,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.2",
+        "secondarySkillIds": [
+          "L1.3",
+          "L1.8",
+          "L1.9",
+          "L2.4",
+          "L1.1"
+        ],
+        "contentKind": "editing_practice",
+        "practiceTags": [
+          "editing_passage",
+          "workplace",
+          "health"
+        ],
+        "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+        "topicLabel": "Mixed Editing Practice"
+      },
+      "measuredSkillIds": [
+        "L1.2",
+        "L1.3",
+        "L1.8",
+        "L1.9",
+        "L2.4",
+        "L1.1"
+      ],
+      "passageMeta": {
+        "id": "p-rla-lang-mixed-clinic",
+        "title": "Updating the Clinic Reminder System",
+        "textType": "informational",
+        "context": "workplace",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-lang-mixed-energy",
+      "title": "Reporting a School Energy Audit",
+      "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+      "file": "generated/modules/set-rla-lang-mixed-energy.json",
+      "difficulty": "hard",
+      "category": "language_conventions",
+      "questionCount": 6,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L2.1",
+        "secondarySkillIds": [
+          "L1.3",
+          "L2.3",
+          "L1.8",
+          "L1.9",
+          "L2.4"
+        ],
+        "contentKind": "editing_practice",
+        "practiceTags": [
+          "editing_passage",
+          "school",
+          "informational"
+        ],
+        "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+        "topicLabel": "Mixed Editing Practice"
+      },
+      "measuredSkillIds": [
+        "L2.1",
+        "L1.3",
+        "L2.3",
+        "L1.8",
+        "L1.9",
+        "L2.4"
+      ],
+      "passageMeta": {
+        "id": "p-rla-lang-mixed-energy",
+        "title": "Reporting a School Energy Audit",
+        "textType": "informational",
+        "context": "school",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-lang-mixed-garden",
+      "title": "Coordinating the Community Garden",
+      "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+      "file": "generated/modules/set-rla-lang-mixed-garden.json",
+      "difficulty": "hard",
+      "category": "language_conventions",
+      "questionCount": 6,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.7",
+        "secondarySkillIds": [
+          "L1.3",
+          "L2.2",
+          "L1.8",
+          "L1.9",
+          "L2.3"
+        ],
+        "contentKind": "editing_practice",
+        "practiceTags": [
+          "editing_passage",
+          "community"
+        ],
+        "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+        "topicLabel": "Mixed Editing Practice"
+      },
+      "measuredSkillIds": [
+        "L1.7",
+        "L1.3",
+        "L2.2",
+        "L1.8",
+        "L1.9",
+        "L2.3"
+      ],
+      "passageMeta": {
+        "id": "p-rla-lang-mixed-garden",
+        "title": "Coordinating the Community Garden",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-lang-mixed-makerspace",
+      "title": "A Safer Makerspace Check-In",
+      "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+      "file": "generated/modules/set-rla-lang-mixed-makerspace.json",
+      "difficulty": "hard",
+      "category": "language_conventions",
+      "questionCount": 6,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.6",
+        "secondarySkillIds": [
+          "L1.5",
+          "L1.4",
+          "L2.3",
+          "L2.4",
+          "L2.1"
+        ],
+        "contentKind": "editing_practice",
+        "practiceTags": [
+          "editing_passage",
+          "community",
+          "workplace"
+        ],
+        "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+        "topicLabel": "Mixed Editing Practice"
+      },
+      "measuredSkillIds": [
+        "L1.6",
+        "L1.5",
+        "L1.4",
+        "L2.3",
+        "L2.4",
+        "L2.1"
+      ],
+      "passageMeta": {
+        "id": "p-rla-lang-mixed-makerspace",
+        "title": "A Safer Makerspace Check-In",
+        "textType": "informational",
+        "context": "community",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-lang-mixed-transit",
+      "title": "Revising the Lost-and-Found Policy",
+      "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+      "file": "generated/modules/set-rla-lang-mixed-transit.json",
+      "difficulty": "hard",
+      "category": "language_conventions",
+      "questionCount": 6,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.7",
+        "secondarySkillIds": [
+          "L1.5",
+          "L1.4",
+          "L2.4",
+          "L1.8",
+          "L1.1"
+        ],
+        "contentKind": "editing_practice",
+        "practiceTags": [
+          "editing_passage",
+          "civics",
+          "workplace"
+        ],
+        "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+        "topicLabel": "Mixed Editing Practice"
+      },
+      "measuredSkillIds": [
+        "L1.7",
+        "L1.5",
+        "L1.4",
+        "L2.4",
+        "L1.8",
+        "L1.1"
+      ],
+      "passageMeta": {
+        "id": "p-rla-lang-mixed-transit",
+        "title": "Revising the Lost-and-Found Policy",
+        "textType": "informational",
+        "context": "civics",
+        "sourceType": "original",
+        "attribution": "Original content by Studo",
+        "author": "Studo",
+        "workTitle": null,
+        "publisher": null,
+        "year": null,
+        "url": null
+      }
+    },
+    {
+      "id": "set-rla-lang-mixed-warehouse",
+      "title": "Improving the Warehouse Handoff",
+      "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+      "file": "generated/modules/set-rla-lang-mixed-warehouse.json",
+      "difficulty": "hard",
+      "category": "language_conventions",
+      "questionCount": 6,
+      "curriculum": {
+        "domain": "Language & Editing",
+        "primarySkillId": "L1.6",
+        "secondarySkillIds": [
+          "L1.5",
+          "L2.4",
+          "L1.8",
+          "L1.4",
+          "L1.2"
+        ],
+        "contentKind": "editing_practice",
+        "practiceTags": [
+          "editing_passage",
+          "workplace"
+        ],
+        "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+        "topicLabel": "Mixed Editing Practice"
+      },
+      "measuredSkillIds": [
+        "L1.6",
+        "L1.5",
+        "L2.4",
+        "L1.8",
+        "L1.4",
+        "L1.2"
+      ],
+      "passageMeta": {
+        "id": "p-rla-lang-mixed-warehouse",
+        "title": "Improving the Warehouse Handoff",
+        "textType": "informational",
+        "context": "workplace",
         "sourceType": "original",
         "attribution": "Original content by Studo",
         "author": "Studo",

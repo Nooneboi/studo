@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-mixed-garden",
+  "runtime": {
+    "id": "set-rla-lang-mixed-garden",
+    "file": "set-rla-lang-mixed-garden.json"
+  },
+  "title": "Coordinating the Community Garden",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-mixed-garden"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct form: “Each of the volunteers {{blank}} a colored work card.”",
+      "primarySkillId": "L1.7",
+      "familyId": "language.grammar.complex_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "receive",
+          "distractorType": "editing_error",
+          "whyWrong": "'Each' is singular even though 'volunteers' is plural."
+        },
+        {
+          "id": "c",
+          "text": "have received",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb phrase does not agree with 'each'."
+        },
+        {
+          "id": "d",
+          "text": "were receiving",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes tense and agreement."
+        },
+        {
+          "id": "b",
+          "text": "receives"
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The subject 'each' is singular and takes 'receives'.",
+        "quickTip": "Do not let a plural noun inside an of-phrase control the verb."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest pronoun revision: “When volunteers put bags beside the beds, they can block the paths.”",
+      "primarySkillId": "L1.3",
+      "familyId": "language.pronoun.reference",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "When volunteers put bags beside the beds, they can block the paths.",
+          "distractorType": "editing_error",
+          "whyWrong": "'They' could refer to the volunteers or the bags."
+        },
+        {
+          "id": "b",
+          "text": "Bags left beside the beds can block the paths."
+        },
+        {
+          "id": "c",
+          "text": "When they put them beside them, they can block the paths.",
+          "distractorType": "editing_error",
+          "whyWrong": "The repeated pronouns make the sentence much less clear."
+        },
+        {
+          "id": "d",
+          "text": "The paths can block them when volunteers put bags beside the beds.",
+          "distractorType": "editing_error",
+          "whyWrong": "This reverses the logical relationship."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The revision names 'bags' as the things that can block the paths.",
+        "quickTip": "Replace a pronoun when two possible antecedents could change the meaning."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct sentence:",
+      "primarySkillId": "L2.2",
+      "familyId": "language.boundaries.fragments_runons",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "If heavy rain begins before the event.",
+          "distractorType": "editing_error",
+          "whyWrong": "This dependent clause is a fragment."
+        },
+        {
+          "id": "c",
+          "text": "If heavy rain begins before the event, and.",
+          "distractorType": "editing_error",
+          "whyWrong": "The main clause is missing."
+        },
+        {
+          "id": "b",
+          "text": "If heavy rain begins before the event, organizers will post an update."
+        },
+        {
+          "id": "d",
+          "text": "Because heavy rain begins. Organizers will post an update.",
+          "distractorType": "editing_error",
+          "whyWrong": "The first sentence is a dependent-clause fragment."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The conditional clause is attached to a complete main clause.",
+        "quickTip": "An if-clause needs a main clause to complete the thought."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “Volunteers who have their own personal work gloves may bring them.”",
+      "primarySkillId": "L1.8",
+      "familyId": "language.style.concision",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Volunteers with work gloves may bring them."
+        },
+        {
+          "id": "b",
+          "text": "Volunteers who have their own personal work gloves may bring them.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Own personal' is redundant, and 'who have' can be shortened here."
+        },
+        {
+          "id": "c",
+          "text": "Volunteers personally owning their own gloves may bring those gloves themselves.",
+          "distractorType": "editing_error",
+          "whyWrong": "This adds repeated ownership and unnecessary words."
+        },
+        {
+          "id": "d",
+          "text": "In the event that volunteers possess gloves personally, they may bring them.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is inflated and less direct."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The sentence keeps the permission and item while removing redundant wording.",
+        "quickTip": "Remove repeated ownership words and unnecessary phrases."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "The paths are narrow; {{blank}}, bags should be stored in the entrance tent.",
+      "primarySkillId": "L1.9",
+      "familyId": "language.transitions.logic",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "however",
+          "distractorType": "editing_error",
+          "whyWrong": "The storage instruction is a result of the narrow paths, not a contrast."
+        },
+        {
+          "id": "c",
+          "text": "for example",
+          "distractorType": "editing_error",
+          "whyWrong": "The storage rule is not an example of narrow paths."
+        },
+        {
+          "id": "d",
+          "text": "meanwhile",
+          "distractorType": "editing_error",
+          "whyWrong": "The relationship is cause/result, not simultaneous timing."
+        },
+        {
+          "id": "a",
+          "text": "therefore"
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "'Therefore' shows that the storage rule follows from the narrow-path condition.",
+        "quickTip": "Choose the transition after naming the relationship in plain words."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct possessive: “The {{blank}} website will post the rain decision.”",
+      "primarySkillId": "L2.3",
+      "familyId": "language.possessives.apostrophes",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "gardens",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural form does not show possession."
+        },
+        {
+          "id": "a",
+          "text": "garden's"
+        },
+        {
+          "id": "c",
+          "text": "gardens'",
+          "distractorType": "editing_error",
+          "whyWrong": "This would mean the website belongs to multiple gardens."
+        },
+        {
+          "id": "d",
+          "text": "garden's'",
+          "distractorType": "editing_error",
+          "whyWrong": "A singular possessive takes only apostrophe + s."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "One garden owns or operates the website, so garden's is correct.",
+        "quickTip": "For one owner, use singular noun + apostrophe + s."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L1.7",
+    "secondarySkillIds": [
+      "L1.3",
+      "L2.2",
+      "L1.8",
+      "L1.9",
+      "L2.3"
+    ],
+    "contentKind": "editing_practice",
+    "practiceTags": [
+      "editing_passage",
+      "community"
+    ],
+    "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+    "topicLabel": "Mixed Editing Practice"
+  }
+}

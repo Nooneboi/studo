@@ -1,0 +1,373 @@
+{
+  "id": "set-rla-lang-mixed-warehouse",
+  "title": "Improving the Warehouse Handoff",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "A regional warehouse is testing a new handoff procedure between the day and evening shifts. In the old system, supervisors often left handwritten notes on a clipboard near the loading area. Those notes varied in detail, and evening staff sometimes had to search for information about delayed trucks, damaged packages, or equipment that needed attention.\n\nThe new procedure uses a short digital form. Before leaving, the day supervisor records any unfinished loading tasks, notes equipment problems, and identifies deliveries that are expected after 5 p.m. The evening supervisor reviews the form at the beginning of the shift and can add questions before the day supervisor leaves. Urgent safety issues must still be reported directly by phone rather than only entered in the form.\n\nDuring a two-week trial, managers found that fewer evening workers asked where unfinished tasks had been recorded. However, the form also created a new problem: some supervisors entered long paragraphs that were difficult to scan quickly. The operations manager therefore asked the team to revise the form so that routine updates use short labeled fields, while unusual problems still allow a brief explanation.\n\nThe written procedure must make the sequence clear and distinguish required steps from suggestions. It should also explain that the digital form supports the handoff but does not replace immediate communication for serious safety concerns. Because employees from several departments will use the procedure, the final version needs consistent sentence structure, precise word order, and punctuation that separates instructions cleanly.\n\nThe team is also deciding how much detail belongs in each field. A note such as “Truck 18 delayed” may be too short if the evening shift also needs a new arrival time, but a full paragraph about the history of the delay is usually unnecessary. The revised form will therefore prompt supervisors for the specific information the next shift needs to act: the task, its status, and any immediate next step.\n\nSupervisors from both shifts will review sample entries before the next trial. They will look for unclear pronouns, misplaced limiting words, inconsistent lists, and sentences that join too many instructions at once. The operations manager wants the form to support quick decisions, not reward longer writing. If a serious problem cannot be explained clearly in the form, employees are expected to speak directly before the shift changes.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the parallel revision: “The supervisor records unfinished tasks, equipment problems, and which deliveries are late.”",
+      "points": 1,
+      "explanation": "All three items are parallel noun phrases naming what the supervisor records.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "Keep items in a list in matching grammatical forms.",
+      "familyId": "language.parallelism.structure",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The supervisor records unfinished tasks, equipment problems, and late deliveries."
+        },
+        {
+          "id": "b",
+          "text": "The supervisor records unfinished tasks, problems with equipment, and which deliveries are late.",
+          "distractorType": "editing_error",
+          "whyWrong": "The third item is a clause while the first two are noun phrases."
+        },
+        {
+          "id": "c",
+          "text": "The supervisor records unfinished tasks, equipment problems, and identifying late deliveries.",
+          "distractorType": "editing_error",
+          "whyWrong": "The final item changes to a gerund phrase."
+        },
+        {
+          "id": "d",
+          "text": "The supervisor records unfinished tasks, equipment problems, and deliveries are late.",
+          "distractorType": "editing_error",
+          "whyWrong": "The final item becomes an independent clause."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the best modifier placement: “Supervisors should only use the phone for urgent safety problems.”",
+      "points": 1,
+      "explanation": "'Only' sits directly before the purpose it limits: urgent safety problems.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Place only beside the word or phrase you intend to restrict.",
+      "familyId": "language.modifiers.limiting_words",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only supervisors should use the phone for urgent safety problems.",
+          "distractorType": "editing_error",
+          "whyWrong": "This says no one except supervisors may use the phone, which changes the intended limitation."
+        },
+        {
+          "id": "c",
+          "text": "Supervisors only should use the phone for urgent safety problems.",
+          "distractorType": "editing_error",
+          "whyWrong": "This awkward placement can imply a contrast with other actions rather than limiting the reason for phone use."
+        },
+        {
+          "id": "b",
+          "text": "Supervisors should use the phone only for urgent safety problems."
+        },
+        {
+          "id": "d",
+          "text": "Supervisors should use only the phone for urgent safety problems.",
+          "distractorType": "editing_error",
+          "whyWrong": "This says the phone is the only tool they may use, not that phone use is limited to urgent problems."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct sentence boundary: “The form is useful {{blank}} it does not replace urgent phone calls.”",
+      "points": 1,
+      "explanation": "A comma plus 'but' correctly joins the two independent clauses and shows contrast.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Use punctuation and conjunctions together to show the relationship between complete clauses.",
+      "familyId": "language.punctuation.clauses",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma alone creates a splice between two complete clauses."
+        },
+        {
+          "id": "a",
+          "text": ", but"
+        },
+        {
+          "id": "c",
+          "text": "because",
+          "distractorType": "editing_error",
+          "whyWrong": "'Because' would say the form is useful for the reason that it does not replace calls, which is not the intended contrast."
+        },
+        {
+          "id": "d",
+          "text": ":",
+          "distractorType": "editing_error",
+          "whyWrong": "The second clause is a contrast, not an explanation introduced by a colon."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “The form contains fields that are labeled with labels for routine updates.”",
+      "points": 1,
+      "explanation": "'Labeled fields' expresses the same information directly.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "Turn repeated noun/verb phrases into one precise modifier when meaning is preserved.",
+      "familyId": "language.style.concision",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The form contains fields that are labeled with labels for routine updates.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Labeled with labels' repeats the same idea."
+        },
+        {
+          "id": "c",
+          "text": "The form has fields which have labels that label routine updates.",
+          "distractorType": "editing_error",
+          "whyWrong": "The revision repeats 'label' and remains wordy."
+        },
+        {
+          "id": "d",
+          "text": "Routine updates are in fields having labeling labels on the form.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is awkward and less clear."
+        },
+        {
+          "id": "a",
+          "text": "The form contains labeled fields for routine updates."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest standard sentence.",
+      "points": 1,
+      "explanation": "The sentence uses clear standard English and states the requirement directly.",
+      "skill": {
+        "id": "L1.4",
+        "label": "Standard vs informal usage"
+      },
+      "rule": "Formal procedures should use standard forms without slang or speech spellings.",
+      "familyId": "language.usage.standard_usage",
+      "metadata": {
+        "skillId": "L1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Supervisors must complete the form before leaving."
+        },
+        {
+          "id": "a",
+          "text": "Supervisors gotta fill out the form before they leave.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Gotta' is informal speech and not appropriate for a formal procedure."
+        },
+        {
+          "id": "c",
+          "text": "Supervisors should of completed the form before leaving.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Should of' is nonstandard for 'should have'."
+        },
+        {
+          "id": "d",
+          "text": "Supervisors be completing the form before leaving.",
+          "distractorType": "editing_error",
+          "whyWrong": "This construction is not standard for the intended instruction."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct verb: “The list of delayed trucks {{blank}} updated before each shift change.”",
+      "points": 1,
+      "explanation": "The singular subject 'list' takes the singular verb 'is'.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Ignore nouns inside an of-phrase when locating the subject.",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "are",
+          "distractorType": "editing_error",
+          "whyWrong": "'Trucks' is inside an of-phrase; the subject is singular 'list'."
+        },
+        {
+          "id": "c",
+          "text": "have been",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb phrase does not agree with 'list'."
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "d",
+          "text": "were",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural past-tense verb does not match the singular subject."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-mixed-warehouse",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.6",
+      "secondarySkillIds": [
+        "L1.5",
+        "L2.4",
+        "L1.8",
+        "L1.4",
+        "L1.2"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "workplace"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-mixed-warehouse",
+      "title": "Improving the Warehouse Handoff",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.032Z"
+  }
+}

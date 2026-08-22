@@ -1088,6 +1088,257 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-lang-agreement.json",
+    "title": "Inventory Agreement & Pronouns",
+    "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.2",
+      "secondarySkillIds": [
+        "L1.3",
+        "L1.7"
+      ],
+      "unitId": "agreement-pronouns",
+      "contentKind": "skill_drill",
+      "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-boundaries.json",
+    "title": "Renovation Sentence Repair",
+    "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [
+        "L2.4"
+      ],
+      "unitId": "sentence-boundaries-punctuation",
+      "contentKind": "skill_drill",
+      "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-capitals.json",
+    "title": "Museum Mechanics Check",
+    "description": "Edit capitalization and possessive forms according to their grammatical role.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.1",
+      "secondarySkillIds": [
+        "L2.3"
+      ],
+      "unitId": "capitalization-possessives",
+      "contentKind": "skill_drill",
+      "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-concision.json",
+    "title": "Shuttle Notice Editing",
+    "description": "Make sentences concise and choose transitions that match the exact logic.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.8",
+      "secondarySkillIds": [
+        "L1.9"
+      ],
+      "unitId": "concision-transitions",
+      "contentKind": "skill_drill",
+      "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-mixed-clinic.json",
+    "title": "Updating the Clinic Reminder System",
+    "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.2",
+      "secondarySkillIds": [
+        "L1.3",
+        "L1.8",
+        "L1.9",
+        "L2.4",
+        "L1.1"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "workplace",
+        "health"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-mixed-energy.json",
+    "title": "Reporting a School Energy Audit",
+    "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.1",
+      "secondarySkillIds": [
+        "L1.3",
+        "L2.3",
+        "L1.8",
+        "L1.9",
+        "L2.4"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "school",
+        "informational"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-mixed-garden.json",
+    "title": "Coordinating the Community Garden",
+    "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.7",
+      "secondarySkillIds": [
+        "L1.3",
+        "L2.2",
+        "L1.8",
+        "L1.9",
+        "L2.3"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "community"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-mixed-makerspace.json",
+    "title": "A Safer Makerspace Check-In",
+    "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.6",
+      "secondarySkillIds": [
+        "L1.5",
+        "L1.4",
+        "L2.3",
+        "L2.4",
+        "L2.1"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "community",
+        "workplace"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-mixed-transit.json",
+    "title": "Revising the Lost-and-Found Policy",
+    "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.7",
+      "secondarySkillIds": [
+        "L1.5",
+        "L1.4",
+        "L2.4",
+        "L1.8",
+        "L1.1"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "civics",
+        "workplace"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-mixed-warehouse.json",
+    "title": "Improving the Warehouse Handoff",
+    "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.6",
+      "secondarySkillIds": [
+        "L1.5",
+        "L2.4",
+        "L1.8",
+        "L1.4",
+        "L1.2"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "workplace"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-modifiers.json",
+    "title": "Walkway Modifier Check",
+    "description": "Place modifiers so every description attaches to the intended word or action.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.5",
+      "secondarySkillIds": [],
+      "unitId": "modifiers-sentence-logic",
+      "contentKind": "skill_drill",
+      "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-parallel.json",
+    "title": "Training Sentence Connections",
+    "description": "Build parallel structures and connect clauses according to their logical relationship.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.6",
+      "secondarySkillIds": [],
+      "unitId": "parallelism-sentence-connections",
+      "contentKind": "skill_drill",
+      "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-word-choice.json",
+    "title": "Handbook Word Choice",
+    "description": "Choose standard, precise words in a formal workplace context.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.1",
+      "secondarySkillIds": [
+        "L1.4"
+      ],
+      "unitId": "word-choice-standard-usage",
+      "contentKind": "skill_drill",
+      "learningObjective": "Choose standard, precise words in a formal workplace context.",
+      "topicLabel": "Focused Practice"
+    }
+  },
+  {
     "file": "generated/modules/set-rla-reading-transfer-civic-comment.json",
     "title": "A Wider Door for Public Comment",
     "description": "Social studies / civics · 7 questions",

@@ -1814,6 +1814,381 @@
       "status": "published",
       "rightsStatus": "original",
       "reviewer": "Arguments & Sources V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-word-choice-standard-usage-study-guide",
+      "title": "Word Choice & Standard Usage - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for word choice & standard usage.",
+      "href": "assets/resources/language-word-choice-standard-usage-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "word-choice-standard-usage",
+      "skillIds": [
+        "L1.1",
+        "L1.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-1",
+      "title": "Word Choice & Standard Usage - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for word choice & standard usage.",
+      "href": "assets/resources/language-word-choice-standard-usage-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "word-choice-standard-usage",
+      "skillIds": [
+        "L1.1",
+        "L1.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-word-choice-standard-usage-workbook-2",
+      "title": "Word Choice & Standard Usage - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for word choice & standard usage.",
+      "href": "assets/resources/language-word-choice-standard-usage-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "word-choice-standard-usage",
+      "skillIds": [
+        "L1.1",
+        "L1.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-agreement-pronouns-study-guide",
+      "title": "Agreement & Pronouns - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for agreement & pronouns.",
+      "href": "assets/resources/language-agreement-pronouns-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "agreement-pronouns",
+      "skillIds": [
+        "L1.2",
+        "L1.3",
+        "L1.7"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-agreement-pronouns-workbook-1",
+      "title": "Agreement & Pronouns - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for agreement & pronouns.",
+      "href": "assets/resources/language-agreement-pronouns-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "agreement-pronouns",
+      "skillIds": [
+        "L1.2",
+        "L1.3",
+        "L1.7"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-agreement-pronouns-workbook-2",
+      "title": "Agreement & Pronouns - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for agreement & pronouns.",
+      "href": "assets/resources/language-agreement-pronouns-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "agreement-pronouns",
+      "skillIds": [
+        "L1.2",
+        "L1.3",
+        "L1.7"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-modifiers-sentence-logic-study-guide",
+      "title": "Modifiers & Sentence Logic - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for modifiers & sentence logic.",
+      "href": "assets/resources/language-modifiers-sentence-logic-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "modifiers-sentence-logic",
+      "skillIds": [
+        "L1.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-1",
+      "title": "Modifiers & Sentence Logic - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for modifiers & sentence logic.",
+      "href": "assets/resources/language-modifiers-sentence-logic-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "modifiers-sentence-logic",
+      "skillIds": [
+        "L1.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-modifiers-sentence-logic-workbook-2",
+      "title": "Modifiers & Sentence Logic - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for modifiers & sentence logic.",
+      "href": "assets/resources/language-modifiers-sentence-logic-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "modifiers-sentence-logic",
+      "skillIds": [
+        "L1.5"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-parallelism-sentence-connections-study-guide",
+      "title": "Parallelism & Sentence Connections - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for parallelism & sentence connections.",
+      "href": "assets/resources/language-parallelism-sentence-connections-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "parallelism-sentence-connections",
+      "skillIds": [
+        "L1.6"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-1",
+      "title": "Parallelism & Sentence Connections - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for parallelism & sentence connections.",
+      "href": "assets/resources/language-parallelism-sentence-connections-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "parallelism-sentence-connections",
+      "skillIds": [
+        "L1.6"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-parallelism-sentence-connections-workbook-2",
+      "title": "Parallelism & Sentence Connections - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for parallelism & sentence connections.",
+      "href": "assets/resources/language-parallelism-sentence-connections-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "parallelism-sentence-connections",
+      "skillIds": [
+        "L1.6"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-concision-transitions-study-guide",
+      "title": "Concision & Transitions - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for concision & transitions.",
+      "href": "assets/resources/language-concision-transitions-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "concision-transitions",
+      "skillIds": [
+        "L1.8",
+        "L1.9"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-concision-transitions-workbook-1",
+      "title": "Concision & Transitions - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for concision & transitions.",
+      "href": "assets/resources/language-concision-transitions-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "concision-transitions",
+      "skillIds": [
+        "L1.8",
+        "L1.9"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-concision-transitions-workbook-2",
+      "title": "Concision & Transitions - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for concision & transitions.",
+      "href": "assets/resources/language-concision-transitions-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "concision-transitions",
+      "skillIds": [
+        "L1.8",
+        "L1.9"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-sentence-boundaries-punctuation-study-guide",
+      "title": "Sentence Boundaries & Punctuation - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for sentence boundaries & punctuation.",
+      "href": "assets/resources/language-sentence-boundaries-punctuation-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "sentence-boundaries-punctuation",
+      "skillIds": [
+        "L2.2",
+        "L2.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-1",
+      "title": "Sentence Boundaries & Punctuation - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for sentence boundaries & punctuation.",
+      "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "sentence-boundaries-punctuation",
+      "skillIds": [
+        "L2.2",
+        "L2.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-sentence-boundaries-punctuation-workbook-2",
+      "title": "Sentence Boundaries & Punctuation - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for sentence boundaries & punctuation.",
+      "href": "assets/resources/language-sentence-boundaries-punctuation-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "sentence-boundaries-punctuation",
+      "skillIds": [
+        "L2.2",
+        "L2.4"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-capitalization-possessives-study-guide",
+      "title": "Capitalization & Possessives - Study Guide",
+      "type": "study_guide",
+      "description": "Focused study guide for capitalization & possessives.",
+      "href": "assets/resources/language-capitalization-possessives-study-guide.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "capitalization-possessives",
+      "skillIds": [
+        "L2.1",
+        "L2.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-capitalization-possessives-workbook-1",
+      "title": "Capitalization & Possessives - Workbook 1",
+      "type": "worksheet",
+      "description": "Learn workbook for capitalization & possessives.",
+      "href": "assets/resources/language-capitalization-possessives-workbook-1.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "capitalization-possessives",
+      "skillIds": [
+        "L2.1",
+        "L2.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
+    },
+    {
+      "id": "res-rla-lang-v1-capitalization-possessives-workbook-2",
+      "title": "Capitalization & Possessives - Workbook 2",
+      "type": "worksheet",
+      "description": "Apply workbook for capitalization & possessives.",
+      "href": "assets/resources/language-capitalization-possessives-workbook-2.pdf",
+      "scope": "skill",
+      "domainId": "language-editing",
+      "unitId": "capitalization-possessives",
+      "skillIds": [
+        "L2.1",
+        "L2.3"
+      ],
+      "download": true,
+      "status": "published",
+      "rightsStatus": "original",
+      "reviewer": "Language & Editing V1 editorial review"
     }
   ]
 }

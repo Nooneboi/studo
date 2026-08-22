@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-mixed-energy",
+  "runtime": {
+    "id": "set-rla-lang-mixed-energy",
+    "file": "set-rla-lang-mixed-energy.json"
+  },
+  "title": "Reporting a School Energy Audit",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-mixed-energy"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct capitalization. Here 'environmental science' names the subject generally, not an official course title.",
+      "primarySkillId": "L2.1",
+      "familyId": "language.capitalization.mechanics",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The Environmental Science class reviewed bills from March.",
+          "distractorType": "editing_error",
+          "whyWrong": "A school subject used generically is usually lowercase unless it is a language or part of a formal course title."
+        },
+        {
+          "id": "c",
+          "text": "The environmental science class reviewed bills from march.",
+          "distractorType": "editing_error",
+          "whyWrong": "Months are capitalized."
+        },
+        {
+          "id": "b",
+          "text": "The environmental science class reviewed bills from March."
+        },
+        {
+          "id": "d",
+          "text": "The Environmental science class reviewed bills from March.",
+          "distractorType": "editing_error",
+          "whyWrong": "The generic subject phrase should not be partly capitalized."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The generic subject name is lowercase; the month 'March' is capitalized.",
+        "quickTip": "Capitalize proper names and calendar names, not ordinary school subjects used generically."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest pronoun revision: “The class compared the bills with the schedule because it had changed.”",
+      "primarySkillId": "L1.3",
+      "familyId": "language.pronoun.reference",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The class compared the bills with the schedule because it had changed.",
+          "distractorType": "editing_error",
+          "whyWrong": "'It' could refer to the class, bill set, or schedule."
+        },
+        {
+          "id": "c",
+          "text": "The class compared them with it because it changed.",
+          "distractorType": "editing_error",
+          "whyWrong": "The pronouns do not identify the intended nouns clearly."
+        },
+        {
+          "id": "d",
+          "text": "It changed, so it compared the bills with the schedule.",
+          "distractorType": "editing_error",
+          "whyWrong": "Both instances of 'it' lack a clear antecedent."
+        },
+        {
+          "id": "b",
+          "text": "Because the schedule had changed, the class compared it with the bills."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The revision names the changed item, 'schedule,' and keeps the later pronoun reference clear.",
+        "quickTip": "When a pronoun could point to multiple nouns, name the intended noun."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct possessive: “The {{blank}} report separates observations from conclusions.”",
+      "primarySkillId": "L2.3",
+      "familyId": "language.possessives.apostrophes",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "student's",
+          "distractorType": "editing_error",
+          "whyWrong": "This shows possession by one student rather than the group."
+        },
+        {
+          "id": "a",
+          "text": "students'"
+        },
+        {
+          "id": "c",
+          "text": "students",
+          "distractorType": "editing_error",
+          "whyWrong": "The plural noun does not show possession of the report."
+        },
+        {
+          "id": "d",
+          "text": "students's",
+          "distractorType": "editing_error",
+          "whyWrong": "A regular plural ending in s takes only an apostrophe for possession."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The report belongs to multiple students, so the plural possessive is students'.",
+        "quickTip": "For a regular plural ending in s, add only an apostrophe."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “The report makes a recommendation that the school should conduct a two-month trial.”",
+      "primarySkillId": "L1.8",
+      "familyId": "language.style.concision",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The report recommends a two-month trial."
+        },
+        {
+          "id": "b",
+          "text": "The report makes a recommendation that the school should conduct a two-month trial.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Makes a recommendation that' can be replaced by the direct verb 'recommends'."
+        },
+        {
+          "id": "c",
+          "text": "The report gives a recommendation in regard to the conducting of a two-month trial.",
+          "distractorType": "editing_error",
+          "whyWrong": "This turns a direct action into several abstract noun phrases."
+        },
+        {
+          "id": "d",
+          "text": "A recommendation is made by the report for the purpose of a two-month trial.",
+          "distractorType": "editing_error",
+          "whyWrong": "The passive wording is longer and less direct."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The direct verb 'recommends' preserves the meaning in far fewer words.",
+        "quickTip": "Prefer strong direct verbs over noun-heavy phrases when no nuance is lost."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "The class observed lights left on; {{blank}}, the billing records cannot show how much those lights alone cost.",
+      "primarySkillId": "L1.9",
+      "familyId": "language.transitions.logic",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "therefore",
+          "distractorType": "editing_error",
+          "whyWrong": "The limitation is not a result proving a cost figure."
+        },
+        {
+          "id": "c",
+          "text": "for example",
+          "distractorType": "editing_error",
+          "whyWrong": "The billing limitation is not an example of observing lights left on."
+        },
+        {
+          "id": "a",
+          "text": "however"
+        },
+        {
+          "id": "d",
+          "text": "similarly",
+          "distractorType": "editing_error",
+          "whyWrong": "The two statements have different roles; the second limits the first."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "'However' introduces the important limitation on what the observation can establish.",
+        "quickTip": "Use contrast transitions to signal a limit, exception, or difference."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correctly punctuated sentence.",
+      "primarySkillId": "L2.4",
+      "familyId": "language.punctuation.clauses",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Several factors can affect: the bill, weather, events, and equipment changes.",
+          "distractorType": "editing_error",
+          "whyWrong": "The colon incorrectly interrupts the verb and its object."
+        },
+        {
+          "id": "c",
+          "text": "Several factors can affect the bill; weather, events, and equipment changes.",
+          "distractorType": "editing_error",
+          "whyWrong": "A semicolon does not introduce a simple list fragment."
+        },
+        {
+          "id": "d",
+          "text": "Several factors can affect the bill, weather, events, and equipment changes.",
+          "distractorType": "editing_error",
+          "whyWrong": "The comma does not clearly signal that the following items are examples of the factors."
+        },
+        {
+          "id": "a",
+          "text": "Several factors can affect the bill: weather, events, and equipment changes."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The complete clause introduces a list, so the colon is appropriate.",
+        "quickTip": "Place a colon after a complete statement, not between a verb and its object."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L2.1",
+    "secondarySkillIds": [
+      "L1.3",
+      "L2.3",
+      "L1.8",
+      "L1.9",
+      "L2.4"
+    ],
+    "contentKind": "editing_practice",
+    "practiceTags": [
+      "editing_passage",
+      "school",
+      "informational"
+    ],
+    "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+    "topicLabel": "Mixed Editing Practice"
+  }
+}

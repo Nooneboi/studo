@@ -1,0 +1,474 @@
+{
+  "id": "set-rla-lang-boundaries",
+  "title": "Renovation Sentence Repair",
+  "description": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "A neighborhood community center will close one meeting room for renovation next week. Staff members are editing a memo that explains the temporary room changes, the construction schedule, and the location of evening programs. Because the memo contains several dates and conditions, sentence boundaries must be especially clear.\n\nThe first draft includes a few fragments created when dependent clauses were separated from the sentences they belong to. It also contains run-ons in which two complete ideas were joined only with a comma. The editor checks each sentence for a subject and a complete verb, then decides whether related complete clauses should be separated with a period, joined with a semicolon, or connected with a comma and an appropriate coordinating conjunction.\n\nPunctuation inside sentences also matters. Nonessential information may need commas so readers can see the core sentence. A colon can introduce a list after a complete clause, but it should not be inserted directly after a verb when the sentence flows naturally into the list. The memo should feel simple, yet the punctuation must show exactly where one thought ends and the next begins.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the complete sentence.",
+      "points": 1,
+      "explanation": "The sentence has a subject, a complete verb, and a complete thought.",
+      "skill": {
+        "id": "L2.2",
+        "label": "Fragments, run-ons & fused sentences"
+      },
+      "rule": "If a sentence starts with because/while/after, check whether a main clause completes it.",
+      "familyId": "language.boundaries.fragments_runons",
+      "metadata": {
+        "skillId": "L2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the east room will be closed for painting.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is a dependent clause and cannot stand alone."
+        },
+        {
+          "id": "b",
+          "text": "The east room will be closed for painting next Tuesday."
+        },
+        {
+          "id": "c",
+          "text": "While crews replace the ceiling panels.",
+          "distractorType": "editing_error",
+          "whyWrong": "The clause begins with 'while' and lacks a main clause."
+        },
+        {
+          "id": "d",
+          "text": "After the evening programs move upstairs.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is an introductory dependent phrase, not a complete sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “The room closes Tuesday, evening classes move upstairs.”",
+      "points": 1,
+      "explanation": "A semicolon correctly joins two closely related independent clauses.",
+      "skill": {
+        "id": "L2.2",
+        "label": "Fragments, run-ons & fused sentences"
+      },
+      "rule": "Two complete clauses need a period, semicolon, or comma plus a coordinating conjunction.",
+      "familyId": "language.boundaries.fragments_runons",
+      "metadata": {
+        "skillId": "L2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The room closes Tuesday, evening classes move upstairs.",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma alone cannot join these two independent clauses."
+        },
+        {
+          "id": "c",
+          "text": "The room closes Tuesday because. Evening classes move upstairs.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Because' is incomplete and creates a fragment."
+        },
+        {
+          "id": "d",
+          "text": "The room closes Tuesday evening classes move upstairs.",
+          "distractorType": "editing_error",
+          "whyWrong": "Without punctuation or a connector, the sentence is fused."
+        },
+        {
+          "id": "a",
+          "text": "The room closes Tuesday; evening classes move upstairs."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct punctuation: “The west room, which normally hosts art classes, {{blank}} remain open.”",
+      "points": 1,
+      "explanation": "The nonessential clause is already enclosed by commas, and no punctuation belongs between the subject and 'will remain'.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Remove the nonessential clause mentally; the core sentence should still read smoothly.",
+      "familyId": "language.punctuation.clauses",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "will"
+        },
+        {
+          "id": "b",
+          "text": ", will",
+          "distractorType": "editing_error",
+          "whyWrong": "The opening comma already begins the nonessential clause; an extra comma before the verb would incorrectly separate subject and verb."
+        },
+        {
+          "id": "c",
+          "text": "; will",
+          "distractorType": "editing_error",
+          "whyWrong": "A semicolon cannot separate the subject from its verb."
+        },
+        {
+          "id": "d",
+          "text": ": will",
+          "distractorType": "editing_error",
+          "whyWrong": "A colon cannot separate the subject from its verb."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “Staff will post signs at three locations the lobby, elevator, and west entrance.”",
+      "points": 1,
+      "explanation": "The complete clause ends with 'locations,' and the colon correctly introduces the list.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Use a colon after a complete clause that announces what follows.",
+      "familyId": "language.punctuation.colon",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Staff will post signs at: three locations the lobby, elevator, and west entrance.",
+          "distractorType": "editing_error",
+          "whyWrong": "A colon should not interrupt the phrase 'at three locations'."
+        },
+        {
+          "id": "c",
+          "text": "Staff will post signs: at three locations, the lobby, elevator, and west entrance.",
+          "distractorType": "editing_error",
+          "whyWrong": "The wording before the colon does not introduce the list cleanly."
+        },
+        {
+          "id": "a",
+          "text": "Staff will post signs at three locations: the lobby, elevator, and west entrance."
+        },
+        {
+          "id": "d",
+          "text": "Staff will post signs at three locations; the lobby, elevator, and west entrance.",
+          "distractorType": "editing_error",
+          "whyWrong": "A semicolon should not introduce a simple list fragment."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Which revision fixes the comma splice? “The renovation starts Monday, it should finish by Friday.”",
+      "points": 1,
+      "explanation": "A comma plus 'and' correctly joins the two independent clauses.",
+      "skill": {
+        "id": "L2.2",
+        "label": "Fragments, run-ons & fused sentences"
+      },
+      "rule": "If both sides can stand alone, a comma needs a coordinating conjunction to join them.",
+      "familyId": "language.boundaries.fragments_runons",
+      "metadata": {
+        "skillId": "L2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The renovation starts Monday, it should finish by Friday.",
+          "distractorType": "editing_error",
+          "whyWrong": "The comma splice remains unchanged."
+        },
+        {
+          "id": "c",
+          "text": "The renovation starts Monday because, it should finish by Friday.",
+          "distractorType": "editing_error",
+          "whyWrong": "The connector is incomplete and the comma is misplaced."
+        },
+        {
+          "id": "d",
+          "text": "The renovation starts Monday it should finish by Friday.",
+          "distractorType": "editing_error",
+          "whyWrong": "Removing the comma creates a fused sentence."
+        },
+        {
+          "id": "a",
+          "text": "The renovation starts Monday, and it should finish by Friday."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correctly punctuated sentence.",
+      "points": 1,
+      "explanation": "The essential that-clause follows 'said' without punctuation.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Do not insert punctuation just because a sentence feels long; identify the clause relationship first.",
+      "familyId": "language.punctuation.clauses",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The contractor said, that the hallway would stay open.",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma should not separate 'said' from the essential that-clause."
+        },
+        {
+          "id": "b",
+          "text": "The contractor said that the hallway would stay open."
+        },
+        {
+          "id": "c",
+          "text": "The contractor said; that the hallway would stay open.",
+          "distractorType": "editing_error",
+          "whyWrong": "A semicolon cannot introduce a dependent that-clause."
+        },
+        {
+          "id": "d",
+          "text": "The contractor said: that the hallway would stay open.",
+          "distractorType": "editing_error",
+          "whyWrong": "A colon is unnecessary before the that-clause."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “Although the gym remains open. Some programs will move outside.”",
+      "points": 1,
+      "explanation": "The dependent contrast clause is correctly attached to the main clause.",
+      "skill": {
+        "id": "L2.2",
+        "label": "Fragments, run-ons & fused sentences"
+      },
+      "rule": "Attach an although-clause to the complete idea it modifies.",
+      "familyId": "language.boundaries.fragments_runons",
+      "metadata": {
+        "skillId": "L2.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Although the gym remains open, some programs will move outside."
+        },
+        {
+          "id": "b",
+          "text": "Although the gym remains open. Some programs will move outside.",
+          "distractorType": "editing_error",
+          "whyWrong": "The dependent clause beginning with 'although' is left as a fragment."
+        },
+        {
+          "id": "c",
+          "text": "Although. The gym remains open, some programs will move outside.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Although' is stranded and the relationship is broken."
+        },
+        {
+          "id": "d",
+          "text": "The gym remains open, although. Some programs will move outside.",
+          "distractorType": "editing_error",
+          "whyWrong": "The connector is incomplete and creates another fragment."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Which punctuation best completes the sentence? “One room will remain available {{blank}} the small conference room on the first floor.”",
+      "points": 1,
+      "explanation": "The complete clause introduces the one available room, so a colon cleanly presents the identifying phrase.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "A colon can introduce an explanation or example after a complete clause.",
+      "familyId": "language.punctuation.colon",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ";",
+          "distractorType": "editing_error",
+          "whyWrong": "The words after the blank are not an independent clause, so a semicolon is incorrect."
+        },
+        {
+          "id": "c",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma does not clearly introduce the identifying example after the complete clause."
+        },
+        {
+          "id": "a",
+          "text": ":"
+        },
+        {
+          "id": "d",
+          "text": ".",
+          "distractorType": "editing_error",
+          "whyWrong": "A period would leave 'the small conference room...' as a fragment."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-boundaries",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [
+        "L2.4"
+      ],
+      "unitId": "sentence-boundaries-punctuation",
+      "contentKind": "skill_drill",
+      "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-boundaries",
+      "title": "Community Center Renovation Memo",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.030Z"
+  }
+}

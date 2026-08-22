@@ -1,0 +1,374 @@
+{
+  "id": "set-rla-lang-mixed-clinic",
+  "title": "Updating the Clinic Reminder System",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "Harborview Clinic plans to revise the reminder messages it sends before appointments. Staff members began reviewing the system after noticing that missed appointments were especially common on Monday mornings. The clinic currently sends one text message at 6 p.m. the evening before each visit. Patients who do not use text messaging receive an automated phone call at the same time.\n\nA three-week pilot tested an additional reminder on Friday afternoon for patients with Monday appointments. During the pilot, the number of missed Monday visits fell from an average of twenty-two per week to fifteen. Clinic managers caution that the pilot was short and that several other changes occurred at the same time. For example, reception staff also began confirming transportation needs for some older patients.\n\nThe clinic will continue the pilot for eight more weeks before deciding whether to use the extra reminder permanently. The scheduling team will track missed visits, canceled appointments, and the number of patients who ask to stop receiving messages. Staff members will also record whether patients report that the reminders are useful or excessive.\n\nThe revised public notice must explain the pilot without suggesting that the extra message has already been proven to solve the problem. It should also tell patients how to update their contact information and how to choose between text and phone reminders. Because the notice may be read quickly, the editor wants short sentences, clear transitions, and pronouns that refer to only one possible noun. The final version should sound professional while still being easy for patients to understand.\n\nThe communications team is also comparing the public notice with a shorter message used by a nearby clinic. Rather than copying that message, the team is studying which details patients need before they can act. Staff agreed that appointment dates, contact choices, and opt-out instructions should remain easy to locate. They also decided that statistics from the pilot belong in an internal report, not in a reminder that patients must scan quickly.\n\nBefore the notice is released, two staff members who did not help draft it will read it once without asking questions. They will mark any sentence that makes them stop to identify a pronoun, reread a condition, or guess whether a step is required. The editor will use those marks to make the final wording clearer without changing the clinic's actual policy.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct form: “The scheduling team {{blank}} missed visits each week.”",
+      "points": 1,
+      "explanation": "'Team' is singular in this sentence and takes 'tracks'.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Find the true subject before choosing the verb.",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "track",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular subject 'team' is treated as one unit here."
+        },
+        {
+          "id": "b",
+          "text": "tracks"
+        },
+        {
+          "id": "c",
+          "text": "have tracked",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes the intended present-time statement and uses plural agreement."
+        },
+        {
+          "id": "d",
+          "text": "were tracking",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes both tense and agreement."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest revision: “When the clinic updated the reminder and the schedule, it confused some patients.”",
+      "points": 1,
+      "explanation": "The revision names the action that caused confusion and removes the ambiguous pronoun.",
+      "skill": {
+        "id": "L1.3",
+        "label": "Pronoun agreement, reference & case"
+      },
+      "rule": "If several nouns could be the antecedent, rewrite instead of forcing a pronoun.",
+      "familyId": "language.pronoun.reference",
+      "metadata": {
+        "skillId": "L1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "When the clinic updated the reminder and the schedule, it confused some patients.",
+          "distractorType": "editing_error",
+          "whyWrong": "'It' could refer to the clinic, reminder, schedule, or change."
+        },
+        {
+          "id": "c",
+          "text": "When it updated them, it confused some patients.",
+          "distractorType": "editing_error",
+          "whyWrong": "The pronouns make the reference less clear."
+        },
+        {
+          "id": "d",
+          "text": "The clinic updated it and the schedule, which confused it.",
+          "distractorType": "editing_error",
+          "whyWrong": "The pronouns remain ambiguous."
+        },
+        {
+          "id": "b",
+          "text": "Updating both the reminder and the schedule confused some patients."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “The clinic will continue the pilot for a period of eight additional weeks.”",
+      "points": 1,
+      "explanation": "The revision preserves the exact duration in fewer words.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "Cut repeated or inflated phrases while preserving dates, conditions, and limits.",
+      "familyId": "language.style.concision",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The clinic will continue the pilot for eight more weeks."
+        },
+        {
+          "id": "b",
+          "text": "The clinic will continue the pilot for a period of eight additional weeks.",
+          "distractorType": "editing_error",
+          "whyWrong": "'For a period of' and 'additional' add length without needed meaning."
+        },
+        {
+          "id": "c",
+          "text": "The clinic will continue onward with the pilot for a time period of eight more weeks.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Continue onward' and 'time period' are redundant."
+        },
+        {
+          "id": "d",
+          "text": "For the purpose of continuation, the clinic will continue the pilot eight additional weeks.",
+          "distractorType": "editing_error",
+          "whyWrong": "This adds abstract wording and repeats 'continue'."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "The pilot showed fewer missed visits; {{blank}}, managers say the test was too short for a firm conclusion.",
+      "points": 1,
+      "explanation": "'However' correctly introduces a limitation on the encouraging result.",
+      "skill": {
+        "id": "L1.9",
+        "label": "Transitions for logic & clarity"
+      },
+      "rule": "Use a contrast transition when the second idea qualifies the first.",
+      "familyId": "language.transitions.logic",
+      "metadata": {
+        "skillId": "L1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "therefore",
+          "distractorType": "editing_error",
+          "whyWrong": "The caution is not a result that follows from fewer missed visits."
+        },
+        {
+          "id": "c",
+          "text": "for example",
+          "distractorType": "editing_error",
+          "whyWrong": "The managers' caution is not an example of fewer missed visits."
+        },
+        {
+          "id": "b",
+          "text": "however"
+        },
+        {
+          "id": "d",
+          "text": "similarly",
+          "distractorType": "editing_error",
+          "whyWrong": "The second idea limits the first rather than repeating a similar point."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct punctuation: “The clinic tracks three outcomes {{blank}} missed visits, cancellations, and opt-outs.”",
+      "points": 1,
+      "explanation": "The complete clause announces a list, so a colon correctly introduces it.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Use a colon after a complete clause that introduces examples or a list.",
+      "familyId": "language.punctuation.colon",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ";",
+          "distractorType": "editing_error",
+          "whyWrong": "The words after the blank form a list, not an independent clause."
+        },
+        {
+          "id": "c",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A colon more clearly introduces the announced list after the complete clause."
+        },
+        {
+          "id": "d",
+          "text": ".",
+          "distractorType": "editing_error",
+          "whyWrong": "A period would leave the list as a fragment."
+        },
+        {
+          "id": "a",
+          "text": ":"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct form: “Patients can update {{blank}} contact information online.”",
+      "points": 1,
+      "explanation": "'Their' shows possession before the noun phrase 'contact information'.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Check what job the word performs in the sentence rather than relying on sound.",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "there",
+          "distractorType": "editing_error",
+          "whyWrong": "'There' refers to location."
+        },
+        {
+          "id": "c",
+          "text": "their"
+        },
+        {
+          "id": "b",
+          "text": "they're",
+          "distractorType": "editing_error",
+          "whyWrong": "'They're' means 'they are'."
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "editing_error",
+          "whyWrong": "'Theirs' cannot directly modify the noun 'contact information'."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-mixed-clinic",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.2",
+      "secondarySkillIds": [
+        "L1.3",
+        "L1.8",
+        "L1.9",
+        "L2.4",
+        "L1.1"
+      ],
+      "contentKind": "editing_practice",
+      "practiceTags": [
+        "editing_passage",
+        "workplace",
+        "health"
+      ],
+      "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+      "topicLabel": "Mixed Editing Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-mixed-clinic",
+      "title": "Updating the Clinic Reminder System",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.031Z"
+  }
+}

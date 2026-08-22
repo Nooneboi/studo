@@ -20,6 +20,9 @@ async function init() {
   const argumentPractice = track.id === "arguments"
     ? (curriculum.argumentPractice || []).filter((set) => !set.curriculum?.domain || set.curriculum.domain === domain.label)
     : [];
+  const languagePractice = track.id === "language"
+    ? (curriculum.languagePractice || []).filter((set) => !set.curriculum?.domain || set.curriculum.domain === domain.label)
+    : [];
   mount.innerHTML = `
     <header class="simple-domain-hero domain-hero-with-resources">
       <div class="domain-hero-copy">
@@ -46,6 +49,13 @@ async function init() {
           <h2 class="simple-skill-group-title">Mixed Source Practice</h2>
           <div class="simple-skill-stack">
             ${argumentPractice.map((set) => renderArgumentPractice(set, track, domain)).join("")}
+          </div>
+        </section>` : ""}
+      ${languagePractice.length ? `
+        <section class="simple-skill-group tone-teal">
+          <h2 class="simple-skill-group-title">Mixed Editing Practice</h2>
+          <div class="simple-skill-stack">
+            ${languagePractice.map((set) => renderArgumentPractice(set, track, domain)).join("")}
           </div>
         </section>` : ""}
     </div>`;

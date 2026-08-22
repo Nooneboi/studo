@@ -1,0 +1,472 @@
+{
+  "id": "set-rla-lang-modifiers",
+  "title": "Walkway Modifier Check",
+  "description": "Place modifiers so every description attaches to the intended word or action.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "A facilities assistant is revising a short report about a slippery walkway outside an office building. The first draft contains several sentences in which descriptive phrases are placed too far from the words they are meant to modify. In a safety report, that problem can create more than awkward style: it can make the reader misunderstand who observed a condition or what was actually damaged.\n\nThe assistant begins by checking introductory phrases. If a sentence starts with “After inspecting the walkway,” the noun immediately after the comma should be the person who performed the inspection. A walkway cannot inspect itself. The assistant also checks limiting words such as “only,” because moving them can change meaning. “Only staff used the west entrance” does not mean the same thing as “Staff used only the west entrance.”\n\nFinally, the assistant reviews long noun phrases and descriptive clauses. Details should sit close enough to their targets that a reader does not attach them to the wrong noun. When several revisions are grammatically possible, the best one is the version that makes the intended relationship unmistakable without adding unnecessary words.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “After inspecting the walkway, several loose tiles were reported by Mina.”",
+      "points": 1,
+      "explanation": "Mina is placed directly after the introductory phrase, so the sentence clearly identifies who inspected the walkway.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "After an introductory modifier, name the person or thing that actually performs the action.",
+      "familyId": "language.modifiers.placement",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "After inspecting the walkway, several loose tiles were reported by Mina.",
+          "distractorType": "editing_error",
+          "whyWrong": "The opening phrase illogically suggests that the tiles performed the inspection."
+        },
+        {
+          "id": "c",
+          "text": "Several loose tiles, after inspecting the walkway, were reported by Mina.",
+          "distractorType": "editing_error",
+          "whyWrong": "This still makes the tiles appear to perform the inspection."
+        },
+        {
+          "id": "d",
+          "text": "Mina reported, after inspecting, the walkway several loose tiles.",
+          "distractorType": "editing_error",
+          "whyWrong": "The word order is awkward and obscures what was inspected."
+        },
+        {
+          "id": "b",
+          "text": "After inspecting the walkway, Mina reported several loose tiles."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Which sentence means that staff used the west entrance and no other entrance?",
+      "points": 1,
+      "explanation": "Placing 'only' directly before 'the west entrance' limits the object and gives the intended meaning.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Put limiting words such as only as close as possible to the word or phrase they limit.",
+      "familyId": "language.modifiers.limiting_words",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Only staff used the west entrance.",
+          "distractorType": "editing_error",
+          "whyWrong": "This means no one except staff used that entrance; it does not limit which entrance staff used."
+        },
+        {
+          "id": "c",
+          "text": "Staff used only the west entrance."
+        },
+        {
+          "id": "b",
+          "text": "Staff only used the west entrance.",
+          "distractorType": "editing_error",
+          "whyWrong": "In careful editing, placing 'only' before the verb can ambiguously limit the action rather than the object."
+        },
+        {
+          "id": "d",
+          "text": "Staff used the west only entrance.",
+          "distractorType": "editing_error",
+          "whyWrong": "This incorrectly suggests the west entrance is the only entrance that exists."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest revision: “The crew replaced the railing near the stairs that was rusted.”",
+      "points": 1,
+      "explanation": "'Rusted' sits directly before 'railing,' the noun it describes, while 'near the stairs' clearly identifies the railing's location.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Keep descriptive clauses beside the noun they modify.",
+      "familyId": "language.modifiers.placement",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The crew replaced the rusted railing near the stairs."
+        },
+        {
+          "id": "b",
+          "text": "Near the stairs that was rusted, the crew replaced the railing.",
+          "distractorType": "editing_error",
+          "whyWrong": "This makes the stairs appear to be rusted and also creates an agreement problem."
+        },
+        {
+          "id": "c",
+          "text": "The crew near the stairs replaced the railing that was rusted.",
+          "distractorType": "editing_error",
+          "whyWrong": "This shifts 'near the stairs' to describe the crew rather than the railing location."
+        },
+        {
+          "id": "d",
+          "text": "The rusted crew replaced the railing near the stairs.",
+          "distractorType": "editing_error",
+          "whyWrong": "This absurdly makes 'rusted' describe the crew."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Which revision fixes the dangling modifier? “While walking to the entrance, the broken light was easy to notice.”",
+      "points": 1,
+      "explanation": "The subject 'I' is the person who was walking, so the opening phrase now has a logical target.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Ask who is doing the action in the opening phrase; name that subject immediately after the comma.",
+      "familyId": "language.modifiers.dangling",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "While walking to the entrance, the broken light was easy to notice.",
+          "distractorType": "editing_error",
+          "whyWrong": "The sentence suggests the broken light was walking."
+        },
+        {
+          "id": "c",
+          "text": "The broken light was walking to the entrance and easy to notice.",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes the meaning and creates an illogical subject."
+        },
+        {
+          "id": "b",
+          "text": "While walking to the entrance, I easily noticed the broken light."
+        },
+        {
+          "id": "d",
+          "text": "Walking to the entrance was the broken light that I noticed.",
+          "distractorType": "editing_error",
+          "whyWrong": "The sentence remains illogical and awkward."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest sentence.",
+      "points": 1,
+      "explanation": "'Nearly' directly modifies 'every report,' showing that most but not all reports were reviewed.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Place degree and limiting modifiers beside the quantity or action they actually limit.",
+      "familyId": "language.modifiers.placement",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The supervisor nearly reviewed every report before noon.",
+          "distractorType": "editing_error",
+          "whyWrong": "This can mean the supervisor almost reviewed them but did not actually do so."
+        },
+        {
+          "id": "c",
+          "text": "Nearly the supervisor reviewed every report before noon.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Nearly' is placed where it cannot logically modify the intended quantity."
+        },
+        {
+          "id": "d",
+          "text": "The supervisor reviewed every nearly report before noon.",
+          "distractorType": "editing_error",
+          "whyWrong": "The modifier is in an ungrammatical position."
+        },
+        {
+          "id": "b",
+          "text": "The supervisor reviewed nearly every report before noon."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Which revision makes the intended meaning clearest? “We saw a damaged sign beside the loading dock with a flashlight.”",
+      "points": 1,
+      "explanation": "Moving 'with a flashlight' to the beginning clearly shows how 'we' saw the sign.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "When a phrase could attach to two nouns, move it next to the word or action it truly describes.",
+      "familyId": "language.modifiers.placement",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "With a flashlight, we saw a damaged sign beside the loading dock."
+        },
+        {
+          "id": "b",
+          "text": "We saw with a damaged sign a loading dock beside the flashlight.",
+          "distractorType": "editing_error",
+          "whyWrong": "The revision destroys the intended relationships among the details."
+        },
+        {
+          "id": "c",
+          "text": "We saw a damaged sign with a flashlight beside the loading dock.",
+          "distractorType": "editing_error",
+          "whyWrong": "This can make it sound as though the sign had the flashlight."
+        },
+        {
+          "id": "d",
+          "text": "Beside the flashlight, the loading dock saw a damaged sign.",
+          "distractorType": "editing_error",
+          "whyWrong": "The loading dock cannot perform the action of seeing."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “Covered in rainwater, the custodian placed a warning cone beside the puddle.”",
+      "points": 1,
+      "explanation": "The descriptive clause now clearly explains that the puddle covered part of the walkway.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Check that every descriptive phrase has a logical noun to modify.",
+      "familyId": "language.modifiers.placement",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Covered in rainwater, the custodian placed a warning cone beside the puddle.",
+          "distractorType": "editing_error",
+          "whyWrong": "This says the custodian was covered in rainwater, which is not the intended meaning."
+        },
+        {
+          "id": "b",
+          "text": "The custodian placed a warning cone beside the puddle that covered part of the walkway."
+        },
+        {
+          "id": "c",
+          "text": "The puddle placed a warning cone beside the custodian.",
+          "distractorType": "editing_error",
+          "whyWrong": "This reverses the logical actor and action."
+        },
+        {
+          "id": "d",
+          "text": "A warning cone, covered in rainwater, placed the custodian beside the puddle.",
+          "distractorType": "editing_error",
+          "whyWrong": "The cone cannot place the custodian."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Which sentence avoids a misplaced modifier?",
+      "points": 1,
+      "explanation": "The time phrase is separated from the location phrase, making each modifier's job clear.",
+      "skill": {
+        "id": "L1.5",
+        "label": "Modifiers & logical word order"
+      },
+      "rule": "Place time, location, and descriptive phrases where their targets are unmistakable.",
+      "familyId": "language.modifiers.placement",
+      "metadata": {
+        "skillId": "L1.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The team found a cracked tile during the inspection near the doorway.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Near the doorway' could attach to the inspection rather than clearly to the tile."
+        },
+        {
+          "id": "c",
+          "text": "The cracked team found a tile near the doorway during the inspection.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Cracked' incorrectly modifies 'team'."
+        },
+        {
+          "id": "b",
+          "text": "During the inspection, the team found a cracked tile near the doorway."
+        },
+        {
+          "id": "d",
+          "text": "Near the doorway found the team a cracked tile.",
+          "distractorType": "editing_error",
+          "whyWrong": "The word order is not standard English."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-modifiers",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.5",
+      "secondarySkillIds": [],
+      "unitId": "modifiers-sentence-logic",
+      "contentKind": "skill_drill",
+      "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-modifiers",
+      "title": "A Walkway Inspection Note",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.032Z"
+  }
+}

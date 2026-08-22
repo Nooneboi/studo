@@ -140,7 +140,7 @@ function validateSelectedQuestion({ issues, file, location, question, status = '
     else if (optionIds.has(option.id)) add(issues, 'error', 'OPTION_ID_DUPLICATE', `${location} repeats option id ${option.id}.`, file, location);
     optionIds.add(option.id);
 
-    const normalized = normalizeText(option.text);
+    const normalized = String(option.text || '').trim().replace(/\s+/g, ' ');
     if (normalized && optionTexts.has(normalized)) add(issues, 'error', 'OPTION_TEXT_DUPLICATE', `${location} repeats answer-option text.`, file, location);
     if (normalized) optionTexts.add(normalized);
   }

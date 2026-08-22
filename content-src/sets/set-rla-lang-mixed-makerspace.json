@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-mixed-makerspace",
+  "runtime": {
+    "id": "set-rla-lang-mixed-makerspace",
+    "file": "set-rla-lang-mixed-makerspace.json"
+  },
+  "title": "A Safer Makerspace Check-In",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-mixed-makerspace"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the parallel revision: “Users must identify the stop button, describing one safety step, and show the protective equipment.”",
+      "primarySkillId": "L1.6",
+      "familyId": "language.parallelism.structure",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Users must identifying the stop button, describe one safety step, and showing the protective equipment.",
+          "distractorType": "editing_error",
+          "whyWrong": "The verb forms do not match."
+        },
+        {
+          "id": "c",
+          "text": "Users must identify the stop button, a safety step description, and show the protective equipment.",
+          "distractorType": "editing_error",
+          "whyWrong": "The middle item is a noun phrase rather than a verb."
+        },
+        {
+          "id": "a",
+          "text": "Users must identify the stop button, describe one safety step, and show the protective equipment."
+        },
+        {
+          "id": "d",
+          "text": "Users must identify the stop button, describing one safety step, and the protective equipment is shown.",
+          "distractorType": "editing_error",
+          "whyWrong": "The list mixes verb forms and voice."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "All three actions use parallel base verbs after 'must'.",
+        "quickTip": "Keep items with the same function in the same grammatical form."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “After watching the video, the equipment check was completed by each visitor.”",
+      "primarySkillId": "L1.5",
+      "familyId": "language.modifiers.dangling",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "After watching the video, each visitor completed the equipment check."
+        },
+        {
+          "id": "b",
+          "text": "After watching the video, the equipment check was completed by each visitor.",
+          "distractorType": "editing_error",
+          "whyWrong": "The opening phrase makes the check appear to watch the video."
+        },
+        {
+          "id": "c",
+          "text": "The equipment check, after watching the video, completed each visitor.",
+          "distractorType": "editing_error",
+          "whyWrong": "The check cannot perform the action of completing visitors."
+        },
+        {
+          "id": "d",
+          "text": "Watching the video, each equipment check was completed.",
+          "distractorType": "editing_error",
+          "whyWrong": "The modifier still lacks the person who watched the video."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "'Each visitor' now directly follows the phrase describing who watched the video.",
+        "quickTip": "Make the noun after an introductory modifier the logical doer of the action."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct standard usage: “Returning users do not {{blank}} to repeat the full check every visit.”",
+      "primarySkillId": "L1.4",
+      "familyId": "language.usage.standard_usage",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "got",
+          "distractorType": "editing_error",
+          "whyWrong": "'Do not got to' is not standard English."
+        },
+        {
+          "id": "c",
+          "text": "gotta",
+          "distractorType": "editing_error",
+          "whyWrong": "'Gotta' is informal speech and does not fit the formal instructions."
+        },
+        {
+          "id": "d",
+          "text": "having",
+          "distractorType": "editing_error",
+          "whyWrong": "After 'do not,' use the base verb, not the -ing form."
+        },
+        {
+          "id": "a",
+          "text": "have"
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "'Do not have to' is the standard construction for lack of requirement.",
+        "quickTip": "In formal editing, replace speech forms with clear standard constructions."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct possessive: “The {{blank}} instructions are posted beside each machine.”",
+      "primarySkillId": "L2.3",
+      "familyId": "language.possessives.apostrophes",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "machines",
+          "distractorType": "editing_error",
+          "whyWrong": "This is plural and does not show that the instructions belong to one machine."
+        },
+        {
+          "id": "a",
+          "text": "machine's"
+        },
+        {
+          "id": "c",
+          "text": "machines'",
+          "distractorType": "editing_error",
+          "whyWrong": "This shows possession by multiple machines, but the sentence refers to each machine individually."
+        },
+        {
+          "id": "d",
+          "text": "machine's'",
+          "distractorType": "editing_error",
+          "whyWrong": "A singular possessive does not take a second apostrophe."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "For one machine, the possessive form is machine's.",
+        "quickTip": "Decide singular/plural first, then form the possessive."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the sentence boundary that correctly joins the two complete ideas: “Check-in takes longer now {{blank}} staff are still collecting feedback.”",
+      "primarySkillId": "L2.4",
+      "familyId": "language.punctuation.clauses",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A comma alone creates a splice between two independent clauses."
+        },
+        {
+          "id": "c",
+          "text": " and",
+          "distractorType": "editing_error",
+          "whyWrong": "When 'and' joins two independent clauses, it needs a comma before it here."
+        },
+        {
+          "id": "a",
+          "text": ", and"
+        },
+        {
+          "id": "d",
+          "text": ":",
+          "distractorType": "editing_error",
+          "whyWrong": "The second clause is not a list or explanation introduced by the first."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "A comma plus 'and' joins the two complete, related statements and preserves the additive relationship.",
+        "quickTip": "Use punctuation together with a connector when the logic between independent clauses matters."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct capitalization.",
+      "primarySkillId": "L2.1",
+      "familyId": "language.capitalization.mechanics",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The downtown library tested the process in April."
+        },
+        {
+          "id": "a",
+          "text": "The Downtown Library tested the process in April.",
+          "distractorType": "editing_error",
+          "whyWrong": "If 'downtown library' is a generic description rather than the institution's formal name, it should remain lowercase."
+        },
+        {
+          "id": "c",
+          "text": "The downtown library tested the process in april.",
+          "distractorType": "editing_error",
+          "whyWrong": "Months are capitalized."
+        },
+        {
+          "id": "d",
+          "text": "The downtown Library tested the process in April.",
+          "distractorType": "editing_error",
+          "whyWrong": "A common noun is not capitalized simply because it names a place."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The location description is generic, while the month 'April' is a proper name.",
+        "quickTip": "Capitalize official names and calendar names, not common nouns for emphasis."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L1.6",
+    "secondarySkillIds": [
+      "L1.5",
+      "L1.4",
+      "L2.3",
+      "L2.4",
+      "L2.1"
+    ],
+    "contentKind": "editing_practice",
+    "practiceTags": [
+      "editing_passage",
+      "community",
+      "workplace"
+    ],
+    "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+    "topicLabel": "Mixed Editing Practice"
+  }
+}

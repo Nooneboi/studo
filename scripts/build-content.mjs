@@ -125,6 +125,7 @@ function trackMap(curriculumConfig, skills) {
 function buildCurriculum({ curriculumConfig, skills, publishedResources, records }) {
   const passagePractice = [];
   const argumentPractice = [];
+  const languagePractice = [];
   const tracks = (curriculumConfig.tracks || []).filter((track) => (track.publicationState || 'published') === 'published').map((track) => ({
     id: track.id,
     label: track.label,
@@ -139,7 +140,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
       const builtSkills = domainSkills.map((skill) => {
         const related = records.filter((record) => {
           const c = record.curriculum || {};
-          if (['passage_practice', 'quiz', 'argument_practice'].includes(c.contentKind)) return false;
+          if (['passage_practice', 'quiz', 'argument_practice', 'editing_practice'].includes(c.contentKind)) return false;
           const ids = measuredSkillIds(record);
           return c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id) || ids.includes(skill.id);
         });
@@ -174,7 +175,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
         const unitSkillIds = new Set(unitConfig.skillIds || []);
         const related = records.filter((record) => {
           const c = record.curriculum || {};
-          if (['passage_practice', 'quiz', 'argument_practice'].includes(c.contentKind)) return false;
+          if (['passage_practice', 'quiz', 'argument_practice', 'editing_practice'].includes(c.contentKind)) return false;
           if (c.unitId) return c.unitId === unitConfig.id;
           return measuredSkillIds(record).some((id) => unitSkillIds.has(id));
         });
@@ -225,7 +226,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
   }));
 
   for (const record of records) {
-    if (!['passage_practice', 'quiz', 'argument_practice'].includes(record.curriculum?.contentKind)) continue;
+    if (!['passage_practice', 'quiz', 'argument_practice', 'editing_practice'].includes(record.curriculum?.contentKind)) continue;
     const item = {
       id: record.id,
       title: record.passageMeta?.title || record.title,
@@ -239,6 +240,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
       passageMeta: record.passageMeta || null,
     };
     if (record.curriculum?.contentKind === 'argument_practice') argumentPractice.push(item);
+    else if (record.curriculum?.contentKind === 'editing_practice') languagePractice.push(item);
     else passagePractice.push(item);
   }
 
@@ -259,6 +261,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
     tracks,
     passagePractice,
     argumentPractice,
+    languagePractice,
     mixedPractice: passagePractice,
   };
 }

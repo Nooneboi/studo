@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-mixed-transit",
+  "runtime": {
+    "id": "set-rla-lang-mixed-transit",
+    "file": "set-rla-lang-mixed-transit.json"
+  },
+  "title": "Revising the Lost-and-Found Policy",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-mixed-transit"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct verb: “The list of storage exceptions {{blank}} on a separate page.”",
+      "primarySkillId": "L1.7",
+      "familyId": "language.grammar.complex_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "appear",
+          "distractorType": "editing_error",
+          "whyWrong": "The subject is singular 'list,' not the plural noun 'exceptions'."
+        },
+        {
+          "id": "b",
+          "text": "appears"
+        },
+        {
+          "id": "c",
+          "text": "have appeared",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb phrase does not agree with 'list'."
+        },
+        {
+          "id": "d",
+          "text": "were appearing",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes tense and uses plural agreement."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The true subject is 'list,' so the singular verb 'appears' is correct.",
+        "quickTip": "Ignore the noun inside the of-phrase when matching the subject and verb."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the best modifier placement: “Riders should only visit the office after staff confirm a match.”",
+      "primarySkillId": "L1.5",
+      "familyId": "language.modifiers.limiting_words",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Riders should visit the office only after staff confirm a match."
+        },
+        {
+          "id": "a",
+          "text": "Only riders should visit the office after staff confirm a match.",
+          "distractorType": "editing_error",
+          "whyWrong": "This says no one except riders may visit, which changes the intended rule."
+        },
+        {
+          "id": "c",
+          "text": "Riders only should visit the office after staff confirm a match.",
+          "distractorType": "editing_error",
+          "whyWrong": "This awkward placement can change what 'only' limits."
+        },
+        {
+          "id": "d",
+          "text": "Riders should visit only the office after staff confirm a match.",
+          "distractorType": "editing_error",
+          "whyWrong": "This limits the destination rather than the timing."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "'Only' directly limits the timing condition: after confirmation.",
+        "quickTip": "Place limiting modifiers beside the exact word or phrase they restrict."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the standard revision: “Riders should of completed the form before calling.”",
+      "primarySkillId": "L1.4",
+      "familyId": "language.usage.standard_usage",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Riders should of completed the form before calling.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Should of' is a nonstandard spelling of the spoken contraction 'should've'."
+        },
+        {
+          "id": "c",
+          "text": "Riders should had completed the form before calling.",
+          "distractorType": "editing_error",
+          "whyWrong": "A modal cannot be followed by 'had' in this construction."
+        },
+        {
+          "id": "d",
+          "text": "Riders should completing the form before calling.",
+          "distractorType": "editing_error",
+          "whyWrong": "A modal requires the base verb or have + participle, not the -ing form."
+        },
+        {
+          "id": "a",
+          "text": "Riders should have completed the form before calling."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "'Should have completed' is the standard modal-perfect form.",
+        "quickTip": "If you hear 'should've,' write 'should have,' not 'should of'."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct punctuation: “The form asks for three details {{blank}} the item, the route or station, and a contact method.”",
+      "primarySkillId": "L2.4",
+      "familyId": "language.punctuation.colon",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ";",
+          "distractorType": "editing_error",
+          "whyWrong": "A semicolon cannot introduce this list fragment."
+        },
+        {
+          "id": "c",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A colon more clearly introduces the announced list."
+        },
+        {
+          "id": "a",
+          "text": ":"
+        },
+        {
+          "id": "d",
+          "text": ".",
+          "distractorType": "editing_error",
+          "whyWrong": "A period would leave the list as a fragment."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The complete clause announces three details, so a colon correctly introduces them.",
+        "quickTip": "Use a colon after a complete clause that sets up a list."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest concise revision: “Staff members will make a comparison between the report and the items received.”",
+      "primarySkillId": "L1.8",
+      "familyId": "language.style.concision",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Staff members will make a comparison between the report and the items received.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Make a comparison between' can be replaced by the direct verb 'compare'."
+        },
+        {
+          "id": "a",
+          "text": "Staff members will compare the report with received items."
+        },
+        {
+          "id": "c",
+          "text": "A comparison will be made by staff members between the report and the items received.",
+          "distractorType": "editing_error",
+          "whyWrong": "The passive form is longer without adding meaning."
+        },
+        {
+          "id": "d",
+          "text": "Staff members will perform the process of comparison between reports and received items.",
+          "distractorType": "editing_error",
+          "whyWrong": "This adds unnecessary abstract wording."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The direct verb 'compare' expresses the same action more efficiently.",
+        "quickTip": "Prefer a direct verb when a noun phrase only repeats that verb's meaning."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct word: “Staff may contact riders if an item contains {{blank}} identification.”",
+      "primarySkillId": "L1.1",
+      "familyId": "language.usage.confused_words",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "personnel",
+          "distractorType": "editing_error",
+          "whyWrong": "'Personnel' refers to employees or staff, not information identifying a person."
+        },
+        {
+          "id": "c",
+          "text": "personally",
+          "distractorType": "editing_error",
+          "whyWrong": "An adverb cannot directly modify the noun 'identification' this way."
+        },
+        {
+          "id": "d",
+          "text": "person",
+          "distractorType": "editing_error",
+          "whyWrong": "The noun 'person' does not form the intended adjective phrase."
+        },
+        {
+          "id": "a",
+          "text": "personal"
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "'Personal identification' means identification connected to an individual person.",
+        "quickTip": "Use context and part of speech to separate commonly confused words."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L1.7",
+    "secondarySkillIds": [
+      "L1.5",
+      "L1.4",
+      "L2.4",
+      "L1.8",
+      "L1.1"
+    ],
+    "contentKind": "editing_practice",
+    "practiceTags": [
+      "editing_passage",
+      "civics",
+      "workplace"
+    ],
+    "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+    "topicLabel": "Mixed Editing Practice"
+  }
+}

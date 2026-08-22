@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-agreement",
+  "runtime": {
+    "id": "set-rla-lang-agreement",
+    "file": "set-rla-lang-agreement.json"
+  },
+  "title": "Inventory Agreement & Pronouns",
+  "description": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-agreement"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Reviewed for one-best-answer grammar logic, contextual editing, close distractors, and specific feedback.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "The box of replacement cables {{blank}} beside the service counter.",
+      "primarySkillId": "L1.2",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "are",
+          "distractorType": "editing_error",
+          "whyWrong": "'Cables' is inside a prepositional phrase; it is not the subject."
+        },
+        {
+          "id": "c",
+          "text": "have been",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb phrase does not agree with the singular subject 'box'."
+        },
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "d",
+          "text": "were",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes both number and tense without support from the sentence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The subject is the singular noun 'box,' so 'is' agrees with it.",
+        "quickTip": "Cross out interrupting prepositional phrases before matching subject and verb."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Neither of the two scanners {{blank}} working correctly today.",
+      "primarySkillId": "L1.7",
+      "familyId": "language.grammar.complex_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "is"
+        },
+        {
+          "id": "a",
+          "text": "are",
+          "distractorType": "editing_error",
+          "whyWrong": "'Neither' is singular in this construction even though 'scanners' is plural."
+        },
+        {
+          "id": "c",
+          "text": "were",
+          "distractorType": "editing_error",
+          "whyWrong": "This shifts the sentence to past tense and still misses the singular subject."
+        },
+        {
+          "id": "d",
+          "text": "have",
+          "distractorType": "editing_error",
+          "whyWrong": "'Have' is plural and does not agree with 'neither'."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "'Neither' is the grammatical subject and takes the singular verb 'is'.",
+        "quickTip": "With neither/either, find the actual subject instead of matching the nearest plural noun."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Maya asked Jordan and {{blank}} to verify the count.",
+      "primarySkillId": "L1.3",
+      "familyId": "language.pronoun.grammar",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "I",
+          "distractorType": "editing_error",
+          "whyWrong": "After the verb 'asked,' the pronoun is an object, so the subject form 'I' is incorrect."
+        },
+        {
+          "id": "c",
+          "text": "my",
+          "distractorType": "editing_error",
+          "whyWrong": "'My' is possessive and must modify a noun."
+        },
+        {
+          "id": "d",
+          "text": "mine",
+          "distractorType": "editing_error",
+          "whyWrong": "'Mine' is possessive and does not serve as the object of 'asked' here."
+        },
+        {
+          "id": "b",
+          "text": "me"
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "'Me' is the object form required after 'asked'.",
+        "quickTip": "Remove the other name: 'Maya asked me' makes the correct case easier to hear."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest revision: “When Leo placed the tablet beside the charger, it was damaged.”",
+      "primarySkillId": "L1.3",
+      "familyId": "language.pronoun.reference",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "When Leo placed the tablet beside the charger, it was damaged.",
+          "distractorType": "editing_error",
+          "whyWrong": "'It' could refer to either the tablet or the charger."
+        },
+        {
+          "id": "b",
+          "text": "Leo placed the damaged tablet beside the charger."
+        },
+        {
+          "id": "c",
+          "text": "When Leo placed it beside it, the damage was visible.",
+          "distractorType": "editing_error",
+          "whyWrong": "Replacing both nouns with pronouns makes the reference even less clear."
+        },
+        {
+          "id": "d",
+          "text": "The tablet and charger were beside it when Leo noticed damage.",
+          "distractorType": "editing_error",
+          "whyWrong": "'It' still lacks a clear antecedent."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Naming the damaged item removes the ambiguous pronoun reference.",
+        "quickTip": "If a pronoun could point to two nouns, rewrite with the exact noun rather than guessing."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "The manager, together with two assistants, {{blank}} the final inventory.",
+      "primarySkillId": "L1.7",
+      "familyId": "language.grammar.complex_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "review",
+          "distractorType": "editing_error",
+          "whyWrong": "The phrase 'together with two assistants' does not make the singular subject plural."
+        },
+        {
+          "id": "c",
+          "text": "have reviewed",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb does not agree with the singular subject 'manager'."
+        },
+        {
+          "id": "b",
+          "text": "reviews"
+        },
+        {
+          "id": "d",
+          "text": "were reviewing",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural past-progressive form changes both agreement and tense."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The true subject is 'manager,' so the singular verb 'reviews' is correct.",
+        "quickTip": "Phrases beginning with together with, along with, or as well as do not change the subject."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Each technician should record {{blank}} own inspection notes before leaving.",
+      "primarySkillId": "L1.3",
+      "familyId": "language.pronoun.grammar",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "our",
+          "distractorType": "editing_error",
+          "whyWrong": "'Our' changes the person and does not refer to 'each technician'."
+        },
+        {
+          "id": "c",
+          "text": "your",
+          "distractorType": "editing_error",
+          "whyWrong": "'Your' addresses the reader instead of referring back to the third-person subject."
+        },
+        {
+          "id": "d",
+          "text": "its",
+          "distractorType": "editing_error",
+          "whyWrong": "'Its' is normally used for things or organizations, not a person in this context."
+        },
+        {
+          "id": "a",
+          "text": "their"
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "Singular 'they/their' is standard and clearly refers back to 'each technician'.",
+        "quickTip": "Make pronouns agree in person and reference; singular they is acceptable in standard English."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "The invoices and the repair log {{blank}} stored in the locked cabinet.",
+      "primarySkillId": "L1.2",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "are"
+        },
+        {
+          "id": "a",
+          "text": "is",
+          "distractorType": "editing_error",
+          "whyWrong": "Two nouns joined by 'and' form a plural subject here."
+        },
+        {
+          "id": "c",
+          "text": "has been",
+          "distractorType": "editing_error",
+          "whyWrong": "This singular verb phrase does not agree with the compound subject."
+        },
+        {
+          "id": "d",
+          "text": "was",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular past-tense verb does not match the plural subject."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The compound subject 'invoices and repair log' is plural, so it takes 'are'.",
+        "quickTip": "Subjects joined by and are usually plural unless they name one combined thing."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Either the supervisors or the store manager {{blank}} the closing report tonight.",
+      "primarySkillId": "L1.7",
+      "familyId": "language.grammar.complex_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "approve",
+          "distractorType": "editing_error",
+          "whyWrong": "With either/or, the verb normally agrees with the nearer subject; 'manager' is singular."
+        },
+        {
+          "id": "b",
+          "text": "approves"
+        },
+        {
+          "id": "c",
+          "text": "have approved",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb does not agree with the nearer singular subject."
+        },
+        {
+          "id": "d",
+          "text": "were approving",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes tense and uses plural agreement."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "With subjects joined by either/or, the verb agrees with the nearer subject, 'store manager'.",
+        "quickTip": "For either/or and neither/nor, check the subject closest to the verb."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L1.2",
+    "secondarySkillIds": [
+      "L1.3",
+      "L1.7"
+    ],
+    "unitId": "agreement-pronouns",
+    "contentKind": "skill_drill",
+    "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
+    "topicLabel": "Focused Practice"
+  }
+}

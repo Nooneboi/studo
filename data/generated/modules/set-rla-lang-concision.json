@@ -1,0 +1,474 @@
+{
+  "id": "set-rla-lang-concision",
+  "title": "Shuttle Notice Editing",
+  "description": "Make sentences concise and choose transitions that match the exact logic.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "A college transportation office is rewriting a notice about changes to its evening shuttle. The first draft was assembled from several emails, so it repeats information and uses transitions that do not always match the relationship between sentences. The editor wants students to understand the change quickly because many will read the notice on a phone while walking between buildings.\n\nThe revised notice should state the new departure time once, explain why the schedule changed, and tell riders where to find live updates. Repeating “at this point in time,” “due to the fact that,” and similar phrases makes the message longer without making it clearer. The editor replaces these expressions with shorter wording when no meaning is lost.\n\nTransitions require a different kind of decision. “However” should introduce a contrast, while “therefore” should introduce a result. “For example” should lead into an illustration of the previous idea. A transition that sounds formal but names the wrong relationship can mislead a reader even if the grammar around it is correct. The final version should be concise, but it should never remove a condition, exception, or logical connection that riders need in order to act correctly.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “At this point in time, the shuttle currently leaves at 8:30 p.m.”",
+      "points": 1,
+      "explanation": "The revision keeps the needed timing information and removes repeated phrases.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "Cut words that duplicate meaning, not words that carry a condition or fact.",
+      "familyId": "language.style.concision",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "At this point in time, the shuttle currently leaves at 8:30 p.m.",
+          "distractorType": "editing_error",
+          "whyWrong": "'At this point in time' and 'currently' repeat the same idea."
+        },
+        {
+          "id": "c",
+          "text": "The shuttle, at this current point in time, leaves at 8:30 p.m.",
+          "distractorType": "editing_error",
+          "whyWrong": "This preserves the redundant wording and adds interruption."
+        },
+        {
+          "id": "b",
+          "text": "The shuttle currently leaves at 8:30 p.m."
+        },
+        {
+          "id": "d",
+          "text": "Currently at this time now, the shuttle leaves at 8:30 p.m.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Currently,' 'at this time,' and 'now' repeat one another."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "The 8:00 shuttle was often overcrowded; {{blank}}, the office added an 8:15 departure.",
+      "points": 1,
+      "explanation": "'Therefore' correctly shows that the added departure resulted from overcrowding.",
+      "skill": {
+        "id": "L1.9",
+        "label": "Transitions for logic & clarity"
+      },
+      "rule": "Name the relationship before choosing the transition.",
+      "familyId": "language.transitions.logic",
+      "metadata": {
+        "skillId": "L1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "therefore"
+        },
+        {
+          "id": "a",
+          "text": "however",
+          "distractorType": "editing_error",
+          "whyWrong": "'However' signals contrast, but the new departure is a response to the overcrowding."
+        },
+        {
+          "id": "c",
+          "text": "for example",
+          "distractorType": "editing_error",
+          "whyWrong": "The added departure is a result, not an example of overcrowding."
+        },
+        {
+          "id": "d",
+          "text": "meanwhile",
+          "distractorType": "editing_error",
+          "whyWrong": "'Meanwhile' signals simultaneous timing rather than cause and result."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest concise revision: “Students who are in possession of bicycles should use the exterior rack.”",
+      "points": 1,
+      "explanation": "'Students with bicycles' states the same condition more directly.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "Prefer the shortest wording that preserves the exact meaning.",
+      "familyId": "language.style.concision",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Students who are in possession of bicycles should use the exterior rack.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Who are in possession of' is unnecessarily wordy."
+        },
+        {
+          "id": "c",
+          "text": "Bicycle-possessing students, in terms of the exterior rack, should utilize it.",
+          "distractorType": "editing_error",
+          "whyWrong": "The sentence replaces simple wording with inflated and unclear language."
+        },
+        {
+          "id": "d",
+          "text": "Students, being those having bikes, should make usage of the exterior rack.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is wordier and less natural than the original."
+        },
+        {
+          "id": "a",
+          "text": "Students with bicycles should use the exterior rack."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "The shuttle still serves the science building. {{blank}}, the library stop has moved one block east.",
+      "points": 1,
+      "explanation": "'However' correctly signals that one part of the route remains the same while another has changed.",
+      "skill": {
+        "id": "L1.9",
+        "label": "Transitions for logic & clarity"
+      },
+      "rule": "Use contrast transitions when the second statement limits or differs from the first.",
+      "familyId": "language.transitions.logic",
+      "metadata": {
+        "skillId": "L1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "For example",
+          "distractorType": "editing_error",
+          "whyWrong": "The library move is not an example of continuing science-building service."
+        },
+        {
+          "id": "b",
+          "text": "However"
+        },
+        {
+          "id": "c",
+          "text": "Therefore",
+          "distractorType": "editing_error",
+          "whyWrong": "The library stop did not move because the science-building service continues."
+        },
+        {
+          "id": "d",
+          "text": "Similarly",
+          "distractorType": "editing_error",
+          "whyWrong": "The two facts are not similar; the second contrasts with the first by describing a change."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “The reason the route changed is because road work blocks the usual turn.”",
+      "points": 1,
+      "explanation": "The revision directly states the cause without repeating the cause relationship.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "When because already gives the reason, you usually do not need 'the reason is because'.",
+      "familyId": "language.style.concision",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The reason the route changed is because road work blocks the usual turn.",
+          "distractorType": "editing_error",
+          "whyWrong": "'The reason ... is because' redundantly expresses cause twice."
+        },
+        {
+          "id": "c",
+          "text": "The causal reason why the route changed is due to road work that blocks the usual turn.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Causal reason,' 'why,' and 'due to' make the sentence unnecessarily heavy."
+        },
+        {
+          "id": "a",
+          "text": "The route changed because road work blocks the usual turn."
+        },
+        {
+          "id": "d",
+          "text": "Road work is the reason because of which the route changed due to the blocked turn.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is wordy and awkward."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Riders can view live bus locations in the app. {{blank}}, they can sign up for delay alerts.",
+      "points": 1,
+      "explanation": "'In addition' correctly introduces another available service.",
+      "skill": {
+        "id": "L1.9",
+        "label": "Transitions for logic & clarity"
+      },
+      "rule": "For another point with the same direction, use an addition transition rather than a cause or contrast word.",
+      "familyId": "language.transitions.logic",
+      "metadata": {
+        "skillId": "L1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Nevertheless",
+          "distractorType": "editing_error",
+          "whyWrong": "'Nevertheless' signals unexpected contrast, but the second sentence adds another service."
+        },
+        {
+          "id": "c",
+          "text": "As a result",
+          "distractorType": "editing_error",
+          "whyWrong": "Signing up for alerts is not presented as a result of viewing locations."
+        },
+        {
+          "id": "d",
+          "text": "Instead",
+          "distractorType": "editing_error",
+          "whyWrong": "The two options are both available; one does not replace the other."
+        },
+        {
+          "id": "a",
+          "text": "In addition"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise sentence.",
+      "points": 1,
+      "explanation": "The direct verb 'decided' expresses the same idea more efficiently.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "Look for noun-heavy phrases that can become a direct verb.",
+      "familyId": "language.style.concision",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The office decided to extend service by thirty minutes."
+        },
+        {
+          "id": "a",
+          "text": "The office made a decision to extend service by thirty minutes. ",
+          "distractorType": "editing_error",
+          "whyWrong": "'Made a decision to' can be replaced by the direct verb 'decided to'."
+        },
+        {
+          "id": "c",
+          "text": "The office came to a decision in regard to extending service by thirty minutes.",
+          "distractorType": "editing_error",
+          "whyWrong": "This adds several unnecessary phrases."
+        },
+        {
+          "id": "d",
+          "text": "A decision was made by the office for the purpose of extending service by thirty minutes.",
+          "distractorType": "editing_error",
+          "whyWrong": "The passive and purpose phrase make the sentence longer without adding meaning."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "The route change begins Monday. {{blank}}, riders should check the updated map before their first trip.",
+      "points": 1,
+      "explanation": "'Consequently' correctly introduces an action riders should take because the route is changing.",
+      "skill": {
+        "id": "L1.9",
+        "label": "Transitions for logic & clarity"
+      },
+      "rule": "Result transitions should follow a fact that creates the need for the next action.",
+      "familyId": "language.transitions.logic",
+      "metadata": {
+        "skillId": "L1.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "For instance",
+          "distractorType": "editing_error",
+          "whyWrong": "Checking the map is a recommended result of the change, not an example of Monday."
+        },
+        {
+          "id": "a",
+          "text": "Consequently"
+        },
+        {
+          "id": "c",
+          "text": "In contrast",
+          "distractorType": "editing_error",
+          "whyWrong": "The advice does not contrast with the route change."
+        },
+        {
+          "id": "d",
+          "text": "Likewise",
+          "distractorType": "editing_error",
+          "whyWrong": "The second statement is not a parallel example of the first."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-concision",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.8",
+      "secondarySkillIds": [
+        "L1.9"
+      ],
+      "unitId": "concision-transitions",
+      "contentKind": "skill_drill",
+      "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-concision",
+      "title": "Revising the Shuttle Notice",
+      "textType": "informational",
+      "context": "school",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.031Z"
+  }
+}

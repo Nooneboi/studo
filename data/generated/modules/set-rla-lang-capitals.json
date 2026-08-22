@@ -1,0 +1,475 @@
+{
+  "id": "set-rla-lang-capitals",
+  "title": "Museum Mechanics Check",
+  "description": "Edit capitalization and possessive forms according to their grammatical role.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "A local history museum is preparing an announcement for a weekend program. The draft includes the names of staff members, departments, months, exhibits, and community partners, so the editor must decide which words require capitalization. The announcement also describes spaces and materials that belong to people or groups, which creates several opportunities for apostrophe errors.\n\nThe editor remembers that not every important-sounding noun is a proper noun. A job title is usually lowercase when it appears alone, but it may be capitalized when it comes directly before a person’s name as part of the name. Days, months, organizations, and official event names are capitalized. Generic descriptions usually are not.\n\nFor possession, the editor separates plural formation from ownership. Most singular nouns form the possessive with apostrophe + s. Regular plural nouns ending in s usually add only an apostrophe. Possessive pronouns such as its, theirs, and yours do not use apostrophes. The announcement should look polished, but every capital letter and apostrophe should have a grammatical reason rather than being added for emphasis.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct capitalization.",
+      "points": 1,
+      "explanation": "Days and months are capitalized; the common noun 'program' is not.",
+      "skill": {
+        "id": "L2.1",
+        "label": "Capitalization"
+      },
+      "rule": "Capitalize proper names and calendar names, not ordinary nouns for emphasis.",
+      "familyId": "language.capitalization.mechanics",
+      "metadata": {
+        "skillId": "L2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The program begins on saturday, September 12.",
+          "distractorType": "editing_error",
+          "whyWrong": "Days of the week are proper nouns and must be capitalized."
+        },
+        {
+          "id": "c",
+          "text": "The program begins on Saturday, september 12.",
+          "distractorType": "editing_error",
+          "whyWrong": "Months are proper nouns and must be capitalized."
+        },
+        {
+          "id": "d",
+          "text": "The Program begins on Saturday, September 12.",
+          "distractorType": "editing_error",
+          "whyWrong": "The common noun 'program' does not need capitalization here."
+        },
+        {
+          "id": "b",
+          "text": "The program begins on Saturday, September 12."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct possessive form: “The {{blank}} office is beside the main gallery.”",
+      "points": 1,
+      "explanation": "A singular noun normally forms the possessive with apostrophe + s: curator's office.",
+      "skill": {
+        "id": "L2.3",
+        "label": "Apostrophes & possessives"
+      },
+      "rule": "First decide singular or plural; then add the possessive ending.",
+      "familyId": "language.possessives.apostrophes",
+      "metadata": {
+        "skillId": "L2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "curator's"
+        },
+        {
+          "id": "b",
+          "text": "curators",
+          "distractorType": "editing_error",
+          "whyWrong": "Without an apostrophe, 'curators' is simply plural and does not show that the office belongs to one curator."
+        },
+        {
+          "id": "c",
+          "text": "curators'",
+          "distractorType": "editing_error",
+          "whyWrong": "This form shows possession by multiple curators, but the sentence refers to one curator."
+        },
+        {
+          "id": "d",
+          "text": "curatorss",
+          "distractorType": "editing_error",
+          "whyWrong": "This is not a standard plural or possessive form."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Assume 'Museum Director' is Elena Cruz's formal title. Choose the correct capitalization when it appears immediately before her name.",
+      "points": 1,
+      "explanation": "The formal title directly precedes Elena Cruz's name, so it is capitalized.",
+      "skill": {
+        "id": "L2.1",
+        "label": "Capitalization"
+      },
+      "rule": "Capitalize a formal title before a name; lowercase it when used generically or after the name.",
+      "familyId": "language.capitalization.mechanics",
+      "metadata": {
+        "skillId": "L2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Museum director Elena Cruz will introduce the exhibit.",
+          "distractorType": "editing_error",
+          "whyWrong": "When a formal title immediately precedes a name as part of the name, it is normally capitalized."
+        },
+        {
+          "id": "c",
+          "text": "museum Director Elena Cruz will introduce the exhibit.",
+          "distractorType": "editing_error",
+          "whyWrong": "The capitalization is inconsistent and 'museum' is part of the title phrase here."
+        },
+        {
+          "id": "b",
+          "text": "Museum Director Elena Cruz will introduce the exhibit."
+        },
+        {
+          "id": "d",
+          "text": "Museum Director elena cruz will introduce the exhibit.",
+          "distractorType": "editing_error",
+          "whyWrong": "Personal names must be capitalized."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct form: “The museum updated {{blank}} website before the event.”",
+      "points": 1,
+      "explanation": "'Its' is the possessive form; possessive pronouns do not use apostrophes.",
+      "skill": {
+        "id": "L2.3",
+        "label": "Apostrophes & possessives"
+      },
+      "rule": "Test 'it's' by expanding it to 'it is.' If that does not fit, use 'its'.",
+      "familyId": "language.possessives.apostrophes",
+      "metadata": {
+        "skillId": "L2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "it's",
+          "distractorType": "editing_error",
+          "whyWrong": "'It's' means 'it is' or 'it has,' which does not fit before 'website'."
+        },
+        {
+          "id": "b",
+          "text": "its"
+        },
+        {
+          "id": "c",
+          "text": "its'",
+          "distractorType": "editing_error",
+          "whyWrong": "The possessive pronoun 'its' never takes an apostrophe."
+        },
+        {
+          "id": "d",
+          "text": "it is",
+          "distractorType": "editing_error",
+          "whyWrong": "'It is website' is not grammatically correct."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct plural possessive: “The two {{blank}} schedules are posted online.”",
+      "points": 1,
+      "explanation": "'Guides' is a regular plural ending in s, so the possessive form is guides'.",
+      "skill": {
+        "id": "L2.3",
+        "label": "Apostrophes & possessives"
+      },
+      "rule": "For a regular plural already ending in s, add only the apostrophe.",
+      "familyId": "language.possessives.apostrophes",
+      "metadata": {
+        "skillId": "L2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "guide's",
+          "distractorType": "editing_error",
+          "whyWrong": "This shows possession by one guide, not two guides."
+        },
+        {
+          "id": "c",
+          "text": "guides",
+          "distractorType": "editing_error",
+          "whyWrong": "This is plural but does not show possession of the schedules."
+        },
+        {
+          "id": "d",
+          "text": "guides's",
+          "distractorType": "editing_error",
+          "whyWrong": "A regular plural ending in s takes only an apostrophe for possession."
+        },
+        {
+          "id": "a",
+          "text": "guides'"
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Which sentence uses capitalization correctly? The exhibit name is descriptive, not a formal title.",
+      "points": 1,
+      "explanation": "'October' is a proper month name. 'Museum,' 'exhibit,' and 'river trade' are generic descriptions here and remain lowercase.",
+      "skill": {
+        "id": "L2.1",
+        "label": "Capitalization"
+      },
+      "rule": "Do not capitalize common nouns just because they name an important place or event.",
+      "familyId": "language.capitalization.mechanics",
+      "metadata": {
+        "skillId": "L2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "The museum will open a new exhibit about river trade in october.",
+          "distractorType": "editing_error",
+          "whyWrong": "The month name 'October' must be capitalized."
+        },
+        {
+          "id": "c",
+          "text": "The museum will open a new exhibit about river trade in October.",
+          "distractorType": "editing_error",
+          "whyWrong": "The month 'October' must be capitalized."
+        },
+        {
+          "id": "a",
+          "text": "The Museum will open a new Exhibit about River Trade in October.",
+          "whyWrong": "Generic common nouns and the descriptive subject phrase are unnecessarily capitalized."
+        },
+        {
+          "id": "d",
+          "text": "The museum Will open a new exhibit about river trade in October.",
+          "distractorType": "editing_error",
+          "whyWrong": "The verb 'will' is not capitalized in the middle of a sentence."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct possessive phrase.",
+      "points": 1,
+      "explanation": "The irregular plural 'children' forms the possessive as children's.",
+      "skill": {
+        "id": "L2.3",
+        "label": "Apostrophes & possessives"
+      },
+      "rule": "Irregular plurals not ending in s usually add apostrophe + s.",
+      "familyId": "language.possessives.apostrophes",
+      "metadata": {
+        "skillId": "L2.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "the children's activity room"
+        },
+        {
+          "id": "a",
+          "text": "the childrens' activity room",
+          "distractorType": "editing_error",
+          "whyWrong": "'Children' is an irregular plural that does not end in s, so possession requires apostrophe + s."
+        },
+        {
+          "id": "c",
+          "text": "the childrens activity room",
+          "distractorType": "editing_error",
+          "whyWrong": "The irregular plural is 'children,' and possession also needs an apostrophe."
+        },
+        {
+          "id": "d",
+          "text": "the children's' activity room",
+          "distractorType": "editing_error",
+          "whyWrong": "This adds an extra apostrophe after an already complete possessive form."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct capitalization when the title follows the name.",
+      "points": 1,
+      "explanation": "The job title follows the name and is used descriptively, so it is lowercase.",
+      "skill": {
+        "id": "L2.1",
+        "label": "Capitalization"
+      },
+      "rule": "Formal titles are usually lowercase when they follow a person's name.",
+      "familyId": "language.capitalization.mechanics",
+      "metadata": {
+        "skillId": "L2.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Elena Cruz, Museum Director, will speak at noon.",
+          "distractorType": "editing_error",
+          "whyWrong": "A title used descriptively after a name is usually lowercase."
+        },
+        {
+          "id": "b",
+          "text": "Elena Cruz, museum director, will speak at noon."
+        },
+        {
+          "id": "c",
+          "text": "elena cruz, museum director, will speak at noon.",
+          "distractorType": "editing_error",
+          "whyWrong": "Personal names must be capitalized."
+        },
+        {
+          "id": "d",
+          "text": "Elena Cruz, museum Director, will speak at noon.",
+          "distractorType": "editing_error",
+          "whyWrong": "The common title is inconsistently capitalized."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-capitals",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.1",
+      "secondarySkillIds": [
+        "L2.3"
+      ],
+      "unitId": "capitalization-possessives",
+      "contentKind": "skill_drill",
+      "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-capitals",
+      "title": "Museum Event Announcement",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.030Z"
+  }
+}

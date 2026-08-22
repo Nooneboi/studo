@@ -1,0 +1,474 @@
+{
+  "id": "set-rla-lang-word-choice",
+  "title": "Handbook Word Choice",
+  "description": "Choose standard, precise words in a formal workplace context.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Focused Practice",
+  "difficulty": "medium",
+  "source": "Original content by Studo",
+  "passage": "The Riverside Community Center is revising its volunteer handbook before a new group begins work next month. The old handbook was written quickly and contains several expressions that are common in casual speech but are not appropriate for a formal workplace guide. The coordinator wants the new version to sound clear and professional without becoming stiff or difficult to read.\n\nOne section explains where volunteers should leave personal items, how they should report schedule changes, and whom they should contact if they cannot attend a shift. Another section describes the effect of late arrivals on the front desk, where only two people may be available during busy periods. The coordinator also wants to distinguish between rules that apply to all volunteers and suggestions that simply make the work easier.\n\nDuring editing, the team agrees to avoid unnecessary slang and to choose words according to their exact grammatical job. They also check commonly confused words instead of relying only on how a sentence sounds. The goal is not to make every sentence formal for its own sake. The goal is to use standard English that is precise, respectful, and easy for volunteers to follow.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Volunteers should place {{blank}} bags in the lockers before beginning a shift.",
+      "points": 1,
+      "explanation": "'Their' is the possessive determiner needed before 'bags'.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Check the grammatical job: ownership before a noun requires 'their'.",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "there",
+          "distractorType": "editing_error",
+          "whyWrong": "'There' refers to a place, not ownership."
+        },
+        {
+          "id": "b",
+          "text": "their"
+        },
+        {
+          "id": "c",
+          "text": "they're",
+          "distractorType": "editing_error",
+          "whyWrong": "'They're' means 'they are' and cannot modify 'bags'."
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "editing_error",
+          "whyWrong": "'Theirs' stands alone and does not come directly before a noun."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "The new sign may {{blank}} how quickly visitors find the correct desk.",
+      "points": 1,
+      "explanation": "'Affect' is the verb meaning to influence something.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "After may/can/will, use the base verb and check affect (verb) versus effect (usually noun).",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "effect",
+          "distractorType": "editing_error",
+          "whyWrong": "As a noun, 'effect' usually means a result; the sentence needs a verb meaning influence."
+        },
+        {
+          "id": "c",
+          "text": "effects",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural noun form cannot follow 'may'."
+        },
+        {
+          "id": "d",
+          "text": "affected",
+          "distractorType": "editing_error",
+          "whyWrong": "A modal verb such as 'may' takes the base form, not the past tense."
+        },
+        {
+          "id": "b",
+          "text": "affect"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "The revised handbook contains {{blank}} unclear instructions than the old version.",
+      "points": 1,
+      "explanation": "'Fewer' is used with countable plural nouns such as 'instructions'.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Ask whether you can count the noun: fewer instructions, less confusion.",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "fewer"
+        },
+        {
+          "id": "a",
+          "text": "less",
+          "distractorType": "editing_error",
+          "whyWrong": "'Less' is generally used with uncountable amounts; 'instructions' are countable."
+        },
+        {
+          "id": "c",
+          "text": "fewest",
+          "distractorType": "editing_error",
+          "whyWrong": "The sentence compares two versions, so a comparative form is needed, not a superlative."
+        },
+        {
+          "id": "d",
+          "text": "little",
+          "distractorType": "editing_error",
+          "whyWrong": "'Little' does not correctly modify the plural count noun 'instructions'."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Which revision uses standard English? “Volunteers could of called before missing the shift.”",
+      "points": 1,
+      "explanation": "'Could have called' is the standard modal-perfect construction.",
+      "skill": {
+        "id": "L1.4",
+        "label": "Standard vs informal usage"
+      },
+      "rule": "When speech sounds like 'could of,' check whether the intended form is 'could have'.",
+      "familyId": "language.usage.standard_usage",
+      "metadata": {
+        "skillId": "L1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Volunteers could of called before missing the shift.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Could of' is a nonstandard spelling based on the sound of 'could've'."
+        },
+        {
+          "id": "c",
+          "text": "Volunteers could had called before missing the shift.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Could had' is not the standard modal construction."
+        },
+        {
+          "id": "b",
+          "text": "Volunteers could have called before missing the shift."
+        },
+        {
+          "id": "d",
+          "text": "Volunteers could having called before missing the shift.",
+          "distractorType": "editing_error",
+          "whyWrong": "A modal cannot be followed by the -ing form in this construction."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "The coordinator will {{blank}} new volunteers to review the emergency map.",
+      "points": 1,
+      "explanation": "'Advise' is the verb meaning to give guidance, and the modal 'will' requires the base form.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Advice is the noun; advise is the verb.",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "advice",
+          "text": "advice",
+          "distractorType": "editing_error",
+          "whyWrong": "'Advice' is a noun; the sentence needs a verb after 'will'."
+        },
+        {
+          "id": "advise",
+          "text": "advise"
+        },
+        {
+          "id": "advisor",
+          "text": "advisor",
+          "distractorType": "editing_error",
+          "whyWrong": "'Advisor' is a noun naming a person, not the action needed after 'will'."
+        },
+        {
+          "id": "advised",
+          "text": "advised",
+          "distractorType": "editing_error",
+          "whyWrong": "After the modal 'will,' use the base verb rather than the past-tense form."
+        }
+      ],
+      "correct": "advise"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best fits a formal volunteer handbook?",
+      "points": 1,
+      "explanation": "The sentence is professional, specific, and natural without unnecessary formality.",
+      "skill": {
+        "id": "L1.4",
+        "label": "Standard vs informal usage"
+      },
+      "rule": "Formal standard English should be clear and precise, not slangy or inflated.",
+      "familyId": "language.usage.standard_usage",
+      "metadata": {
+        "skillId": "L1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "If you need to leave early, notify the shift coordinator before you go."
+        },
+        {
+          "id": "a",
+          "text": "If you gotta leave early, tell somebody up front.",
+          "distractorType": "editing_error",
+          "whyWrong": "This uses casual forms such as 'gotta' and the vague word 'somebody'."
+        },
+        {
+          "id": "c",
+          "text": "If you wanna bounce early, give the desk a heads-up.",
+          "distractorType": "editing_error",
+          "whyWrong": "This uses slang that is inappropriate for a formal handbook."
+        },
+        {
+          "id": "d",
+          "text": "If early leaving happens, communication should maybe occur.",
+          "distractorType": "editing_error",
+          "whyWrong": "This is vague and awkward rather than clear standard usage."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "The change had an immediate {{blank}} on front-desk coverage.",
+      "points": 1,
+      "explanation": "'Effect' is the noun meaning a result or consequence.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Use affect for the action and effect for the result in most RLA editing contexts.",
+      "familyId": "language.usage.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "affect",
+          "distractorType": "editing_error",
+          "whyWrong": "The sentence needs a noun after 'an immediate'; 'affect' is normally the verb here."
+        },
+        {
+          "id": "c",
+          "text": "affects",
+          "distractorType": "editing_error",
+          "whyWrong": "This is a verb form and does not fit after the article 'an'."
+        },
+        {
+          "id": "d",
+          "text": "effective",
+          "distractorType": "editing_error",
+          "whyWrong": "This adjective would need to modify a noun rather than stand as the noun itself."
+        },
+        {
+          "id": "b",
+          "text": "effect"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest standard revision: “Irregardless of experience, every volunteer reviews the safety rules.”",
+      "points": 1,
+      "explanation": "'Regardless of' is the standard expression and preserves the intended meaning.",
+      "skill": {
+        "id": "L1.4",
+        "label": "Standard vs informal usage"
+      },
+      "rule": "In editing questions, prefer the standard form that says the same thing clearly.",
+      "familyId": "language.usage.standard_usage",
+      "metadata": {
+        "skillId": "L1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Irregardless of experience, every volunteer reviews the safety rules.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Irregardless' is widely used but is not the preferred standard form for formal editing."
+        },
+        {
+          "id": "c",
+          "text": "Without regards of experience, every volunteer reviews the safety rules.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Without regards of' is not the standard idiom for this meaning."
+        },
+        {
+          "id": "a",
+          "text": "Regardless of experience, every volunteer reviews the safety rules."
+        },
+        {
+          "id": "d",
+          "text": "Regardlessly of experience, every volunteer reviews the safety rules.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Regardlessly' is not the standard form needed here."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-word-choice",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.1",
+      "secondarySkillIds": [
+        "L1.4"
+      ],
+      "unitId": "word-choice-standard-usage",
+      "contentKind": "skill_drill",
+      "learningObjective": "Choose standard, precise words in a formal workplace context.",
+      "topicLabel": "Focused Practice"
+    },
+    "passage": {
+      "id": "p-rla-lang-word-choice",
+      "title": "Updating the Volunteer Handbook",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T09:41:40.032Z"
+  }
+}

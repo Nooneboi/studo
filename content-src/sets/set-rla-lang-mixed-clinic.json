@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-lang-mixed-clinic",
+  "runtime": {
+    "id": "set-rla-lang-mixed-clinic",
+    "file": "set-rla-lang-mixed-clinic.json"
+  },
+  "title": "Updating the Clinic Reminder System",
+  "description": "Edit a full informational passage for grammar, punctuation, usage, and clarity.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-lang-mixed-clinic"
+  ],
+  "author": "Studo",
+  "reviewer": "Language & Editing V1 editorial review",
+  "reviewNotes": "Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct form: “The scheduling team {{blank}} missed visits each week.”",
+      "primarySkillId": "L1.2",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "track",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular subject 'team' is treated as one unit here."
+        },
+        {
+          "id": "b",
+          "text": "tracks"
+        },
+        {
+          "id": "c",
+          "text": "have tracked",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes the intended present-time statement and uses plural agreement."
+        },
+        {
+          "id": "d",
+          "text": "were tracking",
+          "distractorType": "editing_error",
+          "whyWrong": "This changes both tense and agreement."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "'Team' is singular in this sentence and takes 'tracks'.",
+        "quickTip": "Find the true subject before choosing the verb."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest revision: “When the clinic updated the reminder and the schedule, it confused some patients.”",
+      "primarySkillId": "L1.3",
+      "familyId": "language.pronoun.reference",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "When the clinic updated the reminder and the schedule, it confused some patients.",
+          "distractorType": "editing_error",
+          "whyWrong": "'It' could refer to the clinic, reminder, schedule, or change."
+        },
+        {
+          "id": "c",
+          "text": "When it updated them, it confused some patients.",
+          "distractorType": "editing_error",
+          "whyWrong": "The pronouns make the reference less clear."
+        },
+        {
+          "id": "d",
+          "text": "The clinic updated it and the schedule, which confused it.",
+          "distractorType": "editing_error",
+          "whyWrong": "The pronouns remain ambiguous."
+        },
+        {
+          "id": "b",
+          "text": "Updating both the reminder and the schedule confused some patients."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The revision names the action that caused confusion and removes the ambiguous pronoun.",
+        "quickTip": "If several nouns could be the antecedent, rewrite instead of forcing a pronoun."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the most concise revision: “The clinic will continue the pilot for a period of eight additional weeks.”",
+      "primarySkillId": "L1.8",
+      "familyId": "language.style.concision",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The clinic will continue the pilot for eight more weeks."
+        },
+        {
+          "id": "b",
+          "text": "The clinic will continue the pilot for a period of eight additional weeks.",
+          "distractorType": "editing_error",
+          "whyWrong": "'For a period of' and 'additional' add length without needed meaning."
+        },
+        {
+          "id": "c",
+          "text": "The clinic will continue onward with the pilot for a time period of eight more weeks.",
+          "distractorType": "editing_error",
+          "whyWrong": "'Continue onward' and 'time period' are redundant."
+        },
+        {
+          "id": "d",
+          "text": "For the purpose of continuation, the clinic will continue the pilot eight additional weeks.",
+          "distractorType": "editing_error",
+          "whyWrong": "This adds abstract wording and repeats 'continue'."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The revision preserves the exact duration in fewer words.",
+        "quickTip": "Cut repeated or inflated phrases while preserving dates, conditions, and limits."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "The pilot showed fewer missed visits; {{blank}}, managers say the test was too short for a firm conclusion.",
+      "primarySkillId": "L1.9",
+      "familyId": "language.transitions.logic",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "therefore",
+          "distractorType": "editing_error",
+          "whyWrong": "The caution is not a result that follows from fewer missed visits."
+        },
+        {
+          "id": "c",
+          "text": "for example",
+          "distractorType": "editing_error",
+          "whyWrong": "The managers' caution is not an example of fewer missed visits."
+        },
+        {
+          "id": "b",
+          "text": "however"
+        },
+        {
+          "id": "d",
+          "text": "similarly",
+          "distractorType": "editing_error",
+          "whyWrong": "The second idea limits the first rather than repeating a similar point."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "'However' correctly introduces a limitation on the encouraging result.",
+        "quickTip": "Use a contrast transition when the second idea qualifies the first."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct punctuation: “The clinic tracks three outcomes {{blank}} missed visits, cancellations, and opt-outs.”",
+      "primarySkillId": "L2.4",
+      "familyId": "language.punctuation.colon",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": ";",
+          "distractorType": "editing_error",
+          "whyWrong": "The words after the blank form a list, not an independent clause."
+        },
+        {
+          "id": "c",
+          "text": ",",
+          "distractorType": "editing_error",
+          "whyWrong": "A colon more clearly introduces the announced list after the complete clause."
+        },
+        {
+          "id": "d",
+          "text": ".",
+          "distractorType": "editing_error",
+          "whyWrong": "A period would leave the list as a fragment."
+        },
+        {
+          "id": "a",
+          "text": ":"
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The complete clause announces a list, so a colon correctly introduces it.",
+        "quickTip": "Use a colon after a complete clause that introduces examples or a list."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct form: “Patients can update {{blank}} contact information online.”",
+      "primarySkillId": "L1.1",
+      "familyId": "language.usage.confused_words",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "there",
+          "distractorType": "editing_error",
+          "whyWrong": "'There' refers to location."
+        },
+        {
+          "id": "c",
+          "text": "their"
+        },
+        {
+          "id": "b",
+          "text": "they're",
+          "distractorType": "editing_error",
+          "whyWrong": "'They're' means 'they are'."
+        },
+        {
+          "id": "d",
+          "text": "theirs",
+          "distractorType": "editing_error",
+          "whyWrong": "'Theirs' cannot directly modify the noun 'contact information'."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "'Their' shows possession before the noun phrase 'contact information'.",
+        "quickTip": "Check what job the word performs in the sentence rather than relying on sound."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L1.2",
+    "secondarySkillIds": [
+      "L1.3",
+      "L1.8",
+      "L1.9",
+      "L2.4",
+      "L1.1"
+    ],
+    "contentKind": "editing_practice",
+    "practiceTags": [
+      "editing_passage",
+      "workplace",
+      "health"
+    ],
+    "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
+    "topicLabel": "Mixed Editing Practice"
+  }
+}

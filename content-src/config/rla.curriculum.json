@@ -297,10 +297,74 @@
                 "L2.4"
               ]
             }
+          ],
+          "units": [
+            {
+              "id": "word-choice-standard-usage",
+              "label": "Word Choice & Standard Usage",
+              "summary": "Choose the precise standard-English word or expression that fits the sentence and context.",
+              "skillIds": [
+                "L1.1",
+                "L1.4"
+              ]
+            },
+            {
+              "id": "agreement-pronouns",
+              "label": "Agreement & Pronouns",
+              "summary": "Match subjects and verbs, control complex agreement, and keep pronouns clear and correct.",
+              "skillIds": [
+                "L1.2",
+                "L1.3",
+                "L1.7"
+              ]
+            },
+            {
+              "id": "modifiers-sentence-logic",
+              "label": "Modifiers & Sentence Logic",
+              "summary": "Place modifiers where they clearly describe the intended word or action.",
+              "skillIds": [
+                "L1.5"
+              ]
+            },
+            {
+              "id": "parallelism-sentence-connections",
+              "label": "Parallelism & Sentence Connections",
+              "summary": "Build balanced sentence parts and connect ideas with clear coordination or subordination.",
+              "skillIds": [
+                "L1.6"
+              ]
+            },
+            {
+              "id": "concision-transitions",
+              "label": "Concision & Transitions",
+              "summary": "Remove unnecessary wording and choose transitions that express the exact logical relationship.",
+              "skillIds": [
+                "L1.8",
+                "L1.9"
+              ]
+            },
+            {
+              "id": "sentence-boundaries-punctuation",
+              "label": "Sentence Boundaries & Punctuation",
+              "summary": "Repair fragments and run-ons and punctuate clauses so sentence relationships are clear.",
+              "skillIds": [
+                "L2.2",
+                "L2.4"
+              ]
+            },
+            {
+              "id": "capitalization-possessives",
+              "label": "Capitalization & Possessives",
+              "summary": "Use capitalization and apostrophes accurately in practical editing contexts.",
+              "skillIds": [
+                "L2.1",
+                "L2.3"
+              ]
+            }
           ]
         }
       ],
-      "publicationState": "preview"
+      "publicationState": "published"
     },
     {
       "id": "extended-response",
