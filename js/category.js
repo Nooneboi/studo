@@ -187,11 +187,11 @@ function renderMain() {
 
     <div class="diagnostic-box">
       <div>
-        <h3>Want a quick check first?</h3>
-        <p>Take a mixed test from this area before choosing a practice set.</p>
-        <div class="meta" style="margin-top:6px">${questionCount} questions &middot; ~${minutes} min &middot; timed</div>
+        <h3>Ready for exam-style timing?</h3>
+        <p>Use the bounded RLA mock system when you want a timed mixed test. Your practice library stays focused on deliberate skill work.</p>
+        <div class="meta" style="margin-top:6px">Full mock and 30-question objective practice available</div>
       </div>
-      <a class="btn" href="test.html?subject=rla&category=${currentCat}">Start test</a>
+      <a class="btn" href="quiz.html">Open Mock Tests</a>
     </div>
 
     ${levelSections || `<div class="empty-state">Nothing here yet${activeTopic ? " for this topic" : ""} — check back soon.</div>`}

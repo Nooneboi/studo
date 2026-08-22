@@ -1,116 +1,69 @@
-/*
-  quiz.js
-  -------
-  Runs the Quiz picker page (quiz.html). Groups RLA modules by
-  category and offers a "Start test" card per category, plus a
-  combined Full RLA Test. Clicking a card assembles every question
-  from that category's modules into a single timed run (test.html).
-*/
+/* Mock/Test V1 landing page — starts/resumes fixed blueprint attempts. */
+const MOCK_ACTIVE_KEY = "sq:rlaMock:activeId";
+const MOCK_PREFIX = "sq:rlaMock:";
+const statusEl = document.getElementById("mock-status");
 
-const CATEGORIES = [
-  { id: "reading", label: "Reading" },
-  { id: "writing", label: "Writing and Analysis" },
-  { id: "language_conventions", label: "Language Conventions" },
-];
+initMockLanding();
 
-let allModules = [];
-let activeCategory = "all";
-
-init();
-
-async function init() {
-  const params = new URLSearchParams(window.location.search);
-  const subject = params.get("subject") || (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:activeSubject") : localStorage.getItem("sq:activeSubject")) || "rla";
-
-  const filterBar = document.getElementById("filter-bar");
-  const listEl = document.getElementById("test-list");
-
-  if (subject !== "rla") {
-    filterBar.innerHTML = "";
-    listEl.innerHTML = `<div class="empty-state">This subject isn't built out yet — check back soon, or switch to Reasoning Through Language Arts above.</div>`;
-    return;
-  }
-
+async function initMockLanding() {
   try {
-    allModules = (await Data.loadAllQuizzes()).filter((m) => (m.subject || "rla") === "rla");
-  } catch (e) {
-    listEl.innerHTML = `<p>Couldn't load modules.</p>`;
-    return;
-  }
-  renderFilterBar();
-  renderList();
-}
-
-function renderFilterBar() {
-  const filterBar = document.getElementById("filter-bar");
-  filterBar.innerHTML = `
-    <div class="filter-bar">
-      <div class="filter-group">
-        <div class="filter-group-title">Test type</div>
-        <div class="filter-chips">
-          ${chip("all", "Full RLA Test")}
-          ${CATEGORIES.map((c) => chip(c.id, c.label)).join("")}
-        </div>
-      </div>
-    </div>
-  `;
-  filterBar.querySelectorAll("[data-cat]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      activeCategory = btn.dataset.cat;
-      renderFilterBar();
-      renderList();
-    });
-  });
-
-  function chip(id, label) {
-    return `<button class="filter-chip ${activeCategory === id ? "active" : ""}" data-cat="${id}">${escapeHtml(label)}</button>`;
+    renderResume();
+    document.getElementById("start-full-mock")?.addEventListener("click", () => startAttempt("full"));
+    document.getElementById("start-objective-test")?.addEventListener("click", () => startAttempt("objective"));
+  } catch (error) {
+    console.error(error);
+    setStatus("Mock tests could not be initialized on this device.");
   }
 }
 
-function renderList() {
-  const listEl = document.getElementById("test-list");
-  const groups =
-    activeCategory === "all"
-      ? [{ id: "all", label: "Full RLA Test", modules: allModules }]
-      : CATEGORIES.filter((c) => c.id === activeCategory).map((c) => ({
-          id: c.id,
-          label: c.label,
-          modules: allModules.filter((m) => (m.category || "reading") === c.id),
-        }));
-
-  const cards = groups
-    .filter((g) => g.modules.length)
-    .map((g) => {
-      const questionCount = g.modules.reduce((sum, m) => sum + (m.questions?.length || 0), 0);
-      const totalSeconds = g.modules.reduce(
-        (sum, m) => sum + (m.questions || []).reduce((s, q) => s + (q.time || 30), 0),
-        0
-      );
-      const minutes = Math.max(1, Math.round(totalSeconds / 60));
-
-      return `
-        <div class="test-card">
-          <h3>${escapeHtml(g.label)} Test</h3>
-          <p class="desc">Every question from this ${
-            g.id === "all" ? "subject" : "skill area"
-          }, one sitting, clock running.</p>
-          <div class="meta-row">
-            <span class="tag">${questionCount} questions</span>
-            <span class="tag">~${minutes} min</span>
-          </div>
-          <div class="cta-row">
-            <a class="btn small" href="test.html?subject=rla&category=${g.id}">Start test</a>
-          </div>
-        </div>`;
-    });
-
-  listEl.innerHTML = cards.length
-    ? cards.join("")
-    : `<div class="empty-state">No questions available for this test yet.</div>`;
+async function startAttempt(mode) {
+  try {
+    const [modules, blueprintRes, promptsRes] = await Promise.all([
+      Data.loadAllQuizzes(),
+      fetch("data/generated/mock-blueprint.json", { cache: "no-store" }),
+      fetch("data/generated/er-prompts.json", { cache: "no-store" })
+    ]);
+    if (!blueprintRes.ok || !promptsRes.ok) throw new Error("Mock data failed to load");
+    const blueprint = await blueprintRes.json();
+    const prompts = (await promptsRes.json()).prompts || [];
+    const seed = `${Date.now()}-${Math.random()}`;
+    let generated;
+    let attempt;
+    if (mode === "objective") {
+      generated = MockEngine.generateObjectivePractice({ modules, blueprint, seed });
+      attempt = MockEngine.createObjectiveAttempt(generated, blueprint, Date.now());
+    } else {
+      generated = MockEngine.generateFullMock({ modules, prompts, blueprint, seed });
+      attempt = MockEngine.createAttempt(generated, blueprint, Date.now());
+    }
+    saveAttempt(attempt);
+    setValue(MOCK_ACTIVE_KEY, attempt.attemptId);
+    location.href = `test.html?attempt=${encodeURIComponent(attempt.attemptId)}`;
+  } catch (error) {
+    console.error(error);
+    setStatus("Studo could not assemble a valid mock from the current question bank.");
+  }
 }
 
-function escapeHtml(str) {
-  const div = document.createElement("div");
-  div.textContent = str ?? "";
-  return div.innerHTML;
+function renderResume() {
+  const id = getValue(MOCK_ACTIVE_KEY);
+  const attempt = id ? loadAttempt(id) : null;
+  const mount = document.getElementById("mock-resume");
+  if (!mount || !attempt || attempt.completedAt) return;
+  const label = attempt.mode === "objective" ? "Objective practice test" : "Full RLA Mock";
+  mount.hidden = false;
+  mount.innerHTML = `<div><span class="mock-option-label">In progress</span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(stageLabel(attempt.stage))}</small></div><a class="btn small" href="test.html?attempt=${encodeURIComponent(attempt.attemptId)}">Resume</a>`;
 }
+
+function stageLabel(stage) {
+  return ({ part1: "Part 1", er: "Extended Response", break: "Break", part3: "Part 3", objective: "Objective section", results: "Results" })[stage] || "In progress";
+}
+
+function loadAttempt(id) {
+  try { return JSON.parse(getValue(`${MOCK_PREFIX}${id}`) || "null"); } catch (_) { return null; }
+}
+function saveAttempt(attempt) { setValue(`${MOCK_PREFIX}${attempt.attemptId}`, JSON.stringify(attempt)); }
+function getValue(key) { return window.StudoSafeStorage ? window.StudoSafeStorage.get(key) : localStorage.getItem(key); }
+function setValue(key, value) { return window.StudoSafeStorage ? window.StudoSafeStorage.set(key, value) : localStorage.setItem(key, value); }
+function setStatus(text) { if (statusEl) statusEl.textContent = text; }
+function escapeHtml(value) { const d = document.createElement("div"); d.textContent = String(value ?? ""); return d.innerHTML; }

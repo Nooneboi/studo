@@ -1,0 +1,51 @@
+{
+  "version": "rla-mock-v1",
+  "label": "Studo Full RLA Mock",
+  "disclaimer": "GED-style simulation based on public exam guidance. This is not an official GED test or scaled score.",
+  "full": {
+    "approxTotalMinutes": 150,
+    "objectiveQuestionCount": 46,
+    "domainTargets": {
+      "reading": 25,
+      "arguments": 10,
+      "language_conventions": 11
+    },
+    "part1": {
+      "seconds": 1620,
+      "questionCount": 14,
+      "domainTargets": {
+        "reading": 7,
+        "arguments": 6,
+        "language_conventions": 1
+      }
+    },
+    "er": { "seconds": 2700 },
+    "break": { "seconds": 600 },
+    "part3": {
+      "seconds": 3900,
+      "questionCount": 32,
+      "domainTargets": {
+        "reading": 18,
+        "arguments": 4,
+        "language_conventions": 10
+      }
+    }
+  },
+  "objectivePractice": {
+    "seconds": 3600,
+    "questionCount": 30,
+    "domainTargets": {
+      "reading": 17,
+      "arguments": 6,
+      "language_conventions": 7
+    }
+  },
+  "selection": {
+    "readingMixedKinds": ["passage_practice", "quiz"],
+    "argumentsMixedKinds": ["argument_practice"],
+    "languageMixedKinds": ["editing_practice"],
+    "focusedKind": "skill_drill",
+    "readingTextTypeTarget": { "informational": 0.75, "literary": 0.25 },
+    "staminaMinimumWords": 600
+  }
+}

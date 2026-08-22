@@ -278,6 +278,7 @@ async function main() {
 
   const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
   const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
+  const mockBlueprint = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla-mock-v1.json'), 'utf8'));
   const resourceRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'resources', 'rla.resources.json'), 'utf8'));
   const publishedResources = (resourceRegistry.resources || []).filter((resource) => resource.status === 'published');
 
@@ -380,6 +381,7 @@ async function main() {
     return publicPrompt;
   });
   await fs.writeFile(path.join(OUT, 'er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerErPrompts }, null, 2) + '\n', 'utf8');
+  await fs.writeFile(path.join(OUT, 'mock-blueprint.json'), JSON.stringify(mockBlueprint, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'qa-report.json'), JSON.stringify({
     schemaVersion: 1,
     builtAt: new Date().toISOString(),

@@ -1,561 +1,345 @@
-/*
-  test.js — Studo timed test workspace (v3)
-  ------------------------------------------
-  Focused single-question exam flow with:
-  - one compact app bar for title, progress, timer, tools, and submit
-  - passage/question split when needed
-  - review screen before submission
-  - unique question keys across modules
-  - written responses excluded from auto-graded totals
-*/
-
-const CATEGORY_LABELS = {
-  reading: "Reading",
-  writing: "Writing and Analysis",
-  language_conventions: "Language Conventions",
-  all: "Full RLA",
-};
-
-const viewEl = document.getElementById("test-view");
-let items = [];
-let answers = {};
-let currentIndex = 0;
-let remainingSeconds = 0;
-let autoSeconds = 0;
-let timerMode = "auto";
+/* Studo RLA Mock/Test V1 — strict section flow with fixed attempt recovery. */
+const MOCK_PREFIX = "sq:rlaMock:";
+const MOCK_HISTORY_KEY = "sq:rlaMockAttempts";
+const MOCK_ACTIVE_KEY = "sq:rlaMock:activeId";
+const CATEGORY_LABELS = { reading: "Reading", arguments: "Arguments", language_conventions: "Language" };
+const params = new URLSearchParams(location.search);
+const attemptId = params.get("attempt") || "";
+const viewEl = document.getElementById("mock-view");
+const flagBtn = document.getElementById("flag-btn");
+const reviewBtn = document.getElementById("section-review-btn");
+let attempt = null;
+let modules = [];
+let moduleMap = new Map();
 let timerHandle = null;
-let submitted = false;
 let reviewing = false;
-let testLabel = "RLA";
 
-init();
+initMock();
 
-async function init() {
-  const params = new URLSearchParams(window.location.search);
-  const subject = params.get("subject") || "rla";
-  const category = params.get("category") || "all";
-
-  if (subject !== "rla") {
-    viewEl.innerHTML = `<div class="empty-state">This subject is coming soon. <a href="quiz.html">Back to Quiz</a></div>`;
-    return;
-  }
-
-  let modules;
+async function initMock() {
+  if (!attemptId) return renderFatal("No mock attempt was selected.");
+  attempt = loadAttempt(attemptId);
+  if (!attempt) return renderFatal("This mock attempt could not be recovered on this device.");
   try {
-    modules = (await Data.loadAllQuizzes()).filter((m) => (m.subject || "rla") === "rla");
-  } catch (e) {
-    viewEl.innerHTML = `<div class="empty-state">Couldn't load the test. <a href="quiz.html">Back to Quiz</a></div>`;
-    return;
+    modules = await Data.loadAllQuizzes();
+    moduleMap = new Map(modules.map((m) => [m.id, m]));
+    syncErCompletion();
+    enforceExpiredStage();
+    wireTopControls();
+    renderStage();
+  } catch (error) {
+    console.error(error);
+    renderFatal("Studo could not load the questions for this mock.");
   }
-
-  if (category !== "all") modules = modules.filter((m) => (m.category || "reading") === category);
-  modules = modules.filter((m) => (m.questions || []).length);
-
-  items = modules.flatMap((module) =>
-    module.questions.map((question, moduleQuestionIndex) => ({ module, question, moduleQuestionIndex }))
-  );
-
-  if (!items.length) {
-    viewEl.innerHTML = `<div class="empty-state">No questions available for this test. <a href="quiz.html">Back to Quiz</a></div>`;
-    return;
-  }
-
-  testLabel = CATEGORY_LABELS[category] || "RLA";
-  autoSeconds = items.reduce((sum, item) => sum + (item.question.time || 30), 0);
-  timerMode = (window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:timerMode") : localStorage.getItem("sq:timerMode")) || "auto";
-  remainingSeconds = secondsForMode(timerMode);
-
-  setupShell();
-  renderCurrentQuestion();
-  setupTimerPicker();
-  if (timerMode !== "none") startTimer();
 }
 
-function answerKey(item) {
-  return `${item.module.id}:${item.question.id}`;
-}
-
-function secondsForMode(mode) {
-  if (mode === "none") return 0;
-  if (mode === "auto") return autoSeconds;
-  if (mode === "custom") {
-    const saved = parseInt((window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:customMinutes") : localStorage.getItem("sq:customMinutes")), 10);
-    return (isNaN(saved) || saved <= 0 ? 20 : saved) * 60;
-  }
-  const n = parseInt(mode, 10);
-  return isNaN(n) ? autoSeconds : n;
-}
-
-function setupShell() {
-  const titleEl = document.getElementById("focus-title");
-  if (titleEl) titleEl.textContent = `${testLabel} Test`;
-
-  const exitLink = document.getElementById("focus-exit");
-  if (exitLink) {
-    exitLink.addEventListener("click", (e) => {
-      if (!submitted && Object.keys(answers).length) {
-        const ok = confirm("Leave this test? Your answers from this attempt won't be saved.");
-        if (!ok) e.preventDefault();
-      }
-    });
-  }
-
-  const submitBtn = document.getElementById("submit-btn");
-  if (submitBtn) submitBtn.addEventListener("click", () => {
-    if (submitted) return;
-    renderReviewScreen();
+function wireTopControls() {
+  document.getElementById("mock-exit")?.addEventListener("click", (event) => {
+    if (attempt.completedAt) return;
+    if (!confirm("Leave the mock? Your saved attempt will remain on this device and the active section clock will keep running.")) event.preventDefault();
   });
+  flagBtn?.addEventListener("click", toggleCurrentFlag);
+  reviewBtn?.addEventListener("click", () => renderSectionReview());
 }
 
-function renderWorkspaceShell(hasPassage) {
+function renderStage() {
+  stopTimer();
+  reviewing = false;
+  syncErCompletion();
+  if (attempt.stage === "part1" || attempt.stage === "part3" || attempt.stage === "objective") return renderObjectiveStage();
+  if (attempt.stage === "er") return renderErStage();
+  if (attempt.stage === "break") return renderBreakStage();
+  if (attempt.stage === "results") return renderResults();
+  renderFatal("This mock has an unknown saved stage.");
+}
+
+function currentObjectiveStage() {
+  if (attempt.stage === "objective") return attempt.objective;
+  return attempt[attempt.stage];
+}
+
+function renderObjectiveStage() {
+  const stage = currentObjectiveStage();
+  if (!stage) return renderFatal("This objective section is missing.");
+  if (!stage.startedAt) { stage.startedAt = Date.now(); saveAttempt(); }
+  const remaining = MockEngine.remainingSeconds(stage, Date.now());
+  if (remaining <= 0 && !stage.submittedAt) return submitObjectiveStage(true);
+
+  showTopControls(true);
+  const label = attempt.stage === "part1" ? "Part 1" : attempt.stage === "part3" ? "Part 3" : "Objective Practice";
+  setText("mock-part-label", label);
+  setText("mock-title", attempt.mode === "objective" ? "Objective RLA Practice Test" : "Full RLA Mock");
+  stage.currentIndex = Math.max(0, Math.min(Number(stage.currentIndex || 0), stage.items.length - 1));
+  const item = stage.items[stage.currentIndex];
+  const module = moduleMap.get(item.moduleId);
+  const q = (module?.questions || []).find((x) => x.id === item.questionId);
+  if (!module || !q) return renderFatal("One selected mock question could not be loaded.");
+  const key = MockEngine.objectiveItemKey(item);
+  const saved = stage.answers?.[key];
+  const promptHtml = q.type === "grammar_edit" ? escapeHtml(q.prompt || "").replace(/\{\{blank\}\}/g, '<span class="grammar-blank">_____</span>') : escapeHtml(q.prompt || "");
+  const hasPassage = Boolean(module.passage);
+
   viewEl.innerHTML = `
-    <section class="study-workspace${hasPassage ? "" : " no-passage"}" id="study-workspace">
-      <div id="passage-mount"></div>
-      <article class="question-panel" aria-label="Test question">
-        <div id="question-stage" class="question-stage"></div>
-        <div class="question-footer" id="question-footer"></div>
+    <section class="study-workspace mock-objective-workspace${hasPassage ? "" : " no-passage"}">
+      <div>${hasPassage ? passageHtml(module) : ""}</div>
+      <article class="question-panel" aria-label="Mock question">
+        <div class="question-stage">
+          <div class="mock-question-meta">${escapeHtml(CATEGORY_LABELS[item.category] || item.category)} · ${escapeHtml(module.title || "Question")}</div>
+          <div class="q-prompt">${promptHtml}</div>
+          <div data-role="answer-area">${answerAreaHtml(q, saved, stage.currentIndex)}</div>
+        </div>
+        <div class="question-footer">
+          <button class="question-nav-btn secondary" id="mock-prev" type="button" ${stage.currentIndex === 0 ? "disabled" : ""}>Previous</button>
+          <span class="question-footer-position">${stage.currentIndex + 1} / ${stage.items.length}</span>
+          <button class="question-nav-btn primary" id="mock-next" type="button">${stage.currentIndex === stage.items.length - 1 ? "Review section" : "Next"}</button>
+        </div>
       </article>
-    </section>
-  `;
-}
+    </section>`;
 
-function renderCurrentQuestion() {
-  reviewing = false;
-  const topSubmit = document.getElementById("submit-btn");
-  if (topSubmit && !submitted) topSubmit.hidden = false;
-  currentIndex = Math.max(0, Math.min(currentIndex, items.length - 1));
-  const item = items[currentIndex];
-  const q = item.question;
-  const key = answerKey(item);
-  const savedAnswer = answers[key];
-  const hasPassage = Boolean(item.module.passage);
-
-  renderWorkspaceShell(hasPassage);
-  renderPassage(item.module);
-
-  const promptHtml = q.type === "grammar_edit"
-    ? escapeHtml(q.prompt || "").replace(/\{\{blank\}\}/g, '<span class="grammar-blank">_____</span>')
-    : escapeHtml(q.prompt || "");
-
-  const stage = document.getElementById("question-stage");
-  stage.innerHTML = `
-    <div class="q-prompt">${promptHtml}</div>
-    <div data-role="answer-area"></div>
-    <div class="explanation-box" data-role="explanation">${escapeHtml(q.explanation || "")}</div>
-    ${submitted && !isAutoGraded(q) ? `<div class="review-note">This response is not auto-graded. Use the explanation as a self-review checklist.</div>` : ""}
-  `;
-
-  renderAnswerArea(item, stage.querySelector('[data-role="answer-area"]'), savedAnswer);
-  if (submitted) revealReview(item);
-
-  const footer = document.getElementById("question-footer");
-  footer.innerHTML = `
-    <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
-    <span class="question-footer-position">${currentIndex + 1} / ${items.length}</span>
-    <button class="question-nav-btn primary" id="next-question">${currentIndex === items.length - 1 ? (submitted ? "Back to first" : "Review answers") : "Next"}</button>
-  `;
-
-  document.getElementById("prev-question").addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex -= 1;
-      renderCurrentQuestion();
-    }
+  viewEl.querySelectorAll(".answer-radio").forEach((radio) => radio.addEventListener("change", () => {
+    if (!radio.checked || stage.locked) return;
+    stage.answers[key] = radio.value;
+    saveAttempt();
+    updateObjectiveHeader();
+  }));
+  viewEl.querySelectorAll(".mock-edit-select").forEach((select) => select.addEventListener("change", () => {
+    if (stage.locked) return;
+    if (select.value) stage.answers[key] = select.value;
+    else delete stage.answers[key];
+    saveAttempt();
+    updateObjectiveHeader();
+  }));
+  document.getElementById("mock-prev")?.addEventListener("click", () => { if (stage.currentIndex > 0) { stage.currentIndex -= 1; saveAttempt(); renderObjectiveStage(); } });
+  document.getElementById("mock-next")?.addEventListener("click", () => {
+    if (stage.currentIndex < stage.items.length - 1) { stage.currentIndex += 1; saveAttempt(); renderObjectiveStage(); }
+    else renderSectionReview();
   });
-
-  document.getElementById("next-question").addEventListener("click", () => {
-    if (currentIndex < items.length - 1) {
-      currentIndex += 1;
-      renderCurrentQuestion();
-    } else if (submitted) {
-      currentIndex = 0;
-      renderCurrentQuestion();
-    } else {
-      renderReviewScreen();
-    }
-  });
-
-  updateProgress();
+  updateObjectiveHeader();
+  startObjectiveTimer();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function renderReviewScreen() {
+function answerAreaHtml(q, saved, index) {
+  if (!["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) return `<div class="empty-state">This item type is not supported in Mock V1.</div>`;
+  if (q.type === "grammar_edit") {
+    return `<label class="mock-edit-field"><span>Choose the best edit</span><select class="mock-edit-select" aria-label="Choose the best edit"><option value="">Select an answer…</option>${(q.options || []).map((opt) => `<option value="${escapeAttr(opt.id)}" ${saved === opt.id ? "selected" : ""}>${escapeHtml(opt.text)}</option>`).join("")}</select></label>`;
+  }
+  return `<fieldset class="options-list" aria-label="Answer choices">${(q.options || []).map((opt) => `<label class="answer-choice"><input class="answer-radio" type="radio" name="mock-answer-${index}" value="${escapeAttr(opt.id)}" ${saved === opt.id ? "checked" : ""}><span class="choice-letter">${escapeHtml(String(opt.id).toUpperCase())}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></label>`).join("")}</fieldset>`;
+}
+
+function passageHtml(module) {
+  const paragraphs = String(module.passage || "").trim().split(/\n\s*\n+/).filter(Boolean);
+  return `<aside class="reading-column test-reading-column" aria-label="Source passage"><header class="passage-heading passage-heading-test"><h1>${escapeHtml(module.title)}</h1><p>${escapeHtml(module.description || "")}</p></header><section class="reading-panel reading-panel-clean"><div class="reading-scroll"><div class="passage-text passage-numbered">${paragraphs.map((p, i) => `<p class="passage-paragraph"><span class="passage-paragraph-number">${i + 1}</span><span>${escapeHtml(p)}</span></p>`).join("")}</div></div>${module.source ? `<div class="source-credit">${escapeHtml(module.source)}</div>` : ""}</section></aside>`;
+}
+
+function toggleCurrentFlag() {
+  if (!attempt || !["part1", "part3", "objective"].includes(attempt.stage) || reviewing) return;
+  const stage = currentObjectiveStage();
+  const item = stage.items[stage.currentIndex];
+  const key = MockEngine.objectiveItemKey(item);
+  stage.flags[key] = !stage.flags?.[key];
+  saveAttempt();
+  updateObjectiveHeader();
+}
+
+function updateObjectiveHeader() {
+  if (!attempt || !["part1", "part3", "objective"].includes(attempt.stage)) return;
+  const stage = currentObjectiveStage();
+  const item = stage.items[stage.currentIndex];
+  const key = MockEngine.objectiveItemKey(item);
+  const answered = Object.keys(stage.answers || {}).filter((k) => String(stage.answers[k] ?? "").trim()).length;
+  setText("mock-progress", reviewing ? `Review · ${answered}/${stage.items.length} answered` : `Question ${stage.currentIndex + 1} of ${stage.items.length}`);
+  const fill = document.getElementById("mock-progress-fill");
+  if (fill) fill.style.width = `${reviewing ? 100 : ((stage.currentIndex + 1) / stage.items.length) * 100}%`;
+  if (flagBtn) {
+    const flagged = Boolean(stage.flags?.[key]);
+    flagBtn.hidden = reviewing;
+    flagBtn.classList.toggle("active", flagged);
+    flagBtn.setAttribute("aria-pressed", String(flagged));
+    flagBtn.textContent = flagged ? "Flagged" : "Flag for review";
+  }
+  if (reviewBtn) reviewBtn.hidden = reviewing;
+}
+
+function renderSectionReview() {
+  if (!["part1", "part3", "objective"].includes(attempt.stage)) return;
   reviewing = true;
-  const topSubmit = document.getElementById("submit-btn");
-  if (topSubmit) topSubmit.hidden = true;
-  const answeredCount = getAnsweredCount();
-  const firstUnanswered = items.findIndex((item) => !hasAnswer(answers[answerKey(item)]));
+  const stage = currentObjectiveStage();
+  const answered = stage.items.filter((item) => hasAnswer(stage.answers?.[MockEngine.objectiveItemKey(item)])).length;
+  showTopControls(true);
+  if (flagBtn) flagBtn.hidden = true;
+  if (reviewBtn) reviewBtn.hidden = true;
+  setText("mock-progress", `Review · ${answered}/${stage.items.length} answered`);
+  viewEl.innerHTML = `<section class="test-review mock-section-review"><div class="test-review-head"><span class="question-number">Section review</span><h1>Check before you submit</h1><p>Answers stay hidden. Return to any unanswered or flagged question before locking this section.</p></div><div class="mock-navigator">${stage.items.map((item, index) => {
+    const key = MockEngine.objectiveItemKey(item); const isAnswered = hasAnswer(stage.answers?.[key]); const isFlagged = Boolean(stage.flags?.[key]);
+    return `<button type="button" class="mock-nav-cell${isAnswered ? " answered" : " unanswered"}${isFlagged ? " flagged" : ""}" data-index="${index}"><strong>${index + 1}</strong><span>${isFlagged ? "Flagged" : isAnswered ? "Answered" : "Unanswered"}</span></button>`;
+  }).join("")}</div><div class="test-review-actions"><button class="question-nav-btn secondary" id="review-back" type="button">Back to questions</button><button class="question-nav-btn primary" id="review-submit" type="button">Submit section</button></div></section>`;
+  viewEl.querySelectorAll("[data-index]").forEach((btn) => btn.addEventListener("click", () => { stage.currentIndex = Number(btn.dataset.index); saveAttempt(); renderObjectiveStage(); }));
+  document.getElementById("review-back")?.addEventListener("click", () => renderObjectiveStage());
+  document.getElementById("review-submit")?.addEventListener("click", () => submitObjectiveStage(false));
+  startObjectiveTimer();
+}
 
-  viewEl.innerHTML = `
-    <section class="test-review" aria-labelledby="review-heading">
-      <div class="test-review-head">
-        <span class="question-number">Review</span>
-        <h1 id="review-heading">Check your answers</h1>
-        <p>${answeredCount} of ${items.length} answered${firstUnanswered >= 0 ? ". Unanswered questions are marked below." : ". Everything has an answer."}</p>
-      </div>
+function submitObjectiveStage(timedOut) {
+  stopTimer();
+  const stage = currentObjectiveStage();
+  if (!stage || stage.submittedAt) return;
+  const unanswered = stage.items.filter((item) => !hasAnswer(stage.answers?.[MockEngine.objectiveItemKey(item)])).length;
+  if (!timedOut && unanswered && !confirm(`${unanswered} question${unanswered === 1 ? " is" : "s are"} unanswered. Submit this section anyway? You cannot return after submitting.`)) return;
+  stage.submittedAt = new Date().toISOString();
+  stage.locked = true;
+  if (attempt.mode === "objective") return completeAttempt(timedOut);
+  if (attempt.stage === "part1") {
+    attempt.stage = "er";
+    saveAttempt();
+    renderStage();
+  } else if (attempt.stage === "part3") completeAttempt(timedOut);
+}
 
-      <div class="test-review-list">
-        ${items.map((item, index) => {
-          const answered = hasAnswer(answers[answerKey(item)]);
-          return `
-            <button type="button" class="review-question-row${answered ? " answered" : " unanswered"}" data-review-index="${index}">
-              <span class="review-question-number">${index + 1}</span>
-              <span class="review-question-copy">
-                <strong>${escapeHtml(item.module.topic || item.module.title || `Question ${index + 1}`)}</strong>
-                <span>${answered ? "Answered" : "Not answered"}</span>
-              </span>
-              <span class="review-question-arrow" aria-hidden="true">&rarr;</span>
-            </button>`;
-        }).join("")}
-      </div>
-
-      <div class="test-review-actions">
-        <button type="button" class="question-nav-btn secondary" id="review-back-btn">Back to questions</button>
-        ${firstUnanswered >= 0 ? `<button type="button" class="question-nav-btn secondary" id="first-unanswered-btn">Go to first unanswered</button>` : ""}
-        <button type="button" class="question-nav-btn primary" id="review-submit-btn">Submit test</button>
-      </div>
-    </section>
-  `;
-
-  viewEl.querySelectorAll("[data-review-index]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      currentIndex = Number(btn.dataset.reviewIndex);
-      renderCurrentQuestion();
-    });
+function renderErStage() {
+  showTopControls(false);
+  setText("mock-part-label", "Part 2");
+  setText("mock-title", "Extended Response");
+  setText("mock-clock", "45:00");
+  const erState = loadMockErState();
+  const hasDraft = Boolean(erState);
+  viewEl.innerHTML = `<section class="mock-transition-screen"><span class="mock-option-label">Part 2 · 45 minutes</span><h1>Extended Response</h1><p>Your full mock uses one paired-source writing prompt. The essay is not automatically scored; after submission, your three rubric traits remain clearly labeled as self-review.</p><div class="mock-transition-notes"><span>Read both sources</span><span>Choose the better-supported argument</span><span>Use specific evidence</span></div><button class="btn" id="launch-er" type="button">${hasDraft ? "Continue Extended Response" : "Start Extended Response"}</button><p class="mock-disclaimer">The 45-minute ER clock starts when the writing workspace opens and continues across refreshes.</p></section>`;
+  document.getElementById("launch-er")?.addEventListener("click", () => {
+    if (!attempt.er.launchedAt) attempt.er.launchedAt = new Date().toISOString();
+    saveAttempt();
+    const ret = `test.html?attempt=${encodeURIComponent(attempt.attemptId)}`;
+    location.href = `extended-response.html?prompt=${encodeURIComponent(attempt.er.promptId)}&mode=timed&attempt=${encodeURIComponent(attempt.attemptId)}&return=${encodeURIComponent(ret)}`;
   });
-
-  document.getElementById("review-back-btn").addEventListener("click", () => renderCurrentQuestion());
-  const firstBtn = document.getElementById("first-unanswered-btn");
-  if (firstBtn) {
-    firstBtn.addEventListener("click", () => {
-      currentIndex = firstUnanswered;
-      renderCurrentQuestion();
-    });
-  }
-  document.getElementById("review-submit-btn").addEventListener("click", () => submitTest(false));
-
-  updateProgress();
-  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function renderPassage(module) {
-  const mount = document.getElementById("passage-mount");
-  if (!mount) return;
-  if (!module.passage) {
-    mount.innerHTML = "";
-    return;
-  }
-
-  const meta = module.description ? module.description.replace(/\s+-\s+/g, " · ") : "";
-  mount.innerHTML = `
-    <aside class="reading-column test-reading-column" aria-label="Reading passage">
-      <header class="passage-heading passage-heading-test">
-        <h1>${escapeHtml(module.title)}</h1>
-        ${meta ? `<p>${escapeHtml(meta)}</p>` : ""}
-      </header>
-      <section class="reading-panel reading-panel-clean">
-        <div class="reading-scroll"><div class="passage-text passage-numbered">${renderPassageParagraphs(module.passage)}</div></div>
-        ${module.source ? `<div class="source-credit">${escapeHtml(module.source)}</div>` : ""}
-      </section>
-    </aside>`;
-}
-
-function renderPassageParagraphs(text) {
-  const paragraphs = String(text || "").trim().split(/\n\s*\n+/).filter(Boolean);
-  if (paragraphs.length <= 1) return `<p class="passage-paragraph"><span class="passage-paragraph-number">1</span><span>${escapeHtml(text || "")}</span></p>`;
-  return paragraphs.map((paragraph, index) => `
-    <p class="passage-paragraph">
-      <span class="passage-paragraph-number">${index + 1}</span>
-      <span>${escapeHtml(paragraph)}</span>
-    </p>`).join("");
-}
-
-function questionDetail(item) {
-  const q = item.question;
-  const parts = [];
-  if (item.module.topic) parts.push(item.module.topic);
-  if (q.points) parts.push(`${q.points} ${q.points === 1 ? "point" : "points"}`);
-  return parts.join(" · ");
-}
-
-function renderAnswerArea(item, container, savedAnswer) {
-  const q = item.question;
-  const key = answerKey(item);
-
-  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
-    const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
-    const groupName = `test-answer-${currentIndex}`;
-    container.innerHTML = `<fieldset class="options-list" aria-label="Answer choices">${q.options
-      .map((opt) => `<label class="answer-choice${optionClass}" data-opt="${escapeAttr(opt.id)}"><input class="answer-radio" type="radio" name="${groupName}" value="${escapeAttr(opt.id)}" ${savedAnswer === opt.id ? "checked" : ""} ${submitted ? "disabled" : ""}><span class="choice-letter">${escapeHtml(opt.id.toUpperCase())}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></label>`)
-      .join("")}</fieldset>`;
-
-    container.querySelectorAll(".answer-radio").forEach((radio) => {
-      radio.addEventListener("change", () => {
-        if (submitted || !radio.checked) return;
-        answers[key] = radio.value;
-        updateProgress();
-      });
-    });
-  } else if (q.type === "fill_blank") {
-    container.innerHTML = `<label class="question-detail answer-label" for="test-short-answer">Your answer</label><input id="test-short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}" ${submitted ? "disabled" : ""}>`;
-    const input = container.querySelector("input");
-    input.addEventListener("input", () => {
-      answers[key] = input.value;
-      updateProgress();
-    });
-  } else {
-    container.innerHTML = `<label class="question-detail answer-label" for="test-written-answer">Your response</label><textarea id="test-written-answer" class="open-ended-input" placeholder="Write your response…" ${submitted ? "disabled" : ""}>${escapeHtml(savedAnswer || "")}</textarea>`;
-    const ta = container.querySelector("textarea");
-    ta.addEventListener("input", () => {
-      answers[key] = ta.value;
-      updateProgress();
-    });
+function syncErCompletion() {
+  if (!attempt || attempt.mode === "objective" || attempt.stage !== "er") return;
+  const erState = loadMockErState();
+  if (erState?.submittedAt && !attempt.er.completedAt) {
+    attempt.er.completedAt = erState.submittedAt;
+    attempt.stage = "break";
+    attempt.break.startedAt = Date.now();
+    saveAttempt();
   }
 }
 
-function revealReview(item) {
-  const q = item.question;
-  const key = answerKey(item);
-  const answer = answers[key];
-  const stage = document.getElementById("question-stage");
-  if (!stage) return;
-
-  const explanation = stage.querySelector('[data-role="explanation"]');
-  if (explanation && explanation.textContent.trim()) explanation.classList.add("visible");
-
-  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
-    const correct = new Set(q.correct || []);
-    stage.querySelectorAll(".answer-choice").forEach((choice) => {
-      const isSelected = choice.dataset.opt === answer;
-      const isCorrect = correct.has(choice.dataset.opt);
-      choice.classList.toggle("selected", isSelected);
-      choice.classList.toggle("correct", isCorrect);
-      choice.classList.toggle("incorrect", isSelected && !isCorrect);
-      const radio = choice.querySelector(".answer-radio");
-      if (radio) radio.checked = isSelected;
-    });
-  }
+function loadMockErState() {
+  if (!attempt?.er?.promptId) return null;
+  try { return JSON.parse(getValue(`sq:er:mock:${attempt.attemptId}:${attempt.er.promptId}`) || "null"); } catch (_) { return null; }
 }
 
-function getAnsweredCount() {
-  return items.filter((item) => hasAnswer(answers[answerKey(item)])).length;
+function renderBreakStage() {
+  showTopControls(false);
+  if (!attempt.break.startedAt) { attempt.break.startedAt = Date.now(); saveAttempt(); }
+  setText("mock-part-label", "Break"); setText("mock-title", "10-minute break");
+  viewEl.innerHTML = `<section class="mock-transition-screen"><span class="mock-option-label">Between Parts 2 and 3</span><h1>Take the intended break</h1><div class="mock-break-clock" id="break-clock">10:00</div><p>Part 3 keeps its full 65 minutes whether you use the whole break or continue early.</p><button class="btn secondary" id="continue-part3" type="button">Continue to Part 3 now</button></section>`;
+  const update = () => {
+    const elapsed = Math.floor((Date.now() - Number(attempt.break.startedAt)) / 1000);
+    const remaining = Math.max(0, Number(attempt.break.seconds) - elapsed);
+    setText("mock-clock", formatTime(remaining)); setText("break-clock", formatTime(remaining));
+    if (remaining <= 0) startPart3();
+  };
+  update(); timerHandle = setInterval(update, 1000);
+  document.getElementById("continue-part3")?.addEventListener("click", () => { if (confirm("Continue early? Part 3 will begin immediately with its full 65-minute timer.")) startPart3(); });
 }
 
-function updateProgress() {
-  const answered = getAnsweredCount();
-  const progressLabel = document.getElementById("progress-label");
-  const answeredLabel = document.getElementById("answered-label");
-  const fill = document.getElementById("progress-fill");
-  const submitBtn = document.getElementById("submit-btn");
-
-  if (progressLabel) progressLabel.textContent = reviewing ? "Review" : `Question ${currentIndex + 1} of ${items.length}`;
-  if (answeredLabel) answeredLabel.textContent = `${answered} answered`;
-  if (fill) fill.style.width = `${reviewing ? 100 : ((currentIndex + 1) / items.length) * 100}%`;
-  if (submitBtn && !submitted) {
-    submitBtn.hidden = reviewing;
-    submitBtn.classList.toggle("ready", answered === items.length);
-  }
+function startPart3() {
+  if (attempt.stage !== "break") return;
+  stopTimer(); attempt.break.completedAt = new Date().toISOString(); attempt.stage = "part3"; attempt.part3.startedAt = Date.now(); saveAttempt(); renderStage();
 }
 
-function hasAnswer(value) {
-  return typeof value === "string" ? Boolean(value.trim()) : Boolean(value);
+function completeAttempt(timedOut) {
+  stopTimer();
+  attempt.objectiveScore = MockEngine.scoreObjectiveAttempt(attempt, moduleMap);
+  attempt.completedAt = new Date().toISOString();
+  attempt.stage = "results";
+  attempt.timedOut = Boolean(timedOut);
+  saveAttempt();
+  archiveAttempt();
+  removeValue(MOCK_ACTIVE_KEY);
+  renderResults();
 }
 
-const TIMER_LABELS = {
-  auto: "Auto",
-  "600": "10 min",
-  "900": "15 min",
-  "1200": "20 min",
-  "1800": "30 min",
-  none: "Untimed",
-};
-
-function setupTimerPicker() {
-  const btn = document.getElementById("timer-picker-btn");
-  const panel = document.getElementById("timer-picker-panel");
-  const label = document.getElementById("timer-picker-label");
-  const customInput = document.getElementById("custom-minutes-input");
-  const applyCustomBtn = document.getElementById("apply-custom-timer");
-  if (!btn || !panel || !label) return;
-
-  function updateLabel() {
-    label.textContent = timerMode === "custom"
-      ? `${Math.round(secondsForMode("custom") / 60)} min`
-      : TIMER_LABELS[timerMode] || "Auto";
-    panel.querySelectorAll("[data-timer-value]").forEach((b) => b.classList.toggle("active", b.dataset.timerValue === timerMode));
-    btn.classList.toggle("untimed", timerMode === "none");
-  }
-
-  function closePanel() {
-    panel.classList.add("hidden");
-    btn.setAttribute("aria-expanded", "false");
-  }
-
-  updateLabel();
-  btn.addEventListener("click", () => {
-    const willOpen = panel.classList.contains("hidden");
-    panel.classList.toggle("hidden");
-    btn.setAttribute("aria-expanded", String(willOpen));
-  });
-  document.addEventListener("click", (e) => {
-    if (!panel.contains(e.target) && !btn.contains(e.target)) closePanel();
-  });
-
-  panel.querySelectorAll("[data-timer-value]").forEach((optBtn) => {
-    optBtn.addEventListener("click", () => {
-      timerMode = optBtn.dataset.timerValue;
-      window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:timerMode", timerMode) : localStorage.setItem("sq:timerMode", timerMode);
-      updateLabel();
-      applyTimerMode();
-      closePanel();
-    });
-  });
-
-  applyCustomBtn.addEventListener("click", applyCustom);
-  customInput.addEventListener("keydown", (e) => { if (e.key === "Enter") applyCustom(); });
-
-  function applyCustom() {
-    const minutes = parseInt(customInput.value, 10);
-    if (minutes > 0) {
-      window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:customMinutes", String(minutes)) : localStorage.setItem("sq:customMinutes", minutes);
-      timerMode = "custom";
-      window.StudoSafeStorage ? window.StudoSafeStorage.set("sq:timerMode", timerMode) : localStorage.setItem("sq:timerMode", timerMode);
-      updateLabel();
-      applyTimerMode();
-      closePanel();
-    }
-  }
-
-  function applyTimerMode() {
-    remainingSeconds = secondsForMode(timerMode);
-    clearInterval(timerHandle);
-    btn.classList.remove("low");
-    updateClock();
-    if (!submitted && timerMode !== "none") startTimer();
-  }
-
-  updateClock();
+function renderResults() {
+  showTopControls(false);
+  const score = attempt.objectiveScore || MockEngine.scoreObjectiveAttempt(attempt, moduleMap);
+  setText("mock-part-label", "Results"); setText("mock-title", attempt.mode === "objective" ? "Objective RLA Practice Test" : "Full RLA Mock"); setText("mock-clock", "Done");
+  const erState = attempt.mode === "objective" ? null : loadMockErState();
+  const erScores = erState?.selfScores || {};
+  const erText = [erScores.argument, erScores.organization, erScores.english].every(Number.isInteger) ? `${erScores.argument} / ${erScores.organization} / ${erScores.english}` : "Not self-reviewed yet";
+  const timeUsed = attempt.mode === "objective"
+    ? [["Objective section", MockEngine.stageTimeUsedSeconds(attempt.objective)]]
+    : [["Part 1", MockEngine.stageTimeUsedSeconds(attempt.part1)], ["Extended Response", erState ? MockEngine.stageTimeUsedSeconds({ seconds: 2700, startedAt: erState.startedAt, submittedAt: erState.submittedAt }) : null], ["Part 3", MockEngine.stageTimeUsedSeconds(attempt.part3)]];
+  const skillRows = Object.values(score.skills || {}).sort((a, b) => a.accuracy - b.accuracy || b.total - a.total || a.label.localeCompare(b.label));
+  viewEl.innerHTML = `<section class="mock-results"><div class="page-kicker">Raw objective result</div><h1>${score.correct} / ${score.total} correct</h1><p class="mock-results-lede">${score.accuracy}% objective accuracy. This is a Studo raw score, not a GED scaled score or pass/fail prediction.</p><div class="mock-results-grid">${Object.entries(score.domains || {}).map(([key, bucket]) => `<div><span>${escapeHtml(CATEGORY_LABELS[key] || key)}</span><strong>${bucket.correct}/${bucket.total}</strong><small>${bucket.accuracy}%</small></div>`).join("")}</div><div class="mock-result-details"><span><strong>${score.unanswered}</strong> unanswered</span><span><strong>${score.flagged}</strong> flagged at submission</span></div><div class="mock-time-used"><strong>Time used</strong>${timeUsed.map(([label, seconds]) => `<span>${escapeHtml(label)}: ${escapeHtml(seconds == null ? "Not recorded" : formatDuration(seconds))}</span>`).join("")}</div>${skillRows.length ? `<details class="mock-skill-review"><summary>Skill breakdown</summary><div class="mock-skill-grid">${skillRows.map((bucket) => `<div><span>${escapeHtml(bucket.label)}</span><strong>${bucket.correct}/${bucket.total}</strong><small>${bucket.accuracy}%</small></div>`).join("")}</div></details>` : ""}${attempt.mode === "objective" ? "" : `<section class="mock-er-result"><span class="mock-option-label">Extended Response · Self-review</span><h2>T1 / T2 / T3: ${escapeHtml(erText)}</h2><p>These trait levels are your own rubric review and are kept separate from the objective result.</p><a class="btn secondary small" href="extended-response.html?prompt=${encodeURIComponent(attempt.er.promptId)}&mode=timed&attempt=${encodeURIComponent(attempt.attemptId)}&return=${encodeURIComponent(`test.html?attempt=${attempt.attemptId}`)}">Review ER response</a></section>`}<details class="mock-answer-review"><summary>Review objective answers</summary><p class="mock-review-note">Answer explanations are available only after the test is complete.</p>${objectiveAnswerReviewHtml()}</details><div class="mock-results-actions"><a class="btn" href="quiz.html">Back to Mock Tests</a><a class="btn secondary" href="progress.html">Open Progress</a></div></section>`;
 }
 
-function startTimer() {
-  clearInterval(timerHandle);
-  updateClock();
-  timerHandle = setInterval(() => {
-    remainingSeconds -= 1;
-    updateClock();
-    if (remainingSeconds <= 0) submitTest(true);
-  }, 1000);
+function objectiveAnswerReviewHtml() {
+  const stages = attempt.mode === "objective" ? [attempt.objective] : [attempt.part1, attempt.part3];
+  let number = 0;
+  return stages.flatMap((stage) => (stage?.items || []).map((item) => {
+    number += 1;
+    const module = moduleMap.get(item.moduleId);
+    const q = (module?.questions || []).find((x) => x.id === item.questionId);
+    if (!q) return "";
+    const key = MockEngine.objectiveItemKey(item);
+    const value = stage.answers?.[key];
+    const selected = (q.options || []).find((opt) => String(opt.id) === String(value));
+    const correct = (q.options || []).find((opt) => String(opt.id) === String(q.correct));
+    const isCorrect = value != null && String(value) === String(q.correct);
+    const feedback = isCorrect ? q.explanation : (selected?.whyWrong || q.explanation || "Review the source and compare the evidence more closely.");
+    return `<article class="mock-review-item ${isCorrect ? "correct" : "incorrect"}"><div class="mock-review-heading"><span>Question ${number} · ${escapeHtml(CATEGORY_LABELS[item.category] || item.category)}</span><strong>${isCorrect ? "Correct" : value == null ? "Unanswered" : "Incorrect"}</strong></div><h3>${escapeHtml(module?.title || "Question")}</h3><p>${escapeHtml(q.prompt || "")}</p><dl><div><dt>Your answer</dt><dd>${escapeHtml(selected?.text || "No answer")}</dd></div><div><dt>Correct answer</dt><dd>${escapeHtml(correct?.text || String(q.correct || ""))}</dd></div></dl><p class="mock-review-feedback">${escapeHtml(feedback || "")}</p></article>`;
+  })).join("");
 }
 
-function updateClock() {
-  const clock = document.getElementById("clock");
-  const control = document.getElementById("timer-picker-btn");
-  if (!clock || !control) return;
-
-  if (timerMode === "none") {
-    clock.textContent = "";
-    control.classList.remove("low");
-    return;
-  }
-
-  const m = Math.max(0, Math.floor(remainingSeconds / 60));
-  const s = Math.max(0, remainingSeconds % 60);
-  clock.textContent = `${m}:${String(s).padStart(2, "0")}`;
-  control.classList.toggle("low", remainingSeconds <= 60 && remainingSeconds > 0);
+function archiveAttempt() {
+  const history = loadHistory();
+  const entry = {
+    ...MockEngine.sanitizeAttemptForHistory(attempt),
+    mode: attempt.mode || "full",
+    label: attempt.mode === "objective" ? "Objective RLA Practice Test" : "Full RLA Mock",
+    erSelfReview: attempt.mode === "objective" ? null : (loadMockErState()?.selfScores || null)
+  };
+  const next = [entry, ...history.filter((x) => x.attemptId !== entry.attemptId)].slice(0, 25);
+  setValue(MOCK_HISTORY_KEY, JSON.stringify(next));
 }
 
-function submitTest(timedOut = false) {
-  if (submitted) return;
-  const unanswered = items.filter((item) => !hasAnswer(answers[answerKey(item)])).length;
-  if (!timedOut && unanswered) {
-    const ok = confirm(`${unanswered} question${unanswered === 1 ? " is" : "s are"} unanswered. Submit anyway?`);
-    if (!ok) return;
-  }
+function loadHistory() { try { const x = JSON.parse(getValue(MOCK_HISTORY_KEY) || "[]"); return Array.isArray(x) ? x : []; } catch (_) { return []; } }
 
-  // Record the finished test as learning evidence once, before the UI moves
-  // into review mode. Written/self-reviewed responses are intentionally skipped.
-  if (typeof Learning !== "undefined") {
-    items.forEach((item) => {
-      const q = item.question;
-      if (!isAutoGraded(q)) return;
-      const answer = answers[answerKey(item)] ?? "";
-      Learning.recordAttempt({
-        module: item.module,
-        question: q,
-        answer,
-        correct: isCorrectAnswer(q, answer),
-        mode: "test",
-        elapsedMs: null,
-        file: item.module.file || null,
-      });
-    });
-  }
-
-  submitted = true;
-  reviewing = false;
-  clearInterval(timerHandle);
-
-  const submitBtn = document.getElementById("submit-btn");
-  if (submitBtn) {
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Submitted";
-  }
-
-  const result = scoreTest();
-  const writtenCount = items.filter((item) => !isAutoGraded(item.question)).length;
-  const resultsMount = document.getElementById("results-mount");
-  resultsMount.innerHTML = `
-    <div class="score-banner" role="status">
-      <div>
-        <div class="question-number">${timedOut ? "Time ended · auto-submitted" : "Test submitted"}</div>
-        <div class="score-title">Auto-graded score</div>
-        ${writtenCount ? `<div class="score-note">${writtenCount} written response${writtenCount === 1 ? "" : "s"} excluded from this score and ready for self-review.</div>` : ""}
-      </div>
-      <div class="score-num">${result.earned} / ${result.total}</div>
-    </div>`;
-
-  renderCurrentQuestion();
-  setTestStatus("Review mode: correct answers and explanations are visible.");
+function startObjectiveTimer() {
+  stopTimer();
+  const stage = currentObjectiveStage();
+  const update = () => {
+    const remaining = MockEngine.remainingSeconds(stage, Date.now());
+    setText("mock-clock", formatTime(remaining));
+    document.getElementById("mock-clock")?.classList.toggle("urgent", remaining <= 300);
+    if (remaining <= 0 && !stage.submittedAt) submitObjectiveStage(true);
+  };
+  update(); timerHandle = setInterval(update, 1000);
 }
 
-function scoreTest() {
-  let earned = 0;
-  let total = 0;
-  items.forEach((item) => {
-    const q = item.question;
-    if (!isAutoGraded(q)) return;
-    const points = q.points || 1;
-    total += points;
-    if (isCorrectAnswer(q, answers[answerKey(item)])) earned += points;
-  });
-  return { earned, total };
+function enforceExpiredStage() {
+  if (!["part1", "part3", "objective"].includes(attempt.stage)) return;
+  const stage = currentObjectiveStage();
+  if (stage && !stage.submittedAt && stage.startedAt && MockEngine.remainingSeconds(stage, Date.now()) <= 0) submitObjectiveStage(true);
 }
 
-function isAutoGraded(q) {
-  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) return true;
-  return q.type === "fill_blank" && typeof q.correct === "string";
+function showTopControls(objective) {
+  if (flagBtn) flagBtn.hidden = !objective;
+  if (reviewBtn) reviewBtn.hidden = !objective;
+  const fill = document.getElementById("mock-progress-fill"); if (fill && !objective) fill.style.width = "0%";
+  if (!objective) setText("mock-progress", "");
 }
-
-function isCorrectAnswer(q, answer) {
-  if (!hasAnswer(answer)) return false;
-  if (Array.isArray(q.correct)) return q.correct.includes(answer);
-  if (typeof q.correct === "string") return String(answer).trim().toLowerCase() === q.correct.trim().toLowerCase();
-  return false;
-}
-
-function setTestStatus(message) {
-  const el = document.getElementById("test-status");
-  if (!el) return;
-  el.textContent = message;
-  clearTimeout(setTestStatus._timer);
-  if (!submitted) setTestStatus._timer = setTimeout(() => { el.textContent = ""; }, 2200);
-}
-
-function escapeHtml(str) {
-  const div = document.createElement("div");
-  div.textContent = str ?? "";
-  return div.innerHTML;
-}
-
-function escapeAttr(str) {
-  return escapeHtml(str).replace(/"/g, "&quot;");
-}
+function stopTimer() { if (timerHandle) clearInterval(timerHandle); timerHandle = null; }
+function saveAttempt() { setValue(`${MOCK_PREFIX}${attempt.attemptId}`, JSON.stringify(attempt)); }
+function loadAttempt(id) { try { return JSON.parse(getValue(`${MOCK_PREFIX}${id}`) || "null"); } catch (_) { return null; } }
+function getValue(key) { return window.StudoSafeStorage ? window.StudoSafeStorage.get(key) : localStorage.getItem(key); }
+function setValue(key, value) { return window.StudoSafeStorage ? window.StudoSafeStorage.set(key, value) : localStorage.setItem(key, value); }
+function removeValue(key) { return window.StudoSafeStorage ? window.StudoSafeStorage.remove(key) : localStorage.removeItem(key); }
+function hasAnswer(value) { return typeof value === "string" ? Boolean(value.trim()) : value !== undefined && value !== null; }
+function formatTime(seconds) { const m = Math.floor(Math.max(0, seconds) / 60); const s = Math.max(0, seconds) % 60; return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`; }
+function formatDuration(seconds) { const m = Math.floor(Number(seconds || 0) / 60); const s = Number(seconds || 0) % 60; return `${m}m ${String(s).padStart(2, "0")}s`; }
+function setText(id, value) { const el = document.getElementById(id); if (el) el.textContent = value; }
+function renderFatal(message) { stopTimer(); showTopControls(false); viewEl.innerHTML = `<section class="empty-state"><h1>Mock unavailable</h1><p>${escapeHtml(message)}</p><a class="btn" href="quiz.html">Back to Mock Tests</a></section>`; }
+function escapeHtml(value) { const div = document.createElement("div"); div.textContent = String(value ?? ""); return div.innerHTML; }
+function escapeAttr(value) { return escapeHtml(value).replace(/"/g, "&quot;"); }

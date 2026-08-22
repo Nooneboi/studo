@@ -4,8 +4,9 @@ const HISTORY_KEY = "sq:er:history";
 const params = new URLSearchParams(location.search);
 const promptId = params.get("prompt") || "";
 const mode = params.get("mode") === "timed" ? "timed" : "untimed";
+const mockAttemptId = params.get("attempt") || "";
 const returnHref = safeReturn(params.get("return"));
-const STATE_KEY = `sq:er:${promptId}:${mode}`;
+const STATE_KEY = mockAttemptId ? `sq:er:mock:${mockAttemptId}:${promptId}` : `sq:er:${promptId}:${mode}`;
 let prompt = null;
 let state = null;
 let timerHandle = null;
@@ -209,7 +210,7 @@ function applyEditorLock() {
 }
 
 function submitResponse() {
-  if (!state.essay.trim()) {
+  if (!state.essay.trim() && !(mockAttemptId && mode === "timed" && Number(state.remainingSeconds) <= 0)) {
     document.getElementById("er-essay").focus();
     return;
   }
@@ -242,6 +243,7 @@ function renderReview() {
       <div class="er-review-actions">
         <label class="er-revision-check"><input type="checkbox" id="er-revision-complete" ${state.revisionComplete ? "checked" : ""}> I revised or deliberately reviewed my response.</label>
         <button class="btn secondary" id="er-revise" type="button">Revise my response</button>
+        ${mockAttemptId ? `<a class="btn" href="${escapeAttr(returnHref)}">Return to mock</a>` : ""}
       </div>
     </section>`;
   document.querySelectorAll("[data-trait-score]").forEach((input) => input.addEventListener("change", (event) => {
@@ -288,6 +290,7 @@ function paragraphHtml(text) {
 }
 
 function upsertHistory() {
+  if (mockAttemptId) return;
   const history = loadHistory();
   const entry = {
     promptId: prompt.id,

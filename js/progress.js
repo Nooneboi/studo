@@ -10,8 +10,9 @@ renderProgress();
 function renderProgress() {
   const summary = Learning.getSummary();
   const erHistory = getErHistory();
+  const mockHistory = getMockHistory();
 
-  if (!summary.attempts && !erHistory.length) {
+  if (!summary.attempts && !erHistory.length && !mockHistory.length) {
     progressView.innerHTML = `
       <div class="progress-workspace empty">
         ${sidebarHtml()}
@@ -75,6 +76,7 @@ function renderProgress() {
           </div>
         </section>
 
+        ${mockHistory.length ? mockHistoryHtml(mockHistory) : ""}
         ${erHistory.length ? erHistoryHtml(erHistory) : ""}
 
         <section id="mistakes-section" class="progress-table-section" aria-labelledby="review-heading">
@@ -191,7 +193,8 @@ function sidebarHtml() {
           <a href="#next-section"><span class="rail-dot"></span>Next</a>
           <a href="#skills-section"><span class="rail-dot"></span>Skills</a>
           <a href="#mistakes-section"><span class="rail-dot"></span>Review</a>
-          <a href="#er-section"><span class="rail-dot"></span>Extended Response</a>
+          <a href="#mock-section"><span class="rail-dot"></span>Mock Tests</a>
+              <a href="#er-section"><span class="rail-dot"></span>Extended Response</a>
         </nav>
         <div class="progress-rail-links">
           <a href="train.html">Train</a>
@@ -199,6 +202,44 @@ function sidebarHtml() {
         </div>
       </div>
     </aside>`;
+}
+
+
+function getMockHistory() {
+  try {
+    const raw = window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:rlaMockAttempts", "[]") : localStorage.getItem("sq:rlaMockAttempts");
+    const parsed = JSON.parse(raw || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function mockHistoryHtml(history) {
+  return `
+    <section id="mock-section" class="progress-table-section" aria-labelledby="mock-progress-heading">
+      <div class="progress-table-heading">
+        <div><span class="progress-mini-label">Exam simulation</span><h2 id="mock-progress-heading">Mock Tests</h2></div>
+        <span>${history.length} ${history.length === 1 ? "attempt" : "attempts"}</span>
+      </div>
+      <p class="progress-er-note">Objective scores are auto-graded raw Studo results. Extended Response trait levels, when present, are separate Self-review.</p>
+      <div class="progress-er-list">${history.slice(0, 8).map(mockAttemptRow).join("")}</div>
+    </section>`;
+}
+
+function mockAttemptRow(item) {
+  const score = item.objectiveScore || {};
+  const er = item.erSelfReview || {};
+  const erText = [er.argument, er.organization, er.english].every((value) => Number.isInteger(value))
+    ? ` · ER Self-review ${er.argument}/${er.organization}/${er.english}`
+    : "";
+  const href = `test.html?attempt=${encodeURIComponent(item.attemptId || "")}`;
+  return `
+    <a class="progress-er-row" href="${escapeAttr(href)}">
+      <span><strong>${escapeHtml(item.label || "RLA Mock")}</strong><small>Objective ${escapeHtml(score.correct ?? 0)}/${escapeHtml(score.total ?? 0)} · ${escapeHtml(score.accuracy ?? 0)}%${escapeHtml(erText)}</small></span>
+      <span class="progress-er-score"><small>Raw objective</small><strong>${escapeHtml(score.accuracy ?? 0)}%</strong></span>
+      <b>→</b>
+    </a>`;
 }
 
 function getErHistory() {

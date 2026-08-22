@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,48 +6,50 @@
 <meta name="referrer" content="no-referrer">
 <meta name="studo-release" content="0.6.2-alpha-prep.1">
 <script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="icons/icon-192.png" rel="apple-touch-icon"/>
-<title>Studo — Quiz</title>
-<meta content="Timed practice tests for GED Reasoning Through Language Arts, scored the moment you submit." name="description"/>
-<link href="manifest.json" rel="manifest"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Studo — RLA Mock Tests</title>
+<meta name="description" content="Blueprint-driven GED-style RLA mock tests with objective sections and Extended Response practice.">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
-
 </head>
 <body>
-<header class="site-header">
-<div class="wrap">
-<a class="brand" href="index.html"><span class="brand-mark">◆</span> Studo</a>
-<div class="header-right">
-<nav class="site-nav">
-<a href="index.html">Home</a>
-<a href="practice.html">Practice</a>
-<a href="quiz.html">Quiz</a>
-<a href="resources.html">Resources</a>
-</nav>
-<div id="theme-switch-mount"></div>
-</div>
-</div>
-</header>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html"><span class="brand-mark">◆</span> Studo</a><div class="header-right"><nav class="site-nav"><a href="index.html">Home</a><a href="practice.html">Practice</a><a href="quiz.html" aria-current="page">Mock</a><a href="resources.html">Resources</a></nav><div id="theme-switch-mount"></div></div></div></header>
 <div id="subject-bar-mount"></div>
-<main>
-<div class="wrap">
-<div class="eyebrow" style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--color-primary-dark); margin-bottom:8px;">Systems</div>
-<h1>Quiz</h1>
-<p class="lede">This is the timed version — pick a skill area, or all of them, and every matching question gets pulled into one run against the clock. Nothing's revealed until you submit, same as the real thing.</p>
-<div id="filter-bar"></div>
-<div class="quiz-grid" id="test-list"></div>
-</div>
-</main>
-<footer class="site-footer">
-<div class="wrap"><div class="site-footer-primary">Studo — built for practice, not for tracking you.</div><nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div>
-</footer>
+<main><div class="wrap mock-landing">
+  <div class="page-kicker">Exam simulation</div>
+  <h1>RLA Mock Tests</h1>
+  <p class="lede">Use a bounded GED-style blueprint instead of every question in the bank. Full Mock keeps answers hidden until the end and reports raw objective performance separately from Extended Response self-review.</p>
+  <div id="mock-resume" class="mock-resume" hidden></div>
+  <section class="mock-option-grid" aria-label="Mock test options">
+    <article class="mock-option-card primary">
+      <span class="mock-option-label">Full simulation</span>
+      <h2>Full RLA Mock</h2>
+      <p>Three parts · 46 objective questions · 1 Extended Response · about 150 minutes including the intended break and instructions.</p>
+      <div class="mock-stat-row"><span><strong>14</strong> Part 1</span><span><strong>45 min</strong> ER</span><span><strong>32</strong> Part 3</span></div>
+      <button class="btn" id="start-full-mock" type="button">Start new full mock</button>
+    </article>
+    <article class="mock-option-card">
+      <span class="mock-option-label">Objective only</span>
+      <h2>Objective RLA Practice Test</h2>
+      <p>A shorter 30-question, 60-minute blueprint using Reading, Arguments, and Language without the essay.</p>
+      <div class="mock-stat-row"><span><strong>30</strong> questions</span><span><strong>60 min</strong> timer</span></div>
+      <button class="btn secondary" id="start-objective-test" type="button">Start objective test</button>
+    </article>
+  </section>
+  <section class="mock-section-links" aria-labelledby="section-practice-heading">
+    <div><span class="mock-option-label">Not ready for a full mock?</span><h2 id="section-practice-heading">Practice by area</h2></div>
+    <nav><a href="curriculum.html?track=reading">Reading</a><a href="curriculum.html?track=arguments">Arguments</a><a href="curriculum.html?track=language">Language</a><a href="curriculum.html?track=extended-response">Extended Response</a></nav>
+  </section>
+  <p class="mock-disclaimer">Studo mocks are GED-style simulations based on public format guidance. They are not official GED forms and do not produce an official or scaled GED score.</p>
+  <div id="mock-status" class="study-status" aria-live="polite"></div>
+</div></main>
+<footer class="site-footer"><div class="wrap"><div class="site-footer-primary">Studo — built for practice, not for tracking you.</div><nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div></footer>
 <script src="js/app.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
+<script src="js/mock-engine.js"></script>
 <script src="js/quiz.js"></script>
-</body>
-</html>
+</body></html>
