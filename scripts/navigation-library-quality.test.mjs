@@ -170,7 +170,7 @@ test('Resource and Passage Practice heroes place search in a right-side discover
 
 test('Passage Practice uses roomier desktop columns while preserving responsive 4-2-1 layout', () => {
   const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
-  assert.match(css, /\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(4,[^}]*gap:\s*\d+px\s+4[0-9]px/s);
+  assert.match(css, /\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(4,[^}]*gap:\s*32px\s+64px/s);
   assert.match(css, /@media\s*\(max-width:\s*980px\)[\s\S]*\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(2,/s);
   assert.match(css, /@media\s*\(max-width:\s*680px\)[\s\S]*\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*1fr/s);
 });
@@ -211,4 +211,23 @@ test('Mock landing keeps the same primary learner navigation as the rest of Stud
   for (const [href, label] of [['index.html','Home'],['practice.html','Practice'],['train.html','Train'],['quiz.html','Mock'],['progress.html','Progress'],['resources.html','Resources']]) {
     assert.match(html, new RegExp(`<a href="${href.replace('.', '\\.') }"[^>]*>${label}<\\/a>`), `quiz.html should include ${label}`);
   }
+});
+
+
+test('Alpha polish gives search placement and Passage Practice spacing a clearly visible desktop change', () => {
+  const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
+  assert.match(css, /\.passage-page-wrap\s*\{[^}]*max-width:\s*1320px/s);
+  assert.match(css, /\.passage-library-hero\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(360px,\s*520px\)[^}]*gap:\s*80px/s);
+  assert.match(css, /\.resource-library-hero\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(360px,\s*520px\)[^}]*gap:\s*80px/s);
+  assert.match(css, /\.passage-hero-search\s*\{[^}]*max-width:\s*520px[^}]*justify-self:\s*end/s);
+  assert.match(css, /\.resource-hero-search\s*\{[^}]*max-width:\s*520px[^}]*justify-self:\s*end/s);
+  assert.match(css, /\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(4,[^}]*gap:\s*32px\s+64px/s);
+});
+
+test('Alpha Candidate release metadata and service-worker cache are bumped together', () => {
+  const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8'));
+  const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+  assert.equal(release.release, '0.7.0-alpha.1');
+  assert.match(sw, /0\.7\.0-alpha\.1/);
+  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.1"/);
 });
