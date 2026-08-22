@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"The clinic opened one evening each week. _____, appointments became available to more patients who work during the day.\"",
       "points": 1,
-      "explanation": "Greater availability is presented as a result of evening hours.",
+      "explanation": "Evening hours make appointments available to more daytime workers, so the second sentence states a result.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "Consequently"
+          "id": "c",
+          "text": "However",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second idea is a benefit produced by the first, not a contrast."
         },
         {
           "id": "b",
-          "text": "However",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "For example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second sentence gives an outcome, not an example of opening hours."
         },
         {
-          "id": "c",
-          "text": "As a result",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "As a result"
         },
         {
           "id": "d",
-          "text": "For example",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Meanwhile",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "Meanwhile signals simultaneous timing and misses the causal relationship."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "Greater availability is presented as a result of evening hours.",
+      "explanation": "Expanded appointment access follows from opening during the evening.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -95,26 +95,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "b",
           "text": "result"
         },
         {
+          "id": "a",
+          "text": "contrast",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second idea does not oppose the first."
+        },
+        {
           "id": "c",
-          "text": "an example of the first idea",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "It describes the consequence of the schedule change."
         },
         {
           "id": "d",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "addition",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "The relationship is stronger than simple addition because one change leads to the other."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"The park replaced several faded trail signs. _____, one new sign includes a map showing the distance to the lake.\"",
       "points": 1,
-      "explanation": "The second sentence gives a specific example of the new signage.",
+      "explanation": "The map is one specific example of the new replacement signs.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -153,24 +153,24 @@
         {
           "id": "a",
           "text": "However",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_relation",
+          "whyWrong": "The sentences do not contrast."
         },
         {
           "id": "b",
           "text": "As a result",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_relation",
+          "whyWrong": "The map is not presented as a consequence caused by replacing faded signs."
+        },
+        {
+          "id": "d",
+          "text": "In contrast",
+          "distractorType": "wrong_relation",
+          "whyWrong": "No opposing idea is introduced."
         },
         {
           "id": "c",
           "text": "For example"
-        },
-        {
-          "id": "d",
-          "text": "In addition",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The second sentence gives a specific example of the new signage.",
+      "explanation": "The second sentence gives a particular instance of the broader statement about new signs.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -207,26 +207,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "example"
         },
         {
           "id": "b",
-          "text": "an example of the first idea",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The map is not an effect of the first sentence in the logical sense being tested."
         },
         {
           "id": "c",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "contrast",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The example supports the first idea rather than qualifying it."
         },
         {
-          "id": "d",
-          "text": "example"
+          "id": "a",
+          "text": "addition",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "It is related as a specific instance, not merely another independent fact."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"The repair workshop is free. _____, registration is required because only twenty workbenches are available.\"",
       "points": 1,
-      "explanation": "The registration requirement limits the otherwise open access.",
+      "explanation": "The workshop being free sounds broadly accessible, but required registration limits access because space is scarce.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "Nevertheless"
+          "id": "b",
+          "text": "Therefore",
+          "distractorType": "wrong_relation",
+          "whyWrong": "Registration is explained by limited benches, not as a result of the workshop being free."
         },
         {
-          "id": "b",
-          "text": "However",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "However"
         },
         {
           "id": "c",
-          "text": "As a result",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "For example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The registration rule is a qualification, not an example of free admission."
         },
         {
           "id": "d",
-          "text": "For example",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Similarly",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The two ideas are not similar; the second limits the first."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The registration requirement limits the otherwise open access.",
+      "explanation": "The registration requirement qualifies the benefit of a free workshop.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The qualification is not caused by the workshop being free."
+        },
+        {
+          "id": "d",
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "It does not illustrate what free means."
+        },
+        {
+          "id": "c",
+          "text": "addition",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "Simple addition misses the limitation created by scarce workbenches."
         },
         {
           "id": "b",
           "text": "contrast / qualification"
-        },
-        {
-          "id": "c",
-          "text": "an example of the first idea",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "d",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"Researchers measured water temperature at five sites. _____, they recorded dissolved oxygen and stream depth at the same locations.\"",
       "points": 1,
-      "explanation": "The second sentence adds more measurements to the same study.",
+      "explanation": "The researchers recorded oxygen and depth as extra measurements at the same sites.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -377,24 +377,24 @@
         {
           "id": "a",
           "text": "However",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "As a result",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_relation",
+          "whyWrong": "No contrast is present."
         },
         {
           "id": "c",
           "text": "Additionally"
         },
         {
+          "id": "b",
+          "text": "As a result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "Temperature measurement did not cause the team to record the other variables."
+        },
+        {
           "id": "d",
           "text": "For example",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_relation",
+          "whyWrong": "Oxygen and depth are additional measurements, not examples of water temperature."
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The second sentence adds more measurements to the same study.",
+      "explanation": "The second sentence adds measurements collected alongside temperature.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "contrast",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The variables are not presented as opposing information."
         },
         {
           "id": "b",
-          "text": "an example of the first idea",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "One measurement is not caused by the other."
         },
         {
           "id": "d",
           "text": "addition"
+        },
+        {
+          "id": "c",
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "Oxygen and depth are separate variables, not examples of temperature."
         }
       ],
       "correct": [

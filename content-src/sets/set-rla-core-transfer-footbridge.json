@@ -96,14 +96,14 @@
       "estimatedSeconds": 70,
       "options": [
         {
+          "id": "b",
+          "text": "Reopening the bridge safely required a staged process of targeted repair, testing, independent review, temporary access measures, and continued monitoring rather than a quick cosmetic fix."
+        },
+        {
           "id": "a",
           "text": "The city reopened the bridge mainly because residents were unhappy with the longer walking route.",
           "distractorType": "reasonable_but_incomplete",
           "whyWrong": "Resident inconvenience mattered, but safety evidence drove reopening."
-        },
-        {
-          "id": "b",
-          "text": "Reopening the bridge safely required a staged process of targeted repair, testing, independent review, temporary access measures, and continued monitoring rather than a quick cosmetic fix."
         },
         {
           "id": "c",
@@ -120,7 +120,7 @@
       ],
       "correct": "b",
       "explanation": {
-        "answer": "B",
+        "answer": "A",
         "whyCorrect": "Choice B explains the full process and matches the concluding idea that safe reopening required more than removing visible damage.",
         "quickTip": "Use the final paragraph as a check, but make sure the answer also fits the earlier sections.",
         "evidenceRef": "The process combined targeted repair, testing, independent review, temporary transportation measures, and continued monitoring."
@@ -196,14 +196,14 @@
       "estimatedSeconds": 55,
       "options": [
         {
-          "id": "a",
-          "text": "Testing showed the main repairs met limits but revealed two additional areas needing work, delaying reopening while the city also supported residents using the alternate route."
-        },
-        {
           "id": "b",
           "text": "The bridge reopened immediately after visible rust was removed.",
           "distractorType": "contradicts_text",
           "whyWrong": "Reopening was delayed for testing and extra repairs."
+        },
+        {
+          "id": "a",
+          "text": "Testing showed the main repairs met limits but revealed two additional areas needing work, delaying reopening while the city also supported residents using the alternate route."
         },
         {
           "id": "c",
@@ -220,7 +220,7 @@
       ],
       "correct": "a",
       "explanation": {
-        "answer": "A",
+        "answer": "B",
         "whyCorrect": "The section includes successful testing, discovery of two smaller problems, a delay, and temporary transportation support.",
         "quickTip": "A good section summary keeps the main result and its consequence.",
         "evidenceRef": "The tests showed that the strengthened connections met the required limits, but they also identified two smaller areas that needed additional work."
@@ -252,10 +252,8 @@
           "whyWrong": "The bridge closed for safety, not because residents preferred buses."
         },
         {
-          "id": "b",
-          "text": "The city replaced a bridge after an inspection showed that the entire structure had failed.",
-          "distractorType": "contradicts_text",
-          "whyWrong": "The entire structure had not failed, and it was not fully replaced."
+          "id": "d",
+          "text": "After corrosion was found, the city used staged repairs, testing, temporary transportation measures, and continued monitoring to restore the crossing while planning for longer-term needs."
         },
         {
           "id": "c",
@@ -264,13 +262,15 @@
           "whyWrong": "Monitoring continued after reopening."
         },
         {
-          "id": "d",
-          "text": "After corrosion was found, the city used staged repairs, testing, temporary transportation measures, and continued monitoring to restore the crossing while planning for longer-term needs."
+          "id": "b",
+          "text": "The city replaced a bridge after an inspection showed that the entire structure had failed.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The entire structure had not failed, and it was not fully replaced."
         }
       ],
       "correct": "d",
       "explanation": {
-        "answer": "D",
+        "answer": "B",
         "whyCorrect": "Choice D captures the closure, staged response, safe reopening, support during delay, and ongoing planning.",
         "quickTip": "A whole-passage summary should include the major process and future limitation without listing every technical detail.",
         "evidenceRef": "The staged repair restored the crossing while giving planners time to study replacement costs, accessibility improvements, and possible changes..."
@@ -302,14 +302,14 @@
           "whyWrong": "The city explicitly did not return immediately to the older schedule."
         },
         {
-          "id": "b",
-          "text": "The city scheduled inspections every six months for the first two years and left moisture sensors near repaired connections."
-        },
-        {
           "id": "c",
           "text": "Monitoring would stop as soon as replacement costs were estimated.",
           "distractorType": "unsupported_extension",
           "whyWrong": "No such stopping condition is stated."
+        },
+        {
+          "id": "b",
+          "text": "The city scheduled inspections every six months for the first two years and left moisture sensors near repaired connections."
         },
         {
           "id": "d",
@@ -320,7 +320,7 @@
       ],
       "correct": "b",
       "explanation": {
-        "answer": "B",
+        "answer": "C",
         "whyCorrect": "The passage directly states the six-month schedule and continued sensor placement.",
         "quickTip": "Preserve the time period and monitoring method exactly.",
         "evidenceRef": "Engineers scheduled inspections every six months for the first two years ... Small moisture sensors were left near several repaired connections."
@@ -346,10 +346,8 @@
       "estimatedSeconds": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The bridge provided a shortcut to the library and bus terminal.",
-          "distractorType": "background_only",
-          "whyWrong": "This explains why the crossing mattered, not why future planning remains open."
+          "id": "c",
+          "text": "A full replacement may still be needed, but the staged repair restored access while planners study replacement costs, accessibility, and river-path changes."
         },
         {
           "id": "b",
@@ -358,8 +356,10 @@
           "whyWrong": "This supports temporary access measures during closure."
         },
         {
-          "id": "c",
-          "text": "A full replacement may still be needed, but the staged repair restored access while planners study replacement costs, accessibility, and river-path changes."
+          "id": "a",
+          "text": "The bridge provided a shortcut to the library and bus terminal.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why the crossing mattered, not why future planning remains open."
         },
         {
           "id": "d",
@@ -370,7 +370,7 @@
       ],
       "correct": "c",
       "explanation": {
-        "answer": "C",
+        "answer": "A",
         "whyCorrect": "Choice C directly links restored access with unresolved future planning.",
         "quickTip": "Choose the detail that supports both the immediate result and unfinished long-term planning.",
         "evidenceRef": "The staged repair restored the crossing while giving planners time to study replacement costs, accessibility improvements, and possible changes..."

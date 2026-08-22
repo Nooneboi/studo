@@ -94,8 +94,10 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "A structured digital handoff reduced avoidable information gaps, but Meridian kept direct conversation for unusual or risky repairs and adjusted the form based on worker feedback."
+          "id": "d",
+          "text": "Meridian's pilot succeeded mainly because technicians could attach photographs.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Photographs were one useful feature, not the central reason for the pilot."
         },
         {
           "id": "b",
@@ -110,10 +112,8 @@
           "whyWrong": "Complex repair time often depended on parts or access, not handoff failure."
         },
         {
-          "id": "d",
-          "text": "Meridian's pilot succeeded mainly because technicians could attach photographs.",
-          "distractorType": "too_narrow",
-          "whyWrong": "Photographs were one useful feature, not the central reason for the pilot."
+          "id": "a",
+          "text": "A structured digital handoff reduced avoidable information gaps, but Meridian kept direct conversation for unusual or risky repairs and adjusted the form based on worker feedback."
         }
       ],
       "correct": "a",
@@ -149,10 +149,8 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Technicians could attach photographs to the form.",
-          "distractorType": "related_detail",
-          "whyWrong": "Photos may help, but the option does not show that gaps actually decreased."
+          "id": "d",
+          "text": "Repeat diagnostic checks decreased and dispatch staff made fewer calls to off-duty technicians for missing information."
         },
         {
           "id": "b",
@@ -167,8 +165,10 @@
           "whyWrong": "This supports the idea that managers responded to usability feedback."
         },
         {
-          "id": "d",
-          "text": "Repeat diagnostic checks decreased and dispatch staff made fewer calls to off-duty technicians for missing information."
+          "id": "a",
+          "text": "Technicians could attach photographs to the form.",
+          "distractorType": "related_detail",
+          "whyWrong": "Photos may help, but the option does not show that gaps actually decreased."
         }
       ],
       "correct": "d",
@@ -259,10 +259,8 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Meridian replaced all spoken handoffs with a digital form that solved delays in complex repairs.",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "Spoken handoffs were not removed, and complex repair time did not meaningfully change."
+          "id": "c",
+          "text": "Meridian tested and refined a digital handoff form that improved consistency and reduced some repeated work, while keeping direct discussion for complicated or risky situations."
         },
         {
           "id": "b",
@@ -271,8 +269,10 @@
           "whyWrong": "Photographs were only one feature."
         },
         {
-          "id": "c",
-          "text": "Meridian tested and refined a digital handoff form that improved consistency and reduced some repeated work, while keeping direct discussion for complicated or risky situations."
+          "id": "a",
+          "text": "Meridian replaced all spoken handoffs with a digital form that solved delays in complex repairs.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Spoken handoffs were not removed, and complex repair time did not meaningfully change."
         },
         {
           "id": "d",
@@ -314,14 +314,14 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "When a repair involved a serious safety risk or an unusual problem."
-        },
-        {
           "id": "b",
           "text": "Whenever a photograph was attached to the form.",
           "distractorType": "related_not_answering",
           "whyWrong": "Photos can be attached, but they do not trigger direct conversation."
+        },
+        {
+          "id": "a",
+          "text": "When a repair involved a serious safety risk or an unusual problem."
         },
         {
           "id": "c",
@@ -381,14 +381,14 @@
           "whyWrong": "Photos may help understanding but do not establish the broader result."
         },
         {
+          "id": "d",
+          "text": "Incoming technicians began the next repair step sooner on average, but total time for very complex repairs did not meaningfully change because other factors still mattered."
+        },
+        {
           "id": "c",
           "text": "Managers added check boxes for routine tests.",
           "distractorType": "related_detail",
           "whyWrong": "Check boxes show a usability change, not the measured result and limitation."
-        },
-        {
-          "id": "d",
-          "text": "Incoming technicians began the next repair step sooner on average, but total time for very complex repairs did not meaningfully change because other factors still mattered."
         }
       ],
       "correct": "d",
@@ -423,6 +423,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-22T06:42:03.905Z"
+    "compiledAt": "2026-08-22T07:49:37.339Z"
   }
 }

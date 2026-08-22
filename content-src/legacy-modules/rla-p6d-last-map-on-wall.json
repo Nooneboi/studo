@@ -46,19 +46,19 @@
           "id": "b",
           "text": "Readers know Mr. Vale's private thoughts before he speaks.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Readers know Mr. Vale's private thoughts before he speaks.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "c",
           "text": "Readers receive an objective history of every city street.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Readers receive an objective history of every city street.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "Readers know why the narrator's mother dislikes every map.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Readers know why the narrator's mother dislikes every map.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -98,23 +98,23 @@
           "id": "a",
           "text": "It explains how to operate a smartphone.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It explains how to operate a smartphone.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "c",
+          "text": "It introduces a new travel shop employee.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“It introduces a new travel shop employee.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "b",
           "text": "It lists features of the old map that show how the city and the map have accumulated history."
         },
         {
-          "id": "c",
-          "text": "It introduces a new travel shop employee.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "d",
           "text": "It proves the map is geographically accurate today.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It proves the map is geographically accurate today.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -154,13 +154,13 @@
           "id": "a",
           "text": "It proves phones cannot give directions.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It proves phones cannot give directions.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "It shows the narrator plans to reopen the store.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It shows the narrator plans to reopen the store.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
           "id": "d",
           "text": "It explains how maps are printed.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It explains how maps are printed.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [
@@ -210,19 +210,19 @@
           "id": "a",
           "text": "It proves she never worked at the shop.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It proves she never worked at the shop.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "b",
           "text": "It explains why the city removed the tram.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It explains why the city removed the tram.” may fit one clue, but it does not account for the full set of evidence in the passage."
         },
         {
           "id": "c",
           "text": "It shows that landmarks are always more accurate than maps.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It shows that landmarks are always more accurate than maps.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "d",
@@ -270,19 +270,19 @@
           "id": "b",
           "text": "The narrator forgets what Mr. Vale said.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The narrator forgets what Mr. Vale said.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "c",
           "text": "The story changes from present tense to a scientific explanation.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The story changes from present tense to a scientific explanation.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "The shop literally fills with customers.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The shop literally fills with customers.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -322,7 +322,7 @@
           "id": "a",
           "text": "Old technology is always more useful than new technology.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Old technology is always more useful than new technology.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "b",
@@ -332,13 +332,13 @@
           "id": "c",
           "text": "People should never throw anything away.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“People should never throw anything away.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "d",
           "text": "Working in a shop is the best way to learn a city.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Working in a shop is the best way to learn a city.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -378,23 +378,23 @@
           "id": "a",
           "text": "The phone battery has definitely died.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "Mr. Vale has asked for the phone.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The phone battery has definitely died.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "c",
           "text": "The narrator has begun valuing the old map for more than efficient directions."
         },
         {
+          "id": "b",
+          "text": "Mr. Vale has asked for the phone.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“Mr. Vale has asked for the phone.” summarizes what the section says instead of explaining the job that section performs in the text."
+        },
+        {
           "id": "d",
           "text": "The narrator no longer knows the way home.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The narrator no longer knows the way home.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [

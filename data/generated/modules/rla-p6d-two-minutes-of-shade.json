@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "to explain a bus-stop shade survey and how its findings shaped a practical proposal"
+          "id": "c",
+          "text": "to entertain readers with a fictional bus ride",
+          "distractorType": "effect_missed",
+          "whyWrong": "“to entertain readers with a fictional bus ride” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "to prove all bus stops need identical shelters",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to prove all bus stops need identical shelters” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "c",
-          "text": "to entertain readers with a fictional bus ride",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "to explain a bus-stop shade survey and how its findings shaped a practical proposal"
         },
         {
           "id": "d",
           "text": "to teach readers how to repair buses",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to teach readers how to repair buses” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -98,23 +98,23 @@
           "id": "a",
           "text": "to introduce the health clinic example",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "to qualify the survey findings by acknowledging limitations while still describing a pattern"
-        },
-        {
-          "id": "c",
-          "text": "to give construction instructions",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to introduce the health clinic example” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "d",
           "text": "to argue the survey was useless",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to argue the survey was useless” may fit one clue, but it does not account for the full set of evidence in the passage."
+        },
+        {
+          "id": "c",
+          "text": "to give construction instructions",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“to give construction instructions” summarizes what the section says instead of explaining the job that section performs in the text."
+        },
+        {
+          "id": "b",
+          "text": "to qualify the survey findings by acknowledging limitations while still describing a pattern"
         }
       ],
       "correct": [
@@ -154,23 +154,23 @@
           "id": "a",
           "text": "to prove every clinic has an awning",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "to show why buses should stop running in summer",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to prove every clinic has an awning” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "c",
           "text": "to make the broader survey finding concrete by showing riders already choosing nearby shade"
         },
         {
+          "id": "b",
+          "text": "to show why buses should stop running in summer",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“to show why buses should stop running in summer” summarizes what the section says instead of explaining the job that section performs in the text."
+        },
+        {
           "id": "d",
           "text": "to replace the need for any survey data",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to replace the need for any survey data” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [
@@ -210,23 +210,23 @@
           "id": "a",
           "text": "Every stop should receive the same expensive shelter immediately.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Every stop should receive the same expensive shelter immediately.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
-          "id": "b",
-          "text": "Transit comfort is unrelated to access.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "Shade is an access issue worth addressing, but solutions should be targeted and reviewed for local constraints."
         },
         {
           "id": "c",
           "text": "Only pavement temperature matters when designing stops.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Only pavement temperature matters when designing stops.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "d",
-          "text": "Shade is an access issue worth addressing, but solutions should be targeted and reviewed for local constraints."
+          "id": "b",
+          "text": "Transit comfort is unrelated to access.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "“Transit comfort is unrelated to access.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "Despite the survey limitations, the group still observed a consistent pattern."
+          "id": "c",
+          "text": "The next sentence describes an event that happened before the survey.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“The next sentence describes an event that happened before the survey.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "The next sentence gives a definition of infrared thermometer.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The next sentence gives a definition of infrared thermometer.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "c",
-          "text": "The next sentence describes an event that happened before the survey.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "Despite the survey limitations, the group still observed a consistent pattern."
         },
         {
           "id": "d",
           "text": "The next sentence completely rejects the data.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The next sentence completely rejects the data.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -319,26 +319,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "It moves from the issue, to evidence, to a targeted proposal, to an example and limitations before stating the broader claim."
+        },
+        {
           "id": "a",
           "text": "It lists bus routes alphabetically.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It moves from the issue, to evidence, to a targeted proposal, to an example and limitations before stating the broader claim."
+          "whyWrong": "“It lists bus routes alphabetically.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "c",
           "text": "It presents only emotional opinions and no observations.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It presents only emotional opinions and no observations.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "d",
           "text": "It gives construction steps in exact chronological order.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It gives construction steps in exact chronological order.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "The clinic requires bus riders to stand under its awning.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "c",
+          "text": "Some riders value shade enough to wait away from the official sign until the bus arrives."
         },
         {
           "id": "b",
           "text": "The official stop has already been moved.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The official stop has already been moved.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
-          "id": "c",
-          "text": "Some riders value shade enough to wait away from the official sign until the bus arrives."
+          "id": "a",
+          "text": "The clinic requires bus riders to stand under its awning.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“The clinic requires bus riders to stand under its awning.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "Every rider prefers to wait indoors.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Every rider prefers to wait indoors.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [

@@ -39,26 +39,26 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "The volunteer receives a storage key"
-        },
-        {
           "id": "b",
           "text": "The volunteer watches the safety video",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The volunteer watches the safety video” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
+        },
+        {
+          "id": "a",
+          "text": "The volunteer receives a storage key"
         },
         {
           "id": "c",
           "text": "The key is returned",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The key is returned” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "The volunteer signs out",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The volunteer signs out” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -98,7 +98,7 @@
           "id": "a",
           "text": "The safety video is replayed",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The safety video is replayed” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "b",
@@ -108,13 +108,13 @@
           "id": "c",
           "text": "A new form is created",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“A new form is created” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "The supervisor leaves",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The supervisor leaves” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -154,13 +154,13 @@
           "id": "a",
           "text": "The pH is recorded",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The pH is recorded” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "b",
           "text": "The samples are sealed",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The samples are sealed” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
           "id": "d",
           "text": "The mixture settles",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The mixture settles” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -210,19 +210,19 @@
           "id": "a",
           "text": "The garden beds are watered",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The garden beds are watered” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "b",
           "text": "The samples are planted",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The samples are planted” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "c",
           "text": "The pH is recorded twice",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The pH is recorded twice” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
@@ -270,19 +270,19 @@
           "id": "b",
           "text": "The ticket is submitted for the first time",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The ticket is submitted for the first time” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "c",
           "text": "The ticket is closed immediately",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The ticket is closed immediately” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "The technician becomes unavailable",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The technician becomes unavailable” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "The repair ticket is submitted",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
-        },
-        {
-          "id": "b",
-          "text": "The tenant confirms the repair is complete"
-        },
-        {
-          "id": "c",
-          "text": "An appointment is offered",
-          "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The repair ticket is submitted” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "The office checks technician availability",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The office checks technician availability” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
+        },
+        {
+          "id": "c",
+          "text": "An appointment is offered",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "“An appointment is offered” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
+        },
+        {
+          "id": "b",
+          "text": "The tenant confirms the repair is complete"
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "He crossed to the bus stop",
-          "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "id": "c",
+          "text": "He bought a bottle of water"
         },
         {
           "id": "b",
           "text": "He picked up the library book",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“He picked up the library book” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
-          "id": "c",
-          "text": "He bought a bottle of water"
+          "id": "a",
+          "text": "He crossed to the bus stop",
+          "distractorType": "wrong_sequence",
+          "whyWrong": "“He crossed to the bus stop” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "He entered the pharmacy",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“He entered the pharmacy” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -434,23 +434,23 @@
           "id": "a",
           "text": "He crossed to the stop",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“He crossed to the stop” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "b",
           "text": "The bus approached",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
+          "whyWrong": "“The bus approached” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
+        },
+        {
+          "id": "d",
+          "text": "He walked to the pharmacy"
         },
         {
           "id": "c",
           "text": "He bought water",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This event is not in the sequence position asked for."
-        },
-        {
-          "id": "d",
-          "text": "He walked to the pharmacy"
+          "whyWrong": "“He bought water” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [

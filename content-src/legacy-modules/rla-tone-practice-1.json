@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
+          "id": "b",
+          "text": "disappointed and resigned",
+          "distractorType": "effect_missed",
+          "whyWrong": "“disappointed and resigned” misses the effect created by the author’s wording or perspective."
+        },
+        {
           "id": "a",
           "text": "frustrated but constructive"
         },
         {
-          "id": "b",
-          "text": "carefree",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "c",
-          "text": "furious",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "openly angry and accusatory",
+          "distractorType": "extreme_tone",
+          "whyWrong": "“openly angry and accusatory” is more emotionally extreme than the wording supports."
         },
         {
           "id": "d",
-          "text": "celebratory",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "cautiously optimistic",
+          "distractorType": "tone_from_one_word_only",
+          "whyWrong": "“cautiously optimistic” depends on one cue and does not fit the overall tone of the statement."
         }
       ],
       "correct": [
@@ -95,26 +95,26 @@
       "time": 75,
       "options": [
         {
+          "id": "b",
+          "text": "finally answering the questions"
+        },
+        {
           "id": "a",
           "text": "The delay",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "finally answering the questions"
+          "whyWrong": "“The delay” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "is frustrating",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“is frustrating” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "at the beginning",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“at the beginning” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "mocking",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "lightly amused",
+          "distractorType": "tone_from_one_word_only",
+          "whyWrong": "“lightly amused” depends on one cue and does not fit the overall tone of the statement."
         },
         {
           "id": "b",
-          "text": "angry",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "critical of the repair",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“critical of the repair” conflicts with a detail stated in the passage."
+        },
+        {
+          "id": "d",
+          "text": "neutral and informational",
+          "distractorType": "effect_missed",
+          "whyWrong": "“neutral and informational” misses the effect created by the author’s wording or perspective."
         },
         {
           "id": "c",
           "text": "thoughtfully appreciative"
-        },
-        {
-          "id": "d",
-          "text": "indifferent",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -207,26 +207,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "tiny repair",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "deserves attention"
         },
         {
           "id": "b",
           "text": "easy to miss",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“easy to miss” uses a related idea, but the relationship or conclusion does not match the text."
         },
         {
           "id": "c",
           "text": "exactly",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“exactly” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "d",
-          "text": "deserves attention"
+          "id": "a",
+          "text": "tiny repair",
+          "distractorType": "wrong_context",
+          "whyWrong": "“tiny repair” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
+          "id": "c",
+          "text": "cautious and uncertain",
+          "distractorType": "effect_missed",
+          "whyWrong": "“cautious and uncertain” misses the effect created by the author’s wording or perspective."
+        },
+        {
+          "id": "b",
+          "text": "urgent and alarmed",
+          "distractorType": "extreme_tone",
+          "whyWrong": "“urgent and alarmed” is more emotionally extreme than the wording supports."
+        },
+        {
           "id": "a",
           "text": "firm and procedural"
         },
         {
-          "id": "b",
-          "text": "playful",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "c",
-          "text": "nostalgic",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
-          "text": "admiring",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "neutral and descriptive",
+          "distractorType": "effect_missed",
+          "whyWrong": "“neutral and descriptive” misses the effect created by the author’s wording or perspective."
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "inspection",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“inspection” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "marked line",
+          "distractorType": "wrong_context",
+          "whyWrong": "“marked line” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "no equipment should be moved"
         },
         {
-          "id": "c",
-          "text": "marked line",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
           "text": "complete",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“complete” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "furious",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "strongly enthusiastic",
+          "distractorType": "extreme_tone",
+          "whyWrong": "“strongly enthusiastic” is more emotionally extreme than the wording supports."
         },
         {
           "id": "b",
-          "text": "sarcastic",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "mildly critical",
+          "distractorType": "effect_missed",
+          "whyWrong": "“mildly critical” misses the effect created by the author’s wording or perspective."
+        },
+        {
+          "id": "d",
+          "text": "detached and neutral",
+          "distractorType": "effect_missed",
+          "whyWrong": "“detached and neutral” misses the effect created by the author’s wording or perspective."
         },
         {
           "id": "c",
           "text": "practical and approving"
-        },
-        {
-          "id": "d",
-          "text": "fearful",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -434,23 +434,23 @@
           "id": "a",
           "text": "small improvement",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“small improvement” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "b",
-          "text": "new benches",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "actually use every day"
         },
         {
           "id": "c",
           "text": "but",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“but” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "d",
-          "text": "actually use every day"
+          "id": "b",
+          "text": "new benches",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "“new benches” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [

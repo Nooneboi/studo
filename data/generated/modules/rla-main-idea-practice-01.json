@@ -39,14 +39,14 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "The repair desk is testing quiet work periods to complete repairs with fewer interruptions while keeping support available."
-        },
-        {
           "id": "b",
           "text": "Students are no longer allowed to ask repair questions in person.",
           "distractorType": "contradicts_text",
           "whyWrong": "Walk-in questions are still accepted before and after the quiet periods."
+        },
+        {
+          "id": "a",
+          "text": "The repair desk is testing quiet work periods to complete repairs with fewer interruptions while keeping support available."
         },
         {
           "id": "c",
@@ -96,10 +96,8 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Technicians prefer repairing laptops to speaking with students.",
-          "distractorType": "unsupported_inference",
-          "whyWrong": "The passage discusses interruptions and workflow, not technician preferences."
+          "id": "d",
+          "text": "A limited change in scheduling may improve repair workflow if the desk continues to monitor its effect on student access."
         },
         {
           "id": "b",
@@ -114,8 +112,10 @@
           "whyWrong": "Online requests are only one access option, and walk-in support remains available."
         },
         {
-          "id": "d",
-          "text": "A limited change in scheduling may improve repair workflow if the desk continues to monitor its effect on student access."
+          "id": "a",
+          "text": "Technicians prefer repairing laptops to speaking with students.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The passage discusses interruptions and workflow, not technician preferences."
         }
       ],
       "correct": [
@@ -159,14 +159,14 @@
           "whyWrong": "The passage lists carbon storage as one benefit and makes no comparison with every other habitat."
         },
         {
-          "id": "b",
-          "text": "Mangrove systems can provide several benefits at once, although their usefulness depends on local conditions."
-        },
-        {
           "id": "c",
           "text": "Young fish are the only animals that depend on mangrove roots.",
           "distractorType": "too_narrow",
           "whyWrong": "The passage mentions young fish as one example and discusses several broader benefits."
+        },
+        {
+          "id": "b",
+          "text": "Mangrove systems can provide several benefits at once, although their usefulness depends on local conditions."
         },
         {
           "id": "d",
@@ -216,14 +216,14 @@
           "whyWrong": "The passage says roots can trap sediment; it does not say they trap every piece."
         },
         {
+          "id": "c",
+          "text": "Protecting suitable mangrove habitats can support shoreline stability, wildlife, and carbon storage without being a universal coastal solution."
+        },
+        {
           "id": "b",
           "text": "Protecting mangroves is useful only in places where young fish are commercially important.",
           "distractorType": "too_narrow",
           "whyWrong": "The passage discusses several ecological functions, not only commercially important fish."
-        },
-        {
-          "id": "c",
-          "text": "Protecting suitable mangrove habitats can support shoreline stability, wildlife, and carbon storage without being a universal coastal solution."
         },
         {
           "id": "d",
@@ -330,8 +330,10 @@
           "whyWrong": "Eli learns something from the drawings, but the story focuses more on returning the book and how the experience affects him."
         },
         {
-          "id": "b",
-          "text": "Eli's effort to return the sketchbook shows how a simple helpful choice can become personally meaningful."
+          "id": "d",
+          "text": "The train station is an unsafe place to leave valuable belongings.",
+          "distractorType": "single_detail",
+          "whyWrong": "The lost item begins the plot, but the story is not mainly a warning about station safety."
         },
         {
           "id": "c",
@@ -340,10 +342,8 @@
           "whyWrong": "The story gives no general rule about college art projects."
         },
         {
-          "id": "d",
-          "text": "The train station is an unsafe place to leave valuable belongings.",
-          "distractorType": "single_detail",
-          "whyWrong": "The lost item begins the plot, but the story is not mainly a warning about station safety."
+          "id": "b",
+          "text": "Eli's effort to return the sketchbook shows how a simple helpful choice can become personally meaningful."
         }
       ],
       "correct": [

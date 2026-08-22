@@ -39,14 +39,14 @@
       "time": 65,
       "options": [
         {
+          "id": "b",
+          "text": "She has begun to see the shop as part of her future rather than only something she will leave behind."
+        },
+        {
           "id": "a",
           "text": "She has decided to give up college and run the shop full time.",
           "distractorType": "plausible_without_evidence",
           "whyWrong": "The passage never says she has changed her college plans."
-        },
-        {
-          "id": "b",
-          "text": "She has begun to see the shop as part of her future rather than only something she will leave behind."
         },
         {
           "id": "c",
@@ -102,10 +102,8 @@
           "whyWrong": "The passage is not arguing that every old business must stay the same."
         },
         {
-          "id": "b",
-          "text": "Repairing a watch requires patience and expensive tools.",
-          "distractorType": "topic_not_theme",
-          "whyWrong": "This is a topic/detail, not a broader idea developed by the story."
+          "id": "d",
+          "text": "A responsibility can gain meaning when a person experiences it for herself."
         },
         {
           "id": "c",
@@ -114,8 +112,10 @@
           "whyWrong": "This summarizes an event rather than stating a broader theme."
         },
         {
-          "id": "d",
-          "text": "A responsibility can gain meaning when a person experiences it for herself."
+          "id": "b",
+          "text": "Repairing a watch requires patience and expensive tools.",
+          "distractorType": "topic_not_theme",
+          "whyWrong": "This is a topic/detail, not a broader idea developed by the story."
         }
       ],
       "correct": [
@@ -381,8 +381,10 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Mina plans to leave for college, but while helping after her grandfather is injured, she learns repair work and begins to value the shop and its traditions differently."
+          "id": "c",
+          "text": "Tomas wants the family to sell the repair shop because old buildings cost too much to maintain.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This focuses on Tomas and one concern rather than the full story."
         },
         {
           "id": "b",
@@ -391,10 +393,8 @@
           "whyWrong": "This covers one important scene but leaves out Mina’s larger change."
         },
         {
-          "id": "c",
-          "text": "Tomas wants the family to sell the repair shop because old buildings cost too much to maintain.",
-          "distractorType": "detail_heavy",
-          "whyWrong": "This focuses on Tomas and one concern rather than the full story."
+          "id": "a",
+          "text": "Mina plans to leave for college, but while helping after her grandfather is injured, she learns repair work and begins to value the shop and its traditions differently."
         },
         {
           "id": "d",

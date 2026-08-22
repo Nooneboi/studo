@@ -1,0 +1,430 @@
+{
+  "id": "set-rla-reading-transfer-machine-listening",
+  "title": "When a Machine Starts to Sound Different",
+  "description": "Workplace · 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "At Meridian Components, maintenance technicians once followed a simple schedule for the electric motors that power conveyor belts. Every motor received the same inspection every six weeks unless it failed earlier. The schedule was predictable, but it had two weaknesses. A healthy motor might be taken out of service for an unnecessary inspection, while a damaged bearing could begin deteriorating days after a scheduled check and remain unnoticed until the next one.\n\nThe factory tested a condition-monitoring system on twenty motors. Small sensors measured vibration and temperature every few minutes. Software compared the readings with each motor's normal pattern and sent an alert when a reading moved beyond a chosen threshold. Managers hoped the system would give technicians earlier warning of developing problems without requiring them to inspect every motor more often.\n\nThe first month produced more alerts than anyone expected. Several were useful. One motor showed a gradual rise in vibration, and a technician found a worn bearing before it damaged the shaft. Replacing the bearing during a planned lunch-hour shutdown prevented a much longer interruption. But other alerts led nowhere. A nearby construction project shook part of the building, and the sensors briefly reported unusual vibration on several healthy motors. Another motor ran hotter simply because the room temperature had risen during a week of extreme weather.\n\nThose false alerts mattered because every alert required attention. If technicians stopped work to investigate every unusual reading, the new system could consume the time it was supposed to save. If they learned to ignore alerts because too many were harmless, a real warning might be missed. The maintenance team therefore changed the thresholds and required some alerts to persist for several readings before the software notified a technician.\n\nThe team also stopped describing the system as “predictive maintenance” in internal training. Technicians said the phrase made the software sound as if it could predict exactly when a motor would fail. Instead, trainers began calling it condition monitoring. The new name emphasized what the system actually did: detect changes that might deserve investigation. An alert was an early warning, not a verdict.\n\nBefore adding sensors to a new line, the technicians also learned to establish a separate baseline for each motor. Two motors of the same model could vibrate differently because they carried different loads or were mounted on different frames. Using one universal threshold would therefore create alerts that reflected normal differences rather than developing faults. Technicians recorded several weeks of healthy operation and then adjusted the software around each machine's usual pattern. The extra setup took time, but it made later alerts more meaningful and gave workers a clearer reason to investigate a change. The team also documented maintenance notes beside the sensor data so later technicians could tell whether a change followed a repair, a heavier production run, or a genuine mechanical problem. That record helped them interpret patterns instead of reacting to isolated numbers.\n\nAfter four months, unplanned motor downtime had fallen compared with the same period the previous year. However, managers resisted claiming that the sensors alone caused the improvement. The factory had also replaced two older motors and changed how spare parts were stocked. In addition, four months was too short to show how the system would perform across different seasons and production levels.\n\nThe pilot nevertheless changed the technicians' routine. They still performed scheduled safety inspections, but they spent less time opening healthy motors simply because six weeks had passed. When the software flagged a motor, a technician checked the recent vibration pattern, listened to the machine, reviewed temperature data, and decided whether physical inspection was necessary. The technology narrowed attention; it did not replace judgment.\n\nMeridian plans to expand the sensors to another production line while continuing to record false alerts, confirmed problems, repair time, and downtime. Managers say the goal is not a factory where software makes maintenance decisions by itself. The goal is a system that notices changes early enough for skilled workers to ask better questions before a small problem becomes a large one.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of the passage?",
+      "points": 1,
+      "explanation": "The entire passage develops the usefulness of early signals together with false alerts, calibration, and continued technician judgment.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "A central idea should explain both the benefit and the limitation repeated through the passage.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The sensor pilot showed that maintenance schedules are unnecessary once a factory has enough baseline data for each motor.",
+          "distractorType": "overstatement",
+          "whyWrong": "Scheduled safety inspections continue after the pilot; sensors change where technicians focus, not the need for all scheduled work."
+        },
+        {
+          "id": "b",
+          "text": "The pilot’s false alerts showed that sensor data is useful mainly for recording normal differences between motors, not for finding developing faults.",
+          "distractorType": "misreads_balance",
+          "whyWrong": "False alerts required calibration, but the passage also gives a successful early warning and describes continued expansion."
+        },
+        {
+          "id": "c",
+          "text": "The main value of condition monitoring is that it reduces the number of maintenance decisions technicians must make themselves.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "The system narrows attention, but technicians still interpret data and decide whether inspection is needed."
+        },
+        {
+          "id": "d",
+          "text": "Condition-monitoring sensors can help technicians notice developing problems earlier, but the system works best as a tool that guides human investigation rather than replacing judgment."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "The technology narrowed attention; it did not replace judgment."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why did the maintenance team require some unusual readings to persist before sending an alert?",
+      "points": 1,
+      "explanation": "The team learned that short-lived changes could trigger false alerts, so persistence became one filter for significance.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Trace the problem immediately before a procedural change; the change usually responds to that problem.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "To make each alert reflect how a motor differed from its own normal baseline rather than from other motors.",
+          "distractorType": "related_other_change",
+          "whyWrong": "Separate baselines address normal differences between motors; the persistence rule specifically filters short-lived disturbances."
+        },
+        {
+          "id": "b",
+          "text": "To reduce alerts caused by brief, harmless changes such as construction vibration or temporary heat."
+        },
+        {
+          "id": "c",
+          "text": "To delay alerts until a change was severe enough that a motor probably needed an immediate shutdown.",
+          "distractorType": "overstatement",
+          "whyWrong": "Persistence filters brief anomalies; the passage does not say alerts wait for severe or shutdown-level conditions."
+        },
+        {
+          "id": "d",
+          "text": "To make technicians compare several motors before deciding whether one machine’s reading was unusual.",
+          "distractorType": "unsupported_procedure",
+          "whyWrong": "The system tracks readings over time for a motor; the passage does not describe cross-motor comparison as the purpose of persistence."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "The maintenance team therefore changed the thresholds and required some alerts to persist for several readings before the software notified a technician."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of changing the internal term from “predictive maintenance” to “condition monitoring”?",
+      "points": 1,
+      "explanation": "The wording change corrects an overstatement about what the software can know and aligns the name with its actual function.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "Compare what each term implies about certainty and responsibility.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes the system sound more precise by suggesting technicians now know the exact condition of every motor.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "The terminology change reduces the implied certainty rather than increasing it."
+        },
+        {
+          "id": "b",
+          "text": "It shifts attention from future failures to temperature readings, which the team considered more reliable than vibration.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "Condition monitoring includes both vibration and temperature; the new term does not privilege one signal."
+        },
+        {
+          "id": "c",
+          "text": "It narrows the claim from predicting failure to detecting changing conditions that may require investigation."
+        },
+        {
+          "id": "d",
+          "text": "It signals that managers no longer expect the sensors to prevent downtime and are using them only to document failures.",
+          "distractorType": "overstatement",
+          "whyWrong": "The factory continues expanding the pilot because early detection remains useful."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "An alert was an early warning, not a verdict."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about the technicians’ role after the pilot?",
+      "points": 1,
+      "explanation": "The final routine combines sensor guidance with listening, reviewing data, and technician decisions.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Infer from what people actually do after the change, not from what the technology could theoretically automate.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Their work becomes more targeted, but they still interpret data and decide when a physical inspection is needed."
+        },
+        {
+          "id": "b",
+          "text": "Their role shifts toward interpreting alerts, but scheduled safety inspections are mostly replaced by sensor checks.",
+          "distractorType": "overstatement",
+          "whyWrong": "The passage says scheduled safety inspections continue; sensors mainly reduce unnecessary opening of healthy motors."
+        },
+        {
+          "id": "c",
+          "text": "They physically inspect every flagged motor first and use the sensor history mainly to document what they find afterward.",
+          "distractorType": "reversed_sequence",
+          "whyWrong": "Technicians review patterns, listen, and check temperature before deciding whether a physical inspection is necessary."
+        },
+        {
+          "id": "d",
+          "text": "They focus mainly on setting software thresholds, while the system determines which mechanical repairs are required.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "Technicians still decide what an alert means and whether inspection or repair is needed."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "When the software flagged a motor, a technician checked ... and decided whether physical inspection was necessary."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why does the author mention that two older motors were replaced and spare-parts stocking changed during the same period?",
+      "points": 1,
+      "explanation": "These simultaneous changes are alternative explanations for the improved downtime result.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "When several things change at once, be cautious about assigning one cause.",
+      "familyId": "cause.implied",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that the sensors had no measurable relationship with the decline in downtime.",
+          "distractorType": "too_strong",
+          "whyWrong": "The passage says the sensors may have contributed; it only rejects claiming they were the sole cause."
+        },
+        {
+          "id": "b",
+          "text": "To explain why managers stopped comparing downtime with the previous year after the pilot.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The year-over-year comparison is reported; managers simply interpret it cautiously."
+        },
+        {
+          "id": "c",
+          "text": "To show that replacing motors and changing parts inventory were problems the sensor system caused during the pilot.",
+          "distractorType": "wrong_cause",
+          "whyWrong": "Those were separate changes occurring during the same period, which creates alternative explanations for improved downtime."
+        },
+        {
+          "id": "d",
+          "text": "To show that the decline in downtime had multiple possible causes, so the pilot could not confidently credit the sensors alone."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "Managers resisted claiming that the sensors alone caused the improvement."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the author’s tone toward the condition-monitoring system?",
+      "points": 1,
+      "explanation": "The author presents real benefits while repeatedly qualifying what the system can prove or replace.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Tone can be positive without being enthusiastic; watch for qualifying language.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "cautiously positive"
+        },
+        {
+          "id": "b",
+          "text": "enthusiastic but slightly impatient with technicians who still rely on physical inspection",
+          "distractorType": "unsupported_attitude",
+          "whyWrong": "The author treats technician judgment as necessary rather than as a barrier to automation."
+        },
+        {
+          "id": "c",
+          "text": "skeptical because the false alerts outweigh the value of the useful detections",
+          "distractorType": "misreads_balance",
+          "whyWrong": "The passage presents false alerts as a problem that was adjusted, then describes continued use and expansion."
+        },
+        {
+          "id": "d",
+          "text": "neutral because the passage avoids judging either the benefits or limitations of the system",
+          "distractorType": "misses_evaluation",
+          "whyWrong": "The author repeatedly presents qualified benefits and limits, producing a cautious positive stance rather than a purely neutral list."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "The pilot nevertheless changed the technicians’ routine ... The technology narrowed attention; it did not replace judgment."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "This summary includes the pilot, the false-alert adjustment, the human role, and the cautious evaluation of outcomes.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A strong summary preserves the main process and the author’s level of certainty.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A factory used sensors to replace scheduled maintenance; after false alerts were eliminated, software began making most inspection decisions automatically.",
+          "distractorType": "overstatement",
+          "whyWrong": "Scheduled safety inspections remain, false alerts are reduced rather than eliminated, and technicians continue making decisions."
+        },
+        {
+          "id": "b",
+          "text": "A factory discovered that construction vibration made motor sensors unreliable, so it limited condition monitoring to machines in quieter parts of the building.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Construction explains some false alerts, but the team recalibrates the system and expands it rather than restricting it to quiet areas."
+        },
+        {
+          "id": "c",
+          "text": "A factory pilot used vibration and temperature sensors to flag unusual motor conditions; after adjusting false-alert problems, the system became a way to focus technician attention while managers continued to evaluate its actual effect on downtime."
+        },
+        {
+          "id": "d",
+          "text": "Four months of lower downtime convinced managers that condition monitoring was the primary cause of the improvement and should be expanded immediately.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Managers explicitly resist attributing the improvement to sensors alone and continue collecting evidence during expansion."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "Meridian plans to expand the sensors ... while continuing to record false alerts, confirmed problems, repair time, and downtime."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-reading-transfer-machine-listening",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R2.2",
+        "R3.5",
+        "R2.4",
+        "R3.4",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-reading-transfer-machine-listening",
+      "title": "When a Machine Starts to Sound Different",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T07:49:37.342Z"
+  }
+}

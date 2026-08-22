@@ -46,19 +46,19 @@
           "id": "b",
           "text": "Both have individual desks",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both have individual desks” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "c",
           "text": "Both have sound-absorbing panels",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both have sound-absorbing panels” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "d",
           "text": "Both use fixed chairs",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both use fixed chairs” describes a difference, while the question asks for a similarity."
         }
       ],
       "correct": [
@@ -98,7 +98,7 @@
           "id": "a",
           "text": "Only South can be reserved",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Only South can be reserved” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "b",
@@ -108,13 +108,13 @@
           "id": "c",
           "text": "Only North has chairs",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Only North has chairs” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "d",
           "text": "Both have the same furniture",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both have the same furniture” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -154,23 +154,23 @@
           "id": "a",
           "text": "Both replace every step with stone",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both replace every step with stone” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "b",
           "text": "Both require heavy equipment",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
-        },
-        {
-          "id": "c",
-          "text": "Both address damaged steps on a trail"
+          "whyWrong": "“Both require heavy equipment” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "d",
           "text": "Both are expected to need identical maintenance",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both are expected to need identical maintenance” describes a difference, while the question asks for a similarity."
+        },
+        {
+          "id": "c",
+          "text": "Both address damaged steps on a trail"
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "Which difference best explains the tradeoff in Text B?",
       "points": 1,
-      "explanation": "D accurately contrasts durability and installation effort across the two methods.",
+      "explanation": "C accurately contrasts durability and installation effort across the two methods.",
       "skill": {
         "id": "R2.3",
         "label": "Compare and contrast"
@@ -210,23 +210,23 @@
           "id": "a",
           "text": "Wood lasts longer and requires heavier equipment",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Wood lasts longer and requires heavier equipment” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "b",
           "text": "Both projects happen outdoors",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both projects happen outdoors” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "d",
+          "text": "Stone is more durable but harder to install; repairing wood is faster but may require more maintenance"
         },
         {
           "id": "c",
           "text": "Only one trail has steps",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
-        },
-        {
-          "id": "d",
-          "text": "Stone is more durable but harder to install; repairing wood is faster but may require more maintenance"
+          "whyWrong": "“Only one trail has steps” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -270,19 +270,19 @@
           "id": "b",
           "text": "Both build many prototypes before choosing",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both build many prototypes before choosing” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "c",
           "text": "Both choose one idea immediately",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both choose one idea immediately” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "d",
           "text": "Neither records changes",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Neither records changes” describes a difference, while the question asks for a similarity."
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "Leah tests and Omar never does",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Leah tests and Omar never does” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "c",
+          "text": "Omar takes notes and Leah does not",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“Omar takes notes and Leah does not” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "b",
           "text": "Leah explores several versions before selecting; Omar commits earlier and revises one version"
         },
         {
-          "id": "c",
-          "text": "Omar takes notes and Leah does not",
-          "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
-        },
-        {
           "id": "d",
           "text": "Leah works alone and Omar works in a group",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Leah works alone and Omar works in a group” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -378,23 +378,23 @@
           "id": "a",
           "text": "Both extend the route to two neighborhoods",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
-        },
-        {
-          "id": "b",
-          "text": "Both increase downtown frequency",
-          "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both extend the route to two neighborhoods” describes a difference, while the question asks for a similarity."
         },
         {
           "id": "c",
           "text": "Both change the transit service while using the same number of buses"
         },
         {
+          "id": "b",
+          "text": "Both increase downtown frequency",
+          "distractorType": "difference_not_similarity",
+          "whyWrong": "“Both increase downtown frequency” describes a difference, while the question asks for a similarity."
+        },
+        {
           "id": "d",
           "text": "Both require more buses",
           "distractorType": "difference_not_similarity",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Both require more buses” describes a difference, while the question asks for a similarity."
         }
       ],
       "correct": [
@@ -434,19 +434,19 @@
           "id": "a",
           "text": "Only Blue changes transit service",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Only Blue changes transit service” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "b",
           "text": "Green uses buses and Blue uses trains",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Green uses buses and Blue uses trains” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "c",
           "text": "Only Green serves passengers",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not compare the two subjects accurately on the requested basis."
+          "whyWrong": "“Only Green serves passengers” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "d",

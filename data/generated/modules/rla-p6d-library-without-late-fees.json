@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It presents a problem with fines, explains a trial response, reports early results, and considers a criticism."
+          "id": "c",
+          "text": "It compares two unrelated cities.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“It compares two unrelated cities.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "It gives a chronological biography of one librarian.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It gives a chronological biography of one librarian.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "c",
-          "text": "It compares two unrelated cities.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "It presents a problem with fines, explains a trial response, reports early results, and considers a criticism."
         },
         {
           "id": "d",
           "text": "It lists book genres in categories.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It lists book genres in categories.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -98,23 +98,23 @@
           "id": "a",
           "text": "to introduce the library for the first time",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "to clarify that removing fines did not remove due dates or the need to return materials"
-        },
-        {
-          "id": "c",
-          "text": "to argue that all books should be free to keep",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to introduce the library for the first time” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "d",
           "text": "to present the final results of the trial",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to present the final results of the trial” may fit one clue, but it does not account for the full set of evidence in the passage."
+        },
+        {
+          "id": "c",
+          "text": "to argue that all books should be free to keep",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“to argue that all books should be free to keep” summarizes what the section says instead of explaining the job that section performs in the text."
+        },
+        {
+          "id": "b",
+          "text": "to clarify that removing fines did not remove due dates or the need to return materials"
         }
       ],
       "correct": [
@@ -151,26 +151,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "to prove the fine-free trial has failed",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "c",
+          "text": "to acknowledge a possible drawback that the library still needs to evaluate"
         },
         {
           "id": "b",
           "text": "to show critics designed the trial",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to show critics designed the trial” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
-          "id": "c",
-          "text": "to acknowledge a possible drawback that the library still needs to evaluate"
+          "id": "a",
+          "text": "to prove the fine-free trial has failed",
+          "distractorType": "effect_missed",
+          "whyWrong": "“to prove the fine-free trial has failed” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "to explain how to pay an old fine",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to explain how to pay an old fine” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [
@@ -207,26 +207,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It states that critics oppose all libraries.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "It presents the staff's access goals while also acknowledging the critics' concern about timely returns."
         },
         {
           "id": "b",
           "text": "It hides the library's reasons for the trial.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It hides the library's reasons for the trial.” may fit one clue, but it does not account for the full set of evidence in the passage."
         },
         {
           "id": "c",
           "text": "It treats the two groups as arguing about different subjects.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It treats the two groups as arguing about different subjects.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "d",
-          "text": "It presents the staff's access goals while also acknowledging the critics' concern about timely returns."
+          "id": "a",
+          "text": "It states that critics oppose all libraries.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“It states that critics oppose all libraries.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It shows that the library plans to judge the policy using more than one outcome."
-        },
-        {
           "id": "b",
           "text": "It proves every measure will improve.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It proves every measure will improve.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "a",
+          "text": "It shows that the library plans to judge the policy using more than one outcome."
         },
         {
           "id": "c",
           "text": "It distracts readers from the policy.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It distracts readers from the policy.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "It explains how books are cataloged.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It explains how books are cataloged.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -322,7 +322,7 @@
           "id": "a",
           "text": "It introduces a cause of the slight overdue increase.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It introduces a cause of the slight overdue increase.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "b",
@@ -332,13 +332,13 @@
           "id": "c",
           "text": "It shows the next event happened years later.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It shows the next event happened years later.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "d",
           "text": "It contradicts every previous sentence.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It contradicts every previous sentence.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -378,13 +378,13 @@
           "id": "a",
           "text": "Late returns no longer matter at North Harbor Library.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Late returns no longer matter at North Harbor Library.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "Fines always prevent books from being lost.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Fines always prevent books from being lost.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "c",
@@ -394,7 +394,7 @@
           "id": "d",
           "text": "The library has permanently ended every replacement charge.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The library has permanently ended every replacement charge.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [

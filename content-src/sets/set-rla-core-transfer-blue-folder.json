@@ -47,8 +47,10 @@
       "estimatedSeconds": 55,
       "options": [
         {
-          "id": "a",
-          "text": "A catalog photograph from 1968 already showed the metal sign she had remembered."
+          "id": "d",
+          "text": "A building permit showed that the sign was installed in the 1980s.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No permit or 1980s installation date appears."
         },
         {
           "id": "b",
@@ -63,15 +65,13 @@
           "whyWrong": "The folder had no date and the donor did not list individual dates."
         },
         {
-          "id": "d",
-          "text": "A building permit showed that the sign was installed in the 1980s.",
-          "distractorType": "unsupported_extension",
-          "whyWrong": "No permit or 1980s installation date appears."
+          "id": "a",
+          "text": "A catalog photograph from 1968 already showed the metal sign she had remembered."
         }
       ],
       "correct": "a",
       "explanation": {
-        "answer": "A",
+        "answer": "D",
         "whyCorrect": "The digital catalog contained a dated 1968 image already showing the metal sign.",
         "quickTip": "Separate what the character remembers from what the text later confirms.",
         "evidenceRef": "One image from 1968 already showed the metal sign."
@@ -147,14 +147,14 @@
       "estimatedSeconds": 70,
       "options": [
         {
+          "id": "b",
+          "text": "Lian tells Ms. Alvarez that she can describe the signs but should not choose a decade without enough evidence."
+        },
+        {
           "id": "a",
           "text": "Lian knew where festival posters and school records belonged.",
           "distractorType": "interesting_but_unrelated",
           "whyWrong": "This shows experience but not the theme about uncertainty."
-        },
-        {
-          "id": "b",
-          "text": "Lian tells Ms. Alvarez that she can describe the signs but should not choose a decade without enough evidence."
         },
         {
           "id": "c",
@@ -171,7 +171,7 @@
       ],
       "correct": "b",
       "explanation": {
-        "answer": "B",
+        "answer": "A",
         "whyCorrect": "Choice B directly shows Lian choosing honesty about what she does not know instead of inventing certainty.",
         "quickTip": "Theme evidence should show the character's meaningful choice, consequence, or change.",
         "evidenceRef": "\"I can describe the signs, but I don't think I should choose a decade.\""
@@ -203,10 +203,8 @@
           "whyWrong": "The folder remains undated."
         },
         {
-          "id": "b",
-          "text": "An archivist asks a volunteer to search building permits for a bakery renovation.",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "Ms. Alvarez mentions permits only as a possible future research source."
+          "id": "d",
+          "text": "While finishing an archive task, Lian nearly assigns an unsupported date, checks the evidence, and decides to record the uncertainty honestly instead."
         },
         {
           "id": "c",
@@ -215,13 +213,15 @@
           "whyWrong": "The passage does not create a general rule about sign style."
         },
         {
-          "id": "d",
-          "text": "While finishing an archive task, Lian nearly assigns an unsupported date, checks the evidence, and decides to record the uncertainty honestly instead."
+          "id": "b",
+          "text": "An archivist asks a volunteer to search building permits for a bakery renovation.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Ms. Alvarez mentions permits only as a possible future research source."
         }
       ],
       "correct": "d",
       "explanation": {
-        "answer": "D",
+        "answer": "B",
         "whyCorrect": "Choice D keeps the task, tempting mistake, evidence check, and final decision that gives the story its meaning.",
         "quickTip": "A literary summary should keep the central conflict and resolution without turning the story into a theme statement.",
         "evidenceRef": "She had almost written a confident date based on a memory that sounded convincing ... 'I don't think I should choose a decade.'"
@@ -247,8 +247,10 @@
       "estimatedSeconds": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Her last task changes her understanding of good archival work from simply completing labels to accurately recording both what is known and what remains uncertain."
+          "id": "c",
+          "text": "Ms. Alvarez teaches Lian how to use the center's digital catalog for the first time.",
+          "distractorType": "too_narrow",
+          "whyWrong": "She uses the catalog, but the passage does not say this is her first time."
         },
         {
           "id": "b",
@@ -257,10 +259,8 @@
           "whyWrong": "Lian does not reject the work; she gains a deeper understanding of it."
         },
         {
-          "id": "c",
-          "text": "Ms. Alvarez teaches Lian how to use the center's digital catalog for the first time.",
-          "distractorType": "too_narrow",
-          "whyWrong": "She uses the catalog, but the passage does not say this is her first time."
+          "id": "a",
+          "text": "Her last task changes her understanding of good archival work from simply completing labels to accurately recording both what is known and what remains uncertain."
         },
         {
           "id": "d",
@@ -271,7 +271,7 @@
       ],
       "correct": "a",
       "explanation": {
-        "answer": "A",
+        "answer": "C",
         "whyCorrect": "The story begins with Lian confident about where things belong and ends with a broader understanding that uncertainty itself must be recorded honestly.",
         "quickTip": "For literary main idea, track the character's central change across the beginning and ending.",
         "evidenceRef": "Preserving history also meant knowing when not to force something into a place it did not yet fit."
@@ -297,10 +297,8 @@
       "estimatedSeconds": 55,
       "options": [
         {
-          "id": "a",
-          "text": "1970s",
-          "distractorType": "changed_detail",
-          "whyWrong": "1970s is the unsupported date Lian considered."
+          "id": "c",
+          "text": "date uncertain"
         },
         {
           "id": "b",
@@ -309,8 +307,10 @@
           "whyWrong": "'Before the renovation' is the handwritten note already inside the folder."
         },
         {
-          "id": "c",
-          "text": "date uncertain"
+          "id": "a",
+          "text": "1970s",
+          "distractorType": "changed_detail",
+          "whyWrong": "1970s is the unsupported date Lian considered."
         },
         {
           "id": "d",
@@ -321,7 +321,7 @@
       ],
       "correct": "c",
       "explanation": {
-        "answer": "C",
+        "answer": "A",
         "whyCorrect": "Ms. Alvarez writes 'date uncertain' after Lian explains that the decade cannot be supported.",
         "quickTip": "Do not confuse text found inside the folder with the archivist's later label.",
         "evidenceRef": "She pulled a pencil from behind her ear and wrote \"date uncertain\" on a temporary slip."

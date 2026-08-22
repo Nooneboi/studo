@@ -96,8 +96,10 @@
       "estimatedSeconds": 70,
       "options": [
         {
-          "id": "a",
-          "text": "A structured digital handoff reduced avoidable information gaps, but Meridian kept direct conversation for unusual or risky repairs and adjusted the form based on worker feedback."
+          "id": "d",
+          "text": "Meridian's pilot succeeded mainly because technicians could attach photographs.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Photographs were one useful feature, not the central reason for the pilot."
         },
         {
           "id": "b",
@@ -112,15 +114,13 @@
           "whyWrong": "Complex repair time often depended on parts or access, not handoff failure."
         },
         {
-          "id": "d",
-          "text": "Meridian's pilot succeeded mainly because technicians could attach photographs.",
-          "distractorType": "too_narrow",
-          "whyWrong": "Photographs were one useful feature, not the central reason for the pilot."
+          "id": "a",
+          "text": "A structured digital handoff reduced avoidable information gaps, but Meridian kept direct conversation for unusual or risky repairs and adjusted the form based on worker feedback."
         }
       ],
       "correct": "a",
       "explanation": {
-        "answer": "A",
+        "answer": "D",
         "whyCorrect": "Choice A covers the original problem, the form, its measurable benefits, the limits of written handoffs, and the revised training.",
         "quickTip": "A main idea should explain both the benefit and the limitation that the passage develops.",
         "evidenceRef": "A consistent record reduced avoidable information gaps, while direct discussion remained important when the repair itself was unusual or risky."
@@ -146,10 +146,8 @@
       "estimatedSeconds": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Technicians could attach photographs to the form.",
-          "distractorType": "related_detail",
-          "whyWrong": "Photos may help, but the option does not show that gaps actually decreased."
+          "id": "d",
+          "text": "Repeat diagnostic checks decreased and dispatch staff made fewer calls to off-duty technicians for missing information."
         },
         {
           "id": "b",
@@ -164,13 +162,15 @@
           "whyWrong": "This supports the idea that managers responded to usability feedback."
         },
         {
-          "id": "d",
-          "text": "Repeat diagnostic checks decreased and dispatch staff made fewer calls to off-duty technicians for missing information."
+          "id": "a",
+          "text": "Technicians could attach photographs to the form.",
+          "distractorType": "related_detail",
+          "whyWrong": "Photos may help, but the option does not show that gaps actually decreased."
         }
       ],
       "correct": "d",
       "explanation": {
-        "answer": "D",
+        "answer": "A",
         "whyCorrect": "Choice D directly measures two problems caused by missing information and shows both decreased.",
         "quickTip": "Prefer outcome evidence over a feature that merely seems helpful.",
         "evidenceRef": "Repeat diagnostic checks had decreased, and dispatch staff made fewer calls to off-duty technicians for missing information."
@@ -246,10 +246,8 @@
       "estimatedSeconds": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Meridian replaced all spoken handoffs with a digital form that solved delays in complex repairs.",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "Spoken handoffs were not removed, and complex repair time did not meaningfully change."
+          "id": "c",
+          "text": "Meridian tested and refined a digital handoff form that improved consistency and reduced some repeated work, while keeping direct discussion for complicated or risky situations."
         },
         {
           "id": "b",
@@ -258,8 +256,10 @@
           "whyWrong": "Photographs were only one feature."
         },
         {
-          "id": "c",
-          "text": "Meridian tested and refined a digital handoff form that improved consistency and reduced some repeated work, while keeping direct discussion for complicated or risky situations."
+          "id": "a",
+          "text": "Meridian replaced all spoken handoffs with a digital form that solved delays in complex repairs.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Spoken handoffs were not removed, and complex repair time did not meaningfully change."
         },
         {
           "id": "d",
@@ -270,7 +270,7 @@
       ],
       "correct": "c",
       "explanation": {
-        "answer": "C",
+        "answer": "A",
         "whyCorrect": "Choice C keeps the original problem, pilot, measured improvement, refinement, and continuing role of conversation.",
         "quickTip": "The best summary includes both what changed and what the company learned about the limits of that change.",
         "evidenceRef": "Meridian kept the digital form but changed its training."
@@ -296,14 +296,14 @@
       "estimatedSeconds": 55,
       "options": [
         {
-          "id": "a",
-          "text": "When a repair involved a serious safety risk or an unusual problem."
-        },
-        {
           "id": "b",
           "text": "Whenever a photograph was attached to the form.",
           "distractorType": "related_not_answering",
           "whyWrong": "Photos can be attached, but they do not trigger direct conversation."
+        },
+        {
+          "id": "a",
+          "text": "When a repair involved a serious safety risk or an unusual problem."
         },
         {
           "id": "c",
@@ -320,7 +320,7 @@
       ],
       "correct": "a",
       "explanation": {
-        "answer": "A",
+        "answer": "B",
         "whyCorrect": "The passage directly names serious safety risk or an unusual problem as situations requiring direct conversation.",
         "quickTip": "Keep the condition exactly as written.",
         "evidenceRef": "Technicians were still expected to speak with the incoming shift when a repair involved a serious safety risk or an unusual problem."
@@ -358,19 +358,19 @@
           "whyWrong": "Photos may help understanding but do not establish the broader result."
         },
         {
+          "id": "d",
+          "text": "Incoming technicians began the next repair step sooner on average, but total time for very complex repairs did not meaningfully change because other factors still mattered."
+        },
+        {
           "id": "c",
           "text": "Managers added check boxes for routine tests.",
           "distractorType": "related_detail",
           "whyWrong": "Check boxes show a usability change, not the measured result and limitation."
-        },
-        {
-          "id": "d",
-          "text": "Incoming technicians began the next repair step sooner on average, but total time for very complex repairs did not meaningfully change because other factors still mattered."
         }
       ],
       "correct": "d",
       "explanation": {
-        "answer": "D",
+        "answer": "C",
         "whyCorrect": "Choice D directly supports both parts: improved handoff efficiency and continued delays in complex work.",
         "quickTip": "For a two-part claim, prefer evidence that addresses both parts.",
         "evidenceRef": "The average time ... beginning the next repair step also fell. However, the company found no meaningful change in the total time required for very complex repairs."

@@ -94,14 +94,14 @@
       "time": 70,
       "options": [
         {
+          "id": "b",
+          "text": "Reopening the bridge safely required a staged process of targeted repair, testing, independent review, temporary access measures, and continued monitoring rather than a quick cosmetic fix."
+        },
+        {
           "id": "a",
           "text": "The city reopened the bridge mainly because residents were unhappy with the longer walking route.",
           "distractorType": "reasonable_but_incomplete",
           "whyWrong": "Resident inconvenience mattered, but safety evidence drove reopening."
-        },
-        {
-          "id": "b",
-          "text": "Reopening the bridge safely required a staged process of targeted repair, testing, independent review, temporary access measures, and continued monitoring rather than a quick cosmetic fix."
         },
         {
           "id": "c",
@@ -204,14 +204,14 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "Testing showed the main repairs met limits but revealed two additional areas needing work, delaying reopening while the city also supported residents using the alternate route."
-        },
-        {
           "id": "b",
           "text": "The bridge reopened immediately after visible rust was removed.",
           "distractorType": "contradicts_text",
           "whyWrong": "Reopening was delayed for testing and extra repairs."
+        },
+        {
+          "id": "a",
+          "text": "Testing showed the main repairs met limits but revealed two additional areas needing work, delaying reopening while the city also supported residents using the alternate route."
         },
         {
           "id": "c",
@@ -265,10 +265,8 @@
           "whyWrong": "The bridge closed for safety, not because residents preferred buses."
         },
         {
-          "id": "b",
-          "text": "The city replaced a bridge after an inspection showed that the entire structure had failed.",
-          "distractorType": "contradicts_text",
-          "whyWrong": "The entire structure had not failed, and it was not fully replaced."
+          "id": "d",
+          "text": "After corrosion was found, the city used staged repairs, testing, temporary transportation measures, and continued monitoring to restore the crossing while planning for longer-term needs."
         },
         {
           "id": "c",
@@ -277,8 +275,10 @@
           "whyWrong": "Monitoring continued after reopening."
         },
         {
-          "id": "d",
-          "text": "After corrosion was found, the city used staged repairs, testing, temporary transportation measures, and continued monitoring to restore the crossing while planning for longer-term needs."
+          "id": "b",
+          "text": "The city replaced a bridge after an inspection showed that the entire structure had failed.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The entire structure had not failed, and it was not fully replaced."
         }
       ],
       "correct": "d",
@@ -320,14 +320,14 @@
           "whyWrong": "The city explicitly did not return immediately to the older schedule."
         },
         {
-          "id": "b",
-          "text": "The city scheduled inspections every six months for the first two years and left moisture sensors near repaired connections."
-        },
-        {
           "id": "c",
           "text": "Monitoring would stop as soon as replacement costs were estimated.",
           "distractorType": "unsupported_extension",
           "whyWrong": "No such stopping condition is stated."
+        },
+        {
+          "id": "b",
+          "text": "The city scheduled inspections every six months for the first two years and left moisture sensors near repaired connections."
         },
         {
           "id": "d",
@@ -369,10 +369,8 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The bridge provided a shortcut to the library and bus terminal.",
-          "distractorType": "background_only",
-          "whyWrong": "This explains why the crossing mattered, not why future planning remains open."
+          "id": "c",
+          "text": "A full replacement may still be needed, but the staged repair restored access while planners study replacement costs, accessibility, and river-path changes."
         },
         {
           "id": "b",
@@ -381,8 +379,10 @@
           "whyWrong": "This supports temporary access measures during closure."
         },
         {
-          "id": "c",
-          "text": "A full replacement may still be needed, but the staged repair restored access while planners study replacement costs, accessibility, and river-path changes."
+          "id": "a",
+          "text": "The bridge provided a shortcut to the library and bus terminal.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains why the crossing mattered, not why future planning remains open."
         },
         {
           "id": "d",
@@ -423,6 +423,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-22T06:42:03.905Z"
+    "compiledAt": "2026-08-22T07:49:37.339Z"
   }
 }

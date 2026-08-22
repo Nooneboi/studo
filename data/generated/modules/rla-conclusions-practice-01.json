@@ -39,26 +39,26 @@
       "time": 85,
       "options": [
         {
-          "id": "a",
-          "text": "Evening pickup improved collection outcomes but required some additional staffing time"
+          "id": "c",
+          "text": "Keeping the library open later would eliminate expired reservations entirely.",
+          "distractorType": "too_broad",
+          "whyWrong": "“Keeping the library open later would eliminate expired reservations entirely.” is broader or more absolute than the passage supports."
         },
         {
           "id": "b",
-          "text": "Evening pickup eliminated all expired reservations",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "The increase in staff time proves evening pickup was not worthwhile.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "“The increase in staff time proves evening pickup was not worthwhile.” turns limited evidence into a broader rule than the text supports."
         },
         {
-          "id": "c",
-          "text": "Libraries should stay open all night",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "id": "a",
+          "text": "Evening pickup improved collection outcomes but required some additional staffing time."
         },
         {
           "id": "d",
-          "text": "Staff time decreased",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "Evening pickup increased because one employee stayed later.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“Evening pickup increased because one employee stayed later.” reverses the relationship established by the passage."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "A store changes its logo",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A clinic shortens every appointment so the same staff can see more patients.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“A clinic shortens every appointment so the same staff can see more patients.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "b",
-          "text": "A clinic adds Saturday appointments, serving more patients but paying some weekend staffing costs"
+          "text": "A clinic adds Saturday appointments, serving more patients while also paying some weekend staffing costs."
         },
         {
           "id": "c",
-          "text": "A student buys a new backpack",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A museum changes the color of its signs but sees no change in attendance.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“A museum changes the color of its signs but sees no change in attendance.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "d",
-          "text": "A park closes every facility",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A store closes one entrance to reduce the number of customers inside.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“A store closes one entrance to reduce the number of customers inside.” reverses the relationship established by the passage."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Every schedule guarantees perfect results",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "Because the plants were identical, the watering routine had no meaningful relationship to plant health.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“Because the plants were identical, the watering routine had no meaningful relationship to pl...” conflicts with a detail stated in the passage."
         },
         {
           "id": "b",
-          "text": "Plants never need water",
+          "text": "The scheduled classrooms prove that a watering plan guarantees every plant will survive.",
           "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "whyWrong": "“The scheduled classrooms prove that a watering plan guarantees every plant will survive.” is broader or more absolute than the passage supports."
         },
         {
           "id": "c",
-          "text": "A clear routine was associated with more consistent plant care"
+          "text": "A clear routine was associated with more consistent plant care."
         },
         {
           "id": "d",
-          "text": "The unscheduled class had different plants",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "The unscheduled class must have received less sunlight than the other classrooms.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The unscheduled class must have received less sunlight than the other classrooms..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "A school removes all routines",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A lab replaces a machine only after it stops working.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“A lab replaces a machine only after it stops working.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "b",
-          "text": "A lab paints a wall",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A lab adds large labels so workers can find tools faster.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“A lab adds large labels so workers can find tools faster.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "c",
-          "text": "A student changes pen color",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A lab posts a one-time reminder before a safety inspection.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“A lab posts a one-time reminder before a safety inspection.” is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "d",
-          "text": "A lab uses a checklist so recurring equipment checks are not missed"
+          "text": "A lab uses a recurring checklist so regular equipment checks are not missed."
         }
       ],
       "correct": [
@@ -264,25 +264,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The nook was valued, and adjusting the environment reduced a side effect without removing it"
+          "text": "The reading nook remained popular, and reducing hallway noise made it easier to use without removing it."
         },
         {
           "id": "b",
-          "text": "Hallways should never contain furniture",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "Installing dividers caused many more students to begin using the nook.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“Installing dividers caused many more students to begin using the nook.” makes the text more certain or extreme than its wording supports."
         },
         {
           "id": "c",
-          "text": "Dividers remove all noise everywhere",
+          "text": "The passage shows that hallway furniture should always be moved to a quieter location.",
           "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "whyWrong": "“The passage shows that hallway furniture should always be moved to a quieter location.” is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
-          "text": "Students stopped using the nook",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "Noise was the main reason students chose to use the reading nook.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“Noise was the main reason students chose to use the reading nook.” reverses the relationship established by the passage."
         }
       ],
       "correct": [
@@ -319,26 +319,26 @@
       "time": 85,
       "options": [
         {
-          "id": "a",
-          "text": "Popular features should never be changed",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "id": "b",
+          "text": "A useful feature can sometimes be improved by reducing a negative side effect."
         },
         {
-          "id": "b",
-          "text": "A useful feature can sometimes be improved by reducing its negative side effects"
+          "id": "a",
+          "text": "A popular feature should never be changed once people begin using it.",
+          "distractorType": "too_broad",
+          "whyWrong": "“A popular feature should never be changed once people begin using it.” is broader or more absolute than the passage supports."
         },
         {
           "id": "c",
-          "text": "Noise is always harmless",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "Any physical divider will solve concentration problems in every setting.",
+          "distractorType": "too_broad",
+          "whyWrong": "“Any physical divider will solve concentration problems in every setting.” is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
-          "text": "Every problem requires removing the original program",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "If a useful program has one drawback, the best response is to remove the program.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "“If a useful program has one drawback, the best response is to remove the program.” makes a universal rule from evidence that applies only to this situation."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Short sessions are always best for every subject",
+          "text": "Short sessions are always the best format for every kind of training.",
           "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
-        },
-        {
-          "id": "b",
-          "text": "The lecture group learned nothing",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "whyWrong": "“Short sessions are always the best format for every kind of training.” is broader or more absolute than the passage supports."
         },
         {
           "id": "c",
-          "text": "Both formats taught rules, but repeated shorter practice was associated with fewer early errors"
+          "text": "Both formats taught the rules, but repeated shorter practice was associated with fewer early procedural errors."
+        },
+        {
+          "id": "b",
+          "text": "The lecture group failed to learn the rules.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The lecture group failed to learn the rules.” conflicts with a detail stated in the passage."
         },
         {
           "id": "d",
-          "text": "Practice had no relationship to performance",
-          "distractorType": "too_broad",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "The results prove practice was the only reason the groups performed differently.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The results prove practice was the only reason the groups performed differently..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "A store replaces its shelves",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A cashier watches one long presentation and begins the new procedure immediately afterward.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“A cashier watches one long presentation and begins the new procedure immediately afterward.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "b",
-          "text": "A cashier changes uniform color",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A cashier changes uniform colors before learning a new procedure.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“A cashier changes uniform colors before learning a new procedure.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "c",
-          "text": "A manager cancels all training",
-          "distractorType": "superficial_match",
-          "whyWrong": "This option does not preserve the supported pattern and scope."
+          "text": "A manager cancels practice because written rules have already been distributed.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“A manager cancels practice because written rules have already been distributed.” reverses the relationship established by the passage."
         },
         {
           "id": "d",
-          "text": "A cashier practices a new procedure in several short sessions before using it alone"
+          "text": "A cashier practices a new procedure in several short sessions before using it alone."
         }
       ],
       "correct": [

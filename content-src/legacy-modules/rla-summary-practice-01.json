@@ -82,10 +82,10 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "The program kept fifty bicycles available at major transit stations.",
+          "id": "c",
+          "text": "Winter conditions increased cleaning needs.",
           "distractorType": "too_narrow",
-          "whyWrong": "This states one setup detail but does not summarize the results and decision."
+          "whyWrong": "This states one maintenance detail but leaves out the trial’s broader results and decision."
         },
         {
           "id": "b",
@@ -94,10 +94,10 @@
           "whyWrong": "This states one ridership result but leaves out maintenance demands and the pending decision."
         },
         {
-          "id": "c",
-          "text": "Winter conditions increased cleaning needs.",
+          "id": "a",
+          "text": "The program kept fifty bicycles available at major transit stations.",
           "distractorType": "too_narrow",
-          "whyWrong": "This states one maintenance detail but leaves out the trial’s broader results and decision."
+          "whyWrong": "This states one setup detail but does not summarize the results and decision."
         },
         {
           "id": "d",
@@ -146,14 +146,14 @@
           "whyWrong": "This describes method but not the conclusion."
         },
         {
-          "id": "c",
-          "text": "Indoor heat is shaped by several building and room characteristics, so outdoor temperature alone does not explain exposure."
-        },
-        {
           "id": "d",
           "text": "External shade completely prevents apartments from becoming hot.",
           "distractorType": "adds_new_claim",
           "whyWrong": "The text does not claim shade completely prevents heat."
+        },
+        {
+          "id": "c",
+          "text": "Indoor heat is shaped by several building and room characteristics, so outdoor temperature alone does not explain exposure."
         }
       ],
       "correct": [
@@ -190,8 +190,10 @@
           "whyWrong": "Outdoor temperature matters, but it is not the only factor."
         },
         {
-          "id": "b",
-          "text": "Apartment heat is affected by outdoor conditions plus features such as design, room location, insulation, and shade."
+          "id": "d",
+          "text": "Researchers disagree about whether rooms can become hot.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "No disagreement is described."
         },
         {
           "id": "c",
@@ -200,10 +202,8 @@
           "whyWrong": "The text does not make a recommendation for every apartment."
         },
         {
-          "id": "d",
-          "text": "Researchers disagree about whether rooms can become hot.",
-          "distractorType": "unsupported_inference",
-          "whyWrong": "No disagreement is described."
+          "id": "b",
+          "text": "Apartment heat is affected by outdoor conditions plus features such as design, room location, insulation, and shade."
         }
       ],
       "correct": [
@@ -240,14 +240,14 @@
           "whyWrong": "This is the setup, not the whole story."
         },
         {
+          "id": "c",
+          "text": "A spare key lets Imani respond to an unexpected problem in Daniel’s apartment, and the experience leads Daniel to prepare more carefully for future emergencies."
+        },
+        {
           "id": "b",
           "text": "A storm causes a leak in Daniel’s apartment building.",
           "distractorType": "too_narrow",
           "whyWrong": "This omits Imani’s response and Daniel’s change."
-        },
-        {
-          "id": "c",
-          "text": "A spare key lets Imani respond to an unexpected problem in Daniel’s apartment, and the experience leads Daniel to prepare more carefully for future emergencies."
         },
         {
           "id": "d",
@@ -284,14 +284,14 @@
       "time": 65,
       "options": [
         {
+          "id": "b",
+          "text": "Imani moves books and a lamp away from a leak after using the spare key."
+        },
+        {
           "id": "a",
           "text": "Daniel is away for two days.",
           "distractorType": "background_only",
           "whyWrong": "This is background information and does not summarize the emergency response."
-        },
-        {
-          "id": "b",
-          "text": "Imani moves books and a lamp away from a leak after using the spare key."
         },
         {
           "id": "c",

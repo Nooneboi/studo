@@ -32,8 +32,10 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Preparation can seem unnecessary until an unexpected moment shows its value."
+          "id": "c",
+          "text": "Friends usually give bad advice about weather.",
+          "distractorType": "unsupported_moral",
+          "whyWrong": "The story does not develop this claim."
         },
         {
           "id": "b",
@@ -42,10 +44,8 @@
           "whyWrong": "The story supports preparation in this situation, not an absolute rule."
         },
         {
-          "id": "c",
-          "text": "Friends usually give bad advice about weather.",
-          "distractorType": "unsupported_moral",
-          "whyWrong": "The story does not develop this claim."
+          "id": "a",
+          "text": "Preparation can seem unnecessary until an unexpected moment shows its value."
         },
         {
           "id": "d",
@@ -82,10 +82,8 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "No rain falls for several days.",
-          "distractorType": "background_only",
-          "whyWrong": "This sets up the story but does not show the theme about preparation becoming useful."
+          "id": "c",
+          "text": "The next morning, one friend has an umbrella in his backpack."
         },
         {
           "id": "b",
@@ -94,8 +92,10 @@
           "whyWrong": "This shows the rain’s effect on Tariq but does not most clearly show the value of being prepared."
         },
         {
-          "id": "c",
-          "text": "The next morning, one friend has an umbrella in his backpack."
+          "id": "a",
+          "text": "No rain falls for several days.",
+          "distractorType": "background_only",
+          "whyWrong": "This sets up the story but does not show the theme about preparation becoming useful."
         },
         {
           "id": "d",
@@ -114,7 +114,7 @@
       "type": "multiple_choice",
       "prompt": "Which statement best expresses a theme of Text B?",
       "points": 1,
-      "explanation": "A is supported by Mei’s decision to explain the failure and the classmates who decide to test their own designs.",
+      "explanation": "B is supported by Mei’s decision to explain the failure and the classmates who decide to test their own designs.",
       "skill": {
         "id": "R1.5",
         "label": "Theme"
@@ -132,14 +132,14 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Failure can become useful when people examine it openly and use it to improve."
-        },
-        {
           "id": "b",
           "text": "Class demonstrations should never include models that break.",
           "distractorType": "unsupported_moral",
           "whyWrong": "The story shows the opposite: the broken model becomes useful."
+        },
+        {
+          "id": "a",
+          "text": "Failure can become useful when people examine it openly and use it to improve."
         },
         {
           "id": "c",
@@ -164,7 +164,7 @@
       "type": "multiple_choice",
       "prompt": "Which action most strongly develops the theme of Text B?",
       "points": 1,
-      "explanation": "C is the turning-point choice that transforms the failure from something to hide into something to learn from.",
+      "explanation": "B is the turning-point choice that transforms the failure from something to hide into something to learn from.",
       "skill": {
         "id": "R1.5",
         "label": "Theme"
@@ -188,14 +188,14 @@
           "whyWrong": "This shows effort before the test but not the lesson Mei learns from failure."
         },
         {
+          "id": "c",
+          "text": "Mei brings the broken model and explains what failed and what she would change."
+        },
+        {
           "id": "b",
           "text": "A support bends during testing.",
           "distractorType": "partial_evidence",
           "whyWrong": "This shows that something failed, but not how Mei responds to the failure."
-        },
-        {
-          "id": "c",
-          "text": "Mei brings the broken model and explains what failed and what she would change."
         },
         {
           "id": "d",
@@ -232,8 +232,10 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Unexpected changes can create connections that people later choose to keep."
+          "id": "c",
+          "text": "Road construction causes people to change where they sit.",
+          "distractorType": "plot_summary",
+          "whyWrong": "This describes the event but not the lasting idea."
         },
         {
           "id": "b",
@@ -242,10 +244,8 @@
           "whyWrong": "The story is about one character’s experience, not a rule about cafe seating."
         },
         {
-          "id": "c",
-          "text": "Road construction causes people to change where they sit.",
-          "distractorType": "plot_summary",
-          "whyWrong": "This describes the event but not the lasting idea."
+          "id": "a",
+          "text": "Unexpected changes can create connections that people later choose to keep."
         },
         {
           "id": "d",
@@ -294,14 +294,14 @@
           "whyWrong": "This begins the interaction but does not show that the unexpected change creates a connection they choose to keep."
         },
         {
-          "id": "c",
-          "text": "Mr. Alvarez returns to the window once, then chooses the center table."
-        },
-        {
           "id": "d",
           "text": "The two men discuss road repairs.",
           "distractorType": "supporting_detail",
           "whyWrong": "Their conversation shows connection, but the later choice to keep sitting together is stronger evidence of the theme."
+        },
+        {
+          "id": "c",
+          "text": "Mr. Alvarez returns to the window once, then chooses the center table."
         }
       ],
       "correct": [
@@ -314,7 +314,7 @@
       "type": "multiple_choice",
       "prompt": "Which statement best expresses a theme of Text D?",
       "points": 1,
-      "explanation": "A is developed through Lena’s choice to tell the truth, her sister’s response, and their joint repair plan.",
+      "explanation": "D is developed through Lena’s choice to tell the truth, her sister’s response, and their joint repair plan.",
       "skill": {
         "id": "R1.5",
         "label": "Theme"
@@ -332,8 +332,10 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Honesty about a mistake can make it easier to solve the problem together."
+          "id": "d",
+          "text": "Older siblings always forgive younger siblings immediately.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The story does not support an absolute claim."
         },
         {
           "id": "b",
@@ -348,10 +350,8 @@
           "whyWrong": "This tells what happens but not the larger idea."
         },
         {
-          "id": "d",
-          "text": "Older siblings always forgive younger siblings immediately.",
-          "distractorType": "overgeneralization",
-          "whyWrong": "The story does not support an absolute claim."
+          "id": "a",
+          "text": "Honesty about a mistake can make it easier to solve the problem together."
         }
       ],
       "correct": [
@@ -382,10 +382,8 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The jacket is worn to an interview.",
-          "distractorType": "background_only",
-          "whyWrong": "The interview explains why the jacket matters but does not show the theme about honesty and solving a mistake together."
+          "id": "d",
+          "text": "After Lena admits the damage, her sister shows an older repair and they take the jacket to a shop together."
         },
         {
           "id": "b",
@@ -400,8 +398,10 @@
           "whyWrong": "This shows Lena considering avoidance, which contrasts with the honest action that supports the theme."
         },
         {
-          "id": "d",
-          "text": "After Lena admits the damage, her sister shows an older repair and they take the jacket to a shop together."
+          "id": "a",
+          "text": "The jacket is worn to an interview.",
+          "distractorType": "background_only",
+          "whyWrong": "The interview explains why the jacket matters but does not show the theme about honesty and solving a mistake together."
         }
       ],
       "correct": [

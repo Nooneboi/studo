@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "It evaluates the reflective-coating test with measured results.",
+      "explanation": "The paragraph reports measurements from coated and uncoated areas, so its job is to evaluate the tested response with evidence.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -40,25 +40,25 @@
       "options": [
         {
           "id": "a",
-          "text": "provides evidence about whether the tested response changed surface temperature"
+          "text": "provides measured evidence that evaluates whether the reflective coating reduced surface temperature"
         },
         {
           "id": "b",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "introduces the problem of dark asphalt becoming extremely hot",
+          "distractorType": "earlier_section_role",
+          "whyWrong": "That is the job of the opening paragraph, not the measurement paragraph named in the question."
         },
         {
           "id": "c",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "explains how the reflective coating was applied to the test blocks",
+          "distractorType": "method_not_evaluation",
+          "whyWrong": "Application belongs to the pilot description; the target paragraph reports results."
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "recommends coating every city surface based on the pilot",
+          "distractorType": "unsupported_purpose",
+          "whyWrong": "Reporting a comparison does not by itself make a citywide recommendation."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "It evaluates the reflective-coating test with measured results.",
+      "explanation": "The paragraph contributes evaluation: it lets readers judge the proposed response using measured outcomes.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It evaluates the reflective-coating test with measured results."
+          "text": "It returns to the original heat problem without adding evidence about the coating.",
+          "distractorType": "earlier_section_role",
+          "whyWrong": "The target moves beyond the problem by reporting the test results."
         },
         {
           "id": "c",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains the installation procedure in greater technical detail.",
+          "distractorType": "method_not_evaluation",
+          "whyWrong": "The paragraph is about measured outcomes, not the coating procedure."
+        },
+        {
+          "id": "b",
+          "text": "It moves the article from describing the pilot to evaluating it with observed results."
         },
         {
           "id": "d",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It shifts from the roof test to an unrelated discussion of city budgets.",
+          "distractorType": "unrelated_topic",
+          "whyWrong": "Nothing in the described section signals a topic shift to budgets."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "The dialogue shows how the general instructions can be applied in an actual interaction.",
+      "explanation": "The dialogue turns the handbook's general responsibilities into a concrete example of how the guidance works.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -151,26 +151,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "c",
+          "text": "illustrates the greeter guidance with a realistic visitor interaction"
         },
         {
           "id": "b",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "defines the general responsibilities of event greeters",
+          "distractorType": "earlier_section_role",
+          "whyWrong": "The handbook already explains the responsibilities; the target dialogue shows them in use."
         },
         {
-          "id": "c",
-          "text": "illustrates the guidance with a realistic example"
+          "id": "a",
+          "text": "adds a new accessibility rule that changes the handbook policy",
+          "distractorType": "unsupported_purpose",
+          "whyWrong": "An example of responding to a visitor does not establish a new rule."
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "argues that most visitors need help finding accessible entrances",
+          "distractorType": "overgeneralization",
+          "whyWrong": "One dialogue illustrates a situation; it does not show how most visitors behave."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "The dialogue shows how the general instructions can be applied in an actual interaction.",
+      "explanation": "The dialogue makes an abstract instruction practical by demonstrating its application.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It supplies survey evidence that visitors prefer one entrance over another.",
+          "distractorType": "wrong_evidence_type",
+          "whyWrong": "A dialogue is an example, not survey evidence."
         },
         {
           "id": "d",
-          "text": "The dialogue shows how the general instructions can be applied in an actual interaction."
+          "text": "It shows how the general instructions can guide an actual response to a visitor."
+        },
+        {
+          "id": "c",
+          "text": "It contrasts two competing accessibility policies for event sites.",
+          "distractorType": "wrong_relationship",
+          "whyWrong": "The passage describes one response, not a policy comparison."
+        },
+        {
+          "id": "b",
+          "text": "It replaces the greeter responsibilities with a different set of duties.",
+          "distractorType": "unsupported_change",
+          "whyWrong": "The example applies the existing guidance rather than replacing it."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "It prevents the report from implying that access improved equally everywhere.",
+      "explanation": "The final paragraph limits the earlier praise by noting neighborhoods that still lack nearby stations.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "qualifies the positive evaluation by identifying a remaining access gap"
+          "id": "d",
+          "text": "adds another benefit that strengthens the claim that access improved everywhere",
+          "distractorType": "reverses_qualification",
+          "whyWrong": "The missing stations are a limitation, not another benefit."
         },
         {
           "id": "b",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "explains the technical reason bike-share stations require train connections",
+          "distractorType": "unsupported_cause",
+          "whyWrong": "The paragraph identifies a geographic gap; it does not explain station technology."
         },
         {
           "id": "c",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "recommends removing stations from the neighborhoods near train stations",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "The text reports an access gap, not a proposal to remove existing stations."
         },
         {
-          "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "qualifies the positive evaluation by identifying a remaining access gap"
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "It prevents the report from implying that access improved equally everywhere.",
+      "explanation": "The limitation adds balance: expansion helped near stations, but some outer neighborhoods remain underserved.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves the expansion failed because any remaining gap cancels the earlier benefit.",
+          "distractorType": "all_or_nothing",
+          "whyWrong": "A remaining limitation does not erase the access gains already described."
         },
         {
           "id": "b",
-          "text": "It prevents the report from implying that access improved equally everywhere."
+          "text": "It prevents the report from implying that the expansion improved access equally across the city."
         },
         {
           "id": "c",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It changes the topic from transportation access to neighborhood population growth.",
+          "distractorType": "unrelated_topic",
+          "whyWrong": "The paragraph stays focused on access to bike-share stations."
         },
         {
           "id": "d",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains how residents in outer neighborhoods travel to train stations.",
+          "distractorType": "detail_not_present",
+          "whyWrong": "The paragraph notes the absence of nearby stations but does not describe residents' travel behavior."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "The flood example shows how the technology can matter in practice.",
+      "explanation": "The flood example shows the earlier-described sensor system mattering in an actual event.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "explains the technical process by which the sensors collect water-level readings",
+          "distractorType": "earlier_section_role",
+          "whyWrong": "The earlier section explains collection; the flood case shows the system in use."
         },
         {
           "id": "b",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "provides a real case that demonstrates the value of the sensors"
+          "text": "compares several sensor brands to determine which is most accurate",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "No brand comparison appears in the described case."
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "introduces a limitation showing that manual gauges are always more reliable",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The example says the sensor readings provided earlier warning than a manual gauge."
+        },
+        {
+          "id": "c",
+          "text": "provides a real case that demonstrates the practical value of the sensor readings"
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "The flood example shows how the technology can matter in practice.",
+      "explanation": "The case connects the technology to a real outcome, strengthening the explanation of why the sensors can matter.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves low-cost sensors will predict every flood accurately.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "One useful case cannot support an absolute claim about every flood."
         },
         {
           "id": "b",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains how to install sensors beside a manual gauge.",
+          "distractorType": "method_not_function",
+          "whyWrong": "The section demonstrates usefulness rather than installation steps."
         },
         {
           "id": "d",
-          "text": "The flood example shows how the technology can matter in practice."
+          "text": "It demonstrates a concrete consequence of the technology: officials received earlier warning during a flood."
+        },
+        {
+          "id": "c",
+          "text": "It shifts the article away from water monitoring to the cost of flood damage.",
+          "distractorType": "unrelated_topic",
+          "whyWrong": "The example remains part of the article's discussion of water-level monitoring."
         }
       ],
       "correct": [

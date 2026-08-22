@@ -44,21 +44,21 @@
         },
         {
           "id": "b",
-          "text": "carry something",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "confirm that the training session will definitely happen Tuesday evening",
+          "distractorType": "overstatement",
+          "whyWrong": "The session is only possible; “hold” asks people to keep the time open, not to treat it as confirmed."
         },
         {
           "id": "c",
-          "text": "stop breathing",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "move other Tuesday plans to an earlier time because training has been scheduled",
+          "distractorType": "unsupported_action",
+          "whyWrong": "The coordinator asks people to reserve the time, but the session is not yet definite."
         },
         {
           "id": "d",
-          "text": "own permanently",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "remain at the training location until Tuesday evening",
+          "distractorType": "literal_misread",
+          "whyWrong": "In scheduling context, “hold” means reserve time, not physically remain somewhere."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "forget Tuesday evening",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "plan the training for Tuesday evening",
+          "distractorType": "too_strong",
+          "whyWrong": "The sentence does not confirm the training; it asks people to keep the time available in case it happens."
+        },
+        {
+          "id": "c",
+          "text": "clear every commitment from the entire day Tuesday",
+          "distractorType": "too_broad",
+          "whyWrong": "Only Tuesday evening is being reserved."
         },
         {
           "id": "b",
           "text": "keep Tuesday evening available"
         },
         {
-          "id": "c",
-          "text": "shorten Tuesday evening",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
-          "text": "move Tuesday evening",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "move Tuesday evening to a different date",
+          "distractorType": "nonsensical_scope",
+          "whyWrong": "The phrase refers to reserving a time period, not changing the calendar date itself."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "a larger classroom only",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "money specifically reserved to rent a larger classroom",
+          "distractorType": "too_literal",
+          "whyWrong": "The phrase refers broadly to capacity to expand; the passage shows this through adding classes without higher fees."
         },
         {
           "id": "b",
-          "text": "permission to build a house",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "extra time before the grant money must be spent",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "Nothing in the sentence links “room” to a deadline."
+        },
+        {
+          "id": "d",
+          "text": "permission to add a physical gardening space to the neighborhood project",
+          "distractorType": "literal_misread",
+          "whyWrong": "“Room” is figurative here; it means capacity or opportunity to expand."
         },
         {
           "id": "c",
           "text": "space or capacity to expand"
-        },
-        {
-          "id": "d",
-          "text": "a gardening area",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -207,26 +207,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "grant",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "add two classes without raising fees"
         },
         {
           "id": "b",
-          "text": "neighborhood",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the word “neighborhood”",
+          "distractorType": "irrelevant_clue",
+          "whyWrong": "This identifies the project’s setting, not the meaning of “room to grow.”"
         },
         {
           "id": "c",
-          "text": "project",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the word “project”",
+          "distractorType": "irrelevant_clue",
+          "whyWrong": "This names what received the grant but does not explain the figurative phrase."
         },
         {
-          "id": "d",
-          "text": "add two classes without raising fees"
+          "id": "a",
+          "text": "the fact that the project received a grant",
+          "distractorType": "related_but_insufficient",
+          "whyWrong": "The grant matters, but “add two classes without raising fees” directly shows what the new capacity allowed."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
+          "id": "c",
+          "text": "the most obvious symptom produced by the vibration",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "The cracked mount is identified as causing the vibration problem, not as a symptom of it."
+        },
+        {
+          "id": "b",
+          "text": "the point on the mount where the crack first became visible",
+          "distractorType": "wrong_sense",
+          "whyWrong": "In this diagnostic context, “root” means underlying cause, not a physical starting location."
+        },
+        {
           "id": "a",
           "text": "main cause"
         },
         {
-          "id": "b",
-          "text": "part of a plant",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "c",
-          "text": "bottom edge",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
-          "text": "mathematical answer",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the part of the mount that supports its weight",
+          "distractorType": "literal_sense",
+          "whyWrong": "The sentence uses “root” figuratively to mean cause."
         }
       ],
       "correct": [
@@ -320,9 +320,9 @@
       "options": [
         {
           "id": "a",
-          "text": "color",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "surface",
+          "distractorType": "wrong_relationship",
+          "whyWrong": "A surface is an outer part, not the underlying cause meant by “root.”"
         },
         {
           "id": "b",
@@ -331,14 +331,14 @@
         {
           "id": "c",
           "text": "measurement",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "distractorType": "wrong_category",
+          "whyWrong": "A measurement can describe a problem but does not mean its cause or source."
         },
         {
           "id": "d",
-          "text": "surface",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "symptom",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "A symptom is an effect or sign; “root” here refers to the cause."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "polish a surface",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "remove all visitors",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "make every school group arrive earlier in the morning",
+          "distractorType": "unsupported_action",
+          "whyWrong": "The rule spreads arrivals across times; it does not move all groups earlier."
         },
         {
           "id": "c",
           "text": "make the rush more even and manageable"
         },
         {
+          "id": "b",
+          "text": "reduce the total number of school groups allowed to visit the museum",
+          "distractorType": "unsupported_effect",
+          "whyWrong": "The passage changes timing, not the number of groups."
+        },
+        {
           "id": "d",
-          "text": "shorten the morning",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "eliminate the morning rush completely",
+          "distractorType": "overstatement",
+          "whyWrong": "“Smooth out” means make the flow more even and manageable, not guarantee that no rush remains."
         }
       ],
       "correct": [
@@ -432,21 +432,21 @@
       "options": [
         {
           "id": "a",
-          "text": "ticket rule",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the fact that the rule concerns tickets",
+          "distractorType": "weak_clue",
+          "whyWrong": "Ticketing is the topic, but it does not reveal the figurative meaning."
         },
         {
           "id": "b",
-          "text": "morning",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the reference to the morning",
+          "distractorType": "weak_clue",
+          "whyWrong": "The time identifies when the rush occurs but not how the rule will “smooth” it."
         },
         {
           "id": "c",
-          "text": "new",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the fact that the rule is new",
+          "distractorType": "irrelevant_clue",
+          "whyWrong": "Newness does not explain the phrase; distributing groups across arrival times does."
         },
         {
           "id": "d",

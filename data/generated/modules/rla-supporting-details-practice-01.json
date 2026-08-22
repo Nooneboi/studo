@@ -45,8 +45,10 @@
           "whyWrong": "The schedule explains when the service happens but does not show growing interest."
         },
         {
-          "id": "b",
-          "text": "The number of bicycles serviced rose from 18 at the first event to 47 by the fourth event."
+          "id": "d",
+          "text": "The service uses donated tools and volunteer labor.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports why the service can remain free, not whether interest increased."
         },
         {
           "id": "c",
@@ -55,10 +57,8 @@
           "whyWrong": "This describes the service but does not show that interest increased."
         },
         {
-          "id": "d",
-          "text": "The service uses donated tools and volunteer labor.",
-          "distractorType": "evidence_for_other_idea",
-          "whyWrong": "This supports why the service can remain free, not whether interest increased."
+          "id": "b",
+          "text": "The number of bicycles serviced rose from 18 at the first event to 47 by the fourth event."
         }
       ],
       "correct": [
@@ -96,10 +96,8 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Volunteers check tire pressure and adjust brakes.",
-          "distractorType": "weak_indirect_support",
-          "whyWrong": "Volunteers perform repairs, but this does not show residents learning."
+          "id": "c",
+          "text": "Residents returned with friends or younger family members who wanted to learn simple repairs."
         },
         {
           "id": "b",
@@ -108,8 +106,10 @@
           "whyWrong": "This suggests expansion, not learning."
         },
         {
-          "id": "c",
-          "text": "Residents returned with friends or younger family members who wanted to learn simple repairs."
+          "id": "a",
+          "text": "Volunteers check tire pressure and adjust brakes.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "Volunteers perform repairs, but this does not show residents learning."
         },
         {
           "id": "d",
@@ -153,14 +153,14 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "Researchers measured less soil leaving fields with prairie strips than comparable fields without them."
-        },
-        {
           "id": "b",
           "text": "Prairie plants have deep roots and dense stems.",
           "distractorType": "weak_indirect_support",
           "whyWrong": "This explains a possible mechanism, but the measured soil-loss result is stronger direct evidence."
+        },
+        {
+          "id": "a",
+          "text": "Researchers measured less soil leaving fields with prairie strips than comparable fields without them."
         },
         {
           "id": "c",
@@ -222,14 +222,14 @@
           "whyWrong": "This supports another benefit, not the limitation."
         },
         {
+          "id": "d",
+          "text": "Researchers caution that prairie strips do not solve every erosion problem and are only one part of a larger plan."
+        },
+        {
           "id": "c",
           "text": "Researchers monitored several fields.",
           "distractorType": "mentioned_not_supported",
           "whyWrong": "The fact that fields were monitored does not show the limits of the method."
-        },
-        {
-          "id": "d",
-          "text": "Researchers caution that prairie strips do not solve every erosion problem and are only one part of a larger plan."
         }
       ],
       "correct": [
@@ -267,10 +267,8 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "Employees post status updates in a shared document.",
-          "distractorType": "related_detail",
-          "whyWrong": "This describes the new process, but it does not directly show that time was saved."
+          "id": "c",
+          "text": "After six weeks, the average meeting lasted 32 minutes."
         },
         {
           "id": "b",
@@ -279,8 +277,10 @@
           "whyWrong": "This may explain why the meeting is shorter, but it is not the strongest direct evidence."
         },
         {
-          "id": "c",
-          "text": "After six weeks, the average meeting lasted 32 minutes."
+          "id": "a",
+          "text": "Employees post status updates in a shared document.",
+          "distractorType": "related_detail",
+          "whyWrong": "This describes the new process, but it does not directly show that time was saved."
         },
         {
           "id": "d",
@@ -330,8 +330,10 @@
           "whyWrong": "This is part of the routine but does not show flexibility."
         },
         {
-          "id": "b",
-          "text": "Managers still schedule longer sessions when a project requires detailed discussion."
+          "id": "d",
+          "text": "Employees reported less repeated information.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This supports efficiency, not flexibility."
         },
         {
           "id": "c",
@@ -340,10 +342,8 @@
           "whyWrong": "This supports shorter meetings, not adjustment when needed."
         },
         {
-          "id": "d",
-          "text": "Employees reported less repeated information.",
-          "distractorType": "evidence_for_other_idea",
-          "whyWrong": "This supports efficiency, not flexibility."
+          "id": "b",
+          "text": "Managers still schedule longer sessions when a project requires detailed discussion."
         }
       ],
       "correct": [
@@ -387,10 +387,8 @@
           "whyWrong": "This explains why the radio matters but not how carefully he repairs it."
         },
         {
-          "id": "b",
-          "text": "The radio crackles before settling on a clear station.",
-          "distractorType": "evidence_for_other_idea",
-          "whyWrong": "This shows the result of the repair, not his careful approach."
+          "id": "d",
+          "text": "He photographs each step before removing a part and keeps the screws together in a bowl."
         },
         {
           "id": "c",
@@ -399,8 +397,10 @@
           "whyWrong": "His hesitation suggests concern, but it is less direct than the specific precautions he takes."
         },
         {
-          "id": "d",
-          "text": "He photographs each step before removing a part and keeps the screws together in a bowl."
+          "id": "b",
+          "text": "The radio crackles before settling on a clear station.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "This shows the result of the repair, not his careful approach."
         }
       ],
       "correct": [
@@ -438,8 +438,10 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "After the radio works, he records the repair steps on a card and keeps the instructions inside the radio."
+          "id": "c",
+          "text": "His aunt had given him the radio before moving away.",
+          "distractorType": "background_only",
+          "whyWrong": "This explains the radio's importance, not Niko's confidence."
         },
         {
           "id": "b",
@@ -448,10 +450,8 @@
           "whyWrong": "This shows his earlier uncertainty rather than confidence after the repair."
         },
         {
-          "id": "c",
-          "text": "His aunt had given him the radio before moving away.",
-          "distractorType": "background_only",
-          "whyWrong": "This explains the radio's importance, not Niko's confidence."
+          "id": "a",
+          "text": "After the radio works, he records the repair steps on a card and keeps the instructions inside the radio."
         },
         {
           "id": "d",

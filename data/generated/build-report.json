@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-22T06:42:03.913Z",
+  "builtAt": "2026-08-22T07:49:37.348Z",
   "canonicalLegacyModules": [
     "legacy-modules/sample-quiz.json",
     "legacy-modules/rla-author-purpose-practice-1.json",
@@ -58,10 +58,12 @@
     "set-rla-core-transfer-footbridge",
     "set-rla-core-transfer-handoff",
     "set-rla-core-transfer-heat-route",
-    "set-rla-evidence-last-bus",
-    "set-rla-evidence-night-shift",
     "set-rla-grammar-precision-check",
     "set-rla-grammar-sentence-repair",
+    "set-rla-reading-transfer-civic-comment",
+    "set-rla-reading-transfer-edna-river",
+    "set-rla-reading-transfer-festival-plan",
+    "set-rla-reading-transfer-machine-listening",
     "set-rla-writing-library-hours"
   ],
   "generatedSourceModules": [
@@ -69,13 +71,15 @@
     "generated/modules/set-rla-core-transfer-footbridge.json",
     "generated/modules/set-rla-core-transfer-handoff.json",
     "generated/modules/set-rla-core-transfer-heat-route.json",
-    "generated/modules/evidence-transfer-practice.json",
-    "generated/modules/evidence-practice.json",
     "generated/modules/grammar-transfer-practice.json",
     "generated/modules/grammar-practice.json",
+    "generated/modules/set-rla-reading-transfer-civic-comment.json",
+    "generated/modules/set-rla-reading-transfer-edna-river.json",
+    "generated/modules/set-rla-reading-transfer-festival-plan.json",
+    "generated/modules/set-rla-reading-transfer-machine-listening.json",
     "generated/modules/writing-practice.json"
   ],
-  "generatedIndexCount": 56,
+  "generatedIndexCount": 58,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "preview",
@@ -86,48 +90,6 @@
   "warnings": [
     {
       "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "set-rla-core-transfer-blue-folder follows a repeated ACBD answer-position cycle.",
-      "file": "content-src/sets/set-rla-core-transfer-blue-folder.json",
-      "location": "set-rla-core-transfer-blue-folder"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "set-rla-core-transfer-footbridge follows a repeated DBCA answer-position cycle.",
-      "file": "content-src/sets/set-rla-core-transfer-footbridge.json",
-      "location": "set-rla-core-transfer-footbridge"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "set-rla-core-transfer-handoff follows a repeated CADB answer-position cycle.",
-      "file": "content-src/sets/set-rla-core-transfer-handoff.json",
-      "location": "set-rla-core-transfer-handoff"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "set-rla-core-transfer-heat-route follows a repeated BDAC answer-position cycle.",
-      "file": "content-src/sets/set-rla-core-transfer-heat-route.json",
-      "location": "set-rla-core-transfer-heat-route"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "set-rla-evidence-last-bus is classified as Passage Practice but is only 67 words.",
-      "file": "content-src/sets/set-rla-evidence-last-bus.json",
-      "location": "set-rla-evidence-last-bus"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "set-rla-evidence-night-shift is classified as Passage Practice but is only 90 words.",
-      "file": "content-src/sets/set-rla-evidence-night-shift.json",
-      "location": "set-rla-evidence-night-shift"
-    },
-    {
-      "type": "warning",
       "code": "PASSAGE_PRACTICE_SHORT",
       "message": "set-rla-writing-library-hours is classified as Passage Practice but is only 53 words.",
       "file": "content-src/sets/set-rla-writing-library-hours.json",
@@ -135,353 +97,38 @@
     },
     {
       "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-author-purpose-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-author-purpose-practice-1.json",
-      "location": "rla-author-purpose-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-author-purpose-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-author-purpose-practice-2.json",
-      "location": "rla-author-purpose-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-cause-effect-practice-01 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-cause-effect-practice-01.json",
-      "location": "rla-cause-effect-practice-01"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-compare-practice-01 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-compare-practice-01.json",
-      "location": "rla-compare-practice-01"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-conclusions-practice-01 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-conclusions-practice-01.json",
-      "location": "rla-conclusions-practice-01"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-connotation-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-connotation-practice-1.json",
-      "location": "rla-connotation-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-connotation-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-connotation-practice-2.json",
-      "location": "rla-connotation-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-figurative-language-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-figurative-language-practice-1.json",
-      "location": "rla-figurative-language-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-figurative-language-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-figurative-language-practice-2.json",
-      "location": "rla-figurative-language-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-gold-literary-brass-key follows a repeated BDAC answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-gold-literary-brass-key.json",
-      "location": "rla-gold-literary-brass-key"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-gold-science-cool-roofs follows a repeated BDAC answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-gold-science-cool-roofs.json",
-      "location": "rla-gold-science-cool-roofs"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-impact-of-word-choice-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-impact-of-word-choice-practice-1.json",
-      "location": "rla-impact-of-word-choice-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-impact-of-word-choice-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-impact-of-word-choice-practice-2.json",
-      "location": "rla-impact-of-word-choice-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-inference-practice-01 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-inference-practice-01.json",
-      "location": "rla-inference-practice-01"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-meaning-in-context-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-meaning-in-context-practice-1.json",
-      "location": "rla-meaning-in-context-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-meaning-in-context-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-meaning-in-context-practice-2.json",
-      "location": "rla-meaning-in-context-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_RUN",
-      "message": "rla-p6b-library-lockers contains a run of at least three identical correct-answer positions.",
-      "file": "content-src/legacy-modules/rla-p6b-library-lockers.json",
-      "location": "rla-p6b-library-lockers"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_RUN",
-      "message": "rla-p6b-second-bell contains a run of at least three identical correct-answer positions.",
-      "file": "content-src/legacy-modules/rla-p6b-second-bell.json",
-      "location": "rla-p6b-second-bell"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6c-blue-mug follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6c-blue-mug.json",
-      "location": "rla-p6c-blue-mug"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "rla-p6c-blue-mug is classified as Passage Practice but is only 302 words.",
-      "file": "content-src/legacy-modules/rla-p6c-blue-mug.json",
-      "location": "rla-p6c-blue-mug"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6c-feedback-window follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6c-feedback-window.json",
-      "location": "rla-p6c-feedback-window"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "rla-p6c-feedback-window is classified as Passage Practice but is only 257 words.",
-      "file": "content-src/legacy-modules/rla-p6c-feedback-window.json",
-      "location": "rla-p6c-feedback-window"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6c-market-roof follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6c-market-roof.json",
-      "location": "rla-p6c-market-roof"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "rla-p6c-market-roof is classified as Passage Practice but is only 259 words.",
-      "file": "content-src/legacy-modules/rla-p6c-market-roof.json",
-      "location": "rla-p6c-market-roof"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6c-morning-fog follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6c-morning-fog.json",
-      "location": "rla-p6c-morning-fog"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "rla-p6c-morning-fog is classified as Passage Practice but is only 258 words.",
-      "file": "content-src/legacy-modules/rla-p6c-morning-fog.json",
-      "location": "rla-p6c-morning-fog"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6c-night-lighting follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6c-night-lighting.json",
-      "location": "rla-p6c-night-lighting"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "rla-p6c-night-lighting is classified as Passage Practice but is only 277 words.",
-      "file": "content-src/legacy-modules/rla-p6c-night-lighting.json",
-      "location": "rla-p6c-night-lighting"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6d-last-map-on-wall follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6d-last-map-on-wall.json",
-      "location": "rla-p6d-last-map-on-wall"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6d-library-without-late-fees follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6d-library-without-late-fees.json",
-      "location": "rla-p6d-library-without-late-fees"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6d-mangroves-move-back follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6d-mangroves-move-back.json",
-      "location": "rla-p6d-mangroves-move-back"
-    },
-    {
-      "type": "warning",
-      "code": "PASSAGE_PRACTICE_SHORT",
-      "message": "rla-p6d-mangroves-move-back is classified as Passage Practice but is only 399 words.",
-      "file": "content-src/legacy-modules/rla-p6d-mangroves-move-back.json",
-      "location": "rla-p6d-mangroves-move-back"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6d-quiet-car-experiment follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6d-quiet-car-experiment.json",
-      "location": "rla-p6d-quiet-car-experiment"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-p6d-two-minutes-of-shade follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-p6d-two-minutes-of-shade.json",
-      "location": "rla-p6d-two-minutes-of-shade"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-paragraph-section-function-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-paragraph-section-function-practice-1.json",
-      "location": "rla-paragraph-section-function-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-paragraph-section-function-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-paragraph-section-function-practice-2.json",
-      "location": "rla-paragraph-section-function-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-point-of-view-perspective-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-point-of-view-perspective-practice-1.json",
-      "location": "rla-point-of-view-perspective-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-point-of-view-perspective-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-point-of-view-perspective-practice-2.json",
-      "location": "rla-point-of-view-perspective-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-relationships-practice-01 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-relationships-practice-01.json",
-      "location": "rla-relationships-practice-01"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-rhetorical-technique-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-rhetorical-technique-practice-1.json",
-      "location": "rla-rhetorical-technique-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-rhetorical-technique-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-rhetorical-technique-practice-2.json",
-      "location": "rla-rhetorical-technique-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-sequence-practice-01 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-sequence-practice-01.json",
-      "location": "rla-sequence-practice-01"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-text-structure-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-text-structure-practice-1.json",
-      "location": "rla-text-structure-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-text-structure-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-text-structure-practice-2.json",
-      "location": "rla-text-structure-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-tone-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-tone-practice-1.json",
-      "location": "rla-tone-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-tone-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-tone-practice-2.json",
-      "location": "rla-tone-practice-2"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-transitions-signal-words-practice-1 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-transitions-signal-words-practice-1.json",
-      "location": "rla-transitions-signal-words-practice-1"
-    },
-    {
-      "type": "warning",
-      "code": "ANSWER_POSITION_PATTERN",
-      "message": "rla-transitions-signal-words-practice-2 follows a repeated ABCD answer-position cycle.",
-      "file": "content-src/legacy-modules/rla-transitions-signal-words-practice-2.json",
-      "location": "rla-transitions-signal-words-practice-2"
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family connotation.choice has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-reading-transfer-edna-river.json",
+      "location": "set-rla-reading-transfer-edna-river:q4"
     },
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family theme.identify has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-core-transfer-blue-folder.json",
-      "location": "set-rla-core-transfer-blue-folder:q2"
+      "message": "Family structure.effect has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-reading-transfer-edna-river.json",
+      "location": "set-rla-reading-transfer-edna-river:q6"
     },
     {
       "type": "warning",
       "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family theme.evidence has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-core-transfer-blue-folder.json",
-      "location": "set-rla-core-transfer-blue-folder:q7"
+      "message": "Family pov.author has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-reading-transfer-festival-plan.json",
+      "location": "set-rla-reading-transfer-festival-plan:q5"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family cause.implied has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-reading-transfer-machine-listening.json",
+      "location": "set-rla-reading-transfer-machine-listening:q5"
+    },
+    {
+      "type": "warning",
+      "code": "TRANSFER_FAMILY_SINGLETON",
+      "message": "Family tone.identify has only one published question; transfer cannot be tested yet.",
+      "file": "content-src/sets/set-rla-reading-transfer-machine-listening.json",
+      "location": "set-rla-reading-transfer-machine-listening:q6"
     },
     {
       "type": "warning",
@@ -496,174 +143,29 @@
       "message": "Family writing.argument.short_response has only one published question; transfer cannot be tested yet.",
       "file": "content-src/sets/set-rla-writing-library-hours.json",
       "location": "set-rla-writing-library-hours:q2"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 393 times: \"This choice does not best match the relationship and evidence in this text.\"",
-      "file": "content-src/legacy-modules/rla-author-purpose-practice-1.json",
-      "location": "rla-author-purpose-practice-1:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 24 times: \"This option does not match the causal relationship supported by the text.\"",
-      "file": "content-src/legacy-modules/rla-cause-effect-practice-01.json",
-      "location": "rla-cause-effect-practice-01:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 24 times: \"This option does not compare the two subjects accurately on the requested basis.\"",
-      "file": "content-src/legacy-modules/rla-compare-practice-01.json",
-      "location": "rla-compare-practice-01:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 24 times: \"This option does not preserve the supported pattern and scope.\"",
-      "file": "content-src/legacy-modules/rla-conclusions-practice-01.json",
-      "location": "rla-conclusions-practice-01:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 345 times: \"This choice does not best match the wording and evidence in this specific text.\"",
-      "file": "content-src/legacy-modules/rla-connotation-practice-1.json",
-      "location": "rla-connotation-practice-1:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 24 times: \"This option is not the strongest text-based support for the inference.\"",
-      "file": "content-src/legacy-modules/rla-inference-practice-01.json",
-      "location": "rla-inference-practice-01:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 63 times: \"This option is not best supported by the passage.\"",
-      "file": "content-src/legacy-modules/rla-p6b-library-lockers.json",
-      "location": "rla-p6b-library-lockers:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 24 times: \"This option does not accurately explain how one element shapes another.\"",
-      "file": "content-src/legacy-modules/rla-relationships-practice-01.json",
-      "location": "rla-relationships-practice-01:q1"
-    },
-    {
-      "type": "warning",
-      "code": "WHY_WRONG_REUSED",
-      "message": "The same generic whyWrong explanation is reused 24 times: \"This event is not in the sequence position asked for.\"",
-      "file": "content-src/legacy-modules/rla-sequence-practice-01.json",
-      "location": "rla-sequence-practice-01:q1"
     }
   ],
   "qaSummary": {
     "errors": 0,
-    "warnings": 68,
+    "warnings": 8,
     "byCode": {
-      "ANSWER_POSITION_PATTERN": {
-        "errors": 0,
-        "warnings": 44,
-        "total": 44,
-        "files": [
-          "content-src/sets/set-rla-core-transfer-blue-folder.json",
-          "content-src/sets/set-rla-core-transfer-footbridge.json",
-          "content-src/sets/set-rla-core-transfer-handoff.json",
-          "content-src/sets/set-rla-core-transfer-heat-route.json",
-          "content-src/legacy-modules/rla-author-purpose-practice-1.json",
-          "content-src/legacy-modules/rla-author-purpose-practice-2.json",
-          "content-src/legacy-modules/rla-cause-effect-practice-01.json",
-          "content-src/legacy-modules/rla-compare-practice-01.json",
-          "content-src/legacy-modules/rla-conclusions-practice-01.json",
-          "content-src/legacy-modules/rla-connotation-practice-1.json",
-          "content-src/legacy-modules/rla-connotation-practice-2.json",
-          "content-src/legacy-modules/rla-figurative-language-practice-1.json",
-          "content-src/legacy-modules/rla-figurative-language-practice-2.json",
-          "content-src/legacy-modules/rla-gold-literary-brass-key.json",
-          "content-src/legacy-modules/rla-gold-science-cool-roofs.json",
-          "content-src/legacy-modules/rla-impact-of-word-choice-practice-1.json",
-          "content-src/legacy-modules/rla-impact-of-word-choice-practice-2.json",
-          "content-src/legacy-modules/rla-inference-practice-01.json",
-          "content-src/legacy-modules/rla-meaning-in-context-practice-1.json",
-          "content-src/legacy-modules/rla-meaning-in-context-practice-2.json",
-          "content-src/legacy-modules/rla-p6c-blue-mug.json",
-          "content-src/legacy-modules/rla-p6c-feedback-window.json",
-          "content-src/legacy-modules/rla-p6c-market-roof.json",
-          "content-src/legacy-modules/rla-p6c-morning-fog.json",
-          "content-src/legacy-modules/rla-p6c-night-lighting.json",
-          "content-src/legacy-modules/rla-p6d-last-map-on-wall.json",
-          "content-src/legacy-modules/rla-p6d-library-without-late-fees.json",
-          "content-src/legacy-modules/rla-p6d-mangroves-move-back.json",
-          "content-src/legacy-modules/rla-p6d-quiet-car-experiment.json",
-          "content-src/legacy-modules/rla-p6d-two-minutes-of-shade.json",
-          "content-src/legacy-modules/rla-paragraph-section-function-practice-1.json",
-          "content-src/legacy-modules/rla-paragraph-section-function-practice-2.json",
-          "content-src/legacy-modules/rla-point-of-view-perspective-practice-1.json",
-          "content-src/legacy-modules/rla-point-of-view-perspective-practice-2.json",
-          "content-src/legacy-modules/rla-relationships-practice-01.json",
-          "content-src/legacy-modules/rla-rhetorical-technique-practice-1.json",
-          "content-src/legacy-modules/rla-rhetorical-technique-practice-2.json",
-          "content-src/legacy-modules/rla-sequence-practice-01.json",
-          "content-src/legacy-modules/rla-text-structure-practice-1.json",
-          "content-src/legacy-modules/rla-text-structure-practice-2.json",
-          "content-src/legacy-modules/rla-tone-practice-1.json",
-          "content-src/legacy-modules/rla-tone-practice-2.json",
-          "content-src/legacy-modules/rla-transitions-signal-words-practice-1.json",
-          "content-src/legacy-modules/rla-transitions-signal-words-practice-2.json"
-        ]
-      },
       "PASSAGE_PRACTICE_SHORT": {
         "errors": 0,
-        "warnings": 9,
-        "total": 9,
+        "warnings": 1,
+        "total": 1,
         "files": [
-          "content-src/sets/set-rla-evidence-last-bus.json",
-          "content-src/sets/set-rla-evidence-night-shift.json",
-          "content-src/sets/set-rla-writing-library-hours.json",
-          "content-src/legacy-modules/rla-p6c-blue-mug.json",
-          "content-src/legacy-modules/rla-p6c-feedback-window.json",
-          "content-src/legacy-modules/rla-p6c-market-roof.json",
-          "content-src/legacy-modules/rla-p6c-morning-fog.json",
-          "content-src/legacy-modules/rla-p6c-night-lighting.json",
-          "content-src/legacy-modules/rla-p6d-mangroves-move-back.json"
-        ]
-      },
-      "ANSWER_POSITION_RUN": {
-        "errors": 0,
-        "warnings": 2,
-        "total": 2,
-        "files": [
-          "content-src/legacy-modules/rla-p6b-library-lockers.json",
-          "content-src/legacy-modules/rla-p6b-second-bell.json"
+          "content-src/sets/set-rla-writing-library-hours.json"
         ]
       },
       "TRANSFER_FAMILY_SINGLETON": {
         "errors": 0,
-        "warnings": 4,
-        "total": 4,
+        "warnings": 7,
+        "total": 7,
         "files": [
-          "content-src/sets/set-rla-core-transfer-blue-folder.json",
+          "content-src/sets/set-rla-reading-transfer-edna-river.json",
+          "content-src/sets/set-rla-reading-transfer-festival-plan.json",
+          "content-src/sets/set-rla-reading-transfer-machine-listening.json",
           "content-src/sets/set-rla-writing-library-hours.json"
-        ]
-      },
-      "WHY_WRONG_REUSED": {
-        "errors": 0,
-        "warnings": 9,
-        "total": 9,
-        "files": [
-          "content-src/legacy-modules/rla-author-purpose-practice-1.json",
-          "content-src/legacy-modules/rla-cause-effect-practice-01.json",
-          "content-src/legacy-modules/rla-compare-practice-01.json",
-          "content-src/legacy-modules/rla-conclusions-practice-01.json",
-          "content-src/legacy-modules/rla-connotation-practice-1.json",
-          "content-src/legacy-modules/rla-inference-practice-01.json",
-          "content-src/legacy-modules/rla-p6b-library-lockers.json",
-          "content-src/legacy-modules/rla-relationships-practice-01.json",
-          "content-src/legacy-modules/rla-sequence-practice-01.json"
         ]
       }
     }

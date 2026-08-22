@@ -7,7 +7,7 @@
   "topic": "Passage Practice",
   "difficulty": "medium",
   "source": "Original content by Studo",
-  "passage": "On many city streets, outdoor lighting operates at the same brightness from sunset until sunrise. That approach is simple, but it can use more electricity than necessary. Some cities are now testing adaptive streetlights that can dim when roads are quiet and brighten when pedestrians, cyclists, or vehicles approach.\n\nThe idea is not to turn streets dark. Instead, sensors and programmed schedules allow lighting levels to respond to conditions. A road beside a late-night hospital entrance, for example, may remain bright, while a lightly used residential street may become dimmer during the quietest hours. Supporters describe the system as a way to trim energy use without sacrificing safety.\n\nThe word trim matters. Engineers are not promising that adaptive lighting will erase a city's electricity bill. Lighting is only one part of municipal energy use, and the savings depend on the equipment, the hours of darkness, and how aggressively lights are dimmed. A cautious pilot may produce modest savings; a larger system may produce more.\n\nResearchers are also studying effects beyond energy. Excessive nighttime light can spill into bedroom windows and brighten the sky above cities. Some ecologists argue that lower light levels during quiet hours may reduce disruption to insects and migrating birds. Those benefits are harder to measure than electricity use, however, and cities must weigh them alongside residents' concerns about visibility.\n\nFor that reason, several pilot programs are treating public feedback as data rather than as an afterthought. Instead of installing thousands of lights at once, they are testing small areas, measuring energy use, recording complaints, and adjusting the settings. The technology may be sophisticated, but the decision is deliberately slow: dim, measure, listen, adjust.",
+  "passage": "On many city streets, outdoor lighting operates at the same brightness from sunset until sunrise. That approach is simple, but it can use more electricity than necessary. Some cities are now testing adaptive streetlights that can dim when roads are quiet and brighten when pedestrians, cyclists, or vehicles approach.\n\nThe idea is not to turn streets dark. Instead, sensors and programmed schedules allow lighting levels to respond to conditions. A road beside a late-night hospital entrance, for example, may remain bright, while a lightly used residential street may become dimmer during the quietest hours. Supporters describe the system as a way to trim energy use without sacrificing safety.\n\nThe word trim matters. Engineers are not promising that adaptive lighting will erase a city's electricity bill. Lighting is only one part of municipal energy use, and the savings depend on the equipment, the hours of darkness, and how aggressively lights are dimmed. A cautious pilot may produce modest savings; a larger system may produce more.\n\nDesigning the system also involves choices that are easy to overlook. A sensor that reacts to every moving branch could keep lights unnecessarily bright on windy nights. A setting that waits too long to brighten could make pedestrians feel that the street is responding after they need it. Engineers therefore test detection distances, minimum brightness levels, and the time lights remain bright after movement passes.\n\nResearchers are also studying effects beyond energy. Excessive nighttime light can spill into bedroom windows and brighten the sky above cities. Some ecologists argue that lower light levels during quiet hours may reduce disruption to insects and migrating birds. Those benefits are harder to measure than electricity use, however, and cities must weigh them alongside residents' concerns about visibility.\n\nPublic reactions can vary even on the same street. One resident may welcome less light entering a bedroom, while another may interpret the dimmer road as less safe even if measured visibility remains within the city's standard. Those reactions do not automatically prove that the technology succeeds or fails, but they matter because people change their behavior based partly on how safe a place feels.\n\nFor that reason, several pilot programs are treating public feedback as data rather than as an afterthought. Instead of installing thousands of lights at once, they are testing small areas, measuring energy use, recording complaints, and adjusting the settings. The technology may be sophisticated, but the decision is deliberately slow: dim, measure, listen, adjust.",
   "questions": [
     {
       "id": "q1",
@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "change according to"
+          "id": "c",
+          "text": "complain about",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not provide evidence for the claim “complain about.” It adds information the text never establishes."
         },
         {
           "id": "b",
           "text": "answer in words",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“answer in words” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "c",
-          "text": "complain about",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "a",
+          "text": "change according to"
         },
         {
           "id": "d",
           "text": "record permanently",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“record permanently” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -98,23 +98,23 @@
           "id": "a",
           "text": "Trim suggests energy use will increase.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "Trim presents the expected reduction as limited and realistic."
-        },
-        {
-          "id": "c",
-          "text": "Trim means the city will remove streetlights.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Trim suggests energy use will increase.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "d",
           "text": "Trim makes the claim more emotional and absolute.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Trim makes the claim more emotional and absolute.” uses a related idea, but the relationship or conclusion does not match the text."
+        },
+        {
+          "id": "c",
+          "text": "Trim means the city will remove streetlights.",
+          "distractorType": "wrong_context",
+          "whyWrong": "“Trim means the city will remove streetlights.” does not fit the way the word, phrase, or technique functions in this specific context."
+        },
+        {
+          "id": "b",
+          "text": "Trim presents the expected reduction as limited and realistic."
         }
       ],
       "correct": [
@@ -154,13 +154,13 @@
           "id": "a",
           "text": "outraged",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “outraged.” It adds information the text never establishes."
         },
         {
           "id": "b",
           "text": "celebratory",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“celebratory” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
           "id": "d",
           "text": "mocking",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“mocking” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -207,26 +207,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "It suggests public feedback is less important than electricity use.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "It emphasizes that residents' responses should influence the trial systematically."
         },
         {
           "id": "b",
           "text": "It proves residents are required to support the program.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It proves residents are required to support the program.” uses a related idea, but the relationship or conclusion does not match the text."
         },
         {
           "id": "c",
           "text": "It means public comments are numerical measurements only.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It means public comments are numerical measurements only.” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "d",
-          "text": "It emphasizes that residents' responses should influence the trial systematically."
+          "id": "a",
+          "text": "It suggests public feedback is less important than electricity use.",
+          "distractorType": "wrong_context",
+          "whyWrong": "“It suggests public feedback is less important than electricity use.” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "It compresses the pilot process into a clear repeated cycle."
-        },
-        {
           "id": "b",
           "text": "It makes the technology sound impossible to use.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It makes the technology sound impossible to use.” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "a",
+          "text": "It compresses the pilot process into a clear repeated cycle."
         },
         {
           "id": "c",
           "text": "It proves every pilot follows the same schedule.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “It proves every pilot follows the same schedule..” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "It changes the article into a personal story.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It changes the article into a personal story.” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -322,7 +322,7 @@
           "id": "a",
           "text": "Guaranteed elimination of city energy costs",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Guaranteed elimination of city energy costs” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "b",
@@ -332,13 +332,13 @@
           "id": "c",
           "text": "Longer hours of darkness",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Longer hours of darkness” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "More vehicles on residential streets",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“More vehicles on residential streets” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "Cities should immediately replace every streetlight because adaptive systems eliminate electricity costs.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "c",
+          "text": "Adaptive streetlights can reduce lighting levels when appropriate, but cities are using measured pilot programs to balance energy, environmental, safety, and public concerns."
         },
         {
           "id": "b",
           "text": "Migrating birds are the main reason cities use streetlights.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Migrating birds are the main reason cities use streetlights.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "c",
-          "text": "Adaptive streetlights can reduce lighting levels when appropriate, but cities are using measured pilot programs to balance energy, environmental, safety, and public concerns."
+          "id": "a",
+          "text": "Cities should immediately replace every streetlight because adaptive systems eliminate electricity costs.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not provide evidence for the claim “Cities should immediately replace every streetlight because adaptive….” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "Residential streets should be dark after midnight.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Residential streets should be dark after midnight.” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [

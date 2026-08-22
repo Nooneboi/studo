@@ -52,14 +52,14 @@
           "whyWrong": "Tree planting became one later test; it was not the reason the city began with measurements."
         },
         {
-          "id": "b",
-          "text": "Staff wanted to identify where pedestrians faced the greatest heat exposure before matching improvements to locations."
-        },
-        {
           "id": "c",
           "text": "The city was required to wait several years before changing any bus stops.",
           "distractorType": "unsupported_extension",
           "whyWrong": "No waiting requirement is stated."
+        },
+        {
+          "id": "b",
+          "text": "Staff wanted to identify where pedestrians faced the greatest heat exposure before matching improvements to locations."
         },
         {
           "id": "d",
@@ -70,7 +70,7 @@
       ],
       "correct": "b",
       "explanation": {
-        "answer": "B",
+        "answer": "C",
         "whyCorrect": "The opening explains that staff wanted to know which parts of the route exposed pedestrians to the most heat before deciding what to change.",
         "quickTip": "Preserve the passage's stated reason instead of choosing a related project goal.",
         "evidenceRef": "City staff ... wanted to know which parts of the walking route exposed pedestrians to the most heat."
@@ -196,10 +196,8 @@
       "estimatedSeconds": 55,
       "options": [
         {
-          "id": "a",
-          "text": "The city tested three changes and found that all of them worked equally well, so officials planned to use all three everywhere.",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "The results were not identical and the city did not plan to use every treatment everywhere."
+          "id": "c",
+          "text": "The city tested a canopy, young trees, and a lighter surface; each affected heat differently, showing that no single treatment worked the same way in every location."
         },
         {
           "id": "b",
@@ -208,8 +206,10 @@
           "whyWrong": "The canopy and reflective surface did not fail."
         },
         {
-          "id": "c",
-          "text": "The city tested a canopy, young trees, and a lighter surface; each affected heat differently, showing that no single treatment worked the same way in every location."
+          "id": "a",
+          "text": "The city tested three changes and found that all of them worked equally well, so officials planned to use all three everywhere.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The results were not identical and the city did not plan to use every treatment everywhere."
         },
         {
           "id": "d",
@@ -220,7 +220,7 @@
       ],
       "correct": "c",
       "explanation": {
-        "answer": "C",
+        "answer": "A",
         "whyCorrect": "The section compares three treatments and emphasizes that their effects differed.",
         "quickTip": "A section summary should keep the relationship among the details, not just one result.",
         "evidenceRef": "All three changes reduced surface heating under some conditions, but the results were not identical."
@@ -302,10 +302,8 @@
           "whyWrong": "The passage does not say it lowered overall air temperature or was best."
         },
         {
-          "id": "b",
-          "text": "It was installed only after the young trees had grown for several years.",
-          "distractorType": "true_elsewhere",
-          "whyWrong": "The city planned to remeasure trees later; the coating was part of the initial pilot."
+          "id": "d",
+          "text": "It reduced midday surface temperature, but the area still felt uncomfortable because it remained in direct sun."
         },
         {
           "id": "c",
@@ -314,13 +312,15 @@
           "whyWrong": "Pedestrians still reported discomfort."
         },
         {
-          "id": "d",
-          "text": "It reduced midday surface temperature, but the area still felt uncomfortable because it remained in direct sun."
+          "id": "b",
+          "text": "It was installed only after the young trees had grown for several years.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "The city planned to remeasure trees later; the coating was part of the initial pilot."
         }
       ],
       "correct": "d",
       "explanation": {
-        "answer": "D",
+        "answer": "B",
         "whyCorrect": "The passage directly states both the lower surface temperature and continued discomfort from direct sun.",
         "quickTip": "Watch for answers that keep both the benefit and the limitation.",
         "evidenceRef": "The lighter coating reduced midday surface temperature, but pedestrians still reported discomfort because the section remained exposed to direct sun."
@@ -346,8 +346,10 @@
       "estimatedSeconds": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The three tested changes produced different kinds and amounts of benefit under different conditions."
+          "id": "c",
+          "text": "Measurements were taken during June and July.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "The measurement dates do not support the one-size-fits-all decision."
         },
         {
           "id": "b",
@@ -356,10 +358,8 @@
           "whyWrong": "This explains why the route can feel hot but not why one treatment was rejected."
         },
         {
-          "id": "c",
-          "text": "Measurements were taken during June and July.",
-          "distractorType": "mentioned_not_supported",
-          "whyWrong": "The measurement dates do not support the one-size-fits-all decision."
+          "id": "a",
+          "text": "The three tested changes produced different kinds and amounts of benefit under different conditions."
         },
         {
           "id": "d",
@@ -370,7 +370,7 @@
       ],
       "correct": "a",
       "explanation": {
-        "answer": "A",
+        "answer": "C",
         "whyCorrect": "Different results across conditions directly support matching different treatments to different locations.",
         "quickTip": "Choose evidence that explains the decision itself, not just project background.",
         "evidenceRef": "All three changes reduced surface heating under some conditions, but the results were not identical."

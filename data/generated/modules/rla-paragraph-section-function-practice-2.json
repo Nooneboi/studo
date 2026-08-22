@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "It moves from proposing the system to showing its practical process.",
+      "explanation": "After the plan proposes a deposit system, the later paragraph explains the return, washing, and recirculation process.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "explains how the proposed solution would operate"
+          "id": "b",
+          "text": "restates the original problem of disposable-cup waste",
+          "distractorType": "earlier_section_role",
+          "whyWrong": "The waste problem motivates the proposal; the target paragraph explains operation."
         },
         {
-          "id": "b",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "explains how the proposed reusable-cup system would operate"
         },
         {
           "id": "c",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "argues that reusable cups have no costs or practical limits",
+          "distractorType": "overstatement",
+          "whyWrong": "Describing a process does not claim the system is cost-free or flawless."
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compares two different deposit prices before choosing one",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "The paragraph describes the cycle of cups, not competing price options."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "It moves from proposing the system to showing its practical process.",
+      "explanation": "The paragraph develops the solution by showing what happens to cups after use.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It moves from proposing the system to showing its practical process."
+          "text": "It abandons the proposal and returns only to describing disposable waste.",
+          "distractorType": "reverses_development",
+          "whyWrong": "The target continues developing the proposed solution."
         },
         {
           "id": "c",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It supplies evidence that students already prefer reusable cups.",
+          "distractorType": "unsupported_evidence",
+          "whyWrong": "No preference data is described."
+        },
+        {
+          "id": "b",
+          "text": "It moves from proposing the system to showing the practical process needed to carry it out."
         },
         {
           "id": "d",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It introduces an unrelated discussion of campus food prices.",
+          "distractorType": "unrelated_topic",
+          "whyWrong": "The paragraph stays focused on the cup-reuse system."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "It balances the discussion by showing a cost of the same office design.",
+      "explanation": "The complaints about concentration and phone noise qualify the earlier claim that open offices can support quick collaboration.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "gives a second example of how open offices improve collaboration",
+          "distractorType": "reverses_qualification",
+          "whyWrong": "Complaints about concentration and noise are drawbacks, not collaboration benefits."
         },
         {
           "id": "b",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "introduces a drawback that complicates the earlier benefit"
+          "text": "explains why employees prefer making phone calls in shared spaces",
+          "distractorType": "unsupported_purpose",
+          "whyWrong": "The paragraph reports phone noise as a complaint, not a preference."
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "defines the architectural features of an open office",
+          "distractorType": "definition_not_role",
+          "whyWrong": "The target focuses on employee experience, not a definition of the office layout."
+        },
+        {
+          "id": "c",
+          "text": "introduces a drawback that complicates the earlier benefit of open offices"
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "It balances the discussion by showing a cost of the same office design.",
+      "explanation": "The paragraph helps readers evaluate the tradeoff rather than seeing only the collaboration benefit.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -207,26 +207,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "It balances the earlier benefit by showing a cost of the same office design."
         },
         {
           "id": "b",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves open offices reduce productivity for every employee.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Employee complaints do not establish a universal productivity effect."
         },
         {
           "id": "c",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It changes the topic from office design to telephone technology.",
+          "distractorType": "unrelated_topic",
+          "whyWrong": "Phone noise is evidence about the office environment, not a new technology topic."
         },
         {
-          "id": "d",
-          "text": "It balances the discussion by showing a cost of the same office design."
+          "id": "a",
+          "text": "It repeats the collaboration claim in different words.",
+          "distractorType": "repetition_not_present",
+          "whyWrong": "The target introduces a limitation rather than repeating the benefit."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "The examples help readers connect the definition to familiar materials.",
+      "explanation": "The food scraps, leaves, and grass clippings make the definition easier to understand by showing what materials fit it.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "provides examples that clarify the definition"
+          "id": "b",
+          "text": "introduces a different definition that contradicts the first paragraph",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The examples support the definition rather than replacing it."
         },
         {
-          "id": "b",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "provides concrete examples that clarify the definition of compost"
         },
         {
           "id": "c",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "explains the chemical stages of decomposition in chronological order",
+          "distractorType": "unsupported_detail",
+          "whyWrong": "The paragraph lists materials; it does not describe decomposition stages."
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "argues that every type of household waste belongs in compost",
+          "distractorType": "overgeneralization",
+          "whyWrong": "A few valid examples do not imply all household waste is compostable."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "The examples help readers connect the definition to familiar materials.",
+      "explanation": "The paragraph develops understanding by turning an abstract definition into concrete instances.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The examples help readers connect the definition to familiar materials."
-        },
-        {
-          "id": "c",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It changes the definition from decomposed material to fresh food waste.",
+          "distractorType": "misreads_example",
+          "whyWrong": "Examples of inputs do not change the definition of the finished material."
         },
         {
           "id": "d",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It compares compost with several commercial fertilizers.",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "No fertilizer comparison is described."
+        },
+        {
+          "id": "c",
+          "text": "It gives disposal instructions for materials that cannot be composted.",
+          "distractorType": "unsupported_purpose",
+          "whyWrong": "The examples identify usable materials rather than disposal rules."
+        },
+        {
+          "id": "b",
+          "text": "The examples connect the definition to familiar materials readers can recognize."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "What is the main function of this paragraph or section?",
       "points": 1,
-      "explanation": "It turns the warning about possible delays into an action passengers can take.",
+      "explanation": "After explaining that storms may disrupt ferries, the final paragraph tells passengers how to check live updates before traveling.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "summarizes the entire passage without serving a specific local role",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "explains the weather conditions that create winter storms",
+          "distractorType": "background_not_guidance",
+          "whyWrong": "The target gives an action for passengers, not a meteorological explanation."
         },
         {
           "id": "b",
-          "text": "introduces a new topic unrelated to the surrounding discussion",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "summarizes every ferry route and departure time for the season",
+          "distractorType": "overbroad_summary",
+          "whyWrong": "The paragraph points readers to live updates rather than listing the full schedule."
         },
         {
           "id": "c",
-          "text": "gives practical guidance based on the earlier risk"
+          "text": "gives passengers practical guidance based on the earlier risk of storm delays"
         },
         {
           "id": "d",
-          "text": "gives background information that does not connect to the passage's main development",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "argues that passengers should avoid ferries throughout the winter",
+          "distractorType": "overstatement",
+          "whyWrong": "Possible delays lead to checking updates, not avoiding ferries altogether."
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "How does this part contribute to the larger text?",
       "points": 1,
-      "explanation": "It turns the warning about possible delays into an action passengers can take.",
+      "explanation": "The final paragraph makes the notice useful by connecting the risk to a specific response.",
       "skill": {
         "id": "R4.1",
         "label": "Paragraph / section function"
@@ -431,26 +431,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It changes the topic rather than developing the writer's explanation.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "It turns a warning about possible delays into an action passengers can take before leaving for the terminal."
         },
         {
           "id": "b",
-          "text": "It repeats the previous sentence with no additional purpose.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It guarantees that checking the website will prevent all ferry delays.",
+          "distractorType": "overclaim",
+          "whyWrong": "Live information can help passengers plan; it cannot prevent storms or delays."
         },
         {
           "id": "c",
-          "text": "It gives information that conflicts with the surrounding paragraphs.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It shifts the notice from ferry service to general winter travel advice.",
+          "distractorType": "unrelated_topic",
+          "whyWrong": "The guidance remains specific to ferry departures."
         },
         {
-          "id": "d",
-          "text": "It turns the warning about possible delays into an action passengers can take."
+          "id": "a",
+          "text": "It explains why the terminal was built in its current location.",
+          "distractorType": "unsupported_detail",
+          "whyWrong": "Terminal location is not part of the stated guidance."
         }
       ],
       "correct": [

@@ -7,7 +7,7 @@
   "topic": "Passage Practice",
   "difficulty": "medium",
   "source": "Original content by Studo",
-  "passage": "Along many tropical coasts, mangrove forests grow where land and sea meet. Their tangled roots can slow waves, trap sediment, and create sheltered habitat for young fish and crabs. Yet mangroves do not remain fixed in one narrow strip forever. As shorelines change, the forests may expand, retreat, or shift inland.\n\nOn a low-lying coast, rising sea level can gradually cover the seaward edge of a mangrove forest for longer periods each day. If open land exists behind the forest, new mangrove seedlings may establish farther inland. Over decades, the forest can appear to \"move\" landward even though individual trees remain rooted in place. This process is sometimes called inland migration.\n\nWhether migration is possible depends heavily on what lies behind the current forest. A field, an undeveloped wetland, or gently rising ground may leave room for new trees. A seawall, road, building, or steep embankment can block that movement. Researchers sometimes call this situation coastal squeeze: water advances from one side while development prevents the habitat from shifting in the other direction.\n\nScientists study this process with old aerial photographs, satellite images, elevation maps, and field measurements. Comparing images from different years can show where tree cover has appeared or disappeared. Elevation data help researchers estimate which inland areas may become wet enough for mangroves in the future. Field surveys then confirm whether seedlings are actually establishing in those places.\n\nThe findings do not mean that every inland field should immediately become mangrove forest. Communities use coastal land for homes, farms, roads, and recreation, and those needs cannot simply be ignored. Instead, some planners use migration maps when deciding where future development should occur or where conservation agreements might preserve open space.\n\nMigration maps can also help planners compare choices before construction begins. Leaving a low strip of land undeveloped, for example, may preserve a future pathway without changing how the existing forest is managed today. Researchers caution that maps are projections rather than promises: storms, sediment supply, water quality, and local elevation can all affect where new trees actually survive.\n\nThe key idea is that protecting a mangrove forest may require thinking beyond the trees that exist today. If coastlines keep changing, the space behind the forest can become part of the forest's future. Planning for that possibility does not guarantee that mangroves will survive every change, but it can remove one obstacle to their natural movement.",
+  "passage": "Along many tropical coasts, mangrove forests grow where land and sea meet. Their tangled roots can slow waves, trap sediment, and create sheltered habitat for young fish and crabs. Yet mangroves do not remain fixed in one narrow strip forever. As shorelines change, the forests may expand, retreat, or shift inland.\n\nOn a low-lying coast, rising sea level can gradually cover the seaward edge of a mangrove forest for longer periods each day. If open land exists behind the forest, new mangrove seedlings may establish farther inland. Over decades, the forest can appear to \"move\" landward even though individual trees remain rooted in place. This process is sometimes called inland migration.\n\nWhether migration is possible depends heavily on what lies behind the current forest. A field, an undeveloped wetland, or gently rising ground may leave room for new trees. A seawall, road, building, or steep embankment can block that movement. Researchers sometimes call this situation coastal squeeze: water advances from one side while development prevents the habitat from shifting in the other direction.\n\nScientists study this process with old aerial photographs, satellite images, elevation maps, and field measurements. Comparing images from different years can show where tree cover has appeared or disappeared. Elevation data help researchers estimate which inland areas may become wet enough for mangroves in the future. Field surveys then confirm whether seedlings are actually establishing in those places.\n\nThe findings do not mean that every inland field should immediately become mangrove forest. Communities use coastal land for homes, farms, roads, and recreation, and those needs cannot simply be ignored. Instead, some planners use migration maps when deciding where future development should occur or where conservation agreements might preserve open space.\n\nMigration maps can also help planners compare choices before construction begins. Leaving a low strip of land undeveloped, for example, may preserve a future pathway without changing how the existing forest is managed today. Researchers caution that maps are projections rather than promises: storms, sediment supply, water quality, and local elevation can all affect where new trees actually survive.\n\nThat planning question can arise years before any visible shift occurs, which is why researchers treat future space as part of present-day coastal decisions.\n\nThe key idea is that protecting a mangrove forest may require thinking beyond the trees that exist today. If coastlines keep changing, the space behind the forest can become part of the forest's future. Planning for that possibility does not guarantee that mangroves will survive every change, but it can remove one obstacle to their natural movement.",
   "questions": [
     {
       "id": "q1",
@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It defines inland migration, explains what can block it, describes how it is studied, and connects the findings to planning."
+          "id": "c",
+          "text": "It presents events only in the order one scientist experienced them.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“It presents events only in the order one scientist experienced them.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "It lists mangrove species alphabetically.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It lists mangrove species alphabetically.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "c",
-          "text": "It presents events only in the order one scientist experienced them.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "It defines inland migration, explains what can block it, describes how it is studied, and connects the findings to planning."
         },
         {
           "id": "d",
           "text": "It compares mangroves with coral reefs throughout.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It compares mangroves with coral reefs throughout.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -98,7 +98,7 @@
           "id": "a",
           "text": "to describe how satellite cameras are built",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to describe how satellite cameras are built” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "b",
@@ -108,13 +108,13 @@
           "id": "c",
           "text": "to argue that all roads should be removed",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to argue that all roads should be removed” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "d",
           "text": "to summarize the passage's conclusion",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to summarize the passage's conclusion” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -154,23 +154,23 @@
           "id": "a",
           "text": "a method for pressing water out of soil",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“a method for pressing water out of soil” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "a storm that destroys every coastal building",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "a situation in which habitat is trapped between advancing water and barriers to inland movement"
+          "whyWrong": "“a storm that destroys every coastal building” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "d",
           "text": "a technique for measuring tree height",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“a technique for measuring tree height” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "c",
+          "text": "a situation in which habitat is trapped between advancing water and barriers to inland movement"
         }
       ],
       "correct": [
@@ -207,26 +207,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "to prove mangroves cannot grow near people",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "to acknowledge that coastal planning must consider human uses as well as habitat movement"
         },
         {
           "id": "b",
           "text": "to explain how to build a seawall",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to explain how to build a seawall” may fit one clue, but it does not account for the full set of evidence in the passage."
         },
         {
           "id": "c",
           "text": "to show that field surveys are unnecessary",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to show that field surveys are unnecessary” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "d",
-          "text": "to acknowledge that coastal planning must consider human uses as well as habitat movement"
+          "id": "a",
+          "text": "to prove mangroves cannot grow near people",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“to prove mangroves cannot grow near people” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It turns the planning idea into a concise image connecting present land with future habitat."
-        },
-        {
           "id": "b",
           "text": "It claims that every field will definitely become forest.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It claims that every field will definitely become forest.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "a",
+          "text": "It turns the planning idea into a concise image connecting present land with future habitat."
         },
         {
           "id": "c",
           "text": "It defines satellite imagery.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It defines satellite imagery.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "It shows that mangroves can walk inland.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It shows that mangroves can walk inland.” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "All coastal development should stop immediately.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“All coastal development should stop immediately.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "c",
+          "text": "Mangrove movement is impossible to study.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“Mangrove movement is impossible to study.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "b",
           "text": "Mangrove migration should be considered in planning, while human land uses and uncertainty also matter."
         },
         {
-          "id": "c",
-          "text": "Mangrove movement is impossible to study.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "d",
           "text": "Sea level is unrelated to coastal habitats.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Sea level is unrelated to coastal habitats.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It makes satellite images impossible to use.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "c",
+          "text": "It can block mangroves from establishing farther inland as water advances."
         },
         {
           "id": "b",
           "text": "It causes seedlings to grow faster.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It causes seedlings to grow faster.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
-          "id": "c",
-          "text": "It can block mangroves from establishing farther inland as water advances."
+          "id": "a",
+          "text": "It makes satellite images impossible to use.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“It makes satellite images impossible to use.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "It lowers sea level near the forest.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It lowers sea level near the forest.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [

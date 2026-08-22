@@ -39,8 +39,10 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "A catalog photograph from 1968 already showed the metal sign she had remembered."
+          "id": "d",
+          "text": "A building permit showed that the sign was installed in the 1980s.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "No permit or 1980s installation date appears."
         },
         {
           "id": "b",
@@ -55,10 +57,8 @@
           "whyWrong": "The folder had no date and the donor did not list individual dates."
         },
         {
-          "id": "d",
-          "text": "A building permit showed that the sign was installed in the 1980s.",
-          "distractorType": "unsupported_extension",
-          "whyWrong": "No permit or 1980s installation date appears."
+          "id": "a",
+          "text": "A catalog photograph from 1968 already showed the metal sign she had remembered."
         }
       ],
       "correct": "a",
@@ -149,14 +149,14 @@
       "time": 70,
       "options": [
         {
+          "id": "b",
+          "text": "Lian tells Ms. Alvarez that she can describe the signs but should not choose a decade without enough evidence."
+        },
+        {
           "id": "a",
           "text": "Lian knew where festival posters and school records belonged.",
           "distractorType": "interesting_but_unrelated",
           "whyWrong": "This shows experience but not the theme about uncertainty."
-        },
-        {
-          "id": "b",
-          "text": "Lian tells Ms. Alvarez that she can describe the signs but should not choose a decade without enough evidence."
         },
         {
           "id": "c",
@@ -210,10 +210,8 @@
           "whyWrong": "The folder remains undated."
         },
         {
-          "id": "b",
-          "text": "An archivist asks a volunteer to search building permits for a bakery renovation.",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "Ms. Alvarez mentions permits only as a possible future research source."
+          "id": "d",
+          "text": "While finishing an archive task, Lian nearly assigns an unsupported date, checks the evidence, and decides to record the uncertainty honestly instead."
         },
         {
           "id": "c",
@@ -222,8 +220,10 @@
           "whyWrong": "The passage does not create a general rule about sign style."
         },
         {
-          "id": "d",
-          "text": "While finishing an archive task, Lian nearly assigns an unsupported date, checks the evidence, and decides to record the uncertainty honestly instead."
+          "id": "b",
+          "text": "An archivist asks a volunteer to search building permits for a bakery renovation.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Ms. Alvarez mentions permits only as a possible future research source."
         }
       ],
       "correct": "d",
@@ -259,8 +259,10 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Her last task changes her understanding of good archival work from simply completing labels to accurately recording both what is known and what remains uncertain."
+          "id": "c",
+          "text": "Ms. Alvarez teaches Lian how to use the center's digital catalog for the first time.",
+          "distractorType": "too_narrow",
+          "whyWrong": "She uses the catalog, but the passage does not say this is her first time."
         },
         {
           "id": "b",
@@ -269,10 +271,8 @@
           "whyWrong": "Lian does not reject the work; she gains a deeper understanding of it."
         },
         {
-          "id": "c",
-          "text": "Ms. Alvarez teaches Lian how to use the center's digital catalog for the first time.",
-          "distractorType": "too_narrow",
-          "whyWrong": "She uses the catalog, but the passage does not say this is her first time."
+          "id": "a",
+          "text": "Her last task changes her understanding of good archival work from simply completing labels to accurately recording both what is known and what remains uncertain."
         },
         {
           "id": "d",
@@ -314,10 +314,8 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "1970s",
-          "distractorType": "changed_detail",
-          "whyWrong": "1970s is the unsupported date Lian considered."
+          "id": "c",
+          "text": "date uncertain"
         },
         {
           "id": "b",
@@ -326,8 +324,10 @@
           "whyWrong": "'Before the renovation' is the handwritten note already inside the folder."
         },
         {
-          "id": "c",
-          "text": "date uncertain"
+          "id": "a",
+          "text": "1970s",
+          "distractorType": "changed_detail",
+          "whyWrong": "1970s is the unsupported date Lian considered."
         },
         {
           "id": "d",
@@ -424,6 +424,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-22T06:42:03.904Z"
+    "compiledAt": "2026-08-22T07:49:37.338Z"
   }
 }

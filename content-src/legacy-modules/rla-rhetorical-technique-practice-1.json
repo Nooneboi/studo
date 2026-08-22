@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses repetition.",
+      "explanation": "The repeated opening \"Shade where...\" uses parallel wording to emphasize the range of places that need shade.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "repetition"
+          "id": "d",
+          "text": "rhetorical question",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The lines make repeated statements; they do not ask a question."
         },
         {
           "id": "b",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "statistic",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No numerical evidence appears."
         },
         {
           "id": "c",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "anecdote",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The letter does not tell a personal story."
         },
         {
-          "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "repetition with parallel phrasing"
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The repeated opening emphasizes how many everyday public spaces could benefit from shade.",
+      "explanation": "Repetition and parallel structure turn separate locations into one accumulating call for shade.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The repeated opening emphasizes how many everyday public spaces could benefit from shade."
-        },
-        {
-          "id": "c",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves with measured data that every listed location is dangerously hot.",
+          "distractorType": "evidence_overclaim",
+          "whyWrong": "The technique creates emphasis; it does not supply measurements."
         },
         {
           "id": "d",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It defines the technical meaning of urban shade for the reader.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The repeated phrases do not function as a definition."
+        },
+        {
+          "id": "c",
+          "text": "It softens the request by making the need for trees sound uncertain.",
+          "distractorType": "reverses_effect",
+          "whyWrong": "The repetition strengthens emphasis rather than weakening it."
+        },
+        {
+          "id": "b",
+          "text": "The repeated opening builds emphasis and makes several everyday public spaces feel connected to the same need."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses anecdote.",
+      "explanation": "The report opens with one patient's experience to make the communication problem concrete.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -151,26 +151,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "c",
           "text": "anecdote"
         },
         {
+          "id": "b",
+          "text": "statistic",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The example describes one person rather than numerical data."
+        },
+        {
+          "id": "a",
+          "text": "analogy",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The report does not explain the problem by comparing it with a different familiar situation."
+        },
+        {
           "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "rhetorical question",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No question is posed."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The personal example makes the communication problem concrete before the report presents broader data.",
+      "explanation": "An anecdote can help readers see how an abstract communication failure affects a real person without proving how common it is.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -207,26 +207,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "The personal example makes the communication problem concrete before the report presents broader evidence."
         },
         {
           "id": "b",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It establishes by itself that missed voicemails are the main cause of missed visits for all patients.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "One patient's experience cannot establish prevalence or the main cause for everyone."
         },
         {
           "id": "c",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It defines the clinic's reminder policy in formal terms.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The story illustrates a problem rather than defining policy."
         },
         {
-          "id": "d",
-          "text": "The personal example makes the communication problem concrete before the report presents broader data."
+          "id": "a",
+          "text": "It compares two reminder systems using the same criteria.",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "The anecdote presents one experience, not a structured comparison."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses statistic / quantified example.",
+      "explanation": "The number of liters gives a measurable estimate of the scale of possible water savings.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "anecdote",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No individual person's story is told."
+        },
+        {
           "id": "a",
           "text": "statistic / quantified example"
         },
         {
-          "id": "b",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "c",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "analogy",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The statement does not compare leak repair with another situation."
         },
         {
           "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "rhetorical question",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The sentence states a quantity rather than asking a question."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The quantity makes the scale of potential water savings easier to understand.",
+      "explanation": "A numerical estimate gives readers a sense of scale, though the number still needs relevant context to support a broader claim.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The quantity makes the scale of potential water savings easier to understand."
+          "text": "It proves that every leaking toilet wastes exactly the same amount of water.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "A quantified example does not establish identical results in every case."
         },
         {
           "id": "c",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It creates urgency mainly through emotional language about waste.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The force comes from a quantity, not emotionally loaded wording."
+        },
+        {
+          "id": "b",
+          "text": "The quantity makes the potential water savings concrete and easier to evaluate."
         },
         {
           "id": "d",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains the mechanical steps required to repair a toilet.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The statistic measures potential savings rather than giving instructions."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses rhetorical question.",
+      "explanation": "The advocacy group asks a question whose wording challenges whether the repeatedly flooded path deserves the label \"all-weather.\"",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -376,15 +376,15 @@
       "options": [
         {
           "id": "a",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "statistic",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No numerical data is given."
         },
         {
           "id": "b",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "anecdote",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The sentence does not tell a personal story."
         },
         {
           "id": "c",
@@ -392,9 +392,9 @@
         },
         {
           "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "analogy",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No comparison to a different situation is used."
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The question challenges the claim that the route works in all weather by pointing to repeated flooding.",
+      "explanation": "The rhetorical question invites readers to reconsider the label rather than simply requesting information.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It neutrally asks officials to provide the date of the next flood.",
+          "distractorType": "literal_question",
+          "whyWrong": "The question is persuasive, not a request for factual information."
         },
         {
           "id": "d",
-          "text": "The question challenges the claim that the route works in all weather by pointing to repeated flooding."
+          "text": "The question challenges the claim that the route works in all weather by directing attention to repeated flooding."
+        },
+        {
+          "id": "c",
+          "text": "It proves that the path is unusable after every kind of rainfall.",
+          "distractorType": "overclaim",
+          "whyWrong": "The wording refers to heavy rain and repeated flooding, not every rainfall condition."
+        },
+        {
+          "id": "b",
+          "text": "It defines the engineering standard for an all-weather route.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The question challenges a label but does not provide a technical definition."
         }
       ],
       "correct": [

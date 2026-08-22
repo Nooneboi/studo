@@ -42,7 +42,7 @@
           "id": "a",
           "text": "Marcus brings clothespins to the outdoor concert",
           "distractorType": "later_event",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Marcus brings clothespins to the outdoor concert” happens later, not at the point in the sequence the question asks about."
         },
         {
           "id": "b",
@@ -52,13 +52,13 @@
           "id": "c",
           "text": "The orchestra finishes the third selection",
           "distractorType": "later_event",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The orchestra finishes the third selection” happens later, not at the point in the sequence the question asks about."
         },
         {
           "id": "d",
           "text": "Elena arrives at the auditorium",
           "distractorType": "earlier_event",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Elena arrives at the auditorium” happens earlier, not at the point in the sequence the question asks about."
         }
       ],
       "correct": [
@@ -96,26 +96,26 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "It forces the orchestra to change how and in what order it performs the opening pieces"
-        },
-        {
           "id": "b",
           "text": "It causes the audience to leave permanently",
           "distractorType": "unrelated_connection",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It causes the audience to leave permanently” connects details that the passage does not present as meaningfully related."
+        },
+        {
+          "id": "a",
+          "text": "It forces the orchestra to change how and in what order it performs the opening pieces"
         },
         {
           "id": "c",
           "text": "It proves the orchestra did not rehearse",
           "distractorType": "unrelated_connection",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It proves the orchestra did not rehearse” connects details that the passage does not present as meaningfully related."
         },
         {
           "id": "d",
           "text": "It has no effect on the program",
           "distractorType": "sequence_without_effect",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It has no effect on the program” describes order, but the question asks how one event affects another."
         }
       ],
       "correct": [
@@ -156,23 +156,23 @@
           "id": "a",
           "text": "He still believes all preparation is pointless",
           "distractorType": "reversed_positions",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“He still believes all preparation is pointless” assigns the two subjects’ features to the wrong sides of the comparison."
+        },
+        {
+          "id": "c",
+          "text": "He stops playing music entirely",
+          "distractorType": "minor_irrelevant_difference",
+          "whyWrong": "“He stops playing music entirely” focuses on a minor difference that does not answer the comparison being asked."
         },
         {
           "id": "b",
           "text": "He now prepares for wind by checking the forecast and bringing clothespins"
         },
         {
-          "id": "c",
-          "text": "He stops playing music entirely",
-          "distractorType": "minor_irrelevant_difference",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
           "id": "d",
           "text": "He becomes the orchestra director",
           "distractorType": "unsupported_similarity",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“He becomes the orchestra director” treats the subjects as similar in a way the text does not support."
         }
       ],
       "correct": [
@@ -210,26 +210,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "She believes small preparations can be worthwhile even when most of them are not needed on a given day"
+        },
+        {
           "id": "a",
           "text": "She believes preparation is useful only when a problem is guaranteed",
           "distractorType": "contradicts_detail",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "She believes small preparations can be worthwhile even when most of them are not needed on a given day"
+          "whyWrong": "“She believes preparation is useful only when a problem is guaranteed” conflicts with a specific detail in the passage."
         },
         {
           "id": "c",
           "text": "She expects every concert to fail",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“She expects every concert to fail” could be possible, but the passage does not provide enough evidence to support that conclusion."
         },
         {
           "id": "d",
           "text": "She prepares mainly to impress Marcus",
           "distractorType": "unsupported_motive",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“She prepares mainly to impress Marcus” assigns a motive that the text never gives. Use only motives supported by actions or wording."
         }
       ],
       "correct": [
@@ -270,23 +270,23 @@
           "id": "a",
           "text": "He has completely stopped joking with Elena",
           "distractorType": "unsupported_prediction",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "The outage experience has influenced him to take advance preparation more seriously"
-        },
-        {
-          "id": "c",
-          "text": "He now believes every possible item must be carried to every concert",
-          "distractorType": "too_broad",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“He has completely stopped joking with Elena” predicts an outcome the passage does not establish."
         },
         {
           "id": "d",
           "text": "He dislikes outdoor performances",
           "distractorType": "single_detail_inference",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“He dislikes outdoor performances” relies too heavily on one detail instead of combining the relevant clues."
+        },
+        {
+          "id": "c",
+          "text": "He now believes every possible item must be carried to every concert",
+          "distractorType": "too_broad",
+          "whyWrong": "“He now believes every possible item must be carried to every concert” goes beyond the scope of the text. The evidence supports a narrower claim."
+        },
+        {
+          "id": "b",
+          "text": "The outage experience has influenced him to take advance preparation more seriously"
         }
       ],
       "correct": [
@@ -331,19 +331,19 @@
           "id": "b",
           "text": "Marcus asks for a different seat",
           "distractorType": "sequence_only",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Marcus asks for a different seat” gives chronology without explaining the relationship the question asks about."
         },
         {
           "id": "c",
           "text": "The audience requests clothespins",
           "distractorType": "correlation_only",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The audience requests clothespins” shows that two things occurred together, but that alone does not establish causation."
         },
         {
           "id": "d",
           "text": "The weather forecast predicts wind next month",
           "distractorType": "effect_as_cause",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The weather forecast predicts wind next month” is an effect or result, not the cause the question asks for."
         }
       ],
       "correct": [
@@ -381,26 +381,26 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Careful preparation can seem excessive until an unexpected problem reveals its value"
+          "id": "c",
+          "text": "Power outages always improve concerts",
+          "distractorType": "overgeneralization",
+          "whyWrong": "“Power outages always improve concerts” turns a limited pattern into a rule that is broader than the evidence supports."
         },
         {
           "id": "b",
           "text": "Every musician should carry the same emergency box",
           "distractorType": "unsupported_moral",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Every musician should carry the same emergency box” states a moral that the story’s events do not clearly develop."
         },
         {
-          "id": "c",
-          "text": "Power outages always improve concerts",
-          "distractorType": "overgeneralization",
-          "whyWrong": "This option is not best supported by the passage."
+          "id": "a",
+          "text": "Careful preparation can seem excessive until an unexpected problem reveals its value"
         },
         {
           "id": "d",
           "text": "Elena brings flashlights to a concert and Marcus later brings clothespins",
           "distractorType": "plot_summary",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Elena brings flashlights to a concert and Marcus later brings clothes…” retells events instead of expressing the theme or general message."
         }
       ],
       "correct": [

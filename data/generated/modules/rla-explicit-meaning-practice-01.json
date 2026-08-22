@@ -102,10 +102,8 @@
           "whyWrong": "That is the new lap-swimming time on two days, not family swim."
         },
         {
-          "id": "b",
-          "text": "7:30 a.m.",
-          "distractorType": "true_elsewhere",
-          "whyWrong": "That is the previous lap-swimming time."
+          "id": "d",
+          "text": "10:00 a.m."
         },
         {
           "id": "c",
@@ -114,8 +112,10 @@
           "whyWrong": "That is the usual closing time."
         },
         {
-          "id": "d",
-          "text": "10:00 a.m."
+          "id": "b",
+          "text": "7:30 a.m.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "That is the previous lap-swimming time."
         }
       ],
       "correct": [
@@ -153,8 +153,10 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "The seed bank stores seeds for future research and restoration projects."
+          "id": "d",
+          "text": "Seeds are tested only when researchers request them.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage says samples are tested at scheduled intervals."
         },
         {
           "id": "b",
@@ -169,10 +171,8 @@
           "whyWrong": "No sales to farmers are mentioned."
         },
         {
-          "id": "d",
-          "text": "Seeds are tested only when researchers request them.",
-          "distractorType": "contradicts_text",
-          "whyWrong": "The passage says samples are tested at scheduled intervals."
+          "id": "a",
+          "text": "The seed bank stores seeds for future research and restoration projects."
         }
       ],
       "correct": [
@@ -222,14 +222,14 @@
           "whyWrong": "Moisture reduction is discussed before storage, but this is not the stated purpose of the tests."
         },
         {
-          "id": "c",
-          "text": "To check whether the stored seeds can still germinate"
-        },
-        {
           "id": "d",
           "text": "To choose which plants should be grown outdoors",
           "distractorType": "true_elsewhere",
           "whyWrong": "Some plants are regrown, but the scheduled tests are specifically described as germination checks."
+        },
+        {
+          "id": "c",
+          "text": "To check whether the stored seeds can still germinate"
         }
       ],
       "correct": [
@@ -267,10 +267,8 @@
       "time": 50,
       "options": [
         {
-          "id": "a",
-          "text": "An invoice for exactly $2,500",
-          "distractorType": "mentioned_wrong_detail",
-          "whyWrong": "The passage says $2,500 or less follows the current single-review process."
+          "id": "d",
+          "text": "An invoice for $2,501"
         },
         {
           "id": "b",
@@ -285,8 +283,10 @@
           "whyWrong": "Five business days is a submission recommendation for large invoices, not the review threshold itself."
         },
         {
-          "id": "d",
-          "text": "An invoice for $2,501"
+          "id": "a",
+          "text": "An invoice for exactly $2,500",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "The passage says $2,500 or less follows the current single-review process."
         }
       ],
       "correct": [
@@ -330,14 +330,14 @@
           "whyWrong": "The passage asks departments to submit earlier than the deadline."
         },
         {
-          "id": "b",
-          "text": "At least five business days before the payment deadline"
-        },
-        {
           "id": "c",
           "text": "Exactly five calendar days after manager approval",
           "distractorType": "mentioned_wrong_detail",
           "whyWrong": "The passage specifies business days before the deadline, not calendar days after approval."
+        },
+        {
+          "id": "b",
+          "text": "At least five business days before the payment deadline"
         },
         {
           "id": "d",

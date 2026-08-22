@@ -7,7 +7,7 @@
   "topic": "Passage Practice",
   "difficulty": "medium",
   "source": "Original content by Studo",
-  "passage": "Fog can make a familiar road feel newly uncertain. Buildings fade, traffic lights seem to float without poles, and distances become difficult to judge. Yet fog is not simply a cloud that has fallen by accident. It forms when air near the ground becomes cool enough for water vapor to condense into tiny droplets.\n\nDifferent conditions can produce that cooling. On clear nights, the ground may lose heat rapidly and cool the air above it. In coastal areas, moist air can move over colder land or water. Valleys can also collect cooler, denser air. Because the process depends on local temperature, moisture, wind, and terrain, fog can be stubbornly local: one neighborhood may have clear skies while another, only a few kilometers away, is wrapped in gray.\n\nThat local behavior makes forecasting difficult. Weather models can predict the broad ingredients for fog, but the exact timing and thickness may depend on small changes that are hard to measure. A light breeze can mix the air enough to prevent fog in one place while leaving it untouched elsewhere.\n\nFor drivers, the most important feature of fog is not its scientific elegance but its effect on visibility. Bright headlights can actually make dense fog harder to see through because light reflects from the suspended droplets. Lower beams and reduced speed are often more useful than simply adding brightness.\n\nFog therefore rewards a particular kind of caution. It hides distance without stopping movement. The road is still there; the problem is that the driver can no longer read it as easily.",
+  "passage": "Fog can make a familiar road feel newly uncertain. Buildings fade, traffic lights seem to float without poles, and distances become difficult to judge. Yet fog is not simply a cloud that has fallen by accident. It forms when air near the ground becomes cool enough for water vapor to condense into tiny droplets.\n\nDifferent conditions can produce that cooling. On clear nights, the ground may lose heat rapidly and cool the air above it. In coastal areas, moist air can move over colder land or water. Valleys can also collect cooler, denser air. Because the process depends on local temperature, moisture, wind, and terrain, fog can be stubbornly local: one neighborhood may have clear skies while another, only a few kilometers away, is wrapped in gray.\n\nThat local behavior makes forecasting difficult. Weather models can predict the broad ingredients for fog, but the exact timing and thickness may depend on small changes that are hard to measure. A light breeze can mix the air enough to prevent fog in one place while leaving it untouched elsewhere. A difference of only a few degrees near the ground can also determine whether moisture remains invisible as vapor or condenses into droplets.\n\nForecasters therefore combine several kinds of information. Satellite images can show larger areas of low cloud, airport instruments report visibility and temperature, and roadside sensors may reveal conditions along particular routes. Even with those tools, a forecast may say fog is possible rather than certain. The ingredients can be present without combining in exactly the right way.\n\nFor drivers, the most important feature of fog is not its scientific elegance but its effect on visibility. Bright headlights can actually make dense fog harder to see through because light reflects from the suspended droplets. Lower beams and reduced speed are often more useful than simply adding brightness.\n\nReduced visibility also changes how drivers judge time and distance. A car ahead may seem farther away than it is, and a familiar turn can appear later than expected. Because the road itself has not changed, experienced drivers may be tempted to continue at their usual speed. The difficulty is that familiar landmarks provide less warning when they emerge only at close range.\n\nFog therefore rewards a particular kind of caution. It hides distance without stopping movement. The road is still there; the problem is that the driver can no longer read it as easily. Good decisions depend less on defeating the fog than on accepting the information it has temporarily taken away.",
   "questions": [
     {
       "id": "q1",
@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "Fog can hide supporting structures and distort a familiar view."
-        },
-        {
           "id": "b",
           "text": "Traffic lights physically detach from poles.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Traffic lights physically detach from poles.” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "a",
+          "text": "Fog can hide supporting structures and distort a familiar view."
         },
         {
           "id": "c",
           "text": "Fog causes lights to move upward.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “Fog causes lights to move upward..” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "Poles are removed during fog.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Poles are removed during fog.” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -98,7 +98,7 @@
           "id": "a",
           "text": "refusing to follow weather laws",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“refusing to follow weather laws” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "b",
@@ -108,13 +108,13 @@
           "id": "c",
           "text": "occurring only in cities",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“occurring only in cities” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "lasting for several weeks",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“lasting for several weeks” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -151,26 +151,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "To suggest fog is cooked like food.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "c",
+          "text": "To compare weather conditions to components that combine to produce an outcome."
         },
         {
           "id": "b",
           "text": "To show weather models are inaccurate.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“To show weather models are inaccurate.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "c",
-          "text": "To compare weather conditions to components that combine to produce an outcome."
+          "id": "a",
+          "text": "To suggest fog is cooked like food.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not provide evidence for the claim “To suggest fog is cooked like food..” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "To explain water chemistry.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“To explain water chemistry.” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -210,23 +210,23 @@
           "id": "a",
           "text": "fearful and dramatic",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“fearful and dramatic” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "humorous",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“humorous” uses a related idea, but the relationship or conclusion does not match the text."
+        },
+        {
+          "id": "d",
+          "text": "clear and cautionary"
         },
         {
           "id": "c",
           "text": "angry",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "d",
-          "text": "clear and cautionary"
+          "whyWrong": "“angry” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "Careful behavior is useful and appropriate in fog."
+          "id": "d",
+          "text": "Only experienced drivers can travel in fog.",
+          "distractorType": "wrong_context",
+          "whyWrong": "“Only experienced drivers can travel in fog.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "Fog gives prizes to careful drivers.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Fog gives prizes to careful drivers.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "Caution is unnecessary.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “Caution is unnecessary..” It adds information the text never establishes."
         },
         {
-          "id": "d",
-          "text": "Only experienced drivers can travel in fog.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "a",
+          "text": "Careful behavior is useful and appropriate in fog."
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "Bright lights create more fog.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Bright lights create more fog.” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "Drivers move faster under bright lights.",
+          "distractorType": "wrong_context",
+          "whyWrong": "“Drivers move faster under bright lights.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "Light can reflect from suspended droplets."
         },
         {
-          "id": "c",
-          "text": "Drivers move faster under bright lights.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
           "text": "Fog turns headlights off.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Fog turns headlights off.” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "Fog is dangerous because traffic lights lose their poles.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "c",
+          "text": "Fog forms under specific local conditions, can be difficult to predict, and requires drivers to adjust because it reduces visibility."
         },
         {
           "id": "b",
           "text": "Weather models cannot predict any fog.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Weather models cannot predict any fog.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "c",
-          "text": "Fog forms under specific local conditions, can be difficult to predict, and requires drivers to adjust because it reduces visibility."
+          "id": "a",
+          "text": "Fog is dangerous because traffic lights lose their poles.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not provide evidence for the claim “Fog is dangerous because traffic lights lose their poles..” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "Bright headlights are always unsafe at night.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Bright headlights are always unsafe at night.” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [

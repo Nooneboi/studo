@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"The garden added two raised beds near the entrance. _____, wheelchair users can reach more planting space without crossing uneven ground.\"",
       "points": 1,
-      "explanation": "The second idea is a consequence of adding accessible raised beds.",
+      "explanation": "The second sentence describes a consequence of adding accessible raised beds near the entrance.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -45,20 +45,20 @@
         {
           "id": "b",
           "text": "However",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_relation",
+          "whyWrong": "However signals contrast, but the second idea follows positively from the first."
         },
         {
           "id": "c",
           "text": "For example",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second sentence is an effect of the change, not an example of raised beds."
         },
         {
           "id": "d",
-          "text": "In addition",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "At the same time",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "This signals timing/addition and misses the cause-result relationship."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The second idea is a consequence of adding accessible raised beds.",
+      "explanation": "The added beds lead to greater access, so the logical relationship is result.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "contrast",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The ideas support each other rather than conflict."
+        },
+        {
+          "id": "c",
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "Greater access is the consequence of the change, not an example of it."
         },
         {
           "id": "b",
           "text": "result"
         },
         {
-          "id": "c",
-          "text": "an example of the first idea",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "d",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "addition",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "The second idea is more specific than simple addition because it follows from the first."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"Electric buses produce no tailpipe exhaust while operating. _____, their batteries still require electricity to charge.\"",
       "points": 1,
-      "explanation": "The second idea limits the first by identifying another energy requirement.",
+      "explanation": "The first sentence gives a benefit, while the second qualifies it by noting the electricity required for charging.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "As a result",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "For example",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Therefore",
+          "distractorType": "wrong_relation",
+          "whyWrong": "Battery charging is not presented as a consequence of having no tailpipe exhaust."
         },
         {
           "id": "c",
           "text": "However"
         },
         {
+          "id": "b",
+          "text": "For example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second idea is a limitation, not an example of the first."
+        },
+        {
           "id": "d",
-          "text": "In addition",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Likewise",
+          "distractorType": "wrong_relation",
+          "whyWrong": "Likewise signals similarity, but the second idea qualifies the benefit."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The second idea limits the first by identifying another energy requirement.",
+      "explanation": "The battery requirement limits an otherwise positive statement about operating emissions.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -208,21 +208,21 @@
       "options": [
         {
           "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The charging requirement is not caused by the lack of tailpipe exhaust."
         },
         {
           "id": "b",
-          "text": "an example of the first idea",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "It is a qualification, not an illustration."
         },
         {
           "id": "c",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "addition without qualification",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "The ideas are not simply parallel facts; the second limits the first."
         },
         {
           "id": "d",
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"The museum offers written labels in three languages. _____, visitors can borrow an audio guide with additional descriptions.\"",
       "points": 1,
-      "explanation": "The audio guide is another service added to the written labels.",
+      "explanation": "The audio guide is another service offered alongside multilingual written labels.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
+          "id": "c",
+          "text": "Instead",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The audio guide supplements the labels rather than replacing them."
+        },
+        {
+          "id": "b",
+          "text": "As a result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The passage does not say the written labels cause the audio guide."
+        },
+        {
           "id": "a",
           "text": "In addition"
         },
         {
-          "id": "b",
-          "text": "However",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "As a result",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "d",
-          "text": "For example",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "However",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second sentence adds another resource instead of contrasting with the first."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The audio guide is another service added to the written labels.",
+      "explanation": "The second sentence adds another accessibility resource to the first.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -319,26 +319,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "b",
           "text": "addition"
         },
         {
+          "id": "a",
+          "text": "contrast",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The services do not conflict."
+        },
+        {
           "id": "c",
-          "text": "an example of the first idea",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "One service is not presented as the consequence of the other."
         },
         {
           "id": "d",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The audio guide is an additional option, not an example of written labels."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "Which transition best connects these ideas? \"A rain barrel can store water from a small roof. _____, a large storm may fill it quickly.\"",
       "points": 1,
-      "explanation": "The second idea limits how much rain the barrel can manage.",
+      "explanation": "The second sentence introduces a limitation to the barrel's ability to store roof runoff.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "However",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "As a result",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Therefore",
+          "distractorType": "wrong_relation",
+          "whyWrong": "A large storm filling the barrel is not framed as a desired result of its storage ability."
         },
         {
           "id": "c",
-          "text": "Even so"
+          "text": "However"
+        },
+        {
+          "id": "b",
+          "text": "For example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second sentence qualifies capacity rather than illustrating the first with an example."
         },
         {
           "id": "d",
-          "text": "For example",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Similarly",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The two sentences are not parallel similarities."
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "What relationship should the transition signal?",
       "points": 1,
-      "explanation": "The second idea limits how much rain the barrel can manage.",
+      "explanation": "The second idea limits the usefulness described in the first.",
       "skill": {
         "id": "R4.3",
         "label": "Transitions & signal words"
@@ -432,21 +432,21 @@
       "options": [
         {
           "id": "a",
-          "text": "simple addition with no contrast or cause",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "result",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The relationship is not simply a consequence signal."
         },
         {
           "id": "b",
-          "text": "an example of the first idea",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The storm is used to show a limitation, not merely an example."
         },
         {
           "id": "c",
-          "text": "a chronological step with no logical relationship",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "addition",
+          "distractorType": "too_weak_relation",
+          "whyWrong": "Simple addition misses the tension between useful storage and limited capacity."
         },
         {
           "id": "d",

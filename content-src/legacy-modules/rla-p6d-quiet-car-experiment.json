@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "to describe how the trial was evaluated"
-        },
-        {
           "id": "b",
           "text": "to argue that every train car should be silent",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to argue that every train car should be silent” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "a",
+          "text": "to describe how the trial was evaluated"
         },
         {
           "id": "c",
           "text": "to tell riders how to buy tickets",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to tell riders how to buy tickets” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "to explain the history of regional rail",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to explain the history of regional rail” summarizes what the section says instead of explaining the job that section performs in the text."
         }
       ],
       "correct": [
@@ -98,23 +98,23 @@
           "id": "a",
           "text": "as a biography of several conductors",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“as a biography of several conductors” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
+        },
+        {
+          "id": "c",
+          "text": "as a comparison of two different rail companies",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“as a comparison of two different rail companies” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "b",
           "text": "as a problem, a trial response, results, and a recommendation"
         },
         {
-          "id": "c",
-          "text": "as a comparison of two different rail companies",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "d",
           "text": "as a set of unrelated travel tips",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“as a set of unrelated travel tips” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -151,26 +151,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It adds another benefit of the quiet-car rules.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "c",
+          "text": "It introduces a limitation after generally positive results."
         },
         {
           "id": "b",
           "text": "It shows that the trial happened before the survey.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It shows that the trial happened before the survey.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
-          "id": "c",
-          "text": "It introduces a limitation after generally positive results."
+          "id": "a",
+          "text": "It adds another benefit of the quiet-car rules.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“It adds another benefit of the quiet-car rules.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "d",
           "text": "It gives an example of a ticketing problem.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“It gives an example of a ticketing problem.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [
@@ -210,23 +210,23 @@
           "id": "a",
           "text": "to persuade all passengers never to speak on trains",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to persuade all passengers never to speak on trains” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
-          "id": "b",
-          "text": "to entertain readers with a fictional train story",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "to explain how a rail company tested a quiet-car policy and what it learned"
         },
         {
           "id": "c",
           "text": "to prove weekend trains are always noisier",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to prove weekend trains are always noisier” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
-          "id": "d",
-          "text": "to explain how a rail company tested a quiet-car policy and what it learned"
+          "id": "b",
+          "text": "to entertain readers with a fictional train story",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "“to entertain readers with a fictional train story” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "to present evidence from passenger experience and from staff responsible for applying the policy"
+          "id": "d",
+          "text": "to replace the need for any numerical results",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“to replace the need for any numerical results” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "b",
           "text": "to show that conductors designed the ticketing app",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to show that conductors designed the ticketing app” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "c",
           "text": "to prove passengers and conductors always agree",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“to prove passengers and conductors always agree” misses the consequence produced by the detail or choice named in the question."
         },
         {
-          "id": "d",
-          "text": "to replace the need for any numerical results",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "to present evidence from passenger experience and from staff responsible for applying the policy"
         }
       ],
       "correct": [
@@ -319,26 +319,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "They establish the size of the change in reported satisfaction."
+        },
+        {
           "id": "a",
           "text": "They prove every passenger preferred the quiet car.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "They establish the size of the change in reported satisfaction."
+          "whyWrong": "“They prove every passenger preferred the quiet car.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         },
         {
           "id": "c",
           "text": "They explain how train tickets are priced.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“They explain how train tickets are priced.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "d",
           "text": "They show how many conductors worked each route.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“They show how many conductors worked each route.” may fit one clue, but it does not account for the full set of evidence in the passage."
         }
       ],
       "correct": [
@@ -378,13 +378,13 @@
           "id": "a",
           "text": "Quiet cars work only on empty trains.",
           "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Quiet cars work only on empty trains.” misses the consequence produced by the detail or choice named in the question."
         },
         {
           "id": "b",
           "text": "Signs are unnecessary when conductors are present.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Signs are unnecessary when conductors are present.” summarizes what the section says instead of explaining the job that section performs in the text."
         },
         {
           "id": "c",
@@ -394,7 +394,7 @@
           "id": "d",
           "text": "Weekend riders will definitely reject quiet cars.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Weekend riders will definitely reject quiet cars.” assigns the wrong viewpoint or source of the perspective. Check who is speaking or whose concerns are being described."
         }
       ],
       "correct": [

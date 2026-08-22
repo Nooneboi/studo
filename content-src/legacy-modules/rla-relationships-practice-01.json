@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It reduces missed schedule changes by giving the team one updated source"
+          "id": "d",
+          "text": "It works mainly by sending more separate messages to each volunteer.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“It works mainly by sending more separate messages to each volunteer.” reverses the relationship established by the passage."
         },
         {
           "id": "b",
-          "text": "It removes all volunteers",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "It reduces the number of schedule changes the coordinator can make.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“It reduces the number of schedule changes the coordinator can make.” misses the effect created by the author’s wording or perspective."
         },
         {
           "id": "c",
-          "text": "It causes separate messages to increase",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "It replaces the need for volunteers to check start times at all.",
+          "distractorType": "too_broad",
+          "whyWrong": "“It replaces the need for volunteers to check start times at all.” is broader or more absolute than the passage supports."
         },
         {
-          "id": "d",
-          "text": "It makes schedule changes impossible",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "id": "a",
+          "text": "It reduces missed schedule changes by giving the team one updated source."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "They prove calendars do not work",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "They show that volunteers preferred arriving at different times.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "“They show that volunteers preferred arriving at different times.” assigns a motive that the text does not show through actions or wording."
         },
         {
           "id": "b",
-          "text": "They motivate the coordinator to create a shared calendar"
+          "text": "They motivate the coordinator to create a single shared calendar."
         },
         {
           "id": "c",
-          "text": "They occur after the calendar solves the problem",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "They are the result of the automatic calendar updates.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“They are the result of the automatic calendar updates.” reverses the relationship established by the passage."
         },
         {
           "id": "d",
-          "text": "They are unrelated",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "They explain why the team needed fewer volunteers.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “They explain why the team needed fewer volunteers..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It has no effect on the entrance",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "It leads organizers to reduce the number of food stalls permanently.",
+          "distractorType": "unsupported_extension",
+          "whyWrong": "“It leads organizers to reduce the number of food stalls permanently.” does not match the exact evidence or relationship required by this question."
         },
         {
           "id": "b",
-          "text": "It causes organizers to cancel the market",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "It makes the entrance less crowded without any changes to the layout.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“It makes the entrance less crowded without any changes to the layout.” conflicts with a detail stated in the passage."
         },
         {
           "id": "c",
-          "text": "It creates congestion that leads to a new stall layout and pickup line"
+          "text": "It creates congestion that leads organizers to move stalls and separate the pickup line."
         },
         {
           "id": "d",
-          "text": "It makes the entrance wider automatically",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "It changes the market from a food market into a different kind of event.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “It changes the market from a food market into a different kind of event..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The setting has no effect",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The entrance is separated from the area where customers pick up food.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The entrance is separated from the area where customers pick up food.” conflicts with a detail stated in the passage."
         },
         {
           "id": "b",
-          "text": "The entrance is far from the market",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The entrance causes the market to attract more people than organizers expected.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The entrance causes the market to attract more people than organizers expected.” reverses the relationship established by the passage."
         },
         {
           "id": "c",
-          "text": "The entrance prevents any food sales",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The entrance becomes wider when stalls are moved.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The entrance becomes wider when stalls are moved..” This adds a claim the text never establishes."
         },
         {
           "id": "d",
-          "text": "Limited entry space makes the larger crowd harder to move through"
+          "text": "The entrance concentrates many people in a limited space, making the larger crowd harder to move through."
         }
       ],
       "correct": [
@@ -264,25 +264,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes her later view about closing the window when rain is forecast"
+          "text": "The damage changes Lena’s later view about closing the window when rain is forecast."
         },
         {
           "id": "b",
-          "text": "It makes her stop attending rehearsal",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The damage convinces Lena that rehearsals should stop whenever rain is possible.",
+          "distractorType": "too_broad",
+          "whyWrong": "“The damage convinces Lena that rehearsals should stop whenever rain is possible.” is broader or more absolute than the passage supports."
         },
         {
           "id": "c",
-          "text": "It causes her to deny the signs were damaged",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The damage makes Lena deny that the open window contributed to the problem.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The damage makes Lena deny that the open window contributed to the problem.” conflicts with a detail stated in the passage."
         },
         {
           "id": "d",
-          "text": "It has no effect",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The damage confirms Lena’s original view that the window should stay open.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The damage confirms Lena’s original view that the window should stay open.” conflicts with a detail stated in the passage."
         }
       ],
       "correct": [
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The room has no signs",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
-        },
-        {
-          "id": "b",
-          "text": "The open window allows the weather to directly affect the paper signs"
+          "text": "The rehearsal room contains paper signs but no windows.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The rehearsal room contains paper signs but no windows.” conflicts with a detail stated in the passage."
         },
         {
           "id": "c",
-          "text": "The setting prevents rain",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The rehearsal setting protects the signs from weather conditions.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The rehearsal setting protects the signs from weather conditions.” conflicts with a detail stated in the passage."
+        },
+        {
+          "id": "b",
+          "text": "The open window allows rain from outside to directly affect the paper signs inside."
         },
         {
           "id": "d",
-          "text": "The setting is unrelated",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "The warm room alone causes Lena to change her opinion.",
+          "distractorType": "unsupported_cause",
+          "whyWrong": "“The warm room alone causes Lena to change her opinion.” does not match the exact evidence or relationship required by this question."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "They cause all colors to disappear",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "id": "c",
+          "text": "They add a second clear cue, and sorting errors decrease afterward."
         },
         {
           "id": "b",
-          "text": "They remove every bin",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "They make each bin hold a different type of item than before.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “They make each bin hold a different type of item than before..” This adds a claim the text never establishes."
         },
         {
-          "id": "c",
-          "text": "They give volunteers another clear cue and sorting errors decrease"
+          "id": "a",
+          "text": "They replace the color labels so volunteers no longer need any visual cue.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“They replace the color labels so volunteers no longer need any visual cue.” conflicts with a detail stated in the passage."
         },
         {
           "id": "d",
-          "text": "They increase errors",
-          "distractorType": "sequence_without_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "They make sorting slower because volunteers must read each label.",
+          "distractorType": "opposite_effect",
+          "whyWrong": "“They make sorting slower because volunteers must read each label.” does not match the exact evidence or relationship required by this question."
         }
       ],
       "correct": [
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It appears after errors decrease",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
-        },
-        {
-          "id": "b",
-          "text": "It proves color labels are always useless",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
-        },
-        {
-          "id": "c",
-          "text": "It is unrelated to the revision",
-          "distractorType": "context_with_no_effect",
-          "whyWrong": "This option does not accurately explain how one element shapes another."
+          "text": "It shows that adding category names was unnecessary because the color system already worked well.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“It shows that adding category names was unnecessary because the color system already worked ...” conflicts with a detail stated in the passage."
         },
         {
           "id": "d",
-          "text": "It establishes the limitation that the later labels are designed to address"
+          "text": "It establishes the earlier limitation that the later category labels are designed to address."
+        },
+        {
+          "id": "c",
+          "text": "It describes a later version of the system after sorting errors decreased.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“It describes a later version of the system after sorting errors decreased.” reverses the relationship established by the passage."
+        },
+        {
+          "id": "b",
+          "text": "It proves color labels can never be useful in a storage system.",
+          "distractorType": "too_broad",
+          "whyWrong": "“It proves color labels can never be useful in a storage system.” is broader or more absolute than the passage supports."
         }
       ],
       "correct": [

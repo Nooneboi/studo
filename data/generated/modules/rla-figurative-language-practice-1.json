@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "Messages were arriving in a continuous flow."
+          "id": "d",
+          "text": "The messages were deleted.",
+          "distractorType": "wrong_context",
+          "whyWrong": "“The messages were deleted.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "The computer was wet.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The computer was wet.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "The office was near a river.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “The office was near a river..” It adds information the text never establishes."
         },
         {
-          "id": "d",
-          "text": "The messages were deleted.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "a",
+          "text": "Messages were arriving in a continuous flow."
         }
       ],
       "correct": [
@@ -98,7 +98,7 @@
           "id": "a",
           "text": "It gives the exact message count.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It gives the exact message count.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "b",
@@ -108,13 +108,13 @@
           "id": "c",
           "text": "It explains internet hardware.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It explains internet hardware.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "It makes the writer neutral.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It makes the writer neutral.” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -154,13 +154,13 @@
           "id": "a",
           "text": "The lights had eyes.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “The lights had eyes..” It adds information the text never establishes."
         },
         {
           "id": "b",
           "text": "The audience returned.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The audience returned.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
           "id": "d",
           "text": "The seats moved.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The seats moved.” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -210,19 +210,19 @@
           "id": "a",
           "text": "It explains theater electricity.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It explains theater electricity.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "It proves the show was bad.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It proves the show was bad.” uses a related idea, but the relationship or conclusion does not match the text."
         },
         {
           "id": "c",
           "text": "It makes the room brighter.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It makes the room brighter.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "d",
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "The form was confusing and difficult to navigate."
-        },
-        {
           "id": "b",
           "text": "The office contained a puzzle.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The office contained a puzzle.” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "a",
+          "text": "The form was confusing and difficult to navigate."
         },
         {
           "id": "c",
           "text": "The form had no boxes.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “The form had no boxes..” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "The form was illegal.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The form was illegal.” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -319,26 +319,26 @@
       "time": 75,
       "options": [
         {
+          "id": "b",
+          "text": "It gives a concrete image of getting lost in the process."
+        },
+        {
           "id": "a",
           "text": "It proves the form is longer.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "It gives a concrete image of getting lost in the process."
+          "whyWrong": "“It proves the form is longer.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "It gives legal advice.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It gives legal advice.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "It removes emotion.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It removes emotion.” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -378,13 +378,13 @@
           "id": "a",
           "text": "Someone removed painted lines with an eraser.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “Someone removed painted lines with an eraser..” It adds information the text never establishes."
         },
         {
           "id": "b",
           "text": "The parking lot became smaller.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The parking lot became smaller.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "c",
@@ -394,7 +394,7 @@
           "id": "d",
           "text": "The snow melted.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The snow melted.” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -431,26 +431,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "It explains parking rules.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "It emphasizes how completely snow changed the familiar scene."
         },
         {
           "id": "b",
           "text": "It gives a precise snowfall depth.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It gives a precise snowfall depth.” uses a related idea, but the relationship or conclusion does not match the text."
         },
         {
           "id": "c",
           "text": "It makes the scene noisy.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It makes the scene noisy.” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "d",
-          "text": "It emphasizes how completely snow changed the familiar scene."
+          "id": "a",
+          "text": "It explains parking rules.",
+          "distractorType": "wrong_context",
+          "whyWrong": "“It explains parking rules.” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [

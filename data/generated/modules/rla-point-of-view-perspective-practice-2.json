@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "The narrator can observe Arun and make an inference but cannot know his private feeling with certainty."
+          "id": "c",
+          "text": "The narrator reports Arun’s worry as a direct statement from Arun.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The narrator reports Arun’s worry as a direct statement from Arun.” conflicts with a detail stated in the passage."
         },
         {
           "id": "b",
-          "text": "Every person in the text emphasizes exactly the same concern.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Because the narrator uses first person, the narrator automatically knows Arun’s exact thoughts.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“Because the narrator uses first person, the narrator automatically knows Arun’s exact thoughts.” makes the text more certain or extreme than its wording supports."
         },
         {
-          "id": "c",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "The narrator can observe Arun and infer concern, but cannot know Arun’s private feeling with certainty."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The passage is told from Arun’s point of view even though another person says “I.”",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The passage is told from Arun’s point of view even though another person says “I.”” misstates whose perspective is presented or what that person emphasizes."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
+          "text": "First-person observation creates a distinction between what the narrator sees and what the narrator infers.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "First-person observation creates a distinction between what is seen and what is inferred."
-        },
-        {
-          "id": "c",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“First-person observation creates a distinction between what the narrator sees and what the n...” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "d",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The point of view removes uncertainty by explaining why the key is missing.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The point of view removes uncertainty by explaining why the key is missing..” This adds a claim the text never establishes."
+        },
+        {
+          "id": "c",
+          "text": "The perspective gives readers direct access to Arun’s thoughts but not the narrator’s.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The perspective gives readers direct access to Arun’s thoughts but not the narrator’s.” misstates whose perspective is presented or what that person emphasizes."
+        },
+        {
+          "id": "b",
+          "text": "The first-person view proves the narrator’s interpretation of Arun must be correct."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Every person in the text emphasizes exactly the same concern.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Both groups recommend the same flood-control method for the same reasons.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“Both groups recommend the same flood-control method for the same reasons.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "c",
-          "text": "The groups emphasize different approaches to flood protection: engineered barrier versus ecological restoration."
+          "text": "The groups emphasize different approaches to flood protection: an engineered barrier and ecological restoration."
+        },
+        {
+          "id": "b",
+          "text": "Engineers focus on habitat, while environmental groups focus on protecting low streets.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“Engineers focus on habitat, while environmental groups focus on protecting low streets.” reverses the relationship established by the passage."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Environmental groups oppose any attempt to reduce flood levels.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“Environmental groups oppose any attempt to reduce flood levels.” makes the text more certain or extreme than its wording supports."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
+          "text": "The contrast helps readers see competing strategies rather than a single agreed solution.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The contrast helps readers see competing strategies rather than a single agreed solution.” tells what the text says but not the purpose or effect being asked about."
         },
         {
           "id": "d",
-          "text": "The contrast helps readers see competing strategies rather than a single agreed solution."
+          "text": "The perspectives remove the need to compare tradeoffs between the two approaches."
+        },
+        {
+          "id": "c",
+          "text": "The paired views make the environmental group’s argument the author’s own position.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The paired views make the environmental group’s argument the author’s own position.” misstates whose perspective is presented or what that person emphasizes."
+        },
+        {
+          "id": "b",
+          "text": "Presenting both groups proves the floodwall and wetland plan would work equally well.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “Presenting both groups proves the floodwall and wetland plan would work equally well..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -264,25 +264,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The critic values atmosphere; the visitor emphasizes readability."
+          "text": "The critic values atmosphere, while the visitor emphasizes readability."
         },
         {
           "id": "b",
-          "text": "Every person in the text emphasizes exactly the same concern.",
+          "text": "Both people dislike the dim lighting for the same practical reason.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Both people dislike the dim lighting for the same practical reason.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "c",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The visitor values atmosphere, while the critic focuses on label readability.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The visitor values atmosphere, while the critic focuses on label readability.” reverses the relationship established by the passage."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The critic and visitor disagree about whether the exhibition contains any labels.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The critic and visitor disagree about whether the exhibition contains any labels..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
+          "text": "The two responses show that the same design choice can create aesthetic appeal and practical difficulty.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The two responses show that one design choice can create both aesthetic appeal and practical difficulty."
+          "whyWrong": "“The two responses show that the same design choice can create aesthetic appeal and practical...” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "c",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The perspectives show dim lighting has only negative effects.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“The perspectives show dim lighting has only negative effects.” makes the text more certain or extreme than its wording supports."
+        },
+        {
+          "id": "b",
+          "text": "The paired views prove the critic’s judgment is more reliable than the visitor’s experience."
         },
         {
           "id": "d",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The two responses make the visitor and critic agree about the lighting by the end.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The two responses make the visitor and critic agree about the lighting by the end.” conflicts with a detail stated in the passage."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "Every person in the text emphasizes exactly the same concern.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "c",
+          "text": "The worker supports longer lines, while the principal supports shorter lines."
         },
         {
           "id": "b",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The principal and worker disagree about whether students need enough time to eat.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The principal and worker disagree about whether students need enough time to eat.” conflicts with a detail stated in the passage."
         },
         {
-          "id": "c",
-          "text": "Both support reducing wait time, but the worker focuses on operational constraints."
+          "id": "a",
+          "text": "Both support reducing wait time, but the worker focuses on an operational constraint in the proposed layout.",
+          "distractorType": "effect_missed",
+          "whyWrong": "“Both support reducing wait time, but the worker focuses on an operational constraint in the ...” misses the effect created by the author’s wording or perspective."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The principal focuses on storage access, while the worker focuses on student eating time.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The principal focuses on storage access, while the worker focuses on student eating time.” reverses the relationship established by the passage."
         }
       ],
       "correct": [
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
+          "text": "The shared goal plus practical disagreement makes the perspectives partly aligned rather than simply opposite.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The shared goal plus practical disagreement makes the perspectives partly aligned rather tha...” tells what the text says but not the purpose or effect being asked about."
         },
         {
           "id": "b",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Because both want shorter lines, the storage concern no longer matters.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“Because both want shorter lines, the storage concern no longer matters.” makes the text more certain or extreme than its wording supports."
         },
         {
           "id": "c",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The perspectives show the worker completely rejects the principal’s goal.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The perspectives show the worker completely rejects the principal’s goal.” conflicts with a detail stated in the passage."
         },
         {
           "id": "d",
-          "text": "The shared goal plus practical disagreement makes the perspectives partly aligned rather than simply opposite."
+          "text": "The paired views prove the proposed layout will definitely fail."
         }
       ],
       "correct": [

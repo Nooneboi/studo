@@ -40,25 +40,25 @@
       "options": [
         {
           "id": "a",
-          "text": "He expected that someone might need charging help"
+          "text": "He anticipated that someone at the meeting might need charging help."
         },
         {
           "id": "b",
-          "text": "He knew exactly whose battery would fail",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "He expected the meeting to drain his own battery enough to require both chargers.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "“He expected the meeting to drain his own battery enough to require both chargers.” may fit one clue, but it does not account for the full set of evidence."
         },
         {
           "id": "c",
-          "text": "He planned to give away his own laptop",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "He regularly lends electronic equipment to teammates at every meeting.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "“He regularly lends electronic equipment to teammates at every meeting.” turns limited evidence into a broader rule than the text supports."
         },
         {
           "id": "d",
-          "text": "He never uses chargers",
+          "text": "He knew before the meeting exactly which teammate would have a low battery.",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "whyWrong": "“He knew before the meeting exactly which teammate would have a low battery.” is possible, but the passage does not provide enough evidence to justify it."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The meeting is long",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
-        },
-        {
-          "id": "b",
-          "text": "Damon packs a second charger before the meeting"
+          "text": "The meeting is described as long.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“The meeting is described as long.” is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "c",
-          "text": "The room has teammates",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "A teammate’s battery warning appears in the meeting room.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“A teammate’s battery warning appears in the meeting room.” is supported by only part of the evidence; another choice fits the whole pattern better."
+        },
+        {
+          "id": "b",
+          "text": "Damon packs a second charger before the meeting and later offers it when a teammate needs one."
         },
         {
           "id": "d",
-          "text": "The laptop has a battery",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "Damon also packs a charger for his own laptop.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“Damon also packs a charger for his own laptop.” is supported by only part of the evidence; another choice fits the whole pattern better."
         }
       ],
       "correct": [
@@ -151,26 +151,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "They were built after the storm",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "id": "c",
+          "text": "Rain may create problems at the two bridge locations."
         },
         {
           "id": "b",
-          "text": "They are the only bridges in the country",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "The guide expects rain to affect only bridges and no other part of the trail.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "“The guide expects rain to affect only bridges and no other part of the trail.” turns limited evidence into a broader rule than the text supports."
         },
         {
-          "id": "c",
-          "text": "They may be places where rain creates problems"
+          "id": "a",
+          "text": "The bridges are unsafe after every storm.",
+          "distractorType": "too_broad",
+          "whyWrong": "“The bridges are unsafe after every storm.” is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
-          "text": "They are always closed",
+          "text": "The guide already knows exactly what kind of damage each bridge will have.",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "whyWrong": "“The guide already knows exactly what kind of damage each bridge will have.” is possible, but the passage does not provide enough evidence to justify it."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The guide uses a paper map",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "The map is made of paper rather than displayed on a phone.",
+          "distractorType": "background_only",
+          "whyWrong": "“The map is made of paper rather than displayed on a phone.” is background information rather than the strongest evidence for the question."
         },
         {
           "id": "b",
-          "text": "The guide writes notes",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "The guide visits several locations on the trail.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“The guide visits several locations on the trail.” is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "c",
-          "text": "The trail has other locations",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "The two marked locations happen to be bridges.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“The two marked locations happen to be bridges.” is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "d",
-          "text": "Two bridges are circled with \"check after rain\" and inspected first after a storm"
+          "text": "The guide marks the bridges “check after rain” and inspects them before the rest of the trail after a storm."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "Maya considers it the most urgent listed task"
+          "id": "b",
+          "text": "Maya already knows the room is unavailable.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “Maya already knows the room is unavailable..” This adds a claim the text never establishes."
         },
         {
-          "id": "b",
-          "text": "The room is definitely unavailable",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "id": "a",
+          "text": "Maya treats the room booking as the most urgent task on the list."
         },
         {
           "id": "c",
-          "text": "The poster has already been finished",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "Maya believes the other two tasks no longer need to be completed.",
+          "distractorType": "too_broad",
+          "whyWrong": "“Maya believes the other two tasks no longer need to be completed.” is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
-          "text": "The supplier has called Maya",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "Maya can complete the room booking only by using a website.",
+          "distractorType": "related_detail",
+          "whyWrong": "“Maya can complete the room booking only by using a website.” is related to the passage, but it does not directly answer this question."
         }
       ],
       "correct": [
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "There are three tasks",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
-        },
-        {
-          "id": "b",
-          "text": "Maya opens the booking website first after underlining the item twice"
+          "text": "The note contains three separate tasks.",
+          "distractorType": "background_only",
+          "whyWrong": "“The note contains three separate tasks.” is background information rather than the strongest evidence for the question."
         },
         {
           "id": "c",
-          "text": "A supplier exists",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "“Call supplier” appears first on the written list.",
+          "distractorType": "one_clue_trap",
+          "whyWrong": "““Call supplier” appears first on the written list.” may fit one clue, but it does not account for the full set of evidence."
+        },
+        {
+          "id": "b",
+          "text": "Maya underlines the booking item twice and opens the booking website before starting the other tasks."
         },
         {
           "id": "d",
-          "text": "The note is on a desk",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "Maya waits five minutes before opening the website.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“Maya waits five minutes before opening the website.” is supported by only part of the evidence; another choice fits the whole pattern better."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "He wants to block the aisle",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "Eli wants easier access to the aisle.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“Eli wants easier access to the aisle.” conflicts with a detail stated in the passage."
         },
         {
           "id": "b",
-          "text": "He plans to get off immediately",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
-        },
-        {
-          "id": "c",
-          "text": "He is making space for another passenger"
+          "text": "Eli expects to leave the bus at the next stop.",
+          "distractorType": "unsupported_prediction",
+          "whyWrong": "“Eli expects to leave the bus at the next stop.” predicts an outcome that the passage does not establish."
         },
         {
           "id": "d",
-          "text": "He is hiding the bag",
-          "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "Eli is worried another passenger might touch his bag.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "“Eli is worried another passenger might touch his bag.” assigns a motive that the text does not show through actions or wording."
+        },
+        {
+          "id": "c",
+          "text": "Eli is making space so another passenger can use the seat beside him."
         }
       ],
       "correct": [
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The bus has a window",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
-        },
-        {
-          "id": "b",
-          "text": "The bus is moving",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
-        },
-        {
-          "id": "c",
-          "text": "He looks toward the aisle",
-          "distractorType": "related_detail",
-          "whyWrong": "This option is not the strongest text-based support for the inference."
+          "text": "The bus has become crowded.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“The bus has become crowded.” is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "d",
-          "text": "Eli moves his bag from the adjacent seat to the floor as the bus gets crowded"
+          "text": "As the bus gets crowded, Eli moves his bag off the neighboring seat and onto the floor."
+        },
+        {
+          "id": "c",
+          "text": "Eli looks toward the aisle after moving.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“Eli looks toward the aisle after moving.” is supported by only part of the evidence; another choice fits the whole pattern better."
+        },
+        {
+          "id": "b",
+          "text": "Eli shifts closer to the window.",
+          "distractorType": "partial_evidence",
+          "whyWrong": "“Eli shifts closer to the window.” is supported by only part of the evidence; another choice fits the whole pattern better."
         }
       ],
       "correct": [

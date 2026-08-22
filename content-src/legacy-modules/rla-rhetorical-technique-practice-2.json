@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses visual contrast.",
+      "explanation": "Showing the same lot before cleanup and after it became a garden creates a direct visual comparison of change.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -40,25 +40,25 @@
       "options": [
         {
           "id": "a",
-          "text": "visual contrast"
+          "text": "visual before-and-after contrast"
         },
         {
           "id": "b",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "statistical evidence",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No numerical measurement is described."
         },
         {
           "id": "c",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "analogy",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The photo essay does not compare the lot with a different familiar concept."
         },
         {
           "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "personal anecdote",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The evidence is visual change at a place, not one person's story."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The before-and-after comparison makes the physical change immediately visible.",
+      "explanation": "Using the same location at two times lets readers see the transformation rather than relying only on a verbal claim.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The before-and-after comparison makes the physical change immediately visible."
-        },
-        {
-          "id": "c",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves that every vacant lot will improve in the same way after six months.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "One visual example cannot establish a universal outcome."
         },
         {
           "id": "d",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains the chronological steps volunteers used to build the garden.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The images show outcome contrast, not a process."
+        },
+        {
+          "id": "c",
+          "text": "It makes the argument more emotional by quoting residents' reactions.",
+          "distractorType": "evidence_not_present",
+          "whyWrong": "No quotations are part of the described technique."
+        },
+        {
+          "id": "b",
+          "text": "The matched before-and-after views make the physical change easy to compare directly."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses analogy.",
+      "explanation": "Comparing the checklist with a pilot's preflight routine explains the value of repeated safety checks through a familiar parallel.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "statistic",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No numerical evidence is used."
         },
         {
           "id": "b",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "rhetorical question",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No persuasive question is asked."
+        },
+        {
+          "id": "d",
+          "text": "anecdote",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The comparison is conceptual rather than a personal story."
         },
         {
           "id": "c",
           "text": "analogy"
-        },
-        {
-          "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The familiar comparison explains why repeating a checklist can be valuable even when the task feels routine.",
+      "explanation": "The analogy transfers an understood safety principle from preflight checks to the training context.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves the two jobs involve exactly the same risks and procedures.",
+          "distractorType": "false_equivalence",
+          "whyWrong": "An analogy highlights a useful similarity without making the situations identical."
         },
         {
           "id": "b",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It supplies numerical evidence that checklists reduce accidents.",
+          "distractorType": "evidence_not_present",
+          "whyWrong": "The analogy explains a principle but gives no statistics."
         },
         {
           "id": "d",
-          "text": "The familiar comparison explains why repeating a checklist can be valuable even when the task feels routine."
+          "text": "The familiar comparison helps explain why repeating a checklist can be valuable even when the task feels routine."
+        },
+        {
+          "id": "c",
+          "text": "It criticizes pilots for relying too heavily on routines.",
+          "distractorType": "reverses_effect",
+          "whyWrong": "The preflight routine is used positively to support repeated checks."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses statistic.",
+      "explanation": "The figure of 41 percent provides numerical evidence about how common the reported problem was in the surveyed group.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
+          "id": "c",
+          "text": "anecdote",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The sentence summarizes survey data rather than one worker's story."
+        },
+        {
+          "id": "b",
+          "text": "analogy",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No comparison to a separate familiar situation appears."
+        },
+        {
           "id": "a",
           "text": "statistic"
         },
         {
-          "id": "b",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "rhetorical question",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The statement reports a measured percentage."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The percentage gives numerical evidence that missed late service affects a sizable group in the survey.",
+      "explanation": "The statistic helps readers judge scale within the survey, while still being limited to the surveyed group and period.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -319,26 +319,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "b",
+          "text": "The percentage gives measurable evidence that missing the final bus affected a substantial share of the surveyed late-shift workers."
         },
         {
-          "id": "b",
-          "text": "The percentage gives numerical evidence that missed late service affects a sizable group in the survey."
+          "id": "a",
+          "text": "It proves that 41 percent of all workers in the city miss a bus every month.",
+          "distractorType": "scope_overreach",
+          "whyWrong": "The statistic applies to surveyed late-shift workers, not every worker in the city."
         },
         {
           "id": "c",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains why the final bus leaves at its current time.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The data measures reported missed service; it does not explain the schedule's cause."
         },
         {
           "id": "d",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It makes the proposal persuasive mainly by using emotionally charged vocabulary.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "The technique is quantitative, not emotional."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "Which rhetorical technique is most important in this example?",
       "points": 1,
-      "explanation": "The writer uses repetition and parallel structure.",
+      "explanation": "Repeating \"Fix the... before...\" creates a parallel series of commands that builds urgency.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "a definition used only to introduce vocabulary",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "a chronological list of unrelated events",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "analogy",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The lines do not compare repair work with another situation."
         },
         {
           "id": "c",
-          "text": "repetition and parallel structure"
+          "text": "repetition and parallel imperative structure"
+        },
+        {
+          "id": "b",
+          "text": "statistic",
+          "distractorType": "wrong_technique",
+          "whyWrong": "No numerical evidence appears."
         },
         {
           "id": "d",
-          "text": "a neutral transition with no rhetorical effect",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "rhetorical question",
+          "distractorType": "wrong_technique",
+          "whyWrong": "The writer issues commands rather than questions."
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "What does the technique accomplish in this text?",
       "points": 1,
-      "explanation": "The repeated command builds urgency and links several maintenance problems into one call for action.",
+      "explanation": "Parallel repetition accumulates examples and makes delay sound increasingly risky.",
       "skill": {
         "id": "R4.6",
         "label": "Rhetorical technique"
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It proves a broader claim that the example cannot establish.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It changes the topic instead of developing the writer's point.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It adds decoration without affecting emphasis, clarity, or persuasion.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves that every listed problem will cause the building to fail immediately.",
+          "distractorType": "overclaim",
+          "whyWrong": "The wording urges prevention but does not establish inevitable immediate failure."
         },
         {
           "id": "d",
           "text": "The repeated command builds urgency and links several maintenance problems into one call for action."
+        },
+        {
+          "id": "c",
+          "text": "It presents three unrelated repairs with no common persuasive purpose.",
+          "distractorType": "misses_pattern",
+          "whyWrong": "The repeated structure deliberately connects the repairs."
+        },
+        {
+          "id": "b",
+          "text": "It softens the recommendation by presenting repair as optional.",
+          "distractorType": "reverses_effect",
+          "whyWrong": "Imperative verbs strengthen rather than soften the call to act."
         }
       ],
       "correct": [

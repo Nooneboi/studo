@@ -39,26 +39,26 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "Reflective film on the west-facing windows"
-        },
-        {
           "id": "b",
           "text": "A different air-conditioning schedule",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“A different air-conditioning schedule” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "a",
+          "text": "Reflective film on the west-facing windows"
         },
         {
           "id": "c",
           "text": "Cloudier weather every day",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Cloudier weather every day” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "d",
           "text": "Moving the classroom downstairs",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Moving the classroom downstairs” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -98,23 +98,23 @@
           "id": "a",
           "text": "The classroom is on the top floor",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“The classroom is on the top floor” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "c",
+          "text": "The school has several classrooms",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The school has several classrooms” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "b",
           "text": "The air-conditioning schedule stayed the same"
         },
         {
-          "id": "c",
-          "text": "The school has several classrooms",
-          "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
-        },
-        {
           "id": "d",
           "text": "The week had five school days",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“The week had five school days” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -154,13 +154,13 @@
           "id": "a",
           "text": "Reminder texts were definitely the only cause",
           "distractorType": "correlation_not_cause",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Reminder texts were definitely the only cause” treats an association as proof of cause. The passage does not isolate that factor as the cause."
         },
         {
           "id": "b",
           "text": "The new bus stop was definitely the only cause",
           "distractorType": "correlation_not_cause",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“The new bus stop was definitely the only cause” treats an association as proof of cause. The passage does not isolate that factor as the cause."
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
           "id": "d",
           "text": "Neither change could affect attendance",
           "distractorType": "correlation_not_cause",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Neither change could affect attendance” treats an association as proof of cause. The passage does not isolate that factor as the cause."
         }
       ],
       "correct": [
@@ -210,19 +210,19 @@
           "id": "a",
           "text": "It changed the appointment reminder wording",
           "distractorType": "correlation_not_cause",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“It changed the appointment reminder wording” treats an association as proof of cause. The passage does not isolate that factor as the cause."
         },
         {
           "id": "b",
           "text": "It proves text reminders failed",
           "distractorType": "correlation_not_cause",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“It proves text reminders failed” treats an association as proof of cause. The passage does not isolate that factor as the cause."
         },
         {
           "id": "c",
           "text": "It occurred after the clinic closed",
           "distractorType": "correlation_not_cause",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“It occurred after the clinic closed” treats an association as proof of cause. The passage does not isolate that factor as the cause."
         },
         {
           "id": "d",
@@ -263,26 +263,26 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The mulch reduced direct exposure and evaporation"
-        },
-        {
           "id": "b",
           "text": "It received more water",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“It received more water” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "a",
+          "text": "The mulch reduced direct exposure and evaporation"
         },
         {
           "id": "c",
           "text": "It was measured on a different day",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“It was measured on a different day” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "d",
           "text": "The planter was larger",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“The planter was larger” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -319,26 +319,26 @@
       "time": 70,
       "options": [
         {
+          "id": "b",
+          "text": "Amount of water"
+        },
+        {
           "id": "a",
           "text": "Amount of mulch",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
-        },
-        {
-          "id": "b",
-          "text": "Amount of water"
+          "whyWrong": "“Amount of mulch” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "c",
           "text": "Moisture lost",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Moisture lost” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "d",
           "text": "Air exposure",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Air exposure” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [
@@ -378,23 +378,23 @@
           "id": "a",
           "text": "The bakery closed early",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“The bakery closed early” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "b",
           "text": "The van had no driver",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
-        },
-        {
-          "id": "c",
-          "text": "Its crates were packed after the other vans"
+          "whyWrong": "“The van had no driver” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "d",
           "text": "Customers changed delivery addresses",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Customers changed delivery addresses” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "c",
+          "text": "Its crates were packed after the other vans"
         }
       ],
       "correct": [
@@ -431,26 +431,26 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The crates were moved farther away",
-          "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "id": "d",
+          "text": "The van left earlier on most mornings"
         },
         {
           "id": "b",
           "text": "The bakery stopped deliveries",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“The bakery stopped deliveries” reverses how the two ideas or events are connected in the passage."
         },
         {
           "id": "c",
           "text": "Other vans stopped loading",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option does not match the causal relationship supported by the text."
+          "whyWrong": "“Other vans stopped loading” reverses how the two ideas or events are connected in the passage."
         },
         {
-          "id": "d",
-          "text": "The van left earlier on most mornings"
+          "id": "a",
+          "text": "The crates were moved farther away",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The crates were moved farther away” reverses how the two ideas or events are connected in the passage."
         }
       ],
       "correct": [

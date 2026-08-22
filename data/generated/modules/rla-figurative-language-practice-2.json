@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
+          "id": "c",
+          "text": "The mistake caused the group to restart the entire piece from the beginning.",
+          "distractorType": "unsupported_result",
+          "whyWrong": "The passage describes several early entrances, not a full restart."
+        },
+        {
+          "id": "b",
+          "text": "The mistake changed only the drummer’s part while the rest of the group continued normally.",
+          "distractorType": "contradicts_effect",
+          "whyWrong": "The sentence says three other players entered early, so the effect spread beyond the drummer."
+        },
+        {
           "id": "a",
           "text": "The mistake spread from one player to others."
         },
         {
-          "id": "b",
-          "text": "Water entered the room.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "c",
-          "text": "The drummer stopped playing forever.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
-          "text": "The music became quieter.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "The mistake made each player gradually play more quietly.",
+          "distractorType": "wrong_effect",
+          "whyWrong": "“Rippled” refers to the mistake spreading through the group, not to volume changing."
         }
       ],
       "correct": [
@@ -95,26 +95,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "the size of the room",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "b",
           "text": "how one small mistake affected several people"
         },
         {
+          "id": "a",
+          "text": "how long the mistake remained audible after the drummer corrected it",
+          "distractorType": "wrong_focus",
+          "whyWrong": "The image emphasizes spread from one player to others, not duration."
+        },
+        {
           "id": "c",
-          "text": "the speed of sound",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "how difficult it was for the players to hear the drummer in the room",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "Nothing in the sentence suggests an acoustics problem."
         },
         {
           "id": "d",
-          "text": "the type of drum",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "how the mistake changed the type of rhythm the group was performing",
+          "distractorType": "unsupported_effect",
+          "whyWrong": "The stated result is mistimed entrances, not a change in the composition’s rhythm type."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The wind had teeth.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "The wind seemed intentionally hostile, as though it wanted to injure the person.",
+          "distractorType": "overinterpretation",
+          "whyWrong": "“Bit” intensifies the sensation of cold; it does not require the reader to assign intention to the wind."
         },
         {
           "id": "b",
-          "text": "The gloves tore.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "The gloves tore because the wind was strong enough to damage them.",
+          "distractorType": "literal_misread",
+          "whyWrong": "The sentence describes how the cold felt through thin gloves, not physical tearing."
+        },
+        {
+          "id": "d",
+          "text": "The cold disappeared after briefly passing through the gloves.",
+          "distractorType": "reversed_effect",
+          "whyWrong": "“Bit” emphasizes sharp discomfort, not relief or disappearance."
         },
         {
           "id": "c",
           "text": "The cold felt sharply painful."
-        },
-        {
-          "id": "d",
-          "text": "The weather became warm.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "To show the wind direction.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "To prove the gloves were new.",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "c",
-          "text": "To make the sentence formal.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "To identify the exact direction from which the wind was blowing.",
+          "distractorType": "unsupported_precision",
+          "whyWrong": "The verb adds intensity to the sensation, not directional information."
         },
         {
           "id": "d",
           "text": "To intensify the physical discomfort."
+        },
+        {
+          "id": "c",
+          "text": "To make the description more formal and scientifically precise.",
+          "distractorType": "wrong_register",
+          "whyWrong": "“Bit” is vivid figurative language, not technical wording."
+        },
+        {
+          "id": "b",
+          "text": "To show that the gloves were unusually new and therefore ineffective.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The sentence only says the gloves are thin."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
+          "id": "b",
+          "text": "The week ended suddenly because several scheduled activities were cancelled.",
+          "distractorType": "unsupported_event",
+          "whyWrong": "The sentence says the activities crowd together, not that they were cancelled."
+        },
+        {
           "id": "a",
           "text": "Many events seemed compressed together."
         },
         {
-          "id": "b",
-          "text": "The week physically fell down.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "c",
-          "text": "The meetings were cancelled.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "The writer could no longer distinguish the days clearly because many events blended together.",
+          "distractorType": "related_but_not_exact",
+          "whyWrong": "The “blur” supports this idea, but “collapsed into” most directly suggests events compressing together rather than only a memory problem."
         },
         {
           "id": "d",
-          "text": "The writer forgot the project.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "The project failed because the schedule physically broke down.",
+          "distractorType": "literal_overreach",
+          "whyWrong": "The phrase is figurative and describes how crowded the week felt, not a literal collapse or project failure."
         }
       ],
       "correct": [
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It explains calendar design.",
+          "text": "It shows that the writer had carefully separated each task into an exact schedule.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The image does the opposite: it conveys tasks and days blending together."
+        },
+        {
+          "id": "c",
+          "text": "It makes the week seem calm because the separate events no longer stand out.",
+          "distractorType": "reversed_tone",
+          "whyWrong": "The cluster of revisions, meetings, and late dinners creates pressure rather than calm."
         },
         {
           "id": "b",
           "text": "It conveys how rushed and crowded the week felt."
         },
         {
-          "id": "c",
-          "text": "It makes the schedule exact.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
-          "text": "It shows the project was easy.",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "It suggests the writer found the project easy once the final week began.",
+          "distractorType": "contradicts_tone",
+          "whyWrong": "The crowded “blur” suggests strain and speed, not ease."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "A person became sick.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "A person in the library briefly became ill near the radiator.",
+          "distractorType": "literal_misread",
+          "whyWrong": "The subject is the radiator; “coughed” gives a human quality to its rough sound."
         },
         {
           "id": "b",
-          "text": "The radiator stopped heating.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "The radiator stopped working completely after making two noises.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "It settles into a steady hum, so it continues operating."
+        },
+        {
+          "id": "d",
+          "text": "The radiator produced a smooth, quiet sound from the moment it started.",
+          "distractorType": "contradicts_sequence",
+          "whyWrong": "The sentence contrasts two rough sounds with the steadier hum that follows."
         },
         {
           "id": "c",
           "text": "A brief rough mechanical sound."
-        },
-        {
-          "id": "d",
-          "text": "The library became crowded.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -431,26 +431,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "a medical explanation",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "a vivid sense of the radiator's imperfect start"
         },
         {
           "id": "b",
-          "text": "the radiator's age in years",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "a precise indication of how many years the radiator has been in the building",
+          "distractorType": "unsupported_precision",
+          "whyWrong": "The image may make the radiator feel old or imperfect, but it gives no exact age."
         },
         {
           "id": "c",
-          "text": "the library's size",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "a sense that the whole library is noisy and crowded",
+          "distractorType": "scope_error",
+          "whyWrong": "The image focuses on one brief mechanical sound in an otherwise quiet setting."
         },
         {
-          "id": "d",
-          "text": "a vivid sense of the radiator's imperfect start"
+          "id": "a",
+          "text": "a medical explanation for why old heating systems can affect breathing",
+          "distractorType": "literal_misread",
+          "whyWrong": "The language is figurative and describes a mechanical sound, not health effects."
         }
       ],
       "correct": [

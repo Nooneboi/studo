@@ -822,33 +822,81 @@
     }
   },
   {
-    "file": "generated/modules/evidence-transfer-practice.json",
-    "title": "Evidence & Inference — The Last Bus",
-    "description": "Use a fresh passage to make an inference, then prove it with the strongest evidence.",
+    "file": "generated/modules/set-rla-reading-transfer-civic-comment.json",
+    "title": "A Wider Door for Public Comment",
+    "description": "Social studies / civics · 7 questions",
     "curriculum": {
-      "domain": "Relationships & Inference",
-      "primarySkillId": "R2.4",
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
       "secondarySkillIds": [
-        "R5.3"
+        "R1.3",
+        "R2.4",
+        "R4.1",
+        "R3.5",
+        "R2.6",
+        "R1.4"
       ],
       "contentKind": "passage_practice",
-      "learningObjective": "Use a character’s actions to make an inference, then match that inference to direct evidence.",
-      "topicLabel": "Inference & Evidence"
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
     }
   },
   {
-    "file": "generated/modules/evidence-practice.json",
-    "title": "Evidence-Based Reading — The Night Shift",
-    "description": "Practice making an inference, then choosing the evidence that proves it.",
+    "file": "generated/modules/set-rla-reading-transfer-edna-river.json",
+    "title": "Reading a River from Traces of DNA",
+    "description": "Science · 7 questions",
     "curriculum": {
-      "domain": "Relationships & Inference",
-      "primarySkillId": "R2.4",
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
       "secondarySkillIds": [
-        "R5.3"
+        "R2.2",
+        "R4.1",
+        "R3.2",
+        "R2.4",
+        "R4.2",
+        "R2.6"
       ],
       "contentKind": "passage_practice",
-      "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-      "topicLabel": "Inference & Evidence"
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-reading-transfer-festival-plan.json",
+    "title": "The Plan That Would Not Stay on the Screen",
+    "description": "Literary · 7 questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.5",
+      "secondarySkillIds": [
+        "R2.4",
+        "R4.1",
+        "R4.5",
+        "R3.5",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-reading-transfer-machine-listening.json",
+    "title": "When a Machine Starts to Sound Different",
+    "description": "Workplace · 7 questions",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R2.2",
+        "R3.5",
+        "R2.4",
+        "R3.4",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
     }
   }
 ]

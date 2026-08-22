@@ -45,14 +45,14 @@
           "whyWrong": "Tree planting became one later test; it was not the reason the city began with measurements."
         },
         {
-          "id": "b",
-          "text": "Staff wanted to identify where pedestrians faced the greatest heat exposure before matching improvements to locations."
-        },
-        {
           "id": "c",
           "text": "The city was required to wait several years before changing any bus stops.",
           "distractorType": "unsupported_extension",
           "whyWrong": "No waiting requirement is stated."
+        },
+        {
+          "id": "b",
+          "text": "Staff wanted to identify where pedestrians faced the greatest heat exposure before matching improvements to locations."
         },
         {
           "id": "d",
@@ -204,10 +204,8 @@
       "time": 55,
       "options": [
         {
-          "id": "a",
-          "text": "The city tested three changes and found that all of them worked equally well, so officials planned to use all three everywhere.",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "The results were not identical and the city did not plan to use every treatment everywhere."
+          "id": "c",
+          "text": "The city tested a canopy, young trees, and a lighter surface; each affected heat differently, showing that no single treatment worked the same way in every location."
         },
         {
           "id": "b",
@@ -216,8 +214,10 @@
           "whyWrong": "The canopy and reflective surface did not fail."
         },
         {
-          "id": "c",
-          "text": "The city tested a canopy, young trees, and a lighter surface; each affected heat differently, showing that no single treatment worked the same way in every location."
+          "id": "a",
+          "text": "The city tested three changes and found that all of them worked equally well, so officials planned to use all three everywhere.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The results were not identical and the city did not plan to use every treatment everywhere."
         },
         {
           "id": "d",
@@ -320,10 +320,8 @@
           "whyWrong": "The passage does not say it lowered overall air temperature or was best."
         },
         {
-          "id": "b",
-          "text": "It was installed only after the young trees had grown for several years.",
-          "distractorType": "true_elsewhere",
-          "whyWrong": "The city planned to remeasure trees later; the coating was part of the initial pilot."
+          "id": "d",
+          "text": "It reduced midday surface temperature, but the area still felt uncomfortable because it remained in direct sun."
         },
         {
           "id": "c",
@@ -332,8 +330,10 @@
           "whyWrong": "Pedestrians still reported discomfort."
         },
         {
-          "id": "d",
-          "text": "It reduced midday surface temperature, but the area still felt uncomfortable because it remained in direct sun."
+          "id": "b",
+          "text": "It was installed only after the young trees had grown for several years.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "The city planned to remeasure trees later; the coating was part of the initial pilot."
         }
       ],
       "correct": "d",
@@ -369,8 +369,10 @@
       "time": 70,
       "options": [
         {
-          "id": "a",
-          "text": "The three tested changes produced different kinds and amounts of benefit under different conditions."
+          "id": "c",
+          "text": "Measurements were taken during June and July.",
+          "distractorType": "mentioned_not_supported",
+          "whyWrong": "The measurement dates do not support the one-size-fits-all decision."
         },
         {
           "id": "b",
@@ -379,10 +381,8 @@
           "whyWrong": "This explains why the route can feel hot but not why one treatment was rejected."
         },
         {
-          "id": "c",
-          "text": "Measurements were taken during June and July.",
-          "distractorType": "mentioned_not_supported",
-          "whyWrong": "The measurement dates do not support the one-size-fits-all decision."
+          "id": "a",
+          "text": "The three tested changes produced different kinds and amounts of benefit under different conditions."
         },
         {
           "id": "d",
@@ -423,6 +423,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-22T06:42:03.905Z"
+    "compiledAt": "2026-08-22T07:49:37.339Z"
   }
 }

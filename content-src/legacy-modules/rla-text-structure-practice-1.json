@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as problem / solution with comparison.",
+      "explanation": "The passage presents a heat problem, tests a reflective coating as a response, and compares coated with unchanged roofs.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -40,25 +40,25 @@
       "options": [
         {
           "id": "a",
-          "text": "problem / solution with comparison"
+          "text": "problem / solution supported by a comparison"
         },
         {
           "id": "b",
-          "text": "compare / contrast",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "cause / effect only",
+          "distractorType": "partial_structure",
+          "whyWrong": "Heat and temperature effects appear, but the passage is organized around a tested response to a problem."
         },
         {
           "id": "c",
           "text": "sequence / process",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "surface_feature",
+          "whyWrong": "The events occur in order, but the main organization is not a set of instructions or steps for the reader."
         },
         {
           "id": "d",
           "text": "classification / description",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage does not group roofs into categories simply to describe them."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "The organization shows the heat problem, the tested response, and how the response was evaluated against unchanged roofs.",
+      "explanation": "The organization lets readers see both the proposed solution and how its performance was evaluated.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The organization shows the heat problem, the tested response, and how the response was evaluated against unchanged roofs."
+          "text": "It mainly lists roof features so readers can classify different building types.",
+          "distractorType": "wrong_structure_effect",
+          "whyWrong": "The comparison is used to evaluate a response, not to create categories of buildings."
         },
         {
           "id": "c",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It focuses on the chronological order of installing the coating rather than whether it worked.",
+          "distractorType": "wrong_emphasis",
+          "whyWrong": "Installation order is secondary to the problem/solution evaluation."
+        },
+        {
+          "id": "b",
+          "text": "It shows the heat problem, the tested response, and evidence comparing the response with unchanged roofs."
         },
         {
           "id": "d",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It presents two equally supported solutions and asks readers to choose between them.",
+          "distractorType": "comparison_overread",
+          "whyWrong": "The unchanged roofs are a comparison group, not a competing solution."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as cause / effect.",
+      "explanation": "Roots slowing water and trapping sediment lead to later shoreline stability and habitat effects.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "a",
-          "text": "compare / contrast",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "description only",
+          "distractorType": "understates_relationship",
+          "whyWrong": "The passage does more than describe roots; it traces consequences of what roots do."
         },
         {
           "id": "b",
-          "text": "sequence / process",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "problem / solution",
+          "distractorType": "wrong_structure",
+          "whyWrong": "No central problem is introduced and solved."
         },
         {
           "id": "c",
@@ -168,9 +168,9 @@
         },
         {
           "id": "d",
-          "text": "classification / description",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "sequence / process",
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage explains consequences, not a procedure readers should follow."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "The structure connects the roots' physical effects with later shoreline and habitat outcomes.",
+      "explanation": "Cause-and-effect structure helps readers connect the actions of roots with the results that follow.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It groups mangrove roots into types based on where they grow.",
+          "distractorType": "classification_not_present",
+          "whyWrong": "No categories of roots are presented."
         },
         {
           "id": "b",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It compares mangroves with another shoreline plant using the same criteria.",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "Only mangrove roots and their effects are described."
         },
         {
           "id": "c",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It gives step-by-step instructions for planting mangroves.",
+          "distractorType": "process_not_present",
+          "whyWrong": "The text explains natural effects rather than planting steps."
         },
         {
           "id": "d",
-          "text": "The structure connects the roots' physical effects with later shoreline and habitat outcomes."
+          "text": "It traces how the roots' physical effects can lead to later shoreline and habitat outcomes."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as compare / contrast.",
+      "explanation": "The passage weighs strengths and limitations of text reminders and voice calls before noting a mixed system.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "compare / contrast"
-        },
-        {
           "id": "b",
           "text": "cause / effect",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The main relationship is between two methods, not one event causing another."
+        },
+        {
+          "id": "a",
+          "text": "compare / contrast leading to a combined choice"
         },
         {
           "id": "c",
           "text": "sequence / process",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage does not teach a series of steps."
         },
         {
           "id": "d",
-          "text": "classification only",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "problem / solution with only one proposed response",
+          "distractorType": "misses_comparison",
+          "whyWrong": "Two methods are compared before a combined approach is chosen."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "Comparing strengths and limits of both methods supports the later decision to combine them.",
+      "explanation": "The comparison supports the later decision because readers can see why neither method is ideal for every client.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -319,26 +319,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "b",
+          "text": "Comparing the strengths and limits of both methods gives a basis for choosing a mixed system."
         },
         {
-          "id": "b",
-          "text": "Comparing strengths and limits of both methods supports the later decision to combine them."
+          "id": "a",
+          "text": "It shows that voice calls caused text reminders to become less effective.",
+          "distractorType": "false_cause",
+          "whyWrong": "The passage compares methods; it does not say one caused the other to fail."
         },
         {
           "id": "c",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It organizes the methods by the order in which the clinic first adopted them.",
+          "distractorType": "sequence_not_present",
+          "whyWrong": "Adoption chronology is not the organizing principle."
         },
         {
           "id": "d",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It describes two methods without connecting the comparison to a decision.",
+          "distractorType": "misses_purpose",
+          "whyWrong": "The comparison explicitly leads toward a mixed system."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as sequence / process.",
+      "explanation": "Signal words such as First, Next, and After organize the archive-scanning procedure step by step.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -377,24 +377,24 @@
         {
           "id": "a",
           "text": "cause / effect",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage is organized by order of actions rather than consequences."
         },
         {
           "id": "b",
           "text": "compare / contrast",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "sequence / process"
+          "distractorType": "wrong_structure",
+          "whyWrong": "No two scanning methods are weighed against each other."
         },
         {
           "id": "d",
           "text": "problem / solution",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The main purpose is to explain a procedure, not solve a stated problem."
+        },
+        {
+          "id": "c",
+          "text": "sequence / process"
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "Step-by-step order helps readers follow the scanning procedure.",
+      "explanation": "Sequence structure makes the workflow clear because each action depends on its place in the process.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It shows why removing staples causes digital copies to be added to the catalog.",
+          "distractorType": "false_cause",
+          "whyWrong": "The actions occur in sequence, but the text does not frame each step as a causal chain."
         },
         {
           "id": "d",
-          "text": "Step-by-step order helps readers follow the scanning procedure."
+          "text": "The step-by-step order helps readers follow the document-scanning procedure from preparation to storage."
+        },
+        {
+          "id": "c",
+          "text": "It compares the advantages of paper archives with digital archives.",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "The passage explains one workflow rather than evaluating two archive systems."
+        },
+        {
+          "id": "b",
+          "text": "It classifies documents according to how fragile they are.",
+          "distractorType": "classification_not_present",
+          "whyWrong": "Fragility is mentioned, but no categories of documents are created."
         }
       ],
       "correct": [

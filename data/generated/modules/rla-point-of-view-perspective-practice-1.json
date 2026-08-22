@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "The driver emphasizes loading access; the cyclist emphasizes safety."
+          "id": "c",
+          "text": "The article presents the cyclist’s concern but leaves out the driver’s practical concern.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The article presents the cyclist’s concern but leaves out the driver’s practical concern.” conflicts with a detail stated in the passage."
         },
         {
           "id": "b",
-          "text": "Every person in the text emphasizes exactly the same concern.",
+          "text": "Both speakers focus mainly on cyclist safety but disagree about how serious the risk is.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Both speakers focus mainly on cyclist safety but disagree about how serious the risk is.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
-          "id": "c",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "a",
+          "text": "The driver emphasizes loading access, while the cyclist emphasizes separation from traffic."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The driver focuses on traffic speed, while the cyclist focuses on convenience.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The driver focuses on traffic speed, while the cyclist focuses on convenience.” misstates whose perspective is presented or what that person emphasizes."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Presenting both views removes the disagreement because each speaker accepts the other’s priority.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“Presenting both views removes the disagreement because each speaker accepts the other’s prio...” makes the text more certain or extreme than its wording supports."
         },
         {
           "id": "b",
-          "text": "The article presents competing priorities without automatically adopting either speaker's view."
+          "text": "The article presents competing priorities without automatically adopting either speaker’s view."
         },
         {
           "id": "c",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Including two views proves both positions are equally well supported by evidence.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “Including two views proves both positions are equally well supported by evidence..” This adds a claim the text never establishes."
         },
         {
           "id": "d",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The article directs readers to favor the cyclist by withholding the driver’s concern.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The article directs readers to favor the cyclist by withholding the driver’s concern.” conflicts with a detail stated in the passage."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Every person in the text emphasizes exactly the same concern.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The narrator reports only what an outside observer could see.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The narrator reports only what an outside observer could see.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "b",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The narrator knows whether the bus driver will wait but does not tell the reader.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The narrator knows whether the bus driver will wait but does not tell the reader..” This adds a claim the text never establishes."
+        },
+        {
+          "id": "d",
+          "text": "The narrator shifts between several passengers’ private thoughts.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The narrator shifts between several passengers’ private thoughts.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "c",
           "text": "The first-person narrator directly reports personal discomfort and uncertainty."
-        },
-        {
-          "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It prevents readers from understanding any difference in priorities.",
+          "text": "Readers know both the narrator’s thoughts and the driver’s private decision at the same time.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Readers know both the narrator’s thoughts and the driver’s private decision at the same time.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "d",
-          "text": "Readers know the narrator's thoughts but cannot know the driver's intention until the driver acts."
+          "text": "Readers know the narrator’s thoughts but cannot know the driver’s intention until the driver acts."
+        },
+        {
+          "id": "c",
+          "text": "The perspective keeps readers outside the narrator’s feelings and focuses only on weather.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The perspective keeps readers outside the narrator’s feelings and focuses only on weather.” misstates whose perspective is presented or what that person emphasizes."
+        },
+        {
+          "id": "b",
+          "text": "The first-person view removes uncertainty because the narrator can predict the driver’s action.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“The first-person view removes uncertainty because the narrator can predict the driver’s action.” makes the text more certain or extreme than its wording supports."
         }
       ],
       "correct": [
@@ -264,25 +264,25 @@
       "options": [
         {
           "id": "a",
-          "text": "The teacher emphasizes learning opportunities; the worker emphasizes upkeep and logistics."
+          "text": "The teacher emphasizes learning opportunities, while the worker emphasizes upkeep and logistics."
         },
         {
           "id": "b",
-          "text": "Every person in the text emphasizes exactly the same concern.",
+          "text": "Both speakers support the garden for exactly the same reason.",
           "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“Both speakers support the garden for exactly the same reason.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "c",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The teacher focuses on holiday irrigation, while the worker focuses on science lessons.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The teacher focuses on holiday irrigation, while the worker focuses on science lessons.” reverses the relationship established by the passage."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The worker opposes the garden completely, while the teacher supports it.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "“The worker opposes the garden completely, while the teacher supports it.” makes the text more certain or extreme than its wording supports."
         }
       ],
       "correct": [
@@ -319,26 +319,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "b",
+          "text": "The paired views reveal how different responsibilities shape the way each person evaluates the garden."
         },
         {
-          "id": "b",
-          "text": "The paired views reveal different responsibilities shaping how each person evaluates the garden."
+          "id": "a",
+          "text": "The paired views show that only the teacher has responsibilities connected to the garden.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“The paired views show that only the teacher has responsibilities connected to the garden.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "c",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The two perspectives prove the maintenance concern is more important than the learning value.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “The two perspectives prove the maintenance concern is more important than the learning value..” This adds a claim the text never establishes."
         },
         {
           "id": "d",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The perspectives make the speakers’ priorities identical by the end of the text.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The perspectives make the speakers’ priorities identical by the end of the text.” conflicts with a detail stated in the passage."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Every person in the text emphasizes exactly the same concern.",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "Both people focus only on preserving the wooden stalls.",
+          "distractorType": "viewpoint_source",
+          "whyWrong": "“Both people focus only on preserving the wooden stalls.” misstates whose perspective is presented or what that person emphasizes."
         },
         {
           "id": "b",
-          "text": "The author or narrator has complete access to every person's private thoughts.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "The planner emphasizes function; the resident adds concern for historic character."
+          "text": "The resident emphasizes drainage, while the planner emphasizes historic appearance.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "“The resident emphasizes drainage, while the planner emphasizes historic appearance.” reverses the relationship established by the passage."
         },
         {
           "id": "d",
-          "text": "The text gives an opinion unrelated to the issue being discussed.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The planner rejects renovation, while the resident wants every feature replaced.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The planner rejects renovation, while the resident wants every feature replaced.” conflicts with a detail stated in the passage."
+        },
+        {
+          "id": "c",
+          "text": "The planner emphasizes practical improvements, while the resident adds concern for historic character."
         }
       ],
       "correct": [
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It removes all uncertainty and disagreement from the text.",
+          "text": "The two perspectives show that practical improvements and historic character can both matter in renovation decisions.",
           "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "whyWrong": "“The two perspectives show that practical improvements and historic character can both matter...” tells what the text says but not the purpose or effect being asked about."
         },
         {
           "id": "b",
-          "text": "It proves one viewpoint is correct without evidence.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It prevents readers from understanding any difference in priorities.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "The perspectives prove cultural concerns should always outweigh practical repairs.",
+          "distractorType": "too_broad",
+          "whyWrong": "“The perspectives prove cultural concerns should always outweigh practical repairs.” is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
-          "text": "The two perspectives show that renovation decisions involve both practical and cultural values."
+          "text": "The perspectives remove the need to consider tradeoffs because both people want the same changes."
+        },
+        {
+          "id": "c",
+          "text": "The paired views show the two people disagree about whether the market should exist at all.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "“The paired views show the two people disagree about whether the market should exist at all.” conflicts with a detail stated in the passage."
         }
       ],
       "correct": [

@@ -39,26 +39,26 @@
       "time": 65,
       "options": [
         {
+          "id": "b",
+          "text": "Staff record the checkout in the library system"
+        },
+        {
           "id": "a",
           "text": "The item is returned",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "Staff record the checkout in the library system"
+          "whyWrong": "“The item is returned” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "c",
           "text": "The locker code expires",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The locker code expires” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "The borrower visits the service desk to close the loan",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The borrower visits the service desk to close the loan” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -99,7 +99,7 @@
           "id": "a",
           "text": "Only locker pickup involves borrowed equipment",
           "distractorType": "shared_trait",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Only locker pickup involves borrowed equipment” does not fit the evidence and relationship required by this question. Recheck the exact wording of the passage and stem."
         },
         {
           "id": "b",
@@ -109,13 +109,13 @@
           "id": "c",
           "text": "The service desk never checks returns",
           "distractorType": "reversed_positions",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The service desk never checks returns” assigns the two subjects’ features to the wrong sides of the comparison."
         },
         {
           "id": "d",
           "text": "Both methods can handle every item in exactly the same way",
           "distractorType": "minor_irrelevant_difference",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Both methods can handle every item in exactly the same way” focuses on a minor difference that does not answer the comparison being asked."
         }
       ],
       "correct": [
@@ -156,23 +156,23 @@
           "id": "a",
           "text": "Making the locker numbers larger caused wrong-code reports to disappear",
           "distractorType": "sequence_only",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "The clearer distinction between code and locker number was followed by a large drop in wrong-code reports"
-        },
-        {
-          "id": "c",
-          "text": "Borrowers stopped using lockers entirely",
-          "distractorType": "effect_as_cause",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Making the locker numbers larger caused wrong-code reports to disappe…” gives chronology without explaining the relationship the question asks about."
         },
         {
           "id": "d",
           "text": "The keypad was replaced with a different device",
           "distractorType": "correlation_only",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The keypad was replaced with a different device” shows that two things occurred together, but that alone does not establish causation."
+        },
+        {
+          "id": "c",
+          "text": "Borrowers stopped using lockers entirely",
+          "distractorType": "effect_as_cause",
+          "whyWrong": "“Borrowers stopped using lockers entirely” is an effect or result, not the cause the question asks for."
+        },
+        {
+          "id": "b",
+          "text": "The clearer distinction between code and locker number was followed by a large drop in wrong-code reports"
         }
       ],
       "correct": [
@@ -217,19 +217,19 @@
           "id": "b",
           "text": "They want to eliminate all staff contact immediately",
           "distractorType": "contradicts_detail",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“They want to eliminate all staff contact immediately” conflicts with a specific detail in the passage."
         },
         {
           "id": "c",
           "text": "They believe every error is caused by borrowers",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“They believe every error is caused by borrowers” could be possible, but the passage does not provide enough evidence to support that conclusion."
         },
         {
           "id": "d",
           "text": "They refuse to test new ideas",
           "distractorType": "contradicts_detail",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“They refuse to test new ideas” conflicts with a specific detail in the passage."
         }
       ],
       "correct": [
@@ -270,7 +270,7 @@
           "id": "a",
           "text": "Automation is useful only when it replaces every human task",
           "distractorType": "too_broad",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Automation is useful only when it replaces every human task” goes beyond the scope of the text. The evidence supports a narrower claim."
         },
         {
           "id": "b",
@@ -280,13 +280,13 @@
           "id": "c",
           "text": "Large equipment should never be loaned",
           "distractorType": "unsupported_prediction",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Large equipment should never be loaned” predicts an outcome the passage does not establish."
         },
         {
           "id": "d",
           "text": "Pickup codes are the only important part of equipment lending",
           "distractorType": "single_detail_inference",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Pickup codes are the only important part of equipment lending” relies too heavily on one detail instead of combining the relevant clues."
         }
       ],
       "correct": [
@@ -324,26 +324,26 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "They lead staff to revise how the message distinguishes the locker number from the code"
+          "id": "c",
+          "text": "They have no effect on the pilot",
+          "distractorType": "unrelated_connection",
+          "whyWrong": "“They have no effect on the pilot” connects details that the passage does not present as meaningfully related."
         },
         {
           "id": "b",
           "text": "They cause staff to close the library",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“They cause staff to close the library” reverses how the two ideas or events are connected in the passage."
         },
         {
-          "id": "c",
-          "text": "They have no effect on the pilot",
-          "distractorType": "unrelated_connection",
-          "whyWrong": "This option is not best supported by the passage."
+          "id": "a",
+          "text": "They lead staff to revise how the message distinguishes the locker number from the code"
         },
         {
           "id": "d",
           "text": "They make large tools fit into lockers",
           "distractorType": "unrelated_connection",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“They make large tools fit into lockers” connects details that the passage does not present as meaningfully related."
         }
       ],
       "correct": [
@@ -381,26 +381,26 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "A library tested equipment lockers, improved the system after observing access and communication problems, and kept lockers alongside staff service because the two methods meet different needs"
+          "id": "c",
+          "text": "All community libraries should replace service desks with lockers",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "“All community libraries should replace service desks with lockers” adds a claim that is not part of the passage’s main point or summary."
         },
         {
           "id": "b",
           "text": "A library printed larger numbers on locker doors",
           "distractorType": "too_narrow",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“A library printed larger numbers on locker doors” captures only part of the idea and leaves out information the question requires."
         },
         {
-          "id": "c",
-          "text": "All community libraries should replace service desks with lockers",
-          "distractorType": "adds_new_claim",
-          "whyWrong": "This option is not best supported by the passage."
+          "id": "a",
+          "text": "A library tested equipment lockers, improved the system after observing access and communication problems, and kept lockers alongside staff service because the two methods meet different needs"
         },
         {
           "id": "d",
           "text": "The passage lists several kinds of equipment that residents can borrow",
           "distractorType": "detail_heavy",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The passage lists several kinds of equipment that residents can borrow” includes a detail but misses the broader idea the question asks you to identify."
         }
       ],
       "correct": [

@@ -1,0 +1,431 @@
+{
+  "id": "set-rla-reading-transfer-civic-comment",
+  "title": "A Wider Door for Public Comment",
+  "description": "Social studies / civics · 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "For years, the city of Bellweather held most public hearings the same way. Residents who wanted to comment on a proposed ordinance or construction plan had to attend a council meeting on Tuesday evening, wait for their name to be called, and speak for no more than three minutes. The system was familiar and easy for clerks to manage, but it also shaped who could participate. People who worked evening shifts, cared for children, lacked transportation, or felt uncomfortable speaking in a crowded room often submitted no comment at all.\n\nDuring a renovation of City Hall, the council tested a different approach. Residents could still speak in person, but they could also submit a written comment through an online form or leave a recorded message by phone. All three forms of comment were placed in the public record. The city did not treat the number of comments as a vote; council members were still responsible for weighing the evidence, legal requirements, costs, and likely effects of a proposal. The goal of the trial was narrower: make it easier for residents to place relevant information and concerns before the council.\n\nParticipation increased. On a proposal to redesign a dangerous intersection, 214 people submitted comments during the hybrid trial, compared with 73 comments on a similar transportation hearing the previous year. The new comments also came from a wider range of neighborhoods. Yet the larger total created new problems. Some residents submitted the same message through more than one channel because they were unsure whether the first submission had been received. Organized groups sometimes distributed prepared language that dozens of people copied into the form. Clerks had to distinguish duplicate comments from separate comments that happened to express the same position.\n\nThe city also discovered that access was not simply a question of putting a form online. Several residents reported that the first version of the form was difficult to use with screen-reading software. Others said the instructions were too long or that the form timed out before they finished a detailed comment. The city shortened the instructions, improved keyboard navigation, and allowed users to save a draft. A telephone option remained available for residents who did not want to use the website.\n\nAfter six months, some officials argued that the higher comment totals proved the hybrid system was more democratic. The city clerk urged more careful language. More comments showed that more people had used the available channels, she said, but they did not prove that the comments represented the city as a whole. People who knew about the issue or felt strongly about it were still more likely to respond. A quiet resident who never submitted a comment remained invisible in the data.\n\nThe city also had to decide what staff should do with comments that contained factual claims. Clerks were told not to treat a frequently repeated claim as verified simply because many residents submitted it. If a comment said that a proposed bus lane would remove forty parking spaces, for example, staff checked the transportation plan before summarizing the claim as fact. Comments received after a published deadline were preserved in the record but labeled separately so council members could see when they arrived. These rules made the process slower for staff, yet officials argued that wider access would be less useful if the resulting record blurred the difference between participation, evidence, and timing.\n\nThe clerk recommended keeping the hybrid system while changing how staff summarize public input. Instead of reporting only raw totals, staff would identify recurring concerns, note how many distinct submissions supported each concern, and separate factual information from simple statements of preference. For example, twenty comments that repeated the same sentence about parking would still show that parking mattered to those residents, but the repetition would not be presented as twenty independent pieces of evidence about traffic conditions.\n\nThe council adopted the recommendation. In-person testimony remains part of every major hearing, but residents can also comment online or by phone. The city now publishes a short explanation of how comments are counted and summarized. The wider door has not removed every barrier or made public opinion easy to measure. It has changed the question from “Who showed up on Tuesday night?” to the more complicated question of how to hear more people without confusing participation with proof.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of the passage?",
+      "points": 1,
+      "explanation": "Most paragraphs develop both sides of the change: wider access and the need to interpret participation carefully.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "A main idea must include the benefit and the limitation that shape the whole passage.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The hybrid system increased comment totals mainly because organized groups copied prepared language into the online form.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Copied language explains one complication in the larger total, but it does not account for the passage’s broader focus on access and careful interpretation."
+        },
+        {
+          "id": "b",
+          "text": "Expanding the ways residents can comment can broaden participation, but officials still must interpret the input carefully because more responses do not automatically represent the whole public."
+        },
+        {
+          "id": "c",
+          "text": "The hybrid system widened access enough that comment totals became a reliable measure of what the entire city believed.",
+          "distractorType": "overstatement",
+          "whyWrong": "The passage says participation increased, but the clerk explicitly warns that the comments still do not represent the whole city."
+        },
+        {
+          "id": "d",
+          "text": "The most important problem with public comments is verifying factual claims, not helping more residents participate.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Fact-checking is one later challenge, but the passage develops both broader access and the limits of interpreting that input."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "The wider door has not removed every barrier ... or made public opinion easy to measure."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Why does the author include the comparison between 214 comments during the hybrid trial and 73 comments at a similar earlier hearing?",
+      "points": 1,
+      "explanation": "The numbers give a direct before-and-after comparison of comment volume, supporting the claim that participation increased.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Ask what exact claim the statistic measures; do not make it prove more than it does.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that the intersection proposal generated more public concern than any earlier transportation proposal.",
+          "distractorType": "overstatement",
+          "whyWrong": "The comparison is with one similar earlier hearing, so it cannot establish how this proposal ranked against every earlier transportation issue."
+        },
+        {
+          "id": "b",
+          "text": "To estimate how closely the comments represented the opinions of the city’s entire population.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The numbers compare participation volume; the passage later warns that a larger total does not establish representativeness."
+        },
+        {
+          "id": "c",
+          "text": "To prove that adding online and phone channels, rather than any other difference between the hearings, caused the larger total.",
+          "distractorType": "causal_overreach",
+          "whyWrong": "The figures show an association with higher participation, but the passage does not isolate the new channels as the only cause."
+        },
+        {
+          "id": "d",
+          "text": "To provide concrete evidence that the hybrid system was associated with a larger amount of public participation."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "214 people submitted comments ... compared with 73 comments on a similar transportation hearing the previous year."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What can the reader most reasonably infer about the city clerk’s view of comment totals?",
+      "points": 1,
+      "explanation": "Her recommendation preserves participation data while warning against treating volume as representative proof.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Inference should preserve the clerk’s caution instead of turning it into a stronger claim.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "She sees the totals as useful evidence about participation but not as a complete measure of what the whole city thinks."
+        },
+        {
+          "id": "b",
+          "text": "She sees totals mainly as a way to identify which side of a proposal has the most public support.",
+          "distractorType": "misreads_purpose",
+          "whyWrong": "The clerk treats totals as evidence of participation, not as a vote that determines which position represents the public."
+        },
+        {
+          "id": "c",
+          "text": "She thinks duplicate submissions make comment totals too unreliable to report at all.",
+          "distractorType": "too_extreme",
+          "whyWrong": "The city keeps and summarizes the comments; it changes how duplicates and repeated language are interpreted rather than discarding totals entirely."
+        },
+        {
+          "id": "d",
+          "text": "She believes comment totals become representative once duplicate submissions are removed.",
+          "distractorType": "unsupported_condition",
+          "whyWrong": "Removing duplicates improves counting, but the clerk still says people who respond are not necessarily representative of residents who stay silent."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "More comments showed that more people had used the available channels ... but they did not prove that the comments represented the city as a whole."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of paragraph 4, which discusses screen readers, long instructions, timeouts, and saved drafts?",
+      "points": 1,
+      "explanation": "The paragraph shows that adding an online channel created access opportunities but also introduced usability barriers that required revision.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "For paragraph-function questions, ask what new job this paragraph does in the argument.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows that accessibility problems reduced participation enough for the city to abandon the online form.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The city revised the form and kept the online option rather than abandoning it."
+        },
+        {
+          "id": "b",
+          "text": "It shows that once the city shortened the instructions, the online form removed the remaining barriers to participation.",
+          "distractorType": "overstatement",
+          "whyWrong": "The revisions improved usability, but the passage never says all participation barriers disappeared."
+        },
+        {
+          "id": "c",
+          "text": "It complicates the idea that online access automatically removes participation barriers by showing new barriers the city had to address."
+        },
+        {
+          "id": "d",
+          "text": "It explains why the telephone option was eventually removed after the online form became easier to use.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The telephone option remained available."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "The city also discovered that access was not simply a question of putting a form online."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "In the final paragraph, what is the effect of the phrase “The wider door”?",
+      "points": 1,
+      "explanation": "The metaphor turns several participation channels into the image of a larger entrance, then the sentence immediately qualifies what that larger entrance can accomplish.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "Interpret figurative wording in relation to the sentence around it, not by its literal image alone.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It emphasizes only that residents now have more ways to enter the comment process, without suggesting any limit on those new channels.",
+          "distractorType": "incomplete_effect",
+          "whyWrong": "The metaphor does suggest broader entry, but the sentence immediately qualifies that image by noting barriers and measurement problems that remain."
+        },
+        {
+          "id": "b",
+          "text": "It creates a concise image for expanded access while allowing the author to note that broader access still does not solve every problem."
+        },
+        {
+          "id": "c",
+          "text": "It suggests that participating in person at City Hall became physically easier after the renovation.",
+          "distractorType": "literal_misread",
+          "whyWrong": "The “door” is figurative: it represents access to multiple comment channels, not the building entrance."
+        },
+        {
+          "id": "d",
+          "text": "It suggests the city has loosened its standards for evidence so that any comment can influence a decision.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The passage says the opposite: staff distinguish participation from verified evidence and continue checking factual claims."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "The wider door has not removed every barrier or made public opinion easy to measure."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the relationship between increased participation and representative public opinion in the passage?",
+      "points": 1,
+      "explanation": "The passage repeatedly separates the useful fact of broader participation from the stronger claim that comments represent everyone.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Do not confuse “more data” with “representative data.”",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased participation gives officials more input, but it does not by itself show that the responses match the views of the entire population."
+        },
+        {
+          "id": "b",
+          "text": "Increased participation tells officials which position has majority support as long as duplicate comments are removed first.",
+          "distractorType": "overstatement",
+          "whyWrong": "Removing duplicates does not turn voluntary comments into a representative sample of the whole population."
+        },
+        {
+          "id": "c",
+          "text": "Representative public opinion becomes more likely automatically whenever residents can use several different comment channels.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "Multiple channels can broaden access, but the passage explicitly warns that respondents may still differ from residents who do not participate."
+        },
+        {
+          "id": "d",
+          "text": "The city treats participation and representative opinion as equivalent once staff count only distinct submissions.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The clerk repeatedly separates the number of participants from what the whole city believes."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "More comments showed that more people had used the available channels ... but they did not prove that the comments represented the city as a whole."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the city’s final approach?",
+      "points": 1,
+      "explanation": "This choice preserves the major changes and the passage’s central caution without adding unsupported claims.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A good whole-passage summary keeps the solution, the adjustments, and the limitation.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city kept the hybrid system and began treating each distinct comment as an independent piece of evidence about whether a proposal was correct.",
+          "distractorType": "misreads_evidence",
+          "whyWrong": "Distinct comments show participation and preferences, but repeated or unique comments are not automatically factual evidence about a proposal."
+        },
+        {
+          "id": "b",
+          "text": "The city kept multiple channels and concluded that higher totals were enough to describe the process as more democratic after accessibility changes.",
+          "distractorType": "overstatement",
+          "whyWrong": "The clerk rejects that stronger conclusion and urges careful language about what higher participation can show."
+        },
+        {
+          "id": "c",
+          "text": "The city kept multiple channels but excluded copied or late comments from the public record so its totals would better represent residents.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Late comments are preserved and labeled, while repeated language is summarized carefully rather than removed from the record."
+        },
+        {
+          "id": "d",
+          "text": "The city kept multiple comment channels, improved accessibility and summary methods, and clarified that broader participation must still be interpreted carefully."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "The council adopted the recommendation ... The city now publishes a short explanation of how comments are counted and summarized."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-reading-transfer-civic-comment",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R1.3",
+        "R2.4",
+        "R4.1",
+        "R3.5",
+        "R2.6",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-reading-transfer-civic-comment",
+      "title": "A Wider Door for Public Comment",
+      "textType": "informational",
+      "context": "social_studies",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T07:49:37.340Z"
+  }
+}

@@ -39,26 +39,26 @@
       "time": 65,
       "options": [
         {
+          "id": "b",
+          "text": "Utility lines were relocated"
+        },
+        {
           "id": "a",
           "text": "Native plants were added",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "Utility lines were relocated"
+          "whyWrong": "“Native plants were added” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "c",
           "text": "Fish barriers were removed",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Fish barriers were removed” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         },
         {
           "id": "d",
           "text": "The walking path became popular",
           "distractorType": "wrong_sequence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The walking path became popular” is placed at the wrong point in the sequence. Check what happens immediately before and after the target event."
         }
       ],
       "correct": [
@@ -99,23 +99,23 @@
           "id": "a",
           "text": "It prevented all flooding during both kinds of storms",
           "distractorType": "unsupported_similarity",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "It flooded the path during moderate storms but not during the largest storm",
-          "distractorType": "reversed_positions",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It prevented all flooding during both kinds of storms” treats the subjects as similar in a way the text does not support."
         },
         {
           "id": "c",
           "text": "It reduced sharp water rise during moderate storms, but the largest storm still flooded a nearby path"
         },
         {
+          "id": "b",
+          "text": "It flooded the path during moderate storms but not during the largest storm",
+          "distractorType": "reversed_positions",
+          "whyWrong": "“It flooded the path during moderate storms but not during the largest…” assigns the two subjects’ features to the wrong sides of the comparison."
+        },
+        {
           "id": "d",
           "text": "The stream became completely dry during both kinds of storms",
           "distractorType": "unsupported_similarity",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The stream became completely dry during both kinds of storms” treats the subjects as similar in a way the text does not support."
         }
       ],
       "correct": [
@@ -153,26 +153,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "Mild summer temperatures could also have contributed to the observed changes"
+        },
+        {
           "id": "a",
           "text": "They counted no fish at all",
           "distractorType": "single_coincidence",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "b",
-          "text": "Mild summer temperatures could also have contributed to the observed changes"
+          "whyWrong": "“They counted no fish at all” treats one coincidence as a meaningful pattern without enough supporting evidence."
         },
         {
           "id": "c",
           "text": "The project had already ended",
           "distractorType": "unsupported_motive",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The project had already ended” assigns a motive that the text never gives. Use only motives supported by actions or wording."
         },
         {
           "id": "d",
           "text": "Native plants were never installed",
           "distractorType": "reversed_cause_effect",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Native plants were never installed” reverses cause and effect. The passage presents the relationship in the opposite direction."
         }
       ],
       "correct": [
@@ -213,13 +213,13 @@
           "id": "a",
           "text": "The team prefers to make permanent conclusions from one observation",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The team prefers to make permanent conclusions from one observation” could be possible, but the passage does not provide enough evidence to support that conclusion."
         },
         {
           "id": "b",
           "text": "The team treats unexpected problems as proof that restoration should stop",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The team treats unexpected problems as proof that restoration should…” could be possible, but the passage does not provide enough evidence to support that conclusion."
         },
         {
           "id": "c",
@@ -229,7 +229,7 @@
           "id": "d",
           "text": "The team measures only how the stream looks to visitors",
           "distractorType": "contradicts_detail",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The team measures only how the stream looks to visitors” conflicts with a specific detail in the passage."
         }
       ],
       "correct": [
@@ -270,23 +270,23 @@
           "id": "a",
           "text": "Stream restoration succeeds only when walking paths are closed",
           "distractorType": "too_broad",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Stream restoration succeeds only when walking paths are closed” goes beyond the scope of the text. The evidence supports a narrower claim."
         },
         {
           "id": "b",
           "text": "The project has solved every flooding and ecological problem",
           "distractorType": "unsupported_prediction",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
-          "id": "c",
-          "text": "The restoration shows several benefits, but its effects vary by condition and require continued monitoring and adjustment"
+          "whyWrong": "“The project has solved every flooding and ecological problem” predicts an outcome the passage does not establish."
         },
         {
           "id": "d",
           "text": "The mild summer proves the restoration had no ecological effect",
           "distractorType": "single_detail_inference",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The mild summer proves the restoration had no ecological effect” relies too heavily on one detail instead of combining the relevant clues."
+        },
+        {
+          "id": "c",
+          "text": "The restoration shows several benefits, but its effects vary by condition and require continued monitoring and adjustment"
         }
       ],
       "correct": [
@@ -324,26 +324,26 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "It causes plant damage that leads the city to add fencing and designated access points"
-        },
-        {
           "id": "b",
           "text": "It causes the city to remove all native plants",
           "distractorType": "reversed_relationship",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It causes the city to remove all native plants” reverses how the two ideas or events are connected in the passage."
+        },
+        {
+          "id": "a",
+          "text": "It causes plant damage that leads the city to add fencing and designated access points"
         },
         {
           "id": "c",
           "text": "It has no effect on management decisions",
           "distractorType": "unrelated_connection",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It has no effect on management decisions” connects details that the passage does not present as meaningfully related."
         },
         {
           "id": "d",
           "text": "It directly causes moderate storms",
           "distractorType": "unrelated_connection",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“It directly causes moderate storms” connects details that the passage does not present as meaningfully related."
         }
       ],
       "correct": [
@@ -384,23 +384,23 @@
           "id": "a",
           "text": "The best stream projects focus only on fish counts",
           "distractorType": "single_detail",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“The best stream projects focus only on fish counts” focuses on one detail rather than the broader conclusion supported by the text."
+        },
+        {
+          "id": "c",
+          "text": "Concrete channels should always be removed from every city",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "“Concrete channels should always be removed from every city” generalizes beyond the examples or conditions described in the text."
         },
         {
           "id": "b",
           "text": "Restoring an urban stream requires staged changes, multiple measures of success, and continued adjustment as new results appear"
         },
         {
-          "id": "c",
-          "text": "Concrete channels should always be removed from every city",
-          "distractorType": "unsupported_generalization",
-          "whyWrong": "This option is not best supported by the passage."
-        },
-        {
           "id": "d",
           "text": "Walking paths are the main cause of urban flooding",
           "distractorType": "reasonable_but_incomplete",
-          "whyWrong": "This option is not best supported by the passage."
+          "whyWrong": "“Walking paths are the main cause of urban flooding” is reasonable but incomplete; it leaves out another important part of the passage."
         }
       ],
       "correct": [

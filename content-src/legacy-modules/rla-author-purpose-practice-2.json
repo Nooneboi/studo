@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "describe the theater’s history without asking readers to act",
+          "distractorType": "secondary_purpose",
+          "whyWrong": "“describe the theater’s history without asking readers to act” could describe a minor effect, but it is not the primary purpose of the text."
+        },
+        {
           "id": "a",
           "text": "persuade donors that restoring the theater is worth supporting"
         },
         {
-          "id": "b",
-          "text": "to entertain readers with an unrelated story",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "c",
-          "text": "to describe the topic without giving readers a specific understanding or action",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "explain how later wall panels were installed",
+          "distractorType": "too_narrow",
+          "whyWrong": "“explain how later wall panels were installed” captures only one part of the text and misses the larger idea the question asks about."
         },
         {
           "id": "d",
-          "text": "to prove a stronger claim than the passage supports",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compare the theater with newer entertainment venues",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“compare the theater with newer entertainment venues” uses a related idea but answers a different question from the one asked."
         }
       ],
       "correct": [
@@ -95,26 +95,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It changes the subject instead of supporting the purpose.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "b",
           "text": "The mural detail gives a concrete example of historic features that could be preserved."
         },
         {
+          "id": "a",
+          "text": "It explains how the later wall panels were attached.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“It explains how the later wall panels were attached.” uses a related idea but answers a different question from the one asked."
+        },
+        {
           "id": "c",
-          "text": "It provides a fact unrelated to what readers need to understand.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves the theater is more valuable than every other local building.",
+          "distractorType": "too_broad",
+          "whyWrong": "“It proves the theater is more valuable than every other local building.” is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
-          "text": "It replaces the need for the rest of the passage.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It tells donors exactly how much each repair will cost.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “It tells donors exactly how much each repair will cost..” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -152,15 +152,15 @@
       "options": [
         {
           "id": "a",
-          "text": "to entertain readers with an unrelated story",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "describe common summer weather conditions",
+          "distractorType": "topic_summary",
+          "whyWrong": "“describe common summer weather conditions” states content or topic rather than the author’s specific purpose."
         },
         {
           "id": "b",
-          "text": "to describe the topic without giving readers a specific understanding or action",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "persuade readers to avoid all outdoor activity during hot weather",
+          "distractorType": "too_broad",
+          "whyWrong": "“persuade readers to avoid all outdoor activity during hot weather” is broader or more absolute than the passage supports."
         },
         {
           "id": "c",
@@ -168,9 +168,9 @@
         },
         {
           "id": "d",
-          "text": "to prove a stronger claim than the passage supports",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compare heat exhaustion with unrelated medical conditions",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“compare heat exhaustion with unrelated medical conditions” uses a related idea but answers a different question from the one asked."
         }
       ],
       "correct": [
@@ -208,25 +208,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the subject instead of supporting the purpose.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "They show that every person with one symptom needs emergency care.",
+          "distractorType": "too_broad",
+          "whyWrong": "“They show that every person with one symptom needs emergency care.” is broader or more absolute than the passage supports."
         },
         {
           "id": "b",
-          "text": "It provides a fact unrelated to what readers need to understand.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It replaces the need for the rest of the passage.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "They explain why hot weather occurs.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“They explain why hot weather occurs.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "d",
           "text": "Listing symptoms helps readers identify when someone may need help."
+        },
+        {
+          "id": "c",
+          "text": "They describe symptoms without helping readers decide what to do.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“They describe symptoms without helping readers decide what to do.” tells what the text says but not the purpose or effect being asked about."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "persuade every neighborhood to request more frequent service",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "“persuade every neighborhood to request more frequent service” does not match the exact evidence or relationship required by this question."
+        },
+        {
           "id": "a",
           "text": "explain the effects of a transit route change using ridership and service data"
         },
         {
-          "id": "b",
-          "text": "to entertain readers with an unrelated story",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "c",
-          "text": "to describe the topic without giving readers a specific understanding or action",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "describe the history of the transit system",
+          "distractorType": "topic_summary",
+          "whyWrong": "“describe the history of the transit system” states content or topic rather than the author’s specific purpose."
         },
         {
           "id": "d",
-          "text": "to prove a stronger claim than the passage supports",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "argue that ridership increased only because fares were lowered",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “argue that ridership increased only because fares were lowered.” This adds a claim the text never establishes."
         }
       ],
       "correct": [
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the subject instead of supporting the purpose.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It proves every neighborhood benefited equally.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "“It proves every neighborhood benefited equally.” turns limited evidence into a broader rule than the text supports."
+        },
+        {
+          "id": "d",
+          "text": "It gives the route names without showing how service changed.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“It gives the route names without showing how service changed.” tells what the text says but not the purpose or effect being asked about."
+        },
+        {
+          "id": "c",
+          "text": "It explains how passengers pay their fares.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“It explains how passengers pay their fares.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "b",
           "text": "The neighborhood comparison shows where the service change had the greatest effect."
-        },
-        {
-          "id": "c",
-          "text": "It provides a fact unrelated to what readers need to understand.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "d",
-          "text": "It replaces the need for the rest of the passage.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "to entertain readers with an unrelated story",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "to describe the topic without giving readers a specific understanding or action",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "c",
           "text": "clarify noise rules and reporting procedures for residents"
         },
         {
+          "id": "b",
+          "text": "describe common neighborhood noises without explaining any rules",
+          "distractorType": "purpose_too_broad",
+          "whyWrong": "“describe common neighborhood noises without explaining any rules” is too broad to explain what this text specifically helps readers understand or do."
+        },
+        {
+          "id": "a",
+          "text": "persuade residents to stop hosting gatherings",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "“persuade residents to stop hosting gatherings” does not match the exact evidence or relationship required by this question."
+        },
+        {
           "id": "d",
-          "text": "to prove a stronger claim than the passage supports",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compare noise rules across several different cities",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“compare noise rules across several different cities” uses a related idea but answers a different question from the one asked."
         }
       ],
       "correct": [
@@ -432,21 +432,21 @@
       "options": [
         {
           "id": "a",
-          "text": "It changes the subject instead of supporting the purpose.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It turns the FAQ into a legal argument for stricter penalties.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not support “It turns the FAQ into a legal argument for stricter penalties..” This adds a claim the text never establishes."
         },
         {
           "id": "b",
-          "text": "It provides a fact unrelated to what readers need to understand.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It provides historical background about housing policy.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "“It provides historical background about housing policy.” uses a related idea but answers a different question from the one asked."
         },
         {
           "id": "c",
-          "text": "It replaces the need for the rest of the passage.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It lists examples without helping residents apply the rules.",
+          "distractorType": "summary_not_function",
+          "whyWrong": "“It lists examples without helping residents apply the rules.” tells what the text says but not the purpose or effect being asked about."
         },
         {
           "id": "d",

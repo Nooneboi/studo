@@ -96,10 +96,8 @@
       "time": 60,
       "options": [
         {
-          "id": "a",
-          "text": "To persuade members to donate more equipment",
-          "distractorType": "secondary_purpose",
-          "whyWrong": "Donations are not discussed."
+          "id": "c",
+          "text": "To explain a new pickup procedure, why it is being tested, and what staff should do during the trial."
         },
         {
           "id": "b",
@@ -108,8 +106,10 @@
           "whyWrong": "The memo focuses on a current process change, not the organization’s history."
         },
         {
-          "id": "c",
-          "text": "To explain a new pickup procedure, why it is being tested, and what staff should do during the trial."
+          "id": "a",
+          "text": "To persuade members to donate more equipment",
+          "distractorType": "secondary_purpose",
+          "whyWrong": "Donations are not discussed."
         },
         {
           "id": "d",
@@ -324,8 +324,10 @@
       "time": 50,
       "options": [
         {
-          "id": "a",
-          "text": "Members should arrive throughout a wider range of times rather than crowding into one hour."
+          "id": "c",
+          "text": "Staff should give each member the same number of tools.",
+          "distractorType": "unrelated_connotation",
+          "whyWrong": "The phrase refers to arrival times, not equipment quantities."
         },
         {
           "id": "b",
@@ -334,10 +336,8 @@
           "whyWrong": "The phrase is about timing, not physical distance."
         },
         {
-          "id": "c",
-          "text": "Staff should give each member the same number of tools.",
-          "distractorType": "unrelated_connotation",
-          "whyWrong": "The phrase refers to arrival times, not equipment quantities."
+          "id": "a",
+          "text": "Members should arrive throughout a wider range of times rather than crowding into one hour."
         },
         {
           "id": "d",

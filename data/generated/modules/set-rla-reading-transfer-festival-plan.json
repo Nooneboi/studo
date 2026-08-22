@@ -1,0 +1,430 @@
+{
+  "id": "set-rla-reading-transfer-festival-plan",
+  "title": "The Plan That Would Not Stay on the Screen",
+  "description": "Literary · 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "Noor had practiced the neighborhood-history presentation until she could advance the slides without looking at the keyboard. She knew exactly when the photograph of the old ferry terminal would appear, when the map would zoom toward River Street, and when she would pause long enough for the audience to read a quotation from a shopkeeper who had worked there forty years earlier.\n\nThe presentation was scheduled for Saturday afternoon in the community center courtyard. Noor had asked twice whether the outdoor screen would be bright enough. She had packed an extension cable, a spare adapter, and printed notes in case she forgot a date. Her teacher, Mr. Han, had smiled at the growing pile of equipment. “You have prepared for everything,” he said.\n\n“That's the idea,” Noor answered.\n\nAn hour before the event, clouds gathered over the courtyard. The organizers moved the chairs under the covered walkway, where the audience would stay dry if the rain remained light. The projector still worked, but the screen now faced a row of bright windows. Noor's carefully edited photographs looked washed out, and the smallest labels on her map nearly disappeared.\n\nShe tried changing the projector settings. Then she moved the screen. Then she asked an organizer whether they could turn off the courtyard lights, even though the lights were not causing the problem. Each adjustment made one thing slightly better and another thing worse. People began taking their seats.\n\nMr. Han carried a box toward her. Inside were the large printed photographs Noor had used while interviewing residents: the ferry terminal, the old market, a row of houses before the road was widened. She had considered the prints too plain for the final presentation.\n\n“We could pass these around,” he said.\n\nNoor looked at the screen. Her title slide glowed faintly enough to be readable. The rest of the presentation, the part she had spent three evenings perfecting, no longer looked like something she wanted anyone to see.\n\n“If I use the prints, the order won't work,” she said.\n\n“Then maybe the order can change.”\n\nThe first drops of rain tapped the metal roof as Noor walked to the front. She explained that the screen was difficult to see and held up the photograph of the ferry terminal instead. Before she could begin the paragraph she had memorized, an older man in the second row raised his hand.\n\n“My father worked there,” he said. “The ticket window was on the other side before the renovation.”\n\nNoor had never heard that detail. She asked him when the window had moved. A woman near the aisle disagreed with his date, and the two of them began comparing memories. Noor found the printed map and laid it across a table. Soon three audience members were pointing to different buildings, while another described the route children once took to school.\n\nFor a few minutes Noor worried that she had lost control of the presentation. Her notes contained no place for an argument about a ticket window. Then she noticed that people who had been waiting quietly for slides were leaning forward. She stopped trying to return to the original order. When someone mentioned a building, she found the closest photograph. When two memories conflicted, she wrote both versions in the margin of her notes instead of deciding which person was right.\n\nThe rain became heavier, drumming above them, but almost no one left.\n\nAfterward, Noor packed the projector first. The unused slides still bothered her; she was not suddenly grateful that the screen had failed. On Monday she would probably revise them again. But she kept the printed photographs on top of the box instead of sliding them underneath the cables.\n\nMr. Han picked up the map covered with Noor's new notes. “Not exactly what you planned,” he said.\n\n“No,” Noor replied. She looked at the two different dates written beside the ferry terminal. “But I think I know what the presentation was for now.”\n\nOn the bus home, she opened the slideshow on her laptop. Instead of deleting the first slide, she added a new one before it: QUESTIONS WE STILL HAVE. For the first time all week, she stopped arranging the rest.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses a theme developed by the passage?",
+      "points": 1,
+      "explanation": "Noor begins by equating success with controlling a carefully ordered slideshow and ends by preserving questions and adapting to what the audience contributes.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Theme should describe a general idea developed through the character’s change, not one event from the plot.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Good preparation includes being able to adapt when circumstances change, rather than trying to force every event to follow the original plan."
+        },
+        {
+          "id": "b",
+          "text": "A plan becomes valuable mainly when unexpected problems expose weaknesses that can be corrected before the next event.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Noor may revise later, but the story’s larger change is learning to preserve the purpose of the presentation by adapting in the moment."
+        },
+        {
+          "id": "c",
+          "text": "Community history is most meaningful when a presenter gives the audience control over the order and content of the event.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Audience participation helps this event, but the story does not establish that giving up control is always the best way to present history."
+        },
+        {
+          "id": "d",
+          "text": "Conflicting memories make historical presentations unreliable unless every disagreement is settled before the audience leaves.",
+          "distractorType": "contradicts_theme",
+          "whyWrong": "Noor learns to preserve unresolved questions rather than force an immediate answer."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "“Then maybe the order can change.” ... “But I think I know what the presentation was for now.”"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What can the reader most reasonably infer about Noor when she says, “If I use the prints, the order won’t work”?",
+      "points": 1,
+      "explanation": "Her objection focuses on preserving the planned order even though the visual system has stopped working well.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Infer from what the character is worried about at that moment, not from what later becomes true.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "She worries that showing the photographs outside her planned sequence will make the historical information less accurate.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "Her concern is explicitly about the order not working; the passage does not say she thinks the photographs become inaccurate."
+        },
+        {
+          "id": "b",
+          "text": "She is concerned that switching to printed photographs will prevent the audience from seeing the details she researched most carefully.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The prints are large interview materials; her stated objection is the loss of her planned sequence, not visibility of details."
+        },
+        {
+          "id": "c",
+          "text": "She is still measuring success by whether she can follow the sequence she planned."
+        },
+        {
+          "id": "d",
+          "text": "She thinks using the prints will make her look unprepared even if the audience can still follow the topic.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "Noor values preparation and control, but the passage does not say embarrassment or appearance is the reason for her objection."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "“If I use the prints, the order won’t work,” she said."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the author include the audience members’ disagreement about when the ticket window moved?",
+      "points": 1,
+      "explanation": "The disagreement becomes the turning point that forces Noor to stop controlling the order and start responding to the audience.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "A scene can function as a turning point even when it does not solve the factual question it raises.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "To establish that one audience member remembers the neighborhood more accurately than the other.",
+          "distractorType": "unsupported_conclusion",
+          "whyWrong": "The story never resolves which date is correct; Noor records both versions."
+        },
+        {
+          "id": "b",
+          "text": "To create a moment Noor cannot fit into her prepared script, pushing her to shift from delivering fixed information to collecting and exploring questions."
+        },
+        {
+          "id": "c",
+          "text": "To create a factual problem Noor must settle before she can continue the rest of her prepared slides.",
+          "distractorType": "reversed_outcome",
+          "whyWrong": "Instead of settling the disagreement and returning to the script, Noor changes how she runs the presentation."
+        },
+        {
+          "id": "d",
+          "text": "To explain why the screen becomes difficult to see and why Noor switches to printed photographs.",
+          "distractorType": "wrong_cause",
+          "whyWrong": "The rain and bright windows create the screen problem before the disagreement begins."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "She stopped trying to return to the original order."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly develops the theme that adapting can preserve the purpose of a plan even when the original form fails?",
+      "points": 1,
+      "explanation": "This action directly shows Noor changing the form of the presentation while continuing its deeper purpose: exploring neighborhood history.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "For theme evidence, choose the action that best embodies the larger idea, not just a detail associated with it.",
+      "familyId": "theme.evidence",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Noor packs a spare adapter because she expects that adapting the equipment will be the main purpose of the event.",
+          "distractorType": "misreads_detail",
+          "whyWrong": "The adapter shows preparation for a technical problem, not the deeper adaptation in purpose and presentation that develops later."
+        },
+        {
+          "id": "b",
+          "text": "The title slide remains faintly readable, showing that part of the original presentation can still be used.",
+          "distractorType": "related_but_weak",
+          "whyWrong": "This detail concerns the failing format; it does not show Noor adapting while preserving the presentation’s deeper purpose."
+        },
+        {
+          "id": "c",
+          "text": "The rain grows heavier while almost everyone stays, showing that the audience remains interested despite the changed format.",
+          "distractorType": "supporting_not_strongest",
+          "whyWrong": "This supports the success of the adapted event, but Noor’s decision to change how she presents most directly develops the theme."
+        },
+        {
+          "id": "d",
+          "text": "Noor stops trying to restore the planned slide order and instead uses photographs and audience memories to guide the presentation."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "She stopped trying to return to the original order. When someone mentioned a building, she found the closest photograph."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How does Noor’s point of view shape the reader’s understanding of the presentation?",
+      "points": 1,
+      "explanation": "The close perspective makes the character change visible from the inside: control feels important at first, then limiting.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Point of view affects which thoughts and uncertainties the reader can experience directly.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the story stays close to Noor’s thoughts, readers experience her initial need for control and then notice the change in what she values."
+        },
+        {
+          "id": "b",
+          "text": "Because the story stays close to Noor, readers share her uncertainty about which audience memory is historically correct, making that factual dispute the main conflict.",
+          "distractorType": "misreads_focus",
+          "whyWrong": "The conflicting dates matter, but the close perspective mainly reveals Noor’s changing idea of control and purpose, not a need to solve the date dispute."
+        },
+        {
+          "id": "c",
+          "text": "Because readers know Noor’s early worries but not her later thoughts, her change must be inferred only from Mr. Han’s comments.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The narration continues to reveal Noor’s observations and choices through the ending."
+        },
+        {
+          "id": "d",
+          "text": "Because Noor’s perspective gives readers access to information the audience lacks, her research is shown to be more reliable than their memories.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The story does not make Noor the final authority; she records conflicting memories and leaves questions open."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "For a few minutes Noor worried that she had lost control ... Then she noticed ... She stopped trying to return to the original order."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of the final sentence, “For the first time all week, she stopped arranging the rest”?",
+      "points": 1,
+      "explanation": "The repeated idea of arranging/order has carried Noor’s need for control; stopping becomes a sign of changed understanding rather than abandonment.",
+      "skill": {
+        "id": "R3.5",
+        "label": "Impact of word choice"
+      },
+      "rule": "Track how repeated words or actions change meaning between the beginning and ending.",
+      "familyId": "wordchoice.impact",
+      "metadata": {
+        "skillId": "R3.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows that Noor has decided the remaining slideshow no longer matters and will not be revised again.",
+          "distractorType": "overstatement",
+          "whyWrong": "She has already considered revising the slides on Monday; the ending concerns her changed need to arrange everything immediately."
+        },
+        {
+          "id": "b",
+          "text": "It suggests Noor is postponing all further work until she can verify the audience’s conflicting memories.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The final sentence does not establish a research plan; it emphasizes her willingness to leave some questions unresolved for now."
+        },
+        {
+          "id": "c",
+          "text": "It suggests Noor now believes improvisation should replace careful preparation for future presentations.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The story does not reject preparation; Noor’s change is about flexibility when the planned form no longer serves the purpose."
+        },
+        {
+          "id": "d",
+          "text": "It ends the story by contrasting her earlier effort to control every sequence with a new willingness to leave some questions unresolved."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "QUESTIONS WE STILL HAVE ... For the first time all week, she stopped arranging the rest."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage?",
+      "points": 1,
+      "explanation": "This summary keeps the original problem, Noor’s adaptation, and the change in her understanding without overstating the historical result.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A literary summary should track the character’s key problem, response, and change.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "When the outdoor screen becomes hard to use, Noor switches to printed photographs, but the audience disagreement convinces her that community memories are too unreliable to include in future presentations.",
+          "distractorType": "misstates_change",
+          "whyWrong": "Noor does the opposite: she records the conflicting memories and adds a slide for questions that remain unresolved."
+        },
+        {
+          "id": "b",
+          "text": "Noor’s slideshow fails outdoors, and the success of the printed photographs convinces her to abandon digital presentations in favor of audience discussion.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "She still plans to revise the slides; she learns flexibility rather than rejecting digital presentations."
+        },
+        {
+          "id": "c",
+          "text": "When Noor’s carefully planned slideshow becomes hard to use, she reluctantly shifts to printed photographs and audience discussion, then realizes the unexpected questions made the event more meaningful than simply following her prepared order."
+        },
+        {
+          "id": "d",
+          "text": "Noor adapts to the screen problem and the audience discussion, but she remains mainly frustrated because she never gets to complete the sequence she prepared.",
+          "distractorType": "misses_change",
+          "whyWrong": "The ending shows that her understanding of the presentation’s purpose has changed, even though the unused slides still bother her."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "“Not exactly what you planned” ... “But I think I know what the presentation was for now.”"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-reading-transfer-festival-plan",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.5",
+      "secondarySkillIds": [
+        "R2.4",
+        "R4.1",
+        "R4.5",
+        "R3.5",
+        "R1.4"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-reading-transfer-festival-plan",
+      "title": "The Plan That Would Not Stay on the Screen",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T07:49:37.341Z"
+  }
+}

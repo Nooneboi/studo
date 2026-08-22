@@ -14,7 +14,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as problem / solution.",
+      "explanation": "The passage introduces late flood warnings as a problem, then presents an upstream sensor and automatic alerts as the response.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -39,26 +39,26 @@
       "time": 80,
       "options": [
         {
+          "id": "b",
+          "text": "cause / effect only",
+          "distractorType": "partial_structure",
+          "whyWrong": "The sensor affects warning time, but the passage is framed around a problem and a response."
+        },
+        {
           "id": "a",
           "text": "problem / solution"
         },
         {
-          "id": "b",
-          "text": "compare / contrast",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
           "id": "c",
           "text": "sequence / process",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The events have an order, but the text is not teaching a procedure."
         },
         {
           "id": "d",
-          "text": "classification / description",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compare / contrast",
+          "distractorType": "wrong_structure",
+          "whyWrong": "It does not weigh two alert systems using parallel criteria."
         }
       ],
       "correct": [
@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "The structure links a timing problem with the new alert system and its result.",
+      "explanation": "Problem/solution organization helps readers see why the system was introduced and what changed afterward.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The structure links a timing problem with the new alert system and its result."
+          "text": "It mainly explains the mechanical steps for installing a creek sensor.",
+          "distractorType": "method_not_structure",
+          "whyWrong": "Installation details are not the focus."
         },
         {
           "id": "c",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It compares residents who receive alerts with residents who do not.",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "No parallel groups of residents are compared."
+        },
+        {
+          "id": "b",
+          "text": "It links a timing problem with the new alert system and the improvement observed during later storms."
         },
         {
           "id": "d",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It classifies different kinds of storms by severity.",
+          "distractorType": "classification_not_present",
+          "whyWrong": "Storm categories are not presented."
         }
       ],
       "correct": [
@@ -126,7 +126,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as classification / description.",
+      "explanation": "The library groups spaces by type and describes each according to noise level and typical use.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "cause / effect",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compare / contrast leading to a recommendation",
+          "distractorType": "overreads_comparison",
+          "whyWrong": "Readers can compare the spaces, but the passage primarily organizes them into categories and describes each."
         },
         {
           "id": "b",
-          "text": "compare / contrast",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "sequence / process",
+          "distractorType": "wrong_structure",
+          "whyWrong": "The spaces are not steps in an activity."
+        },
+        {
+          "id": "d",
+          "text": "cause / effect",
+          "distractorType": "wrong_structure",
+          "whyWrong": "No causal chain organizes the descriptions."
         },
         {
           "id": "c",
           "text": "classification / description"
-        },
-        {
-          "id": "d",
-          "text": "problem / solution",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
         }
       ],
       "correct": [
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "Grouping spaces by type helps readers choose a setting that fits their activity.",
+      "explanation": "Classification makes the options easy to distinguish by their defining features.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -207,26 +207,26 @@
       "time": 80,
       "options": [
         {
-          "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "id": "d",
+          "text": "Grouping the spaces by type helps readers match a setting to the activity and noise level they need."
         },
         {
           "id": "b",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It shows how using one space causes another space to become quieter.",
+          "distractorType": "false_cause",
+          "whyWrong": "The categories are described independently; one does not cause another."
         },
         {
           "id": "c",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It tells readers the order in which they must use the library spaces.",
+          "distractorType": "false_sequence",
+          "whyWrong": "The categories are choices, not steps."
         },
         {
-          "id": "d",
-          "text": "Grouping spaces by type helps readers choose a setting that fits their activity."
+          "id": "a",
+          "text": "It argues that enclosed pods are better than every other study space.",
+          "distractorType": "unsupported_ranking",
+          "whyWrong": "The passage describes different uses rather than declaring one category best."
         }
       ],
       "correct": [
@@ -238,7 +238,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as cause / effect.",
+      "explanation": "The passage explains how pavement reduces infiltration, which increases surface flow and can raise peak runoff.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -268,21 +268,21 @@
         },
         {
           "id": "b",
-          "text": "compare / contrast",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "problem / solution",
+          "distractorType": "wrong_structure",
+          "whyWrong": "No response or solution is proposed."
         },
         {
           "id": "c",
-          "text": "sequence / process",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "classification / description",
+          "distractorType": "understates_relationship",
+          "whyWrong": "The details form a causal chain rather than separate categories."
         },
         {
           "id": "d",
-          "text": "classification / description",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "compare / contrast",
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage does not compare two surfaces using parallel criteria."
         }
       ],
       "correct": [
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "The organization traces how pavement can lead to greater runoff.",
+      "explanation": "Cause-and-effect structure connects reduced infiltration to surface flow and higher peak runoff.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
-          "text": "The organization traces how pavement can lead to greater runoff."
-        },
-        {
-          "id": "c",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It lists several independent features of pavement without explaining how they relate.",
+          "distractorType": "misses_causal_chain",
+          "whyWrong": "The sentences explicitly connect one condition to the next."
         },
         {
           "id": "d",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It gives instructions for measuring runoff during a storm.",
+          "distractorType": "process_not_present",
+          "whyWrong": "No measurement procedure is described."
+        },
+        {
+          "id": "c",
+          "text": "It weighs the advantages of pavement against the advantages of soil.",
+          "distractorType": "comparison_not_present",
+          "whyWrong": "The text focuses on causal effects of pavement."
+        },
+        {
+          "id": "b",
+          "text": "The organization traces how one physical change can produce a chain of later runoff effects."
         }
       ],
       "correct": [
@@ -350,7 +350,7 @@
       "type": "multiple_choice",
       "prompt": "Which text structure best describes this passage?",
       "points": 1,
-      "explanation": "The ideas are organized as compare / contrast leading to recommendation.",
+      "explanation": "The report compares two scheduling options on staffing cost, customer traffic, and vendor interest before recommending one.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "cause / effect",
-          "distractorType": "effect_missed",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "b",
           "text": "sequence / process",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "wrong_structure",
+          "whyWrong": "The options are alternatives, not steps."
         },
         {
           "id": "c",
-          "text": "compare / contrast leading to recommendation"
+          "text": "compare / contrast leading to a recommendation"
+        },
+        {
+          "id": "b",
+          "text": "cause / effect only",
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage evaluates alternatives rather than tracing one causal chain."
         },
         {
           "id": "d",
           "text": "classification only",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "distractorType": "misses_evaluation",
+          "whyWrong": "The options are not merely grouped; they are compared using shared criteria to support a decision."
         }
       ],
       "correct": [
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "How does that structure help develop the passage?",
       "points": 1,
-      "explanation": "Using the same criteria for both choices supports a reasoned recommendation.",
+      "explanation": "The comparison makes the recommendation traceable to staffing, traffic, and vendor-interest evidence.",
       "skill": {
         "id": "R4.2",
         "label": "Text structure"
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It hides the relationship among the main ideas.",
-          "distractorType": "summary_not_function",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It shows that extending hours every evening directly causes vendors to lose interest.",
+          "distractorType": "unsupported_cause",
+          "whyWrong": "The passage compares expected effects; it does not state this causal conclusion."
         },
         {
           "id": "b",
-          "text": "It arranges details without helping readers understand how they connect.",
-          "distractorType": "one_clue_trap",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
-        },
-        {
-          "id": "c",
-          "text": "It mainly creates suspense rather than explaining the topic.",
-          "distractorType": "viewpoint_source",
-          "whyWrong": "This choice does not best match the relationship and evidence in this text."
+          "text": "It explains the chronological steps required to change market hours.",
+          "distractorType": "sequence_not_present",
+          "whyWrong": "Implementation steps are not the organizing focus."
         },
         {
           "id": "d",
-          "text": "Using the same criteria for both choices supports a reasoned recommendation."
+          "text": "Using the same criteria for both scheduling options creates a reasoned basis for the recommendation."
+        },
+        {
+          "id": "c",
+          "text": "It describes both options but deliberately avoids evaluating them.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The report compares them in order to make a recommendation."
         }
       ],
       "correct": [

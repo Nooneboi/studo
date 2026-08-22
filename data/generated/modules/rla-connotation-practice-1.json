@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "the lane is essential and helpful"
-        },
-        {
           "id": "b",
           "text": "the lane is decorative",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“the lane is decorative” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "a",
+          "text": "the lane is essential and helpful"
         },
         {
           "id": "c",
           "text": "the lane is temporary",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “the lane is temporary.” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "the lane is dangerous",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“the lane is dangerous” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [
@@ -95,26 +95,26 @@
       "time": 75,
       "options": [
         {
+          "id": "b",
+          "text": "different attitudes toward the same policy"
+        },
+        {
           "id": "a",
           "text": "different bus routes",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "different attitudes toward the same policy"
+          "whyWrong": "“different bus routes” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "different road materials",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“different road materials” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "different times of day",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“different times of day” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -154,13 +154,13 @@
           "id": "a",
           "text": "It means she works faster.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “It means she works faster..” It adds information the text never establishes."
         },
         {
           "id": "b",
           "text": "It proves she makes no mistakes.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It proves she makes no mistakes.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
           "id": "d",
           "text": "It means she avoids work.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“It means she avoids work.” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -210,19 +210,19 @@
           "id": "a",
           "text": "Her job title would change.",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“Her job title would change.” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "The facts would prove she was late.",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The facts would prove she was late.” uses a related idea, but the relationship or conclusion does not match the text."
         },
         {
           "id": "c",
           "text": "The sentence would become humorous.",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“The sentence would become humorous.” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "d",
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "respect for endurance and age"
+          "id": "d",
+          "text": "indifference",
+          "distractorType": "wrong_context",
+          "whyWrong": "“indifference” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "disgust at decay",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“disgust at decay” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "fear of violence",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “fear of violence.” It adds information the text never establishes."
         },
         {
-          "id": "d",
-          "text": "indifference",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "a",
+          "text": "respect for endurance and age"
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "survivors",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“survivors” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "heroes",
+          "distractorType": "wrong_context",
+          "whyWrong": "“heroes” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "old trees"
         },
         {
-          "id": "c",
-          "text": "heroes",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
           "text": "guardians",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“guardians” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -378,23 +378,23 @@
           "id": "a",
           "text": "beautifully designed",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "silent",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “beautifully designed.” It adds information the text never establishes."
         },
         {
           "id": "c",
           "text": "awkward and inefficient"
         },
         {
+          "id": "b",
+          "text": "silent",
+          "distractorType": "wrong_context",
+          "whyWrong": "“silent” does not fit the way the word, phrase, or technique functions in this specific context."
+        },
+        {
           "id": "d",
           "text": "very expensive",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“very expensive” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -431,26 +431,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "terrible",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "outdated"
         },
         {
           "id": "b",
           "text": "ridiculous",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“ridiculous” uses a related idea, but the relationship or conclusion does not match the text."
         },
         {
           "id": "c",
           "text": "hopeless",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“hopeless” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "d",
-          "text": "outdated"
+          "id": "a",
+          "text": "terrible",
+          "distractorType": "wrong_context",
+          "whyWrong": "“terrible” does not fit the way the word, phrase, or technique functions in this specific context."
         }
       ],
       "correct": [

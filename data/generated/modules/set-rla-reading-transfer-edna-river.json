@@ -1,0 +1,431 @@
+{
+  "id": "set-rla-reading-transfer-edna-river",
+  "title": "Reading a River from Traces of DNA",
+  "description": "Science · 7 questions",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Studo",
+  "passage": "A biologist looking for a rare fish once had to catch the fish, see it directly, or find some other physical sign that it was present. Those methods still matter, but researchers now have another tool: environmental DNA, often shortened to eDNA. Animals, plants, and other organisms constantly leave tiny genetic traces behind in water, soil, and even air. A skin cell, scale, fragment of tissue, or bit of waste may contain DNA that can be collected and identified.\n\nIn a river survey, scientists may fill sterile bottles at several locations and send the water to a laboratory. There, technicians filter the samples and test them for genetic sequences associated with a target species. If the sequence appears, researchers have evidence that genetic material from that species was present in the water sample. The method can be especially useful when an animal is difficult to catch, active only at certain times, or present in very small numbers.\n\nThat usefulness can make eDNA sound more certain than it is. A positive result does not necessarily tell scientists how many animals are nearby, whether they are healthy, or exactly where they were when the DNA entered the water. River flow can carry genetic material downstream. Sunlight, temperature, microbes, and time can break DNA into smaller pieces. A sample collected below a bridge might contain traces from an organism that lived farther upstream hours or days earlier.\n\nFor that reason, researchers think carefully about where and when they sample. A team studying an invasive mussel, for example, might collect water above and below several boat ramps because boats can transport the species between lakes. Repeated positive samples below one ramp would create a stronger signal than a single positive bottle. Even then, scientists might inspect docks, rocks, or equipment before concluding that a new population has become established.\n\nNegative results also require caution. Failing to detect DNA is not the same as proving a species is absent. The organism may be present but rare, the water sample may have missed its genetic material, or chemicals in the sample may interfere with laboratory testing. Researchers often repeat samples and include controls designed to reveal contamination or testing problems.\n\nLaboratory procedures can create another source of uncertainty, so teams build controls into the process. A field worker may carry a bottle filled with clean water through the same sampling trip without opening it in the river. If target DNA later appears in that control bottle, the team knows contamination may have occurred during handling or analysis. Researchers may also collect samples in different months because many organisms shed different amounts of genetic material as water temperature, breeding activity, and stream flow change. A result that appears repeatedly under different conditions is generally more informative than a single detection that cannot be reproduced.\n\nThe strongest surveys therefore combine methods. In one river-restoration project, scientists used eDNA to identify sections where a native fish might have returned after a barrier was removed. They then placed underwater cameras and conducted limited net surveys in those sections. The cameras confirmed fish at several sites where eDNA had been detected, while one weak eDNA signal was not confirmed by either camera or netting. The researchers did not call the weak result useless; it helped them decide where to look more closely.\n\nThis relationship between eDNA and traditional fieldwork is important. The newer method can make searching more efficient because researchers do not have to sample every location with the same intensity. Traditional observations, meanwhile, can answer questions that DNA alone cannot, such as the size, age, condition, or behavior of animals. Each method supplies information the other lacks.\n\nAs laboratory techniques improve, eDNA is being used to monitor endangered species, invasive organisms, and changes in entire biological communities. But the method is most powerful when a “signal” is treated as evidence to interpret rather than a verdict to accept automatically. A bottle of river water can reveal that an organism left a trace. Understanding what that trace means still requires questions about movement, timing, sampling, and the larger environment.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea of the passage?",
+      "points": 1,
+      "explanation": "The passage explains both the usefulness of eDNA and the limits that require careful interpretation and confirmation.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "Main ideas often include both what a method can do and what it cannot do by itself.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Environmental DNA has made traditional field observation unnecessary for most river studies.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage says the strongest surveys combine eDNA with traditional observation."
+        },
+        {
+          "id": "b",
+          "text": "A positive eDNA result can tell scientists exactly how many animals live at the sampling location.",
+          "distractorType": "overstates_detail",
+          "whyWrong": "The passage explicitly says a positive result does not necessarily reveal abundance or exact location."
+        },
+        {
+          "id": "c",
+          "text": "Environmental DNA can make species searches more efficient, but its signals must be interpreted with sampling conditions and often confirmed with other methods."
+        },
+        {
+          "id": "d",
+          "text": "Environmental DNA is useful mainly because genetic material remains unchanged in river water for long periods.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage explains that sunlight, temperature, microbes, and time can break DNA down."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "The method is most powerful when a “signal” is treated as evidence to interpret rather than a verdict to accept automatically."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "According to the passage, why might DNA from a species appear in water collected below a bridge even if the organism is not currently near that bridge?",
+      "points": 1,
+      "explanation": "The passage directly explains that flowing water can transport traces away from the organism’s original location.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "For cause-and-effect questions, match the stated mechanism to the result.",
+      "familyId": "cause.direct",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "River flow can carry genetic material downstream from where the organism originally left it."
+        },
+        {
+          "id": "b",
+          "text": "The organism itself is likely to move downstream at the same speed as the DNA, so its current location can be assumed from the sample.",
+          "distractorType": "unsupported_assumption",
+          "whyWrong": "The passage explains that genetic material can move independently downstream; it does not say the organism moves with it or can be located from one sample."
+        },
+        {
+          "id": "c",
+          "text": "Water collected below a bridge concentrates DNA more strongly than water collected upstream, even when the source is elsewhere.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage mentions downstream transport, not a special concentrating effect caused by bridges."
+        },
+        {
+          "id": "d",
+          "text": "Bridge surfaces can preserve old genetic traces and release them later, making bridge samples unreliable.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage discusses transport, degradation, and contamination controls, but it does not identify bridge surfaces as the source of old DNA."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "River flow can carry genetic material downstream."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of the invasive-mussel example in paragraph 4?",
+      "points": 1,
+      "explanation": "The example turns the general caution about location and repeated sampling into a concrete research design.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Examples often show how a general principle works in practice.",
+      "familyId": "function.paragraph",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "To show that samples collected near boat ramps are generally more reliable than samples collected elsewhere in a lake.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Boat ramps matter in this example because boats can move mussels; the passage does not rank those samples as generally more reliable."
+        },
+        {
+          "id": "b",
+          "text": "To show that repeated positive samples below one ramp are enough by themselves to prove a new population is established.",
+          "distractorType": "overstatement",
+          "whyWrong": "Repeated positives strengthen the signal, but the passage says researchers may still inspect docks, rocks, or equipment before concluding a population is established."
+        },
+        {
+          "id": "c",
+          "text": "To show that contamination controls are needed mainly at boat ramps because boats interfere with laboratory testing.",
+          "distractorType": "misreads_example",
+          "whyWrong": "The ramp example is about strategic sampling for possible mussel transport, not laboratory interference caused by boats."
+        },
+        {
+          "id": "d",
+          "text": "To illustrate how researchers use repeated, strategically placed samples to strengthen an eDNA inference before drawing a larger conclusion."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "Repeated positive samples below one ramp would create a stronger signal than a single positive bottle."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "In the final paragraph, what does the word “verdict” suggest in the phrase “evidence to interpret rather than a verdict to accept automatically”?",
+      "points": 1,
+      "explanation": "“Verdict” carries the sense of a final decision, which the author contrasts with evidence that still needs interpretation.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "For connotation, ask what association the author gains by choosing this word instead of a neutral synonym.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A result that has been repeated often enough to deserve more attention than a single sample.",
+          "distractorType": "related_not_exact",
+          "whyWrong": "Repeated evidence can strengthen a result, but “verdict” here means a final judgment, not simply a stronger signal."
+        },
+        {
+          "id": "b",
+          "text": "A final, unquestionable conclusion."
+        },
+        {
+          "id": "c",
+          "text": "A preliminary clue that tells researchers where they should collect their next sample.",
+          "distractorType": "opposite_meaning",
+          "whyWrong": "That describes evidence that still needs interpretation; the author contrasts such evidence with a verdict."
+        },
+        {
+          "id": "d",
+          "text": "A judgment that becomes trustworthy only when several field methods produce the same result.",
+          "distractorType": "too_specific",
+          "whyWrong": "The passage does value confirmation, but “verdict” itself refers more broadly to a final conclusion treated as settled."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "treated as evidence to interpret rather than a verdict to accept automatically"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about the weak eDNA signal that was not confirmed by cameras or netting?",
+      "points": 1,
+      "explanation": "The researchers did not confirm the fish at that site, yet they still treated the signal as useful for deciding where to investigate.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "A careful inference can preserve uncertainty while explaining how evidence affected the next step.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The signal showed that the fish had passed through that exact site recently, even though cameras and nets missed it.",
+          "distractorType": "overstatement",
+          "whyWrong": "Because DNA can move and persist, the weak signal does not establish the fish’s exact location or timing."
+        },
+        {
+          "id": "b",
+          "text": "The failed camera and net checks made contamination the most likely explanation for the signal.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "Contamination is one possible source of uncertainty, but the passage does not say the researchers identified it as the likely cause."
+        },
+        {
+          "id": "c",
+          "text": "The signal was not strong enough by itself to support a confident claim that fish were present at that site, but it still helped direct additional searching."
+        },
+        {
+          "id": "d",
+          "text": "The signal established that fish were present somewhere upstream, even if they were absent from the sampling site.",
+          "distractorType": "overstatement",
+          "whyWrong": "A weak unconfirmed signal is not enough to establish where the fish were; it mainly justified further searching."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "The researchers did not call the weak result useless; it helped them decide where to look more closely."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "How does the author organize the passage overall?",
+      "points": 1,
+      "explanation": "The structure moves from definition to limitations to application and synthesis, helping readers understand both usefulness and caution.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "For structure questions, describe the movement of ideas across the whole text.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "By presenting eDNA as a replacement for fieldwork, then listing objections that the author ultimately rejects.",
+          "distractorType": "misreads_structure",
+          "whyWrong": "The author never frames fieldwork as obsolete and does not dismiss the method’s limitations."
+        },
+        {
+          "id": "b",
+          "text": "By introducing the method, explaining what positive and negative results can and cannot show, giving a research example, and ending with a qualified view of how the tool should be used."
+        },
+        {
+          "id": "c",
+          "text": "By tracing eDNA research chronologically from its earliest use to its most recent laboratory improvements.",
+          "distractorType": "wrong_structure",
+          "whyWrong": "The passage is organized by what the method does, its limits, examples, and synthesis rather than by historical chronology."
+        },
+        {
+          "id": "d",
+          "text": "By comparing positive and negative results in order to argue that positive results are generally more reliable.",
+          "distractorType": "wrong_emphasis",
+          "whyWrong": "Positive and negative results are both qualified; the passage’s larger structure explains interpretation and complementary methods."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "A biologist ... now have another tool ... The strongest surveys therefore combine methods ... most powerful when a “signal” is treated as evidence to interpret."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the relationship between eDNA and traditional field methods?",
+      "points": 1,
+      "explanation": "The passage explicitly presents the methods as complementary: one narrows the search and the other supplies information that traces cannot.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Relationship questions often ask how two tools or ideas work together, not which one “wins.”",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "eDNA can help researchers decide where to focus, while direct observation can answer questions about organisms that DNA traces alone cannot."
+        },
+        {
+          "id": "b",
+          "text": "Traditional field methods are mainly used to verify eDNA when a laboratory result is weak or negative.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Confirmation is one use, but field methods also answer questions about size, age, condition, and behavior that DNA traces cannot."
+        },
+        {
+          "id": "c",
+          "text": "The two approaches provide largely the same information, but eDNA lets researchers collect that information with fewer site visits.",
+          "distractorType": "overstatement",
+          "whyWrong": "The passage emphasizes that the methods provide different, complementary kinds of information."
+        },
+        {
+          "id": "d",
+          "text": "eDNA is better for locating individual animals, while cameras and nets are better for showing whether a species is present at all.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "The passage says eDNA can indicate traces and guide searching; direct observation can provide details about actual organisms."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "Each method supplies information the other lacks."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-reading-transfer-edna-river",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [
+        "R2.2",
+        "R4.1",
+        "R3.2",
+        "R2.4",
+        "R4.2",
+        "R2.6"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-reading-transfer-edna-river",
+      "title": "Reading a River from Traces of DNA",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Studo",
+      "author": "Studo",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-22T07:49:37.341Z"
+  }
+}

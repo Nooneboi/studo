@@ -39,26 +39,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "not changing much"
+          "id": "d",
+          "text": "made of stone",
+          "distractorType": "wrong_context",
+          "whyWrong": "“made of stone” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "built for horses",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“built for horses” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "dangerously full",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “dangerously full.” It adds information the text never establishes."
         },
         {
-          "id": "d",
-          "text": "made of stone",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "a",
+          "text": "not changing much"
         }
       ],
       "correct": [
@@ -98,7 +98,7 @@
           "id": "a",
           "text": "this week",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“this week” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "b",
@@ -108,13 +108,13 @@
           "id": "c",
           "text": "engineers say",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“engineers say” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "d",
           "text": "recent rain",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“recent rain” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -151,26 +151,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "an event without drinks",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "c",
+          "text": "a practice attempt"
         },
         {
           "id": "b",
           "text": "a race in hot weather",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“a race in hot weather” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "c",
-          "text": "a practice attempt"
+          "id": "a",
+          "text": "an event without drinks",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not provide evidence for the claim “an event without drinks.” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "a cancelled meeting",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“a cancelled meeting” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -210,23 +210,23 @@
           "id": "a",
           "text": "organizer",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“organizer” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "b",
-          "text": "first",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "larger"
         },
         {
           "id": "c",
           "text": "planned",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“planned” describes the opposite effect from the one supported by the passage."
         },
         {
-          "id": "d",
-          "text": "larger"
+          "id": "b",
+          "text": "first",
+          "distractorType": "related_but_wrong",
+          "whyWrong": "“first” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "introduce gradually"
+          "id": "d",
+          "text": "charge extra",
+          "distractorType": "wrong_context",
+          "whyWrong": "“charge extra” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "cancel immediately",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“cancel immediately” describes the opposite effect from the one supported by the passage."
         },
         {
           "id": "c",
           "text": "make invisible",
           "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "The passage does not provide evidence for the claim “make invisible.” It adds information the text never establishes."
         },
         {
-          "id": "d",
-          "text": "charge extra",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "a",
+          "text": "introduce gradually"
         }
       ],
       "correct": [
@@ -322,23 +322,23 @@
           "id": "a",
           "text": "new card system",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“new card system” describes the opposite effect from the one supported by the passage."
+        },
+        {
+          "id": "c",
+          "text": "agency",
+          "distractorType": "wrong_context",
+          "whyWrong": "“agency” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "over three months, beginning with two stations"
         },
         {
-          "id": "c",
-          "text": "agency",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
           "text": "citywide",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“citywide” uses a related idea, but the relationship or conclusion does not match the text."
         }
       ],
       "correct": [
@@ -375,26 +375,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "calculate",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "c",
+          "text": "distort"
         },
         {
           "id": "b",
           "text": "publish",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“publish” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
-          "id": "c",
-          "text": "distort"
+          "id": "a",
+          "text": "calculate",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "The passage does not provide evidence for the claim “calculate.” It adds information the text never establishes."
         },
         {
           "id": "d",
           "text": "repeat",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“repeat” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [
@@ -434,23 +434,23 @@
           "id": "a",
           "text": "balance",
           "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“balance” does not fit the way the word, phrase, or technique functions in this specific context."
         },
         {
           "id": "b",
           "text": "confirm",
           "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "whyWrong": "“confirm” uses a related idea, but the relationship or conclusion does not match the text."
+        },
+        {
+          "id": "d",
+          "text": "distort"
         },
         {
           "id": "c",
           "text": "list",
           "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "d",
-          "text": "distort"
+          "whyWrong": "“list” describes the opposite effect from the one supported by the passage."
         }
       ],
       "correct": [

@@ -44,21 +44,21 @@
         },
         {
           "id": "b",
-          "text": "a precise measurement",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "a precise measure of how far the rust traveled across the beams",
+          "distractorType": "unsupported_precision",
+          "whyWrong": "“Crept” gives an impression of movement, not a measurable distance."
         },
         {
           "id": "c",
-          "text": "a sudden explosion",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "a sudden spread that happened after one major failure",
+          "distractorType": "opposite_pacing",
+          "whyWrong": "“Crept” suggests slow gradual change over the stated decades."
         },
         {
           "id": "d",
-          "text": "a positive tone",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "a positive sense that the bridge is adapting naturally as it ages",
+          "distractorType": "wrong_connotation",
+          "whyWrong": "The word makes deterioration feel gradual and encroaching, not positive."
         }
       ],
       "correct": [
@@ -96,25 +96,25 @@
       "options": [
         {
           "id": "a",
-          "text": "the fact rust moved",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "the fact that the rust eventually covered more of the steel",
+          "distractorType": "fact_preserved",
+          "whyWrong": "“Spread” would still preserve the idea that rust extended across the beams; what it loses is the slow, creeping quality."
+        },
+        {
+          "id": "d",
+          "text": "the fact that the change happened over decades",
+          "distractorType": "fact_preserved",
+          "whyWrong": "The sentence still explicitly says “over decades,” even if “crept” is replaced."
+        },
+        {
+          "id": "c",
+          "text": "the information that the beams are made of steel",
+          "distractorType": "fact_preserved",
+          "whyWrong": "Changing the verb would not remove the stated material."
         },
         {
           "id": "b",
           "text": "the slow, stealthy quality"
-        },
-        {
-          "id": "c",
-          "text": "the steel beams",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "d",
-          "text": "the long time period",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -152,25 +152,25 @@
       "options": [
         {
           "id": "a",
-          "text": "To show complaints became dangerous objects.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "To show the update was removed.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "To suggest complaints became physically dangerous after the update.",
+          "distractorType": "literal_misread",
+          "whyWrong": "“Spiked” is figurative and describes the amount changing sharply."
         },
         {
           "id": "c",
           "text": "To emphasize a sudden sharp increase."
         },
         {
+          "id": "b",
+          "text": "To imply the update was quickly removed because users objected.",
+          "distractorType": "unsupported_result",
+          "whyWrong": "The sentence reports complaint volume, not what happened to the update afterward."
+        },
+        {
           "id": "d",
-          "text": "To make the report cheerful.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "To make the report sound pleased about the increase.",
+          "distractorType": "wrong_tone",
+          "whyWrong": "A spike in complaints is presented as a sharp change, not a positive outcome."
         }
       ],
       "correct": [
@@ -207,26 +207,26 @@
       "time": 75,
       "options": [
         {
-          "id": "a",
-          "text": "exploded",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "id": "d",
+          "text": "rose"
         },
         {
           "id": "b",
           "text": "shot up",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "distractorType": "similar_or_stronger",
+          "whyWrong": "“Shot up” keeps a strong sudden increase rather than softening it."
         },
         {
           "id": "c",
           "text": "surged",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "distractorType": "similar_intensity",
+          "whyWrong": "“Surged” still strongly emphasizes a rapid increase; “rose” is the more neutral reduction in intensity."
         },
         {
-          "id": "d",
-          "text": "rose"
+          "id": "a",
+          "text": "exploded",
+          "distractorType": "more_intense",
+          "whyWrong": "“Exploded” is more dramatic than “spiked,” not less intense."
         }
       ],
       "correct": [
@@ -263,26 +263,26 @@
       "time": 75,
       "options": [
         {
+          "id": "c",
+          "text": "that hikers have difficulty moving because the trail is too narrow",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The sentence describes the trail’s relationship to the hillside, not hikers being unable to move."
+        },
+        {
+          "id": "b",
+          "text": "that the trail is physically attached to the hill by an adhesive material",
+          "distractorType": "literal_misread",
+          "whyWrong": "“Clings” is figurative and describes how closely the route follows the slope."
+        },
+        {
           "id": "a",
           "text": "how closely the trail follows a steep slope"
         },
         {
-          "id": "b",
-          "text": "that the trail is made of glue",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "c",
-          "text": "that hikers cannot move",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
           "id": "d",
-          "text": "that the hill is flat",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "that the hillside becomes less steep during the final kilometer",
+          "distractorType": "opposite_inference",
+          "whyWrong": "“Clings” suggests a close relationship to a steep slope rather than flattening terrain."
         }
       ],
       "correct": [
@@ -320,25 +320,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It would make the trail longer.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "It would imply that the trail becomes physically longer.",
+          "distractorType": "unsupported_effect",
+          "whyWrong": "Changing the verb affects vividness, not length."
+        },
+        {
+          "id": "d",
+          "text": "It would suggest the trail has been closed to hikers.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "Neither verb implies closure."
+        },
+        {
+          "id": "c",
+          "text": "It would make the hillside sound steeper than “clings” does.",
+          "distractorType": "reversed_effect",
+          "whyWrong": "“Follows” is the more neutral verb and removes some of the vivid steep-slope impression."
         },
         {
           "id": "b",
           "text": "It would be more neutral and less vivid."
-        },
-        {
-          "id": "c",
-          "text": "It would make the hill steeper.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "d",
-          "text": "It would show the trail is closed.",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
         }
       ],
       "correct": [
@@ -376,25 +376,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It means look casually.",
-          "distractorType": "unsupported_claim",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "b",
-          "text": "It means delete the address.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "It suggests taking a quick look is enough even if the address may be wrong.",
+          "distractorType": "opposite_precision",
+          "whyWrong": "“Verify” requires confirming accuracy rather than a casual glance."
         },
         {
           "id": "c",
           "text": "It emphasizes confirming accuracy."
         },
         {
+          "id": "b",
+          "text": "It means staff should remove the address before sending the records.",
+          "distractorType": "wrong_action",
+          "whyWrong": "Verification checks correctness; it does not mean deletion."
+        },
+        {
           "id": "d",
-          "text": "It means ask a customer to move.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "It requires asking the customer to change addresses before any records can be sent.",
+          "distractorType": "unsupported_requirement",
+          "whyWrong": "The policy says confirm the existing address, not require a move or change."
         }
       ],
       "correct": [
@@ -432,25 +432,25 @@
       "options": [
         {
           "id": "a",
-          "text": "It makes the policy optional.",
-          "distractorType": "wrong_context",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "It makes the policy sound optional because staff can decide how carefully to check.",
+          "distractorType": "reversed_effect",
+          "whyWrong": "More precise wording makes the required action clearer, not more optional."
         },
         {
           "id": "b",
-          "text": "It changes the records.",
-          "distractorType": "related_but_wrong",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
-        },
-        {
-          "id": "c",
-          "text": "It adds emotion.",
-          "distractorType": "opposite_effect",
-          "whyWrong": "This choice does not best match the wording and evidence in this specific text."
+          "text": "It changes which confidential records the policy applies to.",
+          "distractorType": "scope_error",
+          "whyWrong": "The verb clarifies the action on the address; it does not change the records covered."
         },
         {
           "id": "d",
           "text": "It makes the required action clearer."
+        },
+        {
+          "id": "c",
+          "text": "It makes the sentence more emotional by suggesting distrust of customers.",
+          "distractorType": "unsupported_tone",
+          "whyWrong": "“Verify” is procedural and precise, not emotionally accusatory."
         }
       ],
       "correct": [
