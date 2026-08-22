@@ -27,7 +27,7 @@
 <a href="index.html">Home</a>
 <a href="practice.html">Practice</a>
 <a href="train.html">Train</a>
-<a href="quiz.html">Quiz</a>
+<a href="quiz.html">Mock</a>
 <a href="progress.html">Progress</a>
 <a href="resources.html">Resources</a>
 </nav>
@@ -38,14 +38,18 @@
 <div id="subject-bar-mount"></div>
 <main>
 <div class="wrap">
+<header class="resource-library-hero">
+<div class="resource-hero-copy">
 <div class="eyebrow" style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--color-primary-dark); margin-bottom:8px;">RLA library</div>
 <h1>Resources</h1>
 <p class="lede">Find study guides and workbooks by the RLA topic you are learning.</p>
-<section class="resource-library-tools" aria-label="Find resources">
-<label class="library-search-field" for="resource-search">
+</div>
+<label class="library-search-field resource-hero-search" for="resource-search">
 <span class="sr-only">Search resources</span>
 <input id="resource-search" type="search" autocomplete="off" placeholder="Search main idea, evidence, punctuation, thesis..."/>
 </label>
+</header>
+<section class="resource-library-tools" aria-label="Filter resources">
 <div class="resource-track-filter" id="resource-track-filter" aria-label="Filter resources by track"></div>
 </section>
 <div class="library-results-summary" id="resource-results-summary" aria-live="polite"></div>

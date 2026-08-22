@@ -58,8 +58,15 @@ const Store = {
     this._write(this._key(quizId, "highlights"), highlights);
   },
 
+  getPassageHighlights(quizId) {
+    return this._read(this._key(quizId, "passage-highlights"), "");
+  },
+  setPassageHighlights(quizId, htmlWithMarks) {
+    this._write(this._key(quizId, "passage-highlights"), htmlWithMarks || "");
+  },
+
   resetQuiz(quizId) {
-    ["answers", "deleted", "notes", "highlights"].forEach((suffix) =>
+    ["answers", "deleted", "notes", "highlights", "passage-highlights"].forEach((suffix) =>
       (window.StudoSafeStorage ? window.StudoSafeStorage.remove(this._key(quizId, suffix)) : localStorage.removeItem(this._key(quizId, suffix)))
     );
   },

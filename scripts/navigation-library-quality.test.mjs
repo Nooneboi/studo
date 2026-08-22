@@ -144,3 +144,71 @@ test('search normalization treats underscore and hyphen topic labels as normal w
   const er = practiceItems.find((item) => item.trackId === 'extended-response');
   assert.ok(er.searchText.includes('extended response'));
 });
+
+test('learner navigation consistently labels quiz.html as Mock', () => {
+  const learnerPages = ['index.html','practice.html','passages.html','resources.html','progress.html','curriculum.html','domain.html','category.html','skill.html','about.html','methodology.html','privacy.html','404.html'];
+  for (const file of learnerPages) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.match(html, /<a href="quiz\.html"[^>]*>Mock<\/a>/, `${file} should label the learner-facing mock route as Mock`);
+    assert.doesNotMatch(html, /<a href="quiz\.html"[^>]*>Quiz<\/a>/, `${file} should not expose the old Quiz label`);
+  }
+});
+
+test('Resource and Passage Practice heroes place search in a right-side discovery column on desktop', () => {
+  const resourcesHtml = fs.readFileSync(path.join(root, 'resources.html'), 'utf8');
+  const passagesHtml = fs.readFileSync(path.join(root, 'passages.html'), 'utf8');
+  const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
+  assert.match(resourcesHtml, /class="resource-library-hero"/);
+  assert.match(resourcesHtml, /class="[^"]*resource-hero-search[^"]*"/);
+  assert.match(passagesHtml, /class="passage-library-hero"/);
+  assert.match(passagesHtml, /class="[^"]*passage-hero-search[^"]*"/);
+  assert.match(css, /\.resource-library-hero\s*\{[^}]*grid-template-columns:/s);
+  assert.match(css, /\.passage-library-hero\s*\{[^}]*grid-template-columns:/s);
+  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*\.resource-library-hero[^}]*grid-template-columns:\s*1fr/s);
+  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*\.passage-library-hero[^}]*grid-template-columns:\s*1fr/s);
+});
+
+test('Passage Practice uses roomier desktop columns while preserving responsive 4-2-1 layout', () => {
+  const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
+  assert.match(css, /\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(4,[^}]*gap:\s*\d+px\s+4[0-9]px/s);
+  assert.match(css, /@media\s*\(max-width:\s*980px\)[\s\S]*\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(2,/s);
+  assert.match(css, /@media\s*\(max-width:\s*680px\)[\s\S]*\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*1fr/s);
+});
+
+test('practice Tools menu keeps useful study actions and removes scratch drawing controls', () => {
+  const html = fs.readFileSync(path.join(root, 'module.html'), 'utf8');
+  const moduleJs = fs.readFileSync(path.join(root, 'js/module.js'), 'utf8');
+  const toolsJs = fs.readFileSync(path.join(root, 'js/focus-tools.js'), 'utf8');
+  assert.match(html, /id="notes-toggle"/);
+  assert.match(html, /id="highlight-toggle"/);
+  assert.match(html, />Highlight text</);
+  assert.match(html, />Reset this practice</);
+  assert.match(html, />Print module</);
+  assert.match(html, />Copy passage \+ question</);
+  assert.match(html, />Share link</);
+  assert.match(html, /id="focus-tool-status"[^>]*aria-live="polite"/);
+  assert.doesNotMatch(html, /data-annotate-mode=/);
+  assert.doesNotMatch(html, /annotate-clear-btn/);
+  assert.doesNotMatch(html, /Mark mastered/);
+  assert.doesNotMatch(html, /js\/annotate\.js/);
+  assert.equal(fs.existsSync(path.join(root, 'js/annotate.js')), false, 'retired scratch-drawing code should not ship in Alpha');
+  assert.doesNotMatch(moduleJs, /setDeleted\(/);
+  assert.match(moduleJs, /Highlight saved on this device/);
+  assert.match(moduleJs, /Store\.setNote\(/);
+  assert.match(moduleJs, /Store\.resetQuiz\(/);
+  assert.match(moduleJs, /Store\.setPassageHighlights/);
+  assert.match(moduleJs, /sanitizeHighlightMarkup/);
+  assert.match(toolsJs, /sq:textScale/);
+  assert.match(toolsJs, /window\.print\(/);
+  assert.match(toolsJs, /keydown/);
+  assert.match(toolsJs, /Escape/);
+  assert.match(toolsJs, /navigator\.share/);
+  assert.match(toolsJs, /navigator\.clipboard\.writeText/);
+});
+
+test('Mock landing keeps the same primary learner navigation as the rest of Studo', () => {
+  const html = fs.readFileSync(path.join(root, 'quiz.html'), 'utf8');
+  for (const [href, label] of [['index.html','Home'],['practice.html','Practice'],['train.html','Train'],['quiz.html','Mock'],['progress.html','Progress'],['resources.html','Resources']]) {
+    assert.match(html, new RegExp(`<a href="${href.replace('.', '\\.') }"[^>]*>${label}<\\/a>`), `quiz.html should include ${label}`);
+  }
+});

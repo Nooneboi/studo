@@ -11,6 +11,7 @@ const viewEl = document.getElementById("module-view");
 let currentQuiz = null;
 let currentIndex = 0;
 let notesOpen = false;
+let highlightMode = false;
 let currentModuleFile = null;
 let questionOpenedAt = Date.now();
 const confidenceSelections = {};
@@ -59,10 +60,7 @@ async function init() {
 }
 
 function activeQuestions() {
-  const mastered = new Set(Store.getDeleted(currentQuiz.id));
-  return currentQuiz.questions
-    .map((question, originalIndex) => ({ question, originalIndex }))
-    .filter(({ question }) => !mastered.has(question.id));
+  return currentQuiz.questions.map((question, originalIndex) => ({ question, originalIndex }));
 }
 
 function firstAvailableIndex() {
@@ -95,13 +93,35 @@ function renderShell() {
     });
   }
 
+  const highlightBtn = document.getElementById("highlight-toggle");
+  if (highlightBtn) {
+    highlightBtn.addEventListener("click", () => {
+      highlightMode = !highlightMode;
+      highlightBtn.setAttribute("aria-pressed", String(highlightMode));
+      highlightBtn.classList.toggle("active", highlightMode);
+      setToolStatus(highlightMode ? "Select text in the passage or question." : "Highlighting off.");
+      closeToolsMenu();
+    });
+  }
+
+  const passageEl = viewEl.querySelector(".passage-text");
+  if (passageEl) {
+    passageEl.addEventListener("mouseup", () => handleHighlight(passageEl, "__passage__", true));
+    passageEl.addEventListener("click", (event) => removeHighlightOnClick(event, passageEl, "__passage__", true));
+  }
+
   const resetBtn = document.getElementById("reset-btn");
   if (resetBtn) {
     resetBtn.addEventListener("click", () => {
-      if (confirm("Clear answers, notes, highlights, and mastered questions for this practice?")) {
+      if (confirm("Clear answers, notes, and highlights for this practice?")) {
         Store.resetQuiz(currentQuiz.id);
         currentIndex = 0;
         notesOpen = false;
+        highlightMode = false;
+        if (highlightBtn) {
+          highlightBtn.setAttribute("aria-pressed", "false");
+          highlightBtn.classList.remove("active");
+        }
         if (notesBtn) {
           notesBtn.setAttribute("aria-pressed", "false");
           notesBtn.classList.remove("active");
@@ -112,18 +132,6 @@ function renderShell() {
     });
   }
 
-  const masterBtn = document.getElementById("master-current");
-  if (masterBtn) {
-    masterBtn.addEventListener("click", () => {
-      const current = activeQuestions()[currentIndex];
-      if (!current) return;
-      Store.setDeleted(currentQuiz.id, current.question.id, true);
-      const nextItems = activeQuestions();
-      if (currentIndex >= nextItems.length) currentIndex = Math.max(0, nextItems.length - 1);
-      renderCurrentQuestion();
-      closeToolsMenu();
-    });
-  }
 }
 
 function closeToolsMenu() {
@@ -133,6 +141,9 @@ function closeToolsMenu() {
 
 function passagePanelHtml() {
   const meta = currentQuiz.description || [currentQuiz.topic, `${activeQuestions().length} questions`].filter(Boolean).join(" · ");
+  const basePassageMarkup = renderPassageParagraphs(currentQuiz.passage);
+  const savedPassage = Store.getPassageHighlights ? Store.getPassageHighlights(currentQuiz.id) : "";
+  const passageMarkup = savedPassage ? sanitizeHighlightMarkup(savedPassage, basePassageMarkup) : basePassageMarkup;
   return `
     <aside class="reading-column" aria-label="Reading passage">
       <header class="passage-heading">
@@ -141,7 +152,7 @@ function passagePanelHtml() {
       </header>
       <section class="reading-panel reading-panel-clean">
         <div class="reading-scroll">
-          <div class="passage-text passage-numbered">${renderPassageParagraphs(currentQuiz.passage)}</div>
+          <div class="passage-text passage-numbered">${passageMarkup}</div>
         </div>
         ${currentQuiz.source ? `<div class="source-credit">${currentQuiz.sourceUrl ? `<a href="${escapeAttr(safeHref(currentQuiz.sourceUrl))}" target="_blank" rel="noopener">${escapeHtml(currentQuiz.source)}</a>` : escapeHtml(currentQuiz.source)}</div>` : ""}
       </section>
@@ -169,8 +180,8 @@ function renderCurrentQuestion(options = {}) {
     stage.innerHTML = `
       <div class="module-complete">
         <div class="question-number">Module complete</div>
-        <h2>Everything is marked mastered.</h2>
-        <p>You can reset the module if you want to run through the questions again.</p>
+        <h2>No questions are available.</h2>
+        <p>Reset this practice if you want to clear saved work on this device.</p>
         <button class="btn" id="complete-reset">Practice again</button>
       </div>`;
     footer.innerHTML = "";
@@ -190,9 +201,8 @@ function renderCurrentQuestion(options = {}) {
   const notes = Store.getNotes(currentQuiz.id);
   const highlights = Store.getHighlights(currentQuiz.id);
   const savedAnswer = answers[q.id];
-  const promptHtml = q.type === "grammar_edit"
-    ? renderGrammarPrompt(q, highlights[q.id])
-    : (highlights[q.id] || escapeHtml(q.prompt));
+  const basePromptHtml = q.type === "grammar_edit" ? renderGrammarPrompt(q, null) : escapeHtml(q.prompt);
+  const promptHtml = highlights[q.id] ? sanitizeHighlightMarkup(highlights[q.id], basePromptHtml) : basePromptHtml;
 
   stage.innerHTML = `
     <div class="question-topline question-topline-clean">
@@ -216,11 +226,13 @@ function renderCurrentQuestion(options = {}) {
     <div class="notes-panel ${notesOpen ? "visible" : ""}" data-role="notes">
       <label class="question-detail" for="question-note">Private note for this question</label>
       <textarea id="question-note" placeholder="Write a note to yourself…">${escapeHtml(notes[q.id] || "")}</textarea>
+      <small class="notes-save-status">Saved automatically on this device.</small>
     </div>
   `;
 
   const promptEl = stage.querySelector('[data-role="prompt"]');
-  promptEl.addEventListener("mouseup", () => handleHighlight(promptEl, q.id));
+  promptEl.addEventListener("mouseup", () => handleHighlight(promptEl, q.id, false));
+  promptEl.addEventListener("click", (event) => removeHighlightOnClick(event, promptEl, q.id, false));
 
   stage.querySelector('[data-role="notes"] textarea').addEventListener("input", (e) => {
     Store.setNote(currentQuiz.id, q.id, e.target.value);
@@ -407,20 +419,68 @@ function defaultRuleForQuestion(q) {
   return '';
 }
 
-function handleHighlight(promptEl, questionId) {
+function sanitizeHighlightMarkup(savedHtml, fallbackHtml) {
+  const saved = document.createElement("template");
+  const fallback = document.createElement("template");
+  saved.innerHTML = String(savedHtml || "");
+  fallback.innerHTML = String(fallbackHtml || "");
+  if (saved.content.textContent !== fallback.content.textContent) return fallbackHtml;
+
+  const allowed = new Set(["P", "SPAN", "MARK", "BR"]);
+  const classAllowlist = new Set(["passage-paragraph", "passage-paragraph-number", "grammar-blank", "hl"]);
+  [...saved.content.querySelectorAll("*")].forEach((el) => {
+    if (!allowed.has(el.tagName)) {
+      el.replaceWith(document.createTextNode(el.textContent || ""));
+      return;
+    }
+    const safeClasses = [...el.classList].filter((name) => classAllowlist.has(name));
+    [...el.attributes].forEach((attr) => el.removeAttribute(attr.name));
+    if (safeClasses.length) el.className = safeClasses.join(" ");
+    if (el.tagName === "MARK" && !safeClasses.includes("hl")) el.className = "hl";
+  });
+  return saved.innerHTML;
+}
+
+function handleHighlight(container, questionId, isPassage = false) {
+  if (!highlightMode) return;
   const selection = window.getSelection();
-  if (!selection || selection.isCollapsed || !promptEl.contains(selection.anchorNode)) return;
+  if (!selection || selection.isCollapsed || !container.contains(selection.anchorNode) || !container.contains(selection.focusNode)) return;
   const range = selection.getRangeAt(0);
+  if (range.commonAncestorContainer.parentElement?.closest("mark.hl")) return;
   const mark = document.createElement("mark");
   mark.className = "hl";
   try {
     range.surroundContents(mark);
   } catch (e) {
+    setToolStatus("Select text within one paragraph to highlight it.");
     return;
   }
   selection.removeAllRanges();
-  Store.setHighlights(currentQuiz.id, questionId, promptEl.innerHTML);
+  saveHighlightMarkup(container, questionId, isPassage);
   setStatus("Highlight saved on this device.");
+  setToolStatus("Highlight saved. Click a highlight to remove it.");
+}
+
+function removeHighlightOnClick(event, container, questionId, isPassage = false) {
+  if (!highlightMode) return;
+  const mark = event.target.closest?.("mark.hl");
+  if (!mark || !container.contains(mark)) return;
+  const parent = mark.parentNode;
+  while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+  parent.removeChild(mark);
+  parent.normalize();
+  saveHighlightMarkup(container, questionId, isPassage);
+  setToolStatus("Highlight removed.");
+}
+
+function saveHighlightMarkup(container, questionId, isPassage) {
+  if (isPassage && Store.setPassageHighlights) Store.setPassageHighlights(currentQuiz.id, container.innerHTML);
+  else Store.setHighlights(currentQuiz.id, questionId, container.innerHTML);
+}
+
+function setToolStatus(message) {
+  const el = document.getElementById("focus-tool-status");
+  if (el) el.textContent = message || "";
 }
 
 function renderAnswerArea(q, container, savedAnswer) {
