@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-23T05:56:46.592Z",
+  "builtAt": "2026-08-23T16:34:11.431Z",
   "tracks": [
     {
       "id": "reading",
@@ -37,7 +37,7 @@
           "units": [],
           "availableSkillCount": 5,
           "availableUnitCount": 0,
-          "availableSetCount": 5,
+          "availableSetCount": 6,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -96,7 +96,7 @@
             }
           ],
           "studyFileCount": 17,
-          "checkCount": 5,
+          "checkCount": 6,
           "skills": [
             {
               "id": "R1.1",
@@ -288,11 +288,11 @@
               "priority": "P0",
               "practiceMode": "Reading",
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 1,
+              "checkCount": 2,
               "sets": [
                 {
                   "id": "set-rla-main-idea-practice-01",
@@ -315,6 +315,42 @@
                     "title": "Main Idea Practice 1",
                     "textType": "informational_and_literary",
                     "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ]
+                },
+                {
+                  "id": "set-rla-mainidea-active-methods-v1",
+                  "title": "Main Idea - Active Learning Path",
+                  "description": "Guided Main Idea practice that moves from sorting key information to GED-style whole-passage reasoning.",
+                  "file": "generated/modules/set-rla-mainidea-active-methods-v1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
+                    "topicLabel": "Main idea / central idea"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-mainidea-active-shade-route",
+                    "title": "A Shadier Route to Transit",
+                    "textType": "informational",
+                    "context": "community_civics",
                     "sourceType": "original",
                     "attribution": "Original content by Chee Skool",
                     "author": "Chee Skool",
@@ -350,6 +386,42 @@
                     "title": "Main Idea Practice 1",
                     "textType": "informational_and_literary",
                     "context": "skill_practice",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ]
+                },
+                {
+                  "id": "set-rla-mainidea-active-methods-v1",
+                  "title": "Main Idea - Active Learning Path",
+                  "description": "Guided Main Idea practice that moves from sorting key information to GED-style whole-passage reasoning.",
+                  "file": "generated/modules/set-rla-mainidea-active-methods-v1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
+                    "topicLabel": "Main idea / central idea"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-mainidea-active-shade-route",
+                    "title": "A Shadier Route to Transit",
+                    "textType": "informational",
+                    "context": "community_civics",
                     "sourceType": "original",
                     "attribution": "Original content by Chee Skool",
                     "author": "Chee Skool",
@@ -5476,11 +5548,11 @@
       ],
       "availableSkillCount": 22,
       "totalSkillCount": 22,
-      "availableSetCount": 33,
-      "questionCount": 264,
+      "availableSetCount": 34,
+      "questionCount": 270,
       "resourceCount": 85,
       "studyFileCount": 85,
-      "checkCount": 33
+      "checkCount": 34
     },
     {
       "id": "arguments",

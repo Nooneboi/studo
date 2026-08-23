@@ -68,7 +68,7 @@ test('learner-only public build excludes internal authoring surfaces', async () 
   const result = spawnSync(process.execPath, [buildScript, '--out', out], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(result.status, 0, result.stderr || result.stdout || 'public build failed');
 
-  for (const required of ['index.html', 'practice.html', 'resources.html', 'passages.html', 'quiz.html', 'progress.html', 'module.html', 'extended-response.html', 'css/site.css', 'js/app.js', 'data/generated/curriculum.json', 'assets/chee-skool-logo.png', 'sw.js', '.nojekyll']) {
+  for (const required of ['index.html', 'practice.html', 'resources.html', 'passages.html', 'quiz.html', 'test.html', 'progress.html', 'module.html', 'extended-response.html', 'css/site.css', 'js/app.js', 'js/question-interactions.js', 'data/generated/curriculum.json', 'assets/chee-skool-logo.png', 'sw.js', '.nojekyll']) {
     assert.ok(fs.existsSync(path.join(out, required)), `public build is missing ${required}`);
   }
   for (const forbidden of ['builder.html', 'content-studio.html', 'resource-studio.html', 'content-src', 'authoring', 'scripts', 'docs', 'package.json']) {

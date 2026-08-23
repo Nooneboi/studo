@@ -68,6 +68,7 @@ function compileQuestion(q, skill, passage) {
     ...(o.whyWrong ? { whyWrong: o.whyWrong } : {}),
   }));
   if (q.correct !== undefined) out.correct = q.correct;
+  if (q.interaction) out.interaction = JSON.parse(JSON.stringify(q.interaction));
   const evidence = resolvedEvidence(passage, q.explanation?.evidenceRef);
   if (evidence) out.evidenceExcerpt = evidence;
   return out;

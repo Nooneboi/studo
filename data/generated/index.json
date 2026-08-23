@@ -1451,6 +1451,22 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-mainidea-active-methods-v1.json",
+    "title": "Main Idea - Active Learning Path",
+    "description": "Guided Main Idea practice that moves from sorting key information to GED-style whole-passage reasoning.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
+      "topicLabel": "Main idea / central idea"
+    }
+  },
+  {
     "file": "generated/modules/set-rla-reading-transfer-civic-comment.json",
     "title": "A Wider Door for Public Comment",
     "description": "Social studies / civics · 7 questions",

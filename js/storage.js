@@ -29,6 +29,21 @@ const Store = {
     this._write(this._key(quizId, "answers"), answers);
   },
 
+  getInteractionDrafts(quizId) {
+    return this._read(this._key(quizId, "interaction-drafts"), {});
+  },
+  setInteractionDraft(quizId, questionId, value) {
+    const drafts = this.getInteractionDrafts(quizId);
+    if (value == null || value === "") delete drafts[questionId];
+    else drafts[questionId] = String(value);
+    this._write(this._key(quizId, "interaction-drafts"), drafts);
+  },
+  clearInteractionDraft(quizId, questionId) {
+    const drafts = this.getInteractionDrafts(quizId);
+    delete drafts[questionId];
+    this._write(this._key(quizId, "interaction-drafts"), drafts);
+  },
+
   getDeleted(quizId) {
     return this._read(this._key(quizId, "deleted"), []);
   },
@@ -66,7 +81,7 @@ const Store = {
   },
 
   resetQuiz(quizId) {
-    ["answers", "deleted", "notes", "highlights", "passage-highlights"].forEach((suffix) =>
+    ["answers", "deleted", "notes", "highlights", "passage-highlights", "interaction-drafts"].forEach((suffix) =>
       (window.StudoSafeStorage ? window.StudoSafeStorage.remove(this._key(quizId, suffix)) : localStorage.removeItem(this._key(quizId, suffix)))
     );
   },

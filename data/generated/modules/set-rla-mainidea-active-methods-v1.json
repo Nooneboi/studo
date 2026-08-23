@@ -1,0 +1,376 @@
+{
+  "id": "set-rla-mainidea-active-methods-v1",
+  "title": "Main Idea - Active Learning Path",
+  "description": "Guided Main Idea practice that moves from sorting key information to GED-style whole-passage reasoning.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "During two unusually hot summers, residents in East Mercer repeatedly complained about the half-mile walk between the neighborhood library and the nearest rapid-transit station. The route included two bus stops, several blocks of narrow sidewalk, and one broad intersection with almost no shade. Some residents urged the city to plant trees along the entire route. Others wanted shelters at every stop. Before choosing a project, transportation staff decided to study where heat exposure and pedestrian use actually overlapped.\n\nFor four weeks, staff mapped shade at different times of day, counted pedestrians, and measured both surface and air temperatures. The broad intersection recorded the highest pavement temperatures, but relatively few people waited there. By contrast, a westbound bus stop was used by many riders during the hottest part of the afternoon. Its bench and surrounding pavement stayed in direct sun for hours. The study suggested that the places with the highest temperatures were not always the places where an improvement would help the most people.\n\nThe city then tested three small changes. Workers installed a temporary canopy at the busy westbound stop, planted six young trees along an exposed residential block, and applied a lighter reflective coating to a short section of sidewalk near the intersection. Staff repeated the temperature measurements and also watched where people chose to stand or sit. At the canopied stop, surface temperatures fell sharply beneath the shade, and more riders waited near the bench instead of crowding beside a nearby building. The young trees produced little immediate shade, although planners expected their effect to grow over several years. The reflective coating reduced surface heating, but residents reported uncomfortable glare during bright afternoons.\n\nA public works supervisor added that maintenance demands differed as well. Fabric canopies required inspections after storms, trees needed watering and pruning, and reflective coatings would need periodic renewal. Because the city had a limited maintenance crew, staff treated upkeep as part of whether a treatment truly fit a location.\n\nAn accessibility advisory group asked the city to consider more than temperature. A large shelter could create shade but also reduce clear sidewalk width if placed poorly. Tree roots could eventually damage pavement without enough planting space. The group recommended keeping wheelchair access, seating, drainage, maintenance, and nighttime visibility in the decision. Staff agreed that a successful project had to make the route easier to use, not simply produce the lowest thermometer reading.\n\nThe final proposal therefore did not repeat one treatment along the whole route. It recommended permanent shade at the two busiest waiting areas, additional trees only where there was enough soil and maintenance capacity, and limited use of reflective surfaces where glare could be controlled. The city also planned to repeat pedestrian counts and temperature checks after installation. Officials said the pilot had changed the question from “Which cooling method works best?” to “Which improvement fits each place and the people who use it?”",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Sort each statement by whether it helps explain the passage's main point or is mainly a supporting context detail.",
+      "points": 1,
+      "explanation": "The study's purpose and the different results explain the passage as a whole. Route length and the exact number of trees are useful details, but the main point does not depend on them.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "For main idea, keep details that explain the whole passage and set aside facts that could disappear without changing the big point.",
+      "familyId": "mainidea.whole.explicit",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 1,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "correct": "i1=central|i2=context|i3=central|i4=context",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The city studied both heat conditions and where pedestrians actually spent time."
+          },
+          {
+            "id": "i2",
+            "text": "The route was about half a mile long."
+          },
+          {
+            "id": "i3",
+            "text": "Different pilot treatments had different benefits and limitations."
+          },
+          {
+            "id": "i4",
+            "text": "Six young trees were planted during the pilot."
+          }
+        ],
+        "zones": [
+          {
+            "id": "central",
+            "label": "Helps explain the main point"
+          },
+          {
+            "id": "context",
+            "label": "Mostly a supporting detail"
+          }
+        ]
+      }
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Select the sentence that most directly explains what the first round of measurements taught the city about choosing improvements.",
+      "points": 1,
+      "explanation": "This sentence turns the measurements into a planning lesson: temperature alone did not identify where an improvement would be most useful.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "When a question asks what evidence taught the author or decision-maker, choose the sentence that states the conclusion, not just the data-collection step.",
+      "familyId": "mainidea.whole.explicit",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 55,
+      "correct": "s2",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "For four weeks, staff mapped shade at different times of day, counted pedestrians, and measured both surface and air temperatures."
+          },
+          {
+            "id": "s2",
+            "text": "The study suggested that the places with the highest temperatures were not always the places where an improvement would help the most people."
+          },
+          {
+            "id": "s3",
+            "text": "The young trees produced little immediate shade, although planners expected their effect to grow over several years."
+          },
+          {
+            "id": "s4",
+            "text": "The city also planned to repeat pedestrian counts and temperature checks after installation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea developed through the city's study and pilot?",
+      "points": 1,
+      "explanation": "The passage moves from measurement, to three different pilot results, to a location-specific plan. Choice C preserves that full progression without claiming that one method works everywhere.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "A central idea should cover the passage's major stages, not just one result or recommendation.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city should replace most exposed sidewalks with reflective surfaces.",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "Reflective coating was only one pilot treatment and created a glare problem; the final plan limits its use."
+        },
+        {
+          "id": "b",
+          "text": "A city's hottest locations should always receive improvements before bus stops and sidewalks.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage specifically shows that the hottest place was not necessarily where an improvement would help the most people."
+        },
+        {
+          "id": "c",
+          "text": "Studying both physical conditions and pedestrian use helped the city choose different heat-reduction strategies for different parts of the route."
+        },
+        {
+          "id": "d",
+          "text": "Young trees are ineffective for pedestrian comfort because they do not provide immediate shade.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This focuses on one short-term result and ignores the study, other treatments, site constraints, and final plan."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "drag_sort",
+      "prompt": "Sort these possible central-idea statements by the kind of problem each one has.",
+      "points": 1,
+      "explanation": "Only m3 captures the passage's repeated focus on matching improvements to use, site conditions, and limitations. The other choices either shrink the passage to one treatment or make a universal claim the text never supports.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "Test a main idea for scope: does it cover most of the passage without becoming broader than the evidence?",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "correct": "m1=narrow|m2=broad|m3=fit|m4=narrow",
+      "interaction": {
+        "items": [
+          {
+            "id": "m1",
+            "text": "The temporary canopy made riders more likely to wait near the bus-stop bench."
+          },
+          {
+            "id": "m2",
+            "text": "Every city should combine canopies, trees, and reflective pavement on all hot walking routes."
+          },
+          {
+            "id": "m3",
+            "text": "The pilot showed that route improvements work best when they are matched to local conditions, how people use each place, and practical constraints."
+          },
+          {
+            "id": "m4",
+            "text": "The reflective coating reduced surface heating but caused uncomfortable glare."
+          }
+        ],
+        "zones": [
+          {
+            "id": "narrow",
+            "label": "Too narrow / just a detail"
+          },
+          {
+            "id": "broad",
+            "label": "Too broad or unsupported"
+          },
+          {
+            "id": "fit",
+            "label": "Fits the whole passage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "q5",
+      "type": "select_text",
+      "prompt": "Select the sentence that best supports the idea that a successful plan had to balance heat reduction with how usable the route remained.",
+      "points": 1,
+      "explanation": "Several choices show individual benefits or tradeoffs, but this sentence directly states the broader principle linking temperature reduction with accessibility and practical use.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "On hard evidence questions, several sentences may be relevant. Choose the one that supports every important part of the idea in the question.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "correct": "h4",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "h1",
+            "text": "At the canopied stop, surface temperatures fell sharply beneath the shade, and more riders waited near the bench instead of crowding beside a nearby building."
+          },
+          {
+            "id": "h2",
+            "text": "The reflective coating reduced surface heating, but residents reported uncomfortable glare during bright afternoons."
+          },
+          {
+            "id": "h3",
+            "text": "A large shelter could create shade but also reduce clear sidewalk width if placed poorly."
+          },
+          {
+            "id": "h4",
+            "text": "Staff agreed that a successful project had to make the route easier to use, not simply produce the lowest thermometer reading."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the passage's central idea while preserving the author's qualifications?",
+      "points": 1,
+      "explanation": "Choice B integrates the study, pilot, human use, accessibility concerns, and final location-specific proposal. It is broad enough for the whole passage but still keeps the limits the author emphasizes.",
+      "skill": {
+        "id": "R1.2",
+        "label": "Main idea / central idea"
+      },
+      "rule": "For a qualified main idea, prefer the choice that keeps both the main conclusion and the conditions or limits attached to it.",
+      "familyId": "mainidea.whole.implied",
+      "metadata": {
+        "skillId": "R1.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because shade produced the clearest immediate benefit, the city concluded that permanent canopies should replace the other heat-reduction methods.",
+          "distractorType": "overstates_evidence",
+          "whyWrong": "The final proposal combines several strategies and considers constraints; it does not replace every other method with canopies."
+        },
+        {
+          "id": "b",
+          "text": "Measurements and pilot results led the city to favor a targeted mix of improvements based on heat, pedestrian use, accessibility, and site limitations rather than one universal treatment."
+        },
+        {
+          "id": "c",
+          "text": "The city learned that pedestrian counts are more reliable than temperature measurements when deciding how to improve a hot walking route.",
+          "distractorType": "false_comparison",
+          "whyWrong": "The city uses both kinds of information; the passage never says pedestrian counts are more reliable than temperature measurements."
+        },
+        {
+          "id": "d",
+          "text": "The main purpose of the pilot was to prove that the broad intersection did not need any heat-reduction work.",
+          "distractorType": "too_narrow",
+          "whyWrong": "The intersection is only one location, and the study's purpose was broader than deciding whether that single place needed work."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mainidea-active-methods-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
+      "topicLabel": "Main idea / central idea"
+    },
+    "passage": {
+      "id": "p-rla-mainidea-active-shade-route",
+      "title": "A Shadier Route to Transit",
+      "textType": "informational",
+      "context": "community_civics",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-23T16:34:11.367Z"
+  }
+}

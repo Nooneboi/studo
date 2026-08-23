@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-23  
-**Current release:** `0.7.0-alpha.5`  
-**Current stage:** Alpha candidate / release-hardening complete; real-browser and learner-pilot gate remains
+**Current release:** `0.7.0-alpha.6`  
+**Current stage:** Interaction Engines V1 candidate; real-browser/device QA remains before new interactions enter randomized Mock forms
 
 This is the current high-level source of truth for the Chee Skool RLA alpha candidate. Older Studo phase reports remain project history and should not override this status.
 
@@ -73,6 +73,21 @@ W1.8 Organization, W1.9 Development, W1.10 Revision, and W1.11 Editing now have 
 - Search placement is optimized for desktop and remains responsive.
 - All 159 learner PDFs are now branded Chee Skool.
 
+
+### Active-learning interaction system
+
+Interaction Engines V1 adds a shared learner-response model used by Practice and Mock-compatible rendering:
+
+- two deliberate grammar-edit modes: whole-revision dropdown and single inline dropdown;
+- authored select-text/phrase/paragraph targets rather than guessed sentence boundaries;
+- drag-sort with explicit tap/click destination controls;
+- drag-order with Up/Down controls as a non-drag alternative;
+- canonical string answers so existing local storage, Progress, Train, and Mock recovery remain compatible;
+- a six-step Main Idea reference path that rises from supported recognition to qualified whole-passage reasoning;
+- `mock-excluded` protection for the reference active set until real-device QA is complete.
+
+The Main Idea reference path uses one 483-word original informational passage and a deliberate progression: easy sort → easy evidence selection → medium central idea → medium scope/trap sorting → hard evidence selection → hard qualified central idea.
+
 ### Progress and Train Me
 
 - objective mastery is evidence-based;
@@ -106,7 +121,7 @@ Objective RLA Practice Test:
 - 30 questions / 60 minutes
 - Reading 17 / Arguments 6 / Language 7
 
-Full technology-enhanced parity is intentionally incomplete: drag-and-drop/select-area style interactions are a later Beta-quality target rather than a hidden claim of exact GED simulation.
+Technology-enhanced interaction engines now support inline/whole-revision dropdown editing, authored select-text targets, drag-sort, and drag-order. The first Main Idea active-learning set remains tagged `mock-excluded` until touch, keyboard, refresh, and deployed-browser QA are complete; randomized Mock forms therefore do not yet claim full GED interaction parity.
 
 ## Current technical health
 
@@ -114,10 +129,10 @@ Alpha-hardening status:
 
 - content validation errors: **0**
 - content validation warnings: **0**
-- generated learner modules: **95**
-- total generated objective/component questions: **702**
+- generated learner modules: **96**
+- total generated objective/component questions: **708**
 - learner PDFs: **159 / 159 Chee Skool-branded**
-- release metadata/service-worker version: **0.7.0-alpha.5**
+- release metadata/service-worker version: **0.7.0-alpha.6**
 - learner-only deployment builder: **implemented**
 - GitHub Pages workflow: **learner-only artifact via GitHub Actions**
 - internal authoring pages: **kept in source repo, excluded from public `dist/`**

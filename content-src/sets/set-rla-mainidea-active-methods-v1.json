@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mainidea-active-methods-v1",
+  "title": "Main Idea - Active Learning Path",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mainidea-active-shade-route"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Chee Skool Main Idea active-learning review",
+  "reviewNotes": "Reference active-learning set. Difficulty rises deliberately from supported recognition to close-choice central-idea reasoning. Excluded from random Mock until device/browser QA is complete.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
+    "topicLabel": "Main idea / central idea"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Sort each statement by whether it helps explain the passage's main point or is mainly a supporting context detail.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 1,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The city studied both heat conditions and where pedestrians actually spent time."
+          },
+          {
+            "id": "i2",
+            "text": "The route was about half a mile long."
+          },
+          {
+            "id": "i3",
+            "text": "Different pilot treatments had different benefits and limitations."
+          },
+          {
+            "id": "i4",
+            "text": "Six young trees were planted during the pilot."
+          }
+        ],
+        "zones": [
+          {
+            "id": "central",
+            "label": "Helps explain the main point"
+          },
+          {
+            "id": "context",
+            "label": "Mostly a supporting detail"
+          }
+        ]
+      },
+      "correct": "i1=central|i2=context|i3=central|i4=context",
+      "explanation": {
+        "answer": "i1 and i3 are central support; i2 and i4 are details.",
+        "whyCorrect": "The study's purpose and the different results explain the passage as a whole. Route length and the exact number of trees are useful details, but the main point does not depend on them.",
+        "quickTip": "For main idea, keep details that explain the whole passage and set aside facts that could disappear without changing the big point."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Select the sentence that most directly explains what the first round of measurements taught the city about choosing improvements.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "For four weeks, staff mapped shade at different times of day, counted pedestrians, and measured both surface and air temperatures."
+          },
+          {
+            "id": "s2",
+            "text": "The study suggested that the places with the highest temperatures were not always the places where an improvement would help the most people."
+          },
+          {
+            "id": "s3",
+            "text": "The young trees produced little immediate shade, although planners expected their effect to grow over several years."
+          },
+          {
+            "id": "s4",
+            "text": "The city also planned to repeat pedestrian counts and temperature checks after installation."
+          }
+        ]
+      },
+      "correct": "s2",
+      "explanation": {
+        "answer": "The study suggested that the places with the highest temperatures were not always the places where an improvement would help the most people.",
+        "whyCorrect": "This sentence turns the measurements into a planning lesson: temperature alone did not identify where an improvement would be most useful.",
+        "quickTip": "When a question asks what evidence taught the author or decision-maker, choose the sentence that states the conclusion, not just the data-collection step."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea developed through the city's study and pilot?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city should replace most exposed sidewalks with reflective surfaces.",
+          "distractorType": "unsupported_recommendation",
+          "whyWrong": "Reflective coating was only one pilot treatment and created a glare problem; the final plan limits its use."
+        },
+        {
+          "id": "b",
+          "text": "A city's hottest locations should always receive improvements before bus stops and sidewalks.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage specifically shows that the hottest place was not necessarily where an improvement would help the most people."
+        },
+        {
+          "id": "c",
+          "text": "Studying both physical conditions and pedestrian use helped the city choose different heat-reduction strategies for different parts of the route."
+        },
+        {
+          "id": "d",
+          "text": "Young trees are ineffective for pedestrian comfort because they do not provide immediate shade.",
+          "distractorType": "too_narrow",
+          "whyWrong": "This focuses on one short-term result and ignores the study, other treatments, site constraints, and final plan."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The passage moves from measurement, to three different pilot results, to a location-specific plan. Choice C preserves that full progression without claiming that one method works everywhere.",
+        "quickTip": "A central idea should cover the passage's major stages, not just one result or recommendation."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "drag_sort",
+      "prompt": "Sort these possible central-idea statements by the kind of problem each one has.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "interaction": {
+        "items": [
+          {
+            "id": "m1",
+            "text": "The temporary canopy made riders more likely to wait near the bus-stop bench."
+          },
+          {
+            "id": "m2",
+            "text": "Every city should combine canopies, trees, and reflective pavement on all hot walking routes."
+          },
+          {
+            "id": "m3",
+            "text": "The pilot showed that route improvements work best when they are matched to local conditions, how people use each place, and practical constraints."
+          },
+          {
+            "id": "m4",
+            "text": "The reflective coating reduced surface heating but caused uncomfortable glare."
+          }
+        ],
+        "zones": [
+          {
+            "id": "narrow",
+            "label": "Too narrow / just a detail"
+          },
+          {
+            "id": "broad",
+            "label": "Too broad or unsupported"
+          },
+          {
+            "id": "fit",
+            "label": "Fits the whole passage"
+          }
+        ]
+      },
+      "correct": "m1=narrow|m2=broad|m3=fit|m4=narrow",
+      "explanation": {
+        "answer": "m3 fits; m1 and m4 are too narrow; m2 is too broad.",
+        "whyCorrect": "Only m3 captures the passage's repeated focus on matching improvements to use, site conditions, and limitations. The other choices either shrink the passage to one treatment or make a universal claim the text never supports.",
+        "quickTip": "Test a main idea for scope: does it cover most of the passage without becoming broader than the evidence?"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "select_text",
+      "prompt": "Select the sentence that best supports the idea that a successful plan had to balance heat reduction with how usable the route remained.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "h1",
+            "text": "At the canopied stop, surface temperatures fell sharply beneath the shade, and more riders waited near the bench instead of crowding beside a nearby building."
+          },
+          {
+            "id": "h2",
+            "text": "The reflective coating reduced surface heating, but residents reported uncomfortable glare during bright afternoons."
+          },
+          {
+            "id": "h3",
+            "text": "A large shelter could create shade but also reduce clear sidewalk width if placed poorly."
+          },
+          {
+            "id": "h4",
+            "text": "Staff agreed that a successful project had to make the route easier to use, not simply produce the lowest thermometer reading."
+          }
+        ]
+      },
+      "correct": "h4",
+      "explanation": {
+        "answer": "Staff agreed that a successful project had to make the route easier to use, not simply produce the lowest thermometer reading.",
+        "whyCorrect": "Several choices show individual benefits or tradeoffs, but this sentence directly states the broader principle linking temperature reduction with accessibility and practical use.",
+        "quickTip": "On hard evidence questions, several sentences may be relevant. Choose the one that supports every important part of the idea in the question."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the passage's central idea while preserving the author's qualifications?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because shade produced the clearest immediate benefit, the city concluded that permanent canopies should replace the other heat-reduction methods.",
+          "distractorType": "overstates_evidence",
+          "whyWrong": "The final proposal combines several strategies and considers constraints; it does not replace every other method with canopies."
+        },
+        {
+          "id": "b",
+          "text": "Measurements and pilot results led the city to favor a targeted mix of improvements based on heat, pedestrian use, accessibility, and site limitations rather than one universal treatment."
+        },
+        {
+          "id": "c",
+          "text": "The city learned that pedestrian counts are more reliable than temperature measurements when deciding how to improve a hot walking route.",
+          "distractorType": "false_comparison",
+          "whyWrong": "The city uses both kinds of information; the passage never says pedestrian counts are more reliable than temperature measurements."
+        },
+        {
+          "id": "d",
+          "text": "The main purpose of the pilot was to prove that the broad intersection did not need any heat-reduction work.",
+          "distractorType": "too_narrow",
+          "whyWrong": "The intersection is only one location, and the study's purpose was broader than deciding whether that single place needed work."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Choice B integrates the study, pilot, human use, accessibility concerns, and final location-specific proposal. It is broad enough for the whole passage but still keeps the limits the author emphasizes.",
+        "quickTip": "For a qualified main idea, prefer the choice that keeps both the main conclusion and the conditions or limits attached to it."
+      }
+    }
+  ],
+  "description": "Guided Main Idea practice that moves from sorting key information to GED-style whole-passage reasoning."
+}

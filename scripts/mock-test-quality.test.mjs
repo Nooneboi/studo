@@ -10,6 +10,9 @@ const ROOT = process.cwd();
 const readJson = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 
 async function loadEngine() {
+  delete globalThis.QuestionInteractions;
+  delete globalThis.MockEngine;
+  await import(`${pathToFileURL(path.join(ROOT, 'js/question-interactions.js')).href}?i=${Date.now()}`);
   await import(`${pathToFileURL(path.join(ROOT, 'js/mock-engine.js')).href}?t=${Date.now()}`);
   return globalThis.MockEngine;
 }
@@ -55,6 +58,29 @@ test('100 seeded full mocks satisfy counts, coverage, source integrity and stami
     assert.ok(mock.selectedReadingSets.some((x) => x.words >= 600), `seed ${seed} missing stamina passage`);
     assert.ok(prompts.some((p) => p.id === mock.erPromptId));
   }
+});
+
+
+test('mock scoring handles canonical select, sort, order, and dropdown answers', async () => {
+  const engine = await loadEngine();
+  const moduleMap = new Map([['m1', {
+    questions: [
+      {id:'q1',type:'select_text',correct:'s2',interaction:{targets:[{id:'s1',text:'One'},{id:'s2',text:'Two'}]},skill:{id:'R1.2',label:'Main idea'}},
+      {id:'q2',type:'drag_sort',correct:'d1=yes|d2=no',interaction:{items:[{id:'d1'},{id:'d2'}],zones:[{id:'yes'},{id:'no'}]},skill:{id:'R1.2',label:'Main idea'}},
+      {id:'q3',type:'drag_order',correct:'o2|o1|o3',interaction:{items:[{id:'o1'},{id:'o2'},{id:'o3'}]},skill:{id:'R1.2',label:'Main idea'}},
+      {id:'q4',type:'grammar_edit',correct:'b',options:[{id:'a',text:'was'},{id:'b',text:'were'}],skill:{id:'L1.1',label:'Agreement'}}
+    ]
+  }]]);
+  const items = [1,2,3,4].map((n) => ({moduleId:'m1',questionId:`q${n}`,category:n === 4 ? 'language_conventions' : 'reading'}));
+  const attempt = { mode:'objective', objective:{items,answers:{'m1:q1':'s2','m1:q2':'d2=no|d1=yes','m1:q3':'o2|o1|o3','m1:q4':'b'},flags:{}} };
+  assert.equal(engine.scoreObjectiveAttempt(attempt, moduleMap).correct, 4);
+});
+
+test('mock eligibility rejects active-learning modules tagged mock-excluded', async () => {
+  const engine = await loadEngine();
+  assert.equal(engine.isMockEligible({ curriculum:{ practiceTags:['mock-excluded'] } }), false);
+  assert.equal(engine.isMockEligible({ curriculum:{ practiceTags:['transfer','active-learning'] } }), true);
+  assert.equal(engine.isMockEligible({}), true);
 });
 
 test('attempt recovery helpers use fixed selected IDs and timestamp-based timing', async () => {

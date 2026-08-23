@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-23T05:56:46.600Z",
+  "builtAt": "2026-08-23T16:34:11.489Z",
   "canonicalLegacyModules": [
     "legacy-modules/sample-quiz.json",
     "legacy-modules/rla-author-purpose-practice-1.json",
@@ -93,6 +93,7 @@
     "set-rla-lang-modifiers",
     "set-rla-lang-parallel",
     "set-rla-lang-word-choice",
+    "set-rla-mainidea-active-methods-v1",
     "set-rla-reading-transfer-civic-comment",
     "set-rla-reading-transfer-edna-river",
     "set-rla-reading-transfer-festival-plan",
@@ -140,6 +141,7 @@
     "generated/modules/set-rla-lang-modifiers.json",
     "generated/modules/set-rla-lang-parallel.json",
     "generated/modules/set-rla-lang-word-choice.json",
+    "generated/modules/set-rla-mainidea-active-methods-v1.json",
     "generated/modules/set-rla-reading-transfer-civic-comment.json",
     "generated/modules/set-rla-reading-transfer-edna-river.json",
     "generated/modules/set-rla-reading-transfer-festival-plan.json",
@@ -147,7 +149,7 @@
     "generated/modules/rla-reading-transfer-station-clock.json",
     "generated/modules/rla-reading-transfer-willow-bend.json"
   ],
-  "generatedIndexCount": 95,
+  "generatedIndexCount": 96,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "published",

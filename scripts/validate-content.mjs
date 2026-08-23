@@ -12,6 +12,8 @@ const VALID_RIGHTS = new Set(['original', 'public_domain', 'licensed', 'permissi
 const VALID_CONTENT_KINDS = new Set(['passage_practice','skill_drill','quiz','mixed_review','editing_practice','extended_response','extended_response_practice','argument_practice']);
 const VALID_RESOURCE_TYPES = new Set(['pdf','worksheet','study_guide','notes','reference','link','docx']);
 const SELECTED_TYPES = new Set(['multiple_choice','evidence_based','grammar_edit']);
+const INTERACTION_TYPES = new Set(['select_text','drag_sort','drag_order']);
+const VALID_QUESTION_TYPES = new Set(['multiple_choice','evidence_based','grammar_edit','select_text','drag_sort','drag_order','fill_blank','open_ended','extended_response']);
 const GENERIC_STARTS = [
   'the passage illustrates',
   'this answer is correct because',
@@ -125,6 +127,110 @@ function trackMaps(curriculumConfig) {
     }
   }
   return { skillToTrack, trackStates };
+}
+
+function duplicateIds(items) {
+  const seen = new Set();
+  const dupes = [];
+  for (const item of items || []) {
+    if (!item?.id) continue;
+    if (seen.has(item.id)) dupes.push(item.id);
+    else seen.add(item.id);
+  }
+  return dupes;
+}
+
+function occurrences(haystack, needle) {
+  const source = String(haystack || '');
+  const target = String(needle || '');
+  if (!target) return 0;
+  let count = 0;
+  let from = 0;
+  while ((from = source.indexOf(target, from)) >= 0) {
+    count += 1;
+    from += target.length;
+  }
+  return count;
+}
+
+function validateInteractionQuestion({ issues, file, location, question, passage }) {
+  if (question.type === 'grammar_edit') {
+    const blanks = (String(question.prompt || '').match(/\{\{blank\}\}/g) || []).length;
+    // Two deliberate RLA editing modes are supported:
+    // 0 blanks = whole-sentence/whole-phrase revision dropdown;
+    // 1 blank  = GED-style inline dropdown embedded in the prompt.
+    // More than one blank is deferred until multi-blank editing is designed and QA'd.
+    if (blanks > 1) add(issues, 'error', 'GRAMMAR_BLANK_INVALID', `${location} grammar_edit may use either a whole-revision dropdown (no {{blank}} token) or exactly one inline {{blank}} token; multi-blank editing is not supported yet.`, file, location);
+    return;
+  }
+
+  if (!INTERACTION_TYPES.has(question.type)) return;
+  const interaction = question.interaction;
+  if (!interaction || typeof interaction !== 'object') {
+    add(issues, 'error', 'INTERACTION_MISSING', `${location} needs interaction metadata for ${question.type}.`, file, location);
+    return;
+  }
+
+  if (question.type === 'select_text') {
+    const targets = Array.isArray(interaction.targets) ? interaction.targets : [];
+    if (!['sentence','phrase','paragraph'].includes(interaction.selectionMode) || targets.length < 2 || targets.length > 8 || duplicateIds(targets).length) {
+      add(issues, 'error', 'SELECT_TARGET_INVALID', `${location} needs 2–8 unique select targets and a valid selectionMode.`, file, location);
+    }
+    const passageText = passage?.text || '';
+    for (const target of targets) {
+      if (!target?.id || !target?.text || occurrences(passageText, target.text) !== 1) {
+        add(issues, 'error', 'SELECT_TARGET_TEXT_INVALID', `${location} target ${target?.id || '(missing)'} must occur exactly once in the referenced passage.`, file, location);
+      }
+    }
+    const ids = new Set(targets.map((target) => target?.id).filter(Boolean));
+    if (typeof question.correct !== 'string' || !ids.has(question.correct)) {
+      add(issues, 'error', 'SELECT_TARGET_INVALID', `${location} correct must reference exactly one authored target id.`, file, location);
+    }
+    return;
+  }
+
+  const items = Array.isArray(interaction.items) ? interaction.items : [];
+  const itemIds = items.map((item) => item?.id).filter(Boolean);
+  if (duplicateIds(items).length || itemIds.length !== items.length) {
+    add(issues, 'error', 'DRAG_ITEM_INVALID', `${location} drag items need unique non-empty ids.`, file, location);
+  }
+
+  if (question.type === 'drag_sort') {
+    const zones = Array.isArray(interaction.zones) ? interaction.zones : [];
+    const zoneIds = zones.map((zone) => zone?.id).filter(Boolean);
+    if (items.length < 2 || items.length > 8) add(issues, 'error', 'DRAG_ITEM_INVALID', `${location} drag_sort needs 2–8 items.`, file, location);
+    if (zones.length < 2 || zones.length > 4 || zoneIds.length !== zones.length || duplicateIds(zones).length) {
+      add(issues, 'error', 'DRAG_ZONE_INVALID', `${location} drag_sort needs 2–4 unique zones.`, file, location);
+    }
+    const mapping = new Map();
+    let malformed = false;
+    for (const part of String(question.correct || '').split('|').filter(Boolean)) {
+      const split = part.indexOf('=');
+      if (split <= 0) { malformed = true; continue; }
+      const itemId = part.slice(0, split);
+      const zoneId = part.slice(split + 1);
+      if (mapping.has(itemId)) malformed = true;
+      mapping.set(itemId, zoneId);
+    }
+    const itemSet = new Set(itemIds);
+    const zoneSet = new Set(zoneIds);
+    if (malformed || mapping.size !== itemIds.length || [...mapping.keys()].some((id) => !itemSet.has(id)) || itemIds.some((id) => !mapping.has(id)) || [...mapping.values()].some((id) => !zoneSet.has(id))) {
+      add(issues, 'error', 'DRAG_CORRECT_INVALID', `${location} correct mapping must assign every item exactly once to a known zone.`, file, location);
+    }
+    return;
+  }
+
+  if (question.type === 'drag_order') {
+    if (items.length < 3 || items.length > 8) add(issues, 'error', 'DRAG_ITEM_INVALID', `${location} drag_order needs 3–8 items.`, file, location);
+    const order = String(question.correct || '').split('|').filter(Boolean);
+    const itemSet = new Set(itemIds);
+    const orderInvalid = order.length !== itemIds.length || new Set(order).size !== order.length || order.some((id) => !itemSet.has(id)) || itemIds.some((id) => !order.includes(id));
+    if (orderInvalid) {
+      add(issues, 'error', 'DRAG_CORRECT_INVALID', `${location} correct order must contain every item id exactly once.`, file, location);
+    } else if (order.every((id, index) => id === itemIds[index])) {
+      add(issues, 'error', 'DRAG_ORDER_ALREADY_CORRECT', `${location} drag_order must not present items in the already-correct order. Author the items in a deliberate scrambled starting order.`, file, location);
+    }
+  }
 }
 
 function validateSelectedQuestion({ issues, file, location, question, status = 'published', answerText = '', correctPositions, wrongReasonUsage }) {
@@ -334,8 +440,13 @@ export async function validateContent({ quiet = false } = {}) {
       }
       if (!VALID_DIFFICULTIES.has(question.difficulty)) add(issues, 'error', 'QUESTION_DIFFICULTY_INVALID', `${qloc} has invalid difficulty.`, file, qloc);
       if (![1,2,3].includes(question.dok)) add(issues, 'error', 'DOK_INVALID', `${qloc} must have DOK 1–3.`, file, qloc);
+      if (!VALID_QUESTION_TYPES.has(question.type)) add(issues, 'error', 'QUESTION_TYPE_INVALID', `${qloc} has unsupported question type ${question.type || '(missing)'}.`, file, qloc);
       if (!question.prompt) add(issues, 'error', 'PROMPT_MISSING', `${qloc} has no prompt.`, file, qloc);
       if (words(question.prompt).length > 35) add(issues, 'warning', 'PROMPT_WORDY', `${qloc} stem is over 35 words; check whether wording can be simplified.`, file, qloc);
+
+      if (question.type === 'grammar_edit' || INTERACTION_TYPES.has(question.type)) {
+        validateInteractionQuestion({ issues, file, location: qloc, question, passage: set.passageRefs?.[0] ? passages.get(set.passageRefs[0]) : null });
+      }
 
       if (SELECTED_TYPES.has(question.type)) {
         validateSelectedQuestion({ issues, file, location: qloc, question, status: set.status, answerText: question.explanation?.answer || question.explanation?.whyCorrect || '', correctPositions, wrongReasonUsage });

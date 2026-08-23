@@ -7821,3 +7821,201 @@ body.test-body {
 @media (max-width: 420px) {
   .brand-logo { width: 132px; }
 }
+
+/* RLA interaction engines -------------------------------------------------- */
+.select-text-instructions {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+.select-text-target,
+.drag-card-destinations button,
+.order-control,
+.interaction-check,
+.practice-edit-select {
+  min-height: 44px;
+}
+.select-text-target {
+  display: inline;
+  padding: 2px 4px;
+  margin: -2px -4px;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  text-align: left;
+  cursor: pointer;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.select-text-target:hover,
+.select-text-target:focus-visible {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 8%, var(--surface));
+  outline: none;
+}
+.select-text-target.selected {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 13%, var(--surface));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 18%, transparent);
+}
+.select-text-target:disabled { cursor: default; opacity: 1; }
+.interaction-live-status {
+  min-height: 1.25rem;
+  margin-top: 8px;
+  font-size: .875rem;
+  color: var(--muted);
+}
+.embedded-edit-question {
+  display: grid;
+  gap: 14px;
+}
+.embedded-edit-prompt {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+.practice-edit-field {
+  display: grid;
+  gap: 7px;
+  font-weight: 700;
+  color: var(--text);
+}
+.practice-edit-select {
+  max-width: 100%;
+  padding: 9px 38px 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.inline-mode .practice-edit-select {
+  width: auto;
+  min-width: 150px;
+  max-width: min(100%, 420px);
+  margin: 0 5px;
+  vertical-align: baseline;
+}
+.practice-edit-select:focus-visible {
+  border-color: var(--color-primary);
+  outline: 3px solid color-mix(in srgb, var(--color-primary) 18%, transparent);
+}
+.interaction-check {
+  justify-self: start;
+  min-width: 128px;
+}
+.drag-sort-board {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.drag-zone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+}
+.drag-zone {
+  min-width: 0;
+  padding: 12px;
+  border: 1px dashed color-mix(in srgb, var(--text) 24%, var(--line));
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--surface) 94%, var(--color-primary) 6%);
+}
+.drag-zone h3 {
+  margin: 0 0 9px;
+  font-size: .86rem;
+  color: var(--muted);
+}
+.drag-bank { background: var(--surface); }
+.drag-zone-list {
+  display: grid;
+  gap: 9px;
+  min-height: 46px;
+}
+.drag-card {
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.drag-card[aria-grabbed="true"] { border-color: var(--color-primary); }
+.drag-card p { margin: 0 0 10px; line-height: 1.5; }
+.drag-card-destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.drag-card-destinations button,
+.order-control {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+}
+.drag-card-destinations button { padding: 7px 9px; }
+.drag-card-destinations button:hover:not(:disabled),
+.drag-card-destinations button:focus-visible,
+.order-control:hover:not(:disabled),
+.order-control:focus-visible {
+  border-color: var(--color-primary);
+  outline: 2px solid color-mix(in srgb, var(--color-primary) 16%, transparent);
+}
+.drag-card-destinations button:disabled,
+.order-control:disabled { cursor: default; opacity: .55; }
+.drag-order-list {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 14px;
+}
+.drag-order-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+}
+.drag-order-row > div:first-child {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.order-number {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-primary) 10%, var(--surface));
+  color: var(--color-primary-dark);
+  font-weight: 800;
+}
+.order-controls { display: flex; gap: 6px; }
+.order-control { width: 44px; padding: 0; font-weight: 800; }
+.answer-locked .interaction-check { display: none; }
+
+@media (max-width: 700px) {
+  .drag-card-destinations { flex-direction: column; }
+  .drag-card-destinations button { width: 100%; }
+  .drag-zone-grid { grid-template-columns: 1fr; }
+  .drag-order-row { grid-template-columns: 1fr; }
+  .order-controls { justify-content: flex-end; }
+  .inline-mode .practice-edit-select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 8px 0;
+  }
+}

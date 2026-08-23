@@ -284,7 +284,10 @@
             "grammar_edit",
             "fill_blank",
             "open_ended",
-            "extended_response"
+            "extended_response",
+            "select_text",
+            "drag_sort",
+            "drag_order"
           ]
         },
         "prompt": {
@@ -338,6 +341,92 @@
         "correct": {},
         "explanation": {
           "$ref": "#/$defs/explanation"
+        },
+        "interaction": {
+          "type": "object",
+          "properties": {
+            "selectionMode": {
+              "type": "string",
+              "enum": [
+                "sentence",
+                "phrase",
+                "paragraph"
+              ]
+            },
+            "targets": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/selectTarget"
+              }
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/dragItem"
+              }
+            },
+            "zones": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/dragZone"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "selectTarget": {
+      "type": "object",
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_-]+$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "dragItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_-]+$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "dragZone": {
+      "type": "object",
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_-]+$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
         }
       },
       "additionalProperties": false

@@ -40,8 +40,12 @@
     return module?.curriculum?.contentKind || "";
   }
 
+  function isMockEligible(module) {
+    return !(module?.curriculum?.practiceTags || []).includes("mock-excluded");
+  }
+
   function isPublishedQuestionModule(module) {
-    return module && !module.broken && Array.isArray(module.questions) && module.questions.length > 0 && module.subject === "rla";
+    return module && !module.broken && isMockEligible(module) && Array.isArray(module.questions) && module.questions.length > 0 && module.subject === "rla";
   }
 
   function chooseReadingSets(modules, count, config, rng) {
@@ -278,7 +282,9 @@
         if (!question) continue;
         const key = objectiveItemKey(item);
         const value = stage.answers?.[key];
-        const answered = value !== undefined && value !== null && String(value) !== "";
+        const answered = root.QuestionInteractions?.hasCompleteAnswer
+          ? root.QuestionInteractions.hasCompleteAnswer(question, value)
+          : value !== undefined && value !== null && String(value) !== "";
         const domain = item.category;
         const bucket = summary.domains[domain] ||= { correct: 0, attempted: 0, total: 0, accuracy: 0 };
         const skillId = question.skill?.id || "unmapped";
@@ -287,7 +293,9 @@
         if (stage.flags?.[key]) summary.flagged += 1;
         if (!answered) { summary.unanswered += 1; continue; }
         summary.attempted += 1; bucket.attempted += 1; skillBucket.attempted += 1;
-        const correct = String(value) === String(question.correct);
+        const correct = root.QuestionInteractions?.isCorrect
+          ? root.QuestionInteractions.isCorrect(question, value)
+          : String(value) === String(question.correct);
         if (correct) { summary.correct += 1; bucket.correct += 1; skillBucket.correct += 1; }
       }
     }
@@ -330,5 +338,5 @@
   function countUnanswered(stage) { return (stage?.items || []).filter((item) => !(objectiveItemKey(item) in (stage?.answers || {}))).length; }
   function countFlags(stage) { return Object.values(stage?.flags || {}).filter(Boolean).length; }
 
-  root.MockEngine = { rngFromSeed, wordCount, generateFullMock, generateObjectivePractice, validateGeneratedBlueprint, createAttempt, createObjectiveAttempt, remainingSeconds, objectiveItemKey, scoreObjectiveAttempt, stageTimeUsedSeconds, sanitizeAttemptForHistory };
+  root.MockEngine = { rngFromSeed, wordCount, isMockEligible, generateFullMock, generateObjectivePractice, validateGeneratedBlueprint, createAttempt, createObjectiveAttempt, remainingSeconds, objectiveItemKey, scoreObjectiveAttempt, stageTimeUsedSeconds, sanitizeAttemptForHistory };
 })(typeof globalThis !== "undefined" ? globalThis : window);

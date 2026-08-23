@@ -201,11 +201,14 @@ function renderCurrentQuestion(options = {}) {
   const { question: q } = items[currentIndex];
   questionOpenedAt = Date.now();
   const answers = Store.getAnswers(currentQuiz.id);
+  const drafts = Store.getInteractionDrafts ? Store.getInteractionDrafts(currentQuiz.id) : {};
   const notes = Store.getNotes(currentQuiz.id);
   const highlights = Store.getHighlights(currentQuiz.id);
   const savedAnswer = answers[q.id];
-  const basePromptHtml = q.type === "grammar_edit" ? renderGrammarPrompt(q, null) : escapeHtml(q.prompt);
-  const promptHtml = highlights[q.id] ? sanitizeHighlightMarkup(highlights[q.id], basePromptHtml) : basePromptHtml;
+  const draftAnswer = drafts[q.id] || "";
+  const grammarInline = q.type === "grammar_edit" && window.QuestionInteractions?.grammarEditMode(q) === "inline";
+  const basePromptHtml = grammarInline ? "" : escapeHtml(q.prompt);
+  const promptHtml = highlights[q.id] && basePromptHtml ? sanitizeHighlightMarkup(highlights[q.id], basePromptHtml) : basePromptHtml;
 
   stage.innerHTML = `
     <div class="question-topline question-topline-clean">
@@ -234,8 +237,10 @@ function renderCurrentQuestion(options = {}) {
   `;
 
   const promptEl = stage.querySelector('[data-role="prompt"]');
-  promptEl.addEventListener("mouseup", () => handleHighlight(promptEl, q.id, false));
-  promptEl.addEventListener("click", (event) => removeHighlightOnClick(event, promptEl, q.id, false));
+  if (promptEl && promptEl.textContent.trim()) {
+    promptEl.addEventListener("mouseup", () => handleHighlight(promptEl, q.id, false));
+    promptEl.addEventListener("click", (event) => removeHighlightOnClick(event, promptEl, q.id, false));
+  }
 
   stage.querySelector('[data-role="notes"] textarea').addEventListener("input", (e) => {
     Store.setNote(currentQuiz.id, q.id, e.target.value);
@@ -249,7 +254,8 @@ function renderCurrentQuestion(options = {}) {
     });
   });
 
-  renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer);
+  renderPassageForQuestion(q, savedAnswer || draftAnswer);
+  renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer, draftAnswer);
 
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
@@ -291,6 +297,9 @@ function questionTypeLabel(type) {
     multiple_choice: "Multiple choice",
     evidence_based: "Evidence based",
     grammar_edit: "Grammar edit",
+    select_text: "Select text",
+    drag_sort: "Sort",
+    drag_order: "Order",
     fill_blank: "Short answer",
     open_ended: "Open response",
     extended_response: "Extended response",
@@ -337,8 +346,10 @@ function buildExplanationHtml(q, selectedAnswer) {
   const rule = q.rule || defaultRuleForQuestion(q);
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
-  const selectedDisplay = selectedOption ? answerDisplay(q, selectedOption) : '';
-  const correctDisplay = correctOption ? answerDisplay(q, correctOption) : '';
+  const I = window.QuestionInteractions;
+  const sharedType = Boolean(I?.SUPPORTED_TYPES?.has(q.type));
+  const selectedDisplay = sharedType ? I.formatAnswer(q, selectedAnswer) : (selectedOption ? answerDisplay(q, selectedOption) : '');
+  const correctDisplay = sharedType ? I.formatAnswer(q, q.correct) : (correctOption ? answerDisplay(q, correctOption) : '');
 
   if (!summary && !rule && !evidence && !hasSelected) return '';
 
@@ -376,7 +387,7 @@ function buildExplanationHtml(q, selectedAnswer) {
 }
 function getCorrectOption(q) {
   if (!Array.isArray(q.options)) return null;
-  const correctIds = new Set(q.correct || []);
+  const correctIds = new Set(Array.isArray(q.correct) ? q.correct : [q.correct].filter(Boolean));
   return q.options.find((opt) => correctIds.has(opt.id)) || null;
 }
 
@@ -417,7 +428,10 @@ function distractorReasonFromType(type, q) {
 function defaultRuleForQuestion(q) {
   if (q.type === 'evidence_based') return 'For evidence questions, choose the line that most directly proves the answer—not just a sentence that mentions the topic.';
   if (q.type === 'multiple_choice' && currentQuiz?.category === 'reading') return 'For reading questions, match the answer to what the text supports, not simply what sounds reasonable.';
-  if (q.type === 'grammar_edit') return 'Check the job the word or verb must do in the sentence before choosing the answer that sounds familiar.';
+  if (q.type === 'grammar_edit') return 'Check what the sentence needs—agreement, punctuation, clarity, or structure—before choosing the edit.';
+  if (q.type === 'select_text') return 'Choose the exact sentence or phrase that most directly proves the idea in the question.';
+  if (q.type === 'drag_sort') return 'Sort by the role each detail plays, not just whether the detail is true.';
+  if (q.type === 'drag_order') return 'Order the ideas by the relationship asked for—such as chronology, cause and effect, or argument structure.';
   if (q.type === 'fill_blank') return 'Make sure the answer fits both the meaning and the exact form the sentence needs.';
   return '';
 }
@@ -449,7 +463,14 @@ function handleHighlight(container, questionId, isPassage = false) {
   const selection = window.getSelection();
   if (!selection || selection.isCollapsed || !container.contains(selection.anchorNode) || !container.contains(selection.focusNode)) return;
   const range = selection.getRangeAt(0);
-  if (range.commonAncestorContainer.parentElement?.closest("mark.hl")) return;
+  const commonNode = range.commonAncestorContainer.nodeType === Node.ELEMENT_NODE
+    ? range.commonAncestorContainer
+    : range.commonAncestorContainer.parentElement;
+  if (commonNode?.closest?.("mark.hl")) return;
+  if (commonNode?.closest?.(".select-text-target")) {
+    setToolStatus("Use the selectable sentence or phrase as the answer target; highlighting stays separate.");
+    return;
+  }
   const mark = document.createElement("mark");
   mark.className = "hl";
   try {
@@ -486,8 +507,357 @@ function setToolStatus(message) {
   if (el) el.textContent = message || "";
 }
 
-function renderAnswerArea(q, container, savedAnswer) {
-  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) {
+function renderPassageForQuestion(q, selectedAnswer = "") {
+  const passageEl = viewEl.querySelector(".passage-text");
+  if (!passageEl || !currentQuiz?.passage) return;
+
+  if (q.type !== "select_text" || !window.QuestionInteractions) {
+    const basePassageMarkup = renderPassageParagraphs(currentQuiz.passage);
+    const savedPassage = Store.getPassageHighlights ? Store.getPassageHighlights(currentQuiz.id) : "";
+    passageEl.innerHTML = savedPassage ? sanitizeHighlightMarkup(savedPassage, basePassageMarkup) : basePassageMarkup;
+    return;
+  }
+
+  const targets = q.interaction?.targets || [];
+  const paragraphs = String(currentQuiz.passage || "").trim().split(/\n\s*\n+/).filter(Boolean);
+  passageEl.innerHTML = paragraphs.map((paragraph, index) => {
+    const segments = window.QuestionInteractions.segmentTextTargets(paragraph, targets);
+    const content = segments.map((segment) => {
+      if (segment.kind !== "target") return escapeHtml(segment.text);
+      const selected = String(selectedAnswer || "") === String(segment.id);
+      return `<button type="button" class="select-text-target${selected ? " selected" : ""}" data-select-target="${escapeAttr(segment.id)}" aria-pressed="${selected ? "true" : "false"}">${escapeHtml(segment.text)}</button>`;
+    }).join("");
+    return `<p class="passage-paragraph"><span class="passage-paragraph-number">${index + 1}</span><span>${content}</span></p>`;
+  }).join("");
+}
+
+function interactionDraft(questionId) {
+  if (!Store.getInteractionDrafts) return "";
+  return Store.getInteractionDrafts(currentQuiz.id)[questionId] || "";
+}
+
+function saveInteractionDraft(questionId, value) {
+  if (Store.setInteractionDraft) Store.setInteractionDraft(currentQuiz.id, questionId, value);
+}
+
+function clearInteractionDraft(questionId) {
+  if (Store.clearInteractionDraft) Store.clearInteractionDraft(currentQuiz.id, questionId);
+}
+
+function recordPracticeAttempt(q, answer, correct) {
+  if (typeof Learning === "undefined") return null;
+  return Learning.recordAttempt({
+    module: { ...currentQuiz, file: currentModuleFile },
+    question: q,
+    answer,
+    correct,
+    mode: "practice",
+    elapsedMs: Date.now() - questionOpenedAt,
+    file: currentModuleFile,
+    confidence: confidenceSelections[q.id] || null,
+  });
+}
+
+function showQuestionExplanation(q, selectedAnswer) {
+  const box = document.querySelector('[data-role="explanation"]');
+  if (!box) return;
+  box.innerHTML = buildExplanationHtml(q, selectedAnswer);
+  box.classList.toggle("visible", Boolean(box.textContent.trim()));
+}
+
+function lockInteractionControls(q, container) {
+  container.classList.add("answer-locked");
+  container.querySelectorAll("button, select").forEach((control) => { control.disabled = true; });
+  container.querySelectorAll("[draggable='true']").forEach((item) => {
+    item.draggable = false;
+    item.setAttribute("aria-grabbed", "false");
+  });
+  if (q.type === "select_text") {
+    viewEl.querySelectorAll("[data-select-target]").forEach((target) => { target.disabled = true; });
+  }
+}
+
+function submitInteractiveAnswer(q, answer, container) {
+  const I = window.QuestionInteractions;
+  if (!I) return;
+  const canonical = I.canonicalizeAnswer(q, answer);
+  if (!I.hasCompleteAnswer(q, canonical)) return;
+
+  Store.setAnswer(currentQuiz.id, q.id, canonical);
+  clearInteractionDraft(q.id);
+  const correct = I.isCorrect(q, canonical);
+  const learningResult = recordPracticeAttempt(q, canonical, correct);
+  showQuestionExplanation(q, canonical);
+  showLearningFeedback(learningResult, correct);
+  setupMistakeReason(q, correct, learningResult);
+  finalizeConfidenceUi(q.id);
+  lockInteractionControls(q, container);
+  setStatus(correct ? "Correct — review the explanation, then continue." : "Not quite — review the explanation before continuing.");
+  questionOpenedAt = Date.now();
+  updateAnswerStatus();
+}
+
+function optionSelectHtml(q, selected, className, label) {
+  return `<select class="${className}" aria-label="${escapeAttr(label)}"><option value="">Select an answer…</option>${(q.options || []).map((opt) => `<option value="${escapeAttr(opt.id)}" ${String(selected || "") === String(opt.id) ? "selected" : ""}>${escapeHtml(opt.text)}</option>`).join("")}</select>`;
+}
+
+function renderGrammarEditAnswer(q, container, savedAnswer, draftAnswer) {
+  const I = window.QuestionInteractions;
+  const mode = I?.grammarEditMode(q) || "revision";
+  let selected = savedAnswer || draftAnswer || "";
+  const checkDisabled = !selected || Boolean(savedAnswer);
+
+  if (mode === "inline") {
+    const parts = I.splitGrammarPrompt(q);
+    container.innerHTML = `
+      <div class="embedded-edit-question inline-mode">
+        <div class="embedded-edit-prompt">${escapeHtml(parts.before)}${optionSelectHtml(q, selected, "practice-edit-select", "Choose the best edit")}${escapeHtml(parts.after)}</div>
+        <button class="btn interaction-check" type="button" ${checkDisabled ? "disabled" : ""}>Check answer</button>
+        <div class="interaction-live-status" aria-live="polite"></div>
+      </div>`;
+  } else {
+    container.innerHTML = `
+      <div class="embedded-edit-question revision-mode">
+        <label class="practice-edit-field"><span>Choose the best revision</span>${optionSelectHtml(q, selected, "practice-edit-select", "Choose the best revision")}</label>
+        <button class="btn interaction-check" type="button" ${checkDisabled ? "disabled" : ""}>Check answer</button>
+        <div class="interaction-live-status" aria-live="polite"></div>
+      </div>`;
+  }
+
+  const select = container.querySelector(".practice-edit-select");
+  const check = container.querySelector(".interaction-check");
+  const live = container.querySelector(".interaction-live-status");
+
+  if (!savedAnswer) {
+    select?.addEventListener("change", () => {
+      selected = select.value;
+      saveInteractionDraft(q.id, selected);
+      check.disabled = !selected;
+      if (live) live.textContent = selected ? "Edit selected. Check your answer when ready." : "Choose an edit.";
+    });
+    check?.addEventListener("click", () => submitInteractiveAnswer(q, selected, container));
+  } else {
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockInteractionControls(q, container);
+  }
+}
+
+function renderSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
+  let selected = savedAnswer || draftAnswer || "";
+  container.innerHTML = `
+    <div class="select-text-instructions">Select one highlighted ${escapeHtml(q.interaction?.selectionMode || "text area")} in the passage.</div>
+    <button class="btn interaction-check" type="button" ${selected && !savedAnswer ? "" : "disabled"}>Check answer</button>
+    <div class="interaction-live-status" aria-live="polite"></div>`;
+
+  const check = container.querySelector(".interaction-check");
+  const live = container.querySelector(".interaction-live-status");
+  const targetButtons = [...viewEl.querySelectorAll("[data-select-target]")];
+
+  const applySelection = (id, announce = true) => {
+    selected = id;
+    targetButtons.forEach((target) => {
+      const active = target.dataset.selectTarget === selected;
+      target.classList.toggle("selected", active);
+      target.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    if (!savedAnswer) {
+      saveInteractionDraft(q.id, selected);
+      if (check) check.disabled = !selected;
+    }
+    if (announce && live) {
+      const target = (q.interaction?.targets || []).find((item) => item.id === selected);
+      live.textContent = target ? `Selected: ${target.text}` : "Selection updated.";
+    }
+  };
+
+  if (selected) applySelection(selected, false);
+  if (!savedAnswer) {
+    targetButtons.forEach((target) => target.addEventListener("click", () => applySelection(target.dataset.selectTarget)));
+    check?.addEventListener("click", () => submitInteractiveAnswer(q, selected, container));
+  } else {
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockInteractionControls(q, container);
+  }
+}
+
+function renderDragSortAnswer(q, container, savedAnswer, draftAnswer) {
+  const I = window.QuestionInteractions;
+  const assignments = I.parseSort(savedAnswer || draftAnswer || "");
+  const zones = q.interaction?.zones || [];
+  const items = q.interaction?.items || [];
+
+  container.innerHTML = `
+    <div class="drag-sort-board">
+      <section class="drag-zone drag-bank" data-sort-zone="__bank__" aria-label="Unsorted statements">
+        <h3>Statements to sort</h3>
+        <div class="drag-zone-list" data-sort-list="__bank__"></div>
+      </section>
+      <div class="drag-zone-grid">
+        ${zones.map((zone) => `<section class="drag-zone" data-sort-zone="${escapeAttr(zone.id)}" aria-label="${escapeAttr(zone.label)}"><h3>${escapeHtml(zone.label)}</h3><div class="drag-zone-list" data-sort-list="${escapeAttr(zone.id)}"></div></section>`).join("")}
+      </div>
+    </div>
+    <button class="btn interaction-check" type="button" ${I.hasCompleteAnswer(q, I.serializeSort(assignments)) && !savedAnswer ? "" : "disabled"}>Check answer</button>
+    <div class="interaction-live-status" aria-live="polite"></div>`;
+
+  const check = container.querySelector(".interaction-check");
+  const live = container.querySelector(".interaction-live-status");
+
+  const cardHtml = (item) => `<article class="drag-card" draggable="${savedAnswer ? "false" : "true"}" aria-grabbed="false" data-drag-item="${escapeAttr(item.id)}">
+      <p>${escapeHtml(item.text)}</p>
+      <div class="drag-card-destinations" aria-label="Move this statement">
+        ${zones.map((zone) => `<button type="button" data-sort-destination="${escapeAttr(zone.id)}" ${assignments[item.id] === zone.id || savedAnswer ? "disabled" : ""}>${escapeHtml(zone.label)}</button>`).join("")}
+      </div>
+    </article>`;
+
+  items.forEach((item) => {
+    const zoneId = assignments[item.id] || "__bank__";
+    const list = container.querySelector(`[data-sort-list="${cssEscape(zoneId)}"]`) || container.querySelector('[data-sort-list="__bank__"]');
+    list.insertAdjacentHTML("beforeend", cardHtml(item));
+  });
+
+  const updateCompleteness = () => {
+    const canonical = I.serializeSort(assignments);
+    if (!savedAnswer) saveInteractionDraft(q.id, canonical);
+    if (check) check.disabled = Boolean(savedAnswer) || !I.hasCompleteAnswer(q, canonical);
+  };
+
+  const moveCard = (itemId, zoneId, announce = true) => {
+    if (savedAnswer || !zones.some((zone) => zone.id === zoneId)) return;
+    assignments[itemId] = zoneId;
+    const card = container.querySelector(`[data-drag-item="${cssEscape(itemId)}"]`);
+    const list = container.querySelector(`[data-sort-list="${cssEscape(zoneId)}"]`);
+    if (card && list) list.appendChild(card);
+    if (card) {
+      card.querySelectorAll("[data-sort-destination]").forEach((button) => {
+        button.disabled = button.dataset.sortDestination === zoneId;
+      });
+    }
+    updateCompleteness();
+    if (announce && live) {
+      const item = items.find((entry) => entry.id === itemId);
+      const zone = zones.find((entry) => entry.id === zoneId);
+      live.textContent = `Moved ${item?.text || "item"} to ${zone?.label || zoneId}.`;
+    }
+  };
+
+  if (!savedAnswer) {
+    container.querySelectorAll("[data-sort-destination]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const card = button.closest("[data-drag-item]");
+        moveCard(card?.dataset.dragItem, button.dataset.sortDestination);
+      });
+    });
+    container.querySelectorAll("[data-drag-item]").forEach((card) => {
+      card.addEventListener("dragstart", (event) => {
+        card.setAttribute("aria-grabbed", "true");
+        event.dataTransfer?.setData("text/plain", card.dataset.dragItem);
+        if (event.dataTransfer) event.dataTransfer.effectAllowed = "move";
+      });
+      card.addEventListener("dragend", () => card.setAttribute("aria-grabbed", "false"));
+    });
+    container.querySelectorAll("[data-sort-zone]").forEach((zone) => {
+      if (zone.dataset.sortZone === "__bank__") return;
+      zone.addEventListener("dragover", (event) => event.preventDefault());
+      zone.addEventListener("drop", (event) => {
+        event.preventDefault();
+        const itemId = event.dataTransfer?.getData("text/plain");
+        if (itemId) moveCard(itemId, zone.dataset.sortZone);
+      });
+    });
+    check?.addEventListener("click", () => submitInteractiveAnswer(q, I.serializeSort(assignments), container));
+    updateCompleteness();
+  } else {
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockInteractionControls(q, container);
+  }
+}
+
+function renderDragOrderAnswer(q, container, savedAnswer, draftAnswer) {
+  const I = window.QuestionInteractions;
+  const authored = (q.interaction?.items || []).map((item) => item.id);
+  let order = I.parseOrder(savedAnswer || draftAnswer || "");
+  if (order.length !== authored.length || !authored.every((id) => order.includes(id))) order = [...authored];
+  const items = new Map((q.interaction?.items || []).map((item) => [item.id, item]));
+
+  container.innerHTML = `
+    <div class="drag-order-list" data-order-list></div>
+    <button class="btn interaction-check" type="button" ${savedAnswer ? "disabled" : ""}>Check answer</button>
+    <div class="interaction-live-status" aria-live="polite"></div>`;
+  const list = container.querySelector("[data-order-list]");
+  const check = container.querySelector(".interaction-check");
+  const live = container.querySelector(".interaction-live-status");
+
+  const persistDraft = () => {
+    if (!savedAnswer) saveInteractionDraft(q.id, I.serializeOrder(order));
+  };
+
+  const drawRows = (focusId = null) => {
+    list.innerHTML = order.map((id, index) => {
+      const item = items.get(id) || { id, text: id };
+      return `<article class="drag-order-row" draggable="${savedAnswer ? "false" : "true"}" aria-grabbed="false" data-order-item="${escapeAttr(id)}">
+        <div><span class="order-number">${index + 1}</span><span>${escapeHtml(item.text)}</span></div>
+        <div class="order-controls">
+          <button type="button" class="order-control" data-order-up aria-label="Move ${escapeAttr(item.text)} up" ${index === 0 || savedAnswer ? "disabled" : ""}>↑</button>
+          <button type="button" class="order-control" data-order-down aria-label="Move ${escapeAttr(item.text)} down" ${index === order.length - 1 || savedAnswer ? "disabled" : ""}>↓</button>
+        </div>
+      </article>`;
+    }).join("");
+
+    if (!savedAnswer) {
+      list.querySelectorAll("[data-order-up], [data-order-down]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const row = button.closest("[data-order-item]");
+          const itemId = row.dataset.orderItem;
+          order = I.moveOrder(order, itemId, button.hasAttribute("data-order-up") ? -1 : 1);
+          persistDraft();
+          if (live) live.textContent = `Moved ${items.get(itemId)?.text || "item"}.`;
+          drawRows(itemId);
+        });
+      });
+
+      list.querySelectorAll("[data-order-item]").forEach((row) => {
+        row.addEventListener("dragstart", (event) => {
+          row.setAttribute("aria-grabbed", "true");
+          event.dataTransfer?.setData("text/plain", row.dataset.orderItem);
+          if (event.dataTransfer) event.dataTransfer.effectAllowed = "move";
+        });
+        row.addEventListener("dragend", () => row.setAttribute("aria-grabbed", "false"));
+        row.addEventListener("dragover", (event) => event.preventDefault());
+        row.addEventListener("drop", (event) => {
+          event.preventDefault();
+          const dragged = event.dataTransfer?.getData("text/plain");
+          const target = row.dataset.orderItem;
+          if (!dragged || dragged === target) return;
+          const from = order.indexOf(dragged);
+          const to = order.indexOf(target);
+          if (from < 0 || to < 0) return;
+          order.splice(from, 1);
+          order.splice(to, 0, dragged);
+          persistDraft();
+          if (live) live.textContent = `Moved ${items.get(dragged)?.text || "item"}.`;
+          drawRows(dragged);
+        });
+      });
+    }
+
+    if (focusId) list.querySelector(`[data-order-item="${cssEscape(focusId)}"] [data-order-up]:not(:disabled), [data-order-item="${cssEscape(focusId)}"] [data-order-down]:not(:disabled)`)?.focus();
+  };
+
+  drawRows();
+  if (!savedAnswer) {
+    check?.addEventListener("click", () => submitInteractiveAnswer(q, I.serializeOrder(order), container));
+  } else {
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockInteractionControls(q, container);
+  }
+}
+
+function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
+  if (["multiple_choice", "evidence_based"].includes(q.type)) {
     const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
     const groupName = `practice-answer-${q.id}`;
     container.innerHTML = `<fieldset class="options-list" aria-label="Answer choices">${q.options
@@ -499,20 +869,9 @@ function renderAnswerArea(q, container, savedAnswer) {
         if (!radio.checked) return;
         Store.setAnswer(currentQuiz.id, q.id, radio.value);
         const correct = isCorrectAnswer(q, radio.value);
-        const learningResult = typeof Learning !== "undefined"
-          ? Learning.recordAttempt({
-              module: { ...currentQuiz, file: currentModuleFile },
-              question: q,
-              answer: radio.value,
-              correct,
-              mode: "practice",
-              elapsedMs: Date.now() - questionOpenedAt,
-              file: currentModuleFile,
-              confidence: confidenceSelections[q.id] || null,
-            })
-          : null;
+        const learningResult = recordPracticeAttempt(q, radio.value, correct);
         revealChoiceFeedback(container, q, radio.value);
-        showExplanation(radio.value);
+        showQuestionExplanation(q, radio.value);
         showLearningFeedback(learningResult, correct);
         setupMistakeReason(q, correct, learningResult);
         finalizeConfidenceUi(q.id);
@@ -523,11 +882,31 @@ function renderAnswerArea(q, container, savedAnswer) {
     });
     if (savedAnswer) {
       revealChoiceFeedback(container, q, savedAnswer);
-      showExplanation(savedAnswer);
+      showQuestionExplanation(q, savedAnswer);
       finalizeConfidenceUi(q.id);
       lockChoiceInputs(container);
     }
-  } else if (q.type === "fill_blank") {
+    return;
+  }
+
+  if (q.type === "grammar_edit") {
+    renderGrammarEditAnswer(q, container, savedAnswer, draftAnswer);
+    return;
+  }
+  if (q.type === "select_text") {
+    renderSelectTextAnswer(q, container, savedAnswer, draftAnswer);
+    return;
+  }
+  if (q.type === "drag_sort") {
+    renderDragSortAnswer(q, container, savedAnswer, draftAnswer);
+    return;
+  }
+  if (q.type === "drag_order") {
+    renderDragOrderAnswer(q, container, savedAnswer, draftAnswer);
+    return;
+  }
+
+  if (q.type === "fill_blank") {
     container.innerHTML = `<label class="question-detail" for="short-answer">Your answer</label><input id="short-answer" type="text" class="fill-blank-input" autocomplete="off" placeholder="Type your answer" value="${escapeAttr(savedAnswer || "")}">`;
     const input = container.querySelector("input");
     input.addEventListener("input", () => Store.setAnswer(currentQuiz.id, q.id, input.value));
@@ -535,48 +914,38 @@ function renderAnswerArea(q, container, savedAnswer) {
       if (input.value.trim()) {
         if (typeof q.correct === "string" && typeof Learning !== "undefined") {
           const correct = isCorrectAnswer(q, input.value);
-          const learningResult = Learning.recordAttempt({
-            module: { ...currentQuiz, file: currentModuleFile },
-            question: q,
-            answer: input.value,
-            correct,
-            mode: "practice",
-            elapsedMs: Date.now() - questionOpenedAt,
-            file: currentModuleFile,
-            confidence: confidenceSelections[q.id] || null,
-          });
+          const learningResult = recordPracticeAttempt(q, input.value, correct);
           showLearningFeedback(learningResult, correct);
           setupMistakeReason(q, correct, learningResult);
           finalizeConfidenceUi(q.id);
           questionOpenedAt = Date.now();
         }
-        showExplanation(input.value);
+        showQuestionExplanation(q, input.value);
         updateAnswerStatus();
       }
     });
     if (savedAnswer) {
-      showExplanation(savedAnswer);
+      showQuestionExplanation(q, savedAnswer);
       finalizeConfidenceUi(q.id);
     }
-  } else {
-    container.innerHTML = `<label class="question-detail" for="written-answer">Your response</label><textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>`;
-    const ta = container.querySelector("textarea");
-    ta.addEventListener("input", () => {
-      Store.setAnswer(currentQuiz.id, q.id, ta.value);
-      updateAnswerStatus();
-    });
-    ta.addEventListener("blur", () => {
-      if (ta.value.trim()) showExplanation(ta.value);
-    });
-    if (savedAnswer) showExplanation(savedAnswer);
+    return;
   }
 
-  function showExplanation(selectedAnswer = savedAnswer) {
-    const box = document.querySelector('[data-role="explanation"]');
-    if (!box) return;
-    box.innerHTML = buildExplanationHtml(q, selectedAnswer);
-    if (box.textContent.trim()) box.classList.add('visible');
-  }
+  container.innerHTML = `<label class="question-detail" for="written-answer">Your response</label><textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>`;
+  const ta = container.querySelector("textarea");
+  ta.addEventListener("input", () => {
+    Store.setAnswer(currentQuiz.id, q.id, ta.value);
+    updateAnswerStatus();
+  });
+  ta.addEventListener("blur", () => {
+    if (ta.value.trim()) showQuestionExplanation(q, ta.value);
+  });
+  if (savedAnswer) showQuestionExplanation(q, savedAnswer);
+}
+
+function cssEscape(value) {
+  if (window.CSS?.escape) return window.CSS.escape(String(value));
+  return String(value).replace(/(["\\])/g, "\\$1");
 }
 
 function lockChoiceInputs(container) {
@@ -587,7 +956,7 @@ function lockChoiceInputs(container) {
 }
 
 function revealChoiceFeedback(container, q, selectedId) {
-  const correctIds = new Set(q.correct || []);
+  const correctIds = new Set(Array.isArray(q.correct) ? q.correct : [q.correct].filter(Boolean));
   container.querySelectorAll(".answer-choice").forEach((choice) => {
     const selected = choice.dataset.opt === selectedId;
     const correct = correctIds.has(choice.dataset.opt);
@@ -640,14 +1009,16 @@ function updateAnswerStatus() {
 }
 
 function isAutoGraded(q) {
-  if (["multiple_choice", "evidence_based", "grammar_edit"].includes(q.type)) return true;
+  if (window.QuestionInteractions?.SUPPORTED_TYPES?.has(q.type)) return true;
   return q.type === "fill_blank" && typeof q.correct === "string";
 }
 
 function isCorrectAnswer(q, answer) {
-  if (!answer) return false;
-  if (Array.isArray(q.correct)) return q.correct.includes(answer);
-  if (typeof q.correct === "string") return answer.trim().toLowerCase() === q.correct.trim().toLowerCase();
+  if (answer == null || answer === "") return false;
+  if (window.QuestionInteractions?.SUPPORTED_TYPES?.has(q.type)) return window.QuestionInteractions.isCorrect(q, answer);
+  if (q.type === "fill_blank" && typeof q.correct === "string") {
+    return String(answer).trim().toLowerCase() === q.correct.trim().toLowerCase();
+  }
   return false;
 }
 

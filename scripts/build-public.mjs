@@ -10,7 +10,7 @@ const OUT = path.resolve(argIndex >= 0 && process.argv[argIndex + 1] ? process.a
 const learnerPages = [
   'index.html', 'practice.html', 'passages.html', 'resources.html', 'progress.html',
   'curriculum.html', 'domain.html', 'category.html', 'skill.html', 'module.html',
-  'extended-response.html', 'train.html', 'quiz.html', 'about.html', 'methodology.html',
+  'extended-response.html', 'train.html', 'quiz.html', 'test.html', 'about.html', 'methodology.html',
   'privacy.html', 'offline.html', '404.html'
 ];
 
@@ -19,7 +19,7 @@ const learnerJs = [
   'app.js', 'storage.js', 'data.js', 'learning.js', 'home.js', 'library-model.js',
   'practice.js', 'passages.js', 'resources.js', 'progress.js', 'curriculum.js',
   'domain.js', 'category.js', 'skill.js', 'module.js', 'focus-tools.js', 'train.js',
-  'mock-engine.js', 'quiz.js', 'extended-response.js'
+  'question-interactions.js', 'mock-engine.js', 'quiz.js', 'extended-response.js'
 ];
 const learnerCss = ['site.css'];
 const generatedData = [
