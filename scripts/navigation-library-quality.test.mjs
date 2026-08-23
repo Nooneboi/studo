@@ -227,9 +227,9 @@ test('Alpha polish gives search placement and Passage Practice spacing a clearly
 test('Alpha Candidate release metadata and service-worker cache are bumped together', () => {
   const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8'));
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  assert.equal(release.release, '0.7.0-alpha.2');
-  assert.match(sw, /0\.7\.0-alpha\.2/);
-  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.2"/);
+  assert.equal(release.release, '0.7.0-alpha.3');
+  assert.match(sw, /0\.7\.0-alpha\.3/);
+  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.3"/);
 });
 
 
