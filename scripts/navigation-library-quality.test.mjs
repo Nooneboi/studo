@@ -227,9 +227,9 @@ test('Alpha polish gives search placement and Passage Practice spacing a clearly
 test('Alpha Candidate release metadata and service-worker cache are bumped together', () => {
   const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8'));
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  assert.equal(release.release, '0.7.0-alpha.1');
-  assert.match(sw, /0\.7\.0-alpha\.1/);
-  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.1"/);
+  assert.equal(release.release, '0.7.0-alpha.2');
+  assert.match(sw, /0\.7\.0-alpha\.2/);
+  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.2"/);
 });
 
 
@@ -241,6 +241,11 @@ test('Chee Skool branding is used across learner pages and shipped as a real log
     assert.match(html, /class="brand-logo"[^>]*src="assets\/chee-skool-logo\.png"[^>]*alt="Chee Skool"/, `${file} should render the Chee Skool logo in the header`);
   }
   assert.ok(fs.existsSync(path.join(root, 'assets/chee-skool-logo.png')), 'Chee Skool logo asset should ship with the site');
+  const logo = fs.readFileSync(path.join(root, 'assets/chee-skool-logo.png'));
+  assert.equal(logo.readUInt32BE(16), 1200, 'navbar logo should be the optimized text-only 1200px asset');
+  assert.equal(logo.readUInt32BE(20), 400, 'navbar logo should preserve the text-only 3:1 composition with floating pixels');
+  const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
+  assert.match(css, /\.brand-logo\s*\{[^}]*width:\s*160px[^}]*height:\s*auto/s, 'text-only wordmark should use width-based sizing so it remains readable without making the header too tall');
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
   assert.equal(manifest.name, 'Chee Skool');
   assert.equal(manifest.short_name, 'Chee Skool');
