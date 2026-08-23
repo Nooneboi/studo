@@ -117,7 +117,7 @@ h1 { font-size: clamp(2rem, 4vw, 2.75rem); }
 h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
 h3 { font-size: 1.2rem; }
 p { margin: 0 0 var(--space-3); color: var(--color-ink-soft); }
-a { color: var(--color-primary); text-decoration: none; }
+a { color: var(--color-primary-dark); text-decoration: none; }
 a:hover { text-decoration: underline; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; cursor: pointer; }
@@ -7675,11 +7675,11 @@ body.test-body {
   align-items: center;
   min-height: 76px;
   padding: 12px 0;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 0;
 }
-.resource-topic-row:last-child { border-bottom: 0; }
 .resource-topic-header {
   min-height: 42px;
+  border-bottom: 1px solid var(--color-line);
   padding: 8px 0;
   color: var(--color-ink-muted);
   font-size: .72rem;

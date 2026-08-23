@@ -15,7 +15,7 @@ function renderProgress() {
   if (!summary.attempts && !erHistory.length && !mockHistory.length) {
     progressView.innerHTML = `
       <div class="progress-workspace empty">
-        ${sidebarHtml()}
+        ${sidebarHtml({ showCore: false })}
         <section class="progress-empty progress-empty-compact">
           <div class="page-kicker">Progress</div>
           <h1>Start with a few questions.</h1>
@@ -36,7 +36,7 @@ function renderProgress() {
 
   progressView.innerHTML = `
     <div class="progress-workspace">
-      ${sidebarHtml()}
+      ${sidebarHtml({ showMock: mockHistory.length > 0, showEr: erHistory.length > 0 })}
 
       <div class="progress-dashboard">
         <header class="progress-dashboard-head" id="progress-top">
@@ -68,6 +68,7 @@ function renderProgress() {
             <h2 id="skills-heading">Skills</h2>
             <span>${summary.skills.length} tracked</span>
           </div>
+          <p class="progress-er-note">Skill signals reflect your Chee Skool practice history, not a GED score.</p>
           <div class="progress-skill-table">
             <div class="progress-skill-head" aria-hidden="true">
               <span>Skill</span><span>Correct</span><span>Signal</span><span>Status</span>
@@ -148,7 +149,7 @@ function downloadLearningBackup() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `studo-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  a.download = `chee-skool-backup-${new Date().toISOString().slice(0, 10)}.json`;
   document.body.appendChild(a);
   a.click();
   a.remove();
@@ -183,19 +184,19 @@ async function restoreLearningBackup(event) {
   }
 }
 
-function sidebarHtml() {
+function sidebarHtml({ showCore = true, showMock = false, showEr = false } = {}) {
+  const coreLinks = showCore ? `
+          <a href="#overview-section"><span class="rail-dot"></span>Overview</a>
+          <a href="#next-section"><span class="rail-dot"></span>Next</a>
+          <a href="#skills-section"><span class="rail-dot"></span>Skills</a>
+          <a href="#mistakes-section"><span class="rail-dot"></span>Review</a>` : "";
+  const mockLink = showMock ? `<a href="#mock-section"><span class="rail-dot"></span>Mock Tests</a>` : "";
+  const erLink = showEr ? `<a href="#er-section"><span class="rail-dot"></span>Extended Response</a>` : "";
   return `
     <aside class="progress-rail" aria-label="Progress shortcuts">
       <div class="progress-rail-inner">
         <div class="progress-rail-title">Progress</div>
-        <nav>
-          <a href="#overview-section"><span class="rail-dot"></span>Overview</a>
-          <a href="#next-section"><span class="rail-dot"></span>Next</a>
-          <a href="#skills-section"><span class="rail-dot"></span>Skills</a>
-          <a href="#mistakes-section"><span class="rail-dot"></span>Review</a>
-          <a href="#mock-section"><span class="rail-dot"></span>Mock Tests</a>
-              <a href="#er-section"><span class="rail-dot"></span>Extended Response</a>
-        </nav>
+        <nav>${coreLinks}${mockLink}${erLink}</nav>
         <div class="progress-rail-links">
           <a href="train.html">Train</a>
           <a href="practice.html">Practice</a>

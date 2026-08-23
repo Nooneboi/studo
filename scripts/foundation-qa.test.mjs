@@ -209,3 +209,9 @@ test('two source-only builds are semantically reproducible', async () => {
   const second = await generatedJsonSnapshot();
   assert.deepEqual(second, first);
 });
+
+
+test('base text links use the high-contrast primary token', async () => {
+  const css = await fs.readFile(path.join(ROOT, 'css/site.css'), 'utf8');
+  assert.match(css, /^a\s*\{\s*color:\s*var\(--color-primary-dark\);/m);
+});

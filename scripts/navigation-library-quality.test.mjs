@@ -224,12 +224,30 @@ test('Alpha polish gives search placement and Passage Practice spacing a clearly
   assert.match(css, /\.passage-practice-groups\s*\{[^}]*grid-template-columns:\s*repeat\(4,[^}]*gap:\s*32px\s+64px/s);
 });
 
+
+test('Resources separates major sections without drawing dividers between every topic row', () => {
+  const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
+  assert.match(css, /\.resource-topic-row\s*\{[^}]*border-bottom:\s*0/s, 'individual resource topic rows should not have divider lines');
+  assert.match(css, /\.resource-topic-header\s*\{[^}]*border-bottom:\s*1px solid var\(--color-line\)/s, 'the topic header may keep one structural divider');
+  assert.match(css, /\.resource-track-heading\s*\{[^}]*border-bottom:\s*2px solid var\(--color-ink\)/s, 'major resource track headings should keep strong separation');
+});
+
+
+test('learner pages expose the same release metadata as release.json', () => {
+  const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8')).release;
+  const pages = ['index.html','practice.html','passages.html','resources.html','progress.html','curriculum.html','domain.html','category.html','skill.html','module.html','quiz.html','test.html','train.html','extended-response.html','about.html','methodology.html','privacy.html','404.html','offline.html'];
+  for (const file of pages) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.match(html, new RegExp(`<meta name="studo-release" content="${release.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}">`), `${file} should expose current release metadata`);
+  }
+});
+
 test('Alpha Candidate release metadata and service-worker cache are bumped together', () => {
   const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8'));
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  assert.equal(release.release, '0.7.0-alpha.3');
-  assert.match(sw, /0\.7\.0-alpha\.3/);
-  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.3"/);
+  assert.equal(release.release, '0.7.0-alpha.4');
+  assert.match(sw, /0\.7\.0-alpha\.4/);
+  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.4"/);
 });
 
 
@@ -251,4 +269,12 @@ test('Chee Skool branding is used across learner pages and shipped as a real log
   assert.equal(manifest.short_name, 'Chee Skool');
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
   assert.match(sw, /assets\/chee-skool-logo\.png/, 'service-worker app shell should include the brand asset');
+});
+
+test('Progress shortcuts only target sections that exist and learner-facing data labels use Chee Skool branding', () => {
+  const js = fs.readFileSync(path.join(root, 'js/progress.js'), 'utf8');
+  assert.match(js, /sidebarHtml\(\{\s*showCore:\s*false\s*\}\)/, 'empty progress state should not render dead section shortcuts');
+  assert.match(js, /sidebarHtml\(\{\s*showMock:\s*mockHistory\.length\s*>\s*0,\s*showEr:\s*erHistory\.length\s*>\s*0\s*\}\)/s, 'history shortcuts should be conditional on their sections existing');
+  assert.match(js, /Skill signals reflect your Chee Skool practice history, not a GED score\./, 'Progress should explain that skill signals are practice indicators, not GED scores');
+  assert.match(js, /chee-skool-backup-\$\{new Date\(\)\.toISOString\(\)\.slice\(0, 10\)\}\.json/, 'downloaded backup filename should use learner-facing Chee Skool branding');
 });
