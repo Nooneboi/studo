@@ -37,9 +37,7 @@ async function init() {
   const cat = currentQuiz.category || "reading";
   const topic = currentQuiz.topic || "";
   const requestedReturn = params.get("return");
-  const safeReturn = requestedReturn && !/^(?:https?:)?\/\//i.test(requestedReturn) && !/^javascript:/i.test(requestedReturn)
-    ? requestedReturn
-    : null;
+  const safeReturn = safeLocalReturn(requestedReturn);
   const backHref = safeReturn || (topic
     ? `category.html?cat=${encodeURIComponent(cat)}&topic=${encodeURIComponent(topic)}`
     : `practice.html`);
@@ -118,6 +116,7 @@ function renderShell() {
         currentIndex = 0;
         notesOpen = false;
         highlightMode = false;
+        Object.keys(confidenceSelections).forEach((key) => delete confidenceSelections[key]);
         if (highlightBtn) {
           highlightBtn.setAttribute("aria-pressed", "false");
           highlightBtn.classList.remove("active");
@@ -694,6 +693,19 @@ function escapeAttr(str) {
   return escapeHtml(str).replace(/"/g, "&quot;");
 }
 
+
+function safeLocalReturn(requestedReturn) {
+  if (!requestedReturn) return null;
+  try {
+    const parsed = new URL(requestedReturn, window.location.href);
+    if (parsed.origin !== window.location.origin || parsed.protocol !== window.location.protocol) return null;
+    const file = parsed.pathname.split("/").pop() || "";
+    if (!/^[A-Za-z0-9._-]+\.html$/.test(file)) return null;
+    return `${file}${parsed.search}${parsed.hash}`;
+  } catch (_) {
+    return null;
+  }
+}
 
 function safeHref(value) {
   const raw = String(value ?? "").trim();

@@ -17,10 +17,10 @@ Overall, Source {winner} is better supported because its recommendation is tied 
 def prompt(id,title,topic,a_title,a_text,b_title,b_text,stronger,reasons,evidence,weakness):
     m=model(title,stronger,reasons[0],evidence[0],reasons[1],evidence[1],weakness)
     return {
-      'schemaVersion':1,'id':id,'title':title,'topic':topic,'status':'published','version':1,'author':'Studo','reviewer':'Extended Response V1 editorial review',
+      'schemaVersion':1,'id':id,'title':title,'topic':topic,'status':'published','version':1,'author':'Chee Skool','reviewer':'Extended Response V1 editorial review',
       'prompt':'Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.',
-      'sourceA':{'title':a_title,'text':a_text,'attribution':'Original content by Studo'},
-      'sourceB':{'title':b_title,'text':b_text,'attribution':'Original content by Studo'},
+      'sourceA':{'title':a_title,'text':a_text,'attribution':'Original content by Chee Skool'},
+      'sourceB':{'title':b_title,'text':b_text,'attribution':'Original content by Chee Skool'},
       'strongerSource':stronger,
       'authoringKey':{'reasons':reasons,'evidence':evidence,'weakerSourceLimitation':weakness},
       'modelResponse':m,

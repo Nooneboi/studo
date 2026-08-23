@@ -1,43 +1,36 @@
-# Studo — Master Project Status
+# Chee Skool — Master Project Status
 
-**Date:** 2026-08-22  
-**Current stage:** Feature-complete RLA baseline / pre-alpha review candidate
+**Date:** 2026-08-23  
+**Current release:** `0.7.0-alpha.5`  
+**Current stage:** Alpha candidate / release-hardening complete; real-browser and learner-pilot gate remains
 
-This file is the current high-level source for what Studo has, what is considered solid enough for review, what is still incomplete, and what should happen next. Older phase reports remain useful history but should not override this status.
+This is the current high-level source of truth for the Chee Skool RLA alpha candidate. Older Studo phase reports remain project history and should not override this status.
 
 ## Product goal
 
-Studo is a calm, focused GED RLA learning and practice site. Its quality bar is not "a file exists"; a feature should actually help a learner improve the skill it claims to teach.
+Chee Skool is a calm, focused GED Reasoning Through Language Arts learning and practice site. A feature is only considered useful if it helps a learner understand, practice, review, or evaluate an RLA skill; the presence of a page or file alone is not the quality bar.
 
 ## Current learner system
 
-### 1. Reading & Comprehension — baseline complete
+### Reading & Comprehension
 
-Learner areas:
+Baseline is complete and hardened.
 
 - Core Meaning
 - Relationships & Inference
 - Words, Tone & Style
 - Structure, Purpose & POV
+- mixed Passage Practice grouped by Science, Workplace, Community & Civics, and Literary
+- 400–900 word passage safeguards
+- stamina passages
+- transfer-oriented question families
+- answer-pattern, feedback, file-reference, and passage-length QA
 
-Current strengths:
+The five Reading transfer families that previously had only one published example now have at least three canonical variants each.
 
-- skill-specific Study Guides / Workbooks / Interactive Practice;
-- mixed Passage Practice;
-- close-choice and transfer-oriented questions;
-- 400–900 word learner Passage Practice range;
-- stamina passages of 600+ words;
-- 75% informational / 25% literary Passage Practice bank;
-- passage library grouped by Science, Workplace, Community & Civics, Literary;
-- answer-pattern and generic-feedback QA protections.
+### Arguments & Sources
 
-Remaining quality reminders:
-
-- five Reading transfer-family singleton warnings should eventually receive another context/example.
-
-### 2. Arguments & Sources — baseline complete
-
-Learner-facing units:
+Nine learner-facing units remain the stable baseline:
 
 1. Claims & Argument Structure
 2. Finding Evidence
@@ -49,76 +42,47 @@ Learner-facing units:
 8. Text, Data & Different Formats
 9. Synthesize Across Sources
 
-Internal R5/R6 skills remain available for detailed tracking.
+`R5.4 Evidence relevance` now has at least four canonical objective questions.
 
-Remaining reminder:
+### Language & Editing
 
-- `R5.4 Evidence relevance` has only three canonical objective questions and should gain additional transfer coverage later.
+Seven learner-facing units remain complete, with focused practice and six 350–450 word mixed editing passages.
 
-### 3. Language & Editing — baseline complete
+### Extended Response
 
-Learner-facing units:
+The learner system includes:
 
-1. Word Choice & Standard Usage
-2. Agreement & Pronouns
-3. Modifiers & Sentence Logic
-4. Parallelism & Sentence Connections
-5. Concision & Transitions
-6. Sentence Boundaries & Punctuation
-7. Capitalization & Possessives
-
-Includes focused practice plus six 350–450 word mixed editing passages.
-
-### 4. Extended Response — baseline complete
-
-Learner-facing units:
-
-1. Understand & Map the Sources
-2. Choose the Stronger Argument
-3. Thesis & Evidence
-4. Analyze, Don't Just Summarize
-5. Organize, Develop & Revise
-6. Full Extended Response
-
-Full ER system includes:
-
+- six learning units;
 - eight original paired-source prompts;
 - timed and untimed modes;
 - 45-minute simulation;
-- source tabs, planner, essay editor, autosave, word count;
+- source tabs, planner, editor, autosave, and word count;
 - three-trait rubric self-review;
-- annotated model responses after submission;
+- annotated models after submission;
 - revision workflow;
-- no fake automatic 6/6 score.
+- no fake automatic GED scaled score.
 
-Remaining objective-coverage reminders:
+W1.8 Organization, W1.9 Development, W1.10 Revision, and W1.11 Editing now have at least four canonical objective questions each through an additional transfer/revision check.
 
-- W1.8 Organization
-- W1.9 Development
-- W1.10 Revision
-- W1.11 Editing
+### Practice discovery and Resources
 
-These skills are practiced in workbooks/full essays but have only two canonical objective items each.
+- Practice search uses learner-facing units where appropriate.
+- Passage Practice stays separate from focused skill pages.
+- Resources are grouped by track → domain → topic → files.
+- Individual resource-topic rows no longer use repetitive horizontal separators; main sections retain stronger visual structure.
+- Search placement is optimized for desktop and remains responsive.
+- All 159 learner PDFs are now branded Chee Skool.
 
-### 5. Practice discovery / Resources — baseline complete
+### Progress and Train Me
 
-- Extended Response routing fixed.
-- Invalid curriculum track IDs no longer silently fall back to Reading.
-- Practice search uses learner-facing units for unit-based tracks.
-- Passage Practice is grouped into four topic columns with search.
-- Resources are organized by track → domain → topic → files.
-- Current library contains the previously audited **151 unique learner resources across 44 learner topics**.
+- objective mastery is evidence-based;
+- confidence, mistakes, and review timing remain local learner signals;
+- ER self-review is kept separate from objective mastery;
+- Mock history is kept separate from skill mastery;
+- dead/empty shortcuts are not shown when corresponding history does not exist;
+- learner-facing copy does not imply an official GED score.
 
-### 6. Progress / Train Me — functional baseline
-
-- objective mastery remains evidence-based;
-- confidence/mistake/review data are tracked;
-- ER self-review remains separate from objective mastery;
-- Mock Tests have separate history and raw results.
-
-These should receive final learner-journey QA before public alpha.
-
-### 7. Mock/Test V1 — review build complete
+### Mock/Test V1
 
 Full RLA Mock:
 
@@ -129,13 +93,12 @@ Full RLA Mock:
 - 46 objective questions total
 - Reading 25 / Arguments 10 / Language 11
 - fixed refresh-safe attempt
-- flags / unanswered review
+- flags and unanswered review
 - strict section timing
-- 2 informational + 1 literary Reading source sets
-- 600+ word stamina requirement
+- stamina/source-set requirements
 - raw/domain/skill results
-- post-completion objective answer explanations
-- ER Self-review kept separate
+- post-completion explanations
+- ER self-review kept separate
 - no fake GED scaled score
 
 Objective RLA Practice Test:
@@ -143,115 +106,92 @@ Objective RLA Practice Test:
 - 30 questions / 60 minutes
 - Reading 17 / Arguments 6 / Language 7
 
-See `STUDO_RLA_MOCK_TEST_V1_QA.md` for verification details.
+Full technology-enhanced parity is intentionally incomplete: drag-and-drop/select-area style interactions are a later Beta-quality target rather than a hidden claim of exact GED simulation.
 
 ## Current technical health
 
-Latest clean-build release gate:
+Alpha-hardening status:
 
 - content validation errors: **0**
-- known non-blocking warnings: **10**
-- generated learning modules: **92**
-- total objective/component questions in module bank: **683**
-- automated tests: **66 / 66 passed**
-- JavaScript/MJS syntax: **38 checked / 0 failures**
-- local HTTP smoke checks: **19 / 19 passed**
-
-The old behavior that placed all 683 questions into one enormous "Full RLA Test" has been removed. Mock V1 samples a bounded blueprint instead.
+- content validation warnings: **0**
+- generated learner modules: **95**
+- total generated objective/component questions: **702**
+- learner PDFs: **159 / 159 Chee Skool-branded**
+- release metadata/service-worker version: **0.7.0-alpha.5**
+- learner-only deployment builder: **implemented**
+- GitHub Pages workflow: **learner-only artifact via GitHub Actions**
+- internal authoring pages: **kept in source repo, excluded from public `dist/`**
+- `publicAlphaEnabled`: **false** until real-browser/device QA and pilot sign-off
 
 ## Architecture state
 
 ### Canonical source
 
-`content-src/` is the source of truth. Generated learner data belongs under `data/generated/` and must be rebuilt rather than hand-maintained.
+`content-src/` is the learning-content source of truth. `data/generated/` is disposable output created by the build pipeline.
 
-### Quality system
+### Public deployment boundary
 
-Validators/regression tests currently protect against issues including:
+`npm run public:build` creates `dist/`, which contains learner-facing HTML, runtime JS/CSS, generated learner data, icons, the Chee Skool logo, and learner PDFs.
 
-- lost canonical learner content during rebuild;
-- passage-practice leakage into individual skill pages;
-- answer-key/explanation mismatches;
-- duplicate/invalid options;
-- answer-position patterns;
+The public artifact intentionally excludes internal authoring/development material including:
+
+- `builder.html`
+- `content-studio.html`
+- `resource-studio.html`
+- `content-src/`
+- `authoring/`
+- `scripts/`
+- project documentation and development-only files
+
+GitHub Pages must use **GitHub Actions**, not branch-root deployment.
+
+### Quality protections
+
+Automated validation/regression coverage protects against problems including:
+
+- canonical learner-content loss during rebuild;
+- Passage Practice leaking into focused skill pages;
+- answer/explanation mismatches;
+- duplicate or invalid options;
+- problematic answer-position patterns;
 - excessive generic feedback;
 - invalid passage lengths;
-- missing files/resources;
-- invalid track navigation;
-- broken static local HTML links;
-- learner-unit/resource organization regressions;
-- mock count/coverage/duplicate/timing/scoring regressions.
+- broken resource references;
+- invalid curriculum/navigation routes;
+- learner-library organization regressions;
+- Mock count/coverage/timing/scoring regressions;
+- reappearance of the resolved content-depth warning classes;
+- reintroduction of old PDF-generator branding;
+- accidental inclusion of internal authoring surfaces in the public build.
 
-## Not yet ready to claim
+## Claims Chee Skool must not make
 
-### Official GED equivalence
-
-Studo is **not** an official GED product. It must not claim:
+Chee Skool is **not** an official GED product and must not claim:
 
 - official/live GED questions;
 - official GED scaled-score prediction;
 - guaranteed pass/fail outcome;
-- psychometric equivalence to a GED form.
+- psychometric equivalence to an official GED form.
 
-### Automatic ER grading
+ER uses structured learner self-review rather than pretending to provide validated automatic official scoring.
 
-ER V1 intentionally uses rubric self-review. Reliable automatic essay scoring would require a separate validated backend/scoring project.
+## Remaining release gate
 
-### Full technology-enhanced item parity
+Automated hardening is not the final release gate. Before enabling a public alpha:
 
-Mock V1 supports current Studo multiple-choice/evidence-based items and a dropdown editing interaction. It does not yet attempt to reproduce every possible GED interaction such as drag-and-drop or select-an-area. That is an optional later upgrade, not a blocker for initial alpha learning value.
-
-## Pre-alpha gates still required
-
-Before calling Studo public alpha-ready:
-
-1. **Manual end-to-end learner test**
-   - Home → curriculum → Study Guide → Workbook → Interactive → Passage/Mixed Practice → Train Me → Progress → Mock.
-   - Complete at least one full mock flow in a real browser.
-
-2. **Responsive QA**
-   - desktop;
-   - tablet;
-   - narrow phone viewport;
-   - long passage / long resource title / long answer-choice stress cases.
-
-3. **Accessibility QA**
-   - keyboard-only navigation;
-   - visible focus states;
-   - form labels and landmarks;
-   - 200% browser zoom;
-   - basic screen-reader pass;
-   - contrast check;
-   - timer/status announcements that do not overwhelm assistive technology.
-
-4. **Appearance QA**
-   - light mode;
-   - dark mode if retained as a product feature;
-   - PDF opening/download behavior.
-
-5. **Resolve or consciously defer the 10 current QA warnings**
-   - five Reading transfer families;
-   - R5.4 Arguments coverage;
-   - W1.8–W1.11 ER objective coverage.
-
-6. **Deployment/release cleanup**
-   - verify GitHub Pages paths from the production URL;
-   - verify no obsolete prototype/test links remain;
-   - confirm cache/service-worker behavior if used;
-   - set an explicit alpha version/release note;
-   - back up the known-good Git commit.
-
-7. **Small learner pilot**
-   - have a few real learners use Studo without guidance;
-   - record where they get lost, what they ignore, and what feels too easy/hard;
-   - fix high-impact navigation/content problems before wider promotion.
+1. Test the deployed production URL end-to-end in a real desktop browser.
+2. Test a real phone/tablet, especially touch text selection and highlighting.
+3. Verify native Share/clipboard permissions and fallbacks.
+4. Verify actual print preview/output.
+5. Test refresh/back/two-tab/offline/service-worker recovery behavior.
+6. Perform keyboard-only, 200% zoom, and basic screen-reader checks.
+7. Open a representative sample of PDFs from the production deployment.
+8. Have a small number of real learners use the product with minimal guidance.
+9. Fix only high-impact learner, content, accessibility, or reliability issues found by those tests.
+10. Then explicitly change the release gate rather than treating deployment alone as approval.
 
 ## Recommended next phase
 
-Do **not** create another large content batch immediately.
+> **Real-browser Release Candidate QA → small learner alpha**
 
-The recommended next phase is:
-
-> **Studo Alpha Readiness QA**
-
-Focus on real-browser learner flow, responsive/accessibility testing, the remaining ten quality warnings, deployment checks, and small-pilot readiness. Only create new content when that QA identifies a specific coverage or difficulty need.
+Do not start another large content or visual redesign batch unless the real-browser QA or learner pilot identifies a concrete need.

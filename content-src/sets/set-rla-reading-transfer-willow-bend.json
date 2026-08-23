@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-reading-transfer-willow-bend",
+  "runtime": {
+    "id": "rla-reading-transfer-willow-bend",
+    "file": "rla-reading-transfer-willow-bend.json"
+  },
+  "title": "Giving Willow Bend Creek More Room",
+  "description": "Mixed Reading transfer practice on an evidence-based floodplain pilot.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-reading-transfer-willow-bend"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Alpha release hardening editorial review",
+  "reviewNotes": "Reviewed for transfer coverage, one-best-answer logic, qualified evidence, and GED-style reading targets.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why was the downstream peak near Cedar Avenue probably lower during the pilot storm, even though the rainfall total was similar to the earlier storm?",
+      "primarySkillId": "R2.2",
+      "familyId": "cause.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The new grasses absorbed nearly all of the storm water before it reached the creek.",
+          "distractorType": "overstates_mechanism",
+          "whyWrong": "The passage says the field temporarily held and slowed water; it does not say vegetation absorbed nearly all of it."
+        },
+        {
+          "id": "b",
+          "text": "Some water spread into the upstream floodplain and returned to the channel later, reducing how much reached the bridge at the same moment."
+        },
+        {
+          "id": "c",
+          "text": "The city widened the opening under the Cedar Avenue bridge during the pilot.",
+          "distractorType": "unsupported_change",
+          "whyWrong": "No bridge widening is described."
+        },
+        {
+          "id": "d",
+          "text": "The second storm fell more slowly over several days, so the creek never received a sudden inflow.",
+          "distractorType": "contradicts_context",
+          "whyWrong": "The passage says the storms had similar totals but different weather patterns; it does not say the pilot storm lasted several days or lacked intense flow."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The passage links temporary upstream storage with a lower peak near the bridge: water was spread out over time instead of arriving all at once.",
+        "quickTip": "For an implied-cause question, combine the mechanism described earlier with the later result.",
+        "evidenceRef": "The field could hold water that otherwise would arrive at the bridge all at once; during the test, water spread into the field for about four hours."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What does the word “bottleneck” suggest about the bridge area in paragraph 6?",
+      "primarySkillId": "R3.2",
+      "familyId": "connotation.choice",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the safest place for storm water to remain after a flood.",
+          "distractorType": "unsupported_meaning",
+          "whyWrong": "The bridge area is described as a restriction, not a storage area."
+        },
+        {
+          "id": "b",
+          "text": "It is a location where wildlife is unusually concentrated.",
+          "distractorType": "topic_shift",
+          "whyWrong": "Wildlife observations concern the restored field, not the bridge."
+        },
+        {
+          "id": "c",
+          "text": "It is a place where the creek becomes cleaner because water moves more slowly.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "Water quality is not the point of the comparison."
+        },
+        {
+          "id": "d",
+          "text": "It is a constricted point where more water can arrive than can pass through efficiently."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "“Bottleneck” suggests a narrow restriction that limits flow, matching the description of water reaching the bridge faster than its opening could carry it.",
+        "quickTip": "Use the surrounding mechanism to identify the association a figurative word carries.",
+        "evidenceRef": "Water rushed toward a low bridge ... faster than the opening beneath the bridge could carry it."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which word best describes the author’s tone toward the floodplain pilot?",
+      "primarySkillId": "R3.4",
+      "familyId": "tone.identify",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Cautiously optimistic"
+        },
+        {
+          "id": "b",
+          "text": "Dismissive",
+          "distractorType": "extreme_tone",
+          "whyWrong": "The author treats the pilot as meaningful and worth continued study, not as unimportant."
+        },
+        {
+          "id": "c",
+          "text": "Alarmed",
+          "distractorType": "topic_not_tone",
+          "whyWrong": "Flooding is a serious topic, but the author’s treatment of the pilot is measured rather than fearful."
+        },
+        {
+          "id": "d",
+          "text": "Triumphant",
+          "distractorType": "extreme_tone",
+          "whyWrong": "The passage repeatedly notes limits and does not claim the pilot solved flooding."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The passage calls the results encouraging and describes possible benefits while repeatedly qualifying what the pilot has and has not proved.",
+        "quickTip": "Tone should reflect the whole passage, especially both positive language and qualifications.",
+        "evidenceRef": "The pilot has not eliminated flooding ... What it has provided is a test of a different principle."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the organization of the passage help develop the author’s main idea?",
+      "primarySkillId": "R4.2",
+      "familyId": "structure.effect",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It lists several flood-control methods from cheapest to most expensive so readers can choose one.",
+          "distractorType": "wrong_relationship",
+          "whyWrong": "The passage follows one pilot project rather than ranking several methods by cost."
+        },
+        {
+          "id": "b",
+          "text": "It presents residents’ objections after the final results so those objections appear unreasonable.",
+          "distractorType": "misreads_order",
+          "whyWrong": "Residents’ concerns appear before the pilot results and are treated as legitimate questions."
+        },
+        {
+          "id": "c",
+          "text": "It moves from the old flooding problem to the pilot design, then to results and limitations, showing why the new approach is promising but still being evaluated."
+        },
+        {
+          "id": "d",
+          "text": "It alternates between two engineers with opposing views to show that experts cannot agree.",
+          "distractorType": "unsupported_structure",
+          "whyWrong": "The passage does not alternate between opposing engineers."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The sequence lets readers see the problem, understand the intervention, examine evidence, and then see why the conclusion remains qualified.",
+        "quickTip": "A structure-effect answer should explain what the organization allows the author to demonstrate, not merely summarize sections.",
+        "evidenceRef": "The passage progresses from repeated flooding, to the pilot, to its first test, limitations, and the decision to monitor another season."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the author’s point of view about restoring floodplains as a flood-control strategy?",
+      "primarySkillId": "R4.5",
+      "familyId": "pov.author",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Restored floodplains should replace conventional drainage systems in every city.",
+          "distractorType": "extreme_position",
+          "whyWrong": "The author explicitly says the design may not work on every stream."
+        },
+        {
+          "id": "b",
+          "text": "They are a promising strategy that should be judged with continued monitoring and local evidence."
+        },
+        {
+          "id": "c",
+          "text": "They are mainly valuable because they attract wildlife, while flood reduction is secondary.",
+          "distractorType": "misweights_detail",
+          "whyWrong": "Habitat is presented as an unexpected benefit, not the primary purpose."
+        },
+        {
+          "id": "d",
+          "text": "They are too uncertain to justify testing until engineers can isolate every variable.",
+          "distractorType": "opposite_position",
+          "whyWrong": "The passage treats the pilot itself as a useful way to gather evidence despite uncertainty."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The author presents the strategy as worth testing and potentially useful while emphasizing limits, confounding factors, and the need for more data.",
+        "quickTip": "Author point of view often appears in the balance between what the text endorses and what it refuses to overclaim.",
+        "evidenceRef": "Mason City plans to collect data through another wet season ... the pilot has not proved that the same design would work on every stream."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Relationships & Inference",
+    "primarySkillId": "R2.2",
+    "secondarySkillIds": [
+      "R3.2",
+      "R3.4",
+      "R4.2",
+      "R4.5"
+    ],
+    "contentKind": "passage_practice",
+    "learningObjective": "Transfer inference, connotation, tone, structure, and point-of-view reasoning to an original informational passage.",
+    "topicLabel": "GED Practice"
+  }
+}

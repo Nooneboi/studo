@@ -5,18 +5,18 @@
   "topic": "workplace automation",
   "status": "published",
   "version": 1,
-  "author": "Studo",
+  "author": "Chee Skool",
   "reviewer": "Extended Response V1 editorial review",
   "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
   "sourceA": {
     "title": "Expand with Human Review",
     "text": "A factory tested an automated camera system on one packaging line for sixteen weeks. Before the pilot, final inspectors found an average of 31 labeling or seal defects per 10,000 units. During the pilot, the camera flagged suspect packages earlier in the line, and final-inspection defects fell to 19 per 10,000 units. The system also produced false alarms on about 1.8 percent of packages, so workers still reviewed flagged items before removal.\n\nThe quality team recommends adding the system to two similar lines while keeping human review. It estimates equipment and integration costs of $260,000 and says the company should compare avoided rework, downtime, and false alarms for six additional months. The team does not claim the cameras can replace inspectors. Instead, it argues that the pilot shows the system may help workers find certain repetitive visual defects sooner.\n\nThe quality team reviewed 420 camera flags and found that most false alarms came from reflective packaging on one product family. After a software adjustment in week nine, the false-alarm rate for that product fell. Human inspectors reported that the system helped them focus on repeated seal patterns rather than replacing their judgment. Production speed on the pilot line did not change significantly. The next test would track performance across different package colors and whether maintenance staff can calibrate the cameras without vendor support.",
-    "attribution": "Original content by Studo"
+    "attribution": "Original content by Chee Skool"
   },
   "sourceB": {
     "title": "Keep Inspection Fully Manual",
     "text": "A senior inspector argues that automated cameras should not be expanded because experienced workers notice problems that a programmed system may miss. He gives examples of slightly unusual package sounds and material texture changes that have sometimes revealed equipment problems before a visible defect appeared. He also notes that false alarms can slow production if workers must repeatedly stop to check acceptable packages.\n\nThe inspector recommends spending the money on additional training and preventive maintenance instead. He cites two past equipment failures that were first noticed by workers rather than by automated sensors. However, those failures occurred before the camera pilot and involved mechanical problems outside the system's stated visual-inspection purpose. He does not compare the cost of additional staff training with the proposed camera expansion or address the decline in final labeling and seal defects during the pilot.\n\nThe inspector adds that the plant recorded three short production stops during the pilot while technicians adjusted lighting around the camera. He argues that a manual system is easier to adapt when packaging materials change unexpectedly. Inspectors already receive quarterly defect training, and he suggests adding another trainer instead of buying equipment. The letter does not estimate whether the three adjustment stops caused more lost production than the rework avoided by earlier defect detection. It recommends a broader review of all inspection costs before capital spending.",
-    "attribution": "Original content by Studo"
+    "attribution": "Original content by Chee Skool"
   },
   "strongerSource": "A",
   "authoringKey": {

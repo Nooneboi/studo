@@ -1,117 +1,59 @@
-# Studo — how to publish it
+# Chee Skool
 
-Everything here is free — no card, no paid plan. You'll use GitHub's
-website only (no commands, no terminal).
+Chee Skool is a static GED Reasoning Through Language Arts learning and practice site. The current release candidate focuses on Reading & Comprehension, Arguments & Sources, Language & Editing, Extended Response, progress tracking, and GED-style mock practice.
 
-## What's in this folder
+## Development structure
 
-```
-index.html          Home page
-practice.html         Practice page — untimed drills, sidebar filters + module grid
-module.html            The passage -> questions -> explanations flow (untimed)
-quiz.html              Quiz page — pick a skill area or full test
-test.html               The timed test runner (one countdown, submit for results)
-resources.html        Resources page — sidebar filters + list
-builder.html            Your private module-builder tool (don't share this link)
-manifest.json, sw.js  Make the site installable + work offline
-css/style.css           All the styling
-js/                          The code that runs each page
-data/                       Module JSON files + index.json (modules) + resources.json (resources)
-icons/                       App icons
+- `content-src/` is the canonical learning-content source.
+- `data/generated/` is generated learner content. Do not hand-edit it.
+- `assets/resources/` contains learner PDFs.
+- `builder.html`, `content-studio.html`, and `resource-studio.html` are internal authoring tools. They are intentionally excluded from the public learner deployment.
+- `dist/` is the disposable learner-only build produced by `npm run public:build`.
+
+## Local quality checks
+
+```bash
+npm test
+npm run content:validate
+npm run public:build
 ```
 
-## Subjects
-The subject bar under the header (Mathematical Reasoning / Science /
-Social Studies / Reasoning Through Language Arts) is site-wide. Only
-RLA is live — the other three show a "Soon" pill and aren't
-clickable. To turn one on later, open `js/subjectbar.js` and flip its
-`enabled` flag to `true`, then start adding modules with that
-`subject` value.
+`npm run public:build` rebuilds canonical content first, then creates `dist/` with only learner-facing pages and assets.
 
-## Step 1 — Create a free GitHub account
-Go to github.com → Sign up → confirm your email. That's it, no payment info needed.
+## Publishing with GitHub Desktop + GitHub Pages
 
-## Step 2 — Create a repository (a project folder on GitHub)
-1. Click the **+** in the top-right → **New repository**.
-2. Name it something like `study-ledger`.
-3. Set it to **Public** (so the link works for anyone).
-4. Leave everything else as default → **Create repository**.
+1. Open the project repository in GitHub Desktop.
+2. Commit the project changes and push `main`.
+3. On GitHub, open **Settings -> Pages**.
+4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+5. The workflow in `.github/workflows/pages.yml` runs the automated tests, validates content, builds the learner-only `dist/` folder, and deploys that artifact.
+6. Check the Actions run before treating the deployment as ready.
 
-## Step 3 — Upload this site
-1. On your new (empty) repo page, click **uploading an existing file**.
-2. Drag every file and folder from this project into the upload box
-   (yes, you can drag whole folders like `css/`, `js/`, `data/`, `icons/`).
-3. Scroll down → **Commit changes**.
+Do not switch Pages back to **Deploy from a branch**. Branch-root deployment would expose internal authoring pages that are not intended for learners.
 
-## Step 4 — Turn on GitHub Pages
-1. In your repo, go to **Settings** → **Pages** (left sidebar).
-2. Under "Build and deployment" → Source: **Deploy from a branch**.
-3. Branch: **main**, folder: **/ (root)** → **Save**.
-4. Wait about a minute, then refresh — GitHub shows your live link at
-   the top, something like:
-   `https://yourusername.github.io/study-ledger/`
+## Internal authoring tools
 
-That link is what you send to learners. It works forever, for free,
-and after their first visit it keeps working offline too.
+Run the local server:
 
-## Step 5 — Bookmark your Builder page for yourself
-Your private editing tool lives at:
-`https://yourusername.github.io/study-ledger/builder.html`
-
-Don't put this link in anything you share publicly — it has no
-password, it's just "not listed" anywhere. (If you want it fully
-hidden later, we can talk about a simple password gate.)
-
-## How to add a new module (do this whenever you want to publish one)
-1. Open your **Builder** page.
-2. Fill in the title, description, subject, skill area (category),
-   topic, difficulty, source credit, and questions.
-   - Skill area maps to the Practice sidebar: Reading, Writing and
-     Analysis, or Language Conventions. Topic is the sub-heading
-     within it (e.g. "Main Idea & Details") — modules sharing a topic
-     get grouped together, sorted by difficulty.
-   - Question types: multiple choice, evidence-based (options are
-     quoted excerpts), grammar edit (write the sentence with
-     `{{blank}}` where the editable word goes), fill in the blank,
-     open ended, extended response.
-3. Click **Download quiz JSON** — this saves a `.json` file to your
-   computer.
-4. Go to your GitHub repo → open the `data` folder → **Add file** →
-   **Upload files** → upload that `.json` file.
-5. Open `data/index.json` in the repo (click it, then the pencil/edit
-   icon) and add an entry for your new module, e.g.:
-   ```json
-   {
-     "file": "your-new-module.json",
-     "title": "Your Module Title",
-     "description": "One line about it"
-   }
-   ```
-   (Don't forget the comma between entries if there's more than one.)
-6. Commit changes. Give it a minute — the new module now shows up on
-   both the Practice page (under its skill area/topic) and the Quiz
-   page (folded into that skill area's timed test).
-
-## How to add a Resources entry
-Open `data/resources.json` in the repo (pencil icon) and add an entry:
-```json
-{ "kind": "guide", "title": "Your resource title", "url": "https://..." }
+```bash
+npm run studio
 ```
-`kind` must be one of: `phrase_bank`, `reading`, `guide`, `book`.
 
-## How to edit the Home page text
-It's plain text inside `index.html`. Open the file in GitHub (pencil
-icon to edit), change the words between the `<p>` and `<h1>` tags,
-and commit. No code knowledge required beyond "don't delete the
-`<...>` tags."
+Then use the local authoring pages such as:
 
-## What learners can and can't do
-- They **can**: answer questions, change their answers, delete
-  (hide) questions they've mastered, highlight text, and take notes
-  — all saved automatically to their own device.
-- They **can't**: send anything back to you, or affect what other
-  learners see. Every learner's copy is independent and private to
-  them.
+- `http://localhost:4173/content-studio.html`
+- `http://localhost:4173/resource-studio.html`
+- `http://localhost:4173/builder.html`
+
+These pages remain in the repository for development, but the public Pages artifact does not contain them.
+
+## Learner data and privacy
+
+Learner answers, notes, highlights, confidence choices, mock history, and progress are stored locally in the learner's browser. The current static alpha has no learner account database and does not send learner answers to Chee Skool servers.
+
+## Current release gate
+
+`release-gate.json` remains disabled until the release candidate passes real-browser/device QA and a small learner pilot. Automated checks are necessary, but they do not replace testing touch selection, clipboard/share permissions, print behavior, accessibility, and recovery flows on actual devices.
 
 ## If you want to update the design or add features later
 Everything is plain HTML/CSS/JavaScript with comments explaining

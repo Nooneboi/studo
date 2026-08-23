@@ -1,100 +1,10 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-23T05:20:03.610Z",
+  "builtAt": "2026-08-23T05:56:46.600Z",
   "summary": {
     "errors": 0,
-    "warnings": 10,
-    "byCode": {
-      "TRANSFER_FAMILY_SINGLETON": {
-        "errors": 0,
-        "warnings": 5,
-        "total": 5,
-        "files": [
-          "content-src/sets/set-rla-reading-transfer-edna-river.json",
-          "content-src/sets/set-rla-reading-transfer-festival-plan.json",
-          "content-src/sets/set-rla-reading-transfer-machine-listening.json"
-        ]
-      },
-      "PUBLISHED_SKILL_LOW_COVERAGE": {
-        "errors": 0,
-        "warnings": 5,
-        "total": 5,
-        "files": [
-          "content-src/config/rla.curriculum.json"
-        ]
-      }
-    }
+    "warnings": 0,
+    "byCode": {}
   },
-  "issues": [
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family connotation.choice has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-reading-transfer-edna-river.json",
-      "location": "set-rla-reading-transfer-edna-river:q4"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family structure.effect has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-reading-transfer-edna-river.json",
-      "location": "set-rla-reading-transfer-edna-river:q6"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family pov.author has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-reading-transfer-festival-plan.json",
-      "location": "set-rla-reading-transfer-festival-plan:q5"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family cause.implied has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-reading-transfer-machine-listening.json",
-      "location": "set-rla-reading-transfer-machine-listening:q5"
-    },
-    {
-      "type": "warning",
-      "code": "TRANSFER_FAMILY_SINGLETON",
-      "message": "Family tone.identify has only one published question; transfer cannot be tested yet.",
-      "file": "content-src/sets/set-rla-reading-transfer-machine-listening.json",
-      "location": "set-rla-reading-transfer-machine-listening:q6"
-    },
-    {
-      "type": "warning",
-      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
-      "message": "Published skill R5.4 (Evidence relevance) has only 3 canonical questions.",
-      "file": "content-src/config/rla.curriculum.json",
-      "location": "R5.4"
-    },
-    {
-      "type": "warning",
-      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
-      "message": "Published skill W1.8 (Organize the response) has only 2 canonical questions.",
-      "file": "content-src/config/rla.curriculum.json",
-      "location": "W1.8"
-    },
-    {
-      "type": "warning",
-      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
-      "message": "Published skill W1.9 (Develop ideas) has only 2 canonical questions.",
-      "file": "content-src/config/rla.curriculum.json",
-      "location": "W1.9"
-    },
-    {
-      "type": "warning",
-      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
-      "message": "Published skill W1.10 (Revise for focus & clarity) has only 2 canonical questions.",
-      "file": "content-src/config/rla.curriculum.json",
-      "location": "W1.10"
-    },
-    {
-      "type": "warning",
-      "code": "PUBLISHED_SKILL_LOW_COVERAGE",
-      "message": "Published skill W1.11 (Edit conventions) has only 2 canonical questions.",
-      "file": "content-src/config/rla.curriculum.json",
-      "location": "W1.11"
-    }
-  ]
+  "issues": []
 }

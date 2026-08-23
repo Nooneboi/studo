@@ -1,0 +1,319 @@
+{
+  "id": "rla-reading-transfer-willow-bend",
+  "title": "Giving Willow Bend Creek More Room",
+  "description": "Mixed Reading transfer practice on an evidence-based floodplain pilot.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "For years, Willow Bend Creek crossed the east side of Mason City through a narrow concrete channel. The channel had been built decades earlier to move storm water away from streets quickly. During ordinary rain, it did exactly that. During intense storms, however, water rushed toward a low bridge near Cedar Avenue faster than the opening beneath the bridge could carry it. The creek rose against the banks, storm drains backed up, and several blocks experienced repeated basement flooding.\n\nAfter two damaging storms in five years, city engineers proposed a different approach. Instead of making the concrete channel deeper, they removed a section of it upstream from the bridge and lowered part of an unused field beside the creek. During heavy rain, water could spread into the field before returning to the main channel. Engineers described the field as a temporary floodplain: it would normally function as open green space, but during a storm it could hold water that otherwise would arrive at the bridge all at once.\n\nSome residents doubted the plan. They had watched previous projects focus on moving water faster, and deliberately allowing a field to flood sounded like a retreat. Others worried that standing water would remain for days or attract mosquitoes. The city therefore approved a two-year pilot rather than a permanent expansion. Crews planted grasses that tolerate both wet and dry conditions, created shallow drainage paths, and installed gauges above and below the restored floodplain.\n\nThe first major test came nine months later. A storm dropped nearly the same amount of rain as one that had caused serious flooding three years earlier. This time, the upstream gauge showed the creek spreading into the field for about four hours. The downstream gauge recorded a lower peak water level near the bridge, and the neighborhood reported only minor street ponding. Water in most of the field drained back toward the creek by the next afternoon.\n\nThose results were encouraging, but the comparison was not perfect. The two storms followed different weather patterns, and soil moisture before each storm was not identical. Since the pilot began, the city had also cleaned several blocked storm drains near Cedar Avenue. Engineers could not say precisely how much of the improvement came from the floodplain and how much came from those other differences.\n\nEven so, the pilot changed how the city discussed flood control. The old concrete channel had treated the creek mainly as a pipe: the goal was to move water through the neighborhood as fast as possible. The restored field treated the landscape as part of the drainage system. By giving water more room upstream, the city hoped to reduce the bottleneck at the bridge rather than force more water toward it.\n\nMonitoring also revealed an unexpected benefit. After seasonal plants became established, staff recorded more dragonflies, frogs, and wading birds around the field. The city has not counted those observations as proof that every floodplain project will improve habitat, but planners now include habitat conditions in their reports along with water levels and maintenance costs.\n\nMason City plans to collect data through another wet season before deciding whether to restore two additional creekside areas. The pilot has not eliminated flooding, and it has not proved that the same design would work on every stream. What it has provided is a test of a different principle: sometimes protecting a neighborhood from fast-moving water may require creating a safe place for some of that water to slow down.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why was the downstream peak near Cedar Avenue probably lower during the pilot storm, even though the rainfall total was similar to the earlier storm?",
+      "points": 1,
+      "explanation": "The passage links temporary upstream storage with a lower peak near the bridge: water was spread out over time instead of arriving all at once.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "For an implied-cause question, combine the mechanism described earlier with the later result.",
+      "familyId": "cause.implied",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The new grasses absorbed nearly all of the storm water before it reached the creek.",
+          "distractorType": "overstates_mechanism",
+          "whyWrong": "The passage says the field temporarily held and slowed water; it does not say vegetation absorbed nearly all of it."
+        },
+        {
+          "id": "b",
+          "text": "Some water spread into the upstream floodplain and returned to the channel later, reducing how much reached the bridge at the same moment."
+        },
+        {
+          "id": "c",
+          "text": "The city widened the opening under the Cedar Avenue bridge during the pilot.",
+          "distractorType": "unsupported_change",
+          "whyWrong": "No bridge widening is described."
+        },
+        {
+          "id": "d",
+          "text": "The second storm fell more slowly over several days, so the creek never received a sudden inflow.",
+          "distractorType": "contradicts_context",
+          "whyWrong": "The passage says the storms had similar totals but different weather patterns; it does not say the pilot storm lasted several days or lacked intense flow."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "The field could hold water that otherwise would arrive at the bridge all at once; during the test, water spread into the field for about four hours."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What does the word “bottleneck” suggest about the bridge area in paragraph 6?",
+      "points": 1,
+      "explanation": "“Bottleneck” suggests a narrow restriction that limits flow, matching the description of water reaching the bridge faster than its opening could carry it.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Use the surrounding mechanism to identify the association a figurative word carries.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the safest place for storm water to remain after a flood.",
+          "distractorType": "unsupported_meaning",
+          "whyWrong": "The bridge area is described as a restriction, not a storage area."
+        },
+        {
+          "id": "b",
+          "text": "It is a location where wildlife is unusually concentrated.",
+          "distractorType": "topic_shift",
+          "whyWrong": "Wildlife observations concern the restored field, not the bridge."
+        },
+        {
+          "id": "c",
+          "text": "It is a place where the creek becomes cleaner because water moves more slowly.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "Water quality is not the point of the comparison."
+        },
+        {
+          "id": "d",
+          "text": "It is a constricted point where more water can arrive than can pass through efficiently."
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "Water rushed toward a low bridge ... faster than the opening beneath the bridge could carry it."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which word best describes the author’s tone toward the floodplain pilot?",
+      "points": 1,
+      "explanation": "The passage calls the results encouraging and describes possible benefits while repeatedly qualifying what the pilot has and has not proved.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Tone should reflect the whole passage, especially both positive language and qualifications.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Cautiously optimistic"
+        },
+        {
+          "id": "b",
+          "text": "Dismissive",
+          "distractorType": "extreme_tone",
+          "whyWrong": "The author treats the pilot as meaningful and worth continued study, not as unimportant."
+        },
+        {
+          "id": "c",
+          "text": "Alarmed",
+          "distractorType": "topic_not_tone",
+          "whyWrong": "Flooding is a serious topic, but the author’s treatment of the pilot is measured rather than fearful."
+        },
+        {
+          "id": "d",
+          "text": "Triumphant",
+          "distractorType": "extreme_tone",
+          "whyWrong": "The passage repeatedly notes limits and does not claim the pilot solved flooding."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "The pilot has not eliminated flooding ... What it has provided is a test of a different principle."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the organization of the passage help develop the author’s main idea?",
+      "points": 1,
+      "explanation": "The sequence lets readers see the problem, understand the intervention, examine evidence, and then see why the conclusion remains qualified.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "A structure-effect answer should explain what the organization allows the author to demonstrate, not merely summarize sections.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It lists several flood-control methods from cheapest to most expensive so readers can choose one.",
+          "distractorType": "wrong_relationship",
+          "whyWrong": "The passage follows one pilot project rather than ranking several methods by cost."
+        },
+        {
+          "id": "b",
+          "text": "It presents residents’ objections after the final results so those objections appear unreasonable.",
+          "distractorType": "misreads_order",
+          "whyWrong": "Residents’ concerns appear before the pilot results and are treated as legitimate questions."
+        },
+        {
+          "id": "c",
+          "text": "It moves from the old flooding problem to the pilot design, then to results and limitations, showing why the new approach is promising but still being evaluated."
+        },
+        {
+          "id": "d",
+          "text": "It alternates between two engineers with opposing views to show that experts cannot agree.",
+          "distractorType": "unsupported_structure",
+          "whyWrong": "The passage does not alternate between opposing engineers."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "The passage progresses from repeated flooding, to the pilot, to its first test, limitations, and the decision to monitor another season."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the author’s point of view about restoring floodplains as a flood-control strategy?",
+      "points": 1,
+      "explanation": "The author presents the strategy as worth testing and potentially useful while emphasizing limits, confounding factors, and the need for more data.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "Author point of view often appears in the balance between what the text endorses and what it refuses to overclaim.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Restored floodplains should replace conventional drainage systems in every city.",
+          "distractorType": "extreme_position",
+          "whyWrong": "The author explicitly says the design may not work on every stream."
+        },
+        {
+          "id": "b",
+          "text": "They are a promising strategy that should be judged with continued monitoring and local evidence."
+        },
+        {
+          "id": "c",
+          "text": "They are mainly valuable because they attract wildlife, while flood reduction is secondary.",
+          "distractorType": "misweights_detail",
+          "whyWrong": "Habitat is presented as an unexpected benefit, not the primary purpose."
+        },
+        {
+          "id": "d",
+          "text": "They are too uncertain to justify testing until engineers can isolate every variable.",
+          "distractorType": "opposite_position",
+          "whyWrong": "The passage treats the pilot itself as a useful way to gather evidence despite uncertainty."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "Mason City plans to collect data through another wet season ... the pilot has not proved that the same design would work on every stream."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-reading-transfer-willow-bend",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.2",
+      "secondarySkillIds": [
+        "R3.2",
+        "R3.4",
+        "R4.2",
+        "R4.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Transfer inference, connotation, tone, structure, and point-of-view reasoning to an original informational passage.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-reading-transfer-willow-bend",
+      "title": "Giving Willow Bend Creek More Room",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-23T05:56:46.584Z"
+  }
+}

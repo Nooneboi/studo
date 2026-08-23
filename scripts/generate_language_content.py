@@ -9,9 +9,9 @@ def dump(p,o): p.write_text(json.dumps(o,ensure_ascii=False,indent=2)+'\n',encod
 
 def passage(pid,title,text,context='workplace'):
     o={'schemaVersion':2,'id':pid,'title':title,'text':text.strip(),'textType':'informational','context':context,
-       'source':{'type':'original','attribution':'Original content by Studo'},
-       'rights':{'status':'original','holder':'Studo','note':'Original practice material created for Studo Language & Editing V1.'},
-       'status':'published','version':1,'author':'Studo','reviewer':'Language & Editing V1 editorial review'}
+       'source':{'type':'original','attribution':'Original content by Chee Skool'},
+       'rights':{'status':'original','holder':'Chee Skool','note':'Original practice material created for Chee Skool Language & Editing V1.'},
+       'status':'published','version':1,'author':'Chee Skool','reviewer':'Language & Editing V1 editorial review'}
     dump(PASSAGES/f'{pid}.json',o)
 
 def q(qid,prompt,skill,family,choices,correct,why,tip,secondary=None,difficulty='medium',dok=2,qtype='grammar_edit',seconds=45):
@@ -33,7 +33,7 @@ def q(qid,prompt,skill,family,choices,correct,why,tip,secondary=None,difficulty=
 def focused(sid,title,desc,pid,unit,primary,secondary,questions):
     o={'schemaVersion':2,'id':sid,'runtime':{'id':sid,'file':f'{sid}.json'},'title':title,'description':desc,
        'subject':'rla','category':'language_conventions','topic':'Language & Editing - Focused Practice','difficulty':'medium',
-       'status':'published','version':1,'passageRefs':[pid],'author':'Studo','reviewer':'Language & Editing V1 editorial review',
+       'status':'published','version':1,'passageRefs':[pid],'author':'Chee Skool','reviewer':'Language & Editing V1 editorial review',
        'reviewNotes':'Reviewed for one-best-answer grammar logic, contextual editing, close distractors, and specific feedback.',
        'questions':questions,'curriculum':{'domain':'Language & Editing','primarySkillId':primary,'secondarySkillIds':secondary,
        'unitId':unit,'contentKind':'skill_drill','learningObjective':desc,'topicLabel':'Focused Practice'}}
@@ -42,7 +42,7 @@ def focused(sid,title,desc,pid,unit,primary,secondary,questions):
 def mixed(sid,title,desc,pid,primary,secondary,tags,questions):
     o={'schemaVersion':2,'id':sid,'runtime':{'id':sid,'file':f'{sid}.json'},'title':title,'description':desc,
        'subject':'rla','category':'language_conventions','topic':'Language & Editing - GED Practice','difficulty':'hard',
-       'status':'published','version':1,'passageRefs':[pid],'author':'Studo','reviewer':'Language & Editing V1 editorial review',
+       'status':'published','version':1,'passageRefs':[pid],'author':'Chee Skool','reviewer':'Language & Editing V1 editorial review',
        'reviewNotes':'Mixed editing passage reviewed for sentence-context fidelity, one-best-answer grammar logic, and GED-style editing transfer.',
        'questions':questions,'curriculum':{'domain':'Language & Editing','primarySkillId':primary,'secondarySkillIds':secondary,
        'contentKind':'editing_practice','practiceTags':tags,'learningObjective':'Edit grammar, punctuation, usage, and clarity in passage context.','topicLabel':'Mixed Editing Practice'}}

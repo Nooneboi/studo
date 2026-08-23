@@ -149,7 +149,7 @@ Q={
 ('W1.12','writing.er.full_process','What should happen when the timer reaches zero in a true simulation?','Editing should stop if the learner was clearly warned before starting, and the response should move to review.',[
 ('The essay should be automatically scored 6/6 if it is long enough.','fake_scoring','Length cannot establish rubric quality and V1 does not machine-grade essays.'),('The timer should secretly add five minutes.','invalid_simulation','A hidden extension makes timing meaningless.'),('The page should erase the draft.','data_loss','The learner needs the response for review and revision.')],'A simulation needs predictable timing behavior and must preserve the learner\'s work for review.','Clear rules make timed practice useful.'),
 ('W1.12','writing.er.full_process','Which post-submit label is appropriate for V1?','Self-review: Argument & Evidence - choose 0, 1, or 2 using the rubric checklist.',[
-('Official GED Score: 2/2.','misleading','Studo cannot claim an official score.'),('AI-certified Trait Score: 2/2.','misleading','V1 does not use reliable automatic essay grading.'),('Guaranteed exam score: full marks.','misleading','Practice cannot guarantee an official result.')],'The learner may assign a provisional score using transparent criteria, clearly labeled as self-review.','Separate self-review from machine-verified quiz accuracy.'),
+('Official GED Score: 2/2.','misleading','Chee Skool cannot claim an official score.'),('AI-certified Trait Score: 2/2.','misleading','V1 does not use reliable automatic essay grading.'),('Guaranteed exam score: full marks.','misleading','Practice cannot guarantee an official result.')],'The learner may assign a provisional score using transparent criteria, clearly labeled as self-review.','Separate self-review from machine-verified quiz accuracy.'),
 ('W1.12','writing.er.full_process','When should the model response appear?','After submission, or after the learner explicitly chooses to reveal it.',[
 ('Before the learner reads the sources.','spoiler','Early exposure turns practice into copying.'),('While the learner is drafting each sentence.','interruptive','Real-time model comparison interferes with independent practice.'),('Only after the learner deletes the draft.','unnecessary','The learner should keep the draft for comparison and revision.')],'Delayed reveal protects independent practice while still supporting learning afterward.','Attempt first; compare second.'),
 ('W1.12','writing.er.full_process','Which saved information should remain separate from objective mastery?','The learner\'s provisional 0-2 rubric self-scores.',[
@@ -165,8 +165,8 @@ Q={
 def passage(u):
  return {
   'schemaVersion':2,'id':f"p-rla-er-focus-{u['slug']}",'title':u['passage_title'],'text':u['text'],'textType':'informational','context':u['context'],
-  'source':{'type':'original','attribution':'Original content by Studo'},'rights':{'status':'original','holder':'Studo','note':'Original ER component-practice material created for Studo.'},
-  'status':'published','version':1,'author':'Studo','reviewer':'Extended Response V1 editorial review'
+  'source':{'type':'original','attribution':'Original content by Chee Skool'},'rights':{'status':'original','holder':'Chee Skool','note':'Original ER component-practice material created for Chee Skool.'},
+  'status':'published','version':1,'author':'Chee Skool','reviewer':'Extended Response V1 editorial review'
  }
 
 def make_options(correct_letter, correct_text, wrongs):
@@ -188,7 +188,7 @@ def setobj(u):
  qs=[qobj(i,row,seq[i-1]) for i,row in enumerate(Q[u['slug']],1)]
  return {'schemaVersion':2,'id':f"set-rla-er-focus-{u['slug']}",'runtime':{'id':f"rla-er-focus-{u['slug']}",'file':f"rla-er-focus-{u['slug']}.json"},
  'title':u['title'],'description':'Focused Extended Response component practice.','subject':'rla','category':'writing','topic':'Extended Response - Focused Practice','difficulty':'medium','status':'published','version':1,
- 'passageRefs':[f"p-rla-er-focus-{u['slug']}"],'author':'Studo','reviewer':'Extended Response V1 editorial review','reviewNotes':'Reviewed for source fidelity, one-best-answer logic, close distractors, and rubric-aligned reasoning.',
+ 'passageRefs':[f"p-rla-er-focus-{u['slug']}"],'author':'Chee Skool','reviewer':'Extended Response V1 editorial review','reviewNotes':'Reviewed for source fidelity, one-best-answer logic, close distractors, and rubric-aligned reasoning.',
  'questions':qs,'curriculum':{'domain':'Extended Response','primarySkillId':u['skills'][0],'secondarySkillIds':u['skills'][1:],'unitId':u['id'],'contentKind':'skill_drill','learningObjective':u['title'],'topicLabel':'Extended Response'}}
 
 Q['organize-develop-revise'] = Q['organize-develop-revise'][:8]

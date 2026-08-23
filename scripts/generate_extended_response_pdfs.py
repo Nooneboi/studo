@@ -8,7 +8,7 @@ OUT=ROOT/'assets'/'resources'; OUT.mkdir(parents=True,exist_ok=True)
 FONT_REGULAR='/usr/share/fonts/opentype/inter/Inter-Regular.otf'
 FONT_SEMI='/usr/share/fonts/opentype/inter/Inter-SemiBold.otf'
 CSS=f'''@font-face {{font-family:Inter;src:url("file://{FONT_REGULAR}");font-weight:400;}} @font-face {{font-family:Inter;src:url("file://{FONT_SEMI}");font-weight:600;}}
-@page {{size:Letter;margin:.68in .72in .70in .72in;@bottom-left{{content:"Studo - GED RLA Extended Response";font-family:Inter;font-size:8.5pt;color:#5A5864;}}@bottom-right{{content:counter(page);font-family:Inter;font-size:8.5pt;color:#5A5864;}}}}
+@page {{size:Letter;margin:.68in .72in .70in .72in;@bottom-left{{content:"Chee Skool - GED RLA Extended Response";font-family:Inter;font-size:8.5pt;color:#5A5864;}}@bottom-right{{content:counter(page);font-family:Inter;font-size:8.5pt;color:#5A5864;}}}}
 *{{box-sizing:border-box}} body{{font-family:Inter,sans-serif;color:#22212A;font-size:13.4pt;line-height:1.36;margin:0}} h1{{font-size:23pt;color:#51439C;font-weight:600;margin:0 0 7pt}} .subtitle{{color:#5A5864;font-size:11.5pt;margin:0 0 18pt}} h2{{font-size:16pt;margin:14pt 0 6pt;font-weight:600}} h3{{font-size:13.5pt;color:#51439C;margin:12pt 0 5pt}} p{{margin:0 0 8pt}} ul{{margin:4pt 0 10pt 20pt;padding:0}} li{{margin:0 0 5pt}} .callout{{background:#F0EDFF;border:.8pt solid #DDD8F4;border-radius:6pt;padding:10pt 12pt;margin:7pt 0 10pt}} .exercise{{break-inside:avoid;margin-top:9pt}} .page-break{{break-before:page}} .answer{{font-size:12.3pt;margin:0 0 7pt 8pt}} .small{{font-size:11.3pt;color:#5A5864}}'''
 
 def p(text,cls=''):

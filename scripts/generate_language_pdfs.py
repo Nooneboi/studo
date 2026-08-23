@@ -13,7 +13,7 @@ CSS = f'''
 @font-face {{ font-family: Inter; src: url("file://{FONT_REGULAR}"); font-weight: 400; }}
 @font-face {{ font-family: Inter; src: url("file://{FONT_SEMI}"); font-weight: 600; }}
 @page {{ size: Letter; margin: 0.68in 0.72in 0.70in 0.72in;
-  @bottom-left {{ content: "Studo - GED RLA Language & Editing"; font-family: Inter; font-size: 8.5pt; color: #5A5864; }}
+  @bottom-left {{ content: "Chee Skool - GED RLA Language & Editing"; font-family: Inter; font-size: 8.5pt; color: #5A5864; }}
   @bottom-right {{ content: counter(page); font-family: Inter; font-size: 8.5pt; color: #5A5864; }}
 }}
 * {{ box-sizing: border-box; }}

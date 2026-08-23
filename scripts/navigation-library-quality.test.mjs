@@ -206,6 +206,15 @@ test('practice Tools menu keeps useful study actions and removes scratch drawing
   assert.match(toolsJs, /navigator\.clipboard\.writeText/);
 });
 
+
+test('practice reset clears transient confidence UI and return links stay same-origin', () => {
+  const moduleJs = fs.readFileSync(path.join(root, 'js/module.js'), 'utf8');
+  assert.match(moduleJs, /Object\.keys\(confidenceSelections\)[\s\S]*delete confidenceSelections\[key\]/, 'Reset should clear unsaved confidence selections from the current practice UI');
+  assert.match(moduleJs, /new URL\(requestedReturn,\s*window\.location\.href\)/, 'return navigation should be resolved through URL parsing');
+  assert.match(moduleJs, /parsed\.origin !== window\.location\.origin/, 'return navigation should be constrained to the current origin');
+  assert.doesNotMatch(moduleJs, /!\/\^\(\?:https\?:\)\?\\\/\\\//, 'the old scheme blacklist should not be used as the return-link safety boundary');
+});
+
 test('Mock landing keeps the same primary learner navigation as the rest of Studo', () => {
   const html = fs.readFileSync(path.join(root, 'quiz.html'), 'utf8');
   for (const [href, label] of [['index.html','Home'],['practice.html','Practice'],['train.html','Train'],['quiz.html','Mock'],['progress.html','Progress'],['resources.html','Resources']]) {
@@ -245,9 +254,9 @@ test('learner pages expose the same release metadata as release.json', () => {
 test('Alpha Candidate release metadata and service-worker cache are bumped together', () => {
   const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8'));
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  assert.equal(release.release, '0.7.0-alpha.4');
-  assert.match(sw, /0\.7\.0-alpha\.4/);
-  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.4"/);
+  assert.equal(release.release, '0.7.0-alpha.5');
+  assert.match(sw, /0\.7\.0-alpha\.5/);
+  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.5"/);
 });
 
 

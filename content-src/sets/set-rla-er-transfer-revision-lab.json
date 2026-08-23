@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-er-transfer-revision-lab",
+  "runtime": {
+    "id": "rla-er-transfer-revision-lab",
+    "file": "rla-er-transfer-revision-lab.json"
+  },
+  "title": "Organize, Develop & Revise - Transfer Check",
+  "description": "A second source pair for applying organization, development, revision, and editing skills beyond the core focused module.",
+  "subject": "rla",
+  "category": "writing",
+  "topic": "Extended Response - Transfer Practice",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-er-transfer-evening-support"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Alpha release hardening editorial review",
+  "reviewNotes": "Added to deepen transfer coverage for W1.8-W1.11 without replacing the existing eight-question core check.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which outline provides the clearest progression for an essay arguing that Source A is better supported?",
+      "primarySkillId": "W1.8",
+      "familyId": "writing.er.organization",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Summarize Source A -> summarize Source B -> state a preference in the conclusion.",
+          "distractorType": "source_by_source_summary_only",
+          "whyWrong": "This structure reports content but postpones the evaluation and does not organize around reasons."
+        },
+        {
+          "id": "b",
+          "text": "State the evaluation -> analyze Source A’s pilot evidence -> compare Source B’s untested assumptions -> acknowledge what Source A still does not prove."
+        },
+        {
+          "id": "c",
+          "text": "List every number from both sources -> discuss commuting -> repeat the thesis.",
+          "distractorType": "random_evidence",
+          "whyWrong": "The evidence is not organized by a clear evaluative purpose."
+        },
+        {
+          "id": "d",
+          "text": "Describe personal experiences with tutoring -> summarize the survey -> choose a source.",
+          "distractorType": "off_task",
+          "whyWrong": "Personal experience does not replace analysis of the supplied arguments."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The outline establishes the judgment early, organizes evidence by evaluative reasons, compares the weaker source, and preserves qualification.",
+        "quickTip": "Organize an ER around reasons for your judgment, not around separate source summaries.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which transition best completes the comparison? “Source A has direct pilot evidence about evening users. ___, Source B has not tested its service at college-wide scale.”",
+      "primarySkillId": "W1.8",
+      "familyId": "writing.er.organization",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "For example",
+          "distractorType": "wrong_relation",
+          "whyWrong": "The second sentence is not an example of Source A’s evidence."
+        },
+        {
+          "id": "b",
+          "text": "As a result",
+          "distractorType": "false_cause",
+          "whyWrong": "Source A’s pilot did not cause Source B to lack a pilot."
+        },
+        {
+          "id": "c",
+          "text": "In the same way",
+          "distractorType": "wrong_contrast",
+          "whyWrong": "The sentences emphasize a difference in evidence strength."
+        },
+        {
+          "id": "d",
+          "text": "By contrast"
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "“By contrast” accurately signals the shift from tested pilot evidence to an untested broader proposal.",
+        "quickTip": "Choose transitions for the logical relationship, not because they sound formal.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best develops the claim that Source A has stronger evidence about actual use?",
+      "primarySkillId": "W1.9",
+      "familyId": "writing.er.development",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The 72 percent figure matters because it shows the pilot reached many students who had not used daytime tutoring that week, directly connecting the trial to Source A’s access claim."
+        },
+        {
+          "id": "b",
+          "text": "Source A says 72 percent, which is a large number.",
+          "distractorType": "evidence_only",
+          "whyWrong": "This repeats the statistic without explaining what it demonstrates."
+        },
+        {
+          "id": "c",
+          "text": "Tutoring is important because students need help.",
+          "distractorType": "opinion_only",
+          "whyWrong": "The statement is generic and not tied to the source evidence."
+        },
+        {
+          "id": "d",
+          "text": "Source B mentions 54 percent, so Source A must be correct.",
+          "distractorType": "faulty_comparison",
+          "whyWrong": "A different survey percentage does not automatically validate Source A."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The sentence explains the significance of the pilot statistic and connects it directly to the argument being evaluated.",
+        "quickTip": "After evidence, explain what it proves and why that matters to your thesis.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A paragraph already explains that Source B’s 54 percent survey result shows interest in online support. Which sentence would best deepen the analysis?",
+      "primarySkillId": "W1.9",
+      "familyId": "writing.er.development",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Online services are common today.",
+          "distractorType": "new_unrelated_fact",
+          "whyWrong": "The statement adds no source-based analysis."
+        },
+        {
+          "id": "b",
+          "text": "Fifty-four percent is more than half.",
+          "distractorType": "repetition",
+          "whyWrong": "This restates the number without evaluating it."
+        },
+        {
+          "id": "c",
+          "text": "However, the survey measures interest rather than actual repeated use, so it is weaker evidence for how the proposed service would perform than Source A’s completed pilot is for evening attendance."
+        },
+        {
+          "id": "d",
+          "text": "The college should always choose the option preferred by the largest percentage of students.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The essay must evaluate evidence and tradeoffs, not apply an unsupported rule."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This addition identifies what the evidence measures, its limitation, and how that affects the comparison between sources.",
+        "quickTip": "Depth comes from interpreting the limits and significance of evidence.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which revision makes this sentence more focused? “Source A is stronger because it has a pilot, the college has many classrooms, tutoring can be stressful, and the pilot provides actual attendance data.”",
+      "primarySkillId": "W1.10",
+      "familyId": "writing.er.revision",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A is stronger because it has a pilot, the college has many classrooms, tutoring can sometimes be stressful for some students, and the pilot provides actual attendance data.",
+          "distractorType": "keeps_repetition",
+          "whyWrong": "The revision keeps the unrelated material and adds words without improving focus."
+        },
+        {
+          "id": "b",
+          "text": "Source A is stronger because tutoring exists.",
+          "distractorType": "cuts_needed_evidence",
+          "whyWrong": "This removes the evidence that supports the comparison."
+        },
+        {
+          "id": "c",
+          "text": "The college has many classrooms, and Source A is stronger.",
+          "distractorType": "removes_reasoning",
+          "whyWrong": "The revision keeps an irrelevant fact and drops the useful reason."
+        },
+        {
+          "id": "d",
+          "text": "Source A is stronger because its pilot provides actual attendance data about the proposed evening hours."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The revision removes unrelated classroom and stress details while preserving the evidence-based reason for the judgment.",
+        "quickTip": "Cut any detail that does not help prove the paragraph’s specific point.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which revision improves clarity and logical order most? “Source B might reach commuters. Its college-wide demand is unknown. Therefore, the proposal could improve access, but the evidence is less direct than Source A’s pilot.”",
+      "primarySkillId": "W1.10",
+      "familyId": "writing.er.revision",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source B might reach commuters. Therefore, Source A ran a pilot. Its college-wide demand is unknown.",
+          "distractorType": "changes_argument",
+          "whyWrong": "The transition creates a false logical connection."
+        },
+        {
+          "id": "b",
+          "text": "Source B could improve access for commuters, but its college-wide demand is still unknown; therefore, that benefit is less directly supported than Source A’s pilot-based access claim is."
+        },
+        {
+          "id": "c",
+          "text": "College-wide demand is unknown. Commuters exist. Source B has a proposal.",
+          "distractorType": "choppy_reorder",
+          "whyWrong": "The sentences become less connected and the evaluation is obscured."
+        },
+        {
+          "id": "d",
+          "text": "Source B is less direct, and commuters might be reached, and demand is unknown, and Source A has a pilot.",
+          "distractorType": "surface_edit_only",
+          "whyWrong": "The sentence is harder to follow because it strings several ideas together without clear relationships."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The revision places the potential benefit beside its evidence limitation and then states the comparison clearly.",
+        "quickTip": "Clarity improves when evidence, limitation, and evaluation appear in a logical sequence.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which revision best corrects the sentence without changing its meaning? “Source A provide attendance data from a pilot, while Source B have only a limited course trial.”",
+      "primarySkillId": "W1.11",
+      "familyId": "writing.er.edit",
+      "difficulty": "medium",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Source A providing attendance data from a pilot, while Source B having only a limited course trial.",
+          "distractorType": "fragment",
+          "whyWrong": "This creates a fragment without finite verbs."
+        },
+        {
+          "id": "b",
+          "text": "Source A provide attendance data from a pilot; while Source B has only a limited course trial.",
+          "distractorType": "agreement_and_boundary",
+          "whyWrong": "“Provide” still disagrees with the singular subject, and the semicolon before “while” is incorrect here."
+        },
+        {
+          "id": "c",
+          "text": "Source A provides attendance data from a pilot, while Source B has only a limited course trial."
+        },
+        {
+          "id": "d",
+          "text": "Source A provides attendance data, from a pilot while Source B, has only a limited course trial.",
+          "distractorType": "punctuation",
+          "whyWrong": "The added commas interrupt the sentence incorrectly."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The revision fixes subject-verb agreement and keeps the comparison in one correctly punctuated sentence.",
+        "quickTip": "In final editing, protect meaning while fixing the specific convention error.",
+        "evidenceRef": null
+      }
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which sentence most needs revision for Standard English?",
+      "primarySkillId": "W1.11",
+      "familyId": "writing.er.edit",
+      "difficulty": "medium",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Although Source B offers flexible access, its evidence do not show how consistently students would use the service."
+        },
+        {
+          "id": "b",
+          "text": "Source A’s pilot lasted four weeks, so a longer trial could provide more reliable evidence.",
+          "distractorType": "correct_sentence",
+          "whyWrong": "This sentence uses standard agreement and punctuation."
+        },
+        {
+          "id": "c",
+          "text": "The two sources address the same access problem but support different solutions.",
+          "distractorType": "correct_sentence",
+          "whyWrong": "This sentence is complete and correctly structured."
+        },
+        {
+          "id": "d",
+          "text": "Because Source A reports actual attendance, its evidence is more direct for the proposed schedule.",
+          "distractorType": "correct_sentence",
+          "whyWrong": "The introductory clause and main clause are correctly formed."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Option A has a subject-verb agreement error: the singular subject “evidence” requires “does not show.”",
+        "quickTip": "Look for convention errors that interfere with clarity before making optional style changes.",
+        "evidenceRef": null
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Extended Response",
+    "primarySkillId": "W1.8",
+    "secondarySkillIds": [
+      "W1.9",
+      "W1.10",
+      "W1.11"
+    ],
+    "contentKind": "mixed_review",
+    "learningObjective": "Transfer organization, development, revision, and conventions skills to a new paired-source context.",
+    "topicLabel": "Transfer Check",
+    "unitId": "organize-develop-revise"
+  }
+}

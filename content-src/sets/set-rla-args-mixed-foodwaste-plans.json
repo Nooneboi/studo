@@ -16,7 +16,7 @@
   "passageRefs": [
     "p-rla-args-mixed-foodwaste-plans"
   ],
-  "author": "Studo",
+  "author": "Chee Skool",
   "reviewer": "Arguments & Sources V1 editorial review",
   "reviewNotes": "Mixed-source Arguments practice reviewed for source comparison, evidence quality, one-best-answer logic, and ER transfer.",
   "questions": [
@@ -312,6 +312,56 @@
         "answer": "B",
         "whyCorrect": "Comparable populations, periods, and shared outcomes would let the city distinguish program effects from neighborhood differences and compare both value and usability.",
         "quickTip": "A fair comparison controls obvious differences and measures the same decision criteria for each option."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which additional evidence would be MOST relevant to deciding whether Plan B’s lower first-year cost would remain an advantage after the program is widely used?",
+      "primarySkillId": "R5.4",
+      "familyId": "arguments.evidence.relevance",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "A list of the colors available for food-waste collection containers.",
+          "distractorType": "irrelevant_detail",
+          "whyWrong": "Container color does not address whether operating costs remain lower at larger scale."
+        },
+        {
+          "id": "b",
+          "text": "A survey asking residents whether they think food waste is unpleasant.",
+          "distractorType": "attitude_not_cost",
+          "whyWrong": "General attitudes do not measure the cost consequences of wider program use."
+        },
+        {
+          "id": "c",
+          "text": "The number of grocery stores in neighborhoods outside the pilot area.",
+          "distractorType": "indirect_detail",
+          "whyWrong": "Store count does not directly test Plan B’s operating cost at higher participation."
+        },
+        {
+          "id": "d",
+          "text": "Projected collection, staffing, and overflow-management costs at several participation levels, compared with Plan A’s costs at the same levels."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The decision concerns whether the apparent cost advantage survives wider use, so the most relevant evidence compares operating costs at matched participation levels.",
+        "quickTip": "Relevant evidence must answer the exact uncertainty in the claim, not merely relate to the general topic.",
+        "evidenceRef": null
       }
     }
   ],

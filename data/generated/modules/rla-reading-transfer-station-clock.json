@@ -1,0 +1,319 @@
+{
+  "id": "rla-reading-transfer-station-clock",
+  "title": "The Clock Above Track Four",
+  "description": "Mixed literary Reading transfer practice about memory, evidence, and practical preservation.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Reading & Comprehension - GED Practice",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "On the first Monday after the old rail station reopened as a community market, Mara arrived before sunrise to unlock the side doors. The platforms no longer served passenger trains, but the roof still held the iron clock that had faced Track Four for nearly eighty years. Its hands had stopped at 6:17 sometime during the building’s long closure.\n\nThe renovation committee had argued about the clock for months. A contractor offered to replace it with a bright digital display that would show the time, market announcements, and emergency messages. The new display would be easier to maintain and could be read from across the hall. Mara understood the reasons. She had spent enough mornings resetting temperamental lights and tightening loose door handles to appreciate equipment that simply worked.\n\nStill, whenever she crossed the hall, her eyes went to the old clock. Her grandfather had once sold newspapers at the station kiosk, and in family stories he always seemed to be checking that clock before the first train. Mara did not believe the clock was valuable merely because it was old. The station had once contained drafty waiting rooms and cracked benches that nobody had wanted to preserve. But the clock had been the one object people mentioned when they learned the building would reopen.\n\nDuring the first market weekend, vendors arranged bread, flowers, repaired bicycles, and jars of honey beneath the high windows. Visitors kept stopping below the clock. Some remembered catching trains there. Others had never seen the station open, yet they photographed the frozen hands and asked why they still read 6:17. By noon, Mara had told the story so many times that she began to hear how odd it sounded: a public building celebrating its return while its most noticeable clock insisted that time had not moved.\n\nThe next week, the contractor arrived to measure the wall for the digital display. Mara watched him set his ladder beneath the clock. “We can store the old one,” he said. “Nothing has to be thrown away.” His answer was practical, and that almost made it harder to object. Storage would protect the clock, but it would also turn it into something people had to remember to go looking for.\n\nMara asked him to wait one day. She called a local clock repairer, who climbed the ladder, opened the metal case, and found less damage than expected. The mechanism needed cleaning, two worn gears, and a new electrical connection. The repair would cost more than a basic wall clock but less than the digital display. It would not show announcements. It would only tell the time.\n\nAt the committee meeting that evening, Mara did not make a speech about history. She brought the two estimates and a photograph from opening weekend. In it, three generations of one family stood beneath the clock, all looking upward. “The new screen does more,” she said. “The question is whether we need this spot to do more.” The committee voted to repair the clock and place a smaller information screen near the entrance instead.\n\nTwo weeks later, Mara stood alone in the hall while the repairer moved the minute hand forward. The clock clicked, paused, and then claimed the next minute with a sound too small to fill the station but large enough for Mara to hear from below. She smiled, not because the building had been returned to the past, but because one piece of the past had been given a job in the present.\n\nWhen the doors opened, most visitors walked beneath the clock without looking up. That pleased Mara more than the photographs had. A working clock was no longer an exhibit demanding attention. It had become part of the station again.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why does Mara find the contractor’s offer to store the old clock difficult to accept?",
+      "points": 1,
+      "explanation": "The narration contrasts physical preservation with keeping the clock present and useful where people encounter it.",
+      "skill": {
+        "id": "R2.2",
+        "label": "Cause and effect"
+      },
+      "rule": "Look for the unstated value behind a character’s reaction, then connect it to later choices.",
+      "familyId": "cause.implied",
+      "metadata": {
+        "skillId": "R2.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "She believes the contractor plans to damage the clock while removing it.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "The contractor explicitly says the clock can be protected in storage."
+        },
+        {
+          "id": "b",
+          "text": "She wants the clock to remain stopped at 6:17 so visitors will keep asking about it.",
+          "distractorType": "contradicts_outcome",
+          "whyWrong": "Mara ultimately supports repairing the clock so it can work again."
+        },
+        {
+          "id": "c",
+          "text": "She realizes that preserving the clock out of sight would protect the object but remove it from the station’s everyday life."
+        },
+        {
+          "id": "d",
+          "text": "She has already promised her grandfather that the clock will never leave the wall.",
+          "distractorType": "unsupported_detail",
+          "whyWrong": "No such promise appears in the passage."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "Storage would protect the clock, but it would also turn it into something people had to remember to go looking for."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "In paragraph 8, what does the word “claimed” suggest when the clock “claimed the next minute”?",
+      "points": 1,
+      "explanation": "“Claimed” gives the small movement a sense of regained purpose and presence, fitting Mara’s idea of giving the past a job in the present.",
+      "skill": {
+        "id": "R3.2",
+        "label": "Connotation"
+      },
+      "rule": "Connotation questions ask what a word adds beyond its literal action.",
+      "familyId": "connotation.choice",
+      "metadata": {
+        "skillId": "R3.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The clock seems to take back an active place in the present after being frozen for years."
+        },
+        {
+          "id": "b",
+          "text": "The clock is inaccurate and is announcing a time that does not belong to it.",
+          "distractorType": "opposite_connotation",
+          "whyWrong": "The repair has restored the clock; the moment is presented positively."
+        },
+        {
+          "id": "c",
+          "text": "The clock is competing with the information screen for visitors’ attention.",
+          "distractorType": "unsupported_conflict",
+          "whyWrong": "The final paragraph says most visitors pass beneath it without looking up."
+        },
+        {
+          "id": "d",
+          "text": "The clock is so loud that it dominates the entire station.",
+          "distractorType": "contradicts_detail",
+          "whyWrong": "The sound is described as too small to fill the station."
+        }
+      ],
+      "correct": "a",
+      "evidenceExcerpt": "The clock clicked, paused, and then claimed the next minute ... one piece of the past had been given a job in the present."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which word best describes the tone of the final two paragraphs?",
+      "points": 1,
+      "explanation": "The ending quietly interprets what the repaired clock means to Mara and why ordinary use matters more than spectacle.",
+      "skill": {
+        "id": "R3.4",
+        "label": "Tone"
+      },
+      "rule": "Tone can be positive without being excited; match the intensity of the language.",
+      "familyId": "tone.identify",
+      "metadata": {
+        "skillId": "R3.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Bitter",
+          "distractorType": "extreme_tone",
+          "whyWrong": "Mara is satisfied with the outcome; there is no resentment."
+        },
+        {
+          "id": "b",
+          "text": "Suspenseful",
+          "distractorType": "topic_not_tone",
+          "whyWrong": "The repair is completed, and the ending does not build uncertainty about what will happen."
+        },
+        {
+          "id": "c",
+          "text": "Celebratory",
+          "distractorType": "too_strong",
+          "whyWrong": "The ending is positive but quiet and restrained rather than exuberant."
+        },
+        {
+          "id": "d",
+          "text": "Reflective"
+        }
+      ],
+      "correct": "d",
+      "evidenceExcerpt": "She smiled ... because one piece of the past had been given a job in the present."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the passage’s structure help develop Mara’s changing understanding of the clock?",
+      "points": 1,
+      "explanation": "The sequence broadens Mara’s initial feeling into an evidence-based choice that acknowledges practical needs rather than relying on nostalgia alone.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "A strong structure-effect answer connects the order of events to a development in meaning or judgment.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "It begins with the committee vote and then explains earlier events, making the decision seem unavoidable.",
+          "distractorType": "wrong_order",
+          "whyWrong": "The vote occurs near the end after Mara gathers information."
+        },
+        {
+          "id": "b",
+          "text": "It moves from Mara’s personal attachment, through visitors’ reactions and practical cost information, to a decision that combines memory with present-day usefulness."
+        },
+        {
+          "id": "c",
+          "text": "It alternates between Mara and the contractor so readers can decide which character is more trustworthy.",
+          "distractorType": "unsupported_structure",
+          "whyWrong": "The narration stays centered on Mara rather than alternating viewpoints."
+        },
+        {
+          "id": "d",
+          "text": "It presents unrelated station memories in chronological order to show how long the building has existed.",
+          "distractorType": "summarizes_not_analyzes",
+          "whyWrong": "The events are connected by Mara’s decision about the clock, not simply by chronology."
+        }
+      ],
+      "correct": "b",
+      "evidenceExcerpt": "Mara first notices her family connection, then observes visitors, gets repair costs, and proposes keeping the clock while moving information functions elsewhere."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the narrator’s perspective on preserving the old clock?",
+      "points": 1,
+      "explanation": "The ending endorses neither nostalgia for its own sake nor modernization for its own sake; it values continuity that remains functional.",
+      "skill": {
+        "id": "R4.5",
+        "label": "Point of view / perspective"
+      },
+      "rule": "For narrator perspective, use repeated contrasts and the ending, not a single character preference in isolation.",
+      "familyId": "pov.author",
+      "metadata": {
+        "skillId": "R4.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Anything old should be preserved because age alone gives it value.",
+          "distractorType": "extreme_position",
+          "whyWrong": "The passage explicitly notes that Mara did not think something was valuable merely because it was old."
+        },
+        {
+          "id": "b",
+          "text": "Modern technology weakens communities and should be kept out of historic buildings.",
+          "distractorType": "unsupported_extreme",
+          "whyWrong": "A smaller information screen is still installed near the entrance."
+        },
+        {
+          "id": "c",
+          "text": "Preservation is most meaningful when an older object can still serve a useful role in present life."
+        },
+        {
+          "id": "d",
+          "text": "Practical cost should always determine whether a historic object is kept.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "Cost matters, but the decision also reflects shared meaning and usefulness."
+        }
+      ],
+      "correct": "c",
+      "evidenceExcerpt": "One piece of the past had been given a job in the present."
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-reading-transfer-station-clock",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.2",
+      "secondarySkillIds": [
+        "R3.2",
+        "R3.4",
+        "R4.2",
+        "R4.5"
+      ],
+      "contentKind": "passage_practice",
+      "learningObjective": "Transfer inference, connotation, tone, structure, and perspective reasoning to an original literary passage.",
+      "topicLabel": "GED Practice"
+    },
+    "passage": {
+      "id": "p-rla-reading-transfer-station-clock",
+      "title": "The Clock Above Track Four",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-23T05:56:46.584Z"
+  }
+}

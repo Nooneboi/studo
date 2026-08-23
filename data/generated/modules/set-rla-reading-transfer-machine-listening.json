@@ -6,7 +6,7 @@
   "category": "reading",
   "topic": "Reading & Comprehension - GED Practice",
   "difficulty": "hard",
-  "source": "Original content by Studo",
+  "source": "Original content by Chee Skool",
   "passage": "At Meridian Components, maintenance technicians once followed a simple schedule for the electric motors that power conveyor belts. Every motor received the same inspection every six weeks unless it failed earlier. The schedule was predictable, but it had two weaknesses. A healthy motor might be taken out of service for an unnecessary inspection, while a damaged bearing could begin deteriorating days after a scheduled check and remain unnoticed until the next one.\n\nThe factory tested a condition-monitoring system on twenty motors. Small sensors measured vibration and temperature every few minutes. Software compared the readings with each motor's normal pattern and sent an alert when a reading moved beyond a chosen threshold. Managers hoped the system would give technicians earlier warning of developing problems without requiring them to inspect every motor more often.\n\nThe first month produced more alerts than anyone expected. Several were useful. One motor showed a gradual rise in vibration, and a technician found a worn bearing before it damaged the shaft. Replacing the bearing during a planned lunch-hour shutdown prevented a much longer interruption. But other alerts led nowhere. A nearby construction project shook part of the building, and the sensors briefly reported unusual vibration on several healthy motors. Another motor ran hotter simply because the room temperature had risen during a week of extreme weather.\n\nThose false alerts mattered because every alert required attention. If technicians stopped work to investigate every unusual reading, the new system could consume the time it was supposed to save. If they learned to ignore alerts because too many were harmless, a real warning might be missed. The maintenance team therefore changed the thresholds and required some alerts to persist for several readings before the software notified a technician.\n\nThe team also stopped describing the system as “predictive maintenance” in internal training. Technicians said the phrase made the software sound as if it could predict exactly when a motor would fail. Instead, trainers began calling it condition monitoring. The new name emphasized what the system actually did: detect changes that might deserve investigation. An alert was an early warning, not a verdict.\n\nBefore adding sensors to a new line, the technicians also learned to establish a separate baseline for each motor. Two motors of the same model could vibrate differently because they carried different loads or were mounted on different frames. Using one universal threshold would therefore create alerts that reflected normal differences rather than developing faults. Technicians recorded several weeks of healthy operation and then adjusted the software around each machine's usual pattern. The extra setup took time, but it made later alerts more meaningful and gave workers a clearer reason to investigate a change. The team also documented maintenance notes beside the sensor data so later technicians could tell whether a change followed a repair, a heavier production run, or a genuine mechanical problem. That record helped them interpret patterns instead of reacting to isolated numbers.\n\nAfter four months, unplanned motor downtime had fallen compared with the same period the previous year. However, managers resisted claiming that the sensors alone caused the improvement. The factory had also replaced two older motors and changed how spare parts were stocked. In addition, four months was too short to show how the system would perform across different seasons and production levels.\n\nThe pilot nevertheless changed the technicians' routine. They still performed scheduled safety inspections, but they spent less time opening healthy motors simply because six weeks had passed. When the software flagged a motor, a technician checked the recent vibration pattern, listened to the machine, reviewed temperature data, and decided whether physical inspection was necessary. The technology narrowed attention; it did not replace judgment.\n\nMeridian plans to expand the sensors to another production line while continuing to record false alerts, confirmed problems, repair time, and downtime. Managers say the goal is not a factory where software makes maintenance decisions by itself. The goal is a system that notices changes early enough for skilled workers to ask better questions before a small problem becomes a large one.",
   "questions": [
     {
@@ -418,13 +418,13 @@
       "textType": "informational",
       "context": "workplace",
       "sourceType": "original",
-      "attribution": "Original content by Studo",
-      "author": "Studo",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
       "workTitle": null,
       "publisher": null,
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-23T05:20:03.593Z"
+    "compiledAt": "2026-08-23T05:56:46.584Z"
   }
 }

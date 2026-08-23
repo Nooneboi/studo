@@ -99,7 +99,7 @@ UNITS = [
 'id':'full-extended-response','slug':'full-extended-response','title':'Full Extended Response','skills':['W1.12'],
 'goal':'Complete a full paired-source response in a realistic workflow, then use the three-trait rubric to review what to improve.',
 'explain':'Full ER practice combines everything: read, map, judge, plan, draft, revise, and self-review. Timed simulation gives you 45 minutes. Untimed mode removes the countdown but keeps the same source-based task and review standard.',
-'contrast':'The self-review is not an official score. Studo does not know a machine-verified essay score in V1. Your provisional 0/1/2 trait choices are reflection data and stay separate from objective quiz accuracy.',
+'contrast':'The self-review is not an official score. Chee Skool does not know a machine-verified essay score in V1. Your provisional 0/1/2 trait choices are reflection data and stay separate from objective quiz accuracy.',
 'wording':'The full prompt asks you to analyze both sources and determine which position is better supported by evidence and reasoning.',
 'method':['0-8 min: read and map both sources.','8-12 min: choose the stronger source and outline two reasons.','12-37 min: draft with evidence and analysis.','37-45 min: revise source accuracy, organization, and sentence clarity.','After submission: self-review all three traits and compare with the model only after your own attempt.'],
 'example_text':'Planner: Winner A | Reason 1 measured outcome | Evidence 19% less waste | Reason 2 limitation handled | B weakness unsupported odor prediction.',

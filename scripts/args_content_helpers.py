@@ -12,9 +12,9 @@ def passage(pid,title,text,context='civics',text_type='informational'):
     obj={
       'schemaVersion':2,'id':pid,'title':title,'text':text.strip(),
       'textType':text_type,'context':context,
-      'source':{'type':'original','attribution':'Original content by Studo'},
-      'rights':{'status':'original','holder':'Studo','note':'Original practice material created for Studo Arguments & Sources V1.'},
-      'status':'published','version':1,'author':'Studo','reviewer':'Arguments & Sources V1 editorial review'
+      'source':{'type':'original','attribution':'Original content by Chee Skool'},
+      'rights':{'status':'original','holder':'Chee Skool','note':'Original practice material created for Chee Skool Arguments & Sources V1.'},
+      'status':'published','version':1,'author':'Chee Skool','reviewer':'Arguments & Sources V1 editorial review'
     }
     dump(PASSAGES/f'{pid}.json',obj); return obj
 
@@ -41,7 +41,7 @@ def focused_set(sid,title,description,passage_id,unit_id,domain,primary,secondar
       'schemaVersion':2,'id':sid,'runtime':{'id':sid,'file':f'{sid}.json'},
       'title':title,'description':description,'subject':'rla','category':'arguments','topic':'Arguments & Sources - Focused Practice',
       'difficulty':difficulty,'status':'published','version':1,'passageRefs':[passage_id],
-      'author':'Studo','reviewer':'Arguments & Sources V1 editorial review',
+      'author':'Chee Skool','reviewer':'Arguments & Sources V1 editorial review',
       'reviewNotes':'Focused Arguments practice reviewed for one-best-answer logic, evidence fidelity, close distractors, and source-faithful explanations.',
       'questions':questions,
       'curriculum':{'domain':domain,'primarySkillId':primary,'secondarySkillIds':secondary,'unitId':unit_id,'contentKind':'skill_drill','learningObjective':description,'topicLabel':'Focused Practice'}
@@ -53,7 +53,7 @@ def mixed_set(sid,title,description,passage_id,primary,secondary,tags,questions,
       'schemaVersion':2,'id':sid,'runtime':{'id':sid,'file':f'{sid}.json'},
       'title':title,'description':description,'subject':'rla','category':'arguments','topic':'Arguments & Sources - GED Practice',
       'difficulty':'hard','status':'published','version':1,'passageRefs':[passage_id],
-      'author':'Studo','reviewer':'Arguments & Sources V1 editorial review',
+      'author':'Chee Skool','reviewer':'Arguments & Sources V1 editorial review',
       'reviewNotes':'Mixed-source Arguments practice reviewed for source comparison, evidence quality, one-best-answer logic, and ER transfer.',
       'questions':questions,
       'curriculum':{'domain':domain,'primarySkillId':primary,'secondarySkillIds':secondary,'contentKind':'argument_practice','practiceTags':tags,'learningObjective':'Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.','topicLabel':'Mixed Source Practice'}

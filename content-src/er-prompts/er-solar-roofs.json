@@ -5,18 +5,18 @@
   "topic": "renewable energy",
   "status": "published",
   "version": 1,
-  "author": "Studo",
+  "author": "Chee Skool",
   "reviewer": "Extended Response V1 editorial review",
   "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
   "sourceA": {
     "title": "Install Solar on All Major Buildings Now",
     "text": "A city council member proposes installing solar panels on every major municipal building within two years. She argues that the city spends too much on electricity and that solar power would demonstrate environmental leadership. Her office cites one recreation center where a small rooftop array produced about 22 percent of the building's annual electricity use. She also notes that panel prices have fallen over the past decade and that state incentives may reduce installation costs.\n\nThe proposal estimates that a citywide program could save money over time, but it does not include roof-by-roof engineering assessments or a full financing plan. Several buildings are more than forty years old, and the proposal assumes that most roofs can support panels without major structural work. The council member says delaying action would miss available incentives and argues that the city should approve the full program while engineers complete detailed designs.\n\nThe council member also cites the city's climate plan, which calls for reducing municipal electricity purchases by 25 percent within ten years. Her office estimates that using every available roof could move the city toward that target faster than a small pilot. The estimate assumes average sunlight conditions and does not subtract periods when roofs may be unavailable for repair. She proposes one large procurement contract because bulk purchasing may lower equipment prices, although no vendor bids have yet been collected. The proposal would allow later design changes if engineers find unsuitable roofs.",
-    "attribution": "Original content by Studo"
+    "attribution": "Original content by Chee Skool"
   },
   "sourceB": {
     "title": "Start with Audited Buildings and Publish Results",
     "text": "The city facilities director supports solar power but recommends a staged program. Her department inspected twelve large public buildings and found that five have roofs expected to need replacement within six years. Installing panels on those roofs now could require removing and reinstalling the equipment during roof work. For the remaining seven buildings, engineers estimated annual solar output using roof area, shade, and electricity records. Three sites could offset more than 30 percent of current use, while two heavily shaded sites would offset less than 10 percent.\n\nThe director proposes beginning with the three strongest sites. A financing analysis estimates a combined installation cost of $1.8 million after incentives and an expected simple payback of about eleven years under current electricity prices. She cautions that future prices and maintenance costs could change that estimate. The plan would publish actual energy production and maintenance data for two years before the city decides whether to expand to the remaining buildings.\n\nThe facilities department compared electricity demand at the seven usable buildings with estimated midday solar production. At the three strongest sites, most projected production would be consumed on site rather than exported to the grid. Engineers also inspected electrical rooms and identified one building that would need a transformer upgrade before installation. Those costs are included in the $1.8 million estimate. The director says a staged contract may give up some bulk discount but reduces the risk of installing panels where roof or electrical work will soon be needed.",
-    "attribution": "Original content by Studo"
+    "attribution": "Original content by Chee Skool"
   },
   "strongerSource": "B",
   "authoringKey": {

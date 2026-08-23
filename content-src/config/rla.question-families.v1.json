@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "subject": "RLA",
   "version": "1.0.0",
-  "purpose": "Internal Studo item-development reference. Family patterns are original specifications aligned to published GED RLA assessment targets; they are not copied operational GED items.",
+  "purpose": "Internal Chee Skool item-development reference. Family patterns are original specifications aligned to published GED RLA assessment targets; they are not copied operational GED items.",
   "officialSourceNotes": {
     "assessmentGuide": "GED Testing Service, Assessment Guide for Educators: RLA",
     "studyGuide": "GED Testing Service, GED Study Guide: Language Arts",
@@ -1787,7 +1787,7 @@
         "science",
         "workplace"
       ],
-      "authoringNote": "Studo extension: useful for evaluating evidence, but not a named standalone GED target.",
+      "authoringNote": "Chee Skool extension: useful for evaluating evidence, but not a named standalone GED target.",
       "families": [
         {
           "familyId": "credibility.source_fit",

@@ -1,5 +1,5 @@
 {
-  "stage": "pre-alpha",
+  "stage": "alpha-candidate",
   "publicAlphaEnabled": false,
-  "reason": "Keep disabled until the full RLA Alpha release gates have been completed and signed off."
+  "reason": "Candidate hardening is complete; keep disabled until real-browser/device QA and a small learner pilot are signed off."
 }
