@@ -15,6 +15,7 @@ let highlightMode = false;
 let currentModuleFile = null;
 let questionOpenedAt = Date.now();
 const confidenceSelections = {};
+const guidedRetryUsed = new Set();
 
 init();
 
@@ -65,14 +66,51 @@ function firstAvailableIndex() {
   return activeQuestions().length ? 0 : -1;
 }
 
+function isGuidedLearningModule() {
+  const practiceTags = currentQuiz?.contentMeta?.curriculum?.practiceTags || [];
+  return practiceTags.includes("active-learning");
+}
+
+function learningStageFor(q) {
+  return ["guided", "apply", "independent"].includes(q?.learningStage) ? q.learningStage : "apply";
+}
+
+function guidedHelperText(q) {
+  if (q.type === "select_text") return `Choose one highlighted ${q.interaction?.selectionMode || "text area"} in the passage.`;
+  if (q.type === "drag_sort") return "Choose where the current statement belongs.";
+  if (q.type === "drag_order") return "Put the ideas in the order the question asks for.";
+  return "";
+}
+
+function responseIsComplete(q, answer) {
+  if (!answer) return false;
+  if (window.QuestionInteractions?.SUPPORTED_TYPES?.has(q.type)) {
+    return window.QuestionInteractions.hasCompleteAnswer(q, window.QuestionInteractions.canonicalizeAnswer(q, answer));
+  }
+  return String(answer).trim().length > 0;
+}
+
+function revealConfidencePanel() {
+  const panel = document.querySelector('[data-role="confidence-panel"]');
+  if (panel) panel.hidden = false;
+}
+
+function placeGuidedPrimaryAction(stage) {
+  if (!isGuidedLearningModule() || !stage) return;
+  const action = stage.querySelector('.guided-primary-action');
+  const confidence = stage.querySelector('[data-role="confidence-panel"]');
+  if (action && confidence) confidence.after(action);
+}
+
 function renderShell() {
   const hasPassage = Boolean(currentQuiz.passage);
+  const guided = isGuidedLearningModule();
 
   viewEl.innerHTML = `
-    <div class="study-shell study-shell-clean">
-      <section class="study-workspace ${hasPassage ? "" : "no-passage"}" id="study-workspace">
+    <div class="study-shell study-shell-clean${guided ? " guided-learning-workspace" : ""}">
+      <section class="study-workspace ${hasPassage ? "" : "no-passage"}${guided ? " guided-learning-workspace" : ""}" id="study-workspace">
         ${hasPassage ? passagePanelHtml() : ""}
-        <article class="question-panel" aria-label="Question workspace">
+        <article class="question-panel${guided ? " guided-task-panel" : ""}" aria-label="Question workspace">
           <div id="question-stage" class="question-stage"></div>
           <div class="question-footer" id="question-footer"></div>
         </article>
@@ -117,6 +155,7 @@ function renderShell() {
         notesOpen = false;
         highlightMode = false;
         Object.keys(confidenceSelections).forEach((key) => delete confidenceSelections[key]);
+        guidedRetryUsed.clear();
         if (highlightBtn) {
           highlightBtn.setAttribute("aria-pressed", "false");
           highlightBtn.classList.remove("active");
@@ -143,16 +182,21 @@ function displayBrandText(value) {
 }
 
 function passagePanelHtml() {
-  const meta = currentQuiz.description || [currentQuiz.topic, `${activeQuestions().length} questions`].filter(Boolean).join(" · ");
+  const guided = isGuidedLearningModule();
+  const passageTitle = guided ? (currentQuiz.contentMeta?.passage?.title || currentQuiz.title) : currentQuiz.title;
+  const meta = guided
+    ? [currentQuiz.topic, `${activeQuestions().length} questions`].filter(Boolean).join(" · ")
+    : currentQuiz.description || [currentQuiz.topic, `${activeQuestions().length} questions`].filter(Boolean).join(" · ");
   const basePassageMarkup = renderPassageParagraphs(currentQuiz.passage);
   const savedPassage = Store.getPassageHighlights ? Store.getPassageHighlights(currentQuiz.id) : "";
   const passageMarkup = savedPassage ? sanitizeHighlightMarkup(savedPassage, basePassageMarkup) : basePassageMarkup;
   return `
     <aside class="reading-column" aria-label="Reading passage">
       <header class="passage-heading">
-        <h1>${escapeHtml(currentQuiz.title)}</h1>
+        <h1>${escapeHtml(passageTitle)}</h1>
         ${meta ? `<p>${escapeHtml(meta.replace(/\s+-\s+/g, " · "))}</p>` : ""}
       </header>
+      <div class="selection-mode-bar" data-role="selection-mode-bar" hidden aria-live="polite"></div>
       <section class="reading-panel reading-panel-clean">
         <div class="reading-scroll">
           <div class="passage-text passage-numbered">${passageMarkup}</div>
@@ -210,13 +254,22 @@ function renderCurrentQuestion(options = {}) {
   const basePromptHtml = grammarInline ? "" : escapeHtml(q.prompt);
   const promptHtml = highlights[q.id] && basePromptHtml ? sanitizeHighlightMarkup(highlights[q.id], basePromptHtml) : basePromptHtml;
 
+  const guided = isGuidedLearningModule();
+  const stageName = learningStageFor(q);
+  const currentResponse = savedAnswer || draftAnswer || "";
+  const responseComplete = responseIsComplete(q, currentResponse);
+  const helperText = guided ? guidedHelperText(q) : "";
+  const stageTransition = guided && stageName === "independent" && currentIndex > 0 && learningStageFor(items[currentIndex - 1].question) !== "independent"
+    ? `<p class="guided-stage-note">Independent practice — no hints on these questions.</p>`
+    : "";
+
   stage.innerHTML = `
-    <div class="question-topline question-topline-clean">
-      <span class="question-number">Question ${currentIndex + 1} of ${items.length}</span>
-    </div>
+    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span><span aria-hidden="true">·</span><strong>${escapeHtml(stageName.toUpperCase())}</strong></div>${stageTransition}` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
+    ${helperText ? `<p class="guided-helper">${escapeHtml(helperText)}</p>` : ""}
+    ${guided && q.hint && stageName !== "independent" ? `<details class="guided-hint"><summary>Need help?</summary><p>${escapeHtml(q.hint)}</p></details>` : ""}
     <div data-role="answer-area"></div>
-    ${isAutoGraded(q) ? confidencePanelHtml(q, confidenceSelections[q.id] || null) : ""}
+    ${isAutoGraded(q) ? confidencePanelHtml(q, confidenceSelections[q.id] || null, guided && !responseComplete) : ""}
     <div class="explanation-box" data-role="explanation"></div>
     <div class="learning-feedback" data-role="learning-feedback" aria-live="polite"></div>
     <details class="mistake-reason" data-role="mistake-reason">
@@ -256,6 +309,7 @@ function renderCurrentQuestion(options = {}) {
 
   renderPassageForQuestion(q, savedAnswer || draftAnswer);
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer, draftAnswer);
+  placeGuidedPrimaryAction(stage);
 
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
@@ -311,9 +365,10 @@ function renderGrammarPrompt(q, savedHighlightHtml) {
   return escapeHtml(q.prompt || "").replace(/\{\{blank\}\}/g, '<span class="grammar-blank">_____</span>');
 }
 
-function confidencePanelHtml(q, selectedConfidence) {
+function confidencePanelHtml(q, selectedConfidence, hidden = false) {
   return `
-    <div class="confidence-inline" data-role="confidence-panel" aria-label="Optional certainty before answering">
+    <div class="confidence-inline" data-role="confidence-panel"${hidden ? " hidden" : ""} aria-label="Optional certainty before answering">
+      ${isGuidedLearningModule() ? '<span class="guided-confidence-label">How sure are you?</span>' : ''}
       <div class="confidence-options">
         ${['sure', 'unsure', 'guessing'].map((id) => `
           <button
@@ -509,7 +564,13 @@ function setToolStatus(message) {
 
 function renderPassageForQuestion(q, selectedAnswer = "") {
   const passageEl = viewEl.querySelector(".passage-text");
+  const selectionBar = viewEl.querySelector('[data-role="selection-mode-bar"]');
   if (!passageEl || !currentQuiz?.passage) return;
+  const guidedSelect = isGuidedLearningModule() && q.type === "select_text";
+  if (selectionBar) {
+    selectionBar.hidden = !guidedSelect;
+    selectionBar.textContent = guidedSelect ? `Selection mode · Choose one highlighted ${q.interaction?.selectionMode || "text area"}` : "";
+  }
 
   if (q.type !== "select_text" || !window.QuestionInteractions) {
     const basePassageMarkup = renderPassageParagraphs(currentQuiz.passage);
@@ -525,7 +586,7 @@ function renderPassageForQuestion(q, selectedAnswer = "") {
     const content = segments.map((segment) => {
       if (segment.kind !== "target") return escapeHtml(segment.text);
       const selected = String(selectedAnswer || "") === String(segment.id);
-      return `<button type="button" class="select-text-target${selected ? " selected" : ""}" data-select-target="${escapeAttr(segment.id)}" aria-pressed="${selected ? "true" : "false"}">${escapeHtml(segment.text)}</button>`;
+      return `<button type="button" class="select-text-target${guidedSelect ? " selection-candidate" : ""}${selected ? " selected" : ""}" data-select-target="${escapeAttr(segment.id)}" aria-pressed="${selected ? "true" : "false"}">${escapeHtml(segment.text)}</button>`;
     }).join("");
     return `<p class="passage-paragraph"><span class="passage-paragraph-number">${index + 1}</span><span>${content}</span></p>`;
   }).join("");
@@ -579,13 +640,29 @@ function lockInteractionControls(q, container) {
 
 function submitInteractiveAnswer(q, answer, container) {
   const I = window.QuestionInteractions;
-  if (!I) return;
+  if (!I) return false;
   const canonical = I.canonicalizeAnswer(q, answer);
-  if (!I.hasCompleteAnswer(q, canonical)) return;
+  if (!I.hasCompleteAnswer(q, canonical)) return false;
+
+  const correct = I.isCorrect(q, canonical);
+  const firstGuidedMiss = isGuidedLearningModule()
+    && learningStageFor(q) === 'guided'
+    && !correct
+    && !guidedRetryUsed.has(q.id);
+
+  if (firstGuidedMiss) {
+    guidedRetryUsed.add(q.id);
+    const box = document.querySelector('[data-role="explanation"]');
+    if (box) {
+      box.innerHTML = `<div class="guided-retry-feedback"><strong>Not quite.</strong><p>${escapeHtml(q.hint || 'Recheck the passage and try once more.')}</p><span>Try once more.</span></div>`;
+      box.classList.add('visible');
+    }
+    setStatus('Not quite — try once more before seeing the full explanation.', false);
+    return false;
+  }
 
   Store.setAnswer(currentQuiz.id, q.id, canonical);
   clearInteractionDraft(q.id);
-  const correct = I.isCorrect(q, canonical);
   const learningResult = recordPracticeAttempt(q, canonical, correct);
   showQuestionExplanation(q, canonical);
   showLearningFeedback(learningResult, correct);
@@ -595,6 +672,7 @@ function submitInteractiveAnswer(q, answer, container) {
   setStatus(correct ? "Correct — review the explanation, then continue." : "Not quite — review the explanation before continuing.");
   questionOpenedAt = Date.now();
   updateAnswerStatus();
+  return true;
 }
 
 function optionSelectHtml(q, selected, className, label) {
@@ -641,6 +719,212 @@ function renderGrammarEditAnswer(q, container, savedAnswer, draftAnswer) {
     finalizeConfidenceUi(q.id);
     lockInteractionControls(q, container);
   }
+}
+
+function renderGuidedMultipleChoiceAnswer(q, container, savedAnswer, draftAnswer) {
+  let selected = savedAnswer || draftAnswer || "";
+  const groupName = `guided-practice-answer-${q.id}`;
+  container.innerHTML = `
+    <fieldset class="options-list guided-options-list" aria-label="Answer choices">${(q.options || [])
+      .map((opt) => `<label class="answer-choice" data-opt="${escapeAttr(opt.id)}"><input class="answer-radio" type="radio" name="${escapeAttr(groupName)}" value="${escapeAttr(opt.id)}" ${selected === opt.id ? "checked" : ""}><span class="choice-letter">${escapeHtml(opt.id.toUpperCase())}.</span><span class="opt-text">${escapeHtml(opt.text)}</span></label>`)
+      .join("")}</fieldset>
+    <div class="guided-primary-action">
+      <button class="btn interaction-check" type="button" ${selected && !savedAnswer ? "" : "disabled"}>Check answer</button>
+    </div>
+    <div class="interaction-live-status" aria-live="polite"></div>`;
+
+  const check = container.querySelector('.interaction-check');
+  const live = container.querySelector('.interaction-live-status');
+
+  if (!savedAnswer) {
+    container.querySelectorAll('.answer-radio').forEach((radio) => {
+      radio.addEventListener('change', () => {
+        if (!radio.checked) return;
+        selected = radio.value;
+        saveInteractionDraft(q.id, selected);
+        revealConfidencePanel();
+        if (check) check.disabled = false;
+        if (live) live.textContent = 'Answer selected.';
+      });
+    });
+    check?.addEventListener('click', () => {
+      if (!selected) return;
+      const finalized = submitInteractiveAnswer(q, selected, container);
+      if (finalized) {
+        revealChoiceFeedback(container, q, selected);
+        lockChoiceInputs(container);
+      }
+    });
+  } else {
+    revealChoiceFeedback(container, q, savedAnswer);
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockChoiceInputs(container);
+  }
+}
+
+function renderGuidedSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
+  let selected = savedAnswer || draftAnswer || "";
+  container.innerHTML = `
+    <div class="guided-selection-status" data-guided-selection-status aria-live="polite">${selected ? `1 ${escapeHtml(q.interaction?.selectionMode || "text area")} selected` : "No selection yet"}</div>
+    <div class="guided-primary-action">
+      <button class="btn interaction-check" type="button" ${selected && !savedAnswer ? "" : "disabled"}>Check answer</button>
+    </div>`;
+
+  const check = container.querySelector('.interaction-check');
+  const status = container.querySelector('[data-guided-selection-status]');
+  const targetButtons = [...viewEl.querySelectorAll('[data-select-target]')];
+
+  const applySelection = (id, announce = true) => {
+    selected = id;
+    targetButtons.forEach((target) => {
+      const active = target.dataset.selectTarget === selected;
+      target.classList.toggle('selected', active);
+      target.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    if (!savedAnswer) {
+      saveInteractionDraft(q.id, selected);
+      revealConfidencePanel();
+      if (check) check.disabled = !selected;
+    }
+    if (status) status.textContent = selected ? `1 ${q.interaction?.selectionMode || "text area"} selected` : 'No selection yet';
+    if (announce && selected) setStatus('Selection saved. Check your answer when ready.', false);
+  };
+
+  if (selected) applySelection(selected, false);
+  if (!savedAnswer) {
+    targetButtons.forEach((target) => target.addEventListener('click', () => applySelection(target.dataset.selectTarget)));
+    check?.addEventListener('click', () => submitInteractiveAnswer(q, selected, container));
+  } else {
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockInteractionControls(q, container);
+  }
+}
+
+function guidedZonePresentation(zone) {
+  const label = String(zone?.label || 'Category');
+  const known = {
+    'Helps explain the main point': ['Helps explain the main point', 'Matters to the whole passage'],
+    'Mostly a supporting detail': ['Supporting context', 'Useful detail, not the big point'],
+    'Too narrow / just a detail': ['Too narrow', 'Just one detail'],
+    'Too broad or unsupported': ['Too broad', 'Adds or overstates'],
+    'Fits the whole passage': ['Fits the passage', 'Covers the whole text'],
+  };
+  const [title, note] = known[label] || [label, 'Choose this category'];
+  return { title, note };
+}
+
+function renderGuidedDragSortAnswer(q, container, savedAnswer, draftAnswer) {
+  const I = window.QuestionInteractions;
+  const assignments = I.parseSort(savedAnswer || draftAnswer || '');
+  const zones = q.interaction?.zones || [];
+  const items = q.interaction?.items || [];
+  let cursor = Math.max(0, items.findIndex((item) => !assignments[item.id]));
+  if (cursor < 0) cursor = items.length;
+
+  container.innerHTML = `
+    <section class="guided-sort" aria-label="Classification activity">
+      <div class="guided-sort-progress" data-guided-sort-progress aria-live="polite"></div>
+      <div data-guided-sort-content></div>
+      <div class="guided-sort-nav">
+        <button type="button" class="guided-sort-back" data-guided-sort-back>Back</button>
+      </div>
+    </section>
+    <div class="guided-primary-action">
+      <button class="btn interaction-check" type="button" ${I.hasCompleteAnswer(q, I.serializeSort(assignments)) && !savedAnswer ? '' : 'disabled'}>Check answer</button>
+    </div>
+    <div class="interaction-live-status" aria-live="polite"></div>`;
+
+  const content = container.querySelector('[data-guided-sort-content]');
+  const progress = container.querySelector('[data-guided-sort-progress]');
+  const back = container.querySelector('[data-guided-sort-back]');
+  const check = container.querySelector('.interaction-check');
+  const live = container.querySelector('.interaction-live-status');
+
+  const persist = () => {
+    const canonical = I.serializeSort(assignments);
+    if (!savedAnswer) saveInteractionDraft(q.id, canonical);
+    const complete = I.hasCompleteAnswer(q, canonical);
+    if (check) check.disabled = Boolean(savedAnswer) || !complete;
+    if (complete) revealConfidencePanel();
+    return complete;
+  };
+
+  const nextUnassignedFrom = (start) => {
+    for (let i = start; i < items.length; i += 1) if (!assignments[items[i].id]) return i;
+    for (let i = 0; i < start; i += 1) if (!assignments[items[i].id]) return i;
+    return items.length;
+  };
+
+  const draw = () => {
+    const assignedCount = items.filter((item) => Boolean(assignments[item.id])).length;
+    const complete = assignedCount === items.length;
+    if (progress) progress.textContent = complete ? `${items.length} of ${items.length} sorted` : `${Math.min(cursor + 1, items.length)} of ${items.length}`;
+    if (back) back.disabled = cursor <= 0 && assignedCount === 0;
+
+    if (complete && cursor >= items.length) {
+      content.innerHTML = `<div class="guided-sort-complete"><strong>${items.length} of ${items.length} sorted</strong><p>Review a card with Back, or check your answer.</p></div>`;
+      return;
+    }
+
+    if (cursor >= items.length) cursor = items.length - 1;
+    const item = items[cursor];
+    const currentZone = assignments[item.id] || '';
+    content.innerHTML = `
+      <article class="guided-sort-card" draggable="${savedAnswer ? 'false' : 'true'}" aria-grabbed="false" data-guided-sort-card data-item-id="${escapeAttr(item.id)}">
+        <p>${escapeHtml(item.text)}</p>
+      </article>
+      <div class="guided-sort-categories" aria-label="Choose a category">
+        ${zones.map((zone) => {
+          const label = guidedZonePresentation(zone);
+          const active = currentZone === zone.id;
+          return `<button type="button" class="guided-sort-category${active ? ' active' : ''}" data-sort-destination="${escapeAttr(zone.id)}" aria-pressed="${active ? 'true' : 'false'}" ${savedAnswer ? 'disabled' : ''}><strong>${escapeHtml(label.title)}</strong><span>${escapeHtml(label.note)}</span></button>`;
+        }).join('')}
+      </div>`;
+
+    if (!savedAnswer) {
+      const card = content.querySelector('[data-guided-sort-card]');
+      const choose = (zoneId) => {
+        assignments[item.id] = zoneId;
+        persist();
+        if (live) live.textContent = `Classified ${cursor + 1} of ${items.length}.`;
+        const next = nextUnassignedFrom(cursor + 1);
+        cursor = next;
+        draw();
+      };
+      content.querySelectorAll('[data-sort-destination]').forEach((button) => {
+        button.addEventListener('click', () => choose(button.dataset.sortDestination));
+        button.addEventListener('dragover', (event) => event.preventDefault());
+        button.addEventListener('drop', (event) => {
+          event.preventDefault();
+          choose(button.dataset.sortDestination);
+        });
+      });
+      card?.addEventListener('dragstart', (event) => {
+        card.setAttribute('aria-grabbed', 'true');
+        event.dataTransfer?.setData('text/plain', item.id);
+        if (event.dataTransfer) event.dataTransfer.effectAllowed = 'move';
+      });
+      card?.addEventListener('dragend', () => card.setAttribute('aria-grabbed', 'false'));
+    }
+  };
+
+  back?.addEventListener('click', () => {
+    if (cursor >= items.length) cursor = items.length - 1;
+    else cursor = Math.max(0, cursor - 1);
+    draw();
+  });
+
+  if (!savedAnswer) {
+    check?.addEventListener('click', () => submitInteractiveAnswer(q, I.serializeSort(assignments), container));
+    persist();
+  } else {
+    showQuestionExplanation(q, savedAnswer);
+    finalizeConfidenceUi(q.id);
+    lockInteractionControls(q, container);
+  }
+  draw();
 }
 
 function renderSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
@@ -857,6 +1141,11 @@ function renderDragOrderAnswer(q, container, savedAnswer, draftAnswer) {
 }
 
 function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
+  const guided = isGuidedLearningModule();
+  if (guided && ["multiple_choice", "evidence_based"].includes(q.type)) {
+    renderGuidedMultipleChoiceAnswer(q, container, savedAnswer, draftAnswer);
+    return;
+  }
   if (["multiple_choice", "evidence_based"].includes(q.type)) {
     const optionClass = q.type === "evidence_based" ? " evidence-option" : "";
     const groupName = `practice-answer-${q.id}`;
@@ -894,11 +1183,13 @@ function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
     return;
   }
   if (q.type === "select_text") {
-    renderSelectTextAnswer(q, container, savedAnswer, draftAnswer);
+    if (guided) renderGuidedSelectTextAnswer(q, container, savedAnswer, draftAnswer);
+    else renderSelectTextAnswer(q, container, savedAnswer, draftAnswer);
     return;
   }
   if (q.type === "drag_sort") {
-    renderDragSortAnswer(q, container, savedAnswer, draftAnswer);
+    if (guided) renderGuidedDragSortAnswer(q, container, savedAnswer, draftAnswer);
+    else renderDragSortAnswer(q, container, savedAnswer, draftAnswer);
     return;
   }
   if (q.type === "drag_order") {

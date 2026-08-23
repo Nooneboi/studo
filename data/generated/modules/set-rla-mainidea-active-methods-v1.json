@@ -12,7 +12,7 @@
     {
       "id": "q1",
       "type": "drag_sort",
-      "prompt": "Sort each statement by whether it helps explain the passage's main point or is mainly a supporting context detail.",
+      "prompt": "Which statements help explain the passage’s main point?",
       "points": 1,
       "explanation": "The study's purpose and the different results explain the passage as a whole. Route length and the exact number of trees are useful details, but the main point does not depend on them.",
       "skill": {
@@ -37,6 +37,8 @@
         "sourceSchemaVersion": 2
       },
       "time": 70,
+      "learningStage": "guided",
+      "hint": "Ask whether the statement helps explain the passage as a whole, or whether the main point would stay the same without it.",
       "correct": "i1=central|i2=context|i3=central|i4=context",
       "interaction": {
         "items": [
@@ -72,7 +74,7 @@
     {
       "id": "q2",
       "type": "select_text",
-      "prompt": "Select the sentence that most directly explains what the first round of measurements taught the city about choosing improvements.",
+      "prompt": "Which sentence best shows what the measurements taught the city?",
       "points": 1,
       "explanation": "This sentence turns the measurements into a planning lesson: temperature alone did not identify where an improvement would be most useful.",
       "skill": {
@@ -97,6 +99,8 @@
         "sourceSchemaVersion": 2
       },
       "time": 55,
+      "learningStage": "guided",
+      "hint": "Look for the sentence that turns the measurements into a lesson about where an improvement would help people most.",
       "correct": "s2",
       "interaction": {
         "selectionMode": "sentence",
@@ -148,6 +152,7 @@
         "sourceSchemaVersion": 2
       },
       "time": 65,
+      "learningStage": "apply",
       "options": [
         {
           "id": "a",
@@ -177,7 +182,7 @@
     {
       "id": "q4",
       "type": "drag_sort",
-      "prompt": "Sort these possible central-idea statements by the kind of problem each one has.",
+      "prompt": "How well does each statement fit the whole passage?",
       "points": 1,
       "explanation": "Only m3 captures the passage's repeated focus on matching improvements to use, site conditions, and limitations. The other choices either shrink the passage to one treatment or make a universal claim the text never supports.",
       "skill": {
@@ -202,6 +207,8 @@
         "sourceSchemaVersion": 2
       },
       "time": 80,
+      "learningStage": "apply",
+      "hint": "Test the scope: does the statement cover most of the passage, only one detail, or more than the passage actually supports?",
       "correct": "m1=narrow|m2=broad|m3=fit|m4=narrow",
       "interaction": {
         "items": [
@@ -241,7 +248,7 @@
     {
       "id": "q5",
       "type": "select_text",
-      "prompt": "Select the sentence that best supports the idea that a successful plan had to balance heat reduction with how usable the route remained.",
+      "prompt": "Which sentence best supports the idea that a good plan had to reduce heat without making the route harder to use?",
       "points": 1,
       "explanation": "Several choices show individual benefits or tradeoffs, but this sentence directly states the broader principle linking temperature reduction with accessibility and practical use.",
       "skill": {
@@ -266,6 +273,7 @@
         "sourceSchemaVersion": 2
       },
       "time": 75,
+      "learningStage": "independent",
       "correct": "h4",
       "interaction": {
         "selectionMode": "sentence",
@@ -317,6 +325,7 @@
         "sourceSchemaVersion": 2
       },
       "time": 80,
+      "learningStage": "independent",
       "options": [
         {
           "id": "a",
@@ -371,6 +380,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-23T16:34:11.367Z"
+    "compiledAt": "2026-08-23T18:01:10.728Z"
   }
 }

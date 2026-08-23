@@ -8019,3 +8019,345 @@ body.test-body {
     margin: 8px 0;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Guided Learning Workspace V2
+   One task. One obvious action. One place to look.
+   ------------------------------------------------------------------------- */
+.guided-learning-workspace.study-workspace {
+  grid-template-columns: minmax(0, 1.08fr) minmax(400px, .92fr);
+  max-width: 1500px;
+  align-items: start;
+}
+.guided-learning-workspace .reading-column {
+  padding-right: 34px;
+}
+.guided-learning-workspace .passage-heading {
+  padding: 2px 0 14px;
+}
+.guided-learning-workspace .passage-heading h1 {
+  max-width: 36ch;
+  font-size: clamp(1.25rem, 1.7vw, 1.55rem);
+  letter-spacing: -.018em;
+}
+.guided-learning-workspace .passage-heading p {
+  margin-top: 5px;
+  font-size: .78rem;
+}
+.guided-task-panel .question-stage {
+  min-height: 0;
+  padding: 28px 40px 24px;
+  text-align: left;
+}
+.guided-stage-line {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 18px;
+  color: var(--color-ink-faint);
+  font-size: .76rem;
+  font-weight: 650;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+.guided-stage-line strong {
+  color: var(--color-primary-dark);
+  font-size: inherit;
+  font-weight: 750;
+}
+.guided-stage-note {
+  margin: -6px 0 14px;
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+}
+.guided-task-panel .q-prompt {
+  max-width: 30ch;
+  margin: 0 0 8px;
+  font-size: calc(1.24rem * var(--text-scale));
+  line-height: 1.38;
+  font-weight: 700;
+  letter-spacing: -.015em;
+}
+.guided-helper {
+  max-width: 48ch;
+  margin: 0 0 18px;
+  color: var(--color-ink-soft);
+  font-size: .86rem;
+  line-height: 1.5;
+}
+.guided-hint {
+  width: fit-content;
+  max-width: 48ch;
+  margin: 0 0 20px;
+  color: var(--color-ink-soft);
+  font-size: .84rem;
+}
+.guided-hint summary {
+  color: var(--color-primary-dark);
+  font-weight: 650;
+  cursor: pointer;
+}
+.guided-hint p {
+  margin: 8px 0 0;
+  padding: 10px 12px;
+  border-left: 2px solid var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary-soft) 55%, transparent);
+  color: var(--color-ink-soft);
+}
+.guided-primary-action {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+.guided-task-panel .interaction-check {
+  min-width: 126px;
+  min-height: 44px;
+}
+.guided-task-panel .confidence-inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.guided-task-panel .confidence-inline[hidden] {
+  display: none !important;
+}
+.guided-confidence-label {
+  color: var(--color-ink-soft);
+  font-size: .78rem;
+  white-space: nowrap;
+}
+.guided-task-panel .confidence-options {
+  display: flex;
+  gap: 4px;
+}
+.guided-task-panel .confidence-btn {
+  min-height: 34px;
+  padding: 0 9px;
+}
+.guided-options-list {
+  margin-top: 8px;
+}
+
+/* Single-card classification replaces the Alpha 6 board in guided Practice. */
+.guided-sort {
+  display: grid;
+  gap: 12px;
+  max-width: 620px;
+  margin-top: 10px;
+}
+.guided-sort-progress {
+  color: var(--color-ink-faint);
+  font-size: .78rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.guided-sort-card {
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  padding: 20px 22px;
+  border: 1px solid var(--color-line-strong, var(--color-line));
+  border-radius: 12px;
+  background: var(--color-surface);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-ink) 6%, transparent);
+}
+.guided-sort-card[aria-grabbed="true"] {
+  border-color: var(--color-primary);
+}
+.guided-sort-card p {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: calc(.98rem * var(--text-scale));
+  line-height: 1.55;
+}
+.guided-sort-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.guided-sort-category {
+  width: 100%;
+  min-height: 58px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  padding: 11px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-ink);
+  text-align: left;
+  cursor: pointer;
+}
+.guided-sort-category strong {
+  font-size: .88rem;
+  font-weight: 700;
+}
+.guided-sort-category span {
+  color: var(--color-ink-soft);
+  font-size: .76rem;
+  line-height: 1.35;
+}
+.guided-sort-category:hover:not(:disabled),
+.guided-sort-category:focus-visible {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary-soft) 45%, transparent);
+}
+.guided-sort-category.active {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary-soft) 68%, transparent);
+}
+.guided-sort-nav {
+  min-height: 34px;
+}
+.guided-sort-back {
+  min-height: 34px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: var(--color-primary-dark);
+  font: inherit;
+  font-size: .8rem;
+  font-weight: 650;
+}
+.guided-sort-back:disabled {
+  visibility: hidden;
+}
+.guided-sort-complete {
+  padding: 18px 0 6px;
+}
+.guided-sort-complete strong {
+  display: block;
+  color: var(--color-ink);
+  font-size: 1rem;
+}
+.guided-sort-complete p {
+  margin: 4px 0 0;
+  font-size: .84rem;
+}
+
+/* Select-text questions put the passage itself into a clear answer state. */
+.selection-mode-bar {
+  margin: 0 0 9px;
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 28%, var(--color-line));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-primary-soft) 55%, var(--color-surface));
+  color: var(--color-primary-dark);
+  font-size: .78rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.selection-mode-bar[hidden] { display: none !important; }
+.select-text-target.selection-candidate {
+  padding: 1px 3px;
+  margin: -1px -3px;
+  border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+  background: color-mix(in srgb, var(--color-primary) 9%, var(--color-surface));
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--color-primary) 55%, transparent);
+}
+.select-text-target.selection-candidate:hover,
+.select-text-target.selection-candidate:focus-visible {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 14%, var(--color-surface));
+  outline: 2px solid color-mix(in srgb, var(--color-primary) 28%, transparent);
+  outline-offset: 2px;
+}
+.select-text-target.selection-candidate.selected {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 20%, var(--color-surface));
+  box-shadow: inset 0 -2px 0 var(--color-primary), 0 0 0 2px color-mix(in srgb, var(--color-primary) 15%, transparent);
+}
+.guided-selection-status {
+  min-height: 28px;
+  margin-top: 8px;
+  color: var(--color-ink-soft);
+  font-size: .82rem;
+  font-weight: 600;
+}
+
+/* Feedback stays downstream of the action instead of competing with it. */
+.guided-task-panel .explanation-box.visible,
+.guided-task-panel .learning-feedback.visible,
+.guided-task-panel .mistake-reason.visible {
+  margin-top: 18px;
+}
+
+@media (max-width: 980px) {
+  .guided-learning-workspace.study-workspace {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .guided-learning-workspace .reading-column {
+    padding-right: 0;
+  }
+  .guided-task-panel {
+    border-top: 1px solid var(--color-line) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .guided-learning-workspace .passage-heading h1 {
+    font-size: 1.22rem;
+  }
+  .guided-learning-workspace .reading-panel-clean .reading-scroll {
+    max-height: 56vh;
+  }
+  .guided-task-panel .question-stage {
+    padding: 22px 16px 20px;
+  }
+  .guided-task-panel .q-prompt {
+    max-width: none;
+    font-size: calc(1.08rem * var(--text-scale));
+  }
+  .guided-helper {
+    margin-bottom: 14px;
+  }
+  .guided-sort-card {
+    min-height: 96px;
+    padding: 16px;
+  }
+  .guided-sort-category {
+    min-height: 56px;
+  }
+  .guided-primary-action .interaction-check {
+    width: 100%;
+  }
+  .guided-task-panel .confidence-inline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .selection-mode-bar {
+    position: sticky;
+    top: 58px;
+    z-index: 3;
+  }
+}
+.guided-retry-feedback {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary-soft) 52%, transparent);
+}
+.guided-retry-feedback strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--color-ink);
+}
+.guided-retry-feedback p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: .86rem;
+}
+.guided-retry-feedback span {
+  display: block;
+  margin-top: 6px;
+  color: var(--color-primary-dark);
+  font-size: .78rem;
+  font-weight: 650;
+}

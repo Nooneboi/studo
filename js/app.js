@@ -4,7 +4,7 @@
   Shared site-shell behavior + service-worker lifecycle.
 */
 
-const STUDO_RELEASE = "0.7.0-alpha.6";
+const STUDO_RELEASE = "0.7.0-alpha.7";
 window.STUDO_RELEASE = STUDO_RELEASE;
 
 window.StudoSafeStorage = {
