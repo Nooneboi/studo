@@ -34,6 +34,7 @@ async function init() {
 }
 
 function renderPlan() {
+  document.body.classList.remove("mobile-nav-focus");
   setHeaderProgress("");
   const reasonCounts = countReasons(plan.items);
   trainView.innerHTML = `
@@ -70,6 +71,7 @@ function renderPlan() {
 }
 
 function renderQuestion() {
+  document.body.classList.add("mobile-nav-focus");
   const item = plan.items[currentIndex];
   if (!item) return renderComplete();
   const q = item.question;
@@ -296,6 +298,7 @@ function renderFeedback(item, answer, correct, learningResult) {
   }
 }
 function renderComplete() {
+  document.body.classList.remove("mobile-nav-focus");
   setHeaderProgress("Complete");
   const correct = results.filter((r) => r.correct).length;
   const skills = [...new Set(results.map((r) => r.item.skillLabel))];

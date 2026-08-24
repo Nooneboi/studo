@@ -4,7 +4,7 @@
   Shared site-shell behavior + service-worker lifecycle.
 */
 
-const STUDO_RELEASE = "0.7.0-alpha.7";
+const STUDO_RELEASE = "0.7.0-alpha.10";
 window.STUDO_RELEASE = STUDO_RELEASE;
 
 window.StudoSafeStorage = {
@@ -68,7 +68,123 @@ window.addEventListener("unhandledrejection", (event) => {
   showSystemNotice("Something did not load correctly. Reload the page; your saved progress should remain on this device.", "warning");
 });
 
+
+const MOBILE_FOCUS_PAGES = new Set(["module.html", "test.html", "extended-response.html"]);
+const MOBILE_PRACTICE_PAGES = new Set(["practice.html", "curriculum.html", "domain.html", "skill.html", "passages.html", "category.html"]);
+const MOBILE_MORE_PAGES = new Set(["progress.html", "resources.html", "about.html", "methodology.html", "privacy.html"]);
+
+function currentPageName() {
+  return window.location.pathname.split("/").pop() || "index.html";
+}
+
+function mobileDestinationFor(path) {
+  if (path === "index.html" || path === "") return "home";
+  if (MOBILE_PRACTICE_PAGES.has(path)) return "practice";
+  if (path === "train.html") return "train";
+  if (path === "quiz.html") return "mock";
+  if (MOBILE_MORE_PAGES.has(path)) return "more";
+  return "";
+}
+
+function setupMobilePrimaryNavigation() {
+  const path = currentPageName();
+  if (MOBILE_FOCUS_PAGES.has(path) || document.querySelector(".mobile-primary-nav")) return;
+
+  const active = mobileDestinationFor(path);
+  const nav = document.createElement("nav");
+  nav.className = "mobile-primary-nav";
+  nav.setAttribute("aria-label", "Primary learner navigation");
+  nav.innerHTML = `
+    <a class="mobile-primary-nav-item${active === "home" ? " active" : ""}" href="index.html"${active === "home" ? ' aria-current="page"' : ""}>
+      <span aria-hidden="true">⌂</span><span>Home</span>
+    </a>
+    <a class="mobile-primary-nav-item${active === "practice" ? " active" : ""}" href="practice.html"${active === "practice" ? ' aria-current="page"' : ""}>
+      <span aria-hidden="true">▤</span><span>Practice</span>
+    </a>
+    <a class="mobile-primary-nav-item${active === "train" ? " active" : ""}" href="train.html"${active === "train" ? ' aria-current="page"' : ""}>
+      <span aria-hidden="true">↻</span><span>Train</span>
+    </a>
+    <a class="mobile-primary-nav-item${active === "mock" ? " active" : ""}" href="quiz.html"${active === "mock" ? ' aria-current="page"' : ""}>
+      <span aria-hidden="true">◫</span><span>Mock</span>
+    </a>
+    <button class="mobile-primary-nav-item mobile-primary-more${active === "more" ? " active" : ""}" type="button" aria-haspopup="dialog" aria-controls="mobile-more-sheet"${active === "more" ? ' aria-current="page"' : ""}>
+      <span aria-hidden="true">•••</span><span>More</span>
+    </button>`;
+
+  const backdrop = document.createElement("div");
+  backdrop.className = "mobile-nav-sheet-backdrop";
+  backdrop.hidden = true;
+  backdrop.innerHTML = `
+    <section class="mobile-nav-sheet" id="mobile-more-sheet" role="dialog" aria-modal="true" aria-labelledby="mobile-more-title" tabindex="-1">
+      <div class="mobile-nav-sheet-head">
+        <h2 id="mobile-more-title">More</h2>
+        <button class="mobile-sheet-close" type="button" aria-label="Close More menu">Close</button>
+      </div>
+      <nav class="mobile-more-links" aria-label="More Chee Skool pages">
+        <a href="progress.html">Progress</a>
+        <a href="resources.html">Resources</a>
+        <div class="mobile-more-secondary">
+          <a href="about.html">About</a>
+          <a href="methodology.html">Methodology</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </nav>
+    </section>`;
+
+  document.body.append(nav, backdrop);
+  document.body.classList.add("has-mobile-primary-nav");
+
+  const moreButton = nav.querySelector(".mobile-primary-more");
+  const sheet = backdrop.querySelector(".mobile-nav-sheet");
+  const closeButton = backdrop.querySelector(".mobile-sheet-close");
+  let lastFocus = null;
+
+  function focusables() {
+    return [...sheet.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')];
+  }
+  function openMore() {
+    lastFocus = document.activeElement;
+    backdrop.hidden = false;
+    document.body.classList.add("mobile-sheet-open");
+    closeButton.focus();
+  }
+  function closeMore({ restore = true } = {}) {
+    if (backdrop.hidden) return;
+    backdrop.hidden = true;
+    document.body.classList.remove("mobile-sheet-open");
+    if (restore && lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+  }
+
+  moreButton.addEventListener("click", openMore);
+  closeButton.addEventListener("click", () => closeMore());
+  backdrop.addEventListener("click", (event) => {
+    if (event.target === backdrop) closeMore();
+  });
+  backdrop.querySelectorAll("a[href]").forEach((link) => link.addEventListener("click", () => closeMore({ restore: false })));
+  document.addEventListener("keydown", (event) => {
+    if (backdrop.hidden) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeMore();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const items = focusables();
+    if (!items.length) return;
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  setupMobilePrimaryNavigation();
   document.querySelectorAll("nav.site-nav").forEach((nav) => {
     if (!nav.querySelector('a[href="train.html"]')) {
       const trainLink = document.createElement("a");
