@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-24T10:36:33.168Z",
+  "builtAt": "2026-08-24T11:01:19.978Z",
   "tracks": [
     {
       "id": "reading",
@@ -38,7 +38,7 @@
           "availableSkillCount": 5,
           "availableUnitCount": 0,
           "availableSetCount": 6,
-          "topicResourceCount": 2,
+          "topicResourceCount": 3,
           "topicResources": [
             {
               "id": "res-rla-core-meaning-guide-v1",
@@ -65,6 +65,19 @@
               "status": "published",
               "rightsStatus": "original",
               "reviewer": "Chee Skool editorial review"
+            },
+            {
+              "id": "res-rla-core-meaning-transfer-passages-v1",
+              "title": "Core Meaning - Transfer Passage Pack",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "core-meaning",
+              "description": "Four longer mixed-skill passages with 28 questions for independent transfer practice across literary, community/civics, workplace, and science/community contexts.",
+              "href": "assets/resources/core-meaning-transfer-passage-pack.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 0C resource integrity review"
             }
           ],
           "resources": [
@@ -93,9 +106,22 @@
               "status": "published",
               "rightsStatus": "original",
               "reviewer": "Chee Skool editorial review"
+            },
+            {
+              "id": "res-rla-core-meaning-transfer-passages-v1",
+              "title": "Core Meaning - Transfer Passage Pack",
+              "type": "worksheet",
+              "scope": "domain",
+              "domainId": "core-meaning",
+              "description": "Four longer mixed-skill passages with 28 questions for independent transfer practice across literary, community/civics, workplace, and science/community contexts.",
+              "href": "assets/resources/core-meaning-transfer-passage-pack.pdf",
+              "download": true,
+              "status": "published",
+              "rightsStatus": "original",
+              "reviewer": "Phase 0C resource integrity review"
             }
           ],
-          "studyFileCount": 17,
+          "studyFileCount": 18,
           "checkCount": 6,
           "skills": [
             {
@@ -5550,8 +5576,8 @@
       "totalSkillCount": 22,
       "availableSetCount": 34,
       "questionCount": 270,
-      "resourceCount": 85,
-      "studyFileCount": 85,
+      "resourceCount": 86,
+      "studyFileCount": 86,
       "checkCount": 34
     },
     {
