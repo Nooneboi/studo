@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-explicit-meaning-active-methods-v1",
+  "title": "Explicit Meaning - Guided Practice",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Explicit meaning",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-explicit-meaning-active-equipment-checkout"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Chee Skool Explicit Meaning reference-skill review",
+  "reviewNotes": "Phase 2 Explicit Meaning depth path. Teaches stated-vs-inferred distinctions, exact target matching, true-but-wrong details, qualifiers, accurate paraphrase, and explicit rule application. Existing multi-context Explicit Meaning Practice remains the independent follow-up. Excluded from random Mock until dedicated Mock-only material exists.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.1",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Locate directly stated information, match the exact target of a question, preserve qualifiers and conditions, and reject reasonable ideas that the text does not actually state.",
+    "topicLabel": "Explicit meaning",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Based on the equipment notice, decide whether each statement is directly stated or not stated.",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "A standard checkout must normally be returned before the employee's shift ends."
+          },
+          {
+            "id": "i2",
+            "text": "A contractor may take a checked-out tool home if a host employee approves it."
+          },
+          {
+            "id": "i3",
+            "text": "An overnight request must be submitted before 3 p.m."
+          },
+          {
+            "id": "i4",
+            "text": "Every covered tool requires an online training module before the first checkout."
+          }
+        ],
+        "zones": [
+          {
+            "id": "stated",
+            "label": "Directly stated"
+          },
+          {
+            "id": "not-stated",
+            "label": "Not stated / changes the rule"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=stated|i2=not-stated|i3=stated|i4=not-stated",
+      "explanation": {
+        "answer": "i1 and i3 are directly stated; i2 and i4 change what the notice says.",
+        "whyCorrect": "The notice gives an end-of-shift deadline and a before-3-p.m. overnight request rule. Contractors are limited to on-site use, and only thermal cameras have the stated training requirement.",
+        "quickTip": "Do not reward an answer for sounding reasonable. Ask whether the text actually says it."
+      },
+      "learningStage": "guided",
+      "hint": "Check each statement word by word. Watch for added permissions or words such as every."
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Which sentence directly states who is allowed to approve an overnight checkout request?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 1,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "Employees who need a tool overnight must submit a request before 3 p.m."
+          },
+          {
+            "id": "s2",
+            "text": "A team supervisor or shift lead may approve the request."
+          },
+          {
+            "id": "s3",
+            "text": "Once approved, the overnight checkout lasts until 10 a.m. on the next workday."
+          },
+          {
+            "id": "s4",
+            "text": "A host employee must check out the item for a contractor and remains responsible for its return."
+          }
+        ]
+      },
+      "correct": "s2",
+      "explanation": {
+        "answer": "A team supervisor or shift lead may approve the request.",
+        "whyCorrect": "That sentence answers the exact target: who may approve the request. The nearby sentences give the deadline, return time, or contractor responsibility instead.",
+        "quickTip": "Turn the question into a target such as who, when, where, or why, then find the sentence that matches that target."
+      },
+      "learningStage": "guided",
+      "hint": "The question asks who. Ignore sentences that only tell you when to request or when to return the tool."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "According to the notice, when must a standard checkout normally be returned?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "medium",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "options": [
+        {
+          "id": "a",
+          "text": "Before 3 p.m.",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "Before 3 p.m. is the deadline for submitting an overnight request, not for returning a standard checkout."
+        },
+        {
+          "id": "b",
+          "text": "Before the employee's shift ends"
+        },
+        {
+          "id": "c",
+          "text": "By 10 a.m. on the next workday",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "That deadline applies only after an overnight checkout has been approved."
+        },
+        {
+          "id": "d",
+          "text": "After the six-week pilot ends",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "Six weeks describes the pilot period, not a tool return deadline."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The notice directly says standard checkouts must be returned before the employee's shift ends unless overnight use is approved.",
+        "quickTip": "A number or time can be true in the passage and still answer the wrong question. Match the detail to the exact subject."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q4",
+      "type": "select_text",
+      "prompt": "Which phrase states the exception to the normal end-of-shift return deadline?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "interaction": {
+        "selectionMode": "phrase",
+        "targets": [
+          {
+            "id": "p1",
+            "text": "before the employee's shift ends"
+          },
+          {
+            "id": "p2",
+            "text": "unless an overnight checkout has been approved"
+          },
+          {
+            "id": "p3",
+            "text": "before 3 p.m."
+          },
+          {
+            "id": "p4",
+            "text": "until 10 a.m. on the next workday"
+          }
+        ]
+      },
+      "correct": "p2",
+      "explanation": {
+        "answer": "unless an overnight checkout has been approved",
+        "whyCorrect": "The word unless introduces the condition that changes the normal end-of-shift rule. The other phrases give the normal deadline or times connected to the overnight process.",
+        "quickTip": "Qualifier words such as unless, only, before, after, and at least can change the exact meaning of a rule."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement accurately paraphrases the training rule for thermal cameras?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Employees must repeat the 20-minute module every time they borrow a thermal camera.",
+          "distractorType": "condition_changed",
+          "whyWrong": "The passage says the module does not need to be repeated after it has been completed."
+        },
+        {
+          "id": "b",
+          "text": "Employees complete the 20-minute module before their first thermal-camera checkout, and later checkouts do not require repeating it."
+        },
+        {
+          "id": "c",
+          "text": "Only contractors are required to complete the thermal-camera module.",
+          "distractorType": "unsupported_restriction",
+          "whyWrong": "The passage states the requirement for an employee borrowing a camera for the first time; it does not limit the rule to contractors."
+        },
+        {
+          "id": "d",
+          "text": "The 20-minute module is required before an employee can check out any covered equipment.",
+          "distractorType": "overgeneralized_rule",
+          "whyWrong": "The training requirement is stated specifically for thermal cameras, not for every covered tool."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Choice B preserves both parts of the stated rule: training comes before the first thermal-camera checkout, and it does not need to be repeated later.",
+        "quickTip": "A good paraphrase changes the wording without changing the limits or conditions."
+      },
+      "learningStage": "independent"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Rina's shift ends at 7 p.m. She submits a 2:45 p.m. overnight request for a torque wrench, and her shift lead approves it. According to the notice, when must she return the wrench?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "By 7 p.m. the same day",
+          "distractorType": "ignores_exception",
+          "whyWrong": "That is the normal rule, but Rina has an approved overnight checkout."
+        },
+        {
+          "id": "b",
+          "text": "By 10 a.m. on the next workday"
+        },
+        {
+          "id": "c",
+          "text": "By 3 p.m. the same day",
+          "distractorType": "true_elsewhere",
+          "whyWrong": "Before 3 p.m. is the request deadline. It is not the return deadline."
+        },
+        {
+          "id": "d",
+          "text": "Any time before the six-week pilot ends",
+          "distractorType": "mentioned_wrong_detail",
+          "whyWrong": "The length of the pilot does not determine the return time for an individual checkout."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Rina met the stated request deadline and received approval from an allowed approver, so the overnight rule applies: the checkout lasts until 10 a.m. on the next workday.",
+        "quickTip": "For a rule with an exception, verify that the condition is met before applying the exception's deadline."
+      },
+      "learningStage": "independent"
+    }
+  ]
+}

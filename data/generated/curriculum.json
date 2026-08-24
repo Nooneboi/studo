@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-24T13:31:18.386Z",
+  "builtAt": "2026-08-24T14:24:21.037Z",
   "tracks": [
     {
       "id": "reading",
@@ -37,7 +37,7 @@
           "units": [],
           "availableSkillCount": 5,
           "availableUnitCount": 0,
-          "availableSetCount": 7,
+          "availableSetCount": 8,
           "topicResourceCount": 3,
           "topicResources": [
             {
@@ -131,16 +131,56 @@
               "priority": "P0",
               "practiceMode": "Reading",
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-explicit-meaning-active-methods-v1",
+                  "title": "Explicit Meaning - Guided Practice",
+                  "description": "",
+                  "file": "generated/modules/set-rla-explicit-meaning-active-methods-v1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Locate directly stated information, match the exact target of a question, preserve qualifiers and conditions, and reject reasonable ideas that the text does not actually state.",
+                    "topicLabel": "Explicit meaning",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-explicit-meaning-active-equipment-checkout",
+                    "title": "A New Equipment Checkout Procedure",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.1"
+                  ]
+                },
+                {
                   "id": "set-rla-explicit-meaning-practice-01",
-                  "title": "Explicit Meaning Practice 1",
-                  "description": "4 short texts · 8 explicit-meaning questions",
+                  "title": "Explicit Meaning - Independent Practice",
+                  "description": "4 short texts · 8 independent explicit-meaning questions",
                   "file": "generated/modules/rla-explicit-meaning-practice-01.json",
                   "difficulty": "medium",
                   "category": "reading",
@@ -4603,8 +4643,8 @@
       ],
       "availableSkillCount": 22,
       "totalSkillCount": 22,
-      "availableSetCount": 35,
-      "questionCount": 276,
+      "availableSetCount": 36,
+      "questionCount": 282,
       "resourceCount": 86,
       "studyFileCount": 86,
       "checkCount": 0

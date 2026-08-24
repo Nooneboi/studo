@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-24  
-**Current release:** `0.7.0-alpha.14`  
-**Current stage:** Phase 1 Supporting Details reference skill complete; Phase 2 high-priority Reading depth is next  
+**Current release:** `0.7.0-alpha.15`  
+**Current stage:** Phase 2 high-priority Reading depth — Explicit Meaning complete; Summary is next  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **96 learner modules**
-- **711 objective/component questions**
+- **97 learner modules**
+- **717 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -77,6 +77,21 @@ Implemented progression:
 6. Skill Check later — still intentionally absent until the dedicated Skill Check phase.
 
 The new 494-word original community/civics passage, **A Saturday Market Street Pilot**, is used only for the reference guided path and remains `mock-excluded`.
+
+### Phase 2 depth skill — Explicit Meaning
+
+Explicit Meaning now uses the existing guide and two workbooks plus a new skill-specific active-learning path. The new path does not manufacture difficulty by turning explicit-detail questions into inference questions. It increases challenge through target matching, true-but-wrong details, paraphrase precision, qualifiers/conditions, evidence distance, and explicit rule application.
+
+Implemented progression:
+
+1. Learn — existing Explicit Meaning Study Guide.
+2. Guided — directly stated vs not stated, then exact-sentence location.
+3. Apply — reject true-but-wrong details and identify a condition that changes a rule.
+4. Independent — preserve meaning through paraphrase and apply an explicitly stated exception with no hints.
+5. Follow-up — existing four-context drill is retained as **Explicit Meaning - Independent Practice**.
+6. Passage transfer — mixed Passage Practice continues to expose Explicit Meaning in longer reading sets.
+
+The new 489-word original workplace passage, **A New Equipment Checkout Procedure**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
 
 ## Learning-mode ownership
 
@@ -255,10 +270,10 @@ Supporting Details now uses the existing strong PDF material plus a skill-specif
 
 ### Phase 2 — Complete high-priority Reading depth
 
-Order:
+Status/order:
 
-1. Explicit Meaning
-2. Summary
+1. Explicit Meaning — **complete in Alpha 15**
+2. Summary — **next**
 3. Inference
 4. Conclusions / Generalizations
 5. thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships
@@ -310,6 +325,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next build
 
-> **Phase 2 — Explicit Meaning.**
+> **Phase 2 — Summary.**
 
-Use the same quality standard, not the same interaction recipe. Audit and reuse the existing Explicit Meaning guide/workbooks/practice first, then add only the progression that the skill actually needs.
+Audit and reuse the existing Summary guide/workbooks/practice first. Add only the learning progression that Summary genuinely needs, while preserving the learning-mode separation, GED-style transfer, and learner-first interaction rules.

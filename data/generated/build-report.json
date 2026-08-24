@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-24T13:31:18.436Z",
+  "builtAt": "2026-08-24T14:24:21.084Z",
   "canonicalLegacyModules": [
     "legacy-modules/rla-author-purpose-practice-1.json",
     "legacy-modules/rla-author-purpose-practice-2.json",
@@ -79,6 +79,7 @@
     "set-rla-er-focus-thesis-evidence",
     "set-rla-er-focus-understand-map-sources",
     "set-rla-er-transfer-revision-lab",
+    "set-rla-explicit-meaning-active-methods-v1",
     "set-rla-lang-agreement",
     "set-rla-lang-boundaries",
     "set-rla-lang-capitals",
@@ -128,6 +129,7 @@
     "generated/modules/rla-er-focus-thesis-evidence.json",
     "generated/modules/rla-er-focus-understand-map-sources.json",
     "generated/modules/rla-er-transfer-revision-lab.json",
+    "generated/modules/set-rla-explicit-meaning-active-methods-v1.json",
     "generated/modules/set-rla-lang-agreement.json",
     "generated/modules/set-rla-lang-boundaries.json",
     "generated/modules/set-rla-lang-capitals.json",
@@ -150,7 +152,7 @@
     "generated/modules/rla-reading-transfer-willow-bend.json",
     "generated/modules/set-rla-supporting-details-active-methods-v1.json"
   ],
-  "generatedIndexCount": 96,
+  "generatedIndexCount": 97,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "published",
