@@ -29,7 +29,7 @@
     {
       "id": "q1",
       "type": "drag_sort",
-      "prompt": "Which statements help explain the passage’s main point?",
+      "prompt": "How important is each statement to the passage’s main point?",
       "primarySkillId": "R1.2",
       "familyId": "mainidea.whole.explicit",
       "difficulty": "easy",

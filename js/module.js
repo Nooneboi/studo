@@ -82,26 +82,6 @@ function guidedHelperText(q) {
   return "";
 }
 
-function responseIsComplete(q, answer) {
-  if (!answer) return false;
-  if (window.QuestionInteractions?.SUPPORTED_TYPES?.has(q.type)) {
-    return window.QuestionInteractions.hasCompleteAnswer(q, window.QuestionInteractions.canonicalizeAnswer(q, answer));
-  }
-  return String(answer).trim().length > 0;
-}
-
-function revealConfidencePanel() {
-  const panel = document.querySelector('[data-role="confidence-panel"]');
-  if (panel) panel.hidden = false;
-}
-
-function placeGuidedPrimaryAction(stage) {
-  if (!isGuidedLearningModule() || !stage) return;
-  const action = stage.querySelector('.guided-primary-action');
-  const confidence = stage.querySelector('[data-role="confidence-panel"]');
-  if (action && confidence) confidence.after(action);
-}
-
 function renderShell() {
   const hasPassage = Boolean(currentQuiz.passage);
   const guided = isGuidedLearningModule();
@@ -256,20 +236,15 @@ function renderCurrentQuestion(options = {}) {
 
   const guided = isGuidedLearningModule();
   const stageName = learningStageFor(q);
-  const currentResponse = savedAnswer || draftAnswer || "";
-  const responseComplete = responseIsComplete(q, currentResponse);
   const helperText = guided ? guidedHelperText(q) : "";
-  const stageTransition = guided && stageName === "independent" && currentIndex > 0 && learningStageFor(items[currentIndex - 1].question) !== "independent"
-    ? `<p class="guided-stage-note">Independent practice — no hints on these questions.</p>`
-    : "";
+  const guidedNextLocked = guided && !savedAnswer;
 
   stage.innerHTML = `
-    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span><span aria-hidden="true">·</span><strong>${escapeHtml(stageName.toUpperCase())}</strong></div>${stageTransition}` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
+    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span><span aria-hidden="true">·</span><strong>${escapeHtml(stageName.toUpperCase())}</strong></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     ${helperText ? `<p class="guided-helper">${escapeHtml(helperText)}</p>` : ""}
-    ${guided && q.hint && stageName !== "independent" ? `<details class="guided-hint"><summary>Need help?</summary><p>${escapeHtml(q.hint)}</p></details>` : ""}
     <div data-role="answer-area"></div>
-    ${isAutoGraded(q) ? confidencePanelHtml(q, confidenceSelections[q.id] || null, guided && !responseComplete) : ""}
+    ${isAutoGraded(q) && !guided ? confidencePanelHtml(q, confidenceSelections[q.id] || null) : ""}
     <div class="explanation-box" data-role="explanation"></div>
     <div class="learning-feedback" data-role="learning-feedback" aria-live="polite"></div>
     <details class="mistake-reason" data-role="mistake-reason">
@@ -309,12 +284,11 @@ function renderCurrentQuestion(options = {}) {
 
   renderPassageForQuestion(q, savedAnswer || draftAnswer);
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer, draftAnswer);
-  placeGuidedPrimaryAction(stage);
 
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
     <span class="question-footer-position">${currentIndex + 1} / ${items.length}</span>
-    <button class="question-nav-btn primary" id="next-question">${currentIndex === items.length - 1 ? "Finish" : "Next"}</button>
+    <button class="question-nav-btn primary" id="next-question" ${guidedNextLocked ? "disabled" : ""}>${currentIndex === items.length - 1 ? "Finish" : "Next"}</button>
   `;
 
   document.getElementById("prev-question").addEventListener("click", () => {
@@ -638,6 +612,12 @@ function lockInteractionControls(q, container) {
   }
 }
 
+function unlockGuidedNext() {
+  if (!isGuidedLearningModule()) return;
+  const next = document.getElementById("next-question");
+  if (next) next.disabled = false;
+}
+
 function submitInteractiveAnswer(q, answer, container) {
   const I = window.QuestionInteractions;
   if (!I) return false;
@@ -669,6 +649,7 @@ function submitInteractiveAnswer(q, answer, container) {
   setupMistakeReason(q, correct, learningResult);
   finalizeConfidenceUi(q.id);
   lockInteractionControls(q, container);
+  unlockGuidedNext();
   setStatus(correct ? "Correct — review the explanation, then continue." : "Not quite — review the explanation before continuing.");
   questionOpenedAt = Date.now();
   updateAnswerStatus();
@@ -742,7 +723,6 @@ function renderGuidedMultipleChoiceAnswer(q, container, savedAnswer, draftAnswer
         if (!radio.checked) return;
         selected = radio.value;
         saveInteractionDraft(q.id, selected);
-        revealConfidencePanel();
         if (check) check.disabled = false;
         if (live) live.textContent = 'Answer selected.';
       });
@@ -766,13 +746,13 @@ function renderGuidedMultipleChoiceAnswer(q, container, savedAnswer, draftAnswer
 function renderGuidedSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
   let selected = savedAnswer || draftAnswer || "";
   container.innerHTML = `
-    <div class="guided-selection-status" data-guided-selection-status aria-live="polite">${selected ? `1 ${escapeHtml(q.interaction?.selectionMode || "text area")} selected` : "No selection yet"}</div>
     <div class="guided-primary-action">
       <button class="btn interaction-check" type="button" ${selected && !savedAnswer ? "" : "disabled"}>Check answer</button>
-    </div>`;
+    </div>
+    <div class="interaction-live-status sr-only" aria-live="polite"></div>`;
 
   const check = container.querySelector('.interaction-check');
-  const status = container.querySelector('[data-guided-selection-status]');
+  const live = container.querySelector('.interaction-live-status');
   const targetButtons = [...viewEl.querySelectorAll('[data-select-target]')];
 
   const applySelection = (id, announce = true) => {
@@ -784,11 +764,9 @@ function renderGuidedSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
     });
     if (!savedAnswer) {
       saveInteractionDraft(q.id, selected);
-      revealConfidencePanel();
       if (check) check.disabled = !selected;
     }
-    if (status) status.textContent = selected ? `1 ${q.interaction?.selectionMode || "text area"} selected` : 'No selection yet';
-    if (announce && selected) setStatus('Selection saved. Check your answer when ready.', false);
+    if (announce && selected && live) live.textContent = 'Sentence selected. Check your answer when ready.';
   };
 
   if (selected) applySelection(selected, false);
@@ -805,8 +783,8 @@ function renderGuidedSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
 function guidedZonePresentation(zone) {
   const label = String(zone?.label || 'Category');
   const known = {
-    'Helps explain the main point': ['Helps main point', 'Matters to the whole passage'],
-    'Mostly a supporting detail': ['Supporting detail', 'Useful, but specific'],
+    'Helps explain the main point': ['Key to main idea', 'Connects to the whole passage'],
+    'Mostly a supporting detail': ['Specific detail', 'True, but not central'],
     'Too narrow / just a detail': ['Too narrow', 'Just one detail'],
     'Too broad or unsupported': ['Too broad', 'Adds or overstates'],
     'Fits the whole passage': ['Fits the passage', 'Covers the whole text'],
@@ -859,7 +837,6 @@ function renderGuidedChoiceRows(q, container, savedAnswer, draftAnswer) {
     if (!savedAnswer) saveInteractionDraft(q.id, canonical);
     const complete = I.hasCompleteAnswer(q, canonical);
     if (check) check.disabled = Boolean(savedAnswer) || !complete;
-    if (complete) revealConfidencePanel();
     return complete;
   };
 

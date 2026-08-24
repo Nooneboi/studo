@@ -8066,11 +8066,6 @@ body.test-body {
   font-size: inherit;
   font-weight: 750;
 }
-.guided-stage-note {
-  margin: -6px 0 14px;
-  color: var(--color-ink-soft);
-  font-size: .84rem;
-}
 .guided-task-panel .q-prompt {
   max-width: 44ch;
   margin: 0 0 8px;
@@ -8086,25 +8081,6 @@ body.test-body {
   font-size: .86rem;
   line-height: 1.5;
 }
-.guided-hint {
-  width: fit-content;
-  max-width: 48ch;
-  margin: 0 0 20px;
-  color: var(--color-ink-soft);
-  font-size: .84rem;
-}
-.guided-hint summary {
-  color: var(--color-primary-dark);
-  font-weight: 650;
-  cursor: pointer;
-}
-.guided-hint p {
-  margin: 8px 0 0;
-  padding: 10px 12px;
-  border-left: 2px solid var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary-soft) 55%, transparent);
-  color: var(--color-ink-soft);
-}
 .guided-primary-action {
   display: flex;
   justify-content: flex-start;
@@ -8113,30 +8089,6 @@ body.test-body {
 .guided-task-panel .interaction-check {
   min-width: 126px;
   min-height: 44px;
-}
-.guided-task-panel .confidence-inline {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  margin: 16px 0 0;
-  padding: 0;
-}
-.guided-task-panel .confidence-inline[hidden] {
-  display: none !important;
-}
-.guided-confidence-label {
-  color: var(--color-ink-soft);
-  font-size: .78rem;
-  white-space: nowrap;
-}
-.guided-task-panel .confidence-options {
-  display: flex;
-  gap: 4px;
-}
-.guided-task-panel .confidence-btn {
-  min-height: 34px;
-  padding: 0 9px;
 }
 .guided-options-list {
   margin-top: 8px;
@@ -8251,14 +8203,6 @@ body.test-body {
   background: color-mix(in srgb, var(--color-primary) 22%, var(--color-surface));
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 18%, transparent);
 }
-.guided-selection-status {
-  min-height: 28px;
-  margin-top: 8px;
-  color: var(--color-ink-soft);
-  font-size: .82rem;
-  font-weight: 600;
-}
-
 /* Feedback stays downstream of the action instead of competing with it. */
 .guided-task-panel .explanation-box.visible,
 .guided-task-panel .learning-feedback.visible,
@@ -8313,11 +8257,6 @@ body.test-body {
   }
   .guided-primary-action .interaction-check {
     width: 100%;
-  }
-  .guided-task-panel .confidence-inline {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 5px;
   }
   .selection-mode-bar {
     position: sticky;
