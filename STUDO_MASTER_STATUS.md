@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-24  
-**Current release:** `0.7.0-alpha.15`  
-**Current stage:** Phase 2 high-priority Reading depth — Explicit Meaning complete; Summary is next  
+**Current release:** `0.7.0-alpha.16`  
+**Current stage:** Phase 2 high-priority Reading depth — Summary complete; Inference is next  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **97 learner modules**
-- **717 objective/component questions**
+- **98 learner modules**
+- **723 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -92,6 +92,21 @@ Implemented progression:
 6. Passage transfer — mixed Passage Practice continues to expose Explicit Meaning in longer reading sets.
 
 The new 489-word original workplace passage, **A New Equipment Checkout Procedure**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
+
+### Phase 2 depth skill — Summary
+
+Summary now reuses the existing guide and two workbooks plus a new skill-specific active-learning path. The progression teaches compression and scope directly instead of treating Summary as only another best-answer MCQ skill. Difficulty stays centered on DOK 2 summary reasoning rather than drifting into inference.
+
+Implemented progression:
+
+1. Learn — existing Summary Study Guide.
+2. Guided — decide what is essential vs omittable, then control section scope.
+3. Apply — diagnose too-narrow/added-claim summary traps and identify the developments that must survive compression.
+4. Independent — choose a whole-passage summary and preserve a result + limitation relationship with no hints.
+5. Follow-up — existing four-context drill is retained as **Summary - Independent Practice**.
+6. Passage transfer — mixed Passage Practice continues to expose Summary inside longer reading sets.
+
+The new 549-word original social-studies passage, **From Freight Yard to Shared Space**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
 
 ## Learning-mode ownership
 
@@ -273,8 +288,8 @@ Supporting Details now uses the existing strong PDF material plus a skill-specif
 Status/order:
 
 1. Explicit Meaning — **complete in Alpha 15**
-2. Summary — **next**
-3. Inference
+2. Summary — **complete in Alpha 16**
+3. Inference — **next**
 4. Conclusions / Generalizations
 5. thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships
 
@@ -325,6 +340,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next build
 
-> **Phase 2 — Summary.**
+> **Phase 2 — Inference.**
 
-Audit and reuse the existing Summary guide/workbooks/practice first. Add only the learning progression that Summary genuinely needs, while preserving the learning-mode separation, GED-style transfer, and learner-first interaction rules.
+Audit and reuse the existing Inference guide/workbooks/practice first. Add only the learning progression that Inference genuinely needs, while preserving the learning-mode separation, GED-style transfer, and learner-first interaction rules.

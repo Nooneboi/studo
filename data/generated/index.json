@@ -792,8 +792,8 @@
   },
   {
     "file": "generated/modules/rla-summary-practice-01.json",
-    "title": "Summary Practice 1",
-    "description": "4 short texts · 8 summary questions",
+    "title": "Summary - Independent Practice",
+    "description": "4 short texts · 8 independent summary questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.4",
@@ -1969,6 +1969,26 @@
       "contentKind": "passage_practice",
       "learningObjective": "Transfer inference, connotation, tone, structure, and point-of-view reasoning to an original informational passage.",
       "topicLabel": "GED Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-summary-active-methods-v1.json",
+    "title": "Summary - Guided Practice",
+    "description": "",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Compress a passage by keeping its central development and essential relationships, controlling scope, and removing details or claims that do not belong in an accurate summary.",
+      "topicLabel": "Summary",
       "deliveryRoles": [
         "practice",
         "train"

@@ -1,0 +1,403 @@
+{
+  "id": "set-rla-summary-active-methods-v1",
+  "title": "Summary - Guided Practice",
+  "description": "",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Summary",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "For most of the twentieth century, the East Junction freight yard sat behind a row of warehouses near the center of Bellhaven. Trains once delivered coal, machine parts, and produce there, but freight traffic declined after new highway routes opened outside the city. By the late 1990s, several tracks had been removed, two storage buildings were empty, and a large paved area was used mainly for temporary parking. The city bought the property in 2018 after residents and neighborhood groups argued that the abandoned yard divided two growing parts of Bellhaven and blocked safe walking routes between them. Officials said the site could become public space, but they also warned that old industrial land sometimes requires expensive environmental cleanup before redevelopment can begin.\n\nThe first planning proposal called for replacing most of the freight-yard structures with a park, apartment buildings, and a wide pedestrian path. Preservation groups objected to removing the brick dispatch office and the steel loading canopy, arguing that the surviving structures were evidence of the city's industrial history. Nearby residents supported better access across the property but disagreed about how much new housing should be added. Some wanted more apartments near the transit station, while others worried that taller buildings would increase traffic on narrow local streets. Instead of approving the first proposal, the city created a public design committee and asked it to review historical records, traffic studies, soil tests, and comments from residents.\n\nThe committee eventually recommended a compromise. The dispatch office would be repaired and converted into a small community room, and the loading canopy would remain as a covered market space. A new walking and cycling route would cross the site from east to west, while two apartment buildings would be placed near the existing transit station rather than along the residential edge. The plan also reserved part of the former parking area for trees and a rain garden designed to collect storm water. Before construction could begin, however, soil testing found petroleum contamination near an area where fuel had once been stored. Cleanup added nearly eight months to the schedule and required the city to remove contaminated soil and monitor groundwater.\n\nWhen the first phase opened in 2024, the cross-site path immediately became the most heavily used part of the project. City counts showed that hundreds of people used it on weekdays to reach buses, shops, and schools without walking around the old freight-yard fence. Weekend markets under the preserved canopy also attracted vendors from nearby neighborhoods. The apartment buildings were still under construction, and the community room could open only on limited days because the city had not yet hired permanent staff for it. Supporters said the project had already reconnected neighborhoods while keeping visible pieces of local history. Critics responded that the delayed housing and limited community-room hours showed that the redevelopment was not yet delivering all of the benefits promised during planning.\n\nBellhaven officials now describe East Junction as a long-term redevelopment rather than a finished park project. The city plans to review pedestrian counts, market use, traffic, housing occupancy, and maintenance costs after all phases are open. Officials have not promised that every feature will remain unchanged. They say future adjustments may be needed if traffic patterns, operating costs, or public use differ from the planning estimates.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "You are building a concise whole-passage summary. Sort each detail by whether it is essential to the passage's main development or can usually be omitted.",
+      "points": 1,
+      "explanation": "A summary needs the passage's main change and the major response to conflict. The specific freight examples and rain-garden feature add detail but are not necessary to explain the passage as a whole.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Ask: if I remove this detail, do I lose the passage's main development—or only an example?",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "learningStage": "guided",
+      "hint": "Keep ideas that explain why the site changed and what the redevelopment became. Exact examples and smaller design features are easier to cut.",
+      "correct": "i1=keep|i2=keep|i3=omit|i4=omit",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The city redeveloped an abandoned freight yard after debate over access, housing, and preservation."
+          },
+          {
+            "id": "i2",
+            "text": "The final plan used a compromise that kept historic structures, added a cross-site path and housing, and later faced cleanup delays."
+          },
+          {
+            "id": "i3",
+            "text": "Trains once delivered coal, machine parts, and produce to the yard."
+          },
+          {
+            "id": "i4",
+            "text": "The rain garden was planned for part of the former parking area."
+          }
+        ],
+        "zones": [
+          {
+            "id": "keep",
+            "label": "Essential to the whole-passage summary"
+          },
+          {
+            "id": "omit",
+            "label": "Useful detail, but can be omitted"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the third paragraph, beginning with the committee's recommendation?",
+      "points": 1,
+      "explanation": "Choice A keeps the paragraph's three major pieces: the compromise design, the mix of preserved and new uses, and the cleanup delay.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "For a section summary, cover the important movement inside that section—not the whole passage and not one isolated detail.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "learningStage": "guided",
+      "hint": "Look for the choice that captures both what the committee planned and what happened before construction could begin.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The committee proposed a compromise that preserved some historic structures, added new public and housing uses, and then encountered a contamination-related delay."
+        },
+        {
+          "id": "b",
+          "text": "The city decided that every historic freight-yard structure should be preserved.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The paragraph describes preserving two structures, not every structure."
+        },
+        {
+          "id": "c",
+          "text": "A rain garden was included to collect storm water from the former parking area.",
+          "distractorType": "too_narrow",
+          "whyWrong": "That is one design detail, not the paragraph's full development."
+        },
+        {
+          "id": "d",
+          "text": "Petroleum contamination made the entire redevelopment impossible to complete.",
+          "distractorType": "overstated_result",
+          "whyWrong": "Cleanup delayed construction; it did not make redevelopment impossible."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "prompt": "Classify each possible summary statement by the kind of problem it has—or whether it preserves the passage accurately.",
+      "points": 1,
+      "explanation": "The strong statement compresses the whole redevelopment arc. The market and path are real but partial results. The claim that preservation is always more valuable than housing goes beyond the text.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A summary can fail by shrinking the passage to one detail or by expanding it with an idea the author never stated.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 90,
+      "learningStage": "apply",
+      "correct": "s1=strong|s2=narrow|s3=added|s4=narrow",
+      "interaction": {
+        "items": [
+          {
+            "id": "s1",
+            "text": "Bellhaven turned a long-unused freight yard into a mixed redevelopment shaped by competing goals, cleanup problems, and an unfinished first phase."
+          },
+          {
+            "id": "s2",
+            "text": "The loading canopy now hosts weekend markets."
+          },
+          {
+            "id": "s3",
+            "text": "The redevelopment proved that preserving old industrial buildings is always more valuable than constructing new housing."
+          },
+          {
+            "id": "s4",
+            "text": "The project added a walking route that many people used after the first phase opened."
+          }
+        ],
+        "zones": [
+          {
+            "id": "strong",
+            "label": "Preserves the main development"
+          },
+          {
+            "id": "narrow",
+            "label": "Too narrow / detail-heavy"
+          },
+          {
+            "id": "added",
+            "label": "Adds or changes a claim"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "drag_sort",
+      "prompt": "For a whole-passage summary, decide which developments must survive compression and which can be left out without changing the main story.",
+      "points": 1,
+      "explanation": "The first two developments explain the central arc from conflict and planning to an incomplete result. The other two are useful supporting details but are not necessary to preserve that arc.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "A whole-passage summary usually keeps the major change and outcome, not every feature or next step.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "apply",
+      "correct": "m1=must|m2=must|m3=optional|m4=optional",
+      "interaction": {
+        "items": [
+          {
+            "id": "m1",
+            "text": "The city used a public planning process to balance redevelopment, preservation, access, and housing concerns."
+          },
+          {
+            "id": "m2",
+            "text": "The first phase improved cross-site access, but some promised parts were delayed or limited."
+          },
+          {
+            "id": "m3",
+            "text": "The dispatch office became a small community room."
+          },
+          {
+            "id": "m4",
+            "text": "Officials will review several kinds of data after all phases are open."
+          }
+        ],
+        "zones": [
+          {
+            "id": "must",
+            "label": "Must survive compression"
+          },
+          {
+            "id": "optional",
+            "label": "Can be omitted from a concise whole-passage summary"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage as a whole?",
+      "points": 1,
+      "explanation": "Choice A preserves the full development: the abandoned site, the compromise plan, the cleanup delay, and the mixed results of the first phase.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "The best whole-passage summary should survive a check against the beginning, middle, and end of the text.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 4,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bellhaven redeveloped an abandoned freight yard through a compromise that balanced access, housing, and historic preservation; cleanup slowed the project, and the first phase brought visible benefits while some promised elements remained incomplete."
+        },
+        {
+          "id": "b",
+          "text": "Bellhaven preserved a dispatch office and loading canopy so residents could learn about the city's industrial history.",
+          "distractorType": "too_narrow",
+          "whyWrong": "Historic preservation is only one part of the redevelopment."
+        },
+        {
+          "id": "c",
+          "text": "The East Junction project succeeded mainly because the city ignored residents who opposed new housing.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "The city created a public committee and considered resident comments; the passage does not say residents were ignored."
+        },
+        {
+          "id": "d",
+          "text": "Environmental contamination prevented Bellhaven from opening any part of the East Junction redevelopment.",
+          "distractorType": "overstated_result",
+          "whyWrong": "Cleanup delayed construction, but the first phase later opened."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which choice best summarizes the final two paragraphs without losing the passage's important limitation?",
+      "points": 1,
+      "explanation": "Choice A keeps both sides of the ending: the first phase produced real benefits, but parts of the project remained incomplete and the city still plans to evaluate the full redevelopment.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "If the passage ends with both a result and a limitation, a strong summary should preserve both.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "a",
+          "text": "The first phase improved movement through the site and supported market activity, but housing and community-space benefits were still incomplete, so officials plan to evaluate the full project before deciding what may need adjustment."
+        },
+        {
+          "id": "b",
+          "text": "The new path became popular, proving that every part of the redevelopment was successful.",
+          "distractorType": "misses_limitation",
+          "whyWrong": "The passage explicitly says housing was unfinished and community-room access was limited."
+        },
+        {
+          "id": "c",
+          "text": "Critics believe the redevelopment should be abandoned because the community room has limited hours.",
+          "distractorType": "adds_new_claim",
+          "whyWrong": "Critics identify incomplete benefits; they do not call for abandoning the project."
+        },
+        {
+          "id": "d",
+          "text": "Officials will study pedestrian counts, market use, traffic, housing occupancy, and maintenance costs.",
+          "distractorType": "detail_heavy",
+          "whyWrong": "This lists the evaluation measures but leaves out the mixed results that explain why evaluation is still needed."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-summary-active-methods-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Compress a passage by keeping its central development and essential relationships, controlling scope, and removing details or claims that do not belong in an accurate summary.",
+      "topicLabel": "Summary",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-summary-active-freight-yard",
+      "title": "From Freight Yard to Shared Space",
+      "textType": "informational",
+      "context": "social_studies",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-24T15:07:14.714Z"
+  }
+}
