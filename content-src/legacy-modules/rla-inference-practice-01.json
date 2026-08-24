@@ -1,7 +1,7 @@
 {
   "id": "rla-inference-practice-01",
-  "title": "Inference Practice 1",
-  "description": "4 short texts - 8 inference questions",
+  "title": "Inference - Independent Practice",
+  "description": "4 short texts \u00b7 8 independent inference-and-evidence questions",
   "subject": "rla",
   "category": "reading",
   "topic": "Inference from details",
@@ -46,19 +46,19 @@
           "id": "b",
           "text": "He expected the meeting to drain his own battery enough to require both chargers.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "“He expected the meeting to drain his own battery enough to require both chargers.” may fit one clue, but it does not account for the full set of evidence."
+          "whyWrong": "\u201cHe expected the meeting to drain his own battery enough to require both chargers.\u201d may fit one clue, but it does not account for the full set of evidence."
         },
         {
           "id": "c",
           "text": "He regularly lends electronic equipment to teammates at every meeting.",
           "distractorType": "unsupported_generalization",
-          "whyWrong": "“He regularly lends electronic equipment to teammates at every meeting.” turns limited evidence into a broader rule than the text supports."
+          "whyWrong": "\u201cHe regularly lends electronic equipment to teammates at every meeting.\u201d turns limited evidence into a broader rule than the text supports."
         },
         {
           "id": "d",
           "text": "He knew before the meeting exactly which teammate would have a low battery.",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "“He knew before the meeting exactly which teammate would have a low battery.” is possible, but the passage does not provide enough evidence to justify it."
+          "whyWrong": "\u201cHe knew before the meeting exactly which teammate would have a low battery.\u201d is possible, but the passage does not provide enough evidence to justify it."
         }
       ],
       "correct": [
@@ -98,13 +98,13 @@
           "id": "a",
           "text": "The meeting is described as long.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“The meeting is described as long.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cThe meeting is described as long.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "c",
-          "text": "A teammate’s battery warning appears in the meeting room.",
+          "text": "A teammate\u2019s battery warning appears in the meeting room.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“A teammate’s battery warning appears in the meeting room.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cA teammate\u2019s battery warning appears in the meeting room.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "b",
@@ -114,7 +114,7 @@
           "id": "d",
           "text": "Damon also packs a charger for his own laptop.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“Damon also packs a charger for his own laptop.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cDamon also packs a charger for his own laptop.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         }
       ],
       "correct": [
@@ -158,19 +158,19 @@
           "id": "b",
           "text": "The guide expects rain to affect only bridges and no other part of the trail.",
           "distractorType": "unsupported_generalization",
-          "whyWrong": "“The guide expects rain to affect only bridges and no other part of the trail.” turns limited evidence into a broader rule than the text supports."
+          "whyWrong": "\u201cThe guide expects rain to affect only bridges and no other part of the trail.\u201d turns limited evidence into a broader rule than the text supports."
         },
         {
           "id": "a",
           "text": "The bridges are unsafe after every storm.",
           "distractorType": "too_broad",
-          "whyWrong": "“The bridges are unsafe after every storm.” is broader or more absolute than the passage supports."
+          "whyWrong": "\u201cThe bridges are unsafe after every storm.\u201d is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
           "text": "The guide already knows exactly what kind of damage each bridge will have.",
           "distractorType": "plausible_without_evidence",
-          "whyWrong": "“The guide already knows exactly what kind of damage each bridge will have.” is possible, but the passage does not provide enough evidence to justify it."
+          "whyWrong": "\u201cThe guide already knows exactly what kind of damage each bridge will have.\u201d is possible, but the passage does not provide enough evidence to justify it."
         }
       ],
       "correct": [
@@ -210,23 +210,23 @@
           "id": "a",
           "text": "The map is made of paper rather than displayed on a phone.",
           "distractorType": "background_only",
-          "whyWrong": "“The map is made of paper rather than displayed on a phone.” is background information rather than the strongest evidence for the question."
+          "whyWrong": "\u201cThe map is made of paper rather than displayed on a phone.\u201d is background information rather than the strongest evidence for the question."
         },
         {
           "id": "b",
           "text": "The guide visits several locations on the trail.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“The guide visits several locations on the trail.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cThe guide visits several locations on the trail.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "c",
           "text": "The two marked locations happen to be bridges.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“The two marked locations happen to be bridges.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cThe two marked locations happen to be bridges.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "d",
-          "text": "The guide marks the bridges “check after rain” and inspects them before the rest of the trail after a storm."
+          "text": "The guide marks the bridges \u201ccheck after rain\u201d and inspects them before the rest of the trail after a storm."
         }
       ],
       "correct": [
@@ -266,7 +266,7 @@
           "id": "b",
           "text": "Maya already knows the room is unavailable.",
           "distractorType": "unsupported_claim",
-          "whyWrong": "The passage does not support “Maya already knows the room is unavailable..” This adds a claim the text never establishes."
+          "whyWrong": "The passage does not support \u201cMaya already knows the room is unavailable..\u201d This adds a claim the text never establishes."
         },
         {
           "id": "a",
@@ -276,13 +276,13 @@
           "id": "c",
           "text": "Maya believes the other two tasks no longer need to be completed.",
           "distractorType": "too_broad",
-          "whyWrong": "“Maya believes the other two tasks no longer need to be completed.” is broader or more absolute than the passage supports."
+          "whyWrong": "\u201cMaya believes the other two tasks no longer need to be completed.\u201d is broader or more absolute than the passage supports."
         },
         {
           "id": "d",
           "text": "Maya can complete the room booking only by using a website.",
           "distractorType": "related_detail",
-          "whyWrong": "“Maya can complete the room booking only by using a website.” is related to the passage, but it does not directly answer this question."
+          "whyWrong": "\u201cMaya can complete the room booking only by using a website.\u201d is related to the passage, but it does not directly answer this question."
         }
       ],
       "correct": [
@@ -322,13 +322,13 @@
           "id": "a",
           "text": "The note contains three separate tasks.",
           "distractorType": "background_only",
-          "whyWrong": "“The note contains three separate tasks.” is background information rather than the strongest evidence for the question."
+          "whyWrong": "\u201cThe note contains three separate tasks.\u201d is background information rather than the strongest evidence for the question."
         },
         {
           "id": "c",
-          "text": "“Call supplier” appears first on the written list.",
+          "text": "\u201cCall supplier\u201d appears first on the written list.",
           "distractorType": "one_clue_trap",
-          "whyWrong": "““Call supplier” appears first on the written list.” may fit one clue, but it does not account for the full set of evidence."
+          "whyWrong": "\u201c\u201cCall supplier\u201d appears first on the written list.\u201d may fit one clue, but it does not account for the full set of evidence."
         },
         {
           "id": "b",
@@ -338,7 +338,7 @@
           "id": "d",
           "text": "Maya waits five minutes before opening the website.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“Maya waits five minutes before opening the website.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cMaya waits five minutes before opening the website.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         }
       ],
       "correct": [
@@ -378,19 +378,19 @@
           "id": "a",
           "text": "Eli wants easier access to the aisle.",
           "distractorType": "contradicts_text",
-          "whyWrong": "“Eli wants easier access to the aisle.” conflicts with a detail stated in the passage."
+          "whyWrong": "\u201cEli wants easier access to the aisle.\u201d conflicts with a detail stated in the passage."
         },
         {
           "id": "b",
           "text": "Eli expects to leave the bus at the next stop.",
           "distractorType": "unsupported_prediction",
-          "whyWrong": "“Eli expects to leave the bus at the next stop.” predicts an outcome that the passage does not establish."
+          "whyWrong": "\u201cEli expects to leave the bus at the next stop.\u201d predicts an outcome that the passage does not establish."
         },
         {
           "id": "d",
           "text": "Eli is worried another passenger might touch his bag.",
           "distractorType": "unsupported_motive",
-          "whyWrong": "“Eli is worried another passenger might touch his bag.” assigns a motive that the text does not show through actions or wording."
+          "whyWrong": "\u201cEli is worried another passenger might touch his bag.\u201d assigns a motive that the text does not show through actions or wording."
         },
         {
           "id": "c",
@@ -434,7 +434,7 @@
           "id": "a",
           "text": "The bus has become crowded.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“The bus has become crowded.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cThe bus has become crowded.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "d",
@@ -444,13 +444,13 @@
           "id": "c",
           "text": "Eli looks toward the aisle after moving.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“Eli looks toward the aisle after moving.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cEli looks toward the aisle after moving.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         },
         {
           "id": "b",
           "text": "Eli shifts closer to the window.",
           "distractorType": "partial_evidence",
-          "whyWrong": "“Eli shifts closer to the window.” is supported by only part of the evidence; another choice fits the whole pattern better."
+          "whyWrong": "\u201cEli shifts closer to the window.\u201d is supported by only part of the evidence; another choice fits the whole pattern better."
         }
       ],
       "correct": [

@@ -128,7 +128,7 @@
   {
     "file": "generated/modules/rla-explicit-meaning-practice-01.json",
     "title": "Explicit Meaning - Independent Practice",
-    "description": "4 short texts · 8 independent explicit-meaning questions",
+    "description": "4 short texts \u00b7 8 independent explicit-meaning questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.1",
@@ -182,7 +182,7 @@
   {
     "file": "generated/modules/rla-gold-literary-brass-key.json",
     "title": "The Brass Key",
-    "description": "Literary · 7 questions",
+    "description": "Literary \u00b7 7 questions",
     "curriculum": {
       "domain": "Relationships & Inference",
       "primarySkillId": "R2.4",
@@ -206,7 +206,7 @@
   {
     "file": "generated/modules/rla-gold-science-cool-roofs.json",
     "title": "Cool Roofs and City Heat",
-    "description": "Science · Informational · 7 questions",
+    "description": "Science \u00b7 Informational \u00b7 7 questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.2",
@@ -231,7 +231,7 @@
   {
     "file": "generated/modules/rla-gold-workplace-tool-library.json",
     "title": "New Pickup Process for the Community Tool Library",
-    "description": "Workplace · Informational · 7 questions",
+    "description": "Workplace \u00b7 Informational \u00b7 7 questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.1",
@@ -291,8 +291,8 @@
   },
   {
     "file": "generated/modules/rla-inference-practice-01.json",
-    "title": "Inference Practice 1",
-    "description": "4 short texts - 8 inference questions",
+    "title": "Inference - Independent Practice",
+    "description": "4 short texts \u00b7 8 independent inference-and-evidence questions",
     "curriculum": {
       "domain": "Relationships & Inference",
       "primarySkillId": "R2.4",
@@ -310,7 +310,7 @@
   {
     "file": "generated/modules/rla-main-idea-practice-01.json",
     "title": "Main Idea Practice 1",
-    "description": "4 short texts · 8 main-idea questions",
+    "description": "4 short texts \u00b7 8 main-idea questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.2",
@@ -833,7 +833,7 @@
   {
     "file": "generated/modules/rla-summary-practice-01.json",
     "title": "Summary - Independent Practice",
-    "description": "4 short texts · 8 independent summary questions",
+    "description": "4 short texts \u00b7 8 independent summary questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.4",
@@ -851,7 +851,7 @@
   {
     "file": "generated/modules/rla-supporting-details-practice-01.json",
     "title": "Supporting Details - Independent Practice",
-    "description": "4 short texts · 8 independent supporting-detail questions",
+    "description": "4 short texts \u00b7 8 independent supporting-detail questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.3",
@@ -905,7 +905,7 @@
   {
     "file": "generated/modules/rla-theme-practice-01.json",
     "title": "Theme Practice 1",
-    "description": "4 literary texts · 8 theme questions",
+    "description": "4 literary texts \u00b7 8 theme questions",
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.5",

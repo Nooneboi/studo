@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-24T15:07:14.741Z",
+  "builtAt": "2026-08-24T15:39:01.246Z",
   "tracks": [
     {
       "id": "reading",
@@ -1078,7 +1078,7 @@
           "units": [],
           "availableSkillCount": 6,
           "availableUnitCount": 0,
-          "availableSetCount": 6,
+          "availableSetCount": 7,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -1605,16 +1605,56 @@
               "priority": "P0",
               "practiceMode": "Reading",
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-inference-active-methods-v1",
+                  "title": "Inference - Guided Practice",
+                  "description": "Guided Inference practice that moves from stated-vs-inferred boundaries to cautious character/event inference and evidence proof.",
+                  "file": "generated/modules/set-rla-inference-active-methods-v1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Build cautious inferences from textual clues, distinguish supported conclusions from guesses, and identify the strongest evidence for an inference.",
+                    "topicLabel": "Inference from details",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-inference-active-spare-script",
+                    "title": "The Spare Script",
+                    "textType": "literary",
+                    "context": "literary",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R2.4"
+                  ]
+                },
+                {
                   "id": "set-rla-inference-practice-01",
-                  "title": "Inference Practice 1",
-                  "description": "4 short texts - 8 inference questions",
+                  "title": "Inference - Independent Practice",
+                  "description": "4 short texts · 8 independent inference-and-evidence questions",
                   "file": "generated/modules/rla-inference-practice-01.json",
                   "difficulty": "medium",
                   "category": "reading",
@@ -4683,8 +4723,8 @@
       ],
       "availableSkillCount": 22,
       "totalSkillCount": 22,
-      "availableSetCount": 37,
-      "questionCount": 288,
+      "availableSetCount": 38,
+      "questionCount": 294,
       "resourceCount": 86,
       "studyFileCount": 86,
       "checkCount": 0

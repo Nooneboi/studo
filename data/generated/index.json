@@ -276,8 +276,8 @@
   },
   {
     "file": "generated/modules/rla-inference-practice-01.json",
-    "title": "Inference Practice 1",
-    "description": "4 short texts - 8 inference questions",
+    "title": "Inference - Independent Practice",
+    "description": "4 short texts · 8 independent inference-and-evidence questions",
     "curriculum": {
       "domain": "Relationships & Inference",
       "primarySkillId": "R2.4",
@@ -1508,6 +1508,26 @@
       ],
       "learningObjective": "Locate directly stated information, match the exact target of a question, preserve qualifiers and conditions, and reject reasonable ideas that the text does not actually state.",
       "topicLabel": "Explicit meaning",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-inference-active-methods-v1.json",
+    "title": "Inference - Guided Practice",
+    "description": "Guided Inference practice that moves from stated-vs-inferred boundaries to cautious character/event inference and evidence proof.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Build cautious inferences from textual clues, distinguish supported conclusions from guesses, and identify the strongest evidence for an inference.",
+      "topicLabel": "Inference from details",
       "deliveryRoles": [
         "practice",
         "train"

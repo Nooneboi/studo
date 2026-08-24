@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-24  
-**Current release:** `0.7.0-alpha.16`  
-**Current stage:** Phase 2 high-priority Reading depth — Summary complete; Inference is next  
+**Current release:** `0.7.0-alpha.17`  
+**Current stage:** Phase 2 high-priority Reading depth — Inference complete; Conclusions / Generalizations is next  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **98 learner modules**
-- **723 objective/component questions**
+- **99 learner modules**
+- **729 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -107,6 +107,21 @@ Implemented progression:
 6. Passage transfer — mixed Passage Practice continues to expose Summary inside longer reading sets.
 
 The new 549-word original social-studies passage, **From Freight Yard to Shared Space**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
+
+### Phase 2 depth skill — Inference
+
+Inference now reuses the existing guide and two workbooks plus a new skill-specific active-learning path. The progression teaches learners to separate what the text states from what the clues support and from what is merely possible. Difficulty rises through evidence distance, competing interpretations, cautious wording, and unsupported-assumption traps rather than through vagueness.
+
+Implemented progression:
+
+1. Learn — existing Inference Study Guide.
+2. Guided — classify stated information vs supported inference vs guess, then locate the strongest sentence supporting an inference.
+3. Apply — choose the smallest supported conclusion and reject an attractive but unsupported motive explanation.
+4. Independent — infer what a character/director likely considers possible, then identify the strongest evidence pair with no hints.
+5. Follow-up — existing four-context drill is retained as **Inference - Independent Practice**.
+6. Passage transfer — mixed Passage Practice continues to expose Inference inside longer informational and literary reading sets.
+
+The new 588-word original literary passage, **The Spare Script**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
 
 ## Learning-mode ownership
 
@@ -289,8 +304,8 @@ Status/order:
 
 1. Explicit Meaning — **complete in Alpha 15**
 2. Summary — **complete in Alpha 16**
-3. Inference — **next**
-4. Conclusions / Generalizations
+3. Inference — **complete in Alpha 17**
+4. Conclusions / Generalizations — **next**
 5. thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships
 
 Add more clearly social-studies/civic informational passage contexts as the bank deepens.
@@ -340,6 +355,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next build
 
-> **Phase 2 — Inference.**
+> **Phase 2 — Conclusions / Generalizations.**
 
-Audit and reuse the existing Inference guide/workbooks/practice first. Add only the learning progression that Inference genuinely needs, while preserving the learning-mode separation, GED-style transfer, and learner-first interaction rules.
+Audit and reuse the existing Conclusions / Generalizations guide/workbooks/practice first. Add only the learning progression that this skill genuinely needs, while preserving the learning-mode separation, GED-style transfer, and learner-first interaction rules.

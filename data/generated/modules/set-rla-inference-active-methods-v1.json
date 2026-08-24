@@ -1,0 +1,386 @@
+{
+  "id": "set-rla-inference-active-methods-v1",
+  "title": "Inference - Guided Practice",
+  "description": "Guided Inference practice that moves from stated-vs-inferred boundaries to cautious character/event inference and evidence proof.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Inference from details",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "Mira had signed up for the Riverside Players because the community theater needed people who could paint quickly and did not mind getting sawdust on their shoes. She had no role in the spring production. Most evenings, she worked behind the stage, labeling props, touching up scenery, and carrying chairs between scenes while the actors rehearsed under the bright work lights.\n\nDuring the second week, one of the actors, Lena, began arriving late because her shift at a grocery store sometimes ran past six. No one treated it as a crisis. The director, Mr. Bell, simply adjusted the order of rehearsal when he could. Mira noticed the changes anyway. She kept a spare copy of the script on the paint table and began penciling in the entrances and exits for Lena's scenes. When she waited for one coat of paint to dry, she followed the dialogue with her finger. Once, when the stage was empty, she quietly spoke three of Lena's lines before returning to a half-finished doorway. She stopped when she heard footsteps in the hall.\n\nA week later, Mr. Bell asked the crew to stay for a full run-through. Mira finished her work early, but instead of leaving, she pulled a folding chair to the back wall and watched. When Lena missed an entrance, Mira glanced down at the spare script before the stage manager called the scene to a stop. After rehearsal, Mira erased several old pencil marks and copied the new blocking notes into the margins. Her friend Tomas, who was stacking chairs nearby, asked why she bothered keeping the spare script so neat. Mira shrugged and said, \"It helps me know what everyone needs.\"\n\nOn Thursday, rain hammered the theater roof as the cast arrived. Ten minutes before rehearsal, the stage manager read a message from Lena: a delivery truck had blocked the store's loading area, and Lena did not know when she would be able to leave work. Mr. Bell looked at the clock and then at the group gathering near the stage. \"We can rehearse around her again,\" he began, \"unless someone can read the part for the first two scenes.\"\n\nBefore he finished the sentence, Mira had closed the lid on a paint can and reached for the spare script, which was already open to the first scene. She did not raise her hand or step forward until Mr. Bell looked toward her. \"You know the blocking?\" he asked. Mira answered, \"Most of it.\" She read the scenes with the cast. She missed one entrance and asked for a line once, but she moved to the correct side of the stage before the stage manager gave the usual cue.\n\nLena arrived halfway through rehearsal and thanked Mira before taking back the role. Mira returned to the scenery without mentioning the scenes again. Near the end of the evening, Mr. Bell stopped beside the paint table. He looked at the notes in the spare script, then at the black shoes Mira wore for crew work. \"Bring those tomorrow,\" he said. \"Just in case.\" Mira nodded once and tucked the script under the table instead of returning it to the supply shelf.\n\nOn her walk home, she passed the theater twice in her thoughts: first as it had looked from behind the scenery, and then as it had looked from the center of the stage. She still did not know whether Mr. Bell would need her again. But when she reached her apartment, she set an alarm fifteen minutes earlier than usual.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Sort each statement by whether the passage states it directly, supports it as an inference, or does not give enough evidence to justify it.",
+      "points": 1,
+      "explanation": "The passage directly tells us Mira is crew and that Lena has been late because of work. Mira's careful script notes, quiet line practice, and quick readiness support the inference that she was preparing for a possible need. Nothing shows that she wanted Lena to fail or lose the role.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "An inference is not written word-for-word, but it must still be earned by evidence. A guess only sounds possible.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "guided",
+      "hint": "Ask two questions: Can I point to the exact sentence? If not, do several clues still make the statement the smallest reasonable conclusion?",
+      "correct": "i1=stated|i2=inference|i3=guess|i4=stated",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "Mira joined the Riverside Players as a crew volunteer rather than as a cast member."
+          },
+          {
+            "id": "i2",
+            "text": "Mira had been preparing herself in case she was asked to help with Lena's part."
+          },
+          {
+            "id": "i3",
+            "text": "Mira wanted Lena to lose the role permanently."
+          },
+          {
+            "id": "i4",
+            "text": "Lena's work schedule had caused her to arrive late to some rehearsals."
+          }
+        ],
+        "zones": [
+          {
+            "id": "stated",
+            "label": "Stated directly"
+          },
+          {
+            "id": "inference",
+            "label": "Supported inference"
+          },
+          {
+            "id": "guess",
+            "label": "Guess / not enough evidence"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Which sentence most strongly supports the inference that Mira had been preparing before anyone actually asked her to read Lena's part?",
+      "points": 1,
+      "explanation": "This is preparation that happens well before Mira is asked to stand in. The later details show that the preparation became useful, but this sentence most directly proves she had already been getting ready.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "For an inference, the strongest evidence is the clue that most directly makes the unstated conclusion reasonable.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "learningStage": "guided",
+      "hint": "Look for something Mira chose to do before Thursday, not a detail that only shows what happened after Lena was delayed.",
+      "correct": "s1",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "She kept a spare copy of the script on the paint table and began penciling in the entrances and exits for Lena's scenes."
+          },
+          {
+            "id": "s2",
+            "text": "Mira finished her work early, but instead of leaving, she pulled a folding chair to the back wall and watched."
+          },
+          {
+            "id": "s3",
+            "text": "Before he finished the sentence, Mira had closed the lid on a paint can and reached for the spare script, which was already open to the first scene."
+          },
+          {
+            "id": "s4",
+            "text": "Lena arrived halfway through rehearsal and thanked Mira before taking back the role."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "After Lena's delayed message, what is the smallest inference best supported by Mira closing the paint can and reaching for the already-open script?",
+      "points": 1,
+      "explanation": "Mira's immediate reaction and already-open script fit the cautious conclusion that she had prepared for a possible need. The passage does not support stronger claims about what she knew or wanted.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Prefer the answer that explains all the clues while adding the fewest new assumptions.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "learningStage": "apply",
+      "options": [
+        {
+          "id": "b",
+          "text": "Mira knew before rehearsal that Lena would be delayed and that Mr. Bell would choose her.",
+          "distractorType": "overclaim",
+          "whyWrong": "The clues show readiness, not advance knowledge of Lena's delay or the director's decision."
+        },
+        {
+          "id": "a",
+          "text": "Mira had expected that she might be asked to help with the scene and was ready for that possibility."
+        },
+        {
+          "id": "c",
+          "text": "Mira believed she was a better actor than Lena.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "Nothing in the passage compares their acting ability or shows that Mira thinks she is better."
+        },
+        {
+          "id": "d",
+          "text": "Mira had secretly arranged Lena's work delay so she could take the part.",
+          "distractorType": "plausible_without_evidence",
+          "whyWrong": "The passage gives no evidence that Mira caused or influenced Lena's delay."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which inference about Mira's reason for keeping the spare script updated is best supported by the passage?",
+      "points": 1,
+      "explanation": "Mira says the script helps her know what everyone needs, and her actions show she is learning the production well enough to step in when necessary. This conclusion fits both her stated explanation and her behavior without claiming more than the text proves.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "When a motive is not stated, choose the explanation that fits the pattern of behavior without inventing a hidden plan.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "learningStage": "apply",
+      "options": [
+        {
+          "id": "b",
+          "text": "She was trying to prove to Tomas that crew work was more important than acting.",
+          "distractorType": "unsupported_motive",
+          "whyWrong": "Tomas asks about the script, but nothing shows Mira is competing with him or trying to prove a point."
+        },
+        {
+          "id": "c",
+          "text": "She planned from the beginning to replace Lena in the final performance.",
+          "distractorType": "overclaim",
+          "whyWrong": "Her preparation supports readiness for a possibility, not a fixed plan to take another actor's role."
+        },
+        {
+          "id": "a",
+          "text": "She wanted to understand the production closely and be prepared if the cast or crew needed her."
+        },
+        {
+          "id": "d",
+          "text": "Mr. Bell had privately ordered her to memorize Lena's part.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage shows Mira doing this on her own before Mr. Bell asks her to read the part."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What can the reader most reasonably infer from Mr. Bell telling Mira to bring her black shoes tomorrow \"just in case\"?",
+      "points": 1,
+      "explanation": "After Mira successfully stands in, Mr. Bell asks her to bring something she could wear onstage and uses cautious language—“just in case.” That supports backup possibility, not a guaranteed role.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Pay attention to qualifiers such as “might,” “probably,” and “just in case.” They often control how strong an inference can be.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "b",
+          "text": "He has permanently reassigned Lena's role to Mira.",
+          "distractorType": "too_absolute",
+          "whyWrong": "“Just in case” signals a possibility, not a permanent casting decision."
+        },
+        {
+          "id": "c",
+          "text": "He is asking Mira to stop doing crew work and become a full-time actor.",
+          "distractorType": "overclaim",
+          "whyWrong": "The passage gives no such instruction or long-term change in Mira's role."
+        },
+        {
+          "id": "d",
+          "text": "He thinks Mira's black shoes are inappropriate for backstage work.",
+          "distractorType": "wrong_connection",
+          "whyWrong": "The shoes matter because she may need to appear onstage, not because they are a problem backstage."
+        },
+        {
+          "id": "a",
+          "text": "He sees Mira as a possible backup if the production needs someone to step into Lena's part again."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which pair of details best supports the inference that Mr. Bell now considers Mira a possible backup performer?",
+      "points": 1,
+      "explanation": "Her competent stand-in performance gives Mr. Bell a reason to consider her, and his “just in case” instruction shows that he is keeping that possibility open for the next day.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Strong evidence pairs often combine the event that changes someone's judgment with the later action that reveals that judgment.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 4,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "b",
+          "text": "Mira successfully read Lena's scenes with only small mistakes; afterward Mr. Bell told her to bring her black shoes the next day \"just in case.\""
+        },
+        {
+          "id": "a",
+          "text": "Mira joined as crew; she often got sawdust on her shoes.",
+          "distractorType": "background_detail",
+          "whyWrong": "These details establish Mira's original role but do not show that Mr. Bell now views her as a backup performer."
+        },
+        {
+          "id": "c",
+          "text": "Lena had been late because of work; Tomas asked why Mira kept the spare script neat.",
+          "distractorType": "related_detail",
+          "whyWrong": "These details explain the situation around Mira's preparation, but they do not directly show Mr. Bell's changed view of her."
+        },
+        {
+          "id": "d",
+          "text": "Mira returned to painting when Lena arrived; she later set an earlier alarm.",
+          "distractorType": "evidence_for_other_inference",
+          "whyWrong": "These details say more about Mira's behavior and expectations than about what Mr. Bell now considers possible."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-inference-active-methods-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Build cautious inferences from textual clues, distinguish supported conclusions from guesses, and identify the strongest evidence for an inference.",
+      "topicLabel": "Inference from details",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-inference-active-spare-script",
+      "title": "The Spare Script",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-24T15:39:01.184Z"
+  }
+}
