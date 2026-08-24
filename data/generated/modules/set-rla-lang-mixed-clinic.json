@@ -20,7 +20,7 @@
         "label": "Basic subject–verb agreement"
       },
       "rule": "Find the true subject before choosing the verb.",
-      "familyId": "edit.sva.basic",
+      "familyId": "language.grammar.subject_verb_agreement",
       "metadata": {
         "skillId": "L1.2",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "If several nouns could be the antecedent, rewrite instead of forcing a pronoun.",
-      "familyId": "edit.pronoun.agreement",
+      "familyId": "language.pronoun.reference",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Cut repeated or inflated phrases while preserving dates, conditions, and limits.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Use a contrast transition when the second idea qualifies the first.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use a colon after a complete clause that introduces examples or a list.",
-      "familyId": "edit.punctuation.colon",
+      "familyId": "language.punctuation.colon",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Check what job the word performs in the sentence rather than relying on sound.",
-      "familyId": "edit.confused_words",
+      "familyId": "language.usage.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -354,7 +354,11 @@
         "health"
       ],
       "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
-      "topicLabel": "Mixed Editing Practice"
+      "topicLabel": "Mixed Editing Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-mixed-clinic",
@@ -369,6 +373,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.961Z"
+    "compiledAt": "2026-08-24T13:31:18.345Z"
   }
 }

@@ -424,6 +424,10 @@
     "unitId": "organize-develop-revise",
     "contentKind": "skill_drill",
     "learningObjective": "Organize, Develop and Revise",
-    "topicLabel": "Extended Response"
+    "topicLabel": "Extended Response",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

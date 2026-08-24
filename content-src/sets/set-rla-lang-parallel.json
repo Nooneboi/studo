@@ -420,6 +420,10 @@
     "unitId": "parallelism-sentence-connections",
     "contentKind": "skill_drill",
     "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

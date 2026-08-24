@@ -20,7 +20,7 @@
         "label": "Capitalization"
       },
       "rule": "Capitalize proper names and calendar names, not ordinary school subjects used generically.",
-      "familyId": "edit.capitalization",
+      "familyId": "language.capitalization.mechanics",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "When a pronoun could point to multiple nouns, name the intended noun.",
-      "familyId": "edit.pronoun.agreement",
+      "familyId": "language.pronoun.reference",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "For a regular plural ending in s, add only an apostrophe.",
-      "familyId": "edit.possessive",
+      "familyId": "language.possessives.apostrophes",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Prefer strong direct verbs over noun-heavy phrases when no nuance is lost.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Use contrast transitions to signal a limit, exception, or difference.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Place a colon after a complete statement, not between a verb and its object.",
-      "familyId": "edit.punctuation.clauses",
+      "familyId": "language.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -354,7 +354,11 @@
         "informational"
       ],
       "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
-      "topicLabel": "Mixed Editing Practice"
+      "topicLabel": "Mixed Editing Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-mixed-energy",
@@ -369,6 +373,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.961Z"
+    "compiledAt": "2026-08-24T13:31:18.346Z"
   }
 }

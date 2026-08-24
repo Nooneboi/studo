@@ -423,6 +423,10 @@
     "unitId": "claims-argument-structure",
     "contentKind": "skill_drill",
     "learningObjective": "Identify the main claim, supporting claims, and the structure that connects them.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

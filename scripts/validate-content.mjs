@@ -10,6 +10,7 @@ const VALID_DIFFICULTIES = new Set(['easy', 'medium', 'hard']);
 const VALID_STATUS = new Set(['draft', 'review', 'approved', 'published', 'retired']);
 const VALID_RIGHTS = new Set(['original', 'public_domain', 'licensed', 'permission']);
 const VALID_CONTENT_KINDS = new Set(['passage_practice','skill_drill','quiz','mixed_review','editing_practice','extended_response','extended_response_practice','argument_practice']);
+const VALID_DELIVERY_ROLES = new Set(['practice','train','skill_check','mock']);
 const VALID_RESOURCE_TYPES = new Set(['pdf','worksheet','study_guide','notes','reference','link','docx']);
 const SELECTED_TYPES = new Set(['multiple_choice','evidence_based','grammar_edit']);
 const INTERACTION_TYPES = new Set(['select_text','drag_sort','drag_order']);
@@ -127,6 +128,22 @@ function trackMaps(curriculumConfig) {
     }
   }
   return { skillToTrack, trackStates };
+}
+
+function validateDeliveryRoles({ issues, curriculum, file, location, label }) {
+  const roles = curriculum?.deliveryRoles;
+  if (!Array.isArray(roles) || roles.length === 0) {
+    add(issues, 'error', 'DELIVERY_ROLES_MISSING', `${label} needs at least one curriculum delivery role.`, file, location);
+    return;
+  }
+  const unique = new Set(roles);
+  if (unique.size !== roles.length) add(issues, 'error', 'DELIVERY_ROLE_DUPLICATE', `${label} repeats a curriculum delivery role.`, file, location);
+  for (const role of unique) {
+    if (!VALID_DELIVERY_ROLES.has(role)) add(issues, 'error', 'DELIVERY_ROLE_INVALID', `${label} uses unknown delivery role ${role}.`, file, location);
+  }
+  if (unique.has('mock') && (unique.size !== 1 || roles[0] !== 'mock')) {
+    add(issues, 'error', 'DELIVERY_ROLE_CONFLICT', `${label} mock content must stay mock-only so it remains unseen before measurement.`, file, location);
+  }
 }
 
 function duplicateIds(items) {
@@ -287,7 +304,15 @@ export async function validateContent({ quiet = false } = {}) {
   const erPromptFiles = await jsonFiles(path.join(SRC, 'er-prompts'));
   const legacyIndexFile = path.join(SRC, 'config', 'legacy-index.json');
   const curriculumConfigFile = path.join(SRC, 'config', 'rla.curriculum.json');
+  const questionFamilyConfigFile = path.join(SRC, 'config', 'rla.question-families.v1.json');
   const curriculumConfig = await readJson(curriculumConfigFile);
+  const questionFamilyConfig = await readJson(questionFamilyConfigFile);
+  const canonicalFamilyIds = new Set((questionFamilyConfig.skills || []).flatMap((skill) => (skill.families || []).map((family) => family.familyId)).filter(Boolean));
+  const familyAliases = questionFamilyConfig.aliases || {};
+  const canonicalFamilyId = (id) => familyAliases[String(id || '')] || String(id || '');
+  for (const [alias, target] of Object.entries(familyAliases)) {
+    if (!canonicalFamilyIds.has(target)) add(issues, 'error', 'FAMILY_ALIAS_TARGET_UNKNOWN', `Family alias ${alias} points to unknown canonical family ${target}.`, questionFamilyConfigFile, alias);
+  }
   const { skillToTrack, trackStates } = trackMaps(curriculumConfig);
 
   const skills = new Map();
@@ -408,6 +433,7 @@ export async function validateContent({ quiet = false } = {}) {
     if (!curriculum.primarySkillId || !curriculumSkill) add(issues, 'error', 'CURRICULUM_SKILL_INVALID', `Set ${set.id} needs a valid curriculum primarySkillId.`, file, set.id);
     if (curriculumSkill && curriculum.domain && curriculumSkill.domain !== curriculum.domain) add(issues, 'error', 'CURRICULUM_DOMAIN_MISMATCH', `Set ${set.id} says ${curriculum.domain}, but ${curriculum.primarySkillId} belongs to ${curriculumSkill.domain}.`, file, set.id);
     if (!VALID_CONTENT_KINDS.has(curriculum.contentKind)) add(issues, 'error', 'CURRICULUM_KIND_INVALID', `Set ${set.id} needs a valid curriculum contentKind.`, file, set.id);
+    validateDeliveryRoles({ issues, curriculum, file, location: set.id, label: `Set ${set.id}` });
     if (!curriculum.learningObjective) add(issues, 'warning', 'LEARNING_OBJECTIVE_MISSING', `Set ${set.id} has no learner-facing learning objective.`, file, set.id);
     for (const skillId of curriculum.secondarySkillIds || []) {
       if (!skills.has(skillId)) add(issues, 'error', 'CURRICULUM_SECONDARY_SKILL_INVALID', `Set ${set.id} uses unknown curriculum secondary skill ${skillId}.`, file, set.id);
@@ -434,9 +460,14 @@ export async function validateContent({ quiet = false } = {}) {
       for (const skillId of question.secondarySkillIds || []) if (!skills.has(skillId)) add(issues, 'error', 'SECONDARY_SKILL_UNKNOWN', `${qloc} uses unknown secondary skill ${skillId}.`, file, qloc);
       if (!question.familyId) add(issues, 'error', 'FAMILY_MISSING', `${qloc} needs a familyId.`, file, qloc);
       else {
-        const list = families.get(question.familyId) || [];
-        list.push({ setId: set.id, questionId: question.id, skillId: question.primarySkillId, status: set.status, file });
-        families.set(question.familyId, list);
+        const canonicalFamily = canonicalFamilyId(question.familyId);
+        if (!canonicalFamilyIds.has(canonicalFamily)) {
+          add(issues, 'error', 'FAMILY_UNKNOWN', `${qloc} uses unknown familyId ${question.familyId}.`, file, qloc);
+        } else {
+          const list = families.get(canonicalFamily) || [];
+          list.push({ setId: set.id, questionId: question.id, skillId: question.primarySkillId, status: set.status, file });
+          families.set(canonicalFamily, list);
+        }
       }
       if (!VALID_DIFFICULTIES.has(question.difficulty)) add(issues, 'error', 'QUESTION_DIFFICULTY_INVALID', `${qloc} has invalid difficulty.`, file, qloc);
       if (![1,2,3].includes(question.dok)) add(issues, 'error', 'DOK_INVALID', `${qloc} must have DOK 1–3.`, file, qloc);
@@ -514,6 +545,7 @@ export async function validateContent({ quiet = false } = {}) {
     if (curriculum?.primarySkillId && !skills.has(curriculum.primarySkillId)) add(issues, 'error', 'LEGACY_SKILL_UNKNOWN', `Legacy module ${moduleId} uses unknown curriculum skill ${curriculum.primarySkillId}.`, sourceFile, moduleId);
     for (const skillId of curriculum?.secondarySkillIds || []) if (!skills.has(skillId)) add(issues, 'error', 'LEGACY_SKILL_UNKNOWN', `Legacy module ${moduleId} uses unknown secondary skill ${skillId}.`, sourceFile, moduleId);
     if (curriculum?.contentKind && !VALID_CONTENT_KINDS.has(curriculum.contentKind)) add(issues, 'error', 'LEGACY_CONTENT_KIND_INVALID', `Legacy module ${moduleId} has invalid contentKind ${curriculum.contentKind}.`, sourceFile, moduleId);
+    validateDeliveryRoles({ issues, curriculum, file: sourceFile, location: moduleId, label: `Legacy module ${moduleId}` });
 
     const correctPositions = [];
     const questionIds = new Set();
@@ -527,6 +559,9 @@ export async function validateContent({ quiet = false } = {}) {
       canonicalQuestionIds.add(canonicalId);
 
       const metadata = question.metadata || {};
+      const legacyFamily = question.familyId || question.family;
+      if (!legacyFamily) add(issues, 'error', 'FAMILY_MISSING', `${qloc} needs a familyId.`, sourceFile, qloc);
+      else if (!canonicalFamilyIds.has(canonicalFamilyId(legacyFamily))) add(issues, 'error', 'FAMILY_UNKNOWN', `${qloc} uses unknown familyId ${legacyFamily}.`, sourceFile, qloc);
       if (metadata.skillId && !skills.has(metadata.skillId)) add(issues, 'error', 'LEGACY_SKILL_UNKNOWN', `${qloc} uses unknown skill ${metadata.skillId}.`, sourceFile, qloc);
       for (const skillId of metadata.secondarySkillIds || []) if (!skills.has(skillId)) add(issues, 'error', 'LEGACY_SKILL_UNKNOWN', `${qloc} uses unknown secondary skill ${skillId}.`, sourceFile, qloc);
       if (SELECTED_TYPES.has(question.type)) {

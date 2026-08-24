@@ -50,7 +50,8 @@ test('each Arguments unit has guide, two workbooks, one focused module, and eigh
     const workbooks = (unit.resources || []).filter((r) => r.type === 'worksheet');
     assert.equal(guides.length, 1, `${unit.id} guide count`);
     assert.equal(workbooks.length, 2, `${unit.id} workbook count`);
-    assert.equal((unit.checks || []).length, 1, `${unit.id} focused module count`);
+    assert.equal((unit.sets || []).length, 1, `${unit.id} focused Practice module count`);
+    assert.equal((unit.checks || []).length, 0, `${unit.id} must not relabel focused Practice as a Skill Check`);
     assert.equal(unit.questionCount, 8, `${unit.id} focused question count`);
   }
 });
@@ -88,7 +89,7 @@ test('Arguments generated resource and module references resolve', async () => {
   assert.ok(track);
   for (const domain of track.domains) {
     for (const unit of domain.units || []) {
-      for (const record of unit.checks || []) await fs.access(path.join(ROOT, 'data', record.file));
+      for (const record of [...(unit.sets || []), ...(unit.checks || [])]) await fs.access(path.join(ROOT, 'data', record.file));
       for (const resource of unit.resources || []) await fs.access(path.join(ROOT, resource.href));
     }
   }

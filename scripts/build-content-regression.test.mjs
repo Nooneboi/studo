@@ -25,6 +25,7 @@ test('content build preserves migrated learner content while compiling source co
   });
 
   const beforeIndex = JSON.parse(await fs.readFile(path.join(copy, 'data/generated/index.json'), 'utf8'));
+  const beforeLearnerIndex = beforeIndex.filter((entry) => entry.file !== 'generated/modules/sample-quiz.json');
   const beforeCurriculum = JSON.parse(await fs.readFile(path.join(copy, 'data/generated/curriculum.json'), 'utf8'));
   const beforePassages = (beforeCurriculum.passagePractice || []).length;
   const beforeResources = resourceCount(beforeCurriculum);
@@ -38,12 +39,42 @@ test('content build preserves migrated learner content while compiling source co
   const afterIndex = JSON.parse(await fs.readFile(path.join(copy, 'data/generated/index.json'), 'utf8'));
   const afterCurriculum = JSON.parse(await fs.readFile(path.join(copy, 'data/generated/curriculum.json'), 'utf8'));
 
-  assert.ok(afterIndex.length >= beforeIndex.length,
-    `generated index shrank from ${beforeIndex.length} to ${afterIndex.length}`);
+  assert.ok(afterIndex.length >= beforeLearnerIndex.length,
+    `learner generated index shrank from ${beforeLearnerIndex.length} to ${afterIndex.length}`);
   assert.ok((afterCurriculum.passagePractice || []).length >= beforePassages,
     `passage practice shrank from ${beforePassages} to ${(afterCurriculum.passagePractice || []).length}`);
   assert.ok(resourceCount(afterCurriculum) >= beforeResources,
     `learner resources shrank from ${beforeResources} to ${resourceCount(afterCurriculum)}`);
+});
+
+test('content build regenerates the runtime question-family registry', async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'studo-family-runtime-'));
+  const copy = path.join(tmp, 'studo');
+  await fs.cp(ROOT, copy, {
+    recursive: true,
+    filter: (src) => !src.includes(`${path.sep}.git${path.sep}`) && !src.endsWith(`${path.sep}.git`),
+  });
+
+  const runtimeFile = path.join(copy, 'data', 'generated', 'question-families.js');
+  await fs.rm(runtimeFile, { force: true });
+  const result = spawnSync(process.execPath, ['scripts/build-content.mjs'], { cwd: copy, encoding: 'utf8' });
+  assert.equal(result.status, 0, `build failed:\n${result.stdout}\n${result.stderr}`);
+  const runtime = await fs.readFile(runtimeFile, 'utf8');
+  assert.match(runtime, /window\.CheeQuestionFamilies/);
+  assert.match(runtime, /canonicalize\(id\)/);
+});
+
+test('learner generated index excludes internal sample/demo modules', async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'studo-index-visibility-'));
+  const copy = path.join(tmp, 'studo');
+  await fs.cp(ROOT, copy, {
+    recursive: true,
+    filter: (src) => !src.includes(`${path.sep}.git${path.sep}`) && !src.endsWith(`${path.sep}.git`),
+  });
+  const result = spawnSync(process.execPath, ['scripts/build-content.mjs'], { cwd: copy, encoding: 'utf8' });
+  assert.equal(result.status, 0, `build failed:\n${result.stdout}\n${result.stderr}`);
+  const index = JSON.parse(await fs.readFile(path.join(copy, 'data/generated/index.json'), 'utf8'));
+  assert.equal(index.some((entry) => entry.file === 'generated/modules/sample-quiz.json'), false, 'sample-quiz must not ship in the learner catalog');
 });
 
 test('passage-practice sets stay in Passage Practice and do not appear on individual skill pages', async () => {

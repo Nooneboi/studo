@@ -422,6 +422,10 @@
     "unitId": "analyze-not-summarize",
     "contentKind": "skill_drill",
     "learningObjective": "Analyze, Don't Just Summarize",
-    "topicLabel": "Extended Response"
+    "topicLabel": "Extended Response",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

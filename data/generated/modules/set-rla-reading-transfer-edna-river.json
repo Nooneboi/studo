@@ -411,7 +411,11 @@
       ],
       "contentKind": "passage_practice",
       "learningObjective": "Apply multiple Reading & Comprehension skills to a longer original passage with close distractors and dispersed evidence.",
-      "topicLabel": "GED Practice"
+      "topicLabel": "GED Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-reading-transfer-edna-river",
@@ -426,6 +430,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.964Z"
+    "compiledAt": "2026-08-24T13:31:18.355Z"
   }
 }

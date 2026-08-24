@@ -299,7 +299,11 @@
       ],
       "contentKind": "passage_practice",
       "learningObjective": "Transfer inference, connotation, tone, structure, and perspective reasoning to an original literary passage.",
-      "topicLabel": "GED Practice"
+      "topicLabel": "GED Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-reading-transfer-station-clock",
@@ -314,6 +318,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.965Z"
+    "compiledAt": "2026-08-24T13:31:18.358Z"
   }
 }

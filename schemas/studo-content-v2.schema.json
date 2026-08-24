@@ -115,7 +115,8 @@
       "required": [
         "domain",
         "primarySkillId",
-        "contentKind"
+        "contentKind",
+        "deliveryRoles"
       ],
       "properties": {
         "domain": {
@@ -159,6 +160,20 @@
           "type": "array",
           "items": {
             "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "deliveryRoles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "practice",
+              "train",
+              "skill_check",
+              "mock"
+            ]
           },
           "uniqueItems": true
         }

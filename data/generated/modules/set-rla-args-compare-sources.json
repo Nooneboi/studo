@@ -20,7 +20,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "When comparing sources, separate shared goals or evidence needs from disagreement about the recommended action.",
-      "familyId": "twotext.agreement",
+      "familyId": "arguments.sources.compare",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "Compare the actual policy each writer recommends, not just their tone.",
-      "familyId": "twotext.compare",
+      "familyId": "arguments.sources.compare",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Opposing arguments"
       },
       "rule": "Opposing arguments often disagree less about a fact than about what that fact is sufficient to show.",
-      "familyId": "opposing.arguments.support",
+      "familyId": "arguments.sources.opposing",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Opposing arguments"
       },
       "rule": "When sources use different methods to address the same concern, compare the function before deciding which is stronger.",
-      "familyId": "opposing.arguments.evidence",
+      "familyId": "arguments.sources.opposing",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "A strong compare answer names what each source does, not just what one source contains.",
-      "familyId": "twotext.compare",
+      "familyId": "arguments.sources.compare",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Opposing arguments"
       },
       "rule": "Compare what each source says a number includes before treating the number itself as disputed.",
-      "familyId": "opposing.arguments.support",
+      "familyId": "arguments.sources.opposing",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Opposing arguments"
       },
       "rule": "The best comparison often identifies the exact point of disagreement beneath broader policy positions.",
-      "familyId": "opposing.arguments.support",
+      "familyId": "arguments.sources.opposing",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "When two sources disagree, look for evidence that resolves the specific uncertainties on both sides.",
-      "familyId": "twotext.agreement",
+      "familyId": "arguments.sources.compare",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -454,7 +454,11 @@
       "unitId": "compare-sources-arguments",
       "contentKind": "skill_drill",
       "learningObjective": "Compare two sources on the same issue, identifying agreements, disagreements, evidence emphasis, and opposing arguments.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-compare-library-hours",
@@ -469,6 +473,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.953Z"
+    "compiledAt": "2026-08-24T13:31:18.330Z"
   }
 }

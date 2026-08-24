@@ -23,7 +23,11 @@
       "mock-excluded"
     ],
     "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
-    "topicLabel": "Main idea / central idea"
+    "topicLabel": "Main idea / central idea",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   },
   "questions": [
     {

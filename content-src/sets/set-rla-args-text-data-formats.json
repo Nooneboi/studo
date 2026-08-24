@@ -422,6 +422,10 @@
     "unitId": "text-data-formats",
     "contentKind": "skill_drill",
     "learningObjective": "Connect written claims with tables and other formats, and judge what each format can and cannot establish.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

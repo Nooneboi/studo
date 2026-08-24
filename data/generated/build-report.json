@@ -1,8 +1,7 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-24T08:10:20.864Z",
+  "builtAt": "2026-08-24T13:31:18.436Z",
   "canonicalLegacyModules": [
-    "legacy-modules/sample-quiz.json",
     "legacy-modules/rla-author-purpose-practice-1.json",
     "legacy-modules/rla-author-purpose-practice-2.json",
     "legacy-modules/rla-cause-effect-practice-01.json",
@@ -99,7 +98,8 @@
     "set-rla-reading-transfer-festival-plan",
     "set-rla-reading-transfer-machine-listening",
     "set-rla-reading-transfer-station-clock",
-    "set-rla-reading-transfer-willow-bend"
+    "set-rla-reading-transfer-willow-bend",
+    "set-rla-supporting-details-active-methods-v1"
   ],
   "generatedSourceModules": [
     "generated/modules/set-rla-args-claims-structure.json",
@@ -147,7 +147,8 @@
     "generated/modules/set-rla-reading-transfer-festival-plan.json",
     "generated/modules/set-rla-reading-transfer-machine-listening.json",
     "generated/modules/rla-reading-transfer-station-clock.json",
-    "generated/modules/rla-reading-transfer-willow-bend.json"
+    "generated/modules/rla-reading-transfer-willow-bend.json",
+    "generated/modules/set-rla-supporting-details-active-methods-v1.json"
   ],
   "generatedIndexCount": 96,
   "trackPublicationStates": {

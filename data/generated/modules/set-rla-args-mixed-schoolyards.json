@@ -20,7 +20,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "State exactly what the data measure before drawing a conclusion.",
-      "familyId": "textdata.support",
+      "familyId": "arguments.formats.data",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "A strong argument recognizes when a proxy is useful but incomplete.",
-      "familyId": "reasoning.flaw",
+      "familyId": "arguments.reasoning.validity",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "Synthesis is strongest when it incorporates both the evidence and the limitation.",
-      "familyId": "synthesis.conclusion",
+      "familyId": "arguments.sources.synthesize",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Look for a conclusion that promises more than the intervention can control.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "Use comparison rows to ask which variable changes and what cautious inference that allows.",
-      "familyId": "textdata.support",
+      "familyId": "arguments.formats.data",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Choose an outcome measure that matches the claim you want to test.",
-      "familyId": "sufficiency.add",
+      "familyId": "arguments.evidence.sufficiency",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -351,7 +351,11 @@
         "text_data"
       ],
       "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
-      "topicLabel": "Mixed Source Practice"
+      "topicLabel": "Mixed Source Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-mixed-schoolyards",
@@ -366,6 +370,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.955Z"
+    "compiledAt": "2026-08-24T13:31:18.334Z"
   }
 }

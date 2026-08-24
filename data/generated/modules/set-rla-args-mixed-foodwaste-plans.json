@@ -20,7 +20,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Compare not just numbers, but what each number actually measures.",
-      "familyId": "sufficiency.evaluate",
+      "familyId": "arguments.evidence.sufficiency",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Evidence relevance"
       },
       "rule": "A relevant advantage is not automatically sufficient to decide the whole policy.",
-      "familyId": "relevance.directness",
+      "familyId": "arguments.evidence.relevance",
       "metadata": {
         "skillId": "R5.4",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Check whether the pilot population resembles the target population and whether the measure matches the claimed behavior.",
-      "familyId": "sufficiency.evaluate",
+      "familyId": "arguments.evidence.sufficiency",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A third source can clarify which disagreement is real and which is based on a false either/or.",
-      "familyId": "synthesis.resolve",
+      "familyId": "arguments.sources.synthesize",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "For value comparisons, pair cost with the outcome the program is trying to produce.",
-      "familyId": "textdata.support",
+      "familyId": "arguments.formats.data",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A fair comparison controls obvious differences and measures the same decision criteria for each option.",
-      "familyId": "synthesis.conclusion",
+      "familyId": "arguments.sources.synthesize",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Evidence relevance"
       },
       "rule": "Relevant evidence must answer the exact uncertainty in the claim, not merely relate to the general topic.",
-      "familyId": "relevance.directness",
+      "familyId": "arguments.evidence.relevance",
       "metadata": {
         "skillId": "R5.4",
         "secondarySkillIds": [],
@@ -404,7 +404,11 @@
         "paired_sources"
       ],
       "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
-      "topicLabel": "Mixed Source Practice"
+      "topicLabel": "Mixed Source Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-mixed-foodwaste-plans",
@@ -419,6 +423,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.955Z"
+    "compiledAt": "2026-08-24T13:31:18.334Z"
   }
 }

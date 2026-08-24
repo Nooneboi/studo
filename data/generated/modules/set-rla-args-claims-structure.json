@@ -20,7 +20,7 @@
         "label": "Claim identification"
       },
       "rule": "Ask what action or judgment the author is trying to convince the reader to accept.",
-      "familyId": "claim.main",
+      "familyId": "arguments.claim.identify",
       "metadata": {
         "skillId": "R5.1",
         "secondarySkillIds": [],
@@ -75,7 +75,7 @@
         "label": "Argument chain / structure"
       },
       "rule": "Identify the claim immediately before or after the evidence and ask what the evidence helps establish.",
-      "familyId": "argument.chain",
+      "familyId": "arguments.structure.analyze",
       "metadata": {
         "skillId": "R5.2",
         "secondarySkillIds": [],
@@ -129,7 +129,7 @@
         "label": "Claim identification"
       },
       "rule": "A supporting claim gives a reason for the main claim; it is not merely a fact about the situation.",
-      "familyId": "claim.subclaim",
+      "familyId": "arguments.claim.identify",
       "metadata": {
         "skillId": "R5.1",
         "secondarySkillIds": [],
@@ -183,7 +183,7 @@
         "label": "Argument chain / structure"
       },
       "rule": "Track whether the paragraph adds a reason, a limitation, a response, or a next step.",
-      "familyId": "argument.chain",
+      "familyId": "arguments.structure.analyze",
       "metadata": {
         "skillId": "R5.2",
         "secondarySkillIds": [],
@@ -237,7 +237,7 @@
         "label": "Argument chain / structure"
       },
       "rule": "Reduce the argument to reason -> recommendation -> next step.",
-      "familyId": "argument.chain",
+      "familyId": "arguments.structure.analyze",
       "metadata": {
         "skillId": "R5.2",
         "secondarySkillIds": [],
@@ -291,7 +291,7 @@
         "label": "Argument chain / structure"
       },
       "rule": "When an example appears after a general statement, ask which part of that statement the example demonstrates.",
-      "familyId": "argument.chain",
+      "familyId": "arguments.structure.analyze",
       "metadata": {
         "skillId": "R5.2",
         "secondarySkillIds": [],
@@ -345,7 +345,7 @@
         "label": "Claim identification"
       },
       "rule": "Separate what the argument actually claims from a stronger version that sounds attractive but exceeds the text.",
-      "familyId": "claim.subclaim",
+      "familyId": "arguments.claim.identify",
       "metadata": {
         "skillId": "R5.1",
         "secondarySkillIds": [],
@@ -399,7 +399,7 @@
         "label": "Claim identification"
       },
       "rule": "A good thesis states the position precisely enough that the supporting paragraphs can be traced back to it.",
-      "familyId": "claim.main",
+      "familyId": "arguments.claim.identify",
       "metadata": {
         "skillId": "R5.1",
         "secondarySkillIds": [],
@@ -455,7 +455,11 @@
       "unitId": "claims-argument-structure",
       "contentKind": "skill_drill",
       "learningObjective": "Identify the main claim, supporting claims, and the structure that connects them.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-claims-shade",
@@ -470,6 +474,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.953Z"
+    "compiledAt": "2026-08-24T13:31:18.327Z"
   }
 }

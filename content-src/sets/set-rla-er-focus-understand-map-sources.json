@@ -422,6 +422,10 @@
     "unitId": "understand-map-sources",
     "contentKind": "skill_drill",
     "learningObjective": "Start by Mapping the Task",
-    "topicLabel": "Extended Response"
+    "topicLabel": "Extended Response",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

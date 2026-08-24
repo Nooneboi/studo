@@ -20,7 +20,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Cut words that duplicate meaning, not words that carry a condition or fact.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Name the relationship before choosing the transition.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Prefer the shortest wording that preserves the exact meaning.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Use contrast transitions when the second statement limits or differs from the first.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "When because already gives the reason, you usually do not need 'the reason is because'.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "For another point with the same direction, use an addition transition rather than a cause or contrast word.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Look for noun-heavy phrases that can become a direct verb.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Result transitions should follow a fact that creates the need for the next action.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -454,7 +454,11 @@
       "unitId": "concision-transitions",
       "contentKind": "skill_drill",
       "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-concision",
@@ -469,6 +473,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.961Z"
+    "compiledAt": "2026-08-24T13:31:18.345Z"
   }
 }

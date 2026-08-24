@@ -21,11 +21,13 @@ function runNode(script, args = []) {
   return spawnSync(process.execPath, [script, ...args], { cwd: ROOT, encoding: 'utf8' });
 }
 
-test('canonical legacy learner inventory lives under content-src', async () => {
+test('canonical legacy learner inventory lives under content-src while demo modules stay internal', async () => {
   const entries = await json(LEGACY_INDEX);
-  assert.equal(entries.length, 50, 'expected all 50 non-schema-v2 learner entries to be canonicalized');
+  assert.equal(entries.length, 49, 'expected the 49 learner-facing legacy modules in the canonical learner index');
   const files = (await fs.readdir(LEGACY_DIR)).filter((name) => name.endsWith('.json'));
-  assert.equal(files.length, 50, 'expected one canonical runtime module per legacy learner entry');
+  assert.equal(files.length, 50, 'expected 49 learner modules plus one internal sample/demo source module');
+  assert.equal(entries.some((entry) => entry.sourceFile === 'legacy-modules/sample-quiz.json'), false, 'internal sample quiz leaked into learner index');
+  assert.equal(files.includes('sample-quiz.json'), true, 'internal sample/demo source should remain available for development');
   for (const entry of entries) {
     assert.match(entry.sourceFile || '', /^legacy-modules\//, `legacy entry ${entry.title} needs a canonical sourceFile`);
     const source = path.join(ROOT, 'content-src', entry.sourceFile);

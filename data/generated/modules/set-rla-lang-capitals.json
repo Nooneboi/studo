@@ -20,7 +20,7 @@
         "label": "Capitalization"
       },
       "rule": "Capitalize proper names and calendar names, not ordinary nouns for emphasis.",
-      "familyId": "edit.capitalization",
+      "familyId": "language.capitalization.mechanics",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "First decide singular or plural; then add the possessive ending.",
-      "familyId": "edit.possessive",
+      "familyId": "language.possessives.apostrophes",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Capitalization"
       },
       "rule": "Capitalize a formal title before a name; lowercase it when used generically or after the name.",
-      "familyId": "edit.title_names",
+      "familyId": "language.capitalization.mechanics",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "Test 'it's' by expanding it to 'it is.' If that does not fit, use 'its'.",
-      "familyId": "edit.possessive",
+      "familyId": "language.possessives.apostrophes",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "For a regular plural already ending in s, add only the apostrophe.",
-      "familyId": "edit.possessive_context",
+      "familyId": "language.possessives.apostrophes",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Capitalization"
       },
       "rule": "Do not capitalize common nouns just because they name an important place or event.",
-      "familyId": "edit.title_names",
+      "familyId": "language.capitalization.mechanics",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -345,7 +345,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "Irregular plurals not ending in s usually add apostrophe + s.",
-      "familyId": "edit.possessive_context",
+      "familyId": "language.possessives.apostrophes",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -399,7 +399,7 @@
         "label": "Capitalization"
       },
       "rule": "Formal titles are usually lowercase when they follow a person's name.",
-      "familyId": "edit.title_names",
+      "familyId": "language.capitalization.mechanics",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -455,7 +455,11 @@
       "unitId": "capitalization-possessives",
       "contentKind": "skill_drill",
       "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-capitals",
@@ -470,6 +474,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.960Z"
+    "compiledAt": "2026-08-24T13:31:18.344Z"
   }
 }

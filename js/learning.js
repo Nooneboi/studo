@@ -431,6 +431,10 @@ const Learning = (() => {
       .sort((a, b) => b.count - a.count);
   }
 
+  function hasDeliveryRole(module, role) {
+    return Array.isArray(module?.curriculum?.deliveryRoles) && module.curriculum.deliveryRoles.includes(role);
+  }
+
   function isAutoGraded(question) {
     if (!question) return false;
     if (["multiple_choice", "evidence_based", "grammar_edit"].includes(question.type)) return true;
@@ -453,6 +457,7 @@ const Learning = (() => {
 
     const candidates = [];
     (catalog || []).forEach((module) => {
+      if (!hasDeliveryRole(module, "train")) return;
       (module.questions || []).forEach((question) => {
         if (!isAutoGraded(question)) return;
         const key = questionKey(module, question);

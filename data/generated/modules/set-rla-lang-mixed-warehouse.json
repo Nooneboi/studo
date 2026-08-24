@@ -20,7 +20,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Keep items in a list in matching grammatical forms.",
-      "familyId": "edit.parallelism",
+      "familyId": "language.parallelism.structure",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Place only beside the word or phrase you intend to restrict.",
-      "familyId": "edit.modifier.placement",
+      "familyId": "language.modifiers.limiting_words",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use punctuation and conjunctions together to show the relationship between complete clauses.",
-      "familyId": "edit.punctuation.clauses",
+      "familyId": "language.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Turn repeated noun/verb phrases into one precise modifier when meaning is preserved.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "Formal procedures should use standard forms without slang or speech spellings.",
-      "familyId": "edit.standard_usage",
+      "familyId": "language.usage.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Basic subject–verb agreement"
       },
       "rule": "Ignore nouns inside an of-phrase when locating the subject.",
-      "familyId": "edit.sva.basic",
+      "familyId": "language.grammar.subject_verb_agreement",
       "metadata": {
         "skillId": "L1.2",
         "secondarySkillIds": [],
@@ -353,7 +353,11 @@
         "workplace"
       ],
       "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
-      "topicLabel": "Mixed Editing Practice"
+      "topicLabel": "Mixed Editing Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-mixed-warehouse",
@@ -368,6 +372,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.962Z"
+    "compiledAt": "2026-08-24T13:31:18.349Z"
   }
 }

@@ -20,7 +20,7 @@
         "label": "Basic subject–verb agreement"
       },
       "rule": "Cross out interrupting prepositional phrases before matching subject and verb.",
-      "familyId": "edit.sva.basic",
+      "familyId": "language.grammar.subject_verb_agreement",
       "metadata": {
         "skillId": "L1.2",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Complex agreement"
       },
       "rule": "With neither/either, find the actual subject instead of matching the nearest plural noun.",
-      "familyId": "edit.agreement.complex",
+      "familyId": "language.grammar.complex_agreement",
       "metadata": {
         "skillId": "L1.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "Remove the other name: 'Maya asked me' makes the correct case easier to hear.",
-      "familyId": "edit.pronoun.case",
+      "familyId": "language.pronoun.grammar",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "If a pronoun could point to two nouns, rewrite with the exact noun rather than guessing.",
-      "familyId": "edit.pronoun.agreement",
+      "familyId": "language.pronoun.reference",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Complex agreement"
       },
       "rule": "Phrases beginning with together with, along with, or as well as do not change the subject.",
-      "familyId": "edit.agreement.complex",
+      "familyId": "language.grammar.complex_agreement",
       "metadata": {
         "skillId": "L1.7",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "Make pronouns agree in person and reference; singular they is acceptable in standard English.",
-      "familyId": "edit.pronoun.agreement",
+      "familyId": "language.pronoun.grammar",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Basic subject–verb agreement"
       },
       "rule": "Subjects joined by and are usually plural unless they name one combined thing.",
-      "familyId": "edit.sva.basic",
+      "familyId": "language.grammar.subject_verb_agreement",
       "metadata": {
         "skillId": "L1.2",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Complex agreement"
       },
       "rule": "For either/or and neither/nor, check the subject closest to the verb.",
-      "familyId": "edit.agreement.complex",
+      "familyId": "language.grammar.complex_agreement",
       "metadata": {
         "skillId": "L1.7",
         "secondarySkillIds": [],
@@ -455,7 +455,11 @@
       "unitId": "agreement-pronouns",
       "contentKind": "skill_drill",
       "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-agreement",
@@ -470,6 +474,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.960Z"
+    "compiledAt": "2026-08-24T13:31:18.342Z"
   }
 }

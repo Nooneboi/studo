@@ -41,6 +41,15 @@ function slug(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
+function questionFamilyRuntime(config) {
+  const canonicalIds = (config.skills || [])
+    .flatMap((skill) => (skill.families || []).map((family) => family.familyId))
+    .filter(Boolean)
+    .sort();
+  const aliases = Object.fromEntries(Object.entries(config.aliases || {}).sort(([a], [b]) => a.localeCompare(b)));
+  return `window.CheeQuestionFamilies = Object.freeze({\n  canonicalIds: Object.freeze(${JSON.stringify(canonicalIds)}),\n  aliases: Object.freeze(${JSON.stringify(aliases)}),\n  canonicalize(id) { const key = String(id || ''); return this.aliases[key] || key; }\n});\n`;
+}
+
 function compileQuestion(q, skill, passage) {
   const out = {
     id: q.id,
@@ -74,6 +83,10 @@ function compileQuestion(q, skill, passage) {
   const evidence = resolvedEvidence(passage, q.explanation?.evidenceRef);
   if (evidence) out.evidenceExcerpt = evidence;
   return out;
+}
+
+function hasDeliveryRole(record, role) {
+  return Array.isArray(record?.curriculum?.deliveryRoles) && record.curriculum.deliveryRoles.includes(role);
 }
 
 function measuredSkillIds(record) {
@@ -125,6 +138,12 @@ function trackMap(curriculumConfig, skills) {
   return { domainToTrack, skillToTrack };
 }
 
+function activeLearningFirst(a, b) {
+  const aActive = (a?.curriculum?.practiceTags || []).includes('active-learning') ? 0 : 1;
+  const bActive = (b?.curriculum?.practiceTags || []).includes('active-learning') ? 0 : 1;
+  return aActive - bActive;
+}
+
 function buildCurriculum({ curriculumConfig, skills, publishedResources, records }) {
   const passagePractice = [];
   const argumentPractice = [];
@@ -148,12 +167,18 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
           const ids = measuredSkillIds(record);
           return c.primarySkillId === skill.id || (c.secondarySkillIds || []).includes(skill.id) || ids.includes(skill.id);
         });
+        const practiceRecords = related.filter((record) => hasDeliveryRole(record, 'practice')).sort(activeLearningFirst);
+        const checkRecords = related.filter((record) => hasDeliveryRole(record, 'skill_check'));
         const resources = publishedResources.filter((resource) => resource.scope !== 'domain' && ((resource.skillIds || []).includes(skill.id) || resource.primarySkillId === skill.id));
-        const questionCount = related.reduce((sum, record) => sum + (record.questions || []).filter((q) => {
+        const questionCount = practiceRecords.reduce((sum, record) => sum + (record.questions || []).filter((q) => {
           const metadata = q.metadata || {};
           return metadata.skillId === skill.id || (metadata.secondarySkillIds || []).includes(skill.id);
         }).length, 0);
-        const cleanRecords = related.map((record) => {
+        const cleanRecords = practiceRecords.map((record) => {
+          const { questions, ...publicRecord } = record;
+          return { ...publicRecord, measuredSkillIds: measuredSkillIds(record) };
+        });
+        const cleanChecks = checkRecords.map((record) => {
           const { questions, ...publicRecord } = record;
           return { ...publicRecord, measuredSkillIds: measuredSkillIds(record) };
         });
@@ -163,14 +188,14 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
           label: skill.label,
           priority: skill.priority || null,
           practiceMode: skill.practiceMode || null,
-          available: cleanRecords.length > 0 || resources.length > 0,
+          available: cleanRecords.length > 0 || cleanChecks.length > 0 || resources.length > 0,
           setCount: cleanRecords.length,
           questionCount,
           resourceCount: resources.length,
           studyFileCount: resources.length,
-          checkCount: cleanRecords.length,
+          checkCount: cleanChecks.length,
           sets: cleanRecords,
-          checks: cleanRecords,
+          checks: cleanChecks,
           resources,
           studyResources: resources,
         };
@@ -183,29 +208,35 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
           if (c.unitId) return c.unitId === unitConfig.id;
           return measuredSkillIds(record).some((id) => unitSkillIds.has(id));
         });
+        const practiceRecords = related.filter((record) => hasDeliveryRole(record, 'practice')).sort(activeLearningFirst);
+        const checkRecords = related.filter((record) => hasDeliveryRole(record, 'skill_check'));
         const resources = publishedResources.filter((resource) => {
           if (resource.scope === 'domain') return false;
           if (resource.unitId) return resource.unitId === unitConfig.id;
           const ids = new Set([...(resource.skillIds || []), ...(resource.primarySkillId ? [resource.primarySkillId] : [])]);
           return [...unitSkillIds].some((id) => ids.has(id));
         });
-        const cleanRecords = related.map((record) => {
+        const cleanRecords = practiceRecords.map((record) => {
           const { questions, ...publicRecord } = record;
           return { ...publicRecord, measuredSkillIds: measuredSkillIds(record) };
         });
-        const questionCount = related.reduce((sum, record) => sum + (record.questions || []).length, 0);
+        const cleanChecks = checkRecords.map((record) => {
+          const { questions, ...publicRecord } = record;
+          return { ...publicRecord, measuredSkillIds: measuredSkillIds(record) };
+        });
+        const questionCount = practiceRecords.reduce((sum, record) => sum + (record.questions || []).length, 0);
         return {
           id: unitConfig.id,
           label: unitConfig.label,
           summary: unitConfig.summary || '',
           skillIds: unitConfig.skillIds || [],
-          available: cleanRecords.length > 0 || resources.length > 0,
+          available: cleanRecords.length > 0 || cleanChecks.length > 0 || resources.length > 0,
           setCount: cleanRecords.length,
           questionCount,
           resourceCount: resources.length,
-          checkCount: cleanRecords.length,
+          checkCount: cleanChecks.length,
           sets: cleanRecords,
-          checks: cleanRecords,
+          checks: cleanChecks,
           resources,
           studyResources: resources,
         };
@@ -230,6 +261,7 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
   }));
 
   for (const record of records) {
+    if (!hasDeliveryRole(record, 'practice')) continue;
     if (!['passage_practice', 'quiz', 'argument_practice', 'editing_practice', 'extended_response_practice'].includes(record.curriculum?.contentKind)) continue;
     const item = {
       id: record.id,
@@ -282,6 +314,7 @@ async function main() {
   const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
   const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
   const mockBlueprint = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla-mock-v1.json'), 'utf8'));
+  const questionFamilyRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.question-families.v1.json'), 'utf8'));
   const resourceRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'resources', 'rla.resources.json'), 'utf8'));
   const publishedResources = (resourceRegistry.resources || []).filter((resource) => resource.status === 'published');
 
@@ -385,6 +418,7 @@ async function main() {
   });
   await fs.writeFile(path.join(OUT, 'er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerErPrompts }, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'mock-blueprint.json'), JSON.stringify(mockBlueprint, null, 2) + '\n', 'utf8');
+  await fs.writeFile(path.join(OUT, 'question-families.js'), questionFamilyRuntime(questionFamilyRegistry), 'utf8');
   await fs.writeFile(path.join(OUT, 'qa-report.json'), JSON.stringify({
     schemaVersion: 1,
     builtAt: new Date().toISOString(),

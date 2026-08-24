@@ -422,6 +422,10 @@
     "unitId": "thesis-evidence",
     "contentKind": "skill_drill",
     "learningObjective": "Build a Thesis and Choose Evidence",
-    "topicLabel": "Extended Response"
+    "topicLabel": "Extended Response",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

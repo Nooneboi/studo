@@ -60,6 +60,7 @@
       "informational": 0.75,
       "literary": 0.25
     },
-    "staminaMinimumWords": 600
+    "staminaMinimumWords": 600,
+    "allowPracticeFallback": true
   }
 }

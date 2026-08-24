@@ -420,6 +420,10 @@
     "unitId": "modifiers-sentence-logic",
     "contentKind": "skill_drill",
     "learningObjective": "Place modifiers so every description attaches to the intended word or action.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

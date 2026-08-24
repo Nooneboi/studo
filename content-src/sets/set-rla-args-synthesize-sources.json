@@ -420,6 +420,10 @@
     "unitId": "synthesize-sources",
     "contentKind": "skill_drill",
     "learningObjective": "Combine evidence across multiple sources to reach conclusions and recommendations that no single source can fully support alone.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

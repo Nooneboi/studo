@@ -422,6 +422,10 @@
     "unitId": "evidence-quality",
     "contentKind": "skill_drill",
     "learningObjective": "Judge whether evidence is relevant to a claim and whether it is sufficient for the conclusion being made.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

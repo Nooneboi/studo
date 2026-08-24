@@ -20,7 +20,7 @@
         "label": "Complex agreement"
       },
       "rule": "Do not let a plural noun inside an of-phrase control the verb.",
-      "familyId": "edit.agreement.complex",
+      "familyId": "language.grammar.complex_agreement",
       "metadata": {
         "skillId": "L1.7",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "Replace a pronoun when two possible antecedents could change the meaning.",
-      "familyId": "edit.pronoun.agreement",
+      "familyId": "language.pronoun.reference",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Fragments, run-ons & fused sentences"
       },
       "rule": "An if-clause needs a main clause to complete the thought.",
-      "familyId": "edit.sentence_boundary",
+      "familyId": "language.boundaries.fragments_runons",
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Remove repeated ownership words and unnecessary phrases.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Choose the transition after naming the relationship in plain words.",
-      "familyId": "edit.transition.logic",
+      "familyId": "language.transitions.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "For one owner, use singular noun + apostrophe + s.",
-      "familyId": "edit.possessive",
+      "familyId": "language.possessives.apostrophes",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -353,7 +353,11 @@
         "community"
       ],
       "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
-      "topicLabel": "Mixed Editing Practice"
+      "topicLabel": "Mixed Editing Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-mixed-garden",
@@ -368,6 +372,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.961Z"
+    "compiledAt": "2026-08-24T13:31:18.347Z"
   }
 }

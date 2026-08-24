@@ -1,0 +1,391 @@
+{
+  "id": "set-rla-supporting-details-active-methods-v1",
+  "title": "Supporting Details - Guided Practice",
+  "description": "Guided Supporting Details practice that moves from exact-match evidence to strongest-support and qualified two-part claims.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Supporting details",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "For years, the Saturday market on Alder Street shared a narrow downtown block with delivery vans, buses, and shoppers crossing between rows of outdoor stalls. Merchants liked the location because it was close to the transit station, but city staff received repeated complaints about people stepping into traffic to move around parked vehicles. Rather than permanently closing the street, the city approved a four-week pilot in early spring. From 8 a.m. to 1 p.m. each Saturday, private cars were kept out of the market block while buses continued to use the next street over.\n\nBefore the pilot began, transportation staff collected baseline information. They counted pedestrians at three times each morning, recorded conflicts in which a driver or pedestrian had to stop suddenly or change direction, and timed how long delivery vehicles remained at the curb. They also asked merchants about sales, deliveries, and customer access. During the pilot, staff repeated the same observations. Average pedestrian counts rose by 18 percent. More importantly for the safety question, recorded vehicle-pedestrian conflicts during the busiest two-hour period fell from an average of fourteen per Saturday to four.\n\nThe closure also changed how people used the block. Temporary benches were placed near the center of the market, and observers recorded more shoppers stopping to sit or talk instead of moving straight through. In a short survey, 72 percent of respondents said it was easier to cross between stalls without checking for moving cars. Several merchants said the calmer street made browsing more comfortable. However, a few pointed out that the survey mostly reached people who had already chosen to attend the market, so it could not show whether the pilot affected residents who stayed away.\n\nDeliveries created the clearest problem. Under the old arrangement, vendors could unload beside their stalls throughout the morning. During the pilot, most had to finish curbside unloading before 8 a.m. or carry goods from a loading area on Pine Street. Staff found that average unloading time increased by six minutes for vendors using the side-street area. Two nearby businesses that were not part of the market also reported that delivery vans sometimes occupied spaces their suppliers normally used. The city responded during the final week by reserving two Pine Street spaces for non-market deliveries and adding signs that explained the temporary rules.\n\nThe city did not treat the four-week test as a final answer. Spring weather was mild, and officials noted that summer heat and holiday crowds could change both pedestrian use and delivery needs. Still, the pilot gave them evidence that separating most vehicle traffic from the busiest market hours could reduce conflicts and make movement between stalls easier. The final recommendation kept the Saturday closure but added a 7:00-to-8:30 a.m. delivery window inside the block, a clearly marked side-street loading zone after 8:30, and another round of observations after three months. Officials said the goal was to preserve the pedestrian benefits while fixing the delivery problems the pilot had revealed.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "For the claim that the street closure reduced safety conflicts during the busiest market hours, how useful is each detail as evidence?",
+      "points": 1,
+      "explanation": "The other details are true and relevant to the pilot, but they measure pedestrian volume, seating, or delivery problems rather than vehicle-pedestrian conflicts.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Match the evidence to the exact result named in the claim, not just to the same topic.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "learningStage": "guided",
+      "hint": "Underline the exact thing the claim says changed: safety conflicts. Which detail actually measures that?",
+      "correct": "i1=direct|i2=other|i3=other|i4=other",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "Recorded vehicle-pedestrian conflicts fell from an average of fourteen per Saturday to four."
+          },
+          {
+            "id": "i2",
+            "text": "Average pedestrian counts rose by 18 percent during the pilot."
+          },
+          {
+            "id": "i3",
+            "text": "Temporary benches were placed near the center of the market."
+          },
+          {
+            "id": "i4",
+            "text": "Two nearby businesses reported that delivery vans sometimes occupied spaces their suppliers normally used."
+          }
+        ],
+        "zones": [
+          {
+            "id": "direct",
+            "label": "Direct support for the claim"
+          },
+          {
+            "id": "other",
+            "label": "Related/background or evidence for another point"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Which sentence best supports the idea that the city did not rely only on merchant opinions when evaluating the pilot?",
+      "points": 1,
+      "explanation": "Those are direct observations and measurements collected in addition to merchant feedback. The other choices mention the evaluation process but do not show as clearly what non-opinion evidence the city gathered.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "When a claim contrasts opinion with evidence, look for an actual measurement, observation, or record.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "learningStage": "guided",
+      "hint": "Look for a sentence describing evidence staff could observe or measure without asking someone what they thought.",
+      "correct": "s2",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "Before the pilot began, transportation staff collected baseline information."
+          },
+          {
+            "id": "s2",
+            "text": "They counted pedestrians at three times each morning, recorded conflicts in which a driver or pedestrian had to stop suddenly or change direction, and timed how long delivery vehicles remained at the curb."
+          },
+          {
+            "id": "s3",
+            "text": "They also asked merchants about sales, deliveries, and customer access."
+          },
+          {
+            "id": "s4",
+            "text": "During the pilot, staff repeated the same observations."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q3",
+      "type": "evidence_based",
+      "prompt": "Which detail provides the strongest support for the idea that the closure made it easier for shoppers to move between stalls?",
+      "points": 1,
+      "explanation": "Choice C directly measures the exact experience named in the claim: crossing between stalls became easier without moving cars.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "If two details help, prefer the one that matches the claim more specifically and requires fewer assumptions.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "learningStage": "apply",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average pedestrian counts rose by 18 percent.",
+          "distractorType": "weak_indirect_support",
+          "whyWrong": "More people were present, but that does not directly show that moving between stalls became easier."
+        },
+        {
+          "id": "b",
+          "text": "Observers recorded more shoppers stopping to sit or talk.",
+          "distractorType": "related_detail",
+          "whyWrong": "This shows a change in how shoppers used the block, not how easy it was to cross between stalls."
+        },
+        {
+          "id": "c",
+          "text": "Seventy-two percent of surveyed respondents said it was easier to cross between stalls without checking for moving cars."
+        },
+        {
+          "id": "d",
+          "text": "Several merchants said the calmer street made browsing more comfortable.",
+          "distractorType": "some_support",
+          "whyWrong": "This supports comfort generally, but the survey statement matches the exact claim about moving between stalls more directly."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "drag_sort",
+      "prompt": "For the claim that the pilot created a delivery problem for some vendors, how strong is each detail as support?",
+      "points": 1,
+      "explanation": "The six-minute increase directly measures a cost to vendors. The changed unloading procedure could create difficulty but does not measure its effect. The nearby-business complaint concerns different businesses, and the benches concern pedestrian use.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Strongest evidence usually shows the claimed effect; weaker evidence may only describe a condition that could cause it.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "learningStage": "apply",
+      "hint": "Separate a measured effect on market vendors from a changed rule that might create an effect.",
+      "correct": "m1=strong|m2=some|m3=not|m4=not",
+      "interaction": {
+        "items": [
+          {
+            "id": "m1",
+            "text": "Average unloading time increased by six minutes for vendors using the side-street loading area."
+          },
+          {
+            "id": "m2",
+            "text": "Most vendors had to unload before 8 a.m. or carry goods from Pine Street."
+          },
+          {
+            "id": "m3",
+            "text": "Two nearby non-market businesses said delivery vans sometimes occupied spaces their suppliers normally used."
+          },
+          {
+            "id": "m4",
+            "text": "Temporary benches were placed near the center of the market."
+          }
+        ],
+        "zones": [
+          {
+            "id": "strong",
+            "label": "Strong direct support"
+          },
+          {
+            "id": "some",
+            "label": "Some support"
+          },
+          {
+            "id": "not",
+            "label": "Does not support this claim"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "select_text",
+      "prompt": "Which sentence gives the clearest concrete evidence that the final plan tried to keep the pedestrian benefits while addressing delivery problems?",
+      "points": 1,
+      "explanation": "This sentence contains both parts of the claim in concrete actions: the pedestrian-focused closure stays, while the plan changes delivery access and loading.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "For a two-part claim, the strongest detail often needs to support both parts rather than only one.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 75,
+      "learningStage": "independent",
+      "correct": "h3",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "h1",
+            "text": "The city responded during the final week by reserving two Pine Street spaces for non-market deliveries and adding signs that explained the temporary rules."
+          },
+          {
+            "id": "h2",
+            "text": "Still, the pilot gave them evidence that separating most vehicle traffic from the busiest market hours could reduce conflicts and make movement between stalls easier."
+          },
+          {
+            "id": "h3",
+            "text": "The final recommendation kept the Saturday closure but added a 7:00-to-8:30 a.m. delivery window inside the block, a clearly marked side-street loading zone after 8:30, and another round of observations after three months."
+          },
+          {
+            "id": "h4",
+            "text": "Spring weather was mild, and officials noted that summer heat and holiday crowds could change both pedestrian use and delivery needs."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q6",
+      "type": "evidence_based",
+      "prompt": "Which pair of details best supports the idea that officials saw the pilot as useful evidence, but not proof that the same pattern would hold under every condition?",
+      "points": 1,
+      "explanation": "The first detail limits how far officials can generalize the result, while the second states what the pilot nevertheless showed. Together they support both halves of the qualified claim.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "When a claim contains 'but,' 'although,' or another qualification, make sure your evidence covers both sides.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 4,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedestrian counts rose by 18 percent; 72 percent of surveyed respondents said crossing between stalls was easier.",
+          "distractorType": "supports_only_one_part",
+          "whyWrong": "These results show useful positive evidence, but neither detail shows why officials remained cautious about other conditions."
+        },
+        {
+          "id": "b",
+          "text": "Spring weather was mild and summer heat or holiday crowds could change the pattern; still, the pilot showed that separating most traffic could reduce conflicts and make movement easier."
+        },
+        {
+          "id": "c",
+          "text": "Most vendors had to unload before 8 a.m.; two nearby businesses reported competition for loading spaces.",
+          "distractorType": "evidence_for_other_idea",
+          "whyWrong": "These details support delivery problems, not the idea that the pilot provided useful but limited evidence."
+        },
+        {
+          "id": "d",
+          "text": "The city collected baseline information; temporary benches were placed near the center of the market.",
+          "distractorType": "background_only",
+          "whyWrong": "These details describe the study and the street setup but do not establish both the usefulness and the limitation of the pilot's evidence."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-supporting-details-active-methods-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.3",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Choose evidence that directly supports the exact idea, compare strong support with merely related information, and handle claims with more than one part.",
+      "topicLabel": "Supporting details",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-supporting-details-active-market-street",
+      "title": "A Saturday Market Street Pilot",
+      "textType": "informational",
+      "context": "community_civics",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-24T13:31:18.360Z"
+  }
+}

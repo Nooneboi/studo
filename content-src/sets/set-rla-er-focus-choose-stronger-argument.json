@@ -420,6 +420,10 @@
     "unitId": "choose-stronger-argument",
     "contentKind": "skill_drill",
     "learningObjective": "Judge Support, Not Preference",
-    "topicLabel": "Extended Response"
+    "topicLabel": "Extended Response",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

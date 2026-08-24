@@ -25,7 +25,7 @@ async function init() {
   const resources = item.studyResources || item.resources || [];
   const studyGuides = resources.filter((r) => r.type !== "worksheet");
   const workbookSheets = resources.filter((r) => r.type === "worksheet");
-  const checks = item.checks || item.sets || [];
+  const practiceSets = item.sets || [];
 
   document.title = `Chee Skool — ${item.label}`;
   mount.innerHTML = `
@@ -39,7 +39,7 @@ async function init() {
     <section class="skill-resource-grid" aria-label="${escapeHtml(item.label)} learning resources">
       ${renderColumn("Study Guide", studyGuides, (r) => renderResource(r))}
       ${renderColumn("Workbook Sheets", workbookSheets, (r) => renderResource(r))}
-      ${renderColumn("Interactive Practice", checks, (set) => renderCheck(set, track, domain, item, Boolean(unitId)))}
+      ${renderColumn("Interactive Practice", practiceSets, (set) => renderCheck(set, track, domain, item, Boolean(unitId)))}
     </section>`;
 }
 

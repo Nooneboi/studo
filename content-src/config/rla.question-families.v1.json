@@ -33,13 +33,13 @@
       "authoringNote": "Directly stated facts and ideas; separates text evidence from assumptions.",
       "families": [
         {
-          "familyId": "explicit.fact.locate",
-          "construct": "Locate an explicitly stated fact or idea",
-          "authenticStemPattern": "Which statement is directly supported by the passage?",
+          "familyId": "explicit.detail.match",
+          "construct": "Match a question to the exact detail that answers it",
+          "authenticStemPattern": "According to the passage, which statement explains ___?",
           "distractorLogic": [
-            "inference_not_stated",
-            "mentioned_wrong_detail",
-            "contradicts_text"
+            "related_not_answering",
+            "true_elsewhere",
+            "unsupported_extension"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -50,13 +50,13 @@
           ]
         },
         {
-          "familyId": "explicit.detail.match",
-          "construct": "Match a question to the exact detail that answers it",
-          "authenticStemPattern": "According to the passage, which statement explains ___?",
+          "familyId": "explicit.fact.locate",
+          "construct": "Locate an explicitly stated fact or idea",
+          "authenticStemPattern": "Which statement is directly supported by the passage?",
           "distractorLogic": [
-            "related_not_answering",
-            "true_elsewhere",
-            "unsupported_extension"
+            "inference_not_stated",
+            "mentioned_wrong_detail",
+            "contradicts_text"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -208,13 +208,13 @@
       "authoringNote": "Use too-broad, too-narrow, and detail-heavy distractors.",
       "families": [
         {
-          "familyId": "summary.whole",
-          "construct": "Select a concise summary of the full passage",
-          "authenticStemPattern": "Which statement best summarizes the passage?",
+          "familyId": "summary.section",
+          "construct": "Summarize a paragraph or section without losing its function",
+          "authenticStemPattern": "Which choice best summarizes paragraphs __–__?",
           "distractorLogic": [
-            "too_broad",
-            "too_narrow",
-            "detail_heavy"
+            "copies_one_detail",
+            "adds_new_claim",
+            "misses_key_relationship"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -225,13 +225,13 @@
           ]
         },
         {
-          "familyId": "summary.section",
-          "construct": "Summarize a paragraph or section without losing its function",
-          "authenticStemPattern": "Which choice best summarizes paragraphs __–__?",
+          "familyId": "summary.whole",
+          "construct": "Select a concise summary of the full passage",
+          "authenticStemPattern": "Which statement best summarizes the passage?",
           "distractorLogic": [
-            "copies_one_detail",
-            "adds_new_claim",
-            "misses_key_relationship"
+            "too_broad",
+            "too_narrow",
+            "detail_heavy"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -266,13 +266,13 @@
       "authoringNote": "Keep literary practice meaningful but proportional.",
       "families": [
         {
-          "familyId": "theme.identify",
-          "construct": "Identify a theme developed through literary events and choices",
-          "authenticStemPattern": "Which statement best expresses a theme of the passage?",
+          "familyId": "theme.evidence",
+          "construct": "Identify the element that most strongly develops a theme",
+          "authenticStemPattern": "Which detail most strongly supports the theme that ___?",
           "distractorLogic": [
-            "plot_summary",
-            "topic_not_theme",
-            "overgeneralization"
+            "interesting_but_unrelated",
+            "literal_event_only",
+            "evidence_for_other_theme"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -283,13 +283,13 @@
           ]
         },
         {
-          "familyId": "theme.evidence",
-          "construct": "Identify the element that most strongly develops a theme",
-          "authenticStemPattern": "Which detail most strongly supports the theme that ___?",
+          "familyId": "theme.identify",
+          "construct": "Identify a theme developed through literary events and choices",
+          "authenticStemPattern": "Which statement best expresses a theme of the passage?",
           "distractorLogic": [
-            "interesting_but_unrelated",
-            "literal_event_only",
-            "evidence_for_other_theme"
+            "plot_summary",
+            "topic_not_theme",
+            "overgeneralization"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -325,13 +325,13 @@
       "authoringNote": "Sequence events, steps, or ideas.",
       "families": [
         {
-          "familyId": "sequence.order",
-          "construct": "Order events, ideas, or procedural steps from the text",
-          "authenticStemPattern": "Which event occurs immediately after ___?",
+          "familyId": "sequence.logic",
+          "construct": "Identify the step or event required before another can happen",
+          "authenticStemPattern": "Which event must occur before ___?",
           "distractorLogic": [
-            "earlier_event",
-            "later_event",
-            "not_in_sequence"
+            "chronologically_near_but_not_required",
+            "effect_not_cause",
+            "unrelated_step"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -342,13 +342,13 @@
           ]
         },
         {
-          "familyId": "sequence.logic",
-          "construct": "Identify the step or event required before another can happen",
-          "authenticStemPattern": "Which event must occur before ___?",
+          "familyId": "sequence.order",
+          "construct": "Order events, ideas, or procedural steps from the text",
+          "authenticStemPattern": "Which event occurs immediately after ___?",
           "distractorLogic": [
-            "chronologically_near_but_not_required",
-            "effect_not_cause",
-            "unrelated_step"
+            "earlier_event",
+            "later_event",
+            "not_in_sequence"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -444,13 +444,13 @@
       "authoringNote": "Compare people, ideas, events, or positions inside a text.",
       "families": [
         {
-          "familyId": "compare.similarity",
-          "construct": "Identify an important similarity between two people, events, or ideas",
-          "authenticStemPattern": "How are ___ and ___ similar?",
+          "familyId": "compare.difference",
+          "construct": "Identify a meaningful contrast and its significance",
+          "authenticStemPattern": "What is one important difference between ___ and ___?",
           "distractorLogic": [
-            "difference_not_similarity",
-            "surface_similarity",
-            "unsupported_similarity"
+            "shared_trait",
+            "minor_irrelevant_difference",
+            "reversed_positions"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -461,13 +461,13 @@
           ]
         },
         {
-          "familyId": "compare.difference",
-          "construct": "Identify a meaningful contrast and its significance",
-          "authenticStemPattern": "What is one important difference between ___ and ___?",
+          "familyId": "compare.similarity",
+          "construct": "Identify an important similarity between two people, events, or ideas",
+          "authenticStemPattern": "How are ___ and ___ similar?",
           "distractorLogic": [
-            "shared_trait",
-            "minor_irrelevant_difference",
-            "reversed_positions"
+            "difference_not_similarity",
+            "surface_similarity",
+            "unsupported_similarity"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -624,13 +624,13 @@
       "authoringNote": "Analyze how details, context, people, and events shape meaning.",
       "families": [
         {
-          "familyId": "relationship.significance",
-          "construct": "Analyze how one event/person/idea affects another",
-          "authenticStemPattern": "How does ___ affect ___ in the passage?",
+          "familyId": "context.shapes_meaning",
+          "construct": "Analyze how setting or context shapes meaning or development",
+          "authenticStemPattern": "How does the setting/context contribute to ___?",
           "distractorLogic": [
-            "sequence_without_effect",
-            "unrelated_connection",
-            "reversed_relationship"
+            "descriptive_detail_only",
+            "unsupported_symbolism",
+            "context_with_no_effect"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -641,13 +641,13 @@
           ]
         },
         {
-          "familyId": "context.shapes_meaning",
-          "construct": "Analyze how setting or context shapes meaning or development",
-          "authenticStemPattern": "How does the setting/context contribute to ___?",
+          "familyId": "relationship.significance",
+          "construct": "Analyze how one event/person/idea affects another",
+          "authenticStemPattern": "How does ___ affect ___ in the passage?",
           "distractorLogic": [
-            "descriptive_detail_only",
-            "unsupported_symbolism",
-            "context_with_no_effect"
+            "sequence_without_effect",
+            "unrelated_connection",
+            "reversed_relationship"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -682,13 +682,13 @@
       "authoringNote": "Context meaning, including multiple-meaning words.",
       "families": [
         {
-          "familyId": "context.word_meaning",
-          "construct": "Determine the meaning of a word from its sentence and surrounding context",
-          "authenticStemPattern": "What does ___ most nearly mean as used in paragraph __?",
+          "familyId": "context.phrase_meaning",
+          "construct": "Interpret a phrase or expression in context",
+          "authenticStemPattern": "What does the phrase ___ suggest in this passage?",
           "distractorLogic": [
-            "common_definition_wrong_context",
-            "same_part_of_speech_wrong_sense",
-            "opposite_meaning"
+            "literal_only",
+            "overinterpretation",
+            "unrelated_connotation"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -699,13 +699,13 @@
           ]
         },
         {
-          "familyId": "context.phrase_meaning",
-          "construct": "Interpret a phrase or expression in context",
-          "authenticStemPattern": "What does the phrase ___ suggest in this passage?",
+          "familyId": "context.word_meaning",
+          "construct": "Determine the meaning of a word from its sentence and surrounding context",
+          "authenticStemPattern": "What does ___ most nearly mean as used in paragraph __?",
           "distractorLogic": [
-            "literal_only",
-            "overinterpretation",
-            "unrelated_connotation"
+            "common_definition_wrong_context",
+            "same_part_of_speech_wrong_sense",
+            "opposite_meaning"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -799,13 +799,13 @@
       "authoringNote": "Interpret effect rather than just name the device.",
       "families": [
         {
-          "familyId": "figurative.interpret",
-          "construct": "Interpret figurative language in context",
-          "authenticStemPattern": "What does the comparison/phrase ___ mean in the passage?",
+          "familyId": "figurative.effect",
+          "construct": "Explain what figurative language contributes to meaning or mood",
+          "authenticStemPattern": "What is the effect of the phrase ___?",
           "distractorLogic": [
-            "literal_reading",
-            "device_name_only",
-            "unrelated_symbolism"
+            "identifies_device_not_effect",
+            "generic_emphasis",
+            "unsupported_theme"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -816,13 +816,13 @@
           ]
         },
         {
-          "familyId": "figurative.effect",
-          "construct": "Explain what figurative language contributes to meaning or mood",
-          "authenticStemPattern": "What is the effect of the phrase ___?",
+          "familyId": "figurative.interpret",
+          "construct": "Interpret figurative language in context",
+          "authenticStemPattern": "What does the comparison/phrase ___ mean in the passage?",
           "distractorLogic": [
-            "identifies_device_not_effect",
-            "generic_emphasis",
-            "unsupported_theme"
+            "literal_reading",
+            "device_name_only",
+            "unrelated_symbolism"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -858,13 +858,13 @@
       "authoringNote": "Tie tone to exact word choice.",
       "families": [
         {
-          "familyId": "tone.identify",
-          "construct": "Identify tone from several textual cues",
-          "authenticStemPattern": "Which word best describes the author’s tone toward ___?",
+          "familyId": "tone.evidence",
+          "construct": "Select the word/phrase that best supports a tone judgment",
+          "authenticStemPattern": "Which phrase most clearly contributes to the ___ tone?",
           "distractorLogic": [
-            "topic_not_tone",
-            "extreme_tone",
-            "tone_from_one_word_only"
+            "neutral_detail",
+            "evidence_for_different_tone",
+            "content_not_wording"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -875,13 +875,13 @@
           ]
         },
         {
-          "familyId": "tone.evidence",
-          "construct": "Select the word/phrase that best supports a tone judgment",
-          "authenticStemPattern": "Which phrase most clearly contributes to the ___ tone?",
+          "familyId": "tone.identify",
+          "construct": "Identify tone from several textual cues",
+          "authenticStemPattern": "Which word best describes the author’s tone toward ___?",
           "distractorLogic": [
-            "neutral_detail",
-            "evidence_for_different_tone",
-            "content_not_wording"
+            "topic_not_tone",
+            "extreme_tone",
+            "tone_from_one_word_only"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -917,13 +917,13 @@
       "authoringNote": "Ask how replacing wording changes meaning, emphasis, or tone.",
       "families": [
         {
-          "familyId": "wordchoice.impact",
-          "construct": "Explain how a specific word choice shapes meaning or emphasis",
-          "authenticStemPattern": "Why does the author use the word ___ in paragraph __?",
+          "familyId": "wordchoice.compare",
+          "construct": "Compare the effect of alternate wording",
+          "authenticStemPattern": "How would the meaning or tone change if ___ were replaced with ___?",
           "distractorLogic": [
-            "dictionary_definition_only",
-            "purpose_too_broad",
-            "effect_not_supported"
+            "no_meaningful_change",
+            "changes_fact",
+            "opposite_effect"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -934,13 +934,13 @@
           ]
         },
         {
-          "familyId": "wordchoice.compare",
-          "construct": "Compare the effect of alternate wording",
-          "authenticStemPattern": "How would the meaning or tone change if ___ were replaced with ___?",
+          "familyId": "wordchoice.impact",
+          "construct": "Explain how a specific word choice shapes meaning or emphasis",
+          "authenticStemPattern": "Why does the author use the word ___ in paragraph __?",
           "distractorLogic": [
-            "no_meaningful_change",
-            "changes_fact",
-            "opposite_effect"
+            "dictionary_definition_only",
+            "purpose_too_broad",
+            "effect_not_supported"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1034,13 +1034,13 @@
       "authoringNote": "Structure as meaning: cause/effect, problem/solution, claim/evidence, etc.",
       "families": [
         {
-          "familyId": "structure.identify",
-          "construct": "Identify the organization used across a text or section",
-          "authenticStemPattern": "How is the information in the passage mainly organized?",
+          "familyId": "structure.effect",
+          "construct": "Analyze why a chosen structure helps develop meaning",
+          "authenticStemPattern": "How does the organization of paragraphs __–__ help the author develop the idea that ___?",
           "distractorLogic": [
-            "local_structure_only",
-            "topic_sequence_not_structure",
-            "mixed_but_minor_pattern"
+            "summarizes_not_analyzes",
+            "wrong_relationship",
+            "unsupported_effect"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1051,13 +1051,13 @@
           ]
         },
         {
-          "familyId": "structure.effect",
-          "construct": "Analyze why a chosen structure helps develop meaning",
-          "authenticStemPattern": "How does the organization of paragraphs __–__ help the author develop the idea that ___?",
+          "familyId": "structure.identify",
+          "construct": "Identify the organization used across a text or section",
+          "authenticStemPattern": "How is the information in the passage mainly organized?",
           "distractorLogic": [
-            "summarizes_not_analyzes",
-            "wrong_relationship",
-            "unsupported_effect"
+            "local_structure_only",
+            "topic_sequence_not_structure",
+            "mixed_but_minor_pattern"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1092,13 +1092,13 @@
       "authoringNote": "Explain relationship signaled, not just identify the word.",
       "families": [
         {
-          "familyId": "transition.relationship",
-          "construct": "Identify the logical relationship signaled by a transition",
-          "authenticStemPattern": "What relationship does the word/phrase ___ signal?",
+          "familyId": "transition.best_fit",
+          "construct": "Choose a transition that preserves logic and clarity",
+          "authenticStemPattern": "Which transition best connects these ideas?",
           "distractorLogic": [
-            "sequence_for_contrast",
-            "cause_for_example",
-            "addition_for_result"
+            "grammatical_but_wrong_logic",
+            "redundant_transition",
+            "opposite_relationship"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1109,13 +1109,13 @@
           ]
         },
         {
-          "familyId": "transition.best_fit",
-          "construct": "Choose a transition that preserves logic and clarity",
-          "authenticStemPattern": "Which transition best connects these ideas?",
+          "familyId": "transition.relationship",
+          "construct": "Identify the logical relationship signaled by a transition",
+          "authenticStemPattern": "What relationship does the word/phrase ___ signal?",
           "distractorLogic": [
-            "grammatical_but_wrong_logic",
-            "redundant_transition",
-            "opposite_relationship"
+            "sequence_for_contrast",
+            "cause_for_example",
+            "addition_for_result"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1151,13 +1151,13 @@
       "authoringNote": "Include explicit and implicit purpose.",
       "families": [
         {
-          "familyId": "purpose.primary",
-          "construct": "Identify the author’s primary purpose",
-          "authenticStemPattern": "What is the author’s primary purpose in the passage?",
+          "familyId": "purpose.detail",
+          "construct": "Explain the purpose of including a particular example/detail",
+          "authenticStemPattern": "Why does the author include ___?",
           "distractorLogic": [
-            "topic_summary",
-            "secondary_purpose",
-            "reader_effect_not_purpose"
+            "restate_detail",
+            "purpose_of_other_section",
+            "unsupported_persuasion"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1168,13 +1168,13 @@
           ]
         },
         {
-          "familyId": "purpose.detail",
-          "construct": "Explain the purpose of including a particular example/detail",
-          "authenticStemPattern": "Why does the author include ___?",
+          "familyId": "purpose.primary",
+          "construct": "Identify the author’s primary purpose",
+          "authenticStemPattern": "What is the author’s primary purpose in the passage?",
           "distractorLogic": [
-            "restate_detail",
-            "purpose_of_other_section",
-            "unsupported_persuasion"
+            "topic_summary",
+            "secondary_purpose",
+            "reader_effect_not_purpose"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1268,13 +1268,13 @@
       "authoringNote": "Focus on what the technique achieves.",
       "families": [
         {
-          "familyId": "rhetorical.technique.function",
-          "construct": "Analyze what a rhetorical move accomplishes",
-          "authenticStemPattern": "Why does the author use ___ (example/question/repetition/comparison)?",
+          "familyId": "rhetorical.technique.argument",
+          "construct": "Analyze how a rhetorical choice advances an argument",
+          "authenticStemPattern": "How does the use of ___ strengthen the author’s argument?",
           "distractorLogic": [
-            "names_technique_only",
-            "generic_emphasis",
-            "effect_not_in_text"
+            "adds_style_not_reasoning",
+            "unsupported_emotional_effect",
+            "repeats_claim"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1285,13 +1285,13 @@
           ]
         },
         {
-          "familyId": "rhetorical.technique.argument",
-          "construct": "Analyze how a rhetorical choice advances an argument",
-          "authenticStemPattern": "How does the use of ___ strengthen the author’s argument?",
+          "familyId": "rhetorical.technique.function",
+          "construct": "Analyze what a rhetorical move accomplishes",
+          "authenticStemPattern": "Why does the author use ___ (example/question/repetition/comparison)?",
           "distractorLogic": [
-            "adds_style_not_reasoning",
-            "unsupported_emotional_effect",
-            "repeats_claim"
+            "names_technique_only",
+            "generic_emphasis",
+            "effect_not_in_text"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1442,13 +1442,13 @@
       "authoringNote": "Current evidence-matching family gives two transfer items.",
       "families": [
         {
-          "familyId": "evidence.strongest",
-          "construct": "Choose the strongest evidence for a specific claim",
-          "authenticStemPattern": "Which detail best supports the claim that ___?",
+          "familyId": "evidence.identify_role",
+          "construct": "Identify which statement functions as evidence rather than claim or reasoning",
+          "authenticStemPattern": "Which sentence provides evidence for the author’s claim?",
           "distractorLogic": [
-            "related_not_direct",
-            "background_fact",
-            "evidence_for_other_claim"
+            "claim_itself",
+            "reason_without_evidence",
+            "counterclaim"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1459,13 +1459,13 @@
           ]
         },
         {
-          "familyId": "evidence.identify_role",
-          "construct": "Identify which statement functions as evidence rather than claim or reasoning",
-          "authenticStemPattern": "Which sentence provides evidence for the author’s claim?",
+          "familyId": "evidence.strongest",
+          "construct": "Choose the strongest evidence for a specific claim",
+          "authenticStemPattern": "Which detail best supports the claim that ___?",
           "distractorLogic": [
-            "claim_itself",
-            "reason_without_evidence",
-            "counterclaim"
+            "related_not_direct",
+            "background_fact",
+            "evidence_for_other_claim"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1558,13 +1558,13 @@
       "authoringNote": "Not just whether evidence relates—whether it is enough.",
       "families": [
         {
-          "familyId": "sufficiency.evaluate",
-          "construct": "Judge whether the amount/quality of evidence is enough",
-          "authenticStemPattern": "Why is the evidence in paragraph __ insufficient to support the claim?",
+          "familyId": "sufficiency.add",
+          "construct": "Choose additional evidence that would most strengthen an under-supported claim",
+          "authenticStemPattern": "Which additional evidence would most strengthen the argument?",
           "distractorLogic": [
-            "relevance_confused_with_amount",
-            "claim_restated_as_evidence",
-            "evidence_is_sufficient"
+            "more_of_same_weak_evidence",
+            "irrelevant_authority",
+            "strong_targeted_evidence"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1575,13 +1575,13 @@
           ]
         },
         {
-          "familyId": "sufficiency.add",
-          "construct": "Choose additional evidence that would most strengthen an under-supported claim",
-          "authenticStemPattern": "Which additional evidence would most strengthen the argument?",
+          "familyId": "sufficiency.evaluate",
+          "construct": "Judge whether the amount/quality of evidence is enough",
+          "authenticStemPattern": "Why is the evidence in paragraph __ insufficient to support the claim?",
           "distractorLogic": [
-            "more_of_same_weak_evidence",
-            "irrelevant_authority",
-            "strong_targeted_evidence"
+            "relevance_confused_with_amount",
+            "claim_restated_as_evidence",
+            "evidence_is_sufficient"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1616,13 +1616,13 @@
       "authoringNote": "Separate evidence-backed claims from assertions.",
       "families": [
         {
-          "familyId": "support.status",
-          "construct": "Identify which claim is unsupported by the text’s evidence",
-          "authenticStemPattern": "Which claim is least supported by the evidence provided?",
+          "familyId": "support.match",
+          "construct": "Match claims to supporting evidence and spot the gap",
+          "authenticStemPattern": "Which claim lacks a supporting detail?",
           "distractorLogic": [
-            "well_supported_claim",
-            "fact_not_claim",
-            "claim_with_indirect_support"
+            "claim_with_evidence",
+            "background_statement",
+            "counterclaim_with_response"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1633,13 +1633,13 @@
           ]
         },
         {
-          "familyId": "support.match",
-          "construct": "Match claims to supporting evidence and spot the gap",
-          "authenticStemPattern": "Which claim lacks a supporting detail?",
+          "familyId": "support.status",
+          "construct": "Identify which claim is unsupported by the text’s evidence",
+          "authenticStemPattern": "Which claim is least supported by the evidence provided?",
           "distractorLogic": [
-            "claim_with_evidence",
-            "background_statement",
-            "counterclaim_with_response"
+            "well_supported_claim",
+            "fact_not_claim",
+            "claim_with_indirect_support"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1674,13 +1674,13 @@
       "authoringNote": "Use real reasoning failures in context; avoid trivia-style fallacy naming.",
       "families": [
         {
-          "familyId": "reasoning.flaw",
-          "construct": "Identify a flaw in reasoning without requiring fallacy-name memorization",
-          "authenticStemPattern": "What is the main weakness in the author’s reasoning?",
+          "familyId": "reasoning.challenge",
+          "construct": "Choose the observation that most directly challenges the reasoning",
+          "authenticStemPattern": "Which statement, if true, would most weaken the argument?",
           "distractorLogic": [
-            "disagrees_with_conclusion",
-            "evidence_quantity_only",
-            "accurate_specific_flaw"
+            "irrelevant_fact",
+            "minor_exception",
+            "attacks_key_link"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1691,13 +1691,13 @@
           ]
         },
         {
-          "familyId": "reasoning.challenge",
-          "construct": "Choose the observation that most directly challenges the reasoning",
-          "authenticStemPattern": "Which statement, if true, would most weaken the argument?",
+          "familyId": "reasoning.flaw",
+          "construct": "Identify a flaw in reasoning without requiring fallacy-name memorization",
+          "authenticStemPattern": "What is the main weakness in the author’s reasoning?",
           "distractorLogic": [
-            "irrelevant_fact",
-            "minor_exception",
-            "attacks_key_link"
+            "disagrees_with_conclusion",
+            "evidence_quantity_only",
+            "accurate_specific_flaw"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1790,13 +1790,13 @@
       "authoringNote": "Chee Skool extension: useful for evaluating evidence, but not a named standalone GED target.",
       "families": [
         {
-          "familyId": "credibility.source_fit",
-          "construct": "Choose the source best positioned to provide evidence for a claim",
-          "authenticStemPattern": "Which source would provide the most credible evidence about ___?",
+          "familyId": "credibility.limit",
+          "construct": "Identify a limitation that affects how much weight to give a source",
+          "authenticStemPattern": "Which fact would most reduce the credibility of this source for the claim?",
           "distractorLogic": [
-            "relevant_but_unqualified",
-            "biased_personal_account",
-            "expert_or_primary_source"
+            "irrelevant_biography",
+            "material_conflict_or_method_issue",
+            "minor_style_issue"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1807,13 +1807,13 @@
           ]
         },
         {
-          "familyId": "credibility.limit",
-          "construct": "Identify a limitation that affects how much weight to give a source",
-          "authenticStemPattern": "Which fact would most reduce the credibility of this source for the claim?",
+          "familyId": "credibility.source_fit",
+          "construct": "Choose the source best positioned to provide evidence for a claim",
+          "authenticStemPattern": "Which source would provide the most credible evidence about ___?",
           "distractorLogic": [
-            "irrelevant_biography",
-            "material_conflict_or_method_issue",
-            "minor_style_issue"
+            "relevant_but_unqualified",
+            "biased_personal_account",
+            "expert_or_primary_source"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1908,13 +1908,13 @@
       "authoringNote": "Compare perspective, tone, style, structure, purpose, or impact.",
       "families": [
         {
-          "familyId": "twotext.compare",
-          "construct": "Compare how two texts treat the same topic",
-          "authenticStemPattern": "How do the two authors differ in their treatment of ___?",
+          "familyId": "twotext.agreement",
+          "construct": "Identify a point of agreement across texts",
+          "authenticStemPattern": "Which idea is supported by both texts?",
           "distractorLogic": [
-            "difference_in_topic_not_treatment",
-            "reversed_authors",
-            "shared_point"
+            "only_text_a",
+            "only_text_b",
+            "unsupported_synthesis"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1925,13 +1925,13 @@
           ]
         },
         {
-          "familyId": "twotext.agreement",
-          "construct": "Identify a point of agreement across texts",
-          "authenticStemPattern": "Which idea is supported by both texts?",
+          "familyId": "twotext.compare",
+          "construct": "Compare how two texts treat the same topic",
+          "authenticStemPattern": "How do the two authors differ in their treatment of ___?",
           "distractorLogic": [
-            "only_text_a",
-            "only_text_b",
-            "unsupported_synthesis"
+            "difference_in_topic_not_treatment",
+            "reversed_authors",
+            "shared_point"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1966,13 +1966,13 @@
       "authoringNote": "Direct bridge into Extended Response argument evaluation.",
       "families": [
         {
-          "familyId": "opposing.arguments.support",
-          "construct": "Compare which argument is better supported and why",
-          "authenticStemPattern": "Which argument is better supported by evidence?",
+          "familyId": "opposing.arguments.evidence",
+          "construct": "Compare the types/strengths of evidence used by opposing writers",
+          "authenticStemPattern": "How does the evidence in Text A differ from the evidence in Text B?",
           "distractorLogic": [
-            "personal_agreement",
-            "more_confident_tone",
-            "quality_of_evidence"
+            "reversed_texts",
+            "topic_difference",
+            "unsupported_quality_judgment"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -1983,13 +1983,13 @@
           ]
         },
         {
-          "familyId": "opposing.arguments.evidence",
-          "construct": "Compare the types/strengths of evidence used by opposing writers",
-          "authenticStemPattern": "How does the evidence in Text A differ from the evidence in Text B?",
+          "familyId": "opposing.arguments.support",
+          "construct": "Compare which argument is better supported and why",
+          "authenticStemPattern": "Which argument is better supported by evidence?",
           "distractorLogic": [
-            "reversed_texts",
-            "topic_difference",
-            "unsupported_quality_judgment"
+            "personal_agreement",
+            "more_confident_tone",
+            "quality_of_evidence"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2024,13 +2024,13 @@
       "authoringNote": "Determine whether data supports, extends, clarifies, or contradicts text.",
       "families": [
         {
-          "familyId": "textdata.support",
-          "construct": "Determine whether a chart/table/graphic supports or challenges a claim in text",
-          "authenticStemPattern": "How does the information in the chart relate to the claim in paragraph __?",
+          "familyId": "textdata.integrate",
+          "construct": "Use both prose and data to answer a question",
+          "authenticStemPattern": "Which conclusion is best supported by both the passage and the graph?",
           "distractorLogic": [
-            "repeats_without_relation",
-            "misreads_axis",
-            "correct_support_or_challenge"
+            "text_only",
+            "graph_only",
+            "unsupported_combination"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2041,13 +2041,13 @@
           ]
         },
         {
-          "familyId": "textdata.integrate",
-          "construct": "Use both prose and data to answer a question",
-          "authenticStemPattern": "Which conclusion is best supported by both the passage and the graph?",
+          "familyId": "textdata.support",
+          "construct": "Determine whether a chart/table/graphic supports or challenges a claim in text",
+          "authenticStemPattern": "How does the information in the chart relate to the claim in paragraph __?",
           "distractorLogic": [
-            "text_only",
-            "graph_only",
-            "unsupported_combination"
+            "repeats_without_relation",
+            "misreads_axis",
+            "correct_support_or_challenge"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2369,13 +2369,13 @@
       "authoringNote": "Edit non-standard or informal usage.",
       "families": [
         {
-          "familyId": "edit.standard_usage",
-          "construct": "Replace nonstandard/informal usage with standard English suited to the document",
-          "authenticStemPattern": "Which revision is most appropriate for this sentence?",
+          "familyId": "edit.register",
+          "construct": "Choose wording appropriate to workplace/community context",
+          "authenticStemPattern": "Which phrase best fits the tone and purpose of the document?",
           "distractorLogic": [
-            "too_informal",
-            "changes_meaning",
-            "awkward_overformal"
+            "slang",
+            "needlessly_formal",
+            "imprecise_usage"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2386,13 +2386,13 @@
           ]
         },
         {
-          "familyId": "edit.register",
-          "construct": "Choose wording appropriate to workplace/community context",
-          "authenticStemPattern": "Which phrase best fits the tone and purpose of the document?",
+          "familyId": "edit.standard_usage",
+          "construct": "Replace nonstandard/informal usage with standard English suited to the document",
+          "authenticStemPattern": "Which revision is most appropriate for this sentence?",
           "distractorLogic": [
-            "slang",
-            "needlessly_formal",
-            "imprecise_usage"
+            "too_informal",
+            "changes_meaning",
+            "awkward_overformal"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2483,13 +2483,13 @@
       "authoringNote": "Important for sentence clarity and ER writing.",
       "families": [
         {
-          "familyId": "edit.parallelism",
-          "construct": "Make items in a series or comparison parallel",
-          "authenticStemPattern": "Which revision uses parallel structure correctly?",
+          "familyId": "edit.clause_relation",
+          "construct": "Use coordination/subordination to express the intended relationship",
+          "authenticStemPattern": "Which revision best shows the relationship between the ideas?",
           "distractorLogic": [
-            "mixed_forms",
-            "meaning_shift",
-            "agreement_only"
+            "comma_splice",
+            "wrong_subordination",
+            "equal_weight_when_not_equal"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2500,13 +2500,13 @@
           ]
         },
         {
-          "familyId": "edit.clause_relation",
-          "construct": "Use coordination/subordination to express the intended relationship",
-          "authenticStemPattern": "Which revision best shows the relationship between the ideas?",
+          "familyId": "edit.parallelism",
+          "construct": "Make items in a series or comparison parallel",
+          "authenticStemPattern": "Which revision uses parallel structure correctly?",
           "distractorLogic": [
-            "comma_splice",
-            "wrong_subordination",
-            "equal_weight_when_not_equal"
+            "mixed_forms",
+            "meaning_shift",
+            "agreement_only"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2597,13 +2597,13 @@
       "authoringNote": "Prefer clear, concise revisions.",
       "families": [
         {
-          "familyId": "edit.conciseness",
-          "construct": "Remove unnecessary words while preserving meaning",
-          "authenticStemPattern": "Which revision is the most concise without changing the meaning?",
+          "familyId": "edit.awkwardness",
+          "construct": "Revise an awkward sentence for clarity",
+          "authenticStemPattern": "Which revision is clearest and most effective?",
           "distractorLogic": [
-            "still_wordy",
-            "too_short_changes_meaning",
-            "awkward_construction"
+            "grammatical_but_clunky",
+            "changes_claim",
+            "introduces_error"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2614,13 +2614,13 @@
           ]
         },
         {
-          "familyId": "edit.awkwardness",
-          "construct": "Revise an awkward sentence for clarity",
-          "authenticStemPattern": "Which revision is clearest and most effective?",
+          "familyId": "edit.conciseness",
+          "construct": "Remove unnecessary words while preserving meaning",
+          "authenticStemPattern": "Which revision is the most concise without changing the meaning?",
           "distractorLogic": [
-            "grammatical_but_clunky",
-            "changes_claim",
-            "introduces_error"
+            "still_wordy",
+            "too_short_changes_meaning",
+            "awkward_construction"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2654,13 +2654,13 @@
       "authoringNote": "Transition choice in real passage context.",
       "families": [
         {
-          "familyId": "edit.transition.logic",
-          "construct": "Select a transition that accurately expresses the relationship between ideas",
-          "authenticStemPattern": "Which transition best completes the paragraph?",
+          "familyId": "edit.transition.flow",
+          "construct": "Revise transitions to improve paragraph coherence",
+          "authenticStemPattern": "Which revision best connects the two sentences?",
           "distractorLogic": [
-            "wrong_logic",
-            "redundant",
-            "too_strong"
+            "repetition_only",
+            "logical_mismatch",
+            "correct_relationship"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2671,13 +2671,13 @@
           ]
         },
         {
-          "familyId": "edit.transition.flow",
-          "construct": "Revise transitions to improve paragraph coherence",
-          "authenticStemPattern": "Which revision best connects the two sentences?",
+          "familyId": "edit.transition.logic",
+          "construct": "Select a transition that accurately expresses the relationship between ideas",
+          "authenticStemPattern": "Which transition best completes the paragraph?",
           "distractorLogic": [
-            "repetition_only",
-            "logical_mismatch",
-            "correct_relationship"
+            "wrong_logic",
+            "redundant",
+            "too_strong"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2768,13 +2768,13 @@
       "authoringNote": "Sentence boundaries in context.",
       "families": [
         {
-          "familyId": "edit.sentence_boundary",
-          "construct": "Repair a fragment, run-on, or fused sentence",
-          "authenticStemPattern": "Which revision correctly joins or separates the ideas?",
+          "familyId": "edit.fragment.integration",
+          "construct": "Integrate a dependent fragment into a complete sentence",
+          "authenticStemPattern": "Which revision makes the sentence complete and clear?",
           "distractorLogic": [
-            "comma_splice",
-            "fragment",
-            "fused_sentence"
+            "still_fragment",
+            "run_on",
+            "meaning_shift"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2785,13 +2785,13 @@
           ]
         },
         {
-          "familyId": "edit.fragment.integration",
-          "construct": "Integrate a dependent fragment into a complete sentence",
-          "authenticStemPattern": "Which revision makes the sentence complete and clear?",
+          "familyId": "edit.sentence_boundary",
+          "construct": "Repair a fragment, run-on, or fused sentence",
+          "authenticStemPattern": "Which revision correctly joins or separates the ideas?",
           "distractorLogic": [
-            "still_fragment",
-            "run_on",
-            "meaning_shift"
+            "comma_splice",
+            "fragment",
+            "fused_sentence"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2899,6 +2899,23 @@
           ]
         },
         {
+          "familyId": "edit.punctuation.colon",
+          "construct": "Use a colon correctly to introduce a list, explanation, or example after a complete clause",
+          "authenticStemPattern": "Which punctuation correctly introduces the information that follows?",
+          "distractorLogic": [
+            "comma_instead_of_colon",
+            "colon_after_incomplete_clause",
+            "missing_required_punctuation"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
           "familyId": "edit.punctuation.nonessential",
           "construct": "Punctuate appositives/nonessential elements or series correctly",
           "authenticStemPattern": "Which revision uses punctuation correctly?",
@@ -2941,13 +2958,13 @@
       "authoringNote": "Identify what the prompt asks the writer to evaluate.",
       "families": [
         {
-          "familyId": "er.task.read",
-          "construct": "Identify what an ER prompt asks the writer to evaluate",
-          "authenticStemPattern": "What must the response do to fully answer this prompt?",
+          "familyId": "er.task.constraints",
+          "construct": "Identify source-use and comparison requirements",
+          "authenticStemPattern": "Which plan best matches the task?",
           "distractorLogic": [
-            "argue_personal_opinion",
-            "summarize_only",
-            "evaluate_support_with_evidence"
+            "uses_one_source_only",
+            "chooses_side_without_analysis",
+            "evaluates_both_arguments"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -2958,13 +2975,13 @@
           ]
         },
         {
-          "familyId": "er.task.constraints",
-          "construct": "Identify source-use and comparison requirements",
-          "authenticStemPattern": "Which plan best matches the task?",
+          "familyId": "er.task.read",
+          "construct": "Identify what an ER prompt asks the writer to evaluate",
+          "authenticStemPattern": "What must the response do to fully answer this prompt?",
           "distractorLogic": [
-            "uses_one_source_only",
-            "chooses_side_without_analysis",
-            "evaluates_both_arguments"
+            "argue_personal_opinion",
+            "summarize_only",
+            "evaluate_support_with_evidence"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3060,13 +3077,13 @@
       "authoringNote": "Choose based on support, not personal agreement.",
       "families": [
         {
-          "familyId": "er.position.support",
-          "construct": "Choose the better-supported position based on source quality",
-          "authenticStemPattern": "Which position is better supported, and for what reason?",
+          "familyId": "er.position.compare",
+          "construct": "Compare source support before choosing a position",
+          "authenticStemPattern": "Which evaluation best explains why one argument is stronger?",
           "distractorLogic": [
-            "personal_agreement",
-            "more_emotional_language",
-            "stronger_relevant_evidence"
+            "counts_evidence_only",
+            "tone_based",
+            "quality_and_reasoning"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3077,13 +3094,13 @@
           ]
         },
         {
-          "familyId": "er.position.compare",
-          "construct": "Compare source support before choosing a position",
-          "authenticStemPattern": "Which evaluation best explains why one argument is stronger?",
+          "familyId": "er.position.support",
+          "construct": "Choose the better-supported position based on source quality",
+          "authenticStemPattern": "Which position is better supported, and for what reason?",
           "distractorLogic": [
-            "counts_evidence_only",
-            "tone_based",
-            "quality_and_reasoning"
+            "personal_agreement",
+            "more_emotional_language",
+            "stronger_relevant_evidence"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3178,6 +3195,23 @@
       "authoringNote": "Use relevant, specific evidence from source texts.",
       "families": [
         {
+          "familyId": "er.evidence.balance",
+          "construct": "Choose evidence from both sources when comparison requires it",
+          "authenticStemPattern": "Which evidence plan best supports the evaluation?",
+          "distractorLogic": [
+            "one_source_only",
+            "quotes_without_purpose",
+            "balanced_targeted_evidence"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "topic/context",
+            "surface wording",
+            "evidence location",
+            "distractor realization"
+          ]
+        },
+        {
           "familyId": "er.evidence.select",
           "construct": "Select specific source evidence that directly supports the thesis",
           "authenticStemPattern": "Which evidence would best support this paragraph’s claim?",
@@ -3195,20 +3229,20 @@
           ]
         },
         {
-          "familyId": "er.evidence.balance",
-          "construct": "Choose evidence from both sources when comparison requires it",
-          "authenticStemPattern": "Which evidence plan best supports the evaluation?",
+          "familyId": "er.evidence.use",
+          "construct": "Use a specific source detail in a short argument and connect it to the claim",
+          "authenticStemPattern": "Write a short response that supports a position with a specific source detail.",
           "distractorLogic": [
-            "one_source_only",
-            "quotes_without_purpose",
-            "balanced_targeted_evidence"
+            "evidence_without_connection",
+            "general_reference_only",
+            "specific_evidence_connected_to_claim"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
             "topic/context",
             "surface wording",
-            "evidence location",
-            "distractor realization"
+            "source choice",
+            "reasoning connection"
           ]
         }
       ]
@@ -3237,13 +3271,13 @@
       "authoringNote": "Explain why evidence strengthens or weakens an argument.",
       "families": [
         {
-          "familyId": "er.evidence.explain",
-          "construct": "Explain why selected evidence strengthens/weakens an argument",
-          "authenticStemPattern": "Which explanation best connects the evidence to the thesis?",
+          "familyId": "er.evidence.compare",
+          "construct": "Compare the significance of evidence from two sources",
+          "authenticStemPattern": "Which analysis best explains why Text A’s evidence is stronger?",
           "distractorLogic": [
-            "repeats_evidence",
-            "personal_comment",
-            "analysis_of_why_it_matters"
+            "quantity_only",
+            "topic_restated",
+            "relevance_quality_reasoning"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3254,13 +3288,13 @@
           ]
         },
         {
-          "familyId": "er.evidence.compare",
-          "construct": "Compare the significance of evidence from two sources",
-          "authenticStemPattern": "Which analysis best explains why Text A’s evidence is stronger?",
+          "familyId": "er.evidence.explain",
+          "construct": "Explain why selected evidence strengthens/weakens an argument",
+          "authenticStemPattern": "Which explanation best connects the evidence to the thesis?",
           "distractorLogic": [
-            "quantity_only",
-            "topic_restated",
-            "relevance_quality_reasoning"
+            "repeats_evidence",
+            "personal_comment",
+            "analysis_of_why_it_matters"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3474,13 +3508,13 @@
       "authoringNote": "Remove repetition; improve order, clarity, and transitions.",
       "families": [
         {
-          "familyId": "er.revise.focus",
-          "construct": "Remove repetition/off-topic material to maintain focus",
-          "authenticStemPattern": "Which revision makes the paragraph more focused?",
+          "familyId": "er.revise.clarity",
+          "construct": "Reorder or revise sentences for clearer progression",
+          "authenticStemPattern": "Which revision improves clarity and organization most?",
           "distractorLogic": [
-            "keeps_repetition",
-            "cuts_needed_evidence",
-            "removes_offtopic"
+            "surface_edit_only",
+            "logical_reorder",
+            "changes_argument"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3491,13 +3525,13 @@
           ]
         },
         {
-          "familyId": "er.revise.clarity",
-          "construct": "Reorder or revise sentences for clearer progression",
-          "authenticStemPattern": "Which revision improves clarity and organization most?",
+          "familyId": "er.revise.focus",
+          "construct": "Remove repetition/off-topic material to maintain focus",
+          "authenticStemPattern": "Which revision makes the paragraph more focused?",
           "distractorLogic": [
-            "surface_edit_only",
-            "logical_reorder",
-            "changes_argument"
+            "keeps_repetition",
+            "cuts_needed_evidence",
+            "removes_offtopic"
           ],
           "minimumTransferVariants": 3,
           "variationAxes": [
@@ -3607,6 +3641,23 @@
           ]
         },
         {
+          "familyId": "er.full.process",
+          "construct": "Apply the complete Extended Response process from source reading and planning through drafting and review",
+          "authenticStemPattern": "Which action or sequence best supports a complete Extended Response attempt?",
+          "distractorLogic": [
+            "skips_source_analysis",
+            "treats_self_review_as_official_score",
+            "complete_process_step"
+          ],
+          "minimumTransferVariants": 3,
+          "variationAxes": [
+            "timed/untimed mode",
+            "planning decision",
+            "drafting stage",
+            "review decision"
+          ]
+        },
+        {
           "familyId": "er.full.transfer",
           "construct": "Write a second full ER on a different topic/source type to test transfer",
           "authenticStemPattern": "Evaluate which argument is better supported and explain your reasoning with source evidence.",
@@ -3623,5 +3674,65 @@
         }
       ]
     }
-  ]
+  ],
+  "aliases": {
+    "arguments.assumption.identify": "assumption.required",
+    "arguments.claim.identify": "claim.main",
+    "arguments.claim.support": "support.status",
+    "arguments.counterargument.response": "counterargument.response",
+    "arguments.credibility.evaluate": "credibility.source_fit",
+    "arguments.evidence.locate": "evidence.strongest",
+    "arguments.evidence.relevance": "relevance.directness",
+    "arguments.evidence.sufficiency": "sufficiency.evaluate",
+    "arguments.formats.data": "textdata.support",
+    "arguments.formats.integrate": "format.contribution",
+    "arguments.reasoning.validity": "reasoning.flaw",
+    "arguments.sources.compare": "twotext.compare",
+    "arguments.sources.opposing": "opposing.arguments.support",
+    "arguments.sources.synthesize": "synthesis.conclusion",
+    "arguments.structure.analyze": "argument.chain",
+    "cause.effect": "cause.direct",
+    "causeeffect.cause": "cause.direct",
+    "causeeffect.effect": "cause.direct",
+    "compare.similarity_difference": "compare.difference",
+    "conclusion.generalize": "conclusion.synthesize",
+    "context.word.meaning": "context.word_meaning",
+    "inference.from.details": "inference.character_or_event",
+    "language.boundaries.fragments_runons": "edit.sentence_boundary",
+    "language.capitalization.mechanics": "edit.capitalization",
+    "language.connections.coordination_subordination": "edit.clause_relation",
+    "language.grammar.complex_agreement": "edit.agreement.complex",
+    "language.grammar.subject_verb_agreement": "edit.sva.basic",
+    "language.modifiers.dangling": "edit.modifier.placement",
+    "language.modifiers.limiting_words": "edit.modifier.placement",
+    "language.modifiers.placement": "edit.modifier.placement",
+    "language.parallelism.structure": "edit.parallelism",
+    "language.possessives.apostrophes": "edit.possessive",
+    "language.pronoun.grammar": "edit.pronoun.agreement",
+    "language.pronoun.reference": "edit.pronoun.agreement",
+    "language.punctuation.clauses": "edit.punctuation.clauses",
+    "language.punctuation.colon": "edit.punctuation.colon",
+    "language.style.concision": "edit.conciseness",
+    "language.transitions.logic": "edit.transition.logic",
+    "language.usage.confused_words": "edit.confused_words",
+    "language.usage.standard_usage": "edit.standard_usage",
+    "reading.evidence.explicit_reason": "evidence.strongest",
+    "reading.inference.character_state": "inference.character_or_event",
+    "theme.central": "theme.identify",
+    "theme.infer": "theme.identify",
+    "writing.argument.short_response": "er.evidence.use",
+    "writing.er.analysis": "er.evidence.explain",
+    "writing.er.development": "er.develop.analysis",
+    "writing.er.edit": "er.edit.conventions",
+    "writing.er.evidence": "er.evidence.select",
+    "writing.er.full_process": "er.full.process",
+    "writing.er.map": "er.map.claims",
+    "writing.er.organization": "er.organize.plan",
+    "writing.er.reasoning": "er.reasoning.analyze",
+    "writing.er.revision": "er.revise.focus",
+    "writing.er.stronger": "er.position.support",
+    "writing.er.task": "er.task.read",
+    "writing.er.thesis": "er.thesis.evaluative",
+    "writing.evidence.relevance": "relevance.directness"
+  }
 }

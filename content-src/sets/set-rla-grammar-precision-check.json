@@ -5,7 +5,7 @@
     "id": "grammar-transfer-practice",
     "file": "grammar-transfer-practice.json"
   },
-  "title": "Grammar Transfer \u2014 Precision Check",
+  "title": "Grammar Transfer — Precision Check",
   "description": "Use fresh sentences to retest agreement and commonly confused words.",
   "subject": "rla",
   "category": "language_conventions",
@@ -126,7 +126,11 @@
       "L1.1"
     ],
     "contentKind": "editing_practice",
-    "learningObjective": "Apply subject\u2013verb agreement and commonly confused word rules in new sentences.",
-    "topicLabel": "Grammar & Usage"
+    "learningObjective": "Apply subject–verb agreement and commonly confused word rules in new sentences.",
+    "topicLabel": "Grammar & Usage",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }
