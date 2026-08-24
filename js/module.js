@@ -76,8 +76,8 @@ function learningStageFor(q) {
 }
 
 function guidedHelperText(q) {
-  if (q.type === "select_text") return `Choose one highlighted ${q.interaction?.selectionMode || "text area"} in the passage.`;
-  if (q.type === "drag_sort") return "Choose where the current statement belongs.";
+  if (q.type === "select_text") return `Choose one ${q.interaction?.selectionMode || "text area"} in the passage.`;
+  if (q.type === "drag_sort") return q.interaction?.presentation === "choice_rows" ? "Choose one option for each statement." : "Move each card into the matching group.";
   if (q.type === "drag_order") return "Put the ideas in the order the question asks for.";
   return "";
 }
@@ -569,7 +569,7 @@ function renderPassageForQuestion(q, selectedAnswer = "") {
   const guidedSelect = isGuidedLearningModule() && q.type === "select_text";
   if (selectionBar) {
     selectionBar.hidden = !guidedSelect;
-    selectionBar.textContent = guidedSelect ? `Selection mode · Choose one highlighted ${q.interaction?.selectionMode || "text area"}` : "";
+    selectionBar.textContent = guidedSelect ? `SELECT ONE ${(q.interaction?.selectionMode || "text area").toUpperCase()}` : "";
   }
 
   if (q.type !== "select_text" || !window.QuestionInteractions) {
@@ -805,8 +805,8 @@ function renderGuidedSelectTextAnswer(q, container, savedAnswer, draftAnswer) {
 function guidedZonePresentation(zone) {
   const label = String(zone?.label || 'Category');
   const known = {
-    'Helps explain the main point': ['Helps explain the main point', 'Matters to the whole passage'],
-    'Mostly a supporting detail': ['Supporting context', 'Useful detail, not the big point'],
+    'Helps explain the main point': ['Helps main point', 'Matters to the whole passage'],
+    'Mostly a supporting detail': ['Supporting detail', 'Useful, but specific'],
     'Too narrow / just a detail': ['Too narrow', 'Just one detail'],
     'Too broad or unsupported': ['Too broad', 'Adds or overstates'],
     'Fits the whole passage': ['Fits the passage', 'Covers the whole text'],
@@ -815,34 +815,46 @@ function guidedZonePresentation(zone) {
   return { title, note };
 }
 
-function renderGuidedDragSortAnswer(q, container, savedAnswer, draftAnswer) {
+function renderGuidedChoiceRows(q, container, savedAnswer, draftAnswer) {
   const I = window.QuestionInteractions;
   const assignments = I.parseSort(savedAnswer || draftAnswer || '');
   const zones = q.interaction?.zones || [];
   const items = q.interaction?.items || [];
-  let cursor = Math.max(0, items.findIndex((item) => !assignments[item.id]));
-  if (cursor < 0) cursor = items.length;
+  const correctAssignments = I.parseSort(q.correct || '');
+
+  const zoneButtons = (item) => zones.map((zone) => {
+    const label = guidedZonePresentation(zone);
+    const active = assignments[item.id] === zone.id;
+    const isCorrect = Boolean(savedAnswer) && correctAssignments[item.id] === zone.id;
+    const isWrong = Boolean(savedAnswer) && active && !isCorrect;
+    const classes = [
+      'guided-choice-option',
+      active ? 'active' : '',
+      isCorrect ? 'correct-answer' : '',
+      isWrong ? 'incorrect-answer' : '',
+    ].filter(Boolean).join(' ');
+    return `<button type="button" class="${classes}" data-choice-zone="${escapeAttr(zone.id)}" aria-pressed="${active ? 'true' : 'false'}" aria-label="${escapeAttr(`${label.title}: ${item.text}`)}" ${savedAnswer ? 'disabled' : ''}>${escapeHtml(label.title)}</button>`;
+  }).join('');
 
   container.innerHTML = `
-    <section class="guided-sort" aria-label="Classification activity">
-      <div class="guided-sort-progress" data-guided-sort-progress aria-live="polite"></div>
-      <div data-guided-sort-content></div>
-      <div class="guided-sort-nav">
-        <button type="button" class="guided-sort-back" data-guided-sort-back>Back</button>
-      </div>
+    <section class="guided-choice-grid" aria-label="Classification activity">
+      ${items.map((item) => `
+        <article class="guided-choice-row" data-classify-item="${escapeAttr(item.id)}" data-zone-count="${zones.length}">
+          <p class="guided-choice-statement">${escapeHtml(item.text)}</p>
+          <div class="guided-choice-options" role="group" aria-label="Choose a category for this statement">
+            ${zoneButtons(item)}
+          </div>
+        </article>`).join('')}
     </section>
     <div class="guided-primary-action">
       <button class="btn interaction-check" type="button" ${I.hasCompleteAnswer(q, I.serializeSort(assignments)) && !savedAnswer ? '' : 'disabled'}>Check answer</button>
     </div>
     <div class="interaction-live-status" aria-live="polite"></div>`;
 
-  const content = container.querySelector('[data-guided-sort-content]');
-  const progress = container.querySelector('[data-guided-sort-progress]');
-  const back = container.querySelector('[data-guided-sort-back]');
   const check = container.querySelector('.interaction-check');
   const live = container.querySelector('.interaction-live-status');
 
-  const persist = () => {
+  const updateCompleteness = () => {
     const canonical = I.serializeSort(assignments);
     if (!savedAnswer) saveInteractionDraft(q.id, canonical);
     const complete = I.hasCompleteAnswer(q, canonical);
@@ -851,80 +863,50 @@ function renderGuidedDragSortAnswer(q, container, savedAnswer, draftAnswer) {
     return complete;
   };
 
-  const nextUnassignedFrom = (start) => {
-    for (let i = start; i < items.length; i += 1) if (!assignments[items[i].id]) return i;
-    for (let i = 0; i < start; i += 1) if (!assignments[items[i].id]) return i;
-    return items.length;
-  };
-
-  const draw = () => {
-    const assignedCount = items.filter((item) => Boolean(assignments[item.id])).length;
-    const complete = assignedCount === items.length;
-    if (progress) progress.textContent = complete ? `${items.length} of ${items.length} sorted` : `${Math.min(cursor + 1, items.length)} of ${items.length}`;
-    if (back) back.disabled = cursor <= 0 && assignedCount === 0;
-
-    if (complete && cursor >= items.length) {
-      content.innerHTML = `<div class="guided-sort-complete"><strong>${items.length} of ${items.length} sorted</strong><p>Review a card with Back, or check your answer.</p></div>`;
-      return;
-    }
-
-    if (cursor >= items.length) cursor = items.length - 1;
-    const item = items[cursor];
-    const currentZone = assignments[item.id] || '';
-    content.innerHTML = `
-      <article class="guided-sort-card" draggable="${savedAnswer ? 'false' : 'true'}" aria-grabbed="false" data-guided-sort-card data-item-id="${escapeAttr(item.id)}">
-        <p>${escapeHtml(item.text)}</p>
-      </article>
-      <div class="guided-sort-categories" aria-label="Choose a category">
-        ${zones.map((zone) => {
-          const label = guidedZonePresentation(zone);
-          const active = currentZone === zone.id;
-          return `<button type="button" class="guided-sort-category${active ? ' active' : ''}" data-sort-destination="${escapeAttr(zone.id)}" aria-pressed="${active ? 'true' : 'false'}" ${savedAnswer ? 'disabled' : ''}><strong>${escapeHtml(label.title)}</strong><span>${escapeHtml(label.note)}</span></button>`;
-        }).join('')}
-      </div>`;
-
-    if (!savedAnswer) {
-      const card = content.querySelector('[data-guided-sort-card]');
-      const choose = (zoneId) => {
-        assignments[item.id] = zoneId;
-        persist();
-        if (live) live.textContent = `Classified ${cursor + 1} of ${items.length}.`;
-        const next = nextUnassignedFrom(cursor + 1);
-        cursor = next;
-        draw();
-      };
-      content.querySelectorAll('[data-sort-destination]').forEach((button) => {
-        button.addEventListener('click', () => choose(button.dataset.sortDestination));
-        button.addEventListener('dragover', (event) => event.preventDefault());
-        button.addEventListener('drop', (event) => {
-          event.preventDefault();
-          choose(button.dataset.sortDestination);
+  if (!savedAnswer) {
+    container.querySelectorAll('[data-classify-item]').forEach((row) => {
+      const itemId = row.dataset.classifyItem;
+      row.querySelectorAll('[data-choice-zone]').forEach((button) => {
+        button.addEventListener('click', () => {
+          assignments[itemId] = button.dataset.choiceZone;
+          row.querySelectorAll('[data-choice-zone]').forEach((peer) => {
+            const active = peer === button;
+            peer.classList.toggle('active', active);
+            peer.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          const complete = updateCompleteness();
+          if (live) live.textContent = complete ? 'All statements answered. Check your answers when ready.' : 'Choice saved.';
         });
       });
-      card?.addEventListener('dragstart', (event) => {
-        card.setAttribute('aria-grabbed', 'true');
-        event.dataTransfer?.setData('text/plain', item.id);
-        if (event.dataTransfer) event.dataTransfer.effectAllowed = 'move';
+    });
+    check?.addEventListener('click', () => {
+      const finalized = submitInteractiveAnswer(q, I.serializeSort(assignments), container);
+      if (!finalized) return;
+      const correct = I.parseSort(q.correct || '');
+      container.querySelectorAll('[data-classify-item]').forEach((row) => {
+        const itemId = row.dataset.classifyItem;
+        row.querySelectorAll('[data-choice-zone]').forEach((button) => {
+          const zoneId = button.dataset.choiceZone;
+          const selected = assignments[itemId] === zoneId;
+          button.classList.toggle('correct-answer', correct[itemId] === zoneId);
+          button.classList.toggle('incorrect-answer', selected && correct[itemId] !== zoneId);
+        });
       });
-      card?.addEventListener('dragend', () => card.setAttribute('aria-grabbed', 'false'));
-    }
-  };
-
-  back?.addEventListener('click', () => {
-    if (cursor >= items.length) cursor = items.length - 1;
-    else cursor = Math.max(0, cursor - 1);
-    draw();
-  });
-
-  if (!savedAnswer) {
-    check?.addEventListener('click', () => submitInteractiveAnswer(q, I.serializeSort(assignments), container));
-    persist();
+    });
+    updateCompleteness();
   } else {
     showQuestionExplanation(q, savedAnswer);
     finalizeConfidenceUi(q.id);
     lockInteractionControls(q, container);
   }
-  draw();
+}
+
+function renderGuidedDragSortAnswer(q, container, savedAnswer, draftAnswer) {
+  if (q.interaction?.presentation === 'choice_rows') {
+    renderGuidedChoiceRows(q, container, savedAnswer, draftAnswer);
+    return;
+  }
+  renderDragSortAnswer(q, container, savedAnswer, draftAnswer);
 }
 
 function renderSelectTextAnswer(q, container, savedAnswer, draftAnswer) {

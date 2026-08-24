@@ -370,9 +370,28 @@
               "items": {
                 "$ref": "#/$defs/dragZone"
               }
+            },
+            "presentation": {
+              "type": "string",
+              "enum": [
+                "choice_rows",
+                "drag_board"
+              ]
             }
           },
           "additionalProperties": false
+        },
+        "learningStage": {
+          "type": "string",
+          "enum": [
+            "guided",
+            "apply",
+            "independent"
+          ]
+        },
+        "hint": {
+          "type": "string",
+          "minLength": 1
         }
       },
       "additionalProperties": false

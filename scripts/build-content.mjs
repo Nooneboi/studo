@@ -61,6 +61,8 @@ function compileQuestion(q, skill, passage) {
     },
   };
   if (q.estimatedSeconds != null) out.time = q.estimatedSeconds;
+  if (q.learningStage) out.learningStage = q.learningStage;
+  if (q.hint) out.hint = q.hint;
   if (q.options) out.options = q.options.map((o) => ({
     id: o.id,
     text: o.text,

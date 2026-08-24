@@ -1,7 +1,7 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-23  
-**Current release:** `0.7.0-alpha.6`  
+**Current release:** `0.7.0-alpha.7`  
 **Current stage:** Interaction Engines V1 candidate; real-browser/device QA remains before new interactions enter randomized Mock forms
 
 This is the current high-level source of truth for the Chee Skool RLA alpha candidate. Older Studo phase reports remain project history and should not override this status.
@@ -132,7 +132,7 @@ Alpha-hardening status:
 - generated learner modules: **96**
 - total generated objective/component questions: **708**
 - learner PDFs: **159 / 159 Chee Skool-branded**
-- release metadata/service-worker version: **0.7.0-alpha.6**
+- release metadata/service-worker version: **0.7.0-alpha.7**
 - learner-only deployment builder: **implemented**
 - GitHub Pages workflow: **learner-only artifact via GitHub Actions**
 - internal authoring pages: **kept in source repo, excluded from public `dist/`**
@@ -210,3 +210,12 @@ Automated hardening is not the final release gate. Before enabling a public alph
 > **Real-browser Release Candidate QA → small learner alpha**
 
 Do not start another large content or visual redesign batch unless the real-browser QA or learner pilot identifies a concrete need.
+
+## Guided Learning Workspace V2 — 2026-08-24
+
+- Current release: **0.7.0-alpha.7**.
+- Main Idea active-learning Practice now uses the Guided Learning Workspace V2 renderer.
+- Guided drag-sort is single-card classification instead of a full board.
+- Select Text has explicit passage selection mode.
+- Confidence/hints/feedback use progressive disclosure.
+- Main Idea remains `mock-excluded` until real-device QA.

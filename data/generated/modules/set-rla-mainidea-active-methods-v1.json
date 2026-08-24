@@ -68,7 +68,8 @@
             "id": "context",
             "label": "Mostly a supporting detail"
           }
-        ]
+        ],
+        "presentation": "choice_rows"
       }
     },
     {
@@ -242,7 +243,8 @@
             "id": "fit",
             "label": "Fits the whole passage"
           }
-        ]
+        ],
+        "presentation": "choice_rows"
       }
     },
     {
@@ -380,6 +382,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-23T18:01:10.728Z"
+    "compiledAt": "2026-08-24T03:38:38.745Z"
   }
 }

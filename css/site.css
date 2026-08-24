@@ -8072,7 +8072,7 @@ body.test-body {
   font-size: .84rem;
 }
 .guided-task-panel .q-prompt {
-  max-width: 30ch;
+  max-width: 44ch;
   margin: 0 0 8px;
   font-size: calc(1.24rem * var(--text-scale));
   line-height: 1.38;
@@ -8142,102 +8142,78 @@ body.test-body {
   margin-top: 8px;
 }
 
-/* Single-card classification replaces the Alpha 6 board in guided Practice. */
-.guided-sort {
+/* Guided classification: visible statement rows + small, explicit choices.
+   Main Idea uses the lowest-complexity interaction that expresses the task. */
+.guided-choice-grid {
   display: grid;
   gap: 12px;
-  max-width: 620px;
+  width: 100%;
+  max-width: 760px;
   margin-top: 10px;
 }
-.guided-sort-progress {
-  color: var(--color-ink-faint);
-  font-size: .78rem;
-  font-weight: 650;
-  font-variant-numeric: tabular-nums;
-}
-.guided-sort-card {
-  min-height: 112px;
-  display: flex;
+.guided-choice-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(220px, 1fr);
   align-items: center;
-  padding: 20px 22px;
-  border: 1px solid var(--color-line-strong, var(--color-line));
-  border-radius: 12px;
-  background: var(--color-surface);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-ink) 6%, transparent);
+  gap: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-line) 72%, transparent);
 }
-.guided-sort-card[aria-grabbed="true"] {
-  border-color: var(--color-primary);
+.guided-choice-row:first-child {
+  border-top: 1px solid color-mix(in srgb, var(--color-line) 72%, transparent);
 }
-.guided-sort-card p {
+.guided-choice-statement {
   margin: 0;
   color: var(--color-ink);
-  font-size: calc(.98rem * var(--text-scale));
-  line-height: 1.55;
+  font-size: calc(.94rem * var(--text-scale));
+  line-height: 1.5;
 }
-.guided-sort-categories {
+.guided-choice-options {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
+  grid-template-columns: repeat(var(--guided-choice-count, 2), minmax(0, 1fr));
+  gap: 7px;
 }
-.guided-sort-category {
-  width: 100%;
-  min-height: 58px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 2px;
-  padding: 11px 14px;
-  border: 1px solid var(--color-line);
-  border-radius: 10px;
-  background: transparent;
-  color: var(--color-ink);
-  text-align: left;
+.guided-choice-row[data-zone-count="3"] .guided-choice-options {
+  --guided-choice-count: 3;
+}
+.guided-choice-option {
+  min-height: 46px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-line-strong, var(--color-line));
+  border-radius: 9px;
+  background: var(--color-surface);
+  color: var(--color-ink-soft);
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 650;
+  line-height: 1.25;
+  text-align: center;
   cursor: pointer;
 }
-.guided-sort-category strong {
-  font-size: .88rem;
-  font-weight: 700;
-}
-.guided-sort-category span {
-  color: var(--color-ink-soft);
-  font-size: .76rem;
-  line-height: 1.35;
-}
-.guided-sort-category:hover:not(:disabled),
-.guided-sort-category:focus-visible {
+.guided-choice-option:hover:not(:disabled),
+.guided-choice-option:focus-visible {
   border-color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary-soft) 45%, transparent);
-}
-.guided-sort-category.active {
-  border-color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary-soft) 68%, transparent);
-}
-.guided-sort-nav {
-  min-height: 34px;
-}
-.guided-sort-back {
-  min-height: 34px;
-  padding: 0 4px;
-  border: 0;
-  background: transparent;
+  background: color-mix(in srgb, var(--color-primary-soft) 44%, var(--color-surface));
   color: var(--color-primary-dark);
-  font: inherit;
-  font-size: .8rem;
-  font-weight: 650;
 }
-.guided-sort-back:disabled {
-  visibility: hidden;
+.guided-choice-option.active {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary-soft) 72%, var(--color-surface));
+  color: var(--color-primary-dark);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-primary) 28%, transparent);
 }
-.guided-sort-complete {
-  padding: 18px 0 6px;
+.guided-choice-option.correct-answer {
+  border-color: color-mix(in srgb, var(--color-success) 62%, var(--color-line));
+  background: color-mix(in srgb, var(--color-success-soft) 70%, var(--color-surface));
+  color: var(--color-success);
 }
-.guided-sort-complete strong {
-  display: block;
-  color: var(--color-ink);
-  font-size: 1rem;
+.guided-choice-option.incorrect-answer {
+  border-color: color-mix(in srgb, var(--color-alert) 62%, var(--color-line));
+  background: color-mix(in srgb, var(--color-alert-soft) 68%, var(--color-surface));
+  color: var(--color-alert);
 }
-.guided-sort-complete p {
-  margin: 4px 0 0;
-  font-size: .84rem;
+.guided-choice-option:disabled {
+  cursor: default;
 }
 
 /* Select-text questions put the passage itself into a clear answer state. */
@@ -8248,17 +8224,20 @@ body.test-body {
   border-radius: 8px;
   background: color-mix(in srgb, var(--color-primary-soft) 55%, var(--color-surface));
   color: var(--color-primary-dark);
-  font-size: .78rem;
-  font-weight: 650;
+  font-size: .74rem;
+  font-weight: 750;
+  letter-spacing: .055em;
   line-height: 1.4;
 }
 .selection-mode-bar[hidden] { display: none !important; }
 .select-text-target.selection-candidate {
-  padding: 1px 3px;
-  margin: -1px -3px;
-  border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
-  background: color-mix(in srgb, var(--color-primary) 9%, var(--color-surface));
-  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--color-primary) 55%, transparent);
+  padding: 2px 4px;
+  margin: -2px -4px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 38%, var(--color-line));
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--color-primary) 11%, var(--color-surface));
+  box-shadow: none;
+  cursor: pointer;
 }
 .select-text-target.selection-candidate:hover,
 .select-text-target.selection-candidate:focus-visible {
@@ -8269,8 +8248,8 @@ body.test-body {
 }
 .select-text-target.selection-candidate.selected {
   border-color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary) 20%, var(--color-surface));
-  box-shadow: inset 0 -2px 0 var(--color-primary), 0 0 0 2px color-mix(in srgb, var(--color-primary) 15%, transparent);
+  background: color-mix(in srgb, var(--color-primary) 22%, var(--color-surface));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 18%, transparent);
 }
 .guided-selection-status {
   min-height: 28px;
@@ -8317,12 +8296,20 @@ body.test-body {
   .guided-helper {
     margin-bottom: 14px;
   }
-  .guided-sort-card {
-    min-height: 96px;
-    padding: 16px;
+  .guided-choice-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px 0;
   }
-  .guided-sort-category {
-    min-height: 56px;
+  .guided-choice-options {
+    grid-template-columns: 1fr 1fr;
+  }
+  .guided-choice-row[data-zone-count="3"] .guided-choice-options {
+    grid-template-columns: 1fr;
+  }
+  .guided-choice-option {
+    min-height: 48px;
+    font-size: .82rem;
   }
   .guided-primary-action .interaction-check {
     width: 100%;
