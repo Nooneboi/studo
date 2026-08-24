@@ -19,8 +19,12 @@
         "language_conventions": 1
       }
     },
-    "er": { "seconds": 2700 },
-    "break": { "seconds": 600 },
+    "er": {
+      "seconds": 2700
+    },
+    "break": {
+      "seconds": 600
+    },
     "part3": {
       "seconds": 3900,
       "questionCount": 32,
@@ -41,11 +45,22 @@
     }
   },
   "selection": {
-    "readingMixedKinds": ["passage_practice", "quiz"],
-    "argumentsMixedKinds": ["argument_practice"],
-    "languageMixedKinds": ["editing_practice"],
+    "readingMixedKinds": [
+      "passage_practice",
+      "quiz"
+    ],
+    "argumentsMixedKinds": [
+      "argument_practice"
+    ],
+    "languageMixedKinds": [
+      "editing_practice"
+    ],
     "focusedKind": "skill_drill",
-    "readingTextTypeTarget": { "informational": 0.75, "literary": 0.25 },
-    "staminaMinimumWords": 600
+    "readingTextTypeTarget": {
+      "informational": 0.75,
+      "literary": 0.25
+    },
+    "staminaMinimumWords": 600,
+    "allowPracticeFallback": true
   }
 }

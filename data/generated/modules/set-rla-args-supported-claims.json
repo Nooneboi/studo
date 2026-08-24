@@ -20,7 +20,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "A supported claim stays inside the population, time period, and outcome actually measured.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Watch for words such as every, always, proves, and will when the evidence is limited.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "A measured difference is not automatically proof that the tested policy caused it.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "When evidence is limited, descriptive conclusions are often safer than causal or universal ones.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Ask whether the evidence includes the group and outcome named in the claim.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Revise unsupported claims by narrowing scope and lowering certainty to what the evidence can actually carry.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Qualifiers such as may, suggests, limited, and not enough to show are clues to evidence-calibrated reasoning.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "To identify overreach, compare the exact limits of the evidence with the exact breadth of the claim.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -452,7 +452,11 @@
       "unitId": "supported-unsupported-claims",
       "contentKind": "skill_drill",
       "learningObjective": "Separate evidence-backed statements from causal, universal, or otherwise unsupported claims.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-supported-schedule",
@@ -467,6 +471,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.956Z"
+    "compiledAt": "2026-08-24T13:31:18.336Z"
   }
 }

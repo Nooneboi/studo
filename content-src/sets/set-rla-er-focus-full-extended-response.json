@@ -420,6 +420,10 @@
     "unitId": "full-extended-response",
     "contentKind": "skill_drill",
     "learningObjective": "Plan the Full Response",
-    "topicLabel": "Extended Response"
+    "topicLabel": "Extended Response",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

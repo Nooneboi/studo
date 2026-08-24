@@ -367,7 +367,11 @@
         "mock-excluded"
       ],
       "learningObjective": "Build central-idea reasoning from identifying important support to evaluating scope and selecting a qualified whole-passage idea.",
-      "topicLabel": "Main idea / central idea"
+      "topicLabel": "Main idea / central idea",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-mainidea-active-shade-route",
@@ -382,6 +386,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.964Z"
+    "compiledAt": "2026-08-24T13:31:18.352Z"
   }
 }

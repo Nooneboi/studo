@@ -20,7 +20,7 @@
         "label": "Source credibility"
       },
       "rule": "Judge credibility by expertise, access, method, and fit with the specific claim - not by whether you like the conclusion.",
-      "familyId": "credibility.source_fit",
+      "familyId": "arguments.credibility.evaluate",
       "metadata": {
         "skillId": "R5.9",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Source credibility"
       },
       "rule": "A source can be highly credible for one claim and irrelevant to another.",
-      "familyId": "credibility.source_fit",
+      "familyId": "arguments.credibility.evaluate",
       "metadata": {
         "skillId": "R5.9",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Counterargument & response"
       },
       "rule": "Look for three parts: acknowledgment, limitation of the opposing evidence, and a direct response.",
-      "familyId": "counterargument.response",
+      "familyId": "arguments.counterargument.response",
       "metadata": {
         "skillId": "R5.10",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Source credibility"
       },
       "rule": "Choose the source whose experience, method, and measured outcome best match the claim.",
-      "familyId": "credibility.source_fit",
+      "familyId": "arguments.credibility.evaluate",
       "metadata": {
         "skillId": "R5.9",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Source credibility"
       },
       "rule": "Credible comparison evidence can support a prediction without turning it into certainty.",
-      "familyId": "credibility.limit",
+      "familyId": "arguments.credibility.evaluate",
       "metadata": {
         "skillId": "R5.9",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Counterargument & response"
       },
       "rule": "A counterargument response is stronger when it answers the actual objection rather than attacking a weaker version.",
-      "familyId": "counterargument.response",
+      "familyId": "arguments.counterargument.response",
       "metadata": {
         "skillId": "R5.10",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Source credibility"
       },
       "rule": "Avoid all-or-nothing credibility judgments; ask how well the source is positioned for this particular claim.",
-      "familyId": "credibility.limit",
+      "familyId": "arguments.credibility.evaluate",
       "metadata": {
         "skillId": "R5.9",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Counterargument & response"
       },
       "rule": "Strong argumentation often improves when a writer addresses the best opposing point and shows how it can be tested.",
-      "familyId": "counterargument.response",
+      "familyId": "arguments.counterargument.response",
       "metadata": {
         "skillId": "R5.10",
         "secondarySkillIds": [],
@@ -454,7 +454,11 @@
       "unitId": "credibility-counterarguments",
       "contentKind": "skill_drill",
       "learningObjective": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-credibility-foodwaste",
@@ -469,6 +473,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.953Z"
+    "compiledAt": "2026-08-24T13:31:18.331Z"
   }
 }

@@ -136,6 +136,10 @@
     ],
     "contentKind": "passage_practice",
     "learningObjective": "Make an inference from passage details and choose the sentence that directly supports it.",
-    "topicLabel": "Inference & Evidence"
+    "topicLabel": "Inference & Evidence",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

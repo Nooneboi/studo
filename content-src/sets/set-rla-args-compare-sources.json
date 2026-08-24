@@ -422,6 +422,10 @@
     "unitId": "compare-sources-arguments",
     "contentKind": "skill_drill",
     "learningObjective": "Compare two sources on the same issue, identifying agreements, disagreements, evidence emphasis, and opposing arguments.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

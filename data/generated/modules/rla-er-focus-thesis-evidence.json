@@ -20,7 +20,7 @@
         "label": "Build evaluative thesis"
       },
       "rule": "Name the stronger source and the main reasons it is stronger.",
-      "familyId": "er.thesis.evaluative",
+      "familyId": "writing.er.thesis",
       "metadata": {
         "skillId": "W1.4",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Select specific source evidence"
       },
       "rule": "Match the evidence to the exact claim you are making.",
-      "familyId": "er.evidence.select",
+      "familyId": "writing.er.evidence",
       "metadata": {
         "skillId": "W1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Select specific source evidence"
       },
       "rule": "Do not use one statistic to prove a different claim.",
-      "familyId": "er.evidence.select",
+      "familyId": "writing.er.evidence",
       "metadata": {
         "skillId": "W1.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Build evaluative thesis"
       },
       "rule": "Preserve qualifiers and scope.",
-      "familyId": "er.thesis.evaluative",
+      "familyId": "writing.er.thesis",
       "metadata": {
         "skillId": "W1.4",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Select specific source evidence"
       },
       "rule": "Use the most claim-matched evidence first.",
-      "familyId": "er.evidence.select",
+      "familyId": "writing.er.evidence",
       "metadata": {
         "skillId": "W1.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Build evaluative thesis"
       },
       "rule": "Strong ER writing can be decisive without becoming absolute.",
-      "familyId": "er.thesis.evaluative",
+      "familyId": "writing.er.thesis",
       "metadata": {
         "skillId": "W1.4",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Select specific source evidence"
       },
       "rule": "Choose evidence that performs the job your sentence claims it performs.",
-      "familyId": "er.evidence.select",
+      "familyId": "writing.er.evidence",
       "metadata": {
         "skillId": "W1.5",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Build evaluative thesis"
       },
       "rule": "If the thesis could be written without reading the sources, revise it.",
-      "familyId": "er.thesis.evaluative",
+      "familyId": "writing.er.thesis",
       "metadata": {
         "skillId": "W1.4",
         "secondarySkillIds": [],
@@ -454,7 +454,11 @@
       "unitId": "thesis-evidence",
       "contentKind": "skill_drill",
       "learningObjective": "Build a Thesis and Choose Evidence",
-      "topicLabel": "Extended Response"
+      "topicLabel": "Extended Response",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-er-focus-thesis-evidence",
@@ -469,6 +473,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.959Z"
+    "compiledAt": "2026-08-24T13:31:18.340Z"
   }
 }

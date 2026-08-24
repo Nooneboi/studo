@@ -423,6 +423,10 @@
     "unitId": "agreement-pronouns",
     "contentKind": "skill_drill",
     "learningObjective": "Edit agreement and pronoun problems without being distracted by nearby nouns.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

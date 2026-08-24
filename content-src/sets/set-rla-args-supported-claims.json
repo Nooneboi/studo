@@ -420,6 +420,10 @@
     "unitId": "supported-unsupported-claims",
     "contentKind": "skill_drill",
     "learningObjective": "Separate evidence-backed statements from causal, universal, or otherwise unsupported claims.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

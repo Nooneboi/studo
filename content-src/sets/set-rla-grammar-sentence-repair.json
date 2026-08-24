@@ -5,7 +5,7 @@
     "id": "grammar-practice",
     "file": "grammar-practice.json"
   },
-  "title": "Grammar Edit \u2014 Sentence Repair",
+  "title": "Grammar Edit — Sentence Repair",
   "description": "Choose the edit that makes each sentence clear and grammatically correct.",
   "subject": "rla",
   "category": "language_conventions",
@@ -127,6 +127,10 @@
     ],
     "contentKind": "editing_practice",
     "learningObjective": "Choose the verb or word form that makes a sentence grammatically correct and clear.",
-    "topicLabel": "Grammar & Usage"
+    "topicLabel": "Grammar & Usage",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

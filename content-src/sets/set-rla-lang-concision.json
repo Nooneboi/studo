@@ -422,6 +422,10 @@
     "unitId": "concision-transitions",
     "contentKind": "skill_drill",
     "learningObjective": "Make sentences concise and choose transitions that match the exact logic.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

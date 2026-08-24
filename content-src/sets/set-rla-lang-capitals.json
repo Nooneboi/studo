@@ -423,6 +423,10 @@
     "unitId": "capitalization-possessives",
     "contentKind": "skill_drill",
     "learningObjective": "Edit capitalization and possessive forms according to their grammatical role.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

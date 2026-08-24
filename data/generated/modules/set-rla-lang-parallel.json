@@ -20,7 +20,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Items with the same role should use the same grammatical form.",
-      "familyId": "edit.parallelism",
+      "familyId": "language.parallelism.structure",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "With not only/but also, compare the grammatical form immediately after each half.",
-      "familyId": "edit.parallelism",
+      "familyId": "language.parallelism.structure",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Choose a connector that names the actual relationship: addition, contrast, cause, or result.",
-      "familyId": "edit.clause_relation",
+      "familyId": "language.connections.coordination_subordination",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "A clause beginning with because usually needs a complete main clause attached to it.",
-      "familyId": "edit.clause_relation",
+      "familyId": "language.connections.coordination_subordination",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "When a helping verb applies to a list, keep each listed verb in the same form.",
-      "familyId": "edit.parallelism",
+      "familyId": "language.parallelism.structure",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Match the connector to the logic, not merely to what sounds smooth.",
-      "familyId": "edit.clause_relation",
+      "familyId": "language.connections.coordination_subordination",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Parallel ideas do not need identical word counts, but they should have matching grammatical roles.",
-      "familyId": "edit.parallelism",
+      "familyId": "language.parallelism.structure",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "For two complete clauses, use a period, semicolon, or comma plus a coordinating conjunction.",
-      "familyId": "edit.clause_relation",
+      "familyId": "language.connections.coordination_subordination",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -452,7 +452,11 @@
       "unitId": "parallelism-sentence-connections",
       "contentKind": "skill_drill",
       "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-parallel",
@@ -467,6 +471,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.963Z"
+    "compiledAt": "2026-08-24T13:31:18.351Z"
   }
 }

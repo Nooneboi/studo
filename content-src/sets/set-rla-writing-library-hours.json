@@ -73,7 +73,7 @@
     {
       "id": "q2",
       "type": "extended_response",
-      "prompt": "In 3\u20135 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
+      "prompt": "In 3–5 sentences, argue for one side of the debate. Use at least one detail from the passage as evidence.",
       "primarySkillId": "W1.5",
       "secondarySkillIds": [
         "W1.9"
@@ -106,6 +106,10 @@
     ],
     "contentKind": "skill_drill",
     "learningObjective": "Choose evidence that is directly relevant to a claim and explain why it strengthens the argument.",
-    "topicLabel": "ER Evidence Drill"
+    "topicLabel": "ER Evidence Drill",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

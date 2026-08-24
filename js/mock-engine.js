@@ -40,6 +40,10 @@
     return module?.curriculum?.contentKind || "";
   }
 
+  function hasDeliveryRole(module, role) {
+    return Array.isArray(module?.curriculum?.deliveryRoles) && module.curriculum.deliveryRoles.includes(role);
+  }
+
   function isMockEligible(module) {
     return !(module?.curriculum?.practiceTags || []).includes("mock-excluded");
   }
@@ -129,7 +133,7 @@
     };
   }
 
-  function generateFullMock({ modules, prompts, blueprint, seed = Date.now() }) {
+  function generateFullMockFromPool({ modules, prompts, blueprint, seed = Date.now(), bankMode }) {
     const rng = rngFromSeed(seed);
     const validModules = (modules || []).filter(isPublishedQuestionModule);
     const usedModules = new Set();
@@ -174,6 +178,7 @@
     const attemptBlueprint = {
       version: blueprint.version,
       seed: String(seed),
+      bankMode,
       part1,
       erPromptId,
       part3,
@@ -184,7 +189,7 @@
   }
 
 
-  function generateObjectivePractice({ modules, blueprint, seed = Date.now() }) {
+  function generateObjectivePracticeFromPool({ modules, blueprint, seed = Date.now(), bankMode }) {
     const rng = rngFromSeed(seed);
     const validModules = (modules || []).filter(isPublishedQuestionModule);
     const usedModules = new Set();
@@ -213,13 +218,51 @@
     for (const [category, expected] of Object.entries(blueprint.objectivePractice.domainTargets)) {
       if (counts[category] !== expected) throw new Error(`Objective practice domain target mismatch for ${category}`);
     }
-    return { version: blueprint.version, seed: String(seed), items, selectedReadingSets: readingSets.map((m) => ({ id: m.id, textType: (m.passageMeta || m.contentMeta?.passage)?.textType || "informational", words: wordCount(m.passage) })) };
+    return { version: blueprint.version, seed: String(seed), bankMode, items, selectedReadingSets: readingSets.map((m) => ({ id: m.id, textType: (m.passageMeta || m.contentMeta?.passage)?.textType || "informational", words: wordCount(m.passage) })) };
+  }
+
+  function generateFromPreferredBank({ modules, blueprint, generate }) {
+    const sourceModules = (modules || []).filter(isPublishedQuestionModule);
+    const mockOnly = sourceModules.filter((module) => hasDeliveryRole(module, "mock"));
+    let dedicatedError = null;
+    if (mockOnly.length) {
+      try {
+        return generate(mockOnly, "mock_only");
+      } catch (error) {
+        dedicatedError = error;
+      }
+    }
+
+    if (blueprint?.selection?.allowPracticeFallback === true) {
+      const practice = sourceModules.filter((module) => hasDeliveryRole(module, "practice"));
+      if (!practice.length) throw dedicatedError || new Error("No Practice-bank modules are available for the temporary Mock fallback");
+      return generate(practice, "practice_fallback");
+    }
+
+    if (dedicatedError) throw dedicatedError;
+    throw new Error("No complete mock-only bank is available and Practice fallback is disabled");
+  }
+
+  function generateFullMock({ modules, prompts, blueprint, seed = Date.now() }) {
+    return generateFromPreferredBank({
+      modules,
+      blueprint,
+      generate: (pool, bankMode) => generateFullMockFromPool({ modules: pool, prompts, blueprint, seed, bankMode }),
+    });
+  }
+
+  function generateObjectivePractice({ modules, blueprint, seed = Date.now() }) {
+    return generateFromPreferredBank({
+      modules,
+      blueprint,
+      generate: (pool, bankMode) => generateObjectivePracticeFromPool({ modules: pool, blueprint, seed, bankMode }),
+    });
   }
 
   function createObjectiveAttempt(generated, blueprint, now = Date.now(), id) {
     const attemptId = id || `objective-${now}-${Math.random().toString(36).slice(2, 8)}`;
     return {
-      attemptId, mode: "objective", blueprintVersion: generated.version, seed: generated.seed,
+      attemptId, mode: "objective", blueprintVersion: generated.version, seed: generated.seed, bankMode: generated.bankMode || null,
       createdAt: new Date(now).toISOString(), completedAt: null, stage: "objective",
       objective: createObjectiveStage(generated.items, blueprint.objectivePractice.seconds, now), objectiveScore: null
     };
@@ -249,6 +292,7 @@
       attemptId,
       blueprintVersion: generated.version,
       seed: generated.seed,
+      bankMode: generated.bankMode || null,
       createdAt: new Date(now).toISOString(),
       completedAt: null,
       stage: "part1",
@@ -316,6 +360,7 @@
     const base = {
       attemptId: attempt.attemptId,
       blueprintVersion: attempt.blueprintVersion,
+      bankMode: attempt.bankMode || null,
       createdAt: attempt.createdAt,
       completedAt: attempt.completedAt,
       erPromptId: attempt.er?.promptId || null,

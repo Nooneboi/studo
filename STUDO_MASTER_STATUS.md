@@ -1,170 +1,239 @@
 # Chee Skool — Master Project Status
 
-**Date:** 2026-08-23  
-**Current release:** `0.7.0-alpha.7`  
-**Current stage:** Interaction Engines V1 candidate; real-browser/device QA remains before new interactions enter randomized Mock forms
+**Date:** 2026-08-24  
+**Current release:** `0.7.0-alpha.14`  
+**Current stage:** Phase 1 Supporting Details reference skill complete; Phase 2 high-priority Reading depth is next  
+**Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
-This is the current high-level source of truth for the Chee Skool RLA alpha candidate. Older Studo phase reports remain project history and should not override this status.
+This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
 
 ## Product goal
 
-Chee Skool is a calm, focused GED Reasoning Through Language Arts learning and practice site. A feature is only considered useful if it helps a learner understand, practice, review, or evaluate an RLA skill; the presence of a page or file alone is not the quality bar.
+Chee Skool is a calm, focused GED Reasoning Through Language Arts learning and practice system. A feature or content item earns a place only when it helps a learner understand, apply, strengthen, or honestly measure an RLA skill.
 
-## Current learner system
+Core learner flow:
 
-### Reading & Comprehension
+**Learn → Practice → Skill Check → Train → Mock → Progress**
 
-Baseline is complete and hardened.
+The modes do not need identical content or interactions. Each mode has a distinct job.
 
-- Core Meaning
-- Relationships & Inference
-- Words, Tone & Style
-- Structure, Purpose & POV
-- mixed Passage Practice grouped by Science, Workplace, Community & Civics, and Literary
-- 400–900 word passage safeguards
-- stamina passages
-- transfer-oriented question families
-- answer-pattern, feedback, file-reference, and passage-length QA
+## Non-negotiable product rules
 
-The five Reading transfer families that previously had only one published example now have at least three canonical variants each.
+- Do not add features because other learning sites have them.
+- Do not put every learning method in every skill.
+- Do not bulk-convert old material merely because a new interaction exists.
+- Do not make reasoning harder by making controls confusing.
+- Do not copy Main Idea's exact UI pattern into every skill; transfer the learning philosophy, not the mechanics.
+- Do not create fake Skill Checks or pretend ordinary Practice is independent assessment.
+- Do not treat Practice-bank Mock fallback as an independent readiness measure.
+- Do not reuse dedicated Skill Check questions as Mock questions.
+- Do not claim Chee Skool is official GED material, uses live GED questions, predicts an official scaled score, or guarantees pass/fail outcomes.
+- Do not copy copyrighted prep-book passages/questions into the learner bank.
+- Do not expose unfinished or duplicate material just to make the product look larger.
+- Do not hand-edit `data/generated/` as canonical content; edit `content-src/`, validate, and rebuild.
 
-### Arguments & Sources
+## Current content baseline
 
-Nine learner-facing units remain the stable baseline:
+Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
-1. Claims & Argument Structure
-2. Finding Evidence
-3. Evidence Quality
-4. Supported vs. Unsupported Claims
-5. Reasoning & Assumptions
-6. Credibility & Counterarguments
-7. Compare Sources & Arguments
-8. Text, Data & Different Formats
-9. Synthesize Across Sources
+1. Reading & Comprehension
+2. Arguments & Sources
+3. Language & Editing
+4. Extended Response
 
-`R5.4 Evidence relevance` now has at least four canonical objective questions.
+Current generated learner bank:
 
-### Language & Editing
+- **96 learner modules**
+- **711 objective/component questions**
+- **152 registered learner PDFs**
+- **152 physical PDFs in `assets/resources`**
+- **0 unregistered/orphan learner PDFs**
 
-Seven learner-facing units remain complete, with focused practice and six 350–450 word mixed editing passages.
+The old internal `sample-quiz` remains development/demo material and is no longer part of the learner catalog.
 
-### Extended Response
+## Reference-skill strategy
 
-The learner system includes:
+### Reference skill #1 — Main Idea
 
-- six learning units;
-- eight original paired-source prompts;
-- timed and untimed modes;
-- 45-minute simulation;
-- source tabs, planner, editor, autosave, and word count;
-- three-trait rubric self-review;
-- annotated models after submission;
-- revision workflow;
-- no fake automatic GED scaled score.
+Main Idea is the first complete active-learning reference skill.
 
-W1.8 Organization, W1.9 Development, W1.10 Revision, and W1.11 Editing now have at least four canonical objective questions each through an additional transfer/revision check.
+Its design principle is:
 
-### Practice discovery and Resources
+**Learn → Guided → Apply → Independent → Transfer**
 
-- Practice search uses learner-facing units where appropriate.
-- Passage Practice stays separate from focused skill pages.
-- Resources are grouped by track → domain → topic → files.
-- Individual resource-topic rows no longer use repetitive horizontal separators; main sections retain stronger visual structure.
-- Search placement is optimized for desktop and remains responsive.
-- All 159 learner PDFs are now branded Chee Skool.
+The learner difficulty should rise through reasoning demand rather than gimmicky controls. Main Idea remains a reference for quality and progression, not a template that every skill must copy mechanically.
 
+### Reference skill #2 — Supporting Details
 
-### Active-learning interaction system
+Supporting Details is now the second complete reference skill. Existing PDFs were reused rather than replaced.
 
-Interaction Engines V1 adds a shared learner-response model used by Practice and Mock-compatible rendering:
+Implemented progression:
 
-- two deliberate grammar-edit modes: whole-revision dropdown and single inline dropdown;
-- authored select-text/phrase/paragraph targets rather than guessed sentence boundaries;
-- drag-sort with explicit tap/click destination controls;
-- drag-order with Up/Down controls as a non-drag alternative;
-- canonical string answers so existing local storage, Progress, Train, and Mock recovery remain compatible;
-- a six-step Main Idea reference path that rises from supported recognition to qualified whole-passage reasoning;
-- `mock-excluded` protection for the reference active set until real-device QA is complete.
+1. Learn — existing Supporting Details Study Guide.
+2. Guided — direct support vs related/background evidence and exact-sentence selection.
+3. Apply — strongest-vs-some support and evidence-strength comparison.
+4. Independent — close evidence choices and qualified/two-part claims with no hints.
+5. Transfer — existing four-context independent drill remains available after the guided path.
+6. Skill Check later — still intentionally absent until the dedicated Skill Check phase.
 
-The Main Idea reference path uses one 483-word original informational passage and a deliberate progression: easy sort → easy evidence selection → medium central idea → medium scope/trap sorting → hard evidence selection → hard qualified central idea.
+The new 494-word original community/civics passage, **A Saturday Market Street Pilot**, is used only for the reference guided path and remains `mock-excluded`.
 
-### Progress and Train Me
+## Learning-mode ownership
 
-- objective mastery is evidence-based;
+Phase 0D introduced explicit canonical delivery roles:
+
+- `practice` — guided/focused/mixed application
+- `train` — adaptive/spaced retrieval and transfer review
+- `skill_check` — dedicated short independent proof
+- `mock` — dedicated unseen exam-simulation measurement
+
+Current ordinary learner modules are intentionally `practice + train`.
+
+Current dedicated banks:
+
+- Practice: populated
+- Train: populated from modules explicitly carrying `train`
+- Skill Check: **0 dedicated sets by design**
+- Mock-only: **0 dedicated sets by design**
+
+### Temporary Mock behavior
+
+The current alpha Mock first looks for dedicated `mock` content. Because a dedicated Mock bank has not been built yet, the blueprint explicitly permits a temporary Practice-bank fallback with:
+
+`bankMode: "practice_fallback"`
+
+Fallback attempts are for format/timing simulation and are **not an independent readiness measure**. Existing `mock-excluded` protection remains an additional exclusion during this period.
+
+## Phase 0 — content integrity before expansion
+
+### Phase 0A — Question-family integrity: complete
+
+- canonical family registry is the source of truth;
+- legacy family aliases preserve historical learner data where required;
+- published content is validated against the canonical family system;
+- `question-families.js` is regenerated from canonical config rather than treated as hand-maintained generated data.
+
+### Phase 0B — Progress evidence integrity: complete
+
+Learner evidence now preserves distinctions including:
+
+- first-try correctness;
+- retries;
+- hint assistance;
+- learning stage;
+- question-level difficulty.
+
+Guided/hinted success remains useful learning evidence but is not treated as equal to independent first-try performance.
+
+### Phase 0C — Resource cleanup: complete
+
+The previous 8 unregistered/duplicate PDFs were reconciled in canonical source rather than only in an exported public build.
+
+Current result:
+
+- 152 registered learner PDFs;
+- 152 physical learner PDFs;
+- no orphan/missing registered learner PDFs;
+- unique Core Meaning transfer material retained/consolidated rather than duplicated.
+
+### Phase 0D — Content-role separation: complete
+
+- Practice uses only `practice` content.
+- Train uses only `train` content.
+- Skill Check uses only `skill_check` content.
+- Mock prefers `mock` content and may use the explicitly enabled temporary Practice fallback during alpha.
+- learner public builds copy only modules referenced by the generated learner index.
+- internal/demo modules cannot silently hitch a ride in the learner artifact.
+
+## Current learner systems
+
+### Practice
+
+- focused practice remains separated from mixed Passage Practice;
+- learner-facing categories and domains use canonical RLA structure;
+- current active-learning interactions include multiple choice, embedded/whole-revision dropdown editing, authored select-text, drag-sort, and drag-order where instructionally justified;
+- Main Idea uses the Guided Learning Workspace progression;
+- alternate interaction types are used only when they improve the reasoning task.
+
+### Train
+
+Train is for strengthening and revisiting, not for duplicating the whole curriculum. It uses explicitly Train-eligible content, learner weaknesses/mistakes, review timing, and transfer opportunities.
+
+Selective flashcards belong here later under Quick Review only where discrete retrieval genuinely helps, such as transition meanings, tone/connotation vocabulary, commonly confused words, selected grammar/rhetorical terms, or ER planning/rubric vocabulary. Reasoning-heavy skills such as Main Idea, Supporting Details, Inference, Summary, synthesis, and full ER reasoning should not become flashcard decks.
+
+### Progress
+
+- objective mastery remains evidence-based;
+- Guided/hinted/retry evidence is distinguishable from independent performance;
 - confidence, mistakes, and review timing remain local learner signals;
-- ER self-review is kept separate from objective mastery;
-- Mock history is kept separate from skill mastery;
-- dead/empty shortcuts are not shown when corresponding history does not exist;
-- learner-facing copy does not imply an official GED score.
+- ER self-review remains separate from objective mastery;
+- Mock history remains separate from ordinary skill mastery;
+- learner-facing copy does not imply an official GED scaled score.
 
-### Mock/Test V1
+### Mock
 
-Full RLA Mock:
+Full RLA Mock baseline:
 
-- 14-question Part 1 / 27 minutes
-- 45-minute Extended Response
-- 10-minute break
-- 32-question Part 3 / 65 minutes
+- Part 1: 14 questions / 27 minutes
+- Extended Response: 45 minutes
+- break: 10 minutes
+- Part 3: 32 questions / 65 minutes
 - 46 objective questions total
 - Reading 25 / Arguments 10 / Language 11
 - fixed refresh-safe attempt
-- flags and unanswered review
-- strict section timing
-- stamina/source-set requirements
-- raw/domain/skill results
+- flags/unanswered review
+- section timing and recovery
 - post-completion explanations
 - ER self-review kept separate
-- no fake GED scaled score
+- no fake official GED scaled score
 
-Objective RLA Practice Test:
+The final Mock-quality milestone is still a **dedicated unseen Mock bank**, including appropriately authentic interaction types and heavier ER source pairs. That is a later roadmap phase, not Phase 0D.
 
-- 30 questions / 60 minutes
-- Reading 17 / Arguments 6 / Language 7
+### Resources
 
-Technology-enhanced interaction engines now support inline/whole-revision dropdown editing, authored select-text targets, drag-sort, and drag-order. The first Main Idea active-learning set remains tagged `mock-excluded` until touch, keyboard, refresh, and deployed-browser QA are complete; randomized Mock forms therefore do not yet claim full GED interaction parity.
+Resources support the learning system; they are not a second curriculum.
 
-## Current technical health
+- Study guide PDF → Learn + Resources
+- Focused workbook → Practice / printable + Resources
+- Mixed transfer workbook → Passage Practice / printable when unique and useful
+- duplicate/obsolete workbook → archive rather than presenting multiple near-identical choices
 
-Alpha-hardening status:
-
-- content validation errors: **0**
-- content validation warnings: **0**
-- generated learner modules: **96**
-- total generated objective/component questions: **708**
-- learner PDFs: **159 / 159 Chee Skool-branded**
-- release metadata/service-worker version: **0.7.0-alpha.7**
-- learner-only deployment builder: **implemented**
-- GitHub Pages workflow: **learner-only artifact via GitHub Actions**
-- internal authoring pages: **kept in source repo, excluded from public `dist/`**
-- `publicAlphaEnabled`: **false** until real-browser/device QA and pilot sign-off
-
-## Architecture state
+## Source and public-build architecture
 
 ### Canonical source
 
-`content-src/` is the learning-content source of truth. `data/generated/` is disposable output created by the build pipeline.
+`content-src/` is the learning-content source of truth.
 
-### Public deployment boundary
+`data/generated/` is disposable build output.
 
-`npm run public:build` creates `dist/`, which contains learner-facing HTML, runtime JS/CSS, generated learner data, icons, the Chee Skool logo, and learner PDFs.
+Canonical workflow:
 
-The public artifact intentionally excludes internal authoring/development material including:
+`content-src/ → validation → content build → data/generated/ → public build`
 
-- `builder.html`
-- `content-studio.html`
-- `resource-studio.html`
-- `content-src/`
-- `authoring/`
-- `scripts/`
-- project documentation and development-only files
+### Public learner boundary
 
-GitHub Pages must use **GitHub Actions**, not branch-root deployment.
+`npm run public:build` creates the learner-only artifact in `dist/`.
 
-### Quality protections
+The public build contains only learner runtime HTML/CSS/JS, generated learner data, icons/branding, and registered learner resources. Internal authoring/development material remains outside the learner artifact.
+
+Alpha 13 source/build reconciliation also restores the runtime packaging contract for files such as:
+
+- `js/test.js`
+- `js/rla-browse.js`
+- generated `data/generated/question-families.js`
+
+and prevents stale/unindexed module JSON from being copied into the public artifact.
+
+## Current quality protections
 
 Automated validation/regression coverage protects against problems including:
 
 - canonical learner-content loss during rebuild;
+- invalid/missing delivery roles;
+- Practice/Train/Skill Check/Mock role leakage;
+- internal/demo content entering the learner catalog;
+- stale/unindexed modules entering the public artifact;
+- missing required public runtime references;
 - Passage Practice leaking into focused skill pages;
 - answer/explanation mismatches;
 - duplicate or invalid options;
@@ -175,47 +244,72 @@ Automated validation/regression coverage protects against problems including:
 - invalid curriculum/navigation routes;
 - learner-library organization regressions;
 - Mock count/coverage/timing/scoring regressions;
-- reappearance of the resolved content-depth warning classes;
-- reintroduction of old PDF-generator branding;
-- accidental inclusion of internal authoring surfaces in the public build.
+- reappearance of resolved content-depth warning classes;
+- accidental inclusion of internal authoring surfaces in public builds.
 
-## Claims Chee Skool must not make
+## Roadmap from here
 
-Chee Skool is **not** an official GED product and must not claim:
+### Phase 1 — Supporting Details reference skill: complete
 
-- official/live GED questions;
-- official GED scaled-score prediction;
-- guaranteed pass/fail outcome;
-- psychometric equivalence to an official GED form.
+Supporting Details now uses the existing strong PDF material plus a skill-specific Guided → Apply → Independent path, followed by the existing multi-context independent practice.
 
-ER uses structured learner self-review rather than pretending to provide validated automatic official scoring.
+### Phase 2 — Complete high-priority Reading depth
 
-## Remaining release gate
+Order:
 
-Automated hardening is not the final release gate. Before enabling a public alpha:
+1. Explicit Meaning
+2. Summary
+3. Inference
+4. Conclusions / Generalizations
+5. thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships
 
-1. Test the deployed production URL end-to-end in a real desktop browser.
-2. Test a real phone/tablet, especially touch text selection and highlighting.
-3. Verify native Share/clipboard permissions and fallbacks.
-4. Verify actual print preview/output.
-5. Test refresh/back/two-tab/offline/service-worker recovery behavior.
-6. Perform keyboard-only, 200% zoom, and basic screen-reader checks.
-7. Open a representative sample of PDFs from the production deployment.
-8. Have a small number of real learners use the product with minimal guidance.
-9. Fix only high-impact learner, content, accessibility, or reliability issues found by those tests.
-10. Then explicitly change the release gate rather than treating deployment alone as approval.
+Add more clearly social-studies/civic informational passage contexts as the bank deepens.
 
-## Recommended next phase
+### Phase 3 — Deepen Arguments, Language, and Extended Response
 
-> **Real-browser Release Candidate QA → small learner alpha**
+Arguments priorities:
 
-Do not start another large content or visual redesign batch unless the real-browser QA or learner pilot identifies a concrete need.
+- Claims & Argument Structure
+- Finding Evidence
+- Credibility & Counterarguments
 
-## Guided Learning Workspace V2 — 2026-08-24
+Language priority:
 
-- Current release: **0.7.0-alpha.7**.
-- Main Idea active-learning Practice now uses the Guided Learning Workspace V2 renderer.
-- Guided drag-sort is single-card classification instead of a full board.
-- Select Text has explicit passage selection mode.
-- Confidence/hints/feedback use progressive disclosure.
-- Main Idea remains `mock-excluded` until real-device QA.
+- real easy → medium → hard progression rather than more flat medium dropdowns.
+
+Extended Response priority:
+
+- production microtasks: thesis writing/revision, exact evidence selection, reasoning completion, organization, paragraph development, and revision — not only recognition MCQs.
+
+### Phase 4 — Train Quick Review + dedicated Skill Checks
+
+- add flashcards only for discrete knowledge where retrieval is useful;
+- create short independent Skill Checks only after skills are mature;
+- Skill Check items remain Mock-excluded;
+- use Skill Check/Train evidence to strengthen Progress without faking mastery.
+
+### Phase 5 — Dedicated unseen Mock bank
+
+- Mock-only passages/questions not exposed in ordinary Practice/Train;
+- authentic select-text/area, drag/drop, and embedded editing only where natural;
+- heavier ER source pairs;
+- independent exam-simulation evidence rather than Practice-bank reuse.
+
+## Release gate after content work
+
+Automated correctness is necessary but not the final public-release gate. Before enabling a public alpha:
+
+1. test the deployed production URL end-to-end in a real desktop browser;
+2. test a real phone/tablet, including touch selection and mobile navigation;
+3. test refresh/back/two-tab/offline/service-worker recovery;
+4. verify print/PDF behavior;
+5. perform keyboard-only, 200% zoom, and basic screen-reader checks;
+6. have a small number of learners use the product with minimal guidance;
+7. fix high-impact learner/content/accessibility/reliability issues;
+8. explicitly enable the release gate only after that review.
+
+## Immediate next build
+
+> **Phase 2 — Explicit Meaning.**
+
+Use the same quality standard, not the same interaction recipe. Audit and reuse the existing Explicit Meaning guide/workbooks/practice first, then add only the progression that the skill actually needs.

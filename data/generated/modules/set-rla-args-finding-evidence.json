@@ -20,7 +20,7 @@
         "label": "Evidence identification"
       },
       "rule": "Match the evidence to the exact claim; relevant evidence must address the same question the claim raises.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Evidence identification"
       },
       "rule": "Look for evidence that measures the population or outcome named in the claim.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Evidence identification"
       },
       "rule": "When a claim uses a broad word such as convenient, find the concrete detail that gives that word evidence.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Evidence identification"
       },
       "rule": "Relevant evidence must help answer the decision question; details can be true and still be useless evidence.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Evidence identification"
       },
       "rule": "Evidence can support continuing a test without proving a cause; look for details that limit certainty.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Evidence identification"
       },
       "rule": "When asked for multiple reasons, make sure each detail supports a different part of the argument.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Evidence identification"
       },
       "rule": "Evidence is the information you can point to; a claim is what someone wants you to believe about that information.",
-      "familyId": "evidence.identify_role",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Evidence identification"
       },
       "rule": "The strongest added evidence addresses the biggest uncertainty in the existing evidence.",
-      "familyId": "evidence.strongest",
+      "familyId": "arguments.evidence.locate",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -453,7 +453,11 @@
       "unitId": "finding-evidence",
       "contentKind": "skill_drill",
       "learningObjective": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-finding-evidence-tutoring",
@@ -468,6 +472,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.954Z"
+    "compiledAt": "2026-08-24T13:31:18.332Z"
   }
 }

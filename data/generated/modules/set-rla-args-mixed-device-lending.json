@@ -20,7 +20,7 @@
         "label": "Different genres / formats"
       },
       "rule": "When formats overlap, synthesize only the outcomes both can support.",
-      "familyId": "genre.approach",
+      "familyId": "arguments.formats.integrate",
       "metadata": {
         "skillId": "R6.4",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "Do not substitute a nearby outcome for the one named in the claim.",
-      "familyId": "reasoning.flaw",
+      "familyId": "arguments.reasoning.validity",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Strong arguments separate supported conclusions from questions that remain open.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Different genres / formats"
       },
       "rule": "Different formats can make limitations as important as findings easier to see.",
-      "familyId": "format.contribution",
+      "familyId": "arguments.formats.integrate",
       "metadata": {
         "skillId": "R6.4",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Add evidence that directly measures the missing outcome.",
-      "familyId": "sufficiency.evaluate",
+      "familyId": "arguments.evidence.sufficiency",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Opposing arguments"
       },
       "rule": "Compare what each writer thinks the evidence is sufficient to establish.",
-      "familyId": "opposing.arguments.support",
+      "familyId": "arguments.sources.opposing",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -352,7 +352,11 @@
         "paired_sources"
       ],
       "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
-      "topicLabel": "Mixed Source Practice"
+      "topicLabel": "Mixed Source Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-mixed-device-lending",
@@ -367,6 +371,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.955Z"
+    "compiledAt": "2026-08-24T13:31:18.333Z"
   }
 }

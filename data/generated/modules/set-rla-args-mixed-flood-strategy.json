@@ -20,7 +20,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "Compare arguments on the same decision criteria, but preserve differences in mechanism.",
-      "familyId": "twotext.compare",
+      "familyId": "arguments.sources.compare",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Counterargument & response"
       },
       "rule": "A source that acknowledges a limitation can still argue that the benefit outweighs it.",
-      "familyId": "counterargument.response",
+      "familyId": "arguments.counterargument.response",
       "metadata": {
         "skillId": "R5.10",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "Before deciding which argument is stronger, ask whether the sources are valuing the same outcome.",
-      "familyId": "synthesis.resolve",
+      "familyId": "arguments.sources.synthesize",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Be suspicious of eliminate/all/guarantee when the source explicitly describes residual risk.",
-      "familyId": "support.status",
+      "familyId": "arguments.claim.support",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "A fair source comparison needs common decision criteria, not just each side's favorite metric.",
-      "familyId": "sufficiency.evaluate",
+      "familyId": "arguments.evidence.sufficiency",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "When sources advocate different mechanisms, synthesis often means building a shared comparison framework.",
-      "familyId": "synthesis.conclusion",
+      "familyId": "arguments.sources.synthesize",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -351,7 +351,11 @@
         "paired_sources"
       ],
       "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
-      "topicLabel": "Mixed Source Practice"
+      "topicLabel": "Mixed Source Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-args-mixed-riverfront-flood",
@@ -366,6 +370,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.955Z"
+    "compiledAt": "2026-08-24T13:31:18.334Z"
   }
 }

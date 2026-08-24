@@ -422,6 +422,10 @@
     "unitId": "credibility-counterarguments",
     "contentKind": "skill_drill",
     "learningObjective": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

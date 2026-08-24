@@ -20,7 +20,7 @@
         "label": "Fragments, run-ons & fused sentences"
       },
       "rule": "If a sentence starts with because/while/after, check whether a main clause completes it.",
-      "familyId": "edit.fragment.integration",
+      "familyId": "language.boundaries.fragments_runons",
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Fragments, run-ons & fused sentences"
       },
       "rule": "Two complete clauses need a period, semicolon, or comma plus a coordinating conjunction.",
-      "familyId": "edit.sentence_boundary",
+      "familyId": "language.boundaries.fragments_runons",
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Remove the nonessential clause mentally; the core sentence should still read smoothly.",
-      "familyId": "edit.punctuation.clauses",
+      "familyId": "language.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use a colon after a complete clause that announces what follows.",
-      "familyId": "edit.punctuation.colon",
+      "familyId": "language.punctuation.colon",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Fragments, run-ons & fused sentences"
       },
       "rule": "If both sides can stand alone, a comma needs a coordinating conjunction to join them.",
-      "familyId": "edit.sentence_boundary",
+      "familyId": "language.boundaries.fragments_runons",
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Do not insert punctuation just because a sentence feels long; identify the clause relationship first.",
-      "familyId": "edit.punctuation.clauses",
+      "familyId": "language.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Fragments, run-ons & fused sentences"
       },
       "rule": "Attach an although-clause to the complete idea it modifies.",
-      "familyId": "edit.fragment.integration",
+      "familyId": "language.boundaries.fragments_runons",
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "A colon can introduce an explanation or example after a complete clause.",
-      "familyId": "edit.punctuation.colon",
+      "familyId": "language.punctuation.colon",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -454,7 +454,11 @@
       "unitId": "sentence-boundaries-punctuation",
       "contentKind": "skill_drill",
       "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
-      "topicLabel": "Focused Practice"
+      "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-boundaries",
@@ -469,6 +473,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.960Z"
+    "compiledAt": "2026-08-24T13:31:18.343Z"
   }
 }

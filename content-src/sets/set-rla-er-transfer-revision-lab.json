@@ -432,6 +432,10 @@
     "contentKind": "mixed_review",
     "learningObjective": "Transfer organization, development, revision, and conventions skills to a new paired-source context.",
     "topicLabel": "Transfer Check",
-    "unitId": "organize-develop-revise"
+    "unitId": "organize-develop-revise",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

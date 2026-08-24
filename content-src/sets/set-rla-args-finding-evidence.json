@@ -421,6 +421,10 @@
     "unitId": "finding-evidence",
     "contentKind": "skill_drill",
     "learningObjective": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

@@ -20,7 +20,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "A short plan usually saves time during drafting.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Use shorthand that preserves the logic you will write later.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Clear rules make timed practice useful.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Separate self-review from machine-verified quiz accuracy.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Attempt first; compare second.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Label subjective and objective progress separately.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Revision questions should point to observable reasoning.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Full paired-source ER"
       },
       "rule": "Learn the process untimed before adding time pressure.",
-      "familyId": "er.full.process",
+      "familyId": "writing.er.full_process",
       "metadata": {
         "skillId": "W1.12",
         "secondarySkillIds": [],
@@ -452,7 +452,11 @@
       "unitId": "full-extended-response",
       "contentKind": "skill_drill",
       "learningObjective": "Plan the Full Response",
-      "topicLabel": "Extended Response"
+      "topicLabel": "Extended Response",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-er-focus-full-extended-response",
@@ -467,6 +471,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.959Z"
+    "compiledAt": "2026-08-24T13:31:18.340Z"
   }
 }

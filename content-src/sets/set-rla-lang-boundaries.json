@@ -422,6 +422,10 @@
     "unitId": "sentence-boundaries-punctuation",
     "contentKind": "skill_drill",
     "learningObjective": "Repair fragments, run-ons, and punctuation problems in a practical memo.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

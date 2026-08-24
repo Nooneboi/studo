@@ -20,7 +20,7 @@
         "label": "Organize the response"
       },
       "rule": "One paragraph should do one main reasoning job.",
-      "familyId": "er.organize.plan",
+      "familyId": "writing.er.organization",
       "metadata": {
         "skillId": "W1.8",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Develop ideas"
       },
       "rule": "After a statistic, explain what it demonstrates.",
-      "familyId": "er.develop.analysis",
+      "familyId": "writing.er.development",
       "metadata": {
         "skillId": "W1.9",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Revise for focus & clarity"
       },
       "rule": "Replace vague judgment words with the actual reasoning problem.",
-      "familyId": "er.revise.focus",
+      "familyId": "writing.er.revision",
       "metadata": {
         "skillId": "W1.10",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Edit conventions"
       },
       "rule": "Edit for clarity, not decorative complexity.",
-      "familyId": "er.edit.conventions",
+      "familyId": "writing.er.edit",
       "metadata": {
         "skillId": "W1.11",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Organize the response"
       },
       "rule": "In ER, clarity beats a dramatic hook.",
-      "familyId": "er.organize.plan",
+      "familyId": "writing.er.organization",
       "metadata": {
         "skillId": "W1.8",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Develop ideas"
       },
       "rule": "Development is a chain, not a pile of details.",
-      "familyId": "er.develop.analysis",
+      "familyId": "writing.er.development",
       "metadata": {
         "skillId": "W1.9",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Revise for focus & clarity"
       },
       "rule": "Cut repeated evaluation words; keep the evidence-based reason.",
-      "familyId": "er.revise.focus",
+      "familyId": "writing.er.revision",
       "metadata": {
         "skillId": "W1.10",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Edit conventions"
       },
       "rule": "Use punctuation to show the relationship clearly.",
-      "familyId": "er.edit.conventions",
+      "familyId": "writing.er.edit",
       "metadata": {
         "skillId": "W1.11",
         "secondarySkillIds": [],
@@ -456,7 +456,11 @@
       "unitId": "organize-develop-revise",
       "contentKind": "skill_drill",
       "learningObjective": "Organize, Develop and Revise",
-      "topicLabel": "Extended Response"
+      "topicLabel": "Extended Response",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-er-focus-organize-develop-revise",
@@ -471,6 +475,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.959Z"
+    "compiledAt": "2026-08-24T13:31:18.340Z"
   }
 }

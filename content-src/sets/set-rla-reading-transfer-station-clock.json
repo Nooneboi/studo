@@ -282,6 +282,10 @@
     ],
     "contentKind": "passage_practice",
     "learningObjective": "Transfer inference, connotation, tone, structure, and perspective reasoning to an original literary passage.",
-    "topicLabel": "GED Practice"
+    "topicLabel": "GED Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

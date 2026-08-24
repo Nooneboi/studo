@@ -251,12 +251,12 @@ test('learner pages expose the same release metadata as release.json', () => {
   }
 });
 
-test('Alpha Candidate release metadata and service-worker cache are bumped together', () => {
+test('release metadata and service-worker cache stay synchronized', () => {
   const release = JSON.parse(fs.readFileSync(path.join(root, 'release.json'), 'utf8'));
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  assert.equal(release.release, '0.7.0-alpha.9');
-  assert.match(sw, /0\.7\.0-alpha\.9/);
-  assert.match(sw, /CACHE_NAME="studo-shell-0\.7\.0-alpha\.9"/);
+  const escaped = release.release.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  assert.match(sw, new RegExp(escaped));
+  assert.match(sw, new RegExp(`CACHE_NAME="studo-shell-${escaped}"`));
 });
 
 

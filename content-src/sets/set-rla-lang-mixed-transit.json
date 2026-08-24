@@ -332,6 +332,10 @@
       "workplace"
     ],
     "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
-    "topicLabel": "Mixed Editing Practice"
+    "topicLabel": "Mixed Editing Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

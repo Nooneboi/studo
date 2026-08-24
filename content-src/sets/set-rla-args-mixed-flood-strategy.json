@@ -329,6 +329,10 @@
       "paired_sources"
     ],
     "learningObjective": "Evaluate claims, evidence, reasoning, and multiple sources under GED-style conditions.",
-    "topicLabel": "Mixed Source Practice"
+    "topicLabel": "Mixed Source Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

@@ -422,6 +422,10 @@
     "unitId": "word-choice-standard-usage",
     "contentKind": "skill_drill",
     "learningObjective": "Choose standard, precise words in a formal workplace context.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

@@ -282,6 +282,10 @@
     ],
     "contentKind": "passage_practice",
     "learningObjective": "Transfer inference, connotation, tone, structure, and point-of-view reasoning to an original informational passage.",
-    "topicLabel": "GED Practice"
+    "topicLabel": "GED Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }

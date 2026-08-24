@@ -20,7 +20,7 @@
         "label": "Complex agreement"
       },
       "rule": "Ignore the noun inside the of-phrase when matching the subject and verb.",
-      "familyId": "edit.agreement.complex",
+      "familyId": "language.grammar.complex_agreement",
       "metadata": {
         "skillId": "L1.7",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Place limiting modifiers beside the exact word or phrase they restrict.",
-      "familyId": "edit.modifier.placement",
+      "familyId": "language.modifiers.limiting_words",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "If you hear 'should've,' write 'should have,' not 'should of'.",
-      "familyId": "edit.standard_usage",
+      "familyId": "language.usage.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use a colon after a complete clause that sets up a list.",
-      "familyId": "edit.punctuation.colon",
+      "familyId": "language.punctuation.colon",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Prefer a direct verb when a noun phrase only repeats that verb's meaning.",
-      "familyId": "edit.conciseness",
+      "familyId": "language.style.concision",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Use context and part of speech to separate commonly confused words.",
-      "familyId": "edit.confused_words",
+      "familyId": "language.usage.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -354,7 +354,11 @@
         "workplace"
       ],
       "learningObjective": "Edit grammar, punctuation, usage, and clarity in passage context.",
-      "topicLabel": "Mixed Editing Practice"
+      "topicLabel": "Mixed Editing Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
     },
     "passage": {
       "id": "p-rla-lang-mixed-transit",
@@ -369,6 +373,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T11:01:19.962Z"
+    "compiledAt": "2026-08-24T13:31:18.348Z"
   }
 }

@@ -18,12 +18,12 @@ const rootFiles = ['favicon.svg', 'manifest.json', 'sw.js', 'release.json'];
 const learnerJs = [
   'app.js', 'storage.js', 'data.js', 'learning.js', 'home.js', 'library-model.js',
   'practice.js', 'passages.js', 'resources.js', 'progress.js', 'curriculum.js',
-  'domain.js', 'category.js', 'skill.js', 'module.js', 'focus-tools.js', 'train.js',
-  'question-interactions.js', 'mock-engine.js', 'quiz.js', 'extended-response.js'
+  'domain.js', 'category.js', 'skill.js', 'module.js', 'focus-tools.js', 'train.js', 'rla-browse.js',
+  'question-interactions.js', 'mock-engine.js', 'quiz.js', 'test.js', 'extended-response.js'
 ];
 const learnerCss = ['site.css'];
 const generatedData = [
-  'index.json', 'curriculum.json', 'er-prompts.json', 'mock-blueprint.json'
+  'index.json', 'curriculum.json', 'er-prompts.json', 'mock-blueprint.json', 'question-families.js'
 ];
 
 async function copyFile(rel) {
@@ -62,7 +62,14 @@ await copyDir('icons');
 await copyFile('assets/chee-skool-logo.png');
 await copyDir('assets/resources', 'assets/resources', (rel, entry) => entry.isDirectory() || !rel.endsWith('/README.md'));
 for (const file of generatedData) await copyFile(path.join('data/generated', file));
-await copyDir('data/generated/modules');
+const learnerIndex = JSON.parse(await fs.readFile(path.join(ROOT, 'data/generated/index.json'), 'utf8'));
+for (const entry of learnerIndex) {
+  const rel = String(entry?.file || '');
+  if (!/^generated\/modules\/[a-z0-9._-]+\.json$/i.test(rel)) {
+    throw new Error(`Unsafe or invalid learner module path in generated index: ${rel || '(missing)'}`);
+  }
+  await copyFile(path.join('data', rel));
+}
 await fs.writeFile(path.join(OUT, '.nojekyll'), '');
 
 console.log(`Built learner-only Chee Skool site at ${OUT}`);

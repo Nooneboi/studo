@@ -423,6 +423,10 @@
     "unitId": "reasoning-assumptions",
     "contentKind": "skill_drill",
     "learningObjective": "Test whether conclusions follow from the evidence and identify assumptions that must be true for the reasoning to work.",
-    "topicLabel": "Focused Practice"
+    "topicLabel": "Focused Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   }
 }
