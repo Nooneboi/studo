@@ -20,7 +20,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Compare support, not confidence of tone.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Ask whether the evidence measures the outcome being claimed.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Name the missing support, not merely that you disagree.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Compare evidence quality directly.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Select better-supported position"
       },
       "rule": "The strongest added evidence targets the argument's actual claim.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Good arguments often state what the evidence cannot yet show.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Do not turn evaluation into ridicule.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Select better-supported position"
       },
       "rule": "Use a consistent support test on both sources.",
-      "familyId": "writing.er.stronger",
+      "familyId": "er.position.support",
       "metadata": {
         "skillId": "W1.3",
         "secondarySkillIds": [],
@@ -467,6 +467,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.485Z"
+    "compiledAt": "2026-08-24T10:36:33.151Z"
   }
 }

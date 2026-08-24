@@ -14,7 +14,7 @@
 
 const Learning = (() => {
   const STATE_KEY = "sq:learning:v1"; // keep the key so existing users migrate in place
-  const STATE_VERSION = 2;
+  const STATE_VERSION = 3;
   const MAX_ATTEMPTS = 2500;
   const REVIEW_INTERVALS = [1, 3, 7, 14, 30];
 
@@ -23,6 +23,28 @@ const Learning = (() => {
     writing: "Writing and Analysis",
     language_conventions: "Language Conventions",
   };
+
+  function canonicalFamilyId(value) {
+    const id = String(value || "");
+    const registry = window.CheeQuestionFamilies;
+    return registry?.canonicalize ? registry.canonicalize(id) : id;
+  }
+
+  function normalizeAttempt(attempt) {
+    const correct = Boolean(attempt?.correct);
+    return {
+      ...attempt,
+      familyId: canonicalFamilyId(attempt?.familyId),
+      firstTryCorrect: typeof attempt?.firstTryCorrect === "boolean" ? attempt.firstTryCorrect : correct,
+      attemptCount: Number.isInteger(attempt?.attemptCount) && attempt.attemptCount > 0 ? attempt.attemptCount : 1,
+      assistance: attempt?.assistance === "hint" ? "hint" : "none",
+      learningStage: ["guided", "apply", "independent", "train"].includes(attempt?.learningStage) ? attempt.learningStage : null,
+    };
+  }
+
+  function normalizeMistake(mistake) {
+    return { ...mistake, familyId: canonicalFamilyId(mistake?.familyId) };
+  }
 
   function emptyState() {
     return { version: STATE_VERSION, attempts: [], mistakes: {}, reviews: {} };
@@ -35,8 +57,8 @@ const Learning = (() => {
       const state = JSON.parse(raw);
       return {
         version: STATE_VERSION,
-        attempts: Array.isArray(state.attempts) ? state.attempts : [],
-        mistakes: state.mistakes && typeof state.mistakes === "object" ? state.mistakes : {},
+        attempts: Array.isArray(state.attempts) ? state.attempts.map(normalizeAttempt) : [],
+        mistakes: state.mistakes && typeof state.mistakes === "object" ? Object.fromEntries(Object.entries(state.mistakes).map(([key, value]) => [key, normalizeMistake(value)])) : {},
         reviews: state.reviews && typeof state.reviews === "object" ? state.reviews : {},
       };
     } catch (e) {
@@ -88,7 +110,7 @@ const Learning = (() => {
 
   function familyFor(module, question) {
     const skill = skillFor(module, question);
-    return question.familyId || question.family || skill.id;
+    return canonicalFamilyId(question.familyId || question.family || skill.id);
   }
 
   function questionKey(module, question) {
@@ -100,7 +122,18 @@ const Learning = (() => {
   }
 
   function modeWeight(mode) {
-    return mode === "test" ? 1.1 : mode === "train" ? 1.05 : 1;
+    return mode === "test" ? 1.1 : mode === "train" ? 1.08 : 1;
+  }
+
+  function evidenceWeight(attempt) {
+    let stageWeight = 1;
+    if (attempt.learningStage === "guided") stageWeight = 0.72;
+    else if (attempt.learningStage === "apply") stageWeight = 0.9;
+    else if (attempt.learningStage === "independent") stageWeight = 1.08;
+    else if (attempt.learningStage === "train") stageWeight = 1.12;
+    const assistanceWeight = attempt.assistance === "hint" ? 0.62 : 1;
+    const firstTryWeight = attempt.firstTryCorrect === false ? 0.82 : 1;
+    return stageWeight * assistanceWeight * firstTryWeight;
   }
 
   function observedPatternFor(question, answer, correct) {
@@ -151,10 +184,14 @@ const Learning = (() => {
       return;
     }
 
-    let stage = Math.min((current.stage || 0) + 1, REVIEW_INTERVALS.length - 1);
+    const assisted = attempt.assistance === "hint" || attempt.firstTryCorrect === false;
+    let stage = assisted
+      ? Math.max(0, current.stage || 0)
+      : Math.min((current.stage || 0) + 1, REVIEW_INTERVALS.length - 1);
     if (attempt.confidence === "guessing") stage = Math.min(current.stage || 0, 1);
     if (attempt.confidence === "unsure") stage = Math.min(Math.max(current.stage || 0, 1), REVIEW_INTERVALS.length - 1);
-    const intervalDays = reviewIntervalFor(stage, attempt.confidence);
+    let intervalDays = reviewIntervalFor(stage, attempt.confidence);
+    if (assisted) intervalDays = Math.min(intervalDays, 1);
 
     state.reviews[skill.id] = {
       ...current,
@@ -226,7 +263,7 @@ const Learning = (() => {
     });
   }
 
-  function recordAttempt({ module, question, answer, correct, mode = "practice", elapsedMs = null, file = null, confidence = null }) {
+  function recordAttempt({ module, question, answer, correct, mode = "practice", elapsedMs = null, file = null, confidence = null, firstTryCorrect = correct, attemptCount = 1, assistance = "none", learningStage = null }) {
     if (!module || !question || typeof correct !== "boolean") return null;
 
     const state = readState();
@@ -249,8 +286,12 @@ const Learning = (() => {
       skillLabel: skill.label,
       answer: typeof answer === "string" ? answer : String(answer ?? ""),
       correct,
+      firstTryCorrect: typeof firstTryCorrect === "boolean" ? firstTryCorrect : correct,
+      attemptCount: Number.isInteger(attemptCount) && attemptCount > 0 ? attemptCount : 1,
+      assistance: assistance === "hint" ? "hint" : "none",
+      learningStage: ["guided", "apply", "independent", "train"].includes(learningStage) ? learningStage : null,
       mode,
-      difficulty: module.difficulty || "medium",
+      difficulty: question.metadata?.difficulty || question.difficulty || module.difficulty || "medium",
       elapsedMs: Number.isFinite(elapsedMs) ? Math.max(0, Math.round(elapsedMs)) : null,
       confidence: confidence || null,
       observedPattern,
@@ -292,7 +333,7 @@ const Learning = (() => {
     let weightedCorrect = 0;
     attempts.forEach((attempt) => {
       const confidenceWeight = attempt.confidence === "guessing" ? 0.7 : attempt.confidence === "unsure" ? 0.9 : 1;
-      const weight = difficultyWeight(attempt.difficulty) * modeWeight(attempt.mode) * confidenceWeight;
+      const weight = difficultyWeight(attempt.difficulty) * modeWeight(attempt.mode) * confidenceWeight * evidenceWeight(attempt);
       weightedTotal += weight;
       if (attempt.correct) weightedCorrect += weight;
     });
@@ -400,6 +441,7 @@ const Learning = (() => {
     const state = readState();
     const attempts = state.attempts;
     const activeMistakes = Object.values(state.mistakes).filter((m) => m.status !== "mastered");
+    const assistedLearning = attempts.filter((a) => a.correct && (a.assistance === "hint" || a.firstTryCorrect === false));
     const skills = getSkillSummaries();
     const skillMap = Object.fromEntries(skills.map((s) => [s.id, s]));
     const now = Date.now();
@@ -420,7 +462,8 @@ const Learning = (() => {
         const review = state.reviews[skill.id] || null;
         const reviewDue = review && new Date(review.dueAt || 0).getTime() <= now;
         const exactMistake = state.mistakes[key] && state.mistakes[key].status !== "mastered" ? state.mistakes[key] : null;
-        const relatedMistake = activeMistakes.find((m) => m.questionKey !== key && (m.familyId === familyId || m.skillId === skill.id));
+        const relatedMistake = activeMistakes.find((m) => m.questionKey !== key && (canonicalFamilyId(m.familyId) === familyId || m.skillId === skill.id));
+        const relatedAssisted = [...assistedLearning].reverse().find((a) => a.questionKey !== key && (canonicalFamilyId(a.familyId) === familyId || a.skillId === skill.id));
         const lastAttempt = [...attempts].reverse().find((a) => a.questionKey === key) || null;
         const lastAgeHours = lastAttempt ? (now - new Date(lastAttempt.attemptedAt).getTime()) / 3600000 : Infinity;
         const unseen = !seenKeys.has(key);
@@ -432,6 +475,10 @@ const Learning = (() => {
         if (relatedMistake && unseen) {
           score += 150;
           reason = `New question testing ${relatedMistake.skillLabel || skill.label} after a previous miss`;
+          reasonType = "transfer";
+        } else if (relatedAssisted && unseen) {
+          score += 135;
+          reason = `Fresh question testing ${relatedAssisted.skillLabel || skill.label} after guided support`;
           reasonType = "transfer";
         } else if (reviewDue) {
           score += 115;

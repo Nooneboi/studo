@@ -20,7 +20,7 @@
         "label": "Assumptions & premises"
       },
       "rule": "For an assumption, ask: what must be true for the conclusion to follow from the reason given?",
-      "familyId": "arguments.assumption.identify",
+      "familyId": "assumption.required",
       "metadata": {
         "skillId": "R5.8",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "Test reasoning by looking for evidence that breaks the link between the proposed cause and the promised result.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.challenge",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "A good analogy requires the compared situations to be alike in the feature that matters to the conclusion.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.flaw",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "Valid reasoning can support a limited benefit even when a proposed solution is incomplete.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.flaw",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Assumptions & premises"
       },
       "rule": "Guarantees often hide assumptions about control: ask what variable must behave predictably for the promise to hold.",
-      "familyId": "arguments.assumption.identify",
+      "familyId": "assumption.required",
       "metadata": {
         "skillId": "R5.8",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "Strong reasoning matches a solution to the problem mechanisms the evidence identifies.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.flaw",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Assumptions & premises"
       },
       "rule": "To strengthen a claim, test the assumption that currently makes the reasoning fail.",
-      "familyId": "arguments.assumption.identify",
+      "familyId": "assumption.required",
       "metadata": {
         "skillId": "R5.8",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Assumptions & premises"
       },
       "rule": "For an assumption question, ask what must be true for the evidence-to-conclusion jump to work.",
-      "familyId": "arguments.assumption.identify",
+      "familyId": "assumption.required",
       "metadata": {
         "skillId": "R5.8",
         "secondarySkillIds": [],
@@ -470,6 +470,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.482Z"
+    "compiledAt": "2026-08-24T10:36:33.148Z"
   }
 }

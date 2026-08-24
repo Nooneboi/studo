@@ -20,7 +20,7 @@
         "label": "Complex agreement"
       },
       "rule": "Ignore the noun inside the of-phrase when matching the subject and verb.",
-      "familyId": "language.grammar.complex_agreement",
+      "familyId": "edit.agreement.complex",
       "metadata": {
         "skillId": "L1.7",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Place limiting modifiers beside the exact word or phrase they restrict.",
-      "familyId": "language.modifiers.limiting_words",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "If you hear 'should've,' write 'should have,' not 'should of'.",
-      "familyId": "language.usage.standard_usage",
+      "familyId": "edit.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use a colon after a complete clause that sets up a list.",
-      "familyId": "language.punctuation.colon",
+      "familyId": "edit.punctuation.colon",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Prefer a direct verb when a noun phrase only repeats that verb's meaning.",
-      "familyId": "language.style.concision",
+      "familyId": "edit.conciseness",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Use context and part of speech to separate commonly confused words.",
-      "familyId": "language.usage.confused_words",
+      "familyId": "edit.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -369,6 +369,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.492Z"
+    "compiledAt": "2026-08-24T10:36:33.154Z"
   }
 }

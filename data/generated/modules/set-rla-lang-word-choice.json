@@ -20,7 +20,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Check the grammatical job: ownership before a noun requires 'their'.",
-      "familyId": "language.usage.confused_words",
+      "familyId": "edit.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Frequently confused words"
       },
       "rule": "After may/can/will, use the base verb and check affect (verb) versus effect (usually noun).",
-      "familyId": "language.usage.confused_words",
+      "familyId": "edit.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Ask whether you can count the noun: fewer instructions, less confusion.",
-      "familyId": "language.usage.confused_words",
+      "familyId": "edit.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "When speech sounds like 'could of,' check whether the intended form is 'could have'.",
-      "familyId": "language.usage.standard_usage",
+      "familyId": "edit.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Advice is the noun; advise is the verb.",
-      "familyId": "language.usage.confused_words",
+      "familyId": "edit.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "Formal standard English should be clear and precise, not slangy or inflated.",
-      "familyId": "language.usage.standard_usage",
+      "familyId": "edit.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Frequently confused words"
       },
       "rule": "Use affect for the action and effect for the result in most RLA editing contexts.",
-      "familyId": "language.usage.confused_words",
+      "familyId": "edit.confused_words",
       "metadata": {
         "skillId": "L1.1",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "In editing questions, prefer the standard form that says the same thing clearly.",
-      "familyId": "language.usage.standard_usage",
+      "familyId": "edit.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -469,6 +469,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.493Z"
+    "compiledAt": "2026-08-24T10:36:33.155Z"
   }
 }

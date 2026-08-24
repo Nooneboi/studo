@@ -20,7 +20,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Keep items with the same function in the same grammatical form.",
-      "familyId": "language.parallelism.structure",
+      "familyId": "edit.parallelism",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Make the noun after an introductory modifier the logical doer of the action.",
-      "familyId": "language.modifiers.dangling",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "In formal editing, replace speech forms with clear standard constructions.",
-      "familyId": "language.usage.standard_usage",
+      "familyId": "edit.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "Decide singular/plural first, then form the possessive.",
-      "familyId": "language.possessives.apostrophes",
+      "familyId": "edit.possessive",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use punctuation together with a connector when the logic between independent clauses matters.",
-      "familyId": "language.punctuation.clauses",
+      "familyId": "edit.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Capitalization"
       },
       "rule": "Capitalize official names and calendar names, not common nouns for emphasis.",
-      "familyId": "language.capitalization.mechanics",
+      "familyId": "edit.capitalization",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -369,6 +369,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.492Z"
+    "compiledAt": "2026-08-24T10:36:33.154Z"
   }
 }

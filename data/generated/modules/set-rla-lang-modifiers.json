@@ -20,7 +20,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "After an introductory modifier, name the person or thing that actually performs the action.",
-      "familyId": "language.modifiers.placement",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Put limiting words such as only as close as possible to the word or phrase they limit.",
-      "familyId": "language.modifiers.limiting_words",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Keep descriptive clauses beside the noun they modify.",
-      "familyId": "language.modifiers.placement",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Ask who is doing the action in the opening phrase; name that subject immediately after the comma.",
-      "familyId": "language.modifiers.dangling",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Place degree and limiting modifiers beside the quantity or action they actually limit.",
-      "familyId": "language.modifiers.placement",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "When a phrase could attach to two nouns, move it next to the word or action it truly describes.",
-      "familyId": "language.modifiers.placement",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Check that every descriptive phrase has a logical noun to modify.",
-      "familyId": "language.modifiers.placement",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Place time, location, and descriptive phrases where their targets are unmistakable.",
-      "familyId": "language.modifiers.placement",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -467,6 +467,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.493Z"
+    "compiledAt": "2026-08-24T10:36:33.155Z"
   }
 }

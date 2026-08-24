@@ -20,7 +20,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "State exactly what the data measure before drawing a conclusion.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "A strong argument recognizes when a proxy is useful but incomplete.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.flaw",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "Synthesis is strongest when it incorporates both the evidence and the limitation.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Look for a conclusion that promises more than the intervention can control.",
-      "familyId": "arguments.claim.support",
+      "familyId": "support.status",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "Use comparison rows to ask which variable changes and what cautious inference that allows.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Choose an outcome measure that matches the claim you want to test.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.add",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -366,6 +366,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.482Z"
+    "compiledAt": "2026-08-24T10:36:33.147Z"
   }
 }

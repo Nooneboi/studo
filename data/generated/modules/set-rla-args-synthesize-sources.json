@@ -20,7 +20,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A synthesis combines what different sources can support without turning association into proof.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A strong synthesis recommendation should be supported by more than one source and should respect practical constraints.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "When synthesizing, keep each source in its proper role: preference evidence is not the same as performance evidence.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "Synthesis often requires balancing evidence of need with constraints such as cost and timing.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "The best next evidence targets what the current sources cannot yet tell you.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "Do not combine numbers from one source with an outcome from another unless the sources justify that connection.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A phased recommendation is strongest when the need is credible but the best final solution is still uncertain.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A synthesis summary should include the shared direction of the evidence and the major limits or tradeoffs.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -467,6 +467,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.483Z"
+    "compiledAt": "2026-08-24T10:36:33.149Z"
   }
 }

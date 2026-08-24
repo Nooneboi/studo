@@ -20,7 +20,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "Compare arguments on the same decision criteria, but preserve differences in mechanism.",
-      "familyId": "arguments.sources.compare",
+      "familyId": "twotext.compare",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Counterargument & response"
       },
       "rule": "A source that acknowledges a limitation can still argue that the benefit outweighs it.",
-      "familyId": "arguments.counterargument.response",
+      "familyId": "counterargument.response",
       "metadata": {
         "skillId": "R5.10",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "Before deciding which argument is stronger, ask whether the sources are valuing the same outcome.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.resolve",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Supported vs unsupported claims"
       },
       "rule": "Be suspicious of eliminate/all/guarantee when the source explicitly describes residual risk.",
-      "familyId": "arguments.claim.support",
+      "familyId": "support.status",
       "metadata": {
         "skillId": "R5.6",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "A fair source comparison needs common decision criteria, not just each side's favorite metric.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "When sources advocate different mechanisms, synthesis often means building a shared comparison framework.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -366,6 +366,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.481Z"
+    "compiledAt": "2026-08-24T10:36:33.147Z"
   }
 }

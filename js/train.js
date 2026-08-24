@@ -206,6 +206,10 @@ function gradeAnswer(item, answer, area) {
     elapsedMs: Date.now() - openedAt,
     file: item.moduleFile,
     confidence: currentConfidence,
+    firstTryCorrect: correct,
+    attemptCount: 1,
+    assistance: "none",
+    learningStage: "train",
   });
 
   results.push({ item, answer, correct, result });

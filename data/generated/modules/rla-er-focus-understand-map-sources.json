@@ -20,7 +20,7 @@
         "label": "Understand the task"
       },
       "rule": "Judge the sources, not your personal preference.",
-      "familyId": "writing.er.task",
+      "familyId": "er.task.read",
       "metadata": {
         "skillId": "W1.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Map both arguments"
       },
       "rule": "Map claim, evidence, and limitation separately.",
-      "familyId": "writing.er.map",
+      "familyId": "er.map.claims",
       "metadata": {
         "skillId": "W1.2",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Map both arguments"
       },
       "rule": "Do not invent evidence that the source never provides.",
-      "familyId": "writing.er.map",
+      "familyId": "er.map.claims",
       "metadata": {
         "skillId": "W1.2",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Understand the task"
       },
       "rule": "Plan the reasoning before drafting sentences.",
-      "familyId": "writing.er.task",
+      "familyId": "er.task.read",
       "metadata": {
         "skillId": "W1.1",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Map both arguments"
       },
       "rule": "A limitation narrows how confidently evidence can be used.",
-      "familyId": "writing.er.map",
+      "familyId": "er.map.claims",
       "metadata": {
         "skillId": "W1.2",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Understand the task"
       },
       "rule": "If a sentence could be written without reading the sources, question whether it belongs.",
-      "familyId": "writing.er.task",
+      "familyId": "er.task.read",
       "metadata": {
         "skillId": "W1.1",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Map both arguments"
       },
       "rule": "Map not only what each source says, but how each supports it.",
-      "familyId": "writing.er.map",
+      "familyId": "er.map.claims",
       "metadata": {
         "skillId": "W1.2",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Understand the task"
       },
       "rule": "Map first; judge second; draft third.",
-      "familyId": "writing.er.task",
+      "familyId": "er.task.read",
       "metadata": {
         "skillId": "W1.1",
         "secondarySkillIds": [],
@@ -469,6 +469,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.486Z"
+    "compiledAt": "2026-08-24T10:36:33.152Z"
   }
 }

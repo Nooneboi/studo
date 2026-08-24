@@ -20,7 +20,7 @@
         "label": "Capitalization"
       },
       "rule": "Capitalize proper names and calendar names, not ordinary school subjects used generically.",
-      "familyId": "language.capitalization.mechanics",
+      "familyId": "edit.capitalization",
       "metadata": {
         "skillId": "L2.1",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Pronoun agreement, reference & case"
       },
       "rule": "When a pronoun could point to multiple nouns, name the intended noun.",
-      "familyId": "language.pronoun.reference",
+      "familyId": "edit.pronoun.agreement",
       "metadata": {
         "skillId": "L1.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Apostrophes & possessives"
       },
       "rule": "For a regular plural ending in s, add only an apostrophe.",
-      "familyId": "language.possessives.apostrophes",
+      "familyId": "edit.possessive",
       "metadata": {
         "skillId": "L2.3",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Prefer strong direct verbs over noun-heavy phrases when no nuance is lost.",
-      "familyId": "language.style.concision",
+      "familyId": "edit.conciseness",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Transitions for logic & clarity"
       },
       "rule": "Use contrast transitions to signal a limit, exception, or difference.",
-      "familyId": "language.transitions.logic",
+      "familyId": "edit.transition.logic",
       "metadata": {
         "skillId": "L1.9",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Place a colon after a complete statement, not between a verb and its object.",
-      "familyId": "language.punctuation.clauses",
+      "familyId": "edit.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -369,6 +369,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.491Z"
+    "compiledAt": "2026-08-24T10:36:33.153Z"
   }
 }

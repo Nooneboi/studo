@@ -300,7 +300,7 @@
         "label": "Theme"
       },
       "rule": "Name the relationship first, then prove it with the surrounding text.",
-      "familyId": "theme.infer",
+      "familyId": "theme.identify",
       "metadata": {
         "skillId": "R1.5",
         "secondarySkillIds": [],
@@ -356,7 +356,7 @@
         "label": "Inference from details"
       },
       "rule": "Name the relationship first, then prove it with the surrounding text.",
-      "familyId": "inference.from.details",
+      "familyId": "inference.character_or_event",
       "metadata": {
         "skillId": "R2.4",
         "secondarySkillIds": [],

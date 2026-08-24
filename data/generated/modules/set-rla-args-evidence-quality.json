@@ -20,7 +20,7 @@
         "label": "Evidence relevance"
       },
       "rule": "Prefer evidence that measures the claim directly over evidence that is merely associated with it.",
-      "familyId": "arguments.evidence.relevance",
+      "familyId": "relevance.directness",
       "metadata": {
         "skillId": "R5.4",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Ask whether the evidence measures the claimed outcome or a proxy that could have another explanation.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Look for another change that could produce the same outcome as the proposed cause.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Strong conclusions match the strength of the evidence: report what happened, then limit what causation can be claimed.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Evidence relevance"
       },
       "rule": "Match evidence to the exact outcome word in the claim: “save money” requires cost data on both sides.",
-      "familyId": "arguments.evidence.relevance",
+      "familyId": "relevance.directness",
       "metadata": {
         "skillId": "R5.4",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Relevant evidence can still be insufficient when the decision is broader than the evidence base.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "When evaluating sufficiency, ask what important variable is missing from the evidence already provided.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "The strongest evidence plan targets the uncertainty that prevented a firm conclusion in the first pilot.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.add",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -469,6 +469,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.480Z"
+    "compiledAt": "2026-08-24T10:36:33.146Z"
   }
 }

@@ -20,7 +20,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "Translate the table into a pattern before choosing a policy conclusion.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "When combining text and data, ask whether the numbers support the timing, size, or direction of the written claim.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Different genres / formats"
       },
       "rule": "Different formats can complement each other without having equal evidentiary weight.",
-      "familyId": "arguments.formats.integrate",
+      "familyId": "format.contribution",
       "metadata": {
         "skillId": "R6.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "Choose a measure that matches the decision question instead of assuming a proxy tells you everything.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Different genres / formats"
       },
       "rule": "Synthesis across formats should preserve what each format actually contributes.",
-      "familyId": "arguments.formats.integrate",
+      "familyId": "genre.approach",
       "metadata": {
         "skillId": "R6.4",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "Data can strongly support one part of a decision while leaving another part unmeasured.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Different genres / formats"
       },
       "rule": "Ask what the format can show well and what it cannot measure reliably.",
-      "familyId": "arguments.formats.integrate",
+      "familyId": "format.contribution",
       "metadata": {
         "skillId": "R6.4",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "For a decision, combine formats when each answers a different necessary question.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.integrate",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -469,6 +469,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.483Z"
+    "compiledAt": "2026-08-24T10:36:33.149Z"
   }
 }

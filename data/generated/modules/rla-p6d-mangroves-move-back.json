@@ -132,7 +132,7 @@
         "label": "Meaning in context"
       },
       "rule": "Name the relationship first, then prove it with the surrounding text.",
-      "familyId": "context.word.meaning",
+      "familyId": "context.word_meaning",
       "metadata": {
         "skillId": "R3.1",
         "secondarySkillIds": [],
@@ -356,7 +356,7 @@
         "label": "Cause and effect"
       },
       "rule": "Name the relationship first, then prove it with the surrounding text.",
-      "familyId": "cause.effect",
+      "familyId": "cause.direct",
       "metadata": {
         "skillId": "R2.2",
         "secondarySkillIds": [],

@@ -20,7 +20,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Compare not just numbers, but what each number actually measures.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Evidence relevance"
       },
       "rule": "A relevant advantage is not automatically sufficient to decide the whole policy.",
-      "familyId": "arguments.evidence.relevance",
+      "familyId": "relevance.directness",
       "metadata": {
         "skillId": "R5.4",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Check whether the pilot population resembles the target population and whether the measure matches the claimed behavior.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A third source can clarify which disagreement is real and which is based on a false either/or.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.resolve",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Text + data / visuals"
       },
       "rule": "For value comparisons, pair cost with the outcome the program is trying to produce.",
-      "familyId": "arguments.formats.data",
+      "familyId": "textdata.support",
       "metadata": {
         "skillId": "R6.3",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A fair comparison controls obvious differences and measures the same decision criteria for each option.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Evidence relevance"
       },
       "rule": "Relevant evidence must answer the exact uncertainty in the claim, not merely relate to the general topic.",
-      "familyId": "arguments.evidence.relevance",
+      "familyId": "relevance.directness",
       "metadata": {
         "skillId": "R5.4",
         "secondarySkillIds": [],
@@ -419,6 +419,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.481Z"
+    "compiledAt": "2026-08-24T10:36:33.147Z"
   }
 }

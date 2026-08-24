@@ -20,7 +20,7 @@
         "label": "Parallelism, coordination & subordination"
       },
       "rule": "Keep items in a list in matching grammatical forms.",
-      "familyId": "language.parallelism.structure",
+      "familyId": "edit.parallelism",
       "metadata": {
         "skillId": "L1.6",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Modifiers & logical word order"
       },
       "rule": "Place only beside the word or phrase you intend to restrict.",
-      "familyId": "language.modifiers.limiting_words",
+      "familyId": "edit.modifier.placement",
       "metadata": {
         "skillId": "L1.5",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Punctuation & clause separation"
       },
       "rule": "Use punctuation and conjunctions together to show the relationship between complete clauses.",
-      "familyId": "language.punctuation.clauses",
+      "familyId": "edit.punctuation.clauses",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Wordiness & awkward construction"
       },
       "rule": "Turn repeated noun/verb phrases into one precise modifier when meaning is preserved.",
-      "familyId": "language.style.concision",
+      "familyId": "edit.conciseness",
       "metadata": {
         "skillId": "L1.8",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Standard vs informal usage"
       },
       "rule": "Formal procedures should use standard forms without slang or speech spellings.",
-      "familyId": "language.usage.standard_usage",
+      "familyId": "edit.standard_usage",
       "metadata": {
         "skillId": "L1.4",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Basic subject–verb agreement"
       },
       "rule": "Ignore nouns inside an of-phrase when locating the subject.",
-      "familyId": "language.grammar.subject_verb_agreement",
+      "familyId": "edit.sva.basic",
       "metadata": {
         "skillId": "L1.2",
         "secondarySkillIds": [],
@@ -368,6 +368,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.492Z"
+    "compiledAt": "2026-08-24T10:36:33.155Z"
   }
 }

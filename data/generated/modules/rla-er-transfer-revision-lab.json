@@ -20,7 +20,7 @@
         "label": "Organize the response"
       },
       "rule": "Organize an ER around reasons for your judgment, not around separate source summaries.",
-      "familyId": "writing.er.organization",
+      "familyId": "er.organize.plan",
       "metadata": {
         "skillId": "W1.8",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Organize the response"
       },
       "rule": "Choose transitions for the logical relationship, not because they sound formal.",
-      "familyId": "writing.er.organization",
+      "familyId": "er.organize.transitions",
       "metadata": {
         "skillId": "W1.8",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Develop ideas"
       },
       "rule": "After evidence, explain what it proves and why that matters to your thesis.",
-      "familyId": "writing.er.development",
+      "familyId": "er.develop.analysis",
       "metadata": {
         "skillId": "W1.9",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Develop ideas"
       },
       "rule": "Depth comes from interpreting the limits and significance of evidence.",
-      "familyId": "writing.er.development",
+      "familyId": "er.develop.analysis",
       "metadata": {
         "skillId": "W1.9",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Revise for focus & clarity"
       },
       "rule": "Cut any detail that does not help prove the paragraph’s specific point.",
-      "familyId": "writing.er.revision",
+      "familyId": "er.revise.focus",
       "metadata": {
         "skillId": "W1.10",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Revise for focus & clarity"
       },
       "rule": "Clarity improves when evidence, limitation, and evaluation appear in a logical sequence.",
-      "familyId": "writing.er.revision",
+      "familyId": "er.revise.clarity",
       "metadata": {
         "skillId": "W1.10",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Edit conventions"
       },
       "rule": "In final editing, protect meaning while fixing the specific convention error.",
-      "familyId": "writing.er.edit",
+      "familyId": "er.edit.conventions",
       "metadata": {
         "skillId": "W1.11",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Edit conventions"
       },
       "rule": "Look for convention errors that interfere with clarity before making optional style changes.",
-      "familyId": "writing.er.edit",
+      "familyId": "er.edit.conventions",
       "metadata": {
         "skillId": "W1.11",
         "secondarySkillIds": [],
@@ -471,6 +471,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.486Z"
+    "compiledAt": "2026-08-24T10:36:33.152Z"
   }
 }

@@ -20,7 +20,7 @@
         "label": "Analyze evidence"
       },
       "rule": "After evidence, answer: Why does this make the argument stronger or weaker?",
-      "familyId": "writing.er.analysis",
+      "familyId": "er.evidence.explain",
       "metadata": {
         "skillId": "W1.6",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Analyze reasoning"
       },
       "rule": "Check whether the conclusion is broader than the evidence.",
-      "familyId": "writing.er.reasoning",
+      "familyId": "er.reasoning.analyze",
       "metadata": {
         "skillId": "W1.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Analyze evidence"
       },
       "rule": "A limitation can strengthen credibility when it matches the evidence.",
-      "familyId": "writing.er.analysis",
+      "familyId": "er.evidence.explain",
       "metadata": {
         "skillId": "W1.6",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Analyze reasoning"
       },
       "rule": "Compare how the reasoning works, not just what each source prefers.",
-      "familyId": "writing.er.reasoning",
+      "familyId": "er.reasoning.analyze",
       "metadata": {
         "skillId": "W1.7",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Analyze evidence"
       },
       "rule": "Explain the evidentiary value, not merely the content.",
-      "familyId": "writing.er.analysis",
+      "familyId": "er.evidence.explain",
       "metadata": {
         "skillId": "W1.6",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Analyze reasoning"
       },
       "rule": "Ask what must be true for the conclusion to follow.",
-      "familyId": "writing.er.reasoning",
+      "familyId": "er.reasoning.analyze",
       "metadata": {
         "skillId": "W1.7",
         "secondarySkillIds": [],
@@ -344,7 +344,7 @@
         "label": "Analyze evidence"
       },
       "rule": "Summary tells what; analysis explains why it matters.",
-      "familyId": "writing.er.analysis",
+      "familyId": "er.evidence.explain",
       "metadata": {
         "skillId": "W1.6",
         "secondarySkillIds": [],
@@ -398,7 +398,7 @@
         "label": "Analyze reasoning"
       },
       "rule": "Fair evaluation is stronger than dismissal.",
-      "familyId": "writing.er.reasoning",
+      "familyId": "er.reasoning.analyze",
       "metadata": {
         "skillId": "W1.7",
         "secondarySkillIds": [],
@@ -469,6 +469,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.484Z"
+    "compiledAt": "2026-08-24T10:36:33.151Z"
   }
 }

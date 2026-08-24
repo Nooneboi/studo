@@ -20,7 +20,7 @@
         "label": "Opposing arguments"
       },
       "rule": "Match the strength of the evidence to the size and permanence of the decision.",
-      "familyId": "arguments.sources.opposing",
+      "familyId": "opposing.arguments.support",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -74,7 +74,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "Watch for arguments that compare a real system with an impossible perfect alternative.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.challenge",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -128,7 +128,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "Shared evidence needs can exist even when writers disagree about readiness.",
-      "familyId": "arguments.sources.compare",
+      "familyId": "twotext.agreement",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -182,7 +182,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "Ask what work the number includes and what work it leaves outside the measurement.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.evaluate",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -236,7 +236,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "The best next evidence targets the decisive disagreement rather than collecting more of the same narrow data.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.add",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -290,7 +290,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A fair synthesis states the strongest version of each argument.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.conclusion",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -367,6 +367,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.480Z"
+    "compiledAt": "2026-08-24T10:36:33.146Z"
   }
 }

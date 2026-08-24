@@ -581,6 +581,7 @@ function clearInteractionDraft(questionId) {
 
 function recordPracticeAttempt(q, answer, correct) {
   if (typeof Learning === "undefined") return null;
+  const guidedRetry = isGuidedLearningModule() && learningStageFor(q) === "guided" && guidedRetryUsed.has(q.id);
   return Learning.recordAttempt({
     module: { ...currentQuiz, file: currentModuleFile },
     question: q,
@@ -590,6 +591,10 @@ function recordPracticeAttempt(q, answer, correct) {
     elapsedMs: Date.now() - questionOpenedAt,
     file: currentModuleFile,
     confidence: confidenceSelections[q.id] || null,
+    firstTryCorrect: guidedRetry ? false : correct,
+    attemptCount: guidedRetry ? 2 : 1,
+    assistance: guidedRetry ? "hint" : "none",
+    learningStage: isGuidedLearningModule() ? learningStageFor(q) : null,
   });
 }
 

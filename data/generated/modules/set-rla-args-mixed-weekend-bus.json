@@ -20,7 +20,7 @@
         "label": "Opposing arguments"
       },
       "rule": "For argument strength, judge which source handles the most important uncertainty with relevant evidence and reasoning.",
-      "familyId": "arguments.sources.opposing",
+      "familyId": "opposing.arguments.support",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [
@@ -77,7 +77,7 @@
         "label": "Reasoning validity / fallacies"
       },
       "rule": "When a policy changes several variables at once, causal conclusions need evidence that separates them.",
-      "familyId": "arguments.reasoning.validity",
+      "familyId": "reasoning.challenge",
       "metadata": {
         "skillId": "R5.7",
         "secondarySkillIds": [],
@@ -131,7 +131,7 @@
         "label": "Compare texts on same topic"
       },
       "rule": "Find the shared premise beneath the policy disagreement.",
-      "familyId": "arguments.sources.compare",
+      "familyId": "twotext.agreement",
       "metadata": {
         "skillId": "R6.1",
         "secondarySkillIds": [],
@@ -185,7 +185,7 @@
         "label": "Evidence sufficiency"
       },
       "rule": "The strongest added evidence targets the opponent's best objection, not a side issue.",
-      "familyId": "arguments.evidence.sufficiency",
+      "familyId": "sufficiency.add",
       "metadata": {
         "skillId": "R5.5",
         "secondarySkillIds": [],
@@ -239,7 +239,7 @@
         "label": "Opposing arguments"
       },
       "rule": "Good source comparison can identify tradeoffs even when one argument is stronger for a particular decision.",
-      "familyId": "arguments.sources.opposing",
+      "familyId": "opposing.arguments.evidence",
       "metadata": {
         "skillId": "R6.2",
         "secondarySkillIds": [],
@@ -293,7 +293,7 @@
         "label": "Synthesis across sources"
       },
       "rule": "A synthesis should state the real point of disagreement and the reasons on both sides.",
-      "familyId": "arguments.sources.synthesize",
+      "familyId": "synthesis.resolve",
       "metadata": {
         "skillId": "R6.5",
         "secondarySkillIds": [],
@@ -370,6 +370,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-24T08:43:52.482Z"
+    "compiledAt": "2026-08-24T10:36:33.148Z"
   }
 }
