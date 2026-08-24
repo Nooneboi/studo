@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-24  
-**Current release:** `0.7.0-alpha.17`  
-**Current stage:** Phase 2 high-priority Reading depth — Inference complete; Conclusions / Generalizations is next  
+**Current release:** `0.7.0-alpha.18`  
+**Current stage:** Phase 2 high-priority Reading depth complete — whole-phase review is next before any further skill expansion  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **99 learner modules**
-- **729 objective/component questions**
+- **100 learner modules**
+- **735 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -122,6 +122,21 @@ Implemented progression:
 6. Passage transfer — mixed Passage Practice continues to expose Inference inside longer informational and literary reading sets.
 
 The new 588-word original literary passage, **The Spare Script**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
+
+### Phase 2 depth skill — Conclusions & Generalizations
+
+Conclusions & Generalizations now reuses the existing guide and two workbooks plus a new skill-specific active-learning path. The progression distinguishes synthesis from ordinary inference by making learners combine multiple findings, control scope, identify an underlying principle, and transfer that principle cautiously. Difficulty rises through competing evidence, qualifications, and overgeneralization traps rather than through vague guessing.
+
+Implemented progression:
+
+1. Learn — existing Conclusions & Generalizations Study Guide.
+2. Guided — identify details that establish the overall pattern, then classify conclusions as too narrow, supported, or too broad.
+3. Apply — synthesize results across conditions and identify the underlying principle without copying surface details.
+4. Independent — transfer the principle to a new situation, then draw a whole-passage conclusion that preserves the study limitation with no hints.
+5. Follow-up — existing four-context drill is retained as **Conclusions & Generalizations - Independent Practice**.
+6. Passage transfer — mixed Passage Practice continues to expose Conclusions & Generalizations inside longer reading sets.
+
+The new 545-word original science/informational passage, **Shade Cloth and Seedling Growth**, remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
 
 ## Learning-mode ownership
 
@@ -298,17 +313,16 @@ Automated validation/regression coverage protects against problems including:
 
 Supporting Details now uses the existing strong PDF material plus a skill-specific Guided → Apply → Independent path, followed by the existing multi-context independent practice.
 
-### Phase 2 — Complete high-priority Reading depth
+### Phase 2 — Complete high-priority Reading depth: complete
 
-Status/order:
+Completed reference-depth sequence:
 
 1. Explicit Meaning — **complete in Alpha 15**
 2. Summary — **complete in Alpha 16**
 3. Inference — **complete in Alpha 17**
-4. Conclusions / Generalizations — **next**
-5. thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships
+4. Conclusions / Generalizations — **complete in Alpha 18**
 
-Add more clearly social-studies/civic informational passage contexts as the bank deepens.
+Before automatically deepening thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships, stop and review Phase 2 as a whole. Check learner-flow consistency, interaction usefulness, content balance, difficulty progression, redundancy, and what these four skill builds reveal about the next highest-value gap.
 
 ### Phase 3 — Deepen Arguments, Language, and Extended Response
 
@@ -353,8 +367,8 @@ Automated correctness is necessary but not the final public-release gate. Before
 7. fix high-impact learner/content/accessibility/reliability issues;
 8. explicitly enable the release gate only after that review.
 
-## Immediate next build
+## Immediate next work
 
-> **Phase 2 — Conclusions / Generalizations.**
+> **Phase 2 whole-system review before further Reading expansion.**
 
-Audit and reuse the existing Conclusions / Generalizations guide/workbooks/practice first. Add only the learning progression that this skill genuinely needs, while preserving the learning-mode separation, GED-style transfer, and learner-first interaction rules.
+Review Explicit Meaning, Summary, Inference, and Conclusions & Generalizations together. Confirm that each skill has a distinct learning identity, that Guided → Apply → Independent progression is consistent without becoming repetitive, that interaction types are justified by the reasoning task, and that passage/context/difficulty coverage remains balanced. Only after that review should the next thinner Reading skill be selected.

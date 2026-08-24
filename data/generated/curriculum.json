@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-24T15:39:01.246Z",
+  "builtAt": "2026-08-24T16:06:33.227Z",
   "tracks": [
     {
       "id": "reading",
@@ -1078,7 +1078,7 @@
           "units": [],
           "availableSkillCount": 6,
           "availableUnitCount": 0,
-          "availableSetCount": 7,
+          "availableSetCount": 8,
           "topicResourceCount": 2,
           "topicResources": [
             {
@@ -1798,16 +1798,56 @@
               "priority": "P0",
               "practiceMode": "Reading",
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-conclusions-active-methods-v1",
+                  "title": "Conclusions & Generalizations - Guided Practice",
+                  "description": "Guided Conclusions & Generalizations practice that moves from recognizing a multi-detail pattern to careful synthesis, scope control, principle extraction, and transfer.",
+                  "file": "generated/modules/set-rla-conclusions-active-methods-v1.json",
+                  "difficulty": "medium",
+                  "category": "reading",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.5",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Synthesize multiple details into a warranted conclusion, control the scope of that conclusion, identify the underlying principle, and apply it cautiously to a new situation.",
+                    "topicLabel": "Conclusions & generalizations",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-conclusions-active-shade-plots",
+                    "title": "Shade Cloth and Seedling Growth",
+                    "textType": "informational",
+                    "context": "science",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R2.5"
+                  ]
+                },
+                {
                   "id": "set-rla-conclusions-practice-01",
-                  "title": "Conclusions Practice 1",
-                  "description": "4 short texts - 8 conclusion and generalization questions",
+                  "title": "Conclusions & Generalizations - Independent Practice",
+                  "description": "4 short texts · 8 independent conclusion-and-generalization questions",
                   "file": "generated/modules/rla-conclusions-practice-01.json",
                   "difficulty": "medium",
                   "category": "reading",
@@ -4723,8 +4763,8 @@
       ],
       "availableSkillCount": 22,
       "totalSkillCount": 22,
-      "availableSetCount": 38,
-      "questionCount": 294,
+      "availableSetCount": 39,
+      "questionCount": 300,
       "resourceCount": 86,
       "studyFileCount": 86,
       "checkCount": 0

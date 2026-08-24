@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-conclusions-active-methods-v1",
+  "title": "Conclusions & Generalizations - Guided Practice",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Conclusions & generalizations",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-conclusions-active-shade-plots"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Chee Skool Conclusions & Generalizations reference-skill review",
+  "reviewNotes": "Guided Conclusions & Generalizations path focused on combining evidence into a careful conclusion, controlling scope, identifying an underlying principle, and transferring that principle without overgeneralizing. Existing Conclusions Practice 1 remains the independent follow-up. Excluded from Mock because it contains guided support and directly taught material.",
+  "curriculum": {
+    "domain": "Relationships & Inference",
+    "primarySkillId": "R2.5",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Synthesize multiple details into a warranted conclusion, control the scope of that conclusion, identify the underlying principle, and apply it cautiously to a new situation.",
+    "topicLabel": "Conclusions & generalizations",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Sort each detail by whether it helps establish the experiment's overall shade-and-seedling pattern or is mainly an isolated measurement/record detail.",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 85,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The exposed seedlings had warmer soil, lost moisture faster, and showed more scorched leaf edges."
+          },
+          {
+            "id": "i2",
+            "text": "Medium shade reduced heat and moisture loss while maintaining strong growth."
+          },
+          {
+            "id": "i3",
+            "text": "One soil-moisture sensor failed during week four."
+          },
+          {
+            "id": "i4",
+            "text": "Heavy shade reduced scorching but was associated with slower growth and thinner stems."
+          }
+        ],
+        "zones": [
+          {
+            "id": "pattern",
+            "label": "Helps establish the overall pattern"
+          },
+          {
+            "id": "isolated",
+            "label": "Isolated / record-quality detail"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=pattern|i2=pattern|i3=isolated|i4=pattern",
+      "explanation": {
+        "answer": "The exposed, medium-shade, and heavy-shade results all help define the overall pattern; the failed sensor is mainly a data-quality detail.",
+        "whyCorrect": "A conclusion should synthesize repeated or contrasting findings that answer the experiment's main question. The failed sensor matters for reporting precision, but it does not itself show how shade affected seedling performance.",
+        "quickTip": "Before drawing a conclusion, separate evidence about the main pattern from details that describe one measurement, location, or procedure."
+      },
+      "learningStage": "guided",
+      "hint": "Ask whether each detail helps answer the study's main question: how did different amounts of shade affect heat stress and growth?"
+    },
+    {
+      "id": "q2",
+      "type": "drag_sort",
+      "prompt": "Classify each possible conclusion by its scope: too narrow, supported by the full pattern, or too broad for this six-week trial.",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "interaction": {
+        "items": [
+          {
+            "id": "s1",
+            "text": "One medium-shade tray near the concrete wall stayed warmer than the other medium-shade trays."
+          },
+          {
+            "id": "s2",
+            "text": "In this trial, moderate shade generally reduced heat stress while preserving stronger growth than heavy shade."
+          },
+          {
+            "id": "s3",
+            "text": "Medium shade is the best growing condition for every tree species in every climate."
+          },
+          {
+            "id": "s4",
+            "text": "Shade cloth can never be useful unless it blocks exactly 40 percent of sunlight."
+          }
+        ],
+        "zones": [
+          {
+            "id": "narrow",
+            "label": "Too narrow"
+          },
+          {
+            "id": "supported",
+            "label": "Supported conclusion"
+          },
+          {
+            "id": "broad",
+            "label": "Too broad"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "s1=narrow|s2=supported|s3=broad|s4=broad",
+      "explanation": {
+        "answer": "s1 is too narrow; s2 matches the evidence; s3 and s4 overextend beyond the study.",
+        "whyCorrect": "The trial supports a careful pattern about moderate shade under these conditions. One warm tray is only one detail, while universal claims about all species, climates, or an exact shade percentage go beyond the evidence.",
+        "quickTip": "A strong conclusion is wide enough to combine the evidence but not wider than the evidence can support."
+      },
+      "learningStage": "guided",
+      "hint": "Look for the statement that combines several results but still respects the study's limited species, location, and six-week duration."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion best synthesizes the results for the exposed, medium-shade, and heavy-shade groups?",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because heavy shade kept the soil coolest, it was the most successful condition overall.",
+          "distractorType": "single_detail_inference",
+          "whyWrong": "This focuses on cooling while ignoring the slower growth and thinner stems under heavy shade."
+        },
+        {
+          "id": "b",
+          "text": "Shade cloth helped only by reducing the amount of water the nursery had to provide.",
+          "distractorType": "unsupported_claim",
+          "whyWrong": "All groups received the same scheduled amount of water; the study measured moisture loss rather than a reduction in water supplied."
+        },
+        {
+          "id": "c",
+          "text": "Moderate shade offered the best balance in this trial by reducing heat and moisture loss without limiting growth as much as heavy shade."
+        },
+        {
+          "id": "d",
+          "text": "The experiment proves that direct sunlight is harmful to young trees under all growing conditions.",
+          "distractorType": "overgeneralization",
+          "whyWrong": "The study concerns a short hot-weather trial at one nursery and does not justify a universal claim about direct sunlight."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Choice C combines the main benefit of shade with the growth limitation seen under heavy shade. It uses evidence from several groups and keeps the conclusion within the conditions of the trial.",
+        "quickTip": "A synthesis conclusion should account for the important results together, including evidence that complicates a simple one-direction story."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which principle is most reasonably supported by the nursery trial?",
+      "primarySkillId": "R2.5",
+      "familyId": "generalization.apply",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "An intervention may work best when it reduces a major stress without blocking another resource that the organism still needs."
+        },
+        {
+          "id": "b",
+          "text": "The strongest possible intervention usually produces the best biological result.",
+          "distractorType": "reversed_relationship",
+          "whyWrong": "Heavy shade reduced heat most strongly but also limited growth, so the passage does not support 'strongest is best.'"
+        },
+        {
+          "id": "c",
+          "text": "Plant studies are reliable only when every tray produces identical measurements.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The class kept irregularities in the report; the passage does not require identical results for a useful pattern."
+        },
+        {
+          "id": "d",
+          "text": "Any treatment that changes temperature will improve plant growth.",
+          "distractorType": "too_broad",
+          "whyWrong": "The experiment shows that reducing heat can help, but too much shade also reduced growth."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The trial suggests a balance principle: reducing heat stress helped, but blocking too much light created another cost. That principle abstracts the relationship without tying it to one exact shade percentage.",
+        "quickTip": "A useful generalization preserves the relationship in the evidence; it does not copy a surface detail such as '40 percent shade.'"
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which new situation best illustrates the same principle supported by the seedling trial?",
+      "primarySkillId": "R2.5",
+      "familyId": "generalization.apply",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 85,
+      "options": [
+        {
+          "id": "a",
+          "text": "A greenhouse replaces every clear roof panel with an opaque panel so no afternoon sunlight reaches any plant.",
+          "distractorType": "overextension",
+          "whyWrong": "This maximizes the intervention instead of balancing heat reduction with plants' continued need for light."
+        },
+        {
+          "id": "b",
+          "text": "A gardener copies the nursery's exact 40-percent shade setup for a cactus without checking its light needs.",
+          "distractorType": "superficial_transfer",
+          "whyWrong": "This copies a surface detail while ignoring that a different plant may require a different balance of heat and light."
+        },
+        {
+          "id": "c",
+          "text": "A greenhouse records its temperature for one afternoon but makes no change to growing conditions.",
+          "distractorType": "related_not_answering",
+          "whyWrong": "Monitoring is related to the topic, but it does not illustrate an intervention that reduces one stress while preserving another needed resource."
+        },
+        {
+          "id": "d",
+          "text": "A greenhouse adds a vented screen that lowers dangerous afternoon heat while still allowing enough light for seedlings to grow normally."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The vented screen transfers the same underlying relationship: reduce a harmful condition while preserving another resource needed for healthy growth.",
+        "quickTip": "For a transfer question, match the principle—not the nouns, numbers, or exact equipment from the original passage."
+      },
+      "learningStage": "independent"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion about the experiment is best supported when both the main results and the study's limitations are considered?",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "options": [
+        {
+          "id": "a",
+          "text": "The trial established a permanent rule that medium shade should be used for all native seedlings.",
+          "distractorType": "too_broad",
+          "whyWrong": "The teacher explicitly notes that one six-week trial cannot establish the same response for every plant, climate, or season."
+        },
+        {
+          "id": "b",
+          "text": "The trial provides useful evidence that moderate shade can balance heat protection and growth under the tested conditions, while further trials are needed before extending that result broadly."
+        },
+        {
+          "id": "c",
+          "text": "Because one sensor failed, no conclusion can reasonably be drawn from any of the other measurements.",
+          "distractorType": "overstates_limitation",
+          "whyWrong": "The class documented the failed sensor, but many other observations and measurements still showed a consistent pattern."
+        },
+        {
+          "id": "d",
+          "text": "The experiment shows only that concrete walls increase the temperature of nearby seedling trays.",
+          "distractorType": "too_narrow",
+          "whyWrong": "The concrete-wall tray is one irregular result; the experiment's main evidence compares shade levels across the seedling groups."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This choice synthesizes the main pattern and preserves the study's scope. It recognizes useful evidence without treating a short experiment at one nursery as a universal rule.",
+        "quickTip": "The strongest scientific conclusion often says both what the evidence supports and how far that evidence can safely be generalized."
+      },
+      "learningStage": "independent"
+    }
+  ],
+  "description": "Guided Conclusions & Generalizations practice that moves from recognizing a multi-detail pattern to careful synthesis, scope control, principle extraction, and transfer."
+}
