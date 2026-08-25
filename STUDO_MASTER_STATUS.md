@@ -1,11 +1,20 @@
 # Chee Skool — Master Project Status
 
-**Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.29`  
-**Current stage:** Phase 5 complete at code/content/automated-QA level — three dedicated unseen fixed Mock forms are live in source; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
+**Date:** 2026-08-25
+**Current release:** `0.7.0-alpha.30`
+**Current stage:** Phase 5.5 learner-facing UI cleanup complete in source — Extended Response, Mock, Progress, and phone layouts are clearer; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
+
+## Phase 5.5 learner-facing UI cleanup — Alpha 30
+
+- Extended Response now shows **Production Lab** and **Full Extended Response Practice** side by side on desktop instead of burying full essays below a long drill list. On phone, **Full ER Practice appears first**, with jump links for Full ER, Production Lab, and Learning units.
+- Mock now uses a scalable **test library**: Full RLA Mock and Objective RLA Practice Test are clear separate cards, and future test formats can be added to the same auto-fitting grid without redesigning the page. Focused Practice remains a separate lower section.
+- Progress gives Correct, Practice signal, and Status independent layout cells so status text no longer competes with the percentage meter. At tablet/phone widths, each tracked skill becomes a readable stacked card instead of a compressed desktop row.
+- Phone spacing is tighter on first load, major actions use full-width touch targets where appropriate, and long Extended Response navigation uses horizontally scrollable jump links rather than shrinking labels.
+- Phase 5 role isolation, Mock counts, scoring boundaries, and learner evidence rules are unchanged.
+- Public alpha remains gated on real-browser/device/accessibility QA and a small learner pilot.
 
 ## Product goal
 

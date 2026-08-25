@@ -30,12 +30,14 @@ async function init() {
   const extendedResponseProduction = track.id === "extended-response"
     ? (curriculum.extendedResponseProduction || [])
     : [];
+  const isExtendedResponse = track.id === "extended-response";
   mount.innerHTML = `
-    <header class="simple-domain-hero domain-hero-with-resources">
+    <header class="simple-domain-hero domain-hero-with-resources${isExtendedResponse ? " er-domain-hero" : ""}">
       <div class="domain-hero-copy">
         <a class="curriculum-back" href="curriculum.html?track=${encodeURIComponent(track.id)}">← ${escapeHtml(track.label)}</a>
         <div class="page-kicker">${escapeHtml(track.shortLabel || track.label)}</div>
         <h1>${escapeHtml(domain.label)}</h1>
+        ${isExtendedResponse ? `<p class="er-domain-lede">Choose focused writing when you want to train one response skill, or open a full Extended Response when you want complete essay practice.</p>` : ""}
       </div>
       ${topicResources.length ? `
         <div class="topic-resource-links" aria-label="${escapeHtml(domain.label)} topic files">
@@ -43,7 +45,8 @@ async function init() {
           ${topicResources.map(renderTopicResource).join("")}
         </div>` : ""}
     </header>
-    <div class="simple-skill-groups compact-skill-groups">
+    ${isExtendedResponse ? renderExtendedResponsePractice(extendedResponsePractice, extendedResponseProduction, track, domain) : ""}
+    <div${isExtendedResponse ? ' id="er-learning-units"' : ""} class="simple-skill-groups compact-skill-groups${isExtendedResponse ? " er-learning-units" : ""}">
       ${groups.map((group, index) => `
         <section class="simple-skill-group tone-${toneFor(index)}">
           <h2 class="simple-skill-group-title">${escapeHtml(group.label)}</h2>
@@ -65,25 +68,46 @@ async function init() {
             ${languagePractice.map((set) => renderArgumentPractice(set, track, domain)).join("")}
           </div>
         </section>` : ""}
-      ${extendedResponseProduction.length ? `
-        <section class="simple-skill-group tone-teal er-prompt-group">
-          <div class="er-domain-practice-head">
-            <div><h2 class="simple-skill-group-title">Production Lab</h2><p>Practice one part of the response at a time.</p></div>
-          </div>
-          <div class="er-domain-prompt-stack">
-            ${extendedResponseProduction.map((task) => renderErProductionTask(task, track, domain)).join("")}
-          </div>
-        </section>` : ""}
-      ${extendedResponsePractice.length ? `
-        <section class="simple-skill-group tone-amber er-prompt-group">
-          <div class="er-domain-practice-head">
-            <div><h2 class="simple-skill-group-title">Full Extended Response Practice</h2><p>Use paired sources to plan, write, and self-review a complete response.</p></div>
-          </div>
-          <div class="er-domain-prompt-stack">
-            ${extendedResponsePractice.map((prompt) => renderErPrompt(prompt, track, domain)).join("")}
-          </div>
-        </section>` : ""}
     </div>`;
+}
+
+
+function renderExtendedResponsePractice(practicePrompts, productionTasks, track, domain) {
+  if (!practicePrompts.length && !productionTasks.length) return "";
+  return `
+    <section class="er-practice-overview" aria-labelledby="er-practice-modes-heading">
+      <div class="er-practice-overview-head">
+        <div>
+          <span class="page-kicker">Writing practice</span>
+          <h2 id="er-practice-modes-heading">Choose your practice mode</h2>
+        </div>
+        <nav class="er-practice-jumps" aria-label="Extended Response practice sections">
+          ${practicePrompts.length ? '<a href="#full-er-practice">Full ER Practice</a>' : ""}
+          ${productionTasks.length ? '<a href="#production-lab">Production Lab</a>' : ""}
+          <a href="#er-learning-units">Learning units</a>
+        </nav>
+      </div>
+      <div class="er-practice-layout">
+        ${practicePrompts.length ? `
+          <section id="full-er-practice" class="simple-skill-group tone-amber er-prompt-group er-practice-column er-practice-full">
+            <div class="er-domain-practice-head">
+              <div><h2 class="simple-skill-group-title">Full Extended Response Practice</h2><p>Use paired sources to plan, write, and self-review a complete response.</p></div>
+            </div>
+            <div class="er-domain-prompt-stack">
+              ${practicePrompts.map((prompt) => renderErPrompt(prompt, track, domain)).join("")}
+            </div>
+          </section>` : ""}
+        ${productionTasks.length ? `
+          <section id="production-lab" class="simple-skill-group tone-teal er-prompt-group er-practice-column er-practice-production">
+            <div class="er-domain-practice-head">
+              <div><h2 class="simple-skill-group-title">Production Lab</h2><p>Practice one response skill before a full essay.</p></div>
+            </div>
+            <div class="er-domain-prompt-stack">
+              ${productionTasks.map((task) => renderErProductionTask(task, track, domain)).join("")}
+            </div>
+          </section>` : ""}
+      </div>
+    </section>`;
 }
 
 function normalizeGroups(domain) {

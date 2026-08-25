@@ -80,7 +80,9 @@ test('Phase 4 closeout review exists and states the evidence boundary', () => {
 
 test('current alpha metadata stays synchronized after the additive Phase 5 bank', () => {
   const release = readJson('release.json');
-  assert.equal(release.release, '0.7.0-alpha.29');
+  const releaseMatch = release.release.match(/^0\.7\.0-alpha\.(\d+)$/);
+  assert.ok(releaseMatch, 'release stays on the 0.7.0 alpha line');
+  assert.ok(Number(releaseMatch[1]) >= 29, 'later alpha releases must preserve the Phase 4 closeout baseline');
   assert.equal(release.generatedModules, 133);
   assert.equal(release.learnerResourceFiles, 152);
   const builder = read('scripts/build-public.mjs');
@@ -88,7 +90,8 @@ test('current alpha metadata stays synchronized after the additive Phase 5 bank'
   assert.match(builder, /check\.js/);
   assert.match(builder, /quick-review\.js/);
   assert.match(builder, /quick-review\.json/);
+  const releasePattern = new RegExp(`<meta name=\"studo-release\" content=\"${release.release.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\">`);
   for (const page of ['check.html', 'train.html', 'progress.html', 'skill.html']) {
-    assert.match(read(page), /<meta name="studo-release" content="0\.7\.0-alpha\.29">/);
+    assert.match(read(page), releasePattern);
   }
 });

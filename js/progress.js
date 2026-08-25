@@ -317,13 +317,13 @@ function skillRow(skill, latestCheck = null) {
   return `
     <a class="progress-skill-row" href="${escapeAttr(practiceHref(skill))}">
       <span class="progress-skill-name"><small>${escapeHtml(Learning.categoryLabel(skill.category))}</small><strong>${escapeHtml(skill.label)}</strong></span>
-      <span>${skill.correct}/${skill.attempts}</span>
+      <span class="progress-correct-cell"><small>Correct</small><strong>${skill.correct}/${skill.attempts}</strong></span>
       <span class="progress-signal-cell">
         <small>Practice signal</small>
         <span class="progress-signal-meter"><i><b style="width:${Math.max(0, Math.min(100, skill.score))}%"></b></i><strong>${skill.score}%</strong></span>
         ${latestCheck ? `<span class="progress-check-result"><small>Latest Skill Check</small><strong>${escapeHtml(latestCheck.correct)}/${escapeHtml(latestCheck.total)}</strong></span>` : ""}
       </span>
-      <span class="progress-status ${statusClass(skill.status)}">${escapeHtml(skill.status)}</span>
+      <span class="progress-status-cell"><small>Status</small><strong class="progress-status ${statusClass(skill.status)}">${escapeHtml(skill.status)}</strong></span>
     </a>`;
 }
 
