@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-check-explicit-meaning-v1",
+  "runtime": {
+    "id": "set-rla-check-explicit-meaning-v1",
+    "file": "set-rla-check-explicit-meaning-v1.json"
+  },
+  "title": "Explicit Meaning — Skill Check",
+  "description": "Identify information the passage states directly.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-check-explicit-tool-room"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 4 Skill Check editorial review",
+  "reviewNotes": "Unseen independent check; no hints, retries, or guided scaffolding.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which employees may check out a cordless drill without advance approval?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Any employee scheduled for maintenance work",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage limits this permission to trained employees."
+        },
+        {
+          "id": "b",
+          "text": "Employees who completed tool-safety training"
+        },
+        {
+          "id": "c",
+          "text": "Only supervisors",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Supervisors approve specialized tools, not every cordless drill."
+        },
+        {
+          "id": "d",
+          "text": "Employees who submit an overnight note",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The overnight note concerns keeping a tool overnight, not ordinary checkout."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which tool still requires supervisor approval before checkout?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Cordless drill",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "A trained employee may check out a cordless drill without advance approval."
+        },
+        {
+          "id": "b",
+          "text": "Standard wrench",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Standard hand tools do not require advance approval for trained employees."
+        },
+        {
+          "id": "c",
+          "text": "Thermal camera"
+        },
+        {
+          "id": "d",
+          "text": "Paper sign-out log",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The paper log is a record, not a tool being checked out."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What must an employee do before keeping a tool overnight?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Enter an overnight note before 3:00 p.m."
+        },
+        {
+          "id": "b",
+          "text": "Place the tool in the red inspection bin",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That action is for damaged tools."
+        },
+        {
+          "id": "c",
+          "text": "Wait until the digital station fails",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The paper process is only for outages."
+        },
+        {
+          "id": "d",
+          "text": "Ask the coordinator to transfer the record first",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Transfer happens after paper entries are used during an outage."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A damaged cable locator is returned near the end of a shift. What does the procedure explicitly require?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Return it to its normal shelf and email the supervisor",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Damaged tools are not returned to the normal shelf."
+        },
+        {
+          "id": "b",
+          "text": "Keep it overnight until a supervisor can inspect it",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage gives a specific damage procedure instead."
+        },
+        {
+          "id": "c",
+          "text": "Record it only in the paper log",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The paper log is for digital outages, not damage."
+        },
+        {
+          "id": "d",
+          "text": "Put it in the red inspection bin and complete a damage report"
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "When should staff use the paper sign-out log?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.fact.locate",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Whenever a specialized tool is checked out",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Specialized tools require approval, but the digital station is still the normal record."
+        },
+        {
+          "id": "b",
+          "text": "Only when the digital station is unavailable"
+        },
+        {
+          "id": "c",
+          "text": "Whenever a tool will stay out overnight",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Overnight use requires a note, not automatically a paper log."
+        },
+        {
+          "id": "d",
+          "text": "During the first six weeks of the new procedure",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The six weeks are the review period, not a paper-log period."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement is explicitly stated about the six-week review?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It will decide whether all supervisor approvals can end",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage does not say approvals will be removed."
+        },
+        {
+          "id": "b",
+          "text": "It will measure employee satisfaction with the tool room",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No satisfaction survey is mentioned."
+        },
+        {
+          "id": "c",
+          "text": "It will check whether missing-tool reports decreased"
+        },
+        {
+          "id": "d",
+          "text": "It will replace the digital system with the paper log if one tool is lost",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No such rule is stated."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.1",
+    "secondarySkillIds": [],
+    "contentKind": "skill_drill",
+    "learningObjective": "Identify information the passage states directly.",
+    "topicLabel": "Explicit Meaning — Skill Check",
+    "deliveryRoles": [
+      "skill_check"
+    ],
+    "practiceTags": [
+      "mock-excluded"
+    ]
+  }
+}

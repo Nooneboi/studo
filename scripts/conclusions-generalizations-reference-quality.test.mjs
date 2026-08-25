@@ -58,5 +58,5 @@ test('Conclusions reuses existing resources and keeps the old drill as Independe
   assert.equal(skill.sets[0]?.title, 'Conclusions & Generalizations - Guided Practice');
   assert.equal(skill.sets[1]?.title, 'Conclusions & Generalizations - Independent Practice');
   assert.ok(skill.sets[1]?.file?.endsWith('rla-conclusions-practice-01.json'), 'existing Conclusions drill was lost');
-  assert.equal(skill.checkCount, 0, 'Phase 2 must not invent a Skill Check');
+  assert.equal(skill.checkCount, 1, 'Phase 4 first-wave Check should attach separately');
 });

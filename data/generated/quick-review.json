@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-08-25T08:06:18.647Z",
+  "cards": [
+    {
+      "id": "qr-argument-claim",
+      "category": "argument_terms",
+      "front": "Claim",
+      "back": "A statement the writer wants the reader to accept.",
+      "example": "The city should extend library hours."
+    },
+    {
+      "id": "qr-argument-reason",
+      "category": "argument_terms",
+      "front": "Reason",
+      "back": "A point that explains why a claim should be accepted.",
+      "example": "Later hours would serve students who work after school."
+    },
+    {
+      "id": "qr-argument-evidence",
+      "category": "argument_terms",
+      "front": "Evidence",
+      "back": "Specific facts, examples, data, or observations used to support a claim or reason.",
+      "example": "Entry records show the evening study room is full three nights a week."
+    },
+    {
+      "id": "qr-argument-assumption",
+      "category": "argument_terms",
+      "front": "Assumption",
+      "back": "An unstated idea the reasoning depends on being true.",
+      "example": "A plan based on bus ridership may assume current riders represent future riders."
+    },
+    {
+      "id": "qr-argument-counterargument",
+      "category": "argument_terms",
+      "front": "Counterargument",
+      "back": "A reasonable opposing claim or objection that challenges the writer's position.",
+      "example": "Longer library hours could raise staffing costs."
+    },
+    {
+      "id": "qr-transition-however",
+      "category": "transitions",
+      "front": "What relationship does “however” signal?",
+      "back": "Contrast or a turn against the previous idea.",
+      "example": "The pilot saved time; however, it increased setup costs."
+    },
+    {
+      "id": "qr-transition-therefore",
+      "category": "transitions",
+      "front": "What relationship does “therefore” signal?",
+      "back": "Result or conclusion from the idea before it.",
+      "example": "Demand doubled; therefore, the clinic added another evening shift."
+    },
+    {
+      "id": "qr-transition-for-example",
+      "category": "transitions",
+      "front": "What relationship does “for example” signal?",
+      "back": "A specific illustration of a broader statement.",
+      "example": "Several repairs were delayed; for example, the east stair rail waited six days."
+    },
+    {
+      "id": "qr-transition-meanwhile",
+      "category": "transitions",
+      "front": "What relationship does “meanwhile” usually signal?",
+      "back": "Events or conditions happening at the same time, often in a different place or thread.",
+      "example": "Crews repaired the roof. Meanwhile, staff moved classes to another wing."
+    },
+    {
+      "id": "qr-transition-in-contrast",
+      "category": "transitions",
+      "front": "What relationship does “in contrast” signal?",
+      "back": "A direct difference between two ideas, cases, or conditions.",
+      "example": "Weekday buses were crowded. In contrast, weekend buses had many empty seats."
+    },
+    {
+      "id": "qr-structure-cause-effect",
+      "category": "text_structure",
+      "front": "Cause-and-effect structure",
+      "back": "Shows why something happened and what resulted from it.",
+      "example": "A pipe burst, so the building closed for repairs."
+    },
+    {
+      "id": "qr-structure-compare-contrast",
+      "category": "text_structure",
+      "front": "Compare-and-contrast structure",
+      "back": "Organizes similarities and differences between two or more subjects.",
+      "example": "The author compares two recycling programs by cost, participation, and waste reduced."
+    },
+    {
+      "id": "qr-structure-problem-solution",
+      "category": "text_structure",
+      "front": "Problem-and-solution structure",
+      "back": "Introduces a difficulty, then presents or evaluates one or more responses.",
+      "example": "The passage describes unsafe crossings, then evaluates a new signal system."
+    },
+    {
+      "id": "qr-tone-connotation",
+      "category": "word_tone",
+      "front": "Connotation",
+      "back": "The feeling or association a word carries beyond its basic dictionary meaning.",
+      "example": "“Persistent” and “stubborn” can describe similar behavior but create different impressions."
+    },
+    {
+      "id": "qr-tone-objective",
+      "category": "word_tone",
+      "front": "Objective tone",
+      "back": "Neutral, restrained wording that emphasizes information rather than emotion or judgment.",
+      "example": "The report states the measured change without calling it impressive or disappointing."
+    },
+    {
+      "id": "qr-tone-loaded-language",
+      "category": "word_tone",
+      "front": "Loaded language",
+      "back": "Strongly positive or negative wording that pushes the reader toward an emotional judgment.",
+      "example": "Calling a routine fee an “outrageous cash grab” adds judgment beyond the fact itself."
+    },
+    {
+      "id": "qr-language-agreement",
+      "category": "language_rules",
+      "front": "Subject–verb agreement check",
+      "back": "Find the true subject first; do not let a nearby noun control the verb.",
+      "example": "The list of repairs is on the desk."
+    },
+    {
+      "id": "qr-language-pronoun",
+      "category": "language_rules",
+      "front": "Clear pronoun reference",
+      "back": "A pronoun should point clearly to one intended antecedent.",
+      "example": "Instead of “When Ana called Mia, she was late,” name the person who was late."
+    },
+    {
+      "id": "qr-language-parallelism",
+      "category": "language_rules",
+      "front": "Parallel structure",
+      "back": "Items serving the same grammatical role should use matching forms.",
+      "example": "The role requires planning, testing, and reporting."
+    },
+    {
+      "id": "qr-language-modifier",
+      "category": "language_rules",
+      "front": "Modifier placement",
+      "back": "Place a descriptive word or phrase close to the word it actually modifies.",
+      "example": "Walking through the lab, Maya noticed the loose cable."
+    },
+    {
+      "id": "qr-language-concision",
+      "category": "language_rules",
+      "front": "Concision check",
+      "back": "Remove repeated meaning when the shorter version keeps the full idea.",
+      "example": "Use “because” instead of “due to the fact that” when the meaning is unchanged."
+    },
+    {
+      "id": "qr-punctuation-semicolon",
+      "category": "punctuation",
+      "front": "When can a semicolon join clauses?",
+      "back": "When both sides could stand as complete sentences and their ideas are closely related.",
+      "example": "The first trial ended early; the second lasted the full week."
+    },
+    {
+      "id": "qr-punctuation-colon",
+      "category": "punctuation",
+      "front": "What must come before a colon?",
+      "back": "A complete clause that introduces an explanation, list, example, or result.",
+      "example": "The team identified one priority: replace the damaged railing."
+    },
+    {
+      "id": "qr-punctuation-nonessential",
+      "category": "punctuation",
+      "front": "Nonessential information",
+      "back": "Extra information that can be removed without changing the core identity or meaning is usually set off with commas.",
+      "example": "The west entrance, which opened last year, will close for repairs."
+    },
+    {
+      "id": "qr-punctuation-possessive",
+      "category": "punctuation",
+      "front": "Possessive apostrophe",
+      "back": "Use an apostrophe to show ownership; do not use one just to make a noun plural.",
+      "example": "one student’s form; two students’ forms"
+    },
+    {
+      "id": "qr-er-thesis",
+      "category": "extended_response",
+      "front": "Evaluative thesis",
+      "back": "A thesis should state which source presents the stronger argument and give the main reason for that judgment.",
+      "example": "Source B is stronger because it uses local outcome data and addresses the main objection."
+    },
+    {
+      "id": "qr-er-analysis",
+      "category": "extended_response",
+      "front": "Evidence analysis sentence",
+      "back": "Explain how the evidence affects the strength of a claim instead of merely repeating what the source says.",
+      "example": "Because the records measure the exact outcome the author claims improved, they directly strengthen that reason."
+    },
+    {
+      "id": "qr-er-source-comparison",
+      "category": "extended_response",
+      "front": "Fair source comparison",
+      "back": "Compare the arguments using evidence quality, reasoning, assumptions, and responses to opposing views—not personal agreement.",
+      "example": "One source may be more convincing even when both raise reasonable concerns."
+    }
+  ]
+}

@@ -122,7 +122,10 @@ const Learning = (() => {
   }
 
   function modeWeight(mode) {
-    return mode === "test" ? 1.1 : mode === "train" ? 1.08 : 1;
+    if (mode === "test") return 1.1;
+    if (mode === "skill_check") return 1.12;
+    if (mode === "train") return 1.08;
+    return 1;
   }
 
   function evidenceWeight(attempt) {
@@ -224,6 +227,7 @@ const Learning = (() => {
         skillId: skill.id,
         skillLabel: skill.label,
         familyId,
+        sourceMode: attempt.mode || existing?.sourceMode || "practice",
         wrongCount: (existing?.wrongCount || 0) + 1,
         correctAfter: 0,
         transferCorrect: 0,

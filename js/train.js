@@ -17,6 +17,12 @@ const results = [];
 init();
 
 async function init() {
+  const mode = new URLSearchParams(location.search).get("mode");
+  if (mode === "quick-review" && window.QuickReview) {
+    window.QuickReview.init({ mount: trainView, setHeaderProgress });
+    return;
+  }
+
   const attempts = Learning.getAttempts();
   if (attempts.length < 3) {
     renderPracticeFirst(attempts.length);
@@ -50,6 +56,7 @@ function renderPracticeFirst(attemptCount) {
       <p class="lede">Train is most useful after you have practiced a few questions. Chee Skool will then use your mistakes, weaker skills, review timing, and fresh transfer questions to build a focused session.</p>
       <div class="train-plan-actions">
         <a class="btn" href="practice.html">Start with Practice →</a>
+        <a class="btn secondary" href="train.html?mode=quick-review">Quick Review</a>
         ${attemptCount ? '<a class="btn secondary" href="progress.html">View progress</a>' : ''}
       </div>
       <p class="train-plan-note">Practice teaches. Train strengthens what you have already started learning.</p>
@@ -78,6 +85,7 @@ function renderPlan() {
 
       <div class="train-plan-actions">
         <button class="btn" id="start-training">Start training</button>
+        <a class="btn secondary" href="train.html?mode=quick-review">Quick Review</a>
         <a class="btn secondary" href="practice.html">Choose manually</a>
       </div>
 

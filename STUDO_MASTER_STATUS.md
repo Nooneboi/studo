@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.26`  
-**Current stage:** Phase 3 complete — Reading/Arguments depth, Language difficulty calibration, and Extended Response production/source-depth are sufficient; next is Phase 4A Skill Check runtime/UI/evidence
+**Current release:** `0.7.0-alpha.29`  
+**Current stage:** Phase 4 complete — dedicated Skill Checks and selective Train Quick Review are live; next is Phase 5 dedicated unseen Mock bank
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -13,7 +13,7 @@ Chee Skool is a calm, focused GED Reasoning Through Language Arts learning and p
 
 Core learner flow:
 
-**Learn → Practice → Skill Check → Train → Mock → Progress**
+**Learn → Practice → Train → Skill Check → Mock → Progress**
 
 The modes do not need identical content or interactions. Each mode has a distinct job.
 
@@ -59,8 +59,10 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **103 learner modules**
-- **753 objective/component questions**
+- **112 learner modules**
+- **807 objective/component questions**
+- **9 dedicated Skill Checks / 54 independent Check questions**
+- **28 Quick Review recall cards**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -439,12 +441,15 @@ Extended Response priority:
 
 - production microtasks: thesis writing/revision, exact evidence selection, reasoning completion, organization, paragraph development, and revision — not only recognition MCQs.
 
-### Phase 4 — Train Quick Review + dedicated Skill Checks
+### Phase 4 — Skill Checks + Train Quick Review: complete in Alpha 29
 
-- add flashcards only for discrete knowledge where retrieval is useful;
-- create short independent Skill Checks only after skills are mature;
-- Skill Check items remain Mock-excluded;
-- use Skill Check/Train evidence to strengthen Progress without faking mastery.
+- Dedicated `check.html` / `js/check.js` runtime keeps Skill Check separate from Practice: no hints, retries, confidence prompts, timer, or correctness feedback until the entire Check is submitted.
+- Skill Check attempts record `mode: skill_check`, `assistance: none`, and one submitted answer per question; Progress shows **Practice signal** and **Latest Skill Check** separately rather than merging them into a fake mastery badge.
+- First wave contains **9 dedicated Skill Checks / 54 unseen questions** for mature Reading and Arguments skills only. Check modules use only the `skill_check` delivery role and remain `mock-excluded`; they do not enter Practice, adaptive Train, or Mock.
+- Train now has an optional **Quick Review** lane with **28 curated recall cards** for discrete terms/rules. `Again` / `Got it` schedule only card review and never call the learning-attempt or mistake APIs.
+- Quick Review is intentionally absent for passage-reasoning tasks such as Main Idea, Summary, and Inference.
+- Phase 4 strengthens evidence quality but does not claim a GED-equivalent score, pass/fail prediction, psychometric mastery, or Mock readiness.
+- Phase 4 closeout found no reason to create checks for all 62 skills or to expand PDFs/content simply for symmetry.
 
 ### Phase 5 — Dedicated unseen Mock bank
 
@@ -468,6 +473,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Audit Agreement & Pronouns before the next Language calibration.**
+> **Phase 5 — design and build the dedicated unseen Mock bank.**
 
-Review its Study Guide, two workbooks, focused editing set, mixed-editing exposure, family coverage, and current reasoning level. Add or rewrite only what creates a genuine learner progression; do not force every Language unit into the same pattern. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
+Map the Mock blueprint to the official reporting-category intent already captured in the project, author coherent unseen passage/source sets and editing material, preserve dedicated `mock` role isolation, and disable Practice fallback only when the dedicated bank can independently satisfy the full blueprint. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.

@@ -425,6 +425,7 @@ async function main() {
     return publicPrompt;
   });
   await fs.writeFile(path.join(OUT, 'er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerErPrompts }, null, 2) + '\n', 'utf8');
+  await fs.writeFile(path.join(OUT, 'quick-review.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), cards: validation.quickReview?.cards || [] }, null, 2) + '\n', 'utf8');
   const learnerErTasks = (validation.erTasks || []).map((task) => {
     const { authoringNotes, ...publicTask } = task;
     return publicTask;

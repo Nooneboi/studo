@@ -56,5 +56,5 @@ test('Supporting Details keeps its existing resources and transfer drill while p
   assert.equal(skill.sets[0]?.id, 'set-rla-supporting-details-active-methods-v1', 'guided path should be the first interactive choice');
   assert.ok(skill.sets.some((set) => set.file?.endsWith('rla-supporting-details-practice-01.json')), 'existing multi-context practice drill was lost');
   assert.equal(skill.sets[1]?.title, 'Supporting Details - Independent Practice', 'follow-up practice should have a clear learner-facing role');
-  assert.equal(skill.checkCount, 0, 'Phase 1 must not invent a Skill Check');
+  assert.equal(skill.checkCount, 1, 'Phase 4 first-wave Check should attach separately');
 });

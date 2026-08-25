@@ -26,6 +26,7 @@ async function init() {
   const studyGuides = resources.filter((r) => r.type !== "worksheet");
   const workbookSheets = resources.filter((r) => r.type === "worksheet");
   const practiceSets = item.sets || [];
+  const checks = item.checks || [];
 
   document.title = `Chee Skool — ${item.label}`;
   mount.innerHTML = `
@@ -39,8 +40,9 @@ async function init() {
     <section class="skill-resource-grid" aria-label="${escapeHtml(item.label)} learning resources">
       ${renderColumn("Study Guide", studyGuides, (r) => renderResource(r))}
       ${renderColumn("Workbook Sheets", workbookSheets, (r) => renderResource(r))}
-      ${renderColumn("Interactive Practice", practiceSets, (set) => renderCheck(set, track, domain, item, Boolean(unitId)))}
-    </section>`;
+      ${renderColumn("Interactive Practice", practiceSets, (set) => renderPracticeSet(set, track, domain, item, Boolean(unitId)))}
+    </section>
+    ${renderSkillChecks(checks, track, domain, item, Boolean(unitId))}`;
 }
 
 function renderColumn(title, items, renderer) {
@@ -65,13 +67,29 @@ function renderResource(r) {
   </a>`;
 }
 
-function renderCheck(set, track, domain, item, isUnit) {
+function renderPracticeSet(set, track, domain, item, isUnit) {
   const key = isUnit ? "unit" : "skill";
   const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&${key}=${encodeURIComponent(item.id)}`;
   const href = `module.html?file=${encodeURIComponent(set.file)}&return=${encodeURIComponent(returnHref)}`;
   return `<a class="skill-resource-link" href="${href}">
     <strong>${escapeHtml(set.title)}</strong>
   </a>`;
+}
+
+function renderSkillChecks(checks, track, domain, item, isUnit) {
+  if (!checks.length) return "";
+  const key = isUnit ? "unit" : "skill";
+  const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&${key}=${encodeURIComponent(item.id)}`;
+  return `<section class="skill-check-section" aria-labelledby="skill-check-heading">
+    <div class="skill-check-heading">
+      <div><span class="page-kicker">Independent check</span><h2 id="skill-check-heading">Skill Check</h2></div>
+      <p>Independent · no hints · answers after finishing</p>
+    </div>
+    <div class="skill-check-list">${checks.map((check) => {
+      const href = `check.html?file=${encodeURIComponent(check.file)}&return=${encodeURIComponent(returnHref)}`;
+      return `<a class="skill-check-link" href="${escapeAttr(href)}"><strong>${escapeHtml(check.title)}</strong><span>Independent · no hints · answers after finishing</span></a>`;
+    }).join("")}</div>
+  </section>`;
 }
 
 function escapeHtml(v) { const d = document.createElement("div"); d.textContent = v ?? ""; return d.innerHTML; }

@@ -68,7 +68,7 @@ test('Credibility & Counterarguments reuses existing resources and keeps food-wa
   assert.equal(unit.sets[0]?.title, 'Credibility & Counterarguments - Guided Practice');
   assert.equal(unit.sets[1]?.id, 'set-rla-args-credibility-counterarguments');
   assert.equal(unit.sets[1]?.title, 'Credibility & Counterarguments - Independent Practice');
-  assert.equal(unit.checkCount, 0, 'Phase 3C must not invent a Skill Check');
+  assert.equal(unit.checkCount, 1, 'Phase 4 first-wave Check should attach separately');
 });
 
 test('Credibility & Counterarguments independent drill provides transfer for limitation and counterargument-identification families', () => {

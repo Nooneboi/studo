@@ -9,7 +9,7 @@ const OUT = path.resolve(argIndex >= 0 && process.argv[argIndex + 1] ? process.a
 
 const learnerPages = [
   'index.html', 'practice.html', 'passages.html', 'resources.html', 'progress.html',
-  'curriculum.html', 'domain.html', 'category.html', 'skill.html', 'module.html',
+  'curriculum.html', 'domain.html', 'category.html', 'skill.html', 'module.html', 'check.html',
   'extended-response.html', 'train.html', 'quiz.html', 'test.html', 'about.html', 'methodology.html',
   'privacy.html', 'offline.html', '404.html'
 ];
@@ -18,12 +18,12 @@ const rootFiles = ['favicon.svg', 'manifest.json', 'sw.js', 'release.json'];
 const learnerJs = [
   'app.js', 'storage.js', 'data.js', 'learning.js', 'home.js', 'library-model.js',
   'practice.js', 'passages.js', 'resources.js', 'progress.js', 'curriculum.js',
-  'domain.js', 'category.js', 'skill.js', 'module.js', 'curriculum-routes.js', 'focus-tools.js', 'train.js', 'rla-browse.js',
-  'question-interactions.js', 'mock-engine.js', 'quiz.js', 'test.js', 'extended-response.js'
+  'domain.js', 'category.js', 'skill.js', 'module.js', 'check.js', 'curriculum-routes.js', 'focus-tools.js', 'train.js', 'rla-browse.js',
+  'question-interactions.js', 'mock-engine.js', 'quiz.js', 'test.js', 'extended-response.js', 'quick-review.js'
 ];
 const learnerCss = ['site.css'];
 const generatedData = [
-  'index.json', 'curriculum.json', 'er-prompts.json', 'er-production-tasks.json', 'mock-blueprint.json', 'question-families.js'
+  'index.json', 'curriculum.json', 'er-prompts.json', 'er-production-tasks.json', 'mock-blueprint.json', 'quick-review.json', 'question-families.js'
 ];
 
 async function copyFile(rel) {

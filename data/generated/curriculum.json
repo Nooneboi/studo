@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-25T06:47:26.567Z",
+  "builtAt": "2026-08-25T08:06:18.641Z",
   "tracks": [
     {
       "id": "reading",
@@ -122,7 +122,7 @@
             }
           ],
           "studyFileCount": 18,
-          "checkCount": 0,
+          "checkCount": 4,
           "skills": [
             {
               "id": "R1.1",
@@ -135,7 +135,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-explicit-meaning-active-methods-v1",
@@ -215,7 +215,47 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-explicit-meaning-v1",
+                  "title": "Explicit Meaning — Skill Check",
+                  "description": "Identify information the passage states directly.",
+                  "file": "generated/modules/set-rla-check-explicit-meaning-v1.json",
+                  "difficulty": "hard",
+                  "category": "reading_comprehension",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.1",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify information the passage states directly.",
+                    "topicLabel": "Explicit Meaning — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-explicit-tool-room",
+                    "title": "The New Tool-Room Sign-Out",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.1"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-explicit-meaning-guide-v1",
@@ -328,7 +368,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-mainidea-active-methods-v1",
@@ -408,7 +448,47 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-main-idea-v1",
+                  "title": "Main Idea — Skill Check",
+                  "description": "Identify the central idea and distinguish it from supporting details.",
+                  "file": "generated/modules/set-rla-check-main-idea-v1.json",
+                  "difficulty": "hard",
+                  "category": "reading_comprehension",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.2",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify the central idea and distinguish it from supporting details.",
+                    "topicLabel": "Main Idea — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-mainidea-flood-alerts",
+                    "title": "How Westhaven Changed Its Flood Alerts",
+                    "textType": "informational",
+                    "context": "civics",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.2"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-main-idea-guide-v1",
@@ -521,7 +601,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-supporting-details-active-methods-v1",
@@ -601,7 +681,47 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-supporting-details-v1",
+                  "title": "Supporting Details — Skill Check",
+                  "description": "Judge which details directly support a specific idea or claim.",
+                  "file": "generated/modules/set-rla-check-supporting-details-v1.json",
+                  "difficulty": "hard",
+                  "category": "reading_comprehension",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge which details directly support a specific idea or claim.",
+                    "topicLabel": "Supporting Details — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-supporting-library-hours",
+                    "title": "What the Late-Hour Library Pilot Showed",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.3"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-supporting-details-guide-v1",
@@ -714,7 +834,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-summary-active-methods-v1",
@@ -794,7 +914,47 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-summary-v1",
+                  "title": "Summary — Skill Check",
+                  "description": "Summarize sections and whole passages without adding or narrowing the author’s meaning.",
+                  "file": "generated/modules/set-rla-check-summary-v1.json",
+                  "difficulty": "hard",
+                  "category": "reading_comprehension",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Core Meaning",
+                    "primarySkillId": "R1.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Summarize sections and whole passages without adding or narrowing the author’s meaning.",
+                    "topicLabel": "Summary — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-summary-marsh-restoration",
+                    "title": "Three Tests at Bell Marsh",
+                    "textType": "informational",
+                    "context": "science",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R1.4"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-summary-guide-v1",
@@ -1137,7 +1297,7 @@
             }
           ],
           "studyFileCount": 20,
-          "checkCount": 0,
+          "checkCount": 2,
           "skills": [
             {
               "id": "R2.1",
@@ -1609,7 +1769,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-inference-active-methods-v1",
@@ -1689,7 +1849,47 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-inference-v1",
+                  "title": "Inference — Skill Check",
+                  "description": "Build the smallest supported inference from multiple clues and identify the evidence that earns it.",
+                  "file": "generated/modules/set-rla-check-inference-v1.json",
+                  "difficulty": "hard",
+                  "category": "reading_comprehension",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.4",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Build the smallest supported inference from multiple clues and identify the evidence that earns it.",
+                    "topicLabel": "Inference — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-inference-workshop-lights",
+                    "title": "The Blue Tape Marks",
+                    "textType": "literary",
+                    "context": "literary",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R2.4"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-inference-guide-v1",
@@ -1802,7 +2002,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-conclusions-active-methods-v1",
@@ -1882,7 +2082,47 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-conclusions-v1",
+                  "title": "Conclusions & Generalizations — Skill Check",
+                  "description": "Draw a supported conclusion, preserve scope, and transfer a principle only when conditions fit.",
+                  "file": "generated/modules/set-rla-check-conclusions-v1.json",
+                  "difficulty": "hard",
+                  "category": "reading_comprehension",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Relationships & Inference",
+                    "primarySkillId": "R2.5",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Draw a supported conclusion, preserve scope, and transfer a principle only when conditions fit.",
+                    "topicLabel": "Conclusions & Generalizations — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-conclusions-cooling-materials",
+                    "title": "Testing Shade-Roof Materials",
+                    "textType": "informational",
+                    "context": "science",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R2.5"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-conclusions-guide-v1",
@@ -4767,7 +5007,7 @@
       "questionCount": 300,
       "resourceCount": 86,
       "studyFileCount": 86,
-      "checkCount": 0
+      "checkCount": 6
     },
     {
       "id": "arguments",
@@ -4824,7 +5064,7 @@
               "setCount": 2,
               "questionCount": 14,
               "resourceCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-claims-structure-active-v1",
@@ -4913,7 +5153,51 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-claims-structure-v1",
+                  "title": "Claims & Argument Structure — Skill Check",
+                  "description": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+                  "file": "generated/modules/set-rla-check-claims-structure-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.1",
+                    "secondarySkillIds": [
+                      "R5.2"
+                    ],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+                    "topicLabel": "Claims & Argument Structure — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "claims-argument-structure"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-bike-storage",
+                    "title": "A Secure Place for Bicycles",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.1",
+                    "R5.2"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-claims-argument-structure-guide",
@@ -5038,7 +5322,7 @@
               "setCount": 2,
               "questionCount": 14,
               "resourceCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-finding-evidence-active-v1",
@@ -5121,7 +5405,48 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-finding-evidence-v1",
+                  "title": "Finding Evidence — Skill Check",
+                  "description": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+                  "file": "generated/modules/set-rla-check-finding-evidence-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+                    "topicLabel": "Finding Evidence — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "finding-evidence"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-volunteer-shifts",
+                    "title": "Overlapping Volunteer Shifts",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.3"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-finding-evidence-guide",
@@ -5741,7 +6066,7 @@
               "setCount": 2,
               "questionCount": 14,
               "resourceCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-credibility-counterarguments-active-v1",
@@ -5830,7 +6155,51 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-credibility-counterarguments-v1",
+                  "title": "Credibility & Counterarguments — Skill Check",
+                  "description": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+                  "file": "generated/modules/set-rla-check-credibility-counterarguments-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.9",
+                    "secondarySkillIds": [
+                      "R5.10"
+                    ],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+                    "topicLabel": "Credibility & Counterarguments — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "credibility-counterarguments"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-school-lunch-data",
+                    "title": "Which Sources Fit the Lunch-Time Question?",
+                    "textType": "informational",
+                    "context": "civics",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.9",
+                    "R5.10"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-credibility-counterarguments-guide",
@@ -5952,7 +6321,7 @@
           "topicResources": [],
           "resources": [],
           "studyFileCount": 30,
-          "checkCount": 0,
+          "checkCount": 3,
           "skills": [
             {
               "id": "R5.1",
@@ -5965,7 +6334,7 @@
               "questionCount": 7,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-claims-structure-active-v1",
@@ -6054,7 +6423,51 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-claims-structure-v1",
+                  "title": "Claims & Argument Structure — Skill Check",
+                  "description": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+                  "file": "generated/modules/set-rla-check-claims-structure-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.1",
+                    "secondarySkillIds": [
+                      "R5.2"
+                    ],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+                    "topicLabel": "Claims & Argument Structure — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "claims-argument-structure"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-bike-storage",
+                    "title": "A Secure Place for Bicycles",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.1",
+                    "R5.2"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-claims-argument-structure-guide",
@@ -6179,7 +6592,7 @@
               "questionCount": 7,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-claims-structure-active-v1",
@@ -6268,7 +6681,51 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-claims-structure-v1",
+                  "title": "Claims & Argument Structure — Skill Check",
+                  "description": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+                  "file": "generated/modules/set-rla-check-claims-structure-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.1",
+                    "secondarySkillIds": [
+                      "R5.2"
+                    ],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+                    "topicLabel": "Claims & Argument Structure — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "claims-argument-structure"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-bike-storage",
+                    "title": "A Secure Place for Bicycles",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.1",
+                    "R5.2"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-claims-argument-structure-guide",
@@ -6393,7 +6850,7 @@
               "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-finding-evidence-active-v1",
@@ -6476,7 +6933,48 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-finding-evidence-v1",
+                  "title": "Finding Evidence — Skill Check",
+                  "description": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+                  "file": "generated/modules/set-rla-check-finding-evidence-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.3",
+                    "secondarySkillIds": [],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+                    "topicLabel": "Finding Evidence — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "finding-evidence"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-volunteer-shifts",
+                    "title": "Overlapping Volunteer Shifts",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.3"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-finding-evidence-guide",
@@ -7431,7 +7929,7 @@
               "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-credibility-counterarguments-active-v1",
@@ -7520,7 +8018,51 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-credibility-counterarguments-v1",
+                  "title": "Credibility & Counterarguments — Skill Check",
+                  "description": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+                  "file": "generated/modules/set-rla-check-credibility-counterarguments-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.9",
+                    "secondarySkillIds": [
+                      "R5.10"
+                    ],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+                    "topicLabel": "Credibility & Counterarguments — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "credibility-counterarguments"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-school-lunch-data",
+                    "title": "Which Sources Fit the Lunch-Time Question?",
+                    "textType": "informational",
+                    "context": "civics",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.9",
+                    "R5.10"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-credibility-counterarguments-guide",
@@ -7645,7 +8187,7 @@
               "questionCount": 6,
               "resourceCount": 3,
               "studyFileCount": 3,
-              "checkCount": 0,
+              "checkCount": 1,
               "sets": [
                 {
                   "id": "set-rla-args-credibility-counterarguments-active-v1",
@@ -7734,7 +8276,51 @@
                   ]
                 }
               ],
-              "checks": [],
+              "checks": [
+                {
+                  "id": "set-rla-check-credibility-counterarguments-v1",
+                  "title": "Credibility & Counterarguments — Skill Check",
+                  "description": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+                  "file": "generated/modules/set-rla-check-credibility-counterarguments-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.9",
+                    "secondarySkillIds": [
+                      "R5.10"
+                    ],
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+                    "topicLabel": "Credibility & Counterarguments — Skill Check",
+                    "deliveryRoles": [
+                      "skill_check"
+                    ],
+                    "practiceTags": [
+                      "mock-excluded"
+                    ],
+                    "unitId": "credibility-counterarguments"
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-check-args-school-lunch-data",
+                    "title": "Which Sources Fit the Lunch-Time Question?",
+                    "textType": "informational",
+                    "context": "civics",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.9",
+                    "R5.10"
+                  ]
+                }
+              ],
               "resources": [
                 {
                   "id": "res-rla-args-v1-credibility-counterarguments-guide",
@@ -9229,7 +9815,7 @@
       "questionCount": 90,
       "resourceCount": 45,
       "studyFileCount": 45,
-      "checkCount": 0
+      "checkCount": 3
     },
     {
       "id": "language",

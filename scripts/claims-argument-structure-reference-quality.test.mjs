@@ -60,5 +60,5 @@ test('Claims & Argument Structure reuses existing resources and keeps the old dr
   assert.equal(unit.sets[0]?.title, 'Claims & Argument Structure - Guided Practice');
   assert.equal(unit.sets[1]?.id, 'set-rla-args-claims-structure');
   assert.equal(unit.sets[1]?.title, 'Claims & Argument Structure - Independent Practice');
-  assert.equal(unit.checkCount, 0, 'Phase 3A must not invent a Skill Check');
+  assert.equal(unit.checkCount, 1, 'Phase 4 first-wave Check should attach separately');
 });

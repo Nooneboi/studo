@@ -1,0 +1,372 @@
+{
+  "id": "set-rla-check-claims-structure-v1",
+  "title": "Claims & Argument Structure — Skill Check",
+  "description": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Skill Check",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "The student transportation committee recommends converting 12 of the campus’s 286 car-parking spaces into a covered, lockable bicycle area for a one-year trial. The committee’s main claim is that secure bicycle storage would solve a specific barrier for students who already want to ride to campus without causing a serious parking shortage.\n\nCampus security recorded 18 bicycle theft reports last academic year. Fourteen involved bicycles left at the uncovered racks beside the east classroom buildings. In a transportation survey, 37 percent of students who said they would consider cycling more often identified theft or weather exposure as a major concern. The committee argues that a monitored, covered storage area directly addresses both concerns.\n\nSome drivers object that removing any car spaces will make morning parking worse. The committee responds that parking counts taken on twelve typical weekdays showed at least 34 unused spaces even during the busiest thirty-minute arrival period. It proposes placing the bicycle area at the edge of the east lot, where those counts found the most consistent unused capacity.\n\nAnother student group suggests that the college should instead expand discounted bus passes. The committee supports that idea as a separate transportation option but argues that bus discounts do not answer the storage problem faced by students who already own bicycles. The proposal therefore asks for a limited trial, followed by theft reports, bicycle-use counts, and parking counts before any permanent change.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the committee’s main claim?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: A small secure bicycle-storage trial could remove a cycling barrier without seriously reducing parking.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "claim.main",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "All students should stop driving to campus.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The proposal is a limited bicycle-storage trial, not a ban on driving."
+        },
+        {
+          "id": "b",
+          "text": "A small secure bicycle-storage trial could remove a cycling barrier without seriously reducing parking."
+        },
+        {
+          "id": "c",
+          "text": "Bus passes are harmful to campus transportation.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The committee supports bus discounts as a separate option."
+        },
+        {
+          "id": "d",
+          "text": "Every bicycle theft happened in the east lot.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Fourteen of eighteen reported thefts involved east-side racks, not all thefts."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement functions as a supporting claim rather than the main claim?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: The east lot has enough unused capacity to host the trial without creating a serious shortage.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "claim.subclaim",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "The college should convert every parking space into bicycle storage.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage never proposes this."
+        },
+        {
+          "id": "b",
+          "text": "Students who drive should receive free bus passes.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is not the committee’s proposal."
+        },
+        {
+          "id": "c",
+          "text": "The east lot has enough unused capacity to host the trial without creating a serious shortage."
+        },
+        {
+          "id": "d",
+          "text": "The trial should last exactly one year because one year is always sufficient.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The one-year period is proposed, but this is not argued as a universal rule."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which sequence best represents the committee’s argument chain?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: Storage concern → theft/weather evidence → secure area addresses concern → parking data limits tradeoff → one-year trial",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "argument.chain",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Storage concern → theft/weather evidence → secure area addresses concern → parking data limits tradeoff → one-year trial"
+        },
+        {
+          "id": "b",
+          "text": "Parking shortage → bus discounts → bicycle theft → permanent removal of car spaces",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This reverses and mixes the argument’s steps."
+        },
+        {
+          "id": "c",
+          "text": "Bicycle theft → all students must cycle → parking is unnecessary → trial is permanent",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage makes none of those broad claims."
+        },
+        {
+          "id": "d",
+          "text": "Weather exposure → buses are ineffective → east lot is full → cancel the trial",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "These steps contradict the passage."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the paragraph about morning parking appear after the theft and survey evidence?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: To address a likely cost of the proposal after establishing the problem it is meant to solve",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "argument.order",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To introduce an unrelated topic before returning to bicycles",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Parking is a direct tradeoff created by the proposal."
+        },
+        {
+          "id": "b",
+          "text": "To prove theft reports were inaccurate",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The parking data do not challenge the theft records."
+        },
+        {
+          "id": "c",
+          "text": "To replace the main claim with a new claim about cars",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The main proposal remains bicycle storage."
+        },
+        {
+          "id": "d",
+          "text": "To address a likely cost of the proposal after establishing the problem it is meant to solve"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which statement is a supporting claim the committee uses to defend the bicycle-storage trial?",
+      "points": 1,
+      "explanation": "This supporting claim connects the parking-count evidence to the committee’s larger claim that the trial can occur without a serious parking shortage.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "A supporting claim helps carry the main claim and is backed by its own evidence.",
+      "familyId": "claim.subclaim",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every student should travel by bicycle.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The committee proposes one transportation option and never claims everyone should cycle."
+        },
+        {
+          "id": "b",
+          "text": "Bus discounts should be eliminated.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The committee supports bus discounts as a separate option."
+        },
+        {
+          "id": "c",
+          "text": "Existing parking counts suggest the east lot can give up 12 spaces without a serious shortage."
+        },
+        {
+          "id": "d",
+          "text": "The bicycle area must become permanent after one year.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The committee calls for reviewing trial evidence before any permanent change."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which description best captures the structure of the full argument?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: A targeted proposal supported by problem evidence, followed by responses to parking and alternative-policy objections, then a measured trial plan",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "argument.order",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A personal preference followed by unrelated statistics and no response to objections",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage uses claim-specific evidence and responses."
+        },
+        {
+          "id": "b",
+          "text": "A claim that secure storage is perfect, followed by a demand for permanent construction",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The committee proposes a limited trial and later review."
+        },
+        {
+          "id": "c",
+          "text": "A targeted proposal supported by problem evidence, followed by responses to parking and alternative-policy objections, then a measured trial plan"
+        },
+        {
+          "id": "d",
+          "text": "A comparison of two bicycle brands followed by a parking survey",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No bicycle brands are discussed."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-check-claims-structure-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [
+        "R5.2"
+      ],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+      "topicLabel": "Claims & Argument Structure — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ],
+      "unitId": "claims-argument-structure"
+    },
+    "passage": {
+      "id": "p-rla-check-args-bike-storage",
+      "title": "A Secure Place for Bicycles",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T08:06:18.618Z"
+  }
+}

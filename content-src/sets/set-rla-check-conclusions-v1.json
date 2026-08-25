@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-check-conclusions-v1",
+  "runtime": {
+    "id": "set-rla-check-conclusions-v1",
+    "file": "set-rla-check-conclusions-v1.json"
+  },
+  "title": "Conclusions & Generalizations — Skill Check",
+  "description": "Draw a supported conclusion, preserve scope, and transfer a principle only when conditions fit.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-check-conclusions-cooling-materials"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 4 Skill Check editorial review",
+  "reviewNotes": "Unseen independent check; no hints, retries, or guided scaffolding.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported by the ten-afternoon trial?",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Any roof change will produce exactly the same cooling effect.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The materials performed differently."
+        },
+        {
+          "id": "b",
+          "text": "Dark metal roofs are unsafe in every climate.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The trial measured heat in four shelters and does not establish universal safety."
+        },
+        {
+          "id": "c",
+          "text": "Several roof properties can reduce heat, but their benefits and tradeoffs differ."
+        },
+        {
+          "id": "d",
+          "text": "The heaviest roof system should be installed on every shelter.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage notes structural limits for heavier systems."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice best matches the passage: Several roof properties can reduce heat, but their benefits and tradeoffs differ.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which generalization best fits the evidence?",
+      "primarySkillId": "R2.5",
+      "familyId": "generalization.apply",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "A cooling material should be chosen with both thermal performance and site/building constraints in mind."
+        },
+        {
+          "id": "b",
+          "text": "The material with the lowest temperature in one trial is automatically best everywhere.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The authors reject a universal choice."
+        },
+        {
+          "id": "c",
+          "text": "Airflow never affects roof performance.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The fabric system changed with wind conditions."
+        },
+        {
+          "id": "d",
+          "text": "Cloudy weather increases differences among roof materials.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The differences became smaller with clouds."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice best matches the passage: A cooling material should be chosen with both thermal performance and site/building constraints in mind.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What broader conclusion can be drawn from the change in temperature differences on cloudy afternoons?",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "The measuring equipment stopped working in clouds.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No equipment failure is reported."
+        },
+        {
+          "id": "b",
+          "text": "All roofs become equally hot whenever clouds appear.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage says differences become smaller, not necessarily zero."
+        },
+        {
+          "id": "c",
+          "text": "Clouds make structural support unimportant.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Structural capacity is a separate consideration."
+        },
+        {
+          "id": "d",
+          "text": "The advantage of a cooling roof can depend partly on weather conditions."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This choice best matches the passage: The advantage of a cooling roof can depend partly on weather conditions.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A new shelter has a weak roof frame but sits in a reliably breezy location. Which transfer is most reasonable from the trial?",
+      "primarySkillId": "R2.5",
+      "familyId": "generalization.apply",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the heavy reflective-and-foam system because it had the lowest average temperature.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The weak frame makes the heavy system a poor automatic transfer."
+        },
+        {
+          "id": "b",
+          "text": "Consider the raised fabric system because its lighter approach performed well with airflow."
+        },
+        {
+          "id": "c",
+          "text": "Keep dark metal because every modification failed in wind.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage reports the opposite for the fabric layer."
+        },
+        {
+          "id": "d",
+          "text": "Choose based only on rainy-season performance, which the trial already measured.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Rainy-season testing has not occurred yet."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This choice best matches the passage: Consider the raised fabric system because its lighter approach performed well with airflow.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion would overgeneralize the study?",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Reflective materials can reduce heat gain under some conditions.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is within the evidence."
+        },
+        {
+          "id": "b",
+          "text": "A building’s structure matters when selecting a heavier cooling system.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage explicitly notes support requirements."
+        },
+        {
+          "id": "c",
+          "text": "Reflective panels with foam are the best roof choice for every building in every season."
+        },
+        {
+          "id": "d",
+          "text": "Weather can influence the size of the cooling difference among materials.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage supports this."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice best matches the passage: Reflective panels with foam are the best roof choice for every building in every season.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Why is the planned rainy-season trial important to the researchers’ final decision?",
+      "primarySkillId": "R2.5",
+      "familyId": "generalization.apply",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It tests whether conclusions from clear afternoons transfer to different weather conditions."
+        },
+        {
+          "id": "b",
+          "text": "It will prove that roof color has no effect on heat.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Nothing in the passage predicts that result."
+        },
+        {
+          "id": "c",
+          "text": "It removes the need to consider roof strength.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Structural constraints remain relevant."
+        },
+        {
+          "id": "d",
+          "text": "It guarantees one material will become best for every building.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The study emphasizes context rather than a universal winner."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice best matches the passage: It tests whether conclusions from clear afternoons transfer to different weather conditions.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Relationships & Inference",
+    "primarySkillId": "R2.5",
+    "secondarySkillIds": [],
+    "contentKind": "skill_drill",
+    "learningObjective": "Draw a supported conclusion, preserve scope, and transfer a principle only when conditions fit.",
+    "topicLabel": "Conclusions & Generalizations — Skill Check",
+    "deliveryRoles": [
+      "skill_check"
+    ],
+    "practiceTags": [
+      "mock-excluded"
+    ]
+  }
+}

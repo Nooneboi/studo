@@ -8485,3 +8485,78 @@ body.test-body {
 .er-production-review-actions { align-items: center; }
 .er-domain-production-card .er-domain-prompt-copy p { max-width: 58ch; }
 @media (max-width: 640px) { .er-production-draft { min-height: 260px; } }
+
+/* -------------------------------------------------------------------------
+   Phase 4A — dedicated independent Skill Check
+   ------------------------------------------------------------------------- */
+.skill-check-section {
+  margin-top: 50px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-line);
+}
+.skill-check-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 12px;
+}
+.skill-check-heading h2 { margin: 3px 0 0; font-size: 1.35rem; }
+.skill-check-heading p { margin: 0; color: var(--color-ink-muted); font-size: .84rem; }
+.skill-check-list { display: grid; max-width: 720px; }
+.skill-check-link {
+  display: grid;
+  gap: 5px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.skill-check-link strong { font-size: 1rem; }
+.skill-check-link span { color: var(--color-ink-muted); font-size: .8rem; }
+.skill-check-link:hover { text-decoration: none; }
+.skill-check-link:hover strong { color: var(--color-primary-dark); }
+.check-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0 0 18px;
+  color: var(--color-ink-muted);
+  font-size: .8rem;
+  font-weight: 650;
+}
+.check-intro span + span::before { content: "·"; margin-right: 18px; color: var(--color-ink-faint); }
+.check-header-progress { color: var(--color-ink-muted); font-size: .8rem; font-weight: 650; }
+.check-results { max-width: 860px; margin: 30px auto 70px; }
+.check-results > h1 { margin: 6px 0 8px; font-size: clamp(2rem, 5vw, 3rem); }
+.check-results > p { color: var(--color-ink-muted); max-width: 680px; }
+.check-result-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 34px; }
+.check-review-list { display: grid; gap: 16px; }
+.progress-signal-cell { align-content: center; }
+.progress-signal-cell > small { color: var(--color-ink-faint); font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.progress-signal-meter { display: grid; grid-template-columns: minmax(90px,1fr) 44px; gap: 10px; align-items: center; }
+.progress-signal-meter i { display: block; height: 4px; overflow: hidden; border-radius: 99px; background: var(--color-surface-strong); }
+.progress-signal-meter i b { display: block; height: 100%; border-radius: inherit; background: var(--color-primary); }
+.progress-signal-meter > strong { text-align: right; font-size: .84rem; }
+.progress-check-result { display: flex; justify-content: space-between; gap: 12px; margin-top: 5px; color: var(--color-ink-muted); font-size: .72rem; }
+.progress-check-result small { color: inherit; }
+.progress-check-result strong { color: var(--color-ink); }
+@media (max-width: 720px) {
+  .skill-check-heading { display: grid; gap: 8px; }
+  .check-intro span + span::before { margin-right: 8px; }
+}
+
+/* Phase 4 Quick Review — small recall lane, separate from adaptive Train */
+.quick-review-shell{max-width:760px;margin:0 auto;padding:42px 0 70px}
+.quick-review-meta{display:flex;justify-content:space-between;gap:16px;margin:12px 0 18px;color:var(--color-muted);font-size:.86rem;font-weight:600}
+.quick-review-card{min-height:300px;border:1px solid var(--color-line);border-radius:18px;background:var(--color-surface);padding:40px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 8px 24px rgba(18,28,45,.05)}
+.quick-review-card h1{font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.2;margin:0}
+.quick-review-prompt{margin:18px 0 0;color:var(--color-muted)}
+.quick-review-answer{margin-top:24px;font-size:1.05rem;line-height:1.7}
+.quick-review-answer>p{margin:0}
+.quick-review-example{margin-top:22px;padding-top:18px;border-top:1px solid var(--color-line)}
+.quick-review-example span{display:block;margin-bottom:6px;color:var(--color-muted);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.quick-review-example p{margin:0}
+.quick-review-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:18px}
+.quick-review-complete{max-width:760px;margin:0 auto;padding:50px 0 70px}
+@media (max-width:720px){.quick-review-shell{padding:24px 0 54px}.quick-review-card{min-height:260px;padding:26px 22px;border-radius:14px}.quick-review-actions{display:grid;grid-template-columns:1fr 1fr}.quick-review-actions .btn{width:100%}}

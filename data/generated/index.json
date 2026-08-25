@@ -1340,6 +1340,184 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-check-claims-structure-v1.json",
+    "title": "Claims & Argument Structure — Skill Check",
+    "description": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [
+        "R5.2"
+      ],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
+      "topicLabel": "Claims & Argument Structure — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ],
+      "unitId": "claims-argument-structure"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-conclusions-v1.json",
+    "title": "Conclusions & Generalizations — Skill Check",
+    "description": "Draw a supported conclusion, preserve scope, and transfer a principle only when conditions fit.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Draw a supported conclusion, preserve scope, and transfer a principle only when conditions fit.",
+      "topicLabel": "Conclusions & Generalizations — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-credibility-counterarguments-v1.json",
+    "title": "Credibility & Counterarguments — Skill Check",
+    "description": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.9",
+      "secondarySkillIds": [
+        "R5.10"
+      ],
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+      "topicLabel": "Credibility & Counterarguments — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ],
+      "unitId": "credibility-counterarguments"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-explicit-meaning-v1.json",
+    "title": "Explicit Meaning — Skill Check",
+    "description": "Identify information the passage states directly.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.1",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify information the passage states directly.",
+      "topicLabel": "Explicit Meaning — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-finding-evidence-v1.json",
+    "title": "Finding Evidence — Skill Check",
+    "description": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+      "topicLabel": "Finding Evidence — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ],
+      "unitId": "finding-evidence"
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-inference-v1.json",
+    "title": "Inference — Skill Check",
+    "description": "Build the smallest supported inference from multiple clues and identify the evidence that earns it.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Build the smallest supported inference from multiple clues and identify the evidence that earns it.",
+      "topicLabel": "Inference — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-main-idea-v1.json",
+    "title": "Main Idea — Skill Check",
+    "description": "Identify the central idea and distinguish it from supporting details.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify the central idea and distinguish it from supporting details.",
+      "topicLabel": "Main Idea — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-summary-v1.json",
+    "title": "Summary — Skill Check",
+    "description": "Summarize sections and whole passages without adding or narrowing the author’s meaning.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Summarize sections and whole passages without adding or narrowing the author’s meaning.",
+      "topicLabel": "Summary — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-check-supporting-details-v1.json",
+    "title": "Supporting Details — Skill Check",
+    "description": "Judge which details directly support a specific idea or claim.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge which details directly support a specific idea or claim.",
+      "topicLabel": "Supporting Details — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    }
+  },
+  {
     "file": "generated/modules/set-rla-conclusions-active-methods-v1.json",
     "title": "Conclusions & Generalizations - Guided Practice",
     "description": "Guided Conclusions & Generalizations practice that moves from recognizing a multi-detail pattern to careful synthesis, scope control, principle extraction, and transfer.",

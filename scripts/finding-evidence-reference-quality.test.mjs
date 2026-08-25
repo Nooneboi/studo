@@ -61,7 +61,7 @@ test('Finding Evidence reuses existing resources and keeps the tutoring drill as
   assert.equal(unit.sets[0]?.title, 'Finding Evidence - Guided Practice');
   assert.equal(unit.sets[1]?.id, 'set-rla-args-finding-evidence');
   assert.equal(unit.sets[1]?.title, 'Finding Evidence - Independent Practice');
-  assert.equal(unit.checkCount, 0, 'Phase 3B must not invent a Skill Check');
+  assert.equal(unit.checkCount, 1, 'Phase 4 first-wave Check should attach separately');
 });
 
 test('Finding Evidence independent drill uses canonical evidence-role metadata where the item asks evidence versus claim', () => {

@@ -306,14 +306,35 @@ export async function validateContent({ quiet = false } = {}) {
   const legacyIndexFile = path.join(SRC, 'config', 'legacy-index.json');
   const curriculumConfigFile = path.join(SRC, 'config', 'rla.curriculum.json');
   const questionFamilyConfigFile = path.join(SRC, 'config', 'rla.question-families.v1.json');
+  const quickReviewConfigFile = path.join(SRC, 'config', 'rla.quick-review.v1.json');
   const curriculumConfig = await readJson(curriculumConfigFile);
   const questionFamilyConfig = await readJson(questionFamilyConfigFile);
+  const quickReview = await readJson(quickReviewConfigFile);
   const canonicalFamilyIds = new Set((questionFamilyConfig.skills || []).flatMap((skill) => (skill.families || []).map((family) => family.familyId)).filter(Boolean));
   const familyAliases = questionFamilyConfig.aliases || {};
   const canonicalFamilyId = (id) => familyAliases[String(id || '')] || String(id || '');
   for (const [alias, target] of Object.entries(familyAliases)) {
     if (!canonicalFamilyIds.has(target)) add(issues, 'error', 'FAMILY_ALIAS_TARGET_UNKNOWN', `Family alias ${alias} points to unknown canonical family ${target}.`, questionFamilyConfigFile, alias);
   }
+
+  const validQuickReviewCategories = new Set(['argument_terms','transitions','text_structure','word_tone','language_rules','punctuation','extended_response']);
+  if (quickReview.schemaVersion !== 1) add(issues, 'error', 'QUICK_REVIEW_SCHEMA_INVALID', 'Quick Review needs schemaVersion 1.', quickReviewConfigFile);
+  const quickReviewCards = Array.isArray(quickReview.cards) ? quickReview.cards : [];
+  if (quickReviewCards.length < 25 || quickReviewCards.length > 30) add(issues, 'error', 'QUICK_REVIEW_COUNT_INVALID', `Quick Review needs 25–30 cards; found ${quickReviewCards.length}.`, quickReviewConfigFile);
+  const quickReviewIds = new Set();
+  for (const card of quickReviewCards) {
+    const loc = card?.id || '(no-id)';
+    if (!/^qr-[a-z0-9-]+$/.test(String(card?.id || ''))) add(issues, 'error', 'QUICK_REVIEW_ID_INVALID', `Quick Review card ${loc} needs a stable qr-* id.`, quickReviewConfigFile, loc);
+    else if (quickReviewIds.has(card.id)) add(issues, 'error', 'QUICK_REVIEW_ID_DUPLICATE', `Duplicate Quick Review card id ${card.id}.`, quickReviewConfigFile, loc);
+    else quickReviewIds.add(card.id);
+    if (!validQuickReviewCategories.has(card?.category)) add(issues, 'error', 'QUICK_REVIEW_CATEGORY_INVALID', `Quick Review card ${loc} uses unsupported category ${card?.category || '(missing)'}.`, quickReviewConfigFile, loc);
+    const front = String(card?.front || '').trim();
+    const back = String(card?.back || '').trim();
+    if (!front || front.length > 180) add(issues, 'error', 'QUICK_REVIEW_FRONT_INVALID', `Quick Review card ${loc} needs a concise front of 1–180 characters.`, quickReviewConfigFile, loc);
+    if (!back || back.length > 300) add(issues, 'error', 'QUICK_REVIEW_BACK_INVALID', `Quick Review card ${loc} needs a concise back of 1–300 characters.`, quickReviewConfigFile, loc);
+    if (card?.example != null && (!String(card.example).trim() || String(card.example).length > 260)) add(issues, 'error', 'QUICK_REVIEW_EXAMPLE_INVALID', `Quick Review card ${loc} example must be 1–260 characters when present.`, quickReviewConfigFile, loc);
+  }
+
   const { skillToTrack, trackStates } = trackMaps(curriculumConfig);
 
   const skills = new Map();
@@ -653,7 +674,7 @@ export async function validateContent({ quiet = false } = {}) {
     console.log(`Content validation: ${errors.length} error(s), ${warnings.length} warning(s)`);
     for (const issue of issues) console.log(`${issue.type.toUpperCase()} ${issue.code} ${issue.file}${issue.location ? ` [${issue.location}]` : ''}: ${issue.message}`);
   }
-  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts, erTasks };
+  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts, erTasks, quickReview };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

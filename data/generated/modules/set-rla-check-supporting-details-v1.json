@@ -1,0 +1,369 @@
+{
+  "id": "set-rla-check-supporting-details-v1",
+  "title": "Supporting Details — Skill Check",
+  "description": "Judge which details directly support a specific idea or claim.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "Northview College tested later library hours during the final three weeks of the spring term. On Monday through Thursday, the library stayed open until midnight instead of closing at 10:00 p.m. Staff wanted to learn whether students would actually use the extra hours before making a permanent schedule change.\n\nEntry counts showed an average of 74 students in the building between 10:00 p.m. and midnight during the pilot. During a comparable period the previous year, the average was 31. Most late-night users occupied the quiet study floor or group rooms. However, the pilot also required an additional security shift, and the last city bus serving campus left at 11:18 p.m. Several students without cars said that a midnight closing did not help them if they could not get home afterward.\n\nBased on those results, the library director did not recommend midnight hours every night of the semester. Instead, she proposed extending hours during the two weeks before major examination periods and coordinating those dates with the transportation office. The proposal would preserve the period of strongest late-night demand while avoiding the cost of a longer schedule when use is lower.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the idea that students used the additional late-night hours?",
+      "points": 1,
+      "explanation": "This choice matches the passage without adding or changing what the text says.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Use only what the passage actually supports.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot lasted three weeks",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Duration alone does not show use."
+        },
+        {
+          "id": "b",
+          "text": "An average of 74 students were present from 10:00 p.m. to midnight"
+        },
+        {
+          "id": "c",
+          "text": "The library normally closed at 10:00 p.m.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This describes the old schedule, not actual demand."
+        },
+        {
+          "id": "d",
+          "text": "The director worked with the transportation office",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That appears in the later proposal."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the concern that midnight closing was not equally useful to all students?",
+      "points": 1,
+      "explanation": "This choice matches the passage without adding or changing what the text says.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Use only what the passage actually supports.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Most users chose quiet or group study spaces",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This describes how space was used, not transportation access."
+        },
+        {
+          "id": "b",
+          "text": "The pilot ran Monday through Thursday",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The days do not establish unequal usefulness."
+        },
+        {
+          "id": "c",
+          "text": "Security needed an extra shift",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That concerns staffing cost."
+        },
+        {
+          "id": "d",
+          "text": "The last city bus left at 11:18 p.m., and some students lacked cars"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail is mentioned but does NOT directly support the claim that the permanent schedule should target exam periods?",
+      "points": 1,
+      "explanation": "This choice matches the passage without adding or changing what the text says.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Use only what the passage actually supports.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Most late-night users sat on the quiet floor or in group rooms"
+        },
+        {
+          "id": "b",
+          "text": "Late-night use was much higher than in a comparable earlier period",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That supports demand for extra hours."
+        },
+        {
+          "id": "c",
+          "text": "Longer hours required additional security staffing",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That supports limiting extensions to higher-demand periods."
+        },
+        {
+          "id": "d",
+          "text": "The director wanted to avoid longer hours when use is lower",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That directly supports a targeted schedule."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which pair of details best explains why the director proposed a narrower schedule instead of midnight hours all semester?",
+      "points": 1,
+      "explanation": "This choice matches the passage without adding or changing what the text says.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Use only what the passage actually supports.",
+      "familyId": "support.best_detail",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot lasted three weeks, and students used group rooms",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Those details do not explain why the schedule should be narrower."
+        },
+        {
+          "id": "b",
+          "text": "The building closed at 10:00 before the pilot, and the city operates buses",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Those facts alone do not justify the proposal."
+        },
+        {
+          "id": "c",
+          "text": "Demand was strongest during the pilot, while extra staffing and transportation limits created costs and access problems"
+        },
+        {
+          "id": "d",
+          "text": "The director works at a college, and exams occur each term",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "These are general facts rather than evidence from the pilot."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "A student claims, “The pilot proves the library should stay open until midnight every night of the year.” Which detail most directly weakens that claim?",
+      "points": 1,
+      "explanation": "This choice matches the passage without adding or changing what the text says.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Use only what the passage actually supports.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Students used both quiet and group spaces",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Space choice does not address year-round demand."
+        },
+        {
+          "id": "b",
+          "text": "The pilot measured a high-demand period, and the director wanted to avoid longer hours when use is lower"
+        },
+        {
+          "id": "c",
+          "text": "The previous closing time was 10:00 p.m.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That explains the size of the extension, not whether it should be year-round."
+        },
+        {
+          "id": "d",
+          "text": "The pilot included weekdays",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That alone does not establish year-round need."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which detail would be least useful as evidence for deciding whether to coordinate extended hours with transportation?",
+      "points": 1,
+      "explanation": "This choice matches the passage without adding or changing what the text says.",
+      "skill": {
+        "id": "R1.3",
+        "label": "Supporting details"
+      },
+      "rule": "Use only what the passage actually supports.",
+      "familyId": "support.relevant_vs_mentioned",
+      "metadata": {
+        "skillId": "R1.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The last city bus leaves at 11:18 p.m.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This directly affects whether students can use late hours."
+        },
+        {
+          "id": "b",
+          "text": "Some students without cars said they could not benefit from midnight closing",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This directly connects transportation to access."
+        },
+        {
+          "id": "c",
+          "text": "The transportation office can coordinate service dates",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That bears on whether coordination is possible."
+        },
+        {
+          "id": "d",
+          "text": "Most late-night users chose the quiet floor or group rooms"
+        }
+      ],
+      "correct": "d"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-check-supporting-details-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge which details directly support a specific idea or claim.",
+      "topicLabel": "Supporting Details — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-check-supporting-library-hours",
+      "title": "What the Late-Hour Library Pilot Showed",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T08:06:18.620Z"
+  }
+}

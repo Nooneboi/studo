@@ -45,7 +45,9 @@ test('curriculum build separates Practice sets from dedicated Skill Checks', () 
       assert.equal(check.curriculum?.deliveryRoles?.includes('mock'), false, `${check.id} Skill Check also leaked into Mock`);
     }
   }
-  assert.equal(allSkills.reduce((sum, skill) => sum + Number(skill.checkCount || 0), 0), 0, 'Phase 0D should not invent Skill Check content');
+  const allItems = [...allSkills, ...allUnits];
+  const uniqueCheckIds = new Set(allItems.flatMap((item) => (item.checks || []).map((check) => check.id)));
+  assert.equal(uniqueCheckIds.size, 9, 'Phase 4 should expose exactly nine dedicated Skill Checks');
   assert.ok(allSkills.some((skill) => (skill.sets || []).length > 0), 'Practice content disappeared while separating roles');
 });
 

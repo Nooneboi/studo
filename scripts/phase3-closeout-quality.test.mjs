@@ -7,14 +7,13 @@ const ROOT = process.cwd();
 const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 
-test('Phase 3 closeout keeps the verified learner-bank counts and role boundary', () => {
-  const release = json('release.json');
+test('Phase 3 learner baseline remains intact while later Skill Checks stay additive', () => {
   const index = json('data/generated/index.json');
-  assert.equal(release.release, '0.7.0-alpha.26');
-  assert.equal(index.length, 103);
-  assert.equal(release.generatedModules, 103);
+  const phase3LearnerModules = index.filter((item) => !(item.curriculum?.deliveryRoles || []).includes('skill_check'));
+  const checks = index.filter((item) => (item.curriculum?.deliveryRoles || []).includes('skill_check'));
+  assert.equal(phase3LearnerModules.length, 103);
+  assert.equal(checks.length, 9);
   const roles = index.flatMap((item) => item.curriculum?.deliveryRoles || []);
-  assert.equal(roles.filter((r) => r === 'skill_check').length, 0);
   assert.equal(roles.filter((r) => r === 'mock').length, 0);
 });
 

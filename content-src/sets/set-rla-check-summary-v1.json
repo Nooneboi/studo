@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-check-summary-v1",
+  "runtime": {
+    "id": "set-rla-check-summary-v1",
+    "file": "set-rla-check-summary-v1.json"
+  },
+  "title": "Summary — Skill Check",
+  "description": "Summarize sections and whole passages without adding or narrowing the author’s meaning.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-check-summary-marsh-restoration"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 4 Skill Check editorial review",
+  "reviewNotes": "Unseen independent check; no hints, retries, or guided scaffolding.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best summarizes the first paragraph?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.section",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Researchers compared tidal channels, planting, and a combined treatment to restore marsh vegetation."
+        },
+        {
+          "id": "b",
+          "text": "Researchers proved planting was the cheapest restoration method.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Cost is not discussed in the first paragraph."
+        },
+        {
+          "id": "c",
+          "text": "An old road was removed from Bell Marsh.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The road restricted water, but its removal is not stated."
+        },
+        {
+          "id": "d",
+          "text": "Every plot received the same restoration treatment.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The plots were divided among three different treatments."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice best matches the passage: Researchers compared tidal channels, planting, and a combined treatment to restore marsh vegetation.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best summarizes the second paragraph?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.section",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "All three treatments failed after one season.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Each treatment showed some positive results."
+        },
+        {
+          "id": "b",
+          "text": "The combined treatment required no extra labor.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "It required the most labor."
+        },
+        {
+          "id": "c",
+          "text": "Each treatment had strengths and limitations, while the combined plots had the highest average cover."
+        },
+        {
+          "id": "d",
+          "text": "Ground elevation was the only cause of plant survival.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Elevation is discussed later and is not the only factor."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice best matches the passage: Each treatment had strengths and limitations, while the combined plots had the highest average cover.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which detail should be omitted from a concise whole-passage summary?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "The team compared three restoration approaches.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is central to the passage."
+        },
+        {
+          "id": "b",
+          "text": "The first treatment used narrow channels."
+        },
+        {
+          "id": "c",
+          "text": "The combined plots led in first-year cover but required more labor.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is a key result and tradeoff."
+        },
+        {
+          "id": "d",
+          "text": "Researchers want longer-term evidence before expanding the project.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is a central limitation and next step."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This choice best matches the passage: The first treatment used narrow channels.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which summary best represents the passage as a whole?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Planting seedlings is the only effective way to restore Bell Marsh.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage compares three approaches and does not make this claim."
+        },
+        {
+          "id": "b",
+          "text": "Bell Marsh restoration failed because the old road permanently stopped all tidal flow.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The restoration tests produced mixed but useful results."
+        },
+        {
+          "id": "c",
+          "text": "The combined method permanently solved Bell Marsh’s problems after one season.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Researchers explicitly warn against a long-term conclusion from one season."
+        },
+        {
+          "id": "d",
+          "text": "A marsh trial found different benefits and limits across three restoration methods, so researchers plan longer monitoring before choosing how to expand."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This choice best matches the passage: A marsh trial found different benefits and limits across three restoration methods, so researchers plan longer monitoring before choosing how to expand.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which idea belongs in a strong summary because it limits how the first-year results should be interpreted?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "One season cannot establish which treatment will work best over many years."
+        },
+        {
+          "id": "b",
+          "text": "Workers opened narrow channels in one group.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is a procedural detail."
+        },
+        {
+          "id": "c",
+          "text": "Some plots were lower than others.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The more important summary point is that elevation affected water conditions."
+        },
+        {
+          "id": "d",
+          "text": "The project is located at Bell Marsh.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The place name is not a key limiting idea."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice best matches the passage: One season cannot establish which treatment will work best over many years.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which summary is too narrow for the entire passage?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Researchers compared restoration methods and found tradeoffs that require longer-term study.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This covers the experiment, findings, and limitation."
+        },
+        {
+          "id": "b",
+          "text": "A one-season marsh study suggests combined restoration may be promising, but researchers need more evidence before expansion.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This preserves result and uncertainty."
+        },
+        {
+          "id": "c",
+          "text": "The combined plots had the highest average plant cover after one season."
+        },
+        {
+          "id": "d",
+          "text": "Bell Marsh researchers tested water access and planting strategies while considering labor, elevation, and long-term reliability.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This captures the broad scope."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice best matches the passage: The combined plots had the highest average plant cover after one season.",
+        "quickTip": "Keep the answer within the passage’s actual scope."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.4",
+    "secondarySkillIds": [],
+    "contentKind": "skill_drill",
+    "learningObjective": "Summarize sections and whole passages without adding or narrowing the author’s meaning.",
+    "topicLabel": "Summary — Skill Check",
+    "deliveryRoles": [
+      "skill_check"
+    ],
+    "practiceTags": [
+      "mock-excluded"
+    ]
+  }
+}

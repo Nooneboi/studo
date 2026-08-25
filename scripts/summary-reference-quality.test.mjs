@@ -58,5 +58,5 @@ test('Summary reuses existing resources and keeps the old drill as Independent P
   assert.equal(skill.sets[0]?.title, 'Summary - Guided Practice');
   assert.equal(skill.sets[1]?.title, 'Summary - Independent Practice');
   assert.ok(skill.sets[1]?.file?.endsWith('rla-summary-practice-01.json'), 'existing Summary drill was lost');
-  assert.equal(skill.checkCount, 0, 'Phase 2 must not invent a Skill Check');
+  assert.equal(skill.checkCount, 1, 'Phase 4 first-wave Check should attach separately');
 });

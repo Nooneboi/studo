@@ -4,7 +4,7 @@
   Shared site-shell behavior + service-worker lifecycle.
 */
 
-const STUDO_RELEASE = "0.7.0-alpha.26";
+const STUDO_RELEASE = "0.7.0-alpha.29";
 window.STUDO_RELEASE = STUDO_RELEASE;
 
 window.StudoSafeStorage = {
@@ -69,7 +69,7 @@ window.addEventListener("unhandledrejection", (event) => {
 });
 
 
-const MOBILE_FOCUS_PAGES = new Set(["module.html", "test.html", "extended-response.html"]);
+const MOBILE_FOCUS_PAGES = new Set(["module.html", "check.html", "test.html", "extended-response.html"]);
 const MOBILE_PRACTICE_PAGES = new Set(["practice.html", "curriculum.html", "domain.html", "skill.html", "passages.html", "category.html"]);
 const MOBILE_MORE_PAGES = new Set(["progress.html", "resources.html", "about.html", "methodology.html", "privacy.html"]);
 

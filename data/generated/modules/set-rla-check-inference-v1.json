@@ -1,0 +1,369 @@
+{
+  "id": "set-rla-check-inference-v1",
+  "title": "Inference — Skill Check",
+  "description": "Build the smallest supported inference from multiple clues and identify the evidence that earns it.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "Mara arrived at the theater workshop expecting another morning of painting scenery. The director, Mr. Vale, was standing near the loading door with his phone in one hand and a roll of blue tape in the other. He had been waiting all week for six portable stage lights that the school had borrowed from a neighboring theater.\n\nWhen his phone buzzed, Mr. Vale read the message twice and smiled. He did not say what it contained. Instead, he asked Mara to help clear two carts away from the loading door. Then he measured six spots along the edge of the stage and marked each one with a small square of blue tape. He told another student to bring extension cords from the storage cabinet but left the paint cans unopened.\n\nA few minutes later, a van turned into the service lane. Through the open workshop door, Mara could see several black rolling cases stacked inside. Mr. Vale checked his watch and called to the students who were carrying paintbrushes. “Leave those on the table for now,” he said. “We may need the first hour for something else.” Mara set down her brush and began moving the last cart out of the way before he asked.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What can the reader reasonably infer from Mr. Vale’s actions after reading the message?",
+      "points": 1,
+      "explanation": "This choice best matches the passage: He expects the borrowed stage lights to arrive soon.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Keep the answer within the passage’s actual scope.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "He has decided to cancel the workshop.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "He prepares the space for a new activity rather than ending work."
+        },
+        {
+          "id": "b",
+          "text": "He expects the borrowed stage lights to arrive soon."
+        },
+        {
+          "id": "c",
+          "text": "He wants Mara to repaint the loading door.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No evidence connects the door to painting."
+        },
+        {
+          "id": "d",
+          "text": "He learned that the neighboring theater lost the lights.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "His smile and preparations point toward arrival, not loss."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail most strongly supports the inference that the morning plan is about to change?",
+      "points": 1,
+      "explanation": "This choice best matches the passage: Mr. Vale leaves the paint cans unopened and tells students to leave their brushes on the table.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Keep the answer within the passage’s actual scope.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mara expected to paint scenery.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This gives her original expectation but not evidence of the change by itself."
+        },
+        {
+          "id": "b",
+          "text": "Mr. Vale held a roll of blue tape.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The tape becomes meaningful with later actions, but alone is weak."
+        },
+        {
+          "id": "c",
+          "text": "The workshop has a storage cabinet.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This detail does not show a schedule change."
+        },
+        {
+          "id": "d",
+          "text": "Mr. Vale leaves the paint cans unopened and tells students to leave their brushes on the table."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does Mara begin moving the last cart before Mr. Vale asks her?",
+      "points": 1,
+      "explanation": "This choice best matches the passage: She has inferred from the preparations and arriving van what needs to happen next.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Keep the answer within the passage’s actual scope.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "She has inferred from the preparations and arriving van what needs to happen next."
+        },
+        {
+          "id": "b",
+          "text": "She wants to leave the workshop early.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No clue suggests she plans to leave."
+        },
+        {
+          "id": "c",
+          "text": "She dislikes painting scenery.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage never states or implies this."
+        },
+        {
+          "id": "d",
+          "text": "She knows the black cases contain paint.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The context points to stage lights, not paint."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which pair of clues most strongly supports the inference that the black cases contain the borrowed lights?",
+      "points": 1,
+      "explanation": "This choice best matches the passage: Mr. Vale has been waiting for six portable lights, then marks six stage positions just before the van arrives.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Keep the answer within the passage’s actual scope.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Mr. Vale checks his watch, and Mara carries a brush.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "These details do not identify the cases."
+        },
+        {
+          "id": "b",
+          "text": "The workshop has a loading door, and the van is in the service lane.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "These show delivery context but not what is being delivered."
+        },
+        {
+          "id": "c",
+          "text": "Mr. Vale has been waiting for six portable lights, then marks six stage positions just before the van arrives."
+        },
+        {
+          "id": "d",
+          "text": "The cases are black, and the paint cans are unopened.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Color of the cases does not identify their contents."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which inference goes beyond what the clues earn?",
+      "points": 1,
+      "explanation": "This choice best matches the passage: Mr. Vale plans to replace the school’s entire lighting system permanently.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Keep the answer within the passage’s actual scope.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The first hour may be used to test or place the lights.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The six marks, cords, and schedule change support this."
+        },
+        {
+          "id": "b",
+          "text": "Mr. Vale likely received a delivery update on his phone.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "His reaction and immediate preparations support this."
+        },
+        {
+          "id": "c",
+          "text": "Mara understands enough of the situation to anticipate the next task.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Her final action supports this."
+        },
+        {
+          "id": "d",
+          "text": "Mr. Vale plans to replace the school’s entire lighting system permanently."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which evidence best supports the inference that Mr. Vale is preparing for equipment setup rather than simply receiving a delivery?",
+      "points": 1,
+      "explanation": "This choice best matches the passage: He marks six stage positions and asks for extension cords before the van arrives.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Keep the answer within the passage’s actual scope.",
+      "familyId": "inference.evidence_pair",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A van turns into the service lane.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That supports delivery but not setup."
+        },
+        {
+          "id": "b",
+          "text": "He marks six stage positions and asks for extension cords before the van arrives."
+        },
+        {
+          "id": "c",
+          "text": "He smiles at a phone message.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This suggests good news but not specifically setup."
+        },
+        {
+          "id": "d",
+          "text": "Mara had expected to paint.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This only establishes the original plan."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-check-inference-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.4",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Build the smallest supported inference from multiple clues and identify the evidence that earns it.",
+      "topicLabel": "Inference — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-check-inference-workshop-lights",
+      "title": "The Blue Tape Marks",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T08:06:18.619Z"
+  }
+}

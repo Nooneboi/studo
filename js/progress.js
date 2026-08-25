@@ -21,6 +21,7 @@ function renderProgress() {
   const summary = Learning.getSummary();
   const erHistory = getErHistory();
   const mockHistory = getMockHistory();
+  const latestChecks = latestSkillCheckBySkill();
 
   if (!summary.attempts && !erHistory.length && !mockHistory.length) {
     progressView.innerHTML = `
@@ -82,7 +83,7 @@ function renderProgress() {
             <div class="progress-skill-head" aria-hidden="true">
               <span>Skill</span><span>Correct</span><span>Signal</span><span>Status</span>
             </div>
-            ${summary.skills.map(skillRow).join("")}
+            ${summary.skills.map((skill) => skillRow(skill, latestChecks.get(skill.id))).join("")}
           </div>
         </section>
 
@@ -109,6 +110,8 @@ function renderProgress() {
     clearBtn.addEventListener("click", () => {
       if (!confirm("Clear Chee Skool's skill signals and review history on this device?")) return;
       Learning.clearLearningHistory();
+      if (window.StudoSafeStorage) window.StudoSafeStorage.remove("sq:skill-check-history:v1");
+      else localStorage.removeItem("sq:skill-check-history:v1");
       renderProgress();
     });
   }
@@ -306,20 +309,44 @@ function recommendationBlock(skill) {
     </div>`;
 }
 
-function skillRow(skill) {
+function skillRow(skill, latestCheck = null) {
   return `
     <a class="progress-skill-row" href="${escapeAttr(practiceHref(skill))}">
       <span class="progress-skill-name"><small>${escapeHtml(Learning.categoryLabel(skill.category))}</small><strong>${escapeHtml(skill.label)}</strong></span>
       <span>${skill.correct}/${skill.attempts}</span>
-      <span class="progress-signal-cell"><i><b style="width:${Math.max(0, Math.min(100, skill.score))}%"></b></i><strong>${skill.score}%</strong></span>
+      <span class="progress-signal-cell">
+        <small>Practice signal</small>
+        <span class="progress-signal-meter"><i><b style="width:${Math.max(0, Math.min(100, skill.score))}%"></b></i><strong>${skill.score}%</strong></span>
+        ${latestCheck ? `<span class="progress-check-result"><small>Latest Skill Check</small><strong>${escapeHtml(latestCheck.correct)}/${escapeHtml(latestCheck.total)}</strong></span>` : ""}
+      </span>
       <span class="progress-status ${statusClass(skill.status)}">${escapeHtml(skill.status)}</span>
     </a>`;
 }
 
+function getSkillCheckHistory() {
+  try {
+    const raw = window.StudoSafeStorage ? window.StudoSafeStorage.get("sq:skill-check-history:v1", "[]") : localStorage.getItem("sq:skill-check-history:v1");
+    const parsed = JSON.parse(raw || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function latestSkillCheckBySkill() {
+  const out = new Map();
+  for (const item of getSkillCheckHistory()) {
+    if (item?.skillId && !out.has(item.skillId)) out.set(item.skillId, item);
+  }
+  return out;
+}
+
 function mistakeRow(mistake) {
-  const href = mistake.moduleFile
-    ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}&return=${encodeURIComponent("progress.html")}`
-    : practiceHref(mistake);
+  const href = mistake.sourceMode === "skill_check"
+    ? practiceHref(mistake)
+    : mistake.moduleFile
+      ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}&return=${encodeURIComponent("progress.html")}`
+      : practiceHref(mistake);
   return `
     <a class="progress-review-row" href="${escapeAttr(href)}">
       <span><strong>${escapeHtml(mistake.skillLabel || mistake.topic)}</strong><small>${escapeHtml(mistake.moduleTitle || Learning.categoryLabel(mistake.category))}</small></span>

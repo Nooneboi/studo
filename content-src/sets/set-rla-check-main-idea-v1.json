@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-check-main-idea-v1",
+  "runtime": {
+    "id": "set-rla-check-main-idea-v1",
+    "file": "set-rla-check-main-idea-v1.json"
+  },
+  "title": "Main Idea — Skill Check",
+  "description": "Identify the central idea and distinguish it from supporting details.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-check-mainidea-flood-alerts"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 4 Skill Check editorial review",
+  "reviewNotes": "Unseen independent check; no hints, retries, or guided scaffolding.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What is the passage mainly about?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Westhaven replaced reliance on one warning method with a layered, location-specific alert system"
+        },
+        {
+          "id": "b",
+          "text": "Why outdoor sirens should be removed from every town",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The siren remains part of Westhaven’s system."
+        },
+        {
+          "id": "c",
+          "text": "How residents can repair phones before storms",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Phone repair is not the passage’s focus."
+        },
+        {
+          "id": "d",
+          "text": "Why local radio is the only reliable flood-warning tool",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage emphasizes several channels, not one."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which statement best captures the central idea of the second paragraph?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Community volunteers now control all evacuation decisions",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Volunteers translate messages; officials manage the system."
+        },
+        {
+          "id": "b",
+          "text": "The fire department stopped using evacuation zones",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The map uses evacuation zones."
+        },
+        {
+          "id": "c",
+          "text": "Westhaven added several ways to deliver the same zone-specific warnings"
+        },
+        {
+          "id": "d",
+          "text": "Residents must choose only one warning channel",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The layered system intentionally uses multiple channels."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the author mention phones losing power, sleeping radio listeners, and hard-to-hear sirens?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "To argue that warning systems are not worth funding",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage supports improving warnings, not abandoning them."
+        },
+        {
+          "id": "b",
+          "text": "To show that residents are responsible for every warning failure",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The examples show limits of communication channels."
+        },
+        {
+          "id": "c",
+          "text": "To prove that text messages are always fastest",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Phones are also described as having limits."
+        },
+        {
+          "id": "d",
+          "text": "To explain why relying on several channels is more dependable than relying on one"
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which title best reflects the passage as a whole?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The End of Westhaven’s River Siren",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The siren remains in use."
+        },
+        {
+          "id": "b",
+          "text": "One Warning Is Not Enough: Building a Layered Flood-Alert System"
+        },
+        {
+          "id": "c",
+          "text": "Three Languages Spoken in Westhaven",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Translation is one feature, not the whole focus."
+        },
+        {
+          "id": "d",
+          "text": "How to Read a Fire Department Map",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The map is only one part of the system."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which detail is most important to the passage’s main idea?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The system repeats location-specific warnings through texts, sirens, radio, translations, and a map"
+        },
+        {
+          "id": "b",
+          "text": "The original siren was near the town center",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That is background explaining the old system."
+        },
+        {
+          "id": "c",
+          "text": "Some residents sleep while the radio is on",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage says radio listeners may be asleep, but this is one limitation."
+        },
+        {
+          "id": "d",
+          "text": "The first review occurs after a storm season",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is a follow-up step, not the central idea."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What broader idea does the passage most strongly imply about emergency communication?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A new technology should always replace an older one completely",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Westhaven keeps the siren while adding other channels."
+        },
+        {
+          "id": "b",
+          "text": "Messages should avoid naming specific locations",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The new system becomes more location-specific."
+        },
+        {
+          "id": "c",
+          "text": "Different communication methods can cover one another’s weaknesses"
+        },
+        {
+          "id": "d",
+          "text": "Resident surveys are more important than delivery records",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Officials plan to compare both kinds of information."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "This choice matches the passage without adding or changing what the text says.",
+        "quickTip": "Use only what the passage actually supports."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "secondarySkillIds": [],
+    "contentKind": "skill_drill",
+    "learningObjective": "Identify the central idea and distinguish it from supporting details.",
+    "topicLabel": "Main Idea — Skill Check",
+    "deliveryRoles": [
+      "skill_check"
+    ],
+    "practiceTags": [
+      "mock-excluded"
+    ]
+  }
+}

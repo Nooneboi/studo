@@ -1,0 +1,370 @@
+{
+  "id": "set-rla-check-finding-evidence-v1",
+  "title": "Finding Evidence — Skill Check",
+  "description": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Skill Check",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "A neighborhood food bank proposes changing its Saturday volunteer schedule so the morning and afternoon teams overlap for thirty minutes. Coordinators argue that the overlap would reduce unfinished work and long handoff delays without requiring volunteers to serve a longer total shift.\n\nDuring four Saturdays, coordinators counted 17 carts of sorted food that the morning team could not fully label before leaving. Afternoon volunteers then had to stop and determine what had already been checked. On those same days, 26 client pickups waited longer than the food bank’s fifteen-minute target during the handoff period. The proposal would place two volunteers from each team together for thirty minutes so they can finish labels and explain unusual orders directly.\n\nThe food bank also reviewed attendance records. Forty-one percent of volunteers assigned to shifts longer than four hours left early at least once during the previous two months. Coordinators say this makes simply extending every volunteer’s shift a poor solution. The overlap plan changes start and end times but keeps each person’s scheduled service period at four hours.\n\nThe proposal has one important limitation. Several delays came from congestion at the single loading door, not from incomplete labels. The food bank therefore plans an eight-week trial and will separately count labeling errors, handoff waits, and loading-door delays. Coordinators say the overlap should continue only if the measures tied to handoffs improve.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most directly supports the claim that the current handoff process leaves unfinished work?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: Coordinators counted 17 carts that the morning team had not fully labeled.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "evidence.strongest",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Coordinators counted 17 carts that the morning team had not fully labeled."
+        },
+        {
+          "id": "b",
+          "text": "The food bank is open on Saturdays.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This gives context, not evidence of unfinished handoff work."
+        },
+        {
+          "id": "c",
+          "text": "Some delays came from the loading door.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That identifies a separate source of delay."
+        },
+        {
+          "id": "d",
+          "text": "The proposed trial lasts eight weeks.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Trial length does not establish the current problem."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most directly supports the claim that simply making every shift longer could create another problem?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: Forty-one percent of volunteers on shifts over four hours left early at least once.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "evidence.strongest",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Two volunteers from each team would overlap.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This describes the proposed solution."
+        },
+        {
+          "id": "b",
+          "text": "There is one loading door.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is a facility limitation, not evidence about longer shifts."
+        },
+        {
+          "id": "c",
+          "text": "Twenty-six pickups exceeded the wait target.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This shows handoff delay, not the likely effect of longer shifts."
+        },
+        {
+          "id": "d",
+          "text": "Forty-one percent of volunteers on shifts over four hours left early at least once."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What role do the 26 delayed client pickups play in the argument?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: They provide measurable evidence that the handoff period is associated with service delays.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "evidence.identify_role",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "They prove the loading door caused every delay.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The passage says several, not all, delays came from the door."
+        },
+        {
+          "id": "b",
+          "text": "They provide measurable evidence that the handoff period is associated with service delays."
+        },
+        {
+          "id": "c",
+          "text": "They show volunteers prefer shorter shifts.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The delayed pickups concern clients, not volunteer preference."
+        },
+        {
+          "id": "d",
+          "text": "They establish that the overlap trial has already succeeded.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The trial has not yet occurred."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which evidence would best test whether the overlap specifically improves handoffs rather than unrelated loading-door problems?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: Changes in labeling errors and handoff wait times, tracked separately from loading-door delays",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "evidence.strongest",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The total number of people who visit the neighborhood on Saturdays",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This is not tied to the handoff mechanism."
+        },
+        {
+          "id": "b",
+          "text": "Whether volunteers like the color of the labeling stickers",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Preference about sticker color does not test handoff performance."
+        },
+        {
+          "id": "c",
+          "text": "Changes in labeling errors and handoff wait times, tracked separately from loading-door delays"
+        },
+        {
+          "id": "d",
+          "text": "The age of the food bank building",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Building age does not directly test the proposed mechanism."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "A coordinator claims, “The overlap will solve the loading-door congestion.” Which existing evidence best supports that claim?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: None of the existing evidence directly supports that claim.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "evidence.strongest",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Seventeen carts lacked complete labels.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This concerns handoff labeling, not door capacity."
+        },
+        {
+          "id": "b",
+          "text": "The overlap keeps shifts at four hours.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This addresses volunteer duration."
+        },
+        {
+          "id": "c",
+          "text": "Twenty-six pickups exceeded the wait target.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "This shows delay but does not identify overlap as a solution to door congestion."
+        },
+        {
+          "id": "d",
+          "text": "None of the existing evidence directly supports that claim."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which piece of evidence is relevant to the overall proposal but answers a different claim than the 17 unfinished carts?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: The 41 percent early-departure rate on shifts longer than four hours",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "evidence.identify_role",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The 41 percent early-departure rate on shifts longer than four hours"
+        },
+        {
+          "id": "b",
+          "text": "The count of unfinished carts itself",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That is the same evidence being contrasted."
+        },
+        {
+          "id": "c",
+          "text": "The statement that carts hold sorted food",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That is descriptive context rather than argument evidence."
+        },
+        {
+          "id": "d",
+          "text": "The name of the Saturday program",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "A program name would not support the reasoning."
+        }
+      ],
+      "correct": "a"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-check-finding-evidence-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.3",
+      "secondarySkillIds": [],
+      "contentKind": "skill_drill",
+      "learningObjective": "Match evidence to the exact argumentative claim it supports and reject merely related details.",
+      "topicLabel": "Finding Evidence — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ],
+      "unitId": "finding-evidence"
+    },
+    "passage": {
+      "id": "p-rla-check-args-volunteer-shifts",
+      "title": "Overlapping Volunteer Shifts",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T08:06:18.619Z"
+  }
+}

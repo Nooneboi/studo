@@ -1,0 +1,372 @@
+{
+  "id": "set-rla-check-credibility-counterarguments-v1",
+  "title": "Credibility & Counterarguments — Skill Check",
+  "description": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Skill Check",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "A middle school committee is considering moving seventh-grade lunch twenty minutes later. Supporters argue that the current lunch period begins so early that many students eat little and become hungry before the end of the school day. The committee has collected several sources, but each source can answer a different part of the question.\n\nCafeteria transaction records show that seventh graders buy fewer full meals than sixth and eighth graders, whose lunch periods occur later. The records cover the full school year, but they cannot reveal why a student chose or skipped a meal. The school nurse’s logs show more afternoon visits for headaches and stomach discomfort among seventh graders. Those records are direct local observations, yet they do not establish that lunch timing caused the symptoms.\n\nA student survey found that 68 percent of seventh graders would prefer a later lunch. The survey is useful for measuring preference but cannot by itself prove that a schedule change would improve health or concentration. A food-service vendor also sent a glossy brochure claiming that “well-timed meals improve every student’s learning.” The brochure cites no local data and is designed to promote the vendor’s scheduling software.\n\nOne teacher objects that moving lunch later would shorten a project period used by several classes. The principal responds that the proposed timetable shifts the project period ten minutes earlier and moves a five-minute transition, leaving the project period the same total length. The committee plans a six-week trial and will compare meal purchases, nurse visits, teacher reports, and schedule disruptions before recommending a permanent change.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which source is best positioned to support a claim about how many seventh graders purchase full meals under the current schedule?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: The school’s cafeteria transaction records",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "credibility.source_fit",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "The school’s cafeteria transaction records"
+        },
+        {
+          "id": "b",
+          "text": "The food-service vendor brochure",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The brochure does not provide local purchase records."
+        },
+        {
+          "id": "c",
+          "text": "The student preference survey",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The survey measures preference rather than actual purchases."
+        },
+        {
+          "id": "d",
+          "text": "The teacher’s project-period objection",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The objection concerns scheduling, not meal purchases."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the most important limitation of using the nurse’s logs to claim that early lunch causes afternoon symptoms?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: The logs show symptoms but do not establish what caused them.",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "credibility.limit",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "The nurse works at the same school.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Local access is a strength, not the central limitation."
+        },
+        {
+          "id": "b",
+          "text": "The logs include afternoon visits.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "That makes the data relevant to the time period."
+        },
+        {
+          "id": "c",
+          "text": "The logs show symptoms but do not establish what caused them."
+        },
+        {
+          "id": "d",
+          "text": "The logs are not a student preference survey.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "They answer a different question, but the key issue is causal inference."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which source is least credible for a claim about this school’s actual schedule outcomes?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: A vendor brochure with no local data that promotes the vendor’s own software",
+      "skill": {
+        "id": "R5.9",
+        "label": "Source credibility"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "credibility.source_fit",
+      "metadata": {
+        "skillId": "R5.9",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "Local cafeteria records",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "They directly measure local meal purchases."
+        },
+        {
+          "id": "b",
+          "text": "The principal’s timetable showing period lengths",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "It directly addresses the scheduling structure."
+        },
+        {
+          "id": "c",
+          "text": "School nurse logs",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "They are local records, though causal claims require caution."
+        },
+        {
+          "id": "d",
+          "text": "A vendor brochure with no local data that promotes the vendor’s own software"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the teacher’s actual counterargument?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: A later lunch could reduce time available for a project period.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "counterargument.identify",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Students should never be allowed to choose lunch times.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The teacher does not make this claim."
+        },
+        {
+          "id": "b",
+          "text": "A later lunch could reduce time available for a project period."
+        },
+        {
+          "id": "c",
+          "text": "Cafeteria transaction records are inaccurate.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The teacher does not challenge the records."
+        },
+        {
+          "id": "d",
+          "text": "The school nurse should control the timetable.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "No such proposal appears."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Does the principal’s response directly address the teacher’s objection?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: Yes; it explains timetable changes that preserve the project period’s total length.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "counterargument.response",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; it explains timetable changes that preserve the project period’s total length."
+        },
+        {
+          "id": "b",
+          "text": "Yes; it proves students will buy more meals.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Meal purchases do not answer the project-time objection."
+        },
+        {
+          "id": "c",
+          "text": "No; it discusses only nurse visits.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The response specifically discusses the timetable."
+        },
+        {
+          "id": "d",
+          "text": "No; it agrees that the project period must become shorter.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "It argues the total length remains the same."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which evaluation best handles both source credibility and the counterargument?",
+      "points": 1,
+      "explanation": "This choice best matches the argument: Local records justify testing the lunch-time question, while the timetable response specifically addresses the project-period concern; the trial is still needed for outcomes.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "Track the exact claim, evidence, and reasoning before judging the argument.",
+      "familyId": "counterargument.response",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The vendor brochure proves the policy will work, so the teacher’s concern can be ignored.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "The brochure has weak local fit and the objection should be answered directly."
+        },
+        {
+          "id": "b",
+          "text": "The student survey proves better health outcomes, and the teacher gives no real objection.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "Preference does not prove health effects, and the teacher raises a concrete scheduling concern."
+        },
+        {
+          "id": "c",
+          "text": "Local records justify testing the lunch-time question, while the timetable response specifically addresses the project-period concern; the trial is still needed for outcomes."
+        },
+        {
+          "id": "d",
+          "text": "Because no single source proves everything, the school cannot reasonably run a trial.",
+          "distractorType": "plausible_but_wrong",
+          "whyWrong": "A trial is precisely how the committee plans to gather stronger outcome evidence."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-check-credibility-counterarguments-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.9",
+      "secondarySkillIds": [
+        "R5.10"
+      ],
+      "contentKind": "skill_drill",
+      "learningObjective": "Judge source fit and limitations, identify the actual objection, and decide whether the response answers it.",
+      "topicLabel": "Credibility & Counterarguments — Skill Check",
+      "deliveryRoles": [
+        "skill_check"
+      ],
+      "practiceTags": [
+        "mock-excluded"
+      ],
+      "unitId": "credibility-counterarguments"
+    },
+    "passage": {
+      "id": "p-rla-check-args-school-lunch-data",
+      "title": "Which Sources Fit the Lunch-Time Question?",
+      "textType": "informational",
+      "context": "civics",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T08:06:18.618Z"
+  }
+}
