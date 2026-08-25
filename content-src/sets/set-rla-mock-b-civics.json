@@ -100,10 +100,6 @@
           "whyWrong": "“It gives a complete step-by-step rule for the city.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "It supplies a principle readers must consider while evaluating a modern policy."
-        },
-        {
           "id": "c",
           "text": "It proves the supporters are legally correct.",
           "distractorType": "plausible_but_unsupported",
@@ -114,6 +110,10 @@
           "text": "It replaces the need for evidence about the pilot.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It replaces the need for evidence about the pilot.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It supplies a principle readers must consider while evaluating a modern policy."
         }
       ],
       "correct": "b",
@@ -200,6 +200,10 @@
           "whyWrong": "“The constitutional text has no relevance today.” is not the choice most directly supported by this source and question."
         },
         {
+          "id": "d",
+          "text": "Modern application requires considering the protected value, government purpose, evidence, and limits."
+        },
+        {
           "id": "b",
           "text": "Local officials may ignore constitutional limits.",
           "distractorType": "plausible_but_unsupported",
@@ -210,10 +214,6 @@
           "text": "Only historical facts can be discussed at a city meeting.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Only historical facts can be discussed at a city meeting.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "d",
-          "text": "Modern application requires considering the protected value, government purpose, evidence, and limits."
         }
       ],
       "correct": "d",
@@ -300,10 +300,6 @@
           "whyWrong": "“It abandons the policy because any objection is decisive.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "It narrows the policy and adds review rather than treating the first pilot as final proof."
-        },
-        {
           "id": "c",
           "text": "It expands official discretion without reporting.",
           "distractorType": "plausible_but_unsupported",
@@ -314,6 +310,10 @@
           "text": "It declares the constitutional question permanently settled.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It declares the constitutional question permanently settled.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It narrows the policy and adds review rather than treating the first pilot as final proof."
         }
       ],
       "correct": "b",
@@ -350,14 +350,14 @@
           "whyWrong": "“Public policy should always favor the fastest solution.” is not the choice most directly supported by this source and question."
         },
         {
+          "id": "c",
+          "text": "Government action should be judged by both its evidence-based purpose and the limits placed on its power."
+        },
+        {
           "id": "b",
           "text": "Founding documents eliminate the need for modern evidence.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Founding documents eliminate the need for modern evidence.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "c",
-          "text": "Government action should be judged by both its evidence-based purpose and the limits placed on its power."
         },
         {
           "id": "d",

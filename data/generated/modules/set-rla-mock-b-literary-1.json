@@ -94,14 +94,14 @@
           "whyWrong": "“Rules should never guide decisions.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "Good judgment may require adapting a rule when people would otherwise bear an unfair cost."
-        },
-        {
           "id": "c",
           "text": "Fast decisions are always fairer than careful ones.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Fast decisions are always fairer than careful ones.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Good judgment may require adapting a rule when people would otherwise bear an unfair cost."
         },
         {
           "id": "d",
@@ -143,6 +143,10 @@
       "time": 65,
       "options": [
         {
+          "id": "c",
+          "text": "The character values explaining the limits of a decision rather than pretending it was flawless."
+        },
+        {
           "id": "a",
           "text": "The character regrets helping anyone.",
           "distractorType": "plausible_but_unsupported",
@@ -153,10 +157,6 @@
           "text": "The character wants to avoid responsibility in the future.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“The character wants to avoid responsibility in the future.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "c",
-          "text": "The character values explaining the limits of a decision rather than pretending it was flawless."
         },
         {
           "id": "d",
@@ -308,14 +308,14 @@
       "time": 65,
       "options": [
         {
+          "id": "b",
+          "text": "It makes the final reflection more credible and shows mature judgment."
+        },
+        {
           "id": "a",
           "text": "It proves the decision failed.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It proves the decision failed.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "b",
-          "text": "It makes the final reflection more credible and shows mature judgment."
         },
         {
           "id": "c",
@@ -414,6 +414,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T13:54:09.999Z"
+    "compiledAt": "2026-08-25T15:16:25.578Z"
   }
 }

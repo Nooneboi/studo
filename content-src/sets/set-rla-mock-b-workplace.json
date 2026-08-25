@@ -101,14 +101,14 @@
       "estimatedSeconds": 65,
       "options": [
         {
+          "id": "b",
+          "text": "The pilot cut average search time by 18 seconds per order, wrong-item picks fell from 2.8 percent to 1.9 percent, and training time for new staff decreased."
+        },
+        {
           "id": "a",
           "text": "Every employee will prefer the change.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Every employee will prefer the change.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "b",
-          "text": "The pilot cut average search time by 18 seconds per order, wrong-item picks fell from 2.8 percent to 1.9 percent, and training time for new staff decreased."
         },
         {
           "id": "c",
@@ -201,6 +201,10 @@
       "estimatedSeconds": 65,
       "options": [
         {
+          "id": "d",
+          "text": "The next test should include a mixed-product zone and track correction time as well as initial picking speed."
+        },
+        {
           "id": "a",
           "text": "It removes all safeguards to simplify the test.",
           "distractorType": "plausible_but_unsupported",
@@ -217,10 +221,6 @@
           "text": "It stops collecting data about service quality.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It stops collecting data about service quality.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "d",
-          "text": "The next test should include a mixed-product zone and track correction time as well as initial picking speed."
         }
       ],
       "correct": "d",
@@ -251,10 +251,6 @@
       "estimatedSeconds": 65,
       "options": [
         {
-          "id": "a",
-          "text": "The target outcome improves while errors, overtime, or service quality do not worsen beyond the agreed limits."
-        },
-        {
           "id": "b",
           "text": "One manager says the new system feels modern.",
           "distractorType": "plausible_but_unsupported",
@@ -271,6 +267,10 @@
           "text": "Employees finish the survey before the deadline.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Employees finish the survey before the deadline.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "The target outcome improves while errors, overtime, or service quality do not worsen beyond the agreed limits."
         }
       ],
       "correct": "a",
@@ -307,10 +307,6 @@
           "whyWrong": "“A pilot automatically proves a proposal works.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change."
-        },
-        {
           "id": "c",
           "text": "Average speed is enough to evaluate any workplace policy.",
           "distractorType": "plausible_but_unsupported",
@@ -321,6 +317,10 @@
           "text": "Permanent decisions should be made before measurements are chosen.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Permanent decisions should be made before measurements are chosen.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change."
         }
       ],
       "correct": "b",

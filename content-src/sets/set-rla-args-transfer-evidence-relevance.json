@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-transfer-evidence-relevance",
+  "runtime": {
+    "id": "set-rla-args-transfer-evidence-relevance",
+    "file": "set-rla-args-transfer-evidence-relevance.json"
+  },
+  "title": "Evidence Relevance Transfer — Cooling Plaza",
+  "description": "Match evidence to the exact claim being evaluated in a new public-data context.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Transfer Practice",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-transfer-evidence-cooling-plaza"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Pre-pilot hardening editorial review",
+  "reviewNotes": "Original transfer set for role-specific Practice/Train depth; reviewed for claim-evidence fit and one-best-answer logic.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which evidence is MOST relevant to Chen's claim that the coating may reduce heat experienced by waiting pedestrians?",
+      "primarySkillId": "R5.4",
+      "familyId": "arguments.evidence.relevance",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The coating cost $18,000 for the pilot plaza.",
+          "distractorType": "different_claim",
+          "whyWrong": "Cost matters to financial value, not directly to whether pedestrians experience less heat."
+        },
+        {
+          "id": "b",
+          "text": "The coated pavement averaged 9°F cooler at the surface, and riders also reported whether the plaza felt more comfortable."
+        },
+        {
+          "id": "c",
+          "text": "The city operates several other bus plazas.",
+          "distractorType": "background",
+          "whyWrong": "The number of other plazas does not measure heat exposure at the pilot location."
+        },
+        {
+          "id": "d",
+          "text": "A delivery lane developed tire marks after six weeks.",
+          "distractorType": "maintenance",
+          "whyWrong": "Tire marks are evidence about durability, not the heat-related claim."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "The coated pavement averaged 9°F cooler at the surface, and riders also reported whether the plaza felt more comfortable.",
+        "whyCorrect": "The surface measurement and rider comfort responses both address the heat-related outcome Chen is investigating.",
+        "quickTip": "Choose evidence that measures the claim itself, not a different benefit or cost."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "The council member claims the coating lowered the air temperature around riders by 9°F. Which evidence is MOST relevant for evaluating that exact claim?",
+      "primarySkillId": "R5.4",
+      "familyId": "arguments.evidence.relevance",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The 61 percent comfort-survey result.",
+          "distractorType": "indirect",
+          "whyWrong": "Perceived comfort can be influenced by shade and does not directly measure air temperature."
+        },
+        {
+          "id": "b",
+          "text": "The $18,000 installation cost.",
+          "distractorType": "different_claim",
+          "whyWrong": "Installation cost has no direct bearing on the amount of air-temperature change."
+        },
+        {
+          "id": "c",
+          "text": "The 9°F reduction in pavement surface temperature.",
+          "distractorType": "measurement_mismatch",
+          "whyWrong": "Surface temperature is related to heat conditions but is not the same variable as air temperature."
+        },
+        {
+          "id": "d",
+          "text": "The five-foot air sensors showed an average difference of only 1°F."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "The five-foot air sensors showed an average difference of only 1°F.",
+        "whyCorrect": "The air sensors measure the exact variable named in the council member’s claim.",
+        "quickTip": "Match the evidence variable to the variable in the claim."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which additional evidence would be MOST relevant to Chen's question about whether the coating remains useful beyond one summer?",
+      "primarySkillId": "R5.4",
+      "familyId": "arguments.evidence.relevance",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Surface, air, comfort, and durability measurements collected at the same plaza during later hot seasons."
+        },
+        {
+          "id": "b",
+          "text": "A list of every bus route that stops at the plaza.",
+          "distractorType": "background",
+          "whyWrong": "Route names do not show whether cooling or durability benefits persist over time."
+        },
+        {
+          "id": "c",
+          "text": "A survey asking whether riders prefer blue or green bus shelters.",
+          "distractorType": "irrelevant_preference",
+          "whyWrong": "Color preference does not test the coating’s continued cooling or durability."
+        },
+        {
+          "id": "d",
+          "text": "The number of city employees assigned to transportation planning.",
+          "distractorType": "administrative",
+          "whyWrong": "Staffing levels do not measure whether the coating remains effective."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "Surface, air, comfort, and durability measurements collected at the same plaza during later hot seasons.",
+        "whyCorrect": "Repeated measurements across later hot seasons directly test whether the observed effects persist.",
+        "quickTip": "For a long-term claim, look for long-term measurements of the same outcome."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which evidence is MOST relevant to a separate claim that the coating can withstand ordinary pedestrian use?",
+      "primarySkillId": "R5.4",
+      "familyId": "arguments.evidence.relevance",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Air temperature changed by about 1°F.",
+          "distractorType": "different_claim",
+          "whyWrong": "Air temperature addresses cooling, not physical durability."
+        },
+        {
+          "id": "b",
+          "text": "Most surveyed riders reported greater comfort.",
+          "distractorType": "different_claim",
+          "whyWrong": "Comfort reports do not show whether the surface physically holds up."
+        },
+        {
+          "id": "c",
+          "text": "Workers reported no peeling in the main walking area after six weeks."
+        },
+        {
+          "id": "d",
+          "text": "Two shade canopies were added over benches.",
+          "distractorType": "confound",
+          "whyWrong": "The shade change affects comfort interpretation but does not measure coating wear."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "Workers reported no peeling in the main walking area after six weeks.",
+        "whyCorrect": "Observed peeling or lack of peeling is direct evidence about physical durability under pedestrian use.",
+        "quickTip": "Relevant evidence changes when the claim changes."
+      }
+    }
+  ],
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.4",
+    "secondarySkillIds": [],
+    "unitId": "evidence-quality",
+    "contentKind": "skill_drill",
+    "learningObjective": "Select evidence that is directly relevant to the exact claim being evaluated.",
+    "topicLabel": "Transfer Practice",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
+  }
+}

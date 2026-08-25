@@ -594,6 +594,7 @@ export async function validateContent({ quiet = false } = {}) {
   const usedMockModules = new Set();
   const usedMockPassages = new Set();
   const usedMockEr = new Set();
+  const mockAnswerSequences = new Map();
   let allFormsComplete = mockBlueprint.version === 'rla-mock-v2' && mockForms.length === 3;
   if (mockBlueprint.version !== 'rla-mock-v2') add(issues, 'error', 'MOCK_V2_VERSION_INVALID', 'Dedicated mock blueprint must be rla-mock-v2.', mockBlueprintFile);
   if (mockForms.length !== 3) add(issues, 'error', 'MOCK_FORM_COUNT_INVALID', `Dedicated mock blueprint needs exactly three forms; found ${mockForms.length}.`, mockBlueprintFile);
@@ -620,6 +621,26 @@ export async function validateContent({ quiet = false } = {}) {
     if(sets.some(x=>x.questions.length<6||x.questions.length>8)){add(issues,'error','MOCK_FORM_SET_SIZE_INVALID',`${loc} contains a set outside 6–8 items.`,mockBlueprintFile,loc); allFormsComplete=false;}
     const reporting={'1':0,'2':0,'3':0}, types={multiple_choice:0,grammar_edit:0,select_text:0,drag:0}, dok={'1':0,'2':0,'3':0};
     for(const q of qs){ const rc=String(q.reportingCategory??''); if(rc in reporting) reporting[rc]++; else {add(issues,'error','MOCK_REPORTING_CATEGORY_INVALID',`${loc}:${q.id} needs reportingCategory 1–3.`,mockBlueprintFile,loc); allFormsComplete=false;} if(q.type==='drag_sort'||q.type==='drag_order') types.drag++; else if(q.type in types) types[q.type]++; else {add(issues,'error','MOCK_ITEM_TYPE_INVALID',`${loc}:${q.id} uses unsupported mock item type ${q.type}.`,mockBlueprintFile,loc); allFormsComplete=false;} if(String(q.dok) in dok)dok[String(q.dok)]++; if('hint' in q||'learningStage' in q||'confidence' in q||'retry' in q){add(issues,'error','MOCK_SCAFFOLDING_LEAK',`${loc}:${q.id} contains learning scaffolding.`,mockBlueprintFile,loc); allFormsComplete=false;} if(q.type==='multiple_choice'&&(q.options||[]).length!==4){add(issues,'error','MOCK_MC_OPTION_COUNT_INVALID',`${loc}:${q.id} must have four options.`,mockBlueprintFile,loc); allFormsComplete=false;} }
+    const answerPositions = qs
+      .filter((q) => q.type === 'multiple_choice' || q.type === 'grammar_edit')
+      .map((q) => correctLetter(q.options, q.correct))
+      .filter(Boolean);
+    if (answerPositions.length !== 42) {
+      add(issues,'error','MOCK_FORM_ANSWER_POSITION_COUNT_INVALID',`${loc} needs 42 selected-response answer positions; found ${answerPositions.length}.`,mockBlueprintFile,loc);
+      allFormsComplete=false;
+    } else {
+      const answerCounts = answerPositions.reduce((acc, letter) => (acc[letter]=(acc[letter]||0)+1, acc), {});
+      const dominant = Math.max(...Object.values(answerCounts));
+      if (dominant / answerPositions.length > 0.4) {
+        add(issues,'error','MOCK_FORM_ANSWER_POSITION_BIAS',`${loc} has a displayed answer-position share above 40% (${JSON.stringify(answerCounts)}).`,mockBlueprintFile,loc);
+        allFormsComplete=false;
+      }
+      if (longestRun(answerPositions) >= 3) {
+        add(issues,'error','MOCK_FORM_ANSWER_POSITION_RUN',`${loc} contains a run of at least three identical displayed answer positions.`,mockBlueprintFile,loc);
+        allFormsComplete=false;
+      }
+      mockAnswerSequences.set(loc, answerPositions);
+    }
     for(const k of ['1','2','3']) if(reporting[k]!==Number(mockBlueprint.reportingCategoryTargets?.[k])){add(issues,'error','MOCK_REPORTING_TARGET_INVALID',`${loc} category ${k} has ${reporting[k]}; expected ${mockBlueprint.reportingCategoryTargets?.[k]}.`,mockBlueprintFile,loc); allFormsComplete=false;}
     for(const k of ['multiple_choice','grammar_edit','select_text','drag']) if(types[k]!==Number(mockBlueprint.itemTypeTargets?.[k])){add(issues,'error','MOCK_ITEM_TYPE_TARGET_INVALID',`${loc} ${k} has ${types[k]}; expected ${mockBlueprint.itemTypeTargets?.[k]}.`,mockBlueprintFile,loc); allFormsComplete=false;}
     if(!(dok['1']>0&&dok['2']>dok['1']&&dok['2']>dok['3']&&dok['3']>0)){add(issues,'error','MOCK_DOK_BALANCE_INVALID',`${loc} needs DOK 1–3 with DOK 2 largest; found ${JSON.stringify(dok)}.`,mockBlueprintFile,loc); allFormsComplete=false;}
@@ -630,6 +651,20 @@ export async function validateContent({ quiet = false } = {}) {
     let stamina=false; for(const set of sets){const passage=passages.get(set.passageRefs?.[0]); if(!passage)continue; const wc=words(passage.text).length; const isEditing=editing.includes(set); if(isEditing&&wc>450){add(issues,'error','MOCK_EDITING_PASSAGE_LONG',`${loc} editing passage ${passage.id} is ${wc} words.`,mockBlueprintFile,loc);allFormsComplete=false;} if(!isEditing&&(wc<400||wc>900)){add(issues,'error','MOCK_PASSAGE_LENGTH_INVALID',`${loc} passage ${passage.id} is ${wc} words.`,mockBlueprintFile,loc);allFormsComplete=false;} if(wc>=Number(mockBlueprint.selection?.staminaMinimumWords||600))stamina=true;}
     if(!stamina){add(issues,'error','MOCK_STAMINA_SOURCE_MISSING',`${loc} needs a 600+ word source.`,mockBlueprintFile,loc);allFormsComplete=false;}
     if(!form.erPromptId||!mockErPromptIds.has(form.erPromptId)){add(issues,'error','MOCK_FORM_ER_MISSING',`${loc} references missing mock ER prompt ${form.erPromptId||'(missing)'}.`,mockBlueprintFile,loc);allFormsComplete=false;} else if(usedMockEr.has(form.erPromptId)){add(issues,'error','MOCK_FORM_ER_OVERLAP',`${form.erPromptId} reused across forms.`,mockBlueprintFile,loc);allFormsComplete=false;} else usedMockEr.add(form.erPromptId);
+  }
+  const answerSequenceEntries = [...mockAnswerSequences.entries()];
+  for (let i = 0; i < answerSequenceEntries.length; i += 1) {
+    for (let j = i + 1; j < answerSequenceEntries.length; j += 1) {
+      const [aId, a] = answerSequenceEntries[i];
+      const [bId, b] = answerSequenceEntries[j];
+      if (a.length !== b.length || !a.length) continue;
+      const same = a.reduce((count, value, index) => count + Number(value === b[index]), 0);
+      const similarity = same / a.length;
+      if (similarity > 0.6) {
+        add(issues,'error','MOCK_FORM_ANSWER_SEQUENCE_SIMILAR',`${aId} and ${bId} share ${(similarity * 100).toFixed(1)}% of displayed answer positions; fixed forms should not reuse near-identical position sequences.`,mockBlueprintFile);
+        allFormsComplete=false;
+      }
+    }
   }
   if(usedMockModules.size!==21){add(issues,'error','MOCK_BANK_MODULE_COUNT_INVALID',`Dedicated mock bank needs 21 unique modules; found ${usedMockModules.size}.`,mockBlueprintFile);allFormsComplete=false;}
   if(mockErPrompts.length!==3){add(issues,'error','MOCK_ER_BANK_COUNT_INVALID',`Dedicated mock ER bank needs 3 prompts; found ${mockErPrompts.length}.`,mockBlueprintFile);allFormsComplete=false;}

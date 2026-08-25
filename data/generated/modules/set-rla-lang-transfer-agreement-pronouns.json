@@ -1,0 +1,487 @@
+{
+  "id": "set-rla-lang-transfer-agreement-pronouns",
+  "title": "Agreement & Pronouns Transfer — Arts Schedule",
+  "description": "Apply subject–verb agreement, pronoun case/reference, and complex agreement in a fresh editing context.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Language & Editing - Transfer Practice",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "A community arts center is preparing a schedule for its fall workshops. Several coordinators contributed notes, so the editor is checking the final announcement for agreement and pronoun problems. Some sentences place phrases between the true subject and its verb. Others use pronouns that could refer to more than one noun. The editor's goal is to make every sentence grammatically correct and immediately clear to readers.\n\nThe schedule includes classes led by individual artists, pairs of instructors, and committees. The editor cannot simply match a verb with the nearest noun; the grammatical subject controls the verb. Pronouns also need a clear antecedent and the correct form for their role in the sentence. When a sentence contains both agreement and reference problems, the best revision must fix the entire sentence rather than only the first visible error.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "The list of Saturday workshops {{blank}} beside the front desk.",
+      "points": 1,
+      "explanation": "The singular subject “list” takes the singular verb phrase “is posted.”",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Ignore nouns inside prepositional phrases when identifying the subject.",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "is posted"
+        },
+        {
+          "id": "b",
+          "text": "are posted",
+          "distractorType": "editing_error",
+          "whyWrong": "The subject is the singular noun “list,” not the plural noun “workshops.”"
+        },
+        {
+          "id": "c",
+          "text": "were posted",
+          "distractorType": "editing_error",
+          "whyWrong": "The plural verb also shifts tense without a reason."
+        },
+        {
+          "id": "d",
+          "text": "have posted",
+          "distractorType": "editing_error",
+          "whyWrong": "This form does not agree with the singular subject or fit the passive construction."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Each of the guest instructors {{blank}} a short materials list before class.",
+      "points": 1,
+      "explanation": "“Each” is grammatically singular, so “submits” is the matching verb.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Words after “of” do not change the singular number of “each.”",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "submit",
+          "distractorType": "editing_error",
+          "whyWrong": "“Each” is singular, so the plural/base verb “submit” does not agree."
+        },
+        {
+          "id": "b",
+          "text": "have submitted",
+          "distractorType": "editing_error",
+          "whyWrong": "The plural auxiliary “have” does not agree with singular “each.”"
+        },
+        {
+          "id": "c",
+          "text": "submits"
+        },
+        {
+          "id": "d",
+          "text": "were submitting",
+          "distractorType": "editing_error",
+          "whyWrong": "This plural verb form does not agree with singular “each.”"
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "The director and the volunteer coordinator {{blank}} the final room assignments every Friday.",
+      "points": 1,
+      "explanation": "“The director and the volunteer coordinator” is a compound plural subject, so “review” agrees.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Two subjects joined by “and” usually take a plural verb.",
+      "familyId": "language.grammar.subject_verb_agreement",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "reviews",
+          "distractorType": "editing_error",
+          "whyWrong": "Two subjects joined by “and” form a plural subject."
+        },
+        {
+          "id": "b",
+          "text": "review"
+        },
+        {
+          "id": "c",
+          "text": "has reviewed",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular auxiliary “has” does not agree with the compound subject."
+        },
+        {
+          "id": "d",
+          "text": "is reviewing",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular auxiliary “is” does not agree with the compound subject."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Mina handed the revised schedule to Carla after {{blank}} checked the room numbers.",
+      "points": 1,
+      "explanation": "Repeating “Mina” removes the ambiguity about who checked the room numbers.",
+      "skill": {
+        "id": "L1.3",
+        "label": "Pronoun agreement, reference & case"
+      },
+      "rule": "If two possible antecedents appear, naming the person is clearer than forcing a pronoun.",
+      "familyId": "language.pronoun.reference",
+      "metadata": {
+        "skillId": "L1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "she",
+          "distractorType": "editing_error",
+          "whyWrong": "“She” could refer to Mina or Carla, so the reader cannot tell who checked the room numbers."
+        },
+        {
+          "id": "b",
+          "text": "her",
+          "distractorType": "editing_error",
+          "whyWrong": "“Her” is an object/possessive form, but the clause needs a clear subject."
+        },
+        {
+          "id": "c",
+          "text": "they",
+          "distractorType": "editing_error",
+          "whyWrong": "A plural pronoun does not clearly identify which individual performed the check."
+        },
+        {
+          "id": "d",
+          "text": "Mina"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "The center thanked Jordan and {{blank}} for organizing the supply tables.",
+      "points": 1,
+      "explanation": "The pronoun is an object of “thanked,” so the object form “me” is correct.",
+      "skill": {
+        "id": "L1.3",
+        "label": "Pronoun agreement, reference & case"
+      },
+      "rule": "Remove the other name: “The center thanked me.”",
+      "familyId": "language.pronoun.grammar",
+      "metadata": {
+        "skillId": "L1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "I",
+          "distractorType": "editing_error",
+          "whyWrong": "After the verb “thanked,” the pronoun functions as an object, so subject-form “I” is incorrect."
+        },
+        {
+          "id": "b",
+          "text": "me"
+        },
+        {
+          "id": "c",
+          "text": "my",
+          "distractorType": "editing_error",
+          "whyWrong": "“My” is possessive and cannot serve as the object of “thanked.”"
+        },
+        {
+          "id": "d",
+          "text": "myself",
+          "distractorType": "editing_error",
+          "whyWrong": "A reflexive pronoun is not appropriate because the subject is “the center,” not the speaker."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the clearest revision: “The pottery class met beside the painting class after it changed rooms.”",
+      "points": 1,
+      "explanation": "Naming the pottery class before the pronoun gives “it” one clear antecedent.",
+      "skill": {
+        "id": "L1.3",
+        "label": "Pronoun agreement, reference & case"
+      },
+      "rule": "Place the noun close to its pronoun when two similar nouns are present.",
+      "familyId": "language.pronoun.reference",
+      "metadata": {
+        "skillId": "L1.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "After the pottery class changed rooms, it met beside the painting class."
+        },
+        {
+          "id": "b",
+          "text": "The pottery class met beside the painting class after it changed rooms.",
+          "distractorType": "editing_error",
+          "whyWrong": "“It” can refer to either class."
+        },
+        {
+          "id": "c",
+          "text": "After it changed rooms, it met beside the painting class.",
+          "distractorType": "editing_error",
+          "whyWrong": "Both pronouns leave the changing class unclear."
+        },
+        {
+          "id": "d",
+          "text": "The pottery class and painting class met beside it after the room changed.",
+          "distractorType": "editing_error",
+          "whyWrong": "“It” has no clear antecedent and the revision changes the meaning."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Neither the studio manager nor the two assistants {{blank}} available to close the building tonight.",
+      "points": 1,
+      "explanation": "The nearer subject is the plural noun “assistants,” so the verb is “are.”",
+      "skill": {
+        "id": "L1.7",
+        "label": "Complex agreement"
+      },
+      "rule": "With either/or and neither/nor, check the noun closest to the verb.",
+      "familyId": "language.grammar.complex_agreement",
+      "metadata": {
+        "skillId": "L1.7",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 50,
+      "options": [
+        {
+          "id": "a",
+          "text": "is",
+          "distractorType": "editing_error",
+          "whyWrong": "With “neither...nor,” the verb agrees with the nearer subject; “assistants” is plural."
+        },
+        {
+          "id": "b",
+          "text": "has been",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular auxiliary does not agree with the nearer plural subject “assistants.”"
+        },
+        {
+          "id": "c",
+          "text": "was",
+          "distractorType": "editing_error",
+          "whyWrong": "The singular past-tense verb does not agree with the nearer plural subject."
+        },
+        {
+          "id": "d",
+          "text": "are"
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Choose the best revision: “The planning committee, along with three artists, review the proposals before they submits its final choice.”",
+      "points": 1,
+      "explanation": "The revision matches singular “committee” with “reviews” and “submits” and names the committee again to keep the reference clear.",
+      "skill": {
+        "id": "L1.7",
+        "label": "Complex agreement"
+      },
+      "rule": "On complex revisions, recheck every verb and pronoun after fixing the first error.",
+      "familyId": "language.grammar.complex_agreement",
+      "metadata": {
+        "skillId": "L1.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The planning committee, along with three artists, review the proposals before it submits its final choice.",
+          "distractorType": "editing_error",
+          "whyWrong": "The pronoun is clearer, but the main verb “review” still fails to agree with singular “committee.”"
+        },
+        {
+          "id": "b",
+          "text": "The planning committee, along with three artists, reviews the proposals before they submit their final choice.",
+          "distractorType": "editing_error",
+          "whyWrong": "The main verb agrees, but “they/their” shifts the final choice to an unclear plural group."
+        },
+        {
+          "id": "c",
+          "text": "The planning committee, along with three artists, reviews the proposals before the committee submits its final choice."
+        },
+        {
+          "id": "d",
+          "text": "The planning committee and three artists reviews the proposals before the committee submit its final choice.",
+          "distractorType": "editing_error",
+          "whyWrong": "This creates a plural compound subject but keeps singular “reviews,” and “committee submit” also lacks agreement."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-lang-transfer-agreement-pronouns",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.2",
+      "secondarySkillIds": [
+        "L1.3",
+        "L1.7"
+      ],
+      "unitId": "agreement-pronouns",
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply agreement and pronoun rules to new sentences without relying on memorized examples.",
+      "topicLabel": "Transfer Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-lang-transfer-agreement-pronouns",
+      "title": "Editing the Community Arts Schedule",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T15:16:25.574Z"
+  }
+}

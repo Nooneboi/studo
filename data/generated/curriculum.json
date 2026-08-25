@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-25T13:54:10.030Z",
+  "builtAt": "2026-08-25T15:16:25.595Z",
   "tracks": [
     {
       "id": "reading",
@@ -5563,8 +5563,8 @@
                 "R5.5"
               ],
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 12,
               "resourceCount": 3,
               "checkCount": 0,
               "sets": [
@@ -5607,6 +5607,44 @@
                   "measuredSkillIds": [
                     "R5.4",
                     "R5.5"
+                  ]
+                },
+                {
+                  "id": "set-rla-args-transfer-evidence-relevance",
+                  "title": "Evidence Relevance Transfer — Cooling Plaza",
+                  "description": "Match evidence to the exact claim being evaluated in a new public-data context.",
+                  "file": "generated/modules/set-rla-args-transfer-evidence-relevance.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 4,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.4",
+                    "secondarySkillIds": [],
+                    "unitId": "evidence-quality",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Select evidence that is directly relevant to the exact claim being evaluated.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-transfer-evidence-cooling-plaza",
+                    "title": "What the Cooling-Plaza Pilot Actually Shows",
+                    "textType": "informational",
+                    "context": "data",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.4"
                   ]
                 }
               ],
@@ -5893,8 +5931,8 @@
                 "R5.8"
               ],
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 12,
               "resourceCount": 3,
               "checkCount": 0,
               "sets": [
@@ -5936,6 +5974,44 @@
                   },
                   "measuredSkillIds": [
                     "R5.7",
+                    "R5.8"
+                  ]
+                },
+                {
+                  "id": "set-rla-args-transfer-assumptions",
+                  "title": "Assumptions Transfer — Flexible Start Pilot",
+                  "description": "Identify hidden premises and choose evidence that directly tests them in a workplace pilot.",
+                  "file": "generated/modules/set-rla-args-transfer-assumptions.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 4,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.8",
+                    "secondarySkillIds": [],
+                    "unitId": "reasoning-assumptions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify assumptions that connect evidence to a claim and select evidence that tests those assumptions.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-transfer-assumptions-flex-start",
+                    "title": "What the Flex-Start Claim Assumes",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
                     "R5.8"
                   ]
                 }
@@ -6316,7 +6392,7 @@
           ],
           "availableSkillCount": 10,
           "availableUnitCount": 6,
-          "availableSetCount": 9,
+          "availableSetCount": 11,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
@@ -7089,8 +7165,8 @@
               "priority": "P0",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 2,
+              "setCount": 2,
+              "questionCount": 6,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
@@ -7134,6 +7210,44 @@
                   "measuredSkillIds": [
                     "R5.4",
                     "R5.5"
+                  ]
+                },
+                {
+                  "id": "set-rla-args-transfer-evidence-relevance",
+                  "title": "Evidence Relevance Transfer — Cooling Plaza",
+                  "description": "Match evidence to the exact claim being evaluated in a new public-data context.",
+                  "file": "generated/modules/set-rla-args-transfer-evidence-relevance.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 4,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.4",
+                    "secondarySkillIds": [],
+                    "unitId": "evidence-quality",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Select evidence that is directly relevant to the exact claim being evaluated.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-transfer-evidence-cooling-plaza",
+                    "title": "What the Cooling-Plaza Pilot Actually Shows",
+                    "textType": "informational",
+                    "context": "data",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.4"
                   ]
                 }
               ],
@@ -7756,8 +7870,8 @@
               "priority": "P0",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 4,
+              "setCount": 2,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
@@ -7800,6 +7914,44 @@
                   },
                   "measuredSkillIds": [
                     "R5.7",
+                    "R5.8"
+                  ]
+                },
+                {
+                  "id": "set-rla-args-transfer-assumptions",
+                  "title": "Assumptions Transfer — Flexible Start Pilot",
+                  "description": "Identify hidden premises and choose evidence that directly tests them in a workplace pilot.",
+                  "file": "generated/modules/set-rla-args-transfer-assumptions.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 4,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.8",
+                    "secondarySkillIds": [],
+                    "unitId": "reasoning-assumptions",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Identify assumptions that connect evidence to a claim and select evidence that tests those assumptions.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-transfer-assumptions-flex-start",
+                    "title": "What the Flex-Start Claim Assumes",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
                     "R5.8"
                   ]
                 }
@@ -9811,8 +9963,8 @@
       ],
       "availableSkillCount": 15,
       "totalSkillCount": 15,
-      "availableSetCount": 12,
-      "questionCount": 90,
+      "availableSetCount": 14,
+      "questionCount": 98,
       "resourceCount": 45,
       "studyFileCount": 45,
       "checkCount": 3
@@ -10043,8 +10195,8 @@
                 "L1.7"
               ],
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 16,
               "resourceCount": 3,
               "checkCount": 0,
               "sets": [
@@ -10077,6 +10229,49 @@
                     "title": "Preparing the Inventory Report",
                     "textType": "informational",
                     "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                },
+                {
+                  "id": "set-rla-lang-transfer-agreement-pronouns",
+                  "title": "Agreement & Pronouns Transfer — Arts Schedule",
+                  "description": "Apply subject–verb agreement, pronoun case/reference, and complex agreement in a fresh editing context.",
+                  "file": "generated/modules/set-rla-lang-transfer-agreement-pronouns.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply agreement and pronoun rules to new sentences without relying on memorized examples.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-transfer-agreement-pronouns",
+                    "title": "Editing the Community Arts Schedule",
+                    "textType": "informational",
+                    "context": "community",
                     "sourceType": "original",
                     "attribution": "Original content by Chee Skool",
                     "author": "Chee Skool",
@@ -11045,7 +11240,7 @@
           ],
           "availableSkillCount": 13,
           "availableUnitCount": 7,
-          "availableSetCount": 7,
+          "availableSetCount": 8,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
@@ -11228,8 +11423,8 @@
               "priority": "P0",
               "practiceMode": "Language",
               "available": true,
-              "setCount": 1,
-              "questionCount": 2,
+              "setCount": 2,
+              "questionCount": 5,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
@@ -11263,6 +11458,49 @@
                     "title": "Preparing the Inventory Report",
                     "textType": "informational",
                     "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                },
+                {
+                  "id": "set-rla-lang-transfer-agreement-pronouns",
+                  "title": "Agreement & Pronouns Transfer — Arts Schedule",
+                  "description": "Apply subject–verb agreement, pronoun case/reference, and complex agreement in a fresh editing context.",
+                  "file": "generated/modules/set-rla-lang-transfer-agreement-pronouns.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply agreement and pronoun rules to new sentences without relying on memorized examples.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-transfer-agreement-pronouns",
+                    "title": "Editing the Community Arts Schedule",
+                    "textType": "informational",
+                    "context": "community",
                     "sourceType": "original",
                     "attribution": "Original content by Chee Skool",
                     "author": "Chee Skool",
@@ -11405,8 +11643,8 @@
               "priority": "P0",
               "practiceMode": "Language",
               "available": true,
-              "setCount": 1,
-              "questionCount": 3,
+              "setCount": 2,
+              "questionCount": 6,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
@@ -11440,6 +11678,49 @@
                     "title": "Preparing the Inventory Report",
                     "textType": "informational",
                     "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                },
+                {
+                  "id": "set-rla-lang-transfer-agreement-pronouns",
+                  "title": "Agreement & Pronouns Transfer — Arts Schedule",
+                  "description": "Apply subject–verb agreement, pronoun case/reference, and complex agreement in a fresh editing context.",
+                  "file": "generated/modules/set-rla-lang-transfer-agreement-pronouns.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply agreement and pronoun rules to new sentences without relying on memorized examples.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-transfer-agreement-pronouns",
+                    "title": "Editing the Community Arts Schedule",
+                    "textType": "informational",
+                    "context": "community",
                     "sourceType": "original",
                     "attribution": "Original content by Chee Skool",
                     "author": "Chee Skool",
@@ -12071,8 +12352,8 @@
               "priority": "P1",
               "practiceMode": "Language",
               "available": true,
-              "setCount": 1,
-              "questionCount": 3,
+              "setCount": 2,
+              "questionCount": 5,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
@@ -12106,6 +12387,49 @@
                     "title": "Preparing the Inventory Report",
                     "textType": "informational",
                     "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "L1.2",
+                    "L1.3",
+                    "L1.7"
+                  ]
+                },
+                {
+                  "id": "set-rla-lang-transfer-agreement-pronouns",
+                  "title": "Agreement & Pronouns Transfer — Arts Schedule",
+                  "description": "Apply subject–verb agreement, pronoun case/reference, and complex agreement in a fresh editing context.",
+                  "file": "generated/modules/set-rla-lang-transfer-agreement-pronouns.json",
+                  "difficulty": "medium",
+                  "category": "language_conventions",
+                  "questionCount": 8,
+                  "curriculum": {
+                    "domain": "Language & Editing",
+                    "primarySkillId": "L1.2",
+                    "secondarySkillIds": [
+                      "L1.3",
+                      "L1.7"
+                    ],
+                    "unitId": "agreement-pronouns",
+                    "contentKind": "skill_drill",
+                    "learningObjective": "Apply agreement and pronoun rules to new sentences without relying on memorized examples.",
+                    "topicLabel": "Transfer Practice",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-lang-transfer-agreement-pronouns",
+                    "title": "Editing the Community Arts Schedule",
+                    "textType": "informational",
+                    "context": "community",
                     "sourceType": "original",
                     "attribution": "Original content by Chee Skool",
                     "author": "Chee Skool",
@@ -13260,8 +13584,8 @@
       ],
       "availableSkillCount": 13,
       "totalSkillCount": 13,
-      "availableSetCount": 7,
-      "questionCount": 56,
+      "availableSetCount": 8,
+      "questionCount": 64,
       "resourceCount": 39,
       "studyFileCount": 39,
       "checkCount": 0

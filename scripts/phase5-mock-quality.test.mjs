@@ -30,6 +30,26 @@ function mockRole(module) {
   return module?.curriculum?.deliveryRoles || module?.contentMeta?.curriculum?.deliveryRoles || [];
 }
 
+function selectedResponsePosition(question) {
+  if (!['multiple_choice', 'grammar_edit'].includes(question?.type)) return null;
+  const correctId = Array.isArray(question.correct) ? question.correct[0] : question.correct;
+  const index = (question.options || []).findIndex((option) => option.id === correctId);
+  return index >= 0 ? index : null;
+}
+
+function longestRun(values) {
+  let best = 0;
+  let current = 0;
+  let previous = null;
+  for (const value of values) {
+    if (value === previous) current += 1;
+    else current = 1;
+    best = Math.max(best, current);
+    previous = value;
+  }
+  return best;
+}
+
 test('Phase 5 canonical V2 blueprint defines three fixed forms and disables fallback', () => {
   assert.equal(fs.existsSync(path.join(ROOT, 'content-src/config/rla-mock-v2.json')), true, 'missing rla-mock-v2.json');
   const blueprint = readJson('content-src/config/rla-mock-v2.json');
@@ -145,6 +165,37 @@ test('each fixed form satisfies source-set, category, item-type, DOK and passage
 
   assert.equal(new Set(allFormModuleIds).size, 21, 'module overlap across forms');
   assert.equal(new Set(allPassageTexts).size, 21, 'passage text overlap across forms');
+});
+
+
+test('fixed forms have independent displayed answer-position patterns', () => {
+  const blueprint = readJson('content-src/config/rla-mock-v2.json');
+  const modules = loadModules();
+  const moduleMap = new Map(modules.map((m) => [m.id, m]));
+  const sequences = new Map();
+
+  for (const form of blueprint.forms) {
+    const questions = [...form.part1ModuleIds, ...form.part3ModuleIds]
+      .flatMap((id) => moduleMap.get(id)?.questions || []);
+    const positions = questions.map(selectedResponsePosition).filter((value) => value !== null);
+    assert.equal(positions.length, 42, `${form.id} should have 42 selected-response positions`);
+    const positionCounts = counts(positions);
+    const dominant = Math.max(...Object.values(positionCounts));
+    assert.ok(dominant / positions.length <= 0.4, `${form.id} has a dominant displayed answer position: ${JSON.stringify(positionCounts)}`);
+    assert.ok(longestRun(positions) < 3, `${form.id} has a run of three or more identical displayed answer positions`);
+    sequences.set(form.id, positions);
+  }
+
+  const ids = [...sequences.keys()];
+  for (let i = 0; i < ids.length; i += 1) {
+    for (let j = i + 1; j < ids.length; j += 1) {
+      const a = sequences.get(ids[i]);
+      const b = sequences.get(ids[j]);
+      const same = a.reduce((n, value, index) => n + Number(value === b[index]), 0);
+      const similarity = same / a.length;
+      assert.ok(similarity <= 0.6, `${ids[i]} and ${ids[j]} share ${(similarity * 100).toFixed(1)}% of displayed answer positions`);
+    }
+  }
 });
 
 test('full mock engine selects fixed forms, rotates all three before repeat, and objective practice stays on Practice', async () => {

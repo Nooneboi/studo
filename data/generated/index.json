@@ -1340,6 +1340,42 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-args-transfer-assumptions.json",
+    "title": "Assumptions Transfer — Flexible Start Pilot",
+    "description": "Identify hidden premises and choose evidence that directly tests them in a workplace pilot.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.8",
+      "secondarySkillIds": [],
+      "unitId": "reasoning-assumptions",
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify assumptions that connect evidence to a claim and select evidence that tests those assumptions.",
+      "topicLabel": "Transfer Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-args-transfer-evidence-relevance.json",
+    "title": "Evidence Relevance Transfer — Cooling Plaza",
+    "description": "Match evidence to the exact claim being evaluated in a new public-data context.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.4",
+      "secondarySkillIds": [],
+      "unitId": "evidence-quality",
+      "contentKind": "skill_drill",
+      "learningObjective": "Select evidence that is directly relevant to the exact claim being evaluated.",
+      "topicLabel": "Transfer Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
     "file": "generated/modules/set-rla-check-claims-structure-v1.json",
     "title": "Claims & Argument Structure — Skill Check",
     "description": "Identify the main claim, supporting claims, and how the argument’s parts build on one another.",
@@ -2079,6 +2115,27 @@
       "contentKind": "skill_drill",
       "learningObjective": "Build parallel structures and connect clauses according to their logical relationship.",
       "topicLabel": "Focused Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-lang-transfer-agreement-pronouns.json",
+    "title": "Agreement & Pronouns Transfer — Arts Schedule",
+    "description": "Apply subject–verb agreement, pronoun case/reference, and complex agreement in a fresh editing context.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L1.2",
+      "secondarySkillIds": [
+        "L1.3",
+        "L1.7"
+      ],
+      "unitId": "agreement-pronouns",
+      "contentKind": "skill_drill",
+      "learningObjective": "Apply agreement and pronoun rules to new sentences without relying on memorized examples.",
+      "topicLabel": "Transfer Practice",
       "deliveryRoles": [
         "practice",
         "train"

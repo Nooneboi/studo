@@ -41,7 +41,7 @@ test('generated Arguments curriculum exposes 9 learner units while retaining int
   assert.equal(track.domains.flatMap((d) => d.skills || []).length, 15);
 });
 
-test('each Arguments unit keeps its resource baseline while Phase 3 reference units add guided paths', async () => {
+test('each Arguments unit keeps its resource baseline while approved reference and hardening units add focused paths', async () => {
   const curriculum = await json(path.join(GENERATED, 'curriculum.json'));
   const track = curriculum.tracks.find((x) => x.id === 'arguments');
   assert.ok(track);
@@ -51,10 +51,14 @@ test('each Arguments unit keeps its resource baseline while Phase 3 reference un
     assert.equal(guides.length, 1, `${unit.id} guide count`);
     assert.equal(workbooks.length, 2, `${unit.id} workbook count`);
     const isReferenceUnit = ['claims-argument-structure', 'finding-evidence', 'credibility-counterarguments'].includes(unit.id);
+    const isHardeningUnit = ['evidence-quality', 'reasoning-assumptions'].includes(unit.id);
     assert.equal((unit.checks || []).length, isReferenceUnit ? 1 : 0, `${unit.id} dedicated Skill Check count`);
     if (isReferenceUnit) {
       assert.equal((unit.sets || []).length, 2, `${unit.id} guided + independent Practice module count`);
       assert.equal(unit.questionCount, 14, `${unit.id} guided + independent question count`);
+    } else if (isHardeningUnit) {
+      assert.equal((unit.sets || []).length, 2, `${unit.id} baseline + targeted transfer module count`);
+      assert.equal(unit.questionCount, 12, `${unit.id} baseline + targeted transfer question count`);
     } else {
       assert.equal((unit.sets || []).length, 1, `${unit.id} focused Practice module count`);
       assert.equal(unit.questionCount, 8, `${unit.id} focused question count`);

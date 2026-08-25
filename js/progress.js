@@ -79,7 +79,7 @@ function renderProgress() {
             <h2 id="skills-heading">Skills</h2>
             <span>${summary.skills.length} tracked</span>
           </div>
-          <p class="progress-er-note">Skill evidence reflects your Chee Skool practice history, not a GED score.</p>
+          <p class="progress-er-note">Skill evidence reflects your Chee Skool Practice and Train history, not a GED score.</p>
           <div class="progress-skill-table">
             <div class="progress-skill-head" aria-hidden="true">
               <span>Skill</span><span>Correct</span><span>Evidence</span><span>Status</span>
@@ -322,7 +322,7 @@ function skillRow(skill, latestCheck = null) {
       <span class="progress-correct-cell"><small>Correct</small><strong>${skill.correct}/${skill.attempts}</strong></span>
       <span class="progress-evidence-cell">
         <small>Evidence</small>
-        <strong>Practice</strong>
+        <strong>Practice + Train</strong>
         ${latestCheck ? `<span class="progress-check-result"><small>Latest Skill Check</small><strong>${escapeHtml(latestCheck.correct)}/${escapeHtml(latestCheck.total)}</strong></span>` : ""}
       </span>
       <span class="progress-status-cell">

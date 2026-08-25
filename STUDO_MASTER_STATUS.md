@@ -1,12 +1,24 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25
-**Current release:** `0.7.0-alpha.32`
-**Current stage:** Phase 5.5 Extended Response hierarchy cleanup complete in source — Learning Units now lead the ER page before focused and full-response practice; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
+**Current release:** `0.7.0-alpha.33`
+**Current stage:** Pre-pilot hardening candidate — evidence isolation, fixed-form Mock QA, targeted transfer depth, and source/package cleanup are integrated; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
 
+
+
+## Pre-pilot hardening — Alpha 33
+
+- Ordinary skill evidence now uses **Practice + Train only**. Skill Check attempts remain stored and actionable, but they no longer change Practice/Train Answered, Accuracy, or skill percentages. Mock remains separate.
+- Progress labels that evidence honestly as **Practice + Train** and keeps **Latest Skill Check** visibly separate.
+- Full-Mock QA now validates the assembled forms for displayed answer-position dominance, repeated-position runs, and cross-form sequence similarity. Forms B/C had option display order rebalanced without changing passages, correct option IDs, reporting categories, DOK, item-type counts, or substantive question content.
+- Three original Practice/Train transfer modules add **16 questions** only where repeated fresh transfer was thin: `R5.4` Evidence Relevance (+4), `R5.8` Assumptions & Premises (+4), and Agreement & Pronouns (+8 across `L1.2`, `L1.3`, `L1.7`).
+- Current role-specific Practice/Train depth is at least: `R5.4 = 8`, `R5.8 = 8`, `L1.2 = 7`, `L1.3 = 9`, `L1.7 = 7`. No new PDFs or learner modes were added.
+- Source/package cleanup removes **8 orphan/retired PDFs** and **12 `.bak` / `.bak4e` artifacts** rather than registering duplicate material.
+- Review schedules, evidence weights, and answer-position thresholds remain **Chee Skool heuristics informed by learning/test-design principles**, not psychometrically validated GED mastery/scoring constants.
+- Real desktop/mobile browser, keyboard/zoom/basic screen-reader QA and a small learner pilot remain the public-alpha gate.
 
 ## Phase 5.5 Extended Response hierarchy cleanup — Alpha 32
 
@@ -52,7 +64,7 @@ The modes do not need identical content or interactions. Each mode has a distinc
 - Do not make reasoning harder by making controls confusing.
 - Do not copy Main Idea's exact UI pattern into every skill; transfer the learning philosophy, not the mechanics.
 - Do not create fake Skill Checks or pretend ordinary Practice is independent assessment.
-- Do not treat Practice-bank Mock fallback as an independent readiness measure.
+- Do not silently re-enable Practice-bank Mock fallback; Full Mock remains dedicated and mock-only.
 - Do not reuse dedicated Skill Check questions as Mock questions.
 - Do not claim Chee Skool is official GED material, uses live GED questions, predicts an official scaled score, or guarantees pass/fail outcomes.
 - Do not copy copyrighted prep-book passages/questions into the learner bank.
@@ -86,8 +98,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **133 learner modules**
-- **945 objective/component questions**
+- **136 learner modules**
+- **961 objective/component questions**
 - **9 dedicated Skill Checks / 54 independent Check questions**
 - **21 dedicated mock-only source sets / 138 unseen Mock objective questions**
 - **3 fixed Full RLA Mock forms / 3 mock-only Extended Response prompts**
@@ -246,7 +258,7 @@ Current result:
 - Practice uses only `practice` content.
 - Train uses only `train` content.
 - Skill Check uses only `skill_check` content.
-- Mock prefers `mock` content and may use the explicitly enabled temporary Practice fallback during alpha.
+- Phase 0D originally allowed an explicit temporary Practice fallback; Phase 5 replaced it. Current Full Mock uses only dedicated `mock` content and fallback is disabled.
 - learner public builds copy only modules referenced by the generated learner index.
 - internal/demo modules cannot silently hitch a ride in the learner artifact.
 
@@ -268,7 +280,7 @@ Selective flashcards belong here later under Quick Review only where discrete re
 
 ### Progress
 
-- objective mastery remains evidence-based;
+- ordinary skill evidence is based on Practice + Train attempts; Skill Check and Mock results stay separate;
 - Guided/hinted/retry evidence is distinguishable from independent performance;
 - confidence, mistakes, and review timing remain local learner signals;
 - ER self-review remains separate from objective mastery;
@@ -283,16 +295,16 @@ Full RLA Mock baseline:
 - Extended Response: 45 minutes
 - break: 10 minutes
 - Part 3: 32 questions / 65 minutes
-- 46 objective questions total
-- Reading 25 / Arguments 10 / Language 11
-- fixed refresh-safe attempt
-- flags/unanswered review
-- section timing and recovery
+- 46 objective questions total in 7 coherent source sets
+- per-form reporting-category target: 16 Text Features & Technique / 21 Evidence & Arguments / 9 Language Conventions
+- per-form interaction target: 34 multiple choice / 8 embedded editing / 2 select-text / 2 drag
+- three fixed unseen forms with one unique mock-only ER each
+- fixed refresh-safe attempt, flags/unanswered review, section timing and recovery
 - post-completion explanations
 - ER self-review kept separate
 - no fake official GED scaled score
 
-The final Mock-quality milestone is still a **dedicated unseen Mock bank**, including appropriately authentic interaction types and heavier ER source pairs. That is a later roadmap phase, not Phase 0D.
+The dedicated unseen Mock bank is complete at code/content/automated-QA level. Remaining Mock work before public alpha is real-device/browser/accessibility QA and learner-pilot evidence, not another fallback or random-assembly content phase.
 
 ### Resources
 
@@ -471,7 +483,7 @@ Extended Response priority:
 ### Phase 4 — Skill Checks + Train Quick Review: complete in Alpha 29
 
 - Dedicated `check.html` / `js/check.js` runtime keeps Skill Check separate from Practice: no hints, retries, confidence prompts, timer, or correctness feedback until the entire Check is submitted.
-- Skill Check attempts record `mode: skill_check`, `assistance: none`, and one submitted answer per question; Progress shows **Practice signal** and **Latest Skill Check** separately rather than merging them into a fake mastery badge.
+- Skill Check attempts record `mode: skill_check`, `assistance: none`, and one submitted answer per question; Progress introduced separate learning evidence and **Latest Skill Check** instead of merging them into a fake mastery badge; alpha.33 now labels the learning evidence **Practice + Train**.
 - First wave contains **9 dedicated Skill Checks / 54 unseen questions** for mature Reading and Arguments skills only. Check modules use only the `skill_check` delivery role and remain `mock-excluded`; they do not enter Practice, adaptive Train, or Mock.
 - Train now has an optional **Quick Review** lane with **28 curated recall cards** for discrete terms/rules. `Again` / `Got it` schedule only card review and never call the learning-attempt or mistake APIs.
 - Quick Review is intentionally absent for passage-reasoning tasks such as Main Idea, Summary, and Inference.

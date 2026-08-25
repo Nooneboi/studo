@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-25T13:54:10.048Z",
+  "builtAt": "2026-08-25T15:16:25.610Z",
   "canonicalLegacyModules": [
     "legacy-modules/rla-author-purpose-practice-1.json",
     "legacy-modules/rla-author-purpose-practice-2.json",
@@ -71,6 +71,8 @@
     "set-rla-args-supported-claims",
     "set-rla-args-synthesize-sources",
     "set-rla-args-text-data-formats",
+    "set-rla-args-transfer-assumptions",
+    "set-rla-args-transfer-evidence-relevance",
     "set-rla-check-claims-structure-v1",
     "set-rla-check-conclusions-v1",
     "set-rla-check-credibility-counterarguments-v1",
@@ -106,6 +108,7 @@
     "set-rla-lang-mixed-warehouse",
     "set-rla-lang-modifiers",
     "set-rla-lang-parallel",
+    "set-rla-lang-transfer-agreement-pronouns",
     "set-rla-lang-word-choice",
     "set-rla-mainidea-active-methods-v1",
     "set-rla-mock-a-civics",
@@ -157,6 +160,8 @@
     "generated/modules/set-rla-args-supported-claims.json",
     "generated/modules/set-rla-args-synthesize-sources.json",
     "generated/modules/set-rla-args-text-data-formats.json",
+    "generated/modules/set-rla-args-transfer-assumptions.json",
+    "generated/modules/set-rla-args-transfer-evidence-relevance.json",
     "generated/modules/set-rla-check-claims-structure-v1.json",
     "generated/modules/set-rla-check-conclusions-v1.json",
     "generated/modules/set-rla-check-credibility-counterarguments-v1.json",
@@ -192,6 +197,7 @@
     "generated/modules/set-rla-lang-mixed-warehouse.json",
     "generated/modules/set-rla-lang-modifiers.json",
     "generated/modules/set-rla-lang-parallel.json",
+    "generated/modules/set-rla-lang-transfer-agreement-pronouns.json",
     "generated/modules/set-rla-lang-word-choice.json",
     "generated/modules/set-rla-mainidea-active-methods-v1.json",
     "generated/modules/set-rla-mock-a-civics.json",
@@ -224,7 +230,7 @@
     "generated/modules/set-rla-summary-active-methods-v1.json",
     "generated/modules/set-rla-supporting-details-active-methods-v1.json"
   ],
-  "generatedIndexCount": 133,
+  "generatedIndexCount": 136,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "published",

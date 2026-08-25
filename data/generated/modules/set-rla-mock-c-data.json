@@ -165,14 +165,14 @@
           "whyWrong": "“Survey responses make the measured counts irrelevant.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "c",
-          "text": "The pilot increased access measures, but overtime also increased. That means a permanent recommendation should consider whether scheduling changes could preserve the access gain at a lower staffing cost."
-        },
-        {
           "id": "d",
           "text": "Any cost increase or decrease automatically decides the policy.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Any cost increase or decrease automatically decides the policy.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The pilot increased access measures, but overtime also increased. That means a permanent recommendation should consider whether scheduling changes could preserve the access gain at a lower staffing cost."
         }
       ],
       "correct": "c"
@@ -214,6 +214,10 @@
           "whyWrong": "“To remove every week that disagreed with the recommendation.” is not the choice most directly supported by this source and question."
         },
         {
+          "id": "d",
+          "text": "To test whether the overall pattern depended too heavily on a single period."
+        },
+        {
           "id": "b",
           "text": "To convert survey responses into operating costs.",
           "distractorType": "plausible_but_unsupported",
@@ -224,10 +228,6 @@
           "text": "To avoid comparing the pilot with earlier conditions.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“To avoid comparing the pilot with earlier conditions.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "d",
-          "text": "To test whether the overall pattern depended too heavily on a single period."
         }
       ],
       "correct": "d"
@@ -369,6 +369,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T13:54:10.001Z"
+    "compiledAt": "2026-08-25T15:16:25.580Z"
   }
 }

@@ -121,6 +121,10 @@ const Learning = (() => {
     return { easy: 0.9, medium: 1, hard: 1.15 }[String(value || "medium").toLowerCase()] || 1;
   }
 
+  function isLearningEvidenceAttempt(attempt) {
+    return attempt?.mode === "practice" || attempt?.mode === "train";
+  }
+
   function modeWeight(mode) {
     if (mode === "test") return 1.1;
     if (mode === "skill_check") return 1.12;
@@ -330,7 +334,7 @@ const Learning = (() => {
 
   function getSkillSummary(skillId, suppliedState = null) {
     const state = suppliedState || readState();
-    const attempts = state.attempts.filter((a) => a.skillId === skillId);
+    const attempts = state.attempts.filter((a) => a.skillId === skillId && isLearningEvidenceAttempt(a));
     if (!attempts.length) return null;
 
     let weightedTotal = 0;
@@ -367,7 +371,7 @@ const Learning = (() => {
 
   function getSkillSummaries() {
     const state = readState();
-    const ids = [...new Set(state.attempts.map((a) => a.skillId).filter(Boolean))];
+    const ids = [...new Set(state.attempts.filter(isLearningEvidenceAttempt).map((a) => a.skillId).filter(Boolean))];
     return ids
       .map((id) => getSkillSummary(id, state))
       .filter(Boolean)
@@ -384,7 +388,7 @@ const Learning = (() => {
 
   function getSummary() {
     const state = readState();
-    const graded = state.attempts;
+    const graded = state.attempts.filter(isLearningEvidenceAttempt);
     const correct = graded.filter((a) => a.correct).length;
     const activeMistakes = Object.values(state.mistakes).filter((m) => m.status !== "mastered");
     const skills = getSkillSummaries();

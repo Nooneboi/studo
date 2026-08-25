@@ -14,21 +14,34 @@ function generatedModules() {
   }));
 }
 
-test('Phase 4 inventory remains 112 modules / 807 questions underneath the additive Phase 5 Mock bank', () => {
+test('Phase 4 inventory remains intact underneath additive Phase 5 and pre-pilot hardening content', () => {
   const items = generatedModules();
-  const phase4Items = items.filter(({ module }) => !(module.contentMeta?.curriculum?.deliveryRoles || []).includes('mock'));
+  const hardeningIds = new Set([
+    'set-rla-args-transfer-evidence-relevance',
+    'set-rla-args-transfer-assumptions',
+    'set-rla-lang-transfer-agreement-pronouns',
+  ]);
+  const moduleId = ({ module, entry }) => module.id || module.moduleId || entry.id || entry.moduleId || '';
   const mockItems = items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('mock'));
-  const questionCount = phase4Items.reduce((sum, item) => sum + (item.module.questions || []).length, 0);
+  const hardeningItems = items.filter((item) => hardeningIds.has(moduleId(item)));
+  const phase4Items = items.filter((item) => {
+    const roles = item.module.contentMeta?.curriculum?.deliveryRoles || [];
+    return !roles.includes('mock') && !hardeningIds.has(moduleId(item));
+  });
+  const phase4QuestionCount = phase4Items.reduce((sum, item) => sum + (item.module.questions || []).length, 0);
+  const hardeningQuestionCount = hardeningItems.reduce((sum, item) => sum + (item.module.questions || []).length, 0);
   const checks = phase4Items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('skill_check'));
   const quickReview = readJson('data/generated/quick-review.json');
   assert.equal(phase4Items.length, 112);
-  assert.equal(questionCount, 807);
+  assert.equal(phase4QuestionCount, 807);
+  assert.equal(hardeningItems.length, 3);
+  assert.equal(hardeningQuestionCount, 16);
   assert.equal(checks.length, 9);
   assert.equal(checks.reduce((sum, item) => sum + item.module.questions.length, 0), 54);
   assert.equal(quickReview.cards.length, 28);
   assert.equal(mockItems.length, 21);
   assert.equal(mockItems.reduce((sum, item) => sum + item.module.questions.length, 0), 138);
-  assert.equal(items.length, 133);
+  assert.equal(items.length, 136);
 });
 
 test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated', () => {
@@ -58,7 +71,7 @@ test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated'
   assert.match(skill, /if \(!checks\.length\) return ""/);
   const progress = read('js/progress.js');
   assert.match(progress, />Evidence<\/small>/);
-  assert.match(progress, />Practice<\/strong>/);
+  assert.match(progress, />Practice \+ Train<\/strong>/);
   assert.match(progress, /Latest Skill Check/);
 });
 
@@ -79,12 +92,12 @@ test('Phase 4 closeout review exists and states the evidence boundary', () => {
   assert.match(review, /does not.*GED score|not.*GED score/is);
 });
 
-test('current alpha metadata stays synchronized after the additive Phase 5 bank', () => {
+test('current alpha metadata stays synchronized after additive Phase 5 and pre-pilot hardening', () => {
   const release = readJson('release.json');
   const releaseMatch = release.release.match(/^0\.7\.0-alpha\.(\d+)$/);
   assert.ok(releaseMatch, 'release stays on the 0.7.0 alpha line');
   assert.ok(Number(releaseMatch[1]) >= 29, 'later alpha releases must preserve the Phase 4 closeout baseline');
-  assert.equal(release.generatedModules, 133);
+  assert.equal(release.generatedModules, 136);
   assert.equal(release.learnerResourceFiles, 152);
   const builder = read('scripts/build-public.mjs');
   assert.match(builder, /check\.html/);

@@ -75,20 +75,23 @@ test('dedicated Skill Check learner runtime and public build contract exist', ()
   assert.match(publicBuild, /check\.js/);
 });
 
-test('Skill Check independent attempt carries more evidence than ordinary Practice without changing raw counts', () => {
-  const practice = loadLearning().Learning;
-  const check = loadLearning().Learning;
+test('Skill Check stays stored but does not change Practice/Train skill evidence', () => {
+  const { Learning } = loadLearning();
   const module = sampleModule();
   const question = sampleQuestion();
 
-  const practiceResult = practice.recordAttempt({ module, question, answer: 'a', correct: true, mode: 'practice', assistance: 'none', firstTryCorrect: true, attemptCount: 1 });
-  const checkResult = check.recordAttempt({ module, question, answer: 'a', correct: true, mode: 'skill_check', assistance: 'none', firstTryCorrect: true, attemptCount: 1, learningStage: null });
+  const practiceResult = Learning.recordAttempt({ module, question, answer: 'a', correct: true, mode: 'practice', assistance: 'none', firstTryCorrect: true, attemptCount: 1 });
+  const scoreBefore = practiceResult.skill.score;
+  const checkResult = Learning.recordAttempt({ module, question: sampleQuestion('q2'), answer: 'b', correct: false, mode: 'skill_check', assistance: 'none', firstTryCorrect: false, attemptCount: 1, learningStage: null });
+  const summary = Learning.getSummary();
 
   assert.equal(checkResult.attempt.mode, 'skill_check');
-  assert.equal(checkResult.attempt.assistance, 'none');
-  assert.equal(checkResult.attempt.attemptCount, 1);
-  assert.equal(checkResult.attempt.learningStage, null);
-  assert.ok(checkResult.skill.score > practiceResult.skill.score, `expected check signal ${checkResult.skill.score} > practice ${practiceResult.skill.score}`);
+  assert.equal(Learning.getAttempts().length, 2, 'Skill Check attempt should remain stored');
+  assert.equal(summary.attempts, 1, 'Progress Answered should count Practice/Train evidence only');
+  assert.equal(summary.correct, 1);
+  assert.equal(summary.accuracy, 100);
+  assert.equal(summary.skills[0].attempts, 1);
+  assert.equal(summary.skills[0].score, scoreBefore, 'Skill Check result must not move the Practice/Train skill score');
 });
 
 test('skill pages expose a separate optional Check section and Progress keeps Check results separate', () => {
@@ -101,7 +104,7 @@ test('skill pages expose a separate optional Check section and Progress keeps Ch
   assert.match(progress, /sq:skill-check-history:v1/);
   assert.match(progress, /Latest Skill Check/);
   assert.match(progress, />Evidence<\/small>/);
-  assert.match(progress, />Practice<\/strong>/);
+  assert.match(progress, />Practice \+ Train<\/strong>/);
   assert.doesNotMatch(progress, /Skill Check[^\n]*(Pass|Fail|Mastered)/i);
 });
 

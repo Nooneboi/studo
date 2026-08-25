@@ -40,10 +40,6 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "The character must balance a personal plan with a responsibility that affects other people."
-        },
-        {
           "id": "b",
           "text": "The character is trying to win a contest at any cost.",
           "distractorType": "plausible_but_unsupported",
@@ -60,6 +56,10 @@
           "text": "The character cannot understand any of the available choices.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“The character cannot understand any of the available choices.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "The character must balance a personal plan with a responsibility that affects other people."
         }
       ],
       "correct": "a"
@@ -156,14 +156,14 @@
           "whyWrong": "“It explains a technical process unrelated to the conflict.” is not the choice most directly supported by this source and question."
         },
         {
+          "id": "c",
+          "text": "It becomes a concrete reminder of the choice or responsibility the character is managing."
+        },
+        {
           "id": "b",
           "text": "It proves another character is dishonest.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It proves another character is dishonest.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "c",
-          "text": "It becomes a concrete reminder of the choice or responsibility the character is managing."
         },
         {
           "id": "d",
@@ -205,6 +205,10 @@
       "time": 65,
       "options": [
         {
+          "id": "d",
+          "text": "Responsible choices often protect essential goals even when some less important plans must change."
+        },
+        {
           "id": "a",
           "text": "Success means completing every original plan exactly.",
           "distractorType": "plausible_but_unsupported",
@@ -221,10 +225,6 @@
           "text": "A difficult choice is always a sign of poor preparation.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“A difficult choice is always a sign of poor preparation.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "d",
-          "text": "Responsible choices often protect essential goals even when some less important plans must change."
         }
       ],
       "correct": "d"
@@ -366,6 +366,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T13:54:09.999Z"
+    "compiledAt": "2026-08-25T15:16:25.579Z"
   }
 }

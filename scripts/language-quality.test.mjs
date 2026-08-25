@@ -50,7 +50,7 @@ test('Language config defines exactly 7 learner units and maps all 13 L1/L2 skil
   assert.equal(new Set(mapped).size, LANG_SKILLS.length, 'an internal Language skill is mapped more than once');
 });
 
-test('each published Language unit has guide, two workbooks, one focused module, and eight focused questions', async () => {
+test('each published Language unit keeps its resource baseline while Agreement & Pronouns adds targeted transfer depth', async () => {
   const curriculum = await json(path.join(GENERATED, 'curriculum.json'));
   const track = curriculum.tracks.find((x) => x.id === 'language');
   assert.ok(track, 'published Language track missing');
@@ -61,9 +61,10 @@ test('each published Language unit has guide, two workbooks, one focused module,
     const workbooks = (unit.resources || []).filter((r) => r.type === 'worksheet');
     assert.equal(guides.length, 1, `${unit.id} guide count`);
     assert.equal(workbooks.length, 2, `${unit.id} workbook count`);
-    assert.equal((unit.sets || []).length, 1, `${unit.id} focused Practice module count`);
+    const isHardeningUnit = unit.id === 'agreement-pronouns';
+    assert.equal((unit.sets || []).length, isHardeningUnit ? 2 : 1, `${unit.id} focused Practice module count`);
     assert.equal((unit.checks || []).length, 0, `${unit.id} must not relabel focused Practice as a Skill Check`);
-    assert.equal(unit.questionCount, 8, `${unit.id} focused question count`);
+    assert.equal(unit.questionCount, isHardeningUnit ? 16 : 8, `${unit.id} focused question count`);
   }
 });
 

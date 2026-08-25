@@ -101,14 +101,14 @@
       "estimatedSeconds": 65,
       "options": [
         {
+          "id": "b",
+          "text": "After twelve weeks, the high-temperature group retained 86 percent of its starting capacity, the moderate group retained 94 percent, and the cool group retained 95 percent; charging time differed only slightly."
+        },
+        {
           "id": "a",
           "text": "The researchers studied hundreds of unrelated sites.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“The researchers studied hundreds of unrelated sites.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "b",
-          "text": "After twelve weeks, the high-temperature group retained 86 percent of its starting capacity, the moderate group retained 94 percent, and the cool group retained 95 percent; charging time differed only slightly."
         },
         {
           "id": "c",
@@ -210,6 +210,10 @@
           "whyWrong": "“To make the report longer.” is not the choice most directly supported by this source and question."
         },
         {
+          "id": "d",
+          "text": "To show the overall pattern without hiding measurements that differed from it."
+        },
+        {
           "id": "b",
           "text": "To guarantee the hypothesis was correct.",
           "distractorType": "plausible_but_unsupported",
@@ -220,10 +224,6 @@
           "text": "To avoid describing any uncertainty.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“To avoid describing any uncertainty.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "d",
-          "text": "To show the overall pattern without hiding measurements that differed from it."
         }
       ],
       "correct": "d",
@@ -254,10 +254,6 @@
       "estimatedSeconds": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Prolonged high-temperature storage may reduce capacity faster than cool or moderate storage for this battery type."
-        },
-        {
           "id": "b",
           "text": "The study proves a universal rule with no exceptions.",
           "distractorType": "plausible_but_unsupported",
@@ -274,6 +270,10 @@
           "text": "The main limitation makes every result meaningless.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“The main limitation makes every result meaningless.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "Prolonged high-temperature storage may reduce capacity faster than cool or moderate storage for this battery type."
         }
       ],
       "correct": "a",

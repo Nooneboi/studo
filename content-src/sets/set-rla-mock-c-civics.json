@@ -94,14 +94,14 @@
       "estimatedSeconds": 65,
       "options": [
         {
+          "id": "b",
+          "text": "It supplies a principle readers must consider while evaluating a modern policy."
+        },
+        {
           "id": "a",
           "text": "It gives a complete step-by-step rule for the city.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It gives a complete step-by-step rule for the city.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "b",
-          "text": "It supplies a principle readers must consider while evaluating a modern policy."
         },
         {
           "id": "c",
@@ -206,14 +206,14 @@
           "whyWrong": "“Local officials may ignore constitutional limits.” is not the choice most directly supported by this source and question."
         },
         {
+          "id": "d",
+          "text": "Modern application requires considering the protected value, government purpose, evidence, and limits."
+        },
+        {
           "id": "c",
           "text": "Only historical facts can be discussed at a city meeting.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Only historical facts can be discussed at a city meeting.” is not the choice most directly supported by this source and question."
-        },
-        {
-          "id": "d",
-          "text": "Modern application requires considering the protected value, government purpose, evidence, and limits."
         }
       ],
       "correct": "d",
@@ -244,14 +244,14 @@
       "estimatedSeconds": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Clear evidence about the pilot and safeguards that limit government action."
-        },
-        {
           "id": "b",
           "text": "Removing all public review.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Removing all public review.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "Clear evidence about the pilot and safeguards that limit government action."
         },
         {
           "id": "c",
@@ -300,14 +300,14 @@
           "whyWrong": "“It abandons the policy because any objection is decisive.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "It narrows the policy and adds review rather than treating the first pilot as final proof."
-        },
-        {
           "id": "c",
           "text": "It expands official discretion without reporting.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“It expands official discretion without reporting.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It narrows the policy and adds review rather than treating the first pilot as final proof."
         },
         {
           "id": "d",
@@ -356,14 +356,14 @@
           "whyWrong": "“Founding documents eliminate the need for modern evidence.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "c",
-          "text": "Government action should be judged by both its evidence-based purpose and the limits placed on its power."
-        },
-        {
           "id": "d",
           "text": "A pilot result automatically proves a policy is constitutional.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“A pilot result automatically proves a policy is constitutional.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Government action should be judged by both its evidence-based purpose and the limits placed on its power."
         }
       ],
       "correct": "c",

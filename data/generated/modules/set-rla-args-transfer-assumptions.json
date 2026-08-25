@@ -1,0 +1,264 @@
+{
+  "id": "set-rla-args-transfer-assumptions",
+  "title": "Assumptions Transfer — Flexible Start Pilot",
+  "description": "Identify hidden premises and choose evidence that directly tests them in a workplace pilot.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Transfer Practice",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "A regional customer-support office tested a flexible start-time policy for eight weeks. Employees in two volunteer teams could begin work anytime between 7:30 and 9:30 a.m. as long as each team maintained enough staff to answer calls. Operations manager Priya Nair reported that late arrivals fell from an average of 11 per week before the pilot to 5 per week during the pilot. She argued that allowing flexible starts could reduce lateness across the entire office.\n\nThe pilot teams were not chosen at random. Their supervisors volunteered because both teams had already asked for more flexible schedules. During the same eight weeks, a major road-construction project near the office ended, reducing some morning traffic delays. Call-response times remained within the office target, but the pilot occurred during a season when total call volume is usually lower than it is near the end of the year.\n\nNair recommends a larger trial rather than immediate office-wide adoption. She says the first result is promising but depends on several assumptions. For example, the policy will help the whole office only if employees outside the volunteer teams face similar causes of lateness and if supervisors can preserve coverage when more people choose later starts. It would also be risky to assume that the entire decline in lateness came from the policy when road conditions improved at the same time.\n\nA department director is more confident. He writes, “The pilot cut lateness by more than half, so the same policy will produce the same reduction in every team without affecting service.” Nair responds that the pilot did not test every team, every season, or every staffing pattern.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which assumption is necessary for the director's claim that every team will see the same drop in lateness?",
+      "points": 1,
+      "explanation": "The director generalizes from two volunteer teams to every team, which requires assuming the groups are sufficiently comparable.",
+      "skill": {
+        "id": "R5.8",
+        "label": "Assumptions & premises"
+      },
+      "rule": "A generalization depends on the tested group representing the larger group.",
+      "familyId": "arguments.assumption.identify",
+      "metadata": {
+        "skillId": "R5.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every employee prefers to begin work after 9:00 a.m.",
+          "distractorType": "too_strong",
+          "whyWrong": "The policy does not require everyone to prefer a late start."
+        },
+        {
+          "id": "b",
+          "text": "Call volume will permanently remain low.",
+          "distractorType": "unnecessary",
+          "whyWrong": "The director claims the same lateness reduction, not that call volume never changes."
+        },
+        {
+          "id": "c",
+          "text": "Teams outside the pilot are similar enough to the volunteer teams for the pilot result to generalize."
+        },
+        {
+          "id": "d",
+          "text": "Road construction can never affect commuting.",
+          "distractorType": "opposite",
+          "whyWrong": "The passage explicitly identifies road conditions as a possible competing influence."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "When the director credits the policy for the entire decline in lateness, what hidden assumption is he making?",
+      "points": 1,
+      "explanation": "To assign the whole change to the policy, the director must discount the other simultaneous change that could affect lateness.",
+      "skill": {
+        "id": "R5.8",
+        "label": "Assumptions & premises"
+      },
+      "rule": "Causal claims often hide an assumption that no competing cause explains the result.",
+      "familyId": "arguments.assumption.identify",
+      "metadata": {
+        "skillId": "R5.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "The end of nearby road construction did not meaningfully contribute to the improvement in arrival times."
+        },
+        {
+          "id": "b",
+          "text": "Employees never arrived late before the pilot.",
+          "distractorType": "contradicted",
+          "whyWrong": "The passage gives a pre-pilot average of 11 late arrivals per week."
+        },
+        {
+          "id": "c",
+          "text": "The flexible start window was exactly two hours long.",
+          "distractorType": "stated_fact",
+          "whyWrong": "The time window is stated directly; it is not a hidden premise linking policy to outcome."
+        },
+        {
+          "id": "d",
+          "text": "The office should eliminate all attendance rules.",
+          "distractorType": "unsupported",
+          "whyWrong": "Neither writer argues for eliminating attendance requirements."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which assumption underlies the director's promise that service will not be affected during office-wide adoption?",
+      "points": 1,
+      "explanation": "The claim about unchanged service depends on staffing coverage remaining adequate under a larger rollout.",
+      "skill": {
+        "id": "R5.8",
+        "label": "Assumptions & premises"
+      },
+      "rule": "Ask what must be true for the promised outcome to follow from the proposal.",
+      "familyId": "arguments.assumption.identify",
+      "metadata": {
+        "skillId": "R5.8",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every customer calls at the same time of day.",
+          "distractorType": "unnecessary",
+          "whyWrong": "Service can be affected without calls arriving at exactly the same time."
+        },
+        {
+          "id": "b",
+          "text": "Employees will stop using flexible start times after eight weeks.",
+          "distractorType": "opposite",
+          "whyWrong": "The claim concerns continuing the policy, not ending it."
+        },
+        {
+          "id": "c",
+          "text": "Supervisors volunteered because they disliked the policy.",
+          "distractorType": "contradicted",
+          "whyWrong": "The volunteer teams had already asked for more flexibility."
+        },
+        {
+          "id": "d",
+          "text": "Supervisors across the office can maintain enough coverage even when more employees choose later starts."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which new evidence would MOST directly test the assumption that the pilot result will hold during busier seasons?",
+      "points": 1,
+      "explanation": "Testing the policy during the condition that may differ—high call volume—directly checks whether the pilot generalizes across seasons.",
+      "skill": {
+        "id": "R5.8",
+        "label": "Assumptions & premises"
+      },
+      "rule": "To test an assumption, gather evidence under the condition the assumption takes for granted.",
+      "familyId": "arguments.assumption.identify",
+      "metadata": {
+        "skillId": "R5.8",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": null,
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "A survey of whether employees like flexible schedules.",
+          "distractorType": "preference",
+          "whyWrong": "Preference does not test whether lateness and service outcomes hold under heavier call volume."
+        },
+        {
+          "id": "b",
+          "text": "A larger flex-start trial conducted during the office’s high-volume season, with lateness and service levels tracked."
+        },
+        {
+          "id": "c",
+          "text": "A list of the office’s busiest customer questions.",
+          "distractorType": "background",
+          "whyWrong": "Question topics do not test whether the policy performs similarly in a busier season."
+        },
+        {
+          "id": "d",
+          "text": "The original eight-week pilot report printed in a different format.",
+          "distractorType": "no_new_evidence",
+          "whyWrong": "Reformatting the same evidence does not test the seasonal assumption."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-transfer-assumptions",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.8",
+      "secondarySkillIds": [],
+      "unitId": "reasoning-assumptions",
+      "contentKind": "skill_drill",
+      "learningObjective": "Identify assumptions that connect evidence to a claim and select evidence that tests those assumptions.",
+      "topicLabel": "Transfer Practice",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-args-transfer-assumptions-flex-start",
+      "title": "What the Flex-Start Claim Assumes",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T15:16:25.564Z"
+  }
+}

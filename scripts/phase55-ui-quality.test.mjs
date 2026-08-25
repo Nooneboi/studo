@@ -51,7 +51,7 @@ test('Progress skill rows give status ownership of the score and meter', () => {
   assert.match(progressJs, /class="progress-status-meter"/);
   assert.doesNotMatch(progressJs, /class="progress-signal-meter"/);
   assert.match(progressJs, />Evidence<\/small>/);
-  assert.match(progressJs, />Practice<\/strong>/);
+  assert.match(progressJs, />Practice \+ Train<\/strong>/);
   assert.match(css, /\.progress-status-cell\s*\{[^}]*min-width:\s*0/s);
   assert.match(css, /\.progress-status-meter\s*\{[^}]*width:\s*100%/s);
 });
@@ -60,8 +60,8 @@ test('Progress groups repetitive review mistakes by skill', () => {
   assert.match(progressJs, /function groupReviewMistakes\(mistakes\)/);
   assert.match(progressJs, /const reviewGroups = groupReviewMistakes\(activeMistakes\)/);
   assert.match(progressJs, /need review/);
-  assert.match(progressJs, /Skill evidence reflects your Chee Skool practice history/);
-  assert.doesNotMatch(progressJs, /Skill signals reflect your Chee Skool practice history/);
+  assert.match(progressJs, /Skill evidence reflects your Chee Skool Practice and Train history/);
+  assert.doesNotMatch(progressJs, /Skill signals reflect your Chee Skool practice history|Skill evidence reflects your Chee Skool practice history/);
   assert.doesNotMatch(progressJs, /\$\{mistake\.wrongCount\} wrong/);
 });
 

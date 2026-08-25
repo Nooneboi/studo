@@ -40,14 +40,14 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "To test whether restored wetland soil reduces nutrient runoff after heavy rain under controlled comparison conditions."
-        },
-        {
           "id": "b",
           "text": "To prove the result applies in every environment.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“To prove the result applies in every environment.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "To test whether restored wetland soil reduces nutrient runoff after heavy rain under controlled comparison conditions."
         },
         {
           "id": "c",
@@ -101,14 +101,14 @@
           "whyWrong": "“The researchers studied hundreds of unrelated sites.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "After six simulated storms, planted restored plots released the least nitrate, restored bare plots released less than compacted plots, and all plots released more nitrate during the first storm than later storms."
-        },
-        {
           "id": "c",
           "text": "The study continued for several years.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“The study continued for several years.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "After six simulated storms, planted restored plots released the least nitrate, restored bare plots released less than compacted plots, and all plots released more nitrate during the first storm than later storms."
         },
         {
           "id": "d",
@@ -263,14 +263,14 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Restoring soil structure, especially with vegetation, may reduce nutrient runoff under the tested conditions."
-        },
-        {
           "id": "b",
           "text": "The study proves a universal rule with no exceptions.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“The study proves a universal rule with no exceptions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "Restoring soil structure, especially with vegetation, may reduce nutrient runoff under the tested conditions."
         },
         {
           "id": "c",
@@ -369,6 +369,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T13:54:10.000Z"
+    "compiledAt": "2026-08-25T15:16:25.579Z"
   }
 }

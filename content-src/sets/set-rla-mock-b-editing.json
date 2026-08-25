@@ -63,14 +63,14 @@
           "whyWrong": "“The museum host team be preparing.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
         },
         {
-          "id": "b",
-          "text": "The museum host team is preparing."
-        },
-        {
           "id": "d",
           "text": "The museum host team were prepare.",
           "distractorType": "editing_error",
           "whyWrong": "“The museum host team were prepare.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "The museum host team is preparing."
         }
       ],
       "correct": "b",
@@ -101,14 +101,14 @@
       "estimatedSeconds": 45,
       "options": [
         {
-          "id": "b",
-          "text": "Every volunteer needs to check in."
-        },
-        {
           "id": "a",
           "text": "Every volunteer need to check in.",
           "distractorType": "editing_error",
           "whyWrong": "“Every volunteer need to check in.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "Every volunteer needs to check in."
         },
         {
           "id": "c",
@@ -157,6 +157,10 @@
           "whyWrong": "“clay painting paper crafts and map puzzles” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
         },
         {
+          "id": "b",
+          "text": "clay painting, paper crafts, and map puzzles"
+        },
+        {
           "id": "c",
           "text": "clay painting; paper crafts and map puzzles",
           "distractorType": "editing_error",
@@ -167,10 +171,6 @@
           "text": "clay painting: paper crafts: and map puzzles",
           "distractorType": "editing_error",
           "whyWrong": "“clay painting: paper crafts: and map puzzles” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
-        },
-        {
-          "id": "b",
-          "text": "clay painting, paper crafts, and map puzzles"
         }
       ],
       "correct": "b",
@@ -207,14 +207,14 @@
           "whyWrong": "“arrives” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
         },
         {
-          "id": "b",
-          "text": "arrive"
-        },
-        {
           "id": "c",
           "text": "arriving",
           "distractorType": "editing_error",
           "whyWrong": "“arriving” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "arrive"
         },
         {
           "id": "d",
@@ -413,14 +413,14 @@
           "whyWrong": "“speak clear, politely, and with patience” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
         },
         {
+          "id": "b",
+          "text": "speak clearly, politely, and patiently"
+        },
+        {
           "id": "d",
           "text": "speak clearly; polite; and patiently",
           "distractorType": "editing_error",
           "whyWrong": "“speak clearly; polite; and patiently” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
-        },
-        {
-          "id": "b",
-          "text": "speak clearly, politely, and patiently"
         }
       ],
       "correct": "b",

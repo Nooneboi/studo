@@ -40,14 +40,14 @@
       "time": 65,
       "options": [
         {
-          "id": "a",
-          "text": "Using a mobile checklist that requires a photo and short note for four high-risk inspection steps."
-        },
-        {
           "id": "b",
           "text": "Immediate permanent adoption for every team.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Immediate permanent adoption for every team.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "a",
+          "text": "Using a mobile checklist that requires a photo and short note for four high-risk inspection steps."
         },
         {
           "id": "c",
@@ -321,10 +321,6 @@
           "whyWrong": "“A pilot automatically proves a proposal works.” is not the choice most directly supported by this source and question."
         },
         {
-          "id": "b",
-          "text": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change."
-        },
-        {
           "id": "c",
           "text": "Average speed is enough to evaluate any workplace policy.",
           "distractorType": "plausible_but_unsupported",
@@ -335,6 +331,10 @@
           "text": "Permanent decisions should be made before measurements are chosen.",
           "distractorType": "plausible_but_unsupported",
           "whyWrong": "“Permanent decisions should be made before measurements are chosen.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change."
         }
       ],
       "correct": "b"
@@ -366,6 +366,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T13:54:10.002Z"
+    "compiledAt": "2026-08-25T15:16:25.582Z"
   }
 }
