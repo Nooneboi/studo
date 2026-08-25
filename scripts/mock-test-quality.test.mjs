@@ -142,7 +142,7 @@ test('Quiz and Test pages no longer describe the legacy all-question test', () =
   assert.doesNotMatch(quiz, /every matching question gets pulled/i);
   assert.doesNotMatch(quizJs, /loadAllQuizzes\(\).*flatMap/s);
   assert.doesNotMatch(testJs, /items\s*=\s*modules\.flatMap/);
-  assert.match(quiz, /Full RLA Mock/i);
+  assert.match(quiz, /RLA Format &(?:amp;| ) Timing Practice/i);
   assert.match(quiz, /46 objective/i);
 });
 

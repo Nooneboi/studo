@@ -17,6 +17,12 @@ const results = [];
 init();
 
 async function init() {
+  const attempts = Learning.getAttempts();
+  if (attempts.length < 3) {
+    renderPracticeFirst(attempts.length);
+    return;
+  }
+
   try {
     catalog = await Data.loadAllQuizzes();
     plan = Learning.buildTrainingPlan(catalog, { limit: 8 });
@@ -33,17 +39,32 @@ async function init() {
   renderPlan();
 }
 
+
+function renderPracticeFirst(attemptCount) {
+  document.body.classList.remove("mobile-nav-focus");
+  setHeaderProgress("");
+  trainView.innerHTML = `
+    <section class="train-plan" aria-labelledby="train-plan-heading">
+      <div class="train-plan-eyebrow">Start with Practice</div>
+      <h1 id="train-plan-heading">Give Train a little evidence first.</h1>
+      <p class="lede">Train is most useful after you have practiced a few questions. Chee Skool will then use your mistakes, weaker skills, review timing, and fresh transfer questions to build a focused session.</p>
+      <div class="train-plan-actions">
+        <a class="btn" href="practice.html">Start with Practice →</a>
+        ${attemptCount ? '<a class="btn secondary" href="progress.html">View progress</a>' : ''}
+      </div>
+      <p class="train-plan-note">Practice teaches. Train strengthens what you have already started learning.</p>
+    </section>`;
+}
+
 function renderPlan() {
   document.body.classList.remove("mobile-nav-focus");
   setHeaderProgress("");
   const reasonCounts = countReasons(plan.items);
   trainView.innerHTML = `
     <section class="train-plan" aria-labelledby="train-plan-heading">
-      <div class="train-plan-eyebrow">${plan.adaptive ? "Adaptive session" : "Baseline session"}</div>
+      <div class="train-plan-eyebrow">Adaptive session</div>
       <h1 id="train-plan-heading">Today’s training</h1>
-      <p class="lede">${plan.adaptive
-        ? "Chee Skool picked these questions from your review timing, weaker skills, and places where a fresh question can test whether learning transferred."
-        : "Chee Skool needs a little more evidence before it can personalize strongly. This session stays broad, while still following up obvious signals such as a recent miss."}</p>
+      <p class="lede">Chee Skool picked these questions from your review timing, weaker skills, and places where a fresh question can test whether learning transferred.</p>
 
       <div class="train-plan-meta" aria-label="Training session summary">
         <div><strong>${plan.items.length}</strong><span>questions</span></div>

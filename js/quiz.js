@@ -12,7 +12,7 @@ async function initMockLanding() {
     document.getElementById("start-objective-test")?.addEventListener("click", () => startAttempt("objective"));
   } catch (error) {
     console.error(error);
-    setStatus("Mock tests could not be initialized on this device.");
+    setStatus("RLA test practice could not be initialized on this device.");
   }
 }
 
@@ -41,7 +41,7 @@ async function startAttempt(mode) {
     location.href = `test.html?attempt=${encodeURIComponent(attempt.attemptId)}`;
   } catch (error) {
     console.error(error);
-    setStatus("Chee Skool could not assemble a valid mock from the current question bank.");
+    setStatus("Chee Skool could not assemble a valid format and timing practice set from the current question bank.");
   }
 }
 
@@ -50,7 +50,7 @@ function renderResume() {
   const attempt = id ? loadAttempt(id) : null;
   const mount = document.getElementById("mock-resume");
   if (!mount || !attempt || attempt.completedAt) return;
-  const label = attempt.mode === "objective" ? "Objective practice test" : "Full RLA Mock";
+  const label = attempt.mode === "objective" ? "Objective practice test" : "RLA Format & Timing Practice";
   mount.hidden = false;
   mount.innerHTML = `<div><span class="mock-option-label">In progress</span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(stageLabel(attempt.stage))}</small></div><a class="btn small" href="test.html?attempt=${encodeURIComponent(attempt.attemptId)}">Resume</a>`;
 }

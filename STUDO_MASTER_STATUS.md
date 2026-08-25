@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
-**Date:** 2026-08-24  
-**Current release:** `0.7.0-alpha.18`  
-**Current stage:** Phase 2 high-priority Reading depth complete — whole-phase review is next before any further skill expansion  
+**Date:** 2026-08-25  
+**Current release:** `0.7.0-alpha.19`  
+**Current stage:** Phase 2.5 Learning System Integration complete — core learner routes now match the current product architecture; Phase 3 Arguments depth is next  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -322,7 +322,22 @@ Completed reference-depth sequence:
 3. Inference — **complete in Alpha 17**
 4. Conclusions / Generalizations — **complete in Alpha 18**
 
-Before automatically deepening thinner P1 Reading skills such as Sequence, Compare & Contrast, and Relationships, stop and review Phase 2 as a whole. Check learner-flow consistency, interaction usefulness, content balance, difficulty progression, redundancy, and what these four skill builds reveal about the next highest-value gap.
+The Phase 2 whole-system review found that the strongest next gains came from integrating the learning system rather than adding more Reading drills.
+
+### Phase 2.5 — Learning System Integration: complete in Alpha 19
+
+Implemented without expanding the content bank:
+
+- Progress recommendations and skill rows now return to the canonical curriculum/skill or grouped-unit pages instead of the retired category detour;
+- fresh learners with fewer than three recorded attempts are sent to Practice before Train offers an adaptive session;
+- Guided Practice completion can continue directly to the next Independent Practice when the same curriculum item provides one;
+- learner-facing Mock copy now describes the temporary Practice-bank mode as **RLA Format & Timing Practice**, not an independent readiness simulation;
+- unavailable future subjects are hidden from learner navigation while multi-subject support remains an internal future capability;
+- Home explains Practice, Train, and Mock in plain learner language;
+- a shared curriculum-routing helper keeps Progress and module sequencing derived from the generated curriculum rather than another handwritten taxonomy;
+- `release-gate.json` remains disabled and is intentionally not wired into automatic deployment yet; changing deployment policy remains a separate operational decision.
+
+The Phase 2 reference paths remain unchanged. The review did not justify bulk-deepening Sequence, Compare & Contrast, or other thinner Reading skills before higher-value Arguments/Language/ER work.
 
 ### Phase 3 — Deepen Arguments, Language, and Extended Response
 
@@ -369,6 +384,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Phase 2 whole-system review before further Reading expansion.**
+> **Phase 3 — Arguments depth, starting with an audit before adding content.**
 
-Review Explicit Meaning, Summary, Inference, and Conclusions & Generalizations together. Confirm that each skill has a distinct learning identity, that Guided → Apply → Independent progression is consistent without becoming repetitive, that interaction types are justified by the reasoning task, and that passage/context/difficulty coverage remains balanced. Only after that review should the next thinner Reading skill be selected.
+Start with Claims & Argument Structure, Finding Evidence, and Credibility & Counterarguments. Preserve good existing guides/workbooks/questions, identify the actual learner reasoning gap, and add only the learning method or transfer practice that closes that gap. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.

@@ -68,7 +68,7 @@ function renderObjectiveStage() {
   showTopControls(true);
   const label = attempt.stage === "part1" ? "Part 1" : attempt.stage === "part3" ? "Part 3" : "Objective Practice";
   setText("mock-part-label", label);
-  setText("mock-title", attempt.mode === "objective" ? "Objective RLA Practice Test" : "Full RLA Mock");
+  setText("mock-title", attempt.mode === "objective" ? "Objective RLA Practice Test" : "RLA Format & Timing Practice");
   stage.currentIndex = Math.max(0, Math.min(Number(stage.currentIndex || 0), stage.items.length - 1));
   const item = stage.items[stage.currentIndex];
   const module = moduleMap.get(item.moduleId);
@@ -360,7 +360,7 @@ function renderErStage() {
   setText("mock-clock", "45:00");
   const erState = loadMockErState();
   const hasDraft = Boolean(erState);
-  viewEl.innerHTML = `<section class="mock-transition-screen"><span class="mock-option-label">Part 2 · 45 minutes</span><h1>Extended Response</h1><p>Your full mock uses one paired-source writing prompt. The essay is not automatically scored; after submission, your three rubric traits remain clearly labeled as self-review.</p><div class="mock-transition-notes"><span>Read both sources</span><span>Choose the better-supported argument</span><span>Use specific evidence</span></div><button class="btn" id="launch-er" type="button">${hasDraft ? "Continue Extended Response" : "Start Extended Response"}</button><p class="mock-disclaimer">The 45-minute ER clock starts when the writing workspace opens and continues across refreshes.</p></section>`;
+  viewEl.innerHTML = `<section class="mock-transition-screen"><span class="mock-option-label">Part 2 · 45 minutes</span><h1>Extended Response</h1><p>This format and timing practice uses one paired-source writing prompt. The essay is not automatically scored; after submission, your three rubric traits remain clearly labeled as self-review.</p><div class="mock-transition-notes"><span>Read both sources</span><span>Choose the better-supported argument</span><span>Use specific evidence</span></div><button class="btn" id="launch-er" type="button">${hasDraft ? "Continue Extended Response" : "Start Extended Response"}</button><p class="mock-disclaimer">The 45-minute ER clock starts when the writing workspace opens and continues across refreshes.</p></section>`;
   document.getElementById("launch-er")?.addEventListener("click", () => {
     if (!attempt.er.launchedAt) attempt.er.launchedAt = new Date().toISOString();
     saveAttempt();
@@ -420,7 +420,7 @@ function completeAttempt(timedOut) {
 function renderResults() {
   showTopControls(false);
   const score = attempt.objectiveScore || MockEngine.scoreObjectiveAttempt(attempt, moduleMap);
-  setText("mock-part-label", "Results"); setText("mock-title", attempt.mode === "objective" ? "Objective RLA Practice Test" : "Full RLA Mock"); setText("mock-clock", "Done");
+  setText("mock-part-label", "Results"); setText("mock-title", attempt.mode === "objective" ? "Objective RLA Practice Test" : "RLA Format & Timing Practice"); setText("mock-clock", "Done");
   const erState = attempt.mode === "objective" ? null : loadMockErState();
   const erScores = erState?.selfScores || {};
   const erText = [erScores.argument, erScores.organization, erScores.english].every(Number.isInteger) ? `${erScores.argument} / ${erScores.organization} / ${erScores.english}` : "Not self-reviewed yet";
@@ -429,9 +429,9 @@ function renderResults() {
     : [["Part 1", MockEngine.stageTimeUsedSeconds(attempt.part1)], ["Extended Response", erState ? MockEngine.stageTimeUsedSeconds({ seconds: 2700, startedAt: erState.startedAt, submittedAt: erState.submittedAt }) : null], ["Part 3", MockEngine.stageTimeUsedSeconds(attempt.part3)]];
   const skillRows = Object.values(score.skills || {}).sort((a, b) => a.accuracy - b.accuracy || b.total - a.total || a.label.localeCompare(b.label));
   const bankNote = attempt.bankMode === "practice_fallback"
-    ? `<p class="mock-review-note"><strong>Alpha bank note:</strong> This simulation used the Practice bank, so use it for format and timing practice, not an independent readiness measure.</p>`
+    ? `<p class="mock-review-note"><strong>Alpha bank note:</strong> This attempt used the Practice bank, so use it for format and timing practice, not an independent readiness measure.</p>`
     : "";
-  viewEl.innerHTML = `<section class="mock-results"><div class="page-kicker">Raw objective result</div><h1>${score.correct} / ${score.total} correct</h1><p class="mock-results-lede">${score.accuracy}% objective accuracy. This is a Chee Skool raw score, not a GED scaled score or pass/fail prediction.</p>${bankNote}<div class="mock-results-grid">${Object.entries(score.domains || {}).map(([key, bucket]) => `<div><span>${escapeHtml(CATEGORY_LABELS[key] || key)}</span><strong>${bucket.correct}/${bucket.total}</strong><small>${bucket.accuracy}%</small></div>`).join("")}</div><div class="mock-result-details"><span><strong>${score.unanswered}</strong> unanswered</span><span><strong>${score.flagged}</strong> flagged at submission</span></div><div class="mock-time-used"><strong>Time used</strong>${timeUsed.map(([label, seconds]) => `<span>${escapeHtml(label)}: ${escapeHtml(seconds == null ? "Not recorded" : formatDuration(seconds))}</span>`).join("")}</div>${skillRows.length ? `<details class="mock-skill-review"><summary>Skill breakdown</summary><div class="mock-skill-grid">${skillRows.map((bucket) => `<div><span>${escapeHtml(bucket.label)}</span><strong>${bucket.correct}/${bucket.total}</strong><small>${bucket.accuracy}%</small></div>`).join("")}</div></details>` : ""}${attempt.mode === "objective" ? "" : `<section class="mock-er-result"><span class="mock-option-label">Extended Response · Self-review</span><h2>T1 / T2 / T3: ${escapeHtml(erText)}</h2><p>These trait levels are your own rubric review and are kept separate from the objective result.</p><a class="btn secondary small" href="extended-response.html?prompt=${encodeURIComponent(attempt.er.promptId)}&mode=timed&attempt=${encodeURIComponent(attempt.attemptId)}&return=${encodeURIComponent(`test.html?attempt=${attempt.attemptId}`)}">Review ER response</a></section>`}<details class="mock-answer-review"><summary>Review objective answers</summary><p class="mock-review-note">Answer explanations are available only after the test is complete.</p>${objectiveAnswerReviewHtml()}</details><div class="mock-results-actions"><a class="btn" href="quiz.html">Back to Mock Tests</a><a class="btn secondary" href="progress.html">Open Progress</a></div></section>`;
+  viewEl.innerHTML = `<section class="mock-results"><div class="page-kicker">Raw objective result</div><h1>${score.correct} / ${score.total} correct</h1><p class="mock-results-lede">${score.accuracy}% objective accuracy. This is a Chee Skool raw score, not a GED scaled score or pass/fail prediction.</p>${bankNote}<div class="mock-results-grid">${Object.entries(score.domains || {}).map(([key, bucket]) => `<div><span>${escapeHtml(CATEGORY_LABELS[key] || key)}</span><strong>${bucket.correct}/${bucket.total}</strong><small>${bucket.accuracy}%</small></div>`).join("")}</div><div class="mock-result-details"><span><strong>${score.unanswered}</strong> unanswered</span><span><strong>${score.flagged}</strong> flagged at submission</span></div><div class="mock-time-used"><strong>Time used</strong>${timeUsed.map(([label, seconds]) => `<span>${escapeHtml(label)}: ${escapeHtml(seconds == null ? "Not recorded" : formatDuration(seconds))}</span>`).join("")}</div>${skillRows.length ? `<details class="mock-skill-review"><summary>Skill breakdown</summary><div class="mock-skill-grid">${skillRows.map((bucket) => `<div><span>${escapeHtml(bucket.label)}</span><strong>${bucket.correct}/${bucket.total}</strong><small>${bucket.accuracy}%</small></div>`).join("")}</div></details>` : ""}${attempt.mode === "objective" ? "" : `<section class="mock-er-result"><span class="mock-option-label">Extended Response · Self-review</span><h2>T1 / T2 / T3: ${escapeHtml(erText)}</h2><p>These trait levels are your own rubric review and are kept separate from the objective result.</p><a class="btn secondary small" href="extended-response.html?prompt=${encodeURIComponent(attempt.er.promptId)}&mode=timed&attempt=${encodeURIComponent(attempt.attemptId)}&return=${encodeURIComponent(`test.html?attempt=${attempt.attemptId}`)}">Review ER response</a></section>`}<details class="mock-answer-review"><summary>Review objective answers</summary><p class="mock-review-note">Answer explanations are available only after the test is complete.</p>${objectiveAnswerReviewHtml()}</details><div class="mock-results-actions"><a class="btn" href="quiz.html">Back to test practice</a><a class="btn secondary" href="progress.html">Open Progress</a></div></section>`;
 }
 
 function objectiveAnswerReviewHtml() {
@@ -462,7 +462,7 @@ function archiveAttempt() {
   const entry = {
     ...MockEngine.sanitizeAttemptForHistory(attempt),
     mode: attempt.mode || "full",
-    label: attempt.mode === "objective" ? "Objective RLA Practice Test" : "Full RLA Mock",
+    label: attempt.mode === "objective" ? "Objective RLA Practice Test" : "RLA Format & Timing Practice",
     erSelfReview: attempt.mode === "objective" ? null : (loadMockErState()?.selfScores || null)
   };
   const next = [entry, ...history.filter((x) => x.attemptId !== entry.attemptId)].slice(0, 25);
@@ -514,6 +514,6 @@ function cssEscape(value) {
 function formatTime(seconds) { const m = Math.floor(Math.max(0, seconds) / 60); const s = Math.max(0, seconds) % 60; return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`; }
 function formatDuration(seconds) { const m = Math.floor(Number(seconds || 0) / 60); const s = Number(seconds || 0) % 60; return `${m}m ${String(s).padStart(2, "0")}s`; }
 function setText(id, value) { const el = document.getElementById(id); if (el) el.textContent = value; }
-function renderFatal(message) { stopTimer(); showTopControls(false); viewEl.innerHTML = `<section class="empty-state"><h1>Mock unavailable</h1><p>${escapeHtml(message)}</p><a class="btn" href="quiz.html">Back to Mock Tests</a></section>`; }
+function renderFatal(message) { stopTimer(); showTopControls(false); viewEl.innerHTML = `<section class="empty-state"><h1>Mock unavailable</h1><p>${escapeHtml(message)}</p><a class="btn" href="quiz.html">Back to test practice</a></section>`; }
 function escapeHtml(value) { const div = document.createElement("div"); div.textContent = String(value ?? ""); return div.innerHTML; }
 function escapeAttr(value) { return escapeHtml(value).replace(/"/g, "&quot;"); }

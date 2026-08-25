@@ -13,6 +13,7 @@ let currentIndex = 0;
 let notesOpen = false;
 let highlightMode = false;
 let currentModuleFile = null;
+let curriculumRoutes = null;
 let questionOpenedAt = Date.now();
 const confidenceSelections = {};
 const guidedRetryUsed = new Set();
@@ -33,6 +34,12 @@ async function init() {
   } catch (e) {
     viewEl.innerHTML = `<div class="empty-state">Couldn't load this module. <a href="practice.html">Back to Practice</a></div>`;
     return;
+  }
+
+  try {
+    curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
+  } catch (_) {
+    curriculumRoutes = null;
   }
 
   const cat = currentQuiz.category || "reading";
@@ -1289,10 +1296,15 @@ function showCompletionSummary() {
       <h2>${answered === items.length ? "You reached every question." : "You reached the end."}</h2>
       <p>${answered} of ${items.length} questions have an answer saved on this device. You can review anything before leaving.</p>
     </div>`;
+  const nextSet = isGuidedLearningModule() ? curriculumRoutes?.nextSet(currentModuleFile) : null;
+  const nextHref = nextSet
+    ? `module.html?file=${encodeURIComponent(nextSet.file)}&return=${encodeURIComponent(nextSet.returnHref)}`
+    : document.getElementById("focus-exit").href;
+  const nextLabel = nextSet ? `Continue to ${nextSet.title}` : "Back to practice";
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="review-first">Review from start</button>
     <span class="question-footer-position">Complete</span>
-    <a class="question-nav-btn primary" href="${escapeAttr(document.getElementById("focus-exit").href)}">Back to practice</a>`;
+    <a class="question-nav-btn primary" href="${escapeAttr(nextHref)}">${escapeHtml(nextLabel)} →</a>`;
   document.getElementById("review-first").addEventListener("click", () => {
     currentIndex = 0;
     renderCurrentQuestion();

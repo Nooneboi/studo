@@ -18,7 +18,7 @@ const rootFiles = ['favicon.svg', 'manifest.json', 'sw.js', 'release.json'];
 const learnerJs = [
   'app.js', 'storage.js', 'data.js', 'learning.js', 'home.js', 'library-model.js',
   'practice.js', 'passages.js', 'resources.js', 'progress.js', 'curriculum.js',
-  'domain.js', 'category.js', 'skill.js', 'module.js', 'focus-tools.js', 'train.js', 'rla-browse.js',
+  'domain.js', 'category.js', 'skill.js', 'module.js', 'curriculum-routes.js', 'focus-tools.js', 'train.js', 'rla-browse.js',
   'question-interactions.js', 'mock-engine.js', 'quiz.js', 'test.js', 'extended-response.js'
 ];
 const learnerCss = ['site.css'];

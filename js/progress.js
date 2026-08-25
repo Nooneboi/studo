@@ -5,7 +5,17 @@
 */
 
 const progressView = document.getElementById("progress-view");
-renderProgress();
+let curriculumRoutes = null;
+init();
+
+async function init() {
+  try {
+    curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
+  } catch (_) {
+    curriculumRoutes = null;
+  }
+  renderProgress();
+}
 
 function renderProgress() {
   const summary = Learning.getSummary();
@@ -220,7 +230,7 @@ function mockHistoryHtml(history) {
   return `
     <section id="mock-section" class="progress-table-section" aria-labelledby="mock-progress-heading">
       <div class="progress-table-heading">
-        <div><span class="progress-mini-label">Exam simulation</span><h2 id="mock-progress-heading">Mock Tests</h2></div>
+        <div><span class="progress-mini-label">Format & timing</span><h2 id="mock-progress-heading">Mock practice</h2></div>
         <span>${history.length} ${history.length === 1 ? "attempt" : "attempts"}</span>
       </div>
       <p class="progress-er-note">Objective scores are auto-graded raw Chee Skool results. Extended Response trait levels, when present, are separate Self-review.</p>
@@ -293,13 +303,13 @@ function recommendationBlock(skill) {
       <span class="progress-mini-label">Next skill</span>
       <h2>${escapeHtml(skill.label)}</h2>
       <div class="progress-focus-meta"><strong>${skill.score}%</strong><span>${escapeHtml(skill.status)}</span></div>
-      <a href="${escapeAttr(practiceHref(skill.category, skill.topic))}">Open skill →</a>
+      <a href="${escapeAttr(practiceHref(skill))}">Open skill →</a>
     </div>`;
 }
 
 function skillRow(skill) {
   return `
-    <a class="progress-skill-row" href="${escapeAttr(practiceHref(skill.category, skill.topic))}">
+    <a class="progress-skill-row" href="${escapeAttr(practiceHref(skill))}">
       <span class="progress-skill-name"><small>${escapeHtml(Learning.categoryLabel(skill.category))}</small><strong>${escapeHtml(skill.label)}</strong></span>
       <span>${skill.correct}/${skill.attempts}</span>
       <span class="progress-signal-cell"><i><b style="width:${Math.max(0, Math.min(100, skill.score))}%"></b></i><strong>${skill.score}%</strong></span>
@@ -310,7 +320,7 @@ function skillRow(skill) {
 function mistakeRow(mistake) {
   const href = mistake.moduleFile
     ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}&return=${encodeURIComponent("progress.html")}`
-    : practiceHref(mistake.category, mistake.topic);
+    : practiceHref(mistake);
   return `
     <a class="progress-review-row" href="${escapeAttr(href)}">
       <span><strong>${escapeHtml(mistake.skillLabel || mistake.topic)}</strong><small>${escapeHtml(mistake.moduleTitle || Learning.categoryLabel(mistake.category))}</small></span>
@@ -319,9 +329,10 @@ function mistakeRow(mistake) {
     </a>`;
 }
 
-function practiceHref(category, topic) {
-  const base = `category.html?subject=rla&cat=${encodeURIComponent(category || "reading")}`;
-  return topic && topic !== "General" ? `${base}&topic=${encodeURIComponent(topic)}` : base;
+function practiceHref(item) {
+  const skillId = item?.id || item?.skillId;
+  if (skillId && curriculumRoutes) return curriculumRoutes.hrefForSkill(skillId);
+  return "practice.html";
 }
 
 function statusClass(status) {

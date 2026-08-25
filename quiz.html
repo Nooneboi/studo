@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-HvSbCFFH+8P5KXfjzbmEfZAXyl/ZVmHjIHEO6wH+ILQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
-<meta name="studo-release" content="0.7.0-alpha.18">
+<meta name="studo-release" content="0.7.0-alpha.19">
 <script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<title>Chee Skool — RLA Mock Tests</title>
-<meta name="description" content="Blueprint-driven GED-style RLA mock tests with objective sections and Extended Response practice.">
+<title>Chee Skool — RLA Format &amp; Timing Practice</title>
+<meta name="description" content="GED-style RLA format and timing practice with objective sections and Extended Response.">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,17 +19,17 @@
 <header class="site-header"><div class="wrap"><a class="brand" href="index.html" aria-label="Chee Skool home"><img class="brand-logo" src="assets/chee-skool-logo.png" alt="Chee Skool"></a><div class="header-right"><nav class="site-nav"><a href="index.html">Home</a><a href="practice.html">Practice</a><a href="train.html">Train</a><a href="quiz.html" aria-current="page">Mock</a><a href="progress.html">Progress</a><a href="resources.html">Resources</a></nav><div id="theme-switch-mount"></div></div></div></header>
 <div id="subject-bar-mount"></div>
 <main><div class="wrap mock-landing">
-  <div class="page-kicker">Exam simulation</div>
-  <h1>RLA Mock Tests</h1>
-  <p class="lede">Use a bounded GED-style blueprint instead of every question in the bank. Full Mock keeps answers hidden until the end and reports raw objective performance separately from Extended Response self-review.</p>
+  <div class="page-kicker">RLA exam practice</div>
+  <h1>RLA Format &amp; Timing Practice</h1>
+  <p class="lede">Use a bounded GED-style blueprint to practice section flow, timing, and stamina. This alpha still uses eligible Practice-bank questions, so treat the result as format and timing practice rather than an independent readiness measure.</p>
   <div id="mock-resume" class="mock-resume" hidden></div>
   <section class="mock-option-grid" aria-label="Mock test options">
     <article class="mock-option-card primary">
-      <span class="mock-option-label">Full simulation</span>
-      <h2>Full RLA Mock</h2>
+      <span class="mock-option-label">Format & timing</span>
+      <h2>RLA Format &amp; Timing Practice</h2>
       <p>Three parts · 46 objective questions · 1 Extended Response · about 150 minutes including the intended break and instructions.</p>
       <div class="mock-stat-row"><span><strong>14</strong> Part 1</span><span><strong>45 min</strong> ER</span><span><strong>32</strong> Part 3</span></div>
-      <button class="btn" id="start-full-mock" type="button">Start new full mock</button>
+      <button class="btn" id="start-full-mock" type="button">Start format &amp; timing practice</button>
     </article>
     <article class="mock-option-card">
       <span class="mock-option-label">Objective only</span>
@@ -40,10 +40,10 @@
     </article>
   </section>
   <section class="mock-section-links" aria-labelledby="section-practice-heading">
-    <div><span class="mock-option-label">Not ready for a full mock?</span><h2 id="section-practice-heading">Practice by area</h2></div>
+    <div><span class="mock-option-label">Want focused practice instead?</span><h2 id="section-practice-heading">Practice by area</h2></div>
     <nav><a href="curriculum.html?track=reading">Reading</a><a href="curriculum.html?track=arguments">Arguments</a><a href="curriculum.html?track=language">Language</a><a href="curriculum.html?track=extended-response">Extended Response</a></nav>
   </section>
-  <p class="mock-disclaimer">Chee Skool mocks are GED-style simulations based on public format guidance. They are not official GED forms and do not produce an official or scaled GED score.</p>
+  <p class="mock-disclaimer">Chee Skool uses original GED-style practice based on public format guidance. This is not an official GED form, does not produce an official or scaled GED score, and is not yet an independent readiness measure.</p>
   <div id="mock-status" class="study-status" aria-live="polite"></div>
 </div></main>
 <footer class="site-footer"><div class="wrap"><div class="site-footer-primary">Chee Skool — built for practice, not for tracking you.</div><nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div></footer>

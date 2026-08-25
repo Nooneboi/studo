@@ -4,7 +4,7 @@
   Shared site-shell behavior + service-worker lifecycle.
 */
 
-const STUDO_RELEASE = "0.7.0-alpha.18";
+const STUDO_RELEASE = "0.7.0-alpha.19";
 window.STUDO_RELEASE = STUDO_RELEASE;
 
 window.StudoSafeStorage = {
@@ -343,26 +343,13 @@ const THEMES = [
 })();
 
 /*
-  subjectbar.js
-  -------------
-  Renders the global subject bar (Math / Science / Social Studies / RLA)
-  right under the header, on every page that includes a
-  <div id="subject-bar-mount"></div>.
-
-  Only RLA is live for now. The other three render as disabled "Soon"
-  pills — flip a subject's `enabled` flag to true once it has content,
-  and it becomes a normal clickable tab automatically.
-
-  Clicking a tab remembers the choice (localStorage) and navigates to
-  practice.html (or quiz.html, if that's the page you're already on)
-  with ?subject=<id> — each page reads that on load.
+  Learner subject bar
+  -------------------
+  Alpha currently exposes only the subject that actually has learner content.
+  Future subjects stay hidden until they are ready to use.
 */
-
 const SUBJECTS = [
   { id: "rla", label: "Reasoning Through Language Arts", enabled: true },
-  { id: "math", label: "Mathematical Reasoning", enabled: false },
-  { id: "science", label: "Science", enabled: false },
-  { id: "social_studies", label: "Social Studies", enabled: false },
 ];
 
 function getActiveSubject() {
@@ -375,23 +362,14 @@ function getActiveSubject() {
   if (!mount) return;
 
   const active = getActiveSubject();
-  // Where a click should navigate to: stay on quiz.html if that's
-  // the current page, otherwise land on practice.html.
   const targetPage = window.location.pathname.endsWith("quiz.html") ? "quiz.html" : "practice.html";
-
   mount.innerHTML = `
     <div class="subject-bar">
       <div class="wrap">
-        ${SUBJECTS.map((s) => {
-          const isActive = s.id === active;
-          if (!s.enabled) {
-            return `<span class="subject-tab disabled">${s.label} <span class="soon-pill">Soon</span></span>`;
-          }
-          return `<a class="subject-tab${isActive ? " active" : ""}" href="${targetPage}?subject=${s.id}">${s.label}</a>`;
-        }).join("")}
+        ${SUBJECTS.map((subject) => `<a class="subject-tab${subject.id === active ? " active" : ""}" href="${targetPage}?subject=${subject.id}">${subject.label}</a>`).join("")}
       </div>
-    </div>
-  `;
+    </div>`;
 
-  if (window.StudoSafeStorage) window.StudoSafeStorage.set("sq:activeSubject", active); else localStorage.setItem("sq:activeSubject", active);
+  if (window.StudoSafeStorage) window.StudoSafeStorage.set("sq:activeSubject", active);
+  else localStorage.setItem("sq:activeSubject", active);
 })();
