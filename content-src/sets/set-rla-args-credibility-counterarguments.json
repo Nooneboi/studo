@@ -5,8 +5,8 @@
     "id": "set-rla-args-credibility-counterarguments",
     "file": "set-rla-args-credibility-counterarguments.json"
   },
-  "title": "Testing a Food-Waste Collection Proposal",
-  "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+  "title": "Credibility & Counterarguments - Independent Practice",
+  "description": "8 independent questions on claim-specific source credibility and how a writer handles counterarguments.",
   "subject": "rla",
   "category": "arguments",
   "topic": "Arguments & Sources - Focused Practice",
@@ -221,7 +221,7 @@
       "type": "multiple_choice",
       "prompt": "Why does Brooks say the nearby-city report does NOT prove Cedar Point will get the same result?",
       "primarySkillId": "R5.9",
-      "familyId": "arguments.credibility.evaluate",
+      "familyId": "credibility.limit",
       "difficulty": "medium",
       "dok": 2,
       "difficultyProfile": {
@@ -366,9 +366,9 @@
     {
       "id": "q8",
       "type": "multiple_choice",
-      "prompt": "Which feature most strengthens Brooks's overall argument?",
+      "prompt": "Which statement best expresses Reed's second counterargument to the food-waste pilot?",
       "primarySkillId": "R5.10",
-      "familyId": "arguments.counterargument.response",
+      "familyId": "counterargument.identify",
       "difficulty": "medium",
       "dok": 2,
       "difficultyProfile": {
@@ -384,32 +384,32 @@
       "options": [
         {
           "id": "a",
-          "text": "She never mentions any weakness in her proposal.",
-          "distractorType": "false",
-          "whyWrong": "She discusses odor, cost, and uncertainty."
+          "text": "A household food-waste program will definitely create odor and pest problems in every neighborhood.",
+          "distractorType": "first_objection",
+          "whyWrong": "This restates Reed’s earlier odor objection, not the second objection about competing city spending."
         },
         {
           "id": "b",
-          "text": "She treats every opposing claim as equally strong.",
-          "distractorType": "false",
-          "whyWrong": "She distinguishes relevant concerns from conclusions that exceed the evidence."
+          "text": "The regional composting facility cannot accept enough material for a pilot.",
+          "distractorType": "contradicted",
+          "whyWrong": "The facility states that it has capacity for the pilot."
         },
         {
           "id": "c",
-          "text": "She promises the pilot will succeed before it begins.",
-          "distractorType": "false",
-          "whyWrong": "She frames the pilot as a way to test concerns."
+          "text": "The city should make the program permanent before collecting local evidence.",
+          "distractorType": "reversal",
+          "whyWrong": "Reed does not argue for permanent expansion; Brooks proposes a limited pilot and later vote."
         },
         {
           "id": "d",
-          "text": "She uses local and comparable evidence, acknowledges reasonable objections, and proposes a limited test that can generate new evidence."
+          "text": "Money spent on the pilot could instead be used for another city need, such as road repairs."
         }
       ],
       "correct": "d",
       "explanation": {
         "answer": "D",
-        "whyCorrect": "The argument combines evidence with a proportionate response to uncertainty instead of pretending the policy has no risks.",
-        "quickTip": "Strong argumentation often improves when a writer addresses the best opposing point and shows how it can be tested."
+        "whyCorrect": "Reed’s second objection is an opportunity-cost argument: spending on the pilot means those funds cannot be used for another city priority.",
+        "quickTip": "Identify the counterargument before judging the response. State the opposing claim fairly, without adding or weakening it."
       }
     }
   ],

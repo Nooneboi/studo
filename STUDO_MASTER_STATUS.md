@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.21`  
-**Current stage:** Phase 3B Finding Evidence depth complete — Claims & Structure and Finding Evidence now have distinct guided reference paths; Credibility & Counterarguments is next  
+**Current release:** `0.7.0-alpha.22`  
+**Current stage:** Phase 3C Credibility & Counterarguments depth complete — three Arguments reference paths are now in place; whole-track Arguments review is next before Language depth  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **102 learner modules**
-- **747 objective/component questions**
+- **103 learner modules**
+- **753 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -371,9 +371,25 @@ Implemented progression:
 
 The new 457-word original workplace argument, **Extending the Staggered-Start Pilot**, is `practice + train` and remains `mock-excluded`. The existing runtime compatibility ID `reading.evidence.matching` remains unchanged; canonical mastery stays on R5.3. The older evidence-role item now uses the canonical `evidence.identify_role` family where appropriate. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
 
+#### Phase 3C — Credibility & Counterarguments: complete in Alpha 22
+
+Credibility & Counterarguments now reuses the existing Study Guide and two workbooks, adds one original workplace guided passage, and preserves the existing food-waste drill as **Credibility & Counterarguments - Independent Practice**. The reference path keeps credibility claim-specific and treats counterargument analysis as fair identification followed by a direct-response check.
+
+Implemented progression:
+
+1. Guided — match sources/records to the exact claim they are positioned to support.
+2. Guided — identify the opponent's actual counterargument directly in the passage.
+3. Apply — choose the source whose access and method best fit an equipment-reliability claim.
+4. Apply — identify a credibility limitation when a worker-perception survey is stretched into a mechanical-failure claim.
+5. Independent — evaluate whether the writer answers the productivity objection with evidence that directly tests it.
+6. Independent — trace the full objection → response evidence → qualification/monitoring chain.
+
+The new 497-word original workplace argument, **Keeping the Earlier Equipment Check**, is `practice + train` and remains `mock-excluded`. The independent set now provides genuine transfer for the canonical `credibility.limit` and `counterargument.identify` families instead of leaving those families as singletons. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
+
 Arguments priority from here:
 
-- Credibility & Counterarguments
+- whole-track Arguments review before any additional Arguments expansion;
+- move to Language difficulty progression only if the review does not reveal a higher-value Arguments gap.
 
 Language priority:
 
@@ -412,6 +428,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Phase 3C — Credibility & Counterarguments audit and depth decision.**
+> **Whole-track Arguments review.**
 
-Audit the existing Credibility & Counterarguments guide, workbooks, focused module, mixed-source exposure, and R5.9/R5.10 family coverage before adding content. Preserve good material and add only the learning method that improves source-fit judgment and evaluation of whether a response actually answers an objection. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
+Review Claims & Argument Structure, Finding Evidence, Credibility & Counterarguments, the six Mixed Source Practice sets, and the remaining Arguments units together. Confirm that the three reference paths are distinct, identify any genuine coverage or transfer gaps, and avoid automatically adding Guided Practice to every Arguments skill. If no higher-value Arguments gap emerges, proceed to Phase 3D Language difficulty progression. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.

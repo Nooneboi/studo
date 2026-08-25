@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-credibility-counterarguments-active-v1",
+  "title": "Credibility & Counterarguments - Guided Practice",
+  "description": "Learn to judge source credibility for a specific claim, recognize meaningful source limitations, identify a counterargument fairly, and evaluate whether the writer's response actually answers it.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Guided Practice",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-credibility-counterarguments-active-equipment-check"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Chee Skool Credibility & Counterarguments reference-skill review",
+  "reviewNotes": "Guided reference path focused on claim-specific source fit, source limitations, fair identification of an opposing view, and direct evaluation of the writer's response. Existing food-waste practice remains the independent follow-up. Excluded from Mock because it contains guided support and directly taught material.",
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.9",
+    "secondarySkillIds": [
+      "R5.10"
+    ],
+    "unitId": "credibility-counterarguments",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Judge how well a source fits a specific claim, identify important source limitations, state counterarguments fairly, and evaluate whether a writer directly answers the objection.",
+    "topicLabel": "Credibility & Counterarguments",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Match each source or record to the claim it is best positioned to support.",
+      "primarySkillId": "R5.9",
+      "familyId": "credibility.source_fit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "Maintenance logs counting first-shift conveyor jams and scanner faults"
+          },
+          {
+            "id": "i2",
+            "text": "Warehouse scan records showing completed orders across the shift"
+          },
+          {
+            "id": "i3",
+            "text": "Anonymous survey responses about organization and earlier arrival"
+          },
+          {
+            "id": "i4",
+            "text": "Maintenance supervisor's direct record of faults found during inspection"
+          }
+        ],
+        "zones": [
+          {
+            "id": "reliability",
+            "label": "Equipment reliability"
+          },
+          {
+            "id": "productivity",
+            "label": "Schedule / productivity"
+          },
+          {
+            "id": "experience",
+            "label": "Worker experience"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=reliability|i2=productivity|i3=experience|i4=reliability",
+      "explanation": {
+        "answer": "Maintenance records and the maintenance supervisor fit reliability; scan records fit productivity; the employee survey fits worker experience.",
+        "whyCorrect": "Credibility depends on the question being asked. A source is strongest when its access, role, or method matches the exact claim it is being used to support.",
+        "quickTip": "Do not ask only, 'Is this source credible?' Ask, 'Credible for which claim?'"
+      },
+      "learningStage": "guided",
+      "hint": "Look at what each source directly observes or measures. Match that access to the claim, not to the source's title or status."
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Which sentence most directly states Nguyen's counterargument against keeping the earlier equipment check?",
+      "primarySkillId": "R5.10",
+      "familyId": "counterargument.identify",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "Shift supervisor Carla Nguyen objects that the earlier check delays the first wave of orders because several team leads must arrive sooner and some packing lines remain closed while inspection is underway."
+          },
+          {
+            "id": "s2",
+            "text": "That concern is not imaginary."
+          },
+          {
+            "id": "s3",
+            "text": "However, by 10:00 a.m., total completed scans were 2 percent higher on average, and the difference stayed within 1 percent by the end of the shift."
+          },
+          {
+            "id": "s4",
+            "text": "Morgan proposes keeping the earlier check for three more months, but with two limits."
+          }
+        ]
+      },
+      "correct": "s1",
+      "explanation": {
+        "answer": "Nguyen argues that the earlier check delays the first wave of orders because people arrive sooner and lines remain closed during inspection.",
+        "whyCorrect": "This sentence states the actual competing position Morgan needs to answer. The other choices acknowledge, respond to, or qualify that objection rather than state it.",
+        "quickTip": "Before judging a response, state the opponent's real claim as fairly and specifically as possible."
+      },
+      "learningStage": "guided",
+      "hint": "Choose the sentence that contains the opposing claim itself, not Morgan's response or the data used later."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which source is best positioned to support Morgan's claim that preventable equipment interruptions became less common during the pilot?",
+      "primarySkillId": "R5.9",
+      "familyId": "credibility.source_fit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The employee survey because most team leads said the shift felt more organized.",
+          "distractorType": "source_for_other_claim",
+          "whyWrong": "The survey measures worker experience, not the number of equipment interruptions."
+        },
+        {
+          "id": "b",
+          "text": "The maintenance logs because they directly count qualifying conveyor jams and scanner faults before and during the pilot."
+        },
+        {
+          "id": "c",
+          "text": "The safety manager because safety staff are senior employees.",
+          "distractorType": "authority_overclaim",
+          "whyWrong": "Job status alone does not provide the before-and-after interruption count needed for this claim."
+        },
+        {
+          "id": "d",
+          "text": "Nguyen's objection because supervisors observe the start of the shift.",
+          "distractorType": "opposing_view_not_measure",
+          "whyWrong": "Nguyen raises a productivity concern; her objection does not measure equipment-failure frequency."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The maintenance logs directly record the outcome named in the claim and allow a before-and-during comparison.",
+        "quickTip": "Source fit comes from access and method that match the exact claim, not prestige or agreement."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the most important limitation if Morgan uses the employee survey to claim that equipment failures actually decreased?",
+      "primarySkillId": "R5.9",
+      "familyId": "credibility.limit",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "The survey includes both positive and negative opinions about the schedule.",
+          "distractorType": "not_a_credibility_limit",
+          "whyWrong": "Mixed responses do not make the survey unusable; the larger problem is what the survey is capable of measuring."
+        },
+        {
+          "id": "b",
+          "text": "The survey was anonymous, so Morgan cannot quote any individual employee by name.",
+          "distractorType": "irrelevant_method_detail",
+          "whyWrong": "Anonymity does not prevent the survey from reporting worker experience and does not address mechanical-failure measurement."
+        },
+        {
+          "id": "c",
+          "text": "Team leads may know less about equipment than the safety manager.",
+          "distractorType": "wrong_comparison",
+          "whyWrong": "The key limitation is not which employee has a higher title; it is that perceptions do not directly count mechanical failures."
+        },
+        {
+          "id": "d",
+          "text": "The survey measures employees' perceptions of the schedule, not the actual number of conveyor jams or scanner faults."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "D",
+        "whyCorrect": "The survey is credible for worker experience but poorly matched to a mechanical-outcome claim. The maintenance logs are the direct source for failure frequency.",
+        "quickTip": "A source can be credible and still be limited for a particular claim because it measures the wrong thing."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "How well does Morgan respond to Nguyen's objection that the earlier check reduces first-shift output?",
+      "primarySkillId": "R5.10",
+      "familyId": "counterargument.response",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 85,
+      "options": [
+        {
+          "id": "a",
+          "text": "She addresses it directly by acknowledging the lower 7:00–7:20 output, then using later scan totals to show how large and how persistent the loss actually was."
+        },
+        {
+          "id": "b",
+          "text": "She avoids the objection by discussing employee opinions instead of output records.",
+          "distractorType": "misread_response",
+          "whyWrong": "Morgan specifically uses warehouse scan records to test the productivity concern."
+        },
+        {
+          "id": "c",
+          "text": "She disproves Nguyen completely because total scans were always higher at every point in the pilot.",
+          "distractorType": "overstatement",
+          "whyWrong": "The passage concedes a 6 percent reduction in the first twenty minutes, so the objection is not completely disproved."
+        },
+        {
+          "id": "d",
+          "text": "She answers it mainly by arguing that maintenance staff have more expertise than shift supervisors.",
+          "distractorType": "authority_detour",
+          "whyWrong": "The response tests the objection with operational output records rather than ranking employee titles."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Morgan answers the actual productivity objection with productivity evidence while preserving the early-shift loss Nguyen correctly identifies.",
+        "quickTip": "A strong response does not need to erase the objection; it needs to address the real concern with relevant reasoning or evidence."
+      },
+      "learningStage": "independent"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which description best explains how Morgan handles Nguyen's opposing position across the passage?",
+      "primarySkillId": "R5.10",
+      "familyId": "counterargument.response",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 5,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "options": [
+        {
+          "id": "a",
+          "text": "She dismisses Nguyen's concern as an opinion, then treats maintenance data as proof that productivity cannot decline.",
+          "distractorType": "dismissal_misread",
+          "whyWrong": "Morgan explicitly acknowledges an early output loss and separates reliability evidence from productivity evidence."
+        },
+        {
+          "id": "b",
+          "text": "She concedes that the earlier check harms productivity and therefore recommends returning to the old schedule.",
+          "distractorType": "concession_too_far",
+          "whyWrong": "She concedes a limited early loss but recommends a longer measured trial rather than abandoning the pilot."
+        },
+        {
+          "id": "c",
+          "text": "She acknowledges a real early-shift cost, tests whether that cost continues across the shift, and limits the recommendation by requiring continued output monitoring and reconsideration if results worsen."
+        },
+        {
+          "id": "d",
+          "text": "She changes the subject from productivity to employee satisfaction because the survey is more favorable to her position.",
+          "distractorType": "topic_shift_misread",
+          "whyWrong": "Morgan uses the survey only for worker experience and relies on scan records for the productivity question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Morgan states the opposing concern fairly, tests it with evidence matched to that claim, and keeps the recommendation conditional rather than pretending the objection has vanished.",
+        "quickTip": "Track counterargument handling as a chain: objection → response evidence → qualification or decision."
+      },
+      "learningStage": "independent"
+    }
+  ]
+}

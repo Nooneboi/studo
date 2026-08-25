@@ -1008,9 +1008,33 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-args-credibility-counterarguments-active-v1.json",
+    "title": "Credibility & Counterarguments - Guided Practice",
+    "description": "Learn to judge source credibility for a specific claim, recognize meaningful source limitations, identify a counterargument fairly, and evaluate whether the writer's response actually answers it.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.9",
+      "secondarySkillIds": [
+        "R5.10"
+      ],
+      "unitId": "credibility-counterarguments",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Judge how well a source fits a specific claim, identify important source limitations, state counterarguments fairly, and evaluate whether a writer directly answers the objection.",
+      "topicLabel": "Credibility & Counterarguments",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
     "file": "generated/modules/set-rla-args-credibility-counterarguments.json",
-    "title": "Testing a Food-Waste Collection Proposal",
-    "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+    "title": "Credibility & Counterarguments - Independent Practice",
+    "description": "8 independent questions on claim-specific source credibility and how a writer handles counterarguments.",
     "curriculum": {
       "domain": "Argument Analysis",
       "primarySkillId": "R5.9",

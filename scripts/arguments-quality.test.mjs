@@ -51,7 +51,7 @@ test('each Arguments unit keeps its resource baseline while Phase 3 reference un
     assert.equal(guides.length, 1, `${unit.id} guide count`);
     assert.equal(workbooks.length, 2, `${unit.id} workbook count`);
     assert.equal((unit.checks || []).length, 0, `${unit.id} must not relabel focused Practice as a Skill Check`);
-    if (['claims-argument-structure', 'finding-evidence'].includes(unit.id)) {
+    if (['claims-argument-structure', 'finding-evidence', 'credibility-counterarguments'].includes(unit.id)) {
       assert.equal((unit.sets || []).length, 2, `${unit.id} guided + independent Practice module count`);
       assert.equal(unit.questionCount, 14, `${unit.id} guided + independent question count`);
     } else {

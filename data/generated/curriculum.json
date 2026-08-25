@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-25T04:55:22.008Z",
+  "builtAt": "2026-08-25T05:30:56.698Z",
   "tracks": [
     {
       "id": "reading",
@@ -5738,15 +5738,60 @@
                 "R5.10"
               ],
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-credibility-counterarguments-active-v1",
+                  "title": "Credibility & Counterarguments - Guided Practice",
+                  "description": "Learn to judge source credibility for a specific claim, recognize meaningful source limitations, identify a counterargument fairly, and evaluate whether the writer's response actually answers it.",
+                  "file": "generated/modules/set-rla-args-credibility-counterarguments-active-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.9",
+                    "secondarySkillIds": [
+                      "R5.10"
+                    ],
+                    "unitId": "credibility-counterarguments",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Judge how well a source fits a specific claim, identify important source limitations, state counterarguments fairly, and evaluate whether a writer directly answers the objection.",
+                    "topicLabel": "Credibility & Counterarguments",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-credibility-counterarguments-active-equipment-check",
+                    "title": "Keeping the Earlier Equipment Check",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.9",
+                    "R5.10"
+                  ]
+                },
+                {
                   "id": "set-rla-args-credibility-counterarguments",
-                  "title": "Testing a Food-Waste Collection Proposal",
-                  "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+                  "title": "Credibility & Counterarguments - Independent Practice",
+                  "description": "8 independent questions on claim-specific source credibility and how a writer handles counterarguments.",
                   "file": "generated/modules/set-rla-args-credibility-counterarguments.json",
                   "difficulty": "hard",
                   "category": "arguments",
@@ -5902,7 +5947,7 @@
           ],
           "availableSkillCount": 10,
           "availableUnitCount": 6,
-          "availableSetCount": 8,
+          "availableSetCount": 9,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
@@ -7382,16 +7427,61 @@
               "priority": "P2",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 5,
+              "setCount": 2,
+              "questionCount": 8,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-credibility-counterarguments-active-v1",
+                  "title": "Credibility & Counterarguments - Guided Practice",
+                  "description": "Learn to judge source credibility for a specific claim, recognize meaningful source limitations, identify a counterargument fairly, and evaluate whether the writer's response actually answers it.",
+                  "file": "generated/modules/set-rla-args-credibility-counterarguments-active-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.9",
+                    "secondarySkillIds": [
+                      "R5.10"
+                    ],
+                    "unitId": "credibility-counterarguments",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Judge how well a source fits a specific claim, identify important source limitations, state counterarguments fairly, and evaluate whether a writer directly answers the objection.",
+                    "topicLabel": "Credibility & Counterarguments",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-credibility-counterarguments-active-equipment-check",
+                    "title": "Keeping the Earlier Equipment Check",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.9",
+                    "R5.10"
+                  ]
+                },
+                {
                   "id": "set-rla-args-credibility-counterarguments",
-                  "title": "Testing a Food-Waste Collection Proposal",
-                  "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+                  "title": "Credibility & Counterarguments - Independent Practice",
+                  "description": "8 independent questions on claim-specific source credibility and how a writer handles counterarguments.",
                   "file": "generated/modules/set-rla-args-credibility-counterarguments.json",
                   "difficulty": "hard",
                   "category": "arguments",
@@ -7551,16 +7641,61 @@
               "priority": "P1",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 3,
+              "setCount": 2,
+              "questionCount": 6,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-credibility-counterarguments-active-v1",
+                  "title": "Credibility & Counterarguments - Guided Practice",
+                  "description": "Learn to judge source credibility for a specific claim, recognize meaningful source limitations, identify a counterargument fairly, and evaluate whether the writer's response actually answers it.",
+                  "file": "generated/modules/set-rla-args-credibility-counterarguments-active-v1.json",
+                  "difficulty": "hard",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.9",
+                    "secondarySkillIds": [
+                      "R5.10"
+                    ],
+                    "unitId": "credibility-counterarguments",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Judge how well a source fits a specific claim, identify important source limitations, state counterarguments fairly, and evaluate whether a writer directly answers the objection.",
+                    "topicLabel": "Credibility & Counterarguments",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-credibility-counterarguments-active-equipment-check",
+                    "title": "Keeping the Earlier Equipment Check",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.9",
+                    "R5.10"
+                  ]
+                },
+                {
                   "id": "set-rla-args-credibility-counterarguments",
-                  "title": "Testing a Food-Waste Collection Proposal",
-                  "description": "Evaluate source credibility for specific claims and analyze how a writer acknowledges and responds to counterarguments.",
+                  "title": "Credibility & Counterarguments - Independent Practice",
+                  "description": "8 independent questions on claim-specific source credibility and how a writer handles counterarguments.",
                   "file": "generated/modules/set-rla-args-credibility-counterarguments.json",
                   "difficulty": "hard",
                   "category": "arguments",
@@ -9090,8 +9225,8 @@
       ],
       "availableSkillCount": 15,
       "totalSkillCount": 15,
-      "availableSetCount": 11,
-      "questionCount": 84,
+      "availableSetCount": 12,
+      "questionCount": 90,
       "resourceCount": 45,
       "studyFileCount": 45,
       "checkCount": 0
