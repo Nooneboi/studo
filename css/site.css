@@ -8476,3 +8476,12 @@ body.test-body {
   body.mobile-sheet-open,
   body.rla-browse-open { overflow: hidden; }
 }
+
+.er-production-heading { margin-bottom: 18px; }
+.er-production-focus { margin-top: 10px !important; max-width: 76ch; font-size: .9rem; }
+.er-production-draft { min-height: 300px; }
+.er-production-criteria ul, .er-production-review .er-revision-box ul { margin: 10px 0 0; padding-left: 21px; color: var(--color-ink-soft); }
+.er-production-criteria h3 { margin: 0; font-size: 1rem; }
+.er-production-review-actions { align-items: center; }
+.er-domain-production-card .er-domain-prompt-copy p { max-width: 58ch; }
+@media (max-width: 640px) { .er-production-draft { min-height: 260px; } }

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "er-task-exact-evidence",
+  "title": "Use Exact Evidence Without Overclaiming",
+  "promptId": "er-clinic-reminders",
+  "skillIds": ["W1.5"],
+  "taskType": "exact_evidence",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER production editorial review",
+  "instruction": "Write two sentences that use one specific piece of evidence from the better-supported source. Preserve any qualifier, limit, or condition in the source instead of turning the evidence into a stronger claim.",
+  "sourceFocus": "Choose evidence that directly measures the outcome being discussed, not a general statement about the program.",
+  "successCriteria": [
+    "Uses a specific fact, comparison, or measured result from the source.",
+    "Keeps important qualifiers such as may, some, limited, or under current conditions.",
+    "Accurately attributes the evidence to the source.",
+    "Does not add outside facts or invented numbers."
+  ],
+  "modelResponse": "Source A reports that missed appointments fell during the reminder pilot while the comparison period did not show the same change. That result supports the claim that reminders can improve attendance in this clinic, but it does not prove that every patient group will respond in the same way.",
+  "revisionPrompts": [
+    "Did I keep the source's limits instead of changing a measured result into certainty?",
+    "Could a reader locate the evidence I used in the source?"
+  ],
+  "authoringNotes": "The task is evidence precision, not full analysis; the second sentence models scope control."
+}

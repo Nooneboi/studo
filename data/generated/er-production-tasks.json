@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-08-25T06:47:26.574Z",
+  "tasks": [
+    {
+      "schemaVersion": 1,
+      "id": "er-task-body-development",
+      "title": "Build One Strong Body Paragraph",
+      "promptId": "er-stormwater-fee",
+      "skillIds": [
+        "W1.8",
+        "W1.9"
+      ],
+      "taskType": "body_development",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER production editorial review",
+      "instruction": "Write one compact body paragraph using this structure: point, specific evidence, analysis, and comparison to the weaker source. Keep the paragraph focused on one reason the stronger argument is better supported.",
+      "sourceFocus": "Choose either evidence quality, cost reasoning, or how each source handles uncertainty; do not try to cover the whole essay in one paragraph.",
+      "successCriteria": [
+        "Begins with one clear evaluative point.",
+        "Uses specific evidence from the source that supports that point.",
+        "Explains why the evidence matters.",
+        "Compares the weaker source fairly without turning the paragraph into a summary list.",
+        "Ends without introducing an unrelated new reason."
+      ],
+      "modelResponse": "Source A is stronger because it ties the proposed fee to measured runoff costs instead of assuming that every property creates the same burden. The source explains how impervious surface area affects the amount of runoff entering the drainage system and connects that measure to the fee formula. This makes the reasoning easier to evaluate because the charge is linked to the problem the policy is meant to address. Source B raises a fair affordability concern, but it does not provide equally direct evidence that a flat funding method would match the costs more accurately.",
+      "revisionPrompts": [
+        "Does every sentence in my paragraph develop the same reason?",
+        "Did I explain the evidence before moving to the comparison?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "er-task-evaluative-thesis",
+      "title": "Write an Evaluative Thesis",
+      "promptId": "er-solar-roofs",
+      "skillIds": [
+        "W1.4"
+      ],
+      "taskType": "evaluative_thesis",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER production editorial review",
+      "instruction": "Write one or two sentences that identify the better-supported source and give two bounded reasons for that judgment. Do not argue which policy you personally prefer.",
+      "sourceFocus": "Use both sources, but base the thesis on differences in evidence and reasoning rather than topic preference.",
+      "successCriteria": [
+        "Names the better-supported source clearly.",
+        "Gives two reasons that can be proved from the supplied sources.",
+        "Judges support and reasoning rather than personal agreement.",
+        "Avoids claims that are broader than the sources allow."
+      ],
+      "modelResponse": "Source B is better supported because it uses building-specific engineering and cost evidence, and because its staged recommendation matches the uncertainty in the available data. Source A raises a relevant goal, but its citywide conclusion depends on assumptions that have not yet been tested across the buildings.",
+      "revisionPrompts": [
+        "Can each reason in my thesis be supported with a specific detail from the sources?",
+        "Did I evaluate support rather than state which policy I personally like?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "er-task-evidence-analysis",
+      "title": "Turn Evidence Into Analysis",
+      "promptId": "er-inspection-automation",
+      "skillIds": [
+        "W1.6",
+        "W1.7"
+      ],
+      "taskType": "evidence_analysis",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER production editorial review",
+      "instruction": "Choose one important fact from a source and write two to three sentences explaining why that fact makes the source's argument stronger or weaker. The explanation must connect the evidence to the recommendation.",
+      "sourceFocus": "Focus on evidence about inspection accuracy, production effects, or the limits of the pilot rather than repeating the source's conclusion.",
+      "successCriteria": [
+        "Identifies a specific piece of source evidence.",
+        "Explains what claim or recommendation the evidence affects.",
+        "States why the evidence strengthens or limits that claim.",
+        "Moves beyond summary by making the reasoning connection explicit."
+      ],
+      "modelResponse": "Source A reports that the automated system found a higher share of the defects that inspectors later confirmed during the pilot. This matters because the proposal is specifically about expanding inspection automation, so measured detection performance directly tests whether the system can do the job being claimed. The pilot still does not show that every product line will perform the same way, which limits how broadly the result should be applied.",
+      "revisionPrompts": [
+        "After my evidence sentence, did I explain why the fact matters to the argument?",
+        "Did I identify a limit if the evidence does not support the full scope of the recommendation?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "er-task-exact-evidence",
+      "title": "Use Exact Evidence Without Overclaiming",
+      "promptId": "er-clinic-reminders",
+      "skillIds": [
+        "W1.5"
+      ],
+      "taskType": "exact_evidence",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER production editorial review",
+      "instruction": "Write two sentences that use one specific piece of evidence from the better-supported source. Preserve any qualifier, limit, or condition in the source instead of turning the evidence into a stronger claim.",
+      "sourceFocus": "Choose evidence that directly measures the outcome being discussed, not a general statement about the program.",
+      "successCriteria": [
+        "Uses a specific fact, comparison, or measured result from the source.",
+        "Keeps important qualifiers such as may, some, limited, or under current conditions.",
+        "Accurately attributes the evidence to the source.",
+        "Does not add outside facts or invented numbers."
+      ],
+      "modelResponse": "Source A reports that missed appointments fell during the reminder pilot while the comparison period did not show the same change. That result supports the claim that reminders can improve attendance in this clinic, but it does not prove that every patient group will respond in the same way.",
+      "revisionPrompts": [
+        "Did I keep the source's limits instead of changing a measured result into certainty?",
+        "Could a reader locate the evidence I used in the source?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "er-task-revision-focus-clarity",
+      "title": "Revise for Focus and Clarity",
+      "promptId": "er-weekend-bus",
+      "skillIds": [
+        "W1.10",
+        "W1.11"
+      ],
+      "taskType": "revision_focus_clarity",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER production editorial review",
+      "instruction": "Rewrite the weak paragraph below so its main point is clear, the evidence is precise, and the analysis stays connected to the claim: 'Source A has numbers and Source B also talks about riders. The bus was useful and people used it. This proves Source A is right because it has more facts and the pilot should continue.'",
+      "sourceFocus": "Use the actual weekend-bus sources. Remove vague wording and any claim that the sources do not prove.",
+      "successCriteria": [
+        "States one clear evaluative point instead of several loose claims.",
+        "Replaces vague references such as 'numbers' or 'people used it' with exact evidence.",
+        "Explains why the evidence supports the evaluation.",
+        "Removes overclaiming such as 'proves' when the source has limits.",
+        "Uses clear sentence structure and standard conventions."
+      ],
+      "modelResponse": "Source A is better supported because it uses the pilot's ridership and service data to test whether weekend demand was consistent enough to justify expansion. Those measured results directly address how the service performed, while Source B relies more heavily on concerns that are not matched with the same level of local outcome evidence. The data support continued consideration of the pilot, but they do not prove that every route would produce the same results.",
+      "revisionPrompts": [
+        "Did I replace every vague noun such as 'things,' 'facts,' or 'numbers' with a precise reference?",
+        "Did I remove any sentence that merely repeats my judgment without adding evidence or analysis?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "er-task-summary-to-analysis",
+      "title": "Change Summary Into Analysis",
+      "promptId": "er-market-redevelopment",
+      "skillIds": [
+        "W1.6"
+      ],
+      "taskType": "summary_to_analysis",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER production editorial review",
+      "instruction": "Revise this summary-only idea into two or three analytical sentences: one source gives a redevelopment proposal and several projected benefits. Explain what makes the source's support convincing or limited compared with the other source.",
+      "sourceFocus": "Use one concrete detail from the market-block sources and explain how it affects the strength of the argument.",
+      "successCriteria": [
+        "Includes at least one specific source detail instead of only describing the topic.",
+        "Explains why the detail affects the argument's strength.",
+        "Makes a comparison or evaluation rather than retelling both sources.",
+        "Keeps the claim within the evidence actually provided."
+      ],
+      "modelResponse": "Source B is more convincing because it connects its redevelopment recommendation to specific site constraints and a staged plan rather than only listing expected benefits. That evidence gives the reader a way to judge whether the proposal can work on this block, while the broader projections in Source A depend more heavily on assumptions that have not yet been demonstrated.",
+      "revisionPrompts": [
+        "If I removed the phrase 'this matters because,' would my reasoning still be visible?",
+        "Am I evaluating the evidence, or only telling the reader what each source says?"
+      ]
+    }
+  ]
+}

@@ -23,7 +23,7 @@ const learnerJs = [
 ];
 const learnerCss = ['site.css'];
 const generatedData = [
-  'index.json', 'curriculum.json', 'er-prompts.json', 'mock-blueprint.json', 'question-families.js'
+  'index.json', 'curriculum.json', 'er-prompts.json', 'er-production-tasks.json', 'mock-blueprint.json', 'question-families.js'
 ];
 
 async function copyFile(rel) {

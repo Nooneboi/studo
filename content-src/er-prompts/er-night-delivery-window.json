@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-night-delivery-window",
+  "title": "Should Downtown Stores Adopt a Shared Evening Delivery Window?",
+  "topic": "urban freight policy",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER prompt editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Continue the Evening Window With Limits",
+    "text": "The downtown freight coordinator recommends a shared evening delivery window from 7:00 to 9:00 p.m. on four weekdays. Her office tested the schedule for six weeks on two commercial blocks where delivery vans frequently stopped in travel lanes during the morning rush. Eighteen stores and six carriers participated. Before the pilot, observers recorded an average of 31 minutes of double-parking per block between 8:00 and 10:00 a.m. During the pilot, that figure fell to 12 minutes. Average unloading time also dropped from 24 minutes to 18 because loading spaces were less likely to be occupied by customer vehicles.\n\nThe coordinator says the results support a permanent shared window, but she does not propose banning all daytime deliveries. Pharmacies, restaurants receiving perishable food, and businesses with documented staffing limits could request exemptions. The office also logged neighborhood complaints during the pilot. It received five noise complaints in the first two weeks and two in the final four weeks after carriers were told to avoid idling and rolling metal carts across residential sidewalks. Police reports showed no increase in theft or assault on the pilot blocks, although the coordinator notes that six weeks is too short to rule out a security problem.\n\nA cost review estimated that the city would spend about $48,000 a year on signs, curb markings, and two part-time enforcement shifts. Participating carriers reported no additional driver hours on average because routes were moved rather than extended. Four small stores said evening receiving required a manager to stay later, and two left the pilot for that reason. The coordinator therefore recommends a one-year program on the same two blocks, monthly complaint tracking, and a six-month review before expansion to other streets. She argues that the measured traffic benefit is large enough to continue, while the exemptions and review period keep the recommendation within the limits of the pilot.",
+    "attribution": "Original content by Chee Skool"
+  },
+  "sourceB": {
+    "title": "Keep Delivery Schedules Flexible",
+    "text": "The Downtown Merchants Association argues that the city should keep deliveries primarily in the morning and let each business negotiate its own schedule. The association surveyed 41 member stores after the pilot; 29 responded. Seventeen respondents said they preferred morning deliveries, seven preferred the evening window, and five had no preference. Several owners wrote that evening receiving could require a supervisor to stay after normal staffing hours. One clothing shop estimated that keeping a manager for two extra hours four nights a week would cost about $6,200 a year in wages and benefits.\n\nThe association also raises concerns about noise and security. It points to the five noise complaints filed during the first two weeks of the pilot and quotes two owners who said quieter morning streets make it easier to notice suspicious activity around loading doors. The report notes that police data showed no increase in reported theft during the six-week test, but it argues that a short pilot cannot establish long-term safety. It recommends improving morning curb enforcement instead, including higher fines for private cars that occupy loading spaces.\n\nThe association's report does not estimate how much stronger morning enforcement would reduce double-parking or how much additional enforcement would cost. It also does not separate survey responses from stores that completed the pilot and stores that left early. The report cites a delivery study from another city showing that some retailers paid higher labor costs for off-hour receiving, but that study involved large supermarkets rather than the small shops on these two blocks. The association concludes that flexible schedules are safer for small businesses because operating conditions vary widely. It asks the city to postpone any permanent evening window until merchants can compare the cost of added staffing with the value of the traffic improvement measured during the pilot.",
+    "attribution": "Original content by Chee Skool"
+  },
+  "strongerSource": "A",
+  "authoringKey": {
+    "reasons": [
+      "it uses before-and-after measurements from the actual pilot blocks to test the traffic and delivery outcomes at issue",
+      "it matches the limited pilot evidence with exemptions, monitoring, and a staged review rather than claiming the result applies everywhere"
+    ],
+    "evidence": [
+      "double-parking fell from 31 minutes to 12 minutes per block and unloading time fell from 24 to 18 minutes during the pilot",
+      "the proposal keeps exemptions, tracks complaints monthly, and reviews the same two-block program before any expansion"
+    ],
+    "weakerSourceLimitation": "Source B provides a useful staffing-cost example and fair concerns, but its preferred morning-enforcement alternative has no local effect estimate or cost comparison."
+  },
+  "modelResponse": "Source A presents the better-supported argument because it connects its recommendation to local measurements and limits the proposal where the evidence is uncertain. Source B raises legitimate concerns about staffing, noise, and security, but several of those concerns are supported mainly by preferences or examples that do not test the same outcomes as directly.\n\nSource A's strongest advantage is its use of before-and-after data from the actual downtown blocks. The coordinator reports that average double-parking fell from 31 minutes per block to 12 minutes during the morning period and that unloading time also decreased. Those results matter because the proposed evening window is meant to reduce curb conflicts and delivery delays. The source does not simply assume that off-hour delivery will work; it measures whether the pilot changed the problem the policy targets. Source B's survey shows that many merchants prefer morning delivery, but preference does not establish whether the morning system manages traffic more effectively.\n\nSource A is also stronger because the recommendation matches the limits of the pilot. It acknowledges early noise complaints, the possibility of security concerns, and the staffing burden reported by some small stores. Instead of treating the six-week test as final proof, it proposes exemptions, a one-year continuation on the same blocks, monthly complaint tracking, and a six-month review before expansion. That reasoning makes the claim more credible because the policy can be tested further without assuming that every street or business will respond the same way.\n\nSource B contributes a real labor-cost example and correctly notes that the pilot was short. However, its preferred alternative—stronger morning enforcement—is not supported with an estimate of likely traffic effects or cost. Overall, Source A gives the reader more direct evidence for the central outcomes and a more bounded plan for dealing with uncertainty, so its argument is better supported.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response names Source A and previews two evidence-based reasons."
+    },
+    {
+      "label": "Direct evidence",
+      "note": "The analysis uses local before-and-after pilot measurements rather than merchant preference as proof of traffic effects."
+    },
+    {
+      "label": "Scope",
+      "note": "The response explains why exemptions and a staged review make the recommendation match the limits of a short pilot."
+    },
+    {
+      "label": "Fair comparison",
+      "note": "Source B's labor-cost and pilot-length concerns are acknowledged before its evidentiary gap is identified."
+    },
+    {
+      "label": "Reasoning",
+      "note": "The response distinguishes a preference survey from evidence that tests the policy's central traffic outcome."
+    }
+  ],
+  "revisionPrompts": [
+    "Did I use the before-and-after pilot numbers accurately?",
+    "Did I explain why merchant preference is different from evidence about traffic performance?",
+    "Did I treat the staffing and security concerns fairly rather than dismissing them?",
+    "Did I preserve Source A's limits instead of claiming the pilot proves expansion will work everywhere?"
+  ]
+}

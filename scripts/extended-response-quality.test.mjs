@@ -70,10 +70,10 @@ test('validator accepts the dedicated extended_response_practice content kind', 
   } finally { await fs.rm(fixture,{force:true}); }
 });
 
-test('ER prompt bank contains 8 original paired-source prompts with balanced stronger-source answers and exemplars', async () => {
+test('ER prompt bank contains 10 original paired-source prompts with balanced stronger-source answers and exemplars', async () => {
   const dir = path.join(ROOT, 'content-src', 'er-prompts');
   const files = (await fs.readdir(dir)).filter((name) => /^er-.*\.json$/.test(name));
-  assert.equal(files.length, 8, `expected 8 ER prompts, found ${files.length}`);
+  assert.equal(files.length, 10, `expected 10 ER prompts, found ${files.length}`);
   const stronger = { A:0, B:0 };
   const topics = new Set();
   for (const file of files) {
@@ -91,16 +91,32 @@ test('ER prompt bank contains 8 original paired-source prompts with balanced str
     assert.ok(Array.isArray(p.annotations) && p.annotations.length >= 4, `${file} annotations`);
     assert.ok(Array.isArray(p.revisionPrompts) && p.revisionPrompts.length >= 3, `${file} revision prompts`);
   }
-  assert.deepEqual(stronger, {A:4,B:4});
-  assert.ok(topics.size >= 8, `expected topic diversity, got ${topics.size}`);
+  assert.deepEqual(stronger, {A:5,B:5});
+  assert.ok(topics.size >= 10, `expected topic diversity, got ${topics.size}`);
 });
 
-test('clean build emits eight learner ER prompts without authoring-key spoilers', async () => {
+
+
+test('two Phase 3E ER prompts provide denser 550-650 word paired-source practice with opposite stronger-source positions', async () => {
+  const ids = ['er-night-delivery-window','er-vacant-lot-housing'];
+  const prompts = [];
+  for (const id of ids) prompts.push(await json(path.join(ROOT, 'content-src', 'er-prompts', `${id}.json`)));
+  for (const p of prompts) {
+    const words = `${p.sourceA.text} ${p.sourceB.text}`.trim().split(/\s+/).filter(Boolean).length;
+    assert.ok(words >= 550 && words <= 650, `${p.id} combined source words: ${words}`);
+    assert.ok((p.modelResponse || '').trim().split(/\s+/).length >= 250, `${p.id} model response too short`);
+    assert.ok(p.annotations.length >= 4);
+    assert.ok(p.revisionPrompts.length >= 4);
+  }
+  assert.notEqual(prompts[0].strongerSource, prompts[1].strongerSource);
+});
+
+test('clean build emits ten learner ER prompts without authoring-key spoilers', async () => {
   const { execFile } = await import('node:child_process');
   const { promisify } = await import('node:util');
   await promisify(execFile)('node', ['scripts/build-content.mjs'], { cwd: ROOT });
   const prompts = await json(path.join(GENERATED, 'er-prompts.json'));
-  assert.equal(prompts.prompts?.length, 8);
+  assert.equal(prompts.prompts?.length, 10);
   for (const p of prompts.prompts || []) {
     assert.equal('authoringKey' in p, false, `${p.id} leaked authoringKey`);
     assert.equal('strongerSource' in p, false, `${p.id} leaked strongerSource`);
@@ -152,7 +168,7 @@ test('ER build exposes full prompt cards in curriculum without learner answer-ke
   const { promisify } = await import('node:util');
   await promisify(execFile)('node', ['scripts/build-content.mjs'], { cwd: ROOT });
   const curriculum = await json(path.join(GENERATED, 'curriculum.json'));
-  assert.equal(curriculum.extendedResponsePractice?.length, 8, 'expected 8 full ER prompt cards');
+  assert.equal(curriculum.extendedResponsePractice?.length, 10, 'expected 10 full ER prompt cards');
   for (const item of curriculum.extendedResponsePractice || []) {
     assert.ok(item.id && item.title && item.topic, 'prompt card is missing learner metadata');
     assert.equal('strongerSource' in item, false, `${item.id} leaked strongerSource`);

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "er-vacant-lot-housing",
+  "title": "Should the City Lease North Yard for Modular Housing?",
+  "topic": "public land and housing",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER prompt editorial review",
+  "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+  "sourceA": {
+    "title": "Use North Yard for Housing Now",
+    "text": "The Housing Access Coalition asks the city to lease the vacant North Yard parcel for a modular housing project as soon as possible. The coalition notes that 1,840 households are currently on the city's supportive-housing waiting list and that the parcel is within a ten-minute walk of two bus routes, a grocery store, and a community clinic. It proposes placing about 80 small modular units on the site for five years while permanent affordable housing is developed elsewhere.\n\nThe coalition points to a project in another city where 96 modular units opened within nine months after approval. It argues that factory-built units can be installed faster than conventional apartments and estimates that the North Yard project could accept residents within one year. A nonprofit developer has provided a preliminary estimate of $14 million for units, site work, and three years of operating support, but the estimate assumes that existing water, sewer, and electrical connections are adequate. The coalition has not completed a utility-capacity study or a soil investigation for the parcel.\n\nCoalition members also argue that leaving public land unused has a cost. The parcel has been vacant for seven years, and the city spends about $38,000 annually on fencing, weed control, and security. The proposal would require the housing operator to maintain the property during the lease. The coalition acknowledges that the transportation department has previously discussed using North Yard for future fleet facilities, but it says no construction money has been approved for that idea. It recommends signing a five-year lease now with a clause allowing the city to reclaim the land at the end of the term. The coalition argues that an urgent housing need should outweigh an unfunded long-term possibility.",
+    "attribution": "Original content by Chee Skool"
+  },
+  "sourceB": {
+    "title": "Reserve North Yard and Use the Alternate Parcel",
+    "text": "The city transportation director recommends keeping North Yard available for a replacement bus-maintenance facility and locating temporary modular housing on a different public parcel. Her department's current five-year capital plan identifies North Yard as the preferred site because the existing maintenance depot sits partly in a flood-prone area and cannot fit the larger electric buses the agency has begun ordering. A site study completed last year found that North Yard already has the heavy electrical service, industrial road access, and turning radius needed for a depot. Engineers estimated that preparing another industrial parcel for the same use would add about $9 million in utility and access work.\n\nThe director does not argue that temporary housing should be rejected. She identifies a city-owned parcel 1.2 kilometers away that is also near bus service and a clinic. A utility review for that site found sufficient water and sewer capacity for approximately 60 modular units, and a preliminary environmental screen found no contamination requiring cleanup. The alternative parcel is smaller, so it would house fewer residents than the coalition's North Yard concept. It would also require about $1.6 million in new electrical and sidewalk work.\n\nThe transportation department estimates that converting North Yard to housing for five years could delay the replacement depot because the agency expects to seek construction funding within two budget cycles. The housing lease would also require removing utility connections and foundations before depot work could begin; planners estimate that removal at $1.2 million, although the amount could change after a detailed housing design exists. The director proposes reserving North Yard, beginning design work for the depot, and negotiating with housing providers on the alternative parcel. She acknowledges that this plan produces fewer housing units, but argues that it addresses the housing need without giving up a site whose transportation value has already been tested through engineering work.",
+    "attribution": "Original content by Chee Skool"
+  },
+  "strongerSource": "B",
+  "authoringKey": {
+    "reasons": [
+      "it uses site-specific engineering and capital-planning evidence to explain why North Yard is unusually valuable for the replacement depot",
+      "it compares the housing proposal with a concrete alternative parcel whose utility capacity and environmental conditions have already been reviewed"
+    ],
+    "evidence": [
+      "North Yard already has heavy electrical service, industrial access, and the turning radius needed for the planned depot, while preparing another industrial site is estimated to add about $9 million",
+      "the alternative housing parcel has sufficient water/sewer capacity for about 60 units and a preliminary environmental screen, with $1.6 million in known additional work"
+    ],
+    "weakerSourceLimitation": "Source A demonstrates urgent housing need, but its North Yard cost/timeline assumes adequate utilities and lacks a site-specific utility or soil study."
+  },
+  "modelResponse": "Source B is better supported because it relies on site-specific evidence for the public land decision and offers an alternative that addresses the housing need instead of treating the issue as a simple choice between housing and an empty lot. Source A establishes that the housing need is urgent, but several parts of its North Yard proposal depend on assumptions that have not yet been tested at that site.\n\nThe strongest evidence in Source B concerns why North Yard matters for transportation. The department's capital plan identifies the parcel as the preferred replacement-depot site, and a site study found that it already has heavy electrical service, industrial access, and the turning radius needed for larger electric buses. Engineers also estimate that preparing another industrial parcel would add about $9 million. Those details directly support the claim that North Yard has a specific operational value that would be difficult or expensive to replace. Source A notes that depot construction money has not yet been approved, but that fact does not address the engineering evidence showing why the site was selected.\n\nSource B also makes its argument stronger by comparing North Yard with a concrete housing alternative. The second parcel has documented water and sewer capacity for about 60 units and has already received a preliminary environmental screen. The alternative is not cost-free—it would require about $1.6 million in electrical and sidewalk work and would house fewer residents—but the source includes those limitations rather than hiding them. This allows the reader to compare two real options.\n\nSource A contributes important evidence about the housing waitlist and the accessibility of North Yard. However, its $14 million estimate assumes that utilities are adequate, and the proposal has not completed a utility-capacity or soil study. The example from another city shows that modular housing can open quickly, but it does not prove that North Yard is ready on the same schedule. Overall, Source B provides stronger site-specific evidence and a more complete comparison of trade-offs, so its recommendation is better supported.",
+  "annotations": [
+    {
+      "label": "Thesis",
+      "note": "The response identifies Source B and previews site-specific evidence plus alternative-site comparison."
+    },
+    {
+      "label": "Evidence fit",
+      "note": "Engineering evidence is tied directly to the claim that North Yard has unusual transportation value."
+    },
+    {
+      "label": "Comparison",
+      "note": "The alternative housing site is evaluated with both benefits and costs rather than presented as a perfect solution."
+    },
+    {
+      "label": "Limitation",
+      "note": "The response distinguishes urgent housing-need evidence from evidence that the North Yard site itself is ready for the proposed project."
+    },
+    {
+      "label": "Fairness",
+      "note": "Source A's waitlist and access evidence are acknowledged before its site-specific gaps are analyzed."
+    }
+  ],
+  "revisionPrompts": [
+    "Did I distinguish evidence about housing need from evidence about North Yard's site readiness?",
+    "Did I use the engineering and cost comparisons accurately?",
+    "Did I acknowledge the alternative parcel's smaller capacity and added costs?",
+    "Did I explain why the other-city modular example is less direct than local site evidence?"
+  ]
+}

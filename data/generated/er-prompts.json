@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-08-25T05:58:42.659Z",
+  "builtAt": "2026-08-25T06:47:26.573Z",
   "prompts": [
     {
       "schemaVersion": 1,
@@ -204,6 +204,56 @@
     },
     {
       "schemaVersion": 1,
+      "id": "er-night-delivery-window",
+      "title": "Should Downtown Stores Adopt a Shared Evening Delivery Window?",
+      "topic": "urban freight policy",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER prompt editorial review",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceA": {
+        "title": "Continue the Evening Window With Limits",
+        "text": "The downtown freight coordinator recommends a shared evening delivery window from 7:00 to 9:00 p.m. on four weekdays. Her office tested the schedule for six weeks on two commercial blocks where delivery vans frequently stopped in travel lanes during the morning rush. Eighteen stores and six carriers participated. Before the pilot, observers recorded an average of 31 minutes of double-parking per block between 8:00 and 10:00 a.m. During the pilot, that figure fell to 12 minutes. Average unloading time also dropped from 24 minutes to 18 because loading spaces were less likely to be occupied by customer vehicles.\n\nThe coordinator says the results support a permanent shared window, but she does not propose banning all daytime deliveries. Pharmacies, restaurants receiving perishable food, and businesses with documented staffing limits could request exemptions. The office also logged neighborhood complaints during the pilot. It received five noise complaints in the first two weeks and two in the final four weeks after carriers were told to avoid idling and rolling metal carts across residential sidewalks. Police reports showed no increase in theft or assault on the pilot blocks, although the coordinator notes that six weeks is too short to rule out a security problem.\n\nA cost review estimated that the city would spend about $48,000 a year on signs, curb markings, and two part-time enforcement shifts. Participating carriers reported no additional driver hours on average because routes were moved rather than extended. Four small stores said evening receiving required a manager to stay later, and two left the pilot for that reason. The coordinator therefore recommends a one-year program on the same two blocks, monthly complaint tracking, and a six-month review before expansion to other streets. She argues that the measured traffic benefit is large enough to continue, while the exemptions and review period keep the recommendation within the limits of the pilot.",
+        "attribution": "Original content by Chee Skool"
+      },
+      "sourceB": {
+        "title": "Keep Delivery Schedules Flexible",
+        "text": "The Downtown Merchants Association argues that the city should keep deliveries primarily in the morning and let each business negotiate its own schedule. The association surveyed 41 member stores after the pilot; 29 responded. Seventeen respondents said they preferred morning deliveries, seven preferred the evening window, and five had no preference. Several owners wrote that evening receiving could require a supervisor to stay after normal staffing hours. One clothing shop estimated that keeping a manager for two extra hours four nights a week would cost about $6,200 a year in wages and benefits.\n\nThe association also raises concerns about noise and security. It points to the five noise complaints filed during the first two weeks of the pilot and quotes two owners who said quieter morning streets make it easier to notice suspicious activity around loading doors. The report notes that police data showed no increase in reported theft during the six-week test, but it argues that a short pilot cannot establish long-term safety. It recommends improving morning curb enforcement instead, including higher fines for private cars that occupy loading spaces.\n\nThe association's report does not estimate how much stronger morning enforcement would reduce double-parking or how much additional enforcement would cost. It also does not separate survey responses from stores that completed the pilot and stores that left early. The report cites a delivery study from another city showing that some retailers paid higher labor costs for off-hour receiving, but that study involved large supermarkets rather than the small shops on these two blocks. The association concludes that flexible schedules are safer for small businesses because operating conditions vary widely. It asks the city to postpone any permanent evening window until merchants can compare the cost of added staffing with the value of the traffic improvement measured during the pilot.",
+        "attribution": "Original content by Chee Skool"
+      },
+      "modelResponse": "Source A presents the better-supported argument because it connects its recommendation to local measurements and limits the proposal where the evidence is uncertain. Source B raises legitimate concerns about staffing, noise, and security, but several of those concerns are supported mainly by preferences or examples that do not test the same outcomes as directly.\n\nSource A's strongest advantage is its use of before-and-after data from the actual downtown blocks. The coordinator reports that average double-parking fell from 31 minutes per block to 12 minutes during the morning period and that unloading time also decreased. Those results matter because the proposed evening window is meant to reduce curb conflicts and delivery delays. The source does not simply assume that off-hour delivery will work; it measures whether the pilot changed the problem the policy targets. Source B's survey shows that many merchants prefer morning delivery, but preference does not establish whether the morning system manages traffic more effectively.\n\nSource A is also stronger because the recommendation matches the limits of the pilot. It acknowledges early noise complaints, the possibility of security concerns, and the staffing burden reported by some small stores. Instead of treating the six-week test as final proof, it proposes exemptions, a one-year continuation on the same blocks, monthly complaint tracking, and a six-month review before expansion. That reasoning makes the claim more credible because the policy can be tested further without assuming that every street or business will respond the same way.\n\nSource B contributes a real labor-cost example and correctly notes that the pilot was short. However, its preferred alternative—stronger morning enforcement—is not supported with an estimate of likely traffic effects or cost. Overall, Source A gives the reader more direct evidence for the central outcomes and a more bounded plan for dealing with uncertainty, so its argument is better supported.",
+      "annotations": [
+        {
+          "label": "Thesis",
+          "note": "The response names Source A and previews two evidence-based reasons."
+        },
+        {
+          "label": "Direct evidence",
+          "note": "The analysis uses local before-and-after pilot measurements rather than merchant preference as proof of traffic effects."
+        },
+        {
+          "label": "Scope",
+          "note": "The response explains why exemptions and a staged review make the recommendation match the limits of a short pilot."
+        },
+        {
+          "label": "Fair comparison",
+          "note": "Source B's labor-cost and pilot-length concerns are acknowledged before its evidentiary gap is identified."
+        },
+        {
+          "label": "Reasoning",
+          "note": "The response distinguishes a preference survey from evidence that tests the policy's central traffic outcome."
+        }
+      ],
+      "revisionPrompts": [
+        "Did I use the before-and-after pilot numbers accurately?",
+        "Did I explain why merchant preference is different from evidence about traffic performance?",
+        "Did I treat the staffing and security concerns fairly rather than dismissing them?",
+        "Did I preserve Source A's limits instead of claiming the pilot proves expansion will work everywhere?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
       "id": "er-phone-policy",
       "title": "Should the High School Adopt a Full-Day Phone Ban?",
       "topic": "school policy",
@@ -350,6 +400,56 @@
         "Where did I explain why a piece of evidence matters instead of only summarizing it?",
         "Did I evaluate both sources fairly and identify a specific weakness in the weaker argument?",
         "Did I preserve qualifiers such as may, could, some, or limited when the source used them?"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "er-vacant-lot-housing",
+      "title": "Should the City Lease North Yard for Modular Housing?",
+      "topic": "public land and housing",
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 3 ER prompt editorial review",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceA": {
+        "title": "Use North Yard for Housing Now",
+        "text": "The Housing Access Coalition asks the city to lease the vacant North Yard parcel for a modular housing project as soon as possible. The coalition notes that 1,840 households are currently on the city's supportive-housing waiting list and that the parcel is within a ten-minute walk of two bus routes, a grocery store, and a community clinic. It proposes placing about 80 small modular units on the site for five years while permanent affordable housing is developed elsewhere.\n\nThe coalition points to a project in another city where 96 modular units opened within nine months after approval. It argues that factory-built units can be installed faster than conventional apartments and estimates that the North Yard project could accept residents within one year. A nonprofit developer has provided a preliminary estimate of $14 million for units, site work, and three years of operating support, but the estimate assumes that existing water, sewer, and electrical connections are adequate. The coalition has not completed a utility-capacity study or a soil investigation for the parcel.\n\nCoalition members also argue that leaving public land unused has a cost. The parcel has been vacant for seven years, and the city spends about $38,000 annually on fencing, weed control, and security. The proposal would require the housing operator to maintain the property during the lease. The coalition acknowledges that the transportation department has previously discussed using North Yard for future fleet facilities, but it says no construction money has been approved for that idea. It recommends signing a five-year lease now with a clause allowing the city to reclaim the land at the end of the term. The coalition argues that an urgent housing need should outweigh an unfunded long-term possibility.",
+        "attribution": "Original content by Chee Skool"
+      },
+      "sourceB": {
+        "title": "Reserve North Yard and Use the Alternate Parcel",
+        "text": "The city transportation director recommends keeping North Yard available for a replacement bus-maintenance facility and locating temporary modular housing on a different public parcel. Her department's current five-year capital plan identifies North Yard as the preferred site because the existing maintenance depot sits partly in a flood-prone area and cannot fit the larger electric buses the agency has begun ordering. A site study completed last year found that North Yard already has the heavy electrical service, industrial road access, and turning radius needed for a depot. Engineers estimated that preparing another industrial parcel for the same use would add about $9 million in utility and access work.\n\nThe director does not argue that temporary housing should be rejected. She identifies a city-owned parcel 1.2 kilometers away that is also near bus service and a clinic. A utility review for that site found sufficient water and sewer capacity for approximately 60 modular units, and a preliminary environmental screen found no contamination requiring cleanup. The alternative parcel is smaller, so it would house fewer residents than the coalition's North Yard concept. It would also require about $1.6 million in new electrical and sidewalk work.\n\nThe transportation department estimates that converting North Yard to housing for five years could delay the replacement depot because the agency expects to seek construction funding within two budget cycles. The housing lease would also require removing utility connections and foundations before depot work could begin; planners estimate that removal at $1.2 million, although the amount could change after a detailed housing design exists. The director proposes reserving North Yard, beginning design work for the depot, and negotiating with housing providers on the alternative parcel. She acknowledges that this plan produces fewer housing units, but argues that it addresses the housing need without giving up a site whose transportation value has already been tested through engineering work.",
+        "attribution": "Original content by Chee Skool"
+      },
+      "modelResponse": "Source B is better supported because it relies on site-specific evidence for the public land decision and offers an alternative that addresses the housing need instead of treating the issue as a simple choice between housing and an empty lot. Source A establishes that the housing need is urgent, but several parts of its North Yard proposal depend on assumptions that have not yet been tested at that site.\n\nThe strongest evidence in Source B concerns why North Yard matters for transportation. The department's capital plan identifies the parcel as the preferred replacement-depot site, and a site study found that it already has heavy electrical service, industrial access, and the turning radius needed for larger electric buses. Engineers also estimate that preparing another industrial parcel would add about $9 million. Those details directly support the claim that North Yard has a specific operational value that would be difficult or expensive to replace. Source A notes that depot construction money has not yet been approved, but that fact does not address the engineering evidence showing why the site was selected.\n\nSource B also makes its argument stronger by comparing North Yard with a concrete housing alternative. The second parcel has documented water and sewer capacity for about 60 units and has already received a preliminary environmental screen. The alternative is not cost-free—it would require about $1.6 million in electrical and sidewalk work and would house fewer residents—but the source includes those limitations rather than hiding them. This allows the reader to compare two real options.\n\nSource A contributes important evidence about the housing waitlist and the accessibility of North Yard. However, its $14 million estimate assumes that utilities are adequate, and the proposal has not completed a utility-capacity or soil study. The example from another city shows that modular housing can open quickly, but it does not prove that North Yard is ready on the same schedule. Overall, Source B provides stronger site-specific evidence and a more complete comparison of trade-offs, so its recommendation is better supported.",
+      "annotations": [
+        {
+          "label": "Thesis",
+          "note": "The response identifies Source B and previews site-specific evidence plus alternative-site comparison."
+        },
+        {
+          "label": "Evidence fit",
+          "note": "Engineering evidence is tied directly to the claim that North Yard has unusual transportation value."
+        },
+        {
+          "label": "Comparison",
+          "note": "The alternative housing site is evaluated with both benefits and costs rather than presented as a perfect solution."
+        },
+        {
+          "label": "Limitation",
+          "note": "The response distinguishes urgent housing-need evidence from evidence that the North Yard site itself is ready for the proposed project."
+        },
+        {
+          "label": "Fairness",
+          "note": "Source A's waitlist and access evidence are acknowledged before its site-specific gaps are analyzed."
+        }
+      ],
+      "revisionPrompts": [
+        "Did I distinguish evidence about housing need from evidence about North Yard's site readiness?",
+        "Did I use the engineering and cost comparisons accurately?",
+        "Did I acknowledge the alternative parcel's smaller capacity and added costs?",
+        "Did I explain why the other-city modular example is less direct than local site evidence?"
       ]
     },
     {

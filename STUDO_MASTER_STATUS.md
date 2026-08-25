@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.23`  
-**Current stage:** Phase 3C Credibility & Counterarguments depth complete — three Arguments reference paths are now in place; whole-track Arguments review is next before Language depth  
+**Current release:** `0.7.0-alpha.26`  
+**Current stage:** Phase 3 complete — Reading/Arguments depth, Language difficulty calibration, and Extended Response production/source-depth are sufficient; next is Phase 4A Skill Check runtime/UI/evidence
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -31,6 +31,22 @@ The modes do not need identical content or interactions. Each mode has a distinc
 - Do not copy copyrighted prep-book passages/questions into the learner bank.
 - Do not expose unfinished or duplicate material just to make the product look larger.
 - Do not hand-edit `data/generated/` as canonical content; edit `content-src/`, validate, and rebuild.
+
+## Phase 3 closeout — Alpha 26
+
+- Phase 3 is closed after a whole-system learner/content/role review. No blocking Phase 3 gap remains.
+- Reading and Arguments are intentionally frozen for now unless later Skill Check, Mock, or learner evidence exposes a specific need.
+- Language priority calibration now covers Sentence Boundaries & Punctuation, Agreement & Pronouns, and Parallelism & Sentence Connections with real higher-reasoning items; the remaining Language units were audited and left unchanged where appropriate.
+- Extended Response now progresses from component recognition to a six-task Production Lab to 10 full paired-source prompts, including two denser source pairs.
+- Fresh Progress now sends a brand-new learner directly to **Start Practice**, matching the fresh-Train rule.
+- Next stage is **Phase 4A — Skill Check runtime/UI/evidence**, not more Phase 3 content expansion.
+
+## Phase 3D–3E closeout checkpoint (Alpha 25)
+
+- Language priority calibration is complete for Sentence Boundaries & Punctuation, Agreement & Pronouns, and Parallelism & Sentence Connections; other Language units were audited and deliberately left unchanged where no real learner gap justified edits.
+- Extended Response now includes a six-task **Production Lab** for thesis, evidence selection, evidence analysis, summary-to-analysis, body development, and revision/focus work. Production tasks are untimed, revision-oriented, and do not receive fake automated GED scores or objective mastery history.
+- The full ER prompt bank now contains **10** original paired-source prompts, including two denser 550–650-word source pairs for longer evidence comparison practice.
+- The generated learner bank remains **103 modules / 753 objective questions / 152 PDFs**; ER Production Lab tasks and full ER prompts are separate writing experiences rather than objective modules.
 
 ## Current content baseline
 
@@ -406,6 +422,18 @@ Language priority:
 
 - continue real easy → medium → hard calibration in high-value units, starting with Agreement & Pronouns;
 - preserve the current embedded editing format and 350–450-word mixed editing passage range.
+
+#### Phase 3D — Language priority calibration complete in Alpha 24
+
+The Phase 3D batch calibrated the two remaining high-value focused Language units without adding modules or PDFs.
+
+- **Agreement & Pronouns** now uses a genuine 2 Easy / 4 Medium / 2 Hard progression. The final items require the learner to hold subject-verb agreement and pronoun reference/number constraints at the same time rather than solving one isolated rule.
+- **Parallelism & Sentence Connections** now uses a genuine 2 Easy / 4 Medium / 2 Hard progression. The final items require both parallel form and the intended contrast/cause relationship to survive the revision.
+- Word Choice & Standard Usage, Modifiers & Sentence Logic, Concision & Transitions, and Capitalization & Possessives were audited and left unchanged because their current focused drills plus mixed editing transfer already perform a distinct learner job; forcing an identical difficulty distribution would be artificial.
+- The six 350–450-word mixed editing passages remain unchanged.
+- No new Language guide, workbook, module, PDF, flashcard, Skill Check, Mock item, or interaction engine was added.
+
+Phase 3D is sufficient for Phase 3. Next checkpoint: **Phase 3E — Extended Response production depth**.
 
 Extended Response priority:
 

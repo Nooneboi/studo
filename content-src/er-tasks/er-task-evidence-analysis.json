@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "er-task-evidence-analysis",
+  "title": "Turn Evidence Into Analysis",
+  "promptId": "er-inspection-automation",
+  "skillIds": ["W1.6", "W1.7"],
+  "taskType": "evidence_analysis",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER production editorial review",
+  "instruction": "Choose one important fact from a source and write two to three sentences explaining why that fact makes the source's argument stronger or weaker. The explanation must connect the evidence to the recommendation.",
+  "sourceFocus": "Focus on evidence about inspection accuracy, production effects, or the limits of the pilot rather than repeating the source's conclusion.",
+  "successCriteria": [
+    "Identifies a specific piece of source evidence.",
+    "Explains what claim or recommendation the evidence affects.",
+    "States why the evidence strengthens or limits that claim.",
+    "Moves beyond summary by making the reasoning connection explicit."
+  ],
+  "modelResponse": "Source A reports that the automated system found a higher share of the defects that inspectors later confirmed during the pilot. This matters because the proposal is specifically about expanding inspection automation, so measured detection performance directly tests whether the system can do the job being claimed. The pilot still does not show that every product line will perform the same way, which limits how broadly the result should be applied.",
+  "revisionPrompts": [
+    "After my evidence sentence, did I explain why the fact matters to the argument?",
+    "Did I identify a limit if the evidence does not support the full scope of the recommendation?"
+  ],
+  "authoringNotes": "The model uses evidence -> claim connection -> scope limitation."
+}

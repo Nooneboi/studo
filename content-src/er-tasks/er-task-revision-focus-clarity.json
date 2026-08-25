@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "er-task-revision-focus-clarity",
+  "title": "Revise for Focus and Clarity",
+  "promptId": "er-weekend-bus",
+  "skillIds": ["W1.10", "W1.11"],
+  "taskType": "revision_focus_clarity",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER production editorial review",
+  "instruction": "Rewrite the weak paragraph below so its main point is clear, the evidence is precise, and the analysis stays connected to the claim: 'Source A has numbers and Source B also talks about riders. The bus was useful and people used it. This proves Source A is right because it has more facts and the pilot should continue.'",
+  "sourceFocus": "Use the actual weekend-bus sources. Remove vague wording and any claim that the sources do not prove.",
+  "successCriteria": [
+    "States one clear evaluative point instead of several loose claims.",
+    "Replaces vague references such as 'numbers' or 'people used it' with exact evidence.",
+    "Explains why the evidence supports the evaluation.",
+    "Removes overclaiming such as 'proves' when the source has limits.",
+    "Uses clear sentence structure and standard conventions."
+  ],
+  "modelResponse": "Source A is better supported because it uses the pilot's ridership and service data to test whether weekend demand was consistent enough to justify expansion. Those measured results directly address how the service performed, while Source B relies more heavily on concerns that are not matched with the same level of local outcome evidence. The data support continued consideration of the pilot, but they do not prove that every route would produce the same results.",
+  "revisionPrompts": [
+    "Did I replace every vague noun such as 'things,' 'facts,' or 'numbers' with a precise reference?",
+    "Did I remove any sentence that merely repeats my judgment without adding evidence or analysis?"
+  ],
+  "authoringNotes": "Revision task intentionally begins with an overclaiming, vague paragraph."
+}

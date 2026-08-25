@@ -91,3 +91,11 @@ test('Home explains the three learner modes directly', () => {
 test('public build ships the shared curriculum routing helper', () => {
   assert.match(read('scripts/build-public.mjs'), /curriculum-routes\.js/);
 });
+
+test('Progress sends a brand-new learner directly to Practice instead of Train', () => {
+  const js = read('js/progress.js');
+  const emptyState = js.match(/if \(!summary\.attempts[\s\S]*?return;\n\s*}/)?.[0] || '';
+  assert.match(emptyState, /href=["']practice\.html["']/);
+  assert.match(emptyState, /Start Practice/i);
+  assert.doesNotMatch(emptyState, /href=["']train\.html["']|Start Train Me/i);
+});

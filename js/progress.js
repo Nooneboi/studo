@@ -31,8 +31,7 @@ function renderProgress() {
           <h1>Start with a few questions.</h1>
           <p>Your skills and review list will appear here.</p>
           <div class="progress-empty-actions">
-            <a class="btn" href="train.html">Start Train Me</a>
-            <a class="btn secondary" href="practice.html">Open Practice</a>
+            <a class="btn" href="practice.html">Start Practice</a>
           </div>
           ${dataBackupHtml()}
         </section>

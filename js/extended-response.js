@@ -3,11 +3,14 @@ const ER_SECONDS = 2700;
 const HISTORY_KEY = "sq:er:history";
 const params = new URLSearchParams(location.search);
 const promptId = params.get("prompt") || "";
+const taskId = params.get("task") || "";
 const mode = params.get("mode") === "timed" ? "timed" : "untimed";
 const mockAttemptId = params.get("attempt") || "";
 const returnHref = safeReturn(params.get("return"));
 const STATE_KEY = mockAttemptId ? `sq:er:mock:${mockAttemptId}:${promptId}` : `sq:er:${promptId}:${mode}`;
 let prompt = null;
+let productionTask = null;
+let productionState = null;
 let state = null;
 let timerHandle = null;
 let activeSource = "A";
@@ -16,6 +19,10 @@ init();
 
 async function init() {
   document.getElementById("er-exit").href = returnHref;
+  if (taskId) {
+    await initProductionTask();
+    return;
+  }
   document.getElementById("er-mode-label").textContent = mode === "timed" ? "Timed practice" : "Untimed practice";
   try {
     const response = await fetch("data/generated/er-prompts.json", { cache: "no-store" });
@@ -34,6 +41,154 @@ async function init() {
     console.error(error);
     document.getElementById("er-app").innerHTML = `<section class="er-error"><h1>This writing prompt could not be loaded.</h1><p>Return to Extended Response practice and choose another prompt.</p><a class="btn" href="${escapeAttr(returnHref)}">Back to practice</a></section>`;
   }
+}
+
+
+async function initProductionTask() {
+  document.getElementById("er-mode-label").textContent = "Production Lab";
+  document.getElementById("er-timer").textContent = "Untimed";
+  try {
+    const [taskResponse, promptResponse] = await Promise.all([
+      fetch("data/generated/er-production-tasks.json", { cache: "no-store" }),
+      fetch("data/generated/er-prompts.json", { cache: "no-store" }),
+    ]);
+    if (!taskResponse.ok) throw new Error(`Production task bank returned ${taskResponse.status}`);
+    if (!promptResponse.ok) throw new Error(`Prompt bank returned ${promptResponse.status}`);
+    const taskData = await taskResponse.json();
+    const promptData = await promptResponse.json();
+    productionTask = (taskData.tasks || []).find((item) => item.id === taskId);
+    if (!productionTask) throw new Error("Production task not found");
+    prompt = (promptData.prompts || []).find((item) => item.id === productionTask.promptId);
+    if (!prompt) throw new Error("Referenced prompt not found");
+    productionState = loadProductionState();
+    renderProductionWorkspace();
+    wireProductionWorkspace();
+  } catch (error) {
+    console.error(error);
+    document.getElementById("er-app").innerHTML = `<section class="er-error"><h1>This Production Lab task could not be loaded.</h1><p>Return to Extended Response practice and choose another task.</p><a class="btn" href="${escapeAttr(returnHref)}">Back to practice</a></section>`;
+  }
+}
+
+function productionStorageKey() {
+  return `studo.er.production.${productionTask.id}`;
+}
+
+function loadProductionState() {
+  const base = { draft: "", submittedAt: null, revisionComplete: false };
+  const raw = window.StudoSafeStorage ? window.StudoSafeStorage.get(productionStorageKey()) : null;
+  if (!raw) return base;
+  try {
+    const saved = JSON.parse(raw);
+    return { ...base, ...saved };
+  } catch (_) {
+    return base;
+  }
+}
+
+function saveProductionState() {
+  if (window.StudoSafeStorage) window.StudoSafeStorage.set(productionStorageKey(), JSON.stringify(productionState));
+}
+
+function renderProductionWorkspace() {
+  const app = document.getElementById("er-app");
+  app.innerHTML = `
+    <div class="er-heading er-production-heading">
+      <div>
+        <div class="page-kicker">Production Lab</div>
+        <h1>${escapeHtml(productionTask.title)}</h1>
+        <p>${escapeHtml(productionTask.instruction)}</p>
+        ${productionTask.sourceFocus ? `<p class="er-production-focus"><strong>Focus:</strong> ${escapeHtml(productionTask.sourceFocus)}</p>` : ""}
+      </div>
+    </div>
+    <div class="er-workspace er-production-workspace">
+      <aside class="er-source-panel" aria-label="Source reading panel">
+        <div class="er-source-tabs" role="tablist" aria-label="Sources">
+          <button type="button" id="er-tab-a" class="er-source-tab active" role="tab" aria-selected="true">Source A</button>
+          <button type="button" id="er-tab-b" class="er-source-tab" role="tab" aria-selected="false">Source B</button>
+        </div>
+        <article id="er-source-copy" class="er-source-copy"></article>
+      </aside>
+      <section class="er-writing-panel">
+        <div class="er-editor-block er-production-editor">
+          <div class="er-section-head">
+            <div><span class="progress-mini-label">Focused writing</span><h2>Your response</h2></div>
+            <span id="er-production-word-count">0 words</span>
+          </div>
+          <textarea id="er-production-draft" class="er-essay er-production-draft" rows="12" spellcheck="true" aria-label="Production Lab response" placeholder="Write only the part this task asks you to practice..."></textarea>
+          <div class="er-editor-actions er-production-actions">
+            <span class="er-save-note" id="er-production-save-note">Saved on this device</span>
+            <button class="btn" id="er-production-submit" type="button">Submit for review</button>
+          </div>
+        </div>
+        <div id="er-production-review"></div>
+      </section>
+    </div>`;
+  activeSource = "A";
+  renderSource();
+  const draft = document.getElementById("er-production-draft");
+  draft.value = productionState.draft || "";
+  updateProductionWordCount();
+  if (productionState.submittedAt) renderProductionReview();
+}
+
+function wireProductionWorkspace() {
+  document.getElementById("er-tab-a").addEventListener("click", () => selectSource("A"));
+  document.getElementById("er-tab-b").addEventListener("click", () => selectSource("B"));
+  document.getElementById("er-production-draft").addEventListener("input", (event) => {
+    productionState.draft = event.target.value;
+    productionState.revisionComplete = false;
+    saveProductionState();
+    updateProductionWordCount();
+    const note = document.getElementById("er-production-save-note");
+    if (note) note.textContent = "Saved";
+  });
+  document.getElementById("er-production-submit").addEventListener("click", () => {
+    productionState.draft = document.getElementById("er-production-draft").value;
+    productionState.submittedAt = new Date().toISOString();
+    productionState.revisionComplete = false;
+    saveProductionState();
+    renderProductionReview();
+  });
+}
+
+function renderProductionReview() {
+  const mount = document.getElementById("er-production-review");
+  if (!mount || !productionState.submittedAt) return;
+  mount.innerHTML = `
+    <section class="er-review-panel er-production-review" aria-labelledby="er-production-review-title">
+      <div class="er-section-head"><div><span class="progress-mini-label">Review</span><h2 id="er-production-review-title">Check, compare, revise</h2></div><span>No score</span></div>
+      <div class="er-production-criteria">
+        <h3>Success criteria</h3>
+        <ul>${(productionTask.successCriteria || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </div>
+      <details class="er-model er-production-model" open>
+        <summary>Compare with one model</summary>
+        <div class="er-model-copy">${paragraphHtml(productionTask.modelResponse)}</div>
+      </details>
+      <div class="er-revision-box">
+        <h3>Revise</h3>
+        <ul>${(productionTask.revisionPrompts || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </div>
+      <div class="er-review-actions er-production-review-actions">
+        <button class="btn secondary" id="er-production-revise" type="button">Revise response</button>
+        <label class="er-revision-check"><input type="checkbox" id="er-production-complete" ${productionState.revisionComplete ? "checked" : ""}> I revised or checked this response.</label>
+      </div>
+    </section>`;
+  document.getElementById("er-production-revise").addEventListener("click", () => {
+    const draft = document.getElementById("er-production-draft");
+    draft.focus();
+  });
+  document.getElementById("er-production-complete").addEventListener("change", (event) => {
+    productionState.revisionComplete = event.target.checked;
+    saveProductionState();
+  });
+  mount.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function updateProductionWordCount() {
+  const words = String(document.getElementById("er-production-draft")?.value || "").trim().match(/\S+/g)?.length || 0;
+  const mount = document.getElementById("er-production-word-count");
+  if (mount) mount.textContent = `${words} ${words === 1 ? "word" : "words"}`;
 }
 
 function defaultState() {

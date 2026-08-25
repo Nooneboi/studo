@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "er-task-body-development",
+  "title": "Build One Strong Body Paragraph",
+  "promptId": "er-stormwater-fee",
+  "skillIds": ["W1.8", "W1.9"],
+  "taskType": "body_development",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER production editorial review",
+  "instruction": "Write one compact body paragraph using this structure: point, specific evidence, analysis, and comparison to the weaker source. Keep the paragraph focused on one reason the stronger argument is better supported.",
+  "sourceFocus": "Choose either evidence quality, cost reasoning, or how each source handles uncertainty; do not try to cover the whole essay in one paragraph.",
+  "successCriteria": [
+    "Begins with one clear evaluative point.",
+    "Uses specific evidence from the source that supports that point.",
+    "Explains why the evidence matters.",
+    "Compares the weaker source fairly without turning the paragraph into a summary list.",
+    "Ends without introducing an unrelated new reason."
+  ],
+  "modelResponse": "Source A is stronger because it ties the proposed fee to measured runoff costs instead of assuming that every property creates the same burden. The source explains how impervious surface area affects the amount of runoff entering the drainage system and connects that measure to the fee formula. This makes the reasoning easier to evaluate because the charge is linked to the problem the policy is meant to address. Source B raises a fair affordability concern, but it does not provide equally direct evidence that a flat funding method would match the costs more accurately.",
+  "revisionPrompts": [
+    "Does every sentence in my paragraph develop the same reason?",
+    "Did I explain the evidence before moving to the comparison?"
+  ],
+  "authoringNotes": "Point -> evidence -> analysis -> comparison structure; not intended as a full essay paragraph count template."
+}

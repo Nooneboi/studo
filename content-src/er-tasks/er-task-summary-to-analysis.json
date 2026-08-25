@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "er-task-summary-to-analysis",
+  "title": "Change Summary Into Analysis",
+  "promptId": "er-market-redevelopment",
+  "skillIds": ["W1.6"],
+  "taskType": "summary_to_analysis",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER production editorial review",
+  "instruction": "Revise this summary-only idea into two or three analytical sentences: one source gives a redevelopment proposal and several projected benefits. Explain what makes the source's support convincing or limited compared with the other source.",
+  "sourceFocus": "Use one concrete detail from the market-block sources and explain how it affects the strength of the argument.",
+  "successCriteria": [
+    "Includes at least one specific source detail instead of only describing the topic.",
+    "Explains why the detail affects the argument's strength.",
+    "Makes a comparison or evaluation rather than retelling both sources.",
+    "Keeps the claim within the evidence actually provided."
+  ],
+  "modelResponse": "Source B is more convincing because it connects its redevelopment recommendation to specific site constraints and a staged plan rather than only listing expected benefits. That evidence gives the reader a way to judge whether the proposal can work on this block, while the broader projections in Source A depend more heavily on assumptions that have not yet been demonstrated.",
+  "revisionPrompts": [
+    "If I removed the phrase 'this matters because,' would my reasoning still be visible?",
+    "Am I evaluating the evidence, or only telling the reader what each source says?"
+  ],
+  "authoringNotes": "The learner revises a deliberately vague summary frame into comparative analysis."
+}

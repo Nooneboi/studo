@@ -27,6 +27,9 @@ async function init() {
   const extendedResponsePractice = track.id === "extended-response"
     ? (curriculum.extendedResponsePractice || [])
     : [];
+  const extendedResponseProduction = track.id === "extended-response"
+    ? (curriculum.extendedResponseProduction || [])
+    : [];
   mount.innerHTML = `
     <header class="simple-domain-hero domain-hero-with-resources">
       <div class="domain-hero-copy">
@@ -60,6 +63,15 @@ async function init() {
           <h2 class="simple-skill-group-title">Mixed Editing Practice</h2>
           <div class="simple-skill-stack">
             ${languagePractice.map((set) => renderArgumentPractice(set, track, domain)).join("")}
+          </div>
+        </section>` : ""}
+      ${extendedResponseProduction.length ? `
+        <section class="simple-skill-group tone-teal er-prompt-group">
+          <div class="er-domain-practice-head">
+            <div><h2 class="simple-skill-group-title">Production Lab</h2><p>Practice one part of the response at a time.</p></div>
+          </div>
+          <div class="er-domain-prompt-stack">
+            ${extendedResponseProduction.map((task) => renderErProductionTask(task, track, domain)).join("")}
           </div>
         </section>` : ""}
       ${extendedResponsePractice.length ? `
@@ -118,6 +130,24 @@ function renderArgumentPractice(set, track, domain) {
       <span class="simple-skill-pill-title">${escapeHtml(set.title)}</span>
       <span class="simple-skill-pill-meta">${escapeHtml(meta)}</span>
     </a>`;
+}
+
+function renderErProductionTask(task, track, domain) {
+  const returnHref = `domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}`;
+  const href = `extended-response.html?task=${encodeURIComponent(task.id)}&return=${encodeURIComponent(returnHref)}`;
+  return `
+    <article class="er-domain-prompt-card er-domain-production-card">
+      <div class="er-domain-prompt-copy">
+        <span>Focused writing</span>
+        <h3>${escapeHtml(task.title)}</h3>
+        <p>Practice one response skill before a full essay.</p>
+      </div>
+      <div class="er-domain-prompt-actions-wrap">
+        <div class="er-domain-prompt-actions">
+          <a class="btn small" href="${href}">Practice</a>
+        </div>
+      </div>
+    </article>`;
 }
 
 function renderErPrompt(prompt, track, domain) {

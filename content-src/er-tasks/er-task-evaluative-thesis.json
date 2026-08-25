@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "er-task-evaluative-thesis",
+  "title": "Write an Evaluative Thesis",
+  "promptId": "er-solar-roofs",
+  "skillIds": ["W1.4"],
+  "taskType": "evaluative_thesis",
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 3 ER production editorial review",
+  "instruction": "Write one or two sentences that identify the better-supported source and give two bounded reasons for that judgment. Do not argue which policy you personally prefer.",
+  "sourceFocus": "Use both sources, but base the thesis on differences in evidence and reasoning rather than topic preference.",
+  "successCriteria": [
+    "Names the better-supported source clearly.",
+    "Gives two reasons that can be proved from the supplied sources.",
+    "Judges support and reasoning rather than personal agreement.",
+    "Avoids claims that are broader than the sources allow."
+  ],
+  "modelResponse": "Source B is better supported because it uses building-specific engineering and cost evidence, and because its staged recommendation matches the uncertainty in the available data. Source A raises a relevant goal, but its citywide conclusion depends on assumptions that have not yet been tested across the buildings.",
+  "revisionPrompts": [
+    "Can each reason in my thesis be supported with a specific detail from the sources?",
+    "Did I evaluate support rather than state which policy I personally like?"
+  ],
+  "authoringNotes": "Model deliberately uses a bounded two-reason thesis rather than a full introduction."
+}

@@ -302,6 +302,7 @@ export async function validateContent({ quiet = false } = {}) {
   const setFiles = await jsonFiles(path.join(SRC, 'sets'));
   const resourceFiles = await jsonFiles(path.join(SRC, 'resources'));
   const erPromptFiles = await jsonFiles(path.join(SRC, 'er-prompts'));
+  const erTaskFiles = await jsonFiles(path.join(SRC, 'er-tasks'));
   const legacyIndexFile = path.join(SRC, 'config', 'legacy-index.json');
   const curriculumConfigFile = path.join(SRC, 'config', 'rla.curriculum.json');
   const questionFamilyConfigFile = path.join(SRC, 'config', 'rla.question-families.v1.json');
@@ -370,6 +371,30 @@ export async function validateContent({ quiet = false } = {}) {
     if (!Array.isArray(prompt.annotations) || prompt.annotations.length < 4) add(issues, 'error', 'ER_ANNOTATIONS_INCOMPLETE', `${loc} needs at least four annotations.`, file, loc);
     if (!Array.isArray(prompt.revisionPrompts) || prompt.revisionPrompts.length < 3) add(issues, 'error', 'ER_REVISION_PROMPTS_INCOMPLETE', `${loc} needs at least three revision prompts.`, file, loc);
     if (prompt.status === 'published') erPrompts.push(prompt);
+  }
+
+  const erTasks = [];
+  const erTaskIds = new Set();
+  const validErTaskTypes = new Set(['evaluative_thesis','exact_evidence','evidence_analysis','summary_to_analysis','body_development','revision_focus_clarity']);
+  for (const file of erTaskFiles) {
+    const task = await readJson(file);
+    const loc = task.id || '(no-id)';
+    if (!task.id) add(issues, 'error', 'ER_TASK_ID_MISSING', 'ER production task is missing an id.', file);
+    else if (erTaskIds.has(task.id)) add(issues, 'error', 'ER_TASK_ID_DUPLICATE', `Duplicate ER production task id: ${task.id}`, file, loc);
+    else erTaskIds.add(task.id);
+    if (!VALID_STATUS.has(task.status)) add(issues, 'error', 'ER_TASK_STATUS_INVALID', `ER production task ${loc} has invalid status.`, file, loc);
+    if (task.status === 'published' && !task.reviewer) add(issues, 'error', 'PUBLISHED_WITHOUT_REVIEWER', `Published ER production task ${loc} needs a reviewer.`, file, loc);
+    if (!erPromptIds.has(task.promptId)) add(issues, 'error', 'ER_TASK_PROMPT_UNKNOWN', `${loc} references unknown ER prompt ${task.promptId || '(missing)'}.`, file, loc);
+    if (!validErTaskTypes.has(task.taskType)) add(issues, 'error', 'ER_TASK_TYPE_INVALID', `${loc} has unsupported taskType ${task.taskType || '(missing)'}.`, file, loc);
+    if (!Array.isArray(task.skillIds) || !task.skillIds.length) add(issues, 'error', 'ER_TASK_SKILLS_MISSING', `${loc} needs at least one W1 skill.`, file, loc);
+    for (const skillId of task.skillIds || []) {
+      if (!/^W1\./.test(skillId) || !skills.has(skillId)) add(issues, 'error', 'ER_TASK_SKILL_UNKNOWN', `${loc} uses unknown ER skill ${skillId}.`, file, loc);
+    }
+    if (!task.instruction || words(task.instruction).length < 6) add(issues, 'error', 'ER_TASK_INSTRUCTION_MISSING', `${loc} needs a specific learner instruction.`, file, loc);
+    if (!Array.isArray(task.successCriteria) || task.successCriteria.length < 3 || task.successCriteria.length > 5) add(issues, 'error', 'ER_TASK_CRITERIA_INVALID', `${loc} needs 3–5 success criteria.`, file, loc);
+    if (!task.modelResponse || words(task.modelResponse).length < 8) add(issues, 'error', 'ER_TASK_MODEL_MISSING', `${loc} needs a concise model response.`, file, loc);
+    if (!Array.isArray(task.revisionPrompts) || !task.revisionPrompts.length) add(issues, 'error', 'ER_TASK_REVISION_MISSING', `${loc} needs at least one revision prompt.`, file, loc);
+    if (task.status === 'published') erTasks.push(task);
   }
 
   for (const file of resourceFiles) {
@@ -628,7 +653,7 @@ export async function validateContent({ quiet = false } = {}) {
     console.log(`Content validation: ${errors.length} error(s), ${warnings.length} warning(s)`);
     for (const issue of issues) console.log(`${issue.type.toUpperCase()} ${issue.code} ${issue.file}${issue.location ? ` [${issue.location}]` : ''}: ${issue.message}`);
   }
-  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts };
+  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts, erTasks };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

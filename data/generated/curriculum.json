@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-25T05:58:42.654Z",
+  "builtAt": "2026-08-25T06:47:26.567Z",
   "tracks": [
     {
       "id": "reading",
@@ -17999,6 +17999,19 @@
       ]
     },
     {
+      "id": "er-night-delivery-window",
+      "title": "Should Downtown Stores Adopt a Shared Evening Delivery Window?",
+      "topic": "urban freight policy",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Continue the Evening Window With Limits",
+      "sourceBTitle": "Keep Delivery Schedules Flexible",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
       "id": "er-phone-policy",
       "title": "Should the High School Adopt a Full-Day Phone Ban?",
       "topic": "school policy",
@@ -18031,6 +18044,19 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Create a Fee Based on Impervious Surface",
       "sourceBTitle": "Pay for Drainage from Existing Taxes",
+      "difficulty": "GED practice",
+      "modeOptions": [
+        "untimed",
+        "timed"
+      ]
+    },
+    {
+      "id": "er-vacant-lot-housing",
+      "title": "Should the City Lease North Yard for Modular Housing?",
+      "topic": "public land and housing",
+      "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
+      "sourceATitle": "Use North Yard for Housing Now",
+      "sourceBTitle": "Reserve North Yard and Use the Alternate Parcel",
       "difficulty": "GED practice",
       "modeOptions": [
         "untimed",
@@ -19315,6 +19341,65 @@
         "year": null,
         "url": null
       }
+    }
+  ],
+  "extendedResponseProduction": [
+    {
+      "id": "er-task-body-development",
+      "title": "Build One Strong Body Paragraph",
+      "taskType": "body_development",
+      "promptId": "er-stormwater-fee",
+      "skillIds": [
+        "W1.8",
+        "W1.9"
+      ]
+    },
+    {
+      "id": "er-task-evaluative-thesis",
+      "title": "Write an Evaluative Thesis",
+      "taskType": "evaluative_thesis",
+      "promptId": "er-solar-roofs",
+      "skillIds": [
+        "W1.4"
+      ]
+    },
+    {
+      "id": "er-task-evidence-analysis",
+      "title": "Turn Evidence Into Analysis",
+      "taskType": "evidence_analysis",
+      "promptId": "er-inspection-automation",
+      "skillIds": [
+        "W1.6",
+        "W1.7"
+      ]
+    },
+    {
+      "id": "er-task-exact-evidence",
+      "title": "Use Exact Evidence Without Overclaiming",
+      "taskType": "exact_evidence",
+      "promptId": "er-clinic-reminders",
+      "skillIds": [
+        "W1.5"
+      ]
+    },
+    {
+      "id": "er-task-revision-focus-clarity",
+      "title": "Revise for Focus and Clarity",
+      "taskType": "revision_focus_clarity",
+      "promptId": "er-weekend-bus",
+      "skillIds": [
+        "W1.10",
+        "W1.11"
+      ]
+    },
+    {
+      "id": "er-task-summary-to-analysis",
+      "title": "Change Summary Into Analysis",
+      "taskType": "summary_to_analysis",
+      "promptId": "er-market-redevelopment",
+      "skillIds": [
+        "W1.6"
+      ]
     }
   ]
 }

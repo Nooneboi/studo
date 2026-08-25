@@ -410,6 +410,14 @@ async function main() {
     modeOptions: ['untimed', 'timed'],
   }));
 
+  curriculum.extendedResponseProduction = (validation.erTasks || []).map((task) => ({
+    id: task.id,
+    title: task.title,
+    taskType: task.taskType,
+    promptId: task.promptId,
+    skillIds: task.skillIds,
+  }));
+
   await fs.writeFile(path.join(OUT, 'index.json'), JSON.stringify(mergedIndex, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n', 'utf8');
   const learnerErPrompts = (validation.erPrompts || []).map((prompt) => {
@@ -417,6 +425,11 @@ async function main() {
     return publicPrompt;
   });
   await fs.writeFile(path.join(OUT, 'er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerErPrompts }, null, 2) + '\n', 'utf8');
+  const learnerErTasks = (validation.erTasks || []).map((task) => {
+    const { authoringNotes, ...publicTask } = task;
+    return publicTask;
+  });
+  await fs.writeFile(path.join(OUT, 'er-production-tasks.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), tasks: learnerErTasks }, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'mock-blueprint.json'), JSON.stringify(mockBlueprint, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'question-families.js'), questionFamilyRuntime(questionFamilyRegistry), 'utf8');
   await fs.writeFile(path.join(OUT, 'qa-report.json'), JSON.stringify({
