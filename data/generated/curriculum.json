@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-25T03:53:08.564Z",
+  "builtAt": "2026-08-25T04:25:04.538Z",
   "tracks": [
     {
       "id": "reading",
@@ -4821,15 +4821,60 @@
                 "R5.2"
               ],
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-claims-structure-active-v1",
+                  "title": "Claims & Argument Structure - Guided Practice",
+                  "description": "Learn to identify the main claim, separate reasons from evidence, and trace how an argument is built.",
+                  "file": "generated/modules/set-rla-args-claims-structure-active-v1.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.1",
+                    "secondarySkillIds": [
+                      "R5.2"
+                    ],
+                    "unitId": "claims-argument-structure",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Identify the main claim, distinguish supporting reasons from evidence, and trace how the parts of an argument build toward a recommendation.",
+                    "topicLabel": "Claims & Argument Structure",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-claims-active-community-hub",
+                    "title": "Two Evenings at the Community Hub",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.1",
+                    "R5.2"
+                  ]
+                },
+                {
                   "id": "set-rla-args-claims-structure",
-                  "title": "Where Shade Would Matter Most",
-                  "description": "Identify the main claim, supporting claims, and the structure that connects them.",
+                  "title": "Claims & Argument Structure - Independent Practice",
+                  "description": "Practice identifying claims and tracing argument structure without guided support.",
                   "file": "generated/modules/set-rla-args-claims-structure.json",
                   "difficulty": "medium",
                   "category": "arguments",
@@ -5815,7 +5860,7 @@
           ],
           "availableSkillCount": 10,
           "availableUnitCount": 6,
-          "availableSetCount": 6,
+          "availableSetCount": 7,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
@@ -5829,16 +5874,61 @@
               "priority": "P0",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 4,
+              "setCount": 2,
+              "questionCount": 7,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-claims-structure-active-v1",
+                  "title": "Claims & Argument Structure - Guided Practice",
+                  "description": "Learn to identify the main claim, separate reasons from evidence, and trace how an argument is built.",
+                  "file": "generated/modules/set-rla-args-claims-structure-active-v1.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.1",
+                    "secondarySkillIds": [
+                      "R5.2"
+                    ],
+                    "unitId": "claims-argument-structure",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Identify the main claim, distinguish supporting reasons from evidence, and trace how the parts of an argument build toward a recommendation.",
+                    "topicLabel": "Claims & Argument Structure",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-claims-active-community-hub",
+                    "title": "Two Evenings at the Community Hub",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.1",
+                    "R5.2"
+                  ]
+                },
+                {
                   "id": "set-rla-args-claims-structure",
-                  "title": "Where Shade Would Matter Most",
-                  "description": "Identify the main claim, supporting claims, and the structure that connects them.",
+                  "title": "Claims & Argument Structure - Independent Practice",
+                  "description": "Practice identifying claims and tracing argument structure without guided support.",
                   "file": "generated/modules/set-rla-args-claims-structure.json",
                   "difficulty": "medium",
                   "category": "arguments",
@@ -5998,16 +6088,61 @@
               "priority": "P0",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 4,
+              "setCount": 2,
+              "questionCount": 7,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-claims-structure-active-v1",
+                  "title": "Claims & Argument Structure - Guided Practice",
+                  "description": "Learn to identify the main claim, separate reasons from evidence, and trace how an argument is built.",
+                  "file": "generated/modules/set-rla-args-claims-structure-active-v1.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.1",
+                    "secondarySkillIds": [
+                      "R5.2"
+                    ],
+                    "unitId": "claims-argument-structure",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Identify the main claim, distinguish supporting reasons from evidence, and trace how the parts of an argument build toward a recommendation.",
+                    "topicLabel": "Claims & Argument Structure",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-claims-active-community-hub",
+                    "title": "Two Evenings at the Community Hub",
+                    "textType": "informational",
+                    "context": "community",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.1",
+                    "R5.2"
+                  ]
+                },
+                {
                   "id": "set-rla-args-claims-structure",
-                  "title": "Where Shade Would Matter Most",
-                  "description": "Identify the main claim, supporting claims, and the structure that connects them.",
+                  "title": "Claims & Argument Structure - Independent Practice",
+                  "description": "Practice identifying claims and tracing argument structure without guided support.",
                   "file": "generated/modules/set-rla-args-claims-structure.json",
                   "difficulty": "medium",
                   "category": "arguments",
@@ -8871,8 +9006,8 @@
       ],
       "availableSkillCount": 15,
       "totalSkillCount": 15,
-      "availableSetCount": 9,
-      "questionCount": 72,
+      "availableSetCount": 10,
+      "questionCount": 78,
       "resourceCount": 45,
       "studyFileCount": 45,
       "checkCount": 0

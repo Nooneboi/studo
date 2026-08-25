@@ -944,9 +944,33 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-args-claims-structure-active-v1.json",
+    "title": "Claims & Argument Structure - Guided Practice",
+    "description": "Learn to identify the main claim, separate reasons from evidence, and trace how an argument is built.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [
+        "R5.2"
+      ],
+      "unitId": "claims-argument-structure",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Identify the main claim, distinguish supporting reasons from evidence, and trace how the parts of an argument build toward a recommendation.",
+      "topicLabel": "Claims & Argument Structure",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
     "file": "generated/modules/set-rla-args-claims-structure.json",
-    "title": "Where Shade Would Matter Most",
-    "description": "Identify the main claim, supporting claims, and the structure that connects them.",
+    "title": "Claims & Argument Structure - Independent Practice",
+    "description": "Practice identifying claims and tracing argument structure without guided support.",
     "curriculum": {
       "domain": "Argument Analysis",
       "primarySkillId": "R5.1",

@@ -1,0 +1,390 @@
+{
+  "id": "set-rla-args-claims-structure-active-v1",
+  "title": "Claims & Argument Structure - Guided Practice",
+  "description": "Learn to identify the main claim, separate reasons from evidence, and trace how an argument is built.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Guided Practice",
+  "difficulty": "medium",
+  "source": "Original content by Chee Skool",
+  "passage": "The Eastbridge Community Hub closes at 6:00 p.m. on weekdays, even though several of its most-used services are aimed at people who are at work or in class during the day. I believe the city should keep the hub open until 8:00 p.m. on Tuesdays and Thursdays for a six-month trial. The goal is not to turn the building into a late-night center. It is to make existing services reachable at the times when many residents can actually use them.\n\nThe strongest reason is access. Last spring, the hub tracked when visitors arrived for its job-search computers, language tutoring, and document-help desk. Between 4:30 and 6:00 p.m., those services were used at nearly twice the rate seen between 1:00 and 3:00 p.m. Staff also recorded 86 people who arrived during the final half hour and had to leave before finishing a form, tutoring session, or online application. Those numbers do not prove that every evening would be busy, but they show that demand rises as the current closing time approaches.\n\nA limited evening schedule could also use staff time more efficiently than opening later every night. The library branch next door already keeps two security officers on the block until 8:30 p.m. on Tuesdays and Thursdays. Under a preliminary estimate from the hub manager, shifting two staff members to later hours on those days would cost far less than adding a separate evening shift five nights a week. The city could therefore test extended access without committing to the most expensive version of the idea.\n\nSome residents have raised a fair concern: longer hours could increase costs even if attendance remains low. That is why the proposal should include a clear review point. For six months, the hub should record evening visits, the services used, staffing costs, and any security incidents. If the extended hours attract few residents or create costs that the benefits do not justify, the city should end or revise the trial rather than making it permanent.\n\nThe trial should also stay focused on services that residents already use. It would be a mistake to add concerts, new classes, or a cafe simply to make the evening hours look successful. Those additions would make it difficult to tell whether later access itself helped. Keeping the program narrow would let the city answer a simpler question: does opening two hours later on two carefully chosen weekdays help more people use the services the hub already provides?\n\nEastbridge does not need to guess whether a full expansion will work. It can test a smaller claim first. By extending the hub's hours on Tuesdays and Thursdays, measuring actual use and cost, and reviewing the results after six months, the city can improve access while limiting financial risk. If the evidence is strong, the city can consider expanding the schedule. If it is weak, officials can stop without having built an expensive permanent program.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Sort each statement by the job it does in the author's argument.",
+      "points": 1,
+      "explanation": "The main claim states the action the writer wants the city to take. The efficiency statement gives a reason for that action, while the usage and security details provide information that helps support the reasons.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Ask what job a sentence performs: position, reason, or support.",
+      "familyId": "claim.main",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "guided",
+      "hint": "Start with the sentence that tells the city what it should do. Then separate statements that explain why from facts that help prove those reasons.",
+      "correct": "i1=main|i2=reason|i3=evidence|i4=evidence",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The city should keep the hub open until 8:00 p.m. on Tuesdays and Thursdays for a six-month trial."
+          },
+          {
+            "id": "i2",
+            "text": "A limited evening schedule could use staff time more efficiently than opening later every night."
+          },
+          {
+            "id": "i3",
+            "text": "Between 4:30 and 6:00 p.m., the targeted services were used at nearly twice the rate seen between 1:00 and 3:00 p.m."
+          },
+          {
+            "id": "i4",
+            "text": "The library branch next door already keeps two security officers on the block until 8:30 p.m. on Tuesdays and Thursdays."
+          }
+        ],
+        "zones": [
+          {
+            "id": "main",
+            "label": "Main claim"
+          },
+          {
+            "id": "reason",
+            "label": "Supporting claim / reason"
+          },
+          {
+            "id": "evidence",
+            "label": "Evidence or supporting fact"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Which sentence most directly states the author's main claim?",
+      "points": 1,
+      "explanation": "This sentence states the specific position the writer wants the reader to accept. The other choices introduce a reason, a concern, or framing for the final recommendation.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "The main claim is usually the statement the rest of the argument is trying to justify.",
+      "familyId": "claim.main",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "learningStage": "guided",
+      "hint": "Look for the sentence that contains the proposed action, not merely a reason for it or a concern about it.",
+      "correct": "s1",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "I believe the city should keep the hub open until 8:00 p.m. on Tuesdays and Thursdays for a six-month trial."
+          },
+          {
+            "id": "s2",
+            "text": "The strongest reason is access."
+          },
+          {
+            "id": "s3",
+            "text": "Some residents have raised a fair concern: longer hours could increase costs even if attendance remains low."
+          },
+          {
+            "id": "s4",
+            "text": "Eastbridge does not need to guess whether a full expansion will work."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which evidence most directly supports the writer's reason that later hours could improve access to existing services?",
+      "points": 1,
+      "explanation": "The unfinished visits directly show a mismatch between the current closing time and residents' ability to complete services. That evidence supports the access reason more directly than cost, trial-design, or future-expansion details.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Match evidence to the exact reason it is supposed to support; true details can still support a different part of the argument.",
+      "familyId": "argument.chain",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "learningStage": "apply",
+      "options": [
+        {
+          "id": "a",
+          "text": "The library branch next door has security officers on the block until 8:30 p.m.",
+          "distractorType": "evidence_for_other_claim",
+          "whyWrong": "That fact helps the cost/feasibility reason, not the claim that residents need later access."
+        },
+        {
+          "id": "b",
+          "text": "The writer says the trial should not add concerts, new classes, or a cafe.",
+          "distractorType": "related_not_supporting",
+          "whyWrong": "That point protects the trial's design but does not show that current services are difficult to access before closing."
+        },
+        {
+          "id": "c",
+          "text": "Eighty-six people arrived during the final half hour and had to leave before finishing a service task."
+        },
+        {
+          "id": "d",
+          "text": "The city could consider expanding the schedule if later evidence is strong.",
+          "distractorType": "future_step",
+          "whyWrong": "This describes what could happen after the trial; it is not evidence of the present access problem."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What is the main function of the fourth paragraph, which begins with residents' concern about cost?",
+      "points": 1,
+      "explanation": "The paragraph does two connected jobs: it recognizes a cost concern and then builds a safeguard into the proposal by requiring measurement and a decision point after six months.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "Paragraph function is about what the paragraph contributes to the argument, not just what topic it mentions.",
+      "familyId": "argument.chain",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "learningStage": "apply",
+      "options": [
+        {
+          "id": "a",
+          "text": "It acknowledges a reasonable objection and explains how a limited trial and review point would address it."
+        },
+        {
+          "id": "b",
+          "text": "It abandons the proposal because the writer accepts that evening attendance will be low.",
+          "distractorType": "counterargument_misread",
+          "whyWrong": "The writer acknowledges the concern but responds with a plan to test and review the idea rather than abandoning it."
+        },
+        {
+          "id": "c",
+          "text": "It introduces new evidence proving that the current 6:00 p.m. closing time causes security incidents.",
+          "distractorType": "unsupported",
+          "whyWrong": "No such security evidence appears in that paragraph."
+        },
+        {
+          "id": "d",
+          "text": "It changes the main claim from later hub hours to adding new evening programs.",
+          "distractorType": "reversal",
+          "whyWrong": "The later paragraph explicitly argues against adding unrelated new programs to the trial."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which description best represents the overall argument chain?",
+      "points": 1,
+      "explanation": "This choice preserves the problem, the limited recommendation, the feasibility logic, and the evidence-based next step. It shows how the reasons build toward a cautious policy claim.",
+      "skill": {
+        "id": "R5.2",
+        "label": "Argument chain / structure"
+      },
+      "rule": "An argument chain connects problem → reasons/evidence → recommendation → qualification or next step.",
+      "familyId": "argument.chain",
+      "metadata": {
+        "skillId": "R5.2",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 4,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "a",
+          "text": "The hub is popular, so the city should add new evening entertainment and make the later schedule permanent immediately.",
+          "distractorType": "overstatement",
+          "whyWrong": "The writer argues for a narrow trial of existing services, not new entertainment or immediate permanence."
+        },
+        {
+          "id": "b",
+          "text": "Security officers already work nearby, so staffing costs do not matter and the city should extend hours every weekday.",
+          "distractorType": "single_reason_overreach",
+          "whyWrong": "Nearby security is one feasibility detail; the proposal remains limited to two evenings and includes cost review."
+        },
+        {
+          "id": "c",
+          "text": "Some residents worry about cost, so the city should keep current hours until every possible expense is known.",
+          "distractorType": "counterargument_misread",
+          "whyWrong": "The writer uses a trial to gather evidence under uncertainty rather than demanding complete certainty first."
+        },
+        {
+          "id": "d",
+          "text": "Current closing hours limit access for some residents; a two-evening trial can test later access at manageable risk; the city should measure results and expand only if the evidence supports it."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which concise argument map best captures the author's main claim and strongest supporting reasons?",
+      "points": 1,
+      "explanation": "It states the limited trial accurately and connects it to the three major reasons running through the passage: access demand, manageable risk, and an evidence-based review before expansion.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "A good argument map keeps the main claim's exact scope and includes the major reasons—not every detail.",
+      "familyId": "claim.main",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 3,
+          "evidenceDistance": 4,
+          "distractorSimilarity": 4,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "sourceSchemaVersion": 2
+      },
+      "time": 85,
+      "learningStage": "independent",
+      "options": [
+        {
+          "id": "a",
+          "text": "Main claim: the hub should become a late-night entertainment center. Reasons: evening concerts attract residents and the library already pays for security.",
+          "distractorType": "distortion",
+          "whyWrong": "The passage explicitly rejects turning the hub into a late-night center or adding unrelated programs to make the trial appear successful."
+        },
+        {
+          "id": "b",
+          "text": "Main claim: try later hours on two weekdays for six months. Reasons: demand rises near closing, a limited schedule can reduce financial risk, and measured results can guide the next decision."
+        },
+        {
+          "id": "c",
+          "text": "Main claim: keep the current schedule. Reasons: longer hours always increase costs and evening attendance is likely to remain low.",
+          "distractorType": "opposing_claim",
+          "whyWrong": "Those concerns are acknowledged, but they are not the author's position; the trial is proposed specifically to test them."
+        },
+        {
+          "id": "d",
+          "text": "Main claim: extend the hub to 8:00 p.m. every weekday permanently. Reasons: 86 visitors were turned away and security officers are already nearby.",
+          "distractorType": "scope_shift",
+          "whyWrong": "This overstates both the schedule and permanence of the proposal, which is limited to Tuesdays and Thursdays for six months."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-args-claims-structure-active-v1",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [
+        "R5.2"
+      ],
+      "unitId": "claims-argument-structure",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Identify the main claim, distinguish supporting reasons from evidence, and trace how the parts of an argument build toward a recommendation.",
+      "topicLabel": "Claims & Argument Structure",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    },
+    "passage": {
+      "id": "p-rla-args-claims-active-community-hub",
+      "title": "Two Evenings at the Community Hub",
+      "textType": "informational",
+      "context": "community",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T04:25:04.509Z"
+  }
+}

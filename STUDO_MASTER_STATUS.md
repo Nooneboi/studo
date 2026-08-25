@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.19`  
-**Current stage:** Phase 2.5 Learning System Integration complete — core learner routes now match the current product architecture; Phase 3 Arguments depth is next  
+**Current release:** `0.7.0-alpha.20`  
+**Current stage:** Phase 3A Claims & Argument Structure depth complete — the first Arguments guided reference path is live; Finding Evidence is next  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **100 learner modules**
-- **735 objective/component questions**
+- **101 learner modules**
+- **741 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -341,9 +341,23 @@ The Phase 2 reference paths remain unchanged. The review did not justify bulk-de
 
 ### Phase 3 — Deepen Arguments, Language, and Extended Response
 
-Arguments priorities:
+#### Phase 3A — Claims & Argument Structure: complete in Alpha 20
 
-- Claims & Argument Structure
+Claims & Argument Structure now reuses the existing Study Guide and two workbooks, adds one original guided argumentative passage, and preserves the existing eight-question focused drill as **Claims & Argument Structure - Independent Practice**.
+
+Implemented progression:
+
+1. Guided — classify sentence roles as main claim, supporting claim/reason, or evidence/supporting fact.
+2. Guided — locate the main claim directly in the passage.
+3. Apply — match evidence to the specific supporting reason it actually supports.
+4. Apply — identify how a paragraph contributes to the argument rather than merely summarizing its topic.
+5. Independent — trace the full problem → reasons/evidence → recommendation → review/next-step chain.
+6. Independent — choose the concise argument map that preserves the claim's exact scope and strongest reasons.
+
+The new 483-word original community argument, **Two Evenings at the Community Hub**, is `practice + train` and remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
+
+Arguments priorities from here:
+
 - Finding Evidence
 - Credibility & Counterarguments
 
@@ -384,6 +398,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Phase 3 — Arguments depth, starting with an audit before adding content.**
+> **Phase 3B — Finding Evidence audit and depth decision.**
 
-Start with Claims & Argument Structure, Finding Evidence, and Credibility & Counterarguments. Preserve good existing guides/workbooks/questions, identify the actual learner reasoning gap, and add only the learning method or transfer practice that closes that gap. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
+Audit the existing Finding Evidence guide, workbooks, focused module, mixed-source exposure, and canonical R5.3 metadata before adding content. Preserve good material and add only the learning method that improves claim-to-evidence matching. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.

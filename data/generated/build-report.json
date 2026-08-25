@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-25T03:53:08.580Z",
+  "builtAt": "2026-08-25T04:25:04.553Z",
   "canonicalLegacyModules": [
     "legacy-modules/rla-author-purpose-practice-1.json",
     "legacy-modules/rla-author-purpose-practice-2.json",
@@ -53,6 +53,7 @@
     "legacy-modules/rla-transitions-signal-words-practice-2.json"
   ],
   "publishedSourceSets": [
+    "set-rla-args-claims-structure-active-v1",
     "set-rla-args-claims-structure",
     "set-rla-args-compare-sources",
     "set-rla-args-credibility-counterarguments",
@@ -106,6 +107,7 @@
     "set-rla-supporting-details-active-methods-v1"
   ],
   "generatedSourceModules": [
+    "generated/modules/set-rla-args-claims-structure-active-v1.json",
     "generated/modules/set-rla-args-claims-structure.json",
     "generated/modules/set-rla-args-compare-sources.json",
     "generated/modules/set-rla-args-credibility-counterarguments.json",
@@ -158,7 +160,7 @@
     "generated/modules/set-rla-summary-active-methods-v1.json",
     "generated/modules/set-rla-supporting-details-active-methods-v1.json"
   ],
-  "generatedIndexCount": 100,
+  "generatedIndexCount": 101,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "published",
