@@ -11,15 +11,26 @@ const quizHtml = read('quiz.html');
 const progressJs = read('js/progress.js');
 const css = read('css/site.css');
 
-test('Extended Response exposes Production Lab and Full ER together with mobile jump links', () => {
-  assert.match(domainJs, /class="er-practice-overview"/);
-  assert.match(domainJs, /class="er-practice-jumps"/);
+test('Extended Response follows Learn → focused practice → full response hierarchy', () => {
+  const learningMount = domainJs.indexOf(`id="er-learning-units"`);
+  const practiceMount = domainJs.indexOf(`renderExtendedResponsePractice(extendedResponsePractice, extendedResponseProduction, track, domain)`);
+  const jumpMount = domainJs.indexOf(`renderExtendedResponseJumps(extendedResponsePractice, extendedResponseProduction)`);
+
+  assert.ok(jumpMount >= 0, 'ER should expose quick jump navigation near the top');
+  assert.ok(learningMount >= 0, 'ER should render the Learning Units index');
+  assert.ok(practiceMount >= 0, 'ER should render the practice modes');
+  assert.ok(jumpMount < learningMount, 'quick jumps should appear before Learning Units');
+  assert.ok(learningMount < practiceMount, 'Learning Units should appear before both practice modes');
+
+  assert.match(domainJs, /href="#er-learning-units"/);
   assert.match(domainJs, /href="#production-lab"/);
   assert.match(domainJs, /href="#full-er-practice"/);
   assert.match(domainJs, /class="er-practice-layout"/);
-  assert.ok(domainJs.indexOf('id="full-er-practice"') < domainJs.indexOf('id="production-lab"'), 'Full ER should be authored first so phone users see it first');
+  assert.ok(domainJs.indexOf('id="production-lab"') < domainJs.indexOf('id="full-er-practice"'), 'focused Production Lab should be authored before the full response practice');
   assert.match(css, /\.er-practice-layout\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/s);
   assert.match(css, /@media\s*\(max-width:\s*820px\)[\s\S]*?\.er-practice-layout\s*\{[^}]*grid-template-columns:\s*1fr/s);
+  assert.match(css, /@media\s*\(max-width:\s*820px\)[\s\S]*?\.er-practice-production\s*\{[^}]*order:\s*1/s);
+  assert.match(css, /@media\s*\(max-width:\s*820px\)[\s\S]*?\.er-practice-full\s*\{[^}]*order:\s*2/s);
 });
 
 test('Mock landing is sectioned and its test library scales to more cards', () => {

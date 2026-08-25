@@ -1,11 +1,20 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25
-**Current release:** `0.7.0-alpha.31`
-**Current stage:** Phase 5.5 responsive Progress cleanup complete in source — status/evidence layout and grouped review are now overflow-safe across phone, tablet, and desktop; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
+**Current release:** `0.7.0-alpha.32`
+**Current stage:** Phase 5.5 Extended Response hierarchy cleanup complete in source — Learning Units now lead the ER page before focused and full-response practice; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
+
+
+## Phase 5.5 Extended Response hierarchy cleanup — Alpha 32
+
+- Extended Response now follows the learner sequence **Learn → focused practice → full response** instead of placing the practice banks before the learning index.
+- A compact top jump bar keeps **Learning units**, **Production Lab**, and **Full ER Practice** immediately accessible for returning learners without changing the educational order.
+- Learning Units remain compact index rows; lesson content still opens separately rather than expanding the landing page.
+- Production Lab and Full Extended Response remain side by side on desktop. At phone/tablet widths they stack in the same learning sequence: Production Lab first, Full ER second.
+- No ER prompts, tasks, scoring, Mock isolation, Progress evidence, or learner content counts changed.
 
 
 ## Phase 5.5 Progress responsive cleanup — Alpha 31

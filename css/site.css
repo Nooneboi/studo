@@ -8575,6 +8575,17 @@ body.test-body {
   font-size: .98rem;
   line-height: 1.55;
 }
+.er-path-jumpbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 0 30px;
+  padding: 14px 0 18px;
+  border-bottom: 1px solid var(--color-line);
+}
+.er-path-jumpbar-copy { display: grid; gap: 3px; min-width: 0; }
+.er-path-jumpbar-copy strong { font-size: .92rem; color: var(--color-ink); }
 .er-practice-overview { margin-bottom: 42px; scroll-margin-top: 118px; }
 .er-practice-overview-head {
   display: flex;
@@ -8621,7 +8632,7 @@ body.test-body {
 .er-practice-full { order: 2; }
 .er-practice-column .er-domain-prompt-card { align-items: flex-start; }
 .er-practice-column .er-domain-prompt-actions-wrap { min-width: 132px; }
-.er-learning-units { scroll-margin-top: 112px; }
+.er-learning-units { scroll-margin-top: 112px; margin-bottom: 42px; }
 .er-learning-units::before {
   content: "Learn the response";
   display: block;
@@ -8808,6 +8819,7 @@ body.test-body {
 }
 
 @media (max-width: 820px) {
+  .er-path-jumpbar { display: grid; gap: 12px; margin-bottom: 24px; padding-bottom: 14px; }
   .er-practice-overview { margin-bottom: 32px; }
   .er-practice-overview-head { display: grid; gap: 12px; }
   .er-practice-jumps {
@@ -8817,8 +8829,8 @@ body.test-body {
     scrollbar-width: thin;
   }
   .er-practice-layout { grid-template-columns: 1fr; }
-  .er-practice-full { order: 1; }
-  .er-practice-production { order: 2; }
+  .er-practice-production { order: 1; }
+  .er-practice-full { order: 2; }
   .er-practice-column { max-height: none; overflow: visible; }
   .er-learning-units { order: 3; }
   .mock-library-heading { display: grid; gap: 8px; }
