@@ -24,19 +24,19 @@
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
-        "dok": 2,
-        "difficulty": "medium",
+        "dok": 1,
+        "difficulty": "easy",
         "difficultyProfile": {
-          "textComplexity": 2,
-          "reasoningDepth": 2,
-          "evidenceDistance": 2,
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
           "distractorSimilarity": 2,
           "sourceCount": 1,
           "responseDemand": 1
         },
         "sourceSchemaVersion": 2
       },
-      "time": 45,
+      "time": 35,
       "options": [
         {
           "id": "a",
@@ -78,19 +78,19 @@
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
-        "dok": 2,
-        "difficulty": "medium",
+        "dok": 1,
+        "difficulty": "easy",
         "difficultyProfile": {
-          "textComplexity": 2,
-          "reasoningDepth": 2,
-          "evidenceDistance": 2,
+          "textComplexity": 1,
+          "reasoningDepth": 1,
+          "evidenceDistance": 1,
           "distractorSimilarity": 2,
           "sourceCount": 1,
           "responseDemand": 1
         },
         "sourceSchemaVersion": 2
       },
-      "time": 45,
+      "time": 35,
       "options": [
         {
           "id": "b",
@@ -336,53 +336,53 @@
     {
       "id": "q7",
       "type": "grammar_edit",
-      "prompt": "Choose the best revision: “Although the gym remains open. Some programs will move outside.”",
+      "prompt": "Choose the revision that fixes the sentence while preserving both the contrast and the cause: “Although the gym remains open, some programs will move outside, the east room is closed for painting.”",
       "points": 1,
-      "explanation": "The dependent contrast clause is correctly attached to the main clause.",
+      "explanation": "The although-clause stays attached to the main clause, and the because-clause correctly explains why some programs will move outside.",
       "skill": {
         "id": "L2.2",
         "label": "Fragments, run-ons & fused sentences"
       },
-      "rule": "Attach an although-clause to the complete idea it modifies.",
+      "rule": "With several clauses, check both grammar and meaning: each connector must attach to the idea it actually explains.",
       "familyId": "language.boundaries.fragments_runons",
       "metadata": {
         "skillId": "L2.2",
         "secondarySkillIds": [],
-        "dok": 2,
-        "difficulty": "medium",
+        "dok": 3,
+        "difficulty": "hard",
         "difficultyProfile": {
-          "textComplexity": 2,
-          "reasoningDepth": 2,
+          "textComplexity": 3,
+          "reasoningDepth": 3,
           "evidenceDistance": 2,
-          "distractorSimilarity": 2,
+          "distractorSimilarity": 3,
           "sourceCount": 1,
-          "responseDemand": 1
+          "responseDemand": 2
         },
         "sourceSchemaVersion": 2
       },
-      "time": 45,
+      "time": 75,
       "options": [
         {
           "id": "a",
-          "text": "Although the gym remains open, some programs will move outside."
+          "text": "Although the gym remains open, some programs will move outside because the east room is closed for painting."
         },
         {
           "id": "b",
-          "text": "Although the gym remains open. Some programs will move outside.",
+          "text": "Although the gym remains open; some programs will move outside because the east room is closed for painting.",
           "distractorType": "editing_error",
-          "whyWrong": "The dependent clause beginning with 'although' is left as a fragment."
+          "whyWrong": "The semicolon incorrectly separates the dependent although-clause from the main clause."
         },
         {
           "id": "c",
-          "text": "Although. The gym remains open, some programs will move outside.",
+          "text": "Although the gym remains open, some programs will move outside; because the east room is closed for painting.",
           "distractorType": "editing_error",
-          "whyWrong": "'Although' is stranded and the relationship is broken."
+          "whyWrong": "The semicolon leaves the because-clause as a dependent fragment instead of attaching it to the idea it explains."
         },
         {
           "id": "d",
-          "text": "The gym remains open, although. Some programs will move outside.",
-          "distractorType": "editing_error",
-          "whyWrong": "The connector is incomplete and creates another fragment."
+          "text": "Although the gym remains open because the east room is closed for painting, some programs will move outside.",
+          "distractorType": "meaning_shift",
+          "whyWrong": "This version is grammatical, but it changes the meaning by making the room closure explain why the gym remains open rather than why programs move outside."
         }
       ],
       "correct": "a"
@@ -390,53 +390,53 @@
     {
       "id": "q8",
       "type": "grammar_edit",
-      "prompt": "Which punctuation best completes the sentence? “One room will remain available {{blank}} the small conference room on the first floor.”",
+      "prompt": "Which revision correctly keeps the information in one sentence while showing both the room identification and the contrast?",
       "points": 1,
-      "explanation": "The complete clause introduces the one available room, so a colon cleanly presents the identifying phrase.",
+      "explanation": "The colon identifies the one available room, and the semicolon plus however correctly connects the contrasting independent clause about its limited capacity.",
       "skill": {
         "id": "L2.4",
         "label": "Punctuation & clause separation"
       },
-      "rule": "A colon can introduce an explanation or example after a complete clause.",
+      "rule": "When one sentence has more than one boundary job, test each mark separately: what introduces, what joins, and what shows the relationship?",
       "familyId": "language.punctuation.colon",
       "metadata": {
         "skillId": "L2.4",
         "secondarySkillIds": [],
-        "dok": 2,
-        "difficulty": "medium",
+        "dok": 3,
+        "difficulty": "hard",
         "difficultyProfile": {
-          "textComplexity": 2,
-          "reasoningDepth": 2,
+          "textComplexity": 3,
+          "reasoningDepth": 3,
           "evidenceDistance": 2,
-          "distractorSimilarity": 2,
+          "distractorSimilarity": 3,
           "sourceCount": 1,
-          "responseDemand": 1
+          "responseDemand": 2
         },
         "sourceSchemaVersion": 2
       },
-      "time": 45,
+      "time": 75,
       "options": [
         {
           "id": "b",
-          "text": ";",
+          "text": "One room will remain available; the small conference room on the first floor, however, it seats only twelve people.",
           "distractorType": "editing_error",
-          "whyWrong": "The words after the blank are not an independent clause, so a semicolon is incorrect."
+          "whyWrong": "The semicolon is followed by a noun phrase rather than an independent clause, and the later comma does not correctly join the contrast."
         },
         {
           "id": "c",
-          "text": ",",
+          "text": "One room will remain available: the small conference room on the first floor, however, it seats only twelve people.",
           "distractorType": "editing_error",
-          "whyWrong": "A comma does not clearly introduce the identifying example after the complete clause."
+          "whyWrong": "The colon correctly introduces the room, but a comma alone cannot connect that completed identification to the independent clause introduced by however."
         },
         {
           "id": "a",
-          "text": ":"
+          "text": "One room will remain available: the small conference room on the first floor; however, it seats only twelve people."
         },
         {
           "id": "d",
-          "text": ".",
+          "text": "One room will remain available: the small conference room on the first floor; however: it seats only twelve people.",
           "distractorType": "editing_error",
-          "whyWrong": "A period would leave 'the small conference room...' as a fragment."
+          "whyWrong": "The semicolon can introduce the contrasting independent clause, but a colon does not belong after the conjunctive adverb however."
         }
       ],
       "correct": "a"
@@ -473,6 +473,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T05:30:56.683Z"
+    "compiledAt": "2026-08-25T05:58:42.640Z"
   }
 }

@@ -1,7 +1,7 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.22`  
+**Current release:** `0.7.0-alpha.23`  
 **Current stage:** Phase 3C Credibility & Counterarguments depth complete — three Arguments reference paths are now in place; whole-track Arguments review is next before Language depth  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
@@ -388,12 +388,24 @@ The new 497-word original workplace argument, **Keeping the Earlier Equipment Ch
 
 Arguments priority from here:
 
-- whole-track Arguments review before any additional Arguments expansion;
-- move to Language difficulty progression only if the review does not reveal a higher-value Arguments gap.
+- whole-track review completed after Alpha 22; no additional Arguments expansion is justified before learner/Skill Check/Mock evidence shows a real gap.
+
+#### Phase 3D — Language difficulty progression: Sentence Boundaries & Punctuation complete in Alpha 23
+
+The existing **Renovation Sentence Repair** focused module remains one eight-question Practice/Train set. No new PDF, module, interaction engine, Skill Check, or Mock content was added. Instead, its reasoning progression was calibrated from eight flat Medium/DOK2 items to a genuine **2 Easy → 4 Medium → 2 Hard** sequence:
+
+1. Easy — identify a complete sentence versus dependent-clause fragments.
+2. Easy — repair a straightforward independent-clause boundary with a semicolon.
+3–6. Medium — apply nonessential-clause punctuation, colon logic, comma-splice repair, and essential that-clause punctuation.
+7. Hard — repair a multi-clause sentence while preserving both contrast and cause, rejecting a grammatically possible revision that changes the meaning.
+8. Hard — coordinate a colon, semicolon, and conjunctive adverb in one sentence to preserve identification plus contrast.
+
+The hard items use DOK3 reasoning and higher distractor similarity rather than merely receiving harder labels. Language now has **3 Easy / 87 Medium / 2 Hard** questions overall, with **3 DOK1 / 87 DOK2 / 2 DOK3**. The next Language target is Agreement & Pronouns, beginning with an audit rather than automatic expansion.
 
 Language priority:
 
-- real easy → medium → hard progression rather than more flat medium dropdowns.
+- continue real easy → medium → hard calibration in high-value units, starting with Agreement & Pronouns;
+- preserve the current embedded editing format and 350–450-word mixed editing passage range.
 
 Extended Response priority:
 
@@ -428,6 +440,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Whole-track Arguments review.**
+> **Audit Agreement & Pronouns before the next Language calibration.**
 
-Review Claims & Argument Structure, Finding Evidence, Credibility & Counterarguments, the six Mixed Source Practice sets, and the remaining Arguments units together. Confirm that the three reference paths are distinct, identify any genuine coverage or transfer gaps, and avoid automatically adding Guided Practice to every Arguments skill. If no higher-value Arguments gap emerges, proceed to Phase 3D Language difficulty progression. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
+Review its Study Guide, two workbooks, focused editing set, mixed-editing exposure, family coverage, and current reasoning level. Add or rewrite only what creates a genuine learner progression; do not force every Language unit into the same pattern. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
