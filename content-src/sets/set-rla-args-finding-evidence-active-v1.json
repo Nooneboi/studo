@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-args-finding-evidence-active-v1",
+  "title": "Finding Evidence - Guided Practice",
+  "description": "Learn to match evidence to the exact claim it supports, separate direct evidence from merely related details, and verify the connection across an argument.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Arguments & Sources - Guided Practice",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-args-finding-evidence-active-staggered-start"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Chee Skool Finding Evidence reference-skill review",
+  "reviewNotes": "Guided Finding Evidence path focused on exact claim-to-evidence matching, directness, and evidence for different reasons within one workplace argument. Existing tutoring practice remains the independent follow-up. Excluded from Mock because it contains guided support and directly taught material.",
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.3",
+    "secondarySkillIds": [],
+    "unitId": "finding-evidence",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Match evidence to the exact argumentative claim it supports and distinguish direct support from background, limitations, or evidence for a different claim.",
+    "topicLabel": "Finding Evidence",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "prompt": "Match each passage detail to the claim it most directly supports.",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.identify_role",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The share of inbound trucks waiting more than fifteen minutes fell from 38 percent to 17 percent."
+          },
+          {
+            "id": "i2",
+            "text": "Late morning clock-ins fell from 11.8 percent to 6.4 percent."
+          },
+          {
+            "id": "i3",
+            "text": "Park recommends continuing the staggered schedule for six more months."
+          },
+          {
+            "id": "i4",
+            "text": "The average 7:05 entrance queue fell from twenty-six vehicles to fourteen."
+          }
+        ],
+        "zones": [
+          {
+            "id": "congestion",
+            "label": "Supports the congestion claim"
+          },
+          {
+            "id": "punctuality",
+            "label": "Supports the punctuality claim"
+          },
+          {
+            "id": "other",
+            "label": "Claim / recommendation / other information"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=congestion|i2=punctuality|i3=other|i4=congestion",
+      "explanation": {
+        "answer": "i1 and i4 are congestion evidence; i2 is punctuality evidence; i3 is the recommendation itself.",
+        "whyCorrect": "The truck-wait and queue measures function as evidence for congestion, while clock-in records function as evidence for punctuality. Park’s recommendation is a claim about what the center should do next, not evidence for either benefit.",
+        "quickTip": "Evidence can be strong and still belong to the wrong claim. Name the claim first, then ask what the detail actually measures."
+      },
+      "learningStage": "guided",
+      "hint": "First separate the recommendation from observed results. Then ask which exact claim each measured result can support."
+    },
+    {
+      "id": "q2",
+      "type": "select_text",
+      "prompt": "Which sentence gives the most direct evidence for Park's claim that punctuality improved during the staggered schedule?",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.strongest",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "During the eight weeks before the pilot, 11.8 percent of morning clock-ins were more than five minutes late."
+          },
+          {
+            "id": "s2",
+            "text": "During the staggered schedule, the rate was 6.4 percent."
+          },
+          {
+            "id": "s3",
+            "text": "A follow-up survey found that some employees on the 7:15 start said they could use a later public-bus connection instead of paying for a ride when they missed the earlier bus."
+          },
+          {
+            "id": "s4",
+            "text": "However, Park does not use the survey alone as proof of improved punctuality; the clock-in records are the direct measure of whether workers arrived on time."
+          }
+        ]
+      },
+      "correct": "s2",
+      "explanation": {
+        "answer": "During the staggered schedule, the rate was 6.4 percent.",
+        "whyCorrect": "This result is the direct outcome measure for the claim about improved punctuality. The survey offers a possible explanation, but the clock-in rate is what records whether late arrivals actually became less common.",
+        "quickTip": "For an outcome claim, prefer the detail that measures the outcome itself rather than a possible reason for it."
+      },
+      "learningStage": "guided",
+      "hint": "Look for the result that directly measures late arrival, not the sentence explaining why some workers may have arrived more easily."
+    },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "prompt": "Match each result to the claim it can support in Park's argument.",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.strongest",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "38% to 17% of inbound trucks waited more than fifteen minutes."
+          },
+          {
+            "id": "i2",
+            "text": "11.8% to 6.4% of morning clock-ins were more than five minutes late."
+          },
+          {
+            "id": "i3",
+            "text": "Orders processed per labor hour changed from 21.4 to 21.1."
+          }
+        ],
+        "zones": [
+          {
+            "id": "congestion",
+            "label": "Congestion was reduced"
+          },
+          {
+            "id": "punctuality",
+            "label": "Punctuality improved"
+          },
+          {
+            "id": "productivity",
+            "label": "Productivity was maintained at about the previous level"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=congestion|i2=punctuality|i3=productivity",
+      "explanation": {
+        "answer": "Truck waiting → congestion; late clock-ins → punctuality; orders per labor hour → productivity.",
+        "whyCorrect": "Each measure answers a different question. The evidence becomes useful only when it is matched to the exact claim it measures.",
+        "quickTip": "Translate the claim into a measurement question: What number would need to change if this claim were true?"
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Which detail most directly supports the claim that staggered starts improved employee punctuality?",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.strongest",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The entrance queue averaged fourteen vehicles during the pilot.",
+          "distractorType": "evidence_for_other_claim",
+          "whyWrong": "This supports the congestion claim, not punctuality."
+        },
+        {
+          "id": "b",
+          "text": "Some workers said the later shift allowed them to catch a different bus.",
+          "distractorType": "related_not_direct",
+          "whyWrong": "This may help explain punctuality, but it does not directly measure whether late arrivals became less common."
+        },
+        {
+          "id": "c",
+          "text": "Late morning clock-ins fell from 11.8 percent before the pilot to 6.4 percent during it."
+        },
+        {
+          "id": "d",
+          "text": "Employees were allowed to request which start time they preferred.",
+          "distractorType": "limitation",
+          "whyWrong": "This is a design limitation, not evidence that punctuality improved."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The clock-in comparison directly measures the outcome named in the claim: fewer workers arriving late.",
+        "quickTip": "A related explanation is not automatically the strongest evidence. Prefer the measure that directly answers the claim."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which evidence best supports Park's narrower claim that congestion improved without a large productivity loss?",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.strongest",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 85,
+      "options": [
+        {
+          "id": "a",
+          "text": "Truck waits above fifteen minutes fell from 38 percent to 17 percent, while orders per labor hour changed only from 21.4 to 21.1."
+        },
+        {
+          "id": "b",
+          "text": "Some employees could catch a later bus, and the road construction ended during the third week.",
+          "distractorType": "mixed_unrelated",
+          "whyWrong": "These details concern commuting and a possible traffic confound; they do not jointly measure congestion and productivity."
+        },
+        {
+          "id": "c",
+          "text": "Late clock-ins fell to 6.4 percent, and damaged-order reports stayed nearly unchanged.",
+          "distractorType": "wrong_first_claim",
+          "whyWrong": "This pair addresses punctuality and one productivity-related measure, but not the congestion part of the claim."
+        },
+        {
+          "id": "d",
+          "text": "The pilot lasted eight weeks, and workers could request their preferred start time.",
+          "distractorType": "background_and_limitation",
+          "whyWrong": "These details describe the study design rather than evidence for the claimed operational results."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The claim contains two parts, so the best evidence must address both: substantially shorter truck waits and nearly unchanged output per labor hour.",
+        "quickTip": "For a two-part claim, check that the evidence covers both parts rather than proving only one."
+      },
+      "learningStage": "independent"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which pair contains one piece of evidence for each of Park's two reasons that the pilot deserves a longer trial: lower congestion and better punctuality?",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.strongest",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 85,
+      "options": [
+        {
+          "id": "a",
+          "text": "The entrance queue fell from twenty-six vehicles to fourteen; late clock-ins fell from 11.8 percent to 6.4 percent."
+        },
+        {
+          "id": "b",
+          "text": "Orders per labor hour changed from 21.4 to 21.1; damaged-order reports stayed nearly unchanged.",
+          "distractorType": "same_other_claim",
+          "whyWrong": "Both details concern productivity or output quality, not one congestion measure plus one punctuality measure."
+        },
+        {
+          "id": "c",
+          "text": "The road construction ended during the pilot; employees could request a preferred start time.",
+          "distractorType": "limitations_only",
+          "whyWrong": "These are limitations or confounding factors, not evidence for the two benefits."
+        },
+        {
+          "id": "d",
+          "text": "Some workers used a later bus; truck waiting above fifteen minutes fell to 17 percent.",
+          "distractorType": "indirect_plus_direct",
+          "whyWrong": "The truck-wait figure directly supports congestion, but the bus comment is an explanation for some workers rather than the direct punctuality result."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The queue count directly measures congestion and the clock-in rate directly measures punctuality, giving one clear evidence line for each reason.",
+        "quickTip": "When the question names two reasons, make sure the pair supplies direct evidence for both—not two facts about the same issue."
+      },
+      "learningStage": "independent"
+    }
+  ]
+}

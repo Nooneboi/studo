@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-08-25T04:25:04.538Z",
+  "builtAt": "2026-08-25T04:55:22.008Z",
   "tracks": [
     {
       "id": "reading",
@@ -5035,14 +5035,56 @@
                 "R5.3"
               ],
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-finding-evidence-active-v1",
+                  "title": "Finding Evidence - Guided Practice",
+                  "description": "Learn to match evidence to the exact claim it supports, separate direct evidence from merely related details, and verify the connection across an argument.",
+                  "file": "generated/modules/set-rla-args-finding-evidence-active-v1.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.3",
+                    "secondarySkillIds": [],
+                    "unitId": "finding-evidence",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Match evidence to the exact argumentative claim it supports and distinguish direct support from background, limitations, or evidence for a different claim.",
+                    "topicLabel": "Finding Evidence",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-finding-evidence-active-staggered-start",
+                    "title": "Extending the Staggered-Start Pilot",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.3"
+                  ]
+                },
+                {
                   "id": "set-rla-args-finding-evidence",
-                  "title": "Keeping the Evening Tutoring Pilot",
+                  "title": "Finding Evidence - Independent Practice",
                   "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
                   "file": "generated/modules/set-rla-args-finding-evidence.json",
                   "difficulty": "medium",
@@ -5860,7 +5902,7 @@
           ],
           "availableSkillCount": 10,
           "availableUnitCount": 6,
-          "availableSetCount": 7,
+          "availableSetCount": 8,
           "topicResourceCount": 0,
           "topicResources": [],
           "resources": [],
@@ -6302,15 +6344,57 @@
               "priority": "P0",
               "practiceMode": "Argument",
               "available": true,
-              "setCount": 1,
-              "questionCount": 8,
+              "setCount": 2,
+              "questionCount": 14,
               "resourceCount": 3,
               "studyFileCount": 3,
               "checkCount": 0,
               "sets": [
                 {
+                  "id": "set-rla-args-finding-evidence-active-v1",
+                  "title": "Finding Evidence - Guided Practice",
+                  "description": "Learn to match evidence to the exact claim it supports, separate direct evidence from merely related details, and verify the connection across an argument.",
+                  "file": "generated/modules/set-rla-args-finding-evidence-active-v1.json",
+                  "difficulty": "medium",
+                  "category": "arguments",
+                  "questionCount": 6,
+                  "curriculum": {
+                    "domain": "Argument Analysis",
+                    "primarySkillId": "R5.3",
+                    "secondarySkillIds": [],
+                    "unitId": "finding-evidence",
+                    "contentKind": "skill_drill",
+                    "practiceTags": [
+                      "active-learning",
+                      "mock-excluded"
+                    ],
+                    "learningObjective": "Match evidence to the exact argumentative claim it supports and distinguish direct support from background, limitations, or evidence for a different claim.",
+                    "topicLabel": "Finding Evidence",
+                    "deliveryRoles": [
+                      "practice",
+                      "train"
+                    ]
+                  },
+                  "passageMeta": {
+                    "id": "p-rla-args-finding-evidence-active-staggered-start",
+                    "title": "Extending the Staggered-Start Pilot",
+                    "textType": "informational",
+                    "context": "workplace",
+                    "sourceType": "original",
+                    "attribution": "Original content by Chee Skool",
+                    "author": "Chee Skool",
+                    "workTitle": null,
+                    "publisher": null,
+                    "year": null,
+                    "url": null
+                  },
+                  "measuredSkillIds": [
+                    "R5.3"
+                  ]
+                },
+                {
                   "id": "set-rla-args-finding-evidence",
-                  "title": "Keeping the Evening Tutoring Pilot",
+                  "title": "Finding Evidence - Independent Practice",
                   "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
                   "file": "generated/modules/set-rla-args-finding-evidence.json",
                   "difficulty": "medium",
@@ -9006,8 +9090,8 @@
       ],
       "availableSkillCount": 15,
       "totalSkillCount": 15,
-      "availableSetCount": 10,
-      "questionCount": 78,
+      "availableSetCount": 11,
+      "questionCount": 84,
       "resourceCount": 45,
       "studyFileCount": 45,
       "checkCount": 0

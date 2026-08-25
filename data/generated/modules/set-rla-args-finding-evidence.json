@@ -1,6 +1,6 @@
 {
   "id": "set-rla-args-finding-evidence",
-  "title": "Keeping the Evening Tutoring Pilot",
+  "title": "Finding Evidence - Independent Practice",
   "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
   "subject": "rla",
   "category": "arguments",
@@ -344,7 +344,7 @@
         "label": "Evidence identification"
       },
       "rule": "Evidence is the information you can point to; a claim is what someone wants you to believe about that information.",
-      "familyId": "arguments.evidence.locate",
+      "familyId": "evidence.identify_role",
       "metadata": {
         "skillId": "R5.3",
         "secondarySkillIds": [],
@@ -472,6 +472,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T04:25:04.515Z"
+    "compiledAt": "2026-08-25T04:55:21.987Z"
   }
 }

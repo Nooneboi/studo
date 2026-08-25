@@ -1048,8 +1048,30 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-args-finding-evidence-active-v1.json",
+    "title": "Finding Evidence - Guided Practice",
+    "description": "Learn to match evidence to the exact claim it supports, separate direct evidence from merely related details, and verify the connection across an argument.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.3",
+      "secondarySkillIds": [],
+      "unitId": "finding-evidence",
+      "contentKind": "skill_drill",
+      "practiceTags": [
+        "active-learning",
+        "mock-excluded"
+      ],
+      "learningObjective": "Match evidence to the exact argumentative claim it supports and distinguish direct support from background, limitations, or evidence for a different claim.",
+      "topicLabel": "Finding Evidence",
+      "deliveryRoles": [
+        "practice",
+        "train"
+      ]
+    }
+  },
+  {
     "file": "generated/modules/set-rla-args-finding-evidence.json",
-    "title": "Keeping the Evening Tutoring Pilot",
+    "title": "Finding Evidence - Independent Practice",
     "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
     "curriculum": {
       "domain": "Argument Analysis",

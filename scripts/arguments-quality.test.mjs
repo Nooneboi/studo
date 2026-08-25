@@ -41,7 +41,7 @@ test('generated Arguments curriculum exposes 9 learner units while retaining int
   assert.equal(track.domains.flatMap((d) => d.skills || []).length, 15);
 });
 
-test('each Arguments unit keeps its resource baseline while Claims & Argument Structure adds the guided reference path', async () => {
+test('each Arguments unit keeps its resource baseline while Phase 3 reference units add guided paths', async () => {
   const curriculum = await json(path.join(GENERATED, 'curriculum.json'));
   const track = curriculum.tracks.find((x) => x.id === 'arguments');
   assert.ok(track);
@@ -51,7 +51,7 @@ test('each Arguments unit keeps its resource baseline while Claims & Argument St
     assert.equal(guides.length, 1, `${unit.id} guide count`);
     assert.equal(workbooks.length, 2, `${unit.id} workbook count`);
     assert.equal((unit.checks || []).length, 0, `${unit.id} must not relabel focused Practice as a Skill Check`);
-    if (unit.id === 'claims-argument-structure') {
+    if (['claims-argument-structure', 'finding-evidence'].includes(unit.id)) {
       assert.equal((unit.sets || []).length, 2, `${unit.id} guided + independent Practice module count`);
       assert.equal(unit.questionCount, 14, `${unit.id} guided + independent question count`);
     } else {

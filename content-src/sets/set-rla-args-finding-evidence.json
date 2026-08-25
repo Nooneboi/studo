@@ -5,7 +5,7 @@
     "id": "set-rla-args-finding-evidence",
     "file": "set-rla-args-finding-evidence.json"
   },
-  "title": "Keeping the Evening Tutoring Pilot",
+  "title": "Finding Evidence - Independent Practice",
   "description": "Locate evidence that directly supports a specific claim and distinguish it from background, limitations, and recommendations.",
   "subject": "rla",
   "category": "arguments",
@@ -319,7 +319,7 @@
       "type": "multiple_choice",
       "prompt": "Which statement is evidence rather than a claim or recommendation?",
       "primarySkillId": "R5.3",
-      "familyId": "arguments.evidence.locate",
+      "familyId": "evidence.identify_role",
       "difficulty": "medium",
       "dok": 2,
       "difficultyProfile": {

@@ -1,8 +1,8 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25  
-**Current release:** `0.7.0-alpha.20`  
-**Current stage:** Phase 3A Claims & Argument Structure depth complete — the first Arguments guided reference path is live; Finding Evidence is next  
+**Current release:** `0.7.0-alpha.21`  
+**Current stage:** Phase 3B Finding Evidence depth complete — Claims & Structure and Finding Evidence now have distinct guided reference paths; Credibility & Counterarguments is next  
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -43,8 +43,8 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **101 learner modules**
-- **741 objective/component questions**
+- **102 learner modules**
+- **747 objective/component questions**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
 - **0 unregistered/orphan learner PDFs**
@@ -356,9 +356,23 @@ Implemented progression:
 
 The new 483-word original community argument, **Two Evenings at the Community Hub**, is `practice + train` and remains `mock-excluded`. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
 
-Arguments priorities from here:
+#### Phase 3B — Finding Evidence: complete in Alpha 21
 
-- Finding Evidence
+Finding Evidence now reuses the existing Study Guide and two workbooks, adds one original workplace guided passage, and preserves the existing tutoring drill as **Finding Evidence - Independent Practice**. The unit stays distinct from Supporting Details and Evidence Quality by centering the exact argumentative claim first, then asking what evidence actually measures that claim.
+
+Implemented progression:
+
+1. Guided — separate observed evidence from the recommendation itself, then match evidence to the congestion or punctuality claim it supports.
+2. Guided — locate the direct punctuality result in the passage rather than choosing a merely related explanation.
+3. Apply — match different measured outcomes to congestion, punctuality, and productivity claims.
+4. Apply — reject a related commuting explanation in favor of the direct clock-in evidence for punctuality.
+5. Independent — support a two-part claim with evidence covering both congestion and productivity.
+6. Independent — choose one direct evidence line for each of two different reasons across the argument.
+
+The new 457-word original workplace argument, **Extending the Staggered-Start Pilot**, is `practice + train` and remains `mock-excluded`. The existing runtime compatibility ID `reading.evidence.matching` remains unchanged; canonical mastery stays on R5.3. The older evidence-role item now uses the canonical `evidence.identify_role` family where appropriate. No new PDF, flashcard deck, Skill Check, Mock item, or interaction engine was added.
+
+Arguments priority from here:
+
 - Credibility & Counterarguments
 
 Language priority:
@@ -398,6 +412,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Phase 3B — Finding Evidence audit and depth decision.**
+> **Phase 3C — Credibility & Counterarguments audit and depth decision.**
 
-Audit the existing Finding Evidence guide, workbooks, focused module, mixed-source exposure, and canonical R5.3 metadata before adding content. Preserve good material and add only the learning method that improves claim-to-evidence matching. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
+Audit the existing Credibility & Counterarguments guide, workbooks, focused module, mixed-source exposure, and R5.9/R5.10 family coverage before adding content. Preserve good material and add only the learning method that improves source-fit judgment and evaluation of whether a response actually answers an objection. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "builtAt": "2026-08-25T04:25:04.553Z",
+  "builtAt": "2026-08-25T04:55:22.022Z",
   "canonicalLegacyModules": [
     "legacy-modules/rla-author-purpose-practice-1.json",
     "legacy-modules/rla-author-purpose-practice-2.json",
@@ -58,6 +58,7 @@
     "set-rla-args-compare-sources",
     "set-rla-args-credibility-counterarguments",
     "set-rla-args-evidence-quality",
+    "set-rla-args-finding-evidence-active-v1",
     "set-rla-args-finding-evidence",
     "set-rla-args-mixed-automation",
     "set-rla-args-mixed-device-lending",
@@ -112,6 +113,7 @@
     "generated/modules/set-rla-args-compare-sources.json",
     "generated/modules/set-rla-args-credibility-counterarguments.json",
     "generated/modules/set-rla-args-evidence-quality.json",
+    "generated/modules/set-rla-args-finding-evidence-active-v1.json",
     "generated/modules/set-rla-args-finding-evidence.json",
     "generated/modules/set-rla-args-mixed-automation.json",
     "generated/modules/set-rla-args-mixed-device-lending.json",
@@ -160,7 +162,7 @@
     "generated/modules/set-rla-summary-active-methods-v1.json",
     "generated/modules/set-rla-supporting-details-active-methods-v1.json"
   ],
-  "generatedIndexCount": 101,
+  "generatedIndexCount": 102,
   "trackPublicationStates": {
     "reading": "published",
     "arguments": "published",
