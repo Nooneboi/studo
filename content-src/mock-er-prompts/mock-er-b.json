@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "mock-er-b",
+  "title": "Four-Day Service Schedule",
+  "topic": "workplace/community",
+  "prompt": "Analyze both sources and determine which argument is better supported. Use specific evidence from the texts to explain your reasoning. Should a public service office adopt a permanent four-day schedule for some teams?",
+  "sourceA": {
+    "title": "Public Service Office: Results from the Scheduling Pilot",
+    "text": "The Northbridge Public Service Office recommends expanding a six-month pilot in which selected teams worked four longer days while the office remained open to the public five days a week. Teams staggered their schedules, so at least one group handled walk-in requests each weekday. The pilot included 96 employees in licensing, records, and customer support. Analysts compared the six pilot months with the same months of the previous year to reduce the effect of seasonal demand.\n\nAverage case-completion time fell from 4.6 days to 4.2 days, a 9 percent improvement. Unscheduled absences fell from 5.1 to 4.0 hours per employee per month. Customer wait time stayed within the office’s previous annual range, and the error rate changed by less than one percentage point. Employee surveys showed that 68 percent preferred the pilot schedule, mainly because they made one fewer weekly commute. The report also identifies a problem: two small teams had difficulty covering Fridays during high-demand weeks.\n\nThe office therefore proposes expansion rather than immediate permanent adoption. Teams with heavy Friday demand could use a different stagger pattern, and every participating department would track wait time, errors, overtime, and unresolved cases monthly. If wait time or error rates exceeded preset limits for two consecutive months, that team would return to its former schedule. Managers also propose running the next phase through the office’s busiest season before deciding whether to make the policy permanent. They argue that the first pilot provides measurable evidence of possible benefits, while the safeguards and second phase directly test the coverage problem the pilot revealed.\n\nThe report also separates preference from performance. Managers note that liking a schedule does not prove that it serves the public, so employee-survey results are presented alongside service measures rather than as the deciding evidence. The next phase would publish department-level results instead of only an office-wide average, allowing readers to see whether benefits or problems are concentrated in particular teams."
+  },
+  "sourceB": {
+    "title": "Employee Association: Concerns About Permanent Adoption",
+    "text": "The Northbridge Employee Association asks the office not to expand the four-day schedule until workers have more control over which schedule they use. The association agrees that fewer commutes could help many employees, but says a department-wide schedule may create problems for workers with child-care, evening classes, or medical responsibilities. Longer workdays may be difficult even when employees like having an extra day away from the office.\n\nThe association cites its own survey of 212 employees. Forty-one percent preferred a four-day week, 37 percent preferred the current five-day schedule, and the remaining employees preferred flexible starting times. The survey shows that workers do not share one preference, but it did not test how each schedule would affect customer service, team handoffs, or error rates. The association also notes that the original pilot took place during a relatively quiet period. During the busiest month, appointment requests are about 18 percent higher.\n\nAs an alternative, the association proposes a voluntary scheduling program and a second pilot during the peak month. Each department would maintain minimum staffing levels, and employees could request either compressed or standard hours when coverage allowed. The association argues that this approach would protect employee choice while producing better evidence about peak-season service. It does not explain how managers should resolve competing schedule requests, and it provides no estimate of whether a voluntary system would preserve the lower absence rate reported in the original pilot."
+  },
+  "strongerSource": "A",
+  "authoringKey": {
+    "reasons": [
+      "One source connects its recommendation to more directly measured evidence.",
+      "One source addresses important limitations or implementation safeguards more completely."
+    ]
+  },
+  "revisionPrompts": [
+    "Did you compare the quality of evidence in both sources?",
+    "Did you explain why specific evidence supports your judgment?",
+    "Did you address a limitation or counterpoint?"
+  ],
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review"
+}

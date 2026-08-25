@@ -63,12 +63,15 @@ test('Train sends new learners to Practice before offering adaptive training', (
   assert.doesNotMatch(js, /Baseline session/);
 });
 
-test('temporary Mock surfaces describe format and timing practice rather than a full exam simulation', () => {
-  const learnerCopy = [read('quiz.html'), read('js/quiz.js'), read('js/test.js'), read('js/progress.js'), read('content-src/config/rla-mock-v1.json')].join('\n');
-  assert.doesNotMatch(learnerCopy, /Exam simulation/i);
-  assert.doesNotMatch(learnerCopy, /Full simulation/i);
-  assert.doesNotMatch(learnerCopy, /Full RLA Mock|full mock|GED-style simulation/i);
-  assert.match(learnerCopy, /Format & Timing Practice/i);
+test('dedicated Mock surfaces distinguish the full unseen mock from objective format practice', () => {
+  const learnerCopy = [read('quiz.html'), read('js/quiz.js'), read('js/test.js'), read('js/progress.js'), read('content-src/config/rla-mock-v2.json')].join('\n');
+  assert.match(learnerCopy, /Full RLA Mock/i);
+  assert.match(learnerCopy, /unseen/i);
+  assert.match(learnerCopy, /Objective RLA Practice Test/i);
+  assert.match(learnerCopy, /format-and-timing practice|format and timing practice/i);
+  assert.match(learnerCopy, /not an official GED score/i);
+  assert.match(learnerCopy, /not an official GED form or pass prediction/i);
+  assert.doesNotMatch(learnerCopy, /College Ready|official percentile|psychometric equivalence/i);
 });
 
 test('learner navigation hides unavailable future subjects', () => {

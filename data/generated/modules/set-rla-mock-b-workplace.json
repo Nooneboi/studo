@@ -1,0 +1,371 @@
+{
+  "id": "set-rla-mock-b-workplace",
+  "title": "Workplace Trial: A pick-to-light system in a warehouse",
+  "description": "Workplace/community source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "At Meridian Services, managers and employees were considering a pick-to-light system in a warehouse. Operations director Hana Lee proposed testing light-guided shelf indicators in one packing zone while keeping experienced workers available to verify unusual orders. She argued that the change should begin as a limited trial rather than a permanent rule.\n\nLee's memo cited three pieces of evidence. the pilot cut average search time by 18 seconds per order, wrong-item picks fell from 2.8 percent to 1.9 percent, and training time for new staff decreased She also separated outcomes that had been measured from benefits that were only expected. For example, the pilot could show whether delays decreased, but it could not prove in advance that employee morale would improve.\n\nTeam supervisor Carlos Webb supported testing the idea but raised a concern: the pilot used only common products and may not represent oversized or rarely ordered items. He said a decision affecting the whole organization should not be based only on averages if one department faced a very different workload. He asked that the trial track error rates and overtime as well as speed.\n\nLee agreed with that addition and responded that the next test should include a mixed-product zone and track correction time as well as initial picking speed. She revised the plan so the trial would include a comparison group, weekly check-ins, and a stop rule if service quality fell below the existing standard for two consecutive weeks.\n\nEmployees then debated whether the new safeguards made the proposal too complicated. Some wanted a fast yes-or-no decision. Others argued that a well-designed trial was useful precisely because it could reveal problems before a permanent change. The final plan kept the measurements simple: speed, error rate, overtime, and a short employee survey.\n\nAfter reviewing the proposal, the leadership team approved the trial but not permanent adoption. The written decision explained that a pilot is evidence-gathering, not proof. A strong recommendation at the end would need to show both that the targeted problem improved and that the change did not simply move costs or errors somewhere less visible.\n\nThe situation also shows why workplace decision making cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What action does the proposal recommend first?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "claim.main",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Testing light-guided shelf indicators in one packing zone while keeping experienced workers available to verify unusual orders."
+        },
+        {
+          "id": "b",
+          "text": "Immediate permanent adoption for every team.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Immediate permanent adoption for every team.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Ending all measurement before the trial begins.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Ending all measurement before the trial begins.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Replacing the current system without a comparison.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Replacing the current system without a comparison.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which evidence is actually reported rather than predicted?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "reading.evidence.matching",
+        "label": "Evidence identification"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "evidence.strongest",
+      "metadata": {
+        "skillId": "R5.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every employee will prefer the change.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Every employee will prefer the change.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The pilot cut average search time by 18 seconds per order, wrong-item picks fell from 2.8 percent to 1.9 percent, and training time for new staff decreased."
+        },
+        {
+          "id": "c",
+          "text": "The change will permanently reduce all costs.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The change will permanently reduce all costs.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "No department will experience a downside.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“No department will experience a downside.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the supervisor’s concern matter?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.7",
+        "label": "Reasoning validity / fallacies"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "reasoning.challenge",
+      "metadata": {
+        "skillId": "R5.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves pilots can never be useful.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves pilots can never be useful.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It changes the topic from work to constitutional law.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It changes the topic from work to constitutional law.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It identifies a condition under which a favorable average could hide a problem for one group."
+        },
+        {
+          "id": "d",
+          "text": "It argues that speed is the only outcome worth measuring.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It argues that speed is the only outcome worth measuring.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the revised plan respond to criticism?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.10",
+        "label": "Counterargument & response"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "counterargument.response",
+      "metadata": {
+        "skillId": "R5.10",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It removes all safeguards to simplify the test.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It removes all safeguards to simplify the test.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It treats concerns as evidence of bad motives.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It treats concerns as evidence of bad motives.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It stops collecting data about service quality.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It stops collecting data about service quality.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The next test should include a mixed-product zone and track correction time as well as initial picking speed."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which result would most strongly support permanent adoption?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "sufficiency.evaluate",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The target outcome improves while errors, overtime, or service quality do not worsen beyond the agreed limits."
+        },
+        {
+          "id": "b",
+          "text": "One manager says the new system feels modern.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“One manager says the new system feels modern.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The first week produces the fastest single result.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The first week produces the fastest single result.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Employees finish the survey before the deadline.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Employees finish the survey before the deadline.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the passage’s main reasoning principle?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "synthesis.conclusion",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A pilot automatically proves a proposal works.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A pilot automatically proves a proposal works.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change."
+        },
+        {
+          "id": "c",
+          "text": "Average speed is enough to evaluate any workplace policy.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Average speed is enough to evaluate any workplace policy.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Permanent decisions should be made before measurements are chosen.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Permanent decisions should be made before measurements are chosen.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mock-b-workplace",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    },
+    "passage": {
+      "id": "p-rla-mock-b-workplace",
+      "title": "Workplace Trial: A pick-to-light system in a warehouse",
+      "textType": "informational",
+      "context": "workplace",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T12:24:59.860Z"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "mock-er-a",
+  "title": "Cool Roof Requirement",
+  "topic": "science/public policy",
+  "prompt": "Analyze both sources and determine which argument is better supported. Use specific evidence from the texts to explain your reasoning. Should the city require reflective “cool roofs” on most new large commercial buildings?",
+  "sourceA": {
+    "title": "City Energy Office: Findings from the Cool-Roof Pilot",
+    "text": "The Northbridge Energy Office recommends requiring reflective “cool roofs” when large commercial buildings are newly constructed or when an existing roof is substantially replaced. The recommendation follows a two-summer pilot involving twelve matched buildings. Six roofs used a high-reflectance surface and six used conventional dark roofing. Sensors recorded roof-surface temperature, top-floor indoor temperature, and afternoon electricity demand at fifteen-minute intervals. On comparable clear days, the reflective roofs averaged 18 degrees Fahrenheit cooler at midday. The buildings beneath them used 7 percent less electricity for afternoon cooling, while no consistent difference appeared in morning demand.\n\nThe office also examined cost. Contractors estimated that the reflective material added about 2 to 4 percent to the price of a planned roof replacement. Using each building’s measured electricity use rather than a citywide average, analysts estimated payback periods ranging from three to seven years. The report cautions that shaded buildings and buildings with unusually efficient insulation may save less. For that reason, the proposed rule includes exemptions for historic structures, roofs that receive little direct sun, and projects where an engineer documents a technical conflict.\n\nThe office does not treat the twelve-building pilot as final proof. It proposes a three-year review after the rule begins. Building owners would submit annual energy data, and the city would publish methods, average savings, maintenance costs, and any failed installations. If measured savings are much smaller than the pilot suggested, the standard could be revised. The office argues that a limited requirement tied to normal roof replacement captures a measurable heat and energy benefit without forcing owners to discard functioning roofs early.\n\nThe proposal also includes a hardship review for small businesses occupying older buildings. Applicants would submit contractor estimates and recent utility records, and the city could allow a delayed compliance schedule when replacement costs are unusually high. The office says this process would be audited annually so exemptions do not become an unmeasured loophole."
+  },
+  "sourceB": {
+    "title": "Commercial Building Association: Case for a Flexible Incentive",
+    "text": "The Northbridge Commercial Building Association opposes a rule that specifies one roofing approach. It supports reducing cooling demand, but argues that building design varies too much for a single material standard. The association points to warehouses with skylights, shaded downtown towers, refrigerated facilities, and buildings that already use rooftop solar equipment. It says those differences can change whether roof reflectance produces meaningful savings.\n\nInstead, the association proposes a technology-neutral rebate. Owners who demonstrate a verified reduction in summer cooling demand could receive a property-tax credit, whether the improvement came from reflective roofing, insulation, ventilation controls, solar shading, or another method. In a survey of 74 member businesses, 61 percent said they would be more willing to make an efficiency upgrade if they could choose the method. The survey measured willingness, however; it did not measure how much energy those businesses would actually save.\n\nA consultant hired by the association reviewed the city pilot and noted that roof age, insulation, and operating hours differed across the twelve buildings. The consultant recommends comparing each building’s energy use before and after an upgrade and tracking maintenance costs for at least two years. The association argues that those measurements would reward results rather than materials. It does not provide an estimate of how many owners would participate in the voluntary program, how large the rebate would need to be, or whether the program would reduce neighborhood heat as much as the city’s proposed requirement."
+  },
+  "strongerSource": "A",
+  "authoringKey": {
+    "reasons": [
+      "One source connects its recommendation to more directly measured evidence.",
+      "One source addresses important limitations or implementation safeguards more completely."
+    ]
+  },
+  "revisionPrompts": [
+    "Did you compare the quality of evidence in both sources?",
+    "Did you explain why specific evidence supports your judgment?",
+    "Did you address a limitation or counterpoint?"
+  ],
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review"
+}

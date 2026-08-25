@@ -1,0 +1,374 @@
+{
+  "id": "set-rla-mock-b-science",
+  "title": "Field Study: Whether restored wetland soil reduces nutrient runoff after heavy rain",
+  "description": "Science/technical source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "Researchers at the Harbor County Field Lab designed a small study about whether restored wetland soil reduces nutrient runoff after heavy rain. Researchers built matched test plots using compacted soil, restored wetland soil, and restored soil planted with native sedges. Before collecting data, the team wrote down the outcome they expected and the measurements that would count as evidence for or against that expectation.\n\nThe trial ran for eight weeks. After six simulated storms, planted restored plots released the least nitrate, restored bare plots released less than compacted plots, and all plots released more nitrate during the first storm than later storms. The team recorded the same variables on the same schedule and used identical equipment at each test location. When a sensor produced an unusual value, researchers checked the instrument before deciding whether the value should remain in the data set.\n\nThe pattern was noticeable but not perfectly uniform. Several measurements supported the original expectation, while a smaller number moved in the opposite direction. The researchers therefore reported averages and ranges instead of highlighting only the most dramatic result. They also compared the final week with the starting conditions so that ordinary differences between test locations would not be mistaken for effects of the treatment.\n\nThe report identified an important limitation: the plots were small and used controlled rainfall rather than full seasonal weather. That limitation did not erase the observed pattern, but it reduced how confidently the team could generalize beyond the study. The researchers recommended a larger follow-up with more sites and a longer observation period.\n\nThe team's conclusion was cautious: restoring soil structure, especially with vegetation, may reduce nutrient runoff under the tested conditions. They did not claim the study proved a universal rule. Instead, they said the evidence justified further testing and offered a practical reason to continue measuring the same outcome under a wider range of conditions.\n\nA reviewer praised the report for separating observation from interpretation. The reviewer noted that strong scientific reasoning does not require pretending uncertainty is absent. It requires showing what the data support, what they do not support, and which next test would most directly reduce the remaining uncertainty.\n\nThe situation also shows why scientific evidence cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What was the main purpose of the study?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "purpose.primary",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To test whether restored wetland soil reduces nutrient runoff after heavy rain under controlled comparison conditions."
+        },
+        {
+          "id": "b",
+          "text": "To prove the result applies in every environment.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To prove the result applies in every environment.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "To measure an unrelated social preference.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To measure an unrelated social preference.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "To replace all future testing with one trial.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To replace all future testing with one trial.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail is a direct result from the trial?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R1.1",
+        "label": "Explicit meaning"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "explicit.detail.match",
+      "metadata": {
+        "skillId": "R1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The researchers studied hundreds of unrelated sites.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The researchers studied hundreds of unrelated sites.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "After six simulated storms, planted restored plots released the least nitrate, restored bare plots released less than compacted plots, and all plots released more nitrate during the first storm than later storms."
+        },
+        {
+          "id": "c",
+          "text": "The study continued for several years.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The study continued for several years.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Every measurement supported the same direction.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Every measurement supported the same direction.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "prompt": "Sort the details by whether they are evidence from the trial or a limitation on generalizing it.",
+      "points": 1,
+      "explanation": "The classifications match how each detail functions in the passage.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "Sort by evidence role, not by whether a detail sounds important.",
+      "familyId": "conclusion.synthesize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "correct": "i1=evidence|i2=limit|i3=evidence",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "After six simulated storms, planted restored plots released the least nitrate, restored bare plots released less than compacted plots, and all plots released more nitrate during the first storm than later storms."
+          },
+          {
+            "id": "i2",
+            "text": "the plots were small and used controlled rainfall rather than full seasonal weather"
+          },
+          {
+            "id": "i3",
+            "text": "Researchers used the same measurement schedule for each condition."
+          }
+        ],
+        "zones": [
+          {
+            "id": "evidence",
+            "label": "Evidence from the trial"
+          },
+          {
+            "id": "limit",
+            "label": "Limitation / scope"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why did the researchers report averages and ranges?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "sufficiency.evaluate",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To make the report longer.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To make the report longer.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "To guarantee the hypothesis was correct.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To guarantee the hypothesis was correct.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "To avoid describing any uncertainty.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To avoid describing any uncertainty.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "To show the overall pattern without hiding measurements that differed from it."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R2.5",
+        "label": "Conclusions & generalizations"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "conclusion.synthesize",
+      "metadata": {
+        "skillId": "R2.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Restoring soil structure, especially with vegetation, may reduce nutrient runoff under the tested conditions."
+        },
+        {
+          "id": "b",
+          "text": "The study proves a universal rule with no exceptions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The study proves a universal rule with no exceptions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The tested treatment had no measurable effect.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The tested treatment had no measurable effect.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The main limitation makes every result meaningless.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The main limitation makes every result meaningless.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What follow-up would best address the stated limitation?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "sufficiency.add",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeat only the easiest measurement from the same setup.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Repeat only the easiest measurement from the same setup.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Repeat the study with more sites or conditions that differ from the original trial."
+        },
+        {
+          "id": "c",
+          "text": "Remove all measurements that conflict with the expectation.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Remove all measurements that conflict with the expectation.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Ask researchers whether they liked the result.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Ask researchers whether they liked the result.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mock-b-science",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    },
+    "passage": {
+      "id": "p-rla-mock-b-science",
+      "title": "Field Study: Whether restored wetland soil reduces nutrient runoff after heavy rain",
+      "textType": "informational",
+      "context": "science",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T12:24:59.859Z"
+  }
+}

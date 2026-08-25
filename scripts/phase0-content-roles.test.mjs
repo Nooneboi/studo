@@ -154,9 +154,11 @@ test('public build ships exactly the learner modules referenced by generated ind
   }
 });
 
-test('Mock results disclose when the temporary Practice-bank fallback was used', () => {
+test('Phase 5 full Mock no longer exposes or depends on the temporary Practice-bank fallback', () => {
   const js = fs.readFileSync(path.join(ROOT, 'js/test.js'), 'utf8');
-  assert.match(js, /practice_fallback/);
-  assert.match(js, /Practice bank/i);
-  assert.match(js, /not an independent readiness measure/i);
+  const blueprint = readJson('content-src/config/rla-mock-v2.json');
+  assert.equal(blueprint.selection.allowPracticeFallback, false);
+  assert.doesNotMatch(js, /practice_fallback/);
+  assert.doesNotMatch(js, /Practice bank/i);
+  assert.match(js, /raw Chee Skool practice evidence/i);
 });

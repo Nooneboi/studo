@@ -1,0 +1,419 @@
+{
+  "id": "set-rla-mock-a-civics",
+  "title": "Civic Debate: First Amendment",
+  "description": "Civics/GAC source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "A public discussion in the city of Northbridge began with a short line from a founding-era constitutional text: “Congress shall make no law ... abridging the freedom of speech” The words are old, but the meeting was about a current question: whether the city should require groups using the central library plaza to obtain a permit when amplified sound is planned\n\nCity attorney Lena Ortiz opened by reminding residents that constitutional language sets boundaries on government power while later laws and court decisions help apply those boundaries to new situations. She warned the audience not to treat one sentence as a complete legal answer. Instead, she asked them to identify the value protected by the text, the government interest behind the proposal, and the evidence showing whether the proposal was narrowly designed.\n\nSupporters of the proposal argued that a neutral permit could protect access to the library and prevent overlapping amplified events without judging a group's viewpoint. They pointed to a six-month pilot in two districts and said the policy addressed a documented problem rather than a hypothetical fear. Their strongest evidence was a comparison between the pilot locations and similar locations that kept the old practice. The supporters also accepted two limits: the policy should expire unless renewed after public review, and residents should have a clear way to challenge an incorrect decision.\n\nOpponents answered that the permit process could burden small groups or be enforced unevenly if officials had too much discretion. They agreed that the city had identified a real problem, but they questioned whether the proposed response reached farther than necessary. One speaker emphasized that government convenience is not the same as public necessity. Another asked whether a less intrusive approach had been tested with the same care.\n\nThe debate became more useful when both sides stopped arguing about motives and focused on evidence. The city released the pilot methods, complaint records, and a plain-language description of what officials could and could not do. Residents discovered that some early claims from both camps had been exaggerated. The pilot was neither a complete success nor the sweeping threat described in several social-media posts.\n\nA revised proposal then narrowed the policy, added independent review, and required a public report after six months. The revised system kept a simple notice requirement for large amplified events but removed a fee that had discouraged small community groups. The council did not declare that the constitutional question had been permanently settled. Instead, members said the next vote should depend on whether the revised policy actually solved the stated problem while respecting the liberty protected by the constitutional text.\n\nThe discussion illustrates a recurring feature of American civic argument. Founding documents often provide principles rather than step-by-step instructions for modern technology or local administration. Responsible analysis therefore requires readers to compare the text, the purpose of a policy, the quality of the evidence, and the safeguards that limit government action.\n\nThe situation also shows why First Amendment cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.\n\nBy the end, the central question is not whether every concern disappears. It is whether the available evidence is strong enough to justify the next step while leaving room to correct the plan if later results differ.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "select_text",
+      "prompt": "Which sentence most directly states the opponents’ main concern?",
+      "points": 1,
+      "explanation": "This sentence most directly expresses the idea named in the question.",
+      "skill": {
+        "id": "R5.1",
+        "label": "Claim identification"
+      },
+      "rule": "Choose the exact sentence that performs the requested role.",
+      "familyId": "claim.main",
+      "metadata": {
+        "skillId": "R5.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 70,
+      "correct": "s2",
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "Supporters of the proposal argued that a neutral permit could protect access to the library and prevent overlapping amplified events without judging a group's viewpoint."
+          },
+          {
+            "id": "s2",
+            "text": "Opponents answered that the permit process could burden small groups or be enforced unevenly if officials had too much discretion."
+          },
+          {
+            "id": "s3",
+            "text": "A revised proposal then narrowed the policy, added independent review, and required a public report after six months."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main purpose of the constitutional excerpt in the passage?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R4.4",
+        "label": "Author purpose"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "purpose.detail",
+      "metadata": {
+        "skillId": "R4.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It gives a complete step-by-step rule for the city.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It gives a complete step-by-step rule for the city.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It supplies a principle readers must consider while evaluating a modern policy."
+        },
+        {
+          "id": "c",
+          "text": "It proves the supporters are legally correct.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves the supporters are legally correct.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It replaces the need for evidence about the pilot.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It replaces the need for evidence about the pilot.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which feature most strengthens the supporters’ argument?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "sufficiency.evaluate",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They assume every critic has bad motives.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They assume every critic has bad motives.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "They rely only on social-media reactions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They rely only on social-media reactions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "They compare pilot locations with similar locations and accept limits on the policy."
+        },
+        {
+          "id": "d",
+          "text": "They claim the policy can never make a mistake.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They claim the policy can never make a mistake.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the attorney warn against treating one constitutional sentence as a complete legal answer?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.7",
+        "label": "Reasoning validity / fallacies"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "reasoning.challenge",
+      "metadata": {
+        "skillId": "R5.7",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The constitutional text has no relevance today.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The constitutional text has no relevance today.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Local officials may ignore constitutional limits.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Local officials may ignore constitutional limits.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Only historical facts can be discussed at a city meeting.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Only historical facts can be discussed at a city meeting.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Modern application requires considering the protected value, government purpose, evidence, and limits."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What do both sides eventually agree is useful?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R6.1",
+        "label": "Compare texts on same topic"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "twotext.agreement",
+      "metadata": {
+        "skillId": "R6.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Clear evidence about the pilot and safeguards that limit government action."
+        },
+        {
+          "id": "b",
+          "text": "Removing all public review.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Removing all public review.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Keeping the original proposal unchanged.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Keeping the original proposal unchanged.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Judging the policy only by officials’ intentions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Judging the policy only by officials’ intentions.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the revised proposal?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "summary.section",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It abandons the policy because any objection is decisive.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It abandons the policy because any objection is decisive.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It narrows the policy and adds review rather than treating the first pilot as final proof."
+        },
+        {
+          "id": "c",
+          "text": "It expands official discretion without reporting.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It expands official discretion without reporting.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It declares the constitutional question permanently settled.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It declares the constitutional question permanently settled.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which principle of civic reasoning is emphasized most strongly?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R6.5",
+        "label": "Synthesis across sources"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "synthesis.conclusion",
+      "metadata": {
+        "skillId": "R6.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Public policy should always favor the fastest solution.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Public policy should always favor the fastest solution.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Founding documents eliminate the need for modern evidence.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Founding documents eliminate the need for modern evidence.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Government action should be judged by both its evidence-based purpose and the limits placed on its power."
+        },
+        {
+          "id": "d",
+          "text": "A pilot result automatically proves a policy is constitutional.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A pilot result automatically proves a policy is constitutional.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mock-a-civics",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    },
+    "passage": {
+      "id": "p-rla-mock-a-civics",
+      "title": "Civic Debate: First Amendment",
+      "textType": "informational",
+      "context": "civics",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T12:24:59.855Z"
+  }
+}

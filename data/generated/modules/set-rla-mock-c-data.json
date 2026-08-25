@@ -1,0 +1,374 @@
+{
+  "id": "set-rla-mock-c-data",
+  "title": "Pilot Results: Extended evening hours at three branch libraries",
+  "description": "Argument/data multi-format source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "The Northbridge Planning Office tested extended evening hours at three branch libraries. Branches stayed open until 9 p.m. on Tuesdays and Thursdays for ten weeks. Staff published the following summary after the trial.\n\nRESULTS TABLE\nEvening visits after 6 p.m.: 2,040 before | 2,780 during pilot\nComputer sessions after 6 p.m.: 620 before | 910 during pilot\nStaff overtime hours: 148 before | 196 during pilot\nSurvey respondents saying hours fit their schedule: 58% before | 79% during pilot\n\nThe office warned readers not to treat the largest percentage change as automatically the best outcome. Some measures describe benefits, while others describe costs or side effects. A sound conclusion has to consider the direction of each measure and whether the comparison period was similar enough to make the change meaningful.\n\nThe pilot increased access measures, but overtime also increased. That means a permanent recommendation should consider whether scheduling changes could preserve the access gain at a lower staffing cost. Analysts also checked whether one unusual week was driving the result. Removing that week changed the exact percentages slightly but did not reverse the overall pattern.\n\nSeveral residents asked why the report included both counts and survey responses. The project manager explained that the two forms of evidence answer different questions. Counts show what happened at the system level, while surveys can reveal how people experienced the change. Neither should automatically replace the other.\n\nThe office recommended one more trial before permanent expansion. The next version would keep the same core measurements so results could be compared over time, but it would also add one measure for a concern raised during the first trial. The recommendation was based on the combined pattern, not on a single favorable number.\n\nThe situation also shows why interpreting data with text cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.\n\nBy the end, the central question is not whether every concern disappears. It is whether the available evidence is strong enough to justify the next step while leaving room to correct the plan if later results differ.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why does the report include both counts and survey responses?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R6.3",
+        "label": "Text + data / visuals"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "textdata.integrate",
+      "metadata": {
+        "skillId": "R6.3",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They measure different parts of the outcome: system behavior and user experience."
+        },
+        {
+          "id": "b",
+          "text": "They guarantee every measure will show the same result.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They guarantee every measure will show the same result.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "They allow the office to ignore costs.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They allow the office to ignore costs.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "They make a comparison period unnecessary.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They make a comparison period unnecessary.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "drag_sort",
+      "prompt": "Sort each statement by whether it is a measured result or an interpretation/recommendation.",
+      "points": 1,
+      "explanation": "The classifications match how each detail functions in the passage.",
+      "skill": {
+        "id": "R6.3",
+        "label": "Text + data / visuals"
+      },
+      "rule": "Sort by evidence role, not by whether a detail sounds important.",
+      "familyId": "textdata.support",
+      "metadata": {
+        "skillId": "R6.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 80,
+      "correct": "i1=measured|i2=measured|i3=interpretation",
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "Evening visits after 6 p.m.: 2,040 before | 2,780 during pilot"
+          },
+          {
+            "id": "i2",
+            "text": "Computer sessions after 6 p.m.: 620 before | 910 during pilot"
+          },
+          {
+            "id": "i3",
+            "text": "The office recommends another trial before permanent expansion."
+          }
+        ],
+        "zones": [
+          {
+            "id": "measured",
+            "label": "Measured result"
+          },
+          {
+            "id": "interpretation",
+            "label": "Interpretation / recommendation"
+          }
+        ],
+        "presentation": "choice_rows"
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion best uses more than one measure?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R6.3",
+        "label": "Text + data / visuals"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "textdata.integrate",
+      "metadata": {
+        "skillId": "R6.3",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot should be judged from the largest percentage alone.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot should be judged from the largest percentage alone.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Survey responses make the measured counts irrelevant.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Survey responses make the measured counts irrelevant.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The pilot increased access measures, but overtime also increased. That means a permanent recommendation should consider whether scheduling changes could preserve the access gain at a lower staffing cost."
+        },
+        {
+          "id": "d",
+          "text": "Any cost increase or decrease automatically decides the policy.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Any cost increase or decrease automatically decides the policy.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why did analysts check whether one unusual week drove the result?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "sufficiency.evaluate",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To remove every week that disagreed with the recommendation.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To remove every week that disagreed with the recommendation.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "To convert survey responses into operating costs.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To convert survey responses into operating costs.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "To avoid comparing the pilot with earlier conditions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To avoid comparing the pilot with earlier conditions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "To test whether the overall pattern depended too heavily on a single period."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What is the strongest reason for running another trial?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R5.5",
+        "label": "Evidence sufficiency"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "sufficiency.add",
+      "metadata": {
+        "skillId": "R5.5",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It can test whether the observed pattern repeats while adding a measure for a concern raised during the first trial."
+        },
+        {
+          "id": "b",
+          "text": "The first trial collected no data at all.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The first trial collected no data at all.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "A second trial guarantees the policy will be permanent.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A second trial guarantees the policy will be permanent.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The office wants to replace all previous measurements.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The office wants to replace all previous measurements.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which revision would make this sentence most precise: “The pilot was better.”",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "L1.8",
+        "label": "Wordiness & awkward construction"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "edit.awkwardness",
+      "metadata": {
+        "skillId": "L1.8",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot was totally perfect in every way.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot was totally perfect in every way.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The pilot improved several access measures, although at least one cost or tradeoff still needs evaluation."
+        },
+        {
+          "id": "c",
+          "text": "The pilot was better because better things happened.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot was better because better things happened.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The pilot should be permanent because some numbers changed.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot should be permanent because some numbers changed.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mock-c-data",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    },
+    "passage": {
+      "id": "p-rla-mock-c-data",
+      "title": "Pilot Results: Extended evening hours at three branch libraries",
+      "textType": "informational",
+      "context": "data",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T12:24:59.860Z"
+  }
+}

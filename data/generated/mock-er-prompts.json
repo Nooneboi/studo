@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-08-25T12:24:59.883Z",
+  "prompts": [
+    {
+      "schemaVersion": 1,
+      "id": "mock-er-a",
+      "title": "Cool Roof Requirement",
+      "topic": "science/public policy",
+      "prompt": "Analyze both sources and determine which argument is better supported. Use specific evidence from the texts to explain your reasoning. Should the city require reflective “cool roofs” on most new large commercial buildings?",
+      "sourceA": {
+        "title": "City Energy Office: Findings from the Cool-Roof Pilot",
+        "text": "The Northbridge Energy Office recommends requiring reflective “cool roofs” when large commercial buildings are newly constructed or when an existing roof is substantially replaced. The recommendation follows a two-summer pilot involving twelve matched buildings. Six roofs used a high-reflectance surface and six used conventional dark roofing. Sensors recorded roof-surface temperature, top-floor indoor temperature, and afternoon electricity demand at fifteen-minute intervals. On comparable clear days, the reflective roofs averaged 18 degrees Fahrenheit cooler at midday. The buildings beneath them used 7 percent less electricity for afternoon cooling, while no consistent difference appeared in morning demand.\n\nThe office also examined cost. Contractors estimated that the reflective material added about 2 to 4 percent to the price of a planned roof replacement. Using each building’s measured electricity use rather than a citywide average, analysts estimated payback periods ranging from three to seven years. The report cautions that shaded buildings and buildings with unusually efficient insulation may save less. For that reason, the proposed rule includes exemptions for historic structures, roofs that receive little direct sun, and projects where an engineer documents a technical conflict.\n\nThe office does not treat the twelve-building pilot as final proof. It proposes a three-year review after the rule begins. Building owners would submit annual energy data, and the city would publish methods, average savings, maintenance costs, and any failed installations. If measured savings are much smaller than the pilot suggested, the standard could be revised. The office argues that a limited requirement tied to normal roof replacement captures a measurable heat and energy benefit without forcing owners to discard functioning roofs early.\n\nThe proposal also includes a hardship review for small businesses occupying older buildings. Applicants would submit contractor estimates and recent utility records, and the city could allow a delayed compliance schedule when replacement costs are unusually high. The office says this process would be audited annually so exemptions do not become an unmeasured loophole."
+      },
+      "sourceB": {
+        "title": "Commercial Building Association: Case for a Flexible Incentive",
+        "text": "The Northbridge Commercial Building Association opposes a rule that specifies one roofing approach. It supports reducing cooling demand, but argues that building design varies too much for a single material standard. The association points to warehouses with skylights, shaded downtown towers, refrigerated facilities, and buildings that already use rooftop solar equipment. It says those differences can change whether roof reflectance produces meaningful savings.\n\nInstead, the association proposes a technology-neutral rebate. Owners who demonstrate a verified reduction in summer cooling demand could receive a property-tax credit, whether the improvement came from reflective roofing, insulation, ventilation controls, solar shading, or another method. In a survey of 74 member businesses, 61 percent said they would be more willing to make an efficiency upgrade if they could choose the method. The survey measured willingness, however; it did not measure how much energy those businesses would actually save.\n\nA consultant hired by the association reviewed the city pilot and noted that roof age, insulation, and operating hours differed across the twelve buildings. The consultant recommends comparing each building’s energy use before and after an upgrade and tracking maintenance costs for at least two years. The association argues that those measurements would reward results rather than materials. It does not provide an estimate of how many owners would participate in the voluntary program, how large the rebate would need to be, or whether the program would reduce neighborhood heat as much as the city’s proposed requirement."
+      },
+      "revisionPrompts": [
+        "Did you compare the quality of evidence in both sources?",
+        "Did you explain why specific evidence supports your judgment?",
+        "Did you address a limitation or counterpoint?"
+      ],
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 5 mock editorial review"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "mock-er-b",
+      "title": "Four-Day Service Schedule",
+      "topic": "workplace/community",
+      "prompt": "Analyze both sources and determine which argument is better supported. Use specific evidence from the texts to explain your reasoning. Should a public service office adopt a permanent four-day schedule for some teams?",
+      "sourceA": {
+        "title": "Public Service Office: Results from the Scheduling Pilot",
+        "text": "The Northbridge Public Service Office recommends expanding a six-month pilot in which selected teams worked four longer days while the office remained open to the public five days a week. Teams staggered their schedules, so at least one group handled walk-in requests each weekday. The pilot included 96 employees in licensing, records, and customer support. Analysts compared the six pilot months with the same months of the previous year to reduce the effect of seasonal demand.\n\nAverage case-completion time fell from 4.6 days to 4.2 days, a 9 percent improvement. Unscheduled absences fell from 5.1 to 4.0 hours per employee per month. Customer wait time stayed within the office’s previous annual range, and the error rate changed by less than one percentage point. Employee surveys showed that 68 percent preferred the pilot schedule, mainly because they made one fewer weekly commute. The report also identifies a problem: two small teams had difficulty covering Fridays during high-demand weeks.\n\nThe office therefore proposes expansion rather than immediate permanent adoption. Teams with heavy Friday demand could use a different stagger pattern, and every participating department would track wait time, errors, overtime, and unresolved cases monthly. If wait time or error rates exceeded preset limits for two consecutive months, that team would return to its former schedule. Managers also propose running the next phase through the office’s busiest season before deciding whether to make the policy permanent. They argue that the first pilot provides measurable evidence of possible benefits, while the safeguards and second phase directly test the coverage problem the pilot revealed.\n\nThe report also separates preference from performance. Managers note that liking a schedule does not prove that it serves the public, so employee-survey results are presented alongside service measures rather than as the deciding evidence. The next phase would publish department-level results instead of only an office-wide average, allowing readers to see whether benefits or problems are concentrated in particular teams."
+      },
+      "sourceB": {
+        "title": "Employee Association: Concerns About Permanent Adoption",
+        "text": "The Northbridge Employee Association asks the office not to expand the four-day schedule until workers have more control over which schedule they use. The association agrees that fewer commutes could help many employees, but says a department-wide schedule may create problems for workers with child-care, evening classes, or medical responsibilities. Longer workdays may be difficult even when employees like having an extra day away from the office.\n\nThe association cites its own survey of 212 employees. Forty-one percent preferred a four-day week, 37 percent preferred the current five-day schedule, and the remaining employees preferred flexible starting times. The survey shows that workers do not share one preference, but it did not test how each schedule would affect customer service, team handoffs, or error rates. The association also notes that the original pilot took place during a relatively quiet period. During the busiest month, appointment requests are about 18 percent higher.\n\nAs an alternative, the association proposes a voluntary scheduling program and a second pilot during the peak month. Each department would maintain minimum staffing levels, and employees could request either compressed or standard hours when coverage allowed. The association argues that this approach would protect employee choice while producing better evidence about peak-season service. It does not explain how managers should resolve competing schedule requests, and it provides no estimate of whether a voluntary system would preserve the lower absence rate reported in the original pilot."
+      },
+      "revisionPrompts": [
+        "Did you compare the quality of evidence in both sources?",
+        "Did you explain why specific evidence supports your judgment?",
+        "Did you address a limitation or counterpoint?"
+      ],
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 5 mock editorial review"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "mock-er-c",
+      "title": "Protected Bike Lane Conversion",
+      "topic": "civic/community",
+      "prompt": "Analyze both sources and determine which argument is better supported. Use specific evidence from the texts to explain your reasoning. Should the city convert one lane of curb parking on Harbor Avenue into a protected bike lane?",
+      "sourceA": {
+        "title": "Transportation Department: Case for a Protected Lane",
+        "text": "The Northbridge Transportation Department recommends a one-year protected bike-lane trial on Harbor Avenue. The corridor serves four schools, two bus routes, and a commercial district. Its current painted bike lane disappears near three busy intersections, where cyclists merge with traffic. Before making a recommendation, the department installed temporary barriers on a 1.2-mile section for three months and measured bicycle volume, bus travel time, reported close passes, loading activity, and emergency access.\n\nDuring the temporary pilot, weekday bicycle counts increased 28 percent. Reports of close passes fell from an average of 19 per week to 11, while average bus travel time changed by less than one minute. Fire and ambulance crews reported no blocked responses. Delivery drivers did report longer walks from loading areas on two blocks. The department therefore revised the design to retain a loading zone on every commercial block and to add short-term spaces on two side streets.\n\nThe permanent trial would convert 46 curb parking spaces, but it would last only one year before a council vote. Staff would publish monthly data on crashes, close passes, bicycle counts, bus speed, delivery delays, pedestrian conflicts, retail vacancy, and parking turnover. The department acknowledges that three months is too short to establish long-term business effects. It argues, however, that the measured reduction in close passes is large enough to justify a longer protected trial that can collect those missing business-access data. If safety does not improve or loading problems become severe, the barriers could be removed after the evaluation.\n\nTo address concerns that the three-month pilot covered only one season, the department proposes collecting data during both the school term and the holiday shopping period. It would also compare Harbor Avenue with a nearby corridor that keeps its current street design. Staff say this comparison would help distinguish changes associated with the trial from broader shifts in traffic or retail activity."
+      },
+      "sourceB": {
+        "title": "Harbor Avenue Merchants: Case for an Alternative Trial",
+        "text": "The Harbor Avenue Merchants Association opposes removing 46 parking spaces before the city tests less disruptive safety changes. Shop owners say many customers make short visits and some businesses receive several deliveries each day. In a survey of 38 member businesses, 24 owners said nearby curb access was “very important” to their operations. The survey did not measure how many customers actually arrived by car, bicycle, bus, or on foot.\n\nThe merchants propose a six-month alternative. The city would add bright intersection markings, timed loading zones, warning signs, and targeted traffic enforcement during the busiest hours while keeping the existing painted bike lane. The group asks the city to publish weekly counts of crashes, close passes, bicycle volume, delivery delays, parking turnover, and traffic citations. If those measures fail to improve safety, the association says it would support testing a protected lane on one section of Harbor Avenue.\n\nThe letter argues that the temporary barrier pilot did not run long enough to show how lost parking could affect holiday sales or repeat customers. It also notes that the pilot’s close-pass reports depended partly on voluntary reporting, which may vary from week to week. Those are relevant limitations. However, the association does not estimate how much additional enforcement its alternative would require, whether enforcement could be maintained every day, or whether signs and paint would address the merging conflict at the three intersections where the current bike lane disappears."
+      },
+      "revisionPrompts": [
+        "Did you compare the quality of evidence in both sources?",
+        "Did you explain why specific evidence supports your judgment?",
+        "Did you address a limitation or counterpoint?"
+      ],
+      "status": "published",
+      "version": 1,
+      "author": "Chee Skool",
+      "reviewer": "Phase 5 mock editorial review"
+    }
+  ]
+}

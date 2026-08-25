@@ -1,0 +1,481 @@
+{
+  "id": "set-rla-mock-b-editing",
+  "title": "Museum Volunteer Memo",
+  "description": "Dedicated editing source set for the full mock.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "Museum Volunteer Memo\n\nThe museum host team are preparing for the Saturday family program. Every volunteer need to check in at the front desk before their shift begins. The activity tables include clay painting paper crafts and map puzzles. Visitors who arrives early may wait in the courtyard. The education room is smaller then the main gallery, so groups will enter in stages. We planned the schedule carefully, however several signs still needs to be printed. If a child loses an item please bring it to the information desk. The coordinator asked volunteers to speak clearly politely, and with patience.\n\nThe draft was prepared quickly before a public meeting. The editor's job is to correct grammar, punctuation, sentence boundaries, word choice, and transitions without changing the writer's intended meaning or inventing new facts.\n\nThe situation also shows why clear standard written English cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.\n\nBy the end, the central question is not whether every concern disappears. It is whether the available evidence is strong enough to justify the next step while leaving room to correct the plan if later results differ.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “The museum host team are preparing...”",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.sva.basic",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The museum host team are preparing.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The museum host team are preparing.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "The museum host team be preparing.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The museum host team be preparing.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "The museum host team is preparing."
+        },
+        {
+          "id": "d",
+          "text": "The museum host team were prepare.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The museum host team were prepare.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “Every volunteer need to check in.”",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.sva.basic",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "Every volunteer needs to check in."
+        },
+        {
+          "id": "a",
+          "text": "Every volunteer need to check in.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Every volunteer need to check in.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "Every volunteer needing to check in.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Every volunteer needing to check in.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "Every volunteer have to check in.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Every volunteer have to check in.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the best punctuation for the activity list.",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.punctuation.clauses",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "clay painting paper crafts and map puzzles",
+          "distractorType": "editing_error",
+          "whyWrong": "“clay painting paper crafts and map puzzles” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "clay painting; paper crafts and map puzzles",
+          "distractorType": "editing_error",
+          "whyWrong": "“clay painting; paper crafts and map puzzles” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "clay painting: paper crafts: and map puzzles",
+          "distractorType": "editing_error",
+          "whyWrong": "“clay painting: paper crafts: and map puzzles” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "clay painting, paper crafts, and map puzzles"
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct verb: “Visitors who ___ early...”",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.sva.intervening",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "arrives",
+          "distractorType": "editing_error",
+          "whyWrong": "“arrives” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "arrive"
+        },
+        {
+          "id": "c",
+          "text": "arriving",
+          "distractorType": "editing_error",
+          "whyWrong": "“arriving” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "has arrived",
+          "distractorType": "editing_error",
+          "whyWrong": "“has arrived” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct word: “smaller ___ the main gallery.”",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "language.usage.word_choice",
+        "label": "Frequently confused words"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.confused_words",
+      "metadata": {
+        "skillId": "L1.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "than"
+        },
+        {
+          "id": "a",
+          "text": "then",
+          "distractorType": "editing_error",
+          "whyWrong": "“then” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "that",
+          "distractorType": "editing_error",
+          "whyWrong": "“that” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "them",
+          "distractorType": "editing_error",
+          "whyWrong": "“them” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the best punctuation before “however.”",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "L2.4",
+        "label": "Punctuation & clause separation"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.punctuation.clauses",
+      "metadata": {
+        "skillId": "L2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "We planned the schedule carefully, however several signs still need to be printed.",
+          "distractorType": "editing_error",
+          "whyWrong": "“We planned the schedule carefully, however several signs still need to be printed.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "We planned the schedule carefully however; several signs still need to be printed.",
+          "distractorType": "editing_error",
+          "whyWrong": "“We planned the schedule carefully however; several signs still need to be printed.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "We planned the schedule carefully; however, several signs still need to be printed."
+        },
+        {
+          "id": "d",
+          "text": "We planned; the schedule carefully however several signs still need to be printed.",
+          "distractorType": "editing_error",
+          "whyWrong": "“We planned; the schedule carefully however several signs still need to be printed.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “several signs still needs...”",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "language.grammar.subject_verb_agreement",
+        "label": "Basic subject–verb agreement"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.sva.basic",
+      "metadata": {
+        "skillId": "L1.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "several signs still needs",
+          "distractorType": "editing_error",
+          "whyWrong": "“several signs still needs” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "several signs still need"
+        },
+        {
+          "id": "c",
+          "text": "several signs still needing",
+          "distractorType": "editing_error",
+          "whyWrong": "“several signs still needing” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "several signs still has need",
+          "distractorType": "editing_error",
+          "whyWrong": "“several signs still has need” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Choose the best parallel revision.",
+      "points": 1,
+      "explanation": "This revision preserves the intended meaning and follows standard written English.",
+      "skill": {
+        "id": "L1.6",
+        "label": "Parallelism, coordination & subordination"
+      },
+      "rule": "Choose the edit that fixes the targeted issue without changing the facts.",
+      "familyId": "edit.parallelism",
+      "metadata": {
+        "skillId": "L1.6",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 3,
+        "sourceSchemaVersion": 2
+      },
+      "time": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "speak clearly politely, and with patience",
+          "distractorType": "editing_error",
+          "whyWrong": "“speak clearly politely, and with patience” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "speak clear, politely, and with patience",
+          "distractorType": "editing_error",
+          "whyWrong": "“speak clear, politely, and with patience” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "speak clearly; polite; and patiently",
+          "distractorType": "editing_error",
+          "whyWrong": "“speak clearly; polite; and patiently” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "speak clearly, politely, and patiently"
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mock-b-editing",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    },
+    "passage": {
+      "id": "p-rla-mock-b-editing",
+      "title": "Museum Volunteer Memo",
+      "textType": "informational",
+      "context": "editing",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T12:24:59.857Z"
+  }
+}

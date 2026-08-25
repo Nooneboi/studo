@@ -14,16 +14,21 @@ function generatedModules() {
   }));
 }
 
-test('Phase 4 inventory is exactly 112 modules / 807 questions / 9 dedicated Checks / 28 Quick Review cards', () => {
+test('Phase 4 inventory remains 112 modules / 807 questions underneath the additive Phase 5 Mock bank', () => {
   const items = generatedModules();
-  const questionCount = items.reduce((sum, item) => sum + (item.module.questions || []).length, 0);
-  const checks = items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('skill_check'));
+  const phase4Items = items.filter(({ module }) => !(module.contentMeta?.curriculum?.deliveryRoles || []).includes('mock'));
+  const mockItems = items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('mock'));
+  const questionCount = phase4Items.reduce((sum, item) => sum + (item.module.questions || []).length, 0);
+  const checks = phase4Items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('skill_check'));
   const quickReview = readJson('data/generated/quick-review.json');
-  assert.equal(items.length, 112);
+  assert.equal(phase4Items.length, 112);
   assert.equal(questionCount, 807);
   assert.equal(checks.length, 9);
   assert.equal(checks.reduce((sum, item) => sum + item.module.questions.length, 0), 54);
   assert.equal(quickReview.cards.length, 28);
+  assert.equal(mockItems.length, 21);
+  assert.equal(mockItems.reduce((sum, item) => sum + item.module.questions.length, 0), 138);
+  assert.equal(items.length, 133);
 });
 
 test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated', () => {
@@ -37,7 +42,15 @@ test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated'
     assert.equal(curriculum.deliveryRoles.includes('train'), false);
     assert.equal(curriculum.deliveryRoles.includes('mock'), false);
   }
-  assert.equal(items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('mock')).length, 0, 'Phase 5 dedicated Mock bank must still be absent');
+  const mocks = items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('mock'));
+  assert.equal(mocks.length, 21, 'Phase 5 dedicated Mock bank must remain isolated and additive');
+  for (const { module } of mocks) {
+    const roles = module.contentMeta?.curriculum?.deliveryRoles || [];
+    assert.deepEqual(roles, ['mock']);
+    assert.equal(roles.includes('practice'), false);
+    assert.equal(roles.includes('train'), false);
+    assert.equal(roles.includes('skill_check'), false);
+  }
   const quick = read('js/quick-review.js');
   assert.doesNotMatch(quick, /Learning\.recordAttempt/);
   assert.doesNotMatch(quick, /Learning\.setMistakeReason/);
@@ -65,10 +78,10 @@ test('Phase 4 closeout review exists and states the evidence boundary', () => {
   assert.match(review, /does not.*GED score|not.*GED score/is);
 });
 
-test('Phase 4 final release is Alpha 29 and every new learner artifact is public-build eligible', () => {
+test('current alpha metadata stays synchronized after the additive Phase 5 bank', () => {
   const release = readJson('release.json');
   assert.equal(release.release, '0.7.0-alpha.29');
-  assert.equal(release.generatedModules, 112);
+  assert.equal(release.generatedModules, 133);
   assert.equal(release.learnerResourceFiles, 152);
   const builder = read('scripts/build-public.mjs');
   assert.match(builder, /check\.html/);

@@ -37,6 +37,7 @@
           "sourceCount": 1,
           "responseDemand": 1
         },
+        "reportingCategory": null,
         "sourceSchemaVersion": 2
       },
       "time": 60,
@@ -91,6 +92,7 @@
           "sourceCount": 1,
           "responseDemand": 1
         },
+        "reportingCategory": null,
         "sourceSchemaVersion": 2
       },
       "time": 60,
@@ -145,6 +147,7 @@
           "sourceCount": 1,
           "responseDemand": 1
         },
+        "reportingCategory": null,
         "sourceSchemaVersion": 2
       },
       "time": 60,
@@ -199,6 +202,7 @@
           "sourceCount": 1,
           "responseDemand": 1
         },
+        "reportingCategory": null,
         "sourceSchemaVersion": 2
       },
       "time": 60,
@@ -253,6 +257,7 @@
           "sourceCount": 1,
           "responseDemand": 1
         },
+        "reportingCategory": null,
         "sourceSchemaVersion": 2
       },
       "time": 60,
@@ -307,6 +312,7 @@
           "sourceCount": 1,
           "responseDemand": 1
         },
+        "reportingCategory": null,
         "sourceSchemaVersion": 2
       },
       "time": 60,
@@ -374,6 +380,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T08:06:18.616Z"
+    "compiledAt": "2026-08-25T12:24:59.842Z"
   }
 }

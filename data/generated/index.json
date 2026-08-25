@@ -2126,6 +2126,321 @@
     }
   },
   {
+    "file": "generated/modules/set-rla-mock-a-civics.json",
+    "title": "Civic Debate: First Amendment",
+    "description": "Civics/GAC source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-a-data.json",
+    "title": "Pilot Results: A late-evening bus extension on route 8",
+    "description": "Argument/data multi-format source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-a-editing.json",
+    "title": "Community Garden Update",
+    "description": "Dedicated editing source set for the full mock.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-a-literary-1.json",
+    "title": "The Last Ferry Bell",
+    "description": "Literary source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-a-literary-2.json",
+    "title": "The Greenhouse Key",
+    "description": "Second literary source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-a-science.json",
+    "title": "Field Study: How different amounts of shade affect newly planted street trees",
+    "description": "Science/technical source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-a-workplace.json",
+    "title": "Workplace Trial: A compressed four-day scheduling pilot",
+    "description": "Workplace/community source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-civics.json",
+    "title": "Civic Debate: Fourth Amendment",
+    "description": "Civics/GAC source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-data.json",
+    "title": "Pilot Results: A cafeteria food-waste sorting program",
+    "description": "Argument/data multi-format source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-editing.json",
+    "title": "Museum Volunteer Memo",
+    "description": "Dedicated editing source set for the full mock.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-literary-1.json",
+    "title": "The Radio Repair",
+    "description": "Literary source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-literary-2.json",
+    "title": "The Library Cart",
+    "description": "Second literary source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-science.json",
+    "title": "Field Study: Whether restored wetland soil reduces nutrient runoff after heavy rain",
+    "description": "Science/technical source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-b-workplace.json",
+    "title": "Workplace Trial: A pick-to-light system in a warehouse",
+    "description": "Workplace/community source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-civics.json",
+    "title": "Civic Debate: Fourteenth Amendment",
+    "description": "Civics/GAC source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.1",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-data.json",
+    "title": "Pilot Results: Extended evening hours at three branch libraries",
+    "description": "Argument/data multi-format source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Multiple Texts & Formats",
+      "primarySkillId": "R6.3",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-editing.json",
+    "title": "Workshop Registration Notice",
+    "description": "Dedicated editing source set for the full mock.",
+    "curriculum": {
+      "domain": "Language & Editing",
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-literary-1.json",
+    "title": "The Kite String",
+    "description": "Literary source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.2",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-literary-2.json",
+    "title": "The Night Bakery",
+    "description": "Second literary source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-science.json",
+    "title": "Field Study: How storage temperature affects the usable capacity of rechargeable backup batteries",
+    "description": "Science/technical source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Relationships & Inference",
+      "primarySkillId": "R2.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
+    "file": "generated/modules/set-rla-mock-c-workplace.json",
+    "title": "Workplace Trial: A remote maintenance checklist for field technicians",
+    "description": "Workplace/community source set for the dedicated full mock.",
+    "curriculum": {
+      "domain": "Argument Analysis",
+      "primarySkillId": "R5.5",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    }
+  },
+  {
     "file": "generated/modules/set-rla-reading-transfer-civic-comment.json",
     "title": "A Wider Door for Public Comment",
     "description": "Social studies / civics · 7 questions",

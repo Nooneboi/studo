@@ -7,19 +7,22 @@ const ROOT = process.cwd();
 const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 
-test('Phase 3 learner baseline remains intact while later Skill Checks stay additive', () => {
+test('Phase 3 learner baseline remains intact while later assessment roles stay additive', () => {
   const index = json('data/generated/index.json');
-  const phase3LearnerModules = index.filter((item) => !(item.curriculum?.deliveryRoles || []).includes('skill_check'));
+  const phase3LearnerModules = index.filter((item) => {
+    const roles = item.curriculum?.deliveryRoles || [];
+    return !roles.includes('skill_check') && !roles.includes('mock');
+  });
   const checks = index.filter((item) => (item.curriculum?.deliveryRoles || []).includes('skill_check'));
+  const mocks = index.filter((item) => (item.curriculum?.deliveryRoles || []).includes('mock'));
   assert.equal(phase3LearnerModules.length, 103);
   assert.equal(checks.length, 9);
-  const roles = index.flatMap((item) => item.curriculum?.deliveryRoles || []);
-  assert.equal(roles.filter((r) => r === 'mock').length, 0);
+  assert.equal(mocks.length, 21);
 });
 
 test('Phase 3 Language closeout has real calibrated easy-medium-hard coverage without module expansion', () => {
   const index = json('data/generated/index.json');
-  const language = index.filter((item) => /^L/.test(item.curriculum?.primarySkillId || ''));
+  const language = index.filter((item) => /^L/.test(item.curriculum?.primarySkillId || '') && !(item.curriculum?.deliveryRoles || []).includes('mock'));
   assert.equal(language.length, 13);
   const counts = { easy: 0, medium: 0, hard: 0 };
   let questions = 0;

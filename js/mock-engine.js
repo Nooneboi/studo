@@ -1,4 +1,4 @@
-/* Studo RLA Mock V1 — pure blueprint selection, timing and scoring helpers. */
+/* Studo RLA Mock V2 — fixed full forms plus Practice-bank objective format practice. */
 (function (root) {
   "use strict";
 
@@ -114,6 +114,7 @@
       moduleFile: module.file,
       questionId: q.id,
       category: module.category,
+      reportingCategory: q.metadata?.reportingCategory ?? q.reportingCategory ?? null,
       groupOrder: index,
       sourceSet: true,
       title: module.title
@@ -127,6 +128,7 @@
       moduleFile: module.file,
       questionId: question.id,
       category: module.category,
+      reportingCategory: question.metadata?.reportingCategory ?? question.reportingCategory ?? null,
       groupOrder: 0,
       sourceSet: false,
       title: module.title
@@ -243,20 +245,77 @@
     throw new Error("No complete mock-only bank is available and Practice fallback is disabled");
   }
 
-  function generateFullMock({ modules, prompts, blueprint, seed = Date.now() }) {
-    return generateFromPreferredBank({
-      modules,
-      blueprint,
-      generate: (pool, bankMode) => generateFullMockFromPool({ modules: pool, prompts, blueprint, seed, bankMode }),
-    });
+  function historyTimestamp(entry) {
+    const raw = entry?.completedAt || entry?.createdAt || 0;
+    const parsed = typeof raw === "number" ? raw : Date.parse(raw);
+    return Number.isFinite(parsed) ? parsed : 0;
+  }
+
+  function chooseFullMockFormId({ blueprint, history = [], activeFormId = null }) {
+    const forms = Array.isArray(blueprint?.forms) ? blueprint.forms : [];
+    if (!forms.length) throw new Error("No fixed mock forms are configured");
+    const ids = forms.map((form) => form.id);
+    if (activeFormId && ids.includes(activeFormId)) return activeFormId;
+
+    const completed = (history || []).filter((entry) => entry?.formId && ids.includes(entry.formId) && entry?.completedAt);
+    const used = new Set(completed.map((entry) => entry.formId));
+    const unused = ids.find((id) => !used.has(id));
+    if (unused) return unused;
+
+    const lastUsed = new Map(ids.map((id) => [id, 0]));
+    for (const entry of completed) lastUsed.set(entry.formId, Math.max(lastUsed.get(entry.formId) || 0, historyTimestamp(entry)));
+    const mostRecent = completed.slice().sort((a, b) => historyTimestamp(b) - historyTimestamp(a))[0]?.formId || null;
+    const ordered = ids.slice().sort((a, b) => (lastUsed.get(a) - lastUsed.get(b)) || ids.indexOf(a) - ids.indexOf(b));
+    return ordered.find((id) => id !== mostRecent) || ordered[0];
+  }
+
+  function fixedFormItems(module, part) {
+    return (module.questions || []).map((question, index) => ({
+      part,
+      moduleId: module.id,
+      moduleFile: module.file,
+      questionId: question.id,
+      category: module.category,
+      reportingCategory: Number(question.metadata?.reportingCategory ?? question.reportingCategory),
+      groupId: module.id,
+      groupOrder: index,
+      sourceSet: true,
+      title: module.title
+    }));
+  }
+
+  function generateFullMock({ modules, prompts, blueprint, seed = Date.now(), history = [], activeFormId = null }) {
+    if (!Array.isArray(blueprint?.forms) || !blueprint.forms.length) {
+      return generateFromPreferredBank({
+        modules,
+        blueprint,
+        generate: (pool, bankMode) => generateFullMockFromPool({ modules: pool, prompts, blueprint, seed, bankMode }),
+      });
+    }
+    const formId = chooseFullMockFormId({ blueprint, history, activeFormId });
+    const form = blueprint.forms.find((entry) => entry.id === formId);
+    const moduleMap = new Map((modules || []).map((module) => [module.id, module]));
+    const promptIds = new Set((prompts || []).map((prompt) => prompt?.id).filter(Boolean));
+    const resolveModule = (id) => {
+      const module = moduleMap.get(id);
+      if (!module) throw new Error(`Fixed mock form ${formId} references missing module ${id}`);
+      if (!isPublishedQuestionModule(module) || !hasDeliveryRole(module, "mock") || module.curriculum.deliveryRoles.length !== 1) {
+        throw new Error(`Fixed mock module ${id} is not mock-only`);
+      }
+      return module;
+    };
+    if (!promptIds.has(form.erPromptId)) throw new Error(`Fixed mock form ${formId} references missing mock ER prompt ${form.erPromptId}`);
+    const part1 = form.part1ModuleIds.flatMap((id) => fixedFormItems(resolveModule(id), 1));
+    const part3 = form.part3ModuleIds.flatMap((id) => fixedFormItems(resolveModule(id), 3));
+    const generated = { version: blueprint.version, seed: String(seed), bankMode: "mock_only", formId, part1, erPromptId: form.erPromptId, part3 };
+    validateGeneratedBlueprint(generated, blueprint);
+    return generated;
   }
 
   function generateObjectivePractice({ modules, blueprint, seed = Date.now() }) {
-    return generateFromPreferredBank({
-      modules,
-      blueprint,
-      generate: (pool, bankMode) => generateObjectivePracticeFromPool({ modules: pool, blueprint, seed, bankMode }),
-    });
+    const practice = (modules || []).filter((module) => isPublishedQuestionModule(module) && hasDeliveryRole(module, "practice"));
+    if (!practice.length) throw new Error("No Practice-bank modules are available for Objective RLA Practice Test");
+    return generateObjectivePracticeFromPool({ modules: practice, blueprint, seed, bankMode: "practice" });
   }
 
   function createObjectiveAttempt(generated, blueprint, now = Date.now(), id) {
@@ -273,15 +332,30 @@
     if (mock.part3.length !== blueprint.full.part3.questionCount) throw new Error("Part 3 question count mismatch");
     const all = [...mock.part1, ...mock.part3];
     if (all.length !== blueprint.full.objectiveQuestionCount) throw new Error("Objective question count mismatch");
-    const keys = all.map((i) => `${i.moduleId}:${i.questionId}`);
+    const keys = all.map((item) => `${item.moduleId}:${item.questionId}`);
     if (new Set(keys).size !== keys.length) throw new Error("Duplicate objective question selected");
+
+    if (Array.isArray(blueprint.forms) && blueprint.forms.length) {
+      const form = blueprint.forms.find((entry) => entry.id === mock.formId);
+      if (!form) throw new Error("Generated mock has an invalid fixed formId");
+      if (mock.erPromptId !== form.erPromptId) throw new Error("Fixed form ER prompt mismatch");
+      const expectedModules = [...form.part1ModuleIds, ...form.part3ModuleIds];
+      const actualModules = [...new Set(all.map((item) => item.moduleId))];
+      if (expectedModules.length !== actualModules.length || expectedModules.some((id, index) => id !== actualModules[index])) throw new Error("Fixed form module order mismatch");
+      const rc = all.reduce((acc, item) => { const key = String(item.reportingCategory); acc[key] = (acc[key] || 0) + 1; return acc; }, {});
+      for (const [category, expected] of Object.entries(blueprint.reportingCategoryTargets || {})) {
+        if (rc[category] !== expected) throw new Error(`Reporting-category target mismatch for ${category}: ${rc[category]} != ${expected}`);
+      }
+      return true;
+    }
+
     const counts = all.reduce((acc, item) => { acc[item.category] = (acc[item.category] || 0) + 1; return acc; }, {});
-    for (const [category, expected] of Object.entries(blueprint.full.domainTargets)) {
+    for (const [category, expected] of Object.entries(blueprint.full.domainTargets || {})) {
       if (counts[category] !== expected) throw new Error(`Domain target mismatch for ${category}: ${counts[category]} != ${expected}`);
     }
-    if (!mock.selectedReadingSets.some((r) => Number(r.words) >= Number(blueprint.selection.staminaMinimumWords || 600))) throw new Error("No stamina Reading passage selected");
-    const literary = mock.selectedReadingSets.filter((r) => r.textType === "literary").length;
-    const ratio = literary / mock.selectedReadingSets.length;
+    if (!mock.selectedReadingSets?.some((r) => Number(r.words) >= Number(blueprint.selection.staminaMinimumWords || 600))) throw new Error("No stamina Reading passage selected");
+    const literary = (mock.selectedReadingSets || []).filter((r) => r.textType === "literary").length;
+    const ratio = literary / Math.max(1, (mock.selectedReadingSets || []).length);
     if (Math.abs(ratio - 0.25) > 0.1) throw new Error("Reading literary balance outside tolerance");
     return true;
   }
@@ -293,6 +367,7 @@
       blueprintVersion: generated.version,
       seed: generated.seed,
       bankMode: generated.bankMode || null,
+      formId: generated.formId || null,
       createdAt: new Date(now).toISOString(),
       completedAt: null,
       stage: "part1",
@@ -318,7 +393,7 @@
 
   function scoreObjectiveAttempt(attempt, moduleMap) {
     const stages = attempt.mode === "objective" ? [attempt.objective] : [attempt.part1, attempt.part3];
-    const summary = { correct: 0, attempted: 0, total: 0, unanswered: 0, flagged: 0, accuracy: 0, domains: {}, skills: {} };
+    const summary = { correct: 0, attempted: 0, total: 0, unanswered: 0, flagged: 0, accuracy: 0, domains: {}, reportingCategories: {}, skills: {} };
     for (const stage of stages) {
       for (const item of stage.items || []) {
         const module = moduleMap.get ? moduleMap.get(item.moduleId) : moduleMap[item.moduleId];
@@ -331,20 +406,23 @@
           : value !== undefined && value !== null && String(value) !== "";
         const domain = item.category;
         const bucket = summary.domains[domain] ||= { correct: 0, attempted: 0, total: 0, accuracy: 0 };
+        const reportingCategory = String(item.reportingCategory ?? question.metadata?.reportingCategory ?? question.reportingCategory ?? "");
+        const reportingBucket = reportingCategory ? (summary.reportingCategories[reportingCategory] ||= { correct: 0, attempted: 0, total: 0, accuracy: 0 }) : null;
         const skillId = question.skill?.id || "unmapped";
         const skillBucket = summary.skills[skillId] ||= { id: skillId, label: question.skill?.label || skillId, category: domain, correct: 0, attempted: 0, total: 0, accuracy: 0 };
-        summary.total += 1; bucket.total += 1; skillBucket.total += 1;
+        summary.total += 1; bucket.total += 1; skillBucket.total += 1; if (reportingBucket) reportingBucket.total += 1;
         if (stage.flags?.[key]) summary.flagged += 1;
         if (!answered) { summary.unanswered += 1; continue; }
-        summary.attempted += 1; bucket.attempted += 1; skillBucket.attempted += 1;
+        summary.attempted += 1; bucket.attempted += 1; skillBucket.attempted += 1; if (reportingBucket) reportingBucket.attempted += 1;
         const correct = root.QuestionInteractions?.isCorrect
           ? root.QuestionInteractions.isCorrect(question, value)
           : String(value) === String(question.correct);
-        if (correct) { summary.correct += 1; bucket.correct += 1; skillBucket.correct += 1; }
+        if (correct) { summary.correct += 1; bucket.correct += 1; skillBucket.correct += 1; if (reportingBucket) reportingBucket.correct += 1; }
       }
     }
     summary.accuracy = summary.total ? Math.round((summary.correct / summary.total) * 100) : 0;
     for (const bucket of Object.values(summary.domains)) bucket.accuracy = bucket.total ? Math.round((bucket.correct / bucket.total) * 100) : 0;
+    for (const bucket of Object.values(summary.reportingCategories)) bucket.accuracy = bucket.total ? Math.round((bucket.correct / bucket.total) * 100) : 0;
     for (const bucket of Object.values(summary.skills)) bucket.accuracy = bucket.total ? Math.round((bucket.correct / bucket.total) * 100) : 0;
     return summary;
   }
@@ -361,6 +439,7 @@
       attemptId: attempt.attemptId,
       blueprintVersion: attempt.blueprintVersion,
       bankMode: attempt.bankMode || null,
+      formId: attempt.formId || null,
       createdAt: attempt.createdAt,
       completedAt: attempt.completedAt,
       erPromptId: attempt.er?.promptId || null,
@@ -383,5 +462,5 @@
   function countUnanswered(stage) { return (stage?.items || []).filter((item) => !(objectiveItemKey(item) in (stage?.answers || {}))).length; }
   function countFlags(stage) { return Object.values(stage?.flags || {}).filter(Boolean).length; }
 
-  root.MockEngine = { rngFromSeed, wordCount, isMockEligible, generateFullMock, generateObjectivePractice, validateGeneratedBlueprint, createAttempt, createObjectiveAttempt, remainingSeconds, objectiveItemKey, scoreObjectiveAttempt, stageTimeUsedSeconds, sanitizeAttemptForHistory };
+  root.MockEngine = { rngFromSeed, wordCount, isMockEligible, chooseFullMockFormId, generateFullMock, generateObjectivePractice, validateGeneratedBlueprint, createAttempt, createObjectiveAttempt, remainingSeconds, objectiveItemKey, scoreObjectiveAttempt, stageTimeUsedSeconds, sanitizeAttemptForHistory };
 })(typeof globalThis !== "undefined" ? globalThis : window);

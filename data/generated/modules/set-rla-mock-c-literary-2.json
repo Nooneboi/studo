@@ -1,0 +1,371 @@
+{
+  "id": "set-rla-mock-c-literary-2",
+  "title": "The Night Bakery",
+  "description": "Second literary source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "source": "Original content by Chee Skool",
+  "passage": "Tomas had learned to measure mornings by the sounds of the small bakery kitchen: the click of a latch, the scrape of a cart, and the short pause before the first door opened. On the morning that mattered, the handwritten batch schedule taped beside the mixer was already waiting where it did not belong. Tomas noticed it, hesitated, and then remembered the promise made the evening before.\n\nThe problem was a late delivery left the bakery short of flour before a community breakfast order. Everyone around Tomas seemed to have a simple answer. One person said the schedule mattered most. Another said rules existed precisely for moments when people were tempted to improvise. Tomas, however, could see details that neither argument fully captured. The weather had shifted, one message had arrived late, and a person who depended on the plan had no easy alternative.\n\nAt first, Tomas tried to solve the problem without attracting attention. That only made the situation more complicated. A small delay created another choice, and the easy option became less fair to someone else. Tomas studied the handwritten batch schedule taped beside the mixer, not because the object itself could answer anything, but because it represented the responsibility that had been accepted earlier.\n\nFinally, Tomas decided to reduce the number of decorative pastries and protect the bread and plain rolls promised for the breakfast. The decision did not produce instant relief. Someone complained, and for several minutes it looked as if the choice had only replaced one problem with another. Then the practical effect became clear: the essential order was ready on time, while the display case looked simpler than usual. The people who had argued for the fastest solution grew quieter as they saw what the extra effort had protected.\n\nLater, Tomas explained the decision without claiming it had been perfect. The point, Tomas said, was that a rule or schedule could guide a person without removing the need to notice who would carry the cost of following it blindly. The admission surprised the others more than a confident defense would have.\n\nWhen the first customers arrived, Tomas moved the unused decoration cards beneath the schedule instead of throwing them away. The familiar sounds of the small bakery kitchen returned, but Tomas heard them differently. They no longer seemed like proof that every day should run exactly the same. They sounded instead like a pattern people maintained together, one careful decision at a time.\n\nThe situation also shows why responsibility and judgment cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the conflict?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R1.4",
+        "label": "Summary"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "summary.whole",
+      "metadata": {
+        "skillId": "R1.4",
+        "secondarySkillIds": [],
+        "dok": 1,
+        "difficulty": "easy",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 1,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The character must balance a personal plan with a responsibility that affects other people."
+        },
+        {
+          "id": "b",
+          "text": "The character is trying to win a contest at any cost.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character is trying to win a contest at any cost.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The setting is closing permanently.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The setting is closing permanently.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The character cannot understand any of the available choices.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character cannot understand any of the available choices.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What motivates the character’s final choice?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "reading.inference.from_details",
+        "label": "Inference from details"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "inference.character_or_event",
+      "metadata": {
+        "skillId": "R2.4",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A desire to avoid speaking to anyone.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A desire to avoid speaking to anyone.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The character recognizes that protecting the most important shared need matters more than completing every preferred task."
+        },
+        {
+          "id": "c",
+          "text": "A promise of a cash reward.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A promise of a cash reward.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "A belief that preparation never matters.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A belief that preparation never matters.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How does the object mentioned throughout the story function?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R4.1",
+        "label": "Paragraph / section function"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "function.sentence",
+      "metadata": {
+        "skillId": "R4.1",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It explains a technical process unrelated to the conflict.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It explains a technical process unrelated to the conflict.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It proves another character is dishonest.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves another character is dishonest.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It becomes a concrete reminder of the choice or responsibility the character is managing."
+        },
+        {
+          "id": "d",
+          "text": "It causes the setting to change locations.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It causes the setting to change locations.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c"
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What theme is best supported?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R1.5",
+        "label": "Theme"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "theme.identify",
+      "metadata": {
+        "skillId": "R1.5",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 1,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Success means completing every original plan exactly.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Success means completing every original plan exactly.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "People should avoid asking others for help.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“People should avoid asking others for help.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "A difficult choice is always a sign of poor preparation.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A difficult choice is always a sign of poor preparation.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Responsible choices often protect essential goals even when some less important plans must change."
+        }
+      ],
+      "correct": "d"
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why is the consequence of the choice important?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R4.2",
+        "label": "Text structure"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "structure.effect",
+      "metadata": {
+        "skillId": "R4.2",
+        "secondarySkillIds": [],
+        "dok": 2,
+        "difficulty": "medium",
+        "difficultyProfile": {
+          "textComplexity": 2,
+          "reasoningDepth": 2,
+          "evidenceDistance": 2,
+          "distractorSimilarity": 2,
+          "sourceCount": 1,
+          "responseDemand": 1
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows the decision solved the central practical problem without making the outcome unrealistically perfect."
+        },
+        {
+          "id": "b",
+          "text": "It introduces a completely new conflict.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It introduces a completely new conflict.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It proves no one was affected by the decision.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves no one was affected by the decision.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It changes the story into an argument essay.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It changes the story into an argument essay.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What does the final image suggest?",
+      "points": 1,
+      "explanation": "The passage directly supports this choice through the details and reasoning connected to the question.",
+      "skill": {
+        "id": "R2.6",
+        "label": "Relationships among people, events & ideas"
+      },
+      "rule": "Match the answer to the exact claim the source can support.",
+      "familyId": "relationship.significance",
+      "metadata": {
+        "skillId": "R2.6",
+        "secondarySkillIds": [],
+        "dok": 3,
+        "difficulty": "hard",
+        "difficultyProfile": {
+          "textComplexity": 3,
+          "reasoningDepth": 3,
+          "evidenceDistance": 3,
+          "distractorSimilarity": 3,
+          "sourceCount": 1,
+          "responseDemand": 2
+        },
+        "reportingCategory": 2,
+        "sourceSchemaVersion": 2
+      },
+      "time": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The character has forgotten the conflict.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character has forgotten the conflict.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The character carries forward a lesson from the conflict into future decisions."
+        },
+        {
+          "id": "c",
+          "text": "The character intends to destroy the object.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character intends to destroy the object.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The setting will never be used again.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The setting will never be used again.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b"
+    }
+  ],
+  "contentMeta": {
+    "sourceSetId": "set-rla-mock-c-literary-2",
+    "sourceVersion": 1,
+    "curriculum": {
+      "domain": "Core Meaning",
+      "primarySkillId": "R1.4",
+      "secondarySkillIds": [],
+      "contentKind": "mixed_review",
+      "deliveryRoles": [
+        "mock"
+      ],
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+    },
+    "passage": {
+      "id": "p-rla-mock-c-literary-2",
+      "title": "The Night Bakery",
+      "textType": "literary",
+      "context": "literary",
+      "sourceType": "original",
+      "attribution": "Original content by Chee Skool",
+      "author": "Chee Skool",
+      "workTitle": null,
+      "publisher": null,
+      "year": null,
+      "url": null
+    },
+    "compiledAt": "2026-08-25T12:24:59.861Z"
+  }
+}

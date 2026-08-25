@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-c-science",
+  "runtime": {
+    "id": "set-rla-mock-c-science",
+    "file": "set-rla-mock-c-science.json"
+  },
+  "title": "Field Study: How storage temperature affects the usable capacity of rechargeable backup batteries",
+  "description": "Science/technical source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-c-science"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Relationships & Inference",
+    "primarySkillId": "R2.5",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What was the main purpose of the study?",
+      "primarySkillId": "R4.4",
+      "familyId": "purpose.primary",
+      "reportingCategory": 1,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To test how storage temperature affects the usable capacity of rechargeable backup batteries under controlled comparison conditions."
+        },
+        {
+          "id": "b",
+          "text": "To prove the result applies in every environment.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To prove the result applies in every environment.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "To measure an unrelated social preference.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To measure an unrelated social preference.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "To replace all future testing with one trial.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To replace all future testing with one trial.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "To test how storage temperature affects the usable capacity of rechargeable backup batteries under controlled comparison conditions.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which detail is a direct result from the trial?",
+      "primarySkillId": "R1.1",
+      "familyId": "explicit.detail.match",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The researchers studied hundreds of unrelated sites.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The researchers studied hundreds of unrelated sites.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "After twelve weeks, the high-temperature group retained 86 percent of its starting capacity, the moderate group retained 94 percent, and the cool group retained 95 percent; charging time differed only slightly."
+        },
+        {
+          "id": "c",
+          "text": "The study continued for several years.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The study continued for several years.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Every measurement supported the same direction.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Every measurement supported the same direction.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "After twelve weeks, the high-temperature group retained 86 percent of its starting capacity, the moderate group retained 94 percent, and the cool group retained 95 percent; charging time differed only slightly.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "prompt": "Sort the details by whether they are evidence from the trial or a limitation on generalizing it.",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "After twelve weeks, the high-temperature group retained 86 percent of its starting capacity, the moderate group retained 94 percent, and the cool group retained 95 percent; charging time differed only slightly."
+          },
+          {
+            "id": "i2",
+            "text": "the study used one battery chemistry and did not test repeated outdoor temperature swings"
+          },
+          {
+            "id": "i3",
+            "text": "Researchers used the same measurement schedule for each condition."
+          }
+        ],
+        "zones": [
+          {
+            "id": "evidence",
+            "label": "Evidence from the trial"
+          },
+          {
+            "id": "limit",
+            "label": "Limitation / scope"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=evidence|i2=limit|i3=evidence",
+      "explanation": {
+        "answer": "Sorted by the role each detail plays",
+        "whyCorrect": "The classifications match how each detail functions in the passage.",
+        "quickTip": "Sort by evidence role, not by whether a detail sounds important."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why did the researchers report averages and ranges?",
+      "primarySkillId": "R5.5",
+      "familyId": "sufficiency.evaluate",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To make the report longer.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To make the report longer.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "To guarantee the hypothesis was correct.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To guarantee the hypothesis was correct.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "To avoid describing any uncertainty.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To avoid describing any uncertainty.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "To show the overall pattern without hiding measurements that differed from it."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "To show the overall pattern without hiding measurements that differed from it.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion is best supported?",
+      "primarySkillId": "R2.5",
+      "familyId": "conclusion.synthesize",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Prolonged high-temperature storage may reduce capacity faster than cool or moderate storage for this battery type."
+        },
+        {
+          "id": "b",
+          "text": "The study proves a universal rule with no exceptions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The study proves a universal rule with no exceptions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The tested treatment had no measurable effect.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The tested treatment had no measurable effect.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The main limitation makes every result meaningless.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The main limitation makes every result meaningless.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "Prolonged high-temperature storage may reduce capacity faster than cool or moderate storage for this battery type.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What follow-up would best address the stated limitation?",
+      "primarySkillId": "R5.5",
+      "familyId": "sufficiency.add",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeat only the easiest measurement from the same setup.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Repeat only the easiest measurement from the same setup.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Repeat the study with more sites or conditions that differ from the original trial."
+        },
+        {
+          "id": "c",
+          "text": "Remove all measurements that conflict with the expectation.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Remove all measurements that conflict with the expectation.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Ask researchers whether they liked the result.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Ask researchers whether they liked the result.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "Repeat the study with more sites or conditions that differ from the original trial.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    }
+  ]
+}

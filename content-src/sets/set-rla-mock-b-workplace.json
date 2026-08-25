@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-b-workplace",
+  "runtime": {
+    "id": "set-rla-mock-b-workplace",
+    "file": "set-rla-mock-b-workplace.json"
+  },
+  "title": "Workplace Trial: A pick-to-light system in a warehouse",
+  "description": "Workplace/community source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-b-workplace"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.5",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "What action does the proposal recommend first?",
+      "primarySkillId": "R5.1",
+      "familyId": "claim.main",
+      "reportingCategory": 1,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Testing light-guided shelf indicators in one packing zone while keeping experienced workers available to verify unusual orders."
+        },
+        {
+          "id": "b",
+          "text": "Immediate permanent adoption for every team.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Immediate permanent adoption for every team.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Ending all measurement before the trial begins.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Ending all measurement before the trial begins.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Replacing the current system without a comparison.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Replacing the current system without a comparison.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "Testing light-guided shelf indicators in one packing zone while keeping experienced workers available to verify unusual orders.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which evidence is actually reported rather than predicted?",
+      "primarySkillId": "R5.3",
+      "familyId": "evidence.strongest",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Every employee will prefer the change.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Every employee will prefer the change.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The pilot cut average search time by 18 seconds per order, wrong-item picks fell from 2.8 percent to 1.9 percent, and training time for new staff decreased."
+        },
+        {
+          "id": "c",
+          "text": "The change will permanently reduce all costs.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The change will permanently reduce all costs.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "No department will experience a downside.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“No department will experience a downside.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "The pilot cut average search time by 18 seconds per order, wrong-item picks fell from 2.8 percent to 1.9 percent, and training time for new staff decreased.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Why does the supervisor’s concern matter?",
+      "primarySkillId": "R5.7",
+      "familyId": "reasoning.challenge",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves pilots can never be useful.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves pilots can never be useful.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It changes the topic from work to constitutional law.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It changes the topic from work to constitutional law.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It identifies a condition under which a favorable average could hide a problem for one group."
+        },
+        {
+          "id": "d",
+          "text": "It argues that speed is the only outcome worth measuring.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It argues that speed is the only outcome worth measuring.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "It identifies a condition under which a favorable average could hide a problem for one group.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "How does the revised plan respond to criticism?",
+      "primarySkillId": "R5.10",
+      "familyId": "counterargument.response",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It removes all safeguards to simplify the test.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It removes all safeguards to simplify the test.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It treats concerns as evidence of bad motives.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It treats concerns as evidence of bad motives.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It stops collecting data about service quality.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It stops collecting data about service quality.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The next test should include a mixed-product zone and track correction time as well as initial picking speed."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "The next test should include a mixed-product zone and track correction time as well as initial picking speed.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which result would most strongly support permanent adoption?",
+      "primarySkillId": "R5.5",
+      "familyId": "sufficiency.evaluate",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The target outcome improves while errors, overtime, or service quality do not worsen beyond the agreed limits."
+        },
+        {
+          "id": "b",
+          "text": "One manager says the new system feels modern.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“One manager says the new system feels modern.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The first week produces the fastest single result.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The first week produces the fastest single result.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Employees finish the survey before the deadline.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Employees finish the survey before the deadline.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "The target outcome improves while errors, overtime, or service quality do not worsen beyond the agreed limits.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the passage’s main reasoning principle?",
+      "primarySkillId": "R6.5",
+      "familyId": "synthesis.conclusion",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A pilot automatically proves a proposal works.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A pilot automatically proves a proposal works.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change."
+        },
+        {
+          "id": "c",
+          "text": "Average speed is enough to evaluate any workplace policy.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Average speed is enough to evaluate any workplace policy.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Permanent decisions should be made before measurements are chosen.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Permanent decisions should be made before measurements are chosen.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A pilot should gather evidence about benefits and tradeoffs before a permanent workplace change.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    }
+  ]
+}

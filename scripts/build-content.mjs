@@ -66,6 +66,7 @@ function compileQuestion(q, skill, passage) {
       dok: q.dok,
       difficulty: q.difficulty,
       difficultyProfile: q.difficultyProfile || null,
+      reportingCategory: q.reportingCategory ?? null,
       sourceSchemaVersion: 2,
     },
   };
@@ -313,7 +314,7 @@ async function main() {
 
   const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
   const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
-  const mockBlueprint = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla-mock-v1.json'), 'utf8'));
+  const mockBlueprint = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla-mock-v2.json'), 'utf8'));
   const questionFamilyRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.question-families.v1.json'), 'utf8'));
   const resourceRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'resources', 'rla.resources.json'), 'utf8'));
   const publishedResources = (resourceRegistry.resources || []).filter((resource) => resource.status === 'published');
@@ -425,6 +426,11 @@ async function main() {
     return publicPrompt;
   });
   await fs.writeFile(path.join(OUT, 'er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerErPrompts }, null, 2) + '\n', 'utf8');
+  const learnerMockErPrompts = (validation.mockErPrompts || []).map((prompt) => {
+    const { authoringKey, strongerSource, ...publicPrompt } = prompt;
+    return publicPrompt;
+  });
+  await fs.writeFile(path.join(OUT, 'mock-er-prompts.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), prompts: learnerMockErPrompts }, null, 2) + '\n', 'utf8');
   await fs.writeFile(path.join(OUT, 'quick-review.json'), JSON.stringify({ schemaVersion: 1, builtAt: new Date().toISOString(), cards: validation.quickReview?.cards || [] }, null, 2) + '\n', 'utf8');
   const learnerErTasks = (validation.erTasks || []).map((task) => {
     const { authoringNotes, ...publicTask } = task;

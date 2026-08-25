@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-b-data",
+  "runtime": {
+    "id": "set-rla-mock-b-data",
+    "file": "set-rla-mock-b-data.json"
+  },
+  "title": "Pilot Results: A cafeteria food-waste sorting program",
+  "description": "Argument/data multi-format source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-b-data"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Multiple Texts & Formats",
+    "primarySkillId": "R6.3",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Why does the report include both counts and survey responses?",
+      "primarySkillId": "R6.3",
+      "familyId": "textdata.integrate",
+      "reportingCategory": 1,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They measure different parts of the outcome: system behavior and user experience."
+        },
+        {
+          "id": "b",
+          "text": "They guarantee every measure will show the same result.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They guarantee every measure will show the same result.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "They allow the office to ignore costs.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They allow the office to ignore costs.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "They make a comparison period unnecessary.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They make a comparison period unnecessary.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "They measure different parts of the outcome: system behavior and user experience.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "drag_sort",
+      "prompt": "Sort each statement by whether it is a measured result or an interpretation/recommendation.",
+      "primarySkillId": "R6.3",
+      "familyId": "textdata.support",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "Edible food discarded: 410 kg before | 315 kg during pilot"
+          },
+          {
+            "id": "i2",
+            "text": "Contamination in compost bins: 18% before | 9% during pilot"
+          },
+          {
+            "id": "i3",
+            "text": "The office recommends another trial before permanent expansion."
+          }
+        ],
+        "zones": [
+          {
+            "id": "measured",
+            "label": "Measured result"
+          },
+          {
+            "id": "interpretation",
+            "label": "Interpretation / recommendation"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=measured|i2=measured|i3=interpretation",
+      "explanation": {
+        "answer": "Sorted by the role each detail plays",
+        "whyCorrect": "The classifications match how each detail functions in the passage.",
+        "quickTip": "Sort by evidence role, not by whether a detail sounds important."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion best uses more than one measure?",
+      "primarySkillId": "R6.3",
+      "familyId": "textdata.integrate",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot should be judged from the largest percentage alone.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot should be judged from the largest percentage alone.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Survey responses make the measured counts irrelevant.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Survey responses make the measured counts irrelevant.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Because the number of meals served changed only slightly, the drop in discarded edible food is unlikely to be explained by a major change in cafeteria volume alone."
+        },
+        {
+          "id": "d",
+          "text": "Any cost increase or decrease automatically decides the policy.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Any cost increase or decrease automatically decides the policy.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "Because the number of meals served changed only slightly, the drop in discarded edible food is unlikely to be explained by a major change in cafeteria volume alone.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why did analysts check whether one unusual week drove the result?",
+      "primarySkillId": "R5.5",
+      "familyId": "sufficiency.evaluate",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "To remove every week that disagreed with the recommendation.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To remove every week that disagreed with the recommendation.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "To convert survey responses into operating costs.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To convert survey responses into operating costs.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "To avoid comparing the pilot with earlier conditions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“To avoid comparing the pilot with earlier conditions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "To test whether the overall pattern depended too heavily on a single period."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "To test whether the overall pattern depended too heavily on a single period.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What is the strongest reason for running another trial?",
+      "primarySkillId": "R5.5",
+      "familyId": "sufficiency.add",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It can test whether the observed pattern repeats while adding a measure for a concern raised during the first trial."
+        },
+        {
+          "id": "b",
+          "text": "The first trial collected no data at all.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The first trial collected no data at all.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "A second trial guarantees the policy will be permanent.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A second trial guarantees the policy will be permanent.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The office wants to replace all previous measurements.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The office wants to replace all previous measurements.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "It can test whether the observed pattern repeats while adding a measure for a concern raised during the first trial.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which revision would make this sentence most precise: “The pilot was better.”",
+      "primarySkillId": "L1.8",
+      "familyId": "edit.awkwardness",
+      "reportingCategory": 3,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot was totally perfect in every way.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot was totally perfect in every way.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The pilot improved several access measures, although at least one cost or tradeoff still needs evaluation."
+        },
+        {
+          "id": "c",
+          "text": "The pilot was better because better things happened.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot was better because better things happened.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The pilot should be permanent because some numbers changed.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The pilot should be permanent because some numbers changed.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "The pilot improved several access measures, although at least one cost or tradeoff still needs evaluation.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    }
+  ]
+}

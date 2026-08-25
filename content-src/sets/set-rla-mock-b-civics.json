@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-b-civics",
+  "runtime": {
+    "id": "set-rla-mock-b-civics",
+    "file": "set-rla-mock-b-civics.json"
+  },
+  "title": "Civic Debate: Fourth Amendment",
+  "description": "Civics/GAC source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "arguments",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-b-civics"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Argument Analysis",
+    "primarySkillId": "R5.1",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "select_text",
+      "prompt": "Which sentence most directly states the opponents’ main concern?",
+      "primarySkillId": "R5.1",
+      "familyId": "claim.main",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "Supporters of the proposal argued that location records could help identify repeated dumping routes when a documented investigation is already underway."
+          },
+          {
+            "id": "s2",
+            "text": "Opponents answered that automatic access to detailed movement records could expose far more private activity than the dumping investigation requires."
+          },
+          {
+            "id": "s3",
+            "text": "A revised proposal then narrowed the policy, added independent review, and required a public report after six months."
+          }
+        ]
+      },
+      "correct": "s2",
+      "explanation": {
+        "answer": "Opponents answered that automatic access to detailed movement records could expose far more private activity than the dumping investigation requires.",
+        "whyCorrect": "This sentence most directly expresses the idea named in the question.",
+        "quickTip": "Choose the exact sentence that performs the requested role."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What is the main purpose of the constitutional excerpt in the passage?",
+      "primarySkillId": "R4.4",
+      "familyId": "purpose.detail",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It gives a complete step-by-step rule for the city.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It gives a complete step-by-step rule for the city.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It supplies a principle readers must consider while evaluating a modern policy."
+        },
+        {
+          "id": "c",
+          "text": "It proves the supporters are legally correct.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves the supporters are legally correct.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It replaces the need for evidence about the pilot.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It replaces the need for evidence about the pilot.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "It supplies a principle readers must consider while evaluating a modern policy.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Which feature most strengthens the supporters’ argument?",
+      "primarySkillId": "R5.5",
+      "familyId": "sufficiency.evaluate",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They assume every critic has bad motives.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They assume every critic has bad motives.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "They rely only on social-media reactions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They rely only on social-media reactions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "They compare pilot locations with similar locations and accept limits on the policy."
+        },
+        {
+          "id": "d",
+          "text": "They claim the policy can never make a mistake.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They claim the policy can never make a mistake.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "They compare pilot locations with similar locations and accept limits on the policy.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the attorney warn against treating one constitutional sentence as a complete legal answer?",
+      "primarySkillId": "R5.7",
+      "familyId": "reasoning.challenge",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The constitutional text has no relevance today.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The constitutional text has no relevance today.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Local officials may ignore constitutional limits.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Local officials may ignore constitutional limits.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Only historical facts can be discussed at a city meeting.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Only historical facts can be discussed at a city meeting.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Modern application requires considering the protected value, government purpose, evidence, and limits."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "Modern application requires considering the protected value, government purpose, evidence, and limits.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "What do both sides eventually agree is useful?",
+      "primarySkillId": "R6.1",
+      "familyId": "twotext.agreement",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Clear evidence about the pilot and safeguards that limit government action."
+        },
+        {
+          "id": "b",
+          "text": "Removing all public review.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Removing all public review.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Keeping the original proposal unchanged.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Keeping the original proposal unchanged.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Judging the policy only by officials’ intentions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Judging the policy only by officials’ intentions.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "Clear evidence about the pilot and safeguards that limit government action.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which statement best describes the revised proposal?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.section",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It abandons the policy because any objection is decisive.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It abandons the policy because any objection is decisive.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It narrows the policy and adds review rather than treating the first pilot as final proof."
+        },
+        {
+          "id": "c",
+          "text": "It expands official discretion without reporting.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It expands official discretion without reporting.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It declares the constitutional question permanently settled.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It declares the constitutional question permanently settled.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "It narrows the policy and adds review rather than treating the first pilot as final proof.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which principle of civic reasoning is emphasized most strongly?",
+      "primarySkillId": "R6.5",
+      "familyId": "synthesis.conclusion",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Public policy should always favor the fastest solution.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Public policy should always favor the fastest solution.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Founding documents eliminate the need for modern evidence.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Founding documents eliminate the need for modern evidence.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Government action should be judged by both its evidence-based purpose and the limits placed on its power."
+        },
+        {
+          "id": "d",
+          "text": "A pilot result automatically proves a policy is constitutional.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A pilot result automatically proves a policy is constitutional.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "Government action should be judged by both its evidence-based purpose and the limits placed on its power.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    }
+  ]
+}

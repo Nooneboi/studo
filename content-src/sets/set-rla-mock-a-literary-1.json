@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-a-literary-1",
+  "runtime": {
+    "id": "set-rla-mock-a-literary-1",
+    "file": "set-rla-mock-a-literary-1.json"
+  },
+  "title": "The Last Ferry Bell",
+  "description": "Literary source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-a-literary-1"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "select_text",
+      "prompt": "Which sentence best establishes the responsibility the main character feels?",
+      "primarySkillId": "R4.1",
+      "familyId": "function.sentence",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {
+            "id": "s1",
+            "text": "Mara had learned to measure mornings by the sounds of the river ferry office: the click of a latch, the scrape of a cart, and the short pause before the first door opened."
+          },
+          {
+            "id": "s2",
+            "text": "Mara noticed it, hesitated, and then remembered the promise made the evening before."
+          },
+          {
+            "id": "s3",
+            "text": "Everyone around Mara seemed to have a simple answer."
+          }
+        ]
+      },
+      "correct": "s2",
+      "explanation": {
+        "answer": "Mara noticed it, hesitated, and then remembered the promise made the evening before.",
+        "whyCorrect": "This sentence most directly expresses the idea named in the question.",
+        "quickTip": "Choose the exact sentence that performs the requested role."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Which idea is most central to the story?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Rules should never guide decisions.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Rules should never guide decisions.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "Good judgment may require adapting a rule when people would otherwise bear an unfair cost."
+        },
+        {
+          "id": "c",
+          "text": "Fast decisions are always fairer than careful ones.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Fast decisions are always fairer than careful ones.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Objects are more reliable than people.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Objects are more reliable than people.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "Good judgment may require adapting a rule when people would otherwise bear an unfair cost.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "What can the reader infer about the main character near the end?",
+      "primarySkillId": "R2.4",
+      "familyId": "inference.evidence_pair",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The character regrets helping anyone.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character regrets helping anyone.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The character wants to avoid responsibility in the future.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character wants to avoid responsibility in the future.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The character values explaining the limits of a decision rather than pretending it was flawless."
+        },
+        {
+          "id": "d",
+          "text": "The character believes schedules no longer matter at all.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character believes schedules no longer matter at all.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "The character values explaining the limits of a decision rather than pretending it was flawless.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Why does the author repeatedly mention the ordinary sounds and objects of the setting?",
+      "primarySkillId": "R4.2",
+      "familyId": "structure.effect",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "They prove the setting is unusually noisy.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They prove the setting is unusually noisy.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "They explain how the equipment is manufactured.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They explain how the equipment is manufactured.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "They show the character plans to leave permanently.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“They show the character plans to leave permanently.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "They show how the character’s understanding of everyday responsibility changes."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "They show how the character’s understanding of everyday responsibility changes.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which detail best supports the story’s theme?",
+      "primarySkillId": "R1.5",
+      "familyId": "theme.evidence",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The character accepts a complaint but still considers who would carry the cost of the quickest choice."
+        },
+        {
+          "id": "b",
+          "text": "The setting has a door and a cart.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The setting has a door and a cart.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "Someone mentions a schedule.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Someone mentions a schedule.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The day begins with familiar sounds.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The day begins with familiar sounds.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "The character accepts a complaint but still considers who would carry the cost of the quickest choice.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What is the effect of the character admitting the decision was not perfect?",
+      "primarySkillId": "R4.6",
+      "familyId": "rhetorical.technique.function",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves the decision failed.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves the decision failed.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It makes the final reflection more credible and shows mature judgment."
+        },
+        {
+          "id": "c",
+          "text": "It changes the story into a comedy.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It changes the story into a comedy.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It shows the character forgot what happened.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It shows the character forgot what happened.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "It makes the final reflection more credible and shows mature judgment.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which summary best captures the ending?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The conflict remains unresolved and everyone leaves angry.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The conflict remains unresolved and everyone leaves angry.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The character abandons the setting after breaking a rule.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character abandons the setting after breaking a rule.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The immediate problem is resolved, and the character leaves with a more flexible understanding of responsibility."
+        },
+        {
+          "id": "d",
+          "text": "The story ends before the consequences of the choice are known.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The story ends before the consequences of the choice are known.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "The immediate problem is resolved, and the character leaves with a more flexible understanding of responsibility.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    }
+  ]
+}

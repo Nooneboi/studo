@@ -1,23 +1,13 @@
 {
-  "version": "rla-mock-v1",
-  "label": "Chee Skool RLA Format & Timing Practice",
-  "disclaimer": "GED-style format and timing practice based on public exam guidance. This is not an official GED test, scaled score, or independent readiness measure.",
+  "version": "rla-mock-v2",
+  "label": "Full RLA Mock",
+  "disclaimer": "Full-length original GED-style RLA practice using unseen Chee Skool source sets. Results are raw practice evidence, not an official GED score or pass prediction.",
   "full": {
     "approxTotalMinutes": 150,
     "objectiveQuestionCount": 46,
-    "domainTargets": {
-      "reading": 25,
-      "arguments": 10,
-      "language_conventions": 11
-    },
     "part1": {
       "seconds": 1620,
-      "questionCount": 14,
-      "domainTargets": {
-        "reading": 7,
-        "arguments": 6,
-        "language_conventions": 1
-      }
+      "questionCount": 14
     },
     "er": {
       "seconds": 2700
@@ -27,13 +17,19 @@
     },
     "part3": {
       "seconds": 3900,
-      "questionCount": 32,
-      "domainTargets": {
-        "reading": 18,
-        "arguments": 4,
-        "language_conventions": 10
-      }
+      "questionCount": 32
     }
+  },
+  "reportingCategoryTargets": {
+    "1": 16,
+    "2": 21,
+    "3": 9
+  },
+  "itemTypeTargets": {
+    "multiple_choice": 34,
+    "grammar_edit": 8,
+    "select_text": 2,
+    "drag": 2
   },
   "objectivePractice": {
     "seconds": 3600,
@@ -45,6 +41,8 @@
     }
   },
   "selection": {
+    "allowPracticeFallback": false,
+    "rotation": "least-recently-used",
     "readingMixedKinds": [
       "passage_practice",
       "quiz"
@@ -60,7 +58,53 @@
       "informational": 0.75,
       "literary": 0.25
     },
-    "staminaMinimumWords": 600,
-    "allowPracticeFallback": true
-  }
+    "staminaMinimumWords": 600
+  },
+  "forms": [
+    {
+      "id": "rla-mock-form-a",
+      "part1ModuleIds": [
+        "set-rla-mock-a-literary-1",
+        "set-rla-mock-a-civics"
+      ],
+      "erPromptId": "mock-er-a",
+      "part3ModuleIds": [
+        "set-rla-mock-a-editing",
+        "set-rla-mock-a-science",
+        "set-rla-mock-a-literary-2",
+        "set-rla-mock-a-workplace",
+        "set-rla-mock-a-data"
+      ]
+    },
+    {
+      "id": "rla-mock-form-b",
+      "part1ModuleIds": [
+        "set-rla-mock-b-literary-1",
+        "set-rla-mock-b-civics"
+      ],
+      "erPromptId": "mock-er-b",
+      "part3ModuleIds": [
+        "set-rla-mock-b-editing",
+        "set-rla-mock-b-science",
+        "set-rla-mock-b-literary-2",
+        "set-rla-mock-b-workplace",
+        "set-rla-mock-b-data"
+      ]
+    },
+    {
+      "id": "rla-mock-form-c",
+      "part1ModuleIds": [
+        "set-rla-mock-c-literary-1",
+        "set-rla-mock-c-civics"
+      ],
+      "erPromptId": "mock-er-c",
+      "part3ModuleIds": [
+        "set-rla-mock-c-editing",
+        "set-rla-mock-c-science",
+        "set-rla-mock-c-literary-2",
+        "set-rla-mock-c-workplace",
+        "set-rla-mock-c-data"
+      ]
+    }
+  ]
 }

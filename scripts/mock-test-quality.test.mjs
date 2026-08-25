@@ -22,15 +22,15 @@ function loadModules() {
   return index.map((entry) => ({ ...entry, ...readJson(path.join('data', entry.file)), file: entry.file }));
 }
 
-test('Mock V1 canonical blueprint and pure engine exist', () => {
-  assert.equal(fs.existsSync(path.join(ROOT, 'content-src/config/rla-mock-v1.json')), true, 'missing canonical mock blueprint');
+test('Mock V2 canonical blueprint and pure engine exist', () => {
+  assert.equal(fs.existsSync(path.join(ROOT, 'content-src/config/rla-mock-v2.json')), true, 'missing canonical mock blueprint');
   assert.equal(fs.existsSync(path.join(ROOT, 'js/mock-engine.js')), true, 'missing pure mock engine');
 });
 
 test('clean build emits the canonical learner mock blueprint', () => {
   execFileSync(process.execPath, ['scripts/build-content.mjs'], { cwd: ROOT, stdio: 'pipe' });
   const generated = readJson('data/generated/mock-blueprint.json');
-  assert.equal(generated.version, 'rla-mock-v1');
+  assert.equal(generated.version, 'rla-mock-v2');
   assert.equal(generated.full.objectiveQuestionCount, 46);
   assert.equal(generated.full.part1.questionCount, 14);
   assert.equal(generated.full.part3.questionCount, 32);
@@ -142,7 +142,7 @@ test('Quiz and Test pages no longer describe the legacy all-question test', () =
   assert.doesNotMatch(quiz, /every matching question gets pulled/i);
   assert.doesNotMatch(quizJs, /loadAllQuizzes\(\).*flatMap/s);
   assert.doesNotMatch(testJs, /items\s*=\s*modules\.flatMap/);
-  assert.match(quiz, /RLA Format &(?:amp;| ) Timing Practice/i);
+  assert.match(quiz, /Full RLA Mock/i);
   assert.match(quiz, /46 objective/i);
 });
 
@@ -152,11 +152,11 @@ test('mock workspace contract includes flags, review, break, raw results and no 
   assert.match(html, /Flag for review/i);
   assert.match(js, /rlaMockAttempts/);
   assert.match(js, /break/i);
-  assert.match(js, /Reading/);
-  assert.match(js, /Arguments/);
-  assert.match(js, /Language/);
+  assert.match(js, /Text Features & Technique/);
+  assert.match(js, /Evidence & Arguments/);
+  assert.match(js, /Language Conventions/);
   assert.doesNotMatch(`${html}\n${js}`, /scaledScore|College Ready/i);
-  assert.match(js, /not a GED scaled score or pass\/fail prediction/i);
+  assert.match(js, /not an official GED score or pass prediction/i);
 });
 
 test('mock ER state is attempt-scoped and provides a return-to-mock action after submission', () => {

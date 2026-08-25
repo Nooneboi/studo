@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "mock-er-c",
+  "title": "Protected Bike Lane Conversion",
+  "topic": "civic/community",
+  "prompt": "Analyze both sources and determine which argument is better supported. Use specific evidence from the texts to explain your reasoning. Should the city convert one lane of curb parking on Harbor Avenue into a protected bike lane?",
+  "sourceA": {
+    "title": "Transportation Department: Case for a Protected Lane",
+    "text": "The Northbridge Transportation Department recommends a one-year protected bike-lane trial on Harbor Avenue. The corridor serves four schools, two bus routes, and a commercial district. Its current painted bike lane disappears near three busy intersections, where cyclists merge with traffic. Before making a recommendation, the department installed temporary barriers on a 1.2-mile section for three months and measured bicycle volume, bus travel time, reported close passes, loading activity, and emergency access.\n\nDuring the temporary pilot, weekday bicycle counts increased 28 percent. Reports of close passes fell from an average of 19 per week to 11, while average bus travel time changed by less than one minute. Fire and ambulance crews reported no blocked responses. Delivery drivers did report longer walks from loading areas on two blocks. The department therefore revised the design to retain a loading zone on every commercial block and to add short-term spaces on two side streets.\n\nThe permanent trial would convert 46 curb parking spaces, but it would last only one year before a council vote. Staff would publish monthly data on crashes, close passes, bicycle counts, bus speed, delivery delays, pedestrian conflicts, retail vacancy, and parking turnover. The department acknowledges that three months is too short to establish long-term business effects. It argues, however, that the measured reduction in close passes is large enough to justify a longer protected trial that can collect those missing business-access data. If safety does not improve or loading problems become severe, the barriers could be removed after the evaluation.\n\nTo address concerns that the three-month pilot covered only one season, the department proposes collecting data during both the school term and the holiday shopping period. It would also compare Harbor Avenue with a nearby corridor that keeps its current street design. Staff say this comparison would help distinguish changes associated with the trial from broader shifts in traffic or retail activity."
+  },
+  "sourceB": {
+    "title": "Harbor Avenue Merchants: Case for an Alternative Trial",
+    "text": "The Harbor Avenue Merchants Association opposes removing 46 parking spaces before the city tests less disruptive safety changes. Shop owners say many customers make short visits and some businesses receive several deliveries each day. In a survey of 38 member businesses, 24 owners said nearby curb access was “very important” to their operations. The survey did not measure how many customers actually arrived by car, bicycle, bus, or on foot.\n\nThe merchants propose a six-month alternative. The city would add bright intersection markings, timed loading zones, warning signs, and targeted traffic enforcement during the busiest hours while keeping the existing painted bike lane. The group asks the city to publish weekly counts of crashes, close passes, bicycle volume, delivery delays, parking turnover, and traffic citations. If those measures fail to improve safety, the association says it would support testing a protected lane on one section of Harbor Avenue.\n\nThe letter argues that the temporary barrier pilot did not run long enough to show how lost parking could affect holiday sales or repeat customers. It also notes that the pilot’s close-pass reports depended partly on voluntary reporting, which may vary from week to week. Those are relevant limitations. However, the association does not estimate how much additional enforcement its alternative would require, whether enforcement could be maintained every day, or whether signs and paint would address the merging conflict at the three intersections where the current bike lane disappears."
+  },
+  "strongerSource": "A",
+  "authoringKey": {
+    "reasons": [
+      "One source connects its recommendation to more directly measured evidence.",
+      "One source addresses important limitations or implementation safeguards more completely."
+    ]
+  },
+  "revisionPrompts": [
+    "Did you compare the quality of evidence in both sources?",
+    "Did you explain why specific evidence supports your judgment?",
+    "Did you address a limitation or counterpoint?"
+  ],
+  "status": "published",
+  "version": 1,
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review"
+}

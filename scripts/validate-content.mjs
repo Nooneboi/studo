@@ -302,14 +302,17 @@ export async function validateContent({ quiet = false } = {}) {
   const setFiles = await jsonFiles(path.join(SRC, 'sets'));
   const resourceFiles = await jsonFiles(path.join(SRC, 'resources'));
   const erPromptFiles = await jsonFiles(path.join(SRC, 'er-prompts'));
+  const mockErPromptFiles = await jsonFiles(path.join(SRC, 'mock-er-prompts'));
   const erTaskFiles = await jsonFiles(path.join(SRC, 'er-tasks'));
   const legacyIndexFile = path.join(SRC, 'config', 'legacy-index.json');
   const curriculumConfigFile = path.join(SRC, 'config', 'rla.curriculum.json');
   const questionFamilyConfigFile = path.join(SRC, 'config', 'rla.question-families.v1.json');
   const quickReviewConfigFile = path.join(SRC, 'config', 'rla.quick-review.v1.json');
+  const mockBlueprintFile = path.join(SRC, 'config', 'rla-mock-v2.json');
   const curriculumConfig = await readJson(curriculumConfigFile);
   const questionFamilyConfig = await readJson(questionFamilyConfigFile);
   const quickReview = await readJson(quickReviewConfigFile);
+  const mockBlueprint = await readJson(mockBlueprintFile);
   const canonicalFamilyIds = new Set((questionFamilyConfig.skills || []).flatMap((skill) => (skill.families || []).map((family) => family.familyId)).filter(Boolean));
   const familyAliases = questionFamilyConfig.aliases || {};
   const canonicalFamilyId = (id) => familyAliases[String(id || '')] || String(id || '');
@@ -392,6 +395,31 @@ export async function validateContent({ quiet = false } = {}) {
     if (!Array.isArray(prompt.annotations) || prompt.annotations.length < 4) add(issues, 'error', 'ER_ANNOTATIONS_INCOMPLETE', `${loc} needs at least four annotations.`, file, loc);
     if (!Array.isArray(prompt.revisionPrompts) || prompt.revisionPrompts.length < 3) add(issues, 'error', 'ER_REVISION_PROMPTS_INCOMPLETE', `${loc} needs at least three revision prompts.`, file, loc);
     if (prompt.status === 'published') erPrompts.push(prompt);
+  }
+
+  const mockErPrompts = [];
+  const mockErPromptIds = new Set();
+  for (const file of mockErPromptFiles) {
+    const prompt = await readJson(file);
+    const loc = prompt.id || '(no-id)';
+    if (!prompt.id) add(issues, 'error', 'MOCK_ER_PROMPT_ID_MISSING', 'Mock ER prompt is missing an id.', file);
+    else if (mockErPromptIds.has(prompt.id) || erPromptIds.has(prompt.id)) add(issues, 'error', 'MOCK_ER_PROMPT_ID_DUPLICATE', `Duplicate or Practice-overlapping mock ER prompt id: ${prompt.id}`, file, loc);
+    else mockErPromptIds.add(prompt.id);
+    if (!VALID_STATUS.has(prompt.status)) add(issues, 'error', 'MOCK_ER_PROMPT_STATUS_INVALID', `Mock ER prompt ${loc} has invalid status.`, file, loc);
+    if (prompt.status === 'published' && !prompt.reviewer) add(issues, 'error', 'PUBLISHED_WITHOUT_REVIEWER', `Published mock ER prompt ${loc} needs a reviewer.`, file, loc);
+    if (!prompt.prompt || words(prompt.prompt).length < 12) add(issues, 'error', 'MOCK_ER_PROMPT_TEXT_MISSING', `Mock ER prompt ${loc} needs a complete task prompt.`, file, loc);
+    let combinedWords = 0;
+    for (const key of ['sourceA','sourceB']) {
+      const source = prompt[key] || {};
+      const count = words(source.text).length;
+      combinedWords += count;
+      if (!source.title || count < 220) add(issues, 'error', 'MOCK_ER_SOURCE_TOO_SHORT', `${loc} ${key} needs a title and at least 220 words.`, file, loc);
+    }
+    if (combinedWords < 550 || combinedWords > 650) add(issues, 'error', 'MOCK_ER_SOURCE_TOTAL_INVALID', `${loc} paired sources need 550–650 total words; found ${combinedWords}.`, file, loc);
+    if (normalizeText(prompt.sourceA?.text) === normalizeText(prompt.sourceB?.text)) add(issues, 'error', 'MOCK_ER_SOURCES_IDENTICAL', `${loc} source texts must differ.`, file, loc);
+    if (!['A','B'].includes(prompt.strongerSource)) add(issues, 'error', 'MOCK_ER_STRONGER_SOURCE_INVALID', `${loc} needs canonical strongerSource A or B for authoring QA.`, file, loc);
+    if (!Array.isArray(prompt.authoringKey?.reasons) || prompt.authoringKey.reasons.length < 2) add(issues, 'error', 'MOCK_ER_AUTHORING_KEY_INCOMPLETE', `${loc} needs at least two authoring-key reasons.`, file, loc);
+    if (prompt.status === 'published') mockErPrompts.push(prompt);
   }
 
   const erTasks = [];
@@ -560,6 +588,53 @@ export async function validateContent({ quiet = false } = {}) {
     if (set.status === 'published') publishedSets.push({ file, set });
   }
 
+  // Phase 5 fixed-form completeness contract.
+  const mockForms = Array.isArray(mockBlueprint.forms) ? mockBlueprint.forms : [];
+  const publishedRuntimeSets = new Map(publishedSets.map(({ set }) => [set.runtime?.id || set.id, set]));
+  const usedMockModules = new Set();
+  const usedMockPassages = new Set();
+  const usedMockEr = new Set();
+  let allFormsComplete = mockBlueprint.version === 'rla-mock-v2' && mockForms.length === 3;
+  if (mockBlueprint.version !== 'rla-mock-v2') add(issues, 'error', 'MOCK_V2_VERSION_INVALID', 'Dedicated mock blueprint must be rla-mock-v2.', mockBlueprintFile);
+  if (mockForms.length !== 3) add(issues, 'error', 'MOCK_FORM_COUNT_INVALID', `Dedicated mock blueprint needs exactly three forms; found ${mockForms.length}.`, mockBlueprintFile);
+  for (const form of mockForms) {
+    const loc = form?.id || '(no-id)';
+    const p1ids = Array.isArray(form?.part1ModuleIds) ? form.part1ModuleIds : [];
+    const p3ids = Array.isArray(form?.part3ModuleIds) ? form.part3ModuleIds : [];
+    const ids = [...p1ids, ...p3ids];
+    if (p1ids.length !== 2 || p3ids.length !== 5 || new Set(ids).size !== 7) { add(issues,'error','MOCK_FORM_MANIFEST_INVALID',`${loc} needs 2 Part 1 and 5 Part 3 unique module ids.`,mockBlueprintFile,loc); allFormsComplete=false; }
+    const sets = [];
+    for (const id of ids) {
+      const set = publishedRuntimeSets.get(id);
+      if (!set) { add(issues,'error','MOCK_FORM_MODULE_MISSING',`${loc} references missing published module ${id}.`,mockBlueprintFile,loc); allFormsComplete=false; continue; }
+      sets.push(set);
+      const roles=set.curriculum?.deliveryRoles||[];
+      if (roles.length!==1 || roles[0]!=='mock') { add(issues,'error','MOCK_FORM_ROLE_LEAK',`${loc} module ${id} must be mock-only.`,mockBlueprintFile,loc); allFormsComplete=false; }
+      if (usedMockModules.has(id)) { add(issues,'error','MOCK_FORM_MODULE_OVERLAP',`${id} is reused across forms.`,mockBlueprintFile,loc); allFormsComplete=false; }
+      usedMockModules.add(id);
+      const pid=set.passageRefs?.[0]; if(pid){ if(usedMockPassages.has(pid)){add(issues,'error','MOCK_FORM_PASSAGE_OVERLAP',`${pid} is reused across forms.`,mockBlueprintFile,loc); allFormsComplete=false;} usedMockPassages.add(pid); }
+    }
+    if (sets.length !== 7) continue;
+    const p1Count=sets.slice(0,2).reduce((n,x)=>n+x.questions.length,0); const p3Count=sets.slice(2).reduce((n,x)=>n+x.questions.length,0); const qs=sets.flatMap(x=>x.questions||[]);
+    if(p1Count!==14||p3Count!==32||qs.length!==46){add(issues,'error','MOCK_FORM_QUESTION_COUNT_INVALID',`${loc} needs 14/32/46 items; found ${p1Count}/${p3Count}/${qs.length}.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    if(sets.some(x=>x.questions.length<6||x.questions.length>8)){add(issues,'error','MOCK_FORM_SET_SIZE_INVALID',`${loc} contains a set outside 6–8 items.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    const reporting={'1':0,'2':0,'3':0}, types={multiple_choice:0,grammar_edit:0,select_text:0,drag:0}, dok={'1':0,'2':0,'3':0};
+    for(const q of qs){ const rc=String(q.reportingCategory??''); if(rc in reporting) reporting[rc]++; else {add(issues,'error','MOCK_REPORTING_CATEGORY_INVALID',`${loc}:${q.id} needs reportingCategory 1–3.`,mockBlueprintFile,loc); allFormsComplete=false;} if(q.type==='drag_sort'||q.type==='drag_order') types.drag++; else if(q.type in types) types[q.type]++; else {add(issues,'error','MOCK_ITEM_TYPE_INVALID',`${loc}:${q.id} uses unsupported mock item type ${q.type}.`,mockBlueprintFile,loc); allFormsComplete=false;} if(String(q.dok) in dok)dok[String(q.dok)]++; if('hint' in q||'learningStage' in q||'confidence' in q||'retry' in q){add(issues,'error','MOCK_SCAFFOLDING_LEAK',`${loc}:${q.id} contains learning scaffolding.`,mockBlueprintFile,loc); allFormsComplete=false;} if(q.type==='multiple_choice'&&(q.options||[]).length!==4){add(issues,'error','MOCK_MC_OPTION_COUNT_INVALID',`${loc}:${q.id} must have four options.`,mockBlueprintFile,loc); allFormsComplete=false;} }
+    for(const k of ['1','2','3']) if(reporting[k]!==Number(mockBlueprint.reportingCategoryTargets?.[k])){add(issues,'error','MOCK_REPORTING_TARGET_INVALID',`${loc} category ${k} has ${reporting[k]}; expected ${mockBlueprint.reportingCategoryTargets?.[k]}.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    for(const k of ['multiple_choice','grammar_edit','select_text','drag']) if(types[k]!==Number(mockBlueprint.itemTypeTargets?.[k])){add(issues,'error','MOCK_ITEM_TYPE_TARGET_INVALID',`${loc} ${k} has ${types[k]}; expected ${mockBlueprint.itemTypeTargets?.[k]}.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    if(!(dok['1']>0&&dok['2']>dok['1']&&dok['2']>dok['3']&&dok['3']>0)){add(issues,'error','MOCK_DOK_BALANCE_INVALID',`${loc} needs DOK 1–3 with DOK 2 largest; found ${JSON.stringify(dok)}.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    const passagesForForm=sets.map(x=>passages.get(x.passageRefs?.[0])).filter(Boolean); const lit=passagesForForm.filter(x=>x.textType==='literary').length;
+    if(lit!==2||passagesForForm.length-lit!==5){add(issues,'error','MOCK_TEXT_TYPE_BALANCE_INVALID',`${loc} needs 2 literary and 5 informational/editing sets.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    const ctx=new Set(passagesForForm.map(x=>x.context)); for(const required of ['civics','science','workplace','data']) if(!ctx.has(required)){add(issues,'error','MOCK_CONTEXT_COVERAGE_MISSING',`${loc} missing ${required} context.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    const editing=sets.filter(x=>x.questions.some(q=>q.type==='grammar_edit')); if(editing.length!==1||editing[0].questions.length!==8||!editing[0].questions.every(q=>q.type==='grammar_edit')){add(issues,'error','MOCK_EDITING_SET_INVALID',`${loc} needs one dedicated 8-item editing set.`,mockBlueprintFile,loc); allFormsComplete=false;}
+    let stamina=false; for(const set of sets){const passage=passages.get(set.passageRefs?.[0]); if(!passage)continue; const wc=words(passage.text).length; const isEditing=editing.includes(set); if(isEditing&&wc>450){add(issues,'error','MOCK_EDITING_PASSAGE_LONG',`${loc} editing passage ${passage.id} is ${wc} words.`,mockBlueprintFile,loc);allFormsComplete=false;} if(!isEditing&&(wc<400||wc>900)){add(issues,'error','MOCK_PASSAGE_LENGTH_INVALID',`${loc} passage ${passage.id} is ${wc} words.`,mockBlueprintFile,loc);allFormsComplete=false;} if(wc>=Number(mockBlueprint.selection?.staminaMinimumWords||600))stamina=true;}
+    if(!stamina){add(issues,'error','MOCK_STAMINA_SOURCE_MISSING',`${loc} needs a 600+ word source.`,mockBlueprintFile,loc);allFormsComplete=false;}
+    if(!form.erPromptId||!mockErPromptIds.has(form.erPromptId)){add(issues,'error','MOCK_FORM_ER_MISSING',`${loc} references missing mock ER prompt ${form.erPromptId||'(missing)'}.`,mockBlueprintFile,loc);allFormsComplete=false;} else if(usedMockEr.has(form.erPromptId)){add(issues,'error','MOCK_FORM_ER_OVERLAP',`${form.erPromptId} reused across forms.`,mockBlueprintFile,loc);allFormsComplete=false;} else usedMockEr.add(form.erPromptId);
+  }
+  if(usedMockModules.size!==21){add(issues,'error','MOCK_BANK_MODULE_COUNT_INVALID',`Dedicated mock bank needs 21 unique modules; found ${usedMockModules.size}.`,mockBlueprintFile);allFormsComplete=false;}
+  if(mockErPrompts.length!==3){add(issues,'error','MOCK_ER_BANK_COUNT_INVALID',`Dedicated mock ER bank needs 3 prompts; found ${mockErPrompts.length}.`,mockBlueprintFile);allFormsComplete=false;}
+  if(mockBlueprint.selection?.allowPracticeFallback===false&&!allFormsComplete) add(issues,'error','MOCK_FALLBACK_DISABLED_INCOMPLETE','Practice fallback may be disabled only when all three dedicated forms pass.',mockBlueprintFile);
+
   const publishedLegacyModules = [];
   const legacyIds = new Set();
   let legacyIndex = [];
@@ -674,7 +749,7 @@ export async function validateContent({ quiet = false } = {}) {
     console.log(`Content validation: ${errors.length} error(s), ${warnings.length} warning(s)`);
     for (const issue of issues) console.log(`${issue.type.toUpperCase()} ${issue.code} ${issue.file}${issue.location ? ` [${issue.location}]` : ''}: ${issue.message}`);
   }
-  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts, erTasks, quickReview };
+  return { ok: errors.length === 0, errors, warnings, issues, qaSummary: summary, skills, passages, publishedSets, publishedLegacyModules, erPrompts, mockErPrompts, erTasks, quickReview };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

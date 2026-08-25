@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-c-literary-2",
+  "runtime": {
+    "id": "set-rla-mock-c-literary-2",
+    "file": "set-rla-mock-c-literary-2.json"
+  },
+  "title": "The Night Bakery",
+  "description": "Second literary source set for the dedicated full mock.",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-c-literary-2"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.4",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the conflict?",
+      "primarySkillId": "R1.4",
+      "familyId": "summary.whole",
+      "reportingCategory": 1,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The character must balance a personal plan with a responsibility that affects other people."
+        },
+        {
+          "id": "b",
+          "text": "The character is trying to win a contest at any cost.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character is trying to win a contest at any cost.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "The setting is closing permanently.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The setting is closing permanently.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The character cannot understand any of the available choices.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character cannot understand any of the available choices.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "The character must balance a personal plan with a responsibility that affects other people.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "What motivates the character’s final choice?",
+      "primarySkillId": "R2.4",
+      "familyId": "inference.character_or_event",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "A desire to avoid speaking to anyone.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A desire to avoid speaking to anyone.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The character recognizes that protecting the most important shared need matters more than completing every preferred task."
+        },
+        {
+          "id": "c",
+          "text": "A promise of a cash reward.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A promise of a cash reward.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "A belief that preparation never matters.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A belief that preparation never matters.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "The character recognizes that protecting the most important shared need matters more than completing every preferred task.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "How does the object mentioned throughout the story function?",
+      "primarySkillId": "R4.1",
+      "familyId": "function.sentence",
+      "reportingCategory": 1,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It explains a technical process unrelated to the conflict.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It explains a technical process unrelated to the conflict.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "It proves another character is dishonest.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves another character is dishonest.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It becomes a concrete reminder of the choice or responsibility the character is managing."
+        },
+        {
+          "id": "d",
+          "text": "It causes the setting to change locations.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It causes the setting to change locations.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "It becomes a concrete reminder of the choice or responsibility the character is managing.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "What theme is best supported?",
+      "primarySkillId": "R1.5",
+      "familyId": "theme.identify",
+      "reportingCategory": 1,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "Success means completing every original plan exactly.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“Success means completing every original plan exactly.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "People should avoid asking others for help.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“People should avoid asking others for help.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "A difficult choice is always a sign of poor preparation.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“A difficult choice is always a sign of poor preparation.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "Responsible choices often protect essential goals even when some less important plans must change."
+        }
+      ],
+      "correct": "d",
+      "explanation": {
+        "answer": "Responsible choices often protect essential goals even when some less important plans must change.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why is the consequence of the choice important?",
+      "primarySkillId": "R4.2",
+      "familyId": "structure.effect",
+      "reportingCategory": 2,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows the decision solved the central practical problem without making the outcome unrealistically perfect."
+        },
+        {
+          "id": "b",
+          "text": "It introduces a completely new conflict.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It introduces a completely new conflict.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "c",
+          "text": "It proves no one was affected by the decision.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It proves no one was affected by the decision.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "It changes the story into an argument essay.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“It changes the story into an argument essay.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "It shows the decision solved the central practical problem without making the outcome unrealistically perfect.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "What does the final image suggest?",
+      "primarySkillId": "R2.6",
+      "familyId": "relationship.significance",
+      "reportingCategory": 2,
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {
+          "id": "a",
+          "text": "The character has forgotten the conflict.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character has forgotten the conflict.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "b",
+          "text": "The character carries forward a lesson from the conflict into future decisions."
+        },
+        {
+          "id": "c",
+          "text": "The character intends to destroy the object.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The character intends to destroy the object.” is not the choice most directly supported by this source and question."
+        },
+        {
+          "id": "d",
+          "text": "The setting will never be used again.",
+          "distractorType": "plausible_but_unsupported",
+          "whyWrong": "“The setting will never be used again.” is not the choice most directly supported by this source and question."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "The character carries forward a lesson from the conflict into future decisions.",
+        "whyCorrect": "The passage directly supports this choice through the details and reasoning connected to the question.",
+        "quickTip": "Match the answer to the exact claim the source can support."
+      }
+    }
+  ]
+}

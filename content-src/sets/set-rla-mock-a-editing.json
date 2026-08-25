@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mock-a-editing",
+  "runtime": {
+    "id": "set-rla-mock-a-editing",
+    "file": "set-rla-mock-a-editing.json"
+  },
+  "title": "Community Garden Update",
+  "description": "Dedicated editing source set for the full mock.",
+  "subject": "rla",
+  "category": "language_conventions",
+  "topic": "Full RLA Mock",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mock-a-editing"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "Phase 5 mock editorial review",
+  "reviewNotes": "Dedicated unseen fixed-form mock source set reviewed for count, role isolation, one-best-answer logic, reporting category, DOK, and source coherence.",
+  "curriculum": {
+    "domain": "Language & Editing",
+    "primarySkillId": "L2.2",
+    "secondarySkillIds": [],
+    "contentKind": "mixed_review",
+    "deliveryRoles": [
+      "mock"
+    ],
+    "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “The garden committee meet every second Saturday.”",
+      "primarySkillId": "L1.2",
+      "familyId": "edit.sva.basic",
+      "reportingCategory": 3,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "The garden committee meet every second Saturday.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The garden committee meet every second Saturday.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "The garden committee meets every second Saturday."
+        },
+        {
+          "id": "c",
+          "text": "The garden committee meeting every second Saturday.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The garden committee meeting every second Saturday.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "The garden committee have met every second Saturday.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The garden committee have met every second Saturday.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "The garden committee meets every second Saturday.",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “volunteers is asked to arrive by nine.”",
+      "primarySkillId": "L1.2",
+      "familyId": "edit.sva.basic",
+      "reportingCategory": 3,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "volunteers is asked to arrive by nine.",
+          "distractorType": "editing_error",
+          "whyWrong": "“volunteers is asked to arrive by nine.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "volunteers was asked to arrive by nine.",
+          "distractorType": "editing_error",
+          "whyWrong": "“volunteers was asked to arrive by nine.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "volunteers be asked to arrive by nine.",
+          "distractorType": "editing_error",
+          "whyWrong": "“volunteers be asked to arrive by nine.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "volunteers are asked to arrive by nine."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "volunteers are asked to arrive by nine.",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "grammar_edit",
+      "prompt": "Choose the best punctuation for the list.",
+      "primarySkillId": "L2.4",
+      "familyId": "edit.punctuation.clauses",
+      "reportingCategory": 3,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "tomatoes, peppers, and beans"
+        },
+        {
+          "id": "a",
+          "text": "tomatoes peppers and beans",
+          "distractorType": "editing_error",
+          "whyWrong": "“tomatoes peppers and beans” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "tomatoes; peppers and beans",
+          "distractorType": "editing_error",
+          "whyWrong": "“tomatoes; peppers and beans” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "tomatoes: peppers: and beans",
+          "distractorType": "editing_error",
+          "whyWrong": "“tomatoes: peppers: and beans” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "tomatoes, peppers, and beans",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct verb: “The new water barrels, which ___ donated...”",
+      "primarySkillId": "L1.2",
+      "familyId": "edit.sva.intervening",
+      "reportingCategory": 3,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "was",
+          "distractorType": "editing_error",
+          "whyWrong": "“was” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "is",
+          "distractorType": "editing_error",
+          "whyWrong": "“is” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "were"
+        },
+        {
+          "id": "d",
+          "text": "be",
+          "distractorType": "editing_error",
+          "whyWrong": "“be” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "were",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "grammar_edit",
+      "prompt": "Choose the best transition revision.",
+      "primarySkillId": "L1.9",
+      "familyId": "edit.transition.logic",
+      "reportingCategory": 3,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the weather was unusually dry, therefore the team changed the watering schedule.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Because the weather was unusually dry, therefore the team changed the watering schedule.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "Because the weather was unusually dry, the team changed the watering schedule."
+        },
+        {
+          "id": "c",
+          "text": "The weather was unusually dry, because therefore the team changed the watering schedule.",
+          "distractorType": "editing_error",
+          "whyWrong": "“The weather was unusually dry, because therefore the team changed the watering schedule.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "Therefore because the weather was unusually dry the team, changed the watering schedule.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Therefore because the weather was unusually dry the team, changed the watering schedule.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "Because the weather was unusually dry, the team changed the watering schedule.",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "grammar_edit",
+      "prompt": "Choose the best parallel list.",
+      "primarySkillId": "L1.6",
+      "familyId": "edit.parallelism",
+      "reportingCategory": 3,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "b",
+          "text": "gloves, a hat, and sunscreen"
+        },
+        {
+          "id": "a",
+          "text": "gloves, a hat and sunscreen",
+          "distractorType": "editing_error",
+          "whyWrong": "“gloves, a hat and sunscreen” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "gloves a hat, and sunscreen",
+          "distractorType": "editing_error",
+          "whyWrong": "“gloves a hat, and sunscreen” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "gloves; a hat and sunscreen",
+          "distractorType": "editing_error",
+          "whyWrong": "“gloves; a hat and sunscreen” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "gloves, a hat, and sunscreen",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "grammar_edit",
+      "prompt": "Choose the correct revision: “everyone who have helped.”",
+      "primarySkillId": "L1.2",
+      "familyId": "edit.sva.basic",
+      "reportingCategory": 3,
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "everyone who have helped",
+          "distractorType": "editing_error",
+          "whyWrong": "“everyone who have helped” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "everyone which have helped",
+          "distractorType": "editing_error",
+          "whyWrong": "“everyone which have helped” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "d",
+          "text": "everyone who helping",
+          "distractorType": "editing_error",
+          "whyWrong": "“everyone who helping” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "everyone who has helped"
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "everyone who has helped",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "grammar_edit",
+      "prompt": "Choose the best sentence-boundary revision.",
+      "primarySkillId": "L2.2",
+      "familyId": "edit.sentence_boundary",
+      "reportingCategory": 3,
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 45,
+      "options": [
+        {
+          "id": "a",
+          "text": "Next month we will repair the fence we will also add two shaded benches.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Next month we will repair the fence we will also add two shaded benches.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "b",
+          "text": "Next month we will repair the fence, we will also add two shaded benches.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Next month we will repair the fence, we will also add two shaded benches.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        },
+        {
+          "id": "c",
+          "text": "Next month we will repair the fence; we will also add two shaded benches."
+        },
+        {
+          "id": "d",
+          "text": "Next month; we will repair the fence we will also add two shaded benches.",
+          "distractorType": "editing_error",
+          "whyWrong": "“Next month; we will repair the fence we will also add two shaded benches.” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "Next month we will repair the fence; we will also add two shaded benches.",
+        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
+        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+      }
+    }
+  ]
+}

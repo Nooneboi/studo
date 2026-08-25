@@ -232,7 +232,7 @@ function mockHistoryHtml(history) {
   return `
     <section id="mock-section" class="progress-table-section" aria-labelledby="mock-progress-heading">
       <div class="progress-table-heading">
-        <div><span class="progress-mini-label">Format & timing</span><h2 id="mock-progress-heading">Mock practice</h2></div>
+        <div><span class="progress-mini-label">Independent practice evidence</span><h2 id="mock-progress-heading">Full RLA Mock</h2></div>
         <span>${history.length} ${history.length === 1 ? "attempt" : "attempts"}</span>
       </div>
       <p class="progress-er-note">Objective scores are auto-graded raw Chee Skool results. Extended Response trait levels, when present, are separate Self-review.</p>
@@ -247,9 +247,13 @@ function mockAttemptRow(item) {
     ? ` · ER Self-review ${er.argument}/${er.organization}/${er.english}`
     : "";
   const href = `test.html?attempt=${encodeURIComponent(item.attemptId || "")}`;
+  const formId = item.formId || null;
+  const reportingCategories = item.reportingCategories || score.reportingCategories || {};
+  const labels = { "1": "Text Features & Technique", "2": "Evidence & Arguments", "3": "Language Conventions" };
+  const categoryText = Object.entries(reportingCategories).map(([key, bucket]) => `${labels[key] || key} ${bucket.correct ?? 0}/${bucket.total ?? 0}`).join(" · ");
   return `
-    <a class="progress-er-row" href="${escapeAttr(href)}">
-      <span><strong>${escapeHtml(item.label || "RLA Mock")}</strong><small>Objective ${escapeHtml(score.correct ?? 0)}/${escapeHtml(score.total ?? 0)} · ${escapeHtml(score.accuracy ?? 0)}%${escapeHtml(erText)}</small></span>
+    <a class="progress-er-row" href="${escapeAttr(href)}"${formId ? ` data-form-id="${escapeAttr(formId)}"` : ""}>
+      <span><strong>${escapeHtml(item.label || "Full RLA Mock")}</strong><small>Objective ${escapeHtml(score.correct ?? 0)}/${escapeHtml(score.total ?? 0)} · ${escapeHtml(score.accuracy ?? 0)}%${escapeHtml(erText)}${categoryText ? `<br>${escapeHtml(categoryText)}` : ""}</small></span>
       <span class="progress-er-score"><small>Raw objective</small><strong>${escapeHtml(score.accuracy ?? 0)}%</strong></span>
       <b>→</b>
     </a>`;

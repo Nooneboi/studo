@@ -1,4 +1,4 @@
-/* Extended Response V1 — paired-source drafting + transparent rubric self-review. */
+/* Extended Response V2 — ordinary Practice prompts plus isolated mock-only prompts. */
 const ER_SECONDS = 2700;
 const HISTORY_KEY = "sq:er:history";
 const params = new URLSearchParams(location.search);
@@ -23,9 +23,15 @@ async function init() {
     await initProductionTask();
     return;
   }
-  document.getElementById("er-mode-label").textContent = mode === "timed" ? "Timed practice" : "Untimed practice";
+  document.getElementById("er-mode-label").textContent = mockAttemptId ? "Full RLA Mock · Extended Response" : (mode === "timed" ? "Timed practice" : "Untimed practice");
   try {
-    const response = await fetch("data/generated/er-prompts.json", { cache: "no-store" });
+    if (mockAttemptId) {
+      const rawAttempt = window.StudoSafeStorage ? window.StudoSafeStorage.get(`sq:rlaMock:${mockAttemptId}`) : localStorage.getItem(`sq:rlaMock:${mockAttemptId}`);
+      const savedAttempt = rawAttempt ? JSON.parse(rawAttempt) : null;
+      if (!savedAttempt || savedAttempt.completedAt || !savedAttempt.er || savedAttempt.er.promptId !== promptId) throw new Error("Mock ER prompt does not match the active saved attempt");
+    }
+    const promptBankPath = mockAttemptId ? "data/generated/mock-er-prompts.json" : "data/generated/er-prompts.json";
+    const response = await fetch(promptBankPath, { cache: "no-store" });
     if (!response.ok) throw new Error(`Prompt bank returned ${response.status}`);
     const data = await response.json();
     prompt = (data.prompts || []).find((item) => item.id === promptId);
@@ -387,14 +393,14 @@ function renderReview() {
     <section class="er-review-panel" aria-labelledby="er-review-title">
       <div class="page-kicker">Self-review</div>
       <h2 id="er-review-title">Score the evidence you can see in your response</h2>
-      <p class="er-review-intro">These are your own provisional rubric judgments, not an automatic or official score. Use the checklist and model to revise.</p>
+      <p class="er-review-intro">These are your own provisional rubric judgments, not an automatic or official score. Use the checklist to review your response.</p>
       <div class="er-traits">
         ${traitCard("argument", "Trait 1 - Argument & Evidence", ["I clearly chose the better-supported argument.", "I used specific evidence from the sources.", "I explained why the evidence supports my evaluation.", "I compared strengths or weaknesses across both sources."])}
         ${traitCard("organization", "Trait 2 - Development & Organization", ["My thesis controls the response.", "Each paragraph has a clear job.", "Evidence is followed by analysis, not dropped in without explanation.", "Transitions make the reasoning easy to follow."])}
         ${traitCard("english", "Trait 3 - Clarity & Standard English", ["My sentences are complete and understandable.", "Pronouns and verb forms are clear.", "Punctuation helps the reader follow the argument.", "I revised wording that was vague or repetitive."])}
       </div>
       <div class="er-revision-box"><h3>Revision questions</h3><ul>${(prompt.revisionPrompts || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
-      <details class="er-model" id="er-model"><summary>Compare with the model response</summary><div class="er-model-copy">${paragraphHtml(prompt.modelResponse)}</div>${annotationHtml(prompt.annotations || [])}</details>
+      ${mockAttemptId ? "" : `<details class="er-model" id="er-model"><summary>Compare with the model response</summary><div class="er-model-copy">${paragraphHtml(prompt.modelResponse)}</div>${annotationHtml(prompt.annotations || [])}</details>`}
       <div class="er-review-actions">
         <label class="er-revision-check"><input type="checkbox" id="er-revision-complete" ${state.revisionComplete ? "checked" : ""}> I revised or deliberately reviewed my response.</label>
         <button class="btn secondary" id="er-revise" type="button">Revise my response</button>

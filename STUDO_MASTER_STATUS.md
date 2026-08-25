@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-25  
 **Current release:** `0.7.0-alpha.29`  
-**Current stage:** Phase 4 complete — dedicated Skill Checks and selective Train Quick Review are live; next is Phase 5 dedicated unseen Mock bank
+**Current stage:** Phase 5 complete at code/content/automated-QA level — three dedicated unseen fixed Mock forms are live in source; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
@@ -59,9 +59,11 @@ Chee Skool currently covers four RLA tracks and **62 canonical skills**:
 
 Current generated learner bank:
 
-- **112 learner modules**
-- **807 objective/component questions**
+- **133 learner modules**
+- **945 objective/component questions**
 - **9 dedicated Skill Checks / 54 independent Check questions**
+- **21 dedicated mock-only source sets / 138 unseen Mock objective questions**
+- **3 fixed Full RLA Mock forms / 3 mock-only Extended Response prompts**
 - **28 Quick Review recall cards**
 - **152 registered learner PDFs**
 - **152 physical PDFs in `assets/resources`**
@@ -171,16 +173,14 @@ Current dedicated banks:
 
 - Practice: populated
 - Train: populated from modules explicitly carrying `train`
-- Skill Check: **0 dedicated sets by design**
-- Mock-only: **0 dedicated sets by design**
+- Skill Check: **9 dedicated sets / 54 questions**
+- Mock-only: **21 dedicated source sets / 138 questions across 3 fixed forms**
 
-### Temporary Mock behavior
+### Dedicated Mock behavior
 
-The current alpha Mock first looks for dedicated `mock` content. Because a dedicated Mock bank has not been built yet, the blueprint explicitly permits a temporary Practice-bank fallback with:
+Full RLA Mock now uses the V2 fixed-form manifest and only modules with exactly `deliveryRoles: ["mock"]`. Practice fallback is disabled with `allowPracticeFallback: false`.
 
-`bankMode: "practice_fallback"`
-
-Fallback attempts are for format/timing simulation and are **not an independent readiness measure**. Existing `mock-excluded` protection remains an additional exclusion during this period.
+The three fixed forms rotate so the learner receives all three before a repeat when local history is available; after that, the least-recently-used form is selected. Objective RLA Practice Test remains separate and continues to use Practice-role content. Mock results are raw practice evidence only and do **not** estimate a GED scaled score or predict pass/fail.
 
 ## Phase 0 — content integrity before expansion
 
@@ -451,12 +451,19 @@ Extended Response priority:
 - Phase 4 strengthens evidence quality but does not claim a GED-equivalent score, pass/fail prediction, psychometric mastery, or Mock readiness.
 - Phase 4 closeout found no reason to create checks for all 62 skills or to expand PDFs/content simply for symmetry.
 
-### Phase 5 — Dedicated unseen Mock bank
+### Phase 5 — Dedicated unseen Mock bank: complete at code/content/automated-QA level
 
-- Mock-only passages/questions not exposed in ordinary Practice/Train;
-- authentic select-text/area, drag/drop, and embedded editing only where natural;
-- heavier ER source pairs;
-- independent exam-simulation evidence rather than Practice-bank reuse.
+- V2 uses **three fixed forms** rather than random full-form assembly.
+- Each form has **46 objective questions** in **7 coherent source sets** plus one unique **45-minute mock-only ER**.
+- Across Phase 5: **21 mock-only modules / 138 unseen objective questions / 3 mock-only ER prompts**.
+- Each form meets the internal 16 / 21 / 9 reporting-category target and 34 MC / 8 embedded editing / 2 select-text / 2 drag interaction target.
+- Every form contains 2 literary and 5 informational/editing sets, including civics/GAC, science/technical, workplace/community, data/multi-format, one dedicated editing set, and a 600+ word stamina source.
+- Full Mock consumes only `deliveryRoles: ["mock"]`; Practice, Train, Skill Check, Quick Review, passage browsing, and Objective Practice remain isolated.
+- Practice fallback is disabled. The engine rotates A → B → C before repeating and then uses least-recently-used selection.
+- Mock ER prompts compile to a separate learner-safe payload and are absent from ordinary ER Practice.
+- Results use **Text Features & Technique**, **Evidence & Arguments**, and **Language Conventions**, with ER kept as separate Self-review.
+- No scaled-score estimate, pass prediction, College Ready claim, official percentile/equating claim, or psychometric-equivalence claim is added.
+- Automated release verification is clean; real desktop/mobile/accessibility QA remains a human public-release gate.
 
 ## Release gate after content work
 
@@ -473,6 +480,6 @@ Automated correctness is necessary but not the final public-release gate. Before
 
 ## Immediate next work
 
-> **Phase 5 — design and build the dedicated unseen Mock bank.**
+> **Post-Phase-5 release QA before any new product expansion.**
 
-Map the Mock blueprint to the official reporting-category intent already captured in the project, author coherent unseen passage/source sets and editing material, preserve dedicated `mock` role isolation, and disable Practice fallback only when the dedicated bank can independently satisfy the full blueprint. Keep the public-alpha gate disabled until real desktop/mobile/accessibility QA and a small learner pilot are completed.
+Run the finished Full RLA Mock on real desktop and mobile browsers, including refresh/back/two-tab behavior, touch interactions, keyboard-only use, zoom, and basic screen-reader checks. Then run a small learner pilot and fix only evidence-backed high-impact issues before deciding the next product phase. Keep the public-alpha gate disabled until that review is signed off.
