@@ -42,7 +42,8 @@ function renderProgress() {
   }
 
   const recommendation = summary.weakestSkills[0] || summary.skills[0] || null;
-  const mistakes = Learning.getMistakes().slice(0, 8);
+  const activeMistakes = Learning.getMistakes();
+  const reviewGroups = groupReviewMistakes(activeMistakes).slice(0, 8);
 
   progressView.innerHTML = `
     <div class="progress-workspace">
@@ -78,10 +79,10 @@ function renderProgress() {
             <h2 id="skills-heading">Skills</h2>
             <span>${summary.skills.length} tracked</span>
           </div>
-          <p class="progress-er-note">Skill signals reflect your Chee Skool practice history, not a GED score.</p>
+          <p class="progress-er-note">Skill evidence reflects your Chee Skool practice history, not a GED score.</p>
           <div class="progress-skill-table">
             <div class="progress-skill-head" aria-hidden="true">
-              <span>Skill</span><span>Correct</span><span>Signal</span><span>Status</span>
+              <span>Skill</span><span>Correct</span><span>Evidence</span><span>Status</span>
             </div>
             ${summary.skills.map((skill) => skillRow(skill, latestChecks.get(skill.id))).join("")}
           </div>
@@ -93,9 +94,9 @@ function renderProgress() {
         <section id="mistakes-section" class="progress-table-section" aria-labelledby="review-heading">
           <div class="progress-table-heading">
             <h2 id="review-heading">Review list</h2>
-            <span>${mistakes.length} shown</span>
+            <span>${activeMistakes.length ? `${activeMistakes.length} item${activeMistakes.length === 1 ? "" : "s"} · ${reviewGroups.length} skill${reviewGroups.length === 1 ? "" : "s"}` : "0 items"}</span>
           </div>
-          ${mistakes.length ? `<div class="progress-review-list">${mistakes.map(mistakeRow).join("")}</div>` : `<div class="progress-quiet-state">No active review items.</div>`}
+          ${reviewGroups.length ? `<div class="progress-review-list">${reviewGroups.map(reviewGroupRow).join("")}</div>` : `<div class="progress-quiet-state">No active review items.</div>`}
         </section>
 
         ${dataBackupHtml()}
@@ -314,16 +315,21 @@ function recommendationBlock(skill) {
 }
 
 function skillRow(skill, latestCheck = null) {
+  const score = Math.max(0, Math.min(100, skill.score));
   return `
     <a class="progress-skill-row" href="${escapeAttr(practiceHref(skill))}">
       <span class="progress-skill-name"><small>${escapeHtml(Learning.categoryLabel(skill.category))}</small><strong>${escapeHtml(skill.label)}</strong></span>
       <span class="progress-correct-cell"><small>Correct</small><strong>${skill.correct}/${skill.attempts}</strong></span>
-      <span class="progress-signal-cell">
-        <small>Practice signal</small>
-        <span class="progress-signal-meter"><i><b style="width:${Math.max(0, Math.min(100, skill.score))}%"></b></i><strong>${skill.score}%</strong></span>
+      <span class="progress-evidence-cell">
+        <small>Evidence</small>
+        <strong>Practice</strong>
         ${latestCheck ? `<span class="progress-check-result"><small>Latest Skill Check</small><strong>${escapeHtml(latestCheck.correct)}/${escapeHtml(latestCheck.total)}</strong></span>` : ""}
       </span>
-      <span class="progress-status-cell"><small>Status</small><strong class="progress-status ${statusClass(skill.status)}">${escapeHtml(skill.status)}</strong></span>
+      <span class="progress-status-cell">
+        <small>Status</small>
+        <span class="progress-status-summary"><strong class="progress-status ${statusClass(skill.status)}">${escapeHtml(skill.status)}</strong><strong class="progress-status-score">${score}%</strong></span>
+        <span class="progress-status-meter" aria-hidden="true"><i><b style="width:${score}%"></b></i></span>
+      </span>
     </a>`;
 }
 
@@ -345,17 +351,36 @@ function latestSkillCheckBySkill() {
   return out;
 }
 
-function mistakeRow(mistake) {
-  const href = mistake.sourceMode === "skill_check"
-    ? practiceHref(mistake)
-    : mistake.moduleFile
-      ? `module.html?quiz=${encodeURIComponent(mistake.moduleFile)}&question=${encodeURIComponent(mistake.questionId)}&return=${encodeURIComponent("progress.html")}`
-      : practiceHref(mistake);
+function groupReviewMistakes(mistakes) {
+  const groups = new Map();
+  for (const mistake of mistakes || []) {
+    const key = mistake.skillId || mistake.skillLabel || mistake.topic || mistake.questionKey;
+    if (!key) continue;
+    const existing = groups.get(key) || {
+      skillId: mistake.skillId || null,
+      skillLabel: mistake.skillLabel || mistake.topic || "Review skill",
+      category: mistake.category || "reading",
+      topic: mistake.topic || "General",
+      count: 0,
+      wrongCount: 0,
+      latestAt: mistake.lastAttemptAt || mistake.lastWrongAt || null
+    };
+    existing.count += 1;
+    existing.wrongCount += Number(mistake.wrongCount) || 0;
+    const candidateAt = mistake.lastAttemptAt || mistake.lastWrongAt || null;
+    if (candidateAt && (!existing.latestAt || new Date(candidateAt) > new Date(existing.latestAt))) existing.latestAt = candidateAt;
+    groups.set(key, existing);
+  }
+  return [...groups.values()].sort((a, b) => new Date(b.latestAt || 0) - new Date(a.latestAt || 0));
+}
+
+function reviewGroupRow(group) {
+  const countLabel = `${group.count} ${group.count === 1 ? "question" : "questions"} need review`;
   return `
-    <a class="progress-review-row" href="${escapeAttr(href)}">
-      <span><strong>${escapeHtml(mistake.skillLabel || mistake.topic)}</strong><small>${escapeHtml(mistake.moduleTitle || Learning.categoryLabel(mistake.category))}</small></span>
-      <span>${mistake.wrongCount} wrong</span>
-      <b>→</b>
+    <a class="progress-review-row" href="${escapeAttr(practiceHref(group))}">
+      <span><strong>${escapeHtml(group.skillLabel)}</strong><small>${escapeHtml(Learning.categoryLabel(group.category))} · ${escapeHtml(countLabel)}</small></span>
+      <span class="progress-review-count">${group.count} ${group.count === 1 ? "item" : "items"}</span>
+      <b>Review →</b>
     </a>`;
 }
 

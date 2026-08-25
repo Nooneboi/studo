@@ -57,7 +57,8 @@ test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated'
   const skill = read('js/skill.js');
   assert.match(skill, /if \(!checks\.length\) return ""/);
   const progress = read('js/progress.js');
-  assert.match(progress, /Practice signal/);
+  assert.match(progress, />Evidence<\/small>/);
+  assert.match(progress, />Practice<\/strong>/);
   assert.match(progress, /Latest Skill Check/);
 });
 

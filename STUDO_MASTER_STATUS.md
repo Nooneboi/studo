@@ -1,11 +1,20 @@
 # Chee Skool — Master Project Status
 
 **Date:** 2026-08-25
-**Current release:** `0.7.0-alpha.30`
-**Current stage:** Phase 5.5 learner-facing UI cleanup complete in source — Extended Response, Mock, Progress, and phone layouts are clearer; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
+**Current release:** `0.7.0-alpha.31`
+**Current stage:** Phase 5.5 responsive Progress cleanup complete in source — status/evidence layout and grouped review are now overflow-safe across phone, tablet, and desktop; public alpha still waits on real-browser/device/accessibility QA and a small learner pilot
 **Public alpha gate:** `publicAlphaEnabled: false` until real-browser/device QA and a small learner pilot are signed off
 
 This file is the current high-level source of truth for Chee Skool. Newer decisions in this file and the current canonical source override older phase reports when they conflict.
+
+
+## Phase 5.5 Progress responsive cleanup — Alpha 31
+
+- The tracked-skill row no longer splits the learner status from its percentage meter. **Status now owns the label, percentage, and bar**, so `Needs work · 36%` cannot collide across columns.
+- The old learner-facing `Practice signal` label is replaced with **Evidence → Practice**; Latest Skill Check remains visibly separate when available.
+- Tablet turns skills into cards and phone turns each skill into a true one-column stack with explicit Correct, Evidence, and Status blocks. Progress-only horizontal overflow is clipped at the page boundary and all nested progress items can shrink to the viewport.
+- Review list mistakes are grouped by skill, so five misses in Explicit Meaning appear as one actionable skill row with the number of questions needing review instead of five visually identical rows.
+- Phase 5 Mock isolation, scoring, content counts, and the alpha.30 Extended Response/Mock restructuring are unchanged.
 
 ## Phase 5.5 learner-facing UI cleanup — Alpha 30
 

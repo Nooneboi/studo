@@ -284,6 +284,6 @@ test('Progress shortcuts only target sections that exist and learner-facing data
   const js = fs.readFileSync(path.join(root, 'js/progress.js'), 'utf8');
   assert.match(js, /sidebarHtml\(\{\s*showCore:\s*false\s*\}\)/, 'empty progress state should not render dead section shortcuts');
   assert.match(js, /sidebarHtml\(\{\s*showMock:\s*mockHistory\.length\s*>\s*0,\s*showEr:\s*erHistory\.length\s*>\s*0\s*\}\)/s, 'history shortcuts should be conditional on their sections existing');
-  assert.match(js, /Skill signals reflect your Chee Skool practice history, not a GED score\./, 'Progress should explain that skill signals are practice indicators, not GED scores');
+  assert.match(js, /Skill evidence reflects your Chee Skool practice history, not a GED score\./, 'Progress should explain that skill evidence comes from practice history, not GED scores');
   assert.match(js, /chee-skool-backup-\$\{new Date\(\)\.toISOString\(\)\.slice\(0, 10\)\}\.json/, 'downloaded backup filename should use learner-facing Chee Skool branding');
 });

@@ -33,17 +33,33 @@ test('Mock landing is sectioned and its test library scales to more cards', () =
   assert.match(css, /\.mock-library-grid\s*\{[^}]*grid-template-columns:\s*repeat\(auto-fit,\s*minmax\(min\(100%,\s*320px\),\s*1fr\)\)/s);
 });
 
-test('Progress skill rows separate correct, signal, and status cells', () => {
+test('Progress skill rows give status ownership of the score and meter', () => {
   assert.match(progressJs, /class="progress-correct-cell"/);
-  assert.match(progressJs, /class="progress-status-cell"/);
-  assert.match(progressJs, /class="progress-status [^\"]+"/);
-  assert.match(css, /\.progress-status-cell\s*\{[^}]*min-width:/s);
-  assert.match(css, /\.progress-status\s*\{[^}]*white-space:\s*nowrap/s);
+  assert.match(progressJs, /class="progress-evidence-cell"/);
+  assert.match(progressJs, /class="progress-status-summary"/);
+  assert.match(progressJs, /class="progress-status-meter"/);
+  assert.doesNotMatch(progressJs, /class="progress-signal-meter"/);
+  assert.match(progressJs, />Evidence<\/small>/);
+  assert.match(progressJs, />Practice<\/strong>/);
+  assert.match(css, /\.progress-status-cell\s*\{[^}]*min-width:\s*0/s);
+  assert.match(css, /\.progress-status-meter\s*\{[^}]*width:\s*100%/s);
+});
+
+test('Progress groups repetitive review mistakes by skill', () => {
+  assert.match(progressJs, /function groupReviewMistakes\(mistakes\)/);
+  assert.match(progressJs, /const reviewGroups = groupReviewMistakes\(activeMistakes\)/);
+  assert.match(progressJs, /need review/);
+  assert.match(progressJs, /Skill evidence reflects your Chee Skool practice history/);
+  assert.doesNotMatch(progressJs, /Skill signals reflect your Chee Skool practice history/);
+  assert.doesNotMatch(progressJs, /\$\{mistake\.wrongCount\} wrong/);
 });
 
 test('Phone layouts use stacked cards and tighter first-screen spacing', () => {
   assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.progress-page-wrap\s*\{[^}]*padding-top:\s*(?:1[2468]|20)px/s);
-  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.progress-skill-row\s*\{[^}]*border-radius:/s);
+  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.progress-skill-row\s*\{[^}]*grid-template-columns:\s*1fr/s);
+  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.progress-status-cell\s*\{[^}]*grid-column:\s*1\s*\/\s*-1/s);
+  assert.match(css, /\.progress-main-refined\s*\{[^}]*overflow-x:\s*clip/s);
+  assert.match(css, /\.progress-page-wrap\s*\{[^}]*width:\s*100%[^}]*min-width:\s*0/s);
   assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.mock-test-card\s+\.btn\s*\{[^}]*width:\s*100%/s);
   assert.match(css, /@media\s*\(max-width:\s*820px\)[\s\S]*?\.er-practice-jumps\s*\{[^}]*overflow-x:\s*auto/s);
 });

@@ -100,12 +100,14 @@ test('skill pages expose a separate optional Check section and Progress keeps Ch
   assert.match(skill, /check\.html\?file=/);
   assert.match(progress, /sq:skill-check-history:v1/);
   assert.match(progress, /Latest Skill Check/);
-  assert.match(progress, /Practice signal/);
+  assert.match(progress, />Evidence<\/small>/);
+  assert.match(progress, />Practice<\/strong>/);
   assert.doesNotMatch(progress, /Skill Check[^\n]*(Pass|Fail|Mastered)/i);
 });
 
-test('Check-origin mistakes route back to canonical skill review instead of Practice module replay', () => {
+test('Grouped review mistakes route back to canonical skill review instead of module replay', () => {
   const progress = read('js/progress.js');
-  assert.match(progress, /skill_check/);
-  assert.match(progress, /practiceHref\(mistake\)/);
+  assert.match(progress, /groupReviewMistakes/);
+  assert.match(progress, /practiceHref\(group\)/);
+  assert.doesNotMatch(progress, /function reviewGroupRow[\s\S]*module\.html\?quiz=/);
 });
