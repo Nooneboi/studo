@@ -322,14 +322,13 @@
         },
         {
           "id": "c",
-          "text": "The museum will open a new exhibit about river trade in October.",
-          "distractorType": "editing_error",
-          "whyWrong": "The month 'October' must be capitalized."
+          "text": "The museum will open a new exhibit about river trade in October."
         },
         {
           "id": "a",
           "text": "The Museum will open a new Exhibit about River Trade in October.",
-          "whyWrong": "Generic common nouns and the descriptive subject phrase are unnecessarily capitalized."
+          "whyWrong": "Generic common nouns and the descriptive subject phrase are unnecessarily capitalized.",
+          "distractorType": "editing_error"
         },
         {
           "id": "d",
@@ -338,7 +337,7 @@
           "whyWrong": "The verb 'will' is not capitalized in the middle of a sentence."
         }
       ],
-      "correct": "a"
+      "correct": "c"
     },
     {
       "id": "q7",
@@ -482,6 +481,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T15:16:25.571Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }

@@ -349,12 +349,16 @@
     "curriculum": {
       "domain": "Relationships & Inference",
       "primarySkillId": "R2.5",
-      "secondarySkillIds": [],
+      "secondarySkillIds": [
+        "R4.4",
+        "R1.1",
+        "R5.5"
+      ],
       "contentKind": "mixed_review",
       "deliveryRoles": [
         "mock"
       ],
-      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+      "learningObjective": "Measure independent RLA performance in an exam-style practice format without in-attempt teaching scaffolds."
     },
     "passage": {
       "id": "p-rla-mock-b-science",
@@ -369,6 +373,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T15:16:25.579Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }

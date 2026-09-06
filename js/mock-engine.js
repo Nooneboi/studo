@@ -107,6 +107,24 @@
     return picked;
   }
 
+  function chooseSupplementalQuestions(modules, category, count, allowedKinds, rng, usedModules, usedQuestions) {
+    const allowed = new Set(allowedKinds || []);
+    const candidates = shuffle(modules.filter((m) => m.category === category && allowed.has(moduleKind(m)) && !usedModules.has(m.id)), rng);
+    const picked = [];
+    for (const module of candidates) {
+      const questions = shuffle(module.questions || [], rng).filter((q) => !usedQuestions.has(`${module.id}:${q.id}`));
+      for (const question of questions) {
+        picked.push({ module, question, partial: true });
+        usedQuestions.add(`${module.id}:${question.id}`);
+        if (picked.length === count) break;
+      }
+      if (questions.length) usedModules.add(module.id);
+      if (picked.length === count) break;
+    }
+    if (picked.length !== count) throw new Error(`Not enough supplemental ${category} questions for ${count} items`);
+    return picked;
+  }
+
   function groupItemsForModule(module, part, rng) {
     return (module.questions || []).map((q, index) => ({
       part,
@@ -202,8 +220,8 @@
     usedModules.add(argMixed.id);
     const langMixed = chooseMixedSet(validModules, "language_conventions", blueprint.selection.languageMixedKinds, 6, rng, usedModules);
     usedModules.add(langMixed.id);
-    const fillersR = chooseFocusedQuestions(validModules, "reading", 3, blueprint.selection.focusedKind, rng, usedModules, usedQuestions);
-    const fillersL = chooseFocusedQuestions(validModules, "language_conventions", 1, blueprint.selection.focusedKind, rng, usedModules, usedQuestions);
+    const fillersR = chooseSupplementalQuestions(validModules, "reading", 3, blueprint.selection.readingMixedKinds, rng, usedModules, usedQuestions);
+    const fillersL = chooseSupplementalQuestions(validModules, "language_conventions", 1, blueprint.selection.languageMixedKinds, rng, usedModules, usedQuestions);
     const groups = [
       { type: "set", module: readingSets[0] },
       { type: "set", module: readingSets[1] },

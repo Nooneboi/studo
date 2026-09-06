@@ -14,6 +14,7 @@ let productionState = null;
 let state = null;
 let timerHandle = null;
 let activeSource = "A";
+let mockAttemptComplete = false;
 
 init();
 
@@ -28,7 +29,8 @@ async function init() {
     if (mockAttemptId) {
       const rawAttempt = window.StudoSafeStorage ? window.StudoSafeStorage.get(`sq:rlaMock:${mockAttemptId}`) : localStorage.getItem(`sq:rlaMock:${mockAttemptId}`);
       const savedAttempt = rawAttempt ? JSON.parse(rawAttempt) : null;
-      if (!savedAttempt || savedAttempt.completedAt || !savedAttempt.er || savedAttempt.er.promptId !== promptId) throw new Error("Mock ER prompt does not match the active saved attempt");
+      if (!savedAttempt || !savedAttempt.er || savedAttempt.er.promptId !== promptId) throw new Error("Mock ER prompt does not match the saved attempt");
+      mockAttemptComplete = Boolean(savedAttempt.completedAt);
     }
     const promptBankPath = mockAttemptId ? "data/generated/mock-er-prompts.json" : "data/generated/er-prompts.json";
     const response = await fetch(promptBankPath, { cache: "no-store" });
@@ -389,6 +391,16 @@ function submitResponse() {
 function renderReview() {
   if (!state.submittedAt) return;
   const review = document.getElementById("er-review");
+  if (mockAttemptId && !mockAttemptComplete) {
+    review.innerHTML = `
+      <section class="er-review-panel" aria-labelledby="er-review-title">
+        <div class="page-kicker">Response submitted</div>
+        <h2 id="er-review-title">Your timed draft is locked</h2>
+        <p class="er-review-intro">Continue the mock now. Self-review becomes available after you finish Part 3, so it cannot change the timed response or interrupt the test.</p>
+        <div class="er-review-actions"><a class="btn" href="${escapeAttr(returnHref)}">Continue mock</a></div>
+      </section>`;
+    return;
+  }
   review.innerHTML = `
     <section class="er-review-panel" aria-labelledby="er-review-title">
       <div class="page-kicker">Self-review</div>
@@ -402,8 +414,8 @@ function renderReview() {
       <div class="er-revision-box"><h3>Revision questions</h3><ul>${(prompt.revisionPrompts || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
       ${mockAttemptId ? "" : `<details class="er-model" id="er-model"><summary>Compare with the model response</summary><div class="er-model-copy">${paragraphHtml(prompt.modelResponse)}</div>${annotationHtml(prompt.annotations || [])}</details>`}
       <div class="er-review-actions">
-        <label class="er-revision-check"><input type="checkbox" id="er-revision-complete" ${state.revisionComplete ? "checked" : ""}> I revised or deliberately reviewed my response.</label>
-        <button class="btn secondary" id="er-revise" type="button">Revise my response</button>
+        <label class="er-revision-check"><input type="checkbox" id="er-revision-complete" ${state.revisionComplete ? "checked" : ""}> ${mockAttemptId ? "I deliberately reviewed this timed response." : "I revised or deliberately reviewed my response."}</label>
+        ${mockAttemptId ? "" : `<button class="btn secondary" id="er-revise" type="button">Revise my response</button>`}
         ${mockAttemptId ? `<a class="btn" href="${escapeAttr(returnHref)}">Return to mock</a>` : ""}
       </div>
     </section>`;
@@ -417,18 +429,18 @@ function renderReview() {
     saveState();
     upsertHistory();
   });
-  document.getElementById("er-revise").addEventListener("click", () => {
-    state.submittedAt = null;
-    state.revisionComplete = false;
-    state.isRevising = true;
-    if (mode === "timed") state.remainingSeconds = 0;
-    saveState();
-    document.getElementById("er-review").innerHTML = "";
-    applyEditorLock();
-    const essay = document.getElementById("er-essay");
-    essay.disabled = false;
-    essay.focus();
-  });
+  document.getElementById("er-revise")?.addEventListener("click", () => {
+      state.submittedAt = null;
+      state.revisionComplete = false;
+      state.isRevising = true;
+      if (mode === "timed") state.remainingSeconds = 0;
+      saveState();
+      document.getElementById("er-review").innerHTML = "";
+      applyEditorLock();
+      const essay = document.getElementById("er-essay");
+      essay.disabled = false;
+      essay.focus();
+    });
 }
 
 function traitCard(key, title, checks) {

@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "The mural detail gives a concrete example of historic features that could be preserved.",
+      "explanation": "The mural turns the broad goal of historic preservation into a specific feature readers can picture and evaluate.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -182,7 +182,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "Listing symptoms helps readers identify when someone may need help.",
+      "explanation": "The symptom list gives readers observable signs to compare with the article's guidance about when help may be needed.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "The neighborhood comparison shows where the service change had the greatest effect.",
+      "explanation": "The neighborhood comparison supplies location-specific evidence, which supports the report's purpose more clearly than a general statement about improvement would.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "The question-and-answer format addresses common practical situations directly.",
+      "explanation": "Organizing information around likely reader questions makes the guidance easier to locate and apply in common situations.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -482,6 +482,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-19T15:57:16.833Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }

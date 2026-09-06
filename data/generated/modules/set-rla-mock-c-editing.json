@@ -7,7 +7,7 @@
   "topic": "Full RLA Mock",
   "difficulty": "hard",
   "source": "Original content by Chee Skool",
-  "passage": "Workshop Registration Notice\n\nThe technology workshop begin at 10 a.m. and participants must brings a charged laptop. The instructors has prepared three short activities: coding a sensor, testing a circuit and to record the results. Anyone who need an adapter should request one before Friday. The room is on the second floor, it is beside the design studio. Because seats are limited, consequently registrations will close when thirty names are received. Participants should save their work often and asks questions when instructions are unclear. At the end, each team will upload their file review the checklist, and then they should submit a reflection.\n\nThe draft was prepared quickly before a public meeting. The editor's job is to correct grammar, punctuation, sentence boundaries, word choice, and transitions without changing the writer's intended meaning or inventing new facts.\n\nThe situation also shows why clear standard written English cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.\n\nBy the end, the central question is not whether every concern disappears. It is whether the available evidence is strong enough to justify the next step while leaving room to correct the plan if later results differ.",
+  "passage": "Workshop Registration Notice\n\nThe technology workshop begin at 10 a.m. and participants must brings a charged laptop. Check-in will open at 9:30 outside the second-floor design studio. A staff member will confirm each registration and provide a table number. Participants who cannot bring a laptop may request a loaner on the registration form, but the number of loaners is limited.\n\nThe instructors has prepared three short activities: coding a sensor, testing a circuit and to record the results. Each activity builds on the one before it, so participants should plan to attend the entire session. Printed instructions will be available, and the same files can be downloaded from the workshop page. Anyone who need an adapter should request one before Friday.\n\nThe room is on the second floor, it is beside the design studio. Use the east elevator or the stairs near the main entrance. Directional signs will be posted in the lobby and at the elevator. If you need step-free access from the parking area, follow the blue signs to the east entrance.\n\nBecause seats are limited, consequently registrations will close when thirty names are received. A waiting list will open automatically after the workshop fills. If a registered participant cancels, the first person on the list will receive an email and will have twenty-four hours to accept the seat. Please cancel promptly if your plans change.\n\nParticipants should save their work often and asks questions when instructions are unclear. Two assistants will circulate during the activities, and a separate help table will be available for equipment problems. Food is not permitted near the circuit kits, but closed water bottles may be kept on the side counter.\n\nEach table will share a sensor kit, so label your team's files with the assigned table number. Workshop staff will erase the loaner laptops after the session. Copy any project you want to keep to your own storage before returning a device.\n\nAt the end, each team will upload their file review the checklist, and then they should submit a reflection. The upload folder will close at 2:30 p.m. Instructors will remain for thirty minutes afterward to answer questions about continuing the project at home. Completion certificates will be emailed the following week to participants who submit all three items.",
   "questions": [
     {
       "id": "q1",
@@ -456,12 +456,17 @@
     "curriculum": {
       "domain": "Language & Editing",
       "primarySkillId": "L2.2",
-      "secondarySkillIds": [],
+      "secondarySkillIds": [
+        "L1.2",
+        "L1.4",
+        "L1.6",
+        "L1.9"
+      ],
       "contentKind": "mixed_review",
       "deliveryRoles": [
         "mock"
       ],
-      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+      "learningObjective": "Measure independent RLA performance in an exam-style practice format without in-attempt teaching scaffolds."
     },
     "passage": {
       "id": "p-rla-mock-c-editing",
@@ -476,6 +481,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T15:16:25.581Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }

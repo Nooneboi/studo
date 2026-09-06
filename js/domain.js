@@ -187,6 +187,8 @@ function renderErProductionTask(task, track, domain) {
 function renderErPrompt(prompt, track, domain) {
   const returnHref = `domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}`;
   const base = `extended-response.html?prompt=${encodeURIComponent(prompt.id)}&return=${encodeURIComponent(returnHref)}`;
+  const modes = new Set(prompt.modeOptions || ["untimed"]);
+  const timedAvailable = modes.has("timed");
   return `
     <article class="er-domain-prompt-card">
       <div class="er-domain-prompt-copy">
@@ -197,9 +199,9 @@ function renderErPrompt(prompt, track, domain) {
       <div class="er-domain-prompt-actions-wrap">
         <div class="er-domain-prompt-actions">
           <a class="btn secondary small" href="${base}&mode=untimed">Untimed</a>
-          <a class="btn small" href="${base}&mode=timed">Timed 45 min</a>
+          ${timedAvailable ? `<a class="btn small" href="${base}&mode=timed">Timed 45 min</a>` : ""}
         </div>
-        <small>Timed mode starts immediately and locks editing at 00:00.</small>
+        <small>${timedAvailable ? "Full-length source pair. Timed mode starts immediately and locks editing at 00:00." : "Focused-length source pair for untimed process practice."}</small>
       </div>
     </article>`;
 }

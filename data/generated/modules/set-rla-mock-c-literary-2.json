@@ -346,12 +346,18 @@
     "curriculum": {
       "domain": "Core Meaning",
       "primarySkillId": "R1.4",
-      "secondarySkillIds": [],
+      "secondarySkillIds": [
+        "R2.4",
+        "R4.1",
+        "R1.5",
+        "R4.2",
+        "R2.6"
+      ],
       "contentKind": "mixed_review",
       "deliveryRoles": [
         "mock"
       ],
-      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+      "learningObjective": "Measure independent RLA performance in an exam-style practice format without in-attempt teaching scaffolds."
     },
     "passage": {
       "id": "p-rla-mock-c-literary-2",
@@ -366,6 +372,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T15:16:25.582Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }

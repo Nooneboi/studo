@@ -70,7 +70,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "Listing accepted materials helps readers avoid contaminating the collection bins.",
+      "explanation": "The accepted-materials list gives readers an exact sorting rule, directly supporting the passage's instructional purpose.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -294,7 +294,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "The description of tags and cameras shows how individual bees can be recognized.",
+      "explanation": "The tags-and-cameras detail explains the study's identification method, showing readers how researchers gathered evidence about individual bees.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -406,7 +406,7 @@
       "type": "multiple_choice",
       "prompt": "Why is this kind of detail useful to the author's purpose?",
       "points": 1,
-      "explanation": "The numbered steps turn the policy change into a procedure employees can follow.",
+      "explanation": "Numbering the actions turns the policy announcement into a usable sequence employees can follow in order.",
       "skill": {
         "id": "R4.4",
         "label": "Author purpose"
@@ -482,6 +482,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-19T15:57:16.832Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }

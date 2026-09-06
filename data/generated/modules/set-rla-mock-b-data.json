@@ -349,12 +349,15 @@
     "curriculum": {
       "domain": "Multiple Texts & Formats",
       "primarySkillId": "R6.3",
-      "secondarySkillIds": [],
+      "secondarySkillIds": [
+        "R5.5",
+        "L1.8"
+      ],
       "contentKind": "mixed_review",
       "deliveryRoles": [
         "mock"
       ],
-      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
+      "learningObjective": "Measure independent RLA performance in an exam-style practice format without in-attempt teaching scaffolds."
     },
     "passage": {
       "id": "p-rla-mock-b-data",
@@ -369,6 +372,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-08-25T15:16:25.578Z"
+    "compiledAt": "2026-09-06T05:42:17Z"
   }
 }
