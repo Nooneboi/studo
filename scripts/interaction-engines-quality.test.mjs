@@ -6,10 +6,11 @@ import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 
 const ROOT = process.cwd();
+let importNonce = 0;
 
 async function loadInteractions() {
   delete globalThis.QuestionInteractions;
-  await import(`${pathToFileURL(path.join(ROOT, 'js/question-interactions.js')).href}?t=${Date.now()}`);
+  await import(`${pathToFileURL(path.join(ROOT, 'js/question-interactions.js')).href}?t=${++importNonce}`);
   return globalThis.QuestionInteractions;
 }
 
@@ -155,7 +156,7 @@ test('content validator rejects malformed V1 interactions', async () => {
   };
   fs.writeFileSync(tempFile, JSON.stringify(tempSet, null, 2));
   try {
-    const { validateContent } = await import(`${pathToFileURL(path.join(ROOT, 'scripts/validate-content.mjs')).href}?t=${Date.now()}`);
+    const { validateContent } = await import(`${pathToFileURL(path.join(ROOT, 'scripts/validate-content.mjs')).href}?t=${++importNonce}`);
     const result = await validateContent({ quiet: true });
     assert.ok(result.errors.some((x) => x.code === 'SELECT_TARGET_INVALID'));
     assert.ok(result.errors.some((x) => x.code === 'SELECT_TARGET_TEXT_INVALID'));
