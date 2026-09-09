@@ -121,7 +121,7 @@
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "What should happen when the timer reaches zero in a true simulation?",
+      "prompt": "Which evidence most directly supports Source A's recommendation to expand collection gradually?",
       "primarySkillId": "W1.12",
       "familyId": "writing.er.full_process",
       "difficulty": "hard",
@@ -139,38 +139,38 @@
       "options": [
         {
           "id": "a",
-          "text": "The essay should be automatically scored 6/6 if it is long enough.",
-          "distractorType": "fake_scoring",
-          "whyWrong": "Length cannot establish rubric quality and V1 does not machine-grade essays."
+          "text": "The pilot involved apartment buildings in a city.",
+          "distractorType": "background_only",
+          "whyWrong": "This gives context but does not show whether the program worked."
         },
         {
           "id": "b",
-          "text": "The timer should secretly add five minutes.",
-          "distractorType": "invalid_simulation",
-          "whyWrong": "A hidden extension makes timing meaningless."
+          "text": "Participating buildings sent 19 percent less trash to the landfill, and contamination fell after clearer signs were installed."
         },
         {
           "id": "c",
-          "text": "Editing should stop if the learner was clearly warned before starting, and the response should move to review."
+          "text": "Some buildings may have little room for extra bins.",
+          "distractorType": "other_source",
+          "whyWrong": "This is Source B's concern, not evidence supporting Source A's recommendation."
         },
         {
           "id": "d",
-          "text": "The page should erase the draft.",
-          "distractorType": "data_loss",
-          "whyWrong": "The learner needs the response for review and revision."
+          "text": "The property association recommends another year of study.",
+          "distractorType": "recommendation_not_evidence",
+          "whyWrong": "A recommendation is not measured evidence about the pilot's results."
         }
       ],
-      "correct": "c",
+      "correct": "b",
       "explanation": {
-        "answer": "C",
-        "whyCorrect": "A simulation needs predictable timing behavior and must preserve the learner's work for review.",
-        "quickTip": "Clear rules make timed practice useful."
+        "answer": "B",
+        "whyCorrect": "The pilot reports both a landfill result and an improvement after a specific implementation change, so the evidence directly supports a cautious expansion plan.",
+        "quickTip": "Match evidence to the exact recommendation, including its limits."
       }
     },
     {
       "id": "q4",
       "type": "multiple_choice",
-      "prompt": "Which post-submit label is appropriate for V1?",
+      "prompt": "Which statement most fairly compares the support in the two sources?",
       "primarySkillId": "W1.12",
       "familyId": "writing.er.full_process",
       "difficulty": "hard",
@@ -188,228 +188,228 @@
       "options": [
         {
           "id": "a",
-          "text": "Official GED Score: 2/2.",
-          "distractorType": "misleading",
-          "whyWrong": "Chee Skool cannot claim an official score."
+          "text": "Source A is stronger because it reports pilot outcomes and a response to contamination, while Source B raises plausible concerns but supplies little evidence that those problems occurred."
         },
         {
           "id": "b",
-          "text": "Self-review: Argument & Evidence - choose 0, 1, or 2 using the rubric checklist."
+          "text": "Source B is stronger because waiting is always safer than expanding.",
+          "distractorType": "absolute_rule",
+          "whyWrong": "The sources do not establish that waiting is always the safer policy."
         },
         {
           "id": "c",
-          "text": "AI-certified Trait Score: 2/2.",
-          "distractorType": "misleading",
-          "whyWrong": "V1 does not use reliable automatic essay grading."
+          "text": "Source A is stronger because city departments are always more reliable than associations.",
+          "distractorType": "source_label",
+          "whyWrong": "A source's organization name does not replace evaluating its evidence."
         },
         {
           "id": "d",
-          "text": "Guaranteed exam score: full marks.",
-          "distractorType": "misleading",
-          "whyWrong": "Practice cannot guarantee an official result."
-        }
-      ],
-      "correct": "b",
-      "explanation": {
-        "answer": "B",
-        "whyCorrect": "The learner may assign a provisional score using transparent criteria, clearly labeled as self-review.",
-        "quickTip": "Separate self-review from machine-verified quiz accuracy."
-      }
-    },
-    {
-      "id": "q5",
-      "type": "multiple_choice",
-      "prompt": "When should the model response appear?",
-      "primarySkillId": "W1.12",
-      "familyId": "writing.er.full_process",
-      "difficulty": "hard",
-      "dok": 3,
-      "difficultyProfile": {
-        "textComplexity": 2,
-        "reasoningDepth": 3,
-        "evidenceDistance": 2,
-        "distractorSimilarity": 3,
-        "sourceCount": 2,
-        "responseDemand": 1
-      },
-      "points": 1,
-      "estimatedSeconds": 70,
-      "options": [
-        {
-          "id": "a",
-          "text": "Before the learner reads the sources.",
-          "distractorType": "spoiler",
-          "whyWrong": "Early exposure turns practice into copying."
-        },
-        {
-          "id": "b",
-          "text": "While the learner is drafting each sentence.",
-          "distractorType": "interruptive",
-          "whyWrong": "Real-time model comparison interferes with independent practice."
-        },
-        {
-          "id": "c",
-          "text": "After submission, or after the learner explicitly chooses to reveal it."
-        },
-        {
-          "id": "d",
-          "text": "Only after the learner deletes the draft.",
-          "distractorType": "unnecessary",
-          "whyWrong": "The learner should keep the draft for comparison and revision."
-        }
-      ],
-      "correct": "c",
-      "explanation": {
-        "answer": "C",
-        "whyCorrect": "Delayed reveal protects independent practice while still supporting learning afterward.",
-        "quickTip": "Attempt first; compare second."
-      }
-    },
-    {
-      "id": "q6",
-      "type": "multiple_choice",
-      "prompt": "Which saved information should remain separate from objective mastery?",
-      "primarySkillId": "W1.12",
-      "familyId": "writing.er.full_process",
-      "difficulty": "hard",
-      "dok": 3,
-      "difficultyProfile": {
-        "textComplexity": 2,
-        "reasoningDepth": 3,
-        "evidenceDistance": 2,
-        "distractorSimilarity": 3,
-        "sourceCount": 2,
-        "responseDemand": 1
-      },
-      "points": 1,
-      "estimatedSeconds": 70,
-      "options": [
-        {
-          "id": "a",
-          "text": "Correct answers on focused W1 quizzes.",
-          "distractorType": "objective",
-          "whyWrong": "Those are objective practice results and can contribute to mastery."
-        },
-        {
-          "id": "b",
-          "text": "Wrong-answer history on objective questions.",
-          "distractorType": "objective",
-          "whyWrong": "That is part of the normal learning signal."
-        },
-        {
-          "id": "c",
-          "text": "Question-family accuracy from selected-response practice.",
-          "distractorType": "objective",
-          "whyWrong": "That comes from machine-verifiable responses."
-        },
-        {
-          "id": "d",
-          "text": "The learner's provisional 0-2 rubric self-scores."
-        }
-      ],
-      "correct": "d",
-      "explanation": {
-        "answer": "D",
-        "whyCorrect": "Self-scores are reflective judgments, not verified correctness data.",
-        "quickTip": "Label subjective and objective progress separately."
-      }
-    },
-    {
-      "id": "q7",
-      "type": "multiple_choice",
-      "prompt": "Which revision question is most useful after submission?",
-      "primarySkillId": "W1.12",
-      "familyId": "writing.er.full_process",
-      "difficulty": "hard",
-      "dok": 3,
-      "difficultyProfile": {
-        "textComplexity": 2,
-        "reasoningDepth": 3,
-        "evidenceDistance": 2,
-        "distractorSimilarity": 3,
-        "sourceCount": 2,
-        "responseDemand": 1
-      },
-      "points": 1,
-      "estimatedSeconds": 70,
-      "options": [
-        {
-          "id": "a",
-          "text": "Did I use the longest words possible?",
-          "distractorType": "style_misconception",
-          "whyWrong": "Complex vocabulary is not the goal."
-        },
-        {
-          "id": "b",
-          "text": "Where did I explain why the evidence makes one argument stronger, instead of only repeating what the source said?"
-        },
-        {
-          "id": "c",
-          "text": "Did I make both sources sound equally strong?",
-          "distractorType": "wrong_goal",
-          "whyWrong": "The task requires an evaluative judgment when support differs."
-        },
-        {
-          "id": "d",
-          "text": "Did I avoid every short sentence?",
-          "distractorType": "style_misconception",
-          "whyWrong": "Sentence length variety matters less than clarity and control."
-        }
-      ],
-      "correct": "b",
-      "explanation": {
-        "answer": "B",
-        "whyCorrect": "This question targets the common summary-versus-analysis weakness that affects argument/evidence scoring.",
-        "quickTip": "Revision questions should point to observable reasoning."
-      }
-    },
-    {
-      "id": "q8",
-      "type": "multiple_choice",
-      "prompt": "What makes an untimed ER attempt different from a timed simulation?",
-      "primarySkillId": "W1.12",
-      "familyId": "writing.er.full_process",
-      "difficulty": "hard",
-      "dok": 3,
-      "difficultyProfile": {
-        "textComplexity": 2,
-        "reasoningDepth": 3,
-        "evidenceDistance": 2,
-        "distractorSimilarity": 3,
-        "sourceCount": 2,
-        "responseDemand": 1
-      },
-      "points": 1,
-      "estimatedSeconds": 70,
-      "options": [
-        {
-          "id": "a",
-          "text": "Untimed practice keeps the same source-based task and rubric but removes the countdown so the learner can focus on process."
-        },
-        {
-          "id": "b",
-          "text": "Untimed practice allows personal opinion instead of evidence.",
-          "distractorType": "task_change",
-          "whyWrong": "The task remains source-based."
-        },
-        {
-          "id": "c",
-          "text": "Untimed practice can reveal the model before writing.",
-          "distractorType": "spoiler",
-          "whyWrong": "Independent attempt should still come first."
-        },
-        {
-          "id": "d",
-          "text": "Untimed practice receives an official score while timed practice does not.",
-          "distractorType": "misleading",
-          "whyWrong": "Neither mode receives an official automatic score."
+          "text": "The sources are equally supported because both make a recommendation.",
+          "distractorType": "false_balance",
+          "whyWrong": "Having a recommendation does not mean the sources provide equally strong support."
         }
       ],
       "correct": "a",
       "explanation": {
         "answer": "A",
-        "whyCorrect": "Untimed mode changes pacing support, not the intellectual task or review standard.",
-        "quickTip": "Learn the process untimed before adding time pressure."
+        "whyCorrect": "A fair comparison recognizes that Source B raises practical issues while also judging the quality and specificity of each source's support.",
+        "quickTip": "Compare evidence and reasoning, not whether a concern sounds possible."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Which limitation should a strong response acknowledge when using Source A's pilot data?",
+      "primarySkillId": "W1.12",
+      "familyId": "writing.er.full_process",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The pilot proves that every apartment building has enough space for extra bins.",
+          "distractorType": "overclaim",
+          "whyWrong": "The pilot description does not establish conditions in every building."
+        },
+        {
+          "id": "b",
+          "text": "The pilot lasted six months and covered 1,100 households, and Source A does not report expansion costs."
+        },
+        {
+          "id": "c",
+          "text": "The contamination result is unusable because clearer signs were installed.",
+          "distractorType": "misread_design",
+          "whyWrong": "The change after clearer signs is relevant implementation evidence, not a reason to discard the result."
+        },
+        {
+          "id": "d",
+          "text": "Source A cannot be evaluated because it was written by a city department.",
+          "distractorType": "source_label",
+          "whyWrong": "The department's evidence and reasoning can still be evaluated directly."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The pilot is useful evidence, but its size, duration, and missing cost information limit how far the results can be generalized.",
+        "quickTip": "A limitation narrows a claim without erasing relevant evidence."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "prompt": "Which revision makes this claim precise: ‘Source B has no proof’?",
+      "primarySkillId": "W1.12",
+      "familyId": "writing.er.full_process",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "b",
+          "text": "Source B raises space and odor concerns but gives no contamination records, cost estimates, or pilot data showing that odor complaints occurred."
+        },
+        {
+          "id": "a",
+          "text": "Source B is completely wrong about every building.",
+          "distractorType": "absolute",
+          "whyWrong": "The sources do not justify this absolute claim."
+        },
+        {
+          "id": "c",
+          "text": "Source B has no numbers, so nothing in it matters.",
+          "distractorType": "dismissive",
+          "whyWrong": "The smaller-bin suggestion is relevant even though the source's overall support is limited."
+        },
+        {
+          "id": "d",
+          "text": "Source B should be ignored because property associations are biased.",
+          "distractorType": "source_attack",
+          "whyWrong": "Attacking the source label does not evaluate the evidence it provides."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The revision names the missing support without pretending that Source B raises no relevant issue at all.",
+        "quickTip": "Replace vague judgments with source-specific evidence language."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "prompt": "Which sentence best analyzes why the contamination result matters?",
+      "primarySkillId": "W1.12",
+      "familyId": "writing.er.full_process",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Contamination fell from 14 percent to 6 percent.",
+          "distractorType": "summary_only",
+          "whyWrong": "This repeats the evidence but does not explain its importance."
+        },
+        {
+          "id": "b",
+          "text": "Because contamination fell after clearer signs were installed, Source A gives a concrete reason to think training and communication could address one implementation problem during gradual expansion."
+        },
+        {
+          "id": "c",
+          "text": "Clear signs guarantee that apartment collection will work everywhere.",
+          "distractorType": "overclaim",
+          "whyWrong": "One pilot result cannot guarantee the same outcome in every setting."
+        },
+        {
+          "id": "d",
+          "text": "Contamination is bad, and the city should do something.",
+          "distractorType": "vague",
+          "whyWrong": "This does not connect the measured result to either source's reasoning."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The best analysis connects the measured change to the proposal's implementation plan while keeping the conclusion limited.",
+        "quickTip": "After evidence, explain how it changes the strength of the argument."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "prompt": "Which conclusion best matches the strength and limits of the evidence?",
+      "primarySkillId": "W1.12",
+      "familyId": "writing.er.full_process",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 3,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 3,
+        "sourceCount": 2,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "The city should immediately require the same collection system in every building.",
+          "distractorType": "overclaim",
+          "whyWrong": "The sources support a gradual approach, not identical immediate expansion."
+        },
+        {
+          "id": "b",
+          "text": "The city should cancel the program because Source B mentions odor.",
+          "distractorType": "unsupported",
+          "whyWrong": "Source B does not provide evidence that odor complaints occurred during the pilot."
+        },
+        {
+          "id": "c",
+          "text": "Source A better supports gradual expansion with manager training, while the city can still test smaller bins where storage is limited."
+        },
+        {
+          "id": "d",
+          "text": "The city should study the issue forever because neither source proves what will happen in every building.",
+          "distractorType": "impossible_standard",
+          "whyWrong": "Policy evidence can support a limited next step without proving every future outcome."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "The conclusion supports the better-evidenced recommendation, preserves its gradual scope, and keeps room to test Source B's practical suggestion.",
+        "quickTip": "A strong conclusion stays proportional to the evidence."
       }
     }
   ],

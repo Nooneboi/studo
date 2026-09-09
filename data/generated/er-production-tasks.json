@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-09-06T05:42:17Z",
+  "builtAt": "2026-09-09T18:12:51.790Z",
   "tasks": [
     {
       "schemaVersion": 1,
@@ -25,7 +25,7 @@
         "Compares the weaker source fairly without turning the paragraph into a summary list.",
         "Ends without introducing an unrelated new reason."
       ],
-      "modelResponse": "Source A is stronger because it links the proposed fee to the runoff burden the policy is meant to address. The department reports $6.4 million in recent storm repairs and explains that a large commercial parking lot can produce far more runoff than a small home, so it uses impervious-surface bands instead of one flat charge. Those details make the fee method easier to evaluate because the amount charged is connected to both documented costs and a property's likely contribution to runoff. Source B raises a fair affordability concern, but its identified $700,000 in delayed streetscape spending would cover only part of the proposed drainage program.",
+      "modelResponse": "Source A is stronger because it ties the proposed fee to measured runoff costs instead of assuming that every property creates the same burden. The source explains how impervious surface area affects the amount of runoff entering the drainage system and connects that measure to the fee formula. This makes the reasoning easier to evaluate because the charge is linked to the problem the policy is meant to address. Source B raises a fair affordability concern, but it does not provide equally direct evidence that a flat funding method would match the costs more accurately.",
       "revisionPrompts": [
         "Does every sentence in my paragraph develop the same reason?",
         "Did I explain the evidence before moving to the comparison?"
@@ -80,7 +80,7 @@
         "States why the evidence strengthens or limits that claim.",
         "Moves beyond summary by making the reasoning connection explicit."
       ],
-      "modelResponse": "Source A reports that final-inspection labeling and seal defects fell from 31 to 19 per 10,000 units during the camera pilot. That result directly supports a limited expansion because it measures the kind of visual defect the system is designed to flag, while the unchanged production speed answers part of the concern about disruption. The evidence is still limited to one line, and the 1.8 percent false-alarm rate supports Source A's plan to keep human review.",
+      "modelResponse": "Source A reports that the automated system found a higher share of the defects that inspectors later confirmed during the pilot. This matters because the proposal is specifically about expanding inspection automation, so measured detection performance directly tests whether the system can do the job being claimed. The pilot still does not show that every product line will perform the same way, which limits how broadly the result should be applied.",
       "revisionPrompts": [
         "After my evidence sentence, did I explain why the fact matters to the argument?",
         "Did I identify a limit if the evidence does not support the full scope of the recommendation?"
@@ -107,7 +107,7 @@
         "Accurately attributes the evidence to the source.",
         "Does not add outside facts or invented numbers."
       ],
-      "modelResponse": "Source A reports that missed appointments fell from 18 percent in the previous six-month period to 12 percent during the reminder pilot. The result suggests that text reminders may improve attendance at this clinic, but Source A explicitly notes that staffing and scheduling also changed, so the before-and-after comparison does not prove that texts caused the entire decline.",
+      "modelResponse": "Source A reports that missed appointments fell during the reminder pilot while the comparison period did not show the same change. That result supports the claim that reminders can improve attendance in this clinic, but it does not prove that every patient group will respond in the same way.",
       "revisionPrompts": [
         "Did I keep the source's limits instead of changing a measured result into certainty?",
         "Could a reader locate the evidence I used in the source?"

@@ -1,7 +1,7 @@
 {
   "version": "rla-mock-v2",
   "label": "Full RLA Mock",
-  "disclaimer": "Full-length original GED-style RLA practice using dedicated Chee Skool source sets. Results are raw practice evidence, not an official GED score or pass prediction.",
+  "disclaimer": "Full-length original GED-style RLA practice using unseen Chee Skool source sets. Results are raw practice evidence, not an official GED score or pass prediction.",
   "full": {
     "approxTotalMinutes": 150,
     "objectiveQuestionCount": 46,
@@ -18,8 +18,7 @@
     "part3": {
       "seconds": 3900,
       "questionCount": 32
-    },
-    "instructionsAndFinalReviewSeconds": 180
+    }
   },
   "reportingCategoryTargets": {
     "1": 16,

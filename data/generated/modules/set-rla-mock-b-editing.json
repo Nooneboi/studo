@@ -7,7 +7,7 @@
   "topic": "Full RLA Mock",
   "difficulty": "hard",
   "source": "Original content by Chee Skool",
-  "passage": "Museum Volunteer Memo\n\nTo all Saturday program volunteers:\n\nThe museum host team are preparing for the Saturday family program, which will run from 10 a.m. until 3 p.m. Every volunteer need to check in at the front desk before their shift begins. The desk coordinator will provide a name badge, an assignment card, and the day's emergency contact number. Volunteers assigned to the first shift should arrive fifteen minutes early for a safety briefing before the program begins.\n\nThe activity tables include clay painting paper crafts and map puzzles. Staff will cover the tables before visitors enter, but volunteers should wipe spills promptly and return unused supplies to the labeled bins. Visitors who arrives early may wait in the courtyard. If rain closes the courtyard, a staff member will direct families to the covered hall beside the main entrance.\n\nThe education room is smaller then the main gallery, so groups will enter in stages. Each activity card lists a suggested group size and the estimated time needed to finish. Please avoid promising a specific entry time when a room is full. Instead, tell visitors where the line begins and which other activities are available while they wait.\n\nWe planned the schedule carefully, however several signs still needs to be printed. The communications office expects to deliver them by Friday afternoon. Until then, the temporary signs in the supply cabinet may be used for the volunteer walk-through. Check that arrows point toward the correct room before taping a sign to a stand.\n\nIf a child loses an item please bring it to the information desk. Do not write a child's full name on the public lost-item tag; the desk attendant will record identifying information in a private log. For urgent safety concerns, contact the floor supervisor by radio.\n\nThe coordinator asked volunteers to speak clearly politely, and with patience. Families may be unfamiliar with the building, and some visitors will need extra time or directions to an accessible route. At the end of each shift, return badges and radios to the front desk and report any supply shortage before leaving.",
+  "passage": "Museum Volunteer Memo\n\nThe museum host team are preparing for the Saturday family program. Every volunteer need to check in at the front desk before their shift begins. The activity tables include clay painting paper crafts and map puzzles. Visitors who arrives early may wait in the courtyard. The education room is smaller then the main gallery, so groups will enter in stages. We planned the schedule carefully, however several signs still needs to be printed. If a child loses an item please bring it to the information desk. The coordinator asked volunteers to speak clearly politely, and with patience.\n\nThe draft was prepared quickly before a public meeting. The editor's job is to correct grammar, punctuation, sentence boundaries, word choice, and transitions without changing the writer's intended meaning or inventing new facts.\n\nThe situation also shows why clear standard written English cannot be judged from one isolated detail. People in the passage weigh immediate results against longer-term effects, and they revise their choices as new information becomes available.\n\nAnother important feature is the way the evidence is limited. The people involved can observe what happened in this setting, but they cannot assume the same outcome would occur everywhere. That distinction matters when readers decide how strongly a conclusion is supported.\n\nThe passage repeatedly connects decisions with consequences. Some effects are measured directly, while others are described through observations or testimony. Readers therefore have to separate what the text states from what it only suggests.\n\nBy the end, the central question is not whether every concern disappears. It is whether the available evidence is strong enough to justify the next step while leaving room to correct the plan if later results differ.",
   "questions": [
     {
       "id": "q1",
@@ -455,17 +455,13 @@
     "sourceVersion": 1,
     "curriculum": {
       "domain": "Language & Editing",
-      "primarySkillId": "L1.2",
-      "secondarySkillIds": [
-        "L2.4",
-        "L1.1",
-        "L1.6"
-      ],
+      "primarySkillId": "L2.2",
+      "secondarySkillIds": [],
       "contentKind": "mixed_review",
       "deliveryRoles": [
         "mock"
       ],
-      "learningObjective": "Measure independent RLA performance in an exam-style practice format without in-attempt teaching scaffolds."
+      "learningObjective": "Measure independent GED-style RLA performance without in-attempt teaching scaffolds."
     },
     "passage": {
       "id": "p-rla-mock-b-editing",
@@ -480,6 +476,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-09-06T05:42:17Z"
+    "compiledAt": "2026-09-09T18:12:51.352Z"
   }
 }

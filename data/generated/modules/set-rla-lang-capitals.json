@@ -327,8 +327,8 @@
         {
           "id": "a",
           "text": "The Museum will open a new Exhibit about River Trade in October.",
-          "whyWrong": "Generic common nouns and the descriptive subject phrase are unnecessarily capitalized.",
-          "distractorType": "editing_error"
+          "distractorType": "editing_error",
+          "whyWrong": "Generic common nouns and the descriptive subject phrase are unnecessarily capitalized."
         },
         {
           "id": "d",
@@ -481,6 +481,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-09-06T05:42:17Z"
+    "compiledAt": "2026-09-09T18:12:51.223Z"
   }
 }

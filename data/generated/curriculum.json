@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "subject": "rla",
-  "builtAt": "2026-09-06T05:42:17Z",
+  "builtAt": "2026-09-09T18:12:51.642Z",
   "tracks": [
     {
       "id": "reading",
@@ -18863,11 +18863,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Replace the Bridge Immediately",
       "sourceBTitle": "Rehabilitate Critical Components and Reassess",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 457
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-clinic-reminders",
@@ -18876,11 +18876,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Expand with Opt-Out and Language Choice",
       "sourceBTitle": "Use Phone Calls Instead",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 466
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-inspection-automation",
@@ -18889,11 +18889,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Expand with Human Review",
       "sourceBTitle": "Keep Inspection Fully Manual",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 452
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-market-redevelopment",
@@ -18902,11 +18902,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Build a Large Mixed-Use Complex",
       "sourceBTitle": "Renovate in Phases and Add Housing Above Existing Shops",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 494
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-night-delivery-window",
@@ -18915,12 +18915,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Continue the Evening Window With Limits",
       "sourceBTitle": "Keep Delivery Schedules Flexible",
-      "difficulty": "Full-length GED-style practice",
+      "difficulty": "GED practice",
       "modeOptions": [
         "untimed",
         "timed"
-      ],
-      "sourceWordCount": 618
+      ]
     },
     {
       "id": "er-phone-policy",
@@ -18929,11 +18928,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Adopt a Full-Day Ban",
       "sourceBTitle": "Use a Class-Time Restriction with Measured Exceptions",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 461
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-solar-roofs",
@@ -18942,11 +18941,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Install Solar on All Major Buildings Now",
       "sourceBTitle": "Start with Audited Buildings and Publish Results",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 489
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-stormwater-fee",
@@ -18955,11 +18954,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Create a Fee Based on Impervious Surface",
       "sourceBTitle": "Pay for Drainage from Existing Taxes",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 471
+        "untimed",
+        "timed"
+      ]
     },
     {
       "id": "er-vacant-lot-housing",
@@ -18968,12 +18967,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Use North Yard for Housing Now",
       "sourceBTitle": "Reserve North Yard and Use the Alternate Parcel",
-      "difficulty": "Full-length GED-style practice",
+      "difficulty": "GED practice",
       "modeOptions": [
         "untimed",
         "timed"
-      ],
-      "sourceWordCount": 598
+      ]
     },
     {
       "id": "er-weekend-bus",
@@ -18982,11 +18980,11 @@
       "prompt": "Analyze both sources. Determine which argument is better supported by relevant evidence and reasoning. Use specific evidence from the sources to support your response.",
       "sourceATitle": "Expand the Pilot Carefully",
       "sourceBTitle": "Improve Reliability Before Adding Trips",
-      "difficulty": "Focused paired-source practice",
+      "difficulty": "GED practice",
       "modeOptions": [
-        "untimed"
-      ],
-      "sourceWordCount": 511
+        "untimed",
+        "timed"
+      ]
     }
   ],
   "mixedPractice": [

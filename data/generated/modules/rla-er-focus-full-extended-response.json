@@ -315,14 +315,14 @@
       "time": 70,
       "options": [
         {
+          "id": "b",
+          "text": "Source B raises space and odor concerns but gives no contamination records, cost estimates, or pilot data showing that odor complaints occurred."
+        },
+        {
           "id": "a",
           "text": "Source B is completely wrong about every building.",
           "distractorType": "absolute",
           "whyWrong": "The sources do not justify this absolute claim."
-        },
-        {
-          "id": "b",
-          "text": "Source B raises space and odor concerns but gives no contamination records, cost estimates, or pilot data showing that odor complaints occurred."
         },
         {
           "id": "c",
@@ -479,6 +479,6 @@
       "year": null,
       "url": null
     },
-    "compiledAt": "2026-09-06T05:42:17Z"
+    "compiledAt": "2026-09-09T18:12:51.184Z"
   }
 }

@@ -283,7 +283,7 @@
     {
       "id": "q6",
       "type": "grammar_edit",
-      "prompt": "Choose the best parallel list.",
+      "prompt": "Choose the revision that makes the list parallel: “Each volunteer should bring gloves, wearing a hat, and sunscreen.”",
       "primarySkillId": "L1.6",
       "familyId": "edit.parallelism",
       "reportingCategory": 3,
@@ -301,33 +301,33 @@
       "estimatedSeconds": 45,
       "options": [
         {
-          "id": "b",
-          "text": "gloves, a hat, and sunscreen"
+          "id": "a",
+          "text": "Each volunteer should bring gloves, wearing a hat, and sunscreen.",
+          "distractorType": "mixed_forms",
+          "whyWrong": "The list mixes noun phrases with the -ing phrase 'wearing a hat.'"
         },
         {
-          "id": "a",
-          "text": "gloves, a hat and sunscreen",
-          "distractorType": "editing_error",
-          "whyWrong": "“gloves, a hat and sunscreen” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+          "id": "b",
+          "text": "Each volunteer should bring gloves, a hat, and sunscreen."
         },
         {
           "id": "c",
-          "text": "gloves a hat, and sunscreen",
-          "distractorType": "editing_error",
-          "whyWrong": "“gloves a hat, and sunscreen” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+          "text": "Each volunteer should bring gloves, to wear a hat, and sunscreen.",
+          "distractorType": "mixed_forms",
+          "whyWrong": "The list mixes nouns with the infinitive phrase 'to wear a hat.'"
         },
         {
           "id": "d",
-          "text": "gloves; a hat and sunscreen",
-          "distractorType": "editing_error",
-          "whyWrong": "“gloves; a hat and sunscreen” does not correctly resolve the specific grammar or punctuation issue tested in this sentence."
+          "text": "Each volunteer should bring gloves, a hat, and applying sunscreen.",
+          "distractorType": "mixed_forms",
+          "whyWrong": "The list mixes noun phrases with the -ing phrase 'applying sunscreen.'"
         }
       ],
       "correct": "b",
       "explanation": {
-        "answer": "gloves, a hat, and sunscreen",
-        "whyCorrect": "This revision preserves the intended meaning and follows standard written English.",
-        "quickTip": "Choose the edit that fixes the targeted issue without changing the facts."
+        "answer": "Each volunteer should bring gloves, a hat, and sunscreen.",
+        "whyCorrect": "All three items are noun phrases, so the list uses the same grammatical form throughout.",
+        "quickTip": "In a list, check that each item follows the same grammatical pattern."
       }
     },
     {
