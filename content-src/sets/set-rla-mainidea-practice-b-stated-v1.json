@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mainidea-practice-b-stated-v1",
+  "title": "Main Idea — Practice B: Stated Idea",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "medium",
+  "status": "review",
+  "version": 1,
+  "passageRefs": ["p-rla-mainidea-practice-b-sleep-certified-v1"],
+  "author": "Chee Skool",
+  "reviewer": "C4 Main Idea editorial review pending",
+  "reviewNotes": "Stated-main-idea transfer using CC-BY source adaptation.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "contentKind": "skill_drill",
+    "practiceTags": ["active-learning","mock-excluded"],
+    "learningObjective": "Identify a stated main idea and verify how later details develop it.",
+    "topicLabel": "Main idea / central idea",
+    "deliveryRoles": ["practice","train"]
+  },
+  "questions": [
+    {
+      "id": "b1",
+      "type": "select_text",
+      "prompt": "Select the sentence that most directly states the overall idea developed by the rest of the passage.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {"textComplexity":2,"reasoningDepth":1,"evidenceDistance":2,"distractorSimilarity":2,"sourceCount":1,"responseDemand":2},
+      "points": 1,
+      "estimatedSeconds": 55,
+      "interaction": {
+        "selectionMode": "sentence",
+        "targets": [
+          {"id":"s1","text":"Sleep supports how well teenagers function each day by affecting their brains, emotions, and bodies."},
+          {"id":"s2","text":"During sleep, the brain organizes information and prepares for the next day."},
+          {"id":"s3","text":"Sleep also affects emotional health."},
+          {"id":"s4","text":"Physical health is affected as well."}
+        ]
+      },
+      "correct": "s1",
+      "explanation": {
+        "answer": "The opening sentence.",
+        "whyCorrect": "It controls the rest of the passage by naming the three branches that follow: brain, emotions, and body.",
+        "quickTip": "A stated main idea often predicts the structure that follows."
+      },
+      "learningStage": "guided",
+      "hint": "Look for the sentence broad enough to cover all three later branches."
+    },
+    {
+      "id": "b2",
+      "type": "drag_sort",
+      "prompt": "Match each supporting detail to the branch of the stated main idea it develops.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":2},
+      "points": 1,
+      "estimatedSeconds": 75,
+      "interaction": {
+        "items": [
+          {"id":"i1","text":"Memory, attention, problem-solving, and decision-making can suffer."},
+          {"id":"i2","text":"Stress, irritability, frustration, and sadness can feel stronger."},
+          {"id":"i3","text":"Sleep supports appetite regulation, repair, and immune function."}
+        ],
+        "zones": [
+          {"id":"brain","label":"Brain"},
+          {"id":"emotion","label":"Emotions"},
+          {"id":"body","label":"Physical health"}
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=brain|i2=emotion|i3=body",
+      "explanation": {
+        "answer": "Brain: i1; Emotions: i2; Physical health: i3.",
+        "whyCorrect": "Each detail develops one branch named in the controlling sentence.",
+        "quickTip": "Ask how each detail helps develop the stated main idea, not merely whether it is true."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "b3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best summarizes the passage as a whole?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":1},
+      "points": 1,
+      "estimatedSeconds": 65,
+      "options": [
+        {"id":"a","text":"Sleep mainly helps teenagers remember schoolwork and make better decisions.","distractorType":"branch_only_summary","whyWrong":"This covers only the brain branch."},
+        {"id":"b","text":"Sleep affects teenagers’ cognitive, emotional, and physical functioning, so getting enough sleep helps them function better overall."},
+        {"id":"c","text":"Teenagers who sleep poorly may make unhealthy food choices.","distractorType":"detail_as_main_idea","whyWrong":"This is one physical-health detail."},
+        {"id":"d","text":"A fixed sleep schedule prevents all health problems in teenagers.","distractorType":"unsupported_absolute","whyWrong":"The passage does not make this absolute claim."}
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "It includes all three major branches without adding an unsupported promise.",
+        "quickTip": "A main idea should cover the major branches, not just repeat a true detail."
+      },
+      "learningStage": "independent",
+      "reportingCategory": "gist_synthesis"
+    }
+  ],
+  "description": "Stated-main-idea practice using a teen-sleep source adaptation."
+}
