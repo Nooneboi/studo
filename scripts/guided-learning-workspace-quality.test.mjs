@@ -131,3 +131,11 @@ test('guided CSS reduces density and exposes clear card, category, selection, an
   assert.doesNotMatch(css, /\.guided-selection-status/);
   assert.match(css, /@media \(max-width: 720px\)[\s\S]*guided-learning-workspace/);
 });
+
+
+test('guided open-ended responses unlock Next once the learner has written a response', () => {
+  const moduleJs = read('js/module.js');
+  const openEnded = moduleJs.match(/id="written-answer"[\s\S]*?function cssEscape/)?.[0] || '';
+  assert.ok(openEnded, 'open-ended renderer should exist');
+  assert.match(openEnded, /if \(guided && ta\.value\.trim\(\)\) unlockGuidedNext\(\)/);
+});
