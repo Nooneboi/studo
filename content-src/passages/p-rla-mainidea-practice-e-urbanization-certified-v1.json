@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "id": "p-rla-mainidea-practice-e-urbanization-certified-v1",
+  "title": "Urbanization: Why Definitions Matter",
+  "text": "Urbanization is the movement of people from rural areas into towns and cities. Tracking it matters because where people live affects work, transport, social connections, services, and the opportunities and risks people face. Governments also need this information to plan housing, healthcare, schools, and infrastructure.\n\nComparing urbanization across countries is difficult, however, because countries do not all define “urban” in the same way. A settlement counted as urban in one country might be classified as rural in another. That makes international comparisons unreliable when each country uses its own rules.\n\nA more consistent approach uses population size and density to classify settlements in the same way across countries. The United Nations now uses a framework that separates settlements into cities, towns and suburbs, and rural areas. Using common criteria makes global comparisons more meaningful while still recognizing that settlements exist along a range rather than fitting neatly into one simple urban-versus-rural split.",
+  "textType": "informational",
+  "context": "social_studies",
+  "source": {
+    "type": "licensed",
+    "author": "Esteban Ortiz-Ospina; Veronika Samborska; Hannah Ritchie; Max Roser",
+    "workTitle": "Urbanization",
+    "publisher": "Our World in Data",
+    "year": 2026,
+    "url": "https://ourworldindata.org/urbanization",
+    "attribution": "Adapted by Chee Skool from Ortiz-Ospina, Samborska, Ritchie & Roser, “Urbanization,” Our World in Data, CC BY."
+  },
+  "rights": {
+    "status": "licensed",
+    "holder": "Our World in Data / authors",
+    "license": "CC BY",
+    "note": "OWID states its articles are open access under CC BY with attribution."
+  },
+  "status": "review",
+  "version": 1,
+  "author": "Esteban Ortiz-Ospina; Veronika Samborska; Hannah Ritchie; Max Roser",
+  "reviewer": "C4 Main Idea source review",
+  "provenance": {
+    "canonicalUrl": "https://ourworldindata.org/urbanization",
+    "sourceSection": "What is urbanization, and why does it matter?",
+    "rightsCheckedOn": "2026-10-03",
+    "adaptation": "Condensed source-faithful adaptation under CC BY.",
+    "certificationStatus": "source_verified_rights_verified_editorial_review_pending"
+  }
+}
