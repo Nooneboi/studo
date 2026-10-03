@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "id": "p-rla-mainidea-practice-c-nature-certified-v1",
+  "title": "How Much Can Urban Nature Help?",
+  "text": "Researchers wanted to estimate how much nature-based solutions could help cities reduce greenhouse-gas emissions. Their computer model counted direct effects, such as trees and green roofs storing carbon, and indirect effects, such as shade reducing energy use or making walking more attractive than driving.\n\nThe model also compared different strategies across different urban settings instead of assuming that one solution would work equally well everywhere. Researchers applied the model to 54 European cities. Across those cities, nature-based solutions were estimated to reduce greenhouse-gas emissions by about 17% on average, with larger reductions in some places.\n\nThe results suggest that urban nature can make a meaningful contribution to climate goals through several pathways, but the size of the benefit depends on the strategy and the city. Nature-based solutions cannot bring cities to net zero on their own; they work best alongside other actions such as cleaner electricity, better public transport, and improved buildings.",
+  "textType": "informational",
+  "context": "science",
+  "source": {
+    "type": "licensed",
+    "author": "J. Page; H. Pan; Z. Cai; C. Cong; C. Shi; S. Barthel; P. Thollander; J. Colding; Z. Kalantari",
+    "workTitle": "How Nature Can Help Cities Breathe and Stay Cool",
+    "publisher": "Frontiers for Young Minds",
+    "year": 2026,
+    "url": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1756258",
+    "attribution": "Adapted by Chee Skool from Page et al. (2026), Frontiers for Young Minds, CC BY."
+  },
+  "rights": {
+    "status": "licensed",
+    "holder": "Page et al.",
+    "license": "CC BY",
+    "note": "Adaptation permitted with attribution; source states generative AI was not used in the manuscript."
+  },
+  "status": "review",
+  "version": 1,
+  "author": "J. Page; H. Pan; Z. Cai; C. Cong; C. Shi; S. Barthel; P. Thollander; J. Colding; Z. Kalantari",
+  "reviewer": "C4 Main Idea source review",
+  "provenance": {
+    "canonicalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1756258",
+    "sourceSection": "How much can Nature Actually Help?",
+    "rightsCheckedOn": "2026-10-03",
+    "adaptation": "Condensed source-faithful adaptation; original subsection heading not used as learner title.",
+    "certificationStatus": "source_verified_rights_verified_editorial_review_pending"
+  }
+}
