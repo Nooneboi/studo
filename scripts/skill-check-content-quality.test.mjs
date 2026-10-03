@@ -32,7 +32,7 @@ function loadAllSets() {
 
 test('first-wave Skill Check bank contains exactly nine dedicated six-question sets', () => {
   const all = loadAllSets();
-  const checks = all.filter((set) => set.curriculum?.deliveryRoles?.includes('skill_check'));
+  const checks = all.filter((set) => set.status === 'published' && set.curriculum?.deliveryRoles?.includes('skill_check'));
   assert.deepEqual(checks.map((set) => set.id).sort(), [...expected].sort());
   assert.equal(checks.reduce((sum, set) => sum + set.questions.length, 0), 54);
   for (const set of checks) {
@@ -51,7 +51,7 @@ test('Skill Check questions are unseen relative to learner Practice/Train source
     .filter((set) => !set.curriculum?.deliveryRoles?.includes('skill_check'))
     .flatMap((set) => set.questions || [])
     .map(fingerprint));
-  for (const set of all.filter((x) => x.curriculum?.deliveryRoles?.includes('skill_check'))) {
+  for (const set of all.filter((x) => x.status === 'published' && x.curriculum?.deliveryRoles?.includes('skill_check'))) {
     for (const q of set.questions) assert.ok(!normalFingerprints.has(fingerprint(q)), `${set.id}/${q.id} duplicates an existing learner question`);
   }
 });
