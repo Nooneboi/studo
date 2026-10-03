@@ -1197,6 +1197,7 @@ function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
   const ta = container.querySelector("textarea");
   ta.addEventListener("input", () => {
     Store.setAnswer(currentQuiz.id, q.id, ta.value);
+    if (guided && ta.value.trim()) unlockGuidedNext();
     updateAnswerStatus();
   });
   ta.addEventListener("blur", () => {
