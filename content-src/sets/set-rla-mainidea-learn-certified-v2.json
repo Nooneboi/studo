@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mainidea-learn-certified-v2",
+  "title": "Main Idea — Learn the Method",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "medium",
+  "status": "review",
+  "version": 2,
+  "passageRefs": [
+    "p-rla-mainidea-learn-wetlands-certified-v2"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "C4 Main Idea editorial review pending",
+  "reviewNotes": "Certified-source replacement for the old shade-route active-learning set. Five-step Learn sequence; open-ended gist is not AI graded.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Distinguish topic from main idea, select important information, build a gist, test scope, and connect a main idea to evidence.",
+    "topicLabel": "Main idea / central idea",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
+  },
+  "questions": [
+    {
+      "id": "learn1",
+      "type": "drag_sort",
+      "prompt": "Mark each statement as a topic or a main idea.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 55,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "Wetlands"
+          },
+          {
+            "id": "i2",
+            "text": "Wetlands come in many forms and provide important environmental and human benefits."
+          }
+        ],
+        "zones": [
+          {
+            "id": "topic",
+            "label": "Topic only"
+          },
+          {
+            "id": "main",
+            "label": "Main idea"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=topic|i2=main",
+      "explanation": {
+        "answer": "Wetlands = topic; the full statement = main idea.",
+        "whyCorrect": "A topic only names the subject. A main idea tells what the passage says about that subject.",
+        "quickTip": "Ask: does the statement merely name the subject, or make a whole-passage claim about it?"
+      },
+      "learningStage": "guided",
+      "hint": "A topic can often be one or two words. A main idea usually says something about that topic."
+    },
+    {
+      "id": "learn2",
+      "type": "drag_sort",
+      "prompt": "Which ideas are needed for a useful whole-passage gist?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "easy",
+      "dok": 1,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "interaction": {
+        "items": [
+          {"id":"k1","text":"Wetlands come in many different forms."},
+          {"id":"k2","text":"NOAA groups wetlands into several broad types."},
+          {"id":"k3","text":"Wetlands can filter water, reduce flooding and erosion, and support wildlife."},
+          {"id":"k4","text":"Wetland names include marshes, mangroves, bogs, swamps, ponds, deltas, and floodplains."},
+          {"id":"k5","text":"Wetlands can also support recreation and outdoor learning."},
+          {"id":"k6","text":"Some wetlands change with the seasons."}
+        ],
+        "zones": [
+          {"id":"keep","label":"Needed for the gist"},
+          {"id":"detail","label":"Useful detail, but not necessary"}
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "k1=keep|k2=detail|k3=keep|k4=detail|k5=keep|k6=detail",
+      "explanation": {
+        "answer": "Keep 1, 3, and 5.",
+        "whyCorrect": "Those three ideas cover variety, ecological functions, and human benefits. The other statements are true details but are not necessary to express the whole passage.",
+        "quickTip": "A true detail can still be unnecessary for a one-sentence gist."
+      },
+      "learningStage": "guided",
+      "hint": "Choose information that covers a major branch of the passage, not an example inside that branch."
+    },
+    {
+      "id": "learn3",
+      "type": "open_ended",
+      "prompt": "In one sentence, write the gist: topic + what the passage says overall. Do not list every example.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 95,
+      "explanation": {
+        "answer": "Model: Wetlands come in many forms and are valuable because they support ecosystems, reduce flooding and pollution, and also benefit people.",
+        "whyCorrect": "A strong gist names the broad topic and combines the passage’s major functions without becoming a list of minor examples.",
+        "quickTip": "Check your sentence for scope: broad enough for most of the passage, but not broader than the evidence."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "learn4",
+      "type": "drag_sort",
+      "prompt": "How well does each statement fit the whole passage?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "interaction": {
+        "items": [
+          {"id":"s1","text":"Wetlands help reduce flood damage during heavy rain."},
+          {"id":"s2","text":"Although wetlands vary widely, they perform important environmental functions and also provide benefits for people."},
+          {"id":"s3","text":"Wetlands are the most important ecosystems and can solve environmental problems everywhere."}
+        ],
+        "zones": [
+          {"id":"narrow","label":"Too narrow"},
+          {"id":"fit","label":"Fits the whole passage"},
+          {"id":"broad","label":"Too broad / unsupported"}
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "s1=narrow|s2=fit|s3=broad",
+      "explanation": {
+        "answer": "s2 fits; s1 is too narrow; s3 is unsupported.",
+        "whyCorrect": "The best main idea covers the major strands without turning one function into the whole passage or making a universal claim.",
+        "quickTip": "Scope-test every main idea: too small, about right, or larger than the evidence."
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "learn5",
+      "type": "evidence_based",
+      "prompt": "Which main idea and evidence pair best represent the passage as a whole?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 90,
+      "options": [
+        {
+          "id":"a",
+          "text":"Main idea: Wetlands have many names. Evidence: NOAA groups them into several broad types and people use many local names.",
+          "distractorType":"detail_as_main_idea",
+          "whyWrong":"This is true but reduces the passage to classification and naming."
+        },
+        {
+          "id":"b",
+          "text":"Main idea: Wetlands vary in form but serve several important ecological and human functions. Evidence: they can filter water and reduce flooding; people also use them for recreation and learning."
+        },
+        {
+          "id":"c",
+          "text":"Main idea: Flood control is the main reason wetlands should be protected. Evidence: wetlands can slow floodwater and reduce erosion.",
+          "distractorType":"branch_only_summary",
+          "whyWrong":"Flood control is one major function, not the only one."
+        },
+        {
+          "id":"d",
+          "text":"Main idea: All wetlands stay wet year-round and provide habitat. Evidence: wetlands support wildlife and are found near waterways.",
+          "distractorType":"contradicts_text",
+          "whyWrong":"The passage says some wetlands change with the seasons."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The idea covers both ecological and human functions, and the evidence pair spans more than one major branch.",
+        "quickTip": "For hard main-idea questions, test both the claim and the evidence pair for whole-passage coverage."
+      },
+      "learningStage": "independent",
+      "reportingCategory": "gist_synthesis"
+    }
+  ],
+  "description": "Five-step Main Idea learning path using one verified NOAA-based anchor."
+}
