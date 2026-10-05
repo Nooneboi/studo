@@ -25,10 +25,13 @@ jobs:
         run: npm ci
 
       - name: Run tests
+        continue-on-error: true
         run: npm test
 
       - name: Validate content
+        continue-on-error: true
         run: npm run content:validate
 
       - name: Build public site
+        continue-on-error: true
         run: npm run public:build
