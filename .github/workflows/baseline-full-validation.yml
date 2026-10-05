@@ -1,0 +1,29 @@
+name: Baseline Full Validation
+
+on:
+  push:
+    branches:
+      - main-baseline-ci-validation
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run tests
+        continue-on-error: true
+        run: npm test
+      - name: Validate content
+        continue-on-error: true
+        run: npm run content:validate
+      - name: Build public site
+        continue-on-error: true
+        run: npm run public:build
