@@ -12,124 +12,433 @@
   "topic": "RLA Skill Check",
   "difficulty": "hard",
   "status": "review",
-  "version": 2,
-  "passageRefs": ["p-rla-mainidea-check-certified-two-text-v2"],
+  "version": 3,
+  "passageRefs": [
+    "p-rla-mainidea-check-certified-two-text-v2"
+  ],
   "author": "Chee Skool",
   "reviewer": "C4 Main Idea editorial review pending",
-  "reviewNotes": "Independent two-text Check. No hints, no immediate correctness. New set/question IDs prevent stale answer migration from the retired six-item Check.",
+  "reviewNotes": "Independent two-text Check. No hints, no immediate correctness. Text A includes a stated central idea; Text B requires literary inference. New set/question IDs prevent stale answer migration from the retired six-item Check.",
   "questions": [
     {
-      "id":"sca1","type":"multiple_choice","prompt":"In Text A, which statement best expresses the central idea?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"medium","dok":2,
-      "difficultyProfile":{"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":60,
-      "options":[
-        {"id":"a","text":"Making food completely risk-free is possible, but it costs too much.","distractorType":"contradicts_text","whyWrong":"The text says every food carries some risk."},
-        {"id":"b","text":"Food-safety decisions should reduce illness while also considering the costs and other harms that additional safety measures can create."},
-        {"id":"c","text":"Environmental protection should take priority over food safety.","distractorType":"unsupported_priority","whyWrong":"The text weighs several consequences without creating this hierarchy."},
-        {"id":"d","text":"Cleaning food-processing equipment more often is the most effective safety measure.","distractorType":"detail_as_main_idea","whyWrong":"Cleaning is only one example."}
+      "id": "sca1",
+      "type": "multiple_choice",
+      "prompt": "In Text A, which statement best expresses the central idea?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Making food completely risk-free is possible, but it costs too much.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The text says no food-safety system can remove every possible risk."
+        },
+        {
+          "id": "b",
+          "text": "Food-safety decisions should reduce illness while also considering the costs and other harms that additional safety measures can create."
+        },
+        {
+          "id": "c",
+          "text": "Environmental protection should take priority over food safety.",
+          "distractorType": "unsupported_priority",
+          "whyWrong": "The text weighs several consequences without creating this hierarchy."
+        },
+        {
+          "id": "d",
+          "text": "Cleaning food-processing equipment more often is the most effective safety measure.",
+          "distractorType": "detail_as_main_idea",
+          "whyWrong": "Cleaning is only one example."
+        }
       ],
-      "correct":"b",
-      "explanation":{"answer":"B","whyCorrect":"It captures the passage’s repeated trade-off structure without claiming that any one consequence always comes first.","quickTip":"The central idea should explain why the examples are there, not become one of the examples."},
-      "reportingCategory":"gist_synthesis"
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "It captures the passage’s repeated trade-off structure without claiming that any one consequence always comes first.",
+        "quickTip": "The central idea should explain why the examples are there, not become one of the examples."
+      },
+      "reportingCategory": "gist_synthesis"
     },
     {
-      "id":"sca2","type":"evidence_based","prompt":"In Text A, which pair of details best supports the passage’s trade-off reasoning?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":75,
-      "options":[
-        {"id":"a","text":"Colder transport can limit bacterial growth but increase energy use; removing habitat near farms can reduce contamination risk but damage wildlife habitat."},
-        {"id":"b","text":"Food can carry risk; farms grow crops.","distractorType":"weak_general_support","whyWrong":"These statements are too general and do not show the trade-off structure."},
-        {"id":"c","text":"Cleaning equipment can reduce contamination; foodborne illness can be serious.","distractorType":"supports_only_one_side","whyWrong":"This shows benefits but not the competing costs/harms the main idea emphasizes."},
-        {"id":"d","text":"Some food is transported; some farms have wildlife.","distractorType":"background_only","whyWrong":"These are background conditions rather than evidence of trade-offs."}
+      "id": "sca2",
+      "type": "evidence_based",
+      "prompt": "In Text A, which pair of details best supports the passage’s trade-off reasoning?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Colder transport can limit bacterial growth but increase energy use; removing habitat near farms can reduce contamination risk but damage wildlife habitat."
+        },
+        {
+          "id": "b",
+          "text": "Food can carry risk; farms grow crops.",
+          "distractorType": "weak_general_support",
+          "whyWrong": "These statements are too general and do not show the trade-off structure."
+        },
+        {
+          "id": "c",
+          "text": "Cleaning equipment can reduce contamination; foodborne illness can be serious.",
+          "distractorType": "supports_only_one_side",
+          "whyWrong": "This shows benefits but not the competing costs/harms the main idea emphasizes."
+        },
+        {
+          "id": "d",
+          "text": "Some food is transported; some farms have wildlife.",
+          "distractorType": "background_only",
+          "whyWrong": "These are background conditions rather than evidence of trade-offs."
+        }
       ],
-      "correct":"a",
-      "explanation":{"answer":"A","whyCorrect":"Both examples show a safety benefit paired with a different cost or harm, which directly supports the passage’s central reasoning.","quickTip":"For evidence-pair questions, both details should support the same relationship in the main idea."},
-      "reportingCategory":"evidence_link"
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Both examples show a safety benefit paired with a different cost or harm, which directly supports the passage’s central reasoning.",
+        "quickTip": "For evidence-pair questions, both details should support the same relationship in the main idea."
+      },
+      "reportingCategory": "evidence_link"
     },
     {
-      "id":"sca3","type":"drag_sort","prompt":"In Text A, classify each statement by its scope.","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":2},"points":1,"estimatedSeconds":80,
-      "interaction":{"items":[
-        {"id":"s1","text":"Refrigerated transport can increase greenhouse-gas emissions."},
-        {"id":"s2","text":"Food-safety measures can create trade-offs beyond illness prevention, so decisions should consider several kinds of consequences."},
-        {"id":"s3","text":"Safety rules generally cause more harm than the illnesses they prevent."}
-      ],"zones":[{"id":"narrow","label":"Too narrow"},{"id":"fit","label":"Whole-text fit"},{"id":"unsupported","label":"Unsupported / overclaim"}]},
-      "correct":"s1=narrow|s2=fit|s3=unsupported",
-      "explanation":{"answer":"s2 fits; s1 is narrow; s3 overclaims.","whyCorrect":"The whole-text idea recognizes trade-offs without arguing that safety rules usually do more harm than good.","quickTip":"Scope control means preserving both the main conclusion and its limits."},
-      "reportingCategory":"scope_control"
+      "id": "sca3",
+      "type": "drag_sort",
+      "prompt": "In Text A, classify each statement by its scope.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "interaction": {
+        "items": [
+          {
+            "id": "s1",
+            "text": "Keeping food colder during transport can use more energy."
+          },
+          {
+            "id": "s2",
+            "text": "Food-safety measures can create trade-offs beyond illness prevention, so decisions should consider several kinds of consequences."
+          },
+          {
+            "id": "s3",
+            "text": "Safety rules generally cause more harm than the illnesses they prevent."
+          }
+        ],
+        "zones": [
+          {
+            "id": "narrow",
+            "label": "Too narrow"
+          },
+          {
+            "id": "fit",
+            "label": "Whole-text fit"
+          },
+          {
+            "id": "unsupported",
+            "label": "Unsupported / overclaim"
+          }
+        ]
+      },
+      "correct": "s1=narrow|s2=fit|s3=unsupported",
+      "explanation": {
+        "answer": "s2 fits; s1 is narrow; s3 overclaims.",
+        "whyCorrect": "The whole-text idea recognizes trade-offs without arguing that safety rules usually do more harm than good.",
+        "quickTip": "Scope control means preserving both the main conclusion and its limits."
+      },
+      "reportingCategory": "scope_control"
     },
     {
-      "id":"sca4","type":"multiple_choice","prompt":"Which decision-making approach best follows Text A’s reasoning?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":70,
-      "options":[
-        {"id":"a","text":"Adopt every measure that lowers any amount of foodborne risk.","distractorType":"unsupported_absolute","whyWrong":"The passage says extra measures can create other harms."},
-        {"id":"b","text":"Choose whichever measure costs the least money.","distractorType":"single_factor","whyWrong":"Cost is only one of several consequences."},
-        {"id":"c","text":"Compare expected health benefits with effects on cost, resources, food supply, workers, and the environment before choosing a measure."},
-        {"id":"d","text":"Use the same safety rule for every food and every production setting.","distractorType":"unsupported_universal","whyWrong":"The passage emphasizes context and trade-offs."}
+      "id": "sca4",
+      "type": "multiple_choice",
+      "prompt": "Which decision-making approach best follows Text A’s reasoning?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Adopt every measure that lowers any amount of foodborne risk.",
+          "distractorType": "unsupported_absolute",
+          "whyWrong": "The passage says extra measures can create other harms."
+        },
+        {
+          "id": "b",
+          "text": "Choose whichever measure costs the least money.",
+          "distractorType": "single_factor",
+          "whyWrong": "Cost is only one of several consequences."
+        },
+        {
+          "id": "c",
+          "text": "Compare expected health benefits with effects on cost, resources, food supply, workers, and the environment before choosing a measure."
+        },
+        {
+          "id": "d",
+          "text": "Use the same safety rule for every food and every production setting.",
+          "distractorType": "unsupported_universal",
+          "whyWrong": "The passage emphasizes context and trade-offs."
+        }
       ],
-      "correct":"c",
-      "explanation":{"answer":"C","whyCorrect":"It applies the passage’s multi-factor trade-off reasoning to a decision.","quickTip":"Transfer questions ask whether you can use the passage’s reasoning in a new situation."},
-      "reportingCategory":"main_idea_transfer"
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "It applies the passage’s multi-factor trade-off reasoning to a decision.",
+        "quickTip": "Transfer questions ask whether you can use the passage’s reasoning in a new situation."
+      },
+      "reportingCategory": "main_idea_transfer"
     },
     {
-      "id":"scb1","type":"multiple_choice","prompt":"In Text B, which statement best expresses the central idea developed by the excerpt?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":75,
-      "options":[
-        {"id":"a","text":"Framton’s health makes social visits unsafe for him.","distractorType":"detail_as_main_idea","whyWrong":"His nerves matter to his reaction but do not explain the whole excerpt."},
-        {"id":"b","text":"Vera uses a convincing invented story and carefully chosen details to control how an uninformed visitor interprets ordinary events."},
-        {"id":"c","text":"Mrs. Sappleton deliberately frightens Framton so he will leave.","distractorType":"contradicts_text","whyWrong":"Mrs. Sappleton is unaware of Vera’s story."},
-        {"id":"d","text":"Life in the countryside is more frightening than life in the city.","distractorType":"unsupported_generalization","whyWrong":"The excerpt does not develop this comparison."}
+      "id": "scb1",
+      "type": "multiple_choice",
+      "prompt": "In Text B, which statement best expresses the central idea developed by the excerpt?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Framton’s health makes social visits unsafe for him.",
+          "distractorType": "detail_as_main_idea",
+          "whyWrong": "His nerves matter to his reaction but do not explain the whole excerpt."
+        },
+        {
+          "id": "b",
+          "text": "Vera uses a convincing invented story and carefully chosen details to control how an uninformed visitor interprets ordinary events."
+        },
+        {
+          "id": "c",
+          "text": "Mrs. Sappleton deliberately frightens Framton so he will leave.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "Mrs. Sappleton is unaware of Vera’s story."
+        },
+        {
+          "id": "d",
+          "text": "Life in the countryside is more frightening than life in the city.",
+          "distractorType": "unsupported_generalization",
+          "whyWrong": "The excerpt does not develop this comparison."
+        }
       ],
-      "correct":"b",
-      "explanation":{"answer":"B","whyCorrect":"The excerpt repeatedly shows Vera constructing a false context and then using it to shape Framton’s interpretation of normal events.","quickTip":"A literary central idea can focus on the mechanism that gives the plot its meaning."},
-      "reportingCategory":"literary_central_idea"
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The excerpt repeatedly shows Vera constructing a false context and then using it to shape Framton’s interpretation of normal events.",
+        "quickTip": "A literary central idea can focus on the mechanism that gives the plot its meaning."
+      },
+      "reportingCategory": "literary_central_idea"
     },
     {
-      "id":"scb2","type":"evidence_based","prompt":"In Text B, which pair of details best shows that Vera is deliberately inventing explanations rather than merely misunderstanding events?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":80,
-      "options":[
-        {"id":"a","text":"Vera stares through the window with apparent horror as the figures approach; after Framton flees, she immediately invents another story about his supposed fear of dogs."},
-        {"id":"b","text":"Mrs. Sappleton talks about shooting; Framton talks about his doctors.","distractorType":"background_only","whyWrong":"These details do not show Vera’s deliberate fabrication."},
-        {"id":"c","text":"The window is open; a spaniel walks with the men.","distractorType":"literal_detail","whyWrong":"These details help the deception work but do not by themselves show that Vera is consciously inventing it."},
-        {"id":"d","text":"Framton is visiting strangers; the evening is quiet.","distractorType":"weak_context","whyWrong":"These conditions make him vulnerable but do not demonstrate Vera’s deliberate invention."}
+      "id": "scb2",
+      "type": "evidence_based",
+      "prompt": "In Text B, which pair of details best shows that Vera is deliberately inventing explanations rather than merely misunderstanding events?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Vera stares through the window with apparent horror as the figures approach; after Framton flees, she immediately invents another story about his supposed fear of dogs."
+        },
+        {
+          "id": "b",
+          "text": "Mrs. Sappleton talks about shooting; Framton talks about his doctors.",
+          "distractorType": "background_only",
+          "whyWrong": "These details do not show Vera’s deliberate fabrication."
+        },
+        {
+          "id": "c",
+          "text": "The window is open; a spaniel walks with the men.",
+          "distractorType": "literal_detail",
+          "whyWrong": "These details help the deception work but do not by themselves show that Vera is consciously inventing it."
+        },
+        {
+          "id": "d",
+          "text": "Framton is visiting strangers; the evening is quiet.",
+          "distractorType": "weak_context",
+          "whyWrong": "These conditions make him vulnerable but do not demonstrate Vera’s deliberate invention."
+        }
       ],
-      "correct":"a",
-      "explanation":{"answer":"A","whyCorrect":"The staged reaction supports the first invented story, while the rapid second story at the end confirms a pattern of intentional fabrication.","quickTip":"Strong literary evidence often comes from separated moments that reveal the same character pattern."},
-      "reportingCategory":"evidence_link"
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The staged reaction supports the first invented story, while the rapid second story at the end confirms a pattern of intentional fabrication.",
+        "quickTip": "Strong literary evidence often comes from separated moments that reveal the same character pattern."
+      },
+      "reportingCategory": "evidence_link"
     },
     {
-      "id":"scb3","type":"multiple_choice","prompt":"Why does the arrival of the three figures frighten Framton so strongly?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":70,
-      "options":[
-        {"id":"a","text":"He already knows Mrs. Sappleton’s family is dangerous.","distractorType":"unsupported","whyWrong":"He barely knows the family."},
-        {"id":"b","text":"Mrs. Sappleton has warned him not to look through the window.","distractorType":"contradicts_text","whyWrong":"She does the opposite—she expects the men to return through it."},
-        {"id":"c","text":"Vera’s earlier story gives him a false explanation for the scene, and her horrified reaction reinforces that interpretation."},
-        {"id":"d","text":"He recognizes the men as people who threatened him before.","distractorType":"unsupported","whyWrong":"No such prior encounter appears."}
+      "id": "scb3",
+      "type": "multiple_choice",
+      "prompt": "Why does the arrival of the three figures frighten Framton so strongly?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "He already knows Mrs. Sappleton’s family is dangerous.",
+          "distractorType": "unsupported",
+          "whyWrong": "He barely knows the family."
+        },
+        {
+          "id": "b",
+          "text": "Mrs. Sappleton has warned him not to look through the window.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "She does the opposite—she expects the men to return through it."
+        },
+        {
+          "id": "c",
+          "text": "Vera’s earlier story gives him a false explanation for the scene, and her horrified reaction reinforces that interpretation."
+        },
+        {
+          "id": "d",
+          "text": "He recognizes the men as people who threatened him before.",
+          "distractorType": "unsupported",
+          "whyWrong": "No such prior encounter appears."
+        }
       ],
-      "correct":"c",
-      "explanation":{"answer":"C","whyCorrect":"Framton interprets the ordinary return through the false context Vera supplied, and her expression makes that interpretation feel confirmed.","quickTip":"Main-idea inference often depends on how earlier details change the meaning of later evidence."},
-      "reportingCategory":"implied_main_idea"
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "Framton interprets the ordinary return through the false context Vera supplied, and her expression makes that interpretation feel confirmed.",
+        "quickTip": "Main-idea inference often depends on how earlier details change the meaning of later evidence."
+      },
+      "reportingCategory": "implied_main_idea"
     },
     {
-      "id":"scb4","type":"multiple_choice","prompt":"Which broader idea is best supported by Text B?","primarySkillId":"R1.2","familyId":"mainidea.whole.implied","difficulty":"hard","dok":3,
-      "difficultyProfile":{"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},"points":1,"estimatedSeconds":70,
-      "options":[
-        {"id":"a","text":"People should never trust teenagers.","distractorType":"unsupported_universal","whyWrong":"The excerpt supports a point about context and persuasion, not a rule about all teenagers."},
-        {"id":"b","text":"When people lack context, a persuasive story can shape how they interpret later evidence."},
-        {"id":"c","text":"Nervous people cannot distinguish reality from imagination.","distractorType":"overclaim","whyWrong":"The excerpt shows one person misled by a specific deception."},
-        {"id":"d","text":"Successful deception always depends on supernatural events.","distractorType":"literal_misreading","whyWrong":"Nothing supernatural actually occurs."}
+      "id": "scb4",
+      "type": "multiple_choice",
+      "prompt": "Which broader idea is best supported by Text B?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "People should never trust teenagers.",
+          "distractorType": "unsupported_universal",
+          "whyWrong": "The excerpt supports a point about context and persuasion, not a rule about all teenagers."
+        },
+        {
+          "id": "b",
+          "text": "When people lack context, a persuasive story can shape how they interpret later evidence."
+        },
+        {
+          "id": "c",
+          "text": "Nervous people cannot distinguish reality from imagination.",
+          "distractorType": "overclaim",
+          "whyWrong": "The excerpt shows one person misled by a specific deception."
+        },
+        {
+          "id": "d",
+          "text": "Successful deception always depends on supernatural events.",
+          "distractorType": "literal_misreading",
+          "whyWrong": "Nothing supernatural actually occurs."
+        }
       ],
-      "correct":"b",
-      "explanation":{"answer":"B","whyCorrect":"Framton’s lack of background knowledge allows Vera’s story to frame everything he sees afterward.","quickTip":"A good generalization stays close to the mechanism demonstrated by the text without becoming universal."},
-      "reportingCategory":"main_idea_transfer"
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Framton’s lack of background knowledge allows Vera’s story to frame everything he sees afterward.",
+        "quickTip": "A good generalization stays close to the mechanism demonstrated by the text without becoming universal."
+      },
+      "reportingCategory": "main_idea_transfer"
     }
   ],
   "curriculum": {
-    "domain":"Core Meaning",
-    "primarySkillId":"R1.2",
-    "secondarySkillIds":[],
-    "contentKind":"skill_drill",
-    "learningObjective":"Identify and infer central ideas, connect evidence, control scope, and transfer reasoning across informational and literary texts.",
-    "topicLabel":"Main Idea — Skill Check",
-    "deliveryRoles":["skill_check"],
-    "practiceTags":["mock-excluded"]
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "secondarySkillIds": [],
+    "contentKind": "skill_drill",
+    "learningObjective": "Identify and infer central ideas, connect evidence, control scope, and transfer reasoning across informational and literary texts.",
+    "topicLabel": "Main Idea — Skill Check",
+    "deliveryRoles": [
+      "skill_check"
+    ],
+    "practiceTags": [
+      "mock-excluded"
+    ]
   }
 }
