@@ -73,21 +73,26 @@ function firstAvailableIndex() {
   return activeQuestions().length ? 0 : -1;
 }
 
+function explicitAssistanceLevel() {
+  const level = currentQuiz?.contentMeta?.curriculum?.assistanceLevel;
+  return ["full", "supported", "light", "minimal"].includes(level) ? level : null;
+}
+
 function assistanceLevel() {
-  const explicit = currentQuiz?.contentMeta?.curriculum?.assistanceLevel;
-  if (["full", "supported", "light", "minimal"].includes(explicit)) return explicit;
-  const practiceTags = currentQuiz?.contentMeta?.curriculum?.practiceTags || [];
-  return practiceTags.includes("active-learning") ? "supported" : "minimal";
+  return explicitAssistanceLevel() || "legacy";
 }
 
 function isGuidedLearningModule() {
-  return ["full", "supported"].includes(assistanceLevel());
+  const explicit = explicitAssistanceLevel();
+  if (explicit) return ["full", "supported"].includes(explicit);
+  const practiceTags = currentQuiz?.contentMeta?.curriculum?.practiceTags || [];
+  return practiceTags.includes("active-learning");
 }
 
 function allowsGuidedRetry(q) {
-  return ["full", "supported"].includes(assistanceLevel())
-    && learningStageFor(q) === "guided"
-    && Boolean(q?.hint);
+  const explicit = explicitAssistanceLevel();
+  const eligible = explicit ? ["full", "supported"].includes(explicit) : isGuidedLearningModule();
+  return eligible && learningStageFor(q) === "guided" && Boolean(q?.hint);
 }
 function learningStageFor(q) {
   return ["guided", "apply", "independent"].includes(q?.learningStage) ? q.learningStage : "apply";
@@ -403,7 +408,7 @@ function buildExplanationHtml(q, selectedAnswer) {
 
   if (!summary && !rule && !evidence && !hasSelected && !selfCheck.length) return '';
 
-  const showBreakdown = level === 'full';
+  const showBreakdown = level === 'full' || level === 'legacy';
   const breakdown = showBreakdown ? [
     !correct && wrongReason ? `
       <div class="answer-breakdown-row">
