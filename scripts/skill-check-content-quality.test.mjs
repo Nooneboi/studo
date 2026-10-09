@@ -8,7 +8,7 @@ const SET_DIR = path.join(ROOT, 'content-src', 'sets');
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 const expected = [
   'set-rla-check-explicit-meaning-v1',
-  'set-rla-check-main-idea-v1',
+  'set-rla-check-main-idea-certified-v2',
   'set-rla-check-supporting-details-v1',
   'set-rla-check-summary-v1',
   'set-rla-check-inference-v1',
@@ -30,14 +30,14 @@ function loadAllSets() {
   return fs.readdirSync(SET_DIR).filter((name) => name.endsWith('.json')).map((name) => readJson(path.join('content-src/sets', name)));
 }
 
-test('first-wave Skill Check bank contains exactly nine dedicated six-question sets', () => {
+test('first-wave Skill Check bank contains nine dedicated sets, with Main Idea expanded to eight questions', () => {
   const all = loadAllSets();
   const checks = all.filter((set) => set.status === 'published' && set.curriculum?.deliveryRoles?.includes('skill_check'));
   assert.deepEqual(checks.map((set) => set.id).sort(), [...expected].sort());
-  assert.equal(checks.reduce((sum, set) => sum + set.questions.length, 0), 54);
+  assert.equal(checks.reduce((sum, set) => sum + set.questions.length, 0), 56);
   for (const set of checks) {
     assert.equal(set.status, 'published');
-    assert.equal(set.questions.length, 6, `${set.id} needs six questions`);
+    assert.equal(set.questions.length, set.id === 'set-rla-check-main-idea-certified-v2' ? 8 : 6, `${set.id} has the wrong question count`);
     assert.deepEqual(set.curriculum.deliveryRoles, ['skill_check']);
     assert.ok(set.curriculum.practiceTags?.includes('mock-excluded'), `${set.id} must be mock-excluded`);
     assert.ok(!set.curriculum.practiceTags?.includes('active-learning'), `${set.id} must not masquerade as guided active learning`);
@@ -60,7 +60,7 @@ test('first-wave Checks attach to the intended mature Reading skills and Argumen
   const sets = new Map(loadAllSets().map((set) => [set.id, set]));
   const expectedPlacement = new Map([
     ['set-rla-check-explicit-meaning-v1', ['R1.1', null]],
-    ['set-rla-check-main-idea-v1', ['R1.2', null]],
+    ['set-rla-check-main-idea-certified-v2', ['R1.2', null]],
     ['set-rla-check-supporting-details-v1', ['R1.3', null]],
     ['set-rla-check-summary-v1', ['R1.4', null]],
     ['set-rla-check-inference-v1', ['R2.4', null]],
