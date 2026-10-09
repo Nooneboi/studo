@@ -9208,3 +9208,21 @@ body.focus-body .confidence-inline {
     gap: 32px;
   }
 }
+
+
+.chee-mm-section {
+  margin: 0 0 24px;
+}
+.chee-mm-section:last-child {
+  margin-bottom: 0;
+}
+.chee-mm-section h3 {
+  margin: 0 0 7px;
+  font-size: .98rem;
+  line-height: 1.4;
+  color: #111;
+}
+.chee-mm-section p {
+  margin: 0;
+  color: #2a2a2a;
+}
