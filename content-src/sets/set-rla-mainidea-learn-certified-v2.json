@@ -215,7 +215,12 @@
               "body": "ကိုယ်ရေးထားတဲ့ sentence က passage အများစုကို cover လုပ်လား၊ detail list ဖြစ်သွားလားဆိုတာ ပြန်စစ်ပါ။"
             }
           ]
-        }
+        },
+        "selfCheck": [
+          "Does my sentence say what the passage is mainly about?",
+          "Does it cover the major ideas instead of one detail?",
+          "Did I avoid adding a claim the passage does not support?"
+        ]
       },
       "learningStage": "apply"
     },
