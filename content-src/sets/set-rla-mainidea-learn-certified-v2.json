@@ -75,7 +75,8 @@
       "explanation": {
         "answer": "Wetlands = topic; the full statement = main idea.",
         "whyCorrect": "A topic only names the subject. A main idea tells what the passage says about that subject.",
-        "quickTip": "Ask: does the statement merely name the subject, or make a whole-passage claim about it?"
+        "quickTip": "Ask: does the statement merely name the subject, or make a whole-passage claim about it?",
+        "myanmar": "Topic နဲ့ Main Idea ကို ဒီလိုခွဲကြည့်ပါ။ “Wetlands” ဆိုတာ passage ဘာအကြောင်းလဲဆိုတာပဲ ပြောတာမို့ Topic ပါ။ “Wetlands come in many forms…” ဆိုတဲ့ sentence ကတော့ wetlands အကြောင်း passage တစ်ခုလုံးက ဘာပြောချင်လဲဆိုတာ ထည့်ပြောထားလို့ Main Idea ဖြစ်တယ်။ လွယ်လွယ်ဆိုရင် Topic က နာမည်ပေးတာ၊ Main Idea က အဲဒီ topic အကြောင်း အဓိကဘာပြောလဲဆိုတာပါ။"
       },
       "learningStage": "guided",
       "hint": "A topic can often be one or two words. A main idea usually says something about that topic."
@@ -100,16 +101,40 @@
       "estimatedSeconds": 70,
       "interaction": {
         "items": [
-          {"id":"k1","text":"Wetlands come in many different forms."},
-          {"id":"k2","text":"NOAA groups wetlands into several broad types."},
-          {"id":"k3","text":"Wetlands can filter water, reduce flooding and erosion, and support wildlife."},
-          {"id":"k4","text":"Wetland names include marshes, mangroves, bogs, swamps, ponds, deltas, and floodplains."},
-          {"id":"k5","text":"Wetlands can also support recreation and outdoor learning."},
-          {"id":"k6","text":"Some wetlands change with the seasons."}
+          {
+            "id": "k1",
+            "text": "Wetlands come in many different forms."
+          },
+          {
+            "id": "k2",
+            "text": "NOAA groups wetlands into several broad types."
+          },
+          {
+            "id": "k3",
+            "text": "Wetlands can filter water, reduce flooding and erosion, and support wildlife."
+          },
+          {
+            "id": "k4",
+            "text": "Wetland names include marshes, mangroves, bogs, swamps, ponds, deltas, and floodplains."
+          },
+          {
+            "id": "k5",
+            "text": "Wetlands can also support recreation and outdoor learning."
+          },
+          {
+            "id": "k6",
+            "text": "Some wetlands change with the seasons."
+          }
         ],
         "zones": [
-          {"id":"keep","label":"Needed for the gist"},
-          {"id":"detail","label":"Useful detail, but not necessary"}
+          {
+            "id": "keep",
+            "label": "Needed for the gist"
+          },
+          {
+            "id": "detail",
+            "label": "Useful detail, but not necessary"
+          }
         ],
         "presentation": "choice_rows"
       },
@@ -117,7 +142,8 @@
       "explanation": {
         "answer": "Keep 1, 3, and 5.",
         "whyCorrect": "Those three ideas cover variety, ecological functions, and human benefits. The other statements are true details but are not necessary to express the whole passage.",
-        "quickTip": "A true detail can still be unnecessary for a one-sentence gist."
+        "quickTip": "A true detail can still be unnecessary for a one-sentence gist.",
+        "myanmar": "Gist ရေးမယ်ဆိုရင် passage ထဲက detail အကုန်ယူစရာမလိုဘူး။ အဓိက branch တွေပဲယူရတယ်။ ဒီ passage မှာ wetlands အမျိုးမျိုးရှိတယ်၊ environment အတွက် အရေးကြီးတဲ့ functions ရှိတယ်၊ လူတွေအတွက်လည်း အသုံးဝင်တယ် — ဒီသုံးပိုင်းက whole passage ကို ခြုံနိုင်တယ်။ NOAA က ဘယ်နှမျိုးခွဲထားလဲ၊ wetland names ဘာတွေလဲဆိုတာတွေက မှန်တဲ့ detail တွေပေမယ့် gist အတွက် မလိုအပ်ဘူး။"
       },
       "learningStage": "guided",
       "hint": "Choose information that covers a major branch of the passage, not an example inside that branch."
@@ -143,7 +169,8 @@
       "explanation": {
         "answer": "Model: Wetlands come in many forms and are valuable because they support ecosystems, reduce flooding and pollution, and also benefit people.",
         "whyCorrect": "A strong gist names the broad topic and combines the passage’s major functions without becoming a list of minor examples.",
-        "quickTip": "Check your sentence for scope: broad enough for most of the passage, but not broader than the evidence."
+        "quickTip": "Check your sentence for scope: broad enough for most of the passage, but not broader than the evidence.",
+        "myanmar": "ဒီနေရာမှာ perfect sentence ရေးဖို့မလိုဘူး။ ကိုယ်ရေးတဲ့ sentence က passage တစ်ခုလုံးကို ခြုံနိုင်လားဆိုတာပဲ စစ်ပါ။ “Wetlands” လို့ topic ကိုထည့်ပြီး၊ အမျိုးမျိုးရှိတယ်၊ ecosystem နဲ့ people အတွက် benefits ရှိတယ်ဆိုတဲ့ အဓိကအချက်တွေကို တစ်ကြောင်းထဲ စုပြောနိုင်ရင် gist က ကောင်းပါတယ်။ Example တစ်ခုချင်းစီကို လိုက်မရေးပါနဲ့။"
       },
       "learningStage": "apply"
     },
@@ -167,14 +194,32 @@
       "estimatedSeconds": 75,
       "interaction": {
         "items": [
-          {"id":"s1","text":"Wetlands help reduce flood damage during heavy rain."},
-          {"id":"s2","text":"Although wetlands vary widely, they perform important environmental functions and also provide benefits for people."},
-          {"id":"s3","text":"Wetlands are the most important ecosystems and can solve environmental problems everywhere."}
+          {
+            "id": "s1",
+            "text": "Wetlands help reduce flood damage during heavy rain."
+          },
+          {
+            "id": "s2",
+            "text": "Although wetlands vary widely, they perform important environmental functions and also provide benefits for people."
+          },
+          {
+            "id": "s3",
+            "text": "Wetlands are the most important ecosystems and can solve environmental problems everywhere."
+          }
         ],
         "zones": [
-          {"id":"narrow","label":"Too narrow"},
-          {"id":"fit","label":"Fits the whole passage"},
-          {"id":"broad","label":"Too broad / unsupported"}
+          {
+            "id": "narrow",
+            "label": "Too narrow"
+          },
+          {
+            "id": "fit",
+            "label": "Fits the whole passage"
+          },
+          {
+            "id": "broad",
+            "label": "Too broad / unsupported"
+          }
         ],
         "presentation": "choice_rows"
       },
@@ -182,7 +227,8 @@
       "explanation": {
         "answer": "s2 fits; s1 is too narrow; s3 is unsupported.",
         "whyCorrect": "The best main idea covers the major strands without turning one function into the whole passage or making a universal claim.",
-        "quickTip": "Scope-test every main idea: too small, about right, or larger than the evidence."
+        "quickTip": "Scope-test every main idea: too small, about right, or larger than the evidence.",
+        "myanmar": "Main Idea answer ကို scope စစ်နေတာပါ။ s1 က flooding တစ်ခုပဲ ပြောလို့ passage ထက် ကျဉ်းတယ်။ s3 က “most important” နဲ့ “everywhere” လို့ passage မပြောထားတာကို ထပ်ချဲ့ပြောထားလို့ အရမ်းကျယ်သွားတယ်။ s2 ကတော့ passage ရဲ့ major ideas တွေကို ခြုံထားပြီး မရှိတဲ့ claim မထည့်ထားလို့ အတော်ဆုံး fit ဖြစ်တယ်။"
       },
       "learningStage": "apply"
     },
@@ -206,33 +252,34 @@
       "estimatedSeconds": 90,
       "options": [
         {
-          "id":"a",
-          "text":"Main idea: Wetlands have many names. Evidence: NOAA groups them into several broad types and people use many local names.",
-          "distractorType":"detail_as_main_idea",
-          "whyWrong":"This is true but reduces the passage to classification and naming."
+          "id": "a",
+          "text": "Main idea: Wetlands have many names. Evidence: NOAA groups them into several broad types and people use many local names.",
+          "distractorType": "detail_as_main_idea",
+          "whyWrong": "This is true but reduces the passage to classification and naming."
         },
         {
-          "id":"b",
-          "text":"Main idea: Wetlands vary in form but serve several important ecological and human functions. Evidence: they can filter water and reduce flooding; people also use them for recreation and learning."
+          "id": "b",
+          "text": "Main idea: Wetlands vary in form but serve several important ecological and human functions. Evidence: they can filter water and reduce flooding; people also use them for recreation and learning."
         },
         {
-          "id":"c",
-          "text":"Main idea: Flood control is the main reason wetlands should be protected. Evidence: wetlands can slow floodwater and reduce erosion.",
-          "distractorType":"branch_only_summary",
-          "whyWrong":"Flood control is one major function, not the only one."
+          "id": "c",
+          "text": "Main idea: Flood control is the main reason wetlands should be protected. Evidence: wetlands can slow floodwater and reduce erosion.",
+          "distractorType": "branch_only_summary",
+          "whyWrong": "Flood control is one major function, not the only one."
         },
         {
-          "id":"d",
-          "text":"Main idea: All wetlands stay wet year-round and provide habitat. Evidence: wetlands support wildlife and are found near waterways.",
-          "distractorType":"contradicts_text",
-          "whyWrong":"The passage says some wetlands change with the seasons."
+          "id": "d",
+          "text": "Main idea: All wetlands stay wet year-round and provide habitat. Evidence: wetlands support wildlife and are found near waterways.",
+          "distractorType": "contradicts_text",
+          "whyWrong": "The passage says some wetlands change with the seasons."
         }
       ],
       "correct": "b",
       "explanation": {
         "answer": "B",
         "whyCorrect": "The idea covers both ecological and human functions, and the evidence pair spans more than one major branch.",
-        "quickTip": "For hard main-idea questions, test both the claim and the evidence pair for whole-passage coverage."
+        "quickTip": "For hard main-idea questions, test both the claim and the evidence pair for whole-passage coverage.",
+        "myanmar": "ဒီ question မှာ Main Idea တစ်ခုတည်းမှန်ရုံမလုံလောက်ဘူး။ Evidence ကလည်း အဲဒီ Main Idea ကို တကယ် support လုပ်ရမယ်။ B က wetlands ရဲ့ ecological functions နဲ့ human benefits နှစ်ဖက်လုံးကို ခြုံထားတယ်၊ ပြီးတော့ evidence ကလည်း water filtering/flooding နဲ့ recreation/learning ဆိုပြီး major branches နှစ်ဖက်က အချက်တွေကို ယူထားတယ်။ ဒါကြောင့် claim နဲ့ evidence နှစ်ခုလုံး whole passage နဲ့ကိုက်တယ်။"
       },
       "learningStage": "independent",
       "reportingCategory": "gist_synthesis"
