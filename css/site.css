@@ -9226,3 +9226,21 @@ body.focus-body .confidence-inline {
   margin: 0;
   color: #2a2a2a;
 }
+
+
+.open-self-check {
+  margin: 0 0 18px;
+  color: #333;
+}
+.open-self-check strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #111;
+}
+.open-self-check ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.open-self-check li {
+  margin-bottom: 5px;
+}
