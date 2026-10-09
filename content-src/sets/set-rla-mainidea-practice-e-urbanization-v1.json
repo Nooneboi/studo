@@ -7,19 +7,26 @@
   "topic": "Main idea / central idea",
   "difficulty": "hard",
   "status": "review",
-  "version": 1,
-  "passageRefs": ["p-rla-mainidea-practice-e-urbanization-certified-v1"],
+  "version": 2,
+  "passageRefs": [
+    "p-rla-mainidea-practice-e-urbanization-certified-v1"
+  ],
   "author": "Chee Skool",
   "reviewer": "C4 Main Idea editorial review pending",
-  "reviewNotes": "Low-support transfer using an OWID CC-BY source adaptation.",
+  "reviewNotes": "Low-support transfer using the current 2026 OWID CC-BY source adaptation. Neutral learner title avoids cueing the measurement half of the gist.",
   "curriculum": {
     "domain": "Core Meaning",
     "primarySkillId": "R1.2",
     "contentKind": "skill_drill",
-    "practiceTags": ["mock-excluded"],
+    "practiceTags": [
+      "mock-excluded"
+    ],
     "learningObjective": "Synthesize a passage with two major jobs and distinguish significance from measurement/comparability evidence.",
     "topicLabel": "Main idea / central idea",
-    "deliveryRoles": ["practice","train"]
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   },
   "questions": [
     {
@@ -30,14 +37,39 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":1},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
       "points": 1,
       "estimatedSeconds": 70,
       "options": [
-        {"id":"a","text":"Explain why urbanization matters for people and planning; explain why international comparison needs a consistent classification system."},
-        {"id":"b","text":"List every population threshold; prove cities are better places to live.","distractorType":"detail_list_summary","whyWrong":"This overfocuses on classification details and adds a value judgment."},
-        {"id":"c","text":"Predict which cities will grow fastest; explain why rural areas should disappear.","distractorType":"prediction_not_in_text","whyWrong":"Neither task is developed by the passage."},
-        {"id":"d","text":"Explain transport planning; compare the quality of healthcare in cities and rural areas.","distractorType":"branch_only_summary","whyWrong":"Those are examples of why location matters, not the passage’s two major jobs."}
+        {
+          "id": "a",
+          "text": "Explain why urbanization matters for people and planning; explain why international comparison needs a consistent classification system."
+        },
+        {
+          "id": "b",
+          "text": "List every population threshold; prove cities are better places to live.",
+          "distractorType": "detail_list_summary",
+          "whyWrong": "This overfocuses on classification details and adds a value judgment."
+        },
+        {
+          "id": "c",
+          "text": "Predict which cities will grow fastest; explain why rural areas should disappear.",
+          "distractorType": "prediction_not_in_text",
+          "whyWrong": "Neither task is developed by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Explain government planning needs; compare healthcare quality between cities and rural areas.",
+          "distractorType": "branch_only_summary",
+          "whyWrong": "Government planning is one example of why urbanization matters, while healthcare-quality comparison is not a major job of the passage."
+        }
       ],
       "correct": "a",
       "explanation": {
@@ -55,11 +87,18 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "hard",
       "dok": 3,
-      "difficultyProfile": {"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 100,
       "explanation": {
-        "answer": "Model: Urbanization matters for people’s lives and government planning, but comparing it across countries requires a consistent way to define and classify settlements because national definitions differ.",
+        "answer": "Model: Urbanization matters because where people live affects daily life and government planning, but comparing it across countries requires consistent definitions because national classifications differ.",
         "whyCorrect": "The model captures both why urbanization matters and why measurement rules affect comparison.",
         "quickTip": "When a passage has two major jobs, your gist should preserve both rather than choosing only one."
       }
@@ -72,19 +111,44 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":1},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
       "points": 1,
       "estimatedSeconds": 60,
       "options": [
-        {"id":"a","text":"Billions of people have moved from rural areas into towns and cities.","distractorType":"significance_vs_comparability","whyWrong":"This explains scale, not the comparability problem."},
-        {"id":"b","text":"Where people live affects services such as transport, healthcare, and schools.","distractorType":"significance_vs_comparability","whyWrong":"This explains why urbanization matters, not why a common definition is needed."},
-        {"id":"c","text":"The same settlement can be classified as urban in one country and rural in another."},
-        {"id":"d","text":"A consistent framework uses population and density.","distractorType":"solution_not_problem","whyWrong":"This describes the solution rather than the problem creating the need."}
+        {
+          "id": "a",
+          "text": "Governments use urbanization information when planning housing, transport, healthcare, and schools.",
+          "distractorType": "significance_vs_comparability",
+          "whyWrong": "This explains why tracking urbanization matters, not why a common classification system is needed."
+        },
+        {
+          "id": "b",
+          "text": "Where people live affects how they work and move around and the opportunities and risks they face.",
+          "distractorType": "significance_vs_comparability",
+          "whyWrong": "This explains the importance of urbanization data, not the comparability problem."
+        },
+        {
+          "id": "c",
+          "text": "A town counted as urban in one country might be classified as rural in another."
+        },
+        {
+          "id": "d",
+          "text": "A common framework uses population and density data to classify settlements.",
+          "distractorType": "solution_not_problem",
+          "whyWrong": "This describes the solution, not the problem that makes the solution necessary."
+        }
       ],
       "correct": "c",
       "explanation": {
         "answer": "C",
-        "whyCorrect": "Different national definitions make similar places look different in international data, which is the direct reason a common framework is useful.",
+        "whyCorrect": "If similar settlements can receive different labels in different countries, national data cannot be compared consistently. That directly creates the need for common rules.",
         "quickTip": "Match evidence to the exact relationship named in the question."
       },
       "reportingCategory": "evidence_link"
@@ -97,19 +161,44 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "hard",
       "dok": 3,
-      "difficultyProfile": {"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 80,
       "interaction": {
         "items": [
-          {"id":"s1","text":"The UN uses density and population thresholds to classify settlements."},
-          {"id":"s2","text":"Urbanization is important to understand, but meaningful international comparisons depend on consistent definitions of what counts as urban."},
-          {"id":"s3","text":"Population density determines the quality of life in every settlement."}
+          {
+            "id": "s1",
+            "text": "The UN uses common population and density rules to classify settlements."
+          },
+          {
+            "id": "s2",
+            "text": "Urbanization matters to people and governments, but meaningful international comparisons depend on consistent definitions of what counts as urban."
+          },
+          {
+            "id": "s3",
+            "text": "Population density determines the quality of life in every settlement."
+          }
         ],
         "zones": [
-          {"id":"narrow","label":"Too narrow"},
-          {"id":"fit","label":"Whole-text fit"},
-          {"id":"unsupported","label":"Unsupported / too broad"}
+          {
+            "id": "narrow",
+            "label": "Too narrow"
+          },
+          {
+            "id": "fit",
+            "label": "Whole-text fit"
+          },
+          {
+            "id": "unsupported",
+            "label": "Unsupported / too broad"
+          }
         ]
       },
       "correct": "s1=narrow|s2=fit|s3=unsupported",
