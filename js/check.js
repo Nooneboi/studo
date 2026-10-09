@@ -253,7 +253,7 @@ function nextStepFromResults(results) {
   if (!misses.length) {
     return {
       title: 'Move on.',
-      body: 'No repeated Main Idea weakness showed up in this Check. Keep the skill alive later through mixed practice.'
+      body: 'No repeated Main Idea problem showed up in this Check. You can move on and meet Main Idea again later in mixed practice.'
     };
   }
 
@@ -269,33 +269,39 @@ function nextStepFromResults(results) {
     .sort((a, b) => b[1] - a[1]);
 
   if (!repeated.length) {
+    if (misses.length >= 3) {
+      return {
+        title: 'Next: do one more mixed Main Idea practice.',
+        body: 'Several questions were missed, but they were spread across different reasoning types. Chee is not labeling one specific weakness from that.'
+      };
+    }
     return {
-      title: 'Review the misses, then move on.',
-      body: 'The misses are spread across different reasoning types, so Chee is not treating any one of them as a repeated weakness yet.'
+      title: 'Review these misses, then move on.',
+      body: 'The misses are in different reasoning areas, so Chee is not treating either one as a repeated weakness.'
     };
   }
 
   const [bucket] = repeated[0];
   const recommendations = {
     whole_text_control: {
-      title: 'Next: review whole-passage fit.',
-      body: 'More than one miss involved choosing an idea that did not fit the whole text closely enough. Revisit gist and scope before another Check.'
+      title: 'Next: review whole-passage answers.',
+      body: 'More than one miss came from choosing an answer that was too narrow, too broad, or did not fit the whole passage closely enough.'
     },
     evidence_link: {
       title: 'Next: practice Main Idea + Evidence.',
-      body: 'More than one miss involved connecting the central idea to the strongest supporting evidence. Practice matching evidence to the whole-text claim.'
+      body: 'More than one miss came from connecting the Main Idea to the strongest supporting evidence.'
     },
     literary_meaning: {
-      title: 'Next: practice literary central idea.',
-      body: 'More than one miss came from moving from plot details to the story’s overall meaning. Do one more literary transfer before another Check.'
+      title: 'Next: practice Main Idea in stories.',
+      body: 'More than one miss came from moving from plot details to the story’s overall meaning.'
     },
     transfer: {
-      title: 'Next: practice transfer.',
-      body: 'More than one miss involved applying the passage’s central reasoning in a broader or new situation. Use one fresh passage before checking again.'
+      title: 'Next: try another Main Idea passage.',
+      body: 'More than one miss came from applying the passage’s main reasoning in a broader or new situation.'
     }
   };
   return recommendations[bucket] || {
-    title: 'Review the misses, then move on.',
+    title: 'Review these misses, then move on.',
     body: 'Review the questions you missed before another Check.'
   };
 }
@@ -304,6 +310,8 @@ function renderResults(results, correct) {
   const I = window.QuestionInteractions;
   const total = results.length;
   const nextStep = nextStepFromResults(results);
+  const misses = results.filter((item) => !item.correct);
+
   checkView.innerHTML = `
     <section class="check-results" aria-labelledby="check-result-heading">
       <div class="page-kicker">Skill Check complete</div>
@@ -319,20 +327,30 @@ function renderResults(results, correct) {
         <a class="btn" href="${escapeAttr(returnHref)}">Back to Main Idea</a>
       </div>
 
-      <div class="check-review-list">${results.map((item, index) => `
-        <article class="answer-review ${item.correct ? "is-right" : "is-wrong"}">
-          <div class="answer-review-head"><strong>Question ${index + 1}</strong><span>${item.correct ? "Correct" : "Needs review"}</span></div>
-          <p>${escapeHtml(item.question.prompt || "")}</p>
-          <p><strong>Your answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.answer))}</p>
-          <p><strong>Correct answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.question.correct))}</p>
-          ${item.question.explanation ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(item.question.explanation)}</p>` : ""}
-          ${item.question.evidenceExcerpt ? `<blockquote>${escapeHtml(item.question.evidenceExcerpt)}</blockquote>` : ""}
-        </article>`).join("")}</div>
+      ${misses.length ? `
+        <div class="check-review-list">
+          <h2>Review these questions</h2>
+          ${misses.map((item) => {
+            const index = results.indexOf(item);
+            return `
+              <article class="answer-review is-wrong">
+                <div class="answer-review-head"><strong>Question ${index + 1}</strong><span>Needs review</span></div>
+                <p>${escapeHtml(item.question.prompt || "")}</p>
+                <p><strong>Your answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.answer))}</p>
+                <p><strong>Correct answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.question.correct))}</p>
+                ${item.question.explanation ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(item.question.explanation)}</p>` : ""}
+                ${item.question.evidenceExcerpt ? `<blockquote>${escapeHtml(item.question.evidenceExcerpt)}</blockquote>` : ""}
+              </article>`;
+          }).join("")}
+        </div>`
+        : '<p class="simple-muted">No missed questions to review.</p>'}
     </section>`;
+
   document.getElementById("check-result-heading")?.focus();
   document.getElementById("check-header-progress").textContent = "Complete";
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
 
 function updateHeader() {
   const answered = currentModule.questions.filter((q) => window.QuestionInteractions?.hasCompleteAnswer(q, answers[q.id] || "")).length;
