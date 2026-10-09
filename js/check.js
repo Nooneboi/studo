@@ -339,6 +339,7 @@ function renderResults(results, correct) {
                 <p><strong>Your answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.answer))}</p>
                 <p><strong>Correct answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.question.correct))}</p>
                 ${item.question.explanation ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(item.question.explanation)}</p>` : ""}
+                ${hasMyanmarHelp(item.question.myanmarExplanation, item.answer) ? `<button type="button" class="chee-mm-trigger" data-check-myanmar="${index}">မြန်မာလိုရှင်းပြ</button>` : ""}
                 ${item.question.evidenceExcerpt ? `<blockquote>${escapeHtml(item.question.evidenceExcerpt)}</blockquote>` : ""}
               </article>`;
           }).join("")}
@@ -346,11 +347,80 @@ function renderResults(results, correct) {
         : '<p class="simple-muted">No missed questions to review.</p>'}
     </section>`;
 
+  checkView.querySelectorAll("[data-check-myanmar]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const index = Number(button.dataset.checkMyanmar);
+      const item = results[index];
+      if (item) openMyanmarHelp(item.question.myanmarExplanation, item.answer);
+    });
+  });
+
   document.getElementById("check-result-heading")?.focus();
   document.getElementById("check-header-progress").textContent = "Complete";
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function resolveMyanmarHelp(data, selectedAnswer) {
+  if (!data) return [];
+  if (typeof data === "string") return [{ title: "", body: data }];
+  const selected = selectedAnswer != null ? String(selectedAnswer) : "";
+  const answerSpecific = data.byAnswer?.[selected];
+  if (Array.isArray(answerSpecific) && answerSpecific.length) return answerSpecific;
+  if (Array.isArray(data.sections)) return data.sections;
+  return [];
+}
+
+function hasMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).some((section) => String(section?.body || "").trim());
+}
+
+function renderMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).map((section) => {
+    const title = String(section?.title || "").trim();
+    const body = String(section?.body || "").trim();
+    if (!body) return "";
+    return `<section class="chee-mm-section">${title ? `<h3>${escapeHtml(title)}</h3>` : ""}<p>${escapeHtml(body)}</p></section>`;
+  }).join("");
+}
+
+function ensureMyanmarHelpDrawer() {
+  if (document.getElementById("chee-mm-drawer")) return;
+
+  const overlay = document.createElement("div");
+  overlay.id = "chee-mm-overlay";
+  overlay.className = "chee-mm-overlay";
+  overlay.addEventListener("click", closeMyanmarHelp);
+
+  const drawer = document.createElement("aside");
+  drawer.id = "chee-mm-drawer";
+  drawer.className = "chee-mm-drawer";
+  drawer.setAttribute("aria-hidden", "true");
+  drawer.innerHTML = `
+    <div class="chee-mm-head">
+      <strong>မြန်မာလိုရှင်းပြ</strong>
+      <button type="button" class="chee-mm-close" aria-label="Close">ပိတ်</button>
+    </div>
+    <div class="chee-mm-body" id="chee-mm-body"></div>`;
+  drawer.querySelector(".chee-mm-close").addEventListener("click", closeMyanmarHelp);
+  document.body.append(overlay, drawer);
+}
+
+function openMyanmarHelp(data, selectedAnswer) {
+  ensureMyanmarHelpDrawer();
+  const body = document.getElementById("chee-mm-body");
+  if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
+  document.getElementById("chee-mm-overlay")?.classList.add("open");
+  const drawer = document.getElementById("chee-mm-drawer");
+  drawer?.classList.add("open");
+  drawer?.setAttribute("aria-hidden", "false");
+}
+
+function closeMyanmarHelp() {
+  document.getElementById("chee-mm-overlay")?.classList.remove("open");
+  const drawer = document.getElementById("chee-mm-drawer");
+  drawer?.classList.remove("open");
+  drawer?.setAttribute("aria-hidden", "true");
+}
 
 function updateHeader() {
   const answered = currentModule.questions.filter((q) => window.QuestionInteractions?.hasCompleteAnswer(q, answers[q.id] || "")).length;
