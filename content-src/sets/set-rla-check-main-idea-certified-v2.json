@@ -12,13 +12,13 @@
   "topic": "RLA Skill Check",
   "difficulty": "hard",
   "status": "review",
-  "version": 3,
+  "version": 4,
   "passageRefs": [
     "p-rla-mainidea-check-certified-two-text-v2"
   ],
   "author": "Chee Skool",
   "reviewer": "C4 Main Idea editorial review pending",
-  "reviewNotes": "Independent two-text Check. No hints, no immediate correctness. Text A includes a stated central idea; Text B requires literary inference. New set/question IDs prevent stale answer migration from the retired six-item Check.",
+  "reviewNotes": "Independent two-text Check. No hints, no immediate correctness. Text A uses a stated central idea; all Text A family metadata now reflects that construct. Text B assesses literary central idea, evidence, ending-to-meaning development, and transfer. New set/question IDs prevent stale answer migration from the retired six-item Check.",
   "questions": [
     {
       "id": "sca1",
@@ -75,7 +75,7 @@
       "type": "evidence_based",
       "prompt": "In Text A, which pair of details best supports the passage’s trade-off reasoning?",
       "primarySkillId": "R1.2",
-      "familyId": "mainidea.whole.implied",
+      "familyId": "mainidea.whole.explicit",
       "difficulty": "hard",
       "dok": 3,
       "difficultyProfile": {
@@ -125,7 +125,7 @@
       "type": "drag_sort",
       "prompt": "In Text A, classify each statement by its scope.",
       "primarySkillId": "R1.2",
-      "familyId": "mainidea.whole.implied",
+      "familyId": "mainidea.whole.explicit",
       "difficulty": "hard",
       "dok": 3,
       "difficultyProfile": {
@@ -181,7 +181,7 @@
       "type": "multiple_choice",
       "prompt": "Which decision-making approach best follows Text A’s reasoning?",
       "primarySkillId": "R1.2",
-      "familyId": "mainidea.whole.implied",
+      "familyId": "mainidea.whole.explicit",
       "difficulty": "hard",
       "dok": 3,
       "difficultyProfile": {
@@ -329,7 +329,7 @@
     {
       "id": "scb3",
       "type": "multiple_choice",
-      "prompt": "Why does the arrival of the three figures frighten Framton so strongly?",
+      "prompt": "How does the final sentence, “Romance at short notice was her speciality,” help develop Text B’s central idea?",
       "primarySkillId": "R1.2",
       "familyId": "mainidea.whole.implied",
       "difficulty": "hard",
@@ -347,34 +347,34 @@
       "options": [
         {
           "id": "a",
-          "text": "He already knows Mrs. Sappleton’s family is dangerous.",
-          "distractorType": "unsupported",
-          "whyWrong": "He barely knows the family."
+          "text": "It confirms that Vera often invents stories quickly, showing that the deception of Framton is deliberate rather than accidental."
         },
         {
           "id": "b",
-          "text": "Mrs. Sappleton has warned him not to look through the window.",
-          "distractorType": "contradicts_text",
-          "whyWrong": "She does the opposite—she expects the men to return through it."
+          "text": "It shows that Vera wants to become a professional writer.",
+          "distractorType": "literal_overreach",
+          "whyWrong": "The sentence describes her habit of inventing stories, not a career goal."
         },
         {
           "id": "c",
-          "text": "Vera’s earlier story gives him a false explanation for the scene, and her horrified reaction reinforces that interpretation."
+          "text": "It proves that Mrs. Sappleton asked Vera to frighten Framton.",
+          "distractorType": "unsupported",
+          "whyWrong": "Mrs. Sappleton does not know about Vera’s invented tragedy."
         },
         {
           "id": "d",
-          "text": "He recognizes the men as people who threatened him before.",
-          "distractorType": "unsupported",
-          "whyWrong": "No such prior encounter appears."
+          "text": "It explains that Framton’s illness caused him to misunderstand the family.",
+          "distractorType": "wrong_cause",
+          "whyWrong": "His nervousness may make him vulnerable, but the final sentence points to Vera’s deliberate storytelling."
         }
       ],
-      "correct": "c",
+      "correct": "a",
       "explanation": {
-        "answer": "C",
-        "whyCorrect": "Framton interprets the ordinary return through the false context Vera supplied, and her expression makes that interpretation feel confirmed.",
-        "quickTip": "Main-idea inference often depends on how earlier details change the meaning of later evidence."
+        "answer": "A",
+        "whyCorrect": "The ending reveals that inventing convincing explanations quickly is a pattern for Vera. That confirms the earlier tragedy story was intentional and strengthens the text’s central idea about how a persuasive false story can shape someone’s interpretation of later events.",
+        "quickTip": "In literature, an ending can clarify the meaning of earlier events and help confirm the central idea."
       },
-      "reportingCategory": "implied_main_idea"
+      "reportingCategory": "literary_central_idea"
     },
     {
       "id": "scb4",
