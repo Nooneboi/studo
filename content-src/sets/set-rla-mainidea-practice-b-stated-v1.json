@@ -7,19 +7,27 @@
   "topic": "Main idea / central idea",
   "difficulty": "medium",
   "status": "review",
-  "version": 1,
-  "passageRefs": ["p-rla-mainidea-practice-b-sleep-certified-v1"],
+  "version": 2,
+  "passageRefs": [
+    "p-rla-mainidea-practice-b-sleep-certified-v1"
+  ],
   "author": "Chee Skool",
   "reviewer": "C4 Main Idea editorial review pending",
-  "reviewNotes": "Stated-main-idea transfer using CC-BY source adaptation.",
+  "reviewNotes": "Stated-main-idea transfer using a source-faithful CC-BY adaptation. Final summary removed so the passage structure—not a repeated conclusion—carries the answer.",
   "curriculum": {
     "domain": "Core Meaning",
     "primarySkillId": "R1.2",
     "contentKind": "skill_drill",
-    "practiceTags": ["active-learning","mock-excluded"],
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
     "learningObjective": "Identify a stated main idea and verify how later details develop it.",
     "topicLabel": "Main idea / central idea",
-    "deliveryRoles": ["practice","train"]
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   },
   "questions": [
     {
@@ -30,22 +38,41 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "easy",
       "dok": 1,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":1,"evidenceDistance":2,"distractorSimilarity":2,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 1,
+        "evidenceDistance": 2,
+        "distractorSimilarity": 2,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 55,
       "interaction": {
         "selectionMode": "sentence",
         "targets": [
-          {"id":"s1","text":"Sleep supports how well teenagers function each day by affecting their brains, emotions, and bodies."},
-          {"id":"s2","text":"During sleep, the brain organizes information and prepares for the next day."},
-          {"id":"s3","text":"Sleep also affects emotional health."},
-          {"id":"s4","text":"Physical health is affected as well."}
+          {
+            "id": "s1",
+            "text": "Sleep supports how well teenagers function each day by affecting their brains, emotions, and bodies."
+          },
+          {
+            "id": "s2",
+            "text": "During sleep, the brain organizes information from the day and prepares for the next one."
+          },
+          {
+            "id": "s3",
+            "text": "Sleep also affects emotional health."
+          },
+          {
+            "id": "s4",
+            "text": "Physical health is affected too."
+          }
         ]
       },
       "correct": "s1",
       "explanation": {
         "answer": "The opening sentence.",
-        "whyCorrect": "It controls the rest of the passage by naming the three branches that follow: brain, emotions, and body.",
+        "whyCorrect": "The opening sentence names the three major branches developed by the rest of the passage: brain, emotions, and physical health.",
         "quickTip": "A stated main idea often predicts the structure that follows."
       },
       "learningStage": "guided",
@@ -59,26 +86,51 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 75,
       "interaction": {
         "items": [
-          {"id":"i1","text":"Memory, attention, problem-solving, and decision-making can suffer."},
-          {"id":"i2","text":"Stress, irritability, frustration, and sadness can feel stronger."},
-          {"id":"i3","text":"Sleep supports appetite regulation, repair, and immune function."}
+          {
+            "id": "i1",
+            "text": "Poor sleep can make it harder to remember information, pay attention, solve problems, and make decisions."
+          },
+          {
+            "id": "i2",
+            "text": "Stress, anxiety, irritability, frustration, and low mood can feel stronger."
+          },
+          {
+            "id": "i3",
+            "text": "Too little sleep can weaken the immune system and make it harder to fight illness."
+          }
         ],
         "zones": [
-          {"id":"brain","label":"Brain"},
-          {"id":"emotion","label":"Emotions"},
-          {"id":"body","label":"Physical health"}
+          {
+            "id": "brain",
+            "label": "Brain"
+          },
+          {
+            "id": "emotion",
+            "label": "Emotions"
+          },
+          {
+            "id": "body",
+            "label": "Physical health"
+          }
         ],
         "presentation": "choice_rows"
       },
       "correct": "i1=brain|i2=emotion|i3=body",
       "explanation": {
         "answer": "Brain: i1; Emotions: i2; Physical health: i3.",
-        "whyCorrect": "Each detail develops one branch named in the controlling sentence.",
+        "whyCorrect": "Each detail develops one of the three branches named in the opening sentence: brain, emotions, or physical health.",
         "quickTip": "Ask how each detail helps develop the stated main idea, not merely whether it is true."
       },
       "learningStage": "apply"
@@ -91,19 +143,44 @@
       "familyId": "mainidea.whole.explicit",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":1},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
       "points": 1,
       "estimatedSeconds": 65,
       "options": [
-        {"id":"a","text":"Sleep mainly helps teenagers remember schoolwork and make better decisions.","distractorType":"branch_only_summary","whyWrong":"This covers only the brain branch."},
-        {"id":"b","text":"Sleep affects teenagers’ cognitive, emotional, and physical functioning, so getting enough sleep helps them function better overall."},
-        {"id":"c","text":"Teenagers who sleep poorly may make unhealthy food choices.","distractorType":"detail_as_main_idea","whyWrong":"This is one physical-health detail."},
-        {"id":"d","text":"A fixed sleep schedule prevents all health problems in teenagers.","distractorType":"unsupported_absolute","whyWrong":"The passage does not make this absolute claim."}
+        {
+          "id": "a",
+          "text": "Sleep mainly helps teenagers remember information and make better decisions.",
+          "distractorType": "branch_only_summary",
+          "whyWrong": "This covers only the brain branch and leaves out emotional and physical health."
+        },
+        {
+          "id": "b",
+          "text": "Sleep affects teenagers’ cognitive, emotional, and physical functioning, so getting enough sleep supports how well they function overall."
+        },
+        {
+          "id": "c",
+          "text": "Poor sleep can make it harder for teenagers to fight illness.",
+          "distractorType": "detail_as_main_idea",
+          "whyWrong": "This is one physical-health detail, not the whole passage."
+        },
+        {
+          "id": "d",
+          "text": "Getting enough sleep prevents emotional and physical health problems in teenagers.",
+          "distractorType": "unsupported_absolute",
+          "whyWrong": "The passage describes effects and risks, but it does not claim enough sleep prevents all such problems."
+        }
       ],
       "correct": "b",
       "explanation": {
         "answer": "B",
-        "whyCorrect": "It includes all three major branches without adding an unsupported promise.",
+        "whyCorrect": "It covers all three major branches—thinking, emotions, and physical health—without turning one detail into the whole passage or making an absolute claim.",
         "quickTip": "A main idea should cover the major branches, not just repeat a true detail."
       },
       "learningStage": "independent",
