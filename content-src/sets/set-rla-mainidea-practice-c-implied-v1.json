@@ -92,16 +92,16 @@
         "myanmar": {
           "sections": [
             {
-              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
-              "body": "Implied Main Idea ကို တိုက်ရိုက်ရေးထားတဲ့ sentence မရှိတဲ့အခါ passage ထဲက repeated clues တွေကို စုပြီး central idea တည်ဆောက်နိုင်လားဆိုတာ စစ်နေတာပါ။"
+              "title": "Implied Main Idea ကို ဘယ်လိုရှာမလဲ",
+              "body": "Main Idea ကို တိုက်ရိုက်ရေးထားတဲ့ sentence မရှိရင် passage တစ်လျှောက် ထပ်ခါထပ်ခါပေါ်လာတဲ့ အဓိက clues တွေကို စုကြည့်ရပါတယ်။"
             },
             {
-              "title": "လွယ်လွယ်စဉ်းစားရင်",
-              "body": "ဒီ passage မှာ model က direct + indirect effects နှစ်မျိုးလုံးကိုကြည့်တယ်၊ city အလိုက် result မတူနိုင်တာကို နှိုင်းယှဉ်တယ်၊ 54 cities အပေါ် overall reduction result လည်း ပေးထားတယ်။ ဒီသုံးချက်က passage တစ်ခုလုံးရဲ့ direction ကိုပြတယ်။ Shade နဲ့ cleaner electricity လိုအချက်တွေကတော့ example/supporting detail ပိုဖြစ်တယ်။"
+              "title": "ဒီ passage မှာ",
+              "body": "Model က direct နဲ့ indirect effects နှစ်မျိုးလုံးကိုကြည့်တယ်၊ city တစ်ခုနဲ့တစ်ခု result မတူနိုင်တာကို နှိုင်းယှဉ်တယ်၊ 54 cities အတွက် overall result လည်း ပြထားတယ်။ ဒီအချက်တွေကို ပေါင်းကြည့်မှ passage က ဘာကိုဆိုလိုနေတာလဲ မြင်လာတယ်။ Shade က walking ကို အားပေးနိုင်တာလို အချက်ကတော့ အဲဒီ idea ကို support လုပ်တဲ့ example တစ်ခုပါ။"
             },
             {
-              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-              "body": "Implied Main Idea ဆိုရင် detail တစ်ခုကို မဖမ်းပါနဲ့။ Passage တစ်လျှောက် ပြန်ပေါ်လာတဲ့ idea တွေကို အရင်စုကြည့်ပါ။"
+              "title": "နောက်တစ်ခါ",
+              "body": "Implied Main Idea ရှာရင် detail တစ်ခုကိုပဲ မဖမ်းပါနဲ့။ Passage တစ်လျှောက်က အဓိက clues တွေ ဘယ်လိုအတူတူညွှန်နေသလဲ ကြည့်ပါ။"
             }
           ]
         }
@@ -139,16 +139,16 @@
         "myanmar": {
           "sections": [
             {
-              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
-              "body": "Repeated evidence တွေကို စုပြီး passage က overall ဘာပြောချင်လဲဆိုတာ ကိုယ်တိုင်တစ်ကြောင်းနဲ့ ဖော်ထုတ်နေတာပါ။"
+              "title": "Clues တွေကို တစ်ကြောင်းထဲပေါင်းမယ်",
+              "body": "ဒီတစ်ခါ passage ထဲက evidence တွေကို ကိုယ်တိုင်ပေါင်းပြီး Main Idea တစ်ကြောင်းရေးတာပါ။"
             },
             {
-              "title": "လွယ်လွယ်စဉ်းစားရင်",
-              "body": "Nature-based solutions က emissions လျော့ဖို့ အထောက်အကူပြုနိုင်တယ်၊ ဒါပေမယ့် strategy နဲ့ city အလိုက် effect မတူဘူး၊ net zero ကိုလည်း ဒီတစ်ခုတည်းနဲ့ မရဘူး—ဒီအချက်တွေကို တစ်ကြောင်းထဲ ခြုံဖို့ကြိုးစားပါ။"
+              "title": "ဒီ passage က အဓိကပြောတာ",
+              "body": "Nature-based solutions က city emissions လျော့ဖို့ အထောက်အကူပြုနိုင်တယ်။ ဒါပေမယ့် strategy နဲ့ city အလိုက် effect မတူနိုင်ဘူး၊ net zero ကိုလည်း ဒီတစ်ခုတည်းနဲ့ မရဘူး။ ဒီ balance မပျောက်အောင် ရေးပါ။"
             },
             {
-              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-              "body": "Implied Main Idea ရေးပြီးရင် passage ထဲက qualification—ဥပမာ “varies” သို့မဟုတ် “not enough on its own”—ပျောက်သွားလား စစ်ပါ။"
+              "title": "ရေးပြီးရင် စစ်ပါ",
+              "body": "ကိုယ်ရေးထားတဲ့ Main Idea က positive result ကိုပဲ ယူထားသလား၊ passage ပြောထားတဲ့ limit တွေလည်း ပါသလား ပြန်စစ်ပါ။"
             }
           ]
         }
@@ -207,11 +207,11 @@
             "a": [
               {
                 "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
-                "body": "Passage က computer model နဲ့ real-world measurement ဘယ်ဟာပို reliable လဲဆိုတာ မနှိုင်းယှဉ်ထားဘူး။ ဒီ choice က method ကိုယူပြီး passage မပြောထားတဲ့ conclusion တစ်ခု ထပ်ထည့်ထားတာပါ။"
+                "body": "Passage က computer model နဲ့ real-world measurement ဘယ်ဟာပိုကောင်းလဲဆိုတာ မနှိုင်းယှဉ်ထားဘူး။ A က research method ကိုယူပြီး passage မပြောထားတဲ့ conclusion တစ်ခု ထပ်ထည့်ထားတာပါ။"
               },
               {
                 "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
-                "body": "B က nature-based solutions က emissions လျော့ဖို့ meaningful contribution ပေးနိုင်တယ်ဆိုတာနဲ့ result က strategy/setting အလိုက် မတူနိုင်ဘူးဆိုတဲ့ limit နှစ်ခုလုံးကို ခြုံထားတယ်။"
+                "body": "B က nature-based solutions က emissions လျော့ဖို့ အထောက်အကူပြုနိုင်တယ်ဆိုတာနဲ့ effect က strategy/setting အလိုက် မတူနိုင်ဘူးဆိုတာ နှစ်ခုလုံးကို ထိန်းထားတယ်။"
               },
               {
                 "title": "နောက်တစ်ခါ ဒီလိုစစ်",
@@ -221,25 +221,25 @@
             "b": [
               {
                 "title": "ဘာလို့ ဒီ answer မှန်တာလဲ",
-                "body": "B က passage ရဲ့ main result နဲ့ limit နှစ်ခုလုံးကို ခြုံထားတယ်—nature-based solutions က emissions လျော့ဖို့ အထောက်အကူပြုနိုင်တယ်၊ ဒါပေမယ့် effect က strategy နဲ့ city အလိုက် မတူနိုင်ဘူး။"
+                "body": "B က passage ရဲ့ အဓိက result နဲ့ limit နှစ်ခုလုံးကို ခြုံထားတယ်—nature-based solutions က emissions လျော့ဖို့ အထောက်အကူပြုနိုင်ပေမယ့် effect က strategy နဲ့ city အလိုက် မတူနိုင်ဘူး။"
               },
               {
                 "title": "Passage ထဲမှာ ဘာကိုကြည့်ရလဲ",
-                "body": "54 cities ရဲ့ average reduction result၊ different urban settings ကို compare လုပ်ထားတာ၊ net zero အတွက် other actions လည်းလိုတယ်ဆိုတာတွေက B ကို support လုပ်တယ်။"
+                "body": "54 cities ရဲ့ average result၊ different settings ကို နှိုင်းယှဉ်ထားတာ၊ net zero အတွက် တခြား actions လည်းလိုတယ်ဆိုတာတွေက B နဲ့ ကိုက်တယ်။"
               },
               {
                 "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-                "body": "Implied Main Idea answer က result ကိုပဲ မယူဘဲ passage ထဲက limits/qualifications တွေကိုလည်း ထိန်းထားလား စစ်ပါ။"
+                "body": "Implied Main Idea answer က result တစ်ခုတည်းကို မယူဘဲ passage ထဲက limit တွေကိုပါ မပျောက်စေသင့်ဘူး။"
               }
             ],
             "c": [
               {
                 "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
-                "body": "Passage က green roofs ကို city တိုင်းအတွက် best strategy လို့ မပြောထားဘူး။ အပြန်အလှန် city နဲ့ strategy အလိုက် result မတူနိုင်တယ်လို့ပဲ ပြောထားတယ်။"
+                "body": "Passage က green roofs ကို city တိုင်းအတွက် အကောင်းဆုံး strategy လို့ မပြောထားဘူး။ Strategy နဲ့ city အလိုက် result မတူနိုင်တယ်လို့ပဲ ပြောထားတယ်။"
               },
               {
                 "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
-                "body": "B က meaningful contribution ရှိနိုင်တယ်ဆိုတာကိုပြောပြီး result variation ကိုလည်း ထည့်ထားလို့ passage ရဲ့ balance ကို ထိန်းထားတယ်။"
+                "body": "B က အကျိုးရှိနိုင်တာကို ပြောပေမယ့် result မတူနိုင်တဲ့အချက်ကိုလည်း ထည့်ထားလို့ passage နဲ့ ပိုကိုက်တယ်။"
               },
               {
                 "title": "နောက်တစ်ခါ ဒီလိုစစ်",
@@ -249,11 +249,11 @@
             "d": [
               {
                 "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
-                "body": "Passage က nature-based solutions တစ်ခုတည်းနဲ့ net zero ရမယ်လို့ မပြောထားဘူး။ တခြား actions—cleaner electricity, public transport—လည်း လိုတယ်လို့ တိုက်ရိုက်ပြောထားတယ်။"
+                "body": "Passage က nature-based solutions တစ်ခုတည်းနဲ့ net zero ရမယ်လို့ မပြောထားဘူး။ Cleaner electricity နဲ့ public transport လို တခြား actions တွေလည်း လိုတယ်လို့ တိုက်ရိုက်ပြောထားတယ်။"
               },
               {
                 "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
-                "body": "B က contribution ရှိတာကို အသိအမှတ်ပြုပြီး limitations ကိုလည်း မပျောက်စေဘူး။ အဲဒါကြောင့် whole passage နဲ့ ပိုကိုက်တယ်။"
+                "body": "B က အကျိုးရှိနိုင်တာကိုလည်း မပျောက်စေဘူး၊ limitation ကိုလည်း မပျောက်စေဘူး။ အဲဒါကြောင့် passage တစ်ခုလုံးနဲ့ ပိုကိုက်တယ်။"
               },
               {
                 "title": "နောက်တစ်ခါ ဒီလိုစစ်",
