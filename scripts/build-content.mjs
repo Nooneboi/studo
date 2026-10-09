@@ -57,6 +57,7 @@ function compileQuestion(q, skill, passage) {
     prompt: q.prompt,
     points: q.points || 1,
     explanation: q.explanation?.whyCorrect || '',
+    ...(q.explanation?.myanmar ? { myanmarExplanation: q.explanation.myanmar } : {}),
     skill: runtimeSkill(skill),
     rule: q.explanation?.quickTip || '',
     familyId: q.familyId,
