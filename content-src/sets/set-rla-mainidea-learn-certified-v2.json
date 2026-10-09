@@ -80,16 +80,16 @@
         "myanmar": {
           "sections": [
             {
-              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
-              "body": "Topic နဲ့ Main Idea ကို ခွဲနိုင်လားဆိုတာ စစ်နေတာပါ။ “Wetlands” ဆိုတာ passage ဘာအကြောင်းလဲဆိုတာပဲ ပြောတာမို့ Topic ပါ။"
+              "title": "Topic နဲ့ Main Idea ကို ခွဲကြည့်မယ်",
+              "body": "“Wetlands” ဆိုတာ passage ဘာအကြောင်းလဲဆိုတာပဲ ပြောတာမို့ Topic ပါ။"
             },
             {
-              "title": "လွယ်လွယ်စဉ်းစားရင်",
-              "body": "“Wetlands come in many forms…” ဆိုတဲ့ sentence ကတော့ wetlands အကြောင်း passage တစ်ခုလုံးက ဘာပြောချင်လဲဆိုတာ ထည့်ပြောထားလို့ Main Idea ဖြစ်တယ်။"
+              "title": "Main Idea ကတော့",
+              "body": "“Wetlands come in many forms…” ဆိုတဲ့ sentence က wetlands အကြောင်း passage တစ်ခုလုံးက ဘာပြောနေသလဲဆိုတာ ထည့်ပြောထားလို့ Main Idea ဖြစ်တယ်။"
             },
             {
-              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-              "body": "Topic က subject ကိုပဲ နာမည်ပေးတာလား၊ ဒါမှမဟုတ် passage တစ်ခုလုံးက အဲဒီ subject အကြောင်း ဘာပြောလဲဆိုတာပါလား—ဒီနှစ်ခုကို ခွဲကြည့်ပါ။"
+              "title": "နောက်တစ်ခါ",
+              "body": "Answer က subject နာမည်ပဲလား၊ ဒါမှမဟုတ် အဲဒီ subject အကြောင်း passage က ဘာပြောနေသလဲဆိုတာပါလား—ဒီနှစ်ခုကို ခွဲကြည့်ပါ။"
             }
           ]
         }
@@ -100,7 +100,7 @@
     {
       "id": "learn2",
       "type": "drag_sort",
-      "prompt": "Which ideas are needed for a useful whole-passage gist?",
+      "prompt": "Which ideas are important enough to include in a one-sentence gist of the whole passage?",
       "primarySkillId": "R1.2",
       "familyId": "mainidea.whole.explicit",
       "difficulty": "easy",
@@ -157,21 +157,21 @@
       "correct": "k1=keep|k2=detail|k3=keep|k4=detail|k5=keep|k6=detail",
       "explanation": {
         "answer": "Keep 1, 3, and 5.",
-        "whyCorrect": "Those three ideas cover variety, ecological functions, and human benefits. The other statements are true details but are not necessary to express the whole passage.",
+        "whyCorrect": "Those three ideas cover the passage’s big points: wetlands vary in form, perform important environmental functions, and also benefit people. The other statements are true details, but the gist does not need them.",
         "quickTip": "A true detail can still be unnecessary for a one-sentence gist.",
         "myanmar": {
           "sections": [
             {
-              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
-              "body": "Passage တစ်ခုလုံးကို ခြုံဖို့ ဘယ်အချက်တွေက အဓိကလဲ၊ ဘယ်အချက်တွေက detail ပဲလဲဆိုတာ ခွဲနေတာပါ။"
+              "title": "အဓိကအချက်ကို ဘယ်လိုရွေးမလဲ",
+              "body": "Passage တစ်ခုလုံးကို တစ်ကြောင်းလောက်နဲ့ ခြုံမယ်ဆိုရင် မဖြစ်မနေပါသင့်တဲ့ အချက်တွေကိုရွေးနေတာပါ။ မှန်တဲ့အချက်တိုင်းကို ထည့်စရာမလိုဘူး။"
             },
             {
-              "title": "လွယ်လွယ်စဉ်းစားရင်",
-              "body": "ဒီ passage မှာ wetlands အမျိုးမျိုးရှိတယ်၊ environment အတွက် အရေးကြီးတဲ့ functions ရှိတယ်၊ လူတွေအတွက်လည်း အသုံးဝင်တယ်—ဒီသုံးပိုင်းက whole passage ကို ခြုံနိုင်တယ်။ NOAA က ဘယ်နှမျိုးခွဲထားလဲ၊ wetland names ဘာတွေလဲဆိုတာတွေက မှန်တဲ့ detail တွေပေမယ့် gist အတွက် မလိုအပ်ဘူး။"
+              "title": "ဒီ passage မှာ",
+              "body": "Wetlands အမျိုးမျိုးရှိတယ်၊ ရေစစ်ပေးတာ၊ ရေလွှမ်းမိုးမှုနဲ့ မြေဆီလွှာပျက်စီးမှုကို လျော့ပေးတာလို environment အတွက် အရေးကြီးတဲ့ အလုပ်တွေ လုပ်ပေးတယ်၊ လူတွေအတွက် recreation နဲ့ learning လို အကျိုးကျေးဇူးတွေလည်းရှိတယ်။ ဒါတွေက passage ရဲ့ အဓိကအပိုင်းတွေပါ။"
             },
             {
-              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-              "body": "ဒီအချက်ကို ဖယ်လိုက်ရင် passage ရဲ့ အဓိကဆိုလိုချက် ပျက်သွားမလားဆိုတာ စမ်းမေးကြည့်ပါ။ မပျက်ဘူးဆိုရင် detail ဖြစ်နိုင်တယ်။"
+              "title": "နောက်တစ်ခါ",
+              "body": "အချက်တစ်ခုကို ဖယ်လိုက်လို့ passage ရဲ့ အဓိကအဓိပ္ပာယ် မပျက်ဘူးဆိုရင် အဲဒါက detail ဖြစ်နိုင်ပါတယ်။"
             }
           ]
         }
@@ -204,16 +204,16 @@
         "myanmar": {
           "sections": [
             {
-              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
-              "body": "Passage တစ်ခုလုံးကို တစ်ကြောင်းနဲ့ ခြုံနိုင်လားဆိုတာ စစ်နေတာပါ။ Perfect sentence ရေးဖို့ မလိုဘူး။"
+              "title": "ဒီတစ်ခါ ကိုယ်တိုင်ခြုံရေးမယ်",
+              "body": "Passage တစ်ခုလုံးရဲ့ အဓိကအဓိပ္ပာယ်ကို တစ်ကြောင်းနဲ့ရေးတာပါ။ စာကြောင်းလှလှရေးဖို့ထက် အဓိကအချက်တွေ မပျောက်ဖို့က ပိုအရေးကြီးတယ်။"
             },
             {
-              "title": "လွယ်လွယ်စဉ်းစားရင်",
-              "body": "“Wetlands” လို့ topic ကိုထည့်ပြီး၊ အမျိုးမျိုးရှိတယ်၊ ecosystem နဲ့ people အတွက် benefits ရှိတယ်ဆိုတဲ့ အဓိကအချက်တွေကို တစ်ကြောင်းထဲ စုပြောနိုင်ရင် gist က ကောင်းပါတယ်။ Example တစ်ခုချင်းစီကို လိုက်မရေးပါနဲ့။"
+              "title": "ဘယ်လိုစဉ်းစားမလဲ",
+              "body": "Topic က wetlands ဖြစ်တယ်။ အဲဒီနောက် wetlands အမျိုးမျိုးရှိတာနဲ့ environment နဲ့ လူတွေအတွက် အကျိုးရှိတာကို တစ်ကြောင်းထဲ ခြုံရေးနိုင်ရင် gist က ကောင်းပါတယ်။ Example တစ်ခုချင်းစီကို လိုက်မရေးပါနဲ့။"
             },
             {
-              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-              "body": "ကိုယ်ရေးထားတဲ့ sentence က passage အများစုကို cover လုပ်လား၊ detail list ဖြစ်သွားလားဆိုတာ ပြန်စစ်ပါ။"
+              "title": "ရေးပြီးရင် စစ်ပါ",
+              "body": "ကိုယ်ရေးထားတဲ့ sentence က passage အများစုကို ကိုယ်စားပြုနိုင်လား၊ detail တစ်ခုတည်းကိုပဲ ပြောနေသလား၊ passage မပြောထားတဲ့အချက် ထပ်ထည့်ထားသလားဆိုတာ ပြန်စစ်ပါ။"
             }
           ]
         },
@@ -282,16 +282,16 @@
         "myanmar": {
           "sections": [
             {
-              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
-              "body": "Main Idea answer ရဲ့ scope ကို စစ်နေတာပါ—အရမ်းကျဉ်းလား၊ အရမ်းကျယ်လား၊ whole passage နဲ့ ကိုက်လား။"
+              "title": "Answer က အရမ်းကျဉ်းလား၊ အရမ်းကျယ်လား",
+              "body": "Main Idea choice တစ်ခုက passage တစ်ခုလုံးနဲ့ ကိုက်မကိုက် စစ်နေတာပါ။"
             },
             {
-              "title": "လွယ်လွယ်စဉ်းစားရင်",
-              "body": "“Wetlands help reduce flood damage…” က flooding တစ်ခုပဲ ပြောထားလို့ ကျဉ်းတယ်။ “Wetlands are the most important ecosystems…” က passage မပြောထားတဲ့ “most important” နဲ့ “everywhere” ကို ထပ်ချဲ့ထားလို့ ကျယ်လွန်းတယ်။ “Although wetlands vary widely…” ကတော့ major ideas တွေကို ခြုံထားပြီး မရှိတဲ့ claim မထည့်ထားလို့ အကောင်းဆုံး fit ဖြစ်တယ်။"
+              "title": "ဒီသုံးခုကို နှိုင်းယှဉ်ရင်",
+              "body": "Flood damage အကြောင်းတစ်ခုပဲပြောတဲ့ sentence က ကျဉ်းလွန်းတယ်။ “most important” နဲ့ “everywhere” လို့ပြောတဲ့ sentence က passage မထောက်ပံ့တဲ့အထိ ချဲ့ထားတယ်။ Wetlands က အမျိုးမျိုးရှိပြီး environment နဲ့ လူတွေအတွက် အကျိုးရှိတယ်ဆိုတဲ့ sentence ကတော့ passage တစ်ခုလုံးနဲ့ အကိုက်ဆုံးပါ။"
             },
             {
-              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
-              "body": "Main Idea choice တစ်ခုကိုတွေ့ရင် “too small, about right, or too big?” လို့ scope စစ်ကြည့်ပါ။"
+              "title": "နောက်တစ်ခါ",
+              "body": "Main Idea choice ကိုကြည့်ပြီး “detail တစ်ခုတည်းလား၊ passage တစ်ခုလုံးနဲ့ ကိုက်လား၊ passage ထက်ပိုချဲ့ထားလား” လို့စစ်ပါ။"
             }
           ]
         }
