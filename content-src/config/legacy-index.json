@@ -308,24 +308,6 @@
     "sourceFile": "legacy-modules/rla-inference-practice-01.json"
   },
   {
-    "file": "generated/modules/rla-main-idea-practice-01.json",
-    "title": "Main Idea Practice 1",
-    "description": "4 short texts · 8 main-idea questions",
-    "curriculum": {
-      "domain": "Core Meaning",
-      "primarySkillId": "R1.2",
-      "secondarySkillIds": [],
-      "contentKind": "skill_drill",
-      "learningObjective": "Identify explicit and implied central ideas across several short informational and literary texts.",
-      "topicLabel": "Main idea / central idea",
-      "deliveryRoles": [
-        "practice",
-        "train"
-      ]
-    },
-    "sourceFile": "legacy-modules/rla-main-idea-practice-01.json"
-  },
-  {
     "file": "generated/modules/rla-meaning-in-context-practice-1.json",
     "title": "Meaning in Context Practice 1",
     "description": "4 short texts - 8 focused meaning in context questions",
