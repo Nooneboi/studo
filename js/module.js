@@ -73,11 +73,22 @@ function firstAvailableIndex() {
   return activeQuestions().length ? 0 : -1;
 }
 
-function isGuidedLearningModule() {
+function assistanceLevel() {
+  const explicit = currentQuiz?.contentMeta?.curriculum?.assistanceLevel;
+  if (["full", "supported", "light", "minimal"].includes(explicit)) return explicit;
   const practiceTags = currentQuiz?.contentMeta?.curriculum?.practiceTags || [];
-  return practiceTags.includes("active-learning");
+  return practiceTags.includes("active-learning") ? "supported" : "minimal";
 }
 
+function isGuidedLearningModule() {
+  return ["full", "supported"].includes(assistanceLevel());
+}
+
+function allowsGuidedRetry(q) {
+  return ["full", "supported"].includes(assistanceLevel())
+    && learningStageFor(q) === "guided"
+    && Boolean(q?.hint);
+}
 function learningStageFor(q) {
   return ["guided", "apply", "independent"].includes(q?.learningStage) ? q.learningStage : "apply";
 }
@@ -714,8 +725,7 @@ function submitInteractiveAnswer(q, answer, container) {
   if (!I.hasCompleteAnswer(q, canonical)) return false;
 
   const correct = I.isCorrect(q, canonical);
-  const firstGuidedMiss = isGuidedLearningModule()
-    && learningStageFor(q) === 'guided'
+  const firstGuidedMiss = allowsGuidedRetry(q)
     && !correct
     && !guidedRetryUsed.has(q.id);
 
