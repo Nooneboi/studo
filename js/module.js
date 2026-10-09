@@ -382,6 +382,7 @@ function buildExplanationHtml(q, selectedAnswer) {
   const rule = q.rule || defaultRuleForQuestion(q);
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
+  const myanmarExplanation = q.myanmarExplanation || '';
   const I = window.QuestionInteractions;
   const sharedType = Boolean(I?.SUPPORTED_TYPES?.has(q.type));
   const selectedDisplay = sharedType ? I.formatAnswer(q, selectedAnswer) : (selectedOption ? answerDisplay(q, selectedOption) : '');
@@ -414,6 +415,7 @@ function buildExplanationHtml(q, selectedAnswer) {
         ${auto && hasSelected && correct === false && correctDisplay ? `<span>Correct answer: ${escapeHtml(correctDisplay)}</span>` : ''}
       </div>
       ${summary ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(summary)}</p>` : ''}
+      ${myanmarExplanation ? `<button type="button" class="chee-mm-trigger" data-myanmar-help>မြန်မာလိုရှင်းပြ</button>` : ''}
       ${breakdown ? `
         <details class="answer-breakdown">
           <summary>See answer breakdown</summary>
@@ -610,6 +612,47 @@ function showQuestionExplanation(q, selectedAnswer) {
   if (!box) return;
   box.innerHTML = buildExplanationHtml(q, selectedAnswer);
   box.classList.toggle("visible", Boolean(box.textContent.trim()));
+  const myanmarButton = box.querySelector('[data-myanmar-help]');
+  if (myanmarButton && q.myanmarExplanation) {
+    myanmarButton.addEventListener('click', () => openMyanmarHelp(q.myanmarExplanation));
+  }
+}
+
+function ensureMyanmarHelpDrawer() {
+  if (document.getElementById('chee-mm-drawer')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'chee-mm-overlay';
+  overlay.className = 'chee-mm-overlay';
+  overlay.addEventListener('click', closeMyanmarHelp);
+  const drawer = document.createElement('aside');
+  drawer.id = 'chee-mm-drawer';
+  drawer.className = 'chee-mm-drawer';
+  drawer.setAttribute('aria-hidden', 'true');
+  drawer.innerHTML = `
+    <div class="chee-mm-head">
+      <strong>မြန်မာလိုရှင်းပြ</strong>
+      <button type="button" class="chee-mm-close">Close</button>
+    </div>
+    <div class="chee-mm-body" id="chee-mm-body"></div>`;
+  drawer.querySelector('.chee-mm-close').addEventListener('click', closeMyanmarHelp);
+  document.body.append(overlay, drawer);
+}
+
+function openMyanmarHelp(text) {
+  ensureMyanmarHelpDrawer();
+  const body = document.getElementById('chee-mm-body');
+  if (body) body.textContent = String(text || '');
+  document.getElementById('chee-mm-overlay')?.classList.add('open');
+  const drawer = document.getElementById('chee-mm-drawer');
+  drawer?.classList.add('open');
+  drawer?.setAttribute('aria-hidden', 'false');
+}
+
+function closeMyanmarHelp() {
+  document.getElementById('chee-mm-overlay')?.classList.remove('open');
+  const drawer = document.getElementById('chee-mm-drawer');
+  drawer?.classList.remove('open');
+  drawer?.setAttribute('aria-hidden', 'true');
 }
 
 function lockInteractionControls(q, container) {
