@@ -382,7 +382,7 @@ function buildExplanationHtml(q, selectedAnswer) {
   const rule = q.rule || defaultRuleForQuestion(q);
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
-  const myanmarExplanation = q.myanmarExplanation || '';
+  const myanmarExplanation = q.myanmarExplanation || null;
   const I = window.QuestionInteractions;
   const sharedType = Boolean(I?.SUPPORTED_TYPES?.has(q.type));
   const selectedDisplay = sharedType ? I.formatAnswer(q, selectedAnswer) : (selectedOption ? answerDisplay(q, selectedOption) : '');
@@ -415,7 +415,7 @@ function buildExplanationHtml(q, selectedAnswer) {
         ${auto && hasSelected && correct === false && correctDisplay ? `<span>Correct answer: ${escapeHtml(correctDisplay)}</span>` : ''}
       </div>
       ${summary ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(summary)}</p>` : ''}
-      ${myanmarExplanation ? `<button type="button" class="chee-mm-trigger" data-myanmar-help>မြန်မာလိုရှင်းပြ</button>` : ''}
+      ${hasMyanmarHelp(myanmarExplanation, selectedAnswer) ? `<button type="button" class="chee-mm-trigger" data-myanmar-help>မြန်မာလိုရှင်းပြ</button>` : ''}
       ${breakdown ? `
         <details class="answer-breakdown">
           <summary>See answer breakdown</summary>
