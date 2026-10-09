@@ -8,7 +8,9 @@
   "difficulty": "medium",
   "status": "review",
   "version": 1,
-  "passageRefs": ["p-rla-mainidea-practice-c-nature-certified-v1"],
+  "passageRefs": [
+    "p-rla-mainidea-practice-c-nature-certified-v1"
+  ],
   "author": "Chee Skool",
   "reviewer": "C4 Main Idea editorial review pending",
   "reviewNotes": "Implied-main-idea transfer using CC-BY source adaptation; source heading withheld as an answer cue.",
@@ -16,10 +18,16 @@
     "domain": "Core Meaning",
     "primarySkillId": "R1.2",
     "contentKind": "skill_drill",
-    "practiceTags": ["active-learning","mock-excluded"],
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
     "learningObjective": "Infer a central idea by combining repeated clues and preserving limits.",
     "topicLabel": "Main idea / central idea",
-    "deliveryRoles": ["practice","train"]
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   },
   "questions": [
     {
@@ -30,20 +38,48 @@
       "familyId": "mainidea.whole.implied",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 75,
       "interaction": {
         "items": [
-          {"id":"i1","text":"The model counts both direct and indirect climate effects."},
-          {"id":"i2","text":"One indirect effect is that shade can make walking more attractive than driving."},
-          {"id":"i3","text":"The model compares strategies across different urban settings."},
-          {"id":"i4","text":"Across 54 cities, modeled reductions averaged about 17%, with larger reductions in some places."},
-          {"id":"i5","text":"Cleaner electricity is another action cities can take."}
+          {
+            "id": "i1",
+            "text": "The model counts both direct and indirect climate effects."
+          },
+          {
+            "id": "i2",
+            "text": "One indirect effect is that shade can make walking more attractive than driving."
+          },
+          {
+            "id": "i3",
+            "text": "The model compares strategies across different urban settings."
+          },
+          {
+            "id": "i4",
+            "text": "Across 54 cities, modeled reductions averaged about 17%, with larger reductions in some places."
+          },
+          {
+            "id": "i5",
+            "text": "Cleaner electricity is another action cities can take."
+          }
         ],
         "zones": [
-          {"id":"central","label":"Central clue"},
-          {"id":"detail","label":"Useful detail / example"}
+          {
+            "id": "central",
+            "label": "Central clue"
+          },
+          {
+            "id": "detail",
+            "label": "Useful detail / example"
+          }
         ],
         "presentation": "choice_rows"
       },
@@ -64,13 +100,25 @@
       "familyId": "mainidea.whole.implied",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 95,
       "explanation": {
         "answer": "Model: Nature-based solutions can make a meaningful contribution to reducing urban greenhouse-gas emissions through several direct and indirect pathways, although their impact varies by strategy and city.",
         "whyCorrect": "The model combines what the approach counts, how results vary, and what the multi-city result means without claiming nature alone reaches net zero.",
-        "quickTip": "An implied main idea must say what the evidence means, not just describe the research method."
+        "quickTip": "An implied main idea must say what the evidence means, not just describe the research method.",
+        "selfCheck": [
+          "Did I combine the repeated evidence into one overall idea?",
+          "Did I include that the effect varies by strategy and city?",
+          "Did I avoid claiming nature-based solutions can reach net zero by themselves?"
+        ]
       },
       "learningStage": "apply"
     },
@@ -82,14 +130,39 @@
       "familyId": "mainidea.whole.implied",
       "difficulty": "hard",
       "dok": 3,
-      "difficultyProfile": {"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
       "points": 1,
       "estimatedSeconds": 75,
       "options": [
-        {"id":"a","text":"Computer models are more reliable than real-world climate measurements.","distractorType":"method_instead_of_meaning","whyWrong":"The passage does not compare reliability this way."},
-        {"id":"b","text":"Nature-based solutions can meaningfully reduce urban greenhouse-gas emissions through several pathways, with results varying by strategy and setting."},
-        {"id":"c","text":"Green roofs are the most effective climate strategy for every city.","distractorType":"unsupported_universal","whyWrong":"No single strategy is presented as best everywhere."},
-        {"id":"d","text":"Nature-based solutions can bring every city to net zero without other changes.","distractorType":"overclaim","whyWrong":"The passage explicitly says other actions are also needed."}
+        {
+          "id": "a",
+          "text": "Computer models are more reliable than real-world climate measurements.",
+          "distractorType": "method_instead_of_meaning",
+          "whyWrong": "The passage does not compare reliability this way."
+        },
+        {
+          "id": "b",
+          "text": "Nature-based solutions can meaningfully reduce urban greenhouse-gas emissions through several pathways, with results varying by strategy and setting."
+        },
+        {
+          "id": "c",
+          "text": "Green roofs are the most effective climate strategy for every city.",
+          "distractorType": "unsupported_universal",
+          "whyWrong": "No single strategy is presented as best everywhere."
+        },
+        {
+          "id": "d",
+          "text": "Nature-based solutions can bring every city to net zero without other changes.",
+          "distractorType": "overclaim",
+          "whyWrong": "The passage explicitly says other actions are also needed."
+        }
       ],
       "correct": "b",
       "explanation": {
