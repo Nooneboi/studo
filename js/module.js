@@ -423,7 +423,12 @@ function buildExplanationHtml(q, selectedAnswer) {
   ].filter(Boolean).join('') : '';
 
   const showMyanmar = hasMyanmarHelp(myanmarExplanation, selectedAnswer)
-    && (level === 'full' || level === 'supported' || (level === 'light' && correct !== true));
+    && (
+      level === 'full'
+      || level === 'supported'
+      || (level === 'light' && correct !== true)
+      || (level === 'minimal' && correct === false)
+    );
 
   return `
     <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
