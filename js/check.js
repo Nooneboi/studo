@@ -239,15 +239,86 @@ function readHistory() {
   } catch (_) { return []; }
 }
 
+function diagnosticBucket(question) {
+  const category = question?.metadata?.reportingCategory || question?.reportingCategory || '';
+  if (['gist_synthesis', 'scope_control'].includes(category)) return 'whole_text_control';
+  if (category === 'evidence_link') return 'evidence_link';
+  if (category === 'literary_central_idea') return 'literary_meaning';
+  if (category === 'main_idea_transfer') return 'transfer';
+  return null;
+}
+
+function nextStepFromResults(results) {
+  const misses = results.filter((item) => !item.correct);
+  if (!misses.length) {
+    return {
+      title: 'Move on.',
+      body: 'No repeated Main Idea weakness showed up in this Check. Keep the skill alive later through mixed practice.'
+    };
+  }
+
+  const counts = new Map();
+  for (const item of misses) {
+    const bucket = diagnosticBucket(item.question);
+    if (!bucket) continue;
+    counts.set(bucket, (counts.get(bucket) || 0) + 1);
+  }
+
+  const repeated = [...counts.entries()]
+    .filter(([, count]) => count >= 2)
+    .sort((a, b) => b[1] - a[1]);
+
+  if (!repeated.length) {
+    return {
+      title: 'Review the misses, then move on.',
+      body: 'The misses are spread across different reasoning types, so Chee is not treating any one of them as a repeated weakness yet.'
+    };
+  }
+
+  const [bucket] = repeated[0];
+  const recommendations = {
+    whole_text_control: {
+      title: 'Next: review whole-passage fit.',
+      body: 'More than one miss involved choosing an idea that did not fit the whole text closely enough. Revisit gist and scope before another Check.'
+    },
+    evidence_link: {
+      title: 'Next: practice Main Idea + Evidence.',
+      body: 'More than one miss involved connecting the central idea to the strongest supporting evidence. Practice matching evidence to the whole-text claim.'
+    },
+    literary_meaning: {
+      title: 'Next: practice literary central idea.',
+      body: 'More than one miss came from moving from plot details to the story’s overall meaning. Do one more literary transfer before another Check.'
+    },
+    transfer: {
+      title: 'Next: practice transfer.',
+      body: 'More than one miss involved applying the passage’s central reasoning in a broader or new situation. Use one fresh passage before checking again.'
+    }
+  };
+  return recommendations[bucket] || {
+    title: 'Review the misses, then move on.',
+    body: 'Review the questions you missed before another Check.'
+  };
+}
+
 function renderResults(results, correct) {
   const I = window.QuestionInteractions;
   const total = results.length;
+  const nextStep = nextStepFromResults(results);
   checkView.innerHTML = `
     <section class="check-results" aria-labelledby="check-result-heading">
       <div class="page-kicker">Skill Check complete</div>
       <h1 id="check-result-heading" tabindex="-1">${correct} / ${total} correct</h1>
-      <p>${Math.round((correct / total) * 100)}% on this Chee Skool Skill Check. This is an independent practice result, not a GED score.</p>
-      <div class="check-result-actions"><a class="btn" href="${escapeAttr(returnHref)}">Back to skill</a><a class="btn secondary" href="${escapeAttr(returnHref)}">Review this skill</a></div>
+      <p>This is an independent Chee Skool practice result, not a GED score.</p>
+
+      <section class="check-next-step" aria-labelledby="check-next-step-heading">
+        <h2 id="check-next-step-heading">${escapeHtml(nextStep.title)}</h2>
+        <p>${escapeHtml(nextStep.body)}</p>
+      </section>
+
+      <div class="check-result-actions">
+        <a class="btn" href="${escapeAttr(returnHref)}">Back to Main Idea</a>
+      </div>
+
       <div class="check-review-list">${results.map((item, index) => `
         <article class="answer-review ${item.correct ? "is-right" : "is-wrong"}">
           <div class="answer-review-head"><strong>Question ${index + 1}</strong><span>${item.correct ? "Correct" : "Needs review"}</span></div>
