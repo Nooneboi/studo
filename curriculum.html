@@ -1,53 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-HvSbCFFH+8P5KXfjzbmEfZAXyl/ZVmHjIHEO6wH+ILQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
 <meta name="studo-release" content="0.7.0-alpha.34">
-<script>(function(){try{var t=localStorage.getItem("sq:theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="icons/icon-192.png" rel="apple-touch-icon"/>
-<title>Chee Skool — Curriculum</title>
-<meta content="Browse RLA practice by track, domain, and skill." name="description"/>
-<link href="manifest.json" rel="manifest"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.svg" rel="icon" type="image/svg+xml">
+<title>Chee Skool — RLA Skills</title>
+<link href="manifest.json" rel="manifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
-
 </head>
 <body>
-<header class="site-header">
-<div class="wrap">
-<a class="brand" href="index.html" aria-label="Chee Skool home"><img class="brand-logo" src="assets/chee-skool-logo.png" alt="Chee Skool"></a>
-<div class="header-right">
-<nav class="site-nav">
-<a href="index.html">Home</a>
-<a href="practice.html">Practice</a>
-<a href="train.html">Train</a>
-<a href="quiz.html">Mock</a>
-<a href="progress.html">Progress</a>
-<a href="resources.html">Resources</a>
-</nav>
-<div id="theme-switch-mount"></div>
-</div>
-</div>
+<header class="site-header simple-header">
+  <div class="wrap">
+    <a class="simple-brand" href="index.html">Chee Skool</a>
+    <nav class="simple-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Practice Tests</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
 </header>
-<div id="subject-bar-mount"></div>
-<main class="curriculum-main">
-<div class="wrap curriculum-wrap" id="curriculum-view"></div>
+
+<main class="simple-entry-main">
+  <div class="wrap simple-reading-width">
+    <div id="curriculum-view"></div>
+  </div>
 </main>
-<footer class="site-footer">
-<div class="wrap"><div class="site-footer-primary">Chee Skool — built for practice, not for tracking you.</div><nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div>
+
+<footer class="site-footer simple-footer">
+  <div class="wrap"><nav aria-label="Project information"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div>
 </footer>
 <script src="js/app.js"></script>
-<script src="js/storage.js"></script>
 <script src="js/data.js"></script>
-<script src="js/rla-browse.js"></script>
-<script src="data/generated/question-families.js"></script>
-<script src="js/learning.js"></script>
 <script src="js/curriculum.js"></script>
 </body>
 </html>
