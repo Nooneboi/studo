@@ -1290,17 +1290,31 @@ function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
     return;
   }
 
-  container.innerHTML = `<label class="question-detail" for="written-answer">Your response</label><textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>`;
+  container.innerHTML = `
+    <label class="question-detail" for="written-answer">Your response</label>
+    <textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>
+    ${explicitAssistanceLevel() ? `<div class="guided-primary-action"><button class="btn interaction-check" type="button" ${savedAnswer ? "" : "disabled"}>Compare response</button></div>` : ""}
+  `;
   const ta = container.querySelector("textarea");
+  const compare = container.querySelector(".interaction-check");
   ta.addEventListener("input", () => {
     Store.setAnswer(currentQuiz.id, q.id, ta.value);
+    if (compare) compare.disabled = !ta.value.trim();
     if (guided && ta.value.trim()) unlockGuidedNext();
     updateAnswerStatus();
   });
-  ta.addEventListener("blur", () => {
-    if (ta.value.trim()) showQuestionExplanation(q, ta.value);
-  });
-  if (savedAnswer) showQuestionExplanation(q, savedAnswer);
+  if (explicitAssistanceLevel()) {
+    compare?.addEventListener("click", () => {
+      if (!ta.value.trim()) return;
+      showQuestionExplanation(q, ta.value);
+      compare.disabled = true;
+    });
+  } else {
+    ta.addEventListener("blur", () => {
+      if (ta.value.trim()) showQuestionExplanation(q, ta.value);
+    });
+    if (savedAnswer) showQuestionExplanation(q, savedAnswer);
+  }
 }
 
 function cssEscape(value) {
