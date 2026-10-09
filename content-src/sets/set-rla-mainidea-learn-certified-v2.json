@@ -76,7 +76,22 @@
         "answer": "Wetlands = topic; the full statement = main idea.",
         "whyCorrect": "A topic only names the subject. A main idea tells what the passage says about that subject.",
         "quickTip": "Ask: does the statement merely name the subject, or make a whole-passage claim about it?",
-        "myanmar": "Topic နဲ့ Main Idea ကို ဒီလိုခွဲကြည့်ပါ။ “Wetlands” ဆိုတာ passage ဘာအကြောင်းလဲဆိုတာပဲ ပြောတာမို့ Topic ပါ။ “Wetlands come in many forms…” ဆိုတဲ့ sentence ကတော့ wetlands အကြောင်း passage တစ်ခုလုံးက ဘာပြောချင်လဲဆိုတာ ထည့်ပြောထားလို့ Main Idea ဖြစ်တယ်။ လွယ်လွယ်ဆိုရင် Topic က နာမည်ပေးတာ၊ Main Idea က အဲဒီ topic အကြောင်း အဓိကဘာပြောလဲဆိုတာပါ။"
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
+              "body": "Topic နဲ့ Main Idea ကို ခွဲနိုင်လားဆိုတာ စစ်နေတာပါ။ “Wetlands” ဆိုတာ passage ဘာအကြောင်းလဲဆိုတာပဲ ပြောတာမို့ Topic ပါ။"
+            },
+            {
+              "title": "လွယ်လွယ်စဉ်းစားရင်",
+              "body": "“Wetlands come in many forms…” ဆိုတဲ့ sentence ကတော့ wetlands အကြောင်း passage တစ်ခုလုံးက ဘာပြောချင်လဲဆိုတာ ထည့်ပြောထားလို့ Main Idea ဖြစ်တယ်။"
+            },
+            {
+              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+              "body": "Topic က subject ကိုပဲ နာမည်ပေးတာလား၊ ဒါမှမဟုတ် passage တစ်ခုလုံးက အဲဒီ subject အကြောင်း ဘာပြောလဲဆိုတာပါလား—ဒီနှစ်ခုကို ခွဲကြည့်ပါ။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
       "hint": "A topic can often be one or two words. A main idea usually says something about that topic."
@@ -143,7 +158,22 @@
         "answer": "Keep 1, 3, and 5.",
         "whyCorrect": "Those three ideas cover variety, ecological functions, and human benefits. The other statements are true details but are not necessary to express the whole passage.",
         "quickTip": "A true detail can still be unnecessary for a one-sentence gist.",
-        "myanmar": "Gist ရေးမယ်ဆိုရင် passage ထဲက detail အကုန်ယူစရာမလိုဘူး။ အဓိက branch တွေပဲယူရတယ်။ ဒီ passage မှာ wetlands အမျိုးမျိုးရှိတယ်၊ environment အတွက် အရေးကြီးတဲ့ functions ရှိတယ်၊ လူတွေအတွက်လည်း အသုံးဝင်တယ် — ဒီသုံးပိုင်းက whole passage ကို ခြုံနိုင်တယ်။ NOAA က ဘယ်နှမျိုးခွဲထားလဲ၊ wetland names ဘာတွေလဲဆိုတာတွေက မှန်တဲ့ detail တွေပေမယ့် gist အတွက် မလိုအပ်ဘူး။"
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
+              "body": "Passage တစ်ခုလုံးကို ခြုံဖို့ ဘယ်အချက်တွေက အဓိကလဲ၊ ဘယ်အချက်တွေက detail ပဲလဲဆိုတာ ခွဲနေတာပါ။"
+            },
+            {
+              "title": "လွယ်လွယ်စဉ်းစားရင်",
+              "body": "ဒီ passage မှာ wetlands အမျိုးမျိုးရှိတယ်၊ environment အတွက် အရေးကြီးတဲ့ functions ရှိတယ်၊ လူတွေအတွက်လည်း အသုံးဝင်တယ်—ဒီသုံးပိုင်းက whole passage ကို ခြုံနိုင်တယ်။ NOAA က ဘယ်နှမျိုးခွဲထားလဲ၊ wetland names ဘာတွေလဲဆိုတာတွေက မှန်တဲ့ detail တွေပေမယ့် gist အတွက် မလိုအပ်ဘူး။"
+            },
+            {
+              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+              "body": "ဒီအချက်ကို ဖယ်လိုက်ရင် passage ရဲ့ အဓိကဆိုလိုချက် ပျက်သွားမလားဆိုတာ စမ်းမေးကြည့်ပါ။ မပျက်ဘူးဆိုရင် detail ဖြစ်နိုင်တယ်။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
       "hint": "Choose information that covers a major branch of the passage, not an example inside that branch."
@@ -170,7 +200,22 @@
         "answer": "Model: Wetlands come in many forms and are valuable because they support ecosystems, reduce flooding and pollution, and also benefit people.",
         "whyCorrect": "A strong gist names the broad topic and combines the passage’s major functions without becoming a list of minor examples.",
         "quickTip": "Check your sentence for scope: broad enough for most of the passage, but not broader than the evidence.",
-        "myanmar": "ဒီနေရာမှာ perfect sentence ရေးဖို့မလိုဘူး။ ကိုယ်ရေးတဲ့ sentence က passage တစ်ခုလုံးကို ခြုံနိုင်လားဆိုတာပဲ စစ်ပါ။ “Wetlands” လို့ topic ကိုထည့်ပြီး၊ အမျိုးမျိုးရှိတယ်၊ ecosystem နဲ့ people အတွက် benefits ရှိတယ်ဆိုတဲ့ အဓိကအချက်တွေကို တစ်ကြောင်းထဲ စုပြောနိုင်ရင် gist က ကောင်းပါတယ်။ Example တစ်ခုချင်းစီကို လိုက်မရေးပါနဲ့။"
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
+              "body": "Passage တစ်ခုလုံးကို တစ်ကြောင်းနဲ့ ခြုံနိုင်လားဆိုတာ စစ်နေတာပါ။ Perfect sentence ရေးဖို့ မလိုဘူး။"
+            },
+            {
+              "title": "လွယ်လွယ်စဉ်းစားရင်",
+              "body": "“Wetlands” လို့ topic ကိုထည့်ပြီး၊ အမျိုးမျိုးရှိတယ်၊ ecosystem နဲ့ people အတွက် benefits ရှိတယ်ဆိုတဲ့ အဓိကအချက်တွေကို တစ်ကြောင်းထဲ စုပြောနိုင်ရင် gist က ကောင်းပါတယ်။ Example တစ်ခုချင်းစီကို လိုက်မရေးပါနဲ့။"
+            },
+            {
+              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+              "body": "ကိုယ်ရေးထားတဲ့ sentence က passage အများစုကို cover လုပ်လား၊ detail list ဖြစ်သွားလားဆိုတာ ပြန်စစ်ပါ။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -228,7 +273,22 @@
         "answer": "s2 fits; s1 is too narrow; s3 is unsupported.",
         "whyCorrect": "The best main idea covers the major strands without turning one function into the whole passage or making a universal claim.",
         "quickTip": "Scope-test every main idea: too small, about right, or larger than the evidence.",
-        "myanmar": "Main Idea answer ကို scope စစ်နေတာပါ။ “Wetlands help reduce flood damage…” ဆိုတဲ့ answer က flooding တစ်ခုပဲ ပြောထားလို့ passage ထက် ကျဉ်းတယ်။ “Wetlands are the most important ecosystems…” ဆိုတဲ့ answer ကတော့ “most important” နဲ့ “everywhere” လို့ passage မပြောထားတာကို ထပ်ချဲ့ပြောထားလို့ အရမ်းကျယ်သွားတယ်။ “Although wetlands vary widely…” ဆိုတဲ့ answer က passage ရဲ့ major ideas တွေကို ခြုံထားပြီး မရှိတဲ့ claim မထည့်ထားလို့ အတော်ဆုံး fit ဖြစ်တယ်။"
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ဒီမှာ ဘာစစ်နေတာလဲ",
+              "body": "Main Idea answer ရဲ့ scope ကို စစ်နေတာပါ—အရမ်းကျဉ်းလား၊ အရမ်းကျယ်လား၊ whole passage နဲ့ ကိုက်လား။"
+            },
+            {
+              "title": "လွယ်လွယ်စဉ်းစားရင်",
+              "body": "“Wetlands help reduce flood damage…” က flooding တစ်ခုပဲ ပြောထားလို့ ကျဉ်းတယ်။ “Wetlands are the most important ecosystems…” က passage မပြောထားတဲ့ “most important” နဲ့ “everywhere” ကို ထပ်ချဲ့ထားလို့ ကျယ်လွန်းတယ်။ “Although wetlands vary widely…” ကတော့ major ideas တွေကို ခြုံထားပြီး မရှိတဲ့ claim မထည့်ထားလို့ အကောင်းဆုံး fit ဖြစ်တယ်။"
+            },
+            {
+              "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+              "body": "Main Idea choice တစ်ခုကိုတွေ့ရင် “too small, about right, or too big?” လို့ scope စစ်ကြည့်ပါ။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -279,7 +339,66 @@
         "answer": "B",
         "whyCorrect": "The idea covers both ecological and human functions, and the evidence pair spans more than one major branch.",
         "quickTip": "For hard main-idea questions, test both the claim and the evidence pair for whole-passage coverage.",
-        "myanmar": "ဒီ question မှာ Main Idea တစ်ခုတည်းမှန်ရုံမလုံလောက်ဘူး။ Evidence ကလည်း အဲဒီ Main Idea ကို တကယ် support လုပ်ရမယ်။ B က wetlands ရဲ့ ecological functions နဲ့ human benefits နှစ်ဖက်လုံးကို ခြုံထားတယ်၊ ပြီးတော့ evidence ကလည်း water filtering/flooding နဲ့ recreation/learning ဆိုပြီး major branches နှစ်ဖက်က အချက်တွေကို ယူထားတယ်။ ဒါကြောင့် claim နဲ့ evidence နှစ်ခုလုံး whole passage နဲ့ကိုက်တယ်။"
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Wetlands မှာ names အမျိုးမျိုးရှိတယ်ဆိုတာ passage ထဲမှာ မှန်ပါတယ်။ ဒါပေမယ့် passage တစ်ခုလုံးက naming/classification အကြောင်းပဲ မဟုတ်ဘူး။ အဲဒါကြောင့် A က detail တစ်ပိုင်းကို Main Idea လုပ်ထားတာဖြစ်တယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က wetlands အမျိုးမျိုးရှိတာနဲ့ ecological + human benefits နှစ်ဖက်လုံးကို ခြုံထားတယ်။ Evidence ကလည်း water filtering/flooding နဲ့ recreation/learning ဆိုပြီး major branches နှစ်ဖက်က အချက်တွေကို ယူထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Main Idea + Evidence question မှာ claim က whole passage ကို cover လုပ်လား၊ evidence ကလည်း အဲဒီ claim ကို တကယ် support လုပ်လား—နှစ်ခုလုံး စစ်ပါ။"
+              }
+            ],
+            "b": [
+              {
+                "title": "ဘာလို့ ဒီ answer မှန်တာလဲ",
+                "body": "B က passage ရဲ့ major ideas နှစ်ဖက်လုံး—ecological functions နဲ့ human benefits—ကို ခြုံထားတယ်။"
+              },
+              {
+                "title": "Passage ထဲမှာ ဘာကိုကြည့်ရလဲ",
+                "body": "Evidence က water filtering/flooding နဲ့ recreation/learning ဆိုပြီး မတူတဲ့ major branches နှစ်ဖက်က အချက်တွေကို ယူထားတာကြောင့် claim နဲ့ evidence က အတူတကွ whole passage ကို ကိုယ်စားပြုတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Hard Main Idea question တွေမှာ answer တစ်ခုမှန်သလိုထင်ရုံနဲ့ မရဘူး။ Evidence pair ကပါ whole passage နဲ့ကိုက်မကိုက် စစ်ပါ။"
+              }
+            ],
+            "c": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Flood control က passage ထဲက အရေးကြီးတဲ့ function တစ်ခုပါ။ ဒါပေမယ့် အဲဒါတစ်ခုတည်းကို “main reason” လို့လုပ်လိုက်တာနဲ့ passage တစ်ခုလုံးထက် ကျဉ်းသွားတယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က flood control တစ်ခုပဲမဟုတ်ဘဲ water filtering, wildlife support, recreation, learning စတဲ့ major ideas တွေကိုပါ ခြုံနိုင်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "မှန်တဲ့ detail တစ်ခုကိုတွေ့ရင် Main Idea လို့ မယူခင် “ဒီတစ်ချက်က passage အများစုကို တကယ် cover လုပ်လား” လို့ စစ်ပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "D မှာ “All wetlands stay wet year-round” လို့ ပြောထားပေမယ့် passage က တချို့ wetlands တွေ season အလိုက် water level ပြောင်းတယ်လို့ တိုက်ရိုက်ပြောထားတယ်။ ဒါကြောင့် passage နဲ့တောင် ဆန့်ကျင်နေတယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က passage ထဲမှာ တကယ် support လုပ်ထားတဲ့အချက်တွေကိုပဲ ယူပြီး variety + ecological functions + human benefits ကို ခြုံထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Choice တစ်ခုမှာ absolute word—ဥပမာ all, always, every—ပါတာတွေ့ရင် passage က တကယ်အဲဒီလောက်သေချာပြောထားလား စစ်ပါ။"
+              }
+            ]
+          }
+        }
       },
       "learningStage": "independent",
       "reportingCategory": "gist_synthesis"
