@@ -58,6 +58,7 @@ function compileQuestion(q, skill, passage) {
     points: q.points || 1,
     explanation: q.explanation?.whyCorrect || '',
     ...(q.explanation?.myanmar ? { myanmarExplanation: JSON.parse(JSON.stringify(q.explanation.myanmar)) } : {}),
+    ...(Array.isArray(q.explanation?.selfCheck) ? { selfCheck: [...q.explanation.selfCheck] } : {}),
     skill: runtimeSkill(skill),
     rule: q.explanation?.quickTip || '',
     familyId: q.familyId,
