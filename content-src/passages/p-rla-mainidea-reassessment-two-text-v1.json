@@ -20,16 +20,17 @@
     "note": "Reassessment source prepared for editorial review; not for learner delivery yet."
   },
   "status": "review",
-  "version": 1,
+  "version": 2,
   "author": "Ahmad Guni; Hutan Ashrafian; Katherine Mansfield",
   "reviewer": "C4 Main Idea source review",
   "provenance": {
     "sourceAUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1845973",
     "sourceBUrl": "https://www.gutenberg.org/ebooks/66871",
-    "rightsCheckedOn": "2026-10-03",
-    "adaptation": "Text A source-faithful adaptation; Text B original prose excerpt plus separately labeled context note.",
+    "rightsCheckedOn": "2026-10-09",
+    "adaptation": "Text A is a condensed source-faithful adaptation preserving three source ideas: limited autonomous medical tasks, technical/workflow constraints, and continued human responsibility in care. Text B is original public-domain prose plus a separately labeled Chee Skool context note.",
     "certificationStatus": "source_verified_rights_verified_editorial_review_pending",
     "conflictOfInterest": "Source disclosure: Hutan Ashrafian is Chief Medical Officer of Harbinger Health; the source states the company was not involved in study design, data collection/analysis/interpretation, writing, or the publication decision.",
-    "sourceAiStatement": "Frontiers for Young Minds states generative AI was not used in creation of the manuscript."
+    "sourceAiStatement": "Frontiers for Young Minds states generative AI was not used in creation of the manuscript.",
+    "sourceASections": "AI as Navigator; What Still Needs Improvement?; The Future of AI in Healthcare"
   }
 }
