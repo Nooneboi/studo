@@ -7,19 +7,26 @@
   "topic": "Main idea / central idea",
   "difficulty": "hard",
   "status": "review",
-  "version": 1,
-  "passageRefs": ["p-rla-mainidea-practice-d-haunted-house-certified-v1"],
+  "version": 2,
+  "passageRefs": [
+    "p-rla-mainidea-practice-d-haunted-house-certified-v1"
+  ],
   "author": "Chee Skool",
   "reviewer": "C4 Main Idea editorial review pending",
-  "reviewNotes": "Public-domain literary transfer. Low support; no authored hints.",
+  "reviewNotes": "Public-domain literary transfer. Questions stay on literary central idea, evidence, and plot-versus-meaning distinctions; no authored hints.",
   "curriculum": {
     "domain": "Core Meaning",
     "primarySkillId": "R1.2",
     "contentKind": "skill_drill",
-    "practiceTags": ["mock-excluded"],
+    "practiceTags": [
+      "mock-excluded"
+    ],
     "learningObjective": "Distinguish plot from literary central idea and connect a thematic statement to evidence.",
     "topicLabel": "Main idea / central idea",
-    "deliveryRoles": ["practice","train"]
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ]
   },
   "questions": [
     {
@@ -30,25 +37,50 @@
       "familyId": "mainidea.whole.implied",
       "difficulty": "medium",
       "dok": 2,
-      "difficultyProfile": {"textComplexity":2,"reasoningDepth":2,"evidenceDistance":3,"distractorSimilarity":3,"sourceCount":1,"responseDemand":2},
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
       "points": 1,
       "estimatedSeconds": 75,
       "interaction": {
         "items": [
-          {"id":"i1","text":"A ghostly couple moves through a house searching for a treasure."},
-          {"id":"i2","text":"The story presents enduring love and shared memory as the true treasure that remains in a home beyond death and time."},
-          {"id":"i3","text":"Ghosts live in old houses."}
+          {
+            "id": "i1",
+            "text": "A ghostly couple moves through a house searching for a treasure."
+          },
+          {
+            "id": "i2",
+            "text": "The story presents enduring love and shared memory as the true treasure that remains in a home beyond death and time."
+          },
+          {
+            "id": "i3",
+            "text": "Ghosts live in old houses."
+          }
         ],
         "zones": [
-          {"id":"plot","label":"Plot / gist detail"},
-          {"id":"central","label":"Central idea / thematic statement"},
-          {"id":"literal","label":"Literal overreduction"}
+          {
+            "id": "plot",
+            "label": "Plot / what happens"
+          },
+          {
+            "id": "central",
+            "label": "Central idea / meaning"
+          },
+          {
+            "id": "literal",
+            "label": "Unsupported literal claim"
+          }
         ]
       },
       "correct": "i1=plot|i2=central|i3=literal",
       "explanation": {
-        "answer": "i1 = plot; i2 = central idea; i3 = literal overreduction.",
-        "whyCorrect": "Literary central ideas are complete statements about what the story develops, not just a plot summary or a one-word/literal topic.",
+        "answer": "i1 = plot; i2 = central idea; i3 = unsupported literal claim.",
+        "whyCorrect": "The first statement tells what happens. The second explains the meaning developed through the repeated treasure, memory, and love imagery. The third turns the story into a literal claim it does not establish.",
         "quickTip": "In literature, ask what the repeated images and events suggest—not just what happens."
       },
       "reportingCategory": "literary_central_idea"
@@ -61,14 +93,39 @@
       "familyId": "mainidea.whole.implied",
       "difficulty": "hard",
       "dok": 3,
-      "difficultyProfile": {"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
       "points": 1,
       "estimatedSeconds": 85,
       "options": [
-        {"id":"a","text":"The house contains apples and roses; a wood pigeon can be heard outside.","distractorType":"atmosphere_as_central_evidence","whyWrong":"These details build setting but do not best explain the story’s central idea."},
-        {"id":"b","text":"The ghostly couple recalls moments of intimacy and joy in the house; the ending identifies the treasure as an inner light rather than a physical object."},
-        {"id":"c","text":"Doors keep shutting; the weather becomes windy and rainy.","distractorType":"atmosphere_as_central_evidence","whyWrong":"These details create a haunted atmosphere but do not carry the full meaning."},
-        {"id":"d","text":"The narrator’s hands are empty; the apples are stored in the loft.","distractorType":"literal_object_misreading","whyWrong":"These details are part of the search imagery, not the strongest evidence of the final meaning."}
+        {
+          "id": "a",
+          "text": "The house contains apples and roses; a wood pigeon can be heard outside.",
+          "distractorType": "atmosphere_as_central_evidence",
+          "whyWrong": "These details build setting but do not best explain the story’s central idea."
+        },
+        {
+          "id": "b",
+          "text": "The ghostly couple recalls moments of intimacy and joy in the house; the ending identifies the treasure as an inner light rather than a physical object."
+        },
+        {
+          "id": "c",
+          "text": "Doors keep shutting; the weather becomes windy and rainy.",
+          "distractorType": "atmosphere_as_central_evidence",
+          "whyWrong": "These details create a haunted atmosphere but do not carry the full meaning."
+        },
+        {
+          "id": "d",
+          "text": "The narrator’s hands are empty; the apples are stored in the loft.",
+          "distractorType": "literal_object_misreading",
+          "whyWrong": "These details are part of the search imagery, not the strongest evidence of the final meaning."
+        }
       ],
       "correct": "b",
       "explanation": {
@@ -86,14 +143,39 @@
       "familyId": "mainidea.whole.implied",
       "difficulty": "hard",
       "dok": 3,
-      "difficultyProfile": {"textComplexity":3,"reasoningDepth":3,"evidenceDistance":4,"distractorSimilarity":4,"sourceCount":1,"responseDemand":1},
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
       "points": 1,
       "estimatedSeconds": 75,
       "options": [
-        {"id":"a","text":"The narrator is frightened because the house contains ghosts.","distractorType":"plot_as_theme","whyWrong":"The narrator is not mainly presented as frightened, and this stays at plot level."},
-        {"id":"b","text":"The couple searches because they lost a valuable object before they died.","distractorType":"literal_object_misreading","whyWrong":"The ending reveals that the 'treasure' is not a material object."},
-        {"id":"c","text":"Love and shared memories can remain meaningful beyond physical absence and make a place feel alive."},
-        {"id":"d","text":"Old houses preserve every event exactly as it happened.","distractorType":"unsupported_absolute","whyWrong":"The story does not make this universal claim."}
+        {
+          "id": "a",
+          "text": "The narrator is frightened because the house contains ghosts.",
+          "distractorType": "plot_as_theme",
+          "whyWrong": "The narrator is not mainly presented as frightened, and this stays at plot level."
+        },
+        {
+          "id": "b",
+          "text": "The couple searches because they lost a valuable object before they died.",
+          "distractorType": "literal_object_misreading",
+          "whyWrong": "The ending reveals that the 'treasure' is not a material object."
+        },
+        {
+          "id": "c",
+          "text": "Love and shared memories can remain meaningful beyond physical absence and make a place feel alive."
+        },
+        {
+          "id": "d",
+          "text": "Old houses preserve every event exactly as it happened.",
+          "distractorType": "unsupported_absolute",
+          "whyWrong": "The story does not make this universal claim."
+        }
       ],
       "correct": "c",
       "explanation": {
