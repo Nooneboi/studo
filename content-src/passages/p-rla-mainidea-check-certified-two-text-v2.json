@@ -20,15 +20,17 @@
     "note": "Text A is a Chee Skool adaptation under CC BY; Text B is public-domain literary text."
   },
   "status": "review",
-  "version": 2,
+  "version": 3,
   "author": "Martin Wiedmann; Sriya Sunil; Saki (H. H. Munro)",
   "reviewer": "C4 Main Idea source review",
   "provenance": {
     "sourceAUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1799945",
     "sourceBUrl": "https://www.gutenberg.org/ebooks/269",
-    "rightsCheckedOn": "2026-10-06",
-    "adaptation": "Text A source-faithful adaptation; Text B original prose excerpt.",
+    "rightsCheckedOn": "2026-10-09",
+    "adaptation": "Text A is a condensed, source-faithful adaptation of the source’s food-safety trade-off section; the original benefit-versus-cost reasoning and examples are preserved. Text B is original public-domain prose.",
     "certificationStatus": "source_verified_rights_verified_editorial_review_pending",
-    "sourceAiStatement": "Frontiers for Young Minds states generative AI was not used in creation of the Text A source manuscript."
+    "sourceAiStatement": "Frontiers for Young Minds states generative AI was not used in creation of the Text A source manuscript.",
+    "sourceASection": "Can Food be Too Safe?",
+    "conflictOfInterestTextA": "Source disclosure: Martin Wiedmann serves as principal of Cayuga Food Safety Consulting; the source states the company was not involved in study design, data collection, analysis, interpretation, writing, or the publication decision."
   }
 }
