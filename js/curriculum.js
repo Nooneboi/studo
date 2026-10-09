@@ -1,38 +1,48 @@
-/* curriculum.js — one clear choice: which domain? */
+/* curriculum.js — simple grouped RLA skill browsing */
 init();
 
 async function init() {
   const mount = document.getElementById("curriculum-view");
   const params = new URLSearchParams(location.search);
-  const requestedTrackId = params.get("track");
-  const trackId = requestedTrackId || "reading";
+  const trackId = params.get("track") || "reading";
   let curriculum;
   try { curriculum = await Data.loadCurriculum(); }
-  catch (_) { mount.innerHTML = `<div class="empty-state">The curriculum could not be loaded.</div>`; return; }
+  catch (_) { mount.innerHTML = '<p>The curriculum could not be loaded.</p>'; return; }
 
   const track = curriculum.tracks.find((item) => item.id === trackId);
   if (!track) {
-    mount.innerHTML = `<div class="empty-state">${requestedTrackId ? "This curriculum area could not be found." : "No curriculum is available yet."}</div>`;
+    mount.innerHTML = '<p>This study area is not available yet.</p>';
     return;
   }
 
+  document.title = `Chee Skool — ${track.label}`;
+
   mount.innerHTML = `
-    <header class="simple-curriculum-hero">
-      <a class="curriculum-back" href="practice.html">← Practice</a>
-      <div class="page-kicker">RLA curriculum</div>
-      <h1>${escapeHtml(track.label)}</h1>
-    </header>
-    <section class="simple-domain-list" aria-label="${escapeHtml(track.label)} topics">
-      ${track.domains.map((domain) => `
-        <a class="simple-domain-row" href="domain.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}">
-          <span>${escapeHtml(domain.label)}</span>
-          <b aria-hidden="true">→</b>
-        </a>`).join("")}
-      ${track.id === "reading" ? `
-        <a class="simple-domain-row" href="passages.html">
-          <span>Passage practice</span>
-          <b aria-hidden="true">→</b>
-        </a>` : ""}
+    <a class="simple-back" href="rla.html">GED RLA</a>
+    <div class="simple-kicker">RLA</div>
+    <h1>${escapeHtml(track.label)}</h1>
+    <div class="simple-skill-groups">
+      ${track.domains.map((domain) => renderDomain(track, domain)).join("")}
+    </div>`;
+}
+
+function renderDomain(track, domain) {
+  const skills = (domain.skills || []).filter((skill) => skill.available !== false);
+  if (!skills.length) return "";
+  return `
+    <section class="simple-skill-group">
+      <h2>${escapeHtml(domain.label)}</h2>
+      <ul>
+        ${skills.map((skill) => `
+          <li>
+            <a href="skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}">${escapeHtml(skill.label)}</a>
+          </li>`).join("")}
+      </ul>
     </section>`;
 }
-function escapeHtml(value) { const div=document.createElement("div"); div.textContent=value??""; return div.innerHTML; }
+
+function escapeHtml(value) {
+  const div = document.createElement("div");
+  div.textContent = value ?? "";
+  return div.innerHTML;
+}
