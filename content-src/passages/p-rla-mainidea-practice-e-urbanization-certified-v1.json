@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "id": "p-rla-mainidea-practice-e-urbanization-certified-v1",
-  "title": "Urbanization: Why Definitions Matter",
-  "text": "Urbanization is the movement of people from rural areas into towns and cities. Tracking it matters because where people live affects work, transport, social connections, services, and the opportunities and risks people face. Governments also need this information to plan housing, healthcare, schools, and infrastructure.\n\nComparing urbanization across countries is difficult, however, because countries do not all define “urban” in the same way. A settlement counted as urban in one country might be classified as rural in another. That makes international comparisons unreliable when each country uses its own rules.\n\nA more consistent approach uses population size and density to classify settlements in the same way across countries. The United Nations now uses a framework that separates settlements into cities, towns and suburbs, and rural areas. Using common criteria makes global comparisons more meaningful while still recognizing that settlements exist along a range rather than fitting neatly into one simple urban-versus-rural split.",
+  "title": "Understanding Urbanization",
+  "text": "Urbanization is the movement of people from rural areas into towns and cities. Tracking these changes matters because where people live affects how they work and move around, who they interact with, and the opportunities and risks they face. Governments also use this information when planning housing, transport, healthcare, and schools.\n\nComparing urbanization across countries is difficult because countries do not all define “urban” in the same way. A town counted as urban in one country might be classified as rural in another. When national definitions differ, international comparisons can become misleading.\n\nOne way to improve comparability is to use population and density data to classify settlements under the same rules across countries. The United Nations now uses this kind of framework in its headline urbanization figures, separating settlements into cities, towns and suburbs, and rural areas.",
   "textType": "informational",
   "context": "social_studies",
   "source": {
@@ -10,7 +10,7 @@
     "author": "Esteban Ortiz-Ospina; Veronika Samborska; Hannah Ritchie; Max Roser",
     "workTitle": "Urbanization",
     "publisher": "Our World in Data",
-    "year": 2024,
+    "year": 2026,
     "url": "https://ourworldindata.org/urbanization",
     "attribution": "Adapted by Chee Skool from Ortiz-Ospina, Samborska, Ritchie & Roser, “Urbanization,” Our World in Data, CC BY."
   },
@@ -21,14 +21,15 @@
     "note": "OWID states its articles are open access under CC BY with attribution."
   },
   "status": "review",
-  "version": 1,
+  "version": 2,
   "author": "Esteban Ortiz-Ospina; Veronika Samborska; Hannah Ritchie; Max Roser",
   "reviewer": "C4 Main Idea source review",
   "provenance": {
     "canonicalUrl": "https://ourworldindata.org/urbanization",
     "sourceSection": "What is urbanization, and why does it matter?",
-    "rightsCheckedOn": "2026-10-03",
-    "adaptation": "Condensed source-faithful adaptation under CC BY.",
-    "certificationStatus": "source_verified_rights_verified_editorial_review_pending"
+    "rightsCheckedOn": "2026-10-09",
+    "adaptation": "Condensed source-faithful adaptation of the current “What is urbanization, and why does it matter?” section. It preserves the source’s two-part structure: significance and cross-country comparability, without adding a concluding Chee Skool summary.",
+    "certificationStatus": "source_verified_rights_verified_editorial_review_pending",
+    "sourceLastUpdated": "2026-05"
   }
 }
