@@ -1344,7 +1344,9 @@ function showCompletionSummary() {
   const nextHref = nextSet
     ? `module.html?file=${encodeURIComponent(nextSet.file)}&return=${encodeURIComponent(nextSet.returnHref)}`
     : document.getElementById("focus-exit").href;
-  const nextLabel = nextSet ? `Continue to ${nextSet.title}` : "Back to practice";
+  const nextLabel = nextSet
+    ? (currentQuiz?.contentMeta?.curriculum?.primarySkillId === "R1.2" ? "Try a fresh Main Idea passage" : `Continue to ${nextSet.title}`)
+    : "Back to practice";
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="review-first">Review from start</button>
     <span class="question-footer-position">Complete</span>
