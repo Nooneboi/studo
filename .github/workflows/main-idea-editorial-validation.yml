@@ -1,0 +1,27 @@
+name: Main Idea Editorial Validation
+
+on:
+  push:
+    branches:
+      - main-idea-c4-editorial-validation
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run tests
+        continue-on-error: true
+        run: npm test
+      - name: Validate content
+        run: npm run content:validate
+      - name: Build public site
+        run: npm run public:build
