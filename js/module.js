@@ -53,7 +53,7 @@ async function init() {
   const exitLink = document.getElementById("focus-exit");
   if (exitLink) exitLink.href = backHref;
   const titleEl = document.getElementById("focus-title");
-  if (titleEl) titleEl.textContent = "Practice";
+  if (titleEl) titleEl.textContent = explicitAssistanceLevel() === "full" ? "Learn" : "Practice";
 
   const requestedQuestion = params.get("question");
   const available = activeQuestions();
@@ -263,7 +263,7 @@ function renderCurrentQuestion(options = {}) {
   const guidedNextLocked = guided && !savedAnswer;
 
   stage.innerHTML = `
-    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span><span aria-hidden="true">·</span><strong>${escapeHtml(stageName.toUpperCase())}</strong></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
+    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     ${helperText ? `<p class="guided-helper">${escapeHtml(helperText)}</p>` : ""}
     <div data-role="answer-area"></div>
@@ -687,7 +687,7 @@ function ensureMyanmarHelpDrawer() {
   drawer.innerHTML = `
     <div class="chee-mm-head">
       <strong>မြန်မာလိုရှင်းပြ</strong>
-      <button type="button" class="chee-mm-close">Close</button>
+      <button type="button" class="chee-mm-close" aria-label="Close">ပိတ်</button>
     </div>
     <div class="chee-mm-body" id="chee-mm-body"></div>`;
   drawer.querySelector('.chee-mm-close').addEventListener('click', closeMyanmarHelp);
@@ -1413,7 +1413,7 @@ function showCompletionSummary() {
     ? `module.html?file=${encodeURIComponent(nextSet.file)}&return=${encodeURIComponent(nextSet.returnHref)}`
     : document.getElementById("focus-exit").href;
   const nextLabel = nextSet
-    ? (currentQuiz?.contentMeta?.curriculum?.primarySkillId === "R1.2" ? "Try a fresh Main Idea passage" : `Continue to ${nextSet.title}`)
+    ? (currentQuiz?.contentMeta?.curriculum?.primarySkillId === "R1.2" ? "Try another Main Idea passage" : `Continue to ${nextSet.title}`)
     : "Back to practice";
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="review-first">Review from start</button>
