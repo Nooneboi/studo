@@ -383,14 +383,17 @@ function buildExplanationHtml(q, selectedAnswer) {
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
   const myanmarExplanation = q.myanmarExplanation || null;
+  const selfCheck = Array.isArray(q.selfCheck) ? q.selfCheck : [];
+  const level = assistanceLevel();
   const I = window.QuestionInteractions;
   const sharedType = Boolean(I?.SUPPORTED_TYPES?.has(q.type));
   const selectedDisplay = sharedType ? I.formatAnswer(q, selectedAnswer) : (selectedOption ? answerDisplay(q, selectedOption) : '');
   const correctDisplay = sharedType ? I.formatAnswer(q, q.correct) : (correctOption ? answerDisplay(q, correctOption) : '');
 
-  if (!summary && !rule && !evidence && !hasSelected) return '';
+  if (!summary && !rule && !evidence && !hasSelected && !selfCheck.length) return '';
 
-  const breakdown = [
+  const showBreakdown = level === 'full';
+  const breakdown = showBreakdown ? [
     !correct && wrongReason ? `
       <div class="answer-breakdown-row">
         <span>Your answer</span>
@@ -406,7 +409,10 @@ function buildExplanationHtml(q, selectedAnswer) {
         <span>Tip</span>
         <p>${escapeHtml(rule)}</p>
       </div>` : ''
-  ].filter(Boolean).join('');
+  ].filter(Boolean).join('') : '';
+
+  const showMyanmar = hasMyanmarHelp(myanmarExplanation, selectedAnswer)
+    && (level === 'full' || level === 'supported' || (level === 'light' && correct !== true));
 
   return `
     <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
@@ -414,8 +420,13 @@ function buildExplanationHtml(q, selectedAnswer) {
         <strong>${correct === true ? 'Correct' : correct === false ? 'Not quite' : 'Review'}</strong>
         ${auto && hasSelected && correct === false && correctDisplay ? `<span>Correct answer: ${escapeHtml(correctDisplay)}</span>` : ''}
       </div>
+      ${selfCheck.length ? `
+        <div class="open-self-check">
+          <strong>Check your sentence</strong>
+          <ul>${selfCheck.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+        </div>` : ''}
       ${summary ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(summary)}</p>` : ''}
-      ${hasMyanmarHelp(myanmarExplanation, selectedAnswer) ? `<button type="button" class="chee-mm-trigger" data-myanmar-help>မြန်မာလိုရှင်းပြ</button>` : ''}
+      ${showMyanmar ? `<button type="button" class="chee-mm-trigger" data-myanmar-help>မြန်မာလိုရှင်းပြ</button>` : ''}
       ${breakdown ? `
         <details class="answer-breakdown">
           <summary>See answer breakdown</summary>
@@ -614,8 +625,31 @@ function showQuestionExplanation(q, selectedAnswer) {
   box.classList.toggle("visible", Boolean(box.textContent.trim()));
   const myanmarButton = box.querySelector('[data-myanmar-help]');
   if (myanmarButton && q.myanmarExplanation) {
-    myanmarButton.addEventListener('click', () => openMyanmarHelp(q.myanmarExplanation));
+    myanmarButton.addEventListener('click', () => openMyanmarHelp(q.myanmarExplanation, selectedAnswer));
   }
+}
+
+function resolveMyanmarHelp(data, selectedAnswer) {
+  if (!data) return [];
+  if (typeof data === 'string') return [{ title: '', body: data }];
+  const selected = selectedAnswer != null ? String(selectedAnswer) : '';
+  const answerSpecific = data.byAnswer?.[selected];
+  if (Array.isArray(answerSpecific) && answerSpecific.length) return answerSpecific;
+  if (Array.isArray(data.sections)) return data.sections;
+  return [];
+}
+
+function hasMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).some((section) => String(section?.body || '').trim());
+}
+
+function renderMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).map((section) => {
+    const title = String(section?.title || '').trim();
+    const body = String(section?.body || '').trim();
+    if (!body) return '';
+    return `<section class="chee-mm-section">${title ? `<h3>${escapeHtml(title)}</h3>` : ''}<p>${escapeHtml(body)}</p></section>`;
+  }).join('');
 }
 
 function ensureMyanmarHelpDrawer() {
@@ -624,6 +658,7 @@ function ensureMyanmarHelpDrawer() {
   overlay.id = 'chee-mm-overlay';
   overlay.className = 'chee-mm-overlay';
   overlay.addEventListener('click', closeMyanmarHelp);
+
   const drawer = document.createElement('aside');
   drawer.id = 'chee-mm-drawer';
   drawer.className = 'chee-mm-drawer';
@@ -638,10 +673,10 @@ function ensureMyanmarHelpDrawer() {
   document.body.append(overlay, drawer);
 }
 
-function openMyanmarHelp(text) {
+function openMyanmarHelp(data, selectedAnswer) {
   ensureMyanmarHelpDrawer();
   const body = document.getElementById('chee-mm-body');
-  if (body) body.textContent = String(text || '');
+  if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
   document.getElementById('chee-mm-overlay')?.classList.add('open');
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.add('open');
@@ -654,7 +689,6 @@ function closeMyanmarHelp() {
   drawer?.classList.remove('open');
   drawer?.setAttribute('aria-hidden', 'true');
 }
-
 function lockInteractionControls(q, container) {
   container.classList.add("answer-locked");
   container.querySelectorAll("button, select").forEach((control) => { control.disabled = true; });
