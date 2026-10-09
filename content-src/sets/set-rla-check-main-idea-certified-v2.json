@@ -66,7 +66,43 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "It captures the passage’s repeated trade-off structure without claiming that any one consequence always comes first.",
-        "quickTip": "The central idea should explain why the examples are there, not become one of the examples."
+        "quickTip": "The central idea should explain why the examples are there, not become one of the examples.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "A က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က food ကို risk လုံးဝမရှိအောင်လုပ်နိုင်တယ်လို့ မပြောထားဘူး။ အစကတည်းက risk အားလုံးကို ဖယ်ရှားလို့မရဘူးလို့ ပြောထားတယ်။"
+              },
+              {
+                "title": "မှန်တဲ့ idea က",
+                "body": "Food-safety decision တစ်ခုမှာ illness risk လျော့တာနဲ့ cost, waste, resources, workers, environment ပေါ် သက်ရောက်မှုတွေကို အတူချိန်ဆရမယ်ဆိုတာပါ။"
+              }
+            ],
+            "b": [
+              {
+                "title": "ဘာလို့ B မှန်တာလဲ",
+                "body": "B က passage ရဲ့ repeated pattern ကို တိတိကျကျ ခြုံထားတယ်—safety benefit တစ်ဖက်နဲ့ တခြား cost/harm တစ်ဖက်ကို အတူစဉ်းစားရမယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Main Idea ကိုရွေးရင် example တစ်ခုကို မရွေးဘဲ examples အားလုံး ဘာကိုပြနေသလဲ ကြည့်ပါ။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က environment ကို food safety ထက် အမြဲပိုဦးစားပေးရမယ်လို့ မပြောထားဘူး။ အကျိုးနဲ့ ဆိုးကျိုး အမျိုးမျိုးကို balance လုပ်ရမယ်လို့ပဲ ပြောထားတယ်။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Cleaning equipment က example တစ်ခုပဲ။ Passage တစ်ခုလုံးရဲ့ Main Idea ကို ကိုယ်စားမပြုနိုင်ဘူး။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "gist_synthesis"
     },
@@ -116,7 +152,39 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "Both examples show a safety benefit paired with a different cost or harm, which directly supports the passage’s central reasoning.",
-        "quickTip": "For evidence-pair questions, both details should support the same relationship in the main idea."
+        "quickTip": "For evidence-pair questions, both details should support the same relationship in the main idea.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဘာလို့ A မှန်တာလဲ",
+                "body": "Detail နှစ်ခုလုံးမှာ safety benefit တစ်ခုနဲ့ တခြား cost/harm တစ်ခုကို pair လုပ်ပြထားတယ်။ ဒါက passage ရဲ့ trade-off reasoning ကို တိုက်ရိုက် support လုပ်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Evidence pair question မှာ detail နှစ်ခုလုံးက Main Idea ထဲက relationship တစ်ခုတည်းကို support လုပ်သလား စစ်ပါ။"
+              }
+            ],
+            "b": [
+              {
+                "title": "B က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "ဒီနှစ်ချက်က general facts ပဲ။ Safety benefit နဲ့ competing cost/harm ဆိုတဲ့ trade-off ကို မပြဘူး။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မလုံလောက်တာလဲ",
+                "body": "Cleaning က contamination လျော့စေနိုင်တာနဲ့ illness serious ဖြစ်နိုင်တာက benefit side ကိုပဲ ပြတယ်။ Passage အဓိကထားတဲ့ competing downside မပါဘူး။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Transport နဲ့ wildlife ရှိတယ်ဆိုတာ background detail ပဲ။ Decision trade-off ကို မပြဘူး။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "evidence_link"
     },
@@ -172,7 +240,23 @@
       "explanation": {
         "answer": "s2 fits; s1 is narrow; s3 overclaims.",
         "whyCorrect": "The whole-text idea recognizes trade-offs without arguing that safety rules usually do more harm than good.",
-        "quickTip": "Scope control means preserving both the main conclusion and its limits."
+        "quickTip": "Scope control means preserving both the main conclusion and its limits.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Scope ကိုစစ်မယ်",
+              "body": "s1 က cold transport နဲ့ energy use အကြောင်း example တစ်ခုပဲဖြစ်လို့ ကျဉ်းတယ်။ s3 က safety rules က illness ထက် ပိုဆိုးတယ်လို့ passage မပြောထားတဲ့အထိ ချဲ့ထားတယ်။"
+            },
+            {
+              "title": "ဘာလို့ s2 ကိုက်တာလဲ",
+              "body": "s2 က safety measures မှာ illness prevention တစ်ခုတည်းမဟုတ်ဘဲ တခြား consequences တွေလည်းရှိတယ်၊ ဒါကြောင့် decision မှာ အားလုံးကိုစဉ်းစားရမယ်ဆိုတဲ့ passage တစ်ခုလုံးရဲ့ logic ကို ခြုံထားတယ်။"
+            },
+            {
+              "title": "နောက်တစ်ခါ",
+              "body": "Main Idea choice က example တစ်ခုတည်းလား၊ passage ထက်ပိုကျယ်သွားလား၊ passage တစ်ခုလုံးနဲ့ အတိအကျကိုက်လား စစ်ပါ။"
+            }
+          ]
+        }
       },
       "reportingCategory": "scope_control"
     },
@@ -222,7 +306,39 @@
       "explanation": {
         "answer": "C",
         "whyCorrect": "It applies the passage’s multi-factor trade-off reasoning to a decision.",
-        "quickTip": "Transfer questions ask whether you can use the passage’s reasoning in a new situation."
+        "quickTip": "Transfer questions ask whether you can use the passage’s reasoning in a new situation.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "A က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Risk နည်းသွားတာတစ်ချက်တည်းကြည့်ပြီး measure အားလုံးကို လုပ်မယ်ဆိုတာ passage ရဲ့ trade-off reasoning ကို ဆန့်ကျင်တယ်။"
+              }
+            ],
+            "b": [
+              {
+                "title": "B က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Cost က consideration တစ်ခုပဲ။ Passage က resources, food supply, workers, environment စတဲ့ အခြား consequences တွေလည်း ကြည့်ရမယ်လို့ ပြောထားတယ်။"
+              }
+            ],
+            "c": [
+              {
+                "title": "ဘာလို့ C မှန်တာလဲ",
+                "body": "C က passage ရဲ့ reasoning ကို situation အသစ်မှာ တိုက်ရိုက်အသုံးချထားတယ်—health benefit နဲ့ တခြား consequences တွေကို အတူချိန်ဆပြီးမှ decision လုပ်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Transfer question မှာ passage ထဲက စကားလုံးတူတာကို မရှာပါနဲ့။ Passage က သုံးထားတဲ့ reasoning pattern ကို situation အသစ်မှာ ဘယ် answer က ထိန်းထားလဲ ကြည့်ပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က context နဲ့ trade-offs မတူနိုင်တာကိုပြထားလို့ setting တိုင်းကို rule တစ်ခုတည်းသုံးတာ မကိုက်ဘူး။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "main_idea_transfer"
     },
@@ -272,7 +388,39 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "The excerpt repeatedly shows Vera constructing a false context and then using it to shape Framton’s interpretation of normal events.",
-        "quickTip": "A literary central idea can focus on the mechanism that gives the plot its meaning."
+        "quickTip": "A literary central idea can focus on the mechanism that gives the plot its meaning.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "A က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Framton ရဲ့ nerves က သူလှည့်စားခံရလွယ်တာကို ကူညီရှင်းပေးတယ်။ ဒါပေမယ့် story တစ်ခုလုံးရဲ့ Central Idea မဟုတ်ဘူး။"
+              }
+            ],
+            "b": [
+              {
+                "title": "ဘာလို့ B မှန်တာလဲ",
+                "body": "Vera က false story တစ်ခုတည်ဆောက်ပြီး detail တွေနဲ့ convincing ဖြစ်အောင်လုပ်တယ်။ Framton က context မသိတဲ့အတွက် နောက်က ordinary events တွေကို အဲဒီ story အတိုင်းအဓိပ္ပာယ်ဖော်သွားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Literary Central Idea မှာ plot ကိုဖြစ်စေတဲ့ mechanism—ဘယ်လို၊ ဘာကြောင့် အဓိပ္ပာယ်ဖြစ်လာတာလဲ—ကိုကြည့်ပါ။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Mrs. Sappleton က Vera ရဲ့ invented story ကို မသိဘူး။ Framton ကို တမင်ကြောက်အောင်လုပ်တာ မဟုတ်ဘူး။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Story က countryside နဲ့ city ဘယ်ဟာပိုကြောက်စရာကောင်းလဲဆိုတာ မနှိုင်းယှဉ်ထားဘူး။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "literary_central_idea"
     },
@@ -322,7 +470,39 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "The staged reaction supports the first invented story, while the rapid second story at the end confirms a pattern of intentional fabrication.",
-        "quickTip": "Strong literary evidence often comes from separated moments that reveal the same character pattern."
+        "quickTip": "Strong literary evidence often comes from separated moments that reveal the same character pattern.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဘာလို့ A မှန်တာလဲ",
+                "body": "Vera က men တွေပြန်လာတဲ့အချိန် deliberately horror reaction ပြတယ်။ Framton ထွက်ပြေးသွားတာနဲ့ ချက်ချင်း dog story အသစ်တစ်ခု ထပ်ဖန်တီးတယ်။ ဒီနှစ်ခုက သူမက မတော်တဆနားလည်မှားတာမဟုတ်ဘဲ တမင် story ဖန်တီးနေတာကို ပြတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Character pattern ကို support လုပ်တဲ့ evidence ရွေးရင် text အစနဲ့အဆုံးလို ဝေးတဲ့နေရာက moment နှစ်ခုက တူညီတဲ့ pattern ကိုပြသလား ကြည့်ပါ။"
+              }
+            ],
+            "b": [
+              {
+                "title": "B က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Mrs. Sappleton ရဲ့ shooting talk နဲ့ Framton ရဲ့ doctors အကြောင်းက Vera တမင်လိမ်နေတာကို မပြဘူး။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မလုံလောက်တာလဲ",
+                "body": "Open window နဲ့ spaniel က deception ကို convincing ဖြစ်စေတယ်။ ဒါပေမယ့် Vera က consciously story ဖန်တီးနေတယ်ဆိုတာကို ဒီနှစ်ချက်တည်းနဲ့ မသက်သေပြနိုင်ဘူး။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Framton က strangers ကိုလာတွေ့တာနဲ့ evening quiet ဖြစ်တာက background conditions ပဲ။ Vera ရဲ့ deliberate invention ကို မပြဘူး။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "evidence_link"
     },
@@ -372,7 +552,39 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "The ending reveals that inventing convincing explanations quickly is a pattern for Vera. That confirms the earlier tragedy story was intentional and strengthens the text’s central idea about how a persuasive false story can shape someone’s interpretation of later events.",
-        "quickTip": "In literature, an ending can clarify the meaning of earlier events and help confirm the central idea."
+        "quickTip": "In literature, an ending can clarify the meaning of earlier events and help confirm the central idea.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဘာလို့ A မှန်တာလဲ",
+                "body": "Final sentence က Vera ဟာ အချိန်တိုတိုအတွင်း convincing story ဖန်တီးတာကို မကြာခဏလုပ်တတ်သူဆိုတာ confirm လုပ်ပေးတယ်။ ဒါကြောင့် Framton ကိုလှည့်စားတာက accidental မဟုတ်ဘဲ deliberate ဖြစ်တယ်ဆိုတာ ပိုရှင်းသွားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Story အဆုံးက sentence တစ်ကြောင်းဟာ အစောပိုင်းဖြစ်ရပ်တွေကို ဘယ်လို meaning အသစ်ပေးသလဲ ကြည့်ပါ။"
+              }
+            ],
+            "b": [
+              {
+                "title": "B က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Sentence က Vera ရဲ့ storytelling habit ကိုပြတာပါ။ Writer ဖြစ်ချင်တဲ့ career goal ကို မပြောထားဘူး။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Mrs. Sappleton က deception ကို မသိဘူး၊ Vera ကို Framton ကိုကြောက်အောင်လုပ်ခိုင်းထားတာလည်း မရှိဘူး။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Framton ရဲ့ nervousness က သူလှည့်စားခံရလွယ်တာကို ကူညီရှင်းပေးပေမယ့် final sentence က အဓိက Vera ရဲ့ deliberate storytelling ကိုညွှန်တာပါ။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "literary_central_idea"
     },
@@ -422,7 +634,39 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "Framton’s lack of background knowledge allows Vera’s story to frame everything he sees afterward.",
-        "quickTip": "A good generalization stays close to the mechanism demonstrated by the text without becoming universal."
+        "quickTip": "A good generalization stays close to the mechanism demonstrated by the text without becoming universal.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "A က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Story တစ်ပုဒ်ထဲက Vera ရဲ့ behavior ကိုယူပြီး teenagers အားလုံးကို မယုံရဘူးလို့ generalize လုပ်လို့မရဘူး။"
+              }
+            ],
+            "b": [
+              {
+                "title": "ဘာလို့ B မှန်တာလဲ",
+                "body": "Framton က family အကြောင်း context မသိတဲ့အတွက် Vera ပေးတဲ့ false story က သူမြင်တဲ့ evidence အားလုံးကို ဘယ်လိုအဓိပ္ပာယ်ဖော်မလဲဆိုတာကို control လုပ်သွားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Broader idea ရွေးရင် story ကပြထားတဲ့ human pattern ကို ခြုံရမယ်၊ ဒါပေမယ့် “always/never/everyone” လို universal rule မဖြစ်သင့်ဘူး။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Story က nervous people အားလုံး reality နဲ့ imagination မခွဲနိုင်ဘူးလို့ မပြောထားဘူး။ Framton တစ်ယောက်ကို specific deception တစ်ခုနဲ့ လှည့်စားထားတာပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "တကယ် supernatural event မဖြစ်ဘူး။ Deception က ordinary events ကို false context နဲ့ ကြည့်စေထားတာကြောင့် အလုပ်ဖြစ်တာပါ။"
+              }
+            ]
+          }
+        }
       },
       "reportingCategory": "main_idea_transfer"
     }
