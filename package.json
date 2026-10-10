@@ -6,7 +6,7 @@
     "content:validate": "node scripts/validate-content.mjs",
     "content:build": "node scripts/build-content.mjs",
     "content:check": "npm run content:validate && npm run content:build",
-    "studio": "node scripts/serve.mjs",
+    "studio": "npm run content:build && node scripts/serve.mjs",
     "test": "node --test --test-concurrency=1 scripts/*.test.mjs",
     "public:build": "npm run content:build && node scripts/build-public.mjs",
     "content:preview-mainidea": "node scripts/build-content.mjs --preview-main-idea"
