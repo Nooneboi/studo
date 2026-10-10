@@ -29,7 +29,10 @@ async function initCheck() {
     return renderRecovery("This Skill Check could not be loaded.");
   }
   const primarySkillId = currentModule?.contentMeta?.curriculum?.primarySkillId || currentModule?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2") document.body.classList.add("mainidea-v22-runtime");
+  if (primarySkillId === "R1.2") {
+    document.body.classList.add("mainidea-v22-runtime");
+    setupMainIdeaV22Chrome();
+  }
 
   const roles = currentModule?.contentMeta?.curriculum?.deliveryRoles || [];
   if (!roles.includes("skill_check")) return renderRecovery("This file is not a dedicated Skill Check.");
@@ -38,6 +41,18 @@ async function initCheck() {
   document.title = `Chee Skool — ${currentModule.title || "Skill Check"}`;
   document.getElementById("check-title").textContent = currentModule.topic || "Skill Check";
   renderQuestion();
+}
+
+function setupMainIdeaV22Chrome() {
+  const learn = document.getElementById("mainidea-v22-learn");
+  const practice = document.getElementById("mainidea-v22-practice");
+  const check = document.getElementById("mainidea-v22-check");
+  if (!learn || !practice || !check) return;
+  const skillReturn = "skill.html?skill=R1.2";
+  learn.href = "module.html?file=generated/modules/set-rla-mainidea-learn-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+  practice.href = "module.html?file=generated/modules/set-rla-mainidea-practice-b-stated-v1.json&return=" + encodeURIComponent(skillReturn);
+  check.href = "check.html?file=generated/modules/set-rla-check-main-idea-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+  check.classList.add("active");
 }
 
 function renderQuestion() {
