@@ -49,13 +49,13 @@ async function setupMainIdeaV22Chrome() {
   const check = document.getElementById("mainidea-v22-check");
   if (!learn || !practice || !check) return;
 
-  let curriculum = null;
+  let routes = null;
   try {
-    curriculum = await Data.loadCurriculum();
+    routes = CurriculumRoutes.build(await Data.loadCurriculum());
   } catch (_) {
-    curriculum = null;
+    routes = null;
   }
-  const route = mainIdeaRouteConfig(curriculum);
+  const route = mainIdeaRouteConfig(routes);
   if (!route) {
     [learn, practice, check].forEach((link) => {
       link.removeAttribute("href");
@@ -71,25 +71,21 @@ async function setupMainIdeaV22Chrome() {
   check.classList.add("active");
 }
 
-function mainIdeaRouteConfig(curriculum) {
-  for (const track of curriculum?.tracks || []) {
-    for (const domain of track.domains || []) {
-      const skill = (domain.skills || []).find((item) => item.id === "R1.2");
-      if (!skill) continue;
-      const sets = skill.sets || [];
-      const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
-      const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
-      const checkSet = (skill.checks || [])[0];
-      if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
-      return {
-        learnFile: learnSet.file,
-        practiceFile: practiceSet.file,
-        checkFile: checkSet.file,
-        returnHref: `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=R1.2`,
-      };
-    }
-  }
-  return null;
+function mainIdeaRouteConfig(routes) {
+  const location = routes?.skillLocation?.("R1.2");
+  const skill = location?.skill;
+  if (!location || !skill) return null;
+  const sets = skill.sets || [];
+  const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
+  const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
+  const checkSet = (skill.checks || [])[0];
+  if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
+  return {
+    learnFile: learnSet.file,
+    practiceFile: practiceSet.file,
+    checkFile: checkSet.file,
+    returnHref: location.returnHref,
+  };
 }
 
 function moduleRoute(file, returnHref) {
