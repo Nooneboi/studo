@@ -86,6 +86,7 @@ function setupMainIdeaV22Chrome(curriculum) {
     return;
   }
 
+  mainIdeaReturnHref = route.returnHref;
   learn.href = moduleRoute(route.learnFile, route.returnHref);
   practice.href = moduleRoute(route.practiceFile, route.returnHref);
   check.href = checkRoute(route.checkFile, route.returnHref);
