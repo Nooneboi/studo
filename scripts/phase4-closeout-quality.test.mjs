@@ -32,16 +32,16 @@ test('Phase 4 inventory remains intact underneath additive Phase 5 and pre-pilot
   const hardeningQuestionCount = hardeningItems.reduce((sum, item) => sum + (item.module.questions || []).length, 0);
   const checks = phase4Items.filter(({ module }) => (module.contentMeta?.curriculum?.deliveryRoles || []).includes('skill_check'));
   const quickReview = readJson('data/generated/quick-review.json');
-  assert.equal(phase4Items.length, 112);
-  assert.equal(phase4QuestionCount, 807);
+  assert.equal(phase4Items.length, 115);
+  assert.equal(phase4QuestionCount, 813);
   assert.equal(hardeningItems.length, 3);
   assert.equal(hardeningQuestionCount, 16);
   assert.equal(checks.length, 9);
-  assert.equal(checks.reduce((sum, item) => sum + item.module.questions.length, 0), 54);
+  assert.equal(checks.reduce((sum, item) => sum + item.module.questions.length, 0), 56);
   assert.equal(quickReview.cards.length, 28);
   assert.equal(mockItems.length, 21);
   assert.equal(mockItems.reduce((sum, item) => sum + item.module.questions.length, 0), 138);
-  assert.equal(items.length, 136);
+  assert.equal(items.length, 139);
 });
 
 test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated', () => {
@@ -97,7 +97,7 @@ test('current alpha metadata stays synchronized after additive Phase 5 and pre-p
   const releaseMatch = release.release.match(/^0\.7\.0-alpha\.(\d+)$/);
   assert.ok(releaseMatch, 'release stays on the 0.7.0 alpha line');
   assert.ok(Number(releaseMatch[1]) >= 29, 'later alpha releases must preserve the Phase 4 closeout baseline');
-  assert.equal(release.generatedModules, 136);
+  assert.equal(release.generatedModules, 139);
   assert.equal(release.learnerResourceFiles, 152);
   const builder = read('scripts/build-public.mjs');
   assert.match(builder, /check\.html/);
