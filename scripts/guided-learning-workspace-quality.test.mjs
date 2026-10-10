@@ -133,9 +133,11 @@ test('guided CSS reduces density and exposes clear card, category, selection, an
 });
 
 
-test('guided open-ended responses unlock Next once the learner has written a response', () => {
+test('guided open-ended responses unlock Next after writing, except Main Idea V22 which compares first', () => {
   const moduleJs = read('js/module.js');
   const openEnded = moduleJs.match(/id="written-answer"[\s\S]*?function cssEscape/)?.[0] || '';
   assert.ok(openEnded, 'open-ended renderer should exist');
-  assert.match(openEnded, /if \(guided && ta\.value\.trim\(\)\) unlockGuidedNext\(\)/);
+  assert.match(openEnded, /if \(guided && ta\.value\.trim\(\) && !document\.body\.classList\.contains\("mainidea-v22-runtime"\)\) unlockGuidedNext\(\)/);
+  assert.match(openEnded, /Compare response/);
+  assert.match(openEnded, /if \(document\.body\.classList\.contains\("mainidea-v22-runtime"\)\) unlockGuidedNext\(\)/);
 });
