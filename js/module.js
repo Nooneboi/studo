@@ -53,7 +53,7 @@ async function init() {
   const exitLink = document.getElementById("focus-exit");
   if (exitLink) exitLink.href = backHref;
   const titleEl = document.getElementById("focus-title");
-  if (titleEl) titleEl.textContent = "Practice";
+  if (titleEl) titleEl.textContent = explicitAssistanceLevel() === "full" ? "Learn" : "Practice";
 
   const requestedQuestion = params.get("question");
   const available = activeQuestions();
@@ -73,11 +73,27 @@ function firstAvailableIndex() {
   return activeQuestions().length ? 0 : -1;
 }
 
+function explicitAssistanceLevel() {
+  const level = currentQuiz?.contentMeta?.curriculum?.assistanceLevel;
+  return ["full", "supported", "light", "minimal"].includes(level) ? level : null;
+}
+
+function assistanceLevel() {
+  return explicitAssistanceLevel() || "legacy";
+}
+
 function isGuidedLearningModule() {
+  const explicit = explicitAssistanceLevel();
+  if (explicit) return ["full", "supported"].includes(explicit);
   const practiceTags = currentQuiz?.contentMeta?.curriculum?.practiceTags || [];
   return practiceTags.includes("active-learning");
 }
 
+function allowsGuidedRetry(q) {
+  const explicit = explicitAssistanceLevel();
+  const eligible = explicit ? ["full", "supported"].includes(explicit) : isGuidedLearningModule();
+  return eligible && learningStageFor(q) === "guided" && Boolean(q?.hint);
+}
 function learningStageFor(q) {
   return ["guided", "apply", "independent"].includes(q?.learningStage) ? q.learningStage : "apply";
 }
@@ -247,7 +263,7 @@ function renderCurrentQuestion(options = {}) {
   const guidedNextLocked = guided && !savedAnswer;
 
   stage.innerHTML = `
-    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span><span aria-hidden="true">·</span><strong>${escapeHtml(stageName.toUpperCase())}</strong></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
+    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     ${helperText ? `<p class="guided-helper">${escapeHtml(helperText)}</p>` : ""}
     <div data-role="answer-area"></div>
@@ -382,14 +398,18 @@ function buildExplanationHtml(q, selectedAnswer) {
   const rule = q.rule || defaultRuleForQuestion(q);
   const wrongReason = !correct && auto && hasSelected ? distractorReasonForAnswer(q, selectedAnswer) : '';
   const evidence = q.evidenceExcerpt || q.evidence || '';
+  const myanmarExplanation = q.myanmarExplanation || null;
+  const selfCheck = Array.isArray(q.selfCheck) ? q.selfCheck : [];
+  const level = assistanceLevel();
   const I = window.QuestionInteractions;
   const sharedType = Boolean(I?.SUPPORTED_TYPES?.has(q.type));
   const selectedDisplay = sharedType ? I.formatAnswer(q, selectedAnswer) : (selectedOption ? answerDisplay(q, selectedOption) : '');
   const correctDisplay = sharedType ? I.formatAnswer(q, q.correct) : (correctOption ? answerDisplay(q, correctOption) : '');
 
-  if (!summary && !rule && !evidence && !hasSelected) return '';
+  if (!summary && !rule && !evidence && !hasSelected && !selfCheck.length) return '';
 
-  const breakdown = [
+  const showBreakdown = level === 'full' || level === 'legacy';
+  const breakdown = showBreakdown ? [
     !correct && wrongReason ? `
       <div class="answer-breakdown-row">
         <span>Your answer</span>
@@ -405,7 +425,15 @@ function buildExplanationHtml(q, selectedAnswer) {
         <span>Tip</span>
         <p>${escapeHtml(rule)}</p>
       </div>` : ''
-  ].filter(Boolean).join('');
+  ].filter(Boolean).join('') : '';
+
+  const showMyanmar = hasMyanmarHelp(myanmarExplanation, selectedAnswer)
+    && (
+      level === 'full'
+      || level === 'supported'
+      || (level === 'light' && correct !== true)
+      || (level === 'minimal' && correct === false)
+    );
 
   return `
     <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
@@ -413,7 +441,13 @@ function buildExplanationHtml(q, selectedAnswer) {
         <strong>${correct === true ? 'Correct' : correct === false ? 'Not quite' : 'Review'}</strong>
         ${auto && hasSelected && correct === false && correctDisplay ? `<span>Correct answer: ${escapeHtml(correctDisplay)}</span>` : ''}
       </div>
+      ${selfCheck.length ? `
+        <div class="open-self-check">
+          <strong>Check your sentence</strong>
+          <ul>${selfCheck.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+        </div>` : ''}
       ${summary ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(summary)}</p>` : ''}
+      ${showMyanmar ? `<button type="button" class="chee-mm-trigger" data-myanmar-help>မြန်မာလိုရှင်းပြ</button>` : ''}
       ${breakdown ? `
         <details class="answer-breakdown">
           <summary>See answer breakdown</summary>
@@ -610,8 +644,72 @@ function showQuestionExplanation(q, selectedAnswer) {
   if (!box) return;
   box.innerHTML = buildExplanationHtml(q, selectedAnswer);
   box.classList.toggle("visible", Boolean(box.textContent.trim()));
+  const myanmarButton = box.querySelector('[data-myanmar-help]');
+  if (myanmarButton && q.myanmarExplanation) {
+    myanmarButton.addEventListener('click', () => openMyanmarHelp(q.myanmarExplanation, selectedAnswer));
+  }
 }
 
+function resolveMyanmarHelp(data, selectedAnswer) {
+  if (!data) return [];
+  if (typeof data === 'string') return [{ title: '', body: data }];
+  const selected = selectedAnswer != null ? String(selectedAnswer) : '';
+  const answerSpecific = data.byAnswer?.[selected];
+  if (Array.isArray(answerSpecific) && answerSpecific.length) return answerSpecific;
+  if (Array.isArray(data.sections)) return data.sections;
+  return [];
+}
+
+function hasMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).some((section) => String(section?.body || '').trim());
+}
+
+function renderMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).map((section) => {
+    const title = String(section?.title || '').trim();
+    const body = String(section?.body || '').trim();
+    if (!body) return '';
+    return `<section class="chee-mm-section">${title ? `<h3>${escapeHtml(title)}</h3>` : ''}<p>${escapeHtml(body)}</p></section>`;
+  }).join('');
+}
+
+function ensureMyanmarHelpDrawer() {
+  if (document.getElementById('chee-mm-drawer')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'chee-mm-overlay';
+  overlay.className = 'chee-mm-overlay';
+  overlay.addEventListener('click', closeMyanmarHelp);
+
+  const drawer = document.createElement('aside');
+  drawer.id = 'chee-mm-drawer';
+  drawer.className = 'chee-mm-drawer';
+  drawer.setAttribute('aria-hidden', 'true');
+  drawer.innerHTML = `
+    <div class="chee-mm-head">
+      <strong>မြန်မာလိုရှင်းပြ</strong>
+      <button type="button" class="chee-mm-close" aria-label="Close">ပိတ်</button>
+    </div>
+    <div class="chee-mm-body" id="chee-mm-body"></div>`;
+  drawer.querySelector('.chee-mm-close').addEventListener('click', closeMyanmarHelp);
+  document.body.append(overlay, drawer);
+}
+
+function openMyanmarHelp(data, selectedAnswer) {
+  ensureMyanmarHelpDrawer();
+  const body = document.getElementById('chee-mm-body');
+  if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
+  document.getElementById('chee-mm-overlay')?.classList.add('open');
+  const drawer = document.getElementById('chee-mm-drawer');
+  drawer?.classList.add('open');
+  drawer?.setAttribute('aria-hidden', 'false');
+}
+
+function closeMyanmarHelp() {
+  document.getElementById('chee-mm-overlay')?.classList.remove('open');
+  const drawer = document.getElementById('chee-mm-drawer');
+  drawer?.classList.remove('open');
+  drawer?.setAttribute('aria-hidden', 'true');
+}
 function lockInteractionControls(q, container) {
   container.classList.add("answer-locked");
   container.querySelectorAll("button, select").forEach((control) => { control.disabled = true; });
@@ -637,8 +735,7 @@ function submitInteractiveAnswer(q, answer, container) {
   if (!I.hasCompleteAnswer(q, canonical)) return false;
 
   const correct = I.isCorrect(q, canonical);
-  const firstGuidedMiss = isGuidedLearningModule()
-    && learningStageFor(q) === 'guided'
+  const firstGuidedMiss = allowsGuidedRetry(q)
     && !correct
     && !guidedRetryUsed.has(q.id);
 
@@ -1193,16 +1290,31 @@ function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
     return;
   }
 
-  container.innerHTML = `<label class="question-detail" for="written-answer">Your response</label><textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>`;
+  container.innerHTML = `
+    <label class="question-detail" for="written-answer">Your response</label>
+    <textarea id="written-answer" class="open-ended-input" placeholder="Write your response…">${escapeHtml(savedAnswer || "")}</textarea>
+    ${explicitAssistanceLevel() ? `<div class="guided-primary-action"><button class="btn interaction-check" type="button" ${savedAnswer ? "" : "disabled"}>Compare response</button></div>` : ""}
+  `;
   const ta = container.querySelector("textarea");
+  const compare = container.querySelector(".interaction-check");
   ta.addEventListener("input", () => {
     Store.setAnswer(currentQuiz.id, q.id, ta.value);
+    if (compare) compare.disabled = !ta.value.trim();
+    if (guided && ta.value.trim()) unlockGuidedNext();
     updateAnswerStatus();
   });
-  ta.addEventListener("blur", () => {
-    if (ta.value.trim()) showQuestionExplanation(q, ta.value);
-  });
-  if (savedAnswer) showQuestionExplanation(q, savedAnswer);
+  if (explicitAssistanceLevel()) {
+    compare?.addEventListener("click", () => {
+      if (!ta.value.trim()) return;
+      showQuestionExplanation(q, ta.value);
+      compare.disabled = true;
+    });
+  } else {
+    ta.addEventListener("blur", () => {
+      if (ta.value.trim()) showQuestionExplanation(q, ta.value);
+    });
+    if (savedAnswer) showQuestionExplanation(q, savedAnswer);
+  }
 }
 
 function cssEscape(value) {
@@ -1300,7 +1412,9 @@ function showCompletionSummary() {
   const nextHref = nextSet
     ? `module.html?file=${encodeURIComponent(nextSet.file)}&return=${encodeURIComponent(nextSet.returnHref)}`
     : document.getElementById("focus-exit").href;
-  const nextLabel = nextSet ? `Continue to ${nextSet.title}` : "Back to practice";
+  const nextLabel = nextSet
+    ? (currentQuiz?.contentMeta?.curriculum?.primarySkillId === "R1.2" ? "Try another Main Idea passage" : `Continue to ${nextSet.title}`)
+    : "Back to practice";
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="review-first">Review from start</button>
     <span class="question-footer-position">Complete</span>

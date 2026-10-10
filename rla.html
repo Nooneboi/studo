@@ -7,7 +7,9 @@
 <meta name="studo-release" content="0.7.0-alpha.34">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="favicon.svg" rel="icon" type="image/svg+xml">
-<title>Chee Skool — RLA Skills</title>
+<link href="icons/icon-192.png" rel="apple-touch-icon">
+<title>Chee Skool — GED RLA</title>
+<meta name="description" content="Choose the GED RLA area you want to study.">
 <link href="manifest.json" rel="manifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
@@ -27,7 +29,18 @@
 
 <main class="simple-entry-main">
   <div class="wrap simple-reading-width">
-    <div id="curriculum-view"></div>
+    <a class="simple-back" href="index.html">GED subjects</a>
+    <div class="simple-kicker">Reasoning Through Language Arts</div>
+    <h1>GED RLA</h1>
+
+    <ul class="simple-subject-list" aria-label="RLA study areas">
+      <li><a href="curriculum.html?track=reading">Reading &amp; Comprehension</a></li>
+      <li><a href="curriculum.html?track=arguments">Arguments &amp; Sources</a></li>
+      <li><a href="curriculum.html?track=language">Language &amp; Editing</a></li>
+      <li><a href="curriculum.html?track=extended-response">Extended Response</a></li>
+    </ul>
+
+    <div class="simple-secondary-link"><a href="quiz.html">RLA Practice Tests</a></div>
   </div>
 </main>
 
@@ -35,7 +48,5 @@
   <div class="wrap"><nav aria-label="Project information"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div>
 </footer>
 <script src="js/app.js"></script>
-<script src="js/data.js"></script>
-<script src="js/curriculum.js"></script>
 </body>
 </html>

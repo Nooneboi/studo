@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mainidea-practice-c-implied-v1",
+  "title": "Main Idea — Practice C: Implied Idea",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "medium",
+  "status": "published",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mainidea-practice-c-nature-certified-v1"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "C4 Main Idea editorial review pending",
+  "reviewNotes": "Implied-main-idea transfer using CC-BY source adaptation; source heading withheld as an answer cue.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "active-learning",
+      "mock-excluded"
+    ],
+    "learningObjective": "Infer a central idea by combining repeated clues and preserving limits.",
+    "topicLabel": "Main idea / central idea",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ],
+    "assistanceLevel": "light"
+  },
+  "questions": [
+    {
+      "id": "c1",
+      "type": "drag_sort",
+      "prompt": "Which three details are most useful for building the passage’s central idea?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "interaction": {
+        "items": [
+          {
+            "id": "i1",
+            "text": "The model counts both direct and indirect climate effects."
+          },
+          {
+            "id": "i2",
+            "text": "One indirect effect is that shade can make walking more attractive than driving."
+          },
+          {
+            "id": "i3",
+            "text": "The model compares strategies across different urban settings."
+          },
+          {
+            "id": "i4",
+            "text": "Across 54 cities, modeled reductions averaged about 17%, with larger reductions in some places."
+          },
+          {
+            "id": "i5",
+            "text": "Cleaner electricity is another action cities can take."
+          }
+        ],
+        "zones": [
+          {
+            "id": "central",
+            "label": "Central clue"
+          },
+          {
+            "id": "detail",
+            "label": "Useful detail / example"
+          }
+        ],
+        "presentation": "choice_rows"
+      },
+      "correct": "i1=central|i2=detail|i3=central|i4=central|i5=detail",
+      "explanation": {
+        "answer": "i1, i3, and i4",
+        "whyCorrect": "Together they show the model’s broad pathways, variation across settings, and the size of the estimated result. The other statements are examples or follow-up context.",
+        "quickTip": "Before naming an implied main idea, collect clues that repeat across the passage.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Implied Main Idea ကို ဘယ်လိုရှာမလဲ",
+              "body": "Main Idea ကို တိုက်ရိုက်ရေးထားတဲ့ sentence မရှိရင် passage တစ်လျှောက် ထပ်ခါထပ်ခါပေါ်လာတဲ့ အဓိက clues တွေကို စုကြည့်ရပါတယ်။"
+            },
+            {
+              "title": "ဒီ passage မှာ",
+              "body": "Model က direct နဲ့ indirect effects နှစ်မျိုးလုံးကိုကြည့်တယ်၊ city တစ်ခုနဲ့တစ်ခု result မတူနိုင်တာကို နှိုင်းယှဉ်တယ်၊ 54 cities အတွက် overall result လည်း ပြထားတယ်။ ဒီအချက်တွေကို ပေါင်းကြည့်မှ passage က ဘာကိုဆိုလိုနေတာလဲ မြင်လာတယ်။ Shade က walking ကို အားပေးနိုင်တာလို အချက်ကတော့ အဲဒီ idea ကို support လုပ်တဲ့ example တစ်ခုပါ။"
+            },
+            {
+              "title": "နောက်တစ်ခါ",
+              "body": "Implied Main Idea ရှာရင် detail တစ်ခုကိုပဲ မဖမ်းပါနဲ့။ Passage တစ်လျှောက်က အဓိက clues တွေ ဘယ်လိုအတူတူညွှန်နေသလဲ ကြည့်ပါ။"
+            }
+          ]
+        }
+      },
+      "learningStage": "guided",
+      "hint": "Choose clues that tell you about the method’s breadth, variation, and overall result."
+    },
+    {
+      "id": "c2",
+      "type": "open_ended",
+      "prompt": "Write one sentence that combines the passage’s repeated evidence into an implied main idea.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 95,
+      "explanation": {
+        "answer": "Model: Nature-based solutions can make a meaningful contribution to reducing urban greenhouse-gas emissions through several direct and indirect pathways, although their impact varies by strategy and city.",
+        "whyCorrect": "The model combines what the approach counts, how results vary, and what the multi-city result means without claiming nature alone reaches net zero.",
+        "quickTip": "An implied main idea must say what the evidence means, not just describe the research method.",
+        "selfCheck": [
+          "Did I combine the repeated evidence into one overall idea?",
+          "Did I include that the effect varies by strategy and city?",
+          "Did I avoid claiming nature-based solutions can reach net zero by themselves?"
+        ],
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Clues တွေကို တစ်ကြောင်းထဲပေါင်းမယ်",
+              "body": "ဒီတစ်ခါ passage ထဲက evidence တွေကို ကိုယ်တိုင်ပေါင်းပြီး Main Idea တစ်ကြောင်းရေးတာပါ။"
+            },
+            {
+              "title": "ဒီ passage က အဓိကပြောတာ",
+              "body": "Nature-based solutions က city emissions လျော့ဖို့ အထောက်အကူပြုနိုင်တယ်။ ဒါပေမယ့် strategy နဲ့ city အလိုက် effect မတူနိုင်ဘူး၊ net zero ကိုလည်း ဒီတစ်ခုတည်းနဲ့ မရဘူး။ ဒီ balance မပျောက်အောင် ရေးပါ။"
+            },
+            {
+              "title": "ရေးပြီးရင် စစ်ပါ",
+              "body": "ကိုယ်ရေးထားတဲ့ Main Idea က positive result ကိုပဲ ယူထားသလား၊ passage ပြောထားတဲ့ limit တွေလည်း ပါသလား ပြန်စစ်ပါ။"
+            }
+          ]
+        }
+      },
+      "learningStage": "apply"
+    },
+    {
+      "id": "c3",
+      "type": "multiple_choice",
+      "prompt": "Which statement best expresses the central idea developed across the passage?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Computer models are more reliable than real-world climate measurements.",
+          "distractorType": "method_instead_of_meaning",
+          "whyWrong": "The passage does not compare reliability this way."
+        },
+        {
+          "id": "b",
+          "text": "Nature-based solutions can meaningfully reduce urban greenhouse-gas emissions through several pathways, with results varying by strategy and setting."
+        },
+        {
+          "id": "c",
+          "text": "Green roofs are the most effective climate strategy for every city.",
+          "distractorType": "unsupported_universal",
+          "whyWrong": "No single strategy is presented as best everywhere."
+        },
+        {
+          "id": "d",
+          "text": "Nature-based solutions can bring every city to net zero without other changes.",
+          "distractorType": "overclaim",
+          "whyWrong": "The passage explicitly says other actions are also needed."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "It captures both the contribution and the limits/variation the passage emphasizes.",
+        "quickTip": "For implied main idea, combine repeated evidence and preserve the author’s qualifications.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က computer model နဲ့ real-world measurement ဘယ်ဟာပိုကောင်းလဲဆိုတာ မနှိုင်းယှဉ်ထားဘူး။ A က research method ကိုယူပြီး passage မပြောထားတဲ့ conclusion တစ်ခု ထပ်ထည့်ထားတာပါ။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က nature-based solutions က emissions လျော့ဖို့ အထောက်အကူပြုနိုင်တယ်ဆိုတာနဲ့ effect က strategy/setting အလိုက် မတူနိုင်ဘူးဆိုတာ နှစ်ခုလုံးကို ထိန်းထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Research passage မှာ method အကြောင်းပါလာတာနဲ့ Main Idea က method ဖြစ်မသွားဘူး။ Result က ဘာကိုဆိုလိုလဲဆိုတာကြည့်ပါ။"
+              }
+            ],
+            "b": [
+              {
+                "title": "ဘာလို့ ဒီ answer မှန်တာလဲ",
+                "body": "B က passage ရဲ့ အဓိက result နဲ့ limit နှစ်ခုလုံးကို ခြုံထားတယ်—nature-based solutions က emissions လျော့ဖို့ အထောက်အကူပြုနိုင်ပေမယ့် effect က strategy နဲ့ city အလိုက် မတူနိုင်ဘူး။"
+              },
+              {
+                "title": "Passage ထဲမှာ ဘာကိုကြည့်ရလဲ",
+                "body": "54 cities ရဲ့ average result၊ different settings ကို နှိုင်းယှဉ်ထားတာ၊ net zero အတွက် တခြား actions လည်းလိုတယ်ဆိုတာတွေက B နဲ့ ကိုက်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Implied Main Idea answer က result တစ်ခုတည်းကို မယူဘဲ passage ထဲက limit တွေကိုပါ မပျောက်စေသင့်ဘူး။"
+              }
+            ],
+            "c": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က green roofs ကို city တိုင်းအတွက် အကောင်းဆုံး strategy လို့ မပြောထားဘူး။ Strategy နဲ့ city အလိုက် result မတူနိုင်တယ်လို့ပဲ ပြောထားတယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က အကျိုးရှိနိုင်တာကို ပြောပေမယ့် result မတူနိုင်တဲ့အချက်ကိုလည်း ထည့်ထားလို့ passage နဲ့ ပိုကိုက်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Every, best, always လို universal wording တွေပါတဲ့ choice တွေ့ရင် passage က တကယ်အဲဒီလောက်သေချာပြောထားလား စစ်ပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က nature-based solutions တစ်ခုတည်းနဲ့ net zero ရမယ်လို့ မပြောထားဘူး။ Cleaner electricity နဲ့ public transport လို တခြား actions တွေလည်း လိုတယ်လို့ တိုက်ရိုက်ပြောထားတယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က အကျိုးရှိနိုင်တာကိုလည်း မပျောက်စေဘူး၊ limitation ကိုလည်း မပျောက်စေဘူး။ အဲဒါကြောင့် passage တစ်ခုလုံးနဲ့ ပိုကိုက်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Main Idea answer က passage ရဲ့ positive result ကိုယူပြီး limit ကိုပျောက်သွားအောင် လုပ်ထားလားဆိုတာ စစ်ပါ။"
+              }
+            ]
+          }
+        }
+      },
+      "learningStage": "independent",
+      "reportingCategory": "implied_main_idea"
+    }
+  ],
+  "description": "Implied-main-idea practice using an urban climate source adaptation."
+}

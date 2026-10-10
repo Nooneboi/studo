@@ -23,7 +23,7 @@ function runNode(script, args = []) {
 
 test('canonical legacy learner inventory lives under content-src while demo modules stay internal', async () => {
   const entries = await json(LEGACY_INDEX);
-  assert.equal(entries.length, 49, 'expected the 49 learner-facing legacy modules in the canonical learner index');
+  assert.equal(entries.length, 48, 'expected the 48 learner-facing legacy modules in the canonical learner index');
   const files = (await fs.readdir(LEGACY_DIR)).filter((name) => name.endsWith('.json'));
   assert.equal(files.length, 50, 'expected 49 learner modules plus one internal sample/demo source module');
   assert.equal(entries.some((entry) => entry.sourceFile === 'legacy-modules/sample-quiz.json'), false, 'internal sample quiz leaked into learner index');

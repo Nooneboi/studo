@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "p-rla-mainidea-practice-b-sleep-certified-v1",
+  "title": "How Sleep Supports Teenagers",
+  "text": "Sleep supports how well teenagers function each day by affecting their brains, emotions, and bodies.\n\nDuring sleep, the brain organizes information from the day and prepares for the next one. Poor sleep can make it harder to remember information, pay attention, solve problems, and make decisions. Teenagers may also feel sluggish or make more mistakes when they have not slept enough.\n\nSleep also affects emotional health. Poor sleep can make stress, anxiety, irritability, frustration, and low mood feel stronger. When people are rested, they may be better able to manage their reactions and cope with difficult feelings.\n\nPhysical health is affected too. Poor sleep is linked with problems involving hunger, appetite, and eating habits. The body also repairs itself during sleep, and too little sleep can weaken the immune system and make it harder to fight illness.",
+  "textType": "informational",
+  "context": "human_health",
+  "source": {
+    "type": "licensed",
+    "author": "H. Lara; A. Alkozei; R. L. Gómez",
+    "workTitle": "To Sleep or not to Sleep in Your Teens? Choose Sleep!",
+    "publisher": "Frontiers for Young Minds",
+    "year": 2026,
+    "url": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1593900",
+    "attribution": "Adapted by Chee Skool from Lara, Alkozei & Gómez (2026), Frontiers for Young Minds, CC BY."
+  },
+  "rights": {
+    "status": "licensed",
+    "holder": "Lara, Alkozei and Gómez",
+    "license": "CC BY",
+    "note": "Adaptation permitted with attribution; source states generative AI was not used in the manuscript."
+  },
+  "status": "published",
+  "version": 3,
+  "author": "H. Lara; A. Alkozei; R. L. Gómez",
+  "reviewer": "C4 Main Idea source review",
+  "provenance": {
+    "canonicalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1593900",
+    "sourceSection": "How Does Sleep Impact Development?",
+    "rightsCheckedOn": "2026-10-09",
+    "adaptation": "Condensed, source-faithful adaptation of “How Does Sleep Impact Development?” The source’s three-part structure (brain, emotions, physical health) is preserved; claims were narrowed to learner-visible source support, and no added concluding summary is used.",
+    "certificationStatus": "source_verified_rights_verified_editorial_review_pending",
+    "sourceAiStatement": "Frontiers for Young Minds states generative AI was not used in creation of the manuscript."
+  }
+}

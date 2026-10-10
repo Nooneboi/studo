@@ -39,8 +39,8 @@ test('Main Idea V2 follows a predictable Guided Apply Independent progression wi
 });
 
 test('compiled Main Idea module keeps V2 learning metadata', () => {
-  const runtime = json('data/generated/modules/set-rla-mainidea-active-methods-v1.json');
-  assert.deepEqual(runtime.questions.map((q) => q.learningStage), ['guided','guided','apply','apply','independent','independent']);
+  const runtime = json('data/generated/modules/set-rla-mainidea-learn-certified-v2.json');
+  assert.deepEqual(runtime.questions.map((q) => q.learningStage), ['guided','guided','apply','apply','independent']);
   assert.equal(runtime.questions[0].hint.length > 10, true);
 });
 
@@ -130,4 +130,12 @@ test('guided CSS reduces density and exposes clear card, category, selection, an
   assert.match(css, /\.selection-mode-bar/);
   assert.doesNotMatch(css, /\.guided-selection-status/);
   assert.match(css, /@media \(max-width: 720px\)[\s\S]*guided-learning-workspace/);
+});
+
+
+test('guided open-ended responses unlock Next once the learner has written a response', () => {
+  const moduleJs = read('js/module.js');
+  const openEnded = moduleJs.match(/id="written-answer"[\s\S]*?function cssEscape/)?.[0] || '';
+  assert.ok(openEnded, 'open-ended renderer should exist');
+  assert.match(openEnded, /if \(guided && ta\.value\.trim\(\)\) unlockGuidedNext\(\)/);
 });

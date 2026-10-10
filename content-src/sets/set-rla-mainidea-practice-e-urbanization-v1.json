@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mainidea-practice-e-urbanization-v1",
+  "title": "Main Idea — Practice E: Harder Informational Transfer",
+  "subject": "rla",
+  "category": "reading",
+  "topic": "Main idea / central idea",
+  "difficulty": "hard",
+  "status": "published",
+  "version": 2,
+  "passageRefs": [
+    "p-rla-mainidea-practice-e-urbanization-certified-v1"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "C4 Main Idea editorial review pending",
+  "reviewNotes": "Low-support transfer using the current 2026 OWID CC-BY source adaptation. Neutral learner title avoids cueing the measurement half of the gist.",
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "contentKind": "skill_drill",
+    "practiceTags": [
+      "mock-excluded"
+    ],
+    "learningObjective": "Synthesize a passage with two major jobs and distinguish significance from measurement/comparability evidence.",
+    "topicLabel": "Main idea / central idea",
+    "deliveryRoles": [
+      "practice",
+      "train"
+    ],
+    "assistanceLevel": "minimal"
+  },
+  "questions": [
+    {
+      "id": "e1",
+      "type": "evidence_based",
+      "prompt": "Which choice best describes the two main ideas the passage develops?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 70,
+      "options": [
+        {
+          "id": "a",
+          "text": "Explain why urbanization matters for people and planning; explain why international comparison needs a consistent classification system."
+        },
+        {
+          "id": "b",
+          "text": "List every population threshold; prove cities are better places to live.",
+          "distractorType": "detail_list_summary",
+          "whyWrong": "This overfocuses on classification details and adds a value judgment."
+        },
+        {
+          "id": "c",
+          "text": "Predict which cities will grow fastest; explain why rural areas should disappear.",
+          "distractorType": "prediction_not_in_text",
+          "whyWrong": "Neither task is developed by the passage."
+        },
+        {
+          "id": "d",
+          "text": "Explain government planning needs; compare healthcare quality between cities and rural areas.",
+          "distractorType": "branch_only_summary",
+          "whyWrong": "Government planning is one example of why urbanization matters, while healthcare-quality comparison is not a major job of the passage."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The first strand explains significance; the second explains the comparability problem and why a common framework helps.",
+        "quickTip": "If a passage develops two big ideas, a strong gist needs to preserve both.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဘာလို့ A မှန်တာလဲ",
+                "body": "Passage က အဓိကနှစ်ချက်ကို တည်ဆောက်ထားတယ်။ Urbanization က လူတွေရဲ့နေ့စဉ်ဘဝနဲ့ government planning အတွက် အရေးကြီးတယ်။ နိုင်ငံတွေကြား compare လုပ်မယ်ဆိုရင်တော့ “urban” ကို သတ်မှတ်ပုံမတူတာကြောင့် common classification လိုတယ်။ A က ဒီနှစ်ချက်လုံးကို ခြုံထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Passage က အဓိက idea နှစ်ခုကို တပြိုင်နက် develop လုပ်ထားရင် Main Idea answer က တစ်ခုတည်းကို မရွေးပဲ နှစ်ခုလုံးကို ဆက်စပ်အောင် ခြုံနိုင်ရမယ်။"
+              }
+            ],
+            "b": [
+              {
+                "title": "B က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Passage က population threshold အားလုံးကို list မလုပ်ထားဘူး၊ cities က ပိုကောင်းတယ်လို့လည်း မပြောထားဘူး။ B က passage မလုပ်တဲ့အလုပ်နှစ်ခု ထပ်ထည့်ထားတာပါ။"
+              },
+              {
+                "title": "မှန်တဲ့ idea က",
+                "body": "Urbanization ဘာကြောင့်အရေးကြီးလဲနဲ့ နိုင်ငံတွေကြား data compare လုပ်ဖို့ common rules ဘာကြောင့်လိုလဲဆိုတာပါ။"
+              }
+            ],
+            "c": [
+              {
+                "title": "C က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "ဘယ် city အမြန်ဆုံးကြီးလာမလဲဆိုတာ predict မလုပ်ထားဘူး။ Rural areas ပျောက်သင့်တယ်လို့လည်း passage မပြောထားဘူး။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Choice တစ်ခုက passage ထဲက topic words သုံးထားပေမယ့် passage မပြောတဲ့ claim အသစ် ထည့်ထားလား စစ်ပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မလုံလောက်တာလဲ",
+                "body": "Government planning က passage ထဲက အရေးကြီးတဲ့အချက်တစ်ခုပါ။ ဒါပေမယ့် healthcare quality ကို city နဲ့ rural areas ကြား compare လုပ်တာ passage ရဲ့ အဓိကအလုပ်မဟုတ်ဘူး။"
+              },
+              {
+                "title": "မှန်တဲ့ answer က",
+                "body": "Urbanization ရဲ့ significance နဲ့ cross-country comparison problem နှစ်ခုလုံးကို ခြုံထားရမယ်။"
+              }
+            ]
+          }
+        }
+      },
+      "reportingCategory": "gist_synthesis"
+    },
+    {
+      "id": "e2",
+      "type": "open_ended",
+      "prompt": "Write one sentence that combines why urbanization matters with why it is hard to compare across countries.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 100,
+      "explanation": {
+        "answer": "Model: Urbanization matters because where people live affects daily life and government planning, but comparing it across countries requires consistent definitions because national classifications differ.",
+        "whyCorrect": "The model captures both why urbanization matters and why measurement rules affect comparison.",
+        "quickTip": "When a passage has two major jobs, your gist should preserve both rather than choosing only one.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "အဓိကနှစ်ချက်ကို တစ်ကြောင်းထဲ ခြုံမယ်",
+              "body": "ဒီ passage မှာ urbanization ဘာကြောင့်အရေးကြီးလဲဆိုတာ တစ်ပိုင်း၊ နိုင်ငံတွေကြား compare လုပ်ရခက်တာ ဘာကြောင့်လဲဆိုတာ တစ်ပိုင်း ရှင်းထားတယ်။"
+            },
+            {
+              "title": "ရေးတဲ့အခါ",
+              "body": "Where people live က daily life နဲ့ planning ကို သက်ရောက်တယ်ဆိုတဲ့ significance ကို ထည့်ပါ။ ပြီးရင် country တစ်ခုနဲ့တစ်ခု “urban” ကို သတ်မှတ်ပုံမတူလို့ comparison မှာ common definition လိုတယ်ဆိုတာလည်း ထည့်ပါ။"
+            },
+            {
+              "title": "ရေးပြီးရင် စစ်ပါ",
+              "body": "ကိုယ်ရေးထားတဲ့ sentence က အရေးကြီးပုံတစ်ခုတည်းကိုပဲ ပြောသွားလား၊ comparison problem တစ်ခုတည်းကိုပဲ ပြောသွားလား စစ်ပါ။ နှစ်ခုလုံးပါရင် passage တစ်ခုလုံးကို ပိုကောင်းကောင်းခြုံနိုင်တယ်။"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e3",
+      "type": "multiple_choice",
+      "prompt": "Which detail most directly explains why a common classification system is needed?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "medium",
+      "dok": 2,
+      "difficultyProfile": {
+        "textComplexity": 2,
+        "reasoningDepth": 2,
+        "evidenceDistance": 3,
+        "distractorSimilarity": 3,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 60,
+      "options": [
+        {
+          "id": "a",
+          "text": "Governments use urbanization information when planning housing, transport, healthcare, and schools.",
+          "distractorType": "significance_vs_comparability",
+          "whyWrong": "This explains why tracking urbanization matters, not why a common classification system is needed."
+        },
+        {
+          "id": "b",
+          "text": "Where people live affects how they work and move around and the opportunities and risks they face.",
+          "distractorType": "significance_vs_comparability",
+          "whyWrong": "This explains the importance of urbanization data, not the comparability problem."
+        },
+        {
+          "id": "c",
+          "text": "A town counted as urban in one country might be classified as rural in another."
+        },
+        {
+          "id": "d",
+          "text": "A common framework uses population and density data to classify settlements.",
+          "distractorType": "solution_not_problem",
+          "whyWrong": "This describes the solution, not the problem that makes the solution necessary."
+        }
+      ],
+      "correct": "c",
+      "explanation": {
+        "answer": "C",
+        "whyCorrect": "If similar settlements can receive different labels in different countries, national data cannot be compared consistently. That directly creates the need for common rules.",
+        "quickTip": "Match evidence to the exact relationship named in the question.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "A က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Housing, transport, healthcare, schools planning အတွက် data လိုတယ်ဆိုတာ urbanization data ဘာကြောင့်အရေးကြီးလဲကို ရှင်းတာပါ။ Common classification ဘာကြောင့်လိုလဲကို မရှင်းဘူး။"
+              },
+              {
+                "title": "မှန်တဲ့ detail က",
+                "body": "နိုင်ငံတစ်ခုမှာ urban လို့သတ်မှတ်တဲ့ town ကို တခြားနိုင်ငံမှာ rural လို့သတ်မှတ်နိုင်တယ်ဆိုတဲ့ detail ပါ။ အဲဒါက comparison problem ကို တိုက်ရိုက်ပြတယ်။"
+              }
+            ],
+            "b": [
+              {
+                "title": "B က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Where people live က work, movement, opportunities, risks ကို သက်ရောက်တယ်ဆိုတာ urbanization ရဲ့ importance ကိုပြတာပါ။ Classification problem မဟုတ်ဘူး။"
+              }
+            ],
+            "c": [
+              {
+                "title": "ဘာလို့ C မှန်တာလဲ",
+                "body": "တူညီတဲ့ settlement တစ်ခုကို နိုင်ငံအလိုက် urban/rural မတူအောင် classify လုပ်နိုင်ရင် data ကို တိုက်ရိုက် compare လုပ်ရခက်သွားတယ်။ ဒါကြောင့် common rules လိုလာတာပါ။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Question က “ဘာကြောင့် solution တစ်ခုလိုတာလဲ” လို့မေးရင် solution ကိုပြတဲ့ detail မရွေးဘဲ problem ကို တိုက်ရိုက်ဖြစ်စေတဲ့ detail ကိုရှာပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "D က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "Population နဲ့ density သုံးပြီး common framework လုပ်တာက solution ဖြစ်တယ်။ Question က အဲဒီ solution ဘာကြောင့်လိုတာလဲကို မေးထားတာပါ။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Problem နဲ့ solution ကို ခွဲဖတ်ပါ။ Question က cause/problem ကို မေးနေသလား၊ response/solution ကို မေးနေသလား ကြည့်ပါ။"
+              }
+            ]
+          }
+        }
+      },
+      "reportingCategory": "evidence_link"
+    },
+    {
+      "id": "e4",
+      "type": "drag_sort",
+      "prompt": "Classify each statement by how well it fits the passage as a whole.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.explicit",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "interaction": {
+        "items": [
+          {
+            "id": "s1",
+            "text": "The UN uses common population and density rules to classify settlements."
+          },
+          {
+            "id": "s2",
+            "text": "Urbanization matters to people and governments, but meaningful international comparisons depend on consistent definitions of what counts as urban."
+          },
+          {
+            "id": "s3",
+            "text": "Population density determines the quality of life in every settlement."
+          }
+        ],
+        "zones": [
+          {
+            "id": "narrow",
+            "label": "Too narrow"
+          },
+          {
+            "id": "fit",
+            "label": "Whole-text fit"
+          },
+          {
+            "id": "unsupported",
+            "label": "Unsupported / too broad"
+          }
+        ]
+      },
+      "correct": "s1=narrow|s2=fit|s3=unsupported",
+      "explanation": {
+        "answer": "s2 fits; s1 is too narrow; s3 is unsupported.",
+        "whyCorrect": "The whole-text statement combines significance and comparability without claiming that density determines life quality.",
+        "quickTip": "Hard main-idea items often hinge on scope, not on whether a statement sounds generally reasonable.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Passage တစ်ခုလုံးနဲ့ ကိုက်မကိုက် စစ်မယ်",
+              "body": "s1 က UN framework အကြောင်းတစ်ခုပဲ ပြောထားလို့ ကျဉ်းလွန်းတယ်။ s3 က density က quality of life ကို every settlement မှာ determine လုပ်တယ်လို့ passage မပြောထားတဲ့ claim ထပ်ထည့်ထားတယ်။"
+            },
+            {
+              "title": "ဘာလို့ s2 ကိုက်တာလဲ",
+              "body": "s2 က urbanization က လူတွေနဲ့ governments အတွက် အရေးကြီးတယ်ဆိုတာနဲ့ international comparison အတွက် consistent definitions လိုတယ်ဆိုတာ နှစ်ခုလုံးကို ခြုံထားတယ်။"
+            },
+            {
+              "title": "နောက်တစ်ခါ",
+              "body": "Hard Main Idea question တွေမှာ answer က generally reasonable ဖြစ်မဖြစ်ထက် passage တစ်ခုလုံးကို ဘယ်လောက်တိတိကျကျ ခြုံနိုင်လဲက ပိုအရေးကြီးတယ်။"
+            }
+          ]
+        }
+      },
+      "reportingCategory": "scope_control"
+    }
+  ],
+  "description": "Harder informational Main Idea transfer using an urbanization source adaptation."
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "p-rla-mainidea-practice-c-nature-certified-v1",
+  "title": "How Much Can Urban Nature Help?",
+  "text": "Researchers wanted to estimate how much nature-based solutions could help cities reduce greenhouse-gas emissions. Their computer model counted direct effects, such as trees and green roofs storing carbon, and indirect effects, such as shade reducing energy use or making walking more attractive than driving.\n\nThe model also compared different strategies across different urban settings instead of assuming that one solution would work equally well everywhere. Researchers applied the model to 54 European cities. Across those cities, nature-based solutions were estimated to reduce greenhouse-gas emissions by about 17% on average, with larger reductions in some places.\n\nNature-based solutions were not enough to bring cities to net zero on their own. The researchers described them as one part of a broader approach that can also include cleaner electricity and better public transport. The amount they could contribute differed by strategy and by city.",
+  "textType": "informational",
+  "context": "science",
+  "source": {
+    "type": "licensed",
+    "author": "J. Page; H. Pan; Z. Cai; C. Cong; R. Shi; S. Barthel; P. Thollander; J. Colding; Z. Kalantari",
+    "workTitle": "How Nature Can Help Cities Breathe and Stay Cool",
+    "publisher": "Frontiers for Young Minds",
+    "year": 2026,
+    "url": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1756258",
+    "attribution": "Adapted by Chee Skool from Page et al. (2026), Frontiers for Young Minds, CC BY."
+  },
+  "rights": {
+    "status": "licensed",
+    "holder": "Page et al.",
+    "license": "CC BY",
+    "note": "Adaptation permitted with attribution; source states generative AI was not used in the manuscript."
+  },
+  "status": "published",
+  "version": 3,
+  "author": "J. Page; H. Pan; Z. Cai; C. Cong; R. Shi; S. Barthel; P. Thollander; J. Colding; Z. Kalantari",
+  "reviewer": "C4 Main Idea source review",
+  "provenance": {
+    "canonicalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1756258",
+    "sourceSection": "How much can Nature Actually Help?",
+    "rightsCheckedOn": "2026-10-06",
+    "adaptation": "Condensed source-faithful adaptation; explicit conclusion language reduced so the learner must infer the central idea from the source results and limits.",
+    "certificationStatus": "source_verified_rights_verified_editorial_review_pending",
+    "sourceAiStatement": "Frontiers for Young Minds states generative AI was not used in creation of the manuscript."
+  }
+}

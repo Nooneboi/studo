@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 2,
+  "id": "set-rla-mainidea-reassessment-v1",
+  "runtime": {
+    "id": "set-rla-mainidea-reassessment-v1",
+    "file": "set-rla-mainidea-reassessment-v1.json"
+  },
+  "title": "Main Idea — Reassessment",
+  "description": "Two fresh texts · 8 independent Main Idea questions after review.",
+  "subject": "rla",
+  "category": "reading_comprehension",
+  "topic": "RLA Skill Check",
+  "difficulty": "hard",
+  "status": "review",
+  "version": 1,
+  "passageRefs": [
+    "p-rla-mainidea-reassessment-two-text-v1"
+  ],
+  "author": "Chee Skool",
+  "reviewer": "C4 Main Idea editorial review pending",
+  "reviewNotes": "Fresh reassessment form for use only after review and spacing. Not an immediate retry and not claimed psychometrically equivalent to the Skill Check.",
+  "questions": [
+    {
+      "id": "raa1",
+      "type": "multiple_choice",
+      "prompt": "In Text A, which statement best expresses the central idea?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Medical AI can replace doctors once it is able to make one type of decision independently.",
+          "distractorType": "unsupported_overclaim",
+          "whyWrong": "The passage says narrow autonomous tasks do not replace a doctor’s overall role."
+        },
+        {
+          "id": "b",
+          "text": "More capable medical AI may improve parts of care, but technical limits and the need for human judgment and responsibility remain important."
+        },
+        {
+          "id": "c",
+          "text": "The main challenge in medical AI is that hospital computers are too old to share data.",
+          "distractorType": "detail_as_main_idea",
+          "whyWrong": "Data sharing is one technical issue, not the passage’s whole point."
+        },
+        {
+          "id": "d",
+          "text": "Doctors should ignore AI warnings because relying on technology is dangerous.",
+          "distractorType": "one_sided_misread",
+          "whyWrong": "The passage says both overreliance and ignoring useful warnings can cause harm."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "It combines the passage’s three main strands: useful autonomous tasks, technical/workflow limits, and continued human responsibility.",
+        "quickTip": "For a central idea, combine the major strands without dropping the author’s limits."
+      },
+      "reportingCategory": "gist_synthesis"
+    },
+    {
+      "id": "raa2",
+      "type": "evidence_based",
+      "prompt": "Which pair of details best supports Text A’s idea that greater AI independence still requires careful human and system oversight?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "An AI system may decide whether an eye patient should be referred; health professionals can be harmed by both overtrusting AI and ignoring useful warnings."
+        },
+        {
+          "id": "b",
+          "text": "Eye images exist; hospitals use imaging devices.",
+          "distractorType": "background_only",
+          "whyWrong": "These facts do not establish the need for oversight."
+        },
+        {
+          "id": "c",
+          "text": "AI may identify disease earlier; home devices collect information.",
+          "distractorType": "benefit_plus_background",
+          "whyWrong": "This pair does not directly show why human and system oversight remains necessary."
+        },
+        {
+          "id": "d",
+          "text": "Clinical workflows can be busy; doctors use empathy.",
+          "distractorType": "weak_connection",
+          "whyWrong": "These ideas are related to care but do not form the strongest evidence pair for the stated relationship."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The first detail shows a system acting independently within a narrow task; the second shows why people still need to monitor how that independence is used.",
+        "quickTip": "Choose evidence that supports both sides of the relationship named in the question."
+      },
+      "reportingCategory": "evidence_link"
+    },
+    {
+      "id": "raa3",
+      "type": "drag_sort",
+      "prompt": "In Text A, classify each statement by its scope.",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 2
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "interaction": {
+        "items": [
+          {
+            "id": "s1",
+            "text": "Hospital systems do not always share medical data smoothly."
+          },
+          {
+            "id": "s2",
+            "text": "Medical AI may take on more independent tasks, but safe use still depends on technical limits, workflow design, and human judgment."
+          },
+          {
+            "id": "s3",
+            "text": "AI will soon make human clinicians unnecessary in serious medical care."
+          }
+        ],
+        "zones": [
+          {
+            "id": "narrow",
+            "label": "Too narrow"
+          },
+          {
+            "id": "fit",
+            "label": "Whole-text fit"
+          },
+          {
+            "id": "unsupported",
+            "label": "Unsupported / overclaim"
+          }
+        ]
+      },
+      "correct": "s1=narrow|s2=fit|s3=unsupported",
+      "explanation": {
+        "answer": "s2 fits; s1 is too narrow; s3 overclaims.",
+        "whyCorrect": "The whole-text statement covers capability, constraints, and human responsibility. The other choices either isolate one detail or contradict the passage’s limits.",
+        "quickTip": "Whole-text fit means broad enough for the major strands without becoming broader than the evidence."
+      },
+      "reportingCategory": "scope_control"
+    },
+    {
+      "id": "raa4",
+      "type": "multiple_choice",
+      "prompt": "Which new situation best follows the reasoning in Text A?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "A hospital adopts an AI triage tool and removes all clinician review because the tool performs well on one task.",
+          "distractorType": "overgeneralized_transfer",
+          "whyWrong": "The passage argues that narrow capability does not remove the need for human responsibility."
+        },
+        {
+          "id": "b",
+          "text": "A clinic tests an AI alert system, checks whether it fits staff workflow, monitors false alerts, and keeps clinicians responsible for final decisions."
+        },
+        {
+          "id": "c",
+          "text": "A hospital rejects all AI tools because any reliance on automation is unsafe.",
+          "distractorType": "one_sided_transfer",
+          "whyWrong": "The passage also describes meaningful potential benefits from AI."
+        },
+        {
+          "id": "d",
+          "text": "A clinic chooses whichever AI system produces the most alerts, regardless of how staff use them.",
+          "distractorType": "ignores_workflow",
+          "whyWrong": "The passage specifically warns about confusing alerts and workflow fit."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "It applies the passage’s balanced reasoning: use the technology’s benefits while designing for workflow, limits, and continued human responsibility.",
+        "quickTip": "A transfer answer should preserve the passage’s logic, not just reuse its vocabulary."
+      },
+      "reportingCategory": "main_idea_transfer"
+    },
+    {
+      "id": "rab1",
+      "type": "multiple_choice",
+      "prompt": "In Text B, which statement best expresses the central idea developed by the excerpt?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "Kezia disobeys because she cares more about the doll’s house than her family’s rules.",
+          "distractorType": "plot_as_theme",
+          "whyWrong": "The doll’s house matters, but the excerpt focuses more broadly on exclusion, kindness, and the way the Kelveys are treated."
+        },
+        {
+          "id": "b",
+          "text": "Social prejudice can lead people to exclude and humiliate others, while even a small act of kindness can briefly cross that boundary."
+        },
+        {
+          "id": "c",
+          "text": "Children from different families should not share expensive toys.",
+          "distractorType": "unsupported_rule",
+          "whyWrong": "The excerpt does not support this rule; Kezia’s invitation works against it."
+        },
+        {
+          "id": "d",
+          "text": "Aunt Beryl is cruel only because she receives a threatening letter.",
+          "distractorType": "single_cause_overreduction",
+          "whyWrong": "The letter helps explain her mood, but the social exclusion of the Kelveys already exists before this moment."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "The excerpt contrasts the established exclusion of the Kelveys with Kezia’s invitation, then shows how quickly prejudice is enforced through Aunt Beryl’s humiliation of them.",
+        "quickTip": "A literary central idea should explain the larger meaning created by several events, not reduce the story to one character’s motive."
+      },
+      "reportingCategory": "literary_central_idea"
+    },
+    {
+      "id": "rab2",
+      "type": "evidence_based",
+      "prompt": "Which pair of details best supports Text B’s central idea about exclusion and kindness?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 85,
+      "options": [
+        {
+          "id": "a",
+          "text": "Kezia invites the Kelveys to see the doll’s house despite the rule against speaking to them; Aunt Beryl drives the girls away and humiliates them."
+        },
+        {
+          "id": "b",
+          "text": "Kezia swings on the gate; the Kelveys walk along the road.",
+          "distractorType": "plot_background",
+          "whyWrong": "These details set the scene but do not directly develop the central contrast."
+        },
+        {
+          "id": "c",
+          "text": "The doll’s house has a drawing-room; Lil takes off her hat later.",
+          "distractorType": "literal_detail",
+          "whyWrong": "These details do not show the key tension between kindness and exclusion."
+        },
+        {
+          "id": "d",
+          "text": "Visitors are at the Burnell house; Logan’s cows wait to be milked.",
+          "distractorType": "setting_only",
+          "whyWrong": "These are background details rather than evidence for the central idea."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "The two moments create the excerpt’s central contrast: Kezia crosses a social boundary through kindness, and Aunt Beryl forcefully restores that exclusion.",
+        "quickTip": "Strong evidence pairs often show two moments that create or sharpen the same central contrast."
+      },
+      "reportingCategory": "evidence_link"
+    },
+    {
+      "id": "rab3",
+      "type": "multiple_choice",
+      "prompt": "Why is Else’s final comment about the little lamp important to the meaning of Text B?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 80,
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows that the brief chance to see something beautiful still mattered to Else despite the humiliation that followed."
+        },
+        {
+          "id": "b",
+          "text": "It proves that Else plans to return and steal the lamp.",
+          "distractorType": "literal_misread",
+          "whyWrong": "Nothing in the excerpt suggests theft or a plan to return."
+        },
+        {
+          "id": "c",
+          "text": "It shows that Else did not understand why Aunt Beryl was angry.",
+          "distractorType": "unsupported_inference",
+          "whyWrong": "The line focuses on what stayed meaningful to Else, not on whether she understood Aunt Beryl’s anger."
+        },
+        {
+          "id": "d",
+          "text": "It reveals that the lamp was more expensive than the rest of the doll’s house.",
+          "distractorType": "unsupported_detail",
+          "whyWrong": "The excerpt gives no information about the lamp’s price."
+        }
+      ],
+      "correct": "a",
+      "explanation": {
+        "answer": "A",
+        "whyCorrect": "Else’s remembered image of the lamp survives the shame of being driven away. The ending therefore preserves the value of the brief moment of access and kindness rather than letting Aunt Beryl’s cruelty fully define the experience.",
+        "quickTip": "In literature, a final image can concentrate the meaning of an earlier event."
+      },
+      "reportingCategory": "literary_central_idea"
+    },
+    {
+      "id": "rab4",
+      "type": "multiple_choice",
+      "prompt": "Which broader idea is best supported by Text B?",
+      "primarySkillId": "R1.2",
+      "familyId": "mainidea.whole.implied",
+      "difficulty": "hard",
+      "dok": 3,
+      "difficultyProfile": {
+        "textComplexity": 3,
+        "reasoningDepth": 3,
+        "evidenceDistance": 4,
+        "distractorSimilarity": 4,
+        "sourceCount": 1,
+        "responseDemand": 1
+      },
+      "points": 1,
+      "estimatedSeconds": 75,
+      "options": [
+        {
+          "id": "a",
+          "text": "Social rules are always more powerful than individual choices.",
+          "distractorType": "unsupported_absolute",
+          "whyWrong": "Kezia’s choice briefly crosses the social boundary, so the text does not support an absolute rule."
+        },
+        {
+          "id": "b",
+          "text": "People who are treated as outsiders can still be deeply affected by small moments of recognition or inclusion."
+        },
+        {
+          "id": "c",
+          "text": "Children understand social class better than adults do.",
+          "distractorType": "unsupported_comparison",
+          "whyWrong": "The excerpt contrasts particular characters; it does not make a general claim about all children and adults."
+        },
+        {
+          "id": "d",
+          "text": "Cruel behavior is acceptable when someone is under personal stress.",
+          "distractorType": "moral_misread",
+          "whyWrong": "The passage explains Aunt Beryl’s mood but does not justify her treatment of the Kelveys."
+        }
+      ],
+      "correct": "b",
+      "explanation": {
+        "answer": "B",
+        "whyCorrect": "Else’s response to seeing the lamp shows that a very brief moment of inclusion can remain meaningful even after the girls are pushed back outside the social boundary.",
+        "quickTip": "A good literary generalization stays close to the human pattern shown by the text without turning it into a universal rule."
+      },
+      "reportingCategory": "main_idea_transfer"
+    }
+  ],
+  "curriculum": {
+    "domain": "Core Meaning",
+    "primarySkillId": "R1.2",
+    "secondarySkillIds": [],
+    "contentKind": "skill_drill",
+    "learningObjective": "Reassess central idea, evidence, scope, and transfer using fresh informational and literary texts after review.",
+    "topicLabel": "Main Idea — Reassessment",
+    "deliveryRoles": [
+      "skill_check"
+    ],
+    "practiceTags": [
+      "mock-excluded",
+      "reassessment"
+    ]
+  }
+}
