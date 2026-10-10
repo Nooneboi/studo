@@ -23,36 +23,43 @@ init();
 async function init() {
   const params = new URLSearchParams(window.location.search);
   const file = params.get("file") || params.get("quiz");
+  const requestedReturn = safeLocalReturn(params.get("return"));
   currentModuleFile = file;
   if (!file) {
-    viewEl.innerHTML = `<div class="empty-state">No module selected. <a href="practice.html">Back to Practice</a></div>`;
+    renderModuleRecovery("No module selected.", requestedReturn);
     return;
   }
 
   try {
     currentQuiz = await Data.loadQuiz(file);
   } catch (e) {
-    viewEl.innerHTML = `<div class="empty-state">Couldn't load this module. <a href="practice.html">Back to Practice</a></div>`;
+    console.error(e);
+    if (requestedReturn?.includes("skill=R1.2")) {
+      document.body.classList.add("mainidea-v22-runtime");
+      try {
+        curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
+        setupMainIdeaV22Chrome(curriculumRoutes);
+      } catch (_) {}
+    }
+    renderModuleRecovery("Couldn't load this module.", requestedReturn);
     return;
   }
 
   const primarySkillId = currentQuiz?.contentMeta?.curriculum?.primarySkillId || currentQuiz?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2") {
-    document.body.classList.add("mainidea-v22-runtime");
-    setupMainIdeaV22Chrome();
-  }
-
   try {
     curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
   } catch (_) {
     curriculumRoutes = null;
   }
 
+  if (primarySkillId === "R1.2") {
+    document.body.classList.add("mainidea-v22-runtime");
+    setupMainIdeaV22Chrome(curriculumRoutes);
+  }
+
   const cat = currentQuiz.category || "reading";
   const topic = currentQuiz.topic || "";
-  const requestedReturn = params.get("return");
-  const safeReturn = safeLocalReturn(requestedReturn);
-  const backHref = safeReturn || (topic
+  const backHref = requestedReturn || (topic
     ? `category.html?cat=${encodeURIComponent(cat)}&topic=${encodeURIComponent(topic)}`
     : `practice.html`);
 
