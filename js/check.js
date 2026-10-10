@@ -28,6 +28,9 @@ async function initCheck() {
     console.error(error);
     return renderRecovery("This Skill Check could not be loaded.");
   }
+  const primarySkillId = currentModule?.contentMeta?.curriculum?.primarySkillId || currentModule?.questions?.[0]?.skill?.id || "";
+  if (primarySkillId === "R1.2") document.body.classList.add("mainidea-v22-runtime");
+
   const roles = currentModule?.contentMeta?.curriculum?.deliveryRoles || [];
   if (!roles.includes("skill_check")) return renderRecovery("This file is not a dedicated Skill Check.");
   if (!Array.isArray(currentModule.questions) || !currentModule.questions.length) return renderRecovery("This Skill Check has no questions.");
