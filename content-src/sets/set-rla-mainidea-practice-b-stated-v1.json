@@ -6,7 +6,7 @@
   "category": "reading",
   "topic": "Main idea / central idea",
   "difficulty": "medium",
-  "status": "review",
+  "status": "published",
   "version": 2,
   "passageRefs": [
     "p-rla-mainidea-practice-b-sleep-certified-v1"
@@ -27,7 +27,8 @@
     "deliveryRoles": [
       "practice",
       "train"
-    ]
+    ],
+    "assistanceLevel": "supported"
   },
   "questions": [
     {
@@ -72,8 +73,68 @@
       "correct": "s1",
       "explanation": {
         "answer": "The opening sentence.",
-        "whyCorrect": "The opening sentence names the three major branches developed by the rest of the passage: brain, emotions, and physical health.",
-        "quickTip": "A stated main idea often predicts the structure that follows."
+        "whyCorrect": "The opening sentence names the three main areas developed by the rest of the passage: brain, emotions, and physical health.",
+        "quickTip": "A stated main idea often predicts the structure that follows.",
+        "myanmar": {
+          "byAnswer": {
+            "s1": [
+              {
+                "title": "ဘာလို့ opening sentence မှန်တာလဲ",
+                "body": "ဒီ sentence က brain, emotions, body သုံးပိုင်းလုံးကို အစကတည်းက ထည့်ပြောထားတယ်။"
+              },
+              {
+                "title": "နောက်က paragraph တွေကိုကြည့်ရင်",
+                "body": "တစ်ပိုင်းက brain နဲ့ thinking, တစ်ပိုင်းက emotions, နောက်တစ်ပိုင်းက physical health ကို ဆက်ရှင်းထားတယ်။ ဒါကြောင့် opening sentence က passage တစ်ခုလုံးကို ခြုံထားတဲ့ stated Main Idea ဖြစ်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Stated Main Idea ရှာရင် sentence တစ်ကြောင်းကိုရွေးပြီး နောက်က paragraph အများစုက အဲဒီ sentence ကို ဆက်ရှင်းနေသလား စစ်ပါ။"
+              }
+            ],
+            "s2": [
+              {
+                "title": "ဒီ sentence က ဘာကြောင့် မလုံလောက်တာလဲ",
+                "body": "ဒီဟာက brain နဲ့ thinking အပိုင်းကိုပဲ ပြောထားတယ်။ Passage မှာ emotions နဲ့ physical health လည်း ပါသေးလို့ Main Idea အဖြစ် ကျဉ်းလွန်းတယ်။"
+              },
+              {
+                "title": "မှန်တဲ့ sentence က",
+                "body": "Opening sentence က brain, emotions, body သုံးပိုင်းလုံးကို ထည့်ပြောထားလို့ passage တစ်ခုလုံးနဲ့ ပိုကိုက်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "မှန်တဲ့ detail ဖြစ်တာနဲ့ Main Idea ဖြစ်တာ မတူပါဘူး။ Passage အများစုကို ခြုံနိုင်လား စစ်ပါ။"
+              }
+            ],
+            "s3": [
+              {
+                "title": "ဒီ sentence က ဘာကြောင့် မလုံလောက်တာလဲ",
+                "body": "“Sleep also affects emotional health” က emotions အပိုင်းတစ်ခုပဲ စတင်ပေးတဲ့ sentence ပါ။ Passage တစ်ခုလုံးရဲ့ Main Idea မဟုတ်ဘူး။"
+              },
+              {
+                "title": "မှန်တဲ့ sentence က",
+                "body": "Opening sentence က thinking, emotions, physical health အားလုံးကို ခြုံထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Paragraph တစ်ပိုင်းရဲ့ idea နဲ့ passage တစ်ခုလုံးရဲ့ Main Idea ကို မရောမိအောင် စစ်ပါ။"
+              }
+            ],
+            "s4": [
+              {
+                "title": "ဒီ sentence က ဘာကြောင့် မလုံလောက်တာလဲ",
+                "body": "“Physical health is affected too” က body အပိုင်းကို စတင်ပေးတာပဲ။ Brain နဲ့ emotions အပိုင်းတွေကို မခြုံဘူး။"
+              },
+              {
+                "title": "မှန်တဲ့ sentence က",
+                "body": "Opening sentence က passage ထဲက အဓိကသုံးပိုင်းလုံးကို တစ်ခါတည်း ပြထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ",
+                "body": "Sentence တစ်ကြောင်းက paragraph တစ်ပိုင်းကိုပဲ ပြောတာလား၊ passage တစ်ခုလုံးကို ခြုံတာလား ကြည့်ပါ။"
+              }
+            ]
+          }
+        }
       },
       "learningStage": "guided",
       "hint": "Look for the sentence broad enough to cover all three later branches."
@@ -81,7 +142,7 @@
     {
       "id": "b2",
       "type": "drag_sort",
-      "prompt": "Match each supporting detail to the branch of the stated main idea it develops.",
+      "prompt": "Match each supporting detail to the part of the stated main idea it develops.",
       "primarySkillId": "R1.2",
       "familyId": "mainidea.whole.explicit",
       "difficulty": "medium",
@@ -130,8 +191,24 @@
       "correct": "i1=brain|i2=emotion|i3=body",
       "explanation": {
         "answer": "Brain: i1; Emotions: i2; Physical health: i3.",
-        "whyCorrect": "Each detail develops one of the three branches named in the opening sentence: brain, emotions, or physical health.",
-        "quickTip": "Ask how each detail helps develop the stated main idea, not merely whether it is true."
+        "whyCorrect": "Each detail develops one of the three parts named in the opening sentence: brain, emotions, or physical health.",
+        "quickTip": "Ask how each detail helps develop the stated main idea, not merely whether it is true.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Detail တွေကို Main Idea နဲ့ ချိတ်မယ်",
+              "body": "Detail တစ်ခုချင်းစီက opening sentence ထဲက ဘယ်အပိုင်းကို ဆက်ရှင်းနေတာလဲဆိုတာ ကြည့်တာပါ။"
+            },
+            {
+              "title": "ဒီမှာ",
+              "body": "Memory, attention, problem-solving, decision-making က brain/thinking အပိုင်း။ Stress, irritability, low mood က emotions အပိုင်း။ Immune system နဲ့ illness က physical health အပိုင်း။"
+            },
+            {
+              "title": "နောက်တစ်ခါ",
+              "body": "Detail တစ်ခုဖတ်ပြီး “ဒီအချက်က Main Idea ထဲက ဘယ်အပိုင်းကို သက်သေပြနေတာလဲ” လို့ မေးကြည့်ပါ။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -181,7 +258,67 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "It covers all three major branches—thinking, emotions, and physical health—without turning one detail into the whole passage or making an absolute claim.",
-        "quickTip": "A main idea should cover the major branches, not just repeat a true detail."
+        "quickTip": "A main idea should cover the major branches, not just repeat a true detail.",
+        "myanmar": {
+          "byAnswer": {
+            "a": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "A မှာ passage ထဲက မှန်တဲ့အချက်တွေ ပါတယ်။ ဒါပေမယ့် memory နဲ့ decision-making ဆိုတဲ့ thinking အပိုင်းကိုပဲ အဓိကထားလို့ passage တစ်ခုလုံးအတွက် ကျဉ်းလွန်းတယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က thinking, emotions, physical health သုံးပိုင်းလုံးကို ခြုံထားလို့ passage တစ်ခုလုံးနဲ့ ကိုက်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Main Idea answer က မှန်တဲ့အချက်ဖြစ်ရုံနဲ့ မလုံလောက်ဘူး။ Passage ရဲ့ အဓိကအပိုင်းတွေကို ခြုံနိုင်ရမယ်။"
+              }
+            ],
+            "b": [
+              {
+                "title": "ဘာလို့ ဒီ answer မှန်တာလဲ",
+                "body": "B က passage ရဲ့ အဓိကသုံးပိုင်း—thinking, emotions, physical health—ကို တစ်ကြောင်းထဲ ခြုံထားတယ်။"
+              },
+              {
+                "title": "Passage ထဲမှာ ဘာကိုကြည့်ရလဲ",
+                "body": "Opening sentence ကလည်း ဒီသုံးပိုင်းကိုပဲ ကြိုပြထားပြီး နောက်က paragraph တွေက တစ်ပိုင်းစီ ဆက်ရှင်းထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Summary choice တစ်ခုက passage ရဲ့ အဓိကအပိုင်းတွေကို တစ်ကြောင်းနဲ့ ကိုယ်စားပြုနိုင်လား စစ်ပါ။"
+              }
+            ],
+            "c": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "C က immune system နဲ့ illness ဆိုတဲ့ physical-health detail တစ်ခုပဲ ပြောထားတယ်။ မှန်တဲ့ detail ဖြစ်ပေမယ့် whole passage အတွက်တော့ ကျဉ်းလွန်းတယ်။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က brain, emotions, body သုံးပိုင်းလုံးကို ခြုံထားလို့ Main Idea နဲ့ကိုက်တယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Detail တစ်ခုက မှတ်မိလွယ်လို့ answer လိုထင်တတ်တယ်။ Whole passage ကို cover လုပ်နိုင်လားဆိုတာ ထပ်စစ်ပါ။"
+              }
+            ],
+            "d": [
+              {
+                "title": "ဒီ answer က ဘာကြောင့်မကိုက်တာလဲ",
+                "body": "D မှာ “prevents” လို့ သေချာလွန်းအောင် ပြောထားတယ်။ Passage က sleep နဲ့ health effects ရဲ့ ဆက်နွယ်မှုကိုပြောတာပါ၊ enough sleep က problems အားလုံးကို တားဆီးပေးတယ်လို့ မပြောထားဘူး။"
+              },
+              {
+                "title": "ဘာလို့ B က ပိုကိုက်တာလဲ",
+                "body": "B က passage ထဲမှာ တကယ် support လုပ်ထားတဲ့ thinking, emotions, physical health သုံးပိုင်းကိုပဲ ခြုံထားတယ်။"
+              },
+              {
+                "title": "နောက်တစ်ခါ ဒီလိုစစ်",
+                "body": "Prevents, always, never လို strong words တွေပါတဲ့ choice တွေ့ရင် passage က တကယ်အဲဒီလောက် သေချာပြောထားလား စစ်ပါ။"
+              }
+            ]
+          }
+        }
       },
       "learningStage": "independent",
       "reportingCategory": "gist_synthesis"

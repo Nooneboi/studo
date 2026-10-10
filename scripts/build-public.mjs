@@ -8,7 +8,7 @@ const argIndex = process.argv.indexOf('--out');
 const OUT = path.resolve(argIndex >= 0 && process.argv[argIndex + 1] ? process.argv[argIndex + 1] : path.join(ROOT, 'dist'));
 
 const learnerPages = [
-  'index.html', 'practice.html', 'passages.html', 'resources.html', 'progress.html',
+  'index.html', 'rla.html', 'practice.html', 'passages.html', 'resources.html', 'progress.html',
   'curriculum.html', 'domain.html', 'category.html', 'skill.html', 'module.html', 'check.html',
   'extended-response.html', 'train.html', 'quiz.html', 'test.html', 'about.html', 'methodology.html',
   'privacy.html', 'offline.html', '404.html'

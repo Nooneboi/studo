@@ -239,28 +239,187 @@ function readHistory() {
   } catch (_) { return []; }
 }
 
+function diagnosticBucket(question) {
+  const category = question?.metadata?.reportingCategory || question?.reportingCategory || '';
+  if (['gist_synthesis', 'scope_control'].includes(category)) return 'whole_text_control';
+  if (category === 'evidence_link') return 'evidence_link';
+  if (category === 'literary_central_idea') return 'literary_meaning';
+  if (category === 'main_idea_transfer') return 'transfer';
+  return null;
+}
+
+function nextStepFromResults(results) {
+  const misses = results.filter((item) => !item.correct);
+  if (!misses.length) {
+    return {
+      title: 'Move on.',
+      body: 'No repeated Main Idea problem showed up in this Check. You can move on and meet Main Idea again later in mixed practice.'
+    };
+  }
+
+  const counts = new Map();
+  for (const item of misses) {
+    const bucket = diagnosticBucket(item.question);
+    if (!bucket) continue;
+    counts.set(bucket, (counts.get(bucket) || 0) + 1);
+  }
+
+  const repeated = [...counts.entries()]
+    .filter(([, count]) => count >= 2)
+    .sort((a, b) => b[1] - a[1]);
+
+  if (!repeated.length) {
+    if (misses.length >= 3) {
+      return {
+        title: 'Next: do one more mixed Main Idea practice.',
+        body: 'Several questions were missed, but they were spread across different reasoning types. Chee is not labeling one specific weakness from that.'
+      };
+    }
+    return {
+      title: 'Review these misses, then move on.',
+      body: 'The misses are in different reasoning areas, so Chee is not treating either one as a repeated weakness.'
+    };
+  }
+
+  const [bucket] = repeated[0];
+  const recommendations = {
+    whole_text_control: {
+      title: 'Next: review whole-passage answers.',
+      body: 'More than one miss came from choosing an answer that was too narrow, too broad, or did not fit the whole passage closely enough.'
+    },
+    evidence_link: {
+      title: 'Next: practice Main Idea + Evidence.',
+      body: 'More than one miss came from connecting the Main Idea to the strongest supporting evidence.'
+    },
+    literary_meaning: {
+      title: 'Next: practice Main Idea in stories.',
+      body: 'More than one miss came from moving from plot details to the story’s overall meaning.'
+    },
+    transfer: {
+      title: 'Next: try another Main Idea passage.',
+      body: 'More than one miss came from applying the passage’s main reasoning in a broader or new situation.'
+    }
+  };
+  return recommendations[bucket] || {
+    title: 'Review these misses, then move on.',
+    body: 'Review the questions you missed before another Check.'
+  };
+}
+
 function renderResults(results, correct) {
   const I = window.QuestionInteractions;
   const total = results.length;
+  const nextStep = nextStepFromResults(results);
+  const misses = results.filter((item) => !item.correct);
+
   checkView.innerHTML = `
     <section class="check-results" aria-labelledby="check-result-heading">
       <div class="page-kicker">Skill Check complete</div>
       <h1 id="check-result-heading" tabindex="-1">${correct} / ${total} correct</h1>
-      <p>${Math.round((correct / total) * 100)}% on this Chee Skool Skill Check. This is an independent practice result, not a GED score.</p>
-      <div class="check-result-actions"><a class="btn" href="${escapeAttr(returnHref)}">Back to skill</a><a class="btn secondary" href="${escapeAttr(returnHref)}">Review this skill</a></div>
-      <div class="check-review-list">${results.map((item, index) => `
-        <article class="answer-review ${item.correct ? "is-right" : "is-wrong"}">
-          <div class="answer-review-head"><strong>Question ${index + 1}</strong><span>${item.correct ? "Correct" : "Needs review"}</span></div>
-          <p>${escapeHtml(item.question.prompt || "")}</p>
-          <p><strong>Your answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.answer))}</p>
-          <p><strong>Correct answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.question.correct))}</p>
-          ${item.question.explanation ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(item.question.explanation)}</p>` : ""}
-          ${item.question.evidenceExcerpt ? `<blockquote>${escapeHtml(item.question.evidenceExcerpt)}</blockquote>` : ""}
-        </article>`).join("")}</div>
+      <p>This is an independent Chee Skool practice result, not a GED score.</p>
+
+      <section class="check-next-step" aria-labelledby="check-next-step-heading">
+        <h2 id="check-next-step-heading">${escapeHtml(nextStep.title)}</h2>
+        <p>${escapeHtml(nextStep.body)}</p>
+      </section>
+
+      <div class="check-result-actions">
+        <a class="btn" href="${escapeAttr(returnHref)}">Back to Main Idea</a>
+      </div>
+
+      ${misses.length ? `
+        <div class="check-review-list">
+          <h2>Review these questions</h2>
+          ${misses.map((item) => {
+            const index = results.indexOf(item);
+            return `
+              <article class="answer-review is-wrong">
+                <div class="answer-review-head"><strong>Question ${index + 1}</strong><span>Needs review</span></div>
+                <p>${escapeHtml(item.question.prompt || "")}</p>
+                <p><strong>Your answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.answer))}</p>
+                <p><strong>Correct answer:</strong> ${escapeHtml(I.formatAnswer(item.question, item.question.correct))}</p>
+                ${item.question.explanation ? `<p class="answer-review-why"><span>Why</span>${escapeHtml(item.question.explanation)}</p>` : ""}
+                ${hasMyanmarHelp(item.question.myanmarExplanation, item.answer) ? `<button type="button" class="chee-mm-trigger" data-check-myanmar="${index}">မြန်မာလိုရှင်းပြ</button>` : ""}
+                ${item.question.evidenceExcerpt ? `<blockquote>${escapeHtml(item.question.evidenceExcerpt)}</blockquote>` : ""}
+              </article>`;
+          }).join("")}
+        </div>`
+        : '<p class="simple-muted">No missed questions to review.</p>'}
     </section>`;
+
+  checkView.querySelectorAll("[data-check-myanmar]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const index = Number(button.dataset.checkMyanmar);
+      const item = results[index];
+      if (item) openMyanmarHelp(item.question.myanmarExplanation, item.answer);
+    });
+  });
+
   document.getElementById("check-result-heading")?.focus();
   document.getElementById("check-header-progress").textContent = "Complete";
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function resolveMyanmarHelp(data, selectedAnswer) {
+  if (!data) return [];
+  if (typeof data === "string") return [{ title: "", body: data }];
+  const selected = selectedAnswer != null ? String(selectedAnswer) : "";
+  const answerSpecific = data.byAnswer?.[selected];
+  if (Array.isArray(answerSpecific) && answerSpecific.length) return answerSpecific;
+  if (Array.isArray(data.sections)) return data.sections;
+  return [];
+}
+
+function hasMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).some((section) => String(section?.body || "").trim());
+}
+
+function renderMyanmarHelp(data, selectedAnswer) {
+  return resolveMyanmarHelp(data, selectedAnswer).map((section) => {
+    const title = String(section?.title || "").trim();
+    const body = String(section?.body || "").trim();
+    if (!body) return "";
+    return `<section class="chee-mm-section">${title ? `<h3>${escapeHtml(title)}</h3>` : ""}<p>${escapeHtml(body)}</p></section>`;
+  }).join("");
+}
+
+function ensureMyanmarHelpDrawer() {
+  if (document.getElementById("chee-mm-drawer")) return;
+
+  const overlay = document.createElement("div");
+  overlay.id = "chee-mm-overlay";
+  overlay.className = "chee-mm-overlay";
+  overlay.addEventListener("click", closeMyanmarHelp);
+
+  const drawer = document.createElement("aside");
+  drawer.id = "chee-mm-drawer";
+  drawer.className = "chee-mm-drawer";
+  drawer.setAttribute("aria-hidden", "true");
+  drawer.innerHTML = `
+    <div class="chee-mm-head">
+      <strong>မြန်မာလိုရှင်းပြ</strong>
+      <button type="button" class="chee-mm-close" aria-label="Close">ပိတ်</button>
+    </div>
+    <div class="chee-mm-body" id="chee-mm-body"></div>`;
+  drawer.querySelector(".chee-mm-close").addEventListener("click", closeMyanmarHelp);
+  document.body.append(overlay, drawer);
+}
+
+function openMyanmarHelp(data, selectedAnswer) {
+  ensureMyanmarHelpDrawer();
+  const body = document.getElementById("chee-mm-body");
+  if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
+  document.getElementById("chee-mm-overlay")?.classList.add("open");
+  const drawer = document.getElementById("chee-mm-drawer");
+  drawer?.classList.add("open");
+  drawer?.setAttribute("aria-hidden", "false");
+}
+
+function closeMyanmarHelp() {
+  document.getElementById("chee-mm-overlay")?.classList.remove("open");
+  const drawer = document.getElementById("chee-mm-drawer");
+  drawer?.classList.remove("open");
+  drawer?.setAttribute("aria-hidden", "true");
 }
 
 function updateHeader() {

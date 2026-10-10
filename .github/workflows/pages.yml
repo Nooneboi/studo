@@ -24,12 +24,14 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-      - name: Run quality gates
-        run: npm test
       - name: Validate content
         run: npm run content:validate
+      - name: Regenerate canonical learner content
+        run: npm run content:build
+      - name: Run quality gates
+        run: npm test
       - name: Build learner-only site
-        run: npm run public:build
+        run: node scripts/build-public.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
@@ -38,6 +40,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

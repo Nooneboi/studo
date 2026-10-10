@@ -57,6 +57,8 @@ function compileQuestion(q, skill, passage) {
     prompt: q.prompt,
     points: q.points || 1,
     explanation: q.explanation?.whyCorrect || '',
+    ...(q.explanation?.myanmar ? { myanmarExplanation: JSON.parse(JSON.stringify(q.explanation.myanmar)) } : {}),
+    ...(Array.isArray(q.explanation?.selfCheck) ? { selfCheck: [...q.explanation.selfCheck] } : {}),
     skill: runtimeSkill(skill),
     rule: q.explanation?.quickTip || '',
     familyId: q.familyId,
@@ -306,13 +308,17 @@ function buildCurriculum({ curriculumConfig, skills, publishedResources, records
 }
 
 async function main() {
+  const previewMainIdea = process.argv.includes('--preview-main-idea');
   const validation = await validateContent({ quiet: true });
   if (!validation.ok) {
     console.error(`Build blocked: ${validation.errors.length} validation error(s). Run npm run content:validate.`);
     process.exit(1);
   }
 
-  const legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
+  let legacyIndex = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'legacy-index.json'), 'utf8'));
+  if (previewMainIdea) {
+    legacyIndex = legacyIndex.filter((entry) => entry.sourceFile !== 'legacy-modules/rla-main-idea-practice-01.json');
+  }
   const curriculumConfig = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.curriculum.json'), 'utf8'));
   const mockBlueprint = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla-mock-v2.json'), 'utf8'));
   const questionFamilyRegistry = JSON.parse(await fs.readFile(path.join(SRC, 'config', 'rla.question-families.v1.json'), 'utf8'));
@@ -341,8 +347,30 @@ async function main() {
     moduleRecords.set(learnerFile, publicRecordFromModule(module, normalizedEntry));
   }
 
+  const previewMainIdeaIds = [
+    'set-rla-mainidea-learn-certified-v2',
+    'set-rla-mainidea-practice-b-stated-v1',
+    'set-rla-mainidea-practice-c-implied-v1',
+    'set-rla-mainidea-practice-d-literary-v1',
+    'set-rla-mainidea-practice-e-urbanization-v1',
+    'set-rla-check-main-idea-certified-v2',
+  ];
+  const previewRetiredMainIdeaIds = new Set([
+    'set-rla-mainidea-active-methods-v1',
+    'set-rla-check-main-idea-v1',
+  ]);
+
+  const sourceSets = previewMainIdea
+    ? [
+        ...validation.publishedSets.filter(({ set }) => !previewRetiredMainIdeaIds.has(set.id)),
+        ...await Promise.all(previewMainIdeaIds.map(async (id) => ({
+          set: JSON.parse(await fs.readFile(path.join(SRC, 'sets', `${id}.json`), 'utf8')),
+        }))),
+      ]
+    : validation.publishedSets;
+
   const compiledSourceFiles = [];
-  for (const { set } of validation.publishedSets) {
+  for (const { set } of sourceSets) {
     const passageId = set.passageRefs?.[0] || null;
     const passage = passageId ? validation.passages.get(passageId) : null;
     const runtimeFile = set.runtime?.file || `${set.id}.json`;
@@ -460,6 +488,7 @@ async function main() {
   }, null, 2) + '\n', 'utf8');
 
   console.log(`Built ${legacyIndex.length} canonical legacy module(s) and ${compiledSourceFiles.length} schema-v2 module(s).`);
+  if (previewMainIdea) console.log('Main Idea preview build: review-stage rebuilt R1.2 path substituted for production Main Idea content.');
   console.log(`Generated index contains ${mergedIndex.length} module entries.`);
   if (validation.warnings.length) console.log(`Build completed with ${validation.warnings.length} quality warning(s).`);
 }
