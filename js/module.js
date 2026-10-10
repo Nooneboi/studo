@@ -71,6 +71,14 @@ async function init() {
   renderCurrentQuestion();
 }
 
+function renderModuleRecovery(message, requestedReturn) {
+  const backHref = requestedReturn || "practice.html";
+  const label = requestedReturn?.includes("skill=R1.2") ? "Back to Main Idea" : "Back to Practice";
+  viewEl.innerHTML = `<div class="empty-state"><h1>Study page unavailable</h1><p>${escapeHtml(message)}</p><a href="${escapeAttr(backHref)}">${escapeHtml(label)}</a></div>`;
+  const exitLink = document.getElementById("focus-exit");
+  if (exitLink) exitLink.href = backHref;
+}
+
 function setupMainIdeaV22Chrome(routes) {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
