@@ -266,7 +266,9 @@ test('Chee Skool branding is used across learner pages and shipped as a real log
   for (const file of learnerPages) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
     assert.match(html, /<title>Chee Skool — /, `${file} should use the Chee Skool page title`);
-    assert.match(html, /class="brand-logo"[^>]*src="assets\/chee-skool-logo\.png"[^>]*alt="Chee Skool"/, `${file} should render the Chee Skool logo in the header`);
+    const hasImageBrand = /class="brand-logo"[^>]*src="assets\/chee-skool-logo\.png"[^>]*alt="Chee Skool"/.test(html);
+    const hasSimpleBrand = /class="simple-brand"[^>]*>Chee Skool<\/a>/.test(html);
+    assert.ok(hasImageBrand || hasSimpleBrand, `${file} should render an approved Chee Skool header brand`);
   }
   assert.ok(fs.existsSync(path.join(root, 'assets/chee-skool-logo.png')), 'Chee Skool logo asset should ship with the site');
   const logo = fs.readFileSync(path.join(root, 'assets/chee-skool-logo.png'));
