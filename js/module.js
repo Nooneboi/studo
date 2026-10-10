@@ -36,6 +36,9 @@ async function init() {
     return;
   }
 
+  const primarySkillId = currentQuiz?.contentMeta?.curriculum?.primarySkillId || currentQuiz?.questions?.[0]?.skill?.id || "";
+  if (primarySkillId === "R1.2") document.body.classList.add("mainidea-v22-runtime");
+
   try {
     curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
   } catch (_) {
