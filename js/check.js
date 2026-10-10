@@ -19,6 +19,11 @@ initCheck();
 
 async function initCheck() {
   document.getElementById("check-exit")?.setAttribute("href", returnHref);
+  const mainIdeaRequested = returnHref.includes("skill=R1.2");
+  if (mainIdeaRequested) {
+    document.body.classList.add("mainidea-v22-runtime");
+    await setupMainIdeaV22Chrome();
+  }
   if (!requestedFile || !/^generated\/modules\/[a-z0-9._-]+\.json$/i.test(requestedFile)) {
     return renderRecovery("This Skill Check could not be opened.");
   }
