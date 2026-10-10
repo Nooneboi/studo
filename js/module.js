@@ -408,7 +408,8 @@ function buildExplanationHtml(q, selectedAnswer) {
 
   if (!summary && !rule && !evidence && !hasSelected && !selfCheck.length) return '';
 
-  const showBreakdown = level === 'full' || level === 'legacy';
+  const mainIdeaV22 = document.body.classList.contains('mainidea-v22-runtime');
+  const showBreakdown = !mainIdeaV22 && (level === 'full' || level === 'legacy');
   const breakdown = showBreakdown ? [
     !correct && wrongReason ? `
       <div class="answer-breakdown-row">
