@@ -74,23 +74,21 @@ test('dedicated Mock surfaces distinguish the full unseen mock from objective fo
   assert.doesNotMatch(learnerCopy, /College Ready|official percentile|psychometric equivalence/i);
 });
 
-test('learner navigation hides unavailable future subjects', () => {
-  const app = read('js/app.js');
-  assert.doesNotMatch(app, /soon-pill|>Soon<|Soon/);
-  assert.doesNotMatch(app, /id:\s*["']math["']/);
-  assert.doesNotMatch(app, /id:\s*["']science["']/);
-  assert.doesNotMatch(app, /id:\s*["']social_studies["']/);
-  assert.ok(!fs.existsSync('js/subjectbar.js') || !/Soon/.test(read('js/subjectbar.js')), 'retired subjectbar source must not preserve stale Soon UI');
-});
-
-test('Home explains the three learner modes directly', () => {
+test('Home keeps future GED subjects visible but clearly unavailable', () => {
   const html = read('index.html');
-  assert.match(html, /<strong>Practice<\/strong>/);
-  assert.match(html, /<strong>Train<\/strong>/);
-  assert.match(html, /<strong>Mock<\/strong>/);
-  assert.doesNotMatch(html, /<strong>Plans<\/strong>|<strong>Systems<\/strong>|<strong>Details<\/strong>/);
+  assert.match(html, /<li><a href="rla\.html">GED RLA<\/a><\/li>/);
+  for (const subject of ['GED Math', 'GED Science', 'GED Social Studies']) {
+    assert.match(html, new RegExp(`<li><span>${subject}<\\/span><small>Later<\\/small><\\/li>`), `${subject} should remain visible as Later`);
+  }
+  assert.doesNotMatch(html, /href="(?:math|science|social-studies|social_studies)\.html"/);
 });
 
+test('Home stays subject-first instead of explaining internal study modes', () => {
+  const html = read('index.html');
+  assert.match(html, /<h1>Choose a subject\.<\/h1>/);
+  assert.match(html, /class="simple-subject-list"/);
+  assert.doesNotMatch(html, /<strong>Practice<\/strong>|<strong>Train<\/strong>|<strong>Mock<\/strong>/);
+});
 test('public build ships the shared curriculum routing helper', () => {
   assert.match(read('scripts/build-public.mjs'), /curriculum-routes\.js/);
 });

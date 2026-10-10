@@ -18,15 +18,12 @@ function loadModel() {
   return context.globalThis.StudoLibraryModel;
 }
 
-test('homepage Explore RLA links use published curriculum track ids', () => {
+test('homepage uses the approved subject-first GED entry', () => {
   const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-  const published = new Set((curriculum.tracks || []).map((t) => t.id));
-  const hrefs = [...html.matchAll(/href="curriculum\.html\?track=([^"]+)"/g)].map((m) => decodeURIComponent(m[1]));
-  assert.ok(hrefs.length >= published.size, 'homepage should expose all published RLA tracks');
-  for (const id of published) assert.ok(hrefs.includes(id), `homepage must link to published track ${id}`);
-  for (const id of hrefs) assert.ok(published.has(id), `homepage track link ${id} must resolve to a published track`);
+  assert.match(html, /<h1>Choose a subject\.<\/h1>/);
+  assert.match(html, /<a href="rla\.html">GED RLA<\/a>/, 'homepage should enter RLA through the subject page');
+  assert.doesNotMatch(html, /href="curriculum\.html\?track=/, 'homepage should not expose internal RLA track links');
 });
-
 test('Practice search uses learner units for unit-based tracks and skills for Reading', () => {
   const model = loadModel();
   assert.equal(typeof model?.buildPracticeSearchItems, 'function');
@@ -105,8 +102,10 @@ test('Passage and Resource library pages expose learner search/filter controls',
 test('explicit invalid track ids do not silently fall back to Reading', () => {
   const curriculumJs = fs.readFileSync(path.join(root, 'js/curriculum.js'), 'utf8');
   const domainJs = fs.readFileSync(path.join(root, 'js/domain.js'), 'utf8');
-  assert.match(curriculumJs, /requestedTrackId/);
-  assert.match(curriculumJs, /This curriculum area could not be found/);
+  assert.match(curriculumJs, /const trackId = params\.get\("track"\) \|\| "reading"/);
+  assert.match(curriculumJs, /const track = curriculum\.tracks\.find\(\(item\) => item\.id === trackId\)/);
+  assert.match(curriculumJs, /if \(!track\)/);
+  assert.match(curriculumJs, /This study area is not available yet/);
   assert.doesNotMatch(curriculumJs, /find\(\(item\) => item\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
   assert.match(domainJs, /requestedTrackId/);
   assert.doesNotMatch(domainJs, /find\(\(t\) => t\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
@@ -145,15 +144,17 @@ test('search normalization treats underscore and hyphen topic labels as normal w
   assert.ok(er.searchText.includes('extended response'));
 });
 
-test('learner navigation consistently labels quiz.html as Mock', () => {
+test('learner navigation avoids the retired Quiz label and simple subject pages use Practice Tests', () => {
   const learnerPages = ['index.html','practice.html','passages.html','resources.html','progress.html','curriculum.html','domain.html','category.html','skill.html','about.html','methodology.html','privacy.html','404.html'];
   for (const file of learnerPages) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
-    assert.match(html, /<a href="quiz\.html"[^>]*>Mock<\/a>/, `${file} should label the learner-facing mock route as Mock`);
-    assert.doesNotMatch(html, /<a href="quiz\.html"[^>]*>Quiz<\/a>/, `${file} should not expose the old Quiz label`);
+    assert.doesNotMatch(html, /<a href="quiz\.html"[^>]*>Quiz<\/a>/, `${file} should not expose the retired Quiz label`);
+  }
+  for (const file of ['index.html', 'curriculum.html', 'skill.html']) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.match(html, /<a href="quiz\.html"[^>]*>Practice Tests<\/a>/, `${file} should use the approved Practice Tests label`);
   }
 });
-
 test('Resource and Passage Practice heroes place search in a right-side discovery column on desktop', () => {
   const resourcesHtml = fs.readFileSync(path.join(root, 'resources.html'), 'utf8');
   const passagesHtml = fs.readFileSync(path.join(root, 'passages.html'), 'utf8');
@@ -265,7 +266,9 @@ test('Chee Skool branding is used across learner pages and shipped as a real log
   for (const file of learnerPages) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
     assert.match(html, /<title>Chee Skool — /, `${file} should use the Chee Skool page title`);
-    assert.match(html, /class="brand-logo"[^>]*src="assets\/chee-skool-logo\.png"[^>]*alt="Chee Skool"/, `${file} should render the Chee Skool logo in the header`);
+    const hasImageBrand = /class="brand-logo"[^>]*src="assets\/chee-skool-logo\.png"[^>]*alt="Chee Skool"/.test(html);
+    const hasSimpleBrand = /class="simple-brand"[^>]*>Chee Skool<\/a>/.test(html);
+    assert.ok(hasImageBrand || hasSimpleBrand, `${file} should render an approved Chee Skool header brand`);
   }
   assert.ok(fs.existsSync(path.join(root, 'assets/chee-skool-logo.png')), 'Chee Skool logo asset should ship with the site');
   const logo = fs.readFileSync(path.join(root, 'assets/chee-skool-logo.png'));
