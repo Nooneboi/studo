@@ -18,15 +18,12 @@ function loadModel() {
   return context.globalThis.StudoLibraryModel;
 }
 
-test('homepage Explore RLA links use published curriculum track ids', () => {
+test('homepage uses the approved subject-first GED entry', () => {
   const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-  const published = new Set((curriculum.tracks || []).map((t) => t.id));
-  const hrefs = [...html.matchAll(/href="curriculum\.html\?track=([^"]+)"/g)].map((m) => decodeURIComponent(m[1]));
-  assert.ok(hrefs.length >= published.size, 'homepage should expose all published RLA tracks');
-  for (const id of published) assert.ok(hrefs.includes(id), `homepage must link to published track ${id}`);
-  for (const id of hrefs) assert.ok(published.has(id), `homepage track link ${id} must resolve to a published track`);
+  assert.match(html, /<h1>Choose a subject\.<\/h1>/);
+  assert.match(html, /<a href="rla\.html">GED RLA<\/a>/, 'homepage should enter RLA through the subject page');
+  assert.doesNotMatch(html, /href="curriculum\.html\?track=/, 'homepage should not expose internal RLA track links');
 });
-
 test('Practice search uses learner units for unit-based tracks and skills for Reading', () => {
   const model = loadModel();
   assert.equal(typeof model?.buildPracticeSearchItems, 'function');
