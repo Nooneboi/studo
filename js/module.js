@@ -68,6 +68,21 @@ async function init() {
   renderCurrentQuestion();
 }
 
+function setupMainIdeaV22Chrome() {
+  const learn = document.getElementById("mainidea-v22-learn");
+  const practice = document.getElementById("mainidea-v22-practice");
+  const check = document.getElementById("mainidea-v22-check");
+  if (!learn || !practice || !check) return;
+
+  const skillReturn = "skill.html?skill=R1.2";
+  learn.href = "module.html?file=generated/modules/set-rla-mainidea-learn-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+  practice.href = "module.html?file=generated/modules/set-rla-mainidea-practice-b-stated-v1.json&return=" + encodeURIComponent(skillReturn);
+  check.href = "check.html?file=generated/modules/set-rla-check-main-idea-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+
+  const activeId = explicitAssistanceLevel() === "full" ? "mainidea-v22-learn" : "mainidea-v22-practice";
+  document.getElementById(activeId)?.classList.add("active");
+}
+
 function activeQuestions() {
   return currentQuiz.questions.map((question, originalIndex) => ({ question, originalIndex }));
 }
