@@ -23,7 +23,7 @@ test('Phase 3 learner baseline remains intact while later assessment roles stay 
   const mocks = index.filter((item) => (item.curriculum?.deliveryRoles || []).includes('mock'));
   const hardeningModules = phase3LearnerModules.filter((item) => HARDENING_IDS.has(moduleId(item)));
   const phase3Baseline = phase3LearnerModules.filter((item) => !HARDENING_IDS.has(moduleId(item)));
-  assert.equal(phase3Baseline.length, 103, 'Phase 3 learner-role baseline must remain intact');
+  assert.equal(phase3Baseline.length, 106, 'Phase 3 learner-role baseline plus the promoted Main Idea path must remain intact');
   assert.deepEqual(hardeningModules.map(moduleId).sort(), [...HARDENING_IDS].sort(), 'only the three approved pre-pilot transfer modules may extend the learner-role baseline here');
   assert.equal(checks.length, 9);
   assert.equal(mocks.length, 21);
