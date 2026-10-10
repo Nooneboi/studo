@@ -68,6 +68,8 @@ test('Main Idea routes resolve from generated curriculum and return to the canon
   assert.match(routesJs, /skillLocation\(skillId\)/);
   assert.match(moduleJs, /routes\?\.skillLocation\?\.\("R1\.2"\)/);
   assert.match(checkJs, /routes\?\.skillLocation\?\.\("R1\.2"\)/);
+  assert.match(checkJs, /const mainIdeaRequested = returnHref\.includes\("skill=R1\.2"\)/);
+  assert.match(checkJs, /if \(mainIdeaRequested\)/);
   assert.match(moduleJs, /returnHref: location\.returnHref/);
   assert.match(checkJs, /returnHref: location\.returnHref/);
   assert.match(checkHtml, /<script src="js\/curriculum-routes\.js"><\/script>/);
