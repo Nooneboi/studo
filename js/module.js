@@ -37,7 +37,10 @@ async function init() {
   }
 
   const primarySkillId = currentQuiz?.contentMeta?.curriculum?.primarySkillId || currentQuiz?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2") document.body.classList.add("mainidea-v22-runtime");
+  if (primarySkillId === "R1.2") {
+    document.body.classList.add("mainidea-v22-runtime");
+    setupMainIdeaV22Chrome();
+  }
 
   try {
     curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
@@ -329,6 +332,8 @@ function renderCurrentQuestion(options = {}) {
   renderPassageForQuestion(q, savedAnswer || draftAnswer);
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer, draftAnswer);
 
+  const mainIdeaV22 = document.body.classList.contains("mainidea-v22-runtime");
+  footer.classList.toggle("mainidea-v22-waiting", mainIdeaV22 && !savedAnswer);
   footer.innerHTML = `
     <button class="question-nav-btn secondary" id="prev-question" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
     <span class="question-footer-position">${currentIndex + 1} / ${items.length}</span>
@@ -748,6 +753,9 @@ function unlockGuidedNext() {
   if (!isGuidedLearningModule()) return;
   const next = document.getElementById("next-question");
   if (next) next.disabled = false;
+  if (document.body.classList.contains("mainidea-v22-runtime")) {
+    document.getElementById("question-footer")?.classList.remove("mainidea-v22-waiting");
+  }
 }
 
 function submitInteractiveAnswer(q, answer, container) {
@@ -1330,6 +1338,7 @@ function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
       if (!ta.value.trim()) return;
       showQuestionExplanation(q, ta.value);
       compare.disabled = true;
+      if (document.body.classList.contains("mainidea-v22-runtime")) unlockGuidedNext();
     });
   } else {
     ta.addEventListener("blur", () => {
