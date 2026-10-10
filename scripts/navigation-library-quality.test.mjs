@@ -102,8 +102,10 @@ test('Passage and Resource library pages expose learner search/filter controls',
 test('explicit invalid track ids do not silently fall back to Reading', () => {
   const curriculumJs = fs.readFileSync(path.join(root, 'js/curriculum.js'), 'utf8');
   const domainJs = fs.readFileSync(path.join(root, 'js/domain.js'), 'utf8');
-  assert.match(curriculumJs, /requestedTrackId/);
-  assert.match(curriculumJs, /This curriculum area could not be found/);
+  assert.match(curriculumJs, /const trackId = params\.get\("track"\) \|\| "reading"/);
+  assert.match(curriculumJs, /const track = curriculum\.tracks\.find\(\(item\) => item\.id === trackId\)/);
+  assert.match(curriculumJs, /if \(!track\)/);
+  assert.match(curriculumJs, /This study area is not available yet/);
   assert.doesNotMatch(curriculumJs, /find\(\(item\) => item\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
   assert.match(domainJs, /requestedTrackId/);
   assert.doesNotMatch(domainJs, /find\(\(t\) => t\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
