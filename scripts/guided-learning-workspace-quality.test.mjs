@@ -39,8 +39,8 @@ test('Main Idea V2 follows a predictable Guided Apply Independent progression wi
 });
 
 test('compiled Main Idea module keeps V2 learning metadata', () => {
-  const runtime = json('data/generated/modules/set-rla-mainidea-active-methods-v1.json');
-  assert.deepEqual(runtime.questions.map((q) => q.learningStage), ['guided','guided','apply','apply','independent','independent']);
+  const runtime = json('data/generated/modules/set-rla-mainidea-learn-certified-v2.json');
+  assert.deepEqual(runtime.questions.map((q) => q.learningStage), ['guided','guided','apply','apply','independent']);
   assert.equal(runtime.questions[0].hint.length > 10, true);
 });
 
