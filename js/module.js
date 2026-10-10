@@ -355,7 +355,7 @@ function renderCurrentQuestion(options = {}) {
   const guidedNextLocked = guided && !savedAnswer;
 
   stage.innerHTML = `
-    ${guided ? `<div class="guided-stage-line"><span>${document.body.classList.contains("mainidea-v22-runtime") ? "Step " : ""}${currentIndex + 1} of ${items.length}</span></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
+    ${guided ? `<div class="guided-stage-line"><span>${document.body.classList.contains("mainidea-v22-runtime") ? "Step " : ""}${currentIndex + 1} of ${items.length}</span>${document.body.classList.contains("mainidea-v22-runtime") ? `<strong>${escapeHtml(mainIdeaActivityLabel(q))}</strong>` : ""}</div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     ${helperText ? `<p class="guided-helper">${escapeHtml(helperText)}</p>` : ""}
     <div data-role="answer-area"></div>
@@ -426,6 +426,14 @@ function renderCurrentQuestion(options = {}) {
   updateProgress(items, currentIndex);
   updateAnswerStatus();
   if (!options.preserveFocus) stage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function mainIdeaActivityLabel(q) {
+  if (q.type === "drag_sort" || q.type === "drag_order") return "Skill builder · Sort clues";
+  if (q.type === "open_ended") return "Build it yourself";
+  if (q.type === "multiple_choice" || q.type === "evidence_based") return "GED-style question";
+  if (q.type === "select_text") return "Skill builder · Find evidence";
+  return "Practice";
 }
 
 function questionDetail(q) {
