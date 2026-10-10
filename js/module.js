@@ -79,7 +79,10 @@ function setupMainIdeaV22Chrome() {
   practice.href = "module.html?file=generated/modules/set-rla-mainidea-practice-b-stated-v1.json&return=" + encodeURIComponent(skillReturn);
   check.href = "check.html?file=generated/modules/set-rla-check-main-idea-certified-v2.json&return=" + encodeURIComponent(skillReturn);
 
-  const activeId = explicitAssistanceLevel() === "full" ? "mainidea-v22-learn" : "mainidea-v22-practice";
+  const isLearn = explicitAssistanceLevel() === "full";
+  document.body.classList.toggle("mainidea-v22-learn", isLearn);
+  document.body.classList.toggle("mainidea-v22-practice", !isLearn);
+  const activeId = isLearn ? "mainidea-v22-learn" : "mainidea-v22-practice";
   document.getElementById(activeId)?.classList.add("active");
 }
 
