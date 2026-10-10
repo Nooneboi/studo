@@ -284,7 +284,7 @@ function renderCurrentQuestion(options = {}) {
   const guidedNextLocked = guided && !savedAnswer;
 
   stage.innerHTML = `
-    ${guided ? `<div class="guided-stage-line"><span>${currentIndex + 1} of ${items.length}</span></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
+    ${guided ? `<div class="guided-stage-line"><span>${document.body.classList.contains("mainidea-v22-runtime") ? "Step " : ""}${currentIndex + 1} of ${items.length}</span></div>` : `<div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${items.length}</span></div>`}
     <div class="q-prompt" data-role="prompt">${promptHtml}</div>
     ${helperText ? `<p class="guided-helper">${escapeHtml(helperText)}</p>` : ""}
     <div data-role="answer-area"></div>
