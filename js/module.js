@@ -71,22 +71,59 @@ async function init() {
   renderCurrentQuestion();
 }
 
-function setupMainIdeaV22Chrome() {
+function setupMainIdeaV22Chrome(curriculum) {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
   const check = document.getElementById("mainidea-v22-check");
   if (!learn || !practice || !check) return;
 
-  const skillReturn = "skill.html?skill=R1.2";
-  learn.href = "module.html?file=generated/modules/set-rla-mainidea-learn-certified-v2.json&return=" + encodeURIComponent(skillReturn);
-  practice.href = "module.html?file=generated/modules/set-rla-mainidea-practice-b-stated-v1.json&return=" + encodeURIComponent(skillReturn);
-  check.href = "check.html?file=generated/modules/set-rla-check-main-idea-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+  const route = mainIdeaRouteConfig(curriculum);
+  if (!route) {
+    [learn, practice, check].forEach((link) => {
+      link.removeAttribute("href");
+      link.setAttribute("aria-disabled", "true");
+    });
+    return;
+  }
+
+  learn.href = moduleRoute(route.learnFile, route.returnHref);
+  practice.href = moduleRoute(route.practiceFile, route.returnHref);
+  check.href = checkRoute(route.checkFile, route.returnHref);
 
   const isLearn = explicitAssistanceLevel() === "full";
   document.body.classList.toggle("mainidea-v22-learn", isLearn);
   document.body.classList.toggle("mainidea-v22-practice", !isLearn);
   const activeId = isLearn ? "mainidea-v22-learn" : "mainidea-v22-practice";
   document.getElementById(activeId)?.classList.add("active");
+}
+
+function mainIdeaRouteConfig(curriculum) {
+  for (const track of curriculum?.tracks || []) {
+    for (const domain of track.domains || []) {
+      const skill = (domain.skills || []).find((item) => item.id === "R1.2");
+      if (!skill) continue;
+      const sets = skill.sets || [];
+      const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
+      const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
+      const checkSet = (skill.checks || [])[0];
+      if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
+      return {
+        learnFile: learnSet.file,
+        practiceFile: practiceSet.file,
+        checkFile: checkSet.file,
+        returnHref: `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=R1.2`,
+      };
+    }
+  }
+  return null;
+}
+
+function moduleRoute(file, returnHref) {
+  return `module.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
+}
+
+function checkRoute(file, returnHref) {
+  return `check.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
 }
 
 function activeQuestions() {
