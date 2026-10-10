@@ -29,7 +29,7 @@ async function initCheck() {
     return renderRecovery("This Skill Check could not be loaded.");
   }
   const primarySkillId = currentModule?.contentMeta?.curriculum?.primarySkillId || currentModule?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2") {
+  if (primarySkillId === "R1.2" && !mainIdeaRequested) {
     document.body.classList.add("mainidea-v22-runtime");
     await setupMainIdeaV22Chrome();
   }
