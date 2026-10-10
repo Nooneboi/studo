@@ -830,7 +830,9 @@ function unlockGuidedNext() {
   const next = document.getElementById("next-question");
   if (next) next.disabled = false;
   if (document.body.classList.contains("mainidea-v22-runtime")) {
-    document.getElementById("question-footer")?.classList.remove("mainidea-v22-waiting");
+    const footer = document.getElementById("question-footer");
+    footer?.classList.remove("mainidea-v22-waiting");
+    requestAnimationFrame(() => footer?.scrollIntoView({ behavior: "smooth", block: "nearest" }));
   }
 }
 
