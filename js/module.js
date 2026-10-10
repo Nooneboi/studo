@@ -1322,7 +1322,7 @@ function renderAnswerArea(q, container, savedAnswer, draftAnswer = "") {
   ta.addEventListener("input", () => {
     Store.setAnswer(currentQuiz.id, q.id, ta.value);
     if (compare) compare.disabled = !ta.value.trim();
-    if (guided && ta.value.trim()) unlockGuidedNext();
+    if (guided && ta.value.trim() && !document.body.classList.contains("mainidea-v22-runtime")) unlockGuidedNext();
     updateAnswerStatus();
   });
   if (explicitAssistanceLevel()) {
