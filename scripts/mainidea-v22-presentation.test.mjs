@@ -8,10 +8,11 @@ test('Main Idea module runtime opts into the approved V22 presentation and chrom
   const source = read('js/module.js');
   assert.match(source, /primarySkillId === "R1\.2"/);
   assert.match(source, /classList\.add\("mainidea-v22-runtime"\)/);
-  assert.match(source, /setupMainIdeaV22Chrome\(\)/);
-  assert.match(source, /set-rla-mainidea-learn-certified-v2\.json/);
-  assert.match(source, /set-rla-mainidea-practice-b-stated-v1\.json/);
-  assert.match(source, /set-rla-check-main-idea-certified-v2\.json/);
+  assert.match(source, /setupMainIdeaV22Chrome\(curriculumRoutes\)/);
+  assert.match(source, /routes\?\.skillLocation\?\.\("R1\.2"\)/);
+  assert.doesNotMatch(source, /set-rla-mainidea-learn-certified-v2\.json&return=/);
+  assert.doesNotMatch(source, /set-rla-mainidea-practice-b-stated-v1\.json&return=/);
+  assert.doesNotMatch(source, /set-rla-check-main-idea-certified-v2\.json&return=/);
   assert.match(source, /classList\.toggle\("mainidea-v22-learn", isLearn\)/);
   assert.match(source, /classList\.toggle\("mainidea-v22-practice", !isLearn\)/);
   assert.match(source, /const mainIdeaV22 = document\.body\.classList\.contains\('mainidea-v22-runtime'\)/);
@@ -24,6 +25,7 @@ test('Main Idea Skill Check uses the same V22 chrome and presentation', () => {
   assert.match(source, /classList\.add\("mainidea-v22-runtime"\)/);
   assert.match(source, /classList\.add\("mainidea-v22-check"\)/);
   assert.match(source, /setupMainIdeaV22Chrome\(\)/);
+  assert.match(source, /routes\?\.skillLocation\?\.\("R1\.2"\)/);
 });
 
 test('module and check pages include the V22 Chee Skool navigation shell', () => {

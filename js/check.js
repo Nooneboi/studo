@@ -19,6 +19,11 @@ initCheck();
 
 async function initCheck() {
   document.getElementById("check-exit")?.setAttribute("href", returnHref);
+  const mainIdeaRequested = returnHref.includes("skill=R1.2");
+  if (mainIdeaRequested) {
+    document.body.classList.add("mainidea-v22-runtime");
+    await setupMainIdeaV22Chrome();
+  }
   if (!requestedFile || !/^generated\/modules\/[a-z0-9._-]+\.json$/i.test(requestedFile)) {
     return renderRecovery("This Skill Check could not be opened.");
   }
@@ -29,9 +34,9 @@ async function initCheck() {
     return renderRecovery("This Skill Check could not be loaded.");
   }
   const primarySkillId = currentModule?.contentMeta?.curriculum?.primarySkillId || currentModule?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2") {
+  if (primarySkillId === "R1.2" && !mainIdeaRequested) {
     document.body.classList.add("mainidea-v22-runtime");
-    setupMainIdeaV22Chrome();
+    await setupMainIdeaV22Chrome();
   }
 
   const roles = currentModule?.contentMeta?.curriculum?.deliveryRoles || [];
@@ -43,17 +48,57 @@ async function initCheck() {
   renderQuestion();
 }
 
-function setupMainIdeaV22Chrome() {
+async function setupMainIdeaV22Chrome() {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
   const check = document.getElementById("mainidea-v22-check");
   if (!learn || !practice || !check) return;
-  const skillReturn = "skill.html?skill=R1.2";
-  learn.href = "module.html?file=generated/modules/set-rla-mainidea-learn-certified-v2.json&return=" + encodeURIComponent(skillReturn);
-  practice.href = "module.html?file=generated/modules/set-rla-mainidea-practice-b-stated-v1.json&return=" + encodeURIComponent(skillReturn);
-  check.href = "check.html?file=generated/modules/set-rla-check-main-idea-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+
+  let routes = null;
+  try {
+    routes = CurriculumRoutes.build(await Data.loadCurriculum());
+  } catch (_) {
+    routes = null;
+  }
+  const route = mainIdeaRouteConfig(routes);
+  if (!route) {
+    [learn, practice, check].forEach((link) => {
+      link.removeAttribute("href");
+      link.setAttribute("aria-disabled", "true");
+    });
+    return;
+  }
+
+  learn.href = moduleRoute(route.learnFile, route.returnHref);
+  practice.href = moduleRoute(route.practiceFile, route.returnHref);
+  check.href = checkRoute(route.checkFile, route.returnHref);
   document.body.classList.add("mainidea-v22-check");
   check.classList.add("active");
+}
+
+function mainIdeaRouteConfig(routes) {
+  const location = routes?.skillLocation?.("R1.2");
+  const skill = location?.skill;
+  if (!location || !skill) return null;
+  const sets = skill.sets || [];
+  const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
+  const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
+  const checkSet = (skill.checks || [])[0];
+  if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
+  return {
+    learnFile: learnSet.file,
+    practiceFile: practiceSet.file,
+    checkFile: checkSet.file,
+    returnHref: location.returnHref,
+  };
+}
+
+function moduleRoute(file, returnHref) {
+  return `module.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
+}
+
+function checkRoute(file, returnHref) {
+  return `check.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
 }
 
 function renderQuestion() {

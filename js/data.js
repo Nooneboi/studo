@@ -1,24 +1,39 @@
 /*
   data.js
   -------
-  Shared fetch helpers so practice.js and module.js don't duplicate
-  the same fetch/try-catch logic.
+  Shared fetch helpers for canonical learner data.
+  Generated JSON is always requested with cache bypass so a newly deployed
+  curriculum/module cannot be mixed with an older service-worker response.
 */
 const Data = {
+  async fetchJson(url, label = "data") {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) {
+      throw new Error(`Could not load ${label}: ${res.status} ${res.statusText} (${url})`);
+    }
+    const type = res.headers.get("content-type") || "";
+    if (type && !type.includes("json") && !type.includes("javascript")) {
+      throw new Error(`Could not load ${label}: unexpected content type ${type} (${url})`);
+    }
+    return res.json();
+  },
+
   async loadIndex() {
-    const res = await fetch("data/generated/index.json");
-    return res.json();
+    return this.fetchJson("data/generated/index.json", "learner index");
   },
+
   async loadCurriculum() {
-    const res = await fetch("data/generated/curriculum.json");
-    return res.json();
+    return this.fetchJson("data/generated/curriculum.json", "curriculum");
   },
+
   async loadQuiz(file) {
-    const res = await fetch(`data/${file}`);
-    return res.json();
+    const rel = String(file || "");
+    if (!/^generated\/modules\/[a-z0-9._-]+\.json$/i.test(rel)) {
+      throw new Error(`Invalid learner module path: ${rel || "(missing)"}`);
+    }
+    return this.fetchJson(`data/${rel}`, "learner module");
   },
-  // Fetches every quiz file listed in index.json, in parallel, and
-  // returns them merged with their index.json entry (file, id, etc.)
+
   async loadAllQuizzes() {
     const list = await this.loadIndex();
     return Promise.all(

@@ -23,36 +23,43 @@ init();
 async function init() {
   const params = new URLSearchParams(window.location.search);
   const file = params.get("file") || params.get("quiz");
+  const requestedReturn = safeLocalReturn(params.get("return"));
   currentModuleFile = file;
   if (!file) {
-    viewEl.innerHTML = `<div class="empty-state">No module selected. <a href="practice.html">Back to Practice</a></div>`;
+    renderModuleRecovery("No module selected.", requestedReturn);
     return;
   }
 
   try {
     currentQuiz = await Data.loadQuiz(file);
   } catch (e) {
-    viewEl.innerHTML = `<div class="empty-state">Couldn't load this module. <a href="practice.html">Back to Practice</a></div>`;
+    console.error(e);
+    if (requestedReturn?.includes("skill=R1.2")) {
+      document.body.classList.add("mainidea-v22-runtime");
+      try {
+        curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
+        setupMainIdeaV22Chrome(curriculumRoutes);
+      } catch (_) {}
+    }
+    renderModuleRecovery("Couldn't load this module.", requestedReturn);
     return;
   }
 
   const primarySkillId = currentQuiz?.contentMeta?.curriculum?.primarySkillId || currentQuiz?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2") {
-    document.body.classList.add("mainidea-v22-runtime");
-    setupMainIdeaV22Chrome();
-  }
-
   try {
     curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
   } catch (_) {
     curriculumRoutes = null;
   }
 
+  if (primarySkillId === "R1.2") {
+    document.body.classList.add("mainidea-v22-runtime");
+    setupMainIdeaV22Chrome(curriculumRoutes);
+  }
+
   const cat = currentQuiz.category || "reading";
   const topic = currentQuiz.topic || "";
-  const requestedReturn = params.get("return");
-  const safeReturn = safeLocalReturn(requestedReturn);
-  const backHref = safeReturn || (topic
+  const backHref = requestedReturn || (topic
     ? `category.html?cat=${encodeURIComponent(cat)}&topic=${encodeURIComponent(topic)}`
     : `practice.html`);
 
@@ -71,22 +78,64 @@ async function init() {
   renderCurrentQuestion();
 }
 
-function setupMainIdeaV22Chrome() {
+function renderModuleRecovery(message, requestedReturn) {
+  const backHref = requestedReturn || "practice.html";
+  const label = requestedReturn?.includes("skill=R1.2") ? "Back to Main Idea" : "Back to Practice";
+  viewEl.innerHTML = `<div class="empty-state"><h1>Study page unavailable</h1><p>${escapeHtml(message)}</p><a href="${escapeAttr(backHref)}">${escapeHtml(label)}</a></div>`;
+  const exitLink = document.getElementById("focus-exit");
+  if (exitLink) exitLink.href = backHref;
+}
+
+function setupMainIdeaV22Chrome(routes) {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
   const check = document.getElementById("mainidea-v22-check");
   if (!learn || !practice || !check) return;
 
-  const skillReturn = "skill.html?skill=R1.2";
-  learn.href = "module.html?file=generated/modules/set-rla-mainidea-learn-certified-v2.json&return=" + encodeURIComponent(skillReturn);
-  practice.href = "module.html?file=generated/modules/set-rla-mainidea-practice-b-stated-v1.json&return=" + encodeURIComponent(skillReturn);
-  check.href = "check.html?file=generated/modules/set-rla-check-main-idea-certified-v2.json&return=" + encodeURIComponent(skillReturn);
+  const route = mainIdeaRouteConfig(routes);
+  if (!route) {
+    [learn, practice, check].forEach((link) => {
+      link.removeAttribute("href");
+      link.setAttribute("aria-disabled", "true");
+    });
+    return;
+  }
+
+  mainIdeaReturnHref = route.returnHref;
+  learn.href = moduleRoute(route.learnFile, route.returnHref);
+  practice.href = moduleRoute(route.practiceFile, route.returnHref);
+  check.href = checkRoute(route.checkFile, route.returnHref);
 
   const isLearn = explicitAssistanceLevel() === "full";
   document.body.classList.toggle("mainidea-v22-learn", isLearn);
   document.body.classList.toggle("mainidea-v22-practice", !isLearn);
   const activeId = isLearn ? "mainidea-v22-learn" : "mainidea-v22-practice";
   document.getElementById(activeId)?.classList.add("active");
+}
+
+function mainIdeaRouteConfig(routes) {
+  const location = routes?.skillLocation?.("R1.2");
+  const skill = location?.skill;
+  if (!location || !skill) return null;
+  const sets = skill.sets || [];
+  const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
+  const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
+  const checkSet = (skill.checks || [])[0];
+  if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
+  return {
+    learnFile: learnSet.file,
+    practiceFile: practiceSet.file,
+    checkFile: checkSet.file,
+    returnHref: location.returnHref,
+  };
+}
+
+function moduleRoute(file, returnHref) {
+  return `module.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
+}
+
+function checkRoute(file, returnHref) {
+  return `check.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
 }
 
 function activeQuestions() {
