@@ -144,15 +144,17 @@ test('search normalization treats underscore and hyphen topic labels as normal w
   assert.ok(er.searchText.includes('extended response'));
 });
 
-test('learner navigation consistently labels quiz.html as Mock', () => {
+test('learner navigation avoids the retired Quiz label and simple subject pages use Practice Tests', () => {
   const learnerPages = ['index.html','practice.html','passages.html','resources.html','progress.html','curriculum.html','domain.html','category.html','skill.html','about.html','methodology.html','privacy.html','404.html'];
   for (const file of learnerPages) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
-    assert.match(html, /<a href="quiz\.html"[^>]*>Mock<\/a>/, `${file} should label the learner-facing mock route as Mock`);
-    assert.doesNotMatch(html, /<a href="quiz\.html"[^>]*>Quiz<\/a>/, `${file} should not expose the old Quiz label`);
+    assert.doesNotMatch(html, /<a href="quiz\.html"[^>]*>Quiz<\/a>/, `${file} should not expose the retired Quiz label`);
+  }
+  for (const file of ['index.html', 'curriculum.html', 'skill.html']) {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.match(html, /<a href="quiz\.html"[^>]*>Practice Tests<\/a>/, `${file} should use the approved Practice Tests label`);
   }
 });
-
 test('Resource and Passage Practice heroes place search in a right-side discovery column on desktop', () => {
   const resourcesHtml = fs.readFileSync(path.join(root, 'resources.html'), 'utf8');
   const passagesHtml = fs.readFileSync(path.join(root, 'passages.html'), 'utf8');
