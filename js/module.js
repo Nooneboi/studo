@@ -90,11 +90,13 @@ function setupMainIdeaV22Chrome(routes) {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
   const check = document.getElementById("mainidea-v22-check");
+  const hub = document.getElementById("mainidea-v22-hub");
+  const sequence = document.getElementById("mainidea-v24-sequence");
   if (!learn || !practice || !check) return;
 
   const route = mainIdeaRouteConfig(routes);
   if (!route) {
-    [learn, practice, check].forEach((link) => {
+    [learn, practice, check, hub].filter(Boolean).forEach((link) => {
       link.removeAttribute("href");
       link.setAttribute("aria-disabled", "true");
     });
@@ -102,15 +104,32 @@ function setupMainIdeaV22Chrome(routes) {
   }
 
   mainIdeaReturnHref = route.returnHref;
+  if (hub) hub.href = route.returnHref;
   learn.href = moduleRoute(route.learnFile, route.returnHref);
-  practice.href = moduleRoute(route.practiceFile, route.returnHref);
+  practice.href = moduleRoute(route.practiceSets[0].file, route.returnHref);
   check.href = checkRoute(route.checkFile, route.returnHref);
 
-  const isLearn = explicitAssistanceLevel() === "full";
+  const isLearn = currentModuleFile === route.learnFile || explicitAssistanceLevel() === "full";
   document.body.classList.toggle("mainidea-v22-learn", isLearn);
   document.body.classList.toggle("mainidea-v22-practice", !isLearn);
   const activeId = isLearn ? "mainidea-v22-learn" : "mainidea-v22-practice";
   document.getElementById(activeId)?.classList.add("active");
+
+  if (sequence && !isLearn) {
+    sequence.hidden = false;
+    sequence.innerHTML = route.practiceSets.map((set, index) => {
+      const active = set.file === currentModuleFile;
+      const label = String.fromCharCode(66 + index);
+      return `<a class="${active ? "active" : ""}" href="${escapeAttr(moduleRoute(set.file, route.returnHref))}"><span>Practice ${label}</span><small>${escapeHtml(mainIdeaPracticeShortTitle(set.title))}</small></a>`;
+    }).join("");
+  }
+}
+
+function mainIdeaPracticeShortTitle(title) {
+  return String(title || "")
+    .replace(/^Main Idea\s*[—-]\s*Practice\s*[B-E]:?\s*/i, "")
+    .replace(/Transfer$/i, "")
+    .trim() || "Practice";
 }
 
 function mainIdeaRouteConfig(routes) {
@@ -119,12 +138,12 @@ function mainIdeaRouteConfig(routes) {
   if (!location || !skill) return null;
   const sets = skill.sets || [];
   const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
-  const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
+  const practiceSets = sets.filter((set) => set.file && set.file !== learnSet?.file);
   const checkSet = (skill.checks || [])[0];
-  if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
+  if (!learnSet?.file || !practiceSets.length || !checkSet?.file) return null;
   return {
     learnFile: learnSet.file,
-    practiceFile: practiceSet.file,
+    practiceSets,
     checkFile: checkSet.file,
     returnHref: location.returnHref,
   };
