@@ -97,10 +97,13 @@ test('Skill Check stays stored but does not change Practice/Train skill evidence
 test('skill pages expose a separate optional Check section and Progress keeps Check results separate', () => {
   const skill = read('js/skill.js');
   const progress = read('js/progress.js');
-  assert.match(skill, /item\.checks/);
-  assert.match(skill, /Skill Check/);
-  assert.match(skill, /Independent[^\n]*no hints[^\n]*answers after finishing/i);
+  assert.match(skill, /const checks = skill\.checks \|\| \[\]/);
+  assert.match(skill, /checks\.length \? `<a href="\$\{escapeAttr\(checkHref\(checks\[0\], returnHref\)\)\}">Check<\/a>` : ""/);
+  assert.match(skill, /function checkHref\(check, returnHref\)/);
   assert.match(skill, /check\.html\?file=/);
+  const checkRuntime = read('js/check.js');
+  assert.match(checkRuntime, /Answers after finishing/i);
+  assert.doesNotMatch(checkRuntime, /id=["'](?:hint|confidence)|guided-retry/i);
   assert.match(progress, /sq:skill-check-history:v1/);
   assert.match(progress, /Latest Skill Check/);
   assert.match(progress, />Evidence<\/small>/);
