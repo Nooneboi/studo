@@ -11,11 +11,12 @@ test('Resources uses the simplified learner hierarchy', () => {
   assert.doesNotMatch(html, /RLA library/);
 });
 
-test('Practice Tests uses learner-facing wording instead of the old Mock landing title', () => {
+test('Practice Tests uses the minimal learner-facing test picker', () => {
   const html = read('quiz.html');
   assert.match(html, /<div class="page-kicker">GED RLA<\/div>/);
   assert.match(html, /<h1>Practice Tests<\/h1>/);
-  assert.match(html, /How do you want to practice\?/);
+  assert.match(html, /Choose the amount of test practice you want right now\./);
+  assert.match(html, /class="simple-test-options"/);
 });
 
 test('Resources is a skill list rather than a workbook matrix', () => {
