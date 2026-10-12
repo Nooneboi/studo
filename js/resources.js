@@ -82,39 +82,37 @@ function matchesResource(resource) {
 }
 
 function renderDomain(domain, general, topics) {
-  const maxWorkbook = Math.max(0, ...topics.flatMap((topic) => topic.resources.map((r) => {
-    const role = window.StudoLibraryModel.resourceRole(r);
-    return role.id.startsWith("workbook-") ? Number(role.id.split("-")[1]) : 0;
-  })));
   return `<section class="resource-domain-section">
     <header class="resource-domain-heading"><h3>${escapeHtml(domain.label)}</h3></header>
-    ${general.length ? `<div class="resource-general-block"><div class="resource-general-label">General resources</div><div class="resource-general-links">${general.map((r)=>resourceLink(r, true)).join("")}</div></div>` : ""}
-    ${topics.length ? `<div class="resource-topic-table" style="--workbook-count:${maxWorkbook}">${renderTopicHeader(maxWorkbook)}${topics.map((topic)=>renderTopicRow(topic,maxWorkbook)).join("")}</div>` : ""}
+    ${general.length ? `<div class="resource-general-block">
+      <div class="resource-general-label">Domain guides</div>
+      <div class="resource-general-links">${general.map((r)=>resourceLink(r, true)).join("")}</div>
+    </div>` : ""}
+    ${topics.length ? `<div class="resource-topic-list">${topics.map(renderTopicItem).join("")}</div>` : ""}
   </section>`;
 }
 
-function renderTopicHeader(maxWorkbook) {
-  const columns = ["Study Guide", ...Array.from({length:maxWorkbook},(_,i)=>`Workbook ${i+1}`)];
-  return `<div class="resource-topic-row resource-topic-header" style="--resource-columns:${columns.length}"><span>Topic</span>${columns.map((c)=>`<span>${escapeHtml(c)}</span>`).join("")}</div>`;
-}
-
-function renderTopicRow(topic, maxWorkbook) {
-  const roleMap = new Map();
-  for (const resource of topic.resources) {
+function renderTopicItem(topic) {
+  const actions = topic.resources.map((resource) => {
     const role = window.StudoLibraryModel.resourceRole(resource);
-    roleMap.set(role.id, resource);
-  }
-  const cells=[resourceCell(roleMap.get("guide"),"Study Guide")];
-  for(let i=1;i<=maxWorkbook;i++) cells.push(resourceCell(roleMap.get(`workbook-${i}`),`Workbook ${i}`));
-  return `<div class="resource-topic-row" style="--resource-columns:${maxWorkbook+1}" data-resource-topic="${escapeAttr(topic.id)}">
-    <div class="resource-topic-name"><strong>${escapeHtml(topic.label)}</strong>${topic.summary?`<span>${escapeHtml(topic.summary)}</span>`:""}</div>
-    ${cells.join("")}
-  </div>`;
+    return resourceLink(resource, false, resourceActionLabel(role));
+  }).join("");
+
+  return `<article class="resource-topic-item" data-resource-topic="${escapeAttr(topic.id)}">
+    <div class="resource-topic-copy">
+      <strong>${escapeHtml(topic.label)}</strong>
+      ${topic.summary ? `<span>${escapeHtml(topic.summary)}</span>` : ""}
+    </div>
+    <div class="resource-topic-actions" aria-label="${escapeAttr(topic.label)} resources">
+      ${actions}
+    </div>
+  </article>`;
 }
 
-function resourceCell(resource, label) {
-  if (!resource) return `<span class="resource-cell is-empty" data-label="${escapeAttr(label)}" aria-label="${escapeAttr(label)} unavailable">—</span>`;
-  return `<span class="resource-cell" data-label="${escapeAttr(label)}">${resourceLink(resource, false, label)}</span>`;
+function resourceActionLabel(role) {
+  if (role.id === "guide") return "Study guide";
+  if (role.id.startsWith("workbook-")) return `Workbook ${role.id.split("-")[1]}`;
+  return role.label || "Open";
 }
 
 function resourceLink(resource, showTitle=false, fallbackLabel="Open") {
@@ -122,7 +120,7 @@ function resourceLink(resource, showTitle=false, fallbackLabel="Open") {
   const external=/^https?:\/\//i.test(href);
   const text=showTitle ? resource.title : fallbackLabel;
   return `<a class="resource-file-link" href="${escapeAttr(safeHref(href))}" ${external?'target="_blank" rel="noopener"':(resource.download!==false?'download':'')}>
-    <span>${escapeHtml(text)}</span><b aria-hidden="true">↗</b>
+    <span>${escapeHtml(text)}</span>
   </a>`;
 }
 
