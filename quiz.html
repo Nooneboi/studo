@@ -18,70 +18,41 @@
 <body>
 <header class="site-header"><div class="wrap"><a class="brand" href="index.html" aria-label="Chee Skool home"><img class="brand-logo" src="assets/chee-skool-logo.png" alt="Chee Skool"></a><div class="header-right"><nav class="site-nav"><a href="index.html">Home</a><a href="practice.html">Practice</a><a href="train.html">Train</a><a href="quiz.html" aria-current="page">Mock</a><a href="progress.html">Progress</a><a href="resources.html">Resources</a></nav><div id="theme-switch-mount"></div></div></div></header>
 <div id="subject-bar-mount"></div>
-<main><div class="wrap mock-landing">
-  <header class="mock-landing-hero">
+<main><div class="wrap mock-landing simple-test-picker">
+  <header class="mock-landing-hero simple-test-hero">
     <div class="page-kicker">GED RLA</div>
     <h1>Practice Tests</h1>
-    <p class="lede">Choose a full mock when you want an exam-length run, or a shorter objective test when you only want timed question practice.</p>
-    <p class="mock-evidence-note">Results are raw practice evidence, not an official GED form or pass prediction.</p>
+    <p class="lede">Choose the amount of test practice you want right now.</p>
   </header>
 
   <div id="mock-resume" class="mock-resume" hidden></div>
 
-  <section class="mock-library" aria-labelledby="mock-library-heading">
-    <div class="mock-library-heading">
-      <div>
-        <span class="mock-option-label">Choose a format</span>
-        <h2 id="mock-library-heading">How do you want to practice?</h2>
+  <section class="simple-test-options" aria-label="RLA practice test options">
+    <article class="simple-test-option" data-mock-kind="full">
+      <div class="simple-test-copy">
+        <span class="mock-option-label">Full mock</span>
+        <h2>Full RLA Mock</h2>
+        <p>46 objective questions · 1 Extended Response · about 150 min</p>
       </div>
-      <p>Choose based on how much time and exam simulation you want.</p>
-    </div>
-    <div class="mock-library-grid">
-      <article class="mock-test-card featured" data-mock-kind="full">
-        <div class="mock-test-card-copy">
-          <span class="mock-option-label">Full mock</span>
-          <h3>Full RLA Mock</h3>
-          <p>Use this when you want a long, exam-style run with objective questions and one Extended Response.</p>
-          <div class="mock-format-facts" aria-label="Full mock details">
-            <span>46 objective questions</span>
-            <span>1 Extended Response</span>
-            <span>About 150 min</span>
-          </div>
-        </div>
-        <button class="btn" id="start-full-mock" type="button">Start full mock</button>
-      </article>
+      <button class="btn" id="start-full-mock" type="button">Start full mock</button>
+    </article>
 
-      <article class="mock-test-card" data-mock-kind="objective">
-        <div class="mock-test-card-copy">
-          <span class="mock-option-label">Shorter test</span>
-          <h3>Objective RLA Practice Test</h3>
-          <p>Use this when you want timed question practice without the essay.</p>
-          <div class="mock-format-facts" aria-label="Objective practice test details">
-            <span>30 objective questions</span>
-            <span>No essay</span>
-            <span>60 min</span>
-          </div>
-        </div>
-        <button class="btn secondary" id="start-objective-test" type="button">Start objective test</button>
-      </article>
-    </div>
+    <article class="simple-test-option" data-mock-kind="objective">
+      <div class="simple-test-copy">
+        <span class="mock-option-label">Shorter test</span>
+        <h2>Objective RLA Practice Test</h2>
+        <p>30 objective questions · no essay · 60 min</p>
+      </div>
+      <button class="btn secondary" id="start-objective-test" type="button">Start shorter test</button>
+    </article>
   </section>
 
-  <section class="mock-focused-practice" aria-labelledby="section-practice-heading">
-    <div class="mock-focused-practice-copy">
-      <span class="mock-option-label">Not ready for a full test?</span>
-      <h2 id="section-practice-heading">Practice by area</h2>
-      <p>Work on one RLA area instead of starting a timed test.</p>
-    </div>
-    <nav class="mock-area-links" aria-label="Focused RLA practice areas">
-      <a href="curriculum.html?track=reading"><strong>Reading</strong><span>Meaning, inference, structure</span></a>
-      <a href="curriculum.html?track=arguments"><strong>Arguments</strong><span>Claims, evidence, reasoning</span></a>
-      <a href="curriculum.html?track=language"><strong>Language</strong><span>Editing and conventions</span></a>
-      <a href="curriculum.html?track=extended-response"><strong>Extended Response</strong><span>Focused writing + full essays</span></a>
-    </nav>
-  </section>
+  <p class="simple-test-skill-link">
+    Not ready for a timed test?
+    <a href="practice.html">Practice by skill instead</a>
+  </p>
 
-  <p class="mock-disclaimer">*The 150-minute estimate includes about 3 minutes for instructions and final review. Chee Skool uses original GED-style practice based on public format guidance. Full Mock evidence remains separate from Practice and Skill Check evidence.</p>
+  <p class="mock-disclaimer simple-test-note">Chee Skool uses original GED-style practice based on public format guidance. Practice results are not an official GED score or pass prediction.</p>
   <div id="mock-status" class="study-status" aria-live="polite"></div>
 </div></main>
 <footer class="site-footer"><div class="wrap"><div class="site-footer-primary">Chee Skool — built for practice, not for tracking you.</div><nav aria-label="Project information" class="site-footer-links"><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy</a></nav></div></footer>
