@@ -111,11 +111,13 @@ test('explicit invalid track ids do not silently fall back to Reading', () => {
   assert.doesNotMatch(domainJs, /find\(\(t\) => t\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
 });
 
-test('resource rows preserve learner-facing file labels for stacked mobile layout', () => {
+test('resource topic items preserve learner-facing file labels in the simplified list', () => {
   const resourcesJs = fs.readFileSync(path.join(root, 'js/resources.js'), 'utf8');
   const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
-  assert.match(resourcesJs, /data-label=/);
-  assert.match(css, /content:\s*attr\(data-label\)/);
+  assert.match(resourcesJs, /resourceActionLabel/);
+  assert.match(resourcesJs, /Study guide/);
+  assert.match(resourcesJs, /Workbook \$\{role\.id\.split\("-"\)\[1\]\}/);
+  assert.match(css, /\.resource-topic-actions/);
 });
 
 test('static internal HTML links resolve to existing project files', () => {

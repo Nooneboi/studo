@@ -33,15 +33,15 @@ test('Extended Response follows Learn → focused practice → full response hie
   assert.match(css, /@media\s*\(max-width:\s*820px\)[\s\S]*?\.er-practice-full\s*\{[^}]*order:\s*2/s);
 });
 
-test('Mock landing is sectioned and its test library scales to more cards', () => {
-  assert.match(quizHtml, /<h1>Mock<\/h1>/);
-  assert.match(quizHtml, /class="mock-library"/);
-  assert.match(quizHtml, /id="mock-library-heading"/);
-  assert.match(quizHtml, /class="mock-library-grid"/);
+test('Practice Tests landing keeps both modes in a minimal picker', () => {
+  assert.match(quizHtml, /<h1>Practice Tests<\/h1>/);
+  assert.match(quizHtml, /class="simple-test-options"/);
   assert.match(quizHtml, /data-mock-kind="full"/);
   assert.match(quizHtml, /data-mock-kind="objective"/);
-  assert.match(quizHtml, /class="mock-focused-practice"/);
-  assert.match(css, /\.mock-library-grid\s*\{[^}]*grid-template-columns:\s*repeat\(auto-fit,\s*minmax\(min\(100%,\s*320px\),\s*1fr\)\)/s);
+  assert.match(quizHtml, /Practice by skill instead/);
+  assert.doesNotMatch(quizHtml, /class="mock-library"/);
+  assert.doesNotMatch(quizHtml, /class="mock-focused-practice"/);
+  assert.match(css, /\.simple-test-option\s*\{[^}]*grid-template-columns:\s*minmax\(0,1fr\)\s+auto/s);
 });
 
 test('Progress skill rows give status ownership of the score and meter', () => {
