@@ -10284,3 +10284,86 @@ body.canonical-learner-shell .mock-focused-practice {
     margin-right:10px;
   }
 }
+
+
+/* Learner visual v1.2 — Practice Tests minimal picker */
+body.canonical-learner-shell .simple-test-picker {
+  max-width:860px !important;
+  padding-bottom:72px !important;
+}
+body.canonical-learner-shell .simple-test-hero {
+  max-width:680px !important;
+  margin:52px 0 28px !important;
+}
+body.canonical-learner-shell .simple-test-options {
+  border-top:1px solid #111;
+}
+body.canonical-learner-shell .simple-test-option {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  padding:24px 0;
+  border-bottom:1px solid #e5e5e5;
+}
+body.canonical-learner-shell .simple-test-copy {
+  min-width:0;
+}
+body.canonical-learner-shell .simple-test-copy h2 {
+  margin:4px 0 6px;
+  color:#111;
+  font-size:20px;
+  line-height:1.25;
+  letter-spacing:-.015em;
+}
+body.canonical-learner-shell .simple-test-copy p {
+  margin:0;
+  color:#666;
+  font-size:13px;
+  line-height:1.45;
+}
+body.canonical-learner-shell .simple-test-option .btn {
+  min-width:150px;
+  margin:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+body.canonical-learner-shell .simple-test-skill-link {
+  margin:24px 0 0;
+  color:#666;
+  font-size:14px;
+}
+body.canonical-learner-shell .simple-test-skill-link a {
+  margin-left:5px;
+  color:#0b63a1;
+  font-weight:600;
+  text-decoration:none;
+}
+body.canonical-learner-shell .simple-test-skill-link a:hover {
+  text-decoration:underline;
+}
+body.canonical-learner-shell .simple-test-note {
+  max-width:680px;
+  margin:42px 0 0 !important;
+  padding:0 !important;
+  border:0 !important;
+  color:#8a8a8a !important;
+  font-size:11px !important;
+  line-height:1.5 !important;
+}
+body.canonical-learner-shell .mock-library,
+body.canonical-learner-shell .mock-focused-practice {
+  display:none !important;
+}
+@media (max-width:720px) {
+  body.canonical-learner-shell .simple-test-hero {
+    margin-top:34px !important;
+  }
+  body.canonical-learner-shell .simple-test-option {
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+  body.canonical-learner-shell .simple-test-option .btn {
+    justify-self:start;
+  }
+}
