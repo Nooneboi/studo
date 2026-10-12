@@ -70,7 +70,7 @@ test('dedicated Mock surfaces distinguish the full unseen mock from objective fo
   assert.match(learnerCopy, /Objective RLA Practice Test/i);
   assert.match(learnerCopy, /timed question practice|60 min|objective section/i);
   assert.match(learnerCopy, /not an official GED score/i);
-  assert.match(learnerCopy, /not an official GED form or pass prediction/i);
+  assert.match(learnerCopy, /not an official GED score or pass prediction/i);
   assert.doesNotMatch(learnerCopy, /College Ready|official percentile|psychometric equivalence/i);
 });
 
