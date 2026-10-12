@@ -9912,3 +9912,16 @@ body.mainidea-v22-runtime .guided-stage-line strong {
     gap:3px !important;
   }
 }
+
+
+/* V24: keep Main Idea answer radios perfectly circular in flex answer rows */
+body.mainidea-v22-runtime .answer-radio {
+  flex: 0 0 18px !important;
+  width: 18px !important;
+  min-width: 18px !important;
+  max-width: 18px !important;
+  height: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
+  aspect-ratio: 1 / 1 !important;
+}
