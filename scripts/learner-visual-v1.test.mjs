@@ -18,17 +18,24 @@ test('Practice Tests uses learner-facing wording instead of the old Mock landing
   assert.match(html, /How do you want to practice\?/);
 });
 
-test('Resources visual system is flat and restrained', () => {
+test('Resources is a skill list rather than a workbook matrix', () => {
+  const source = read('js/resources.js');
   const css = read('css/site.css');
-  assert.match(css, /CHEE SKOOL LEARNER VISUAL V1/);
-  assert.match(css, /\.resource-hero-search input[\s\S]*?border-radius:0 !important/);
-  assert.match(css, /\.filter-chip\.active[\s\S]*?background:#111 !important/);
-  assert.match(css, /\.resource-file-link b[\s\S]*?display:none !important/);
+  assert.match(source, /resource-topic-list/);
+  assert.match(source, /renderTopicItem/);
+  assert.match(source, /resourceActionLabel/);
+  assert.doesNotMatch(source, /renderTopicHeader/);
+  assert.doesNotMatch(source, /resource-topic-table/);
+  assert.match(css, /\.resource-topic-item[\s\S]*?grid-template-columns:minmax\(0,1fr\) auto/);
 });
 
-test('Practice Tests uses rows rather than promotional cards', () => {
+test('Practice Tests is decision-first and does not render an empty resume outline', () => {
+  const html = read('quiz.html');
   const css = read('css/site.css');
-  assert.match(css, /\.mock-library-grid[\s\S]*?display:block !important/);
-  assert.match(css, /\.mock-test-card[\s\S]*?border-radius:0 !important/);
-  assert.match(css, /grid-template-columns:minmax\(0,1fr\) 260px auto !important/);
+  assert.match(html, /46 objective questions/);
+  assert.match(html, /30 objective questions/);
+  assert.match(html, /Use this when you want a long, exam-style run/);
+  assert.match(html, /Use this when you want timed question practice without the essay/);
+  assert.match(css, /\.mock-resume\[hidden\][\s\S]*?display:none !important/);
+  assert.match(css, /\.mock-test-card[\s\S]*?grid-template-columns:minmax\(0,1fr\) auto !important/);
 });
