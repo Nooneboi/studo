@@ -10201,3 +10201,86 @@ body.canonical-learner-shell .mock-area-links a {
     grid-template-columns:1fr !important;
   }
 }
+
+
+/* Learner visual v1.1 — Resources and Practice Tests information architecture */
+body.canonical-learner-shell .resource-topic-list {
+  border-top:1px solid #e5e5e5;
+}
+body.canonical-learner-shell .resource-topic-item {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:24px;
+  align-items:center;
+  padding:16px 0;
+  border-bottom:1px solid #e5e5e5;
+}
+body.canonical-learner-shell .resource-topic-copy {
+  display:grid;
+  gap:3px;
+  min-width:0;
+}
+body.canonical-learner-shell .resource-topic-copy strong {
+  color:#111;
+  font-size:14px;
+}
+body.canonical-learner-shell .resource-topic-copy span {
+  color:#6b6b6b;
+  font-size:12px;
+  line-height:1.45;
+}
+body.canonical-learner-shell .resource-topic-actions {
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+body.canonical-learner-shell .resource-topic-actions .resource-file-link {
+  white-space:nowrap;
+}
+body.canonical-learner-shell .mock-resume[hidden] {
+  display:none !important;
+  border:0 !important;
+  min-height:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+}
+body.canonical-learner-shell .mock-library-grid {
+  border-top:1px solid #111;
+}
+body.canonical-learner-shell .mock-test-card {
+  grid-template-columns:minmax(0,1fr) auto !important;
+  padding:26px 0 !important;
+}
+body.canonical-learner-shell .mock-format-facts {
+  display:flex;
+  gap:10px 18px;
+  flex-wrap:wrap;
+  margin-top:10px;
+  color:#666;
+  font-size:12px;
+}
+body.canonical-learner-shell .mock-format-facts span + span::before {
+  content:"·";
+  margin-right:18px;
+  color:#aaa;
+}
+body.canonical-learner-shell .mock-focused-practice {
+  border-top:1px solid #111 !important;
+  border-bottom:0 !important;
+}
+@media (max-width:720px) {
+  body.canonical-learner-shell .resource-topic-item {
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  body.canonical-learner-shell .resource-topic-actions {
+    justify-content:flex-start;
+  }
+  body.canonical-learner-shell .mock-test-card {
+    grid-template-columns:1fr !important;
+  }
+  body.canonical-learner-shell .mock-format-facts span + span::before {
+    margin-right:10px;
+  }
+}
