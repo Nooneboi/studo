@@ -9805,3 +9805,85 @@ body.mainidea-v22-runtime .chee-mm-section p {
     font-size:34px !important;
   }
 }
+
+
+/* ==========================================================================
+   CHEE SKOOL LEARNER SHELL V1
+   First-wave consolidation for non-focus learner pages.
+   Keeps page-specific content layouts intact while removing the old dashboard
+   shell so navigation and typography read as one product.
+   ========================================================================== */
+body.canonical-learner-shell {
+  background:#fff !important;
+  color:#111 !important;
+}
+body.canonical-learner-shell .site-header.simple-header {
+  position:static !important;
+  background:#fff !important;
+  border-bottom:0 !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+}
+body.canonical-learner-shell .site-header.simple-header .wrap {
+  max-width:1120px !important;
+  min-height:0 !important;
+  padding:22px 24px 10px !important;
+}
+body.canonical-learner-shell .simple-brand {
+  color:#111 !important;
+  font:700 16px/1.2 Arial, sans-serif !important;
+  text-decoration:none !important;
+}
+body.canonical-learner-shell .simple-nav {
+  display:flex !important;
+  gap:24px !important;
+  align-items:center !important;
+}
+body.canonical-learner-shell .simple-nav a {
+  color:#111 !important;
+  font:400 14px/1.2 Arial, sans-serif !important;
+  text-decoration:none !important;
+}
+body.canonical-learner-shell .simple-nav a.active {
+  font-weight:700 !important;
+}
+body.canonical-learner-shell #subject-bar-mount,
+body.canonical-learner-shell .subject-bar {
+  display:none !important;
+}
+body.canonical-learner-shell main {
+  background:#fff !important;
+}
+body.canonical-learner-shell .wrap {
+  max-width:1120px;
+}
+body.canonical-learner-shell .library-main,
+body.canonical-learner-shell .practice-main-wide {
+  background:#fff !important;
+}
+body.canonical-learner-shell .library-hero,
+body.canonical-learner-shell .resource-library-hero,
+body.canonical-learner-shell .practice-top-layout {
+  background:transparent !important;
+  box-shadow:none !important;
+}
+body.canonical-learner-shell .page-kicker,
+body.canonical-learner-shell .eyebrow,
+body.canonical-learner-shell .library-results-summary {
+  color:#5f5f5f !important;
+}
+body.canonical-learner-shell .site-footer {
+  background:#fff !important;
+  border-top:1px solid #e6e6e6 !important;
+}
+@media (max-width:720px) {
+  body.canonical-learner-shell .site-header.simple-header .wrap {
+    padding:16px 16px 8px !important;
+  }
+  body.canonical-learner-shell .simple-nav {
+    gap:14px !important;
+  }
+  body.canonical-learner-shell .simple-nav a {
+    font-size:13px !important;
+  }
+}
