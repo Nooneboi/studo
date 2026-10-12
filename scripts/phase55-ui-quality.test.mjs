@@ -33,8 +33,8 @@ test('Extended Response follows Learn → focused practice → full response hie
   assert.match(css, /@media\s*\(max-width:\s*820px\)[\s\S]*?\.er-practice-full\s*\{[^}]*order:\s*2/s);
 });
 
-test('Mock landing is sectioned and its test library scales to more cards', () => {
-  assert.match(quizHtml, /<h1>Mock<\/h1>/);
+test('Practice Tests landing is sectioned and keeps the scalable test library structure', () => {
+  assert.match(quizHtml, /<h1>Practice Tests<\/h1>/);
   assert.match(quizHtml, /class="mock-library"/);
   assert.match(quizHtml, /id="mock-library-heading"/);
   assert.match(quizHtml, /class="mock-library-grid"/);
