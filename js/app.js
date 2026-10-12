@@ -90,6 +90,7 @@ function renderCanonicalLearnerHeader() {
   if (!header) return;
 
   const active = learnerNavKey(path);
+  document.body.classList.add("canonical-learner-shell");
   header.className = "site-header simple-header";
   header.innerHTML = `
     <div class="wrap">
