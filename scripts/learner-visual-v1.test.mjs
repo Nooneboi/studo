@@ -29,13 +29,15 @@ test('Resources is a skill list rather than a workbook matrix', () => {
   assert.match(css, /\.resource-topic-item[\s\S]*?grid-template-columns:minmax\(0,1fr\) auto/);
 });
 
-test('Practice Tests is decision-first and does not render an empty resume outline', () => {
+test('Practice Tests is a minimal two-choice picker with a skill-practice fallback', () => {
   const html = read('quiz.html');
   const css = read('css/site.css');
-  assert.match(html, /46 objective questions/);
-  assert.match(html, /30 objective questions/);
-  assert.match(html, /Use this when you want a long, exam-style run/);
-  assert.match(html, /Use this when you want timed question practice without the essay/);
+  assert.match(html, /<section class="simple-test-options"/);
+  assert.match(html, /Full RLA Mock/);
+  assert.match(html, /Objective RLA Practice Test/);
+  assert.match(html, /Practice by skill instead/);
+  assert.doesNotMatch(html, /mock-focused-practice/);
+  assert.doesNotMatch(html, /How do you want to practice\?/);
+  assert.match(css, /\.simple-test-option[\s\S]*?grid-template-columns:minmax\(0,1fr\) auto/);
   assert.match(css, /\.mock-resume\[hidden\][\s\S]*?display:none !important/);
-  assert.match(css, /\.mock-test-card[\s\S]*?grid-template-columns:minmax\(0,1fr\) auto !important/);
 });
