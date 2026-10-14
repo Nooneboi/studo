@@ -285,12 +285,23 @@ function passagePanelHtml() {
 
 function renderPassageParagraphs(text) {
   const paragraphs = String(text || "").trim().split(/\n\s*\n+/).filter(Boolean);
-  if (paragraphs.length <= 1) return `<p class="passage-paragraph"><span class="passage-paragraph-number">1</span><span>${escapeHtml(text || "")}</span></p>`;
-  return paragraphs.map((paragraph, index) => `
-    <p class="passage-paragraph">
-      <span class="passage-paragraph-number">${index + 1}</span>
-      <span>${escapeHtml(paragraph)}</span>
-    </p>`).join("");
+  return paragraphs.map((paragraph, index) => {
+    // Data passages sometimes embed pipe-delimited tables. Render only
+    // consistent multi-row grids; keep ambiguous text as ordinary prose.
+    const lines = paragraph.trim().split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    const rows = lines.map(line => line.split("|").map(cell => cell.trim()));
+    const table = lines.length >= 2
+      && rows[0].length >= 2
+      && rows.every(row => row.length === rows[0].length && row.every(Boolean));
+    if (table) {
+      const header = rows[0].map(cell => `<th scope="col">${escapeHtml(cell)}</th>`).join("");
+      const body = rows.slice(1).map(row => `<tr>${row.map((cell, col) =>
+        col === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`
+      ).join("")}</tr>`).join("");
+      return `<div class="passage-table-scroll" role="region" aria-label="Passage data table" tabindex="0"><table class="passage-data-table"><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table></div>`;
+    }
+    return `<p class="passage-paragraph"><span class="passage-paragraph-number">${index + 1}</span><span>${escapeHtml(paragraph)}</span></p>`;
+  }).join("");
 }
 
 function renderCurrentQuestion(options = {}) {
