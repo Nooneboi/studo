@@ -1459,7 +1459,17 @@ function updateProgress(items, index) {
 }
 
 function updateAnswerStatus() {
-  updateProgress(activeQuestions(), currentIndex);
+  // Update the existing footer whenever an answer is saved, without a reload.
+  const items = activeQuestions();
+  const current = items[currentIndex]?.question;
+  const answered = Boolean(current && Store.getAnswers(currentQuiz.id)[current.id]);
+  const footer = document.getElementById("question-footer");
+  if (footer && document.body.classList.contains("mainidea-v22-runtime")) {
+    footer.classList.toggle("mainidea-v22-waiting", !answered);
+  }
+  const next = document.getElementById("next-question");
+  if (next && isGuidedLearningModule()) next.disabled = !answered;
+  updateProgress(items, currentIndex);
 }
 
 function isAutoGraded(q) {
