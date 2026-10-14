@@ -514,13 +514,9 @@ function buildExplanationHtml(q, selectedAnswer) {
       </div>` : ''
   ].filter(Boolean).join('') : '';
 
-  const showMyanmar = hasMyanmarHelp(myanmarExplanation, selectedAnswer)
-    && (
-      level === 'full'
-      || level === 'supported'
-      || (level === 'light' && correct !== true)
-      || (level === 'minimal' && correct === false)
-    );
+  // Language support belongs to every answered Learn/Practice question
+  // with certified teaching content, regardless of difficulty or correctness.
+  const showMyanmar = hasSelected && hasMyanmarHelp(myanmarExplanation, selectedAnswer);
 
   return `
     <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
@@ -760,6 +756,8 @@ function renderMyanmarHelp(data, selectedAnswer) {
   }).join('');
 }
 
+let myanmarHelpReturnFocus = null;
+
 function ensureMyanmarHelpDrawer() {
   if (document.getElementById('chee-mm-drawer')) return;
   const overlay = document.createElement('div');
@@ -771,6 +769,11 @@ function ensureMyanmarHelpDrawer() {
   drawer.id = 'chee-mm-drawer';
   drawer.className = 'chee-mm-drawer';
   drawer.setAttribute('aria-hidden', 'true');
+  drawer.setAttribute('role', 'dialog');
+  drawer.setAttribute('aria-modal', 'true');
+  drawer.setAttribute('aria-label', 'မြန်မာလိုရှင်းပြ');
+  drawer.setAttribute('lang', 'my');
+  drawer.setAttribute('tabindex', '-1');
   drawer.innerHTML = `
     <div class="chee-mm-head">
       <strong>မြန်မာလိုရှင်းပြ</strong>
@@ -778,10 +781,29 @@ function ensureMyanmarHelpDrawer() {
     </div>
     <div class="chee-mm-body" id="chee-mm-body"></div>`;
   drawer.querySelector('.chee-mm-close').addEventListener('click', closeMyanmarHelp);
+  drawer.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeMyanmarHelp();
+    }
+    if (event.key !== 'Tab') return;
+    const focusable = [...drawer.querySelectorAll('button:not([disabled]), a[href], [tabindex="0"]')];
+    if (!focusable.length) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
   document.body.append(overlay, drawer);
 }
 
 function openMyanmarHelp(data, selectedAnswer) {
+  if (!hasMyanmarHelp(data, selectedAnswer)) return;
+  myanmarHelpReturnFocus = document.activeElement;
   ensureMyanmarHelpDrawer();
   const body = document.getElementById('chee-mm-body');
   if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
@@ -789,6 +811,7 @@ function openMyanmarHelp(data, selectedAnswer) {
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.add('open');
   drawer?.setAttribute('aria-hidden', 'false');
+  drawer?.querySelector('.chee-mm-close')?.focus();
 }
 
 function closeMyanmarHelp() {
@@ -796,6 +819,8 @@ function closeMyanmarHelp() {
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.remove('open');
   drawer?.setAttribute('aria-hidden', 'true');
+  if (myanmarHelpReturnFocus?.isConnected) myanmarHelpReturnFocus.focus();
+  myanmarHelpReturnFocus = null;
 }
 function lockInteractionControls(q, container) {
   container.classList.add("answer-locked");
