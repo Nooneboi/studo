@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chee Skool UX Architecture V1 — Low-Fidelity Prototype</title>
+<style>
+:root{--bg:#f4f4f1;--paper:#fff;--ink:#1f2528;--muted:#667077;--line:#d7dcdf;--accent:#326b84;--soft:#eaf1f4}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+button,a{font:inherit}.shell{max-width:1040px;margin:auto;padding:22px}.notice{background:#fff7d9;border:1px solid #e6d695;padding:10px 14px;border-radius:8px;margin-bottom:16px;font-size:14px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.toolbar button{border:1px solid var(--line);background:var(--paper);padding:8px 12px;border-radius:8px;cursor:pointer}.toolbar button.active{background:var(--ink);color:#fff}
+.frame{border:1px solid var(--line);background:var(--paper);min-height:720px;border-radius:14px;overflow:hidden}
+header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:16px 22px}.brand{font-weight:800}.nav{display:flex;gap:18px;font-size:14px}.nav a{color:var(--muted);text-decoration:none}.nav a.primary{color:var(--ink);font-weight:700}
+main{padding:38px 28px 60px;max-width:820px;margin:auto}.kicker{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+h1{font-size:38px;line-height:1.1;margin:8px 0 14px}h2{font-size:22px;margin:0 0 10px}.lede{font-size:18px;color:var(--muted);max-width:650px}
+.card{border:1px solid var(--line);border-radius:12px;padding:18px;margin:18px 0;background:#fff}.card.soft{background:var(--soft)}
+.btn{display:inline-block;background:var(--accent);color:white;border:0;border-radius:8px;padding:11px 16px;text-decoration:none;font-weight:700;cursor:pointer}.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}.choice{border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}.choice strong{display:block;margin-bottom:4px}.muted{color:var(--muted)}
+.task{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:start;padding:15px 0;border-top:1px solid var(--line)}.task:first-child{border-top:0}.num{width:30px;height:30px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-weight:700}.time{font-size:13px;color:var(--muted)}.why{font-size:14px;color:var(--muted);margin-top:4px}.badge{font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 8px;white-space:nowrap}
+.cols{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.linklist a{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}.linklist a:first-child{border-top:0}
+.progressbar{height:8px;background:#e7ebed;border-radius:999px;overflow:hidden;margin:10px 0}.progressbar span{display:block;height:100%;width:58%;background:var(--accent)}
+.screen{display:none}.screen.active{display:block}
+@media(max-width:700px){.nav{display:none}.shell{padding:8px}.frame{border-radius:0}.choices,.cols{grid-template-columns:1fr}main{padding:28px 18px}h1{font-size:32px}.task{grid-template-columns:34px 1fr}.task .badge{grid-column:2}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="notice"><strong>Low-fidelity UX prototype.</strong> Test flow and wording, not visual polish. This is not production Chee Skool.</div>
+  <div class="toolbar">
+    <button class="state active" data-state="new">First-time learner</button>
+    <button class="state" data-state="return">Returning · 24 days</button>
+    <button class="state" data-state="ten">Countdown · 10 days</button>
+    <button class="state" data-state="skill">Skill page</button>
+    <button class="state" data-state="progress">Progress</button>
+  </div>
+  <div class="frame">
+    <header>
+      <div class="brand">CHEE SKOOL</div>
+      <nav class="nav">
+        <a class="primary" href="#">Today</a><a href="#">Practice</a><a href="#">Mock</a><a href="#">Progress</a><a href="#">More</a>
+      </nav>
+    </header>
+
+    <section id="new" class="screen active"><main>
+      <div class="kicker">GED Reasoning Through Language Arts</div>
+      <h1>Prepare for RLA without guessing what to study next.</h1>
+      <p class="lede">Tell Chee Skool where you are in your prep. We’ll organize what to practice first.</p>
+      <div class="actions"><button class="btn">Build my study plan</button><button class="btn secondary">Browse RLA practice</button></div>
+      <div class="card soft">
+        <div class="kicker">Start here</div><h2>Do you already have an RLA exam date?</h2>
+        <div class="choices">
+          <div class="choice"><strong>Yes, I know the date</strong><span class="muted">Build a countdown plan.</span></div>
+          <div class="choice"><strong>Not scheduled yet</strong><span class="muted">Start building skill evidence.</span></div>
+        </div>
+        <p><a href="#">I already have a GED Ready result →</a></p>
+      </div>
+      <div class="card"><strong>What Chee Skool will use</strong><p class="muted">Exam timing, realistic study time, practice history, repeated mistakes, Skill Checks, and optional GED Ready evidence.</p><small>Chee Skool practice results are not official GED scores.</small></div>
+    </main></section>
+
+    <section id="return" class="screen"><main>
+      <div class="kicker">Your plan</div><h1>24 days until RLA</h1><p class="lede">Today · about 35 minutes</p>
+      <div class="card soft"><div class="kicker">Main priority</div><h2>Main Idea — implied central ideas</h2><p>12 min</p><p class="why">Why today: this reasoning pattern appeared in two recent misses.</p><button class="btn">Start today's plan</button></div>
+      <div class="card">
+        <div class="task"><div class="num">1</div><div><strong>Main Idea — implied ideas</strong><div class="time">12 min</div></div><span class="badge">Priority</span></div>
+        <div class="task"><div class="num">2</div><div><strong>Review 3 mistakes</strong><div class="time">8 min</div><div class="why">Two are due today.</div></div><span class="badge">Review</span></div>
+        <div class="task"><div class="num">3</div><div><strong>Evidence — fresh transfer</strong><div class="time">10 min</div></div><span class="badge">Transfer</span></div>
+        <div class="task"><div class="num">4</div><div><strong>Quick close</strong><div class="time">5 min</div></div><span class="badge">Optional</span></div>
+      </div>
+      <div class="actions"><button class="btn secondary">Why this plan?</button><button class="btn secondary">Browse Practice</button></div>
+    </main></section>
+
+    <section id="ten" class="screen"><main>
+      <div class="kicker">Countdown mode</div><h1>10 days until RLA</h1>
+      <p class="lede">There is not enough time to study everything equally. Your plan now focuses on repeated weaknesses, realistic practice, and exam coverage.</p>
+      <div class="card soft"><div class="kicker">Today's priority</div><h2>Repair scope + evidence mistakes</h2><p class="muted">These have repeated across recent Main Idea and Arguments work.</p><button class="btn">Start · 22 min</button></div>
+      <div class="cols">
+        <div class="card"><h2>Next 3 days</h2><div class="linklist">
+          <a href="#"><span>Today · scope + evidence repair</span><span>35m</span></a>
+          <a href="#"><span>Tomorrow · fresh mixed passage</span><span>30m</span></a>
+          <a href="#"><span>Day 8 · timed transfer + review</span><span>40m</span></a>
+        </div></div>
+        <div class="card"><h2>Coverage check</h2><p>Reading & evidence <strong>✓</strong></p><p>Language/editing <strong>Needs another timed set</strong></p><p>Extended Response <strong>1 practice completed</strong></p><p>Mock <strong>Scheduled for Day 4</strong></p></div>
+      </div>
+      <div class="card"><strong>Missed yesterday?</strong><p class="muted">No backlog. Chee Skool recalculates from today and keeps only work that still matters.</p></div>
+    </main></section>
+
+    <section id="skill" class="screen"><main>
+      <div class="kicker">Reading & Comprehension</div><h1>Main Idea / Central Idea</h1>
+      <p class="lede">Find what the whole text is mainly saying and distinguish it from details or ideas that are too narrow or too broad.</p>
+      <div class="card"><div class="kicker">Recommended path</div>
+        <div class="task"><div class="num">1</div><div><strong>Learn the method</strong><div class="why">Topic → importance → gist → scope</div></div><span class="badge">Start</span></div>
+        <div class="task"><div class="num">2</div><div><strong>Guided practice</strong><div class="why">Stated + implied ideas</div></div></div>
+        <div class="task"><div class="num">3</div><div><strong>Transfer practice</strong><div class="why">Literary + harder informational</div></div></div>
+        <div class="task"><div class="num">4</div><div><strong>Skill Check</strong><div class="why">Fresh texts · no hints</div></div></div>
+        <div class="task"><div class="num">5</div><div><strong>Review mistakes</strong></div></div>
+      </div>
+      <div class="card"><h2>Offline / reference</h2><div class="linklist"><a href="#"><span>Main Idea Study Guide</span><span>PDF</span></a><a href="#"><span>Main Idea Practice Pack</span><span>PDF</span></a></div></div>
+    </main></section>
+
+    <section id="progress" class="screen"><main>
+      <div class="kicker">Learning profile</div><h1>Progress</h1><p class="lede">Use evidence to decide what to do next—not to create a fake GED score.</p>
+      <div class="card soft"><div class="kicker">Next action</div><h2>Main Idea — scope control</h2><p>Scope mistakes appeared 3 times in recent work.</p><button class="btn">Practice scope</button></div>
+      <div class="cols">
+        <div class="card"><h2>Skill signals</h2><div class="linklist"><a href="#"><span>Main Idea</span><span>Developing</span></a><a href="#"><span>Evidence</span><span>More consistent</span></a><a href="#"><span>Inference</span><span>Not enough evidence</span></a><a href="#"><span>Grammar</span><span>Strong evidence</span></a></div></div>
+        <div class="card"><h2>Official GED Ready</h2><p><strong>142 · Too Close to Call</strong></p><p class="muted">Taken Sep 28</p><small>Kept separate from Chee Skool practice evidence.</small></div>
+      </div>
+      <div class="card"><h2>This week</h2><div class="progressbar"><span></span></div><p class="muted">3 of 5 planned study days completed. Missed days do not create a backlog.</p></div>
+    </main></section>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.state').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.state').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.state).classList.add('active');
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
