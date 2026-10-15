@@ -13,7 +13,7 @@ for (const page of pages) {
     const tag = m[0], kind = m[1].toLowerCase();
     if (kind === 'link' && !/rel\s*=\s*["'](?:stylesheet|manifest|icon|apple-touch-icon)["']/i.test(tag)) continue;
     const attribute = kind === 'script' ? 'src' : 'href';
-    const found = tag.match(new RegExp('\\b' + attribute + '\\s*=\\s*["\\']([^"\\']+)["\\']', 'i'));
+    const found = tag.match(/\b(?:src|href)\s*=\s*["']([^"']+)["']/i);
     if (!found) continue;
     const href = found[1].split(/[?#]/)[0];
     if (!href || /^(?:https?:|data:|\/\/|#)/i.test(href)) continue;
