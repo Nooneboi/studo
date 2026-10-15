@@ -124,7 +124,7 @@ try {
   assert.notEqual(await evalJs("document.querySelector('.q-prompt').textContent"),beforeAnswer);
   assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
   // Cross-page learner shell: all primary entry pages expose the same three links.
-  for (const page of ['index.html','practice.html','resources.html','progress.html','curriculum.html','domain.html','skill.html']) {
+  for (const page of ['index.html','practice.html','resources.html','progress.html','curriculum.html','domain.html','skill.html','passages.html','category.html','quiz.html','about.html','methodology.html','privacy.html','404.html']) {
     const params = page === 'domain.html' ? '?track=reading&domain=core-meaning'
       : page === 'skill.html' ? '?track=reading&domain=core-meaning&skill=R1.2' : '';
     await call('Page.navigate', {url:origin+'/'+page+params});
@@ -135,7 +135,7 @@ try {
     const width = await evalJs("({screen:document.documentElement.clientWidth, document:document.documentElement.scrollWidth})");
     assert.ok(width.document <= width.screen + 2, page+' has horizontal overflow at 390px: '+JSON.stringify(width));
   }
-  console.log('PASS: interactions, unit journeys, Skill Check isolation and mobile seven-page navigation audit');
+  console.log('PASS: interactions, unit journeys, Skill Check isolation and mobile fourteen-page navigation audit');
 
 
 } finally {
