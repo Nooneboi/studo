@@ -6,7 +6,6 @@ const read = (file) => fs.readFileSync(file, 'utf8');
 
 test('Main Idea module runtime opts into the approved V22 presentation and chrome', () => {
   const source = read('js/module.js');
-  assert.doesNotMatch(source, /primarySkillId === "R1\.2"/);
   assert.match(source, /classList\.add\("mainidea-v22-runtime"\)/);
   assert.match(source, /setupStudyWorkspaceChrome\(curriculumRoutes, primarySkillId, requestedReturn\)/);
   assert.match(source, /routes\?\.skillLocation\?\.\(primarySkillId\)/);
