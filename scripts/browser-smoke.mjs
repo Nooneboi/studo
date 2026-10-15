@@ -179,6 +179,10 @@ try {
       }
       if (mobile && name === 'resources') {
         const shortLinks=await evalJs("Array.from(document.querySelectorAll('.resource-file-link')).filter(a=>a.getBoundingClientRect().height<40).length");
+        if (shortLinks) {
+          const styleEvidence=await evalJs("(() => {const e=document.querySelector('.resource-file-link');const s=getComputedStyle(e);return {height:e?.getBoundingClientRect().height,display:s.display,minHeight:s.minHeight,padding:s.padding,width:innerWidth,css:document.querySelector('link[href=\\\"css/chee-system.css\\\"]')?.href}})()");
+          console.error('Resource touch target computed styles',styleEvidence);
+        }
         assert.equal(shortLinks,0,'Resource links should have usable mobile tap targets');
       }
       visualReport.push({page:name,size,...metrics});
