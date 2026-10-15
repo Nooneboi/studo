@@ -115,8 +115,11 @@ try {
   // Evidence-based choice: wrong selection still shows a teachable explanation.
   await navigate('set-rla-supporting-details-active-methods-v1','q3');
   assert.equal(await evalJs("document.querySelectorAll('.answer-radio').length"),4);
-  await evalJs("document.querySelector('.answer-radio[value=a]').click()");
-  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'evidence feedback');
+  await evalJs("document.querySelector('.answer-radio[value=c]').click()");
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),false);
+  assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
+  await evalJs("document.querySelector('.interaction-check').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'evidence feedback after Check');
   assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
   // Guided mode has explicit submission; do not reveal the explanation on selection alone.
   await navigate('set-rla-inference-active-methods-v1','q3');
