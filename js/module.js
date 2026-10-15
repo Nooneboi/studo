@@ -34,13 +34,9 @@ async function init() {
     currentQuiz = await Data.loadQuiz(file);
   } catch (e) {
     console.error(e);
-    if (requestedReturn?.includes("skill=R1.2")) {
-      document.body.classList.add("mainidea-v22-runtime");
-      try {
-        curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
-        setupMainIdeaV22Chrome(curriculumRoutes);
-      } catch (_) {}
-    }
+    document.body.classList.add("mainidea-v22-runtime");
+    const skillLabel = document.getElementById("mainidea-v22-skill-name");
+    if (skillLabel) skillLabel.textContent = "Study";
     renderModuleRecovery("Couldn't load this module.", requestedReturn);
     return;
   }
@@ -52,10 +48,8 @@ async function init() {
     curriculumRoutes = null;
   }
 
-  if (primarySkillId === "R1.2") {
-    document.body.classList.add("mainidea-v22-runtime");
-    setupMainIdeaV22Chrome(curriculumRoutes);
-  }
+  document.body.classList.add("mainidea-v22-runtime");
+  setupStudyWorkspaceChrome(curriculumRoutes, primarySkillId, requestedReturn);
 
   const cat = currentQuiz.category || "reading";
   const topic = currentQuiz.topic || "";
@@ -86,48 +80,51 @@ function renderModuleRecovery(message, requestedReturn) {
   if (exitLink) exitLink.href = backHref;
 }
 
-function setupMainIdeaV22Chrome(routes) {
+function setupStudyWorkspaceChrome(routes, primarySkillId, requestedReturn) {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
   const check = document.getElementById("mainidea-v22-check");
+  const name = document.getElementById("mainidea-v22-skill-name");
   if (!learn || !practice || !check) return;
 
-  const route = mainIdeaRouteConfig(routes);
-  if (!route) {
-    [learn, practice, check].forEach((link) => {
+  // Keep the workspace consistent, but never substitute another skill's material.
+  const location = routes?.skillLocation?.(primarySkillId);
+  const skill = location?.skill || null;
+  if (name) name.textContent = skill?.label || currentQuiz?.contentMeta?.curriculum?.skillLabel
+    || currentQuiz?.title || "Study";
+
+  const sets = skill?.sets || [];
+  const checks = skill?.checks || [];
+  const learnSet = sets.find(set => set.curriculum?.assistanceLevel === "full")
+    || sets.find(set => set.curriculum?.assistanceLevel === "supported")
+    || sets[0];
+  const practiceSet = sets.find(set => set.file !== learnSet?.file) || null;
+  const returnHref = requestedReturn || location?.returnHref || "practice.html";
+  const links = [
+    [learn, learnSet?.file ? moduleRoute(learnSet.file, returnHref) : null],
+    [practice, practiceSet?.file ? moduleRoute(practiceSet.file, returnHref) : null],
+    [check, checks[0]?.file ? checkRoute(checks[0].file, returnHref) : null],
+  ];
+  for (const [link, href] of links) {
+    link.classList.remove("active");
+    link.removeAttribute("aria-current");
+    if (href) {
+      link.href = href;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("tabindex");
+    } else {
       link.removeAttribute("href");
       link.setAttribute("aria-disabled", "true");
-    });
-    return;
+      link.setAttribute("tabindex", "-1");
+    }
   }
 
-  mainIdeaReturnHref = route.returnHref;
-  learn.href = moduleRoute(route.learnFile, route.returnHref);
-  practice.href = moduleRoute(route.practiceFile, route.returnHref);
-  check.href = checkRoute(route.checkFile, route.returnHref);
-
-  const isLearn = explicitAssistanceLevel() === "full";
+  const isLearn = isGuidedLearningModule();
   document.body.classList.toggle("mainidea-v22-learn", isLearn);
   document.body.classList.toggle("mainidea-v22-practice", !isLearn);
-  const activeId = isLearn ? "mainidea-v22-learn" : "mainidea-v22-practice";
-  document.getElementById(activeId)?.classList.add("active");
-}
-
-function mainIdeaRouteConfig(routes) {
-  const location = routes?.skillLocation?.("R1.2");
-  const skill = location?.skill;
-  if (!location || !skill) return null;
-  const sets = skill.sets || [];
-  const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
-  const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
-  const checkSet = (skill.checks || [])[0];
-  if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
-  return {
-    learnFile: learnSet.file,
-    practiceFile: practiceSet.file,
-    checkFile: checkSet.file,
-    returnHref: location.returnHref,
-  };
+  const selected = isLearn ? learn : practice;
+  selected.classList.add("active");
+  selected.setAttribute("aria-current", "page");
 }
 
 function moduleRoute(file, returnHref) {
