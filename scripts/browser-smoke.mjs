@@ -135,7 +135,56 @@ try {
     const width = await evalJs("({screen:document.documentElement.clientWidth, document:document.documentElement.scrollWidth})");
     assert.ok(width.document <= width.screen + 2, page+' has horizontal overflow at 390px: '+JSON.stringify(width));
   }
-  console.log('PASS: interactions, unit journeys, Skill Check isolation and mobile fourteen-page navigation audit');
+  // Capture visual evidence at actual desktop, tablet and mobile viewports.
+  const auditDir = path.resolve('visual-audit');
+  fs.mkdirSync(auditDir, {recursive: true});
+  const visualCases = [
+    ['home', 'index.html', 'body'],
+    ['practice', 'practice.html', '.practice-main-wide'],
+    ['resources', 'resources.html', 'main'],
+    ['skill', 'skill.html?track=reading&domain=core-meaning&skill=R1.2', '#skill-view'],
+    ['lesson', 'module.html?file=generated%2Fmodules%2Fset-rla-inference-active-methods-v1.json&question=q3', '.study-workspace'],
+    ['check', 'check.html?file=generated%2Fmodules%2Fset-rla-check-claims-structure-v1.json&return=skill.html%3Ftrack%3Darguments%26domain%3Dargument-analysis%26unit%3Dclaims-argument-structure', '.check-workspace'],
+  ];
+  const visualReport = [];
+  for (const [size, width, height, mobile] of [['desktop',1280,900,false],['tablet',768,1024,true],['mobile',390,844,true]]) {
+    await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile});
+    for (const [name,url,selector] of visualCases) {
+      await call('Page.navigate',{url:origin+'/'+url});
+      await waitFor(()=>evalJs("Boolean(document.readyState === 'complete' && document.querySelector("+JSON.stringify(selector)+"))"),name+' '+size+' ready');
+      await delay(160);
+      const metrics = await evalJs(`(() => {
+        const main=document.querySelector(${JSON.stringify(selector)});
+        const rect=main?.getBoundingClientRect();
+        const root=document.documentElement;
+        const headings=[...document.querySelectorAll('h1')].filter(e=>e.getBoundingClientRect().width>0);
+        const tappable=[...document.querySelectorAll('a[href],button,input,select,textarea')].filter(e=>{
+          const r=e.getBoundingClientRect(); const st=getComputedStyle(e);
+          return r.width>0 && r.height>0 && st.visibility!=='hidden' && st.display!=='none';
+        });
+        return {title:document.title, viewport:root.clientWidth, scrollWidth:root.scrollWidth,
+          horizontalOverflow:root.scrollWidth>root.clientWidth+2,
+          mainWidth:Math.round(rect?.width||0),
+          missingMain:!rect||rect.width<100,
+          headings:headings.length,
+          tinyControls:tappable.filter(e=>{const r=e.getBoundingClientRect();return r.height<24 || r.width<24}).length,
+          controlCount:tappable.length,
+          bodyFont:getComputedStyle(document.body).fontFamily,
+          headingFont:headings[0] ? getComputedStyle(headings[0]).fontSize : null };
+      })()`);
+      visualReport.push({page:name,size,...metrics});
+      const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
+      fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
+    }
+  }
+  fs.writeFileSync(path.join(auditDir,'metrics.json'),JSON.stringify(visualReport,null,2)+'\\n');
+  const overflows=visualReport.filter(x=>x.horizontalOverflow||x.missingMain);
+  if(overflows.length) {
+    console.error('Responsive audit detected layout problems:',JSON.stringify(overflows));
+    process.exitCode=1;
+  }
+  console.log('Visual audit captured',visualReport.length,'viewport/page combinations;',overflows.length,'overflow or missing-main failures');
+  console.log('PASS: interactions, unit journeys, Skill Check isolation, mobile fourteen-page navigation audit');
 
 
 } finally {
