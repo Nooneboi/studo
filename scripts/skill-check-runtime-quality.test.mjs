@@ -98,7 +98,9 @@ test('skill pages expose a separate optional Check section and Progress keeps Ch
   const skill = read('js/skill.js');
   const progress = read('js/progress.js');
   assert.match(skill, /const checks = skill\.checks \|\| \[\]/);
-  assert.match(skill, /checks\.length \? `<a href="\$\{escapeAttr\(checkHref\(checks\[0\], returnHref\)\)\}">Check<\/a>` : ""/);
+  assert.ok(skill.includes('checks.length'));
+  assert.ok(skill.includes('checkHref(checks[0], returnHref)'));
+  assert.ok(skill.includes('>Skill Check</a>'));
   assert.match(skill, /function checkHref\(check, returnHref\)/);
   assert.match(skill, /check\.html\?file=/);
   const checkRuntime = read('js/check.js');

@@ -99,7 +99,18 @@ try {
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   await navigate('set-rla-summary-active-methods-v1','q2');
   assert.equal(await evalJs("document.querySelectorAll('.answer-radio').length"),4);
-  console.log('PASS: answer feedback, Myanmar drawer, Next navigation, guided check, mobile module load');
+  // Full unit entry: Arguments are grouped by unit rather than direct skill page.
+  await call('Page.navigate', {url:origin+'/skill.html?track=arguments&domain=argument-analysis&unit=claims-argument-structure'});
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#skill-view h1')?.textContent.includes('Claims'))"),'Arguments unit skill page');
+  assert.equal(await evalJs("Boolean(document.querySelector('.simple-primary-action a[href*=\"module.html\"]'))"),true);
+  const startUrl=await evalJs("document.querySelector('.simple-primary-action a').href");
+  assert.ok(startUrl.includes('return=') && startUrl.includes('unit%3Dclaims-argument-structure'));
+  await call('Page.navigate',{url:startUrl});
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#question-stage .q-prompt') && document.getElementById('mainidea-v22-skill-name')?.textContent.includes('Claims'))"),'Arguments module workspace');
+  assert.equal(await evalJs("document.body.classList.contains('mainidea-v22-runtime')"),true);
+  assert.equal(await evalJs("document.getElementById('mainidea-v22-check').hasAttribute('href')"),true);
+  console.log('PASS: answer feedback, Myanmar drawer, Next navigation, guided check, mobile module load, Arguments unit entry');
+
 } finally {
   try {socket?.close();} catch {}
   if(child?.pid) child.kill('SIGKILL');

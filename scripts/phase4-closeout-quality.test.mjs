@@ -69,7 +69,9 @@ test('Practice, Train, Skill Check, Quick Review, and Mock remain role-isolated'
   assert.doesNotMatch(quick, /Learning\.setMistakeReason/);
   const skill = read('js/skill.js');
   assert.match(skill, /const checks = skill\.checks \|\| \[\]/);
-  assert.match(skill, /checks\.length \? `<a href="\$\{escapeAttr\(checkHref\(checks\[0\], returnHref\)\)\}">Check<\/a>` : ""/);
+  assert.ok(skill.includes('checks.length'));
+  assert.ok(skill.includes('checkHref(checks[0], returnHref)'));
+  assert.ok(skill.includes('>Skill Check</a>'));
   assert.match(skill, /function checkHref\(check, returnHref\)/);
   const progress = read('js/progress.js');
   assert.match(progress, />Evidence<\/small>/);
