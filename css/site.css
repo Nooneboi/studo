@@ -9661,9 +9661,11 @@ body.mainidea-v22-runtime .question-footer {
   border:0 !important;
   background:none !important;
 }
+/* Keep Previous, position and Next visible even before an answer.
+   Guided lessons disable Next until finalized instead of hiding the footer. */
 body.mainidea-v22-runtime .question-footer.mainidea-v22-waiting {
-  visibility:hidden !important;
-  pointer-events:none !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
 body.mainidea-v22-runtime .question-footer-position {
   color:var(--mi-muted) !important;
