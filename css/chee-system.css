@@ -359,3 +359,14 @@ hr,
     padding-block: 8px;
   }
 }
+
+/* Resource links are study actions, not tiny inline footnotes. */
+@media (max-width: 720px) {
+  .resource-file-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 6px;
+    box-sizing: border-box;
+  }
+}
