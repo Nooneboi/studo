@@ -96,7 +96,8 @@ try {
     await evalJs("document.querySelector('.interaction-check').click()");
     await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'guided explanation after submit');
   }
-  await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+  await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:false});
+  await call('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:1});
   await navigate('set-rla-summary-active-methods-v1','q2');
   assert.equal(await evalJs("document.querySelectorAll('.answer-radio').length"),4);
   // Mobile learner can jump between passage and question without changing answer state.
