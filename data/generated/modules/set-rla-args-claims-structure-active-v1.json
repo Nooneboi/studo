@@ -39,7 +39,7 @@
       },
       "time": 85,
       "learningStage": "guided",
-      "hint": "Start with the sentence that tells the city what it should do. Then separate statements that explain why from facts that help prove those reasons.",
+      "hint": "Find the writer's requested action first. Then ask whether each remaining sentence gives a reason to take that action or supplies a specific observation that makes a reason more believable.",
       "correct": "i1=main|i2=reason|i3=evidence|i4=evidence",
       "interaction": {
         "items": [
@@ -107,7 +107,7 @@
       },
       "time": 65,
       "learningStage": "guided",
-      "hint": "Look for the sentence that contains the proposed action, not merely a reason for it or a concern about it.",
+      "hint": "A main claim is the action or position the writer wants accepted. Try finishing 'The city should ...' using the passage; then find the sentence making that recommendation, not a supporting fact.",
       "correct": "s1",
       "interaction": {
         "selectionMode": "sentence",
