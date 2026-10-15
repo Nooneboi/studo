@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import http from 'node:http';
-import {spawn} from 'node:child_process';
+import {spawn, spawnSync} from 'node:child_process';
 import assert from 'node:assert/strict';
 
 const dist = path.resolve('dist');
@@ -26,6 +26,7 @@ const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'chee-chrome-'));
 const candidates = [process.env.CHROME_BIN, 'google-chrome', 'chromium', 'chromium-browser'].filter(Boolean);
 let child;
 for (const binary of candidates) {
+  if (spawnSync('which',[binary],{stdio:'ignore'}).status !== 0) continue;
   child = spawn(binary, ['--headless=new','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-first-run','--remote-debugging-port=0','--user-data-dir='+profile, 'about:blank'], {stdio:'ignore'});
   if (child.pid) break;
 }
@@ -65,7 +66,7 @@ try {
   };
   const navigate=async (file, question='q1')=>{
     await call('Page.navigate',{url:origin+'/module.html?file=generated%2Fmodules%2F'+file+'.json&question='+question});
-    await waitFor(()=>evalJs("Boolean(document.querySelector('#question-stage .q-prompt') && document.querySelector('#next-question'))"),'module ready');
+    await waitFor(()=>evalJs("Boolean(location.search.includes('question="+question+"') && document.querySelector('#question-stage .q-prompt') && document.querySelector('#next-question'))"),'module ready');
   };
   await call('Page.enable');
   await call('Runtime.enable');
