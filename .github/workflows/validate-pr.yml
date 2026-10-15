@@ -29,6 +29,7 @@ jobs:
           node --check js/check.js
           node --check js/question-interactions.js
           node --check scripts/module-interaction-regression.test.mjs
+          node --check scripts/validate-published-assets.mjs
       - name: Validate source content
         run: npm run content:validate
       - name: Build canonical content
@@ -41,6 +42,8 @@ jobs:
         run: npm test
       - name: Build published site
         run: node scripts/build-public.mjs
+      - name: Audit page-local assets
+        run: node scripts/validate-published-assets.mjs
       - name: Verify expected published resources
         run: |
           test -f dist/module.html
