@@ -109,7 +109,22 @@ try {
   await waitFor(()=>evalJs("Boolean(document.querySelector('#question-stage .q-prompt') && document.getElementById('mainidea-v22-skill-name')?.textContent.includes('Claims'))"),'Arguments module workspace');
   assert.equal(await evalJs("document.body.classList.contains('mainidea-v22-runtime')"),true);
   assert.equal(await evalJs("document.getElementById('mainidea-v22-check').hasAttribute('href')"),true);
-  console.log('PASS: answer feedback, Myanmar drawer, Next navigation, guided check, mobile module load, Arguments unit entry');
+  const checkHref = await evalJs("document.getElementById('mainidea-v22-check').href");
+  assert.ok(checkHref.includes('/check.html?'));
+  await call('Page.navigate',{url:checkHref});
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#check-view .q-prompt') && document.querySelector('#check-next'))"),'Arguments Skill Check');
+  assert.equal(await evalJs("document.body.classList.contains('mainidea-v22-runtime')"),true);
+  assert.equal(await evalJs("document.querySelector('.mainidea-v22-meta').textContent.includes('Claims')"),true);
+  assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
+  const beforeAnswer = await evalJs("document.querySelector('.q-prompt').textContent");
+  await evalJs("document.querySelector('.answer-radio')?.click()");
+  assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
+  await evalJs("document.getElementById('check-next').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('.question-number')?.textContent.includes('Question 2'))"),'Skill Check second question');
+  assert.notEqual(await evalJs("document.querySelector('.q-prompt').textContent"),beforeAnswer);
+  assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
+  console.log('PASS: answer feedback, Myanmar drawer, Next navigation, guided check, mobile module load, Arguments unit entry and independent Skill Check');
+
 
 } finally {
   try {socket?.close();} catch {}
