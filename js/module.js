@@ -320,6 +320,7 @@ function renderCurrentQuestion(options = {}) {
     footer.innerHTML = "";
     document.getElementById("complete-reset").addEventListener("click", () => {
       Store.resetQuiz(currentQuiz.id);
+      guidedRetryUsed.clear();
       currentIndex = 0;
       renderCurrentQuestion();
     });
@@ -335,6 +336,7 @@ function renderCurrentQuestion(options = {}) {
   const notes = Store.getNotes(currentQuiz.id);
   const highlights = Store.getHighlights(currentQuiz.id);
   const savedAnswer = answers[q.id];
+  if (Store.getGuidedRetries?.(currentQuiz.id)?.[q.id] && !savedAnswer) guidedRetryUsed.add(q.id);
   const draftAnswer = drafts[q.id] || "";
   const grammarInline = q.type === "grammar_edit" && window.QuestionInteractions?.grammarEditMode(q) === "inline";
   const basePromptHtml = grammarInline ? "" : escapeHtml(q.prompt);
@@ -390,6 +392,7 @@ function renderCurrentQuestion(options = {}) {
 
   renderPassageForQuestion(q, savedAnswer || draftAnswer);
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer, draftAnswer);
+  if (!savedAnswer && guidedRetryUsed.has(q.id) && allowsGuidedRetry(q)) showGuidedRetryHint(q);
 
   const mainIdeaV22 = document.body.classList.contains("mainidea-v22-runtime");
   footer.classList.toggle("mainidea-v22-waiting", mainIdeaV22 && !savedAnswer);
@@ -842,6 +845,15 @@ function unlockGuidedNext() {
   }
 }
 
+function showGuidedRetryHint(q) {
+  const box = document.querySelector('[data-role="explanation"]');
+  if (!box) return;
+  box.setAttribute('role', 'status');
+  box.setAttribute('aria-live', 'polite');
+  box.innerHTML = `<div class="guided-retry-feedback"><strong>Not quite.</strong><p>${escapeHtml(q.hint || 'Recheck the passage and try once more.')}</p><span>Try once more.</span></div>`;
+  box.classList.add('visible');
+}
+
 function submitInteractiveAnswer(q, answer, container) {
   const I = window.QuestionInteractions;
   if (!I) return false;
@@ -855,11 +867,8 @@ function submitInteractiveAnswer(q, answer, container) {
 
   if (firstGuidedMiss) {
     guidedRetryUsed.add(q.id);
-    const box = document.querySelector('[data-role="explanation"]');
-    if (box) {
-      box.innerHTML = `<div class="guided-retry-feedback"><strong>Not quite.</strong><p>${escapeHtml(q.hint || 'Recheck the passage and try once more.')}</p><span>Try once more.</span></div>`;
-      box.classList.add('visible');
-    }
+    Store.setGuidedRetry?.(currentQuiz.id, q.id);
+    showGuidedRetryHint(q);
     setStatus('Not quite — try once more before seeing the full explanation.', false);
     return false;
   }
@@ -867,6 +876,7 @@ function submitInteractiveAnswer(q, answer, container) {
   Store.setAnswer(currentQuiz.id, q.id, canonical);
   clearInteractionDraft(q.id);
   const learningResult = recordPracticeAttempt(q, canonical, correct);
+  Store.clearGuidedRetry?.(currentQuiz.id, q.id);
   showQuestionExplanation(q, canonical);
   showLearningFeedback(learningResult, correct);
   setupMistakeReason(q, correct, learningResult);

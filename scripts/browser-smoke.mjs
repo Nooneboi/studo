@@ -105,6 +105,10 @@ try {
   assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
   assert.equal(await evalJs("document.getElementById('next-question').disabled"),true);
   assert.equal(await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=guess]').getAttribute('aria-pressed')"),'true');
+  await call('Page.reload',{ignoreCache:true});
+  await waitFor(()=>evalJs("Boolean(document.querySelector('.guided-retry-feedback') && document.querySelector('[data-classify-item=i2] [data-choice-zone=guess]'))"),'retry hint restored after reload');
+  assert.equal(await evalJs("document.getElementById('next-question').disabled"),true);
+  assert.equal(await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=guess]').getAttribute('aria-pressed')"),'true');
   await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=inference]').click()");
   await evalJs("document.querySelector('.interaction-check').click()");
   await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'sorting explanation after successful retry');
