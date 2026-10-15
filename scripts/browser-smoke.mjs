@@ -123,12 +123,27 @@ try {
   await waitFor(()=>evalJs("Boolean(document.querySelector('.question-number')?.textContent.includes('Question 2'))"),'Skill Check second question');
   assert.notEqual(await evalJs("document.querySelector('.q-prompt').textContent"),beforeAnswer);
   assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
-  console.log('PASS: answer feedback, Myanmar drawer, Next navigation, guided check, mobile module load, Arguments unit entry and independent Skill Check');
+  // Cross-page learner shell: all primary entry pages expose the same three links.
+  for (const page of ['index.html','practice.html','resources.html','progress.html','curriculum.html','domain.html','skill.html','passages.html','category.html','quiz.html','about.html','methodology.html','privacy.html','404.html']) {
+    const params = page === 'domain.html' ? '?track=reading&domain=core-meaning'
+      : page === 'skill.html' ? '?track=reading&domain=core-meaning&skill=R1.2' : '';
+    await call('Page.navigate', {url:origin+'/'+page+params});
+    await waitFor(()=>evalJs("location.pathname.endsWith("+JSON.stringify(page)+") && document.readyState === 'complete' && !!document.querySelector('nav.site-nav, nav.simple-nav')"),page+' header');
+    const links = await evalJs("Array.from(document.querySelectorAll('nav.site-nav > a, nav.simple-nav > a')).map(a=>[a.textContent.trim(),new URL(a.href).pathname.split('/').pop()])");
+    assert.deepEqual(links.map(pair=>pair[0]), ['Home','Practice Tests','Resources'], page+' navigation labels');
+    assert.deepEqual(links.map(pair=>pair[1]), ['index.html','quiz.html','resources.html'], page+' nav destinations');
+    const width = await evalJs("({screen:document.documentElement.clientWidth, document:document.documentElement.scrollWidth})");
+    assert.ok(width.document <= width.screen + 2, page+' has horizontal overflow at 390px: '+JSON.stringify(width));
+  }
+  console.log('PASS: interactions, unit journeys, Skill Check isolation and mobile fourteen-page navigation audit');
 
 
 } finally {
   try {socket?.close();} catch {}
   if(child?.pid) child.kill('SIGKILL');
   server.close();
-  fs.rmSync(profile,{recursive:true,force:true});
+  // Chrome may still flush profile files briefly after process termination.
+  // Retry cleanup instead of failing an otherwise successful browser audit.
+  try { fs.rmSync(profile,{recursive:true,force:true,maxRetries:12,retryDelay:150}); }
+  catch (error) { console.warn('Chrome temp cleanup warning:', error.message); }
 }
