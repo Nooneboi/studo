@@ -25,9 +25,12 @@ const origin = 'http://127.0.0.1:' + server.address().port;
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'chee-chrome-'));
 const candidates = [process.env.CHROME_BIN, 'google-chrome', 'chromium', 'chromium-browser'].filter(Boolean);
 let child;
+let chromeStderr = '';
 for (const binary of candidates) {
   if (spawnSync('which',[binary],{stdio:'ignore'}).status !== 0) continue;
-  child = spawn(binary, ['--headless=new','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-first-run','--remote-debugging-port=0','--user-data-dir='+profile, 'about:blank'], {stdio:'ignore'});
+  child = spawn(binary, ['--headless=new','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-first-run','--remote-debugging-port=0','--user-data-dir='+profile, 'about:blank'], {stdio:['ignore','ignore','pipe']});
+  child.stderr?.on('data', data => { chromeStderr=(chromeStderr+String(data)).slice(-4000); });
+  child.on('error', error => { chromeStderr += '\\nChrome launch error: '+error.message; });
   if (child.pid) break;
 }
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -39,7 +42,7 @@ async function waitFor(fn, label, timeout=12000) {
 let socket;
 try {
   const portFile=path.join(profile,'DevToolsActivePort');
-  const port=await waitFor(()=>fs.existsSync(portFile)&&Number(fs.readFileSync(portFile,'utf8').split('\n')[0]),'Chrome debugger');
+  const port=await waitFor(()=>fs.existsSync(portFile)&&Number(fs.readFileSync(portFile,'utf8').split('\\n')[0]),'Chrome debugger',25000).catch(error=>{throw new Error(error.message+'; exit='+child?.exitCode+'; stderr='+chromeStderr);});
   const pages=await (await fetch('http://127.0.0.1:'+port+'/json/list')).json();
   const target=pages.find(p=>p.type==='page');
   assert.ok(target?.webSocketDebuggerUrl, 'No CDP tab');
