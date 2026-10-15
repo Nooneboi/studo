@@ -25,9 +25,12 @@ const origin = 'http://127.0.0.1:' + server.address().port;
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'chee-chrome-'));
 const candidates = [process.env.CHROME_BIN, 'google-chrome', 'chromium', 'chromium-browser'].filter(Boolean);
 let child;
+let chromeStderr = '';
 for (const binary of candidates) {
   if (spawnSync('which',[binary],{stdio:'ignore'}).status !== 0) continue;
-  child = spawn(binary, ['--headless=new','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-first-run','--remote-debugging-port=0','--user-data-dir='+profile, 'about:blank'], {stdio:'ignore'});
+  child = spawn(binary, ['--headless=new','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-first-run','--remote-debugging-port=0','--user-data-dir='+profile, 'about:blank'], {stdio:['ignore','ignore','pipe']});
+  child.stderr?.on('data', data => { chromeStderr=(chromeStderr+String(data)).slice(-4000); });
+  child.on('error', error => { chromeStderr += '\\nChrome launch error: '+error.message; });
   if (child.pid) break;
 }
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -39,7 +42,7 @@ async function waitFor(fn, label, timeout=12000) {
 let socket;
 try {
   const portFile=path.join(profile,'DevToolsActivePort');
-  const port=await waitFor(()=>fs.existsSync(portFile)&&Number(fs.readFileSync(portFile,'utf8').split('\n')[0]),'Chrome debugger');
+  const port=await waitFor(()=>fs.existsSync(portFile)&&Number(fs.readFileSync(portFile,'utf8').split('\n')[0]),'Chrome debugger',25000).catch(error=>{throw new Error(error.message+'; exit='+child?.exitCode+'; stderr='+chromeStderr);});
   const pages=await (await fetch('http://127.0.0.1:'+port+'/json/list')).json();
   const target=pages.find(p=>p.type==='page');
   assert.ok(target?.webSocketDebuggerUrl, 'No CDP tab');
@@ -85,6 +88,42 @@ try {
   assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-hidden')"),'true');
   await evalJs("document.getElementById('next-question').click()");
   await waitFor(()=>evalJs("document.querySelector('.q-prompt')?.textContent.includes('How does the table')"),'Next question');
+  // Guided sorting: partial draft must not enable Check or reveal correctness.
+  await navigate('set-rla-inference-active-methods-v1','q1');
+  assert.equal(await evalJs("document.querySelectorAll('[data-classify-item]').length"),4);
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
+  await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').click()");
+  assert.equal(await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').getAttribute('aria-pressed')"),'true');
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
+  assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
+  await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=inference]').click()");
+  await evalJs("document.querySelector('[data-classify-item=i3] [data-choice-zone=guess]').click()");
+  await evalJs("document.querySelector('[data-classify-item=i4] [data-choice-zone=stated]').click()");
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),false);
+  await evalJs("document.querySelector('.interaction-check').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'sorting explanation after submission');
+  assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
+
+  // Select text: highlighted passage target is chosen before Check but not graded early.
+  await navigate('set-rla-inference-active-methods-v1','q2');
+  assert.ok(await evalJs("document.querySelectorAll('[data-select-target]').length") >= 2);
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
+  await evalJs("document.querySelector('[data-select-target=s1]').click()");
+  assert.equal(await evalJs("document.querySelector('[data-select-target=s1]').getAttribute('aria-pressed')"),'true');
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),false);
+  assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
+  await evalJs("document.querySelector('.interaction-check').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'selection explanation after Check');
+
+  // Evidence-based choice: wrong selection still shows a teachable explanation.
+  await navigate('set-rla-supporting-details-active-methods-v1','q3');
+  assert.equal(await evalJs("document.querySelectorAll('.answer-radio').length"),4);
+  await evalJs("document.querySelector('.answer-radio[value=c]').click()");
+  assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),false);
+  assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
+  await evalJs("document.querySelector('.interaction-check').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'evidence feedback after Check');
+  assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
   // Guided mode has explicit submission; do not reveal the explanation on selection alone.
   await navigate('set-rla-inference-active-methods-v1','q3');
   assert.equal(await evalJs("document.body.classList.contains('mainidea-v22-runtime')"),true);
