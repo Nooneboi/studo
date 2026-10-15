@@ -183,7 +183,8 @@ function renderShell() {
     <div class="study-shell study-shell-clean${guided ? " guided-learning-workspace" : ""}">
       <section class="study-workspace ${hasPassage ? "" : "no-passage"}${guided ? " guided-learning-workspace" : ""}" id="study-workspace">
         ${hasPassage ? passagePanelHtml() : ""}
-        <article class="question-panel${guided ? " guided-task-panel" : ""}" aria-label="Question workspace">
+        <article id="study-question" class="question-panel${guided ? " guided-task-panel" : ""}" aria-label="Question workspace">
+          ${hasPassage ? `<a class="study-mobile-jump study-mobile-jump-back" href="#study-passage">↑ Back to passage</a>` : ""}
           <div id="question-stage" class="question-stage"></div>
           <div class="question-footer" id="question-footer"></div>
         </article>
@@ -264,8 +265,9 @@ function passagePanelHtml() {
   const savedPassage = Store.getPassageHighlights ? Store.getPassageHighlights(currentQuiz.id) : "";
   const passageMarkup = savedPassage ? sanitizeHighlightMarkup(savedPassage, basePassageMarkup) : basePassageMarkup;
   return `
-    <aside class="reading-column" aria-label="Reading passage">
+    <aside class="reading-column" id="study-passage" aria-label="Reading passage">
       <header class="passage-heading">
+        <a class="study-mobile-jump study-mobile-jump-forward" href="#study-question">Go to question ↓</a>
         <h1>${escapeHtml(passageTitle)}</h1>
         ${meta ? `<p>${escapeHtml(meta.replace(/\s+-\s+/g, " · "))}</p>` : ""}
       </header>
