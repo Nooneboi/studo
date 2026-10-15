@@ -32,6 +32,10 @@ for (const name of lessons) {
       if (!q.options.some(option => option.id === q.correct)) {
         issues.push(label + ': answer key does not reference an option');
       }
+      const ids = q.options.map(option => String(option.id));
+      if (ids.some((id, index) => id !== String.fromCharCode(97 + index))) {
+        issues.push(label + ': displayed multiple-choice options are not in A–D order');
+      }
       const declared = q.explanation?.answer;
       if (/^[A-Z]$/.test(declared || '') && declared.toLowerCase() !== q.correct) {
         issues.push(label + ': explanation answer label does not match answer key');
