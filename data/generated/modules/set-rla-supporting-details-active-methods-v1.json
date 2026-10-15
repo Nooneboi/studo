@@ -71,6 +71,18 @@
           }
         ],
         "presentation": "choice_rows"
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Claim ကို တိတိကျကျဖတ်မယ်",
+            "body": "ဒီ claim က market လမ်းပိတ်တဲ့အခါ လူနဲ့ကား ရုတ်တရက်ရပ်ရတာ၊ ရှောင်ရတာလို safety conflicts လျော့သွားသလားဆိုတာကို မေးတာပါ။ လမ်းသွားသူ အရေအတွက်တိုးတာနဲ့ conflict လျော့တာက မတူဘူး။"
+          },
+          {
+            "title": "Evidence ကို ခွဲမယ်",
+            "body": "Conflict ပျမ်းမျှ 14 ကြိမ်ကနေ 4 ကြိမ်ထိကျသွားတာ (i1) က တိုက်ရိုက်အထောက်အထားပါ။ ကျန်တဲ့ pedestrian count၊ ထိုင်နားသူအကြောင်းနဲ့ delivery အခက်အခဲတွေက pilot နဲ့ပတ်သက်ပေမယ့် ဒီ safety-conflict claim ကို တိုက်ရိုက်မတိုင်းတာဘူး။"
+          }
+        ]
       }
     },
     {
@@ -123,6 +135,18 @@
           {
             "id": "s4",
             "text": "During the pilot, staff repeated the same observations."
+          }
+        ]
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Opinion မဟုတ်တဲ့ evidence ကို ရှာမယ်",
+            "body": "Merchant တွေ ဘယ်လိုထင်လဲဆိုတာကို မေးရုံတင်မဟုတ်ဘူးလို့ claim က ပြောထားတယ်။ ဒါဆို ဝန်ထမ်းတွေ တကယ်ကြည့်ပြီး ရေတွက်၊ မှတ်တမ်းတင်၊ အချိန်တိုင်းခဲ့တဲ့ စာကြောင်းကိုရှာရမယ်။"
+          },
+          {
+            "title": "ဘာကြောင့် s2 လဲ",
+            "body": "Pedestrian တွေကို ရေတွက်တာ၊ conflict ကို မှတ်တမ်းတင်တာ၊ delivery အချိန်ကိုတိုင်းတာတာတွေက survey opinion မဟုတ်တဲ့ observations တွေပါ။ s2 က ဒီခြားနားချက်ကို အရှင်းဆုံးပြတယ်။"
           }
         ]
       }
@@ -181,7 +205,19 @@
           "whyWrong": "This supports comfort generally, but the survey statement matches the exact claim about moving between stalls more directly."
         }
       ],
-      "correct": "c"
+      "correct": "c",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Strongest detail ရွေးနည်း",
+            "body": "Claim က shopper တွေ stall တစ်ခုကနေတစ်ခုကို ပိုလွယ်လွယ်ကူကူ ဖြတ်သွားနိုင်သလားဆိုတာ။ 72% က ကားကို သတိထားရှောင်စရာမလိုဘဲ ဖြတ်ရတာ ပိုလွယ်တယ်လို့ ဖြေထားတဲ့ C က အဲဒီအတွေ့အကြုံကို တိုက်ရိုက်ပြတယ်။"
+          },
+          {
+            "title": "အခြားအဖြေတွေကို နှိုင်းယှဉ်မယ်",
+            "body": "A မှာ လူပိုလာတာကိုပဲ ပြပြီး လမ်းဖြတ်ရလွယ်တာကို မပြဘူး။ B က ထိုင်နား၊ စကားပြောတာအကြောင်းပါ။ D က လမ်းပိုအေးချမ်းတယ်လို့ merchant တွေထင်တာဖြစ်ပြီး C လောက် တိတိကျကျ မကိုက်ဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q4",
@@ -249,6 +285,18 @@
           }
         ],
         "presentation": "choice_rows"
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Measured effect နဲ့ possible effect",
+            "body": "Vendor တွေ delivery ပိုခက်သွားတယ်ဆိုတဲ့ claim ကို စစ်တဲ့အခါ တကယ်ဖြစ်သွားတဲ့အကျိုးဆက်နဲ့ ဖြစ်နိုင်တယ်လို့ ထင်ရတဲ့အခြေအနေကို ခွဲရမယ်။"
+          },
+          {
+            "title": "Card တွေကို ဘာကြောင့် ဒီလိုစီလဲ",
+            "body": "Delivery အချိန် 6 မိနစ်တိုးတာ (m1) က တိုက်ရိုက်တိုင်းထားတဲ့အကျိုးဆက်မို့ strong ပါ။ Unloading စည်းကမ်းပြောင်းတာ (m2) က အခက်အခဲဖြစ်နိုင်တာကိုပြလို့ some ပါ။ အနီးနား business တခြားတွေရဲ့ complaint (m3) နဲ့ ခုံတန်းတွေ (m4) က ဒီ vendor-delivery claim ကို မထောက်ခံဘူး။"
+          }
+        ]
       }
     },
     {
@@ -300,6 +348,18 @@
           {
             "id": "h4",
             "text": "Spring weather was mild, and officials noted that summer heat and holiday crowds could change both pedestrian use and delivery needs."
+          }
+        ]
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Claim နှစ်ပိုင်းစလုံး ပါရမယ်",
+            "body": "Final plan က လမ်းကို pedestrian တွေအတွက် ဆက်ပိတ်ထားမယ်၊ ဒါပေမယ့် delivery အခက်အခဲကိုလည်း ပြင်မယ်ဆိုတဲ့ အချက်နှစ်ခုကို တစ်ပြိုင်တည်းပြောတာပါ။"
+          },
+          {
+            "title": "ဘာကြောင့် h3 လဲ",
+            "body": "Closure ကို ဆက်ထားပြီး delivery windows အသစ်နဲ့ loading arrangements ထည့်မယ်ဆိုတဲ့ စာကြောင်းမှာ အချက်နှစ်ခုလုံးအတွက် concrete action ပါတယ်။ တစ်ပိုင်းတည်းကို ဖော်ပြတဲ့စာကြောင်းထက် ဒီစာကြောင်းက ပိုကောင်းတဲ့ supporting detail ဖြစ်တယ်။"
           }
         ]
       }
@@ -358,7 +418,19 @@
           "whyWrong": "These details describe the study and the street setup but do not establish both the usefulness and the limitation of the pilot's evidence."
         }
       ],
-      "correct": "b"
+      "correct": "b",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Claim ထဲက but ကို သတိထားမယ်",
+            "body": "Officials တွေက pilot ရဲ့ result ကို အသုံးဝင်တဲ့ evidence လို့မြင်တယ်။ ဒါပေမယ့် ရာသီဥတုနဲ့ လူစည်ကားမှုပြောင်းရင် ရလဒ်အတူတူဖြစ်မယ်လို့ မအာမခံဘူး။ Answer က ဒီနှစ်ပိုင်းလုံးကို ဖော်ပြရမယ်။"
+          },
+          {
+            "title": "B ဘာကြောင့် ကိုက်လဲ",
+            "body": "B ရဲ့ ပထမပိုင်းမှာ spring weather နဲ့ summer/holiday အခြေအနေ မတူနိုင်တာကို သတိပေးတယ်။ ဒုတိယပိုင်းမှာ traffic ခွဲထားခြင်းက conflict လျော့စေပြီး လမ်းလျှောက်ရလွယ်စေခဲ့တာကို ပြတယ်။ A က positive result ပဲပြတယ်။ C နဲ့ D က claim နှစ်ပိုင်းလုံးကို မထောက်ခံဘူး။"
+          }
+        ]
+      }
     }
   ],
   "contentMeta": {
