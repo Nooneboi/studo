@@ -348,3 +348,14 @@ hr,
 .passage-data-table tbody th {
   font-weight: 500;
 }
+
+/* Mobile learner navigation: one clear header, generous touch targets. */
+@media (max-width: 720px) {
+  body.canonical-learner-shell .simple-nav a,
+  body.canonical-learner-shell .site-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: 8px;
+  }
+}
