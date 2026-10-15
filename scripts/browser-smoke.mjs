@@ -188,7 +188,7 @@ try {
         }
         assert.equal(shortLinks,0,'Resource links should have usable mobile tap targets');
       }
-      assert.equal(metrics.viewport,width,name+' '+size+' CSS viewport mismatch');
+      assert.equal(metrics.layoutViewport,width,name+' '+size+' CSS viewport mismatch');
       visualReport.push({page:name,size,...metrics});
       const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
       fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
