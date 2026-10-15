@@ -180,7 +180,7 @@ try {
         const extraNav=await evalJs("Boolean(document.querySelector('.mobile-primary-nav'))");
         assert.equal(extraNav,false,'Duplicate fixed navigation on '+name+' '+size);
       }
-      if (mobile && name === 'resources') {
+      if (size === 'mobile' && name === 'resources') {
         const shortLinks=await evalJs("Array.from(document.querySelectorAll('.resource-file-link')).filter(a=>a.getBoundingClientRect().height<40).length");
         if (shortLinks) {
           const styleEvidence=await evalJs("(() => {const e=document.querySelector('.resource-file-link');const s=getComputedStyle(e);return {height:e?.getBoundingClientRect().height,display:s.display,minHeight:s.minHeight,padding:s.padding,width:innerWidth,css:document.querySelector('link[href=\\\"css/chee-system.css\\\"]')?.href}})()");
