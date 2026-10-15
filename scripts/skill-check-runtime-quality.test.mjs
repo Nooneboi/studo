@@ -98,7 +98,9 @@ test('skill pages expose a separate optional Check section and Progress keeps Ch
   const skill = read('js/skill.js');
   const progress = read('js/progress.js');
   assert.match(skill, /const checks = skill\.checks \|\| \[\]/);
-  assert.match(skill, /checks\\.length \\? .*checkHref\\(checks\\[0\\], returnHref\\).*Skill Check/);
+  assert.match(skill, /checks\\.length/);
+  assert.match(skill, /checkHref\\(checks\\[0\\], returnHref\\)/);
+  assert.match(skill, />Skill Check<\\/a>/);
   assert.match(skill, /function checkHref\(check, returnHref\)/);
   assert.match(skill, /check\.html\?file=/);
   const checkRuntime = read('js/check.js');
