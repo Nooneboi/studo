@@ -187,14 +187,14 @@
       "learningStage": "apply",
       "options": [
         {
+          "id": "a",
+          "text": "Mira had expected that she might be asked to help with the scene and was ready for that possibility."
+        },
+        {
           "id": "b",
           "text": "Mira knew before rehearsal that Lena would be delayed and that Mr. Bell would choose her.",
           "distractorType": "overclaim",
           "whyWrong": "The clues show readiness, not advance knowledge of Lena's delay or the director's decision."
-        },
-        {
-          "id": "a",
-          "text": "Mira had expected that she might be asked to help with the scene and was ready for that possibility."
         },
         {
           "id": "c",
@@ -255,6 +255,10 @@
       "learningStage": "apply",
       "options": [
         {
+          "id": "a",
+          "text": "She wanted to understand the production closely and be prepared if the cast or crew needed her."
+        },
+        {
           "id": "b",
           "text": "She was trying to prove to Tomas that crew work was more important than acting.",
           "distractorType": "unsupported_motive",
@@ -265,10 +269,6 @@
           "text": "She planned from the beginning to replace Lena in the final performance.",
           "distractorType": "overclaim",
           "whyWrong": "Her preparation supports readiness for a possibility, not a fixed plan to take another actor's role."
-        },
-        {
-          "id": "a",
-          "text": "She wanted to understand the production closely and be prepared if the cast or crew needed her."
         },
         {
           "id": "d",
@@ -323,6 +323,10 @@
       "learningStage": "independent",
       "options": [
         {
+          "id": "a",
+          "text": "He sees Mira as a possible backup if the production needs someone to step into Lena's part again."
+        },
+        {
           "id": "b",
           "text": "He has permanently reassigned Lena's role to Mira.",
           "distractorType": "too_absolute",
@@ -339,10 +343,6 @@
           "text": "He thinks Mira's black shoes are inappropriate for backstage work.",
           "distractorType": "wrong_connection",
           "whyWrong": "The shoes matter because she may need to appear onstage, not because they are a problem backstage."
-        },
-        {
-          "id": "a",
-          "text": "He sees Mira as a possible backup if the production needs someone to step into Lena's part again."
         }
       ],
       "correct": "a",
@@ -391,14 +391,14 @@
       "learningStage": "independent",
       "options": [
         {
-          "id": "b",
-          "text": "Mira successfully read Lena's scenes with only small mistakes; afterward Mr. Bell told her to bring her black shoes the next day \"just in case.\""
-        },
-        {
           "id": "a",
           "text": "Mira joined as crew; she often got sawdust on her shoes.",
           "distractorType": "background_detail",
           "whyWrong": "These details establish Mira's original role but do not show that Mr. Bell now views her as a backup performer."
+        },
+        {
+          "id": "b",
+          "text": "Mira successfully read Lena's scenes with only small mistakes; afterward Mr. Bell told her to bring her black shoes the next day \"just in case.\""
         },
         {
           "id": "c",
