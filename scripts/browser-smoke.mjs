@@ -42,7 +42,7 @@ async function waitFor(fn, label, timeout=12000) {
 let socket;
 try {
   const portFile=path.join(profile,'DevToolsActivePort');
-  const port=await waitFor(()=>fs.existsSync(portFile)&&Number(fs.readFileSync(portFile,'utf8').split('\\n')[0]),'Chrome debugger',25000).catch(error=>{throw new Error(error.message+'; exit='+child?.exitCode+'; stderr='+chromeStderr);});
+  const port=await waitFor(()=>fs.existsSync(portFile)&&Number(fs.readFileSync(portFile,'utf8').split('\n')[0]),'Chrome debugger',25000).catch(error=>{throw new Error(error.message+'; exit='+child?.exitCode+'; stderr='+chromeStderr);});
   const pages=await (await fetch('http://127.0.0.1:'+port+'/json/list')).json();
   const target=pages.find(p=>p.type==='page');
   assert.ok(target?.webSocketDebuggerUrl, 'No CDP tab');
