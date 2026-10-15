@@ -177,6 +177,10 @@ try {
         const extraNav=await evalJs("Boolean(document.querySelector('.mobile-primary-nav'))");
         assert.equal(extraNav,false,'Duplicate fixed navigation on '+name+' '+size);
       }
+      if (mobile && name === 'resources') {
+        const shortLinks=await evalJs("Array.from(document.querySelectorAll('.resource-file-link')).filter(a=>a.getBoundingClientRect().height<40).length");
+        assert.equal(shortLinks,0,'Resource links should have usable mobile tap targets');
+      }
       visualReport.push({page:name,size,...metrics});
       const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
       fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
