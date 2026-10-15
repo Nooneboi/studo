@@ -39,7 +39,7 @@
       },
       "time": 75,
       "learningStage": "guided",
-      "hint": "Check each statement word by word. Watch for added permissions or words such as every.",
+      "hint": "Compare each statement to the notice one word at a time. Highlight its deadline, permission, or requirement, then check whether the statement quietly adds a stronger word such as 'every' or changes who the rule applies to.",
       "correct": "i1=stated|i2=not-stated|i3=stated|i4=not-stated",
       "interaction": {
         "items": [
@@ -103,7 +103,7 @@
       },
       "time": 55,
       "learningStage": "guided",
-      "hint": "The question asks who. Ignore sentences that only tell you when to request or when to return the tool.",
+      "hint": "The question asks for a person with approval authority. Look for a sentence that names a role able to authorize a request; a request deadline and a return deadline answer different questions.",
       "correct": "s2",
       "interaction": {
         "selectionMode": "sentence",
