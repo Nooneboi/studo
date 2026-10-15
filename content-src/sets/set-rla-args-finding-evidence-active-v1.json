@@ -93,7 +93,7 @@
         "quickTip": "Evidence can be strong and still belong to the wrong claim. Name the claim first, then ask what the detail actually measures."
       },
       "learningStage": "guided",
-      "hint": "First separate the recommendation from observed results. Then ask which exact claim each measured result can support."
+      "hint": "For each result, identify exactly what was counted or recorded—waiting trucks, employee clock-ins, or another measure. Match that measurement to the claim it can actually test, not merely a sentence on the same topic."
     },
     {
       "id": "q2",
@@ -141,7 +141,7 @@
         "quickTip": "For an outcome claim, prefer the detail that measures the outcome itself rather than a possible reason for it."
       },
       "learningStage": "guided",
-      "hint": "Look for the result that directly measures late arrival, not the sentence explaining why some workers may have arrived more easily."
+      "hint": "The claim is about whether workers arrived late less often. Look for a before-and-after measure of late clock-ins, rather than a possible explanation from a survey or a recommendation about the pilot."
     },
     {
       "id": "q3",
