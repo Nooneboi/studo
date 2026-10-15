@@ -227,7 +227,7 @@ test('Practice Tests landing uses the approved three-link learner navigation', (
     assert.ok(nav.includes('href="'+href+'"'), 'Missing '+href);
     assert.ok(nav.includes('>'+label+'</a>'), 'Missing '+label);
   }
-  assert.equal((nav.match(/<a\\b/g) || []).length, 3, 'Main navigation must remain three links');
+  assert.equal(nav.split('<a ').length - 1, 3, 'Main navigation must remain three links');
 });
 
 test('Alpha polish gives search placement and Passage Practice spacing a clearly visible desktop change', () => {
