@@ -148,7 +148,10 @@ try {
   ];
   const visualReport = [];
   for (const [size, width, height, mobile] of [['desktop',1280,900,false],['tablet',768,1024,true],['mobile',390,844,true]]) {
-    await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile});
+    // A mobile:true viewport can retain Chrome's 768px minimum layout width.
+    // Use exact CSS viewport dimensions for responsive breakpoints; enable touch separately.
+    await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
+    await call('Emulation.setTouchEmulationEnabled',{enabled:mobile,maxTouchPoints:1});
     for (const [name,url,selector] of visualCases) {
       await call('Page.navigate',{url:origin+'/'+url});
       await waitFor(()=>evalJs("Boolean(document.readyState === 'complete' && document.querySelector("+JSON.stringify(selector)+"))"),name+' '+size+' ready');
@@ -185,6 +188,7 @@ try {
         }
         assert.equal(shortLinks,0,'Resource links should have usable mobile tap targets');
       }
+      assert.equal(metrics.viewport,width,name+' '+size+' CSS viewport mismatch');
       visualReport.push({page:name,size,...metrics});
       const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
       fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
