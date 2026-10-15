@@ -86,7 +86,7 @@
         "quickTip": "Do not reward an answer for sounding reasonable. Ask whether the text actually says it."
       },
       "learningStage": "guided",
-      "hint": "Check each statement word by word. Watch for added permissions or words such as every."
+      "hint": "Compare each statement to the notice one word at a time. Highlight its deadline, permission, or requirement, then check whether the statement quietly adds a stronger word such as 'every' or changes who the rule applies to."
     },
     {
       "id": "q2",
@@ -134,7 +134,7 @@
         "quickTip": "Turn the question into a target such as who, when, where, or why, then find the sentence that matches that target."
       },
       "learningStage": "guided",
-      "hint": "The question asks who. Ignore sentences that only tell you when to request or when to return the tool."
+      "hint": "The question asks for a person with approval authority. Look for a sentence that names a role able to authorize a request; a request deadline and a return deadline answer different questions."
     },
     {
       "id": "q3",
