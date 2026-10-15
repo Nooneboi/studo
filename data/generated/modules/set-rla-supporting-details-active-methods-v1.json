@@ -14,7 +14,7 @@
       "type": "drag_sort",
       "prompt": "For the claim that the street closure reduced safety conflicts during the busiest market hours, how useful is each detail as evidence?",
       "points": 1,
-      "explanation": "The other details are true and relevant to the pilot, but they measure pedestrian volume, seating, or delivery problems rather than vehicle-pedestrian conflicts.",
+      "explanation": "The pilot recorded fewer vehicle-pedestrian conflicts during busy market hours, directly measuring the safety result in the claim. The other details concern pedestrian numbers, seating, or delivery difficulties; they may matter to the pilot, but they do not measure the claimed reduction in conflicts.",
       "skill": {
         "id": "R1.3",
         "label": "Supporting details"
@@ -39,7 +39,7 @@
       },
       "time": 70,
       "learningStage": "guided",
-      "hint": "Underline the exact thing the claim says changed: safety conflicts. Which detail actually measures that?",
+      "hint": "Underline the result named in the claim, then check what each detail actually measures. A detail about the same street or market is not necessarily evidence of that particular result.",
       "correct": "i1=direct|i2=other|i3=other|i4=other",
       "interaction": {
         "items": [
@@ -115,7 +115,7 @@
       },
       "time": 60,
       "learningStage": "guided",
-      "hint": "Look for a sentence describing evidence staff could observe or measure without asking someone what they thought.",
+      "hint": "The claim contrasts people's opinions with other evidence. Find the sentence describing something staff did that could be recorded or checked independently of what a merchant said.",
       "correct": "s2",
       "interaction": {
         "selectionMode": "sentence",

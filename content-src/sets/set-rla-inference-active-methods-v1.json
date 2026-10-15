@@ -102,7 +102,7 @@
         }
       },
       "learningStage": "guided",
-      "hint": "Ask two questions: Can I point to the exact sentence? If not, do several clues still make the statement the smallest reasonable conclusion?"
+      "hint": "Read each statement twice. First, search for the same fact stated in the passage. If you cannot find it directly, look for two clues that make it reasonable. If neither works, do not assume it is true."
     },
     {
       "id": "q2",
@@ -162,7 +162,7 @@
         }
       },
       "learningStage": "guided",
-      "hint": "Look for something Mira chose to do before Thursday, not a detail that only shows what happened after Lena was delayed."
+      "hint": "Focus on the timing: the claim says Mira prepared before she was asked to fill in. Which sentence describes an action she had already taken, rather than her reaction once someone needed help?"
     },
     {
       "id": "q3",
