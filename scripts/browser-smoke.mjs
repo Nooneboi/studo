@@ -166,7 +166,7 @@ try {
           const r=e.getBoundingClientRect(); const st=getComputedStyle(e);
           return r.width>0 && r.height>0 && st.visibility!=='hidden' && st.display!=='none';
         });
-        return {title:document.title, viewport:root.clientWidth, scrollWidth:root.scrollWidth,
+        return {title:document.title, viewport:root.clientWidth, layoutViewport:innerWidth, scrollWidth:root.scrollWidth,
           horizontalOverflow:root.scrollWidth>root.clientWidth+2,
           mainWidth:Math.round(rect?.width||0),
           missingMain:!rect||rect.width<100,
