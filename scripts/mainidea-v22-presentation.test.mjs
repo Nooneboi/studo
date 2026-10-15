@@ -6,10 +6,10 @@ const read = (file) => fs.readFileSync(file, 'utf8');
 
 test('Main Idea module runtime opts into the approved V22 presentation and chrome', () => {
   const source = read('js/module.js');
-  assert.match(source, /primarySkillId === "R1\.2"/);
+  assert.doesNotMatch(source, /primarySkillId === "R1\.2"/);
   assert.match(source, /classList\.add\("mainidea-v22-runtime"\)/);
-  assert.match(source, /setupMainIdeaV22Chrome\(curriculumRoutes\)/);
-  assert.match(source, /routes\?\.skillLocation\?\.\("R1\.2"\)/);
+  assert.match(source, /setupStudyWorkspaceChrome\(curriculumRoutes, primarySkillId, requestedReturn\)/);
+  assert.match(source, /routes\?\.skillLocation\?\.\(primarySkillId\)/);
   assert.doesNotMatch(source, /set-rla-mainidea-learn-certified-v2\.json&return=/);
   assert.doesNotMatch(source, /set-rla-mainidea-practice-b-stated-v1\.json&return=/);
   assert.doesNotMatch(source, /set-rla-check-main-idea-certified-v2\.json&return=/);
