@@ -62,7 +62,19 @@
           "whyWrong": "Low average use does not by itself justify eliminating service."
         }
       ],
-      "correct": "b"
+      "correct": "b",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Table ကို ဘယ်လိုဖတ်မလဲ",
+            "body": "7:30–8:30 a.m. မှာ offices ဘက်သွားသူ ပျမ်းမျှ 29 ယောက်၊ 4:30–5:30 p.m. မှာ north lot ဘက်ပြန်သူ 31 ယောက်ရှိတယ်။ Midday မှာတော့ 9 ယောက်နဲ့ 8 ယောက်ပဲရှိတာကြောင့် တစ်နေ့လုံး အမြဲလူပြည့်နေတာ မဟုတ်ဘူး။"
+          },
+          {
+            "title": "Choice တွေကို စစ်ကြည့်မယ်",
+            "body": "B က အချိန်နဲ့ သွားတဲ့ဦးတည်ချက် နှစ်ခုလုံးကို data အတိုင်းပြောထားတယ်။ A နဲ့ C က အချိန်အားလုံးကို ချဲ့ပြောထားပြီး D က ဇယားထဲမှာ မပါတဲ့ service ပိတ်ဖို့ဆုံးဖြတ်ချက်ကို ထပ်ဆွဲထားတာ။"
+          }
+        ]
+      }
     },
     {
       "id": "q2",
@@ -117,7 +129,19 @@
           "whyWrong": "The note is broadly consistent with lower demand around 8:45 and 4:20 and higher demand around 5:05."
         }
       ],
-      "correct": "a"
+      "correct": "a",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Proposal နဲ့ data ကို ချိတ်ကြည့်မယ်",
+            "body": "Alvarez က shuttle တစ်စီးထပ်ဖြည့်ရင် မနက်အလုပ်ဝင်ချိန်နဲ့ ညနေပြန်ချိန်မှာပဲ စမ်းသုံးချင်တာ။ ဇယားမှာလည်း အဲဒီအချိန်တွေမှာပဲ လူအများဆုံးတွေ့ရတယ်။ ဒါကြောင့် A က proposal ကို အထောက်အပံ့ပေးတဲ့ အချက်ကို တိတိကျကျဖော်ပြတယ်။"
+          },
+          {
+            "title": "Data မပြောနိုင်တာ",
+            "body": "Passenger count တစ်ခုတည်းနဲ့ ကားဝယ်တာ အမြတ်ပြန်ရမလား၊ လူတိုင်းထိုင်ရလား၊ employee note မှားလားဆိုတာ မသက်သေပြနိုင်ဘူး။ B၊ C၊ D က ဒီလိုမရှိသေးတဲ့အထောက်အထားကို ယူဆထားတာ။"
+          }
+        ]
+      }
     },
     {
       "id": "q3",
@@ -172,7 +196,19 @@
           "whyWrong": "An anecdote can illustrate a measured pattern even when it should not replace broader data."
         }
       ],
-      "correct": "c"
+      "correct": "c",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Passenger note ရဲ့ အားသာချက်",
+            "body": "Employee တစ်ယောက်ရဲ့အတွေ့အကြုံက 8:45 မှာ ထိုင်ခုံရလွယ်ပြီး 5:05 မှာ လူများတတ်တယ်လို့ပြောတယ်။ ဒါက ဇယားထဲက peak-hour pattern နဲ့ ကိုက်ညီတဲ့ ဥပမာတစ်ခုဖြစ်တယ်။"
+          },
+          {
+            "title": "ဘာကိုတော့ သက်သေမပြနိုင်လဲ",
+            "body": "လူတစ်ယောက်ရဲ့မှတ်ချက်နဲ့ trip အားလုံး ဘယ်လောက်မကြာခဏပြည့်လဲဆိုတာ မဆုံးဖြတ်နိုင်ဘူး။ ဒါကြောင့် C မှန်တယ်။ A နဲ့ B က note ကို သက်သေအလွန်အကျွံသတ်မှတ်ပြီး D က အသုံးဝင်တဲ့ context ကို လုံးဝပယ်ချထားတာ။"
+          }
+        ]
+      }
     },
     {
       "id": "q4",
@@ -227,7 +263,19 @@
           "whyWrong": "No such requirement is mentioned."
         }
       ],
-      "correct": "a"
+      "correct": "a",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "24 seats ဆိုတာ ဘာကိုပြောတာလဲ",
+            "body": "Shuttle မှာ ထိုင်ခုံ 24 ခုံရှိတယ်။ Trip တစ်ခုမှာ passenger 29 ယောက်ရှိတယ်ဆိုတာ ထိုင်ခုံထက်များတာကိုပဲ ပြတယ်။ လူ 5 ယောက် မတက်လိုက်ရဘူးလို့ တန်းမဆိုနိုင်ဘူး။ ရပ်စီးခွင့်ရှိနိုင်လို့ပါ။"
+          },
+          {
+            "title": "ဘာကြောင့် ထပ်တိုင်းတာရမလဲ",
+            "body": "တကယ်ကားမတက်လိုက်ရတဲ့လူ ဘယ်နှယောက်ရှိလဲဆိုတာကို သီးသန့်ရေတွက်မှ ဝန်ဆောင်မှုမလုံလောက်တဲ့အခြေအနေကို သိနိုင်မယ်။ ဒါကြောင့် A မှန်တယ်။ B၊ C၊ D ကို passage က မထောက်ခံဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q5",
@@ -282,7 +330,19 @@
           "whyWrong": "Midday averages are low; the note mentions a crowded 5:05 trip."
         }
       ],
-      "correct": "c"
+      "correct": "c",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "စာနဲ့ဇယား တူညီတဲ့အချက်",
+            "body": "Article ထဲမှာ crowding က အချိန်တိုတချို့မှာပဲ အများဆုံးဖြစ်တယ်လို့ဆိုထားတယ်။ Table ထဲမှာ မနက် offices ဘက် 29 ယောက်နဲ့ ညနေ north lot ဘက် 31 ယောက်ဆိုတဲ့ peak တွေကိုတွေ့ရတယ်။ C က နှစ်မျိုးလုံးကို ချိတ်ထားတဲ့ answer ပါ။"
+          },
+          {
+            "title": "အခြား choice တွေ ဘာလွဲလဲ",
+            "body": "A က peak count တွေ 24 ထက်ကျော်တာကို မျက်ကွယ်ပြုထားတယ်။ B က proposal ကို ပြောင်းပြန်ပြောတယ်။ D က midday ကို လူအများဆုံးလို ပြောထားပေမယ့် table မှာ အဲဒီလိုမဟုတ်ဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q6",
@@ -337,7 +397,19 @@
           "text": "Buying a second shuttle for all-day service is guaranteed to be financially wasteful."
         }
       ],
-      "correct": "d"
+      "correct": "d",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Overreach ဆိုတာ",
+            "body": "Data ထဲက ကောက်ချက်ထုတ်တာ အထောက်အထားရှိသလောက်ပဲ ဖြစ်ရမယ်။ Table က 4:30–5:30 north lot ဘက်ကို 31 ယောက်၊ midday မှာ လူနည်းတာနဲ့ peak တွေရဲ့ direction ကိုပြနိုင်တယ်။"
+          },
+          {
+            "title": "D က ဘာကြောင့် overclaim ဖြစ်တာလဲ",
+            "body": "ဒီမေးခွန်းမှာ evidence ထက်ကျော်ပြီး အတိအကျပြောထားတဲ့ choice ကို ရွေးရတာမို့ D က အဖြေမှန်ပါ။ တစ်နေ့လုံး shuttle ထပ်ဝယ်တာ ငွေကြေးအရ သေချာပေါက်အလဟဿဖြစ်မယ်လို့ ဇယားက မသက်သေပြနိုင်ဘူး။ ကားစရိတ်၊ operating cost နဲ့ လူမတက်လိုက်ရမှု စတဲ့အချက်တွေ ထပ်လိုသေးတယ်။ D ရဲ့ ပြောဆိုချက်က data ထက်ကျော်လွန်နေတာပါ။"
+          }
+        ]
+      }
     },
     {
       "id": "q7",
@@ -392,7 +464,19 @@
           "whyWrong": "The coworker's 5:05 experience supports that possibility."
         }
       ],
-      "correct": "b"
+      "correct": "b",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Note တစ်ခုတည်းရှိရင်",
+            "body": "8:45 နဲ့ 5:05 အတွေ့အကြုံတွေကို သိနိုင်ပေမယ့် trip အားလုံးမှာ ဒီလိုပဲဖြစ်တယ်လို့ သတ်မှတ်ဖို့ sample က နည်းလွန်းတယ်။ Pattern ဘယ်လောက်မကြာခဏဖြစ်လဲ မသိရသေးဘူး။"
+          },
+          {
+            "title": "ဘာကြောင့် B လဲ",
+            "body": "B က အထောက်အထားရဲ့ အဓိကကန့်သတ်ချက်ဖြစ်တဲ့ sample သေးတာကို ပြောထားတယ်။ A က note ထဲမှာ trip အချိန်တွေပါနေတာကို လွတ်သွားတယ်။ C က format ကိုအပြစ်တင်တာဖြစ်ပြီး D က note ကို passage နဲ့မကိုက်သလို ပြောထားတာ။"
+          }
+        ]
+      }
     },
     {
       "id": "q8",
@@ -447,7 +531,19 @@
           "text": "Before-and-after peak passenger counts, left-behind rider counts, operating costs, and rider feedback from the six-week trial."
         }
       ],
-      "correct": "d"
+      "correct": "d",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Decision အတွက် ဘာတွေလိုမလဲ",
+            "body": "Six-week trial အပြီးမှာ peak-hour passenger count ဘယ်လိုပြောင်းလဲလဲ၊ လူမတက်လိုက်ရမှု လျော့သလား၊ စရိတ်ဘယ်လောက်ကုန်လဲ၊ rider တွေရဲ့ အတွေ့အကြုံကောင်းလာသလားဆိုတာ အတူကြည့်မှ ပိုကောင်းတဲ့ဆုံးဖြတ်ချက်ချနိုင်မယ်။"
+          },
+          {
+            "title": "Choice တွေကို နှိုင်းယှဉ်မယ်",
+            "body": "D က demand၊ actual service problem၊ cost နဲ့ feedback ကို တစ်စုတစ်စည်းတည်းထည့်ထားတယ်။ A၊ B၊ C တို့က အထောက်အထားတစ်မျိုးတည်းကိုပဲ ကြည့်တာမို့ purchase decision အတွက် မလုံလောက်ဘူး။"
+          }
+        ]
+      }
     }
   ],
   "contentMeta": {

@@ -32,6 +32,8 @@ jobs:
         run: npm test
       - name: Build learner-only site
         run: node scripts/build-public.mjs
+      - name: Check learner asset references
+        run: node scripts/validate-published-assets.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact

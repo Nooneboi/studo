@@ -21,7 +21,7 @@ const learnerJs = [
   'domain.js', 'category.js', 'skill.js', 'module.js', 'check.js', 'curriculum-routes.js', 'focus-tools.js', 'train.js', 'rla-browse.js',
   'question-interactions.js', 'mock-engine.js', 'quiz.js', 'test.js', 'extended-response.js', 'quick-review.js'
 ];
-const learnerCss = ['site.css'];
+const learnerCss = ['site.css', 'chee-system.css'];
 const generatedData = [
   'index.json', 'curriculum.json', 'er-prompts.json', 'er-production-tasks.json', 'mock-blueprint.json', 'mock-er-prompts.json', 'quick-review.json', 'question-families.js'
 ];

@@ -285,12 +285,23 @@ function passagePanelHtml() {
 
 function renderPassageParagraphs(text) {
   const paragraphs = String(text || "").trim().split(/\n\s*\n+/).filter(Boolean);
-  if (paragraphs.length <= 1) return `<p class="passage-paragraph"><span class="passage-paragraph-number">1</span><span>${escapeHtml(text || "")}</span></p>`;
-  return paragraphs.map((paragraph, index) => `
-    <p class="passage-paragraph">
-      <span class="passage-paragraph-number">${index + 1}</span>
-      <span>${escapeHtml(paragraph)}</span>
-    </p>`).join("");
+  return paragraphs.map((paragraph, index) => {
+    // Data passages sometimes embed pipe-delimited tables. Render only
+    // consistent multi-row grids; keep ambiguous text as ordinary prose.
+    const lines = paragraph.trim().split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    const rows = lines.map(line => line.split("|").map(cell => cell.trim()));
+    const table = lines.length >= 2
+      && rows[0].length >= 2
+      && rows.every(row => row.length === rows[0].length && row.every(Boolean));
+    if (table) {
+      const header = rows[0].map(cell => `<th scope="col">${escapeHtml(cell)}</th>`).join("");
+      const body = rows.slice(1).map(row => `<tr>${row.map((cell, col) =>
+        col === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`
+      ).join("")}</tr>`).join("");
+      return `<div class="passage-table-scroll" role="region" aria-label="Passage data table" tabindex="0"><table class="passage-data-table"><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table></div>`;
+    }
+    return `<p class="passage-paragraph"><span class="passage-paragraph-number">${index + 1}</span><span>${escapeHtml(paragraph)}</span></p>`;
+  }).join("");
 }
 
 function renderCurrentQuestion(options = {}) {
@@ -503,13 +514,9 @@ function buildExplanationHtml(q, selectedAnswer) {
       </div>` : ''
   ].filter(Boolean).join('') : '';
 
-  const showMyanmar = hasMyanmarHelp(myanmarExplanation, selectedAnswer)
-    && (
-      level === 'full'
-      || level === 'supported'
-      || (level === 'light' && correct !== true)
-      || (level === 'minimal' && correct === false)
-    );
+  // Language support belongs to every answered Learn/Practice question
+  // with certified teaching content, regardless of difficulty or correctness.
+  const showMyanmar = hasSelected && hasMyanmarHelp(myanmarExplanation, selectedAnswer);
 
   return `
     <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
@@ -749,6 +756,8 @@ function renderMyanmarHelp(data, selectedAnswer) {
   }).join('');
 }
 
+let myanmarHelpReturnFocus = null;
+
 function ensureMyanmarHelpDrawer() {
   if (document.getElementById('chee-mm-drawer')) return;
   const overlay = document.createElement('div');
@@ -760,6 +769,11 @@ function ensureMyanmarHelpDrawer() {
   drawer.id = 'chee-mm-drawer';
   drawer.className = 'chee-mm-drawer';
   drawer.setAttribute('aria-hidden', 'true');
+  drawer.setAttribute('role', 'dialog');
+  drawer.setAttribute('aria-modal', 'true');
+  drawer.setAttribute('aria-label', 'မြန်မာလိုရှင်းပြ');
+  drawer.setAttribute('lang', 'my');
+  drawer.setAttribute('tabindex', '-1');
   drawer.innerHTML = `
     <div class="chee-mm-head">
       <strong>မြန်မာလိုရှင်းပြ</strong>
@@ -767,10 +781,29 @@ function ensureMyanmarHelpDrawer() {
     </div>
     <div class="chee-mm-body" id="chee-mm-body"></div>`;
   drawer.querySelector('.chee-mm-close').addEventListener('click', closeMyanmarHelp);
+  drawer.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeMyanmarHelp();
+    }
+    if (event.key !== 'Tab') return;
+    const focusable = [...drawer.querySelectorAll('button:not([disabled]), a[href], [tabindex="0"]')];
+    if (!focusable.length) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
   document.body.append(overlay, drawer);
 }
 
 function openMyanmarHelp(data, selectedAnswer) {
+  if (!hasMyanmarHelp(data, selectedAnswer)) return;
+  myanmarHelpReturnFocus = document.activeElement;
   ensureMyanmarHelpDrawer();
   const body = document.getElementById('chee-mm-body');
   if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
@@ -778,6 +811,7 @@ function openMyanmarHelp(data, selectedAnswer) {
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.add('open');
   drawer?.setAttribute('aria-hidden', 'false');
+  drawer?.querySelector('.chee-mm-close')?.focus();
 }
 
 function closeMyanmarHelp() {
@@ -785,6 +819,8 @@ function closeMyanmarHelp() {
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.remove('open');
   drawer?.setAttribute('aria-hidden', 'true');
+  if (myanmarHelpReturnFocus?.isConnected) myanmarHelpReturnFocus.focus();
+  myanmarHelpReturnFocus = null;
 }
 function lockInteractionControls(q, container) {
   container.classList.add("answer-locked");
@@ -1459,7 +1495,17 @@ function updateProgress(items, index) {
 }
 
 function updateAnswerStatus() {
-  updateProgress(activeQuestions(), currentIndex);
+  // Update the existing footer whenever an answer is saved, without a reload.
+  const items = activeQuestions();
+  const current = items[currentIndex]?.question;
+  const answered = Boolean(current && Store.getAnswers(currentQuiz.id)[current.id]);
+  const footer = document.getElementById("question-footer");
+  if (footer && document.body.classList.contains("mainidea-v22-runtime")) {
+    footer.classList.toggle("mainidea-v22-waiting", !answered);
+  }
+  const next = document.getElementById("next-question");
+  if (next && isGuidedLearningModule()) next.disabled = !answered;
+  updateProgress(items, currentIndex);
 }
 
 function isAutoGraded(q) {

@@ -75,6 +75,18 @@
           }
         ],
         "presentation": "choice_rows"
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Stated၊ Inference၊ Guess ကို ခွဲကြည့်မယ်",
+            "body": "Passage ထဲမှာ တိုက်ရိုက်ရေးထားတာဆို Stated ပါ။ တိုက်ရိုက်မရေးထားပေမယ့် clue တွေကိုပေါင်းပြီး ကျိုးကြောင်းဆီလျော်စွာ ကောက်ချက်ချနိုင်ရင် Inference ပါ။ ဖြစ်နိုင်တယ်ထင်ရုံနဲ့ သက်သေမရှိရင် Guess ပါ။"
+          },
+          {
+            "title": "Statement လေးခုကို စစ်မယ်",
+            "body": "i1 က Mira ဟာ actor မဟုတ်ဘဲ crew အဖြစ်ဝင်ခဲ့တာကို တိုက်ရိုက်ပြောထားလို့ Stated ပါ။ i4 မှာလည်း Lena က အလုပ်ချိန်ကြောင့် rehearsal နောက်ကျတတ်တာကို တိုက်ရိုက်ရေးထားတယ်။ i2 က script မှတ်သားတာ၊ line တွေ လေ့ကျင့်ထားတာ၊ အမြန်အသင့်ဖြစ်နေတာတွေကြောင့် Supported inference ပါ။ i3 မှာ Lena ကို role ဆုံးရှုံးစေချင်တယ်ဆိုတဲ့ သက်သေမရှိလို့ Guess ပါ။"
+          }
+        ]
       }
     },
     {
@@ -129,6 +141,18 @@
             "text": "Lena arrived halfway through rehearsal and thanked Mira before taking back the role."
           }
         ]
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "မေးခွန်းရဲ့ အဓိကစကားလုံး",
+            "body": "Mira ကို အကူအညီတောင်းမတိုင်ခင်ကတည်းက ပြင်ဆင်နေခဲ့တယ်ဆိုတဲ့ inference ကို အထောက်အပံ့ပြုမယ့် sentence ကိုရှာတာ။ ဒါကြောင့် ကြိုတင်လုပ်ခဲ့တဲ့အရာကို ရှာရမယ်။"
+          },
+          {
+            "title": "ဘာကြောင့် s1 လဲ",
+            "body": "Mira က spare script ထဲမှာ Lena ရဲ့ ဝင်ထွက်ချိန်တွေကို ကြိုမှတ်ထားတာဟာ အရေးပေါ်အခြေအနေမဖြစ်ခင်ကတည်းက ပြင်ဆင်ထားတဲ့ clue ပါ။ s3 က သူ အဆင်သင့်ရှိနေခဲ့တာကို ပြပေမယ့် အကူအညီလိုလာတဲ့အချိန်မှာ ဖြစ်တာ။ s2 က စောင့်ကြည့်တာကိုပဲ ပြပြီး s4 က Lena ပြန်ရောက်တဲ့အကြောင်းပါ။"
+          }
+        ]
       }
     },
     {
@@ -163,14 +187,14 @@
       "learningStage": "apply",
       "options": [
         {
+          "id": "a",
+          "text": "Mira had expected that she might be asked to help with the scene and was ready for that possibility."
+        },
+        {
           "id": "b",
           "text": "Mira knew before rehearsal that Lena would be delayed and that Mr. Bell would choose her.",
           "distractorType": "overclaim",
           "whyWrong": "The clues show readiness, not advance knowledge of Lena's delay or the director's decision."
-        },
-        {
-          "id": "a",
-          "text": "Mira had expected that she might be asked to help with the scene and was ready for that possibility."
         },
         {
           "id": "c",
@@ -185,7 +209,19 @@
           "whyWrong": "The passage gives no evidence that Mira caused or influenced Lena's delay."
         }
       ],
-      "correct": "a"
+      "correct": "a",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Smallest inference ဆိုတာ",
+            "body": "Clue တွေကိုရှင်းပြနိုင်သလောက်ပဲ ကောက်ချက်ချရမယ်။ Mira က paint can ကိုပိတ်ပြီး ဖွင့်ထားပြီးသား script ကို ချက်ချင်းယူတာက သူ အကူအညီလိုလာနိုင်တယ်လို့ တွေးပြီး အသင့်ပြင်ထားပုံကို ပြတယ်။ ဒါကြောင့် A မှန်တယ်။"
+          },
+          {
+            "title": "ဘာကြောင့် တခြား choice တွေမဟုတ်လဲ",
+            "body": "B က Lena နောက်ကျမယ်၊ director က သူ့ကိုရွေးမယ်ဆိုတာ Mira ကြိုသိခဲ့သလို ပြောထားတယ်။ C က သူ့ကိုယ်သူ Lena ထက် သရုပ်ဆောင်ကောင်းတယ်ထင်တယ်လို့ ထပ်ယူဆထားတယ်။ D က Lena ရဲ့ အလုပ်နောက်ကျမှုကို Mira စီစဉ်ခဲ့တယ်လို့ စွပ်စွဲထားတယ်။ အဲဒါတွေအတွက် passage ထဲမှာ သက်သေမရှိဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q4",
@@ -219,6 +255,10 @@
       "learningStage": "apply",
       "options": [
         {
+          "id": "a",
+          "text": "She wanted to understand the production closely and be prepared if the cast or crew needed her."
+        },
+        {
           "id": "b",
           "text": "She was trying to prove to Tomas that crew work was more important than acting.",
           "distractorType": "unsupported_motive",
@@ -231,17 +271,25 @@
           "whyWrong": "Her preparation supports readiness for a possibility, not a fixed plan to take another actor's role."
         },
         {
-          "id": "a",
-          "text": "She wanted to understand the production closely and be prepared if the cast or crew needed her."
-        },
-        {
           "id": "d",
           "text": "Mr. Bell had privately ordered her to memorize Lena's part.",
           "distractorType": "contradicts_text",
           "whyWrong": "The passage shows Mira doing this on her own before Mr. Bell asks her to read the part."
         }
       ],
-      "correct": "a"
+      "correct": "a",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Motive ကို inference လုပ်နည်း",
+            "body": "Mira က script ကို ဘာကြောင့် သေချာ update လုပ်ထားတာလဲဆိုတာကို သူ့စကားနဲ့ သူ့လုပ်ရပ်နှစ်ခုလုံးကြည့်ရမယ်။ သူက လူတိုင်း ဘာလိုအပ်လဲ သိဖို့ဆိုပြီး ပြောခဲ့တယ်။ Lena ရဲ့ scene တွေကိုလည်း ကြိုလိုက်ကြည့်ပြီး မှတ်သားထားတယ်။"
+          },
+          {
+            "title": "A ကို ဘာကြောင့်ရွေးမလဲ",
+            "body": "Production ကို ကောင်းကောင်းနားလည်ပြီး လိုအပ်ရင် ကူညီဖို့ အသင့်ရှိချင်တယ်ဆိုတဲ့ A က clue အားလုံးနဲ့ကိုက်တယ်။ B မှာ Tomas နဲ့ယှဉ်ပြိုင်နေတယ်ဆိုတဲ့သက်သေမရှိဘူး။ C က Lena ကို အပြီးအစားထိုးဖို့စီစဉ်ထားတယ်လို့ လွန်လွန်ကဲကဲယူဆထားတယ်။ D လို Mr. Bell က လျှို့ဝှက်အမိန့်ပေးထားတယ်ဆိုတာလည်း မပါတော့ဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q5",
@@ -275,6 +323,10 @@
       "learningStage": "independent",
       "options": [
         {
+          "id": "a",
+          "text": "He sees Mira as a possible backup if the production needs someone to step into Lena's part again."
+        },
+        {
           "id": "b",
           "text": "He has permanently reassigned Lena's role to Mira.",
           "distractorType": "too_absolute",
@@ -291,13 +343,21 @@
           "text": "He thinks Mira's black shoes are inappropriate for backstage work.",
           "distractorType": "wrong_connection",
           "whyWrong": "The shoes matter because she may need to appear onstage, not because they are a problem backstage."
-        },
-        {
-          "id": "a",
-          "text": "He sees Mira as a possible backup if the production needs someone to step into Lena's part again."
         }
       ],
-      "correct": "a"
+      "correct": "a",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Just in case ကို သတိထားမယ်",
+            "body": "Mr. Bell က Mira ကို မနက်ဖြန် black shoes ယူလာဖို့ ပြောတဲ့အခါ 'just in case' လို့ ထည့်ပြောတယ်။ ဒါက မဖြစ်မနေ role ရပြီဆိုတာမဟုတ်ဘဲ လိုအပ်လာနိုင်ရင် အသင့်ရှိဖို့ဆိုတဲ့ အဓိပ္ပာယ်ပါ။"
+          },
+          {
+            "title": "A ကို ထောက်ခံတဲ့ clue",
+            "body": "Mira က Lena အစား scene တွေကို အမှားနည်းနည်းနဲ့ ဖတ်နိုင်ခဲ့တယ်။ အဲဒီနောက် Mr. Bell က နောက်နေ့အတွက် အသင့်ပြင်ခိုင်းတယ်။ ဒါကြောင့် backup performer ဖြစ်နိုင်တယ်ဆိုတဲ့ A က အနီးစပ်ဆုံး inference ပါ။ B နဲ့ C က အမြဲတမ်း role ပြောင်းသွားသလို ပြောထားပြီး D က ဖိနပ်အကြောင်းကို မှားယွင်းချိတ်ဆက်ထားတယ်။"
+          }
+        ]
+      }
     },
     {
       "id": "q6",
@@ -331,14 +391,14 @@
       "learningStage": "independent",
       "options": [
         {
-          "id": "b",
-          "text": "Mira successfully read Lena's scenes with only small mistakes; afterward Mr. Bell told her to bring her black shoes the next day \"just in case.\""
-        },
-        {
           "id": "a",
           "text": "Mira joined as crew; she often got sawdust on her shoes.",
           "distractorType": "background_detail",
           "whyWrong": "These details establish Mira's original role but do not show that Mr. Bell now views her as a backup performer."
+        },
+        {
+          "id": "b",
+          "text": "Mira successfully read Lena's scenes with only small mistakes; afterward Mr. Bell told her to bring her black shoes the next day \"just in case.\""
         },
         {
           "id": "c",
@@ -353,7 +413,19 @@
           "whyWrong": "These details say more about Mira's behavior and expectations than about what Mr. Bell now considers possible."
         }
       ],
-      "correct": "b"
+      "correct": "b",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Evidence pair နှစ်ခုစလုံးလိုတယ်",
+            "body": "Claim က Mr. Bell ဟာ Mira ကို backup performer အဖြစ် စဉ်းစားလာတယ်ဆိုတာ။ ဒီလို judgement ဘာကြောင့်ပြောင်းနိုင်လဲ၊ ပြီးတော့ သူ့လုပ်ရပ်က ဘယ်လိုပြလဲဆိုတဲ့ detail နှစ်ခုကို တွဲရှာရမယ်။"
+          },
+          {
+            "title": "ဘာကြောင့် B မှန်လဲ",
+            "body": "Mira က Lena ရဲ့ scene တွေကို အမှားသေးသေးလေးတွေနဲ့ ကောင်းကောင်းဖတ်နိုင်ခဲ့တာက သူ့ကို ယုံကြည်စေမယ့်အကြောင်းရင်းပါ။ နောက်နေ့ black shoes ယူလာဖို့ 'just in case' ပြောတာက backup အဖြစ် စဉ်းစားထားနိုင်ကြောင်း ပြတယ်။ A က background ပဲဖြစ်တယ်။ C က အခြေအနေရဲ့အကြောင်းရင်းတွေကို ပြတယ်။ D က Mira ရဲ့လုပ်ရပ်ကို ပြပေမယ့် Mr. Bell ရဲ့အမြင်ကို တိုက်ရိုက်မထောက်ခံဘူး။"
+          }
+        ]
+      }
     }
   ],
   "contentMeta": {

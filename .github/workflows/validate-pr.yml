@@ -1,0 +1,64 @@
+name: Validate Chee Skool changes
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  content-and-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout proposed code
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check js/module.js
+          node --check js/check.js
+          node --check js/question-interactions.js
+          node --check scripts/module-interaction-regression.test.mjs
+          node --check scripts/validate-published-assets.mjs
+          node --check scripts/browser-smoke.mjs
+      - name: Validate source content
+        run: npm run content:validate
+      - name: Build canonical content
+        run: npm run content:build
+      - name: Check Burmese explanations and source/runtime alignment
+        run: |
+          node scripts/audit-myanmar-help.mjs > myanmar-coverage.json
+          node scripts/qa-myanmar-batches.mjs
+      - name: Run Node regression suite
+        run: npm test
+      - name: Build published site
+        run: node scripts/build-public.mjs
+      - name: Smoke-test real learner interactions in headless Chrome
+        run: node scripts/browser-smoke.mjs
+      - name: Audit page-local assets
+        run: node scripts/validate-published-assets.mjs
+      - name: Verify expected published resources
+        run: |
+          test -f dist/module.html
+          test -f dist/check.html
+          test -f dist/js/module.js
+          test -f dist/css/site.css
+          test -f dist/css/chee-system.css
+          test -f dist/data/generated/modules/set-rla-summary-active-methods-v1.json
+      - name: Upload diagnostic coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: myanmar-coverage
+          path: myanmar-coverage.json
+          if-no-files-found: ignore
