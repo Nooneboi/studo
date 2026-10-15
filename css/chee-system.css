@@ -370,3 +370,27 @@ hr,
     box-sizing: border-box;
   }
 }
+
+/* Narrow study layouts keep passage and question in the same document.
+   In-page links shorten travel without hiding evidence or resetting answers. */
+.study-mobile-jump { display: none; }
+@media (max-width: 760px) {
+  body.mainidea-v22-runtime .study-mobile-jump {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 0;
+    color: var(--chee-link);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  body.mainidea-v22-runtime #study-passage,
+  body.mainidea-v22-runtime #study-question {
+    scroll-margin-top: 16px;
+  }
+  body.mainidea-v22-runtime .study-mobile-jump-back {
+    margin-bottom: 12px;
+  }
+}

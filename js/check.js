@@ -156,8 +156,9 @@ function renderQuestion() {
       <span>Independent</span><span>No hints</span><span>Answers after finishing</span>
     </section>
     <section class="study-workspace check-workspace${hasPassage ? "" : " no-passage"}">
-      <div>${hasPassage ? passageHtml(currentModule, q, answers[q.id] || "") : ""}</div>
-      <article class="question-panel" aria-label="Skill Check question">
+      <div id="study-passage">${hasPassage ? `<a class="study-mobile-jump study-mobile-jump-forward" href="#study-question">Go to question ↓</a>` : ""}${hasPassage ? passageHtml(currentModule, q, answers[q.id] || "") : ""}</div>
+      <article class="question-panel" id="study-question" aria-label="Skill Check question">
+        ${hasPassage ? `<a class="study-mobile-jump study-mobile-jump-back" href="#study-passage">↑ Back to passage</a>` : ""}
         <div class="question-stage">
           <div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${currentModule.questions.length}</span></div>
           <div class="q-prompt">${promptHtml(q)}</div>

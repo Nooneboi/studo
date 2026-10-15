@@ -96,9 +96,21 @@ try {
     await evalJs("document.querySelector('.interaction-check').click()");
     await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'guided explanation after submit');
   }
-  await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+  await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:false});
+  await call('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:1});
   await navigate('set-rla-summary-active-methods-v1','q2');
   assert.equal(await evalJs("document.querySelectorAll('.answer-radio').length"),4);
+  // Mobile learner can jump between passage and question without changing answer state.
+  assert.equal(await evalJs("Boolean(document.querySelector('#study-passage') && document.querySelector('#study-question'))"),true);
+  assert.equal(await evalJs("getComputedStyle(document.querySelector('.study-mobile-jump-forward')).display !== 'none'"),true);
+  await evalJs("document.querySelector('.study-mobile-jump-forward').click()");
+  assert.equal(await evalJs("location.hash"),'#study-question');
+  await evalJs("document.querySelector('.study-mobile-jump-back').click()");
+  assert.equal(await evalJs("location.hash"),'#study-passage');
+  await evalJs("document.querySelector('.answer-radio[value=a]').click()");
+  assert.equal(await evalJs("document.querySelector('.answer-radio[value=a]').checked"),true);
+  await evalJs("document.querySelector('.study-mobile-jump-forward').click()");
+  assert.equal(await evalJs("document.querySelector('.answer-radio[value=a]').checked"),true);
   // Full unit entry: Arguments are grouped by unit rather than direct skill page.
   await call('Page.navigate', {url:origin+'/skill.html?track=arguments&domain=argument-analysis&unit=claims-argument-structure'});
   await waitFor(()=>evalJs("Boolean(document.querySelector('#skill-view h1')?.textContent.includes('Claims'))"),'Arguments unit skill page');
