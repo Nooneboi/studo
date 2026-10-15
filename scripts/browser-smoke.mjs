@@ -172,6 +172,10 @@ try {
           bodyFont:getComputedStyle(document.body).fontFamily,
           headingFont:headings[0] ? getComputedStyle(headings[0]).fontSize : null };
       })()`);
+      if (mobile && ['home','practice','resources','skill'].includes(name)) {
+        const extraNav=await evalJs("Boolean(document.querySelector('.mobile-primary-nav'))");
+        assert.equal(extraNav,false,'Duplicate fixed navigation on '+name+' '+size);
+      }
       visualReport.push({page:name,size,...metrics});
       const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
       fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
