@@ -44,6 +44,20 @@ const Store = {
     this._write(this._key(quizId, "interaction-drafts"), drafts);
   },
 
+  getGuidedRetries(quizId) {
+    return this._read(this._key(quizId, "guided-retries"), {});
+  },
+  setGuidedRetry(quizId, questionId) {
+    const retries = this.getGuidedRetries(quizId);
+    retries[questionId] = true;
+    this._write(this._key(quizId, "guided-retries"), retries);
+  },
+  clearGuidedRetry(quizId, questionId) {
+    const retries = this.getGuidedRetries(quizId);
+    delete retries[questionId];
+    this._write(this._key(quizId, "guided-retries"), retries);
+  },
+
   getDeleted(quizId) {
     return this._read(this._key(quizId, "deleted"), []);
   },
@@ -81,7 +95,7 @@ const Store = {
   },
 
   resetQuiz(quizId) {
-    ["answers", "deleted", "notes", "highlights", "passage-highlights", "interaction-drafts"].forEach((suffix) =>
+    ["answers", "deleted", "notes", "highlights", "passage-highlights", "interaction-drafts", "guided-retries"].forEach((suffix) =>
       (window.StudoSafeStorage ? window.StudoSafeStorage.remove(this._key(quizId, suffix)) : localStorage.removeItem(this._key(quizId, suffix)))
     );
   },
