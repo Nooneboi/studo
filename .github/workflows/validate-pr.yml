@@ -45,6 +45,13 @@ jobs:
         run: node scripts/build-public.mjs
       - name: Smoke-test real learner interactions in headless Chrome
         run: node scripts/browser-smoke.mjs
+      - name: Upload cross-device visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learner-visual-audit
+          path: visual-audit/
+          if-no-files-found: ignore
       - name: Audit page-local assets
         run: node scripts/validate-published-assets.mjs
       - name: Verify expected published resources

@@ -135,7 +135,73 @@ try {
     const width = await evalJs("({screen:document.documentElement.clientWidth, document:document.documentElement.scrollWidth})");
     assert.ok(width.document <= width.screen + 2, page+' has horizontal overflow at 390px: '+JSON.stringify(width));
   }
-  console.log('PASS: interactions, unit journeys, Skill Check isolation and mobile fourteen-page navigation audit');
+  // Capture visual evidence at actual desktop, tablet and mobile viewports.
+  const auditDir = path.resolve('visual-audit');
+  fs.mkdirSync(auditDir, {recursive: true});
+  const visualCases = [
+    ['home', 'index.html', 'body'],
+    ['practice', 'practice.html', '.practice-main-wide'],
+    ['resources', 'resources.html', 'main'],
+    ['skill', 'skill.html?track=reading&domain=core-meaning&skill=R1.2', '#skill-view'],
+    ['lesson', 'module.html?file=generated%2Fmodules%2Fset-rla-inference-active-methods-v1.json&question=q3', '.study-workspace'],
+    ['check', 'check.html?file=generated%2Fmodules%2Fset-rla-check-claims-structure-v1.json&return=skill.html%3Ftrack%3Darguments%26domain%3Dargument-analysis%26unit%3Dclaims-argument-structure', '.check-workspace'],
+  ];
+  const visualReport = [];
+  for (const [size, width, height, mobile] of [['desktop',1280,900,false],['tablet',768,1024,true],['mobile',390,844,true]]) {
+    // A mobile:true viewport can retain Chrome's 768px minimum layout width.
+    // Use exact CSS viewport dimensions for responsive breakpoints; enable touch separately.
+    await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
+    await call('Emulation.setTouchEmulationEnabled',{enabled:mobile,maxTouchPoints:1});
+    for (const [name,url,selector] of visualCases) {
+      await call('Page.navigate',{url:origin+'/'+url});
+      await waitFor(()=>evalJs("Boolean(document.readyState === 'complete' && document.querySelector("+JSON.stringify(selector)+"))"),name+' '+size+' ready');
+      await evalJs('window.scrollTo(0, 0)');
+      await delay(180);
+      const metrics = await evalJs(`(() => {
+        const main=document.querySelector(${JSON.stringify(selector)});
+        const rect=main?.getBoundingClientRect();
+        const root=document.documentElement;
+        const headings=[...document.querySelectorAll('h1')].filter(e=>e.getBoundingClientRect().width>0);
+        const tappable=[...document.querySelectorAll('a[href],button,input,select,textarea')].filter(e=>{
+          const r=e.getBoundingClientRect(); const st=getComputedStyle(e);
+          return r.width>0 && r.height>0 && st.visibility!=='hidden' && st.display!=='none';
+        });
+        return {title:document.title, viewport:root.clientWidth, layoutViewport:innerWidth, scrollWidth:root.scrollWidth,
+          horizontalOverflow:root.scrollWidth>root.clientWidth+2,
+          mainWidth:Math.round(rect?.width||0),
+          missingMain:!rect||rect.width<100,
+          headings:headings.length,
+          tinyControls:tappable.filter(e=>{const r=e.getBoundingClientRect();return r.height<24 || r.width<24}).length,
+          controlCount:tappable.length,
+          bodyFont:getComputedStyle(document.body).fontFamily,
+          headingFont:headings[0] ? getComputedStyle(headings[0]).fontSize : null };
+      })()`);
+      if (mobile && ['home','practice','resources','skill'].includes(name)) {
+        const extraNav=await evalJs("Boolean(document.querySelector('.mobile-primary-nav'))");
+        assert.equal(extraNav,false,'Duplicate fixed navigation on '+name+' '+size);
+      }
+      if (size === 'mobile' && name === 'resources') {
+        const shortLinks=await evalJs("Array.from(document.querySelectorAll('.resource-file-link')).filter(a=>a.getBoundingClientRect().height<40).length");
+        if (shortLinks) {
+          const styleEvidence=await evalJs("(() => {const e=document.querySelector('.resource-file-link');const s=getComputedStyle(e);return {height:e?.getBoundingClientRect().height,display:s.display,minHeight:s.minHeight,padding:s.padding,width:innerWidth,css:document.querySelector('link[href=\\\"css/chee-system.css\\\"]')?.href}})()");
+          console.error('Resource touch target computed styles',styleEvidence);
+        }
+        assert.equal(shortLinks,0,'Resource links should have usable mobile tap targets');
+      }
+      assert.equal(metrics.layoutViewport,width,name+' '+size+' CSS viewport mismatch');
+      visualReport.push({page:name,size,...metrics});
+      const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
+      fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
+    }
+  }
+  fs.writeFileSync(path.join(auditDir,'metrics.json'),JSON.stringify(visualReport,null,2)+'\\n');
+  const overflows=visualReport.filter(x=>x.horizontalOverflow||x.missingMain);
+  if(overflows.length) {
+    console.error('Responsive audit detected layout problems:',JSON.stringify(overflows));
+    process.exitCode=1;
+  }
+  console.log('Visual audit captured',visualReport.length,'viewport/page combinations;',overflows.length,'overflow or missing-main failures');
+  console.log('PASS: interactions, unit journeys, Skill Check isolation, mobile fourteen-page navigation audit');
 
 
 } finally {
