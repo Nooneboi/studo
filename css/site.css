@@ -9251,6 +9251,13 @@ body.focus-body .confidence-inline {
    Mirrors the approved review file's spacing, type, color, and placement.
    ========================================================================== */
 .mainidea-v22-chrome { display:none; }
+body.mainidea-v22-runtime .mainidea-v22-nav a[aria-disabled="true"] {
+  color:var(--mi-muted) !important;
+  opacity:.5;
+  text-decoration:none !important;
+  cursor:not-allowed;
+}
+
 
 body.mainidea-v22-runtime {
   --mi-ink:#111;
