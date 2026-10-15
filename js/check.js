@@ -34,9 +34,13 @@ async function initCheck() {
     return renderRecovery("This Skill Check could not be loaded.");
   }
   const primarySkillId = currentModule?.contentMeta?.curriculum?.primarySkillId || currentModule?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2" && !mainIdeaRequested) {
-    document.body.classList.add("mainidea-v22-runtime");
-    await setupMainIdeaV22Chrome();
+  // Use the same assessment workspace across skills, but retain the
+  // independently graded Skill Check runtime and delayed feedback.
+  document.body.classList.add("mainidea-v22-runtime");
+  if (primarySkillId === "R1.2") {
+    if (!mainIdeaRequested) await setupMainIdeaV22Chrome();
+  } else {
+    await setupSkillCheckChrome(primarySkillId);
   }
 
   const roles = currentModule?.contentMeta?.curriculum?.deliveryRoles || [];
@@ -91,6 +95,49 @@ function mainIdeaRouteConfig(routes) {
     checkFile: checkSet.file,
     returnHref: location.returnHref,
   };
+}
+
+async function setupSkillCheckChrome(primarySkillId) {
+  const learn = document.getElementById("mainidea-v22-learn");
+  const practice = document.getElementById("mainidea-v22-practice");
+  const check = document.getElementById("mainidea-v22-check");
+  const name = document.getElementById("mainidea-v22-skill-name");
+  if (!learn || !practice || !check) return;
+
+  let routes = null;
+  try { routes = CurriculumRoutes.build(await Data.loadCurriculum()); } catch (_) {}
+  const location = routes?.skillLocation?.(primarySkillId);
+  const skill = location?.skill;
+  if (name) name.textContent = skill?.label ||
+    currentModule?.contentMeta?.curriculum?.topicLabel ||
+    currentModule?.title || "Skill Check";
+
+  const sets = skill?.sets || [];
+  const first = sets.find(set => ["full", "supported"].includes(set.curriculum?.assistanceLevel)) || sets[0];
+  const second = sets.find(set => set.file !== first?.file);
+  const checkSet = (skill?.checks || []).find(set => set.file === requestedFile);
+  const destination = location?.returnHref || returnHref;
+  const links = [
+    [learn, first?.file ? moduleRoute(first.file, destination) : null],
+    [practice, second?.file ? moduleRoute(second.file, destination) : null],
+    [check, checkSet?.file ? checkRoute(checkSet.file, destination) : null],
+  ];
+  for (const [link, href] of links) {
+    link.classList.remove("active");
+    link.removeAttribute("aria-current");
+    if (href) {
+      link.href = href;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("tabindex");
+    } else {
+      link.removeAttribute("href");
+      link.setAttribute("aria-disabled", "true");
+      link.setAttribute("tabindex", "-1");
+    }
+  }
+  document.body.classList.add("mainidea-v22-check");
+  check.classList.add("active");
+  check.setAttribute("aria-current", "page");
 }
 
 function moduleRoute(file, returnHref) {
@@ -388,7 +435,7 @@ function renderResults(results, correct) {
       </section>
 
       <div class="check-result-actions">
-        <a class="btn" href="${escapeAttr(returnHref)}">Back to Main Idea</a>
+        <a class="btn" href="${escapeAttr(returnHref)}">Back to skill</a>
       </div>
 
       ${misses.length ? `
