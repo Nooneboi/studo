@@ -218,13 +218,16 @@ test('practice reset clears transient confidence UI and return links stay same-o
   assert.doesNotMatch(moduleJs, /!\/\^\(\?:https\?:\)\?\\\/\\\//, 'the old scheme blacklist should not be used as the return-link safety boundary');
 });
 
-test('Mock landing keeps the same primary learner navigation as the rest of Studo', () => {
+test('Practice Tests landing uses the approved three-link learner navigation', () => {
   const html = fs.readFileSync(path.join(root, 'quiz.html'), 'utf8');
-  for (const [href, label] of [['index.html','Home'],['practice.html','Practice'],['train.html','Train'],['quiz.html','Mock'],['progress.html','Progress'],['resources.html','Resources']]) {
-    assert.match(html, new RegExp(`<a href="${href.replace('.', '\\.') }"[^>]*>${label}<\\/a>`), `quiz.html should include ${label}`);
+  const nav = html.match(/<nav\\b[^>]*class="site-nav"[^>]*>[\\s\\S]*?<\\/nav>/)?.[0];
+  assert.ok(nav, 'Practice Tests should expose main navigation');
+  for (const [href, label] of [['index.html','Home'], ['quiz.html','Practice Tests'], ['resources.html','Resources']]) {
+    assert.ok(nav.includes('href="'+href+'"'), 'Missing '+href);
+    assert.ok(nav.includes('>'+label+'</a>'), 'Missing '+label);
   }
+  assert.equal((nav.match(/<a\\b/g) || []).length, 3, 'Main navigation must remain three links');
 });
-
 
 test('Alpha polish gives search placement and Passage Practice spacing a clearly visible desktop change', () => {
   const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
