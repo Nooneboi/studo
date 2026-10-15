@@ -142,5 +142,8 @@ try {
   try {socket?.close();} catch {}
   if(child?.pid) child.kill('SIGKILL');
   server.close();
-  fs.rmSync(profile,{recursive:true,force:true});
+  // Chrome may still flush profile files briefly after process termination.
+  // Retry cleanup instead of failing an otherwise successful browser audit.
+  try { fs.rmSync(profile,{recursive:true,force:true,maxRetries:12,retryDelay:150}); }
+  catch (error) { console.warn('Chrome temp cleanup warning:', error.message); }
 }
