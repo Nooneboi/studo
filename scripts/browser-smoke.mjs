@@ -71,6 +71,9 @@ try {
   await call('Page.enable');
   await call('Runtime.enable');
   await navigate('set-rla-args-text-data-formats');
+  assert.equal(await evalJs("document.body.classList.contains('mainidea-v22-runtime')"),true);
+  assert.notEqual(await evalJs("document.getElementById('mainidea-v22-skill-name').textContent"),'Main Idea');
+  assert.equal(await evalJs("getComputedStyle(document.querySelector('.mainidea-v22-chrome')).display"),'block');
   assert.equal(await evalJs("document.querySelectorAll('.answer-radio').length"),4);
   await evalJs("document.querySelector('.answer-radio[value=a]').click()");
   await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'Myanmar help after answer');
@@ -84,6 +87,8 @@ try {
   await waitFor(()=>evalJs("document.querySelector('.q-prompt')?.textContent.includes('How does the table')"),'Next question');
   // Guided mode has explicit submission; do not reveal the explanation on selection alone.
   await navigate('set-rla-inference-active-methods-v1','q3');
+  assert.equal(await evalJs("document.body.classList.contains('mainidea-v22-runtime')"),true);
+  assert.notEqual(await evalJs("document.getElementById('mainidea-v22-skill-name').textContent"),'Main Idea');
   const guided=await evalJs("Boolean(document.querySelector('.interaction-check'))");
   if(guided){
     await evalJs("document.querySelector('.answer-radio[value=a]').click()");
