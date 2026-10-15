@@ -96,24 +96,35 @@ try {
   assert.equal(await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').getAttribute('aria-pressed')"),'true');
   assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
   assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
-  await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=inference]').click()");
+  await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=guess]').click()");
   await evalJs("document.querySelector('[data-classify-item=i3] [data-choice-zone=guess]').click()");
   await evalJs("document.querySelector('[data-classify-item=i4] [data-choice-zone=stated]').click()");
   assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),false);
   await evalJs("document.querySelector('.interaction-check').click()");
-  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'sorting explanation after submission');
+  assert.equal(await evalJs("Boolean(document.querySelector('.guided-retry-feedback'))"),true);
+  assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
+  assert.equal(await evalJs("document.getElementById('next-question').disabled"),true);
+  assert.equal(await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=guess]').getAttribute('aria-pressed')"),'true');
+  await evalJs("document.querySelector('[data-classify-item=i2] [data-choice-zone=inference]').click()");
+  await evalJs("document.querySelector('.interaction-check').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'sorting explanation after successful retry');
   assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
 
   // Select text: highlighted passage target is chosen before Check but not graded early.
   await navigate('set-rla-inference-active-methods-v1','q2');
   assert.ok(await evalJs("document.querySelectorAll('[data-select-target]').length") >= 2);
   assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
-  await evalJs("document.querySelector('[data-select-target=s1]').click()");
-  assert.equal(await evalJs("document.querySelector('[data-select-target=s1]').getAttribute('aria-pressed')"),'true');
+  await evalJs("document.querySelector('[data-select-target=s2]').click()");
+  assert.equal(await evalJs("document.querySelector('[data-select-target=s2]').getAttribute('aria-pressed')"),'true');
   assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),false);
   assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
   await evalJs("document.querySelector('.interaction-check').click()");
-  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'selection explanation after Check');
+  assert.equal(await evalJs("Boolean(document.querySelector('.guided-retry-feedback'))"),true);
+  assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
+  assert.equal(await evalJs("document.getElementById('next-question').disabled"),true);
+  await evalJs("document.querySelector('.interaction-check').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'selection explanation after second incorrect attempt');
+  assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
 
   // Evidence-based choice: wrong selection still shows a teachable explanation.
   await navigate('set-rla-supporting-details-active-methods-v1','q3');
