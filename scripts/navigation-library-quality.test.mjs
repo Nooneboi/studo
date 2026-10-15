@@ -220,7 +220,8 @@ test('practice reset clears transient confidence UI and return links stay same-o
 
 test('Practice Tests landing uses the approved three-link learner navigation', () => {
   const html = fs.readFileSync(path.join(root, 'quiz.html'), 'utf8');
-  const nav = html.match(/<nav\\b[^>]*class="site-nav"[^>]*>[\\s\\S]*?<\\/nav>/)?.[0];
+  const navStart = html.indexOf('<nav class="site-nav"');
+  const nav = navStart >= 0 ? html.slice(navStart, html.indexOf('</nav>', navStart) + 6) : '';
   assert.ok(nav, 'Practice Tests should expose main navigation');
   for (const [href, label] of [['index.html','Home'], ['quiz.html','Practice Tests'], ['resources.html','Resources']]) {
     assert.ok(nav.includes('href="'+href+'"'), 'Missing '+href);
