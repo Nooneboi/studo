@@ -107,7 +107,11 @@ function renderCanonicalLearnerHeader() {
 
 function renderCanonicalMobileNavigation() {
   const path = currentPageName();
-  if (FOCUS_PAGES.has(path) || document.querySelector(".mobile-primary-nav")) return;
+  // Learner pages already expose the same three links in their visible top
+  // header. A second fixed bottom menu duplicates controls and obscures text.
+  if (FOCUS_PAGES.has(path) ||
+      document.querySelector(".mobile-primary-nav") ||
+      document.querySelector("header.site-header nav.simple-nav, header.site-header nav.site-nav")) return;
 
   const active = learnerNavKey(path);
   const nav = document.createElement("nav");
