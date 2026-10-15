@@ -152,7 +152,8 @@ try {
     for (const [name,url,selector] of visualCases) {
       await call('Page.navigate',{url:origin+'/'+url});
       await waitFor(()=>evalJs("Boolean(document.readyState === 'complete' && document.querySelector("+JSON.stringify(selector)+"))"),name+' '+size+' ready');
-      await delay(160);
+      await evalJs('window.scrollTo(0, 0)');
+      await delay(180);
       const metrics = await evalJs(`(() => {
         const main=document.querySelector(${JSON.stringify(selector)});
         const rect=main?.getBoundingClientRect();
