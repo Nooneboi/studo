@@ -99,7 +99,10 @@ try {
   await navigate('set-rla-inference-active-methods-v1','q1');
   assert.equal(await evalJs("document.querySelectorAll('[data-classify-item]').length"),4);
   assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
-  await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').click()");
+  await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').focus()");
+  await call('Input.dispatchKeyEvent',{type:'keyDown',key:'Enter',code:'Enter',windowsVirtualKeyCode:13});
+  await call('Input.dispatchKeyEvent',{type:'keyUp',key:'Enter',code:'Enter',windowsVirtualKeyCode:13});
+  assert.equal(await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').getAttribute('aria-pressed')"),'true');
   assert.equal(await evalJs("document.querySelector('[data-classify-item=i1] [data-choice-zone=stated]').getAttribute('aria-pressed')"),'true');
   assert.equal(await evalJs("document.querySelector('.interaction-check').disabled"),true);
   assert.equal(await evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),false);
