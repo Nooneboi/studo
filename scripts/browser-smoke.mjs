@@ -270,7 +270,7 @@ try {
     ['check', 'check.html?file=generated%2Fmodules%2Fset-rla-check-claims-structure-v1.json&return=skill.html%3Ftrack%3Darguments%26domain%3Dargument-analysis%26unit%3Dclaims-argument-structure', '.check-workspace'],
   ];
   const visualReport = [];
-  for (const [size, width, height, mobile] of [['desktop',1280,900,false],['tablet',768,1024,true],['mobile',390,844,true]]) {
+  for (const [size, width, height, mobile] of [['desktop',1280,900,false],['tablet',768,1024,true],['mobile',390,844,true],['narrow',320,720,true]]) {
     // A mobile:true viewport can retain Chrome's 768px minimum layout width.
     // Use exact CSS viewport dimensions for responsive breakpoints; enable touch separately.
     await call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
@@ -303,7 +303,7 @@ try {
         const extraNav=await evalJs("Boolean(document.querySelector('.mobile-primary-nav'))");
         assert.equal(extraNav,false,'Duplicate fixed navigation on '+name+' '+size);
       }
-      if (size === 'mobile' && name === 'resources') {
+      if ((size === 'mobile' || size === 'narrow') && name === 'resources') {
         const shortLinks=await evalJs("Array.from(document.querySelectorAll('.resource-file-link')).filter(a=>a.getBoundingClientRect().height<40).length");
         if (shortLinks) {
           const styleEvidence=await evalJs("(() => {const e=document.querySelector('.resource-file-link');const s=getComputedStyle(e);return {height:e?.getBoundingClientRect().height,display:s.display,minHeight:s.minHeight,padding:s.padding,width:innerWidth,css:document.querySelector('link[href=\\\"css/chee-system.css\\\"]')?.href}})()");
@@ -312,6 +312,10 @@ try {
         assert.equal(shortLinks,0,'Resource links should have usable mobile tap targets');
       }
       assert.equal(metrics.layoutViewport,width,name+' '+size+' CSS viewport mismatch');
+      if (size === 'narrow' && (name === 'lesson' || name === 'check')) {
+        const jumps=await evalJs("Array.from(document.querySelectorAll('.study-mobile-jump')).filter(e=>getComputedStyle(e).display!=='none' && e.getBoundingClientRect().height>=40).length");
+        assert.ok(jumps>=2,'Accessible passage/question navigation on 320px '+name);
+      }
       visualReport.push({page:name,size,...metrics});
       const result=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
       fs.writeFileSync(path.join(auditDir,name+'-'+size+'.png'),Buffer.from(result.data,'base64'));
