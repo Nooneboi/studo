@@ -17,7 +17,7 @@ for (const file of files) {
     const flags = [];
     if (!hint) flags.push('missing-hint');
     if (hint && hint.length < 65) flags.push('short-hint-review');
-    if (hint && /^\s*(?:choose|select|pick|the answer is|correct answer|option [a-d])\b/i.test(hint)) flags.push('possible-answer-cue');
+    if (hint && /\\b(?:the correct answer is|the answer is|choose (?:option|choice) [a-d]|select (?:option|choice) [a-d]|pick (?:option|choice) [a-d])\\b/i.test(hint)) flags.push('possible-answer-cue');
     if (hint && /\b(?:option|choice)\s+[a-d]\b/i.test(hint)) flags.push('names-option');
     if (flags.length) rows.push({file, questionId:q.id, type:q.type, flags});
   }
