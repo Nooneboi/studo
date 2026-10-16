@@ -83,7 +83,19 @@
       "explanation": {
         "answer": "i1 and i3 are directly stated; i2 and i4 change what the notice says.",
         "whyCorrect": "The notice gives an end-of-shift deadline and a before-3-p.m. overnight request rule. Contractors are limited to on-site use, and only thermal cameras have the stated training requirement.",
-        "quickTip": "Do not reward an answer for sounding reasonable. Ask whether the text actually says it."
+        "quickTip": "Do not reward an answer for sounding reasonable. Ask whether the text actually says it.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "စာသားအတိုင်း ဟုတ်မဟုတ် စစ်မယ်",
+              "body": "ဒီမေးခွန်းက စည်းကမ်းစာထဲမှာ တိုက်ရိုက်ရေးထားတဲ့အချက်နဲ့ ကိုယ့်ဘာသာ ထပ်ယူဆထားတဲ့အချက်ကို ခွဲခိုင်းတာပါ။ i1 မှာ ပုံမှန်ငှားထားတဲ့ပစ္စည်းကို အလုပ်ချိန်မပြီးခင် ပြန်အပ်ရမယ်လို့ ပြောထားတယ်။ i3 မှာ ညအိပ်ယူမယ့် request ကို ညနေ ၃ နာရီမတိုင်မီ တင်ရမယ်လို့ ရေးထားတယ်။"
+            },
+            {
+              "title": "စည်းကမ်းကို ချဲ့မယူဆရဘူး",
+              "body": "i2 က contractor တစ်ယောက် ပစ္စည်းကို အိမ်ယူသွားခွင့်ရှိတယ်လို့ ထပ်ထည့်ထားပေမယ့် notice က အလုပ်နေရာမှာပဲ သုံးခွင့်ပြုတယ်။ i4 မှာလည်း ပစ္စည်းအားလုံး training လိုတယ်လို့ ပြောထားပေမယ့် training စည်းကမ်းက thermal camera အတွက်ပဲ ဖြစ်တယ်။ 'တချို့' ကို 'အားလုံး' လို့ ပြောင်းလိုက်ရင် အဓိပ္ပာယ်မတူတော့ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
       "hint": "Compare each statement to the notice one word at a time. Highlight its deadline, permission, or requirement, then check whether the statement quietly adds a stronger word such as 'every' or changes who the rule applies to."
@@ -131,7 +143,19 @@
       "explanation": {
         "answer": "A team supervisor or shift lead may approve the request.",
         "whyCorrect": "That sentence answers the exact target: who may approve the request. The nearby sentences give the deadline, return time, or contractor responsibility instead.",
-        "quickTip": "Turn the question into a target such as who, when, where, or why, then find the sentence that matches that target."
+        "quickTip": "Turn the question into a target such as who, when, where, or why, then find the sentence that matches that target.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Who ကိုရှာမယ်",
+              "body": "မေးခွန်းက overnight checkout ကို ဘယ်သူအတည်ပြုပေးနိုင်သလဲဆိုတာ မေးတာပါ။ အချိန်ကန့်သတ်ချက်ကို ရှာနေတာ မဟုတ်ဘူး။ ဒါကြောင့် လူရဲ့တာဝန် သို့မဟုတ် ရာထူးကို ဖော်ပြတဲ့ စာကြောင်းကို ရွေးရမယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် s2 လဲ",
+              "body": "s2 မှာ team supervisor သို့မဟုတ် shift lead က request ကို approve လုပ်နိုင်တယ်လို့ တိုက်ရိုက်ပြောထားတယ်။ s1 က request တင်ရမယ့်အချိန်၊ s3 က ပြန်အပ်ရမယ့်အချိန်၊ s4 က contractor အတွက် တာဝန်ယူရသူအကြောင်းပါ။ နီးစပ်တဲ့အကြောင်းအရာဖြစ်ပေမယ့် မေးထားတဲ့ 'ဘယ်သူ approve လုပ်နိုင်လဲ' ဆိုတာကို မဖြေဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
       "hint": "The question asks for a person with approval authority. Look for a sentence that names a role able to authorize a request; a request deadline and a return deadline answer different questions."
@@ -182,7 +206,19 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "The notice directly says standard checkouts must be returned before the employee's shift ends unless overnight use is approved.",
-        "quickTip": "A number or time can be true in the passage and still answer the wrong question. Match the detail to the exact subject."
+        "quickTip": "A number or time can be true in the passage and still answer the wrong question. Match the detail to the exact subject.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ပုံမှန်စည်းကမ်းကို အရင်ကြည့်မယ်",
+              "body": "Standard checkout ကို ဘယ်အချိန်ပြန်အပ်ရမလဲဆိုတာ မေးထားတယ်။ Notice ထဲမှာ ပုံမှန်ဆို အလုပ်ချိန်မပြီးခင် ပြန်အပ်ရမယ်လို့ ရေးထားတာကြောင့် B မှန်တယ်။"
+            },
+            {
+              "title": "အချိန်တွေကို မရောထွေးမိစေနဲ့",
+              "body": "A ရဲ့ 3 p.m. က overnight request တင်ရမယ့်အချိန်ပါ။ C ရဲ့ နောက်အလုပ်နေ့ 10 a.m. က overnight approval ရထားသူတွေအတွက်ပဲ။ D ရဲ့ ခြောက်ပတ်က pilot ကြာချိန်ဖြစ်ပြီး checkout ပြန်အပ်ရမယ့်အချိန်မဟုတ်ဘူး။ Passage ထဲမှာ တကယ်ပါတဲ့အချိန်တိုင်းက ဒီမေးခွန်းရဲ့အဖြေ မဟုတ်နိုင်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -229,7 +265,19 @@
       "explanation": {
         "answer": "unless an overnight checkout has been approved",
         "whyCorrect": "The word unless introduces the condition that changes the normal end-of-shift rule. The other phrases give the normal deadline or times connected to the overnight process.",
-        "quickTip": "Qualifier words such as unless, only, before, after, and at least can change the exact meaning of a rule."
+        "quickTip": "Qualifier words such as unless, only, before, after, and at least can change the exact meaning of a rule.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Exception ကို ပြတဲ့စကားလုံး",
+              "body": "ပုံမှန် deadline က shift မပြီးခင်ပါ။ ဒါပေမယ့် အထူးခွင့်ပြုချက်ရထားရင် စည်းကမ်းပြောင်းနိုင်တယ်။ စာထဲမှာ 'unless' ဆိုတဲ့စကားလုံးက အဲဒီခြွင်းချက်ကို စတင်ဖော်ပြတယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် p2 လဲ",
+              "body": "'unless an overnight checkout has been approved' ဆိုတာက ပုံမှန်ပြန်အပ်ရမယ့်အချိန်ကို ပြောင်းပေးတဲ့ အခြေအနေကို တိုက်ရိုက်ဖော်ပြထားလို့ p2 မှန်တယ်။ p1 က ပုံမှန် deadline ပါ။ p3 က request တင်ရမယ့်အချိန်၊ p4 က ခွင့်ပြုပြီးနောက် အကျုံးဝင်တဲ့ return time ဖြစ်တယ်။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -279,7 +327,19 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "Choice B preserves both parts of the stated rule: training comes before the first thermal-camera checkout, and it does not need to be repeated later.",
-        "quickTip": "A good paraphrase changes the wording without changing the limits or conditions."
+        "quickTip": "A good paraphrase changes the wording without changing the limits or conditions.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Paraphrase ဆိုတာ စည်းကမ်းမပြောင်းရဘူး",
+              "body": "မူရင်းစာကြောင်းကို စကားလုံးပြောင်းရေးနိုင်ပေမယ့် ဘယ်သူ၊ ဘယ်ပစ္စည်း၊ ဘယ်အချိန်ဆိုတဲ့ ကန့်သတ်ချက်တွေ မပြောင်းရဘူး။ Thermal camera ကို ပထမဆုံးယူမသုံးခင် မိနစ် ၂၀ training ပြီးထားရမယ်။ နောက်တစ်ခါထပ်ငှားရင် ပြန်တက်စရာမလိုဘူး။"
+            },
+            {
+              "title": "ရွေးချယ်စရာတွေကို နှိုင်းယှဉ်မယ်",
+              "body": "B မှာ အဲဒီအချက်နှစ်ခုလုံးကို မပြောင်းဘဲ ထားလို့ မှန်တယ်။ A က အကြိမ်တိုင်း training ပြန်တက်ရမယ်လို့ ပြောင်းထားတယ်။ C က contractor တွေပဲ လိုတယ်လို့ ကန့်သတ်ထားတယ်။ D က ပစ္စည်းအားလုံးအတွက် လိုတယ်လို့ ချဲ့ပြောထားတယ်။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     },
@@ -329,7 +389,19 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "Rina met the stated request deadline and received approval from an allowed approver, so the overnight rule applies: the checkout lasts until 10 a.m. on the next workday.",
-        "quickTip": "For a rule with an exception, verify that the condition is met before applying the exception's deadline."
+        "quickTip": "For a rule with an exception, verify that the condition is met before applying the exception's deadline.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "စည်းကမ်းနဲ့ ခြွင်းချက်ကို အဆင့်လိုက်စစ်မယ်",
+              "body": "Rina က request ကို 2:45 p.m. မှာတင်ထားလို့ 3 p.m. မတိုင်ခင်ဆိုတဲ့ စည်းကမ်းနဲ့ ကိုက်တယ်။ Shift lead ကလည်း approve လုပ်ထားတယ်။ ဒါကြောင့် ပုံမှန် checkout deadline မဟုတ်ဘဲ overnight rule ကို သုံးရမယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် B လဲ",
+              "body": "Overnight approval ရရင် နောက်အလုပ်နေ့ 10 a.m. မတိုင်ခင် ပြန်အပ်ရတာဖြစ်လို့ B မှန်တယ်။ A က approval မရထားတဲ့ ပုံမှန် checkout အတွက်ပါ။ C က request တင်ရမယ့် deadline ကို return time နဲ့ ရောထားတယ်။ D က pilot ကြာချိန်ကို ပစ္စည်းပြန်အပ်ချိန်နဲ့ မဆိုင်ဘဲ ချိတ်ထားတာ။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     }
