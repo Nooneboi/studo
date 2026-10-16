@@ -362,6 +362,21 @@ function diagnosticBucket(question) {
 
 function nextStepFromResults(results) {
   const misses = results.filter((item) => !item.correct);
+  const skillId = currentModule?.contentMeta?.curriculum?.primarySkillId
+    || currentModule?.questions?.[0]?.skill?.id || "";
+  // The detailed reporting buckets below were authored for Main Idea only.
+  // Other skills must receive accurate, non-diagnostic guidance rather than
+  // unsupported Main Idea-specific advice.
+  if (skillId !== "R1.2") {
+    if (!misses.length) return {
+      title: "Move on.",
+      body: "All questions were answered correctly. Continue with the next lesson or review this skill in mixed practice."
+    };
+    return {
+      title: "Review your missed questions.",
+      body: "Compare each missed answer with the explanation, then return to this skill for targeted practice before another Skill Check."
+    };
+  }
   if (!misses.length) {
     return {
       title: 'Move on.',
