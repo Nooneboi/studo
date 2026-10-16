@@ -189,6 +189,42 @@ try {
   await waitFor(()=>evalJs("Boolean(document.querySelector('.question-number')?.textContent.includes('Question 2'))"),'Skill Check second question');
   assert.notEqual(await evalJs("document.querySelector('.q-prompt').textContent"),beforeAnswer);
   assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
+  // Release acceptance: independent Check must remain silent until every answer
+  // has been submitted, and keyboard selection must work without a pointer.
+  await call('Page.navigate',{url:origin+'/check.html?file=generated%2Fmodules%2Fset-rla-check-inference-v1.json'});
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#check-next') && document.querySelectorAll('.answer-radio').length===4)"),'Inference check ready');
+  assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help]'))"),false);
+  await evalJs("document.querySelector('.answer-radio[value=a]').focus()");
+  await call('Input.dispatchKeyEvent',{type:'keyDown',key:' ',code:'Space',windowsVirtualKeyCode:32});
+  await call('Input.dispatchKeyEvent',{type:'keyUp',key:' ',code:'Space',windowsVirtualKeyCode:32});
+  assert.equal(await evalJs("document.querySelector('.answer-radio[value=a]').checked"),true,'keyboard Space selects MCQ answer');
+  for(let question=1;question<=6;question++){
+    if(question>1){
+      await waitFor(()=>evalJs("document.querySelector('.question-number')?.textContent.includes('Question "+question+" of')"),'Check question '+question);
+      await evalJs("document.querySelector('.answer-radio[value=a]').click()");
+    }
+    assert.equal(await evalJs("Boolean(document.querySelector('.answer-review, .chee-mm-trigger, [data-myanmar-help], .correct-answer, .incorrect-answer'))"),false,'No grading before final submit');
+    await evalJs("document.getElementById('check-next').click()");
+  }
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#check-result-heading'))"),'submitted check result');
+  assert.equal(await evalJs("document.querySelector('#check-result-heading').textContent.trim()"),'1 / 6 correct');
+  assert.equal(await evalJs("document.querySelectorAll('.answer-review.is-wrong').length"),5);
+  assert.equal(await evalJs("document.activeElement.id"),'check-result-heading','Result heading receives keyboard focus');
+  assert.equal(await evalJs("document.getElementById('check-header-progress').textContent.trim()"),'Complete');
+  assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Main Idea')"),false,'Inference results must not recommend Main Idea');
+  assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Review your missed questions.')"),true);
+  // A Check must never reveal answers early when the final question is reached
+  // with earlier questions unanswered.
+  await call('Page.navigate',{url:origin+'/check.html?file=generated%2Fmodules%2Fset-rla-check-inference-v1.json'});
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#check-next') && document.querySelectorAll('.answer-radio').length===4)"),'new Check ready');
+  for(let question=1;question<6;question++) {
+    await evalJs("document.getElementById('check-next').click()");
+    await waitFor(()=>evalJs("document.querySelector('.question-number')?.textContent.includes('Question "+(question+1)+" of')"),'unanswered Check page');
+  }
+  await evalJs("document.getElementById('check-next').click()");
+  await waitFor(()=>evalJs("Boolean(document.querySelector('#check-answer-status[role=alert]'))"),'missing answers notice');
+  assert.equal(await evalJs("document.querySelector('#check-answer-status').textContent.includes('6 questions')"),true);
+  assert.equal(await evalJs("Boolean(document.querySelector('#check-result-heading, .answer-review'))"),false);
   // Cross-page learner shell: all primary entry pages expose the same three links.
   for (const page of ['index.html','practice.html','resources.html','progress.html','curriculum.html','domain.html','skill.html','passages.html','category.html','quiz.html','about.html','methodology.html','privacy.html','404.html']) {
     const params = page === 'domain.html' ? '?track=reading&domain=core-meaning'
