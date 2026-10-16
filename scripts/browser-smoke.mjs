@@ -211,6 +211,8 @@ try {
   assert.equal(await evalJs("document.querySelectorAll('.answer-review.is-wrong').length"),5);
   assert.equal(await evalJs("document.activeElement.id"),'check-result-heading','Result heading receives keyboard focus');
   assert.equal(await evalJs("document.getElementById('check-header-progress').textContent.trim()"),'Complete');
+  assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Main Idea')"),false,'Inference results must not recommend Main Idea');
+  assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Review your missed questions.')"),true);
   // A Check must never reveal answers early when the final question is reached
   // with earlier questions unanswered.
   await call('Page.navigate',{url:origin+'/check.html?file=generated%2Fmodules%2Fset-rla-check-inference-v1.json'});
