@@ -82,6 +82,7 @@ try {
   await waitFor(()=>evalJs("Boolean(document.querySelector('[data-myanmar-help]'))"),'Myanmar help after answer');
   assert.equal(await evalJs("getComputedStyle(document.getElementById('question-footer')).visibility"),'visible');
   assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
+  await evalJs("document.querySelector('[data-myanmar-help]').focus()");
   await evalJs("document.querySelector('[data-myanmar-help]').click()");
   assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-hidden')"),'false');
   assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('role')"),'dialog');
@@ -224,6 +225,7 @@ try {
   assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Main Idea')"),false,'Inference results must not recommend Main Idea');
   assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Review your missed questions.')"),true);
   if (await evalJs("document.querySelectorAll('[data-check-myanmar]').length") > 0) {
+    await evalJs("document.querySelector('[data-check-myanmar]').focus()");
     await evalJs("document.querySelector('[data-check-myanmar]').click()");
     assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('role')"),'dialog');
     assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-modal')"),'true');
