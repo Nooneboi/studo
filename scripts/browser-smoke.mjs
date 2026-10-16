@@ -84,6 +84,13 @@ try {
   assert.equal(await evalJs("document.getElementById('next-question').disabled"),false);
   await evalJs("document.querySelector('[data-myanmar-help]').click()");
   assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-hidden')"),'false');
+  assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('role')"),'dialog');
+  assert.equal(await evalJs("document.activeElement.classList.contains('chee-mm-close')"),true);
+  await call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
+  await call('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
+  assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-hidden')"),'true');
+  assert.equal(await evalJs("document.activeElement.hasAttribute('data-myanmar-help')"),true);
+  await evalJs("document.querySelector('[data-myanmar-help]').click()");
   await evalJs("document.querySelector('.chee-mm-close').click()");
   assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-hidden')"),'true');
   await evalJs("document.getElementById('next-question').click()");
@@ -213,6 +220,16 @@ try {
   assert.equal(await evalJs("document.getElementById('check-header-progress').textContent.trim()"),'Complete');
   assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Main Idea')"),false,'Inference results must not recommend Main Idea');
   assert.equal(await evalJs("document.querySelector('.check-next-step')?.textContent.includes('Review your missed questions.')"),true);
+  if (await evalJs("document.querySelectorAll('[data-check-myanmar]').length") > 0) {
+    await evalJs("document.querySelector('[data-check-myanmar]').click()");
+    assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('role')"),'dialog');
+    assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-modal')"),'true');
+    assert.equal(await evalJs("document.activeElement.classList.contains('chee-mm-close')"),true);
+    await call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
+    await call('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
+    assert.equal(await evalJs("document.getElementById('chee-mm-drawer').getAttribute('aria-hidden')"),'true');
+    assert.equal(await evalJs("document.activeElement.hasAttribute('data-check-myanmar')"),true);
+  }
   // A Check must never reveal answers early when the final question is reached
   // with earlier questions unanswered.
   await call('Page.navigate',{url:origin+'/check.html?file=generated%2Fmodules%2Fset-rla-check-inference-v1.json'});
