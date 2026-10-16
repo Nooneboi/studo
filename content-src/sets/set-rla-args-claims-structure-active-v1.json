@@ -95,7 +95,7 @@
         "quickTip": "Ask what job a sentence performs: position, reason, or support."
       },
       "learningStage": "guided",
-      "hint": "Start with the sentence that tells the city what it should do. Then separate statements that explain why from facts that help prove those reasons."
+      "hint": "Find the writer's requested action first. Then ask whether each remaining sentence gives a reason to take that action or supplies a specific observation that makes a reason more believable."
     },
     {
       "id": "q2",
@@ -143,7 +143,7 @@
         "quickTip": "The main claim is usually the statement the rest of the argument is trying to justify."
       },
       "learningStage": "guided",
-      "hint": "Look for the sentence that contains the proposed action, not merely a reason for it or a concern about it."
+      "hint": "A main claim is the action or position the writer wants accepted. Try finishing 'The city should ...' using the passage; then find the sentence making that recommendation, not a supporting fact."
     },
     {
       "id": "q3",

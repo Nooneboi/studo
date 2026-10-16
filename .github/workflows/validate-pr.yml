@@ -39,6 +39,8 @@ jobs:
         run: |
           node scripts/audit-myanmar-help.mjs > myanmar-coverage.json
           node scripts/qa-myanmar-batches.mjs
+      - name: Report guided hint editorial flags
+        run: node scripts/audit-guided-hints.mjs > guided-hint-audit.json
       - name: Run Node regression suite
         run: npm test
       - name: Build published site
@@ -67,5 +69,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: myanmar-coverage
-          path: myanmar-coverage.json
+          path: |
+            myanmar-coverage.json
+            guided-hint-audit.json
           if-no-files-found: ignore
