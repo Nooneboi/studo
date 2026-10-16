@@ -92,10 +92,22 @@
       "explanation": {
         "answer": "i1 is the main claim; i2 is a supporting reason; i3 and i4 provide factual support.",
         "whyCorrect": "The main claim states the action the writer wants the city to take. The efficiency statement gives a reason for that action, while the usage and security details provide information that helps support the reasons.",
-        "quickTip": "Ask what job a sentence performs: position, reason, or support."
+        "quickTip": "Ask what job a sentence performs: position, reason, or support.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Claim, reason နဲ့ evidence ကို ခွဲကြည့်မယ်",
+              "body": "Argument တစ်ခုမှာ main claim က စာရေးသူ လုပ်စေချင်တဲ့ အဓိကအဆိုပြုချက်ပါ။ Reason က ဘာကြောင့် အဲဒီအဆိုပြုချက်ကို လက်ခံသင့်သလဲဆိုတာ ရှင်းပြတယ်။ Evidence ကတော့ အကြောင်းပြချက်ကို ထောက်ခံဖို့ စုထားတဲ့ ကိန်းဂဏန်း၊ မှတ်တမ်း ဒါမှမဟုတ် အချက်အလက်တွေပါ။"
+            },
+            {
+              "title": "တစ်ခုချင်း ဘာအလုပ်လုပ်သလဲ",
+              "body": "i1 က community hub ကို အင်္ဂါနဲ့ ကြာသပတေးညတွေမှာ ၈ နာရီအထိ ခြောက်လစမ်းဖွင့်ဖို့ တောင်းဆိုထားလို့ Main claim ပါ။ i2 က ညတိုင်းဖွင့်တာထက် နှစ်ညပဲဖွင့်ခြင်းက ဝန်ထမ်းအချိန် ပိုထိရောက်နိုင်တယ်ဆိုတဲ့ Reason ပါ။ i3 ရဲ့ ဝန်ဆောင်မှုသုံးစွဲမှုနှုန်းနဲ့ i4 ရဲ့ အနီးနားက security officer အချက်တွေက စမ်းသပ်ကြည့်သင့်ကြောင်း ထောက်ခံပေးတဲ့ Evidence တွေပါ။ စာကြောင်းတစ်ကြောင်း မှန်နေတာနဲ့ main claim ဖြစ်သွားတာ မဟုတ်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
-      "hint": "Start with the sentence that tells the city what it should do. Then separate statements that explain why from facts that help prove those reasons."
+      "hint": "Find the writer's requested action first. Then ask whether each remaining sentence gives a reason to take that action or supplies a specific observation that makes a reason more believable."
     },
     {
       "id": "q2",
@@ -140,10 +152,22 @@
       "explanation": {
         "answer": "The city should keep the hub open until 8:00 p.m. on Tuesdays and Thursdays for a six-month trial.",
         "whyCorrect": "This sentence states the specific position the writer wants the reader to accept. The other choices introduce a reason, a concern, or framing for the final recommendation.",
-        "quickTip": "The main claim is usually the statement the rest of the argument is trying to justify."
+        "quickTip": "The main claim is usually the statement the rest of the argument is trying to justify.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "စာရေးသူရဲ့ အဓိကရပ်တည်ချက်ကို ရှာမယ်",
+              "body": "Main claim ကိုရှာတဲ့အခါ စာရေးသူက ဘာလုပ်သင့်တယ်လို့ တိုက်ရိုက်ပြောနေသလဲ ဆိုတာကို ကြည့်ပါ။ 'The city should ...' ဆိုပြီး ဆက်ရေးကြည့်ရင် အဓိကအဆိုပြုချက်ကို ပိုလွယ်လွယ်တွေ့နိုင်တယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် s1 လဲ",
+              "body": "s1 က community hub ကို အင်္ဂါနဲ့ ကြာသပတေးနေ့တွေမှာ ည ၈ နာရီအထိ ခြောက်လစမ်းဖွင့်ဖို့ တိုက်ရိုက်အဆိုပြုထားလို့ မှန်တယ်။ s2 က access ဆိုတဲ့ reason ကို မိတ်ဆက်တာပါ။ s3 က ကုန်ကျစရိတ်အပေါ် စိုးရိမ်ချက် ဖြစ်တယ်။ s4 က စမ်းသပ်ရလဒ်ကြည့်ပြီး ဆုံးဖြတ်နိုင်တယ်လို့ ပြောတာဖြစ်ပြီး main claim ကို တိတိကျကျ မဖော်ပြဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
-      "hint": "Look for the sentence that contains the proposed action, not merely a reason for it or a concern about it."
+      "hint": "A main claim is the action or position the writer wants accepted. Try finishing 'The city should ...' using the passage; then find the sentence making that recommendation, not a supporting fact."
     },
     {
       "id": "q3",
@@ -191,7 +215,19 @@
       "explanation": {
         "answer": "C",
         "whyCorrect": "The unfinished visits directly show a mismatch between the current closing time and residents' ability to complete services. That evidence supports the access reason more directly than cost, trial-design, or future-expansion details.",
-        "quickTip": "Match evidence to the exact reason it is supposed to support; true details can still support a different part of the argument."
+        "quickTip": "Match evidence to the exact reason it is supposed to support; true details can still support a different part of the argument.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Evidence က reason နဲ့ တိုက်ရိုက်ကိုက်ဖို့လိုတယ်",
+              "body": "မေးထားတဲ့ reason က လက်ရှိဝန်ဆောင်မှုတွေကို ညနေပိုင်းမှာ ဆက်သုံးနိုင်ရင် လူတွေအတွက် ပိုအဆင်ပြေမယ်ဆိုတာပါ။ ဒါကို ထောက်ခံဖို့ closing time ကြောင့် ဝန်ဆောင်မှုမပြီးခဲ့တဲ့ လူတွေရှိသလားဆိုတဲ့ အချက်အလက်မျိုးကို ရှာရမယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် C လဲ",
+              "body": "ပိတ်ခါနီး နောက်ဆုံးနာရီဝက်အတွင်း ရောက်လာတဲ့ လူ ၈၆ ယောက်က လုပ်စရာမပြီးခင် ပြန်သွားရတာကြောင့် C က access ပြဿနာကို တိုက်ရိုက်ပြတယ်။ A ရဲ့ security officer အချက်က feasibility နဲ့ ပိုဆိုင်တယ်။ B က trial မှာ program အသစ်တွေမထည့်ဖို့ အစီအစဉ်ဖြစ်ပြီး access လိုအပ်ချက်ကို မတိုင်းတာဘူး။ D က နောက်ပိုင်းရလဒ်ကောင်းမှ အချိန်တိုးမယ့် အနာဂတ်ဆုံးဖြတ်ချက်ပါ။ အဲဒါတွေက စာထဲမှာ ပါနိုင်ပေမယ့် ဒီ reason အတွက် အကောင်းဆုံး evidence မဟုတ်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -241,7 +277,19 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "The paragraph does two connected jobs: it recognizes a cost concern and then builds a safeguard into the proposal by requiring measurement and a decision point after six months.",
-        "quickTip": "Paragraph function is about what the paragraph contributes to the argument, not just what topic it mentions."
+        "quickTip": "Paragraph function is about what the paragraph contributes to the argument, not just what topic it mentions.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Paragraph function ဆိုတာ ဘာလဲ",
+              "body": "ဒီမေးခွန်းက စတုတ္ထပိုဒ်မှာ ဘယ်အကြောင်းအရာပါသလဲဆိုတာထက် argument တစ်ခုလုံးအတွက် အဲဒီပိုဒ်က ဘာအလုပ်လုပ်ပေးသလဲဆိုတာ မေးတာပါ။ စာရေးသူက ကုန်ကျစရိတ်ပိုတက်နိုင်တယ်ဆိုတဲ့ objection ကို လက်ခံစဉ်းစားပြီး ခြောက်လစမ်းဖွင့်၊ ရလဒ်တိုင်းတာ၊ ပြန်ဆုံးဖြတ်မယ်ဆိုတဲ့ နည်းလမ်းနဲ့ ပြန်ဖြေထားတယ်။ ဒါကြောင့် A မှန်တယ်။"
+            },
+            {
+              "title": "တခြားရွေးချယ်စရာတွေကို စစ်မယ်",
+              "body": "B က စာရေးသူက proposal ကို လက်လွှတ်လိုက်တယ်လို့ ပြောပေမယ့် တကယ်တော့ စမ်းသပ်ကြည့်ဖို့ ဆက်အဆိုပြုနေတယ်။ C က လုံခြုံရေးပြဿနာဖြစ်ခဲ့ကြောင်း evidence အသစ်ကို ထည့်ပြောထားပေမယ့် အဲဒီပိုဒ်မှာ မရှိဘူး။ D က ညပိုင်းအစီအစဉ်အသစ်တွေ ထည့်ဖို့ main claim ပြောင်းသွားတယ်လို့ ဆိုထားပြီး စာရေးသူရဲ့ ကန့်သတ်ထားတဲ့ trial အဆိုပြုချက်နဲ့ မကိုက်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -291,7 +339,19 @@
       "explanation": {
         "answer": "D",
         "whyCorrect": "This choice preserves the problem, the limited recommendation, the feasibility logic, and the evidence-based next step. It shows how the reasons build toward a cautious policy claim.",
-        "quickTip": "An argument chain connects problem → reasons/evidence → recommendation → qualification or next step."
+        "quickTip": "An argument chain connects problem → reasons/evidence → recommendation → qualification or next step.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Argument chain တစ်ခုလုံးကို ချိတ်ကြည့်မယ်",
+              "body": "စာရေးသူရဲ့ reasoning က ဒီလိုသွားတယ်။ လက်ရှိပိတ်ချိန်ကြောင့် လူတချို့ ဝန်ဆောင်မှုမပြီးကြဘူး။ ဒါကြောင့် အင်္ဂါနဲ့ ကြာသပတေး နှစ်ညကိုပဲ အချိန်တိုးပြီး ခြောက်လစမ်းကြည့်ဖို့ အဆိုပြုတယ်။ ကုန်ကျစရိတ်နဲ့ အသုံးပြုမှုရလဒ်ကို တိုင်းတာပြီးမှ ဆက်တိုးသင့်မသင့် ဆုံးဖြတ်မယ်။ ဒီအဆင့်တွေအားလုံးကို ထိန်းထားတဲ့ D မှန်တယ်။"
+            },
+            {
+              "title": "အဖြေမှားတွေ ဘာကြောင့်မှားလဲ",
+              "body": "A က entertainment အသစ်တွေထည့်ပြီး အမြဲတမ်းဖွင့်ဖို့ ဆိုထားတာကြောင့် scope ကို ချဲ့ထားတယ်။ B က security အချက်တစ်ခုတည်းနဲ့ ကုန်ကျစရိတ်မလိုတော့သလို သတ်မှတ်ပြီး နေ့တိုင်းဖွင့်ဖို့ ပြောတယ်။ C က စိုးရိမ်ချက်တစ်ခုကိုပဲ အဓိကထားပြီး အချက်အလက်အားလုံးသိမှ စမ်းသပ်ဖို့ဆိုတယ်။ စာရေးသူကတော့ trial လုပ်ပြီးမှ မသေချာတာတွေကို စစ်ချင်တာပါ။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     },
@@ -341,7 +401,19 @@
       "explanation": {
         "answer": "B",
         "whyCorrect": "It states the limited trial accurately and connects it to the three major reasons running through the passage: access demand, manageable risk, and an evidence-based review before expansion.",
-        "quickTip": "A good argument map keeps the main claim's exact scope and includes the major reasons—not every detail."
+        "quickTip": "A good argument map keeps the main claim's exact scope and includes the major reasons—not every detail.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Argument map မှာ scope မပျောက်ရဘူး",
+              "body": "Main claim ကို တိုတိုရေးချင်ရင်တောင် ဘယ်နှစ်ည၊ ဘယ်အချိန်အထိ၊ ဘယ်လောက်ကြာ စမ်းမယ်ဆိုတာတွေ မပျောက်စေရဘူး။ ဒီ passage ရဲ့ claim က တစ်ပတ် နှစ်ည၊ ည ၈ နာရီအထိ၊ ခြောက်လစမ်းဖွင့်ဖို့ပါ။ Reason တွေက closing time နားမှာ ဝန်ဆောင်မှုလိုအပ်ချက်ရှိတာ၊ ကန့်သတ်ထားတဲ့ schedule နဲ့ အန္တရာယ်နဲ့ကုန်ကျစရိတ်ကို ထိန်းနိုင်တာ၊ result တိုင်းပြီးမှ ဆက်ဆုံးဖြတ်နိုင်တာတွေပါ။ ဒါကြောင့် B က အတိကျဆုံး map ဖြစ်တယ်။"
+            },
+            {
+              "title": "A, C, D ကို ဘာကြောင့်မရွေးလဲ",
+              "body": "A က community hub ကို entertainment center လုပ်မယ်လို့ မူရင်းမရှိတဲ့ ရည်ရွယ်ချက် ထည့်ထားတယ်။ C က ကန့်ကွက်သူတွေရဲ့ စိုးရိမ်ချက်ကို စာရေးသူရဲ့ main claim လို့ မှားယူထားတယ်။ D က နှစ်ညစမ်းဖွင့်မယ့်အစီအစဉ်ကို နေ့တိုင်းအမြဲတမ်းဖွင့်သလို ချဲ့ထားတယ်။ GED Argument Map မှာ အသေးစိတ်အားလုံး မလိုပေမယ့် claim ရဲ့ ကန့်သတ်ချက်တော့ မပြောင်းရဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     }

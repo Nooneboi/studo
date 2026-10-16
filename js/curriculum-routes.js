@@ -9,6 +9,7 @@
     const skillRoutes = new Map();
     const skillLocations = new Map();
     const setLocations = new Map();
+    const unitLocations = new Map();
 
     for (const track of curriculum?.tracks || []) {
       for (const domain of track.domains || []) {
@@ -18,9 +19,11 @@
         if (units.length) {
           for (const unit of units) {
             const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&unit=${encodeURIComponent(unit.id)}`;
+            const unitLocation = { trackId: track.id, domainId: domain.id, unitId: unit.id, returnHref, skill: unit, unit };
+            unitLocations.set(unit.id, unitLocation);
             for (const skillId of unit.skillIds || []) {
               skillRoutes.set(skillId, returnHref);
-              skillLocations.set(skillId, { trackId: track.id, domainId: domain.id, unitId: unit.id, returnHref, skill: null });
+              skillLocations.set(skillId, unitLocation);
             }
             indexSets(unit.sets, returnHref, setLocations);
           }
@@ -41,6 +44,9 @@
       },
       skillLocation(skillId) {
         return skillLocations.get(skillId) || null;
+      },
+      unitLocation(unitId) {
+        return unitLocations.get(unitId) || null;
       },
       nextSet(file) {
         const location = setLocations.get(String(file || ""));

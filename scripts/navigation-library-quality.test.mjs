@@ -111,11 +111,13 @@ test('explicit invalid track ids do not silently fall back to Reading', () => {
   assert.doesNotMatch(domainJs, /find\(\(t\) => t\.id === trackId\) \|\| curriculum\.tracks\[0\]/);
 });
 
-test('resource rows preserve learner-facing file labels for stacked mobile layout', () => {
+test('resource topic items preserve learner-facing file labels in the simplified list', () => {
   const resourcesJs = fs.readFileSync(path.join(root, 'js/resources.js'), 'utf8');
   const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');
-  assert.match(resourcesJs, /data-label=/);
-  assert.match(css, /content:\s*attr\(data-label\)/);
+  assert.match(resourcesJs, /resourceActionLabel/);
+  assert.match(resourcesJs, /Study guide/);
+  assert.match(resourcesJs, /Workbook \$\{role\.id\.split\("-"\)\[1\]\}/);
+  assert.match(css, /\.resource-topic-actions/);
 });
 
 test('static internal HTML links resolve to existing project files', () => {
@@ -216,13 +218,17 @@ test('practice reset clears transient confidence UI and return links stay same-o
   assert.doesNotMatch(moduleJs, /!\/\^\(\?:https\?:\)\?\\\/\\\//, 'the old scheme blacklist should not be used as the return-link safety boundary');
 });
 
-test('Mock landing keeps the same primary learner navigation as the rest of Studo', () => {
+test('Practice Tests landing uses the approved three-link learner navigation', () => {
   const html = fs.readFileSync(path.join(root, 'quiz.html'), 'utf8');
-  for (const [href, label] of [['index.html','Home'],['practice.html','Practice'],['train.html','Train'],['quiz.html','Mock'],['progress.html','Progress'],['resources.html','Resources']]) {
-    assert.match(html, new RegExp(`<a href="${href.replace('.', '\\.') }"[^>]*>${label}<\\/a>`), `quiz.html should include ${label}`);
+  const navStart = html.indexOf('<nav class="site-nav"');
+  const nav = navStart >= 0 ? html.slice(navStart, html.indexOf('</nav>', navStart) + 6) : '';
+  assert.ok(nav, 'Practice Tests should expose main navigation');
+  for (const [href, label] of [['index.html','Home'], ['quiz.html','Practice Tests'], ['resources.html','Resources']]) {
+    assert.ok(nav.includes('href="'+href+'"'), 'Missing '+href);
+    assert.ok(nav.includes('>'+label+'</a>'), 'Missing '+label);
   }
+  assert.equal(nav.split('<a ').length - 1, 3, 'Main navigation must remain three links');
 });
-
 
 test('Alpha polish gives search placement and Passage Practice spacing a clearly visible desktop change', () => {
   const css = fs.readFileSync(path.join(root, 'css/site.css'), 'utf8');

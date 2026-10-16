@@ -90,10 +90,22 @@
       "explanation": {
         "answer": "i1 and i4 are congestion evidence; i2 is punctuality evidence; i3 is the recommendation itself.",
         "whyCorrect": "The truck-wait and queue measures function as evidence for congestion, while clock-in records function as evidence for punctuality. Park’s recommendation is a claim about what the center should do next, not evidence for either benefit.",
-        "quickTip": "Evidence can be strong and still belong to the wrong claim. Name the claim first, then ask what the detail actually measures."
+        "quickTip": "Evidence can be strong and still belong to the wrong claim. Name the claim first, then ask what the detail actually measures.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Claim နဲ့ Evidence ကို ချိတ်ကြည့်မယ်",
+              "body": "ဒီ passage မှာ Park က staggered start schedule ကြောင့် မနက်ပိုင်း ယာဉ်ကြောပိတ်တာ လျော့လာပြီး ဝန်ထမ်းတွေ အလုပ်နောက်ကျတာလည်း နည်းလာတယ်လို့ ပြောထားတယ်။ Congestion ဆိုရင် ကားတန်းနဲ့ truck စောင့်ချိန်ကို ကြည့်ရမယ်။ Punctuality ဆိုရင် clock-in နောက်ကျတဲ့နှုန်းကို ကြည့်ရမယ်။ ဘယ်အချက်က ဘာကိုတိုင်းထားသလဲဆိုတာ အရင်ခွဲပါ။"
+            },
+            {
+              "title": "တစ်ခုချင်း ခွဲကြည့်မယ်",
+              "body": "i1 မှာ ၁၅ မိနစ်ကျော် စောင့်ရတဲ့ truck က 38% ကနေ 17% ထိ လျော့သွားလို့ Congestion ကို ထောက်ခံတယ်။ i4 မှာ entrance queue က ကား ၂၆ စီးကနေ ၁၄ စီးထိ ကျသွားလို့ Congestion ပဲဖြစ်တယ်။ i2 က နောက်ကျတဲ့ clock-in 11.8% ကနေ 6.4% ထိ ကျတာမို့ Punctuality ကို တိုက်ရိုက်တိုင်းထားတယ်။ i3 က ခြောက်လဆက်စမ်းဖို့ Park ရဲ့ recommendation ဖြစ်ပြီး ရလဒ်ကိုတိုင်းထားတဲ့ evidence မဟုတ်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
-      "hint": "First separate the recommendation from observed results. Then ask which exact claim each measured result can support."
+      "hint": "For each result, identify exactly what was counted or recorded—waiting trucks, employee clock-ins, or another measure. Match that measurement to the claim it can actually test, not merely a sentence on the same topic."
     },
     {
       "id": "q2",
@@ -138,10 +150,22 @@
       "explanation": {
         "answer": "During the staggered schedule, the rate was 6.4 percent.",
         "whyCorrect": "This result is the direct outcome measure for the claim about improved punctuality. The survey offers a possible explanation, but the clock-in rate is what records whether late arrivals actually became less common.",
-        "quickTip": "For an outcome claim, prefer the detail that measures the outcome itself rather than a possible reason for it."
+        "quickTip": "For an outcome claim, prefer the detail that measures the outcome itself rather than a possible reason for it.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ဘယ် Evidence က ပိုတိုက်ရိုက်လဲ",
+              "body": "မေးခွန်းက အလုပ်နောက်ကျတဲ့ဝန်ထမ်းတွေ နည်းလာသလားဆိုတာကို ထောက်ခံမယ့် sentence ရှာခိုင်းတာပါ။ Bus ပိုအဆင်ပြေတယ်ဆိုတာ နောက်ကျတာလျော့ရတဲ့ အကြောင်းရင်းတစ်ခု ဖြစ်နိုင်ပေမယ့် အလုပ်ကို အချိန်မီရောက်လာတာကို တိုက်ရိုက်မတိုင်းထားဘူး။ Clock-in မှတ်တမ်းကို ကြည့်ရမယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် s2 လဲ",
+              "body": "s1 က pilot မစခင် 11.8% နောက်ကျခဲ့တာကို ပြတယ်။ s2 က staggered schedule သုံးနေချိန် 6.4% ဖြစ်သွားတာကို ပြတယ်။ အဲဒီနှစ်ခုကို နှိုင်းယှဉ်ကြည့်ရင် နောက်ကျမှုနှုန်း လျော့သွားတာ သိနိုင်တယ်။ ရွေးစရာတစ်ခုတည်းထဲမှာ s2 က pilot အတွင်းရလဒ်ကို တိုက်ရိုက်ပေးထားလို့ အကောင်းဆုံးပါ။ s3 က ဝန်ထမ်းတချို့ရဲ့ bus အတွေ့အကြုံ၊ s4 က evidence ကို ဘယ်လိုဖတ်ရမလဲဆိုတဲ့ ရှင်းပြချက်ဖြစ်ပြီး ကိုယ်တိုင်တိုင်းထားတဲ့ ရလဒ်မဟုတ်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
-      "hint": "Look for the result that directly measures late arrival, not the sentence explaining why some workers may have arrived more easily."
+      "hint": "The claim is about whether workers arrived late less often. Look for a before-and-after measure of late clock-ins, rather than a possible explanation from a survey or a recommendation about the pilot."
     },
     {
       "id": "q3",
@@ -196,7 +220,19 @@
       "explanation": {
         "answer": "Truck waiting → congestion; late clock-ins → punctuality; orders per labor hour → productivity.",
         "whyCorrect": "Each measure answers a different question. The evidence becomes useful only when it is matched to the exact claim it measures.",
-        "quickTip": "Translate the claim into a measurement question: What number would need to change if this claim were true?"
+        "quickTip": "Translate the claim into a measurement question: What number would need to change if this claim were true?",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Claim သုံးခု၊ Measure သုံးမျိုး",
+              "body": "Congestion လျော့သလားဆိုရင် truck စောင့်ချိန်ကို တိုင်းထားတာကို ရွေးပါ။ Punctuality တိုးသလားဆိုရင် နောက်ကျတဲ့ clock-in နှုန်းကို ကြည့်ပါ။ Productivity မကျသလားဆိုရင် အလုပ်ချိန်တစ်နာရီမှာ ပြီးတဲ့ order အရေအတွက်ကို ကြည့်ရမယ်။ Claim နဲ့ measure ကို တိတိကျကျ ကိုက်ညီအောင် ချိတ်ပါ။"
+            },
+            {
+              "title": "နံပါတ်တွေကို ဘယ်လိုဖတ်မလဲ",
+              "body": "i1 ရဲ့ truck စောင့်ရတဲ့နှုန်း 38% ကနေ 17% ကျတာက Congestion လျော့တာကို ပြတယ်။ i2 ရဲ့ နောက်ကျတဲ့ clock-in 11.8% ကနေ 6.4% ကျတာက Punctuality ပိုကောင်းလာတာကို ပြတယ်။ i3 ရဲ့ labor hour တစ်နာရီအတွက် order 21.4 ကနေ 21.1 ဖြစ်တာက Productivity အနည်းငယ်ကျသွားပေမယ့် ယခင်အဆင့်နဲ့ နီးနေသေးတာကို ပြတယ်။ Evidence တစ်ခုကို တခြား claim အတွက် အလိုအလျောက် မသုံးသင့်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -246,7 +282,19 @@
       "explanation": {
         "answer": "C",
         "whyCorrect": "The clock-in comparison directly measures the outcome named in the claim: fewer workers arriving late.",
-        "quickTip": "A related explanation is not automatically the strongest evidence. Prefer the measure that directly answers the claim."
+        "quickTip": "A related explanation is not automatically the strongest evidence. Prefer the measure that directly answers the claim.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "ဖြစ်ရတဲ့အကြောင်းနဲ့ ရလဒ်ကို ခွဲမယ်",
+              "body": "ဒီမေးခွန်းမှာ punctuality တိုးတက်ခဲ့တယ်ဆိုတာကို သက်သေပြမယ့် detail လိုတယ်။ ဝန်ထမ်းတချို့ bus ပိုအဆင်ပြေတယ်လို့ ပြောတာက ဖြစ်ရတဲ့အကြောင်းကို ရှင်းပြနိုင်ပေမယ့် နောက်ကျတဲ့အရေအတွက် တကယ်လျော့သွားသလားဆိုတာကို မတိုင်းထားဘူး။"
+            },
+            {
+              "title": "A, B, C, D ကို စစ်ကြည့်မယ်",
+              "body": "C မှာ late clock-in 11.8% ကနေ 6.4% ထိ ကျသွားတာကို တိုက်ရိုက်နှိုင်းယှဉ်ထားလို့ မှန်တယ်။ A ရဲ့ entrance queue ၁၄ စီးက Congestion အကြောင်းပါ။ B ရဲ့ later bus က အကြောင်းရင်းတစ်ခုဖြစ်နိုင်ပေမယ့် punctuality result မဟုတ်ဘူး။ D ရဲ့ start time ရွေးခွင့်က pilot ရဲ့ ဒီဇိုင်းအချက်ဖြစ်ပြီး နောက်ကျမှုလျော့တာကို သက်သေမပြဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -296,7 +344,19 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "The claim contains two parts, so the best evidence must address both: substantially shorter truck waits and nearly unchanged output per labor hour.",
-        "quickTip": "For a two-part claim, check that the evidence covers both parts rather than proving only one."
+        "quickTip": "For a two-part claim, check that the evidence covers both parts rather than proving only one.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Claim မှာ အချက်နှစ်ခုပါနေတယ်",
+              "body": "Park ရဲ့ claim က Congestion လျော့လာတယ်၊ ဒါပေမယ့် Productivity ကြီးကြီးမားမား မကျဘူးဆိုတဲ့ အပိုင်းနှစ်ခုပါ။ အဲဒါကြောင့် evidence တစ်ခုထဲမှာ truck စောင့်ချိန်အကြောင်းရော အလုပ်ပြီးမြောက်မှုနှုန်းအကြောင်းပါ ပါရမယ်။"
+            },
+            {
+              "title": "ဘာကြောင့် A မှန်လဲ",
+              "body": "A မှာ ၁၅ မိနစ်ကျော် စောင့်ရတဲ့ truck 38% ကနေ 17% ကျတာနဲ့ labor hour တစ်နာရီအတွက် order 21.4 ကနေ 21.1 ပဲ ပြောင်းတာကို တွဲပြထားတယ်။ B က bus အသုံးပြုမှုနဲ့ လမ်းဆောက်လုပ်ရေးပြီးဆုံးမှုကို ပြောတာဖြစ်ပြီး claim နှစ်ပိုင်းလုံးကို မတိုင်းဘူး။ C က late clock-in နဲ့ damaged orders ကို ပြတယ်၊ Congestion မပါဘူး။ D က pilot ကြာချိန်နဲ့ start time ရွေးခွင့်ကို ဖော်ပြတာဖြစ်ပြီး ရလဒ်အတွက် evidence မဟုတ်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     },
@@ -346,7 +406,19 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "The queue count directly measures congestion and the clock-in rate directly measures punctuality, giving one clear evidence line for each reason.",
-        "quickTip": "When the question names two reasons, make sure the pair supplies direct evidence for both—not two facts about the same issue."
+        "quickTip": "When the question names two reasons, make sure the pair supplies direct evidence for both—not two facts about the same issue.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Reason နှစ်ခုအတွက် Evidence နှစ်ခုလိုတယ်",
+              "body": "Park က pilot ကို ဆက်စမ်းသင့်တဲ့အကြောင်းရင်းအဖြစ် Congestion လျော့တာနဲ့ Punctuality တိုးတက်တာ နှစ်ခုကို ပေးထားတယ်။ အကောင်းဆုံး answer pair မှာ ကားတန်းတိုလာတာကို တိုင်းတဲ့ detail တစ်ခုနဲ့ နောက်ကျမှုလျော့တာကို တိုင်းတဲ့ detail တစ်ခု ပါရမယ်။"
+            },
+            {
+              "title": "ရွေးချယ်စရာတွေကို နှိုင်းယှဉ်မယ်",
+              "body": "A မှာ entrance queue က ၂၆ စီးကနေ ၁၄ စီးကျတာနဲ့ late clock-in 11.8% ကနေ 6.4% ကျတာ ပါလို့ reason နှစ်ခုလုံးကို တိုက်ရိုက်ထောက်ခံတယ်။ B က productivity နဲ့ damaged orders အကြောင်းဖြစ်ပြီး မေးထားတဲ့ reason နှစ်ခု မဟုတ်ဘူး။ C က road construction နဲ့ start time ရွေးခွင့်လို သတိထားရမယ့် အခြေအနေတွေပါ။ D မှာ truck စောင့်ချိန်ဆိုတဲ့ တိုက်ရိုက် evidence ပါပေမယ့် bus အသုံးပြုနိုင်တာက punctuality တကယ်တိုးတက်သွားကြောင်း တိုက်ရိုက်မတိုင်းထားဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     }

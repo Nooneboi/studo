@@ -34,13 +34,9 @@ async function init() {
     currentQuiz = await Data.loadQuiz(file);
   } catch (e) {
     console.error(e);
-    if (requestedReturn?.includes("skill=R1.2")) {
-      document.body.classList.add("mainidea-v22-runtime");
-      try {
-        curriculumRoutes = CurriculumRoutes.build(await Data.loadCurriculum());
-        setupMainIdeaV22Chrome(curriculumRoutes);
-      } catch (_) {}
-    }
+    document.body.classList.add("mainidea-v22-runtime");
+    const skillLabel = document.getElementById("mainidea-v22-skill-name");
+    if (skillLabel) skillLabel.textContent = "Study";
     renderModuleRecovery("Couldn't load this module.", requestedReturn);
     return;
   }
@@ -52,10 +48,8 @@ async function init() {
     curriculumRoutes = null;
   }
 
-  if (primarySkillId === "R1.2") {
-    document.body.classList.add("mainidea-v22-runtime");
-    setupMainIdeaV22Chrome(curriculumRoutes);
-  }
+  document.body.classList.add("mainidea-v22-runtime");
+  setupStudyWorkspaceChrome(curriculumRoutes, primarySkillId, requestedReturn);
 
   const cat = currentQuiz.category || "reading";
   const topic = currentQuiz.topic || "";
@@ -86,48 +80,51 @@ function renderModuleRecovery(message, requestedReturn) {
   if (exitLink) exitLink.href = backHref;
 }
 
-function setupMainIdeaV22Chrome(routes) {
+function setupStudyWorkspaceChrome(routes, primarySkillId, requestedReturn) {
   const learn = document.getElementById("mainidea-v22-learn");
   const practice = document.getElementById("mainidea-v22-practice");
   const check = document.getElementById("mainidea-v22-check");
+  const name = document.getElementById("mainidea-v22-skill-name");
   if (!learn || !practice || !check) return;
 
-  const route = mainIdeaRouteConfig(routes);
-  if (!route) {
-    [learn, practice, check].forEach((link) => {
+  // Keep the workspace consistent, but never substitute another skill's material.
+  const location = routes?.skillLocation?.(primarySkillId);
+  const skill = location?.skill || null;
+  if (name) name.textContent = skill?.label || currentQuiz?.contentMeta?.curriculum?.skillLabel
+    || currentQuiz?.title || "Study";
+
+  const sets = skill?.sets || [];
+  const checks = skill?.checks || [];
+  const learnSet = sets.find(set => set.curriculum?.assistanceLevel === "full")
+    || sets.find(set => set.curriculum?.assistanceLevel === "supported")
+    || sets[0];
+  const practiceSet = sets.find(set => set.file !== learnSet?.file) || null;
+  const returnHref = requestedReturn || location?.returnHref || "practice.html";
+  const links = [
+    [learn, learnSet?.file ? moduleRoute(learnSet.file, returnHref) : null],
+    [practice, practiceSet?.file ? moduleRoute(practiceSet.file, returnHref) : null],
+    [check, checks[0]?.file ? checkRoute(checks[0].file, returnHref) : null],
+  ];
+  for (const [link, href] of links) {
+    link.classList.remove("active");
+    link.removeAttribute("aria-current");
+    if (href) {
+      link.href = href;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("tabindex");
+    } else {
       link.removeAttribute("href");
       link.setAttribute("aria-disabled", "true");
-    });
-    return;
+      link.setAttribute("tabindex", "-1");
+    }
   }
 
-  mainIdeaReturnHref = route.returnHref;
-  learn.href = moduleRoute(route.learnFile, route.returnHref);
-  practice.href = moduleRoute(route.practiceFile, route.returnHref);
-  check.href = checkRoute(route.checkFile, route.returnHref);
-
-  const isLearn = explicitAssistanceLevel() === "full";
+  const isLearn = isGuidedLearningModule();
   document.body.classList.toggle("mainidea-v22-learn", isLearn);
   document.body.classList.toggle("mainidea-v22-practice", !isLearn);
-  const activeId = isLearn ? "mainidea-v22-learn" : "mainidea-v22-practice";
-  document.getElementById(activeId)?.classList.add("active");
-}
-
-function mainIdeaRouteConfig(routes) {
-  const location = routes?.skillLocation?.("R1.2");
-  const skill = location?.skill;
-  if (!location || !skill) return null;
-  const sets = skill.sets || [];
-  const learnSet = sets.find((set) => set.curriculum?.assistanceLevel === "full") || sets[0];
-  const practiceSet = sets.find((set) => set.file !== learnSet?.file) || sets[0];
-  const checkSet = (skill.checks || [])[0];
-  if (!learnSet?.file || !practiceSet?.file || !checkSet?.file) return null;
-  return {
-    learnFile: learnSet.file,
-    practiceFile: practiceSet.file,
-    checkFile: checkSet.file,
-    returnHref: location.returnHref,
-  };
+  const selected = isLearn ? learn : practice;
+  selected.classList.add("active");
+  selected.setAttribute("aria-current", "page");
 }
 
 function moduleRoute(file, returnHref) {
@@ -186,7 +183,8 @@ function renderShell() {
     <div class="study-shell study-shell-clean${guided ? " guided-learning-workspace" : ""}">
       <section class="study-workspace ${hasPassage ? "" : "no-passage"}${guided ? " guided-learning-workspace" : ""}" id="study-workspace">
         ${hasPassage ? passagePanelHtml() : ""}
-        <article class="question-panel${guided ? " guided-task-panel" : ""}" aria-label="Question workspace">
+        <article id="study-question" class="question-panel${guided ? " guided-task-panel" : ""}" aria-label="Question workspace">
+          ${hasPassage ? `<a class="study-mobile-jump study-mobile-jump-back" href="#study-passage">↑ Back to passage</a>` : ""}
           <div id="question-stage" class="question-stage"></div>
           <div class="question-footer" id="question-footer"></div>
         </article>
@@ -267,8 +265,9 @@ function passagePanelHtml() {
   const savedPassage = Store.getPassageHighlights ? Store.getPassageHighlights(currentQuiz.id) : "";
   const passageMarkup = savedPassage ? sanitizeHighlightMarkup(savedPassage, basePassageMarkup) : basePassageMarkup;
   return `
-    <aside class="reading-column" aria-label="Reading passage">
+    <aside class="reading-column" id="study-passage" aria-label="Reading passage">
       <header class="passage-heading">
+        <a class="study-mobile-jump study-mobile-jump-forward" href="#study-question">Go to question ↓</a>
         <h1>${escapeHtml(passageTitle)}</h1>
         ${meta ? `<p>${escapeHtml(meta.replace(/\s+-\s+/g, " · "))}</p>` : ""}
       </header>
@@ -285,12 +284,23 @@ function passagePanelHtml() {
 
 function renderPassageParagraphs(text) {
   const paragraphs = String(text || "").trim().split(/\n\s*\n+/).filter(Boolean);
-  if (paragraphs.length <= 1) return `<p class="passage-paragraph"><span class="passage-paragraph-number">1</span><span>${escapeHtml(text || "")}</span></p>`;
-  return paragraphs.map((paragraph, index) => `
-    <p class="passage-paragraph">
-      <span class="passage-paragraph-number">${index + 1}</span>
-      <span>${escapeHtml(paragraph)}</span>
-    </p>`).join("");
+  return paragraphs.map((paragraph, index) => {
+    // Data passages sometimes embed pipe-delimited tables. Render only
+    // consistent multi-row grids; keep ambiguous text as ordinary prose.
+    const lines = paragraph.trim().split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    const rows = lines.map(line => line.split("|").map(cell => cell.trim()));
+    const table = lines.length >= 2
+      && rows[0].length >= 2
+      && rows.every(row => row.length === rows[0].length && row.every(Boolean));
+    if (table) {
+      const header = rows[0].map(cell => `<th scope="col">${escapeHtml(cell)}</th>`).join("");
+      const body = rows.slice(1).map(row => `<tr>${row.map((cell, col) =>
+        col === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`
+      ).join("")}</tr>`).join("");
+      return `<div class="passage-table-scroll" role="region" aria-label="Passage data table" tabindex="0"><table class="passage-data-table"><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table></div>`;
+    }
+    return `<p class="passage-paragraph"><span class="passage-paragraph-number">${index + 1}</span><span>${escapeHtml(paragraph)}</span></p>`;
+  }).join("");
 }
 
 function renderCurrentQuestion(options = {}) {
@@ -310,6 +320,7 @@ function renderCurrentQuestion(options = {}) {
     footer.innerHTML = "";
     document.getElementById("complete-reset").addEventListener("click", () => {
       Store.resetQuiz(currentQuiz.id);
+      guidedRetryUsed.clear();
       currentIndex = 0;
       renderCurrentQuestion();
     });
@@ -325,6 +336,7 @@ function renderCurrentQuestion(options = {}) {
   const notes = Store.getNotes(currentQuiz.id);
   const highlights = Store.getHighlights(currentQuiz.id);
   const savedAnswer = answers[q.id];
+  if (Store.getGuidedRetries?.(currentQuiz.id)?.[q.id] && !savedAnswer) guidedRetryUsed.add(q.id);
   const draftAnswer = drafts[q.id] || "";
   const grammarInline = q.type === "grammar_edit" && window.QuestionInteractions?.grammarEditMode(q) === "inline";
   const basePromptHtml = grammarInline ? "" : escapeHtml(q.prompt);
@@ -380,6 +392,7 @@ function renderCurrentQuestion(options = {}) {
 
   renderPassageForQuestion(q, savedAnswer || draftAnswer);
   renderAnswerArea(q, stage.querySelector('[data-role="answer-area"]'), savedAnswer, draftAnswer);
+  if (!savedAnswer && guidedRetryUsed.has(q.id) && allowsGuidedRetry(q)) showGuidedRetryHint(q);
 
   const mainIdeaV22 = document.body.classList.contains("mainidea-v22-runtime");
   footer.classList.toggle("mainidea-v22-waiting", mainIdeaV22 && !savedAnswer);
@@ -503,13 +516,9 @@ function buildExplanationHtml(q, selectedAnswer) {
       </div>` : ''
   ].filter(Boolean).join('') : '';
 
-  const showMyanmar = hasMyanmarHelp(myanmarExplanation, selectedAnswer)
-    && (
-      level === 'full'
-      || level === 'supported'
-      || (level === 'light' && correct !== true)
-      || (level === 'minimal' && correct === false)
-    );
+  // Language support belongs to every answered Learn/Practice question
+  // with certified teaching content, regardless of difficulty or correctness.
+  const showMyanmar = hasSelected && hasMyanmarHelp(myanmarExplanation, selectedAnswer);
 
   return `
     <div class="answer-review ${correct === false ? 'is-wrong' : correct === true ? 'is-right' : ''}">
@@ -749,6 +758,8 @@ function renderMyanmarHelp(data, selectedAnswer) {
   }).join('');
 }
 
+let myanmarHelpReturnFocus = null;
+
 function ensureMyanmarHelpDrawer() {
   if (document.getElementById('chee-mm-drawer')) return;
   const overlay = document.createElement('div');
@@ -760,6 +771,11 @@ function ensureMyanmarHelpDrawer() {
   drawer.id = 'chee-mm-drawer';
   drawer.className = 'chee-mm-drawer';
   drawer.setAttribute('aria-hidden', 'true');
+  drawer.setAttribute('role', 'dialog');
+  drawer.setAttribute('aria-modal', 'true');
+  drawer.setAttribute('aria-label', 'မြန်မာလိုရှင်းပြ');
+  drawer.setAttribute('lang', 'my');
+  drawer.setAttribute('tabindex', '-1');
   drawer.innerHTML = `
     <div class="chee-mm-head">
       <strong>မြန်မာလိုရှင်းပြ</strong>
@@ -767,10 +783,29 @@ function ensureMyanmarHelpDrawer() {
     </div>
     <div class="chee-mm-body" id="chee-mm-body"></div>`;
   drawer.querySelector('.chee-mm-close').addEventListener('click', closeMyanmarHelp);
+  drawer.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeMyanmarHelp();
+    }
+    if (event.key !== 'Tab') return;
+    const focusable = [...drawer.querySelectorAll('button:not([disabled]), a[href], [tabindex="0"]')];
+    if (!focusable.length) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
   document.body.append(overlay, drawer);
 }
 
 function openMyanmarHelp(data, selectedAnswer) {
+  if (!hasMyanmarHelp(data, selectedAnswer)) return;
+  myanmarHelpReturnFocus = document.activeElement;
   ensureMyanmarHelpDrawer();
   const body = document.getElementById('chee-mm-body');
   if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
@@ -778,6 +813,7 @@ function openMyanmarHelp(data, selectedAnswer) {
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.add('open');
   drawer?.setAttribute('aria-hidden', 'false');
+  drawer?.querySelector('.chee-mm-close')?.focus();
 }
 
 function closeMyanmarHelp() {
@@ -785,6 +821,8 @@ function closeMyanmarHelp() {
   const drawer = document.getElementById('chee-mm-drawer');
   drawer?.classList.remove('open');
   drawer?.setAttribute('aria-hidden', 'true');
+  if (myanmarHelpReturnFocus?.isConnected) myanmarHelpReturnFocus.focus();
+  myanmarHelpReturnFocus = null;
 }
 function lockInteractionControls(q, container) {
   container.classList.add("answer-locked");
@@ -807,6 +845,15 @@ function unlockGuidedNext() {
   }
 }
 
+function showGuidedRetryHint(q) {
+  const box = document.querySelector('[data-role="explanation"]');
+  if (!box) return;
+  box.setAttribute('role', 'status');
+  box.setAttribute('aria-live', 'polite');
+  box.innerHTML = `<div class="guided-retry-feedback"><strong>Not quite.</strong><p>${escapeHtml(q.hint || 'Recheck the passage and try once more.')}</p><span>Try once more.</span></div>`;
+  box.classList.add('visible');
+}
+
 function submitInteractiveAnswer(q, answer, container) {
   const I = window.QuestionInteractions;
   if (!I) return false;
@@ -820,11 +867,8 @@ function submitInteractiveAnswer(q, answer, container) {
 
   if (firstGuidedMiss) {
     guidedRetryUsed.add(q.id);
-    const box = document.querySelector('[data-role="explanation"]');
-    if (box) {
-      box.innerHTML = `<div class="guided-retry-feedback"><strong>Not quite.</strong><p>${escapeHtml(q.hint || 'Recheck the passage and try once more.')}</p><span>Try once more.</span></div>`;
-      box.classList.add('visible');
-    }
+    Store.setGuidedRetry?.(currentQuiz.id, q.id);
+    showGuidedRetryHint(q);
     setStatus('Not quite — try once more before seeing the full explanation.', false);
     return false;
   }
@@ -832,6 +876,7 @@ function submitInteractiveAnswer(q, answer, container) {
   Store.setAnswer(currentQuiz.id, q.id, canonical);
   clearInteractionDraft(q.id);
   const learningResult = recordPracticeAttempt(q, canonical, correct);
+  Store.clearGuidedRetry?.(currentQuiz.id, q.id);
   showQuestionExplanation(q, canonical);
   showLearningFeedback(learningResult, correct);
   setupMistakeReason(q, correct, learningResult);
@@ -1459,7 +1504,17 @@ function updateProgress(items, index) {
 }
 
 function updateAnswerStatus() {
-  updateProgress(activeQuestions(), currentIndex);
+  // Update the existing footer whenever an answer is saved, without a reload.
+  const items = activeQuestions();
+  const current = items[currentIndex]?.question;
+  const answered = Boolean(current && Store.getAnswers(currentQuiz.id)[current.id]);
+  const footer = document.getElementById("question-footer");
+  if (footer && document.body.classList.contains("mainidea-v22-runtime")) {
+    footer.classList.toggle("mainidea-v22-waiting", !answered);
+  }
+  const next = document.getElementById("next-question");
+  if (next && isGuidedLearningModule()) next.disabled = !answered;
+  updateProgress(items, currentIndex);
 }
 
 function isAutoGraded(q) {

@@ -34,9 +34,13 @@ async function initCheck() {
     return renderRecovery("This Skill Check could not be loaded.");
   }
   const primarySkillId = currentModule?.contentMeta?.curriculum?.primarySkillId || currentModule?.questions?.[0]?.skill?.id || "";
-  if (primarySkillId === "R1.2" && !mainIdeaRequested) {
-    document.body.classList.add("mainidea-v22-runtime");
-    await setupMainIdeaV22Chrome();
+  // Use the same assessment workspace across skills, but retain the
+  // independently graded Skill Check runtime and delayed feedback.
+  document.body.classList.add("mainidea-v22-runtime");
+  if (primarySkillId === "R1.2") {
+    if (!mainIdeaRequested) await setupMainIdeaV22Chrome();
+  } else {
+    await setupSkillCheckChrome(primarySkillId);
   }
 
   const roles = currentModule?.contentMeta?.curriculum?.deliveryRoles || [];
@@ -93,6 +97,49 @@ function mainIdeaRouteConfig(routes) {
   };
 }
 
+async function setupSkillCheckChrome(primarySkillId) {
+  const learn = document.getElementById("mainidea-v22-learn");
+  const practice = document.getElementById("mainidea-v22-practice");
+  const check = document.getElementById("mainidea-v22-check");
+  const name = document.getElementById("mainidea-v22-skill-name");
+  if (!learn || !practice || !check) return;
+
+  let routes = null;
+  try { routes = CurriculumRoutes.build(await Data.loadCurriculum()); } catch (_) {}
+  const location = routes?.skillLocation?.(primarySkillId);
+  const skill = location?.skill;
+  if (name) name.textContent = skill?.label ||
+    currentModule?.contentMeta?.curriculum?.topicLabel ||
+    currentModule?.title || "Skill Check";
+
+  const sets = skill?.sets || [];
+  const first = sets.find(set => ["full", "supported"].includes(set.curriculum?.assistanceLevel)) || sets[0];
+  const second = sets.find(set => set.file !== first?.file);
+  const checkSet = (skill?.checks || []).find(set => set.file === requestedFile);
+  const destination = location?.returnHref || returnHref;
+  const links = [
+    [learn, first?.file ? moduleRoute(first.file, destination) : null],
+    [practice, second?.file ? moduleRoute(second.file, destination) : null],
+    [check, checkSet?.file ? checkRoute(checkSet.file, destination) : null],
+  ];
+  for (const [link, href] of links) {
+    link.classList.remove("active");
+    link.removeAttribute("aria-current");
+    if (href) {
+      link.href = href;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("tabindex");
+    } else {
+      link.removeAttribute("href");
+      link.setAttribute("aria-disabled", "true");
+      link.setAttribute("tabindex", "-1");
+    }
+  }
+  document.body.classList.add("mainidea-v22-check");
+  check.classList.add("active");
+  check.setAttribute("aria-current", "page");
+}
+
 function moduleRoute(file, returnHref) {
   return `module.html?file=${encodeURIComponent(file)}&return=${encodeURIComponent(returnHref)}`;
 }
@@ -109,8 +156,9 @@ function renderQuestion() {
       <span>Independent</span><span>No hints</span><span>Answers after finishing</span>
     </section>
     <section class="study-workspace check-workspace${hasPassage ? "" : " no-passage"}">
-      <div>${hasPassage ? passageHtml(currentModule, q, answers[q.id] || "") : ""}</div>
-      <article class="question-panel" aria-label="Skill Check question">
+      <div id="study-passage">${hasPassage ? `<a class="study-mobile-jump study-mobile-jump-forward" href="#study-question">Go to question ↓</a>` : ""}${hasPassage ? passageHtml(currentModule, q, answers[q.id] || "") : ""}</div>
+      <article class="question-panel" id="study-question" aria-label="Skill Check question">
+        ${hasPassage ? `<a class="study-mobile-jump study-mobile-jump-back" href="#study-passage">↑ Back to passage</a>` : ""}
         <div class="question-stage">
           <div class="question-topline question-topline-clean"><span class="question-number">Question ${currentIndex + 1} of ${currentModule.questions.length}</span></div>
           <div class="q-prompt">${promptHtml(q)}</div>
@@ -314,6 +362,21 @@ function diagnosticBucket(question) {
 
 function nextStepFromResults(results) {
   const misses = results.filter((item) => !item.correct);
+  const skillId = currentModule?.contentMeta?.curriculum?.primarySkillId
+    || currentModule?.questions?.[0]?.skill?.id || "";
+  // The detailed reporting buckets below were authored for Main Idea only.
+  // Other skills must receive accurate, non-diagnostic guidance rather than
+  // unsupported Main Idea-specific advice.
+  if (skillId !== "R1.2") {
+    if (!misses.length) return {
+      title: "Move on.",
+      body: "All questions were answered correctly. Continue with the next lesson or review this skill in mixed practice."
+    };
+    return {
+      title: "Review your missed questions.",
+      body: "Compare each missed answer with the explanation, then return to this skill for targeted practice before another Skill Check."
+    };
+  }
   if (!misses.length) {
     return {
       title: 'Move on.',
@@ -388,7 +451,7 @@ function renderResults(results, correct) {
       </section>
 
       <div class="check-result-actions">
-        <a class="btn" href="${escapeAttr(returnHref)}">Back to Main Idea</a>
+        <a class="btn" href="${escapeAttr(returnHref)}">Back to skill</a>
       </div>
 
       ${misses.length ? `
@@ -447,6 +510,8 @@ function renderMyanmarHelp(data, selectedAnswer) {
   }).join("");
 }
 
+let checkMyanmarReturnFocus = null;
+
 function ensureMyanmarHelpDrawer() {
   if (document.getElementById("chee-mm-drawer")) return;
 
@@ -459,6 +524,11 @@ function ensureMyanmarHelpDrawer() {
   drawer.id = "chee-mm-drawer";
   drawer.className = "chee-mm-drawer";
   drawer.setAttribute("aria-hidden", "true");
+  drawer.setAttribute("role", "dialog");
+  drawer.setAttribute("aria-modal", "true");
+  drawer.setAttribute("aria-label", "မြန်မာလိုရှင်းပြ");
+  drawer.setAttribute("lang", "my");
+  drawer.setAttribute("tabindex", "-1");
   drawer.innerHTML = `
     <div class="chee-mm-head">
       <strong>မြန်မာလိုရှင်းပြ</strong>
@@ -466,10 +536,30 @@ function ensureMyanmarHelpDrawer() {
     </div>
     <div class="chee-mm-body" id="chee-mm-body"></div>`;
   drawer.querySelector(".chee-mm-close").addEventListener("click", closeMyanmarHelp);
+  drawer.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeMyanmarHelp();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const focusable = [...drawer.querySelectorAll('button:not([disabled]), a[href], [tabindex="0"]')];
+    if (!focusable.length) { event.preventDefault(); drawer.focus(); return; }
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
   document.body.append(overlay, drawer);
 }
 
 function openMyanmarHelp(data, selectedAnswer) {
+  if (!hasMyanmarHelp(data, selectedAnswer)) return;
+  checkMyanmarReturnFocus = document.activeElement;
   ensureMyanmarHelpDrawer();
   const body = document.getElementById("chee-mm-body");
   if (body) body.innerHTML = renderMyanmarHelp(data, selectedAnswer);
@@ -477,6 +567,7 @@ function openMyanmarHelp(data, selectedAnswer) {
   const drawer = document.getElementById("chee-mm-drawer");
   drawer?.classList.add("open");
   drawer?.setAttribute("aria-hidden", "false");
+  drawer?.querySelector(".chee-mm-close")?.focus();
 }
 
 function closeMyanmarHelp() {
@@ -484,6 +575,8 @@ function closeMyanmarHelp() {
   const drawer = document.getElementById("chee-mm-drawer");
   drawer?.classList.remove("open");
   drawer?.setAttribute("aria-hidden", "true");
+  if (checkMyanmarReturnFocus?.isConnected) checkMyanmarReturnFocus.focus();
+  checkMyanmarReturnFocus = null;
 }
 
 function updateHeader() {

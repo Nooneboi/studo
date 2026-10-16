@@ -39,7 +39,7 @@
       },
       "time": 85,
       "learningStage": "guided",
-      "hint": "Ask whether each detail helps answer the study's main question: how did different amounts of shade affect heat stress and growth?",
+      "hint": "Before sorting, write the experiment's question in your own words: how did the amount of shade relate to stress and growth? Keep results that compare groups or reveal that relationship; distinguish them from one-off recordkeeping notes.",
       "correct": "i1=pattern|i2=pattern|i3=isolated|i4=pattern",
       "interaction": {
         "items": [
@@ -71,6 +71,18 @@
           }
         ],
         "presentation": "choice_rows"
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "အဓိက pattern ကို ဘယ်လိုရှာမလဲ",
+            "body": "ဒီစမ်းသပ်မှုမှာ shade ပမာဏပြောင်းတဲ့အခါ ပျိုးပင်တွေရဲ့ အပူဒဏ်၊ မြေဆီလွှာအစိုဓာတ်နဲ့ ကြီးထွားမှု ဘယ်လိုပြောင်းလဲသလဲဆိုတာကို လေ့လာထားတယ်။ Conclusion ထုတ်ဖို့ဆိုရင် shade အုပ်စုတွေကို နှိုင်းယှဉ်ပြတဲ့ ရလဒ်တွေကို အရင်စုရမယ်။"
+          },
+          {
+            "title": "တစ်ခုချင်းစီကို ခွဲကြည့်မယ်",
+            "body": "i1 မှာ နေရောင်တိုက်ရိုက်ရတဲ့ပျိုးပင်တွေ ပိုပူ၊ ရေပိုဆုံးရှုံးပြီး အရွက်အနားတွေ လောင်တာကို ပြတယ်။ i2 မှာ medium shade က အပူနဲ့ ရေဆုံးရှုံးမှု လျော့စေပြီး ကြီးထွားမှုကောင်းနေသေးတယ်။ i4 မှာ heavy shade က အရွက်လောင်တာလျော့ပေမယ့် ကြီးထွားမှုနှေးပြီး ပင်စည်ပိုပါးတယ်။ ဒီသုံးခုက overall pattern ကို ဖော်ပြတယ်။ i3 ရဲ့ sensor တစ်ခု ပျက်သွားတာက data ကိုစစ်ရာမှာ သတိထားရမယ့်အချက်ဖြစ်ပေမယ့် shade ရဲ့ အကျိုးသက်ရောက်မှုကို တိုက်ရိုက်မပြဘူး။"
+          }
+        ]
       }
     },
     {
@@ -103,7 +115,7 @@
       },
       "time": 90,
       "learningStage": "guided",
-      "hint": "Look for the statement that combines several results but still respects the study's limited species, location, and six-week duration.",
+      "hint": "Test each proposed conclusion against three boundaries: which seedlings were studied, where they were grown, and how long the trial ran. Which statement combines the main findings without extending beyond those boundaries?",
       "correct": "s1=narrow|s2=supported|s3=broad|s4=broad",
       "interaction": {
         "items": [
@@ -139,6 +151,18 @@
           }
         ],
         "presentation": "choice_rows"
+      },
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Conclusion တစ်ခုရဲ့ အတိုင်းအတာ",
+            "body": "စမ်းသပ်မှုရလဒ်ကနေ conclusion ထုတ်တဲ့အခါ အချက်တစ်ခုတည်းနဲ့ မကျဉ်းလွန်းစေဖို့၊ စမ်းသပ်မထားတဲ့အရာတွေအထိလည်း မချဲ့မိဖို့လိုတယ်။ ဒီ trial က ပျိုးပင်တချို့ကို နေရာတစ်ခုမှာ ခြောက်ပတ်ကြာ လေ့လာထားတာပဲ။"
+          },
+          {
+            "title": "အဖြေတွေ ဘာကြောင့်ကွာသလဲ",
+            "body": "s1 က concrete wall အနားက tray တစ်ခုအကြောင်းပဲ ပြောလို့ Too narrow ပါ။ s2 က ဒီ trial အတွင်း medium shade က အပူဒဏ်လျော့စေသလို heavy shade ထက် ကြီးထွားမှုကောင်းခဲ့တာကို ချင့်ချိန်ပြီး ပြောထားလို့ Supported conclusion ပါ။ s3 က သစ်ပင်အမျိုးအစားအားလုံး၊ ရာသီဥတုအားလုံးအတွက် အကောင်းဆုံးလို့ ဆိုထားတယ်။ s4 က နေရောင်ကို 40% တိတိ မပိတ်ရင် shade cloth အသုံးမဝင်ဘူးလို့ ဆိုထားတယ်။ အဲဒီနှစ်ခုက ဒီစမ်းသပ်မှုကနေ မသက်သေပြနိုင်တဲ့အထိ ချဲ့ထားလို့ Too broad ပါ။"
+          }
+        ]
       }
     },
     {
@@ -195,7 +219,19 @@
           "whyWrong": "The study concerns a short hot-weather trial at one nursery and does not justify a universal claim about direct sunlight."
         }
       ],
-      "correct": "c"
+      "correct": "c",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "ရလဒ်အားလုံးကို ပေါင်းစဉ်းစားမယ်",
+            "body": "Exposed group မှာ အပူပိုများပြီး ရေဆုံးရှုံးမှုနဲ့ အရွက်လောင်မှု ပိုတွေ့ရတယ်။ Medium shade မှာ အပူနဲ့ ရေဆုံးရှုံးမှုလျော့ပြီး ကြီးထွားမှုကောင်းတယ်။ Heavy shade မှာ ပိုအေးလာပေမယ့် ကြီးထွားမှုနှေးပြီး ပင်စည်ပါးလာတယ်။ ဒီအချက်အားလုံးကို ထည့်စဉ်းစားထားတဲ့ C က အကောင်းဆုံး conclusion ပါ။"
+          },
+          {
+            "title": "ကျန်တဲ့ရွေးချယ်စရာတွေ",
+            "body": "A က heavy shade ပိုအေးတယ်ဆိုတဲ့ အချက်တစ်ခုကိုပဲ ကြည့်ပြီး ကြီးထွားမှုနှေးတာကို လျစ်လျူရှုထားတယ်။ B က ရေသွင်းပမာဏ လျော့ပေးခဲ့သလို ပြောထားပေမယ့် အုပ်စုအားလုံးကို သတ်မှတ်ထားတဲ့ ရေပမာဏတူတူပေးထားတယ်။ D က နေရောင်တိုက်ရိုက်ရတာဟာ အခြေအနေအားလုံးမှာ မကောင်းဘူးလို့ ချဲ့ထားတယ်။ ဒီ trial တစ်ခုနဲ့ အဲဒီလို အထွေထွေသတ်မှတ်လို့ မရဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q4",
@@ -251,7 +287,19 @@
           "whyWrong": "The experiment shows that reducing heat can help, but too much shade also reduced growth."
         }
       ],
-      "correct": "a"
+      "correct": "a",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "ရလဒ်ကနေ principle ထုတ်မယ်",
+            "body": "Principle ဆိုတာ trial ထဲက အချက်အလက်တွေကို တစ်ကြောင်းတည်း ပြန်ပြောတာမဟုတ်ဘူး။ နောက်အခြေအနေတစ်ခုမှာလည်း အသုံးချနိုင်တဲ့ အခြေခံဆက်စပ်မှုကို ရှာတာပါ။ ဒီမှာ အပူဒဏ်လျော့တာက အကျိုးရှိပေမယ့် အလင်းရောင်ကို အလွန်အကျွံပိတ်ရင် ကြီးထွားမှု ထိခိုက်နိုင်တယ်။ အဲဒီ balance ကို ဖော်ပြထားတဲ့ A မှန်တယ်။"
+          },
+          {
+            "title": "အခြားအဖြေတွေ ဘာကြောင့်မကိုက်လဲ",
+            "body": "B က shade အများဆုံးပေးရင် ရလဒ်အကောင်းဆုံးလို့ ဆိုပေမယ့် heavy shade group ရဲ့ ကြီးထွားမှုနှေးတာနဲ့ မကိုက်ဘူး။ C က tray အားလုံးရဲ့ measurement တူညီမှ စမ်းသပ်မှုယုံကြည်ရမယ်လို့ စည်းကမ်းအသစ်ထပ်ထည့်ထားတယ်။ D က temperature ပြောင်းတဲ့ treatment မှန်သမျှ growth ကောင်းစေမယ်လို့ ချဲ့ထားတယ်။ Passage က အဲဒီသုံးချက်ကို မထောက်ခံဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q5",
@@ -307,7 +355,19 @@
           "text": "A greenhouse adds a vented screen that lowers dangerous afternoon heat while still allowing enough light for seedlings to grow normally."
         }
       ],
-      "correct": "d"
+      "correct": "d",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "Transfer question ဆိုတာ",
+            "body": "ဒီမေးခွန်းက nursery မှာ သုံးခဲ့တဲ့ ပစ္စည်းနဲ့ ရာခိုင်နှုန်းကို ကူးယူဖို့ မဟုတ်ဘူး။ အဓိက principle ဖြစ်တဲ့ 'အန္တရာယ်ရှိတဲ့ အပူဒဏ်ကို လျော့ပေးရင်း ကြီးထွားဖို့လိုတဲ့ အလင်းရောင်ကိုလည်း ထိန်းပေးခြင်း' ဆိုတာကို အခြေအနေသစ်မှာ ရှာခိုင်းတာ။ D ရဲ့ vented screen က အပူလျော့စေပြီး အလင်းရောင်လုံလောက်အောင် ဝင်ခွင့်ပေးလို့ ကိုက်တယ်။"
+          },
+          {
+            "title": "ဘာကြောင့် ကျန်တာတွေ မရွေးသင့်လဲ",
+            "body": "A က နေရောင်လုံးဝမဝင်အောင် ပိတ်လိုက်တာဖြစ်လို့ လိုအပ်တဲ့အလင်းရောင်ကိုပါ ဖယ်ရှားတယ်။ B က cactus ရဲ့ လိုအပ်ချက်မစစ်ဘဲ shade 40% ဆိုတဲ့ နံပါတ်ကိုပဲ ကူးယူထားတယ်။ C က အပူချိန်ကို မှတ်တမ်းတင်ရုံဖြစ်ပြီး အပူဒဏ်လျော့စေတဲ့ လုပ်ဆောင်ချက် မပါဘူး။"
+          }
+        ]
+      }
     },
     {
       "id": "q6",
@@ -363,7 +423,19 @@
           "whyWrong": "The concrete-wall tray is one irregular result; the experiment's main evidence compares shade levels across the seedling groups."
         }
       ],
-      "correct": "b"
+      "correct": "b",
+      "myanmarExplanation": {
+        "sections": [
+          {
+            "title": "သက်သေရှိသလောက်ပဲ ပြောမယ်",
+            "body": "ဒီ trial မှာ medium shade က အပူဒဏ်လျော့စေပြီး ကြီးထွားမှုကိုလည်း ထိန်းပေးနိုင်တဲ့ pattern တစ်ခု တွေ့ခဲ့တယ်။ ဒါပေမယ့် nursery တစ်ခုမှာ ခြောက်ပတ်စမ်းသပ်ထားတာဖြစ်လို့ အပင်အမျိုးအစား၊ ရာသီနဲ့ နေရာအားလုံးမှာ အတူတူဖြစ်မယ်လို့ မသတ်မှတ်နိုင်ဘူး။ ရလဒ်နဲ့ limitation နှစ်ခုလုံးကို ဖော်ပြထားတဲ့ B မှန်တယ်။"
+          },
+          {
+            "title": "Distractor တွေကို စစ်မယ်",
+            "body": "A က အပင်အားလုံးအတွက် medium shade ကို အမြဲသုံးရမယ်လို့ လွန်လွန်ကဲကဲဆိုထားတယ်။ C က sensor တစ်ခု ပျက်လို့ အခြား measurement အားလုံး အသုံးမဝင်တော့ဘူးလို့ ပြောထားတယ်။ D က concrete wall အနားက tray တစ်ခုတည်းကို အဓိက conclusion လုပ်ထားလို့ ကျဉ်းလွန်းတယ်။ သိပ္ပံဆိုင်ရာ conclusion က ရလဒ်ကို လက်ခံသလို ဘယ်အထိပဲ သက်ဆိုင်တယ်ဆိုတာကိုလည်း ထည့်စဉ်းစားရတယ်။"
+          }
+        ]
+      }
     }
   ],
   "contentMeta": {

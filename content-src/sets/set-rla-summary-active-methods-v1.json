@@ -83,10 +83,22 @@
       "explanation": {
         "answer": "Keep the redevelopment problem and the compromise/outcome; omit the examples of old freight and the rain-garden detail.",
         "whyCorrect": "A summary needs the passage's main change and the major response to conflict. The specific freight examples and rain-garden feature add detail but are not necessary to explain the passage as a whole.",
-        "quickTip": "Ask: if I remove this detail, do I lose the passage's main development—or only an example?"
+        "quickTip": "Ask: if I remove this detail, do I lose the passage's main development—or only an example?",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Summary မှာ ဘာကိုထားမလဲ",
+              "body": "ဒီ passage ရဲ့ အဓိကဖြစ်စဉ်က အသုံးမပြုတော့တဲ့ freight yard ကို ပြန်လည်ဖော်ဆောင်ဖို့ ဆွေးနွေးခဲ့ကြတာ၊ အမြင်မတူမှုတွေကြားက compromise ရခဲ့တာနဲ့ project နှောင့်နှေးမှုတွေပါ။ ဒါကြောင့် i1 နဲ့ i2 ကို Keep ထဲထားရမယ်။"
+            },
+            {
+              "title": "ဘာကိုဖြုတ်နိုင်လဲ",
+              "body": "အရင်က coal၊ machine parts၊ produce တွေ သယ်ခဲ့တာ (i3) နဲ့ rain garden နေရာ (i4) က မှန်တဲ့အသေးစိတ်တွေပါ။ ဒါပေမယ့် ဖြုတ်လိုက်လည်း redevelopment ရဲ့ အဓိကဖြစ်စဉ် မပျောက်ဘူး။ အဲဒါကြောင့် Omit ထဲထားနိုင်တယ်။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
-      "hint": "Keep ideas that explain why the site changed and what the redevelopment became. Exact examples and smaller design features are easier to cut."
+      "hint": "Imagine explaining the whole passage in two sentences. Would leaving out this detail hide the main conflict, the plan, or its outcome—or would you lose only an example?"
     },
     {
       "id": "q2",
@@ -134,10 +146,22 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "Choice A keeps the paragraph's three major pieces: the compromise design, the mix of preserved and new uses, and the cleanup delay.",
-        "quickTip": "For a section summary, cover the important movement inside that section—not the whole passage and not one isolated detail."
+        "quickTip": "For a section summary, cover the important movement inside that section—not the whole passage and not one isolated detail.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Paragraph တစ်ပိုဒ်လုံးကို ခြုံမယ်",
+              "body": "တတိယပိုဒ်မှာ committee ရဲ့ compromise plan၊ အဟောင်းတချို့ကိုထိန်းသိမ်းပြီး အသုံးအသစ်တွေထည့်တာ၊ petroleum contamination ကြောင့် ဆောက်လုပ်ရေးနောက်ကျတာဆိုပြီး အရေးကြီးတဲ့အပိုင်း သုံးခုရှိတယ်။ A က သုံးခုလုံးကို ခြုံထားတယ်။"
+            },
+            {
+              "title": "တခြား choice တွေဘာလွဲလဲ",
+              "body": "B က အဆောက်အအုံအားလုံးကို ထိန်းသိမ်းမယ်လို့ လွန်လွန်ကဲကဲပြောထားတယ်။ C က rain garden အသေးစိတ်တစ်ခုတည်းကိုပဲ ပြောတယ်။ D က project လုံးဝမဖြစ်နိုင်တော့ဘူးလို့ဆိုပေမယ့် passage မှာ delay ဖြစ်တာပဲ ရေးထားတယ်။"
+            }
+          ]
+        }
       },
       "learningStage": "guided",
-      "hint": "Look for the choice that captures both what the committee planned and what happened before construction could begin."
+      "hint": "Find the paragraph's turning point: what did the committee propose, and what obstacle affected the plan? Choose a summary that covers both developments without adding a new claim."
     },
     {
       "id": "q3",
@@ -196,7 +220,19 @@
       "explanation": {
         "answer": "s1 preserves the passage; s2 and s4 are too narrow; s3 adds a claim the passage never makes.",
         "whyCorrect": "The strong statement compresses the whole redevelopment arc. The market and path are real but partial results. The claim that preservation is always more valuable than housing goes beyond the text.",
-        "quickTip": "A summary can fail by shrinking the passage to one detail or by expanding it with an idea the author never stated."
+        "quickTip": "A summary can fail by shrinking the passage to one detail or by expanding it with an idea the author never stated.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Summary ရဲ့ အမှားနှစ်မျိုး",
+              "body": "အဓိကဖြစ်စဉ်အစား detail တစ်ခုတည်းကို ပြောမိတာက Too narrow ပါ။ Passage မပြောတဲ့ အယူအဆကို ကိုယ်တိုင်ထပ်ထည့်တာက Adds a claim ပါ။"
+            },
+            {
+              "title": "Statement တွေကို ခွဲမယ်",
+              "body": "s1 က စီမံကိန်းတစ်ခုလုံးရဲ့ ပြောင်းလဲမှု၊ ညှိနှိုင်းမှု၊ cleanup ပြဿနာနဲ့ မပြီးသေးတဲ့ ပထမအဆင့်ကို ခြုံထားလို့ Strong ပါ။ s2 ရဲ့ weekend market နဲ့ s4 ရဲ့ walking route က တစ်စိတ်တစ်ပိုင်းပဲဖြစ်လို့ Narrow ပါ။ s3 က သမိုင်းဝင်အဆောက်အအုံထိန်းသိမ်းတာဟာ housing ထက် အမြဲပိုတန်ဖိုးရှိတယ်လို့ passage မပြောတဲ့ ကောက်ချက် ထပ်ထည့်ထားတာ။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -253,7 +289,19 @@
       "explanation": {
         "answer": "Keep the planning compromise and the mixed first-phase result; the individual room conversion and later review plan can be omitted.",
         "whyCorrect": "The first two developments explain the central arc from conflict and planning to an incomplete result. The other two are useful supporting details but are not necessary to preserve that arc.",
-        "quickTip": "A whole-passage summary usually keeps the major change and outcome, not every feature or next step."
+        "quickTip": "A whole-passage summary usually keeps the major change and outcome, not every feature or next step.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Compression လုပ်တဲ့အခါ",
+              "body": "Whole-passage summary တိုအောင်ရေးရာမှာ အဓိကအကြောင်းအရာနဲ့ ရလဒ်ကိုတော့ မဖြုတ်သင့်ဘူး။ Planning အတွင်း access၊ housing နဲ့ preservation အမြင်တွေကို ညှိနှိုင်းခဲ့တာ (m1) နဲ့ ပထမအဆင့်က အကျိုးရှိပေမယ့် တချို့အပိုင်း မပြီးသေးတာ (m2) ကို Must ထဲထားရမယ်။"
+            },
+            {
+              "title": "Optional detail",
+              "body": "Dispatch office ကို community room ပြောင်းတာ (m3) နဲ့ နောက်ပိုင်း data ပြန်လည်သုံးသပ်မယ့်အစီအစဉ် (m4) က အသုံးဝင်ပေမယ့် အကြောင်းအရာတစ်ခုလုံးရဲ့ အဓိကပြောင်းလဲမှုကို ပြောဖို့ မလိုမဖြစ်မဟုတ်ဘူး။"
+            }
+          ]
+        }
       },
       "learningStage": "apply"
     },
@@ -303,7 +351,19 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "Choice A preserves the full development: the abandoned site, the compromise plan, the cleanup delay, and the mixed results of the first phase.",
-        "quickTip": "The best whole-passage summary should survive a check against the beginning, middle, and end of the text."
+        "quickTip": "The best whole-passage summary should survive a check against the beginning, middle, and end of the text.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "အစ၊ အလယ်၊ အဆုံးကို စစ်မယ်",
+              "body": "အစမှာ freight yard ကို ပြန်ဖော်ဆောင်ဖို့ အငြင်းပွားကြတယ်။ အလယ်မှာ compromise plan နဲ့ cleanup delay ရှိတယ်။ အဆုံးမှာ ပထမအဆင့်က အကျိုးရှိပေမယ့် အချို့ကတိပေးထားတာတွေ မပြီးသေးဘူး။ A က ဒီသုံးပိုင်းလုံးကို ထည့်ထားလို့ အကောင်းဆုံး summary ပါ။"
+            },
+            {
+              "title": "Distractor တွေဘာကြောင့်မကိုက်လဲ",
+              "body": "B က historic preservation တစ်ခုတည်းကိုပဲ အာရုံစိုက်တယ်။ C က city က resident တွေကို လျစ်လျူရှုခဲ့တယ်လို့ စာထဲမှာမပါတဲ့ claim ထပ်ထည့်တယ်။ D က contamination ကြောင့် ဘာမှမဖွင့်နိုင်ခဲ့ဘူးလို့ ပြောပေမယ့် first phase ဖွင့်ပြီးသားပါ။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     },
@@ -353,7 +413,19 @@
       "explanation": {
         "answer": "A",
         "whyCorrect": "Choice A keeps both sides of the ending: the first phase produced real benefits, but parts of the project remained incomplete and the city still plans to evaluate the full redevelopment.",
-        "quickTip": "If the passage ends with both a result and a limitation, a strong summary should preserve both."
+        "quickTip": "If the passage ends with both a result and a limitation, a strong summary should preserve both.",
+        "myanmar": {
+          "sections": [
+            {
+              "title": "Result နဲ့ limitation နှစ်ခုလုံးပါရမယ်",
+              "body": "နောက်ဆုံးပိုဒ်နှစ်ပိုဒ်မှာ walking path နဲ့ weekend market က အကျိုးရှိလာတာကို ဖော်ပြထားသလို housing မပြီးသေးတာ၊ community room ဖွင့်ချိန်ကန့်သတ်ထားတာကိုလည်း ဖော်ပြတယ်။ Officials တွေက project ပြီးမှ ထပ်သုံးသပ်မယ်လို့ ဆိုထားတယ်။ A က ဒီအချက်တွေကို မျှမျှတတ ခြုံထားတယ်။"
+            },
+            {
+              "title": "အခြားရွေးချယ်စရာတွေ",
+              "body": "B က path အောင်မြင်တာနဲ့ project အားလုံးအောင်မြင်တယ်လို့ အလွန်ချဲ့ထားတယ်။ C က critics တွေ project ဖျက်သိမ်းချင်တယ်လို့ မရှိတဲ့ claim ထပ်ထည့်တယ်။ D က သုံးသပ်မယ့် data အမျိုးအစားတွေကို စာရင်းလုပ်ထားပေမယ့် ဘာကြောင့်ဆက်သုံးသပ်ဖို့လိုသလဲဆိုတဲ့ မပြီးပြည့်စုံသေးတဲ့ ရလဒ်ကို ချန်ထားတယ်။"
+            }
+          ]
+        }
       },
       "learningStage": "independent"
     }

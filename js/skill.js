@@ -7,6 +7,7 @@ async function init() {
   const trackId = p.get("track") || "reading";
   const domainId = p.get("domain");
   const skillId = p.get("skill");
+  const unitId = p.get("unit");
 
   let curriculum;
   try { curriculum = await Data.loadCurriculum(); }
@@ -14,7 +15,9 @@ async function init() {
 
   const track = curriculum.tracks.find((x) => x.id === trackId);
   const domain = track?.domains.find((x) => x.id === domainId);
-  const skill = domain?.skills.find((x) => x.id === skillId);
+  const skill = unitId
+    ? domain?.units?.find((x) => x.id === unitId)
+    : domain?.skills?.find((x) => x.id === skillId);
 
   if (!track || !domain || !skill) {
     mount.innerHTML = '<p>This skill could not be found.</p>';
@@ -24,8 +27,10 @@ async function init() {
   const sets = skill.sets || [];
   const checks = skill.checks || [];
   const resources = skill.studyResources || skill.resources || [];
-  const startSet = sets[0] || null;
-  const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&skill=${encodeURIComponent(skill.id)}`;
+  const learnSet = sets.find((x) => ["full", "supported"].includes(x.curriculum?.assistanceLevel)) || sets[0] || null;
+  const practiceSet = sets.find((x) => x.file !== learnSet?.file) || null;
+  const startSet = learnSet;
+  const returnHref = `skill.html?track=${encodeURIComponent(track.id)}&domain=${encodeURIComponent(domain.id)}&${unitId ? `unit=${encodeURIComponent(unitId)}` : `skill=${encodeURIComponent(skill.id)}`}`;
   const startHref = startSet
     ? `module.html?file=${encodeURIComponent(startSet.file)}&return=${encodeURIComponent(returnHref)}`
     : null;
@@ -43,8 +48,8 @@ async function init() {
 
     <nav class="simple-skill-actions" aria-label="${escapeHtml(skill.label)} options">
       ${sets.length ? `<a href="${escapeAttr(startHref)}">Learn</a>` : ""}
-      ${sets.length > 1 ? `<a href="${escapeAttr(moduleHref(sets[1], returnHref))}">Practice</a>` : ""}
-      ${checks.length ? `<a href="${escapeAttr(checkHref(checks[0], returnHref))}">Check</a>` : ""}
+      ${practiceSet ? `<a href="${escapeAttr(moduleHref(practiceSet, returnHref))}">Practice</a>` : ""}
+      ${checks.length ? `<a href="${escapeAttr(checkHref(checks[0], returnHref))}">Skill Check</a>` : ""}
       ${resources.length ? '<a href="#resources">More resources</a>' : ""}
     </nav>
 
