@@ -9990,7 +9990,7 @@ body.canonical-learner-shell .library-results-summary {
 
 body.canonical-learner-shell .resource-track-heading {
   padding-bottom:10px !important;
-  border-bottom:1px solid #111 !important;
+  border-bottom:1px solid var(--chee-line-strong, #b8b8b8) !important;
 }
 
 body.canonical-learner-shell .resource-track-heading span {
@@ -10083,7 +10083,7 @@ body.canonical-learner-shell .mock-library-heading {
   align-items:flex-start !important;
   margin-bottom:0 !important;
   padding-bottom:12px !important;
-  border-bottom:1px solid #111 !important;
+  border-bottom:1px solid var(--chee-line-strong, #b8b8b8) !important;
 }
 
 body.canonical-learner-shell .mock-library-heading h2 {
@@ -10255,7 +10255,7 @@ body.canonical-learner-shell .mock-resume[hidden] {
   margin:0 !important;
 }
 body.canonical-learner-shell .mock-library-grid {
-  border-top:1px solid #111;
+  border-top:1px solid var(--chee-line, #dedede);
 }
 body.canonical-learner-shell .mock-test-card {
   grid-template-columns:minmax(0,1fr) auto !important;
@@ -10275,7 +10275,7 @@ body.canonical-learner-shell .mock-format-facts span + span::before {
   color:#aaa;
 }
 body.canonical-learner-shell .mock-focused-practice {
-  border-top:1px solid #111 !important;
+  border-top:1px solid var(--chee-line, #dedede) !important;
   border-bottom:0 !important;
 }
 @media (max-width:720px) {
@@ -10305,7 +10305,7 @@ body.canonical-learner-shell .simple-test-hero {
   margin:52px 0 28px !important;
 }
 body.canonical-learner-shell .simple-test-options {
-  border-top:1px solid #111;
+  border-top:1px solid var(--chee-line, #dedede);
 }
 body.canonical-learner-shell .simple-test-option {
   display:grid;
